@@ -19,7 +19,7 @@ class CfgMissions
 	{
 		class Epoch_Intro
 		{
-			directory = "x\addons\a3_epoch_config_main\scenes\Epoch_Intro.Altis";
+			directory = "x\addons\a3_epoch_configs\scenes\Epoch_Intro.Altis";
 		};
 	};
 };
