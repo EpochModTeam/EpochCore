@@ -62,24 +62,24 @@ class CowsSlot;
 class PointerSlot;
 
 #include "\A3\ui_f\hpp\defineCommonGrids.inc"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgMissions.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgWorlds.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgMovesBasic.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgMovesMaleSdr.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgMovesMaleSdr2.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgGesturesMale.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgMovesAnimal.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgActions.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgSounds.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgCloudlets.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgVehicles.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgInGameUI.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgFontFamilies.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\cfgRecoils.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgMagazines.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgAmmo.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgWeapons.hpp"
-#include "\x\addons\a3_epoch_config_main\Configs\CfgAnimationSourceSounds.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMissions.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgWorlds.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMovesBasic.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMovesMaleSdr.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMovesMaleSdr2.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgGesturesMale.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMovesAnimal.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgActions.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgSounds.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgCloudlets.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgVehicles.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgInGameUI.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgFontFamilies.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\cfgRecoils.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMagazines.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgAmmo.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgWeapons.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgAnimationSourceSounds.hpp"
 
 
 #include "\A3\ui_f\hpp\defineCommonGrids.inc"
@@ -125,7 +125,7 @@ class RscDisplayGetReady;
 class CA_Title;
 class ScrollBar;
 
-#include "\x\addons\a3_epoch_config_main\gui\Epoch_GUI_Config.hpp"
+#include "\x\addons\a3_epoch_configs\gui\Epoch_GUI_Config.hpp"
 
 class CfgInventoryGlobalVariable
 {
