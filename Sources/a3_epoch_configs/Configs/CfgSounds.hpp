@@ -117,4 +117,22 @@ class CfgSay3Dhandler {
 	class sapper_explode {
 		distance = 1000;
 	};
+
+	//custom support for Ryan's Zombie sounds start
+	class ryanzombiesattack1 {
+		distance = 400;
+	};
+	class ryanzombiesattack2 {
+		distance = 400;
+	};
+	class ryanzombiesattack3 {
+		distance = 400;
+	};
+	class ryanzombiesattack4 {
+		distance = 400;
+	};
+	class ryanzombiesattack5 {
+		distance = 400;
+	};
+	//custom support for Ryan's Zombie sounds end
 };
