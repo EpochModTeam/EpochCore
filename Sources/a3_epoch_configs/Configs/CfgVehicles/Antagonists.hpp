@@ -781,10 +781,11 @@ class Epoch_SapperB_F : Epoch_Sapper_base_F
 	};
 };
 
-class C_man_1;
+//class C_man_1;
 class EPOCH_RyanZombie_1: C_man_1
 {
 	moves = "CfgRyanZombiesMovesMaleSdrSlow";
+	identityTypes[] = {};
 	scope = 2;
 	displayName = "Zombie 1";
 	armor = 8;
@@ -793,6 +794,7 @@ class EPOCH_RyanZombie_1: C_man_1
 	hiddenSelections[] = {"Camo"};
 	uniformClass = "";
 	hiddenSelectionsTextures[] = {"\A3\characters_f\civil\data\c_poloshirt_3_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\Characters_F\Civil\Data\c_cloth1_injury.rvmat"};
 	class EventHandlers{};
 	weapons[] = {"Throw","Put"};
 	respawnWeapons[] = {"Throw","Put"};
@@ -806,12 +808,13 @@ class EPOCH_RyanZombie_2: EPOCH_RyanZombie_1
 	model = "\A3\Characters_F\Civil\c_poloshirtpants";
 	displayName = "Zombie 2";
 	hiddenSelectionsTextures[] = {"\A3\Characters_F\Civil\Data\c_poloshirtpants_1_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\Characters_F\Civil\Data\c_poloshirtpants_injury.rvmat"};
 };
 class EPOCH_RyanZombie_3: EPOCH_RyanZombie_1
 {
 	model = "\A3\characters_F\civil\c_poor";
 	displayName = "Zombie 3";
-	hiddenSelectionsTextures[] = {"A3\characters_f\civil\data\c_cloth1_v2_co.paa"};
+	hiddenSelectionsTextures[] = {"\A3\characters_f\civil\data\c_cloth1_v2_co.paa"};
 };
 class EPOCH_RyanZombie_4: EPOCH_RyanZombie_1
 {
