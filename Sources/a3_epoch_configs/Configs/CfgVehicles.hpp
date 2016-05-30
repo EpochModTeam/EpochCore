@@ -1394,18 +1394,16 @@ class CfgVehicles
 	class FloatingStructure_F;
 	class Bobber_EPOCH : FloatingStructure_F
 	{
-		author = "Axle - EpochMod";
+		author = "Axle";
 		_generalMacro = "Bobber_EPOCH";
 		scope = 2;
 		displayName = "Bobber";
 		model = "\x\addons\a3_epoch_assets_3\fishing\bobber.p3d";
-
 		canFloat = 1;
 		waterLeakiness = 0;
 		waterResistanceCoef = 0.8;
 		waterAngularDampingCoef = 10;
 		destrType = "DestructNo";
-
 		mapSize = 0.14;
 		icon = "iconObject_2x3";
 		cost = 1000;
@@ -1442,7 +1440,7 @@ class CfgVehicles
 	class Constructions_modular_F: ThingX
 	{
 		mapSize = 1.27;
-		author = "Epoch";
+		author = "Sequisha";
 		_generalMacro = "Constructions_base_F";
 		scope = 0;
 		displayName = "";
@@ -1456,24 +1454,28 @@ class CfgVehicles
 	};
 	class Spike_TRAP_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
 		displayName = "Spike Trap (SIM)";
 	};
 	class Metal_TRAP_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
 		displayName = "Metal Trap (SIM)";
 	};
 	class TankTrap_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Axle";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Defense\tank_trap.p3d";
 		displayName = "Tank Trap (SIM)";
 	};
 	class Hesco3_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Axle";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Defense\hesco.p3d";
 		displayName = "Hesco Wide (SIM)";
@@ -1486,12 +1488,14 @@ class CfgVehicles
 	};
 	class SapperHead_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\sapper_head.p3d";
 		displayName = "Sapper Head";
 	};
 	class SapperCorpse_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sapper_corpse.p3d";
 		displayName = "Sapper Corpse";
@@ -1499,24 +1503,28 @@ class CfgVehicles
 	class Secure_Storage_Temp : Constructions_modular_F {};
 	class LockBox_SIM_EPOCH : Secure_Storage_Temp
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\lockbox.p3d";
 		displayName = "Lockbox";
 	};
 	class Safe_SIM_EPOCH : Secure_Storage_Temp
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
 		displayName = "Safe";
 	};
 	class Fireplace_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Kiory";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_2\fireplace.p3d";
 		displayName = "Empty Fireplace (SIM)";
 	};
 	class Jack_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\jack.p3d";
 		displayName = "Jack";
@@ -1567,6 +1575,7 @@ class CfgVehicles
 	};
 	class WoodRamp_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wood_Ramp.p3d";
 		displayName = "Wood Ramp";
@@ -1574,6 +1583,7 @@ class CfgVehicles
 	};
 	class CinderWallHalf_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\cinder_half_SIM.p3d";
 		displayName = "Half Cinder Block Wall";
@@ -1582,6 +1592,7 @@ class CfgVehicles
 	};
 	class CinderWall_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\cinder_SIM.p3d";
 		displayName = "Cinder Block Wall";
@@ -1590,6 +1601,7 @@ class CfgVehicles
 	};
 	class CinderWallGarage_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\cGarage_SIM.p3d";
 		displayName = "Cinder Block Garage";
@@ -1662,6 +1674,7 @@ class CfgVehicles
 
 	class WoodFloor_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Floor.p3d";
 		displayName = "Wood Floor";
@@ -1671,6 +1684,7 @@ class CfgVehicles
 	};
 	class MetalFloor_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\metal_floor.p3d";
 		displayName = "Metal Floor";
@@ -1678,6 +1692,7 @@ class CfgVehicles
 	};
 	class WoodLargeWall_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_SIM.p3d";
 		displayName = "Large Wall";
@@ -1686,6 +1701,7 @@ class CfgVehicles
 	// lvl 1
 	class WoodWall1_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_wall\Wooden_Wall_ply.p3d";
 		displayName = "Plywood Wall (SIM)";
@@ -1694,6 +1710,7 @@ class CfgVehicles
 	// lvl 2
 	class WoodLargeWallCor_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Cor_SIM.p3d";
 		displayName = "Wall";
@@ -1705,6 +1722,7 @@ class CfgVehicles
 	// lvl 1
 	class WoodWall2_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_doorway\Wooden_Wall_Doorway.p3d";
 		displayName = "Plywood Wall Doorway (SIM)";
@@ -1713,6 +1731,7 @@ class CfgVehicles
 	// lvl 2
 	class WoodLargeWallDoorway_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Doorway.p3d";
 		displayName = "Wall Doorway";
@@ -1726,6 +1745,7 @@ class CfgVehicles
 	// lvl 1
 	class WoodWall3_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_door\Wooden_Wall_Door.p3d";
 		displayName = "Plywood Wall Doorway w/ Door (SIM)";
@@ -1768,6 +1788,7 @@ class CfgVehicles
 	// lvl 2
 	class WoodLargeWallDoor_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Door_SIM.p3d";
 		displayName = "Wall Doorway w/ Door";
@@ -1807,6 +1828,7 @@ class CfgVehicles
 	// lvl 1
 	class WoodWall4_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\Plywood_DoorW_L\Plywood_DoorL.p3d";
 		displayName = "Wall Doorway w/ Locking Door";
@@ -1873,6 +1895,7 @@ class CfgVehicles
 	// lvl 2
 	class WoodLargeWallDoorL_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_DoorL_SIM.p3d";
 		displayName = "Wall Doorway w/ Locking Door";
@@ -1936,6 +1959,7 @@ class CfgVehicles
 	};
 	class WoodStairs_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wood_stairs.p3d";
 		displayName = "Wood Stairs";
@@ -1948,6 +1972,7 @@ class CfgVehicles
 	// Wood_stairs_upgrade
 	class WoodStairs2_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wood_stairs_upgrade.p3d";
 		displayName = "Wood Stairs";
@@ -1959,6 +1984,7 @@ class CfgVehicles
 
 	class WoodTower_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Tower\Tower\Base_Tower_Frame.p3d";
 		displayName = "Wood Tower";
@@ -1996,6 +2022,7 @@ class CfgVehicles
 
 	class WoodLadder_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Ladder\wood_ladder.p3d";
 		displayName = "Wood Ladder";
@@ -2007,12 +2034,14 @@ class CfgVehicles
 	// LOOT
 	class Tipi_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\tp.p3d";
 		displayName = "Tipi Sim";
 	};
 	class Shelf_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\metalStorage.p3d";
 		displayName = "Metal Shelf Sim";
@@ -2021,12 +2050,14 @@ class CfgVehicles
 	};
 	class StorageShelf_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\shelf.p3d";
 		displayName = "Metal Shelf Sim";
 	};
 	class WorkBench_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\workbench.p3d";
 		displayName = "WorkBench (SIM)";
@@ -2036,6 +2067,7 @@ class CfgVehicles
 
 	class Tarp_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\tarp.p3d";
 		displayName = "Tarp Covered Pallet";
@@ -2044,6 +2076,7 @@ class CfgVehicles
 	};
 	class Freezer_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\freezer.p3d";
 		displayName = "Chest Freezer";
@@ -2052,18 +2085,22 @@ class CfgVehicles
 	};
 	class PlotPole_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
 		displayName = "Frequency Jammer (SIM)";
 	};
 	class SolarGen_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
 		displayName = "Solar Power Generator (SIM)";
 	};
 	class ToolRack_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\toolRack.p3d";
 		displayName = "Tool Rack";
@@ -2073,6 +2110,7 @@ class CfgVehicles
 
 	class Chair_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\chair_adult.p3d";
 		displayName = "Chair";
@@ -2084,6 +2122,7 @@ class CfgVehicles
 	};
 	class ChairRed_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\chair_adult.p3d";
 		displayName = "Chair (Red)";
@@ -2095,6 +2134,7 @@ class CfgVehicles
 	};
 	class Filing_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\filing.p3d";
 		displayName = "Filing Cabinet";
@@ -2105,6 +2145,7 @@ class CfgVehicles
 	};
 	class Shoebox_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\shoebox.p3d";
 		displayName = "Shoebox";
@@ -2115,6 +2156,7 @@ class CfgVehicles
 	};
 	class Fridge_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\fridge_door_anim.p3d";
 		displayName = "Fridge";
@@ -2176,6 +2218,7 @@ class CfgVehicles
 	};
 	class Bed_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\bed_dummy.p3d";
 		displayName = "Mattress";
@@ -2185,6 +2228,7 @@ class CfgVehicles
 	};
 	class Bunk_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\bunk.p3d";
 		displayName = "Bunk";
@@ -2195,6 +2239,7 @@ class CfgVehicles
 
 	class Couch_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\couch_dummy.p3d";
 		displayName = "Couch";
@@ -2203,6 +2248,7 @@ class CfgVehicles
 	};
 	class Table_SIM_EPOCH : Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\coffee_table.p3d";
 		displayName = "Coffee Table";
@@ -2211,6 +2257,7 @@ class CfgVehicles
 	};
 	class Wardrobe_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_2\wardrobe.p3d";
 		author = "Kiory";
@@ -2220,6 +2267,7 @@ class CfgVehicles
 	};
 	class Locker_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		author = "Kiory";
 		model = "\x\addons\a3_epoch_assets_2\lockers.p3d";
@@ -2229,6 +2277,7 @@ class CfgVehicles
 	};
 	class Cooker_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		author = "Kiory";
 		model = "\x\addons\a3_epoch_assets_2\cooker.p3d";
@@ -2238,6 +2287,7 @@ class CfgVehicles
 	};
 	class Pelican_SIM_EPOCH: Constructions_modular_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\pelican.p3d";
 		displayName = "Pelican";
@@ -2279,7 +2329,7 @@ class CfgVehicles
 	class Debug_static_F : NonStrategic
 	{
 		mapSize = 2.27;
-		author = "Epoch";
+		author = "Sequisha";
 		_generalMacro = "Debug_static_F";
 		scope = 2;
 		displayName = "DEBUG BOX";
@@ -2293,7 +2343,7 @@ class CfgVehicles
 	class clone_female_static_F : NonStrategic
 	{
 		mapSize = 1.27;
-		author = "Epoch";
+		author = "Sequisha";
 		_generalMacro = "clone_female_static_F";
 		scope = 2;
 		displayName = "Female Clone Vat";
@@ -2316,7 +2366,7 @@ class CfgVehicles
 	class clone_male_static_F : NonStrategic
 	{
 		mapSize = 1.27;
-		author = "Epoch";
+		author = "Sequisha";
 		_generalMacro = "clone_female_static_F";
 		scope = 2;
 		displayName = "Male Clone Vat";
@@ -2340,7 +2390,7 @@ class CfgVehicles
 	class clone_empty_static_F : NonStrategic
 	{
 		mapSize = 1.27;
-		author = "Epoch";
+		author = "Sequisha";
 		_generalMacro = "clone_empty_static_F";
 		scope = 2;
 		displayName = "Empty Clone Vat";
@@ -2357,7 +2407,7 @@ class CfgVehicles
 	class Constructions_static_F: NonStrategic
 	{
 		mapSize = 1.27;
-		author = "Epoch";
+		author = "Sequisha";
 		_generalMacro = "Constructions_base_F";
 		scope = 0;
 		displayName = "";
@@ -2372,7 +2422,7 @@ class CfgVehicles
 	class Constructions_foundation_F: NonStrategic
 	{
 		mapSize = 1.27;
-		author = "Epoch";
+		author = "Sequisha";
 		_generalMacro = "Constructions_foundation_F";
 		scope = 0;
 		displayName = "";
@@ -2386,6 +2436,7 @@ class CfgVehicles
 	};
 	class Foundation_EPOCH: Constructions_foundation_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Concrete_Col.p3d";
 		displayName = "Concrete Foundation";
@@ -2394,6 +2445,7 @@ class CfgVehicles
 	};
 	class WoodFoundation_EPOCH : Constructions_foundation_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wood_Col.p3d";
 		displayName = "Wood Foundation";
@@ -2402,6 +2454,7 @@ class CfgVehicles
 	};
 	class Foundation_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Concrete_Col_Ghost.p3d";
 		displayName = "Concrete Foundation (Ghost)";
@@ -2410,6 +2463,7 @@ class CfgVehicles
 	};
 	class WoodFoundation_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Concrete_Col_Ghost.p3d";
 		displayName = "Wood Foundation (Ghost)";
@@ -2419,7 +2473,7 @@ class CfgVehicles
 	class SolarGen_EPOCH : Constructions_static_F
 	{
 		mapSize = 1.27;
-		author = "Epoch: SteamPunkGears";
+		author = "SteamPunkGears";
 		_generalMacro = "SolarGen_EPOCH";
 		icon = "iconObject_5x4";
 		armor = 5000;
@@ -2434,7 +2488,7 @@ class CfgVehicles
 	class PlotPole_EPOCH : NonStrategic
 	{
 		mapSize = 1.27;
-		author = "Epoch";
+		author = "Sequisha";
 		_generalMacro = "PlotPole_EPOCH";
 		icon = "iconObject_5x4";
 		armor = 15000;
@@ -2482,7 +2536,7 @@ class CfgVehicles
 	class Constructions_lockedstatic_F : WeaponHolder
 	{
 		mapSize = 1.27;
-		author = "Epoch";
+		author = "Sequisha";
 		_generalMacro = "Constructions_lockedstatic_F";
 		scope = 0;
 		displayName = "";
@@ -2501,6 +2555,7 @@ class CfgVehicles
 	};
 	class LockBox_EPOCH : Constructions_lockedstatic_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\lockbox.p3d";
 		displayName = "Lockbox";
@@ -2509,6 +2564,7 @@ class CfgVehicles
 	};
 	class Safe_EPOCH : Constructions_lockedstatic_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
 		displayName = "Lockbox";
@@ -2517,13 +2573,14 @@ class CfgVehicles
 	};
 	class TankTrap_EPOCH: Constructions_static_F
 	{
+		author = "Axle";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Defense\tank_trap.p3d";
 		displayName = "Tank Trap";
 	};
-	class TRAP_EPOCH : Constructions_static_F {};
 	class Spike_TRAP_EPOCH: Constructions_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
 		displayName = "Spike Trap (SIM)";
@@ -2531,6 +2588,7 @@ class CfgVehicles
 	};
 	class Metal_TRAP_EPOCH: Constructions_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
 		displayName = "Metal Trap (SIM)";
@@ -2538,6 +2596,7 @@ class CfgVehicles
 	};
 	class Hesco3_EPOCH: Const_All_Walls_F
 	{
+		author = "Axle";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Defense\hesco.p3d";
 		displayName = "Hesco Wide";
@@ -2555,6 +2614,7 @@ class CfgVehicles
 	};
 	class WoodRamp_EPOCH : Constructions_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wood_Ramp.p3d";
 		displayName = "Wood Ramp";
@@ -2569,6 +2629,7 @@ class CfgVehicles
 	};
 	class CinderWallHalf_EPOCH: Const_Cinder_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\cinder_half.p3d";
 		displayName = "Half Cinder Block Wall";
@@ -2578,6 +2639,7 @@ class CfgVehicles
 	};
 	class CinderWall_EPOCH: Const_Cinder_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\cinder.p3d";
 		displayName = "Cinder Block Wall";
@@ -2587,6 +2649,7 @@ class CfgVehicles
 	};
 	class CinderWallGarage_EPOCH : Const_Cinder_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\cGarage.p3d";
 		displayName = "Cinder Block Garage";
@@ -2659,6 +2722,7 @@ class CfgVehicles
 
 	class Jack_EPOCH : Constructions_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\jack.p3d";
 		displayName = "Jack";
@@ -2700,6 +2764,7 @@ class CfgVehicles
 	};
 	class WoodFloor_EPOCH: Const_floors_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Floor.p3d";
 		displayName = "Wood Floor";
@@ -2708,6 +2773,7 @@ class CfgVehicles
 	};
 	class MetalFloor_EPOCH : Const_floors_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\metal_floor.p3d";
 		displayName = "Metal Floor";
@@ -2726,6 +2792,7 @@ class CfgVehicles
 	// Wood wall seed item lvl 0
 	class WoodLargeWall_EPOCH: Const_WoodWalls_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall.p3d";
 		displayName = "Large Wall";
@@ -2740,6 +2807,7 @@ class CfgVehicles
 	};
 	class Tipi_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\tp_ghost.p3d";
 		displayName = "TiPi Ghost";
@@ -2747,6 +2815,7 @@ class CfgVehicles
 	};
 	class StorageShelf_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\shelf_ghost.p3d";
 		displayName = "Shelf Ghost";
@@ -2754,6 +2823,7 @@ class CfgVehicles
 	};
 	class WorkBench_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\workbench.p3d";
 		displayName = "WorkBench Ghost";
@@ -2764,6 +2834,7 @@ class CfgVehicles
 
 	class WoodLargeWall_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Ghost.p3d";
 		displayName = "Wood Wall Ghost";
@@ -2771,6 +2842,7 @@ class CfgVehicles
 	};
 	class WoodFloor_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Floor_Ghost.p3d";
 		displayName = "Wood Floor Ghost";
@@ -2778,6 +2850,7 @@ class CfgVehicles
 	};
 	class MetalFloor_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\metal_floor_ghost.p3d";
 		displayName = "Metal Floor Ghost";
@@ -2786,6 +2859,7 @@ class CfgVehicles
 
 	class WoodLadder_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Ladder\wood_ladder_ghost.p3d";
 		displayName = "Wood Ladder Ghost";
@@ -2794,6 +2868,7 @@ class CfgVehicles
 
 	class WoodStairs_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wood_stairs90_Ghost.p3d";
 		displayName = "Wood Stairs Ghost";
@@ -2802,6 +2877,7 @@ class CfgVehicles
 
 	class WoodTower_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Tower\Tower\Base_Tower_Frame_Ghost.p3d";
 		displayName = "Wood Tower Ghost";
@@ -2809,6 +2885,7 @@ class CfgVehicles
 	};
 	class WoodRamp_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wood_Ramp_Ghost.p3d";
 		displayName = "Wood Ramp Ghost";
@@ -2816,6 +2893,7 @@ class CfgVehicles
 	};
 	class Hesco3_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Axle";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Defense\hesco_ghost.p3d";
 		displayName = "Hesco Wide (Ghost)";
@@ -2823,6 +2901,7 @@ class CfgVehicles
 	};
 	class CinderWallHalf_Ghost_EPOCH : Const_Ghost_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\cinder_half_Ghost.p3d";
 		displayName = "Cinder Half Wall Ghost";
@@ -2831,6 +2910,7 @@ class CfgVehicles
 	// Wood only Lvl 1
 	class WoodWall1_EPOCH : Const_WoodWalls_static_F
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_wall\Wooden_Wall_ply.p3d";
 		displayName = "Large Plywood Wall";
@@ -2845,6 +2925,7 @@ class CfgVehicles
 	// Wood + Metal Lvl 2
 	class WoodLargeWallCor_EPOCH: Const_WoodWalls_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Cor.p3d";
 		displayName = "Large Corrugated Wall";
@@ -2857,6 +2938,7 @@ class CfgVehicles
 	// Wood only lvl 1
 	class WoodWall2_EPOCH : Const_WoodWalls_static_F
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_doorway\Wooden_Wall_Doorway.p3d";
 		displayName = "Plywood Wall Doorway";
@@ -2872,6 +2954,7 @@ class CfgVehicles
 	// Wood + metal lvl 2
 	class WoodLargeWallDoorway_EPOCH: Const_WoodWalls_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Doorway.p3d";
 		displayName = "Wall Doorway";
@@ -2883,6 +2966,7 @@ class CfgVehicles
 	// Wood only lvl 1
 	class WoodWall3_EPOCH : Const_WoodWalls_static_F
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_door\Wooden_Wall_Door.p3d";
 		displayName = "Plywood Wall Doorway w/ Door";
@@ -2926,6 +3010,7 @@ class CfgVehicles
 	// Wood + meta lvl 2
 	class WoodLargeWallDoor_EPOCH: Const_WoodWalls_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Door.p3d";
 		displayName = "Wall Doorway w/ Door";
@@ -2966,6 +3051,7 @@ class CfgVehicles
 	// Wood only lvl 1
 	class WoodWall4_EPOCH : Const_WoodWalls_static_F
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\Plywood_DoorW_L\Plywood_DoorL.p3d";
 		displayName = "Plywood Wall Doorway w/ Locking Door";
@@ -3034,6 +3120,7 @@ class CfgVehicles
 	// Wood + metal lvl 2
 	class WoodLargeWallDoorL_EPOCH : Const_WoodWalls_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_DoorL.p3d";
 		displayName = "Wall Doorway w/ Locking Door";
@@ -3098,6 +3185,7 @@ class CfgVehicles
 
 	class WoodStairs_EPOCH: Constructions_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wood_stairs.p3d";
 		displayName = "Wood Stairs";
@@ -3112,6 +3200,7 @@ class CfgVehicles
 	};
 	class WoodStairs2_EPOCH : Const_floors_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Wood_stairs_upgrade.p3d";
 		displayName = "Wood Stairs lvl 2";
@@ -3121,6 +3210,7 @@ class CfgVehicles
 	};
 	class WoodTower_EPOCH : Const_floors_static_F
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Tower\Tower\Base_Tower_Frame.p3d";
 		displayName = "Wood Tower";
@@ -3221,6 +3311,7 @@ class CfgVehicles
 	};
 	class WoodLadder_EPOCH: Constructions_static_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Ladder\wood_ladder.p3d";
 		displayName = "Wood Ladder";
@@ -3234,13 +3325,13 @@ class CfgVehicles
 		scope = 0;
 		forceSupply = 0;
 		isGround = 0;
-		author = "Epoch Mod";
 		destrType = "DestructBuilding";
 		armor = 8000;
 		maximumLoad = 1000;
 	};
 	class Tipi_EPOCH : Buildable_Storage
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\tp.p3d";
 		displayName = "Tipi";
@@ -3248,6 +3339,7 @@ class CfgVehicles
 	};
 	class StorageShelf_EPOCH : Buildable_Storage
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\shelf.p3d";
 		displayName = "Metal Shelf";
@@ -3255,6 +3347,7 @@ class CfgVehicles
 	};
 	class WorkBench_EPOCH : Buildable_Storage
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\workbench.p3d";
 		displayName = "WorkBench";
@@ -3264,8 +3357,8 @@ class CfgVehicles
 	};
 	class ShelfProxy_EPOCH : WeaponHolder
 	{
+		author = "Sequisha";
 		scope = 2;
-		author = "Epoch Mod";
 		model = "\x\addons\a3_epoch_assets\models\metalStorage_proxy.p3d";
 		displayName = "Shelf Proxy";
 		isGround = 0;
@@ -3273,7 +3366,7 @@ class CfgVehicles
 	class TarpProxy_EPOCH : WeaponHolder
 	{
 		scope = 2;
-		author = "Epoch Mod";
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets\models\tarp_proxy.p3d";
 		displayName = "Pallet Proxy";
 		isGround = 0;
@@ -3281,7 +3374,7 @@ class CfgVehicles
 	class MineralProxy_EPOCH : WeaponHolder
 	{
 		scope = 2;
-		author = "Epoch Mod";
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets\models\mineral_proxy.p3d";
 		displayName = "Mineral Proxy";
 		isGround = 0;
@@ -3289,7 +3382,7 @@ class CfgVehicles
 	class MineralDepositCopper_EPOCH : Animated_Loot
 	{
 		scope = 2;
-		author = "Epoch Mod";
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets\models\mineral.p3d";
 		displayName = "Mineral Deposit (Copper)";
 		hiddenSelections[] = { "Camo" };
@@ -3363,6 +3456,7 @@ class CfgVehicles
 	};
 	class Tarp_EPOCH : Animated_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\tarp.p3d";
 		displayName = "Tarp Covered Pallet";
@@ -3391,6 +3485,7 @@ class CfgVehicles
 	};
 	class Shelf_EPOCH : Animated_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\metalStorage.p3d";
 		displayName = "Metal Shelf";
@@ -3425,6 +3520,7 @@ class CfgVehicles
 
 	class Freezer_EPOCH : WH_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\freezer.p3d";
 		displayName = "Chest Freezer";
@@ -3465,6 +3561,7 @@ class CfgVehicles
 	};
 	class Cabinet_EPOCH : WH_Loot
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Furniture\medicine_cabinet\mc_door_anim.p3d";
 		displayName = "Medicine Cabinet";
@@ -3501,6 +3598,7 @@ class CfgVehicles
 	};
 	class Fridge_EPOCH : WH_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\fridge_door_anim.p3d";
 		displayName = "Fridge";
@@ -3565,6 +3663,7 @@ class CfgVehicles
 	};
 	class Pelican_EPOCH : WH_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\pelican.p3d";
 		displayName = "Pelican";
@@ -3606,6 +3705,7 @@ class CfgVehicles
 
 	class BedProxy_EPOCH: WeaponHolder
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\Bed_proxy.p3d";
 		displayName = "Mattress";
@@ -3613,6 +3713,7 @@ class CfgVehicles
 	};
 	class Bed_EPOCH : Animated_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\bed.p3d";
 		displayName = "Mattress";
@@ -3642,6 +3743,7 @@ class CfgVehicles
 
 	class Bunk_EPOCH : Animated_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\bunk.p3d";
 		displayName = "Bunk";
@@ -3675,6 +3777,7 @@ class CfgVehicles
 
 	class CouchProxy_EPOCH: WeaponHolder
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\couch_proxy.p3d";
 		displayName = "Couch";
@@ -3682,6 +3785,7 @@ class CfgVehicles
 	};
 	class Couch_EPOCH : Animated_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\couch.p3d";
 		displayName = "Couch";
@@ -3710,6 +3814,7 @@ class CfgVehicles
 	};
 	class Table_EPOCH : Animated_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\coffee_table.p3d";
 		displayName = "Coffee Table";
@@ -3738,6 +3843,7 @@ class CfgVehicles
 	};
 	class TableProxy_EPOCH : WeaponHolder
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\coffee_table_proxy.p3d";
 		displayName = "Coffee Table Proxy";
@@ -3745,6 +3851,7 @@ class CfgVehicles
 	};
 	class ChairProxy_EPOCH: WeaponHolder
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\chair_proxy.p3d";
 		displayName = "Chair";
@@ -3752,6 +3859,7 @@ class CfgVehicles
 	};
 	class Chair_EPOCH : Animated_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\chair_adult.p3d";
 		displayName = "Chair";
@@ -3784,6 +3892,7 @@ class CfgVehicles
 	};
 	class ToolRackProxy_EPOCH : WeaponHolder
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\toolRack_proxy.p3d";
 		displayName = "Tool Rack";
@@ -3791,6 +3900,7 @@ class CfgVehicles
 	};
 	class ToolRack_EPOCH : Animated_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\toolRack.p3d";
 		displayName = "Tool Rack";
@@ -3820,6 +3930,7 @@ class CfgVehicles
 
 	class ChairRed_EPOCH: Chair_EPOCH
 	{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Chair (Red)";
 		simulClass = "ChairRed_SIM_EPOCH";
@@ -3831,6 +3942,7 @@ class CfgVehicles
 
 	class ShoeboxProxy_EPOCH : WeaponHolder
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\shoebox_proxy.p3d";
 		displayName = "Shoebox proxy";
@@ -3838,6 +3950,7 @@ class CfgVehicles
 	};
 	class Shoebox_EPOCH : Animated_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\shoebox.p3d";
 		displayName = "Shoebox";
@@ -3867,6 +3980,7 @@ class CfgVehicles
 
 	class FilingProxy_EPOCH: WeaponHolder
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\filing_proxy.p3d";
 		displayName = "Filing Cabinet";
@@ -3874,6 +3988,7 @@ class CfgVehicles
 	};
 	class Filing_EPOCH : Animated_Loot
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\filing.p3d";
 		displayName = "Filing Cabinet";
@@ -3905,6 +4020,7 @@ class CfgVehicles
 	};
 	class CargoProxy_EPOCH: WeaponHolder
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\filing_proxy.p3d";
 		displayName = "Filing Cabinet";
@@ -3913,15 +4029,13 @@ class CfgVehicles
 
 	class Carnival_Tent : Static
 	{
+		author = "Sequisha";
 		mapSize = 6.19;
-		author = "Epoch";
 		_generalMacro = "Carnival_Tent";
 		scope = 2;
 		displayName = "Carnival Tent";
 		model = "\x\addons\a3_epoch_assets_3\carnival\models\carnyTent.p3d";
-
 		ladders[] = { { "start1", "end1" } };
-
 		icon = "iconObject_5x2";
 		vehicleclass = "Epoch_objects";
 		destrType = "DestructNo";
@@ -4027,13 +4141,11 @@ class CfgVehicles
 	};
 
 	class WeaponHolder_Single_F;
-	class Grown_Plants_F: WeaponHolder_Single_F
-	{
-		author = "Epoch";
-	};
+	class Grown_Plants_F: WeaponHolder_Single_F{};
 	// TODO make use of plants 0.2+
 	class Poppy_EPOCH: Grown_Plants_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\poppy.p3d";
 		displayName = "Poppy";
@@ -4051,6 +4163,7 @@ class CfgVehicles
 	};
 	class Goldenseal_EPOCH : Grown_Plants_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\vegetation\models\goldenseal.p3d";
 		displayName = "Goldenseal";
@@ -4068,6 +4181,7 @@ class CfgVehicles
 	};
 	class Pumpkin_EPOCH : Grown_Plants_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\vegetation\models\pumpkin.p3d";
 		displayName = "Pumpkin";
@@ -4165,7 +4279,7 @@ class CfgVehicles
 	class logo_plane_EPOCH: NonStrategic
 	{
 		mapSize = 1;
-		author = "Epoch";
+		author = "Awol";
 		_generalMacro = "logo_plane_EPOCH";
 		scope = 2;
 		displayName = "Epoch Logo";

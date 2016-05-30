@@ -9,7 +9,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F"};
 		epochVersion = "0.3.9.0";
-		
+
 	};
 };
 
@@ -390,7 +390,7 @@ class CfgVehicles
 	class mosquito_epoch: mosquito_epoch_base
 	{
 		displayName = "Mosquito";
-		author = "Epoch Mod";
+		author = "Sequisha";
 		scope = public;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 3;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= CIV_F;			/// defines the faction inside of the side

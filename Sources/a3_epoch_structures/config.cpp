@@ -21,17 +21,17 @@ class CfgAnimationSourceSounds
 class CfgVehicles
 {
 	// Parent class declarations
-	
+
 	class House;
-	
+
 	class House_F: House
 	{
 		class DestructionEffects;
 		class Lamps_base_F;
 	};
 	class Ruins_F;
-	
-	
+
+
 	//--------------------------------------------------- Light bulbs--------------------------------------------------
 	/*
 	class Lamps_base_F;
@@ -53,13 +53,13 @@ class CfgVehicles
 				color[]				= {1.0, 0.0, 0.0};		/// approximate colour of standard lights
 				ambient[]			= {0.01, 0.0, 0.0};		/// nearly a white one
 				intensity			= 200;					/// strength of the light
-				name				= "Light_4_pos";		/// name of 
-				
+				name				= "Light_4_pos";		/// name of
+
 				blinking			= true;					/// lets make it blinking to show how patterns work
 				blinkingPattern[]	= {0.75, 1.0};			// 0.25 s flash, 1.25 s period
 				blinkingStartsOn	= true;					/// pattern starts with length of the first flash
 				blinkingPatternGuarantee	= true;			/// use this to guarantee all blinks of the patter to be done
-															/// doesn't guarantee the length of pattern if true 
+															/// doesn't guarantee the length of pattern if true
 															/// (e.g. because of blinks shorter than a frame would take a frame to be seen)
 
 				useFlare			= true;					/// does the light use flare?
@@ -146,12 +146,13 @@ class CfgVehicles
 	};
 	*/
 	//---------------------------------------------------End Light bulbs--------------------------------------------------
-	
-	
+
+
 
 	// Class of the house in good state
 	class ferrisWheel_EPOCH: House
 	{
+		author = "Sequisha";
 		ladders[] = {{"start1","end1"},{"start2","end2"},{"start3","end3"},{"start4","end4"}};
 		scope = 2; // 2 = public = shown in editor
 		displayName = "Ferris Wheel"; // Name in editor
@@ -178,7 +179,7 @@ class CfgVehicles
 				explosionShielding = 50; // Multiplier for damage taken from explosives
 				minimalHit = 0.001; // Minimal damage that can be dealt to the hitpoint. Any lower damage is ignored
 
-				class DestructionEffects // 
+				class DestructionEffects //
 				{
 					class Dust
 					{
@@ -238,7 +239,7 @@ class CfgVehicles
 		/*
 		class Damage
 		{
-			// Texture pairs (below 0.5 health and 0.5+) for switching visuals (can also use generated) 
+			// Texture pairs (below 0.5 health and 0.5+) for switching visuals (can also use generated)
 			tex[] =
 			{
 				// Window textures
@@ -268,7 +269,7 @@ class CfgVehicles
 
 			// Unlike textures, materials are not in pairs but in triplets (health: 0 - 0.49, 0.5 - 0.99, 1)
 			mat[] =
-			{				
+			{
 				"A3\Structures_F\Data\Windows\window_set.rvmat",
 				"A3\Structures_F\Data\Windows\destruct_half_window_set.rvmat",
 				"A3\Structures_F\Data\Windows\destruct_full_window_set.rvmat"
@@ -284,7 +285,7 @@ class CfgVehicles
 				sourceAddress = loop;
 				angle1 = -360;//rad -315.0;
 				animPeriod = 25;
-				initPhase = 0.0;			
+				initPhase = 0.0;
 				sound = "ferris_motor";
             };
 		};
@@ -322,5 +323,5 @@ class CfgVehicles
 		numberOfDoors = 0;
 	};
 
-	
+
 };

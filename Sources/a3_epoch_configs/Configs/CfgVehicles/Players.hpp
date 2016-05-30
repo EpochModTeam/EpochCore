@@ -182,7 +182,7 @@ class Epoch_Female_base_F : B_Soldier_base_F
 class Underwear_F;
 class FemaleUnderwear_F: Underwear_F
 {
-	author = "Epoch";
+	author = "Sequisha";
 	_generalMacro = "FemaleUnderwear_F";
 	scope = 1;
 	scopeCurator = 0;

@@ -36,6 +36,7 @@ class CfgWeapons
 
 	class U_BasicBodyFemale : ItemCore
 	{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Keesha Underwear";
 		picture = "\x\addons\a3_epoch_assets\textures\keesha\icon_femaleW_ca.paa";
@@ -50,6 +51,7 @@ class CfgWeapons
 	};
 	class U_Test_uniform: Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = {901};
 		displayName = "Keesha";
@@ -65,6 +67,7 @@ class CfgWeapons
 	};
 	class U_Wetsuit_uniform : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Female Wetsuit";
@@ -81,6 +84,7 @@ class CfgWeapons
 	};
 	class U_Wetsuit_White : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Female Wetsuit (white)";
@@ -97,6 +101,7 @@ class CfgWeapons
 	};
 	class U_Wetsuit_Blue : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Female Wetsuit (blue)";
@@ -113,6 +118,7 @@ class CfgWeapons
 	};
 	class U_Wetsuit_Purp : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Female Wetsuit (purple)";
@@ -129,6 +135,7 @@ class CfgWeapons
 	};
 	class U_Wetsuit_Camo : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Female Wetsuit (camo)";
@@ -146,6 +153,7 @@ class CfgWeapons
 
 	class U_Camo_uniform : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Keesha Camo";
@@ -161,6 +169,7 @@ class CfgWeapons
 	};
 	class U_ghillie1_uniform : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Female Ghillie (tan)";
@@ -176,6 +185,7 @@ class CfgWeapons
 	};
 	class U_ghillie2_uniform : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Female Ghillie (light green)";
@@ -192,6 +202,7 @@ class CfgWeapons
 
 	class U_ghillie3_uniform : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Female Ghillie (green)";
@@ -207,6 +218,7 @@ class CfgWeapons
 	};
 	class U_CamoBlue_uniform : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Keesha Camo (Blue)";
@@ -222,6 +234,7 @@ class CfgWeapons
 	};
 	class U_CamoBrn_uniform : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Keesha Camo (Brown)";
@@ -237,6 +250,7 @@ class CfgWeapons
 	};
 	class U_CamoRed_uniform : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Keesha Camo (Red)";
@@ -253,6 +267,7 @@ class CfgWeapons
 
 	class U_Test1_uniform: Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = {901};
 		displayName = "Dan";
@@ -268,6 +283,7 @@ class CfgWeapons
 	};
 	class U_Sapper_uniform : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Sapper";
@@ -283,6 +299,7 @@ class CfgWeapons
 	};
 	class U_Char_uniform : Itemcore
 	{
+		author = "Sequisha";
 		scope = 2;
 		allowedSlots[] = { 901 };
 		displayName = "Unknown";
@@ -2339,6 +2356,7 @@ class CfgWeapons
 	};
 	class Rollins_F: Epoch_weapon_01_Base_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Rollins Rifle";
 		descriptionShort = "1940 .45 Rollins Rifle";
@@ -2397,6 +2415,7 @@ class CfgWeapons
 	};
 	class ChainSaw: Epoch_weapon_01_Base_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_1\models\chainsaw.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_chainsaw_CA.paa";
@@ -2485,6 +2504,7 @@ class CfgWeapons
 
 	class Hatchet: Pistol_Base_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgWeapons\hatchet.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\hatchet\equip_hatchet_ca.paa";
@@ -2538,6 +2558,7 @@ class CfgWeapons
 	};
 	class CrudeHatchet : Pistol_Base_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgWeapons\crude_hatchet.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\improv_weapon\gear_crudeHatchet_ca.paa";
@@ -2593,6 +2614,7 @@ class CfgWeapons
 
 	class MultiGun: Pistol_Base_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairGun.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_multigun_x_ca.paa";
@@ -2693,6 +2715,7 @@ class CfgWeapons
 	};
 	class MeleeSledge: MeleeWeapon
 	{
+		author = "Sequisha";
 		scope = 2;
 		type = 4;
 		primary = 0;
@@ -2709,6 +2732,7 @@ class CfgWeapons
 	};
 	class MeleeSword : MeleeWeapon
 	{
+		author = "Axle";
 		scope = 2;
 		type = 4;
 		primary = 0;
@@ -2726,6 +2750,7 @@ class CfgWeapons
 
 	class MeleeMaul : MeleeWeapon
 	{
+		author = "Sequisha";
 		scope = 2;
 		type = 4;
 		primary = 0;
@@ -2742,6 +2767,7 @@ class CfgWeapons
 
 	class WoodClub : MeleeWeapon
 	{
+		author = "Sequisha";
 		scope = 2;
 		type = 4;
 		primary = 0;
@@ -2757,6 +2783,7 @@ class CfgWeapons
 	};
 	class MeleeRod : MeleeWeapon
 	{
+		author = "Axle";
 		scope = 2;
 		type = 4;
 		primary = 0;
@@ -2772,6 +2799,7 @@ class CfgWeapons
 	};
 	class Plunger : MeleeWeapon
 	{
+		author = "Sequisha";
 		scope = 2;
 		type = 4;
 		primary = 0;
@@ -2900,18 +2928,21 @@ class CfgWeapons
 	};
 	class Defib_EPOCH: test_suppressor
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairDefib.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_defib_ca.paa";
 		displayName = "Revive Player";
 	};
 	class Heal_EPOCH: test_suppressor
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairHeal.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_heal_ca.paa";
 		displayName = "Heal Player";
 	};
 	class Repair_EPOCH: test_suppressor
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairVehicle.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_repair_ca.paa";
 		displayName = "Vehicle Repair";
@@ -4041,6 +4072,5 @@ class CfgWeapons
 		};
 		inertia = 0.1;
 	};
-
 	// Kiory
 };

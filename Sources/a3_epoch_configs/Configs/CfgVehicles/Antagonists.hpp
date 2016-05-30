@@ -785,7 +785,7 @@ class Epoch_SapperB_F : Epoch_Sapper_base_F
 class EPOCH_RyanZombie_1: C_man_1
 {
 	moves = "CfgRyanZombiesMovesMaleSdrSlow";
-	identityTypes[] = {};
+	identityTypes[] = {"NoGlasses"};
 	scope = 2;
 	displayName = "Zombie 1";
 	armor = 8;
