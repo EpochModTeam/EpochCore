@@ -63,7 +63,7 @@ class MissionSelect
 		class RscText_1002: RscText
 		{
 			idc = 1001;
-
+			style = 528;
 			text = "Description";
 			x = "0.316719 * safezoneW + safezoneX";
 			y = "0.636 * safezoneH + safezoneY";
