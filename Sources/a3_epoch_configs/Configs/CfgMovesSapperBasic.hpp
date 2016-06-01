@@ -62,6 +62,7 @@ class CfgMovesSapperBasic
 	collisionGeomCompPattern[]={1,3};
 	class Default
 	{
+		useIdles = 0;
 		GetOutPara="";
 		weaponLowered=0;
 		weaponObstructed=0;
