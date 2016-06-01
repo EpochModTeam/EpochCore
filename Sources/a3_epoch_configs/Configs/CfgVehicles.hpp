@@ -4221,6 +4221,7 @@ class CfgVehicles
 	};
 	class Transport_EPOCH: NonStrategic
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets\models\tele.p3d";
 		mapSize = 2;
 		accuracy = 1000;
@@ -4295,6 +4296,7 @@ class CfgVehicles
 	/*
 	class Bear_Base_F: Animal_Base_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Bear";
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\bear.p3d";
@@ -4326,6 +4328,7 @@ class CfgVehicles
 	*/
 	class Construct_F : Animal_Base_F
 	{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Constuct";
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\construct.p3d";
@@ -4382,6 +4385,7 @@ class CfgVehicles
 	};
 	class GreatWhite_F : Shark_Base_F
 	{
+		author = "Sequisha";
 		scope = 1;
 		displayName = "Great White";
 		model = "\x\addons\a3_epoch_assets\models\shark_epoch.p3d";

@@ -36,6 +36,7 @@ class CfgMagazines
 	// from assets 2 start
 	class honey_epoch: CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -47,6 +48,7 @@ class CfgMagazines
 	};
 	class water_epoch: CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -58,6 +60,7 @@ class CfgMagazines
 	};
 	class clean_water_epoch : CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -69,6 +72,7 @@ class CfgMagazines
 	};
 	class emptyjar_epoch: CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -80,6 +84,7 @@ class CfgMagazines
 	};
 	class sardines_epoch: CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -91,6 +96,7 @@ class CfgMagazines
 	};
 	class meatballs_epoch: CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -102,6 +108,7 @@ class CfgMagazines
 	};
 	class scam_epoch: CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -113,6 +120,7 @@ class CfgMagazines
 	};
 	class sweetcorn_epoch: CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -124,6 +132,7 @@ class CfgMagazines
 	};
 	class jerrycan_epoch: CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -135,6 +144,7 @@ class CfgMagazines
 	};
 	class jerrycanE_epoch : CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -146,6 +156,7 @@ class CfgMagazines
 	};
 	class lighter_epoch: CA_Magazine
 	{
+		author = "Kiory";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -169,6 +180,7 @@ class CfgMagazines
 	};
 	class ItemLockbox: CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -180,6 +192,7 @@ class CfgMagazines
 	};
 	class ItemSafe : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -191,6 +204,7 @@ class CfgMagazines
 	};
 	class PartPlankPack: CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -202,6 +216,7 @@ class CfgMagazines
 	};
 	class CinderBlocks: CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -213,6 +228,7 @@ class CfgMagazines
 	};
 	class MortarBucket: CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -223,6 +239,7 @@ class CfgMagazines
 		mass = 15;
 	};
 	class ItemKiloHemp : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		displayName = "Kilo of Hemp";
@@ -233,6 +250,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemSodaRbull : 1Rnd_Soda{
+		author = "Sequisha";
 		displayName = "Red Gull";
 		descriptionShort = "Red Gull Soda";
 		model = "\x\addons\a3_epoch_assets_1\models\soda_redbull.p3d";
@@ -240,6 +258,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemSodaOrangeSherbet : 1Rnd_Soda{
+		author = "Sequisha";
 		displayName = "Orange Sherbet";
 		descriptionShort = "Orange Sherbet Soda";
 		model = "\x\addons\a3_epoch_assets_1\models\soda_sherbet.p3d";
@@ -247,6 +266,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemSodaPurple : 1Rnd_Soda{
+		author = "Sequisha";
 		displayName = "Purple Nurple";
 		descriptionShort = "Purple Nurple Soda";
 		model = "\x\addons\a3_epoch_assets_1\models\soda_purple.p3d";
@@ -254,6 +274,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemSodaMocha : 1Rnd_Soda{
+		author = "Sequisha";
 		displayName = "Mocha Cola";
 		descriptionShort = "Mocha Cola Soda";
 		model = "\x\addons\a3_epoch_assets_1\models\soda_mocha.p3d";
@@ -261,6 +282,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemSodaBurst : 1Rnd_Soda{
+		author = "Sequisha";
 		displayName = "Burst Koke";
 		descriptionShort = "Burst Koke Soda";
 		model = "\x\addons\a3_epoch_assets_1\models\soda_burst.p3d";
@@ -268,6 +290,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemTrout : 1Rnd_Food{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Rainbow Trout";
 		descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
@@ -276,6 +299,7 @@ class CfgMagazines
 		mass = 5;
 	};
 	class ItemSeaBass : 1Rnd_Food{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Sea Bass";
 		descriptionShort = "Sea Bass: A medium sized fish that is fairly rare.";
@@ -284,6 +308,7 @@ class CfgMagazines
 		mass = 10;
 	};
 	class ItemTuna : 1Rnd_Food{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Blue Fin Tuna";
 		descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
@@ -292,6 +317,7 @@ class CfgMagazines
 		mass = 50;
 	};
 	class ItemTroutCooked : 1Rnd_Food{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Rainbow Trout (Cooked)";
 		descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
@@ -300,6 +326,7 @@ class CfgMagazines
 		mass = 5;
 	};
 	class ItemSeaBassCooked : 1Rnd_Food{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Sea Bass (Cooked)";
 		descriptionShort = "Sea Bass: A medium sized fish that is fairly rare.";
@@ -308,6 +335,7 @@ class CfgMagazines
 		mass = 10;
 	};
 	class ItemTunaCooked : 1Rnd_Food{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Blue Fin Tuna (Cooked)";
 		descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
@@ -316,6 +344,7 @@ class CfgMagazines
 		mass = 50;
 	};
 	class FoodBioMeat : 1Rnd_Food{
+		author = "vbgreen,Sequisha";
 		scope = 2;
 		displayName = "Bio Meat";
 		model = "\x\addons\a3_epoch_assets_1\models\biomeat_can.p3d";
@@ -323,6 +352,7 @@ class CfgMagazines
 		descriptionShort = "Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.";
 	};
 	class FoodMeeps : 1Rnd_Food{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Meeps Candy";
 		model = "\x\addons\a3_epoch_assets\models\meeps.p3d";
@@ -330,6 +360,7 @@ class CfgMagazines
 		descriptionShort = "Pumpkin marshmallow candy";
 	};
 	class FoodSnooter : 1Rnd_Food{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Snooters Candy";
 		model = "\x\addons\a3_epoch_assets\models\snooter.p3d";
@@ -337,6 +368,7 @@ class CfgMagazines
 		descriptionShort = "Not hungry? grab a Snooters";
 	};
 	class FoodWalkNSons : 1Rnd_Soda{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Walk N' Sons Soda";
 		model = "\x\addons\a3_epoch_assets\models\walkinson.p3d";
@@ -344,6 +376,7 @@ class CfgMagazines
 		descriptionShort = "Stuck walkin' grab a Walk N' Sons Soda";
 	};
 	class ItemTopaz : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Topaz";
 		model = "\x\addons\a3_epoch_assets_1\models\topaz.p3d";
@@ -354,6 +387,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemOnyx : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Onyx";
 		model = "\x\addons\a3_epoch_assets_1\models\obsidian.p3d";
@@ -364,6 +398,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemSapphire : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Sapphire";
 		model = "\x\addons\a3_epoch_assets_1\models\sapphire.p3d";
@@ -374,6 +409,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemAmethyst : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Amethyst";
 		model = "\x\addons\a3_epoch_assets_1\models\amethyst.p3d";
@@ -384,6 +420,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemEmerald : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Emerald";
 		model = "\x\addons\a3_epoch_assets_1\models\emerald.p3d";
@@ -394,6 +431,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemCitrine : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Citrine";
 		model = "\x\addons\a3_epoch_assets_1\models\citrine.p3d";
@@ -404,6 +442,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemRuby : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Ruby";
 		model = "\x\addons\a3_epoch_assets_1\models\ruby.p3d";
@@ -414,6 +453,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemQuartz : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Quartz";
 		model = "\x\addons\a3_epoch_assets\models\quartz.p3d";
@@ -424,6 +464,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemJade : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Jade";
 		model = "\x\addons\a3_epoch_assets\models\jade.p3d";
@@ -434,6 +475,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemGarnet : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Garnet";
 		model = "\x\addons\a3_epoch_assets\models\garnet.p3d";
@@ -445,6 +487,7 @@ class CfgMagazines
 	};
 	class JackKit : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets\models\jack.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_jack_ca.paa";
 		displayName = "Jack";
@@ -466,6 +509,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemCoolerE : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Food Cooler (empty)";
 		model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
@@ -476,6 +520,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemCooler0 : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Food Cooler";
 		model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
@@ -486,6 +531,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemCooler1 : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Food Cooler";
 		model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
@@ -496,6 +542,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemCooler2 : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Food Cooler";
 		model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
@@ -506,6 +553,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemCooler3 : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Food Cooler";
 		model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
@@ -516,6 +564,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemCooler4 : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Food Cooler";
 		model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
@@ -526,6 +575,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemMixOil : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		displayName = "2-Stroke Engine Oil";
 		model = "\x\addons\a3_epoch_assets_1\models\oilmix.p3d";
@@ -537,6 +587,7 @@ class CfgMagazines
 	};
 	// Documents
 	class ItemDocument: CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -548,6 +599,7 @@ class CfgMagazines
 	};
 	class ItemDocumentMission: CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -558,6 +610,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemSilverBar: CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		worth = 1;
@@ -569,6 +622,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemGoldBar: CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		worth = 100;
@@ -580,6 +634,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemGoldBar10oz: CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		worth = 1000;
@@ -591,6 +646,7 @@ class CfgMagazines
 		mass = 10;
 	};
 	class ItemRock : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -601,6 +657,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemStick : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -611,6 +668,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class ItemRope : CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -621,6 +679,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class PartOre: CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -631,6 +690,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class PartOreSilver: CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -641,6 +701,7 @@ class CfgMagazines
 		mass = 1;
 	};
 	class PartOreGold: CA_Magazine {
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -653,6 +714,7 @@ class CfgMagazines
 	// TODO make use of this for backpacks
 	class ItemPacked : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -664,6 +726,7 @@ class CfgMagazines
 	};
 	class ItemSolar : CA_Magazine
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -675,6 +738,7 @@ class CfgMagazines
 	};
 	class ItemCables : CA_Magazine
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -686,6 +750,7 @@ class CfgMagazines
 	};
 	class ItemBattery : CA_Magazine
 	{
+		author = "SteamPunkGears";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -697,6 +762,7 @@ class CfgMagazines
 	};
 	class ItemScraps : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -708,6 +774,7 @@ class CfgMagazines
 	};
 	class ItemCorrugated : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -719,6 +786,7 @@ class CfgMagazines
 	};
 	class ItemCorrugatedLg : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		count = 1;
 		type = 256;
@@ -742,6 +810,7 @@ class CfgMagazines
 	};
 	class 5Rnd_rollins_mag : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Rollins magazine";
 		picture = "\x\addons\a3_epoch_assets\textures\rol_rounds\equip_Rol_rounds_ca.paa";
@@ -756,6 +825,7 @@ class CfgMagazines
 	};
 	class CSGAS: CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Chainsaw Gas";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\gear_jerryMixed_ca.paa";
@@ -769,6 +839,7 @@ class CfgMagazines
 	};
 	class sledge_swing: CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Swing";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_swing_ca.paa";
@@ -782,6 +853,7 @@ class CfgMagazines
 	};
 	class stick_swing : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Swing";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_swing_ca.paa";
@@ -795,6 +867,7 @@ class CfgMagazines
 	};
 	class hatchet_swing : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		displayName = "Swing";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_swing_ca.paa";
@@ -816,6 +889,7 @@ class CfgMagazines
 	};
 	class EnergyPack: CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\A3\Weapons_F\Data\UI\M_battery_CA.paa";
 		displayName = "Small energy pack";
 		scope = 2;
@@ -829,6 +903,7 @@ class CfgMagazines
 	};
 	class EnergyPackLg : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\A3\Weapons_F\Data\UI\M_battery_CA.paa";
 		displayName = "Large energy pack";
 		scope = 2;
@@ -842,6 +917,7 @@ class CfgMagazines
 	};
 	class WoodLog_EPOCH: CA_Magazine
 	{
+		author = "SteamPunkGears";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodenLog_ca.paa";
 		model = "x\addons\a3_epoch_assets_3\cfgmagazines\log\SteamLogs.p3d";
 		displayName = "$STR_A3_wooden_log";
@@ -852,6 +928,7 @@ class CfgMagazines
 	};
 	class WhiskeyNoodle : CA_Magazine
 	{
+		author = "Sequisha";
 		displayName = "Whisky Noodle";
 		picture = "\x\addons\a3_epoch_assets\textures\whiskeynoodle\equip_whiskeyNoodle_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\whiskeynoodle.p3d";
@@ -862,6 +939,7 @@ class CfgMagazines
 	};
 	class CircuitParts : CA_Magazine
 	{
+		author = "Sequisha";
 		displayName = "Electronic components";
 		picture = "\x\addons\a3_epoch_assets\textures\circuit\equip_circuit_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\circuit.p3d";
@@ -872,6 +950,7 @@ class CfgMagazines
 	};
 	class VehicleRepair : CA_Magazine
 	{
+		author = "Sequisha";
 		displayName = "Vehicle Repair Parts";
 		picture = "\x\addons\a3_epoch_assets\textures\vehiclerepair\equip_vehicleRepair_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\vehicleRepair.p3d";
@@ -882,6 +961,7 @@ class CfgMagazines
 	};
 	class VehicleRepairLg : CA_Magazine
 	{
+		author = "Sequisha";
 		displayName = "Vehicle Repair Kit";
 		picture = "\x\addons\a3_epoch_assets\textures\vehiclerepair\equip_vehicleRepairLg_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\vehicleRepairLg.p3d";
@@ -892,6 +972,7 @@ class CfgMagazines
 	};
 	class Pelt_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_scrapHide_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\scrapHide.p3d";
 		displayName = "Scrap Pelt";
@@ -902,6 +983,7 @@ class CfgMagazines
 	};
 	class Venom_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_venomSac_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\venomSac.p3d";
 		displayName = "Venom Sack";
@@ -912,6 +994,7 @@ class CfgMagazines
 	};
 	class SnakeCarcass_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_snakeCorpse_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\snakeCorpse.p3d";
 		displayName = "Snake Carcass";
@@ -920,20 +1003,9 @@ class CfgMagazines
 		count = 1;
 		mass = 5;
 	};
-	/*
-	class SnakeMeatRaw_EPOCH : CA_Magazine
-	{
-		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_snakeMeat_ca.paa";
-		model = "\x\addons\a3_epoch_assets\models\snakeMeat.p3d";
-		displayName = "Raw Snake Meat";
-		scope = 2;
-		descriptionShort = "Gutted and cleaned";
-		count = 1;
-		mass = 5;
-	};
-	*/
 	class SnakeMeat_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_snakemeatCooked_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\snakeMeat_cooked.p3d";
 		displayName = "Cooked Snake Meat";
@@ -944,6 +1016,7 @@ class CfgMagazines
 	};
 	class RabbitCarcass_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_rabbitCorpse_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\rabbit.p3d";
 		displayName = "Rabbit Carcass";
@@ -954,6 +1027,7 @@ class CfgMagazines
 	};
 	class CookedRabbit_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_rabbitCooked_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\rabbit_cooked.p3d";
 		displayName = "Cooked Rabbit";
@@ -964,6 +1038,7 @@ class CfgMagazines
 	};
 	class ChickenCarcass_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_chickenRaw_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\chickenRaw.p3d";
 		displayName = "Chicken Carcass";
@@ -974,6 +1049,7 @@ class CfgMagazines
 	};
 	class CookedChicken_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_chickenCooked_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\chicken_cooked.p3d";
 		displayName = "Cooked Chicken";
@@ -984,6 +1060,7 @@ class CfgMagazines
 	};
 	class GoatCarcass_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatLeg_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\goatLeg.p3d";
 		displayName = "Raw Goat Leg";
@@ -994,6 +1071,7 @@ class CfgMagazines
 	};
 	class CookedGoat_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatlegCooked_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\goatLeg_cooked.p3d";
 		displayName = "Cooked Goat Leg";
@@ -1004,6 +1082,7 @@ class CfgMagazines
 	};
 	class SheepCarcass_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatLeg_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\goatLeg.p3d";
 		displayName = "Raw Sheep Leg";
@@ -1014,6 +1093,7 @@ class CfgMagazines
 	};
 	class CookedSheep_EPOCH : CA_Magazine
 	{
+		author = "Sequisha";
 		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatlegCooked_ca.paa";
 		model = "\x\addons\a3_epoch_assets\models\goatLeg_cooked.p3d";
 		displayName = "Cooked Sheep Leg";
@@ -1024,6 +1104,7 @@ class CfgMagazines
 	};
 	class KitSpikeTrap: CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
 		displayName = "Wooden Spike Trap";
@@ -1034,6 +1115,7 @@ class CfgMagazines
 	};
 	class KitMetalTrap: CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
 		displayName = "Metal Spike Trap";
@@ -1044,6 +1126,7 @@ class CfgMagazines
 	};
 	class KitStudWall: CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodenWall_ca.paa";
 		displayName = "Wooden Stud Wall";
@@ -1054,6 +1137,7 @@ class CfgMagazines
 	};
 	class KitWoodFloor : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodenFloor_ca.paa";
 		displayName = "Wooden Floor";
@@ -1064,6 +1148,7 @@ class CfgMagazines
 	};
 	class KitWoodStairs : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodenStairs_ca.paa";
 		displayName = "Wooden Stairs";
@@ -1074,6 +1159,7 @@ class CfgMagazines
 	};
 	class KitWoodTower : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		// TODO icon
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
@@ -1085,6 +1171,7 @@ class CfgMagazines
 	};
 	class KitWoodRamp : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodramp_ca.paa";
 		displayName = "Wooden Ramp";
@@ -1095,6 +1182,7 @@ class CfgMagazines
 	};
 	class KitTankTrap : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
 		displayName = "Tank Trap";
@@ -1105,6 +1193,7 @@ class CfgMagazines
 	};
 	class KitHesco3 : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
 		displayName = "Hesco Wide";
@@ -1115,6 +1204,7 @@ class CfgMagazines
 	};
 	class KitWoodLadder : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		// TODO: ladder icon
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
@@ -1126,6 +1216,7 @@ class CfgMagazines
 	};
 	class KitFirePlace : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
 		displayName = "Fireplace";
@@ -1136,6 +1227,7 @@ class CfgMagazines
 	};
 	class KitTiPi : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_TP_ca.paa";
 		displayName = "TiPi Kit";
@@ -1158,6 +1250,7 @@ class CfgMagazines
 	*/
 	class KitShelf : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_shelf_ca.paa";
 		displayName = "Shelf Kit";
@@ -1168,6 +1261,7 @@ class CfgMagazines
 	};
 	class KitWorkbench : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
 		displayName = "Workbench Kit";
@@ -1178,6 +1272,7 @@ class CfgMagazines
 	};
 	class KitFoundation : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_foundation_ca.paa";
 		displayName = "Concrete Foundation";
@@ -1188,6 +1283,7 @@ class CfgMagazines
 	};
 	class KitWoodFoundation : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_foundation_ca.paa";
 		displayName = "Wood Foundation";
@@ -1198,6 +1294,7 @@ class CfgMagazines
 	};
 	class KitSolarGen : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		// TODO: solar gen icon
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
@@ -1209,6 +1306,7 @@ class CfgMagazines
 	};
 	class KitPlotPole : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\jammer\equip_jammer_ca.paa";
 		displayName = "Frequency Jammer";
@@ -1219,6 +1317,7 @@ class CfgMagazines
 	};
 	class KitCinderWall : CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\kits\equip_cinderHalf_ca.paa";
 		displayName = "Cinder Wall";
@@ -1229,6 +1328,7 @@ class CfgMagazines
 	};
 	class PaintCanBase: CA_Magazine
 	{
+		author = "Sequisha";
 		model = "\x\addons\a3_epoch_assets\models\paintCan.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\paint can\gear_paintCan_ca.paa";
 		displayName = "Paint Can";
@@ -1310,6 +1410,7 @@ class CfgMagazines
 	};
 	class Poppy : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\poppy.p3d";
 		//TODO icon for poppy
@@ -1321,6 +1422,7 @@ class CfgMagazines
 	};
 	class Goldenseal : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\vegetation\models\goldenseal.p3d";
 		picture = "\x\addons\a3_epoch_assets_3\vegetation\gear_goldenseal_ca.paa";
@@ -1331,6 +1433,7 @@ class CfgMagazines
 	};
 	class Pumpkin : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets_3\vegetation\models\pumpkin.p3d";
 		picture = "\x\addons\a3_epoch_assets_3\vegetation\gear_pumpkin_ca.paa";
@@ -1341,6 +1444,7 @@ class CfgMagazines
 	};
 	class Towelette: CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\moist.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\moist\gear_moist_ca.paa";
@@ -1351,6 +1455,7 @@ class CfgMagazines
 	};
 	class HeatPack: CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\heatdough.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\moist\gear_heat_ca.paa";
@@ -1361,6 +1466,7 @@ class CfgMagazines
 	};
 	class ColdPack : CA_Magazine
 	{
+		author = "Sequisha";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\heatdough.p3d";
 		picture = "\x\addons\a3_epoch_assets\textures\moist\gear_heat_ca.paa";

@@ -186,7 +186,7 @@ class Epoch_Char_base_F : Civilian
 };
 class Epoch_Sapper_base_F: Civilian2
 {
-	moves = "CfgMovesMaleSdr2";
+	moves = "CfgMovesSapperSdr";
 	gestures = "CfgGesturesSapper";
 	faceType = "Default";
 	side = 5;
@@ -637,7 +637,7 @@ class Epoch_Sapper_F: Epoch_Sapper_base_F
 class Epoch_SapperG_F : Epoch_Sapper_F {
 	scope = 2;
 	displayName = "Sapper (Toxic)";
-	moves = "CfgMovesMaleSdr2";
+	moves = "CfgMovesSapperSdr";
 	hiddenSelections[] = {"camo","remains"};
 	hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets\textures\sapper\sapper_green_eco.paa",""};
 };

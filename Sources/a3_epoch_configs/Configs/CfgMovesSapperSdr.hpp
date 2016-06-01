@@ -10,9 +10,9 @@
     Arma Public License Share Alike (APL-SA) - https://www.bistudio.com/community/licenses/arma-public-license-share-alike
 
     Github:
-    https://github.com/EpochModTeam/Epoch/tree/master/Sources/epoch_config/Configs/CfgMovesMaleSdr2.hpp
+    https://github.com/EpochModTeam/Epoch/tree/master/Sources/epoch_config/Configs/CfgMovesSapperSdr.hpp
 */
-class CfgMovesMaleSdr2: CfgMovesBasic
+class CfgMovesSapperSdr: CfgMovesSapperBasic
 {
 	skeletonName = "SapperSkeleton";
 	gestures = "CfgGesturesSapper";

@@ -1,4 +1,5 @@
 class ItemEmptyTin : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_2\gear\gear_emptytincan_x_ca.paa";
     displayName = "$STR_EPOCH_ItemEmptyTin_displayName"; // Empty Tin Can
     scope = 2;
@@ -17,6 +18,7 @@ class ItemSodaEmpty : CA_Magazine {
     mass = 2;
 };
 class ItemSodaAlpineDude : CA_Magazine {
+    author = "vbgreen|Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\soda_alpinedude_ca.paa";
     displayName = "$STR_EPOCH_ItemSodaAlpineDude_displayName"; // Alpine Dude Soda
     scope = 2;
@@ -26,6 +28,7 @@ class ItemSodaAlpineDude : CA_Magazine {
     mass = 2;
 };
 class ItemHotwire : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_hotwire_ca.paa";
     displayName = "$STR_EPOCH_ItemHotwire_displayName"; // Hotwire Kit
     scope = 2;
@@ -35,6 +38,7 @@ class ItemHotwire : CA_Magazine {
     mass = 2;
 };
 class ItemKeyKit : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_keykit_ca.paa";
     displayName = "$STR_EPOCH_ItemKeyKit_displayName"; // Key Makers Kit
     scope = 2;
@@ -44,6 +48,7 @@ class ItemKeyKit : CA_Magazine {
     mass = 2;
 };
 class ItemBarrelF : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_oil_drum_model_ca.paa";
     displayName = "$STR_EPOCH_ItemBarrelF_displayName"; // Fuel Barrel (Full)
     scope = 2;
@@ -53,6 +58,7 @@ class ItemBarrelF : CA_Magazine {
     mass = 250;
 };
 class ItemBarrelE : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_oildrum_e_CA.paa";
     displayName = "$STR_EPOCH_ItemBarrelE_displayName"; // Fuel Barrel (Empty)
     scope = 2;
@@ -62,6 +68,7 @@ class ItemBarrelE : CA_Magazine {
     mass = 25;
 };
 class ItemPipe : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_pipe_CA.paa";
     displayName = "$STR_EPOCH_ItemPipe_displayName"; // Pipes
     scope = 2;
@@ -71,6 +78,7 @@ class ItemPipe : CA_Magazine {
     mass = 15;
 };
 class ItemKey : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_key_CA.paa";
     displayName = "$STR_EPOCH_ItemKey_displayName"; // Key
     scope = 2;
@@ -100,6 +108,7 @@ class ItemKeyYellow : ItemKey {
     model = "\x\addons\a3_epoch_assets_1\models\key_yellow.p3d";
 };
 class ItemDoc1 : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_child1_ca.paa";
     displayName = "$STR_EPOCH_ItemDoc1_displayName"; // Book
     scope = 2;
@@ -175,6 +184,7 @@ class ItemVehDoc4 : ItemDoc1 {
     model = "\x\addons\a3_epoch_assets_1\models\doc_Up4.p3d";
 };
 class ItemBulb : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_bulb_CA.paa";
     displayName = "$STR_EPOCH_ItemBulb_displayName"; // Light Bulb
     scope = 2;
@@ -184,6 +194,7 @@ class ItemBulb : CA_Magazine {
     mass = 1;
 };
 class ItemBurlap : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_burlap_ca.paa";
     displayName = "$STR_EPOCH_ItemBurlap_displayName"; // Burlap
     scope = 2;
@@ -193,6 +204,7 @@ class ItemBurlap : CA_Magazine {
     mass = 1;
 };
 class ItemBriefcaseE : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_briefcase_E_CA.paa";
     displayName = "$STR_EPOCH_ItemBriefcaseE_displayName"; // Empty Briefcase
     scope = 2;
@@ -202,6 +214,7 @@ class ItemBriefcaseE : CA_Magazine {
     mass = 1;
 };
 class ItemBriefcaseGold100oz : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_briefcase_100oz_CA.paa";
     displayName = "$STR_EPOCH_ItemBriefcaseGold100oz_displayName"; // Full Briefcase (Gold)
     scope = 2;
@@ -211,6 +224,7 @@ class ItemBriefcaseGold100oz : CA_Magazine {
     mass = 100;
 };
 class ItemAluminumBar : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_alum_bar_CA.paa";
     displayName = "$STR_EPOCH_ItemAluminumBar_displayName"; // Aluminum Bar (1oz)
     scope = 2;
@@ -220,6 +234,7 @@ class ItemAluminumBar : CA_Magazine {
     mass = 1;
 };
 class ItemCopperBar : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_copper_bar_CA.paa";
     displayName = "$STR_EPOCH_ItemCopperBar_displayName"; // Copper Bar (1oz)
     scope = 2;
@@ -229,6 +244,7 @@ class ItemCopperBar : CA_Magazine {
     mass = 1;
 };
 class ItemTinBar : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_tin_bar_CA.paa";
     displayName = "$STR_EPOCH_ItemTinBar_displayName"; // Tin Bar (1oz)
     scope = 2;
@@ -238,6 +254,7 @@ class ItemTinBar : CA_Magazine {
     mass = 1;
 };
 class ItemPlywoodPack : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_plywood_pack_CA.paa";
     displayName = "$STR_EPOCH_ItemPlywoodPack_displayName"; // Plywood
     scope = 2;
@@ -247,6 +264,7 @@ class ItemPlywoodPack : CA_Magazine {
     mass = 1;
 };
 class ItemComboLock : CA_Magazine {
+    author = "Sequisha";
     picture = "\x\addons\a3_epoch_assets_1\pictures\equip_combolock_ca.paa";
     displayName = "$STR_EPOCH_ItemComboLock_displayName"; // Combination Lock
     scope = 2;
@@ -255,299 +273,240 @@ class ItemComboLock : CA_Magazine {
     count = 1;
     mass = 1;
 };
-class Item_AssaultPack_cbr : CA_Magazine {
+class Item_PackedBag_base : CA_Magazine {
     picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+    scope = 0;
+    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
+    count = 1;
+};
+class Item_AssaultPack_cbr : CA_Magazine {
+    author = "Sequisha";
     displayName = "$STR_A3_B_AssaultPack_cbr0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_AssaultPack_cbr_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 20;
 };
-class Item_AssaultPack_dgtl : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_AssaultPack_dgtl : Item_PackedBag_base {
     displayName = "$STR_A3_B_AssaultPack_dgtl0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_AssaultPack_dgtl_descriptionShort"; // Packed Backpack
-    count = 1;
     mass = 20;
 };
-class Item_AssaultPack_khk : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_AssaultPack_khk : Item_PackedBag_base {
+
     displayName = "$STR_A3_B_AssaultPack_khk0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
-    descriptionShort = "$STR_EPOCH_Item_AssaultPack_khk_descriptionShort"; // Packed Backpack
+      descriptionShort = "$STR_EPOCH_Item_AssaultPack_khk_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 20;
 };
-class Item_AssaultPack_mcamo : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_AssaultPack_mcamo : Item_PackedBag_base {
     displayName = "$STR_A3_B_AssaultPack_mcamo0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_AssaultPack_mcamo_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 20;
 };
-class Item_AssaultPack_ocamo : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_AssaultPack_ocamo : Item_PackedBag_base {
     displayName = "$STR_A3_B_AssaultPack_ocamo0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_AssaultPack_ocamo_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 20;
 };
-class Item_AssaultPack_rgr : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_AssaultPack_rgr : Item_PackedBag_base {
     displayName = "$STR_A3_B_AssaultPack_rgr0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_AssaultPack_rgr_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 20;
 };
-class Item_AssaultPack_sgg : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_AssaultPack_sgg : Item_PackedBag_base {
     displayName = "$STR_A3_B_AssaultPack_sgg0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_AssaultPack_sgg_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 20;
 };
-class Item_AssaultPack_blk : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_AssaultPack_blk : Item_PackedBag_base {
     displayName = "$STR_A3_B_AssaultPack_blk0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_AssaultPack_blk_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 20;
 };
-class Item_Carryall_cbr : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_Carryall_cbr : Item_PackedBag_base {
     displayName = "$STR_A3_B_Carryall_cbr0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_Carryall_cbr_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 60;
 };
-class Item_Carryall_khk : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_Carryall_khk : Item_PackedBag_base {
     displayName = "$STR_A3_B_Carryall_khk0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_Carryall_khk_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 60;
 };
-class Item_Carryall_mcamo : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_Carryall_mcamo : Item_PackedBag_base {
     displayName = "$STR_A3_B_Carryall_mcamo0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_Carryall_mcamo_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 60;
 };
-class Item_Carryall_ocamo : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_Carryall_ocamo : Item_PackedBag_base {
     displayName = "$STR_A3_B_Carryall_ocamo0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_Carryall_ocamo_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 60;
 };
-class Item_Carryall_oli : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_Carryall_oli : Item_PackedBag_base {
     displayName = "$STR_A3_B_Carryall_oli0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_Carryall_oli_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 60;
 };
-class Item_Carryall_oucamo : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_Carryall_oucamo : Item_PackedBag_base {
     displayName = "$STR_A3_B_Carryall_oucamo0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_Carryall_oucamo_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 60;
 };
-class Item_FieldPack_blk : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_FieldPack_blk : Item_PackedBag_base {
     displayName = "$STR_A3_B_FieldPack_blk0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_FieldPack_blk_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 30;
 };
-class Item_FieldPack_cbr : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_FieldPack_cbr : Item_PackedBag_base {
     displayName = "$STR_A3_B_FieldPack_cbr0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_FieldPack_cbr_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 30;
 };
-class Item_FieldPack_khk : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_FieldPack_khk : Item_PackedBag_base {
     displayName = "$STR_A3_B_FieldPack_khk0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_FieldPack_khk_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 30;
 };
-class Item_FieldPack_ocamo : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_FieldPack_ocamo : Item_PackedBag_base {
     displayName = "$STR_A3_B_FieldPack_ocamo0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_FieldPack_ocamo_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 30;
 };
-class Item_FieldPack_oli : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_FieldPack_oli : Item_PackedBag_base {
     displayName = "$STR_A3_B_FieldPack_oli0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_FieldPack_oli_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 30;
 };
-class Item_FieldPack_oucamo : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_FieldPack_oucamo : Item_PackedBag_base {
     displayName = "$STR_A3_B_FieldPack_oucamo0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_FieldPack_oucamo_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 30;
 };
-class Item_Kitbag_cbr : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_Kitbag_cbr : Item_PackedBag_base {
     displayName = "$STR_A3_B_Kitback_cbr0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_Kitbag_cbr_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 50;
 };
-class Item_Kitbag_mcamo : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_Kitbag_mcamo : Item_PackedBag_base {
     displayName = "$STR_A3_B_Kitback_mcamo0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_Kitbag_mcamo_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 50;
 };
-class Item_Kitbag_rgr : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_Kitbag_rgr : Item_PackedBag_base {
     displayName = "$STR_A3_B_KITHBACK_RGR";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_Kitbag_rgr_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 50;
 };
-class Item_Kitbag_sgg : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_Kitbag_sgg : Item_PackedBag_base {
     displayName = "$STR_A3_B_Kitback_sgg0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_Kitbag_sgg_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 50;
 };
-class Item_TacticalPack_blk : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_TacticalPack_blk : Item_PackedBag_base {
     displayName = "$STR_A3_B_TacticalPack_blk0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_TacticalPack_blk_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 40;
 };
-class Item_TacticalPack_mcamo : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_TacticalPack_mcamo : Item_PackedBag_base {
     displayName = "$STR_A3_B_TacticalPack_mcamo0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_TacticalPack_mcamo_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 40;
 };
-class Item_TacticalPack_ocamo : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_TacticalPack_ocamo : Item_PackedBag_base {
     displayName = "$STR_A3_B_TacticalPack_ocamo0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_TacticalPack_ocamo_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 40;
 };
-class Item_TacticalPack_oli : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_TacticalPack_oli : Item_PackedBag_base {
     displayName = "$STR_A3_B_TacticalPack_oli0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_TacticalPack_oli_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 40;
 };
-class Item_TacticalPack_rgr : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_TacticalPack_rgr : Item_PackedBag_base {
     displayName = "$STR_A3_B_TacticalPack_rgr0";
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_TacticalPack_rgr_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 40;
 };
-class Item_smallbackpack_red : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_smallbackpack_red : Item_PackedBag_base {
     displayName = "$STR_EPOCH_Item_smallbackpack_red_displayName"; // Small Backpack (Red)
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_smallbackpack_red_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 25;
 };
-class Item_smallbackpack_green : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_smallbackpack_green : Item_PackedBag_base {
     displayName = "$STR_EPOCH_Item_smallbackpack_green_displayName"; // Small Backpack (Green)
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_smallbackpack_green_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 25;
 };
-class Item_smallbackpack_teal : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_smallbackpack_teal : Item_PackedBag_base {
     displayName = "$STR_EPOCH_Item_smallbackpack_teal_displayName"; // Small Backpack (Teal)
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_smallbackpack_teal_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 25;
 };
-class Item_smallbackpack_pink : CA_Magazine {
-    picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
+class Item_smallbackpack_pink : Item_PackedBag_base {
     displayName = "$STR_EPOCH_Item_smallbackpack_pink_displayName"; // Small Backpack (Pink)
     scope = 2;
-    model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
     descriptionShort = "$STR_EPOCH_Item_smallbackpack_pink_descriptionShort"; // Packed Backpack
     count = 1;
     mass = 25;
