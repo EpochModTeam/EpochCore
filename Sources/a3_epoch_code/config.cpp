@@ -14,6 +14,9 @@
 */
 class CfgPatches {
 	class A3_epoch_code {
+		author = "Epoch Mod Team";
+		name="Epoch Mod for Arma 3 - Core";
+		url="http://epochmod.com";
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -32,7 +35,7 @@ class CfgMods
 		action = "http://www.epochmod.com";
 		version = "0.3.9.0";
 		majorVersion = 0.3; //MUST BE A NUMBER!; Change this if we release a new major version, don't change if we push just push a hotfix
-		ArmAVersion = 158;
+		ArmAVersion = 160;
 		overview = "Open world survival mod set in the year 2035, Just two years after the mass extinction of billions of people. Those that remain are left with remnants of a once technological society. Try to survive, build, or explore your way through the harsh dynamic environment.";
 	};
 };
@@ -54,6 +57,6 @@ class Epoch
 		a3_epoch_structures = "0.3.9.0";
 		A3_epoch_functions = "0.3.9.0";
 		A3_epoch_vehicles_1 = "0.3.9.0";
-		Enhanced_Epoch_AiASupport = "0.3.9.0";
+		a2_epoch_structures = "0.3.9.0";
 	};
 };

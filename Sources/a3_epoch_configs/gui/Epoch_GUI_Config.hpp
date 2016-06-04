@@ -21,6 +21,7 @@ class RscTitles
 #include "RscDisplayInventory.hpp"
 
 // Security Changes Start
+/*
 class RscDisplayRemoteMissions: RscStandardDisplay
 {
 	onLoad = "[""onLoad"",_this,""RscDisplayRemoteMissions"",'GUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf"";execVM ""\x\addons\a3_epoch_code\system\dummy.sqf""";
@@ -30,19 +31,24 @@ class RscDisplayPassword: RscStandardDisplay
 	onLoad = "[""onLoad"",_this,""RscDisplayPassword"",'GUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf"";execVM ""\x\addons\a3_epoch_code\system\dummy.sqf""";
 };
 class RscConfigEditor_Main{onLoad = "missionNamespace setVariable ['yolo',true];(_this select 0) closeDisplay 0";};
+*/
+// Security Changes End
+
+// TODO: move this to code
+//close breifing
 class RscDisplayDebriefing: RscStandardDisplay
 {
 	onLoad = "(_this select 0) closeDisplay 0";
 };
-// Security Changes End
 
 class RscDisplayMain: RscStandardDisplay
 {
 	onLoad = "_this call compile preprocessfilelinenumbers ""\x\addons\a3_epoch_code\gui\scripts\Epoch_handleWelcomeScreen.sqf""";
 };
+
 class RscDisplayClientGetReady: RscDisplayGetReady
 {
-	onLoad = "uiNamespace setVariable ['Epoch_freshServer', true]; ctrlActivate ((_this select 0) displayCtrl 1); (_this select 0) closeDisplay 1";
+	onLoad = "ctrlActivate ((_this select 0) displayCtrl 1); (_this select 0) closeDisplay 1";
 	//onLoad = "[""onLoad"",_this,""RscDiary"",'GUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""";
 };
 class RscDisplayWelcome;

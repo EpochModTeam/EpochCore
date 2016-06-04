@@ -6,14 +6,18 @@
 
 class CfgPatches
 {
-	class Enhanced_Epoch_AiASupport
+	class a2_epoch_structures
 	{
+		author = "Epoch Mod Team";
+		name="Epoch Mod for Arma 3 - Ported Structures from Arma 2";
+		url="http://epochmod.com";
 		units[] = {};
 		weapons[] = {};
-		requiredVersion = 0.10;
+		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		epochVersion = "0.3.9.0";
-		//requiredAddons[] = {"CAStructuresHouse_a_stationhouse","CAStructures_Mil","CAStructuresShed_Small"};
+		// TODO: disabled for due to depenancy on A2
+		// requiredAddons[] = {"CAStructuresHouse_a_stationhouse","CAStructures_Mil","CAStructuresShed_Small"};
 	};
 };
 class CfgVehicles
