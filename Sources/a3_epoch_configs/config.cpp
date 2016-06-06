@@ -33,8 +33,8 @@ class CfgPatches
 		requiredAddons[] = {
 
 			"A3_Anims_F",
-			"A3_Anims_F_Config_Sdr",
-			"A3_Anims_F_Config_Sdr_WeaponSwitching",
+			//"A3_Anims_F_Config_Sdr",
+			//"A3_Anims_F_Config_Sdr_WeaponSwitching",
 			"A3_Characters_F",
 			"A3_Data_F",
 			"A3_Weapons_F",
@@ -140,8 +140,8 @@ class PointerSlot;
 #include "\A3\ui_f\hpp\defineCommonGrids.inc"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMissions.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgWorlds.hpp"
-#include "\x\addons\a3_epoch_configs\Configs\CfgMovesSapperBasic.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesMaleSdr.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMovesSapperBasic.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesSapperSdr.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgGesturesMale.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesAnimal.hpp"

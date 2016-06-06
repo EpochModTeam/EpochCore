@@ -1047,8 +1047,8 @@ class CfgMovesSapperBasic
 			Gear="AinvPercMstpSrasWrflDnon";
 			StopRelaxed="AmovPercMstpSlowWrflDnon";
 			putDown="AmovPercMstpSrasWrflDnon_AinvPercMstpSrasWrflDnon_Putdown";
-			GetInBoat="GetInHeli_Transport_01Cargo";
-			GetOutBoat="AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutLow";
+			GetInBoat="";
+			GetOutBoat="";
 		};
 		class RifleLowStandActionsNoAdjust: RifleLowStandActions
 		{
@@ -1377,8 +1377,8 @@ class CfgMovesSapperBasic
 			Crouch="AmovPknlMstpSrasWrflDnon";
 			CanNotMove="AmovPercMstpSlowWrflDnon";
 			saluteOff="AmovPercMstpSrasWrflDnon";
-			GetInBoat="GetInHeli_Transport_01Cargo";
-			GetOutBoat="AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutLow";
+			GetInBoat="";
+			GetOutBoat="";
 		};
 		class RifleStandActionsLimpF: RifleBaseStandActions
 		{
@@ -6597,8 +6597,8 @@ class CfgMovesSapperBasic
 			PrimaryWeapon="AmovPercMstpSrasWrflDnon";
 			SecondaryWeapon="AmovPercMstpSrasWlnrDnon";
 			Binoculars="AmovPercMstpSoptWbinDnon";
-			GetInBoat="GetInHeli_Transport_01Cargo";
-			GetOutBoat="AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutLow";
+			GetInBoat="";
+			GetOutBoat="";
 		};
 		class PistolStandActionsLimpF: PistolStandActions
 		{
@@ -8800,8 +8800,8 @@ class CfgMovesSapperBasic
 			PrimaryWeapon="AmovPercMstpSrasWrflDnon";
 			SecondaryWeapon="AmovPercMstpSrasWlnrDnon";
 			Binoculars="AmovPercMstpSoptWbinDnon";
-			GetInBoat="GetInHeli_Transport_01Cargo";
-			GetOutBoat="AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutLow";
+			GetInBoat="";
+			GetOutBoat="";
 			AdjustF="AmovPercMstpSnonWnonDnon";
 			AdjustB="AmovPercMstpSnonWnonDnon";
 			AdjustL="AmovPercMstpSnonWnonDnon";
@@ -9504,8 +9504,8 @@ class CfgMovesSapperBasic
 			PrimaryWeapon="AmovPknlMstpSrasWrflDnon";
 			SecondaryWeapon="AmovPknlMstpSrasWlnrDnon";
 			Binoculars="AmovPknlMstpSoptWbinDnon";
-			GetInBoat="GetInHeli_Transport_01Cargo";
-			GetOutBoat="AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutLow";
+			GetInBoat="";
+			GetOutBoat="";
 		};
 		class LauncherKneelActionsLimpF: LauncherKneelActions
 		{
@@ -10253,8 +10253,8 @@ class CfgMovesSapperBasic
 			GetOutPara="AswmPercMstpSnonWnonDnon";
 			upDegree="ManPosSwimming";
 			limitFast=2;
-			GetInBoat="AmovPercMstpSnonWnonDnon_AcrgPknlMstpSnonWnonDnon_getInHigh";
-			GetOutBoat="AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutHigh";
+			GetInBoat="";
+			GetOutBoat="";
 		};
 		class SwimmingActionsRunF: SwimmingActions
 		{
@@ -10675,8 +10675,8 @@ class CfgMovesSapperBasic
 			GetOutPara="AdvePercMstpSnonWnonDnon";
 			upDegree="ManPosDiving";
 			limitFast=3.2;
-			GetInBoat="AmovPercMstpSnonWnonDnon_AcrgPknlMstpSnonWnonDnon_getInHigh";
-			GetOutBoat="AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutHigh";
+			GetInBoat="";
+			GetOutBoat="";
 		};
 		class DivingActionsGoingOut: DivingActions
 		{
@@ -11157,8 +11157,8 @@ class CfgMovesSapperBasic
 			GetOutSDV="AsdvPercMstpSnonWnonDnon_GetOutSDV";
 			upDegree="ManPosSurfaceDiving";
 			limitFast=3.2;
-			GetInBoat="AmovPercMstpSnonWnonDnon_AcrgPknlMstpSnonWnonDnon_getInHigh";
-			GetOutBoat="AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutHigh";
+			GetInBoat="";
+			GetOutBoat="";
 		};
 		class SurfaceDivingActionsGoingOut: SurfaceDivingActions
 		{
@@ -11640,8 +11640,8 @@ class CfgMovesSapperBasic
 			GetOutSDV="AbdvPercMstpSnonWnonDnon_GetOutSDV";
 			upDegree="ManPosBottomDiving";
 			limitFast=3.2;
-			GetInBoat="AmovPercMstpSnonWnonDnon_AcrgPknlMstpSnonWnonDnon_getInHigh";
-			GetOutBoat="AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutHigh";
+			GetInBoat="";
+			GetOutBoat="";
 		};
 		class BottomDivingActionsGoingOut: BottomDivingActions
 		{
@@ -20167,22 +20167,9 @@ class CfgMovesSapperBasic
 	};
 	primaryActionMaps[]=
 	{
-		"RifleProneActions_injured",
 		"DeadActions",
-		"LauncherKneelActions",
-		"BinocProneRflActions",
-		"BinocProneCivilActions",
-		"RifleProneActions",
-		"PistolProneActions",
-		"RifleKneelActions",
-		"PistolKneelActions",
-		"RifleStandActions",
-		"PistolStandActions",
-		"RifleLowStandActions",
 		"SwimmingActions",
-		"CivilStandActions",
-		"BinocKneelRflActions",
-		"BinocStandRflActions"
+		"CivilStandActions"
 	};
 	class Interpolations
 	{

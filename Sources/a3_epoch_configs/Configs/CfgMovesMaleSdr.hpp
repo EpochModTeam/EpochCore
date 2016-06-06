@@ -12,11 +12,7 @@
     Github:
     https://github.com/EpochModTeam/Epoch/tree/master/Sources/epoch_config/Configs/CfgMovesMaleSdr.hpp
 */
-class CfgMovesBasic
-{
-	class Default;
-	class StandBase;
-};
+class CfgMovesBasic;
 class CfgMovesMaleSdr : CfgMovesBasic
 {
 	skeletonName = "OFP2_ManSkeleton";
