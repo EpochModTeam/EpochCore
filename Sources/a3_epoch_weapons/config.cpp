@@ -466,8 +466,8 @@ class CfgMovesBasic
 	class Default;
 	class ManActions
 	{
-		GestureReloadSR25 = "GestureReloadSR25";
-		GestureReloadSR25Prone = "GestureReloadSR25Prone";
+		GestureReloadSR25[] = {"GestureReloadSR25","Gesture"};
+		GestureReloadSR25Prone[] = {"GestureReloadSR25Prone","Gesture"};
 		GestureReloadL85A2[] = {"GestureReloadL85A2","Gesture"};
 		GestureReloadL85A2UGL[] = {"GestureReloadL85A2UGL","Gesture"};
 		GestureReloadL85A2RIS[] = {"GestureReloadL85A2RIS","Gesture"};
