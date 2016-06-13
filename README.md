@@ -3,7 +3,7 @@ Epoch Mod for Arma 3
 
 http://epochmod.com
 
-This github is for @Epoch client configs and community assets for Arma 3.
+This github is for client configs and community assets for Arma 3 Epoch Mod.
 
 License
 =====
