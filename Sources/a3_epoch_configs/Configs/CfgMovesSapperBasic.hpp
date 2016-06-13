@@ -7,7 +7,7 @@
 	From Stock CfgMovesBasic from A3 1.60
 
     Github:
-    https://github.com/EpochModTeam/Epoch/tree/master/Sources/epoch_config/Configs/CfgMovesSapperBasic.hpp
+    https://github.com/EpochModTeam/Epoch/tree/release/Sources/epoch_config/Configs/CfgMovesSapperBasic.hpp
 */
 
 class CfgMovesSapperBasic
