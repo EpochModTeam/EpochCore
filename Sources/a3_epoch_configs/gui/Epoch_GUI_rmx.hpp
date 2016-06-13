@@ -770,3 +770,21 @@ class rmx_ST1: RscStructuredText
 		shadow = 2;
 	};
 };
+
+class rmx_ST2: RscStructuredText
+{
+	text = "";
+	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	colorText[] = {1,1,1,1};
+	shadow = 2;
+	class Attributes
+	{
+		font = "PuristaMedium";
+		color = "#ffffff";
+		colorLink = "#D09B43";
+		align = "center";
+		valign = "middle";
+		size = "1";
+		shadow = 2;
+	};
+};
