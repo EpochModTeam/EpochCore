@@ -773,18 +773,25 @@ class rmx_ST1: RscStructuredText
 
 class rmx_ST2: RscStructuredText
 {
-	text = "";
-	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	colorText[] = {1,1,1,1};
-	shadow = 2;
+	x=0;
+	y=0;
+	h=0.035;
+	w=0.1;
+	text="";
+	//size="(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	size = 0.04;
+	colorText[]={1,1,1,1};
+	colorBackground[] = {0.2,0.2,0.2,0.7};
+	shadow=2;
+	type = 13;
+	style = 0x02; 
 	class Attributes
 	{
-		font = "PuristaMedium";
-		color = "#ffffff";
-		colorLink = "#D09B43";
-		align = "center";
-		valign = "middle";
-		size = "1";
-		shadow = 2;
+		font="PuristaMedium"; // "RobotoCondensed";
+		color="#ffffff";
+		colorLink="#D09B43";
+		align="center";
+		valign = "top"
+		shadow=2;
 	};
 };
