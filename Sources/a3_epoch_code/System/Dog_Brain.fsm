@@ -1012,10 +1012,10 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"deleteVehicle _foodHolder;" \n
        "" \n
        "if (_plyrVar == _dogName) then {" \n
-       "[format[""<t size='1.6' color='#99ffffff'>You have fed %1</t>"",_dogName], 5] call Epoch_dynamicText;" \n
+       "[format[""You have fed %1"",_dogName], 5] call Epoch_message;" \n
        "}else{" \n
        "_plyr setVariable [""dog"", _dogName];" \n
-       "[format[""<t size='1.6' color='#99ffffff'>You have tamed %1</t>"",_dogName], 5] call Epoch_dynamicText;" \n
+       "[format[""You have tamed %1"",_dogName], 5] call Epoch_message;" \n
        "};" \n
        "_hunger = _hunger - 40;" \n
        "" \n
