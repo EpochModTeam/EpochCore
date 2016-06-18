@@ -16,7 +16,8 @@
 class CfgGesturesMale
 {
 	skeletonName = "OFP2_ManSkeleton";
-	class ManActions{};
+	class ManActions{
+	};
 	class Actions
 	{
 		class NoActions
