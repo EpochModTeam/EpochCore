@@ -455,12 +455,13 @@ class CfgVehicles
 	class I_Soldier_EPOCH : I_Soldier_base_F
 	{
 		author = "$STR_A3_Bohemia_Interactive";
+		model="\A3\Characters_F_Beta\INDEP\ia_soldier_02.p3d";
 		_generalMacro = "I_Soldier_EPOCH";
 		scope = 2;
 		displayName = "Epoch Militia Soldier";
 		cost = 90000;
 		camouflage = 1.2;
-		uniformClass = "U_I_CombatUniform_shortsleeve";
+		uniformClass = "";
 		weapons[] = { "hgun_PDW2000_F", "hgun_ACPC2_F", "Throw", "Put" };
 		respawnWeapons[] = { "hgun_PDW2000_F", "hgun_ACPC2_F", "Throw", "Put" };
 		Items[] = { "FAK" };
@@ -470,15 +471,16 @@ class CfgVehicles
 		linkedItems[] = { "V_24_EPOCH", "H_89_EPOCH", "ItemMap", "ItemCompass", "ItemWatch", "EpochRadio0" };
 		respawnLinkedItems[] = { "V_24_EPOCH", "H_89_EPOCH", "ItemMap", "ItemCompass", "ItemWatch", "EpochRadio0" };
 	};
-	class I_Soldier2_EPOCH : I_Soldier_base_F
+	class I_Soldier2_EPOCH : I_Soldier_EPOCH
 	{
 		author = "$STR_A3_Bohemia_Interactive";
+		model="\A3\characters_F_gamma\Guerrilla\ig_guerrilla2_1.p3d";
 		_generalMacro = "I_Soldier2_EPOCH";
 		scope = 2;
 		displayName = "Epoch Militia Guerilla";
 		cost = 90000;
 		camouflage = 1.2;
-		uniformClass = "U_IG_Guerilla2_1";
+		uniformClass = "";
 		weapons[] = { "AKM_EPOCH", "hgun_ACPC2_F", "Throw", "Put" };
 		respawnWeapons[] = { "AKM_EPOCH", "hgun_ACPC2_F", "Throw", "Put" };
 		Items[] = { "FAK" };
@@ -488,15 +490,16 @@ class CfgVehicles
 		linkedItems[] = { "V_24_EPOCH", "H_89_EPOCH", "ItemMap", "ItemCompass", "ItemWatch", "EpochRadio0" };
 		respawnLinkedItems[] = { "V_24_EPOCH", "H_89_EPOCH", "ItemMap", "ItemCompass", "ItemWatch", "EpochRadio0" };
 	};
-	class I_Soldier3_EPOCH : I_Soldier_base_F
+	class I_Soldier3_EPOCH : I_Soldier_EPOCH
 	{
 		author = "$STR_A3_Bohemia_Interactive";
+		model="A3\Characters_F_Beta\INDEP\ia_sniper.p3d";
 		_generalMacro = "I_Soldier3_EPOCH";
 		scope = 2;
 		displayName = "Epoch Militia Ghillie";
 		cost = 90000;
 		camouflage = 1.4;
-		uniformClass = "U_I_GhillieSuit";
+		uniformClass = "";
 		weapons[] = { "srifle_DMR_01_F", "hgun_ACPC2_F", "Throw", "Put" };
 		respawnWeapons[] = { "srifle_DMR_01_F", "hgun_ACPC2_F", "Throw", "Put" };
 		Items[] = { "FAK" };
