@@ -6,6 +6,7 @@
 
 	Current way: 2 but with possibility to use 3rd way
 */
+
 private ["_display","_version","_shouldShow_Main","_shouldShow_Boot"];
 
 _display = _this select 0;
@@ -18,7 +19,7 @@ if ((configName (configFile >> "CfgPatches" >> "A3_Missions_F_EPC")) != "") then
 
 	if (_currentVersion > _oldVersion) then {
 		_display createDisplay "RscWelcomeEpoch";
-		
+
 		profileNamespace setVariable ["EPOCH_welcomeScreenShown_majorVersion", _currentVersion];
 		profileNamespace setVariable ["BIS_welcomeScreenShown", 1];
 		profileNamespace setVariable ["BIS_welcomeScreenBootcampShown", 1];
