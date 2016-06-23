@@ -1069,6 +1069,17 @@ class CfgMagazines
 		count = 1;
 		mass = 20;
 	};
+	class DogCarcass_EPOCH : CA_Magazine
+	{
+		author = "Sequisha";
+		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatLeg_ca.paa";
+		model = "\x\addons\a3_epoch_assets\models\goatLeg.p3d";
+		displayName = "Raw Dog Leg";
+		scope = 2;
+		descriptionShort = "Raw Dog Leg";
+		count = 1;
+		mass = 20;
+	};
 	class CookedGoat_EPOCH : CA_Magazine
 	{
 		author = "Sequisha";
@@ -1077,6 +1088,17 @@ class CfgMagazines
 		displayName = "Cooked Goat Leg";
 		scope = 2;
 		descriptionShort = "Cooked Goat Leg";
+		count = 1;
+		mass = 20;
+	};
+	class CookedDog_EPOCH : CA_Magazine
+	{
+		author = "Sequisha";
+		picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatlegCooked_ca.paa";
+		model = "\x\addons\a3_epoch_assets\models\goatLeg_cooked.p3d";
+		displayName = "Cooked Dog Leg";
+		scope = 2;
+		descriptionShort = "Cooked Dog Leg";
 		count = 1;
 		mass = 20;
 	};

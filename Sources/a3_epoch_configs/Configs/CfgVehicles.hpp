@@ -1487,7 +1487,9 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sapper_corpse.p3d";
 		displayName = "Sapper Corpse";
 	};
-	class Secure_Storage_Temp : Constructions_modular_F {};
+	class Secure_Storage_Temp : Constructions_modular_F {
+		scope = 0;
+	};
 	class LockBox_SIM_EPOCH : Secure_Storage_Temp
 	{
 		author = "Sequisha";
@@ -4379,7 +4381,6 @@ class CfgVehicles
 		moves = "CfgMovesGreatWhite_F";
 		hasGeometry = 1;
 		agentTasks[] = {};
-		interactMode = 3;
 	};
 
 	class Goat_random_EPOCH : Animal_Base_F
@@ -4395,7 +4396,6 @@ class CfgVehicles
 			tex[] = {};
 			mat[] = { "A3\animals_f_beta\Goat\data\goat.rvmat", "A3\animals_f_beta\Goat\data\W1_goat.rvmat", "A3\animals_f_beta\Goat\data\W2_goat.rvmat" };
 		};
-		interactMode = 3;
 	};
 
 	class Sheep_random_EPOCH : Animal_Base_F
@@ -4410,18 +4410,15 @@ class CfgVehicles
 			tex[] = {};
 			mat[] = { "A3\animals_f_beta\sheep\data\sheep.rvmat", "A3\animals_f_beta\sheep\data\W1_sheep.rvmat", "A3\animals_f_beta\sheep\data\W2_sheep.rvmat" };
 		};
-		interactMode = 3;
 	};
 
 	class Cock_random_F;
 	class Cock_random_EPOCH: Cock_random_F {
 		agentTasks[] = {};
-		interactMode = 3;
 	};
 	class Hen_random_F;
 	class Hen_random_EPOCH: Hen_random_F {
 		agentTasks[] = {};
-		interactMode = 3;
 	};
 
 	class Rabbit_F : Animal_Base_F
@@ -4507,7 +4504,6 @@ class CfgVehicles
 
 		agentTasks[] = {};
 		hasGeometry = 1;
-		interactMode = 3;
 	};
 
 	class Snake_random_EPOCH : Animal_Base_F
@@ -4528,7 +4524,6 @@ class CfgVehicles
 		triggerAnim = "";
 		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[] = { "\A3\Animals_F\Snakes\data\Snake_Dice_CO.paa" };
-		interactMode = 3;
 	};
 	class Snake2_random_EPOCH : Snake_random_EPOCH
 	{
