@@ -18,6 +18,8 @@ class RscTitles
 #include "GroupRequests.hpp"
 #include "InteractBank.hpp"
 #include "Trade.hpp"
+
+// todo move out of main mod
 #include "RscDisplayInventory.hpp"
 
 // Security Changes Start
@@ -69,7 +71,7 @@ class RscVersionUpdateEpoch : RscWelcomeEpoch
 };
 */
 
-#include "RscInGameUI.hpp"
+// #include "RscInGameUI.hpp"
 #include "EpochLoadingScreen.hpp"
 #include "EPOCH_createGrp.hpp"
 #include "Epoch_myGroup.hpp"
