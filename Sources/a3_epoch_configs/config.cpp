@@ -197,6 +197,8 @@ class RscOpticsText;
 class RscLadderPicture;
 class Attributes;
 class RscDisplayGetReady;
+class RscActivePicture;
+class RscActivePictureKeepAspect;
 
 class CA_Title;
 class ScrollBar;

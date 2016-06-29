@@ -39,6 +39,79 @@ class Epoch_main_config_template: RscControlsGroup
 	class controls {};
 };
 
+/* #Qidupa
+$[
+	1.063,
+	["asd",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[2200,"",[1,"",["0.29375 * safezoneW + safezoneX","0.225 * safezoneH + safezoneY","0.210375 * safezoneW","0.1122 * safezoneH"],[-1,-1,-1,-1],[0.2,0.2,0.2,0.1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"Modify HUD positions",["0.29375 * safezoneW + safezoneX","0.247 * safezoneH + safezoneY","0.210375 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[0,0,0,0.5],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Reset to Default positions",["0.29375 * safezoneW + safezoneX","0.291 * safezoneH + safezoneY","0.210375 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[0,0,0,0.5],[-1,-1,-1,-1],"","-1"],[]],
+	[1700,"",[1,"Customize HUD",["0.4175 * safezoneW + safezoneX","0.2404 * safezoneH + safezoneY","0.0773437 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1701,"",[1,"Reset HUD",["0.41775 * safezoneW + safezoneX","0.28657 * safezoneH + safezoneY","0.0773437 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+class Epoch_main_config_dynamicHUD: Epoch_main_config_template
+{
+	x = 0;
+	y = 0;
+	w = 0.51;
+	h = 0.204;
+	class Controls
+	{
+		class rmx_dh_back: IGUIBack
+		{
+			idc = 71001;
+			x = 0.29375 * safezoneW + safezoneX;
+			y = 0.225 * safezoneH + safezoneY;
+			w = 0.210375 * safezoneW;
+			h = 0.1122 * safezoneH;
+			colorBackground[] = {0.2,0.2,0.2,1};
+		};
+		class rmx_dh_T1: RscText
+		{
+			idc = 71002;
+			text = "Modify HUD positions"; //--- ToDo: Localize;
+			x = 0.29375 * safezoneW + safezoneX;
+			y = 0.247 * safezoneH + safezoneY;
+			w = 0.210375 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorBackground[] = {0,0,0,0.5};
+		};
+		class rmx_dh_T2: RscText
+		{
+			idc = 71003;
+			text = "Reset to Default positions"; //--- ToDo: Localize;
+			x = 0.29375 * safezoneW + safezoneX;
+			y = 0.291 * safezoneH + safezoneY;
+			w = 0.210375 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorBackground[] = {0,0,0,0.5};
+		};
+		class rmx_dh_btn1: RscShortcutButton
+		{
+			idc = 71004;
+			text = "Customize HUD"; //--- ToDo: Localize;
+			x = 0.4175 * safezoneW + safezoneX;
+			y = 0.2404 * safezoneH + safezoneY;
+			w = 0.0773437 * safezoneW;
+			h = 0.033 * safezoneH;
+			action = "true call epoch_dynamicHUD_adjust;"
+		};
+		class rmx_dh_btn2: RscShortcutButton
+		{
+			idc = 71005;
+			text = "Reset HUD"; //--- ToDo: Localize;
+			x = 0.41775 * safezoneW + safezoneX;
+			y = 0.28657 * safezoneH + safezoneY;
+			w = 0.0773437 * safezoneW;
+			h = 0.033 * safezoneH;
+			action = "false call epoch_dynamicHUD_adjust;"
+		};
+
+	};
+};
+
 class Epoch_main_config_changelog: Epoch_main_config_template
 {
 	w = 0.425 * safezoneW;

@@ -1,9 +1,30 @@
+//Used by epoch_dragControl function... allows moving normal controls just like dialogs with movingEnabled = 1;
+class rmx_drag_RscActivePicture: RscActivePicture
+{
+	onMouseMoving = "_this call epoch_dragControl;";
+	onMouseButtonDown = "rmx_var_drag_MouseDown = true;";
+	onMouseButtonUp = "rmx_var_drag_MouseDown = false;";
+};
+
+class rmx_drag_RscActivePictureKeepAspect: RscActivePictureKeepAspect
+{
+	onMouseMoving = "_this call epoch_dragControl;";
+	onMouseButtonDown = "rmx_var_drag_MouseDown = true;";
+	onMouseButtonUp = "rmx_var_drag_MouseDown = false;";
+};
+
 class rmx_dynamenu {
 	idd = 66600;
 	enableSimulation = 1;
 	movingEnable = 1;
 	onLoad = "setMousePosition [0.5, 0.5];";
 	onKeyUp = "_this call epoch_keyUp";
+	class controls {};
+};
+
+class rmx_moveDynamicHUD {
+	idd = 66666;
+	enableSimulation = 1;
 	class controls {};
 };
 
