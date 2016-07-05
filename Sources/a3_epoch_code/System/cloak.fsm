@@ -700,16 +700,14 @@ class FSM
                          "" \n
                          "if(diag_tickTime - _lastAlert > 480 && random 100 < _cAggression)then{" \n
                          "_unit say3D ""cultist_laugh"";" \n
-                         "_say3D_PVS = [player, _unit, 8,Epoch_personalToken];" \n
-                         "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+                         "[player, _unit, ""cultist_laugh"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "_lastAlert = diag_tickTime;" \n
                          "" \n
                          "" \n
                          "}else{" \n
                          "" \n
                          "_unit say3D ""cultist_talk"";" \n
-                         "_say3D_PVS = [player, _unit, 7,Epoch_personalToken];" \n
-                         "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+                         "[player, _unit, ""cultist_talk"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "" \n
                          "};" \n
                          "" \n

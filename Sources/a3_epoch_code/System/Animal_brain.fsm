@@ -221,8 +221,7 @@ class FSM
        "	 	_sounds = [""hed_cluck0"",""hed_cluck1"",""hed_cluck2""];" \n
        "		_sound = selectRandom _sounds;" \n
        "		_animalAgent say3D _sound;" \n
-       "		_say3D_PVS = [player, _animalAgent, (EPOCH_sounds find _sound),Epoch_personalToken];" \n
-       "		_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "		[player, _animalAgent, _sound,Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "	};" \n
        "};" \n
        "" \n
@@ -357,8 +356,7 @@ class FSM
        "		_fightOrFlight = false;" \n
        "		if (_isDog) then {" \n
        "			_animalAgent say3D ""dog_cry"";" \n
-       "			_say3D_PVS = [player, _animalAgent, 3,Epoch_personalToken];" \n
-       "			_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "			[player, _animalAgent, ""dog_cry"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "		};" \n
        "	};" \n
        "	_courageTest = false;" \n
@@ -368,8 +366,7 @@ class FSM
        "" \n
        "	if (_isDog) then {" \n
        "		_animalAgent say3D ""dog_bark"";" \n
-       "		_say3D_PVS = [player, _animalAgent, 2,Epoch_personalToken];" \n
-       "		_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "		[player, _animalAgent, ""dog_bark"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "		_animalAgent playMoveNow ""Dog_Bark"";	" \n
        "	};" \n
        "	_animalAgent setDir _dirTo;	" \n
@@ -378,8 +375,7 @@ class FSM
        "	if (_isDog) then {" \n
        "		if (random 1 < 0.5) then { " \n
        "			_animalAgent say3D ""dog_bark"";" \n
-       "			_say3D_PVS = [player, _animalAgent, 2,Epoch_personalToken];" \n
-       "			_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "			[player, _animalAgent, ""dog_bark"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "		};" \n
        "	};" \n
        "};"/*%FSM</STATEINIT""">*/;

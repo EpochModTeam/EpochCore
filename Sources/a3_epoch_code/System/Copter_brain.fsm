@@ -474,8 +474,7 @@ class FSM
                          "[[(getPos _trgt),80,150,1,true] call EPOCH_fnc_findSafePos,_copter] call EPOCH_supportCopter;" \n
                          "" \n
                          "_copter say3D ""drone_alert0"";" \n
-                         "_say3D_PVS = [player, _copter, 10,Epoch_personalToken];" \n
-                         "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+                         "[player, _copter, ""drone_alert0"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "" \n
                          "_troopsOnGround = true;" \n
                          "(driver _copter) action [""lightOn"", _copter];" \n
