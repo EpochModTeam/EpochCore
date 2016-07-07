@@ -792,7 +792,10 @@ class EPOCH_RyanZombie_1: C_man_1
 	armorStructural = 20;
 	explosionShielding = 0.3;
 	glassesEnabled = 0;
-	class EventHandlers{};
+	class EventHandlers : EventHandlers
+	{
+		init = "(_this select 0) setface (selectRandom [""RyanZombieFace1"", ""RyanZombieFace2"", ""RyanZombieFace3"", ""RyanZombieFace4"", ""RyanZombieFace5""])";
+	};
 	weapons[] = {"Throw","Put"};
 	respawnWeapons[] = {"Throw","Put"};
 	magazines[] = {};
