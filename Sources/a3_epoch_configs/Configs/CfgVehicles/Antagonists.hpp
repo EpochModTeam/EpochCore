@@ -781,7 +781,6 @@ class Epoch_SapperB_F : Epoch_Sapper_base_F
 	};
 };
 
-//class C_man_1;
 class EPOCH_RyanZombie_1: C_man_1
 {
 	epochLootClass = "EPOCH_RyanZombie_1";
@@ -791,11 +790,8 @@ class EPOCH_RyanZombie_1: C_man_1
 	displayName = "Zombie 1";
 	armor = 10;
 	armorStructural = 20;
-	explosionShielding = 0.1;
-	hiddenSelections[] = {"Camo"};
-	uniformClass = "";
-	hiddenSelectionsTextures[] = {"\A3\characters_f\civil\data\c_poloshirt_3_co.paa"};
-	hiddenSelectionsMaterials[] = {"\A3\Characters_F\Civil\Data\c_cloth1_injury.rvmat"};
+	explosionShielding = 0.3;
+	glassesEnabled = 0;
 	class EventHandlers{};
 	weapons[] = {"Throw","Put"};
 	respawnWeapons[] = {"Throw","Put"};
@@ -803,31 +799,44 @@ class EPOCH_RyanZombie_1: C_man_1
 	respawnMagazines[] = {};
 	linkedItems[] = {};
 	respawnlinkedItems[] = {};
+	hiddenSelections[] = {"camo","insignia"};
+	hiddenSelectionsTextures[] = {"A3\Characters_F\Civil\Data\c_poloshirt_2_co.paa"};
+	hiddenSelectionsMaterials[] = {"A3\Characters_F\Civil\Data\c_cloth1_injury.rvmat"};
+	uniformClass = "";
+	nakedUniform = "U_EPOCH_RyanZombie_1";
+	modelSides[] = {6};
 };
 class EPOCH_RyanZombie_2: EPOCH_RyanZombie_1
 {
-	model = "\A3\Characters_F\Civil\c_poloshirtpants";
+	model = "\A3\characters_F\civil\c_poor";
+	hiddenSelectionsTextures[] = {"A3\characters_f\civil\data\c_cloth1_v2_co.paa"};
 	displayName = "Zombie 2";
-	hiddenSelectionsTextures[] = {"\A3\Characters_F\Civil\Data\c_poloshirtpants_1_co.paa"};
-	hiddenSelectionsMaterials[] = {"\A3\Characters_F\Civil\Data\c_poloshirtpants_injury.rvmat"};
+	uniformClass = ""; //U_C_Poor_1
+	nakedUniform = "U_EPOCH_RyanZombie_2";
 };
 class EPOCH_RyanZombie_3: EPOCH_RyanZombie_1
 {
-	model = "\A3\characters_F\civil\c_poor";
-	displayName = "Zombie 3";
-	hiddenSelectionsTextures[] = {"\A3\characters_f\civil\data\c_cloth1_v2_co.paa"};
-};
-class EPOCH_RyanZombie_4: EPOCH_RyanZombie_1
-{
 	model = "\A3\characters_F\common\coveralls";
-	displayName = "Zombie 4";
-	hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\coveralls_dirty_co.paa"};
+	displayName = "Zombie 3";
+	uniformClass = ""; //U_C_WorkerCoverAlls
+	hiddenSelections[] = {"Camo","insignia"};
+	hiddenSelectionsTextures[] = {"A3\Characters_F\Common\Data\coveralls_dirty_co.paa"};
+	nakedUniform = "U_EPOCH_RyanZombie_3";
 };
-class EPOCH_RyanZombie_5: EPOCH_RyanZombie_4
+class EPOCH_RyanZombie_4: EPOCH_RyanZombie_3
+{
+	displayName = "Zombie 4";
+	uniformClass = ""; //B_Soldier_04_f
+	hiddenSelectionsTextures[] = {"A3\Characters_F\Common\Data\coveralls_sage_co.paa"};
+	nakedUniform = "U_EPOCH_RyanZombie_4";
+};
+class EPOCH_RyanZombie_5: EPOCH_RyanZombie_3
 {
 	displayName = "Zombie 5";
 	hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\A3\Characters_F_EPC\Civil\Data\scientist_02_co.paa"};
+	uniformClass = ""; //U_C_Scientist
+	hiddenSelectionsTextures[] = {"A3\Characters_F_EPC\Civil\Data\scientist_02_co.paa"};
+	nakedUniform = "U_EPOCH_RyanZombie_5";
 };
 // CfgRyanZombiesMovesMaleSdrCrawler
 class EPOCH_RyanZombie_1_C: EPOCH_RyanZombie_1

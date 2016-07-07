@@ -34,6 +34,84 @@ class CfgWeapons
 		};
 	};
 
+	class U_EPOCH_RyanZombie_1: Uniform_Base
+	{
+		author = "Epoch";
+		scope = 1;
+		displayName = "Zombie 1";
+		picture = "\A3\characters_f\data\ui\icon_U_C_Poloshirt_blue_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Characters_F\Civil\Data\c_poloshirt_1_co.paa"};
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "EPOCH_RyanZombie_1";
+			containerClass = "Supply0";
+			mass = 0;
+		};
+	};
+	class U_EPOCH_RyanZombie_2: U_EPOCH_RyanZombie_1
+	{
+		displayName = "Zombie 2";
+		picture = "\A3\characters_f\data\ui\icon_U_C_Poor_1_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Characters_F\Civil\Data\c_cloth1_co.paa"};
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "EPOCH_RyanZombie_2";
+			containerClass = "Supply0";
+			mass = 0;
+		};
+	};
+	class U_EPOCH_RyanZombie_3: U_EPOCH_RyanZombie_1
+	{
+		displayName = "Zombie 3";
+		picture = "\A3\characters_f\data\ui\icon_U_C_WorkerCoveralls_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\coveralls_dirty_co.paa"};
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "EPOCH_RyanZombie_3";
+			containerClass = "Supply0";
+			mass = 0;
+		};
+	};
+	class U_EPOCH_RyanZombie_4: U_EPOCH_RyanZombie_1
+	{
+		displayName = "Zombie 4";
+		picture = "\A3\characters_F_EPC\data\ui\icon_U_Journalist_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\a3\characters_f_epc\civil\data\journalist_co.paa"};
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "EPOCH_RyanZombie_3";
+			containerClass = "Supply0";
+			mass = 0;
+		};
+	};
+	class U_EPOCH_RyanZombie_5: U_EPOCH_RyanZombie_1
+	{
+		displayName = "Zombie 5";
+		picture = "\A3\characters_F_EPC\data\ui\icon_U_Scientist_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\coveralls_scientist_co.paa"};
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "EPOCH_RyanZombie_5";
+			containerClass = "Supply0";
+			mass = 0;
+		};
+	};
+
 	class U_BasicBodyFemale : ItemCore
 	{
 		author = "Sequisha";
