@@ -94,8 +94,7 @@ class FSM
                          "" \n
                          "_sound = ""sapper_explode"";" \n
                          "_unit say3D _sound;" \n
-                         "_say3D_PVS = [player,_unit,(EPOCH_sounds find _sound),Epoch_personalToken];" \n
-                         "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+                         "[player,_unit,_sound,Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "_unit playMoveNow ""Unconscious"";" \n
                          "" \n
                          "";

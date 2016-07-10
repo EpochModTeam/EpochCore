@@ -687,8 +687,7 @@ class FSM
        "//Dog whine warning of nearby players." \n
        "if((random 100) < (_countNrPlyrs * 10))then{" \n
        "[_dog, _plyr] say3D ""dog_cry"";" \n
-       "_say3D_PVS = [player, _dog, 17,Epoch_personalToken];" \n
-       "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "[player, _dog, ""dog_cry"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "};" \n
        "" \n
        ""/*%FSM</STATEINIT""">*/;
@@ -729,8 +728,7 @@ class FSM
        "" \n
        "if (floor(random 100)< 8) then {" \n
        "[_dog, _plyr] say3D ""dog_cry"";" \n
-       "_say3D_PVS = [player, _dog, 17,Epoch_personalToken];" \n
-       "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "[player, _dog, ""dog_cry"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "_hunger = _hunger + 2;" \n
        "};" \n
        "" \n
@@ -789,8 +787,7 @@ class FSM
        "" \n
        "if (floor(random 100)<_dogNoise) then {" \n
        "[_dog, _plyr] say3D ""dog_cry"";" \n
-       "_say3D_PVS = [player, _dog, 17,Epoch_personalToken];" \n
-       "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "[player, _dog, ""dog_cry"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "};" \n
        "" \n
        "" \n
@@ -849,8 +846,7 @@ class FSM
        "" \n
        "if (floor(random 100) < 6) then {" \n
        "[_dog, _plyr] say3D ""dog_bark"";" \n
-       "_say3D_PVS = [player, _dog, 2,Epoch_personalToken];" \n
-       "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "[player, _dog, ""dog_bark"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "};" \n
        "" \n
        "if (floor(random 100)<_forgive) then {" \n
@@ -975,8 +971,7 @@ class FSM
        "" \n
        "if (floor(random 100)<_dogNoise) then {" \n
        "[_dog, _plyr] say3D ""dog_cry"";" \n
-       "_say3D_PVS = [player, _dog, 17,Epoch_personalToken];" \n
-       "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "[player, _dog, ""dog_cry"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "};" \n
        "" \n
        "_criteria = ""(moveToCompleted _dog) || (_dog distance _moveTo < 1.5)"";" \n
@@ -1012,10 +1007,10 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"deleteVehicle _foodHolder;" \n
        "" \n
        "if (_plyrVar == _dogName) then {" \n
-       "[format[""<t size='1.6' color='#99ffffff'>You have fed %1</t>"",_dogName], 5] call Epoch_dynamicText;" \n
+       "[format[""You have fed %1"",_dogName], 5] call Epoch_message;" \n
        "}else{" \n
        "_plyr setVariable [""dog"", _dogName];" \n
-       "[format[""<t size='1.6' color='#99ffffff'>You have tamed %1</t>"",_dogName], 5] call Epoch_dynamicText;" \n
+       "[format[""You have tamed %1"",_dogName], 5] call Epoch_message;" \n
        "};" \n
        "_hunger = _hunger - 40;" \n
        "" \n
@@ -1050,9 +1045,8 @@ class FSM
       name = "do_alert";
       init = /*%FSM<STATEINIT""">*/"_dog forceSpeed 0;" \n
        "if (floor(random 75)<_dogNoise) then {" \n
-       "[_dog, _plyr] say3D ""dog_cry_quiet"";" \n
-       "_say3D_PVS = [player, _dog, 17,Epoch_personalToken];" \n
-       "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "[_dog, _plyr] say3D ""dog_cry"";" \n
+       "[player, _dog, ""dog_cry"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "};" \n
        "" \n
        "_dirTo =  [_dog, getPos (_nrPlyrs select 1)] call BIS_fnc_dirTo;" \n
@@ -1091,8 +1085,7 @@ class FSM
        "" \n
        "if (_rnd < 42) then {" \n
        "[_dog, _plyr] say3D ""dog_bark"";" \n
-       "_say3D_PVS = [player, _dog, 18,Epoch_personalToken];" \n
-       "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "[player, _dog, ""dog_bark"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "};" \n
        "" \n
        "if (_rnd < 6) then {" \n
@@ -1225,21 +1218,18 @@ class FSM
        "" \n
        "if (_rnd< 12) then {" \n
        "[_dog, _plyr] say3D ""dog_bark"";" \n
-       "_say3D_PVS = [player, _dog, 2,Epoch_personalToken];" \n
-       "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "[player, _dog, ""dog_bark"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "};" \n
        "" \n
        "if (_rnd < 6) then {" \n
        "_hunger = _hunger + 1;" \n
        "[_dog, _plyr] say3D ""dog_cry"";" \n
-       "_say3D_PVS = [player, _dog, 3,Epoch_personalToken];" \n
-       "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "[player, _dog, ""dog_cry"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "};" \n
        "" \n
        "if ((_hunger > 56) && (_rnd < 48)) then {" \n
        "[_dog, _plyr] say3D ""dog_cry"";" \n
-       "_say3D_PVS = [player, _dog, 2,Epoch_personalToken];" \n
-       "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+       "[player, _dog, ""dog_bark"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
        "};" \n
        "" \n
        "" \n

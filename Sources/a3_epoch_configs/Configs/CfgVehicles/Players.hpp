@@ -678,7 +678,6 @@ class Epoch_Female_F: Epoch_Female_base_F
     woman = 1;
     scope = 2;
     displayName = "Female";
-    interactMode = 2;
 };
 
 class O_Soldier_base_F;
@@ -847,5 +846,4 @@ class Epoch_Male_F: Epoch_Man_base_F
 {
     scope = 2;
     displayName = "Male";
-    interactMode = 2;
 };

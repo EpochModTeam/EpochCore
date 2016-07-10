@@ -18,6 +18,8 @@ class RscTitles
 #include "GroupRequests.hpp"
 #include "InteractBank.hpp"
 #include "Trade.hpp"
+
+// todo move out of main mod
 #include "RscDisplayInventory.hpp"
 
 // Security Changes Start
@@ -31,26 +33,28 @@ class RscDisplayPassword: RscStandardDisplay
 	onLoad = "[""onLoad"",_this,""RscDisplayPassword"",'GUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf"";execVM ""\x\addons\a3_epoch_code\system\dummy.sqf""";
 };
 class RscConfigEditor_Main{onLoad = "missionNamespace setVariable ['yolo',true];(_this select 0) closeDisplay 0";};
-*/
-// Security Changes End
-
-// TODO: move this to code
 //close breifing
 class RscDisplayDebriefing: RscStandardDisplay
 {
 	onLoad = "(_this select 0) closeDisplay 0";
 };
-
+*/
+// Security Changes End
+/*
 class RscDisplayMain: RscStandardDisplay
 {
 	onLoad = "_this call compile preprocessfilelinenumbers ""\x\addons\a3_epoch_code\gui\scripts\Epoch_handleWelcomeScreen.sqf""";
 };
 
+// TODO: move this to login FSM
 class RscDisplayClientGetReady: RscDisplayGetReady
 {
 	onLoad = "ctrlActivate ((_this select 0) displayCtrl 1); (_this select 0) closeDisplay 1";
 	//onLoad = "[""onLoad"",_this,""RscDiary"",'GUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""";
 };
+*/
+
+/* - removed welcome message
 class RscDisplayWelcome;
 class RscWelcomeEpoch : RscDisplayWelcome
 {
@@ -65,8 +69,9 @@ class RscVersionUpdateEpoch : RscWelcomeEpoch
 {
 	onLoad = "[""onLoad"",[(_this select 0),""Changelog""],""Epoch_welcomeScreen"",'Epoch'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf"""; //Used when we have it outside of the game}
 };
+*/
 
-#include "RscInGameUI.hpp"
+// #include "RscInGameUI.hpp"
 #include "EpochLoadingScreen.hpp"
 #include "EPOCH_createGrp.hpp"
 #include "Epoch_myGroup.hpp"

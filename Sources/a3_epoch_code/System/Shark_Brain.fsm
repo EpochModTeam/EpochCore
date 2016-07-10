@@ -74,7 +74,7 @@ link39[] = {27,2};
 link40[] = {28,29};
 link41[] = {29,7};
 globals[] = {0.000000,0,0,0,16777215,640,480,1,113,6316128,1,-323.378784,541.908020,588.921448,-376.164001,789,880,1};
-window[] = {2,-1,-1,-1,-1,551,1706,2731,26,3,807};
+window[] = {2,-1,-1,-1,-1,707,182,1207,182,3,807};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -434,7 +434,9 @@ class FSM
       name = "end";
       init = /*%FSM<STATEINIT""">*/"_shark spawn {" \n
        "	uiSleep 60;" \n
-       "	(typeOf _this) call EPOCH_unitSpawnDecrease;" \n
+       "	if !(alive _this) then {" \n
+       "		(typeOf _this) call EPOCH_unitSpawnDecrease;" \n
+       "	};" \n
        "	deleteVehicle _this;" \n
        "};" \n
        "" \n
@@ -720,7 +722,7 @@ class FSM
   initState="shark";
   finalStates[] =
   {
-    "end"
+    "end",
   };
 };
 /*%FSM</COMPILE>*/

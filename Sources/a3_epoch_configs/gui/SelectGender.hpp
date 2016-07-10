@@ -4,7 +4,7 @@ class SelectGender
 	idd = -7;
 	movingEnable = 0;
 	enableSimulation = 1;
-	onLoad = "['Select your gender',10] call Epoch_dynamicText; setMousePosition [0.5, 0.5];";
+	onLoad = "['Select your gender',3] call Epoch_message; setMousePosition [0.5, 0.5];";
 	class ControlsBackground
 	{
 		class Background: RscPicture //Replace with custom background

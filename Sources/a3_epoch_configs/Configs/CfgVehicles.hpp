@@ -455,12 +455,13 @@ class CfgVehicles
 	class I_Soldier_EPOCH : I_Soldier_base_F
 	{
 		author = "$STR_A3_Bohemia_Interactive";
+		model="\A3\Characters_F_Beta\INDEP\ia_soldier_02.p3d";
 		_generalMacro = "I_Soldier_EPOCH";
 		scope = 2;
 		displayName = "Epoch Militia Soldier";
 		cost = 90000;
 		camouflage = 1.2;
-		uniformClass = "U_I_CombatUniform_shortsleeve";
+		uniformClass = "";
 		weapons[] = { "hgun_PDW2000_F", "hgun_ACPC2_F", "Throw", "Put" };
 		respawnWeapons[] = { "hgun_PDW2000_F", "hgun_ACPC2_F", "Throw", "Put" };
 		Items[] = { "FAK" };
@@ -470,15 +471,16 @@ class CfgVehicles
 		linkedItems[] = { "V_24_EPOCH", "H_89_EPOCH", "ItemMap", "ItemCompass", "ItemWatch", "EpochRadio0" };
 		respawnLinkedItems[] = { "V_24_EPOCH", "H_89_EPOCH", "ItemMap", "ItemCompass", "ItemWatch", "EpochRadio0" };
 	};
-	class I_Soldier2_EPOCH : I_Soldier_base_F
+	class I_Soldier2_EPOCH : I_Soldier_EPOCH
 	{
 		author = "$STR_A3_Bohemia_Interactive";
+		model="\A3\characters_F_gamma\Guerrilla\ig_guerrilla2_1.p3d";
 		_generalMacro = "I_Soldier2_EPOCH";
 		scope = 2;
 		displayName = "Epoch Militia Guerilla";
 		cost = 90000;
 		camouflage = 1.2;
-		uniformClass = "U_IG_Guerilla2_1";
+		uniformClass = "";
 		weapons[] = { "AKM_EPOCH", "hgun_ACPC2_F", "Throw", "Put" };
 		respawnWeapons[] = { "AKM_EPOCH", "hgun_ACPC2_F", "Throw", "Put" };
 		Items[] = { "FAK" };
@@ -488,15 +490,16 @@ class CfgVehicles
 		linkedItems[] = { "V_24_EPOCH", "H_89_EPOCH", "ItemMap", "ItemCompass", "ItemWatch", "EpochRadio0" };
 		respawnLinkedItems[] = { "V_24_EPOCH", "H_89_EPOCH", "ItemMap", "ItemCompass", "ItemWatch", "EpochRadio0" };
 	};
-	class I_Soldier3_EPOCH : I_Soldier_base_F
+	class I_Soldier3_EPOCH : I_Soldier_EPOCH
 	{
 		author = "$STR_A3_Bohemia_Interactive";
+		model="A3\Characters_F_Beta\INDEP\ia_sniper.p3d";
 		_generalMacro = "I_Soldier3_EPOCH";
 		scope = 2;
 		displayName = "Epoch Militia Ghillie";
 		cost = 90000;
 		camouflage = 1.4;
-		uniformClass = "U_I_GhillieSuit";
+		uniformClass = "";
 		weapons[] = { "srifle_DMR_01_F", "hgun_ACPC2_F", "Throw", "Put" };
 		respawnWeapons[] = { "srifle_DMR_01_F", "hgun_ACPC2_F", "Throw", "Put" };
 		Items[] = { "FAK" };
@@ -1484,7 +1487,9 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sapper_corpse.p3d";
 		displayName = "Sapper Corpse";
 	};
-	class Secure_Storage_Temp : Constructions_modular_F {};
+	class Secure_Storage_Temp : Constructions_modular_F {
+		scope = 0;
+	};
 	class LockBox_SIM_EPOCH : Secure_Storage_Temp
 	{
 		author = "Sequisha";
@@ -4376,7 +4381,6 @@ class CfgVehicles
 		moves = "CfgMovesGreatWhite_F";
 		hasGeometry = 1;
 		agentTasks[] = {};
-		interactMode = 3;
 	};
 
 	class Goat_random_EPOCH : Animal_Base_F
@@ -4392,7 +4396,6 @@ class CfgVehicles
 			tex[] = {};
 			mat[] = { "A3\animals_f_beta\Goat\data\goat.rvmat", "A3\animals_f_beta\Goat\data\W1_goat.rvmat", "A3\animals_f_beta\Goat\data\W2_goat.rvmat" };
 		};
-		interactMode = 3;
 	};
 
 	class Sheep_random_EPOCH : Animal_Base_F
@@ -4407,18 +4410,15 @@ class CfgVehicles
 			tex[] = {};
 			mat[] = { "A3\animals_f_beta\sheep\data\sheep.rvmat", "A3\animals_f_beta\sheep\data\W1_sheep.rvmat", "A3\animals_f_beta\sheep\data\W2_sheep.rvmat" };
 		};
-		interactMode = 3;
 	};
 
 	class Cock_random_F;
 	class Cock_random_EPOCH: Cock_random_F {
 		agentTasks[] = {};
-		interactMode = 3;
 	};
 	class Hen_random_F;
 	class Hen_random_EPOCH: Hen_random_F {
 		agentTasks[] = {};
-		interactMode = 3;
 	};
 
 	class Rabbit_F : Animal_Base_F
@@ -4504,7 +4504,6 @@ class CfgVehicles
 
 		agentTasks[] = {};
 		hasGeometry = 1;
-		interactMode = 3;
 	};
 
 	class Snake_random_EPOCH : Animal_Base_F
@@ -4525,7 +4524,6 @@ class CfgVehicles
 		triggerAnim = "";
 		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[] = { "\A3\Animals_F\Snakes\data\Snake_Dice_CO.paa" };
-		interactMode = 3;
 	};
 	class Snake2_random_EPOCH : Snake_random_EPOCH
 	{

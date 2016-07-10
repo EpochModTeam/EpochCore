@@ -146,7 +146,6 @@ class PointerSlot;
 #include "\x\addons\a3_epoch_configs\Configs\CfgGesturesMale.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesAnimal.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgActions.hpp"
-#include "\x\addons\a3_epoch_configs\Configs\CfgSounds.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgCloudlets.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgVehicles.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgInGameUI.hpp"
@@ -197,6 +196,8 @@ class RscOpticsText;
 class RscLadderPicture;
 class Attributes;
 class RscDisplayGetReady;
+class RscActivePicture;
+class RscActivePictureKeepAspect;
 
 class CA_Title;
 class ScrollBar;

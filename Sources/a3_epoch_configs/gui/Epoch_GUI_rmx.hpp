@@ -1,9 +1,30 @@
+//Used by epoch_dragControl function... allows moving normal controls just like dialogs with movingEnabled = 1;
+class rmx_drag_RscActivePicture: RscActivePicture
+{
+	onMouseMoving = "_this call epoch_dragControl;";
+	onMouseButtonDown = "rmx_var_drag_MouseDown = true;";
+	onMouseButtonUp = "rmx_var_drag_MouseDown = false;";
+};
+
+class rmx_drag_RscActivePictureKeepAspect: RscActivePictureKeepAspect
+{
+	onMouseMoving = "_this call epoch_dragControl;";
+	onMouseButtonDown = "rmx_var_drag_MouseDown = true;";
+	onMouseButtonUp = "rmx_var_drag_MouseDown = false;";
+};
+
 class rmx_dynamenu {
 	idd = 66600;
 	enableSimulation = 1;
 	movingEnable = 1;
 	onLoad = "setMousePosition [0.5, 0.5];";
 	onKeyUp = "_this call epoch_keyUp";
+	class controls {};
+};
+
+class rmx_moveDynamicHUD {
+	idd = 66666;
+	enableSimulation = 1;
 	class controls {};
 };
 
@@ -773,18 +794,46 @@ class rmx_ST1: RscStructuredText
 
 class rmx_ST2: RscStructuredText
 {
-	text = "";
-	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	colorText[] = {1,1,1,1};
-	shadow = 2;
+	x=0;
+	y=0;
+	h=0.035;
+	w=0.1;
+	text="";
+	//size="(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	size = 0.04;
+	colorText[]={1,1,1,1};
+	colorBackground[] = {0.2,0.2,0.2,0.7};
+	shadow=2;
+	type = 13;
+	style = 0x02; 
 	class Attributes
 	{
-		font = "PuristaMedium";
-		color = "#ffffff";
-		colorLink = "#D09B43";
-		align = "center";
-		valign = "middle";
-		size = "1";
-		shadow = 2;
+		font="PuristaMedium"; // "RobotoCondensed";
+		color="#ffffff";
+		colorLink="#D09B43";
+		align="center";
+		valign = "top"
+		shadow=2;
 	};
+};
+
+class rmx_t1
+{
+	text="";
+	x=0;
+	y=0;
+	h=0;
+	w=0;
+	type=0;
+	style=0x02;
+	shadow=2;
+	colorShadow[]={0,0,0,0.5};
+	font="PolenticalNeon";
+	SizeEx=0.05;
+	colorText[]={1,1,1,1};
+	colorBackground[]={0,0,0,0};
+	linespacing=1;
+	tooltipColorText[]={1,1,1,1};
+	tooltipColorBox[]={1,1,1,1};
+	tooltipColorShade[]={0,0,0,0.64999998};
 };

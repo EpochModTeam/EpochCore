@@ -781,52 +781,225 @@ class Epoch_SapperB_F : Epoch_Sapper_base_F
 	};
 };
 
-//class C_man_1;
 class EPOCH_RyanZombie_1: C_man_1
 {
+	epochLootClass = "EPOCH_RyanZombie_1";
 	moves = "CfgRyanZombiesMovesMaleSdrSlow";
 	identityTypes[] = {"NoGlasses"};
 	scope = 2;
 	displayName = "Zombie 1";
-	armor = 8;
+	armor = 10;
 	armorStructural = 20;
-	explosionShielding = 0.1;
-	hiddenSelections[] = {"Camo"};
-	uniformClass = "";
-	hiddenSelectionsTextures[] = {"\A3\characters_f\civil\data\c_poloshirt_3_co.paa"};
-	hiddenSelectionsMaterials[] = {"\A3\Characters_F\Civil\Data\c_cloth1_injury.rvmat"};
-	class EventHandlers{};
+	explosionShielding = 0.3;
+	glassesEnabled = 0;
+	class EventHandlers : EventHandlers
+	{
+		init = "(_this select 0) setface (selectRandom [""RyanZombieFace1"", ""RyanZombieFace2"", ""RyanZombieFace3"", ""RyanZombieFace4"", ""RyanZombieFace5""])";
+	};
 	weapons[] = {"Throw","Put"};
 	respawnWeapons[] = {"Throw","Put"};
 	magazines[] = {};
 	respawnMagazines[] = {};
 	linkedItems[] = {};
 	respawnlinkedItems[] = {};
+	hiddenSelections[] = {"camo","insignia"};
+	hiddenSelectionsTextures[] = {"A3\Characters_F\Civil\Data\c_poloshirt_2_co.paa"};
+	hiddenSelectionsMaterials[] = {"A3\Characters_F\Civil\Data\c_cloth1_injury.rvmat"};
+	uniformClass = "";
+	nakedUniform = "U_EPOCH_RyanZombie_1";
+	modelSides[] = {6};
 };
 class EPOCH_RyanZombie_2: EPOCH_RyanZombie_1
 {
-	model = "\A3\Characters_F\Civil\c_poloshirtpants";
+	model = "\A3\characters_F\civil\c_poor";
+	hiddenSelectionsTextures[] = {"A3\characters_f\civil\data\c_cloth1_v2_co.paa"};
 	displayName = "Zombie 2";
-	hiddenSelectionsTextures[] = {"\A3\Characters_F\Civil\Data\c_poloshirtpants_1_co.paa"};
-	hiddenSelectionsMaterials[] = {"\A3\Characters_F\Civil\Data\c_poloshirtpants_injury.rvmat"};
+	uniformClass = ""; //U_C_Poor_1
+	nakedUniform = "U_EPOCH_RyanZombie_2";
 };
 class EPOCH_RyanZombie_3: EPOCH_RyanZombie_1
 {
-	model = "\A3\characters_F\civil\c_poor";
-	displayName = "Zombie 3";
-	hiddenSelectionsTextures[] = {"\A3\characters_f\civil\data\c_cloth1_v2_co.paa"};
-};
-class EPOCH_RyanZombie_4: EPOCH_RyanZombie_1
-{
 	model = "\A3\characters_F\common\coveralls";
-	displayName = "Zombie 4";
-	hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\coveralls_dirty_co.paa"};
+	displayName = "Zombie 3";
+	uniformClass = ""; //U_C_WorkerCoverAlls
+	hiddenSelections[] = {"Camo","insignia"};
+	hiddenSelectionsTextures[] = {"A3\Characters_F\Common\Data\coveralls_dirty_co.paa"};
+	nakedUniform = "U_EPOCH_RyanZombie_3";
 };
-class EPOCH_RyanZombie_5: EPOCH_RyanZombie_4
+class EPOCH_RyanZombie_4: EPOCH_RyanZombie_3
+{
+	displayName = "Zombie 4";
+	uniformClass = ""; //B_Soldier_04_f
+	hiddenSelectionsTextures[] = {"A3\Characters_F\Common\Data\coveralls_sage_co.paa"};
+	nakedUniform = "U_EPOCH_RyanZombie_4";
+};
+class EPOCH_RyanZombie_5: EPOCH_RyanZombie_3
 {
 	displayName = "Zombie 5";
 	hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\A3\Characters_F_EPC\Civil\Data\scientist_02_co.paa"};
+	uniformClass = ""; //U_C_Scientist
+	hiddenSelectionsTextures[] = {"A3\Characters_F_EPC\Civil\Data\scientist_02_co.paa"};
+	nakedUniform = "U_EPOCH_RyanZombie_5";
+};
+// CfgRyanZombiesMovesMaleSdrCrawler
+class EPOCH_RyanZombie_1_C: EPOCH_RyanZombie_1
+{
+	displayName = "Zombie 1 (Crawler)";
+	moves = "CfgRyanZombiesMovesMaleSdrCrawler";
+};
+class EPOCH_RyanZombie_2_C: EPOCH_RyanZombie_2
+{
+	displayName = "Zombie 2 (Crawler)";
+	moves = "CfgRyanZombiesMovesMaleSdrCrawler";
+};
+class EPOCH_RyanZombie_3_C: EPOCH_RyanZombie_3
+{
+	displayName = "Zombie 3 (Crawler)";
+	moves = "CfgRyanZombiesMovesMaleSdrCrawler";
+};
+class EPOCH_RyanZombie_4_C: EPOCH_RyanZombie_4
+{
+	displayName = "Zombie 4 (Crawler)";
+	moves = "CfgRyanZombiesMovesMaleSdrCrawler";
+};
+class EPOCH_RyanZombie_5_C: EPOCH_RyanZombie_5
+{
+	displayName = "Zombie 5 (Crawler)";
+	moves = "CfgRyanZombiesMovesMaleSdrCrawler";
+};
+// CfgRyanZombiesMovesMaleSdrSpider
+class EPOCH_RyanZombie_1_Sp: EPOCH_RyanZombie_1
+{
+	displayName = "Zombie 1 (Spider)";
+	moves = "CfgRyanZombiesMovesMaleSdrSpider";
+};
+class EPOCH_RyanZombie_2_Sp: EPOCH_RyanZombie_2
+{
+	displayName = "Zombie 2 (Spider)";
+	moves = "CfgRyanZombiesMovesMaleSdrSpider";
+};
+class EPOCH_RyanZombie_3_Sp: EPOCH_RyanZombie_3
+{
+	displayName = "Zombie 3 (Spider)";
+	moves = "CfgRyanZombiesMovesMaleSdrSpider";
+};
+class EPOCH_RyanZombie_4_Sp: EPOCH_RyanZombie_4
+{
+	displayName = "Zombie 4 (Spider)";
+	moves = "CfgRyanZombiesMovesMaleSdrSpider";
+};
+class EPOCH_RyanZombie_5_Sp: EPOCH_RyanZombie_5
+{
+	displayName = "Zombie 5 (Spider)";
+	moves = "CfgRyanZombiesMovesMaleSdrSpider";
+};
+// CfgRyanZombiesMovesMaleSdrBoss
+class EPOCH_RyanZombie_1_B: EPOCH_RyanZombie_1
+{
+	armor = 20;
+	displayName = "Zombie 1 (Boss)";
+	moves = "CfgRyanZombiesMovesMaleSdrBoss";
+};
+class EPOCH_RyanZombie_2_B: EPOCH_RyanZombie_2
+{
+	armor = 20;
+	displayName = "Zombie 2 (Boss)";
+	moves = "CfgRyanZombiesMovesMaleSdrBoss";
+};
+class EPOCH_RyanZombie_3_B: EPOCH_RyanZombie_3
+{
+	armor = 20;
+	displayName = "Zombie 3 (Boss)";
+	moves = "CfgRyanZombiesMovesMaleSdrBoss";
+};
+class EPOCH_RyanZombie_4_B: EPOCH_RyanZombie_4
+{
+	displayName = "Zombie 4 (Boss)";
+	moves = "CfgRyanZombiesMovesMaleSdrBoss";
+};
+class EPOCH_RyanZombie_5_B: EPOCH_RyanZombie_5
+{
+	armor = 20;
+	displayName = "Zombie 5 (Boss)";
+	moves = "CfgRyanZombiesMovesMaleSdrBoss";
+};
+// CfgRyanZombiesMovesMaleSdrwalker
+class EPOCH_RyanZombie_1_W: EPOCH_RyanZombie_1
+{
+	displayName = "Zombie 1 (Walker)";
+	moves = "CfgRyanZombiesMovesMaleSdrwalker";
+};
+class EPOCH_RyanZombie_2_W: EPOCH_RyanZombie_2
+{
+	displayName = "Zombie 2 (Walker)";
+	moves = "CfgRyanZombiesMovesMaleSdrwalker";
+};
+class EPOCH_RyanZombie_3_W: EPOCH_RyanZombie_3
+{
+	displayName = "Zombie 3 (Walker)";
+	moves = "CfgRyanZombiesMovesMaleSdrwalker";
+};
+class EPOCH_RyanZombie_4_W: EPOCH_RyanZombie_4
+{
+	displayName = "Zombie 4 (Walker)";
+	moves = "CfgRyanZombiesMovesMaleSdrwalker";
+};
+class EPOCH_RyanZombie_5_W: EPOCH_RyanZombie_5
+{
+	displayName = "Zombie 5 (Walker)";
+	moves = "CfgRyanZombiesMovesMaleSdrwalker";
+};
+// CfgRyanZombiesMovesMaleSdrMedium
+class EPOCH_RyanZombie_1_M: EPOCH_RyanZombie_1
+{
+	displayName = "Zombie 1 (Medium)";
+	moves = "CfgRyanZombiesMovesMaleSdrMedium";
+};
+class EPOCH_RyanZombie_2_M: EPOCH_RyanZombie_2
+{
+	displayName = "Zombie 2 (Medium)";
+	moves = "CfgRyanZombiesMovesMaleSdrMedium";
+};
+class EPOCH_RyanZombie_3_M: EPOCH_RyanZombie_3
+{
+	displayName = "Zombie 3 (Medium)";
+	moves = "CfgRyanZombiesMovesMaleSdrMedium";
+};
+class EPOCH_RyanZombie_4_M: EPOCH_RyanZombie_4
+{
+	displayName = "Zombie 4 (Medium)";
+	moves = "CfgRyanZombiesMovesMaleSdrMedium";
+};
+class EPOCH_RyanZombie_5_M: EPOCH_RyanZombie_5
+{
+	displayName = "Zombie 5 (Medium)";
+	moves = "CfgRyanZombiesMovesMaleSdrMedium";
+};
+// CfgRyanZombiesMovesMaleSdrSlow2
+class EPOCH_RyanZombie_1_S: EPOCH_RyanZombie_1
+{
+	displayName = "Zombie 1 (Medium)";
+	moves = "CfgRyanZombiesMovesMaleSdrSlow2";
+};
+class EPOCH_RyanZombie_2_S: EPOCH_RyanZombie_2
+{
+	displayName = "Zombie 2 (Medium)";
+	moves = "CfgRyanZombiesMovesMaleSdrSlow2";
+};
+class EPOCH_RyanZombie_3_S: EPOCH_RyanZombie_3
+{
+	displayName = "Zombie 3 (Medium)";
+	moves = "CfgRyanZombiesMovesMaleSdrSlow2";
+};
+class EPOCH_RyanZombie_4_S: EPOCH_RyanZombie_4
+{
+	displayName = "Zombie 4 (Medium)";
+	moves = "CfgRyanZombiesMovesMaleSdrSlow2";
+};
+class EPOCH_RyanZombie_5_S: EPOCH_RyanZombie_5
+{
+	displayName = "Zombie 5 (Medium)";
+	moves = "CfgRyanZombiesMovesMaleSdrSlow2";
 };
 
 

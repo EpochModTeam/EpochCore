@@ -12,7 +12,29 @@
     Github:
     https://github.com/EpochModTeam/Epoch/tree/release/Sources/epoch_config/Configs/CfgMovesMaleSdr.hpp
 */
-class CfgMovesBasic;
+class CfgMovesBasic {
+	class DefaultDie;
+	class ManActions
+ 	{
+		GestureSwing0 = "";
+		GestureSwing1 = "";
+		GestureSwing2 = "";
+		GestureFinger = "";
+		SledgeSwing = "";
+ 	};
+	class Actions
+	{
+		class NoActions: ManActions
+		{
+			GestureSwing0[] = {"GestureSwing0","Gesture"};
+			GestureSwing1[] = {"GestureSwing1","Gesture"};
+			GestureSwing2[] = {"GestureSwing2","Gesture"};
+			GestureFinger[] = {"GestureFinger","Gesture"};
+			SledgeSwing[] = {"SledgeSwing","Gesture"};
+		};
+	};
+};
+
 class CfgMovesMaleSdr : CfgMovesBasic
 {
 	skeletonName = "OFP2_ManSkeleton";

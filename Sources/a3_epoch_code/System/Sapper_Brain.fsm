@@ -323,8 +323,7 @@ class FSM
                          "_sound = selectRandom _sounds;" \n
                          "" \n
                          "_sapper say3D _sound;" \n
-                         "_say3D_PVS = [player, _sapper,(EPOCH_sounds find _sound), Epoch_personalToken];" \n
-                         "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+                         "[player, _sapper,_sound, Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "};" \n
                          "" \n
                          "_doInterrupt = {" \n
@@ -771,8 +770,7 @@ class FSM
                          "" \n
                          "_sound = ""sapper_explode"";" \n
                          "_sapper say3D _sound;" \n
-                         "_say3D_PVS = [player,_sapper,(EPOCH_sounds find _sound),Epoch_personalToken];" \n
-                         "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+                         "[player,_sapper,_sound,Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "_sapper playMoveNow ""Unconscious"";" \n
                          "" \n
                          ""/*%FSM</STATEINIT""">*/;
@@ -1314,8 +1312,7 @@ class FSM
                          "" \n
                          "_sound = ""sapper_explode"";" \n
                          "_x say3D _sound;" \n
-                         "_say3D_PVS = [player,_x,(EPOCH_sounds find _sound),Epoch_personalToken];" \n
-                         "_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+                         "[player,_x,_sound,Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "_x playMoveNow ""Unconscious"";" \n
                          "" \n
                          "_x spawn {" \n
@@ -1714,8 +1711,7 @@ class FSM
                                          "	_lastAlert = diag_tickTime;" \n
                                          "	_sound = ""sapper_groan2"";" \n
                                          "	_sapper say3D _sound;" \n
-                                         "     	_say3D_PVS = [player, _sapper,(EPOCH_sounds find _sound), Epoch_personalToken];" \n
-                                         "	_say3D_PVS remoteExec [""EPOCH_server_handle_say3D"",2];" \n
+                                         "	[player, _sapper,_sound, Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                                          "};" \n
                                          ""/*%FSM</ACTION""">*/;
                                 };
