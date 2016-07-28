@@ -35,7 +35,7 @@ class ItemHotwire : CA_Magazine {
     model = "\x\addons\a3_epoch_assets_1\models\hotwire.p3d";
     descriptionShort = "$STR_EPOCH_ItemHotwire_descriptionShort"; // Used to hack open door locks.
     count = 1;
-    mass = 2;
+    mass = 50;
 };
 class ItemKeyKit : CA_Magazine {
     author = "Sequisha";
