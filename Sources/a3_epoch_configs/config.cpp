@@ -109,7 +109,7 @@ class CfgPatches
 		 };
 		magazines[] = { "30Rnd_test_mag", "5Rnd_rollins_mag", "CSGAS", "sledge_swing", "30Rnd_test_mag_Tracer", "EnergyPack", "1Rnd_Soda", "1Rnd_Food", "WoodLog_EPOCH", "PaintCanBlk", "PaintCanBlu", "PaintCanBrn", "PaintCanGrn", "PaintCanOra", "PaintCanPur", "PaintCanRed", "PaintCanTeal", "PaintCanYel" };
 		ammo[] = { "B_EnergyPack", "B_Swing", "Sapper_Charge_Ammo", "SapperB_Charge_Ammo", "B_Soda", "B_Food", "B_Test_Caseless", "ChainSaw_Bullet", "SmokeShellCustom" };
-		epochVersion = "0.3.9.0";
+		epochVersion = "0.4.0.0";
 	};
 };
 

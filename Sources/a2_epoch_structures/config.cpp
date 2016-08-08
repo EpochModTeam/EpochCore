@@ -15,7 +15,7 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		epochVersion = "0.3.9.0";
+		epochVersion = "0.4.0.0";
 		// TODO: disabled for due to depenancy on A2
 		// requiredAddons[] = {"CAStructuresHouse_a_stationhouse","CAStructures_Mil","CAStructuresShed_Small"};
 	};

@@ -8,7 +8,7 @@ class CfgPatches
 		requiredAddons[] = {};
 		magazines[] = {"10rnd_22X44_magazine", "9rnd_45X88_magazine", "spear_magazine", "20rnd_762_magazine","30rnd_556_magazine"};
 		ammo[] = {"E_22X44_ball", "E_45_ball", "spear_ball", "K_762_ball", "K_556_ball"};
-		epochVersion = "0.3.9.0";
+		epochVersion = "0.4.0.0";
 	};
 };
 class Mode_Burst;

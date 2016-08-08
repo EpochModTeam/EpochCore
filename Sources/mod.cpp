@@ -1,5 +1,5 @@
 dir        = "@Epoch";
-name       = "Epoch Mod 0.3.9.0";
+name       = "Epoch Mod 0.4.0.0";
 actionName = "Website";
 picture    = "mod.paa";
 action     = "http://www.epochmod.com";

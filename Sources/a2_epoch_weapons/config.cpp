@@ -7,7 +7,7 @@ class CfgPatches
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]={"A3_Weapons_F"};
-		epochVersion = "0.3.9.0";
+		epochVersion = "0.4.0.0";
 	};
 };
 /// All firemodes, to be sure

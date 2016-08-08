@@ -6,7 +6,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		units[] ={};
 		weapons[] = {};
-		epochVersion = "0.3.9.0";
+		epochVersion = "0.4.0.0";
 		
 	};
 };

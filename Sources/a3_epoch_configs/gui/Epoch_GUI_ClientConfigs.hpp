@@ -55,8 +55,10 @@ class Epoch_main_config_dynamicHUD: Epoch_main_config_template
 {
 	x = 0;
 	y = 0;
-	w = 0.51;
-	h = 0.204;
+	// w = 0.51;
+	// h = 0.204;
+	w = 0.237183 * safezoneW;
+	h = 0.308 * safezoneH;
 	class Controls
 	{
 		class rmx_dh_back: IGUIBack
