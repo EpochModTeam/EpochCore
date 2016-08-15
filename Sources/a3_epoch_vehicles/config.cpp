@@ -100,6 +100,7 @@ class CfgVehicles
 		author = "Kiory";
 		_generalMacro = "jetski_epoch";
 		displayName = "Blue Jetski";
+		vehicleclass = "Epoch_objects";
 		accuracy = 0.5;
 		attenuationEffectType = "OpenCarAttenuation";
 		scope = 2;
@@ -290,12 +291,11 @@ class CfgVehicles
 		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1"};
 		slingLoadMemoryPoint = "slingLoad0";
 
-		/*
 		class EventHandlers: EventHandlers
 		{
-			init = "(_this select 0) execVM ""\x\addons\a3_epoch_vehicles\scripts\digi.sqf"";";
+			GetIn = "params ['','','_u']; if (player isEqualTo _u) then {EPOCH_inEpochVeh = true; 0 = _this spawn {params ['_v'];_p = '\x\addons\a3_epoch_vehicles\data\'; while {EPOCH_inEpochVeh} do {_h = floor ((date select 3)/10);_m = floor ((date select 4)/10);{_v setObjectTexture [_forEachIndex,_x]} forEach [format['%1num%2_ca.paa',_p,_h],format['%1num%2_ca.paa',_p,(date select 3)-(_h*10)],format['%1num%2_ca.paa',_p,_m],format['%1num%2_ca.paa',_p,(date select 4)-(_m*10)],format['%1fuel%2_ca.paa',_p,floor(fuel _v*10)]];uisleep 1;};};};";
+			GetOut = "params ['','','_u']; if (player isEqualTo _u) then {EPOCH_inEpochVeh = false};";
 		};
-		*/
 
 		class UserActions
 		{
@@ -351,6 +351,7 @@ class CfgVehicles
 		author = "Kiory";
 		scope = 2;
 		displayName = "Electric Motorcycle";
+		vehicleclass = "Epoch_objects";
 		model = "\x\addons\a3_epoch_vehicles\ebike.p3d";
 		icon = "\A3\Soft_F\Quadbike_01\Data\UI\map_Quad_CA.paa";
 		picture = "\A3\Soft_F\Quadbike_01\Data\UI\Quadbike_01_CA.paa";
@@ -978,6 +979,12 @@ class CfgVehicles
 		aggregateReflectors[] = {{ "Left","Right" }};
 		hiddenSelections[] = {"speed", "battery"};
 
+		class EventHandlers: EventHandlers
+		{
+			GetIn = "params ['','','_u'];if (player isEqualTo _u) then {EPOCH_inEpochVeh = true;0 = _this spawn {params ['_v'];_path = '\x\addons\a3_epoch_vehicles\data\'; while {EPOCH_inEpochVeh} do {{_v setObjectTexture [_forEachIndex,_x]} forEach [format['%1speed%2_ca.paa',_path,floor(speed _v/9) max 0],format['%1energ%2_ca.paa',_path,floor(fuel _v*14)]];uisleep 1;};};};";
+			GetOut = "params ['','','_u']; if (player isEqualTo _u) then {EPOCH_inEpochVeh = false};";
+		};
+
 		class UserActions
 		{
 			class PressXToFlipTheThing
@@ -993,15 +1000,26 @@ class CfgVehicles
 		};
 	};
 
-	class jetski_epoch_blu: jetski_epoch
+	class ebike_epoch_blu: ebike_epoch
 	{
 		author = "Kiory";
-		_generalMacro = "B_Boat_Transport_01_F";
+		_generalMacro = "ebike_epoch_blu";
 		scope = 2;
 		crew = "B_Soldier_F";
 		faction = "BLU_F";
 		side = 1;
-		typicalCargo[] = {"B_Soldier_F","B_Soldier_F"};
+		typicalCargo[] = {"B_Soldier_F"};
+	};
+
+	class jetski_epoch_blu: jetski_epoch
+	{
+		author = "Kiory";
+		_generalMacro = "jetski_epoch_blu";
+		scope = 2;
+		crew = "B_Soldier_F";
+		faction = "BLU_F";
+		side = 1;
+		typicalCargo[] = {"B_Soldier_F"};
 	};
 
 };
