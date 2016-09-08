@@ -38,6 +38,7 @@ class CfgPatches
 			"A3_Characters_F",
 			"A3_Data_F",
 			"A3_Weapons_F",
+			"A3_Functions_F",
 
 			"a3_map_altis",
 			"a3_map_stratis",
@@ -155,7 +156,9 @@ class PointerSlot;
 #include "\x\addons\a3_epoch_configs\Configs\CfgAmmo.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgWeapons.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgAnimationSourceSounds.hpp"
-
+#include "\x\addons\a3_epoch_configs\Configs\CfgFunctions.hpp"
+//
+#include "\x\addons\a3_epoch_configs\Configs\CfgEpochCoreClientFunctions.hpp"
 
 #include "\A3\ui_f\hpp\defineCommonGrids.inc"
 

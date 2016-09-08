@@ -81,7 +81,7 @@ class CfgVehicles
 				radius = 3;
 				onlyForPlayer = 0;
 				condition = "this animationPhase ""open_door_l"" < 0.5";
-				statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;";
+				statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT; [this] call EPOCH_fnc_mirrorSetup;";
 			};
 			/**
 			class close_door_l: open_door_l
@@ -125,8 +125,7 @@ class CfgVehicles
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 	};
-
-	class fireplace_f_epoch : FirePlace_EPOCH
+	class fireplaceFull_epoch : FirePlace_EPOCH
 	{
 		scope = 2;
 		mapSize = 1;
@@ -137,24 +136,6 @@ class CfgVehicles
 		destrType = "DestructNo";
 		vehicleclass = "Epoch_objects";
 		model = "\x\addons\a3_epoch_assets_2\fireplace_full.p3d";
-		forceSupply = 0;
-		sections[] = {};
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-
-	};
-
-	class FirePlaceOn_EPOCH : FirePlace_EPOCH
-	{
-		scope = 2;
-		mapSize = 1;
-		cost = 0;
-		isGround = 0;
-		author = "Kiory";
-		displayName = "Fireplace On";
-		destrType = "DestructNo";
-		vehicleclass = "Epoch_objects";
-		model = "\x\addons\a3_epoch_assets_2\fireplace_on.p3d";
 		forceSupply = 0;
 		simulation = "fire";
 		sections[] = {};
@@ -192,12 +173,7 @@ class CfgVehicles
 			};
 		};
 
-		class EventHandlers
-		{
-			init = "(_this select 0) inflame true";
-		};
-
-			class Reflectors
+		class Reflectors
 		{
 			class Reflector_1
 			{
@@ -227,6 +203,29 @@ class CfgVehicles
 					hardLimitEnd = 1000;
 				};
 			};
+		};
+	};
+
+	class FirePlaceOn_EPOCH : fireplaceFull_epoch
+	{
+		scope = 2;
+		mapSize = 1;
+		cost = 0;
+		isGround = 0;
+		author = "Kiory";
+		displayName = "Fireplace On";
+		destrType = "DestructNo";
+		vehicleclass = "Epoch_objects";
+		model = "\x\addons\a3_epoch_assets_2\fireplace_on.p3d";
+		forceSupply = 0;
+		simulation = "fire";
+		sections[] = {};
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		// Light Fire
+		class EventHandlers
+		{
+			init = "(_this select 0) inflame true";
 		};
 	};
 

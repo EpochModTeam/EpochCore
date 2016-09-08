@@ -19,18 +19,18 @@ class CraterSpike {
 		simulation = "particles";
 		type = "SpikeCraterEffect"; // CraterSmokeCustom
 		position[] = {0,0,0};
-    intensity = 1;
-    interval = 0.1;
-    lifeTime = 0.5;
+	    intensity = 1;
+	    interval = 0.1;
+	    lifeTime = 0.5;
 	};
 	class CraterSmokeCustom4
 	{
 		simulation = "particles";
 		type = "WoodChippings3"; // CraterSmokeCustom
 		position[] = {0,0,0};
-    intensity = 1;
-    interval = 1;
-    lifeTime = 0.5;
+	    intensity = 1;
+	    interval = 1;
+	    lifeTime = 0.5;
 	};
 
 };

@@ -1441,14 +1441,14 @@ class CfgVehicles
 	};
 	class Spike_TRAP_SIM_EPOCH: Constructions_modular_F
 	{
-		author = "Sequisha";
+		author = "Aaron Clark";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
 		displayName = "Spike Trap (SIM)";
 	};
 	class Metal_TRAP_SIM_EPOCH: Constructions_modular_F
 	{
-		author = "Sequisha";
+		author = "Aaron Clark";
 		scope = 2;
 		model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
 		displayName = "Metal Trap (SIM)";
