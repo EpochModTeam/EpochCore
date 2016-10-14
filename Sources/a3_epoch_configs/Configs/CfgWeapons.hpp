@@ -38,7 +38,7 @@ class CfgWeapons
     {
         author = "Epoch";
         scope = 1;
-        displayName = "Zombie 1";
+        displayName = "$str_epoch_Zombie1";
         picture = "\A3\characters_f\data\ui\icon_U_C_Poloshirt_blue_ca.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
         hiddenSelections[] = {"camo"};
@@ -53,7 +53,7 @@ class CfgWeapons
     };
     class U_EPOCH_RyanZombie_2 : U_EPOCH_RyanZombie_1
     {
-        displayName = "Zombie 2";
+        displayName = "$str_epoch_Zombie2";
         picture = "\A3\characters_f\data\ui\icon_U_C_Poor_1_ca.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
         hiddenSelections[] = {"camo"};
@@ -68,7 +68,7 @@ class CfgWeapons
     };
     class U_EPOCH_RyanZombie_3 : U_EPOCH_RyanZombie_1
     {
-        displayName = "Zombie 3";
+        displayName = "$str_epoch_Zombie3";
         picture = "\A3\characters_f\data\ui\icon_U_C_WorkerCoveralls_ca.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
         hiddenSelections[] = {"camo"};
@@ -83,7 +83,7 @@ class CfgWeapons
     };
     class U_EPOCH_RyanZombie_4 : U_EPOCH_RyanZombie_1
     {
-        displayName = "Zombie 4";
+        displayName = "$str_epoch_Zombie4";
         picture = "\A3\characters_F_EPC\data\ui\icon_U_Journalist_ca.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelections[] = {"camo"};
@@ -98,7 +98,7 @@ class CfgWeapons
     };
     class U_EPOCH_RyanZombie_5 : U_EPOCH_RyanZombie_1
     {
-        displayName = "Zombie 5";
+        displayName = "$str_epoch_Zombie5";
         picture = "\A3\characters_F_EPC\data\ui\icon_U_Scientist_ca.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
         hiddenSelections[] = {"camo"};
@@ -115,7 +115,7 @@ class CfgWeapons
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Keesha Underwear";
+        displayName = "$str_epoch_KeeshaUnderwear";
         picture = "\x\addons\a3_epoch_assets\textures\keesha\icon_femaleW_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -131,7 +131,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Keesha";
+        displayName = "$str_epoch_Keesha";
         picture = "\x\addons\a3_epoch_assets\textures\keesha\icon_femaleW_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -147,7 +147,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Female Wetsuit";
+        displayName = "$str_epoch_FemaleWetsuit";
         picture = "\x\addons\a3_epoch_assets\textures\wetsuit\icon_wetsuit_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -164,7 +164,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Female Wetsuit (white)";
+        displayName = "$str_epoch_FemaleWetsuitwhite";
         picture = "\x\addons\a3_epoch_assets\textures\wetsuit\icon_wetsuitWhite_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -181,7 +181,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Female Wetsuit (blue)";
+        displayName = "$str_epoch_FemaleWetsuitblue";
         picture = "\x\addons\a3_epoch_assets\textures\wetsuit\icon_wetsuitBlue_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -198,7 +198,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Female Wetsuit (purple)";
+        displayName = "$str_epoch_FemaleWetsuitpurple";
         picture = "\x\addons\a3_epoch_assets\textures\wetsuit\icon_wetsuitPurp_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -215,7 +215,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Female Wetsuit (camo)";
+        displayName = "$str_epoch_FemaleWetsuitcamo";
         picture = "\x\addons\a3_epoch_assets\textures\wetsuit\gear_femaleWetsuit_camo_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -232,7 +232,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Keesha Camo";
+        displayName = "$str_epoch_KeeshaCamo";
         picture = "\x\addons\a3_epoch_assets\textures\camo\icon_camoDark_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -248,7 +248,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Female Ghillie (tan)";
+        displayName = "$str_epoch_FemaleGhillietan";
         picture = "\x\addons\a3_epoch_assets\textures\ghillie\gear_femaleGhillie_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -264,7 +264,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Female Ghillie (light green)";
+        displayName = "$str_epoch_FemaleGhillielightgreen";
         picture = "\x\addons\a3_epoch_assets\textures\ghillie\gear_femaleGhillie2_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -280,7 +280,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Female Ghillie (green)";
+        displayName = "$str_epoch_FemaleGhilliegreen";
         picture = "\x\addons\a3_epoch_assets\textures\ghillie\gear_femaleGhillie3_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -296,7 +296,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Keesha Camo (Blue)";
+        displayName = "$str_epoch_KeeshaCamoBlue";
         picture = "\x\addons\a3_epoch_assets\textures\camo\icon_camoBlue_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -312,7 +312,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Keesha Camo (Brown)";
+        displayName = "$str_epoch_KeeshaCamoBrown";
         picture = "\x\addons\a3_epoch_assets\textures\camo\icon_camoBrown_ca.pqq.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -328,7 +328,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Keesha Camo (Red)";
+        displayName = "$str_epoch_KeeshaCamoRed";
         picture = "\x\addons\a3_epoch_assets\textures\camo\icon_camoRed_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -344,7 +344,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Dan";
+        displayName = "$str_epoch_Dan";
         picture = "\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -360,7 +360,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Sapper";
+        displayName = "$str_epoch_Sapper";
         picture = "\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -376,7 +376,7 @@ class CfgWeapons
         author = "Sequisha";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "Unknown";
+        displayName = "$str_epoch_Unknown";
         picture = "\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
@@ -445,7 +445,7 @@ class CfgWeapons
     {
         maleVest = "V_16_EPOCH";
         scope = 2;
-        displayName = "Female Vest (Black)";
+        displayName = "$str_epoch_FemaleVestBlack";
         picture = "\A3\characters_f\Data\UI\icon_V_TacVest_blk_CA.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         hiddenSelectionsTextures[] = {"\a3\characters_f\common\data\tacticalvest_black_co.paa"};
@@ -487,7 +487,7 @@ class CfgWeapons
     {
         maleVest = "V_13_EPOCH";
         scope = 2;
-        displayName = "Female Vest (Khaki)";
+        displayName = "$str_epoch_FemaleVestKhaki";
         picture = "\A3\characters_f\Data\UI\icon_V_TacVest_khk_CA.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         hiddenSelectionsTextures[] = {"\a3\characters_f\common\data\tacticalvest_khaki_co.paa"};
@@ -496,7 +496,7 @@ class CfgWeapons
     {
         maleVest = "V_15_EPOCH";
         scope = 2;
-        displayName = "Female Vest (Olive)";
+        displayName = "$str_epoch_FemaleVestOlive";
         picture = "\A3\characters_f\Data\UI\icon_V_TacVest_khk_CA.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\tacticalvest_olive_co.paa"};
@@ -505,7 +505,7 @@ class CfgWeapons
     {
         maleVest = "V_14_EPOCH";
         scope = 2;
-        displayName = "Female Vest (Brown)";
+        displayName = "$str_epoch_FemaleVestBrown";
         picture = "\A3\characters_f\Data\UI\icon_V_TacVest_khk_CA.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\tacticalvest_brown_co.paa"};
@@ -514,7 +514,7 @@ class CfgWeapons
     {
         maleVest = "V_25_EPOCH";
         scope = 2;
-        displayName = "Female Vest (Camo)";
+        displayName = "$str_epoch_FemaleVestCamo";
         picture = "\A3\Characters_F\data\ui\icon_V_TacVest_camo_CA.paa";
         hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\tacticalvest_camo_co.paa"};
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
@@ -556,7 +556,7 @@ class CfgWeapons
     {
         maleVest = "V_26_EPOCH";
         scope = 2;
-        displayName = "Female Vest (Police)";
+        displayName = "$str_epoch_FemaleVestPolice";
         picture = "\A3\characters_f\Data\UI\icon_V_TacVest_blk_police_CA.paa";
         hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\tacticalvest_police_co.paa"};
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
@@ -1602,7 +1602,7 @@ class CfgWeapons
     {
         maleVest = "V_41_EPOCH";
         scope = 2;
-        displayName = "Side Pack (female)";
+        displayName = "$str_epoch_SidePackfemale";
         picture = "\x\addons\a3_epoch_assets\textures\side pack\equip_sidepack_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\side pack\sidepack_co.paa"};
@@ -1619,7 +1619,7 @@ class CfgWeapons
     {
         femaleVest = "V_F41_EPOCH";
         scope = 2;
-        displayName = "Side Pack (male)";
+        displayName = "$str_epoch_SidePackmale";
         picture = "\x\addons\a3_epoch_assets\textures\side pack\equip_sidepack_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\side pack\sidepack_co.paa"};
@@ -1643,7 +1643,7 @@ class CfgWeapons
         author = "Aaron Clark";
         scope = 2;
         weaponPoolAvailable = 1;
-        displayName = "Clown Mask";
+        displayName = "$str_epoch_ClownMask";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\clown\gear_clownmask_ca.paa";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\clown.p3d";
         class ItemInfo : HeadgearItem
@@ -1658,7 +1658,7 @@ class CfgWeapons
     {
         scope = 2;
         weaponPoolAvailable = 1;
-        displayName = "Scary Wolf Mask";
+        displayName = "$str_epoch_ScaryWolfMask";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_wolfmask_x_ca.paa";
         model = "\x\addons\a3_epoch_assets_2\wolf_mask.p3d";
         class ItemInfo : HeadgearItem
@@ -1674,7 +1674,7 @@ class CfgWeapons
     {
         scope = 2;
         weaponPoolAvailable = 1;
-        displayName = "Scary Pumpkin Mask";
+        displayName = "$str_epoch_ScaryPumpkinMask";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_pkinmask_x_ca.paa";
         model = "\x\addons\a3_epoch_assets_2\pkin_mask.p3d";
         class ItemInfo : HeadgearItem
@@ -1689,7 +1689,7 @@ class CfgWeapons
     class H_F0_EPOCH : ItemCore
     {
         scope = 2;
-        displayName = "Red Beret";
+        displayName = "$str_epoch_RedBeret";
         author = "Paul Tomany";
         picture = "\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
@@ -1709,35 +1709,35 @@ class CfgWeapons
     class H_F1_EPOCH : H_F0_EPOCH
     {
         scope = 2;
-        displayName = "Green Beret";
+        displayName = "$str_epoch_GreenBeret";
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\Beret\beretGcamo_Co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\Beret\beretGcamo.rvmat"};
     };
     class H_F2_EPOCH : H_F0_EPOCH
     {
         scope = 2;
-        displayName = "Pink Beret";
+        displayName = "$str_epoch_PinkBeret";
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\Beret\beretPcamo_Co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\Beret\beretPcamo.rvmat"};
     };
     class H_F3_EPOCH : H_F0_EPOCH
     {
         scope = 2;
-        displayName = "Blue Beret";
+        displayName = "$str_epoch_BlueBeret";
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\Beret\beretBcamo_Co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\Beret\beretBcamo.rvmat"};
     };
     class H_F4_EPOCH : H_F0_EPOCH
     {
         scope = 2;
-        displayName = "Orange Beret";
+        displayName = "$str_epoch_OrangeBeret";
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\Beret\beretOcamo_Co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\Beret\beretOcamo.rvmat"};
     };
     class H_F5_EPOCH : H_F0_EPOCH
     {
         scope = 2;
-        displayName = "Yellow Beret";
+        displayName = "$str_epoch_YellowBeret";
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\Beret\beretYcamo_Co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\Beret\beretYcamo.rvmat"};
     };
@@ -2310,7 +2310,7 @@ class CfgWeapons
         opticsZoomInit = 0.55;
         distanceZoomMin = 300;
         distanceZoomMax = 800;
-        descriptionShort = "AKM Assault Rifle";
+        descriptionShort = "$str_epoch_AKMAssaultRifle";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\akm\AKM.rtm"};
         dexterity = 1.8;
         bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
@@ -2445,7 +2445,7 @@ class CfgWeapons
     class AKM_EPOCH : AKM_Epoch_Base
     {
         scope = 2;
-        displayName = "AKM";
+        displayName = "$str_epoch_AKM";
         model = "\x\addons\a2_epoch_weapons\akm\akm_epoch.p3d";
         picture = "\x\addons\a2_epoch_weapons\akm\data\UI\gear_akm_x_ca.paa";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
@@ -2489,7 +2489,7 @@ class CfgWeapons
         opticsZoomInit = 0.55;
         distanceZoomMin = 300;
         distanceZoomMax = 800;
-        descriptionShort = "m4a3 Assault Rifle";
+        descriptionShort = "$str_epoch_m4a3AssaultRifle";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\m4a3\m4a3.rtm"};
         dexterity = 1.8;
         bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
@@ -2623,7 +2623,7 @@ class CfgWeapons
     class m4a3_EPOCH : m4a3_Epoch_Base
     {
         scope = 2;
-        displayName = "M4a3";
+        displayName = "$str_epoch_M4a3";
         model = "\x\addons\a2_epoch_weapons\m4a3\m4a3_epoch.p3d";
         picture = "\x\addons\a2_epoch_weapons\m4a3\data\UI\gear_m4a3_x_ca.paa";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
@@ -2667,7 +2667,7 @@ class CfgWeapons
         opticsZoomInit = 0.55;
         distanceZoomMin = 300;
         distanceZoomMax = 800;
-        descriptionShort = "M14 Rifle";
+        descriptionShort = "$str_epoch_M14Rifle";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\M14\M14.rtm"};
         dexterity = 1.8;
         bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
@@ -2801,7 +2801,7 @@ class CfgWeapons
     class M14_EPOCH : M14_Epoch_Base
     {
         scope = 2;
-        displayName = "M14";
+        displayName = "$str_epoch_M14";
         model = "\x\addons\a2_epoch_weapons\m14\m14_epoch.p3d";
         picture = "\x\addons\a2_epoch_weapons\m14\Data\UI\gear_m14_x_ca.paa";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_sniper_ca.paa";
@@ -2815,7 +2815,7 @@ class CfgWeapons
     class M14Grn_EPOCH : M14_Epoch_Base
     {
         scope = 2;
-        displayName = "M14 (Green)";
+        displayName = "$str_epoch_M14Green";
         model = "\x\addons\a2_epoch_weapons\m14\m14_green_epoch.p3d";
         picture = "\x\addons\a2_epoch_weapons\m14\Data\UI\gear_m14g_x_ca.paa";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_sniper_ca.paa";
@@ -2859,7 +2859,7 @@ class CfgWeapons
         opticsZoomInit = 0.55;
         distanceZoomMin = 300;
         distanceZoomMax = 800;
-        descriptionShort = "M16 Assault Rifle";
+        descriptionShort = "$str_epoch_M16AssaultRifle";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\m16\m16_anim.rtm"};
         dexterity = 1.8;
         bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
@@ -2981,7 +2981,7 @@ class CfgWeapons
     class m16_EPOCH : m16_Epoch_Base
     {
         scope = 2;
-        displayName = "M16";
+        displayName = "$str_epoch_M16";
         model = "\x\addons\a2_epoch_weapons\m16\m16_epoch.p3d";
         picture = "\x\addons\a2_epoch_weapons\m16\data\UI\gear_m16_x_ca.paa";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
@@ -2995,7 +2995,7 @@ class CfgWeapons
     class m16Red_EPOCH : m16_Epoch_Base
     {
         scope = 2;
-        displayName = "M16 (Red)";
+        displayName = "$str_epoch_M16Red";
         model = "\x\addons\a2_epoch_weapons\m16\m16Red_epoch.p3d";
         picture = "\x\addons\a2_epoch_weapons\m16\data\UI\gear_m16_x_ca.paa";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
@@ -3039,7 +3039,7 @@ class CfgWeapons
         opticsZoomInit = 0.55;
         distanceZoomMin = 300;
         distanceZoomMax = 800;
-        descriptionShort = "M107 Sniper Rifle";
+        descriptionShort = "$str_epoch_M107SniperRifle";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\m107\m107.rtm"};
         dexterity = 1.8;
         bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
@@ -3173,7 +3173,7 @@ class CfgWeapons
     class m107_EPOCH : m107_Epoch_Base
     {
         scope = 2;
-        displayName = "M107";
+        displayName = "$str_epoch_M107";
         model = "\x\addons\a2_epoch_weapons\m107\m107_epoch.p3d";
         picture = "\x\addons\a2_epoch_weapons\m107\data\UI\gear_m107_x_ca.paa";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
@@ -3187,7 +3187,7 @@ class CfgWeapons
     class m107Tan_EPOCH : m107_Epoch_Base
     {
         scope = 2;
-        displayName = "M107 (Tan)";
+        displayName = "$str_epoch_M107Tan";
         model = "\x\addons\a2_epoch_weapons\m107\m107Tan_epoch.p3d";
         picture = "\x\addons\a2_epoch_weapons\m107\data\UI\gear_m107Tan_x_ca.paa";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
@@ -3231,7 +3231,7 @@ class CfgWeapons
         opticsZoomInit = 0.55;
         distanceZoomMin = 300;
         distanceZoomMax = 800;
-        descriptionShort = "m249 LMG";
+        descriptionShort = "$str_epoch_m249LMG";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\m249\m249.rtm"};
         dexterity = 1.8;
         bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
@@ -3365,7 +3365,7 @@ class CfgWeapons
     class m249_EPOCH : m249_Epoch_Base
     {
         scope = 2;
-        displayName = "M249";
+        displayName = "$str_epoch_M249";
         model = "\x\addons\a2_epoch_weapons\m249\m249_epoch.p3d";
         picture = "\x\addons\a2_epoch_weapons\m249\data\UI\gear_m249_x_ca.paa";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
@@ -3379,7 +3379,7 @@ class CfgWeapons
     class m249Tan_EPOCH : m249_Epoch_Base
     {
         scope = 2;
-        displayName = "M249 Tan";
+        displayName = "$str_epoch_M249Tan";
         model = "\x\addons\a2_epoch_weapons\m249\m249Tan_epoch.p3d";
         picture = "\x\addons\a2_epoch_weapons\m249\data\UI\gear_m249_x_ca.paa";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
@@ -3422,7 +3422,7 @@ class CfgWeapons
         opticsZoomInit = 0.75;
         distanceZoomMin = 300;
         distanceZoomMax = 300;
-        descriptionShort = "Testing weapon with grenade launcher";
+        descriptionShort = "$str_epoch_Testingweaponwithgrenadelauncher";
         handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F\Rifles\MX\data\Anim\MX_gl.rtm"};
         dexterity = 1.8;
         caseless[] = {"",1,1,1};
@@ -3511,8 +3511,8 @@ class CfgWeapons
         };
         class Test_GL_F : UGL_F
         {
-            displayName = "Test grenade launcher";
-            descriptionShort = "TGL";
+            displayName = "$str_epoch_Testgrenadelauncher";
+            descriptionShort = "$str_epoch_TGL";
             useModelOptics = 0;
             useExternalOptic = 0;
             magazines[] = {"1Rnd_HE_Grenade_shell"};
@@ -3530,8 +3530,8 @@ class CfgWeapons
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Rollins Rifle";
-        descriptionShort = "1940 .45 Rollins Rifle";
+        displayName = "$str_epoch_RollinsRifle";
+        descriptionShort = "$str_epoch_194045RollinsRifle";
         magazines[] = {"5Rnd_rollins_mag"};
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\rollins.p3d";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\rollins.rtm"};
@@ -3585,8 +3585,8 @@ class CfgWeapons
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\chainsaw.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_chainsaw_CA.paa";
-        displayName = "Chainsaw";
-        descriptionShort = "Hermlite Chainsaw";
+        displayName = "$str_epoch_Chainsaw";
+        descriptionShort = "$str_epoch_HermliteChainsaw";
         magazines[] = {"CSGAS"};
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\saw_idle.rtm"};
         UiPicture = "\A3\Weapons_F\Data\UI\icon_gl_CA.paa";
@@ -3635,25 +3635,25 @@ class CfgWeapons
     {
         model = "\x\addons\a3_epoch_assets_1\models\chainsaw_B.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_chainsawB_CA.paa";
-        descriptionShort = "Hermlite Chainsaw (Blue)";
+        descriptionShort = "$str_epoch_HermliteChainsawBlue";
     };
     class ChainSawG : ChainSaw
     {
         model = "\x\addons\a3_epoch_assets_1\models\chainsaw_G.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_chainsawG_CA.paa";
-        descriptionShort = "Hermlite Chainsaw (Green)";
+        descriptionShort = "$str_epoch_HermliteChainsawGreen";
     };
     class ChainSawP : ChainSaw
     {
         model = "\x\addons\a3_epoch_assets_1\models\chainsaw_P.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_chainsawP_CA.paa";
-        descriptionShort = "Hermlite Chainsaw (Pink)";
+        descriptionShort = "$str_epoch_HermliteChainsawPink";
     };
     class ChainSawR : ChainSaw
     {
         model = "\x\addons\a3_epoch_assets_1\models\chainsaw_R.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_chainsawR_CA.paa";
-        descriptionShort = "Hermlite Chainsaw (Red)";
+        descriptionShort = "$str_epoch_HermliteChainsawRed";
     };
     class Pistol;
     class Pistol_Base_F : Pistol
@@ -3668,8 +3668,8 @@ class CfgWeapons
         model = "\x\addons\a3_epoch_weapons\ruger.p3d";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_ruger_x_ca.paa";
         magazines[] = {"10rnd_22X44_magazine"};
-        displayname = "Ruger";
-        descriptionShort = ".22 caliber pistol";
+        displayname = "$str_epoch_Ruger";
+        descriptionShort = "$str_epoch_22caliberpistol";
         class Library
         {
             libTextDesc = ".22 caliber pistol";
@@ -3778,7 +3778,7 @@ class CfgWeapons
         model = "\x\addons\a3_epoch_weapons\1911.p3d";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_1911_x_ca.paa";
         magazines[] = {"9rnd_45X88_magazine"};
-        displayname = "1911";
+        displayname = "$str_epoch_1911";
         descriptionShort = "$STR_A3_CFGWEAPONS_HGUN_ACPC2_F_2";
         class Library
         {
@@ -3851,8 +3851,8 @@ class CfgWeapons
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\hatchet.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\hatchet\equip_hatchet_ca.paa";
         magazines[] = {"hatchet_swing"};
-        displayName = "Hatchet";
-        descriptionShort = "Hatchet";
+        displayName = "$str_epoch_Hatchet";
+        descriptionShort = "$str_epoch_Hatchet";
         cursor = "EmptyCursor";
         cursorAim = "throw";
         cursorSize = 1;
@@ -3903,8 +3903,8 @@ class CfgWeapons
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\crude_hatchet.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\improv_weapon\gear_crudeHatchet_ca.paa";
         magazines[] = {"hatchet_swing"};
-        displayName = "Crude Hatchet";
-        descriptionShort = "Crude Hatchet";
+        displayName = "$str_epoch_CrudeHatchet";
+        descriptionShort = "$str_epoch_CrudeHatchet";
         cursor = "EmptyCursor";
         cursorAim = "throw";
         cursorSize = 1;
@@ -3955,8 +3955,8 @@ class CfgWeapons
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairGun.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_multigun_x_ca.paa";
         magazines[] = {"EnergyPack","EnergyPackLg"};
-        displayName = "Multi Gun";
-        descriptionShort = "Multi Gun";
+        displayName = "$str_epoch_MultiGun";
+        descriptionShort = "$str_epoch_MultiGun";
         class Library
         {
             libTextDesc = "Multi Gun";
@@ -4054,10 +4054,10 @@ class CfgWeapons
         magazineReloadTime = 0;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\sledge_weaponized.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\Sledge\equip_sledge_CA.paa";
-        displayName = "Sledge";
+        displayName = "$str_epoch_Sledge";
         magazines[] = {"sledge_swing"};
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sledge_hold.rtm"};
-        descriptionShort = "Sledge Hammer";
+        descriptionShort = "$str_epoch_SledgeHammer";
     };
     class MeleeSword : MeleeWeapon
     {
@@ -4070,10 +4070,10 @@ class CfgWeapons
         magazineReloadTime = 0;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\sword_weaponized.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\sword\equip_sword_ca.paa";
-        displayName = "Kruhm";
+        displayName = "$str_epoch_Kruhm";
         magazines[] = {"sledge_swing"};
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sledge_hold.rtm"};
-        descriptionShort = "Powerful Atlantean Sword";
+        descriptionShort = "$str_epoch_PowerfulAtlanteanSword";
     };
     class MeleeMaul : MeleeWeapon
     {
@@ -4086,10 +4086,10 @@ class CfgWeapons
         magazineReloadTime = 0;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\maul_weaponized.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\improv_weapon\gear_maul_ca.paa";
-        displayName = "Maul";
+        displayName = "$str_epoch_Maul";
         magazines[] = {"sledge_swing"};
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sledge_hold.rtm"};
-        descriptionShort = "Maul Hammer";
+        descriptionShort = "$str_epoch_MaulHammer";
     };
     class WoodClub : MeleeWeapon
     {
@@ -4102,10 +4102,10 @@ class CfgWeapons
         magazineReloadTime = 0;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\stick_weaponized.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\improv_weapon\gear_stick_ca.paa";
-        displayName = "Wood Club";
+        displayName = "$str_epoch_WoodClub";
         magazines[] = {"stick_swing"};
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sledge_hold.rtm"};
-        descriptionShort = "Wood Club";
+        descriptionShort = "$str_epoch_WoodClub";
     };
     class MeleeRod : MeleeWeapon
     {
@@ -4118,10 +4118,10 @@ class CfgWeapons
         magazineReloadTime = 0;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\fishingpole_weaponized.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\fishing\equip_fishingRod_ca.paa";
-        displayName = "Fishing Rod";
+        displayName = "$str_epoch_FishingRod";
         magazines[] = {"stick_swing"};
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sledge_hold.rtm"};
-        descriptionShort = "Fishing Rod";
+        descriptionShort = "$str_epoch_FishingRod";
     };
     class Plunger : MeleeWeapon
     {
@@ -4134,10 +4134,10 @@ class CfgWeapons
         magazineReloadTime = 0;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\plunger_weaponized.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\improv_weapon\gear_plunger_ca.paa";
-        displayName = "Plunger";
+        displayName = "$str_epoch_Plunger";
         magazines[] = {"stick_swing"};
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sledge_hold.rtm"};
-        descriptionShort = "Plunger";
+        descriptionShort = "$str_epoch_Plunger";
     };
     class InventoryMuzzleItem_Base_F;
     class test_suppressor : ItemCore
@@ -4256,21 +4256,21 @@ class CfgWeapons
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairDefib.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_defib_ca.paa";
-        displayName = "Revive Player";
+        displayName = "$str_epoch_RevivePlayer";
     };
     class Heal_EPOCH : test_suppressor
     {
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairHeal.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_heal_ca.paa";
-        displayName = "Heal Player";
+        displayName = "$str_epoch_HealPlayer";
     };
     class Repair_EPOCH : test_suppressor
     {
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairVehicle.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_repair_ca.paa";
-        displayName = "Vehicle Repair";
+        displayName = "$str_epoch_VehicleRepair";
     };
     class NVGoggles;
     class NVG_EPOCH : NVGoggles
@@ -4321,7 +4321,7 @@ class CfgWeapons
     };
     class optic_tws : ItemCore
     {
-        displayName = "TWS (defect)";
+        displayName = "$str_epoch_TWSdefect";
         class ItemInfo : InventoryOpticsItem_Base_F
         {
             class OpticsModes
@@ -4352,7 +4352,7 @@ class CfgWeapons
     };
     class optic_tws_mg : ItemCore
     {
-        displayName = "TWS MG (defect)";
+        displayName = "$str_epoch_TWSMGdefect";
         class ItemInfo : InventoryOpticsItem_Base_F
         {
             class OpticsModes
@@ -4385,68 +4385,68 @@ class CfgWeapons
     class ItemRadio;
     class EpochRadio0 : ItemRadio
     {
-        displayName = "Radio (Quartz)";
+        displayName = "$str_epoch_RadioQuartz";
         channelID = 0;
         channelColor[] = {0.588,0.647,0.729,0.8};
     };
     class EpochRadio1 : ItemRadio
     {
-        displayName = "Radio (Garnet)";
+        displayName = "$str_epoch_RadioGarnet";
         channelID = 1;
         channelColor[] = {0.314,0.086,0.055,0.8};
     };
     class EpochRadio2 : ItemRadio
     {
-        displayName = "Radio (Citrine)";
+        displayName = "$str_epoch_RadioCitrine";
         channelID = 2;
         channelColor[] = {0.714,0.306,0.102,0.8};
     };
     class EpochRadio3 : ItemRadio
     {
-        displayName = "Radio (Amethyst)";
+        displayName = "$str_epoch_RadioAmethyst";
         channelID = 3;
         channelColor[] = {0.604,0.396,0.804,0.8};
     };
     class EpochRadio4 : ItemRadio
     {
-        displayName = "Radio (Topaz)";
+        displayName = "$str_epoch_RadioTopaz";
         channelID = 4;
         channelColor[] = {0.718,0.494,0.184,0.8};
     };
     class EpochRadio5 : ItemRadio
     {
-        displayName = "Radio (Sapphire)";
+        displayName = "$str_epoch_RadioSapphire";
         channelID = 5;
         channelColor[] = {0.161,0.329,0.792,0.8};
     };
     class EpochRadio6 : ItemRadio
     {
-        displayName = "Radio (Onyx)";
+        displayName = "$str_epoch_RadioOnyx";
         channelID = 6;
         channelColor[] = {0.4,0.4,0.4,0.8};
     };
     class EpochRadio7 : ItemRadio
     {
-        displayName = "Radio (Emerald)";
+        displayName = "$str_epoch_RadioEmerald";
         channelID = 7;
         channelColor[] = {0.008,0.596,0.459,0.8};
     };
     class EpochRadio8 : ItemRadio
     {
-        displayName = "Radio (Ruby)";
+        displayName = "$str_epoch_RadioRuby";
         channelID = 8;
         channelColor[] = {0.835,0.247,0.243,0.8};
     };
     class EpochRadio9 : ItemRadio
     {
-        displayName = "Radio (Jade)";
+        displayName = "$str_epoch_RadioJade";
         channelID = 9;
         channelColor[] = {0,0.659,0.42,0.8};
     };
     class speargun_epoch : Rifle_Base_F
     {
         author = "Kiory";
-        displayName = "Speargun";
+        displayName = "$str_epoch_Speargun";
         scope = 2;
         picture = "\x\addons\a3_epoch_weapons\gear\gear_speargun_x_ca.paa";
         model = "\x\addons\a3_epoch_weapons\speargun.p3d";
@@ -4530,7 +4530,7 @@ class CfgWeapons
     class sr25_epoch : Rifle_Base_F
     {
         author = "Kiory";
-        displayName = "SR 25";
+        displayName = "$str_epoch_SR25";
         scope = 2;
         magazines[] = {"20Rnd_762x51_Mag"};
         class Library
@@ -4569,7 +4569,7 @@ class CfgWeapons
         opticsZoomInit = 0.75;
         distanceZoomMin = 300;
         distanceZoomMax = 300;
-        descriptionShort = "Sniper rifle <br/>Caliber: 7.62x51 mm NATO";
+        descriptionShort = "$str_epoch_SniperriflebrCaliber762x51mmNATO";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_weapons\data\handanims\sr25_handanim2.rtm"};
         caseless[] = {"",1,1,1};
         soundBullet[] = {"caseless",1};
@@ -4642,7 +4642,7 @@ class CfgWeapons
     {
         author = "Kiory";
         model = "\x\addons\a3_epoch_weapons\SR25_EC.p3d";
-        displayName = "SR 25 EC";
+        displayName = "$str_epoch_SR25EC";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_weapons\data\handanims\sr25_handanim.rtm"};
         picture = "\x\addons\a3_epoch_weapons\gear\gear_sr25ec_x_ca.paa";
         class Library
@@ -4660,7 +4660,7 @@ class CfgWeapons
         mFact = 1;
         tBody = 100;
         scope = 2;
-        displayName = "SR-25 Rifle Suppressor";
+        displayName = "$str_epoch_SR25RifleSuppressor";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_sr25_suppressor_x_ca.paa";
         model = "\x\addons\a3_epoch_weapons\sr25_suppressor";
         class ItemInfo : InventoryMuzzleItem_Base_F
@@ -4877,7 +4877,7 @@ class CfgWeapons
     class l85a2_epoch : l85a2_base_epoch
     {
         scope = 2;
-        displayName = "L85A2";
+        displayName = "$str_epoch_L85A2";
         model = "\x\addons\a3_epoch_weapons\L85A2.p3d";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_l85a2_x_ca.paa";
         class PointerSlot
@@ -4888,7 +4888,7 @@ class CfgWeapons
     class l85a2_ris_epoch : Rifle_Base_F
     {
         reloadAction = "GestureReloadL85A2RIS";
-        displayName = "L85A2 Ris";
+        displayName = "$str_epoch_L85A2Ris";
         scope = 2;
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow"};
         model = "\x\addons\a3_epoch_weapons\L85A2_Ris.p3d";
@@ -5057,7 +5057,7 @@ class CfgWeapons
     class l85a2_ris_ng_epoch : l85a2_ris_epoch
     {
         scope = 2;
-        displayName = "L85A2 Ris";
+        displayName = "$str_epoch_L85A2Ris";
         model = "\x\addons\a3_epoch_weapons\L85A2_Ris_ng.p3d";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_l85a2_ris_ng_x_ca.paa";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_weapons\data\handanims\L85A2_HandAnim.rtm"};
@@ -5071,7 +5071,7 @@ class CfgWeapons
     {
         author = "Kiory";
         scope = 2;
-        displayName = "L85A2 Pink Edition";
+        displayName = "$str_epoch_L85A2PinkEdition";
         model = "\x\addons\a3_epoch_weapons\L85A2_pink.p3d";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_l85a2P_x_ca.paa";
         class PointerSlot
@@ -5082,7 +5082,7 @@ class CfgWeapons
     class l85a2_ugl_epoch : Rifle_Base_F
     {
         reloadAction = "GestureReloadL85A2UGL";
-        displayName = "L85A2 UGL";
+        displayName = "$str_epoch_L85A2UGL";
         scope = 2;
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow"};
         model = "\x\addons\a3_epoch_weapons\L85A2_ugl.p3d";
@@ -5263,10 +5263,10 @@ class CfgWeapons
     {
         author = "Kiory";
         scope = 2;
-        displayName = "Elcan Optic";
+        displayName = "$str_epoch_ElcanOptic";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_elcan_x_ca.paa";
         model = "\x\addons\a3_epoch_weapons\Elcan.p3d";
-        descriptionShort = "Elcan optic, 4x magnification.";
+        descriptionShort = "$str_epoch_Elcanoptic4xmagnification";
         weaponInfoType = "RscWeaponZeroing";
         class ItemInfo : InventoryOpticsItem_Base_F
         {
@@ -5297,7 +5297,7 @@ class CfgWeapons
     };
     class Elcan_reflex_epoch : Elcan_epoch
     {
-        displayName = "Elcan Optic Reflex";
+        displayName = "$str_epoch_ElcanOpticReflex";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_elcan_reflex_x_ca.paa";
         model = "\x\addons\a3_epoch_weapons\Elcan_reflex.p3d";
         class ItemInfo : InventoryOpticsItem_Base_F

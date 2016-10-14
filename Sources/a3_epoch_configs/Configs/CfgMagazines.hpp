@@ -17,18 +17,18 @@ class CfgMagazines
     class 1Rnd_Soda : CA_Magazine
     {
         picture = "";
-        displayName = "Soda";
+        displayName = "$str_epoch_Soda";
         scope = 2;
-        descriptionShort = "Soda";
+        descriptionShort = "$str_epoch_Soda";
         count = 1;
         mass = 1;
     };
     class 1Rnd_Food : CA_Magazine
     {
         picture = "";
-        displayName = "Food";
+        displayName = "$str_epoch_Food";
         scope = 2;
-        descriptionShort = "Food";
+        descriptionShort = "$str_epoch_Food";
         count = 1;
         mass = 1;
     };
@@ -36,27 +36,27 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_emptytincan_x_ca.paa";
-        displayname = "Empty Tin Can";
+        displayname = "$str_epoch_EmptyTinCan";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_2\empty_tin.p3d";
-        descriptionShort = "Empty Tin Can";
+        descriptionShort = "$str_epoch_EmptyTinCan";
         count = 1;
         mass = 2;
     };
     class ItemSodaEmpty : CA_Magazine
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\soda_empty_ca.paa";
-        displayname = "Empty Soda Can";
+        displayname = "$str_epoch_EmptySodaCan";
         scope = 2;
         model = "\A3\Structures_F\Items\Food\Can_Dented_F.p3d";
-        descriptionShort = "Empty Aluminum Soda Can";
+        descriptionShort = "$str_epoch_EmptyAluminumSodaCan";
         count = 1;
         mass = 2;
     };
     class 10rnd_22X44_magazine : CA_Magazine
     {
         scope = 2;
-        displayName = "10Rnd .22 magazine";
+        displayName = "$str_epoch_10Rnd22magazine";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_ruger_mag_x_ca.paa";
         ammo = "E_22X44_ball";
         model = "\x\addons\a3_epoch_weapons\ruger_magazine.p3d";
@@ -64,12 +64,12 @@ class CfgMagazines
         initSpeed = 700;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        descriptionShort = "A ten round magazine for the Ruger.";
+        descriptionShort = "$str_epoch_AtenroundmagazinefortheRuger";
     };
     class 9rnd_45X88_magazine : CA_Magazine
     {
         scope = 2;
-        displayName = "9Rnd .45 magazine";
+        displayName = "$str_epoch_9Rnd45magazine";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_1911mag_x_ca.paa";
         ammo = "E_45_ball";
         model = "\x\addons\a3_epoch_weapons\1911_magazine.p3d";
@@ -77,12 +77,12 @@ class CfgMagazines
         initSpeed = 700;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        descriptionShort = "A nine round magazine for the 1911.";
+        descriptionShort = "$str_epoch_Anineroundmagazineforthe1911";
     };
     class spear_magazine : CA_Magazine
     {
         scope = 2;
-        displayName = "Spear round";
+        displayName = "$str_epoch_Spearround";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_speargunmag_x_ca.paa";
         mass = 2;
         ammo = "spear_ball";
@@ -91,12 +91,12 @@ class CfgMagazines
         initSpeed = 100;
         tracersEvery = 1;
         lastRoundsTracer = 1;
-        descriptionShort = "A spear for the spear rifle.";
+        descriptionShort = "$str_epoch_Aspearforthespearrifle";
     };
     class 20rnd_762_magazine : CA_Magazine
     {
         scope = 2;
-        displayName = "20Rnd 7.62 Magazine";
+        displayName = "$str_epoch_20Rnd762Magazine";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_sr25_magazine_x_ca.paa";
         ammo = "K_762_ball";
         model = "\x\addons\a3_epoch_weapons\magazine.p3d";
@@ -104,12 +104,12 @@ class CfgMagazines
         initSpeed = 700;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        descriptionShort = "20-round detachable box magazine";
+        descriptionShort = "$str_epoch_20rounddetachableboxmagazine";
     };
     class 30rnd_556_magazine : CA_Magazine
     {
         scope = 2;
-        displayName = "30Rnd 5.56 Magazine";
+        displayName = "$str_epoch_30Rnd556Magazine";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_l85a2_mag_x_ca.paa";
         ammo = "K_556_ball";
         model = "\x\addons\a3_epoch_weapons\L85A2_mag.p3d";
@@ -117,12 +117,12 @@ class CfgMagazines
         initSpeed = 700;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        descriptionShort = "30 Round Stanag Magazine";
+        descriptionShort = "$str_epoch_30RoundStanagMagazine";
     };
     class 30Rnd_762x39_Mag : CA_Magazine
     {
         scope = "public";
-        displayName = "7.62mm 30rnd AKM Mag";
+        displayName = "$str_epoch_762mm30rndAKMMag";
         picture = "\x\addons\a2_epoch_weapons\akm\data\UI\gear_30Rnd_akm_ca.paa";
         count = 30;
         ammo = "B_762x39_Ball";
@@ -130,12 +130,12 @@ class CfgMagazines
         model = "\x\addons\a2_epoch_weapons\akm\30Rnd_akm.p3d";
         initSpeed = 850;
         lastRoundsTracer = 4;
-        descriptionShort = "Caliber: 7.62x39 mm, Used in: AKM, RPK";
+        descriptionShort = "$str_epoch_Caliber762x39mmUsedinAKMRPK";
     };
     class 200Rnd_556x45_M249 : CA_Magazine
     {
         scope = "public";
-        displayName = "5.56mm 200rnd Saw Belt";
+        displayName = "$str_epoch_556mm200rndSawBelt";
         picture = "\x\addons\a2_epoch_weapons\m249\data\UI\gear_m249_mag_ca.paa";
         ammo = "B_556x45_Ball";
         count = 200;
@@ -143,16 +143,16 @@ class CfgMagazines
         tracersEvery = 4;
         model = "\x\addons\a2_epoch_weapons\m249\m249_mag.p3d";
         lastRoundsTracer = 4;
-        descriptionShort = "Caliber: 5.56x45 mm, Used in: M249 Saw";
+        descriptionShort = "$str_epoch_Caliber556x45mmUsedinM249Saw";
     };
     class ItemHotwire : CA_Magazine
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_hotwire_ca.paa";
-        displayname = "Hotwire Kit";
+        displayname = "$str_epoch_HotwireKit";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\hotwire.p3d";
-        descriptionShort = "Used to hack open door locks.";
+        descriptionShort = "$str_epoch_Usedtohackopendoorlocks";
         count = 1;
         mass = 50;
     };
@@ -160,10 +160,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_keykit_ca.paa";
-        displayname = "Key Makers Kit";
+        displayname = "$str_epoch_KeyMakersKit";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\keykit.p3d";
-        descriptionShort = "Used to craft duplicate keys.";
+        descriptionShort = "$str_epoch_Usedtocraftduplicatekeys";
         count = 1;
         mass = 2;
     };
@@ -171,10 +171,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_oil_drum_model_ca.paa";
-        displayname = "Fuel Barrel (Full)";
+        displayname = "$str_epoch_FuelBarrelFull";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
-        descriptionShort = "55 gallon fuel barrel.";
+        descriptionShort = "$str_epoch_55gallonfuelbarrel";
         count = 1;
         mass = 250;
     };
@@ -182,10 +182,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_oildrum_e_CA.paa";
-        displayname = "Fuel Barrel (Empty)";
+        displayname = "$str_epoch_FuelBarrelEmpty";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
-        descriptionShort = "Empty 55 gallon fuel barrel.";
+        descriptionShort = "$str_epoch_Empty55gallonfuelbarrel";
         count = 1;
         mass = 25;
     };
@@ -193,10 +193,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_pipe_CA.paa";
-        displayname = "Pipes";
+        displayname = "$str_epoch_Pipes";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\pipe.p3d";
-        descriptionShort = "Small pile of metal pipes.";
+        descriptionShort = "$str_epoch_Smallpileofmetalpipes";
         count = 1;
         mass = 15;
     };
@@ -204,122 +204,122 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_key_CA.paa";
-        displayname = "Key";
+        displayname = "$str_epoch_Key";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\key.p3d";
-        descriptionShort = "Key used in a lock.";
+        descriptionShort = "$str_epoch_Keyusedinalock";
         count = 1;
         mass = 1;
     };
     class ItemKeyBlue : ItemKey
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_key_CA_blue.paa";
-        displayname = "Key (Blue)";
+        displayname = "$str_epoch_KeyBlue";
         model = "\x\addons\a3_epoch_assets_1\models\key_blue.p3d";
     };
     class ItemKeyGreen : ItemKey
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_key_CA_green.paa";
-        displayname = "Key (Green)";
+        displayname = "$str_epoch_KeyGreen";
         model = "\x\addons\a3_epoch_assets_1\models\key_green.p3d";
     };
     class ItemKeyRed : ItemKey
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_key_CA_red.paa";
-        displayname = "Key (Red)";
+        displayname = "$str_epoch_KeyRed";
         model = "\x\addons\a3_epoch_assets_1\models\key_red.p3d";
     };
     class ItemKeyYellow : ItemKey
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_key_CA_yellow.paa";
-        displayname = "Key (Yellow)";
+        displayname = "$str_epoch_KeyYellow";
         model = "\x\addons\a3_epoch_assets_1\models\key_yellow.p3d";
     };
     class ItemDoc1 : CA_Magazine
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_child1_ca.paa";
-        displayname = "Book";
+        displayname = "$str_epoch_Book";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_child1.p3d";
-        descriptionShort = "Book";
+        descriptionShort = "$str_epoch_Book";
         count = 1;
         mass = 1;
     };
     class ItemDoc2 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_child2_ca.paa";
-        displayname = "Book";
+        displayname = "$str_epoch_Book";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_child2.p3d";
     };
     class ItemDoc3 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_deaths_ca.paa";
-        displayname = "Book";
+        displayname = "$str_epoch_Book";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_deaths.p3d";
     };
     class ItemDoc4 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_doc_generic_ca.paa";
-        displayname = "Book";
+        displayname = "$str_epoch_Book";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_generic.p3d";
     };
     class ItemDoc5 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_doc_letter_ca.paa";
-        displayname = "Letter";
+        displayname = "$str_epoch_Letter";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_letter.p3d";
     };
     class ItemDoc6 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_doc_ramp_ca.paa";
-        displayname = "Book";
+        displayname = "$str_epoch_Book";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_ramp.p3d";
     };
     class ItemDoc7 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_child2_ca.paa";
-        displayname = "Letter";
+        displayname = "$str_epoch_Letter";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_trashy1.p3d";
     };
     class ItemDoc8 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_child2_ca.paa";
-        displayname = "Letter";
+        displayname = "$str_epoch_Letter";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_trashy2.p3d";
     };
     class ItemVehDoc1 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_docup1_ca.paa";
-        displayname = "Vehicle Manual I";
+        displayname = "$str_epoch_VehicleManualI";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_Up1.p3d";
     };
     class ItemVehDoc2 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_docup2_ca.paa";
-        displayname = "Vehicle Manual II";
+        displayname = "$str_epoch_VehicleManualII";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_Up2.p3d";
     };
     class ItemVehDoc3 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_docup3_ca.paa";
-        displayname = "Vehicle Manual III";
+        displayname = "$str_epoch_VehicleManualIII";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_Up3.p3d";
     };
     class ItemVehDoc4 : ItemDoc1
     {
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_docup4_ca.paa";
-        displayname = "Vehicle Manual IV";
+        displayname = "$str_epoch_VehicleManualIV";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\doc_Up4.p3d";
     };
@@ -327,10 +327,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_bulb_CA.paa";
-        displayname = "Light Bulb";
+        displayname = "$str_epoch_LightBulb";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\bulb.p3d";
-        descriptionShort = "Light Bulb in factory package. Gives off light when powered.";
+        descriptionShort = "$str_epoch_LightBulbinfactorypackageGivesofflightwhenpowered";
         count = 1;
         mass = 1;
     };
@@ -338,10 +338,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_burlap_ca.paa";
-        displayname = "Burlap";
+        displayname = "$str_epoch_Burlap";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\burlap.p3d";
-        descriptionShort = "Woven fabric made from plant fibers.";
+        descriptionShort = "$str_epoch_Wovenfabricmadefromplantfibers";
         count = 1;
         mass = 1;
     };
@@ -349,10 +349,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_briefcase_E_CA.paa";
-        displayname = "Empty Briefcase";
+        displayname = "$str_epoch_EmptyBriefcase";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\briefcase.p3d";
-        descriptionShort = "A rectangular container, good for carrying books and papers.";
+        descriptionShort = "$str_epoch_Arectangularcontainergoodforcarryingbooksandpapers";
         count = 1;
         mass = 1;
     };
@@ -360,10 +360,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_briefcase_100oz_CA.paa";
-        displayname = "Full Briefcase (Gold)";
+        displayname = "$str_epoch_FullBriefcaseGold";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\briefcase.p3d";
-        descriptionShort = "Briefcase that contains ten 10oz (100oz) Gold Bars.";
+        descriptionShort = "$str_epoch_Briefcasethatcontainsten10oz100ozGoldBars";
         count = 1;
         mass = 100;
     };
@@ -371,10 +371,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_alum_bar_CA.paa";
-        displayname = "Aluminum Bar (1oz)";
+        displayname = "$str_epoch_AluminumBar1oz";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\aluminum_bar.p3d";
-        descriptionShort = "Aluminum Bar (1oz)";
+        descriptionShort = "$str_epoch_AluminumBar1oz";
         count = 1;
         mass = 1;
     };
@@ -382,10 +382,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_copper_bar_CA.paa";
-        displayname = "Copper Bar (1oz)";
+        displayname = "$str_epoch_CopperBar1oz";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\copper_bar.p3d";
-        descriptionShort = "Copper Bar (1oz)";
+        descriptionShort = "$str_epoch_CopperBar1oz";
         count = 1;
         mass = 1;
     };
@@ -393,10 +393,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_tin_bar_CA.paa";
-        displayname = "Tin Bar (1oz)";
+        displayname = "$str_epoch_TinBar1oz";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\tin_bar.p3d";
-        descriptionShort = "Tin Bar (1oz)";
+        descriptionShort = "$str_epoch_TinBar1oz";
         count = 1;
         mass = 1;
     };
@@ -404,10 +404,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_plywood_pack_CA.paa";
-        displayname = "Plywood";
+        displayname = "$str_epoch_Plywood";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\plywood_pack.p3d";
-        descriptionShort = "Stack of Plywood Sheets";
+        descriptionShort = "$str_epoch_StackofPlywoodSheets";
         count = 1;
         mass = 1;
     };
@@ -415,10 +415,10 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_combolock_ca.paa";
-        displayname = "Combination Lock";
+        displayname = "$str_epoch_CombinationLock";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\combo_lock_mag.p3d";
-        descriptionShort = "Combination Lock";
+        descriptionShort = "$str_epoch_CombinationLock";
         count = 1;
         mass = 1;
     };
@@ -434,7 +434,7 @@ class CfgMagazines
         author = "Sequisha";
         displayName = "$STR_A3_B_AssaultPack_cbr0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 20;
     };
@@ -442,14 +442,14 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_AssaultPack_dgtl0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         mass = 20;
     };
     class Item_AssaultPack_khk : Item_PackedBag_base
     {
         displayName = "$STR_A3_B_AssaultPack_khk0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 20;
     };
@@ -457,7 +457,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_AssaultPack_mcamo0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 20;
     };
@@ -465,7 +465,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_AssaultPack_ocamo0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 20;
     };
@@ -473,7 +473,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_AssaultPack_rgr0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 20;
     };
@@ -481,7 +481,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_AssaultPack_sgg0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 20;
     };
@@ -489,7 +489,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_AssaultPack_blk0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 20;
     };
@@ -497,7 +497,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_Carryall_cbr0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 60;
     };
@@ -505,7 +505,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_Carryall_khk0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 60;
     };
@@ -513,7 +513,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_Carryall_mcamo0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 60;
     };
@@ -521,7 +521,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_Carryall_ocamo0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 60;
     };
@@ -529,7 +529,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_Carryall_oli0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 60;
     };
@@ -537,7 +537,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_Carryall_oucamo0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 60;
     };
@@ -545,7 +545,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_FieldPack_blk0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 30;
     };
@@ -553,7 +553,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_FieldPack_cbr0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 30;
     };
@@ -561,7 +561,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_FieldPack_khk0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 30;
     };
@@ -569,7 +569,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_FieldPack_ocamo0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 30;
     };
@@ -577,7 +577,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_FieldPack_oli0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 30;
     };
@@ -585,7 +585,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_FieldPack_oucamo0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 30;
     };
@@ -593,7 +593,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_Kitback_cbr0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 50;
     };
@@ -601,7 +601,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_Kitback_mcamo0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 50;
     };
@@ -609,7 +609,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_KITHBACK_RGR";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 50;
     };
@@ -617,7 +617,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_Kitback_sgg0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 50;
     };
@@ -625,7 +625,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_TacticalPack_blk0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 40;
     };
@@ -633,7 +633,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_TacticalPack_mcamo0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 40;
     };
@@ -641,7 +641,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_TacticalPack_ocamo0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 40;
     };
@@ -649,7 +649,7 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_TacticalPack_oli0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 40;
     };
@@ -657,39 +657,39 @@ class CfgMagazines
     {
         displayName = "$STR_A3_B_TacticalPack_rgr0";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 40;
     };
     class Item_smallbackpack_red : Item_PackedBag_base
     {
-        displayName = "Small Backpack (Red)";
+        displayName = "$str_epoch_SmallBackpackRed";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 25;
     };
     class Item_smallbackpack_green : Item_PackedBag_base
     {
-        displayName = "Small Backpack (Green)";
+        displayName = "$str_epoch_SmallBackpackGreen";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 25;
     };
     class Item_smallbackpack_teal : Item_PackedBag_base
     {
-        displayName = "Small Backpack (Teal)";
+        displayName = "$str_epoch_SmallBackpackTeal";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 25;
     };
     class Item_smallbackpack_pink : Item_PackedBag_base
     {
-        displayName = "Small Backpack (Pink)";
+        displayName = "$str_epoch_SmallBackpackPink";
         scope = 2;
-        descriptionShort = "Packed Backpack";
+        descriptionShort = "$str_epoch_PackedBackpack";
         count = 1;
         mass = 25;
     };
@@ -699,10 +699,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Honey";
+        displayName = "$str_epoch_Honey";
         model = "\x\addons\a3_epoch_assets_2\honey.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_honey_x_ca.paa";
-        descriptionShort = "Probably collected some time ago.";
+        descriptionShort = "$str_epoch_Probablycollectedsometimeago";
         mass = 1;
     };
     class water_epoch : CA_Magazine
@@ -711,10 +711,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Water";
+        displayName = "$str_epoch_Water";
         model = "\x\addons\a3_epoch_assets_2\water_jar.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_water_x_ca.paa";
-        descriptionShort = "Jarred water, may or may not contain parasites.";
+        descriptionShort = "$str_epoch_Jarredwatermayormaynotcontainparasites";
         mass = 1;
     };
     class clean_water_epoch : CA_Magazine
@@ -723,10 +723,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Water";
+        displayName = "$str_epoch_Water";
         model = "\x\addons\a3_epoch_assets_2\water_jar.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_water_x_ca.paa";
-        descriptionShort = "Jarred water, was once boiled unlikely to contain parasites.";
+        descriptionShort = "$str_epoch_Jarredwaterwasonceboiledunlikelytocontainparasites";
         mass = 1;
     };
     class emptyjar_epoch : CA_Magazine
@@ -735,10 +735,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Empty jar";
+        displayName = "$str_epoch_Emptyjar";
         model = "\x\addons\a3_epoch_assets_2\jar_empty.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_ejar_x_ca.paa";
-        descriptionShort = "Could be filled with many things.";
+        descriptionShort = "$str_epoch_Couldbefilledwithmanythings";
         mass = 0.5;
     };
     class sardines_epoch : CA_Magazine
@@ -747,10 +747,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Sardines";
+        displayName = "$str_epoch_Sardines";
         model = "\x\addons\a3_epoch_assets_2\sardines.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_sardines_x_ca.paa";
-        descriptionShort = "Small fish, nobody likes them.";
+        descriptionShort = "$str_epoch_Smallfishnobodylikesthem";
         mass = 1;
     };
     class meatballs_epoch : CA_Magazine
@@ -759,10 +759,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Meatballs";
+        displayName = "$str_epoch_Meatballs";
         model = "\x\addons\a3_epoch_assets_2\meatballs.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_meatballs_x_ca.paa";
-        descriptionShort = "Warning, will make you fat.";
+        descriptionShort = "$str_epoch_Warningwillmakeyoufat";
         mass = 1;
     };
     class scam_epoch : CA_Magazine
@@ -771,10 +771,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Scam";
+        displayName = "$str_epoch_Scam";
         model = "\x\addons\a3_epoch_assets_2\scamtin.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_scam_x_ca.paa";
-        descriptionShort = "Was given the name due to fake meat.";
+        descriptionShort = "$str_epoch_Wasgiventhenameduetofakemeat";
         mass = 1;
     };
     class sweetcorn_epoch : CA_Magazine
@@ -783,10 +783,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Sweetcorn";
+        displayName = "$str_epoch_Sweetcorn";
         model = "\x\addons\a3_epoch_assets_2\sweetcorn.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_sweetcorn_x_ca.paa";
-        descriptionShort = "Cheap brand, still tasty.";
+        descriptionShort = "$str_epoch_Cheapbrandstilltasty";
         mass = 1;
     };
     class jerrycan_epoch : CA_Magazine
@@ -795,10 +795,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Jerrycan";
+        displayName = "$str_epoch_Jerrycan";
         model = "\x\addons\a3_epoch_assets_2\jerrycan.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_jerrycan_x_ca.paa";
-        descriptionShort = "Full of Fuel.";
+        descriptionShort = "$str_epoch_FullofFuel";
         mass = 14;
     };
     class jerrycanE_epoch : CA_Magazine
@@ -807,10 +807,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Jerrycan (Empty)";
+        displayName = "$str_epoch_JerrycanEmpty";
         model = "\x\addons\a3_epoch_assets_2\jerrycan.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_jerrycan_x_ca.paa";
-        descriptionShort = "Trustworthy for getting fuel.";
+        descriptionShort = "$str_epoch_Trustworthyforgettingfuel";
         mass = 5;
     };
     class lighter_epoch : CA_Magazine
@@ -819,10 +819,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Lighter";
+        displayName = "$str_epoch_Lighter";
         model = "\x\addons\a3_epoch_assets_2\lighter.p3d";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_lighter_x_ca.paa";
-        descriptionShort = "A very ordinary looking lighter, BURN STUFF!";
+        descriptionShort = "$str_epoch_AveryordinarylookinglighterBURNSTUFF";
         mass = 1;
     };
     class FAK : CA_Magazine
@@ -842,10 +842,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Lockbox";
+        displayName = "$str_epoch_Lockbox";
         model = "\x\addons\a3_epoch_assets_1\models\lockbox_mag.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_lockbox_CA.paa";
-        descriptionShort = "Semi secure lockbox";
+        descriptionShort = "$str_epoch_Semisecurelockbox";
         mass = 5;
     };
     class ItemSafe : CA_Magazine
@@ -854,10 +854,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Safe";
+        displayName = "$str_epoch_Safe";
         model = "\x\addons\a3_epoch_assets_1\models\safe_onside.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_safe_CA.paa";
-        descriptionShort = "Secure Safe";
+        descriptionShort = "$str_epoch_SecureSafe";
         mass = 50;
     };
     class PartPlankPack : CA_Magazine
@@ -866,10 +866,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Lumber Pack";
+        displayName = "$str_epoch_LumberPack";
         model = "\x\addons\a3_epoch_assets_1\models\plank_pack.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_lumber_pack_CA.paa";
-        descriptionShort = "Lumber in a stack";
+        descriptionShort = "$str_epoch_Lumberinastack";
         mass = 6;
     };
     class CinderBlocks : CA_Magazine
@@ -878,10 +878,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Cinder Blocks";
+        displayName = "$str_epoch_CinderBlocks";
         model = "\x\addons\a3_epoch_assets_1\models\cinder_stack.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\epuip_cinder_blocks_CA.paa";
-        descriptionShort = "Stack of nine cinder blocks";
+        descriptionShort = "$str_epoch_Stackofninecinderblocks";
         mass = 75;
     };
     class MortarBucket : CA_Magazine
@@ -890,10 +890,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Bucket of Mortar";
+        displayName = "$str_epoch_BucketofMortar";
         model = "\x\addons\a3_epoch_assets_1\models\mortar.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_mortar_CA.paa";
-        descriptionShort = "Premixed mastic adhesive that will bond to concrete block.";
+        descriptionShort = "$str_epoch_Premixedmasticadhesivethatwillbondtoconcreteblock";
         mass = 15;
     };
     class ItemKiloHemp : CA_Magazine
@@ -901,8 +901,8 @@ class CfgMagazines
         author = "Sequisha";
         scope = 2;
         count = 1;
-        displayName = "Kilo of Hemp";
-        descriptionShort = "Kilo of Hemp";
+        displayName = "$str_epoch_KiloofHemp";
+        descriptionShort = "$str_epoch_KiloofHemp";
         model = "\x\addons\a3_epoch_assets_1\models\kilohemp.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_kilohemp_CA.paa";
         type = 256;
@@ -912,18 +912,18 @@ class CfgMagazines
     {
         author = "vbgreen";
         picture = "\x\addons\a3_epoch_assets_1\pictures\soda_alpinedude_ca.paa";
-        displayname = "Alpine Dude Soda";
+        displayname = "$str_epoch_AlpineDudeSoda";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\soda_alpine.p3d";
-        descriptionShort = "Do the dude!";
+        descriptionShort = "$str_epoch_Dothedude";
         count = 1;
         mass = 2;
     };
     class ItemSodaRbull : 1Rnd_Soda
     {
         author = "vbgreen";
-        displayName = "Red Gull";
-        descriptionShort = "Red Gull Soda";
+        displayName = "$str_epoch_RedGull";
+        descriptionShort = "$str_epoch_RedGullSoda";
         model = "\x\addons\a3_epoch_assets_1\models\soda_redbull.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_soda_rbull_CA.paa";
         mass = 1;
@@ -931,8 +931,8 @@ class CfgMagazines
     class ItemSodaOrangeSherbet : 1Rnd_Soda
     {
         author = "Sequisha";
-        displayName = "Orange Sherbet";
-        descriptionShort = "Orange Sherbet Soda";
+        displayName = "$str_epoch_OrangeSherbet";
+        descriptionShort = "$str_epoch_OrangeSherbetSoda";
         model = "\x\addons\a3_epoch_assets_1\models\soda_sherbet.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\soda_orangesherbet_ca.paa";
         mass = 1;
@@ -940,8 +940,8 @@ class CfgMagazines
     class ItemSodaPurple : 1Rnd_Soda
     {
         author = "vbgreen";
-        displayName = "Purple Nurple";
-        descriptionShort = "Purple Nurple Soda";
+        displayName = "$str_epoch_PurpleNurple";
+        descriptionShort = "$str_epoch_PurpleNurpleSoda";
         model = "\x\addons\a3_epoch_assets_1\models\soda_purple.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\soda_purple_equip_ca.paa";
         mass = 1;
@@ -949,8 +949,8 @@ class CfgMagazines
     class ItemSodaMocha : 1Rnd_Soda
     {
         author = "vbgreen";
-        displayName = "Mocha Cola";
-        descriptionShort = "Mocha Cola Soda";
+        displayName = "$str_epoch_MochaCola";
+        descriptionShort = "$str_epoch_MochaColaSoda";
         model = "\x\addons\a3_epoch_assets_1\models\soda_mocha.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\soda_mocha_equip_ca.paa";
         mass = 1;
@@ -958,8 +958,8 @@ class CfgMagazines
     class ItemSodaBurst : 1Rnd_Soda
     {
         author = "vbgreen";
-        displayName = "Burst Koke";
-        descriptionShort = "Burst Koke Soda";
+        displayName = "$str_epoch_BurstKoke";
+        descriptionShort = "$str_epoch_BurstKokeSoda";
         model = "\x\addons\a3_epoch_assets_1\models\soda_burst.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\soda_burst_equip_ca.paa";
         mass = 1;
@@ -968,8 +968,8 @@ class CfgMagazines
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Rainbow Trout";
-        descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
+        displayName = "$str_epoch_RainbowTrout";
+        descriptionShort = "$str_epoch_RainbowTroutAsmallfishthatcanbefairlyeasytocatch";
         model = "\x\addons\a3_epoch_assets_1\models\trout.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_rainbowtrout_CA.paa";
         mass = 5;
@@ -978,8 +978,8 @@ class CfgMagazines
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Sea Bass";
-        descriptionShort = "Sea Bass: A medium sized fish that is fairly rare.";
+        displayName = "$str_epoch_SeaBass";
+        descriptionShort = "$str_epoch_SeaBassAmediumsizedfishthatisfairlyrare";
         model = "\x\addons\a3_epoch_assets_1\models\seabass.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_seabass_CA.paa";
         mass = 10;
@@ -988,8 +988,8 @@ class CfgMagazines
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Blue Fin Tuna";
-        descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
+        displayName = "$str_epoch_BlueFinTuna";
+        descriptionShort = "$str_epoch_BlueFinTunaAverylargeandhardtocatchfishSushianyone";
         model = "\x\addons\a3_epoch_assets_1\models\tuna.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_tuna_CA.paa";
         mass = 50;
@@ -998,8 +998,8 @@ class CfgMagazines
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Rainbow Trout (Cooked)";
-        descriptionShort = "Rainbow Trout: A small fish that can be fairly easy to catch.";
+        displayName = "$str_epoch_RainbowTroutCooked";
+        descriptionShort = "$str_epoch_RainbowTroutAsmallfishthatcanbefairlyeasytocatch";
         model = "\x\addons\a3_epoch_assets_1\models\trout_cooked.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_trout_cooked_CA.paa";
         mass = 5;
@@ -1008,8 +1008,8 @@ class CfgMagazines
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Sea Bass (Cooked)";
-        descriptionShort = "Sea Bass: A medium sized fish that is fairly rare.";
+        displayName = "$str_epoch_SeaBassCooked";
+        descriptionShort = "$str_epoch_SeaBassAmediumsizedfishthatisfairlyrare";
         model = "\x\addons\a3_epoch_assets_1\models\seabass_cooked.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_seabass_cooked_CA.paa";
         mass = 10;
@@ -1018,8 +1018,8 @@ class CfgMagazines
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Blue Fin Tuna (Cooked)";
-        descriptionShort = "Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?";
+        displayName = "$str_epoch_BlueFinTunaCooked";
+        descriptionShort = "$str_epoch_BlueFinTunaAverylargeandhardtocatchfishSushianyone";
         model = "\x\addons\a3_epoch_assets_1\models\tuna_cooked.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_tuna_cooked_CA.paa";
         mass = 50;
@@ -1028,156 +1028,156 @@ class CfgMagazines
     {
         author = "vbgreen,Sequisha";
         scope = 2;
-        displayName = "Bio Meat";
+        displayName = "$str_epoch_BioMeat";
         model = "\x\addons\a3_epoch_assets_1\models\biomeat_can.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_biomeat_CA.paa";
-        descriptionShort = "Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.";
+        descriptionShort = "$str_epoch_BioMeatAverygoodsourceofnutritionandaveryhighchanceofinfectionEatatownrisk";
     };
     class FoodMeeps : 1Rnd_Food
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Meeps Candy";
+        displayName = "$str_epoch_MeepsCandy";
         model = "\x\addons\a3_epoch_assets\models\meeps.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\candy\equip_meeps_ca.paa";
-        descriptionShort = "Pumpkin marshmallow candy";
+        descriptionShort = "$str_epoch_Pumpkinmarshmallowcandy";
     };
     class FoodSnooter : 1Rnd_Food
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Snooters Candy";
+        displayName = "$str_epoch_SnootersCandy";
         model = "\x\addons\a3_epoch_assets\models\snooter.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\candy\equip_snooters_ca.paa";
-        descriptionShort = "Not hungry? grab a Snooters";
+        descriptionShort = "$str_epoch_NothungrygrabaSnooters";
     };
     class FoodWalkNSons : 1Rnd_Soda
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Walk N' Sons Soda";
+        displayName = "$str_epoch_WalkNSonsSoda";
         model = "\x\addons\a3_epoch_assets\models\walkinson.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\candy\equip_walkinson_ca.paa";
-        descriptionShort = "Stuck walkin' grab a Walk N' Sons Soda";
+        descriptionShort = "$str_epoch_StuckwalkingrabaWalkNSonsSoda";
     };
     class ItemTopaz : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Topaz";
+        displayName = "$str_epoch_Topaz";
         model = "\x\addons\a3_epoch_assets_1\models\topaz.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_topaz_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Topaz";
+        descriptionShort = "$str_epoch_Topaz";
         mass = 1;
     };
     class ItemOnyx : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Onyx";
+        displayName = "$str_epoch_Onyx";
         model = "\x\addons\a3_epoch_assets_1\models\obsidian.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_obsidian_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Onyx";
+        descriptionShort = "$str_epoch_Onyx";
         mass = 1;
     };
     class ItemSapphire : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Sapphire";
+        displayName = "$str_epoch_Sapphire";
         model = "\x\addons\a3_epoch_assets_1\models\sapphire.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_sapphire_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Sapphire";
+        descriptionShort = "$str_epoch_Sapphire";
         mass = 1;
     };
     class ItemAmethyst : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Amethyst";
+        displayName = "$str_epoch_Amethyst";
         model = "\x\addons\a3_epoch_assets_1\models\amethyst.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_amethyst_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Amethyst";
+        descriptionShort = "$str_epoch_Amethyst";
         mass = 1;
     };
     class ItemEmerald : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Emerald";
+        displayName = "$str_epoch_Emerald";
         model = "\x\addons\a3_epoch_assets_1\models\emerald.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_emerald_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Emerald";
+        descriptionShort = "$str_epoch_Emerald";
         mass = 1;
     };
     class ItemCitrine : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Citrine";
+        displayName = "$str_epoch_Citrine";
         model = "\x\addons\a3_epoch_assets_1\models\citrine.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_citrine_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Citrine";
+        descriptionShort = "$str_epoch_Citrine";
         mass = 1;
     };
     class ItemRuby : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Ruby";
+        displayName = "$str_epoch_Ruby";
         model = "\x\addons\a3_epoch_assets_1\models\ruby.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_ruby_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Ruby";
+        descriptionShort = "$str_epoch_Ruby";
         mass = 1;
     };
     class ItemQuartz : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Quartz";
+        displayName = "$str_epoch_Quartz";
         model = "\x\addons\a3_epoch_assets\models\quartz.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\gem\equip_quartz_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Quartz";
+        descriptionShort = "$str_epoch_Quartz";
         mass = 1;
     };
     class ItemJade : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Jade";
+        displayName = "$str_epoch_Jade";
         model = "\x\addons\a3_epoch_assets\models\jade.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\gem\equip_jade_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Jade";
+        descriptionShort = "$str_epoch_Jade";
         mass = 1;
     };
     class ItemGarnet : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Garnet";
+        displayName = "$str_epoch_Garnet";
         model = "\x\addons\a3_epoch_assets\models\garnet.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\gem\equip_garnet_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Garnet";
+        descriptionShort = "$str_epoch_Garnet";
         mass = 1;
     };
     class JackKit : CA_Magazine
@@ -1185,9 +1185,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets\models\jack.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_jack_ca.paa";
-        displayName = "Jack";
+        displayName = "$str_epoch_Jack";
         scope = 2;
-        descriptionShort = "Jack";
+        descriptionShort = "$str_epoch_Jack";
         count = 1;
         mass = 20;
     };
@@ -1200,91 +1200,91 @@ class CfgMagazines
         picture = "\x\addons\a3_epoch_assets_3\CfgMagazines\Bacon\equip_TacticalBacon_ca.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Contains: mmm... Bacon!";
+        descriptionShort = "$str_epoch_ContainsmmmBacon";
         mass = 1;
     };
     class ItemCoolerE : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Food Cooler (empty)";
+        displayName = "$str_epoch_FoodCoolerempty";
         model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\cooler\gear_cooler_ca.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Seal-a-Meal, its cold in here.";
+        descriptionShort = "$str_epoch_SealaMealitscoldinhere";
         mass = 1;
     };
     class ItemCooler0 : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Food Cooler";
+        displayName = "$str_epoch_FoodCooler";
         model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\cooler\gear_cooler_ca.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Contains: Cooked Snake Meat";
+        descriptionShort = "$str_epoch_ContainsCookedSnakeMeat";
         mass = 1;
     };
     class ItemCooler1 : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Food Cooler";
+        displayName = "$str_epoch_FoodCooler";
         model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\cooler\gear_cooler_ca.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Contains: Cooked Rabbit Meat";
+        descriptionShort = "$str_epoch_ContainsCookedRabbitMeat";
         mass = 1;
     };
     class ItemCooler2 : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Food Cooler";
+        displayName = "$str_epoch_FoodCooler";
         model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\cooler\gear_cooler_ca.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Contains: Cooked Chicken";
+        descriptionShort = "$str_epoch_ContainsCookedChicken";
         mass = 1;
     };
     class ItemCooler3 : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Food Cooler";
+        displayName = "$str_epoch_FoodCooler";
         model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\cooler\gear_cooler_ca.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Contains: Cooked Goat Leg";
+        descriptionShort = "$str_epoch_ContainsCookedGoatLeg";
         mass = 1;
     };
     class ItemCooler4 : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Food Cooler";
+        displayName = "$str_epoch_FoodCooler";
         model = "\x\addons\a3_epoch_assets\models\cooler.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\cooler\gear_cooler_ca.paa";
         count = 1;
         type = "256";
-        descriptionShort = "Contains: Cooked Sheep Leg";
+        descriptionShort = "$str_epoch_ContainsCookedSheepLeg";
         mass = 1;
     };
     class ItemMixOil : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "2-Stroke Engine Oil";
+        displayName = "$str_epoch_2StrokeEngineOil";
         model = "\x\addons\a3_epoch_assets_1\models\oilmix.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_oilmix_CA.paa";
         count = 1;
         type = "256";
-        descriptionShort = "2-Stroke Engine Oil";
+        descriptionShort = "$str_epoch_2StrokeEngineOil";
         mass = 1;
     };
     class ItemDocument : CA_Magazine
@@ -1293,10 +1293,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Document";
+        displayName = "$str_epoch_Document";
         model = "\x\addons\a3_epoch_assets_1\models\doc_generic.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_doc_generic_ca.paa";
-        descriptionShort = "Unknown document";
+        descriptionShort = "$str_epoch_Unknowndocument";
         mass = 1;
     };
     class ItemDocumentMission : CA_Magazine
@@ -1305,10 +1305,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Mission Document";
+        displayName = "$str_epoch_MissionDocument";
         model = "\x\addons\a3_epoch_assets_1\models\doc_generic.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_doc_generic_ca.paa";
-        descriptionShort = "A very important message, Eyes Only !";
+        descriptionShort = "$str_epoch_AveryimportantmessageEyesOnly";
         mass = 1;
     };
     class ItemSilverBar : CA_Magazine
@@ -1318,10 +1318,10 @@ class CfgMagazines
         count = 1;
         worth = 1;
         type = 256;
-        displayName = "Silver";
+        displayName = "$str_epoch_Silver";
         model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar1oz.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_silver_bar_CA.paa";
-        descriptionShort = "Silver Bar";
+        descriptionShort = "$str_epoch_SilverBar";
         mass = 1;
     };
     class ItemGoldBar : CA_Magazine
@@ -1331,10 +1331,10 @@ class CfgMagazines
         count = 1;
         worth = 100;
         type = 256;
-        displayName = "Gold";
+        displayName = "$str_epoch_Gold";
         model = "\x\addons\a3_epoch_assets_1\models\ItemGoldBar1oz.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_bar_CA.paa";
-        descriptionShort = "Gold Bar";
+        descriptionShort = "$str_epoch_GoldBar";
         mass = 1;
     };
     class ItemGoldBar10oz : CA_Magazine
@@ -1344,10 +1344,10 @@ class CfgMagazines
         count = 1;
         worth = 1000;
         type = 256;
-        displayName = "10oz Gold";
+        displayName = "$str_epoch_10ozGold";
         model = "\x\addons\a3_epoch_assets_1\models\ItemGoldBar10oz.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_bar_10oz_CA.paa";
-        descriptionShort = "10 x 1oz Gold Bar";
+        descriptionShort = "$str_epoch_10x1ozGoldBar";
         mass = 10;
     };
     class ItemRock : CA_Magazine
@@ -1356,10 +1356,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Rock";
+        displayName = "$str_epoch_Rock";
         model = "\x\addons\a3_epoch_assets\models\rock.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\improv_weapon\gear_rock_ca.paa";
-        descriptionShort = "Used for crafting fireplaces and mortar. Can be mined from rocks using a sledgehammer.";
+        descriptionShort = "$str_epoch_UsedforcraftingfireplacesandmortarCanbeminedfromrocksusingasledgehammer";
         mass = 1;
     };
     class ItemStick : CA_Magazine
@@ -1368,10 +1368,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Stick";
+        displayName = "$str_epoch_Stick";
         model = "\x\addons\a3_epoch_assets\models\stick.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\improv_weapon\gear_stick_ca.paa";
-        descriptionShort = "Used for crafting.";
+        descriptionShort = "$str_epoch_Usedforcrafting";
         mass = 1;
     };
     class ItemRope : CA_Magazine
@@ -1380,10 +1380,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Rope";
+        displayName = "$str_epoch_Rope";
         model = "\x\addons\a3_epoch_assets\models\rope.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\improv_weapon\gear_rope_ca.paa";
-        descriptionShort = "Used for crafting.";
+        descriptionShort = "$str_epoch_Usedforcrafting";
         mass = 1;
     };
     class PartOre : CA_Magazine
@@ -1392,10 +1392,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Iron Ore";
+        displayName = "$str_epoch_IronOre";
         model = "\x\addons\a3_epoch_assets\models\ore.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_iron_ore_CA.paa";
-        descriptionShort = "Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.";
+        descriptionShort = "$str_epoch_UsedforcraftingscrapmetalCanbeminedfromrocksusingasledgehammer";
         mass = 1;
     };
     class PartOreSilver : CA_Magazine
@@ -1404,10 +1404,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Silver Ore";
+        displayName = "$str_epoch_SilverOre";
         model = "\x\addons\a3_epoch_assets\models\oreSilver.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_silver_ore_CA.paa";
-        descriptionShort = "Can be mined from rocks using a sledgehammer.";
+        descriptionShort = "$str_epoch_Canbeminedfromrocksusingasledgehammer";
         mass = 1;
     };
     class PartOreGold : CA_Magazine
@@ -1416,10 +1416,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Gold Ore";
+        displayName = "$str_epoch_GoldOre";
         model = "\x\addons\a3_epoch_assets\models\oreGold.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_ore_CA.paa";
-        descriptionShort = "Can be mined from rocks using a sledgehammer.";
+        descriptionShort = "$str_epoch_Canbeminedfromrocksusingasledgehammer";
         mass = 1;
     };
     class ItemPacked : CA_Magazine
@@ -1428,10 +1428,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Packed Backpack";
+        displayName = "$str_epoch_PackedBackpack";
         model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
-        descriptionShort = "Brand new backpack still in the package";
+        descriptionShort = "$str_epoch_Brandnewbackpackstillinthepackage";
         mass = 1.5;
     };
     class ItemSolar : CA_Magazine
@@ -1440,10 +1440,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Solar Panels";
+        displayName = "$str_epoch_SolarPanels";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\solar_gen_assets\Solar_panels\Solar_Panels.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\solar_gen_assets\Solar_panels\Solar_Panels_Icon_CA.paa";
-        descriptionShort = "Next gen solar panels";
+        descriptionShort = "$str_epoch_Nextgensolarpanels";
         mass = 10;
     };
     class ItemCables : CA_Magazine
@@ -1452,10 +1452,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Wire Cables";
+        displayName = "$str_epoch_WireCables";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\solar_gen_assets\Cables\Solar_cables.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\solar_gen_assets\Cables\Solar_Cable_Icon_CA.paa";
-        descriptionShort = "Copper wire isulated with rubber.";
+        descriptionShort = "$str_epoch_Copperwireisulatedwithrubber";
         mass = 10;
     };
     class ItemBattery : CA_Magazine
@@ -1464,10 +1464,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Enclosed Battery";
+        displayName = "$str_epoch_EnclosedBattery";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\solar_gen_assets\Battery\Battery.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\solar_gen_assets\Battery\Battery_box_Icon_CA.paa";
-        descriptionShort = "Battery in a protective case.";
+        descriptionShort = "$str_epoch_Batteryinaprotectivecase";
         mass = 10;
     };
     class ItemScraps : CA_Magazine
@@ -1476,10 +1476,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Metal Scraps";
+        displayName = "$str_epoch_MetalScraps";
         model = "\x\addons\a3_epoch_assets\models\scraps.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\scraps\gear_scraps_ca.paa";
-        descriptionShort = "Piece of metal scrap";
+        descriptionShort = "$str_epoch_Pieceofmetalscrap";
         mass = 1.5;
     };
     class ItemCorrugated : CA_Magazine
@@ -1488,10 +1488,10 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Salvage Metal (Small)";
+        displayName = "$str_epoch_SalvageMetalSmall";
         model = "\x\addons\a3_epoch_assets\models\salvage_small.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\salvage\equip_salvage_small_ca.paa";
-        descriptionShort = "Small pile of assorted metal parts";
+        descriptionShort = "$str_epoch_Smallpileofassortedmetalparts";
         mass = 5;
     };
     class ItemCorrugatedLg : CA_Magazine
@@ -1500,29 +1500,29 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "Salvage Metal (Large)";
+        displayName = "$str_epoch_SalvageMetalLarge";
         model = "\x\addons\a3_epoch_assets\models\salvage_large.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\salvage\equip_salvage_large_ca.paa";
-        descriptionShort = "Large pile of assorted metal parts";
+        descriptionShort = "$str_epoch_Largepileofassortedmetalparts";
         mass = 12;
     };
     class 30Rnd_test_mag : CA_Magazine
     {
         scope = 2;
-        displayName = "Test magazine";
+        displayName = "$str_epoch_Testmagazine";
         picture = "\A3\Weapons_F\Data\placeholder_co.paa";
         ammo = "B_Test_Caseless";
         count = 30;
         initSpeed = 795;
         tracersEvery = 0;
         lastRoundsTracer = 4;
-        descriptionShort = "Used to shoot test bullets";
+        descriptionShort = "$str_epoch_Usedtoshoottestbullets";
     };
     class 5Rnd_rollins_mag : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Rollins magazine";
+        displayName = "$str_epoch_Rollinsmagazine";
         picture = "\x\addons\a3_epoch_assets\textures\rol_rounds\equip_Rol_rounds_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\rol_rounds.p3d";
         ammo = "B_Test_Caseless";
@@ -1530,83 +1530,83 @@ class CfgMagazines
         initSpeed = 795;
         tracersEvery = 0;
         lastRoundsTracer = 4;
-        descriptionShort = "Rollins 5Rnd Magazine";
+        descriptionShort = "$str_epoch_Rollins5RndMagazine";
         mass = 3;
     };
     class CSGAS : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Chainsaw Gas";
+        displayName = "$str_epoch_ChainsawGas";
         picture = "\x\addons\a3_epoch_assets\textures\kits\gear_jerryMixed_ca.paa";
         ammo = "ChainSaw_Bullet";
         count = 1000;
         initSpeed = 100;
         tracersEvery = 0;
         lastRoundsTracer = 9999;
-        descriptionShort = "Chainsaw Gas";
+        descriptionShort = "$str_epoch_ChainsawGas";
         mass = 5;
     };
     class sledge_swing : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Swing";
+        displayName = "$str_epoch_Swing";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_swing_ca.paa";
         ammo = "B_Swing";
         count = 1000;
         initSpeed = 275;
         tracersEvery = 0;
         lastRoundsTracer = 9999;
-        descriptionShort = "Swing";
+        descriptionShort = "$str_epoch_Swing";
         mass = 0;
     };
     class stick_swing : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Swing";
+        displayName = "$str_epoch_Swing";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_swing_ca.paa";
         ammo = "B_Stick";
         count = 1000;
         initSpeed = 275;
         tracersEvery = 0;
         lastRoundsTracer = 9999;
-        descriptionShort = "Swing";
+        descriptionShort = "$str_epoch_Swing";
         mass = 0;
     };
     class hatchet_swing : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Swing";
+        displayName = "$str_epoch_Swing";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_swing_ca.paa";
         ammo = "B_Hatchet";
         count = 1000;
         initSpeed = 100;
         tracersEvery = 0;
         lastRoundsTracer = 9999;
-        descriptionShort = "Swing";
+        descriptionShort = "$str_epoch_Swing";
         mass = 0;
     };
     class 30Rnd_test_mag_Tracer : 30Rnd_test_mag
     {
         tracersEvery = 1;
         lastRoundsTracer = 30;
-        displayName = "Test tracer magazine";
-        descriptionShort = "Used to shoot test tracer bullets";
+        displayName = "$str_epoch_Testtracermagazine";
+        descriptionShort = "$str_epoch_Usedtoshoottesttracerbullets";
         displaynameshort = "Tracers";
     };
     class EnergyPack : CA_Magazine
     {
         author = "Sequisha";
         picture = "\A3\Weapons_F\Data\UI\M_battery_CA.paa";
-        displayName = "Small energy pack";
+        displayName = "$str_epoch_Smallenergypack";
         scope = 2;
         ammo = "B_EnergyPack";
         sound[] = {"A3\sounds_f\dummysound",31.622776,1,1600};
         reloadMagazineSound[] = {"A3\sounds_f\dummysound",0.01,1,10};
-        descriptionShort = "Two part container filled with enough energy and matter for one use";
+        descriptionShort = "$str_epoch_Twopartcontainerfilledwithenoughenergyandmatterforoneuse";
         initSpeed = 420;
         count = 10;
         mass = 4;
@@ -1615,12 +1615,12 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\A3\Weapons_F\Data\UI\M_battery_CA.paa";
-        displayName = "Large energy pack";
+        displayName = "$str_epoch_Largeenergypack";
         scope = 2;
         ammo = "B_EnergyPack";
         sound[] = {"A3\sounds_f\dummysound",31.622776,1,1600};
         reloadMagazineSound[] = {"A3\sounds_f\dummysound",0.01,1,10};
-        descriptionShort = "Large two part container filled with enough energy and matter 10 uses";
+        descriptionShort = "$str_epoch_Largetwopartcontainerfilledwithenoughenergyandmatter10uses";
         initSpeed = 420;
         count = 100;
         mass = 40;
@@ -1639,44 +1639,44 @@ class CfgMagazines
     class WhiskeyNoodle : CA_Magazine
     {
         author = "Sequisha";
-        displayName = "Whisky Noodle";
+        displayName = "$str_epoch_WhiskyNoodle";
         picture = "\x\addons\a3_epoch_assets\textures\whiskeynoodle\equip_whiskeyNoodle_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\whiskeynoodle.p3d";
         scope = 2;
-        descriptionShort = "Say it slow, Drink it fast..";
+        descriptionShort = "$str_epoch_SayitslowDrinkitfast";
         count = 1;
         mass = 1;
     };
     class CircuitParts : CA_Magazine
     {
         author = "Sequisha";
-        displayName = "Electronic components";
+        displayName = "$str_epoch_Electroniccomponents";
         picture = "\x\addons\a3_epoch_assets\textures\circuit\equip_circuit_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\circuit.p3d";
         scope = 2;
-        descriptionShort = "Electronic components";
+        descriptionShort = "$str_epoch_Electroniccomponents";
         count = 1;
         mass = 5;
     };
     class VehicleRepair : CA_Magazine
     {
         author = "Sequisha";
-        displayName = "Vehicle Repair Parts";
+        displayName = "$str_epoch_VehicleRepairParts";
         picture = "\x\addons\a3_epoch_assets\textures\vehiclerepair\equip_vehicleRepair_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\vehicleRepair.p3d";
         scope = 2;
-        descriptionShort = "Repairs the most damaged part";
+        descriptionShort = "$str_epoch_Repairsthemostdamagedpart";
         count = 1;
         mass = 20;
     };
     class VehicleRepairLg : CA_Magazine
     {
         author = "Sequisha";
-        displayName = "Vehicle Repair Kit";
+        displayName = "$str_epoch_VehicleRepairKit";
         picture = "\x\addons\a3_epoch_assets\textures\vehiclerepair\equip_vehicleRepairLg_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\vehicleRepairLg.p3d";
         scope = 2;
-        descriptionShort = "Fully repairs any vehicle";
+        descriptionShort = "$str_epoch_Fullyrepairsanyvehicle";
         count = 1;
         mass = 50;
     };
@@ -1685,9 +1685,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_scrapHide_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\scrapHide.p3d";
-        displayName = "Scrap Pelt";
+        displayName = "$str_epoch_ScrapPelt";
         scope = 2;
-        descriptionShort = "Scrap Pelt";
+        descriptionShort = "$str_epoch_ScrapPelt";
         count = 1;
         mass = 5;
     };
@@ -1696,9 +1696,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_venomSac_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\venomSac.p3d";
-        displayName = "Venom Sack";
+        displayName = "$str_epoch_VenomSack";
         scope = 2;
-        descriptionShort = "Venom Sack";
+        descriptionShort = "$str_epoch_VenomSack";
         count = 1;
         mass = 1;
     };
@@ -1707,9 +1707,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_snakeCorpse_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\snakeCorpse.p3d";
-        displayName = "Snake Carcass";
+        displayName = "$str_epoch_SnakeCarcass";
         scope = 2;
-        descriptionShort = "Gutted and cleaned";
+        descriptionShort = "$str_epoch_Guttedandcleaned";
         count = 1;
         mass = 5;
     };
@@ -1718,9 +1718,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_snakemeatCooked_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\snakeMeat_cooked.p3d";
-        displayName = "Cooked Snake Meat";
+        displayName = "$str_epoch_CookedSnakeMeat";
         scope = 2;
-        descriptionShort = "Tastes like chicken.";
+        descriptionShort = "$str_epoch_Tasteslikechicken";
         count = 1;
         mass = 5;
     };
@@ -1729,9 +1729,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_rabbitCorpse_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\rabbit.p3d";
-        displayName = "Rabbit Carcass";
+        displayName = "$str_epoch_RabbitCarcass";
         scope = 2;
-        descriptionShort = "Gutted and cleaned";
+        descriptionShort = "$str_epoch_Guttedandcleaned";
         count = 1;
         mass = 5;
     };
@@ -1740,9 +1740,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_rabbitCooked_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\rabbit_cooked.p3d";
-        displayName = "Cooked Rabbit";
+        displayName = "$str_epoch_CookedRabbit";
         scope = 2;
-        descriptionShort = "Mmm Tasty!";
+        descriptionShort = "$str_epoch_MmmTasty";
         count = 1;
         mass = 5;
     };
@@ -1751,9 +1751,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_chickenRaw_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\chickenRaw.p3d";
-        displayName = "Chicken Carcass";
+        displayName = "$str_epoch_ChickenCarcass";
         scope = 2;
-        descriptionShort = "Gutted and cleaned";
+        descriptionShort = "$str_epoch_Guttedandcleaned";
         count = 1;
         mass = 10;
     };
@@ -1762,9 +1762,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_chickenCooked_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\chicken_cooked.p3d";
-        displayName = "Cooked Chicken";
+        displayName = "$str_epoch_CookedChicken";
         scope = 2;
-        descriptionShort = "Roasted to perfection!";
+        descriptionShort = "$str_epoch_Roastedtoperfection";
         count = 1;
         mass = 10;
     };
@@ -1773,9 +1773,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatLeg_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\goatLeg.p3d";
-        displayName = "Raw Goat Leg";
+        displayName = "$str_epoch_RawGoatLeg";
         scope = 2;
-        descriptionShort = "Raw Goat Leg";
+        descriptionShort = "$str_epoch_RawGoatLeg";
         count = 1;
         mass = 20;
     };
@@ -1784,9 +1784,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatLeg_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\goatLeg.p3d";
-        displayName = "Raw Dog Leg";
+        displayName = "$str_epoch_RawDogLeg";
         scope = 2;
-        descriptionShort = "Raw Dog Leg";
+        descriptionShort = "$str_epoch_RawDogLeg";
         count = 1;
         mass = 20;
     };
@@ -1795,9 +1795,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatlegCooked_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\goatLeg_cooked.p3d";
-        displayName = "Cooked Goat Leg";
+        displayName = "$str_epoch_CookedGoatLeg";
         scope = 2;
-        descriptionShort = "Cooked Goat Leg";
+        descriptionShort = "$str_epoch_CookedGoatLeg";
         count = 1;
         mass = 20;
     };
@@ -1806,9 +1806,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatlegCooked_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\goatLeg_cooked.p3d";
-        displayName = "Cooked Dog Leg";
+        displayName = "$str_epoch_CookedDogLeg";
         scope = 2;
-        descriptionShort = "Cooked Dog Leg";
+        descriptionShort = "$str_epoch_CookedDogLeg";
         count = 1;
         mass = 20;
     };
@@ -1817,9 +1817,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatLeg_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\goatLeg.p3d";
-        displayName = "Raw Sheep Leg";
+        displayName = "$str_epoch_RawSheepLeg";
         scope = 2;
-        descriptionShort = "Raw Sheep Leg";
+        descriptionShort = "$str_epoch_RawSheepLeg";
         count = 1;
         mass = 20;
     };
@@ -1828,9 +1828,9 @@ class CfgMagazines
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\meat\equip_goatlegCooked_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\goatLeg_cooked.p3d";
-        displayName = "Cooked Sheep Leg";
+        displayName = "$str_epoch_CookedSheepLeg";
         scope = 2;
-        descriptionShort = "Cooked Sheep Leg";
+        descriptionShort = "$str_epoch_CookedSheepLeg";
         count = 1;
         mass = 20;
     };
@@ -1839,9 +1839,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-        displayName = "Wooden Spike Trap";
+        displayName = "$str_epoch_WoodenSpikeTrap";
         scope = 2;
-        descriptionShort = "Wooden Spike Trap";
+        descriptionShort = "$str_epoch_WoodenSpikeTrap";
         count = 1;
         mass = 20;
     };
@@ -1850,9 +1850,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-        displayName = "Metal Spike Trap";
+        displayName = "$str_epoch_MetalSpikeTrap";
         scope = 2;
-        descriptionShort = "Metal Spike Trap";
+        descriptionShort = "$str_epoch_MetalSpikeTrap";
         count = 1;
         mass = 20;
     };
@@ -1861,9 +1861,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodenWall_ca.paa";
-        displayName = "Wooden Stud Wall";
+        displayName = "$str_epoch_WoodenStudWall";
         scope = 2;
-        descriptionShort = "Wooden Stud Wall";
+        descriptionShort = "$str_epoch_WoodenStudWall";
         count = 1;
         mass = 20;
     };
@@ -1872,9 +1872,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodenFloor_ca.paa";
-        displayName = "Wooden Floor";
+        displayName = "$str_epoch_WoodenFloor";
         scope = 2;
-        descriptionShort = "Wooden Floor";
+        descriptionShort = "$str_epoch_WoodenFloor";
         count = 1;
         mass = 20;
     };
@@ -1883,9 +1883,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodenStairs_ca.paa";
-        displayName = "Wooden Stairs";
+        displayName = "$str_epoch_WoodenStairs";
         scope = 2;
-        descriptionShort = "Wooden Stairs";
+        descriptionShort = "$str_epoch_WoodenStairs";
         count = 1;
         mass = 20;
     };
@@ -1894,9 +1894,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-        displayName = "Wooden Tower";
+        displayName = "$str_epoch_WoodenTower";
         scope = 2;
-        descriptionShort = "Wooden Tower";
+        descriptionShort = "$str_epoch_WoodenTower";
         count = 1;
         mass = 20;
     };
@@ -1905,9 +1905,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodramp_ca.paa";
-        displayName = "Wooden Ramp";
+        displayName = "$str_epoch_WoodenRamp";
         scope = 2;
-        descriptionShort = "Wooden Ramp";
+        descriptionShort = "$str_epoch_WoodenRamp";
         count = 1;
         mass = 20;
     };
@@ -1916,9 +1916,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-        displayName = "Tank Trap";
+        displayName = "$str_epoch_TankTrap";
         scope = 2;
-        descriptionShort = "Tank Trap";
+        descriptionShort = "$str_epoch_TankTrap";
         count = 1;
         mass = 20;
     };
@@ -1927,9 +1927,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-        displayName = "Hesco Wide";
+        displayName = "$str_epoch_HescoWide";
         scope = 2;
-        descriptionShort = "Hesco Wide";
+        descriptionShort = "$str_epoch_HescoWide";
         count = 1;
         mass = 20;
     };
@@ -1938,9 +1938,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-        displayName = "Wooden Ladder";
+        displayName = "$str_epoch_WoodenLadder";
         scope = 2;
-        descriptionShort = "Wooden Ladder";
+        descriptionShort = "$str_epoch_WoodenLadder";
         count = 1;
         mass = 20;
     };
@@ -1949,9 +1949,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-        displayName = "Fireplace";
+        displayName = "$str_epoch_Fireplace";
         scope = 2;
-        descriptionShort = "Fireplace";
+        descriptionShort = "$str_epoch_Fireplace";
         count = 1;
         mass = 20;
     };
@@ -1960,9 +1960,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_TP_ca.paa";
-        displayName = "TiPi Kit";
+        displayName = "$str_epoch_TiPiKit";
         scope = 2;
-        descriptionShort = "TeePee (TiPi)";
+        descriptionShort = "$str_epoch_TeePeeTiPi";
         count = 1;
         mass = 20;
     };
@@ -1971,9 +1971,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_shelf_ca.paa";
-        displayName = "Shelf Kit";
+        displayName = "$str_epoch_ShelfKit";
         scope = 2;
-        descriptionShort = "Shelf";
+        descriptionShort = "$str_epoch_Shelf";
         count = 1;
         mass = 20;
     };
@@ -1982,9 +1982,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-        displayName = "Workbench Kit";
+        displayName = "$str_epoch_WorkbenchKit";
         scope = 2;
-        descriptionShort = "Workbench";
+        descriptionShort = "$str_epoch_Workbench";
         count = 1;
         mass = 20;
     };
@@ -1993,9 +1993,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_foundation_ca.paa";
-        displayName = "Concrete Foundation";
+        displayName = "$str_epoch_ConcreteFoundation";
         scope = 2;
-        descriptionShort = "Concrete Foundation";
+        descriptionShort = "$str_epoch_ConcreteFoundation";
         count = 1;
         mass = 20;
     };
@@ -2004,9 +2004,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_foundation_ca.paa";
-        displayName = "Wood Foundation";
+        displayName = "$str_epoch_WoodFoundation";
         scope = 2;
-        descriptionShort = "Wood Foundation";
+        descriptionShort = "$str_epoch_WoodFoundation";
         count = 1;
         mass = 10;
     };
@@ -2015,9 +2015,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-        displayName = "Solar Generator Kit";
+        displayName = "$str_epoch_SolarGeneratorKit";
         scope = 2;
-        descriptionShort = "Solar Generator Kit";
+        descriptionShort = "$str_epoch_SolarGeneratorKit";
         count = 1;
         mass = 20;
     };
@@ -2026,9 +2026,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\jammer\equip_jammer_ca.paa";
-        displayName = "Frequency Jammer";
+        displayName = "$str_epoch_FrequencyJammer";
         scope = 2;
-        descriptionShort = "Frequency Jammer";
+        descriptionShort = "$str_epoch_FrequencyJammer";
         count = 1;
         mass = 20;
     };
@@ -2037,9 +2037,9 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\kits\equip_cinderHalf_ca.paa";
-        displayName = "Cinder Wall";
+        displayName = "$str_epoch_CinderWall";
         scope = 2;
-        descriptionShort = "Cinder Wall";
+        descriptionShort = "$str_epoch_CinderWall";
         count = 1;
         mass = 20;
     };
@@ -2048,80 +2048,80 @@ class CfgMagazines
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets\models\paintCan.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\paint can\gear_paintCan_ca.paa";
-        displayName = "Paint Can";
+        displayName = "$str_epoch_PaintCan";
         scope = 0;
-        descriptionShort = "Crust-O-Leum, Oil based protective enamel.";
+        descriptionShort = "$str_epoch_CrustOLeumOilbasedprotectiveenamel";
         count = 1;
         mass = 1;
     };
     class PaintCanClear : PaintCanBase
     {
         scope = 2;
-        displayName = "Paint Stripper";
-        descriptionShort = "Removes paint and other finishes.";
+        displayName = "$str_epoch_PaintStripper";
+        descriptionShort = "$str_epoch_Removespaintandotherfinishes";
         colorName = "None";
         textureIndex = 0;
     };
     class PaintCanBlk : PaintCanBase
     {
         scope = 2;
-        displayName = "Paint Can (Black)";
+        displayName = "$str_epoch_PaintCanBlack";
         colorName = "Black";
         textureIndex = 1;
     };
     class PaintCanBlu : PaintCanBase
     {
         scope = 2;
-        displayName = "Paint Can (Blue)";
+        displayName = "$str_epoch_PaintCanBlue";
         colorName = "Blue";
         textureIndex = 2;
     };
     class PaintCanBrn : PaintCanBase
     {
         scope = 2;
-        displayName = "Paint Can (Brown)";
+        displayName = "$str_epoch_PaintCanBrown";
         colorName = "Brown";
         textureIndex = 3;
     };
     class PaintCanGrn : PaintCanBase
     {
         scope = 2;
-        displayName = "Paint Can (Green)";
+        displayName = "$str_epoch_PaintCanGreen";
         colorName = "Green";
         textureIndex = 4;
     };
     class PaintCanOra : PaintCanBase
     {
         scope = 2;
-        displayName = "Paint Can (Orange)";
+        displayName = "$str_epoch_PaintCanOrange";
         colorName = "Orange";
         textureIndex = 5;
     };
     class PaintCanPur : PaintCanBase
     {
         scope = 2;
-        displayName = "Paint Can (Purple)";
+        displayName = "$str_epoch_PaintCanPurple";
         colorName = "Purple";
         textureIndex = 6;
     };
     class PaintCanRed : PaintCanBase
     {
         scope = 2;
-        displayName = "Paint Can (Red)";
+        displayName = "$str_epoch_PaintCanRed";
         colorName = "Red";
         textureIndex = 7;
     };
     class PaintCanTeal : PaintCanBase
     {
         scope = 2;
-        displayName = "Paint Can (Teal)";
+        displayName = "$str_epoch_PaintCanTeal";
         colorName = "Teal";
         textureIndex = 8;
     };
     class PaintCanYel : PaintCanBase
     {
         scope = 2;
-        displayName = "Paint Can (Yellow)";
+        displayName = "$str_epoch_PaintCanYellow";
         colorName = "Yellow";
         textureIndex = 9;
     };
@@ -2131,8 +2131,8 @@ class CfgMagazines
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\poppy.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\moist\gear_moist_ca.paa";
-        displayName = "Poppy";
-        descriptionShort = "Pod off of a poppy plant.";
+        displayName = "$str_epoch_Poppy";
+        descriptionShort = "$str_epoch_Podoffofapoppyplant";
         count = 1;
         mass = 1;
     };
@@ -2142,8 +2142,8 @@ class CfgMagazines
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\vegetation\models\goldenseal.p3d";
         picture = "\x\addons\a3_epoch_assets_3\vegetation\gear_goldenseal_ca.paa";
-        displayName = "Goldenseal";
-        descriptionShort = "Helps reduce toxicity";
+        displayName = "$str_epoch_Goldenseal";
+        descriptionShort = "$str_epoch_Helpsreducetoxicity";
         count = 1;
         mass = 1;
     };
@@ -2153,8 +2153,8 @@ class CfgMagazines
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\vegetation\models\pumpkin.p3d";
         picture = "\x\addons\a3_epoch_assets_3\vegetation\gear_pumpkin_ca.paa";
-        displayName = "Pumpkin";
-        descriptionShort = "Pumpkin";
+        displayName = "$str_epoch_Pumpkin";
+        descriptionShort = "$str_epoch_Pumpkin";
         count = 1;
         mass = 1;
     };
@@ -2164,8 +2164,8 @@ class CfgMagazines
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\moist.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\moist\gear_moist_ca.paa";
-        displayName = "Moist Towelette";
-        descriptionShort = "Tear open packet, remove towelette and use.";
+        displayName = "$str_epoch_MoistTowelette";
+        descriptionShort = "$str_epoch_Tearopenpacketremovetoweletteanduse";
         count = 1;
         mass = 1;
     };
@@ -2175,8 +2175,8 @@ class CfgMagazines
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\heatdough.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\moist\gear_heat_ca.paa";
-        displayName = "Heat Pack";
-        descriptionShort = "Don't suffer in the cold... just open one of these and get toasty!";
+        displayName = "$str_epoch_HeatPack";
+        descriptionShort = "$str_epoch_Dontsufferinthecoldjustopenoneoftheseandgettoasty";
         count = 1;
         mass = 1;
     };
@@ -2186,8 +2186,8 @@ class CfgMagazines
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\heatdough.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\moist\gear_heat_ca.paa";
-        displayName = "Cold Pack";
-        descriptionShort = "Running Hot? cool it off!";
+        displayName = "$str_epoch_ColdPack";
+        descriptionShort = "$str_epoch_RunningHotcoolitoff";
         count = 1;
         mass = 1;
     };

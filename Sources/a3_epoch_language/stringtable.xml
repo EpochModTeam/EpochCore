@@ -1222,5 +1222,602 @@
         <Key ID="str_epoch_Zombie1">
             <Original>Zombie 1</Original>
         </Key>
+        <Key ID="str_epoch_ScaryWolfMask">
+            <Original>Scary Wolf Mask</Original>
+        </Key>
+        <Key ID="str_epoch_ScaryPumpkinMask">
+            <Original>Scary Pumpkin Mask</Original>
+        </Key>
+        <Key ID="str_epoch_AKMAssaultRifle">
+            <Original>AKM Assault Rifle</Original>
+        </Key>
+        <Key ID="str_epoch_AKM">
+            <Original>AKM</Original>
+        </Key>
+        <Key ID="str_epoch_m4a3AssaultRifle">
+            <Original>m4a3 Assault Rifle</Original>
+        </Key>
+        <Key ID="str_epoch_M4a3">
+            <Original>M4a3</Original>
+        </Key>
+        <Key ID="str_epoch_M14Rifle">
+            <Original>M14 Rifle</Original>
+        </Key>
+        <Key ID="str_epoch_M14">
+            <Original>M14</Original>
+        </Key>
+        <Key ID="str_epoch_M14Green">
+            <Original>M14 (Green)</Original>
+        </Key>
+        <Key ID="str_epoch_M16AssaultRifle">
+            <Original>M16 Assault Rifle</Original>
+        </Key>
+        <Key ID="str_epoch_M16">
+            <Original>M16</Original>
+        </Key>
+        <Key ID="str_epoch_M16Red">
+            <Original>M16 (Red)</Original>
+        </Key>
+        <Key ID="str_epoch_M107SniperRifle">
+            <Original>M107 Sniper Rifle</Original>
+        </Key>
+        <Key ID="str_epoch_M107">
+            <Original>M107</Original>
+        </Key>
+        <Key ID="str_epoch_M107Tan">
+            <Original>M107 (Tan)</Original>
+        </Key>
+        <Key ID="str_epoch_m249LMG">
+            <Original>m249 LMG</Original>
+        </Key>
+        <Key ID="str_epoch_M249">
+            <Original>M249</Original>
+        </Key>
+        <Key ID="str_epoch_M249Tan">
+            <Original>M249 Tan</Original>
+        </Key>
+        <Key ID="str_epoch_Ruger">
+            <Original>Ruger</Original>
+        </Key>
+        <Key ID="str_epoch_22caliberpistol">
+            <Original>.22 caliber pistol</Original>
+        </Key>
+        <Key ID="str_epoch_1911">
+            <Original>1911</Original>
+        </Key>
+        <Key ID="str_epoch_EpochPlayerSlot">
+            <Original>Epoch Player Slot</Original>
+        </Key>
+        <Key ID="str_epoch_EpochMilitiaSoldier">
+            <Original>Epoch Militia Soldier</Original>
+        </Key>
+        <Key ID="str_epoch_EpochMilitiaGuerilla">
+            <Original>Epoch Militia Guerilla</Original>
+        </Key>
+        <Key ID="str_epoch_EpochMilitiaGhillie">
+            <Original>Epoch Militia Ghillie</Original>
+        </Key>
+        <Key ID="str_epoch_TESTUnderwear">
+            <Original>TEST: Underwear</Original>
+        </Key>
+        <Key ID="str_epoch_FemaleCamo">
+            <Original>Female Camo</Original>
+        </Key>
+        <Key ID="str_epoch_FemaleCamoBlue">
+            <Original>Female Camo (Blue)</Original>
+        </Key>
+        <Key ID="str_epoch_FemaleCamoBrown">
+            <Original>Female Camo (Brown)</Original>
+        </Key>
+        <Key ID="str_epoch_FemaleCamoRed">
+            <Original>Female Camo (Red)</Original>
+        </Key>
+        <Key ID="str_epoch_Female">
+            <Original>Female</Original>
+        </Key>
+        <Key ID="str_epoch_Male">
+            <Original>Male</Original>
+        </Key>
+        <Key ID="str_epoch_Cloak">
+            <Original>Cloak</Original>
+        </Key>
+        <Key ID="str_epoch_SapperToxic">
+            <Original>Sapper (Toxic)</Original>
+        </Key>
+        <Key ID="str_epoch_SapperBloated">
+            <Original>Sapper (Bloated)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie1Crawler">
+            <Original>Zombie 1 (Crawler)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie2Crawler">
+            <Original>Zombie 2 (Crawler)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie3Crawler">
+            <Original>Zombie 3 (Crawler)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie4Crawler">
+            <Original>Zombie 4 (Crawler)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie5Crawler">
+            <Original>Zombie 5 (Crawler)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie1Spider">
+            <Original>Zombie 1 (Spider)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie2Spider">
+            <Original>Zombie 2 (Spider)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie3Spider">
+            <Original>Zombie 3 (Spider)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie4Spider">
+            <Original>Zombie 4 (Spider)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie5Spider">
+            <Original>Zombie 5 (Spider)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie1Boss">
+            <Original>Zombie 1 (Boss)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie2Boss">
+            <Original>Zombie 2 (Boss)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie3Boss">
+            <Original>Zombie 3 (Boss)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie4Boss">
+            <Original>Zombie 4 (Boss)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie5Boss">
+            <Original>Zombie 5 (Boss)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie1Walker">
+            <Original>Zombie 1 (Walker)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie2Walker">
+            <Original>Zombie 2 (Walker)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie3Walker">
+            <Original>Zombie 3 (Walker)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie4Walker">
+            <Original>Zombie 4 (Walker)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie5Walker">
+            <Original>Zombie 5 (Walker)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie1Medium">
+            <Original>Zombie 1 (Medium)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie2Medium">
+            <Original>Zombie 2 (Medium)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie3Medium">
+            <Original>Zombie 3 (Medium)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie4Medium">
+            <Original>Zombie 4 (Medium)</Original>
+        </Key>
+        <Key ID="str_epoch_Zombie5Medium">
+            <Original>Zombie 5 (Medium)</Original>
+        </Key>
+        <Key ID="str_epoch_FerrisWheel">
+            <Original>Ferris Wheel</Original>
+        </Key>
+        <Key ID="str_epoch_StartRide">
+            <Original>Start Ride</Original>
+        </Key>
+        <Key ID="str_epoch_StopRide">
+            <Original>Stop Ride</Original>
+        </Key>
+        <Key ID="str_epoch_FourWayBunker">
+            <Original>Four Way Bunker</Original>
+        </Key>
+        <Key ID="str_epoch_Load360Mass20">
+            <Original>Load: 360, Mass: 20</Original>
+        </Key>
+        <Key ID="str_epoch_Load400Mass30">
+            <Original>Load: 400, Mass: 30</Original>
+        </Key>
+        <Key ID="str_epoch_Load480Mass40">
+            <Original>Load: 480, Mass: 40</Original>
+        </Key>
+        <Key ID="str_epoch_Load520Mass50">
+            <Original>Load: 520, Mass: 50</Original>
+        </Key>
+        <Key ID="str_epoch_Load550Mass60">
+            <Original>Load: 550, Mass: 60</Original>
+        </Key>
+        <Key ID="str_epoch_BlueJetski">
+            <Original>Blue Jetski</Original>
+        </Key>
+        <Key ID="str_epoch_Push">
+            <Original>Push</Original>
+        </Key>
+        <Key ID="str_epoch_ElectricMotorcycle">
+            <Original>Electric Motorcycle</Original>
+        </Key>
+        <Key ID="str_epoch_FlipElectricMotorcycle">
+            <Original>Flip Electric Motorcycle</Original>
+        </Key>
+        <Key ID="str_epoch_Mosquito">
+            <Original>Mosquito</Original>
+        </Key>
+        <Key ID="str_epoch_FlipATV">
+            <Original>Flip ATV</Original>
+        </Key>
+        <Key ID="str_epoch_Container">
+            <Original>Container</Original>
+        </Key>
+        <Key ID="str_epoch_Search">
+            <Original>Search</Original>
+        </Key>
+        <Key ID="str_epoch_Open">
+            <Original>Open</Original>
+        </Key>
+        <Key ID="str_epoch_Bobber">
+            <Original>Bobber</Original>
+        </Key>
+        <Key ID="str_epoch_TakeKrypto">
+            <Original>Take Krypto</Original>
+        </Key>
+        <Key ID="str_epoch_SpikeTrapSIM">
+            <Original>Spike Trap (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_MetalTrapSIM">
+            <Original>Metal Trap (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_TankTrapSIM">
+            <Original>Tank Trap (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_HescoWideSIM">
+            <Original>Hesco Wide (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_SapperHead">
+            <Original>Sapper Head</Original>
+        </Key>
+        <Key ID="str_epoch_SapperCorpse">
+            <Original>Sapper Corpse</Original>
+        </Key>
+        <Key ID="str_epoch_EmptyFireplaceSIM">
+            <Original>Empty Fireplace (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_Raise">
+            <Original>Raise</Original>
+        </Key>
+        <Key ID="str_epoch_Lower">
+            <Original>Lower</Original>
+        </Key>
+        <Key ID="str_epoch_Pickup">
+            <Original>Pickup</Original>
+        </Key>
+        <Key ID="str_epoch_WoodRamp">
+            <Original>Wood Ramp</Original>
+        </Key>
+        <Key ID="str_epoch_HalfCinderBlockWall">
+            <Original>Half Cinder Block Wall</Original>
+        </Key>
+        <Key ID="str_epoch_CinderBlockWall">
+            <Original>Cinder Block Wall</Original>
+        </Key>
+        <Key ID="str_epoch_CinderBlockGarage">
+            <Original>Cinder Block Garage</Original>
+        </Key>
+        <Key ID="str_epoch_Close">
+            <Original>Close</Original>
+        </Key>
+        <Key ID="str_epoch_Lock">
+            <Original>Lock</Original>
+        </Key>
+        <Key ID="str_epoch_Unlock">
+            <Original>Unlock</Original>
+        </Key>
+        <Key ID="str_epoch_WoodFloor">
+            <Original>Wood Floor</Original>
+        </Key>
+        <Key ID="str_epoch_MetalFloor">
+            <Original>Metal Floor</Original>
+        </Key>
+        <Key ID="str_epoch_LargeWall">
+            <Original>Large Wall</Original>
+        </Key>
+        <Key ID="str_epoch_PlywoodWallSIM">
+            <Original>Plywood Wall (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_Wall">
+            <Original>Wall</Original>
+        </Key>
+        <Key ID="str_epoch_PlywoodWallDoorwaySIM">
+            <Original>Plywood Wall Doorway (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_WallDoorway">
+            <Original>Wall Doorway</Original>
+        </Key>
+        <Key ID="str_epoch_PlywoodWallDoorwaywDoorSIM">
+            <Original>Plywood Wall Doorway w/ Door (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_WallDoorwaywDoor">
+            <Original>Wall Doorway w/ Door</Original>
+        </Key>
+        <Key ID="str_epoch_WallDoorwaywLockingDoor">
+            <Original>Wall Doorway w/ Locking Door</Original>
+        </Key>
+        <Key ID="str_epoch_WoodStairs">
+            <Original>Wood Stairs</Original>
+        </Key>
+        <Key ID="str_epoch_WoodTower">
+            <Original>Wood Tower</Original>
+        </Key>
+        <Key ID="str_epoch_WoodLadder">
+            <Original>Wood Ladder</Original>
+        </Key>
+        <Key ID="str_epoch_TipiSim">
+            <Original>Tipi Sim</Original>
+        </Key>
+        <Key ID="str_epoch_MetalShelfSim">
+            <Original>Metal Shelf Sim</Original>
+        </Key>
+        <Key ID="str_epoch_WorkBenchSIM">
+            <Original>WorkBench (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_TarpCoveredPallet">
+            <Original>Tarp Covered Pallet</Original>
+        </Key>
+        <Key ID="str_epoch_ChestFreezer">
+            <Original>Chest Freezer</Original>
+        </Key>
+        <Key ID="str_epoch_FrequencyJammerSIM">
+            <Original>Frequency Jammer (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_SolarPowerGeneratorSIM">
+            <Original>Solar Power Generator (SIM)</Original>
+        </Key>
+        <Key ID="str_epoch_ToolRack">
+            <Original>Tool Rack</Original>
+        </Key>
+        <Key ID="str_epoch_Chair">
+            <Original>Chair</Original>
+        </Key>
+        <Key ID="str_epoch_ChairRed">
+            <Original>Chair (Red)</Original>
+        </Key>
+        <Key ID="str_epoch_FilingCabinet">
+            <Original>Filing Cabinet</Original>
+        </Key>
+        <Key ID="str_epoch_Shoebox">
+            <Original>Shoebox</Original>
+        </Key>
+        <Key ID="str_epoch_Fridge">
+            <Original>Fridge</Original>
+        </Key>
+        <Key ID="str_epoch_OpenBottom">
+            <Original>Open Bottom</Original>
+        </Key>
+        <Key ID="str_epoch_CloseBottom">
+            <Original>Close Bottom</Original>
+        </Key>
+        <Key ID="str_epoch_OpenTop">
+            <Original>Open Top</Original>
+        </Key>
+        <Key ID="str_epoch_CloseTop">
+            <Original>Close Top</Original>
+        </Key>
+        <Key ID="str_epoch_Mattress">
+            <Original>Mattress</Original>
+        </Key>
+        <Key ID="str_epoch_Bunk">
+            <Original>Bunk</Original>
+        </Key>
+        <Key ID="str_epoch_Couch">
+            <Original>Couch</Original>
+        </Key>
+        <Key ID="str_epoch_CoffeeTable">
+            <Original>Coffee Table</Original>
+        </Key>
+        <Key ID="str_epoch_Wardrobe">
+            <Original>Wardrobe</Original>
+        </Key>
+        <Key ID="str_epoch_Cooker">
+            <Original>Cooker</Original>
+        </Key>
+        <Key ID="str_epoch_Pelican">
+            <Original>Pelican</Original>
+        </Key>
+        <Key ID="str_epoch_DEBUGBOX">
+            <Original>DEBUG BOX</Original>
+        </Key>
+        <Key ID="str_epoch_FemaleCloneVat">
+            <Original>Female Clone Vat</Original>
+        </Key>
+        <Key ID="str_epoch_MaleCloneVat">
+            <Original>Male Clone Vat</Original>
+        </Key>
+        <Key ID="str_epoch_EmptyCloneVat">
+            <Original>Empty Clone Vat</Original>
+        </Key>
+        <Key ID="str_epoch_ConcreteFoundationGhost">
+            <Original>Concrete Foundation (Ghost)</Original>
+        </Key>
+        <Key ID="str_epoch_WoodFoundationGhost">
+            <Original>Wood Foundation (Ghost)</Original>
+        </Key>
+        <Key ID="str_epoch_FireplaceFull">
+            <Original>Fireplace Full</Original>
+        </Key>
+        <Key ID="str_epoch_FireplaceOn">
+            <Original>Fireplace On</Original>
+        </Key>
+        <Key ID="str_epoch_SolarPowerGenerator">
+            <Original>Solar Power Generator</Original>
+        </Key>
+        <Key ID="str_epoch_TiPiGhost">
+            <Original>TiPi Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_ShelfGhost">
+            <Original>Shelf Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_WorkBenchGhost">
+            <Original>WorkBench Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_WoodWallGhost">
+            <Original>Wood Wall Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_WoodFloorGhost">
+            <Original>Wood Floor Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_MetalFloorGhost">
+            <Original>Metal Floor Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_WoodLadderGhost">
+            <Original>Wood Ladder Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_WoodStairsGhost">
+            <Original>Wood Stairs Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_WoodTowerGhost">
+            <Original>Wood Tower Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_WoodRampGhost">
+            <Original>Wood Ramp Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_HescoWideGhost">
+            <Original>Hesco Wide (Ghost)</Original>
+        </Key>
+        <Key ID="str_epoch_CinderHalfWallGhost">
+            <Original>Cinder Half Wall Ghost</Original>
+        </Key>
+        <Key ID="str_epoch_LargePlywoodWall">
+            <Original>Large Plywood Wall</Original>
+        </Key>
+        <Key ID="str_epoch_LargeCorrugatedWall">
+            <Original>Large Corrugated Wall</Original>
+        </Key>
+        <Key ID="str_epoch_PlywoodWallDoorway">
+            <Original>Plywood Wall Doorway</Original>
+        </Key>
+        <Key ID="str_epoch_PlywoodWallDoorwaywDoor">
+            <Original>Plywood Wall Doorway w/ Door</Original>
+        </Key>
+        <Key ID="str_epoch_PlywoodWallDoorwaywLockingDoor">
+            <Original>Plywood Wall Doorway w/ Locking Door</Original>
+        </Key>
+        <Key ID="str_epoch_WoodStairslvl2">
+            <Original>Wood Stairs lvl 2</Original>
+        </Key>
+        <Key ID="str_epoch_AddWall">
+            <Original>Add Wall</Original>
+        </Key>
+        <Key ID="str_epoch_RemoveWall">
+            <Original>Remove Wall</Original>
+        </Key>
+        <Key ID="str_epoch_Tipi">
+            <Original>Tipi</Original>
+        </Key>
+        <Key ID="str_epoch_MetalShelf">
+            <Original>Metal Shelf</Original>
+        </Key>
+        <Key ID="str_epoch_WorkBench">
+            <Original>WorkBench</Original>
+        </Key>
+        <Key ID="str_epoch_ShelfProxy">
+            <Original>Shelf Proxy</Original>
+        </Key>
+        <Key ID="str_epoch_PalletProxy">
+            <Original>Pallet Proxy</Original>
+        </Key>
+        <Key ID="str_epoch_MineralProxy">
+            <Original>Mineral Proxy</Original>
+        </Key>
+        <Key ID="str_epoch_MineralDepositCopper">
+            <Original>Mineral Deposit (Copper)</Original>
+        </Key>
+        <Key ID="str_epoch_MineralDepositGold">
+            <Original>Mineral Deposit (Gold)</Original>
+        </Key>
+        <Key ID="str_epoch_MineralDepositSilver">
+            <Original>Mineral Deposit (Silver)</Original>
+        </Key>
+        <Key ID="str_epoch_Locker">
+            <Original>Locker</Original>
+        </Key>
+        <Key ID="str_epoch_MedicineCabinet">
+            <Original>Medicine Cabinet</Original>
+        </Key>
+        <Key ID="str_epoch_CoffeeTableProxy">
+            <Original>Coffee Table Proxy</Original>
+        </Key>
+        <Key ID="str_epoch_Shoeboxproxy">
+            <Original>Shoebox proxy</Original>
+        </Key>
+        <Key ID="str_epoch_CarnivalTent">
+            <Original>Carnival Tent</Original>
+        </Key>
+        <Key ID="str_epoch_Teleport">
+            <Original>Teleport</Original>
+        </Key>
+        <Key ID="str_epoch_centerplane">
+            <Original>centerplane</Original>
+        </Key>
+        <Key ID="str_epoch_EpochLogo">
+            <Original>Epoch Logo</Original>
+        </Key>
+        <Key ID="str_epoch_Constuct">
+            <Original>Constuct</Original>
+        </Key>
+        <Key ID="str_epoch_GreatWhite">
+            <Original>Great White</Original>
+        </Key>
+        <Key ID="str_epoch_DiceSnake">
+            <Original>Dice Snake</Original>
+        </Key>
+        <Key ID="str_epoch_LeopardSnake">
+            <Original>Leopard Snake</Original>
+        </Key>
+        <Key ID="str_epoch_FlipKart">
+            <Original>Flip Kart</Original>
+        </Key>
+        <Key ID="str_epoch_10Rnd22magazine">
+            <Original>10Rnd .22 magazine</Original>
+        </Key>
+        <Key ID="str_epoch_AtenroundmagazinefortheRuger">
+            <Original>A ten round magazine for the Ruger.</Original>
+        </Key>
+        <Key ID="str_epoch_9Rnd45magazine">
+            <Original>9Rnd .45 magazine</Original>
+        </Key>
+        <Key ID="str_epoch_Anineroundmagazineforthe1911">
+            <Original>A nine round magazine for the 1911.</Original>
+        </Key>
+        <Key ID="str_epoch_Spearround">
+            <Original>Spear round</Original>
+        </Key>
+        <Key ID="str_epoch_Aspearforthespearrifle">
+            <Original>A spear for the spear rifle.</Original>
+        </Key>
+        <Key ID="str_epoch_20Rnd762Magazine">
+            <Original>20Rnd 7.62 Magazine</Original>
+        </Key>
+        <Key ID="str_epoch_20rounddetachableboxmagazine">
+            <Original>20-round detachable box magazine</Original>
+        </Key>
+        <Key ID="str_epoch_30Rnd556Magazine">
+            <Original>30Rnd 5.56 Magazine</Original>
+        </Key>
+        <Key ID="str_epoch_30RoundStanagMagazine">
+            <Original>30 Round Stanag Magazine</Original>
+        </Key>
+        <Key ID="str_epoch_762mm30rndAKMMag">
+            <Original>7.62mm 30rnd AKM Mag</Original>
+        </Key>
+        <Key ID="str_epoch_Caliber762x39mmUsedinAKMRPK">
+            <Original>Caliber: 7.62x39 mm, Used in: AKM, RPK</Original>
+        </Key>
+        <Key ID="str_epoch_556mm200rndSawBelt">
+            <Original>5.56mm 200rnd Saw Belt</Original>
+        </Key>
+        <Key ID="str_epoch_Caliber556x45mmUsedinM249Saw">
+            <Original>Caliber: 5.56x45 mm, Used in: M249 Saw</Original>
+        </Key>
     </Package>
 </Project>

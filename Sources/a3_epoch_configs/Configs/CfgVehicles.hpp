@@ -425,7 +425,7 @@ class CfgVehicles
     class VirtualMan_F;
     class VirtualMan_EPOCH : VirtualMan_F
     {
-        displayName = "Epoch Player Slot";
+        displayName = "$str_epoch_EpochPlayerSlot";
         weapons[] = {};
         class Eventhandlers
         {
@@ -438,7 +438,7 @@ class CfgVehicles
         author = "$STR_A3_Bohemia_Interactive";
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_02.p3d";
         scope = 2;
-        displayName = "Epoch Militia Soldier";
+        displayName = "$str_epoch_EpochMilitiaSoldier";
         cost = 90000;
         camouflage = 1.2;
         uniformClass = "";
@@ -456,7 +456,7 @@ class CfgVehicles
         author = "$STR_A3_Bohemia_Interactive";
         model = "\A3\characters_F_gamma\Guerrilla\ig_guerrilla2_1.p3d";
         scope = 2;
-        displayName = "Epoch Militia Guerilla";
+        displayName = "$str_epoch_EpochMilitiaGuerilla";
         cost = 90000;
         camouflage = 1.2;
         uniformClass = "";
@@ -474,7 +474,7 @@ class CfgVehicles
         author = "$STR_A3_Bohemia_Interactive";
         model = "A3\Characters_F_Beta\INDEP\ia_sniper.p3d";
         scope = 2;
-        displayName = "Epoch Militia Ghillie";
+        displayName = "$str_epoch_EpochMilitiaGhillie";
         cost = 90000;
         camouflage = 1.4;
         uniformClass = "";
@@ -653,7 +653,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 1;
         scopeCurator = 0;
-        displayName = "TEST: Underwear";
+        displayName = "$str_epoch_TESTUnderwear";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
         uniformClass = "U_BasicBodyFemale";
@@ -669,7 +669,7 @@ class CfgVehicles
         side = 1;
         engineer = 1;
         vehicleClass = "Women";
-        displayName = "Female Wetsuit";
+        displayName = "$str_epoch_FemaleWetsuit";
         scope = 2;
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\wetsuit\wetsuit_co.paa"};
@@ -828,7 +828,7 @@ class CfgVehicles
     };
     class Epoch_Female_wetsuitW_F : Epoch_Female_wetsuit_F
     {
-        displayName = "Female Wetsuit (white)";
+        displayName = "$str_epoch_FemaleWetsuitwhite";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_wetsuit_white.paa";
         scope = 2;
         hiddenSelections[] = {"Camo"};
@@ -845,7 +845,7 @@ class CfgVehicles
     };
     class Epoch_Female_wetsuitB_F : Epoch_Female_wetsuit_F
     {
-        displayName = "Female Wetsuit (blue)";
+        displayName = "$str_epoch_FemaleWetsuitblue";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_wetsuit_blue.paa";
         scope = 2;
         hiddenSelections[] = {"Camo"};
@@ -856,7 +856,7 @@ class CfgVehicles
     };
     class Epoch_Female_wetsuitP_F : Epoch_Female_wetsuit_F
     {
-        displayName = "Female Wetsuit (purple)";
+        displayName = "$str_epoch_FemaleWetsuitpurple";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_wetsuit_purple.paa";
         scope = 2;
         hiddenSelections[] = {"Camo"};
@@ -867,7 +867,7 @@ class CfgVehicles
     };
     class Epoch_Female_wetsuitC_F : Epoch_Female_wetsuit_F
     {
-        displayName = "Female Wetsuit (camo)";
+        displayName = "$str_epoch_FemaleWetsuitcamo";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_wetsuit_camo.paa";
         scope = 2;
         hiddenSelections[] = {"Camo"};
@@ -879,7 +879,7 @@ class CfgVehicles
     };
     class Epoch_Female_Ghillie1_F : Epoch_Female_base_F
     {
-        displayName = "Female Ghillie (tan)";
+        displayName = "$str_epoch_FemaleGhillietan";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_ghillie.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_ghilie_tan.paa";
@@ -1023,7 +1023,7 @@ class CfgVehicles
     };
     class Epoch_Female_Ghillie2_F : Epoch_Female_Ghillie1_F
     {
-        displayName = "Female Ghillie (light green)";
+        displayName = "$str_epoch_FemaleGhillielightgreen";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_ghillie.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_ghilie_green2.paa";
@@ -1034,7 +1034,7 @@ class CfgVehicles
     };
     class Epoch_Female_Ghillie3_F : Epoch_Female_Ghillie1_F
     {
-        displayName = "Female Ghillie (green)";
+        displayName = "$str_epoch_FemaleGhilliegreen";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_ghillie.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_ghilie_green.paa";
@@ -1045,7 +1045,7 @@ class CfgVehicles
     };
     class Epoch_Female_Camo_F : Epoch_Female_base_F
     {
-        displayName = "Female Camo";
+        displayName = "$str_epoch_FemaleCamo";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_green.paa";
@@ -1062,7 +1062,7 @@ class CfgVehicles
     };
     class Epoch_Female_CamoBlue_F : Epoch_Female_Camo_F
     {
-        displayName = "Female Camo (Blue)";
+        displayName = "$str_epoch_FemaleCamoBlue";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_blue.paa";
@@ -1079,7 +1079,7 @@ class CfgVehicles
     };
     class Epoch_Female_CamoBrn_F : Epoch_Female_Camo_F
     {
-        displayName = "Female Camo (Brown)";
+        displayName = "$str_epoch_FemaleCamoBrown";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_brown.paa";
@@ -1096,7 +1096,7 @@ class CfgVehicles
     };
     class Epoch_Female_CamoRed_F : Epoch_Female_Camo_F
     {
-        displayName = "Female Camo (Red)";
+        displayName = "$str_epoch_FemaleCamoRed";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_red.paa";
@@ -1115,7 +1115,7 @@ class CfgVehicles
     {
         woman = 1;
         scope = 2;
-        displayName = "Female";
+        displayName = "$str_epoch_Female";
     };
     class O_Soldier_base_F;
     class Epoch_Man_base_F : O_Soldier_base_F
@@ -1279,7 +1279,7 @@ class CfgVehicles
     class Epoch_Male_F : Epoch_Man_base_F
     {
         scope = 2;
-        displayName = "Male";
+        displayName = "$str_epoch_Male";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Dan.paa";
     };
     class Epoch_Char_base_F : Civilian
@@ -1628,7 +1628,7 @@ class CfgVehicles
     {
         scope = 2;
         faceType = "Default";
-        displayName = "Cloak";
+        displayName = "$str_epoch_Cloak";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Cloak_Character.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\cultist.paa";
         glassesEnabled = 0;
@@ -1764,7 +1764,7 @@ class CfgVehicles
     {
         scope = 2;
         faceType = "Default";
-        displayName = "Sapper";
+        displayName = "$str_epoch_Sapper";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sapper_Character.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sapper.paa";
         hiddenSelections[] = {"sapper","remains"};
@@ -1903,7 +1903,7 @@ class CfgVehicles
     class Epoch_SapperG_F : Epoch_Sapper_F
     {
         scope = 2;
-        displayName = "Sapper (Toxic)";
+        displayName = "$str_epoch_SapperToxic";
         moves = "CfgMovesSapperSdr";
         hiddenSelections[] = {"camo","remains"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets\textures\sapper\sapper_green_eco.paa",""};
@@ -1912,7 +1912,7 @@ class CfgVehicles
     {
         scope = 2;
         faceType = "Default";
-        displayName = "Sapper (Bloated)";
+        displayName = "$str_epoch_SapperBloated";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sapper_Bloated.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\bossSapper.paa";
         glassesEnabled = 0;
@@ -2052,7 +2052,7 @@ class CfgVehicles
         moves = "CfgRyanZombiesMovesMaleSdrSlow";
         identityTypes[] = {"NoGlasses"};
         scope = 2;
-        displayName = "Zombie 1";
+        displayName = "$str_epoch_Zombie1";
         armor = 10;
         armorStructural = 20;
         explosionShielding = 0.3;
@@ -2078,14 +2078,14 @@ class CfgVehicles
     {
         model = "\A3\characters_F\civil\c_poor";
         hiddenSelectionsTextures[] = {"A3\characters_f\civil\data\c_cloth1_v2_co.paa"};
-        displayName = "Zombie 2";
+        displayName = "$str_epoch_Zombie2";
         uniformClass = "";
         nakedUniform = "U_EPOCH_RyanZombie_2";
     };
     class EPOCH_RyanZombie_3 : EPOCH_RyanZombie_1
     {
         model = "\A3\characters_F\common\coveralls";
-        displayName = "Zombie 3";
+        displayName = "$str_epoch_Zombie3";
         uniformClass = "";
         hiddenSelections[] = {"Camo","insignia"};
         hiddenSelectionsTextures[] = {"A3\Characters_F\Common\Data\coveralls_dirty_co.paa"};
@@ -2093,14 +2093,14 @@ class CfgVehicles
     };
     class EPOCH_RyanZombie_4 : EPOCH_RyanZombie_3
     {
-        displayName = "Zombie 4";
+        displayName = "$str_epoch_Zombie4";
         uniformClass = "";
         hiddenSelectionsTextures[] = {"A3\Characters_F\Common\Data\coveralls_sage_co.paa"};
         nakedUniform = "U_EPOCH_RyanZombie_4";
     };
     class EPOCH_RyanZombie_5 : EPOCH_RyanZombie_3
     {
-        displayName = "Zombie 5";
+        displayName = "$str_epoch_Zombie5";
         hiddenSelections[] = {"camo"};
         uniformClass = "";
         hiddenSelectionsTextures[] = {"A3\Characters_F_EPC\Civil\Data\scientist_02_co.paa"};
@@ -2108,156 +2108,156 @@ class CfgVehicles
     };
     class EPOCH_RyanZombie_1_C : EPOCH_RyanZombie_1
     {
-        displayName = "Zombie 1 (Crawler)";
+        displayName = "$str_epoch_Zombie1Crawler";
         moves = "CfgRyanZombiesMovesMaleSdrCrawler";
     };
     class EPOCH_RyanZombie_2_C : EPOCH_RyanZombie_2
     {
-        displayName = "Zombie 2 (Crawler)";
+        displayName = "$str_epoch_Zombie2Crawler";
         moves = "CfgRyanZombiesMovesMaleSdrCrawler";
     };
     class EPOCH_RyanZombie_3_C : EPOCH_RyanZombie_3
     {
-        displayName = "Zombie 3 (Crawler)";
+        displayName = "$str_epoch_Zombie3Crawler";
         moves = "CfgRyanZombiesMovesMaleSdrCrawler";
     };
     class EPOCH_RyanZombie_4_C : EPOCH_RyanZombie_4
     {
-        displayName = "Zombie 4 (Crawler)";
+        displayName = "$str_epoch_Zombie4Crawler";
         moves = "CfgRyanZombiesMovesMaleSdrCrawler";
     };
     class EPOCH_RyanZombie_5_C : EPOCH_RyanZombie_5
     {
-        displayName = "Zombie 5 (Crawler)";
+        displayName = "$str_epoch_Zombie5Crawler";
         moves = "CfgRyanZombiesMovesMaleSdrCrawler";
     };
     class EPOCH_RyanZombie_1_Sp : EPOCH_RyanZombie_1
     {
-        displayName = "Zombie 1 (Spider)";
+        displayName = "$str_epoch_Zombie1Spider";
         moves = "CfgRyanZombiesMovesMaleSdrSpider";
     };
     class EPOCH_RyanZombie_2_Sp : EPOCH_RyanZombie_2
     {
-        displayName = "Zombie 2 (Spider)";
+        displayName = "$str_epoch_Zombie2Spider";
         moves = "CfgRyanZombiesMovesMaleSdrSpider";
     };
     class EPOCH_RyanZombie_3_Sp : EPOCH_RyanZombie_3
     {
-        displayName = "Zombie 3 (Spider)";
+        displayName = "$str_epoch_Zombie3Spider";
         moves = "CfgRyanZombiesMovesMaleSdrSpider";
     };
     class EPOCH_RyanZombie_4_Sp : EPOCH_RyanZombie_4
     {
-        displayName = "Zombie 4 (Spider)";
+        displayName = "$str_epoch_Zombie4Spider";
         moves = "CfgRyanZombiesMovesMaleSdrSpider";
     };
     class EPOCH_RyanZombie_5_Sp : EPOCH_RyanZombie_5
     {
-        displayName = "Zombie 5 (Spider)";
+        displayName = "$str_epoch_Zombie5Spider";
         moves = "CfgRyanZombiesMovesMaleSdrSpider";
     };
     class EPOCH_RyanZombie_1_B : EPOCH_RyanZombie_1
     {
         armor = 20;
-        displayName = "Zombie 1 (Boss)";
+        displayName = "$str_epoch_Zombie1Boss";
         moves = "CfgRyanZombiesMovesMaleSdrBoss";
     };
     class EPOCH_RyanZombie_2_B : EPOCH_RyanZombie_2
     {
         armor = 20;
-        displayName = "Zombie 2 (Boss)";
+        displayName = "$str_epoch_Zombie2Boss";
         moves = "CfgRyanZombiesMovesMaleSdrBoss";
     };
     class EPOCH_RyanZombie_3_B : EPOCH_RyanZombie_3
     {
         armor = 20;
-        displayName = "Zombie 3 (Boss)";
+        displayName = "$str_epoch_Zombie3Boss";
         moves = "CfgRyanZombiesMovesMaleSdrBoss";
     };
     class EPOCH_RyanZombie_4_B : EPOCH_RyanZombie_4
     {
-        displayName = "Zombie 4 (Boss)";
+        displayName = "$str_epoch_Zombie4Boss";
         moves = "CfgRyanZombiesMovesMaleSdrBoss";
     };
     class EPOCH_RyanZombie_5_B : EPOCH_RyanZombie_5
     {
         armor = 20;
-        displayName = "Zombie 5 (Boss)";
+        displayName = "$str_epoch_Zombie5Boss";
         moves = "CfgRyanZombiesMovesMaleSdrBoss";
     };
     class EPOCH_RyanZombie_1_W : EPOCH_RyanZombie_1
     {
-        displayName = "Zombie 1 (Walker)";
+        displayName = "$str_epoch_Zombie1Walker";
         moves = "CfgRyanZombiesMovesMaleSdrwalker";
     };
     class EPOCH_RyanZombie_2_W : EPOCH_RyanZombie_2
     {
-        displayName = "Zombie 2 (Walker)";
+        displayName = "$str_epoch_Zombie2Walker";
         moves = "CfgRyanZombiesMovesMaleSdrwalker";
     };
     class EPOCH_RyanZombie_3_W : EPOCH_RyanZombie_3
     {
-        displayName = "Zombie 3 (Walker)";
+        displayName = "$str_epoch_Zombie3Walker";
         moves = "CfgRyanZombiesMovesMaleSdrwalker";
     };
     class EPOCH_RyanZombie_4_W : EPOCH_RyanZombie_4
     {
-        displayName = "Zombie 4 (Walker)";
+        displayName = "$str_epoch_Zombie4Walker";
         moves = "CfgRyanZombiesMovesMaleSdrwalker";
     };
     class EPOCH_RyanZombie_5_W : EPOCH_RyanZombie_5
     {
-        displayName = "Zombie 5 (Walker)";
+        displayName = "$str_epoch_Zombie5Walker";
         moves = "CfgRyanZombiesMovesMaleSdrwalker";
     };
     class EPOCH_RyanZombie_1_M : EPOCH_RyanZombie_1
     {
-        displayName = "Zombie 1 (Medium)";
+        displayName = "$str_epoch_Zombie1Medium";
         moves = "CfgRyanZombiesMovesMaleSdrMedium";
     };
     class EPOCH_RyanZombie_2_M : EPOCH_RyanZombie_2
     {
-        displayName = "Zombie 2 (Medium)";
+        displayName = "$str_epoch_Zombie2Medium";
         moves = "CfgRyanZombiesMovesMaleSdrMedium";
     };
     class EPOCH_RyanZombie_3_M : EPOCH_RyanZombie_3
     {
-        displayName = "Zombie 3 (Medium)";
+        displayName = "$str_epoch_Zombie3Medium";
         moves = "CfgRyanZombiesMovesMaleSdrMedium";
     };
     class EPOCH_RyanZombie_4_M : EPOCH_RyanZombie_4
     {
-        displayName = "Zombie 4 (Medium)";
+        displayName = "$str_epoch_Zombie4Medium";
         moves = "CfgRyanZombiesMovesMaleSdrMedium";
     };
     class EPOCH_RyanZombie_5_M : EPOCH_RyanZombie_5
     {
-        displayName = "Zombie 5 (Medium)";
+        displayName = "$str_epoch_Zombie5Medium";
         moves = "CfgRyanZombiesMovesMaleSdrMedium";
     };
     class EPOCH_RyanZombie_1_S : EPOCH_RyanZombie_1
     {
-        displayName = "Zombie 1 (Medium)";
+        displayName = "$str_epoch_Zombie1Medium";
         moves = "CfgRyanZombiesMovesMaleSdrSlow2";
     };
     class EPOCH_RyanZombie_2_S : EPOCH_RyanZombie_2
     {
-        displayName = "Zombie 2 (Medium)";
+        displayName = "$str_epoch_Zombie2Medium";
         moves = "CfgRyanZombiesMovesMaleSdrSlow2";
     };
     class EPOCH_RyanZombie_3_S : EPOCH_RyanZombie_3
     {
-        displayName = "Zombie 3 (Medium)";
+        displayName = "$str_epoch_Zombie3Medium";
         moves = "CfgRyanZombiesMovesMaleSdrSlow2";
     };
     class EPOCH_RyanZombie_4_S : EPOCH_RyanZombie_4
     {
-        displayName = "Zombie 4 (Medium)";
+        displayName = "$str_epoch_Zombie4Medium";
         moves = "CfgRyanZombiesMovesMaleSdrSlow2";
     };
     class EPOCH_RyanZombie_5_S : EPOCH_RyanZombie_5
     {
-        displayName = "Zombie 5 (Medium)";
+        displayName = "$str_epoch_Zombie5Medium";
         moves = "CfgRyanZombiesMovesMaleSdrSlow2";
     };
     class House;
@@ -2273,7 +2273,8 @@ class CfgVehicles
         author = "$STR_A3_Bohemia_Interactive";
         scope = 0;
         scopeCurator = 0;
-        displayName = "";
+        class displayName
+        {
         model = "\A3\Weapons_F\empty.p3d";
         vehicleClass = "Structures_Infrastructure";
         cost = 100;
@@ -2289,7 +2290,8 @@ class CfgVehicles
         author = "$STR_A3_Bohemia_Interactive";
         scope = 0;
         scopeCurator = 0;
-        displayName = "";
+        class displayName
+        {
         model = "\A3\Weapons_F\empty.p3d";
         vehicleClass = "Structures_Infrastructure";
         compatibleWires[] = {};
@@ -2345,7 +2347,7 @@ class CfgVehicles
         author = "Sequisha";
         ladders[] = {{"start1","end1"},{"start2","end2"},{"start3","end3"},{"start4","end4"}};
         scope = 2;
-        displayName = "Ferris Wheel";
+        displayName = "$str_epoch_FerrisWheel";
         model = "\x\addons\a3_epoch_structures\Ferris\ferrisWheel.p3d";
         placement = "vertical";
         vehicleClass = "Structures";
@@ -2438,7 +2440,7 @@ class CfgVehicles
             class startFerris
             {
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-                displayName = "Start Ride";
+                displayName = "$str_epoch_StartRide";
                 position = "start_ride";
                 priority = 0.4;
                 radius = 10;
@@ -2449,7 +2451,7 @@ class CfgVehicles
             class stopFerris
             {
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-                displayName = "Stop Ride";
+                displayName = "$str_epoch_StopRide";
                 position = "start_ride";
                 priority = 0.4;
                 radius = 10;
@@ -2464,7 +2466,7 @@ class CfgVehicles
     {
         scope = 2;
         author = "Awol";
-        displayName = "Four Way Bunker";
+        displayName = "$str_epoch_FourWayBunker";
         model = "\x\addons\a3_epoch_community\models\4_way_bunker.p3d";
         vehicleClass = "Structures";
         mapSize = 20.27;
@@ -2502,7 +2504,7 @@ class CfgVehicles
     {
         author = "Kiory";
         scope = 2;
-        displayName = "Small Backpack Red";
+        displayName = "$str_epoch_SmallBackpackRed";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_smallbackpack_x_ca.paa";
         model = "\x\addons\a3_epoch_assets_2\small_backpack.p3d";
         sections[] = {"camo"};
@@ -2515,7 +2517,7 @@ class CfgVehicles
     {
         author = "Kiory";
         scope = 2;
-        displayName = "Small Backpack Green";
+        displayName = "$str_epoch_SmallBackpackGreen";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_smallbackpack_x_ca.paa";
         model = "\x\addons\a3_epoch_assets_2\small_backpack.p3d";
         sections[] = {"camo"};
@@ -2528,7 +2530,7 @@ class CfgVehicles
     {
         author = "Kiory";
         scope = 2;
-        displayName = "Small Backpack Teal";
+        displayName = "$str_epoch_SmallBackpackTeal";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_smallbackpack_x_ca.paa";
         model = "\x\addons\a3_epoch_assets_2\small_backpack.p3d";
         sections[] = {"camo"};
@@ -2541,7 +2543,7 @@ class CfgVehicles
     {
         author = "Kiory";
         scope = 2;
-        displayName = "Small Backpack Pink";
+        displayName = "$str_epoch_SmallBackpackPink";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_smallbackpack_x_ca.paa";
         model = "\x\addons\a3_epoch_assets_2\small_backpack.p3d";
         sections[] = {"camo"};
@@ -2553,7 +2555,7 @@ class CfgVehicles
     class B_AssaultPack_Base : Bag_Base
     {
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Compact";
-        descriptionShort = "Load: 360, Mass: 20";
+        descriptionShort = "$str_epoch_Load360Mass20";
         hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_compact_khk_co.paa"};
         maximumLoad = 360;
         mass = 20;
@@ -2561,7 +2563,7 @@ class CfgVehicles
     class B_FieldPack_Base : Bag_Base
     {
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Gorod";
-        descriptionShort = "Load: 400, Mass: 30";
+        descriptionShort = "$str_epoch_Load400Mass30";
         hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_gorod_cbr_co.paa"};
         maximumLoad = 400;
         mass = 30;
@@ -2569,7 +2571,7 @@ class CfgVehicles
     class B_TacticalPack_Base : Bag_Base
     {
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Small";
-        descriptionShort = "Load: 480, Mass: 40";
+        descriptionShort = "$str_epoch_Load480Mass40";
         hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_small_co.paa"};
         maximumLoad = 480;
         mass = 40;
@@ -2577,7 +2579,7 @@ class CfgVehicles
     class B_Kitbag_Base : Bag_Base
     {
         picture = "\A3\Weapons_F\ammoboxes\bags\data\ui\icon_B_C_Kitbag_rgr";
-        descriptionShort = "Load: 520, Mass: 50";
+        descriptionShort = "$str_epoch_Load520Mass50";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
         hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_fast_rgr_co.paa"};
         maximumLoad = 520;
@@ -2586,7 +2588,7 @@ class CfgVehicles
     class B_Carryall_Base : Bag_Base
     {
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
-        descriptionShort = "Load: 550, Mass: 60";
+        descriptionShort = "$str_epoch_Load550Mass60";
         picture = "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_C_Tortila_khk.paa";
         hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_tortila_khk_co.paa"};
         maximumLoad = 550;
@@ -2622,7 +2624,7 @@ class CfgVehicles
     class jetski_epoch : Ship_F
     {
         author = "Kiory";
-        displayName = "Blue Jetski";
+        displayName = "$str_epoch_BlueJetski";
         vehicleclass = "Epoch_objects";
         accuracy = 0.5;
         attenuationEffectType = "OpenCarAttenuation";
@@ -2812,7 +2814,7 @@ class CfgVehicles
             class PushTheThing
             {
                 displayNameDefault = "Push";
-                displayName = "Push";
+                displayName = "$str_epoch_Push";
                 position = "";
                 radius = 5;
                 onlyForPlayer = 1;
@@ -2856,7 +2858,7 @@ class CfgVehicles
         mapSize = 3.56;
         author = "Kiory";
         scope = 2;
-        displayName = "Electric Motorcycle";
+        displayName = "$str_epoch_ElectricMotorcycle";
         vehicleclass = "Epoch_objects";
         model = "\x\addons\a3_epoch_vehicles\ebike.p3d";
         picture = "\x\addons\a3_epoch_vehicles\data\ebike.paa";
@@ -3486,7 +3488,7 @@ class CfgVehicles
             class PressXToFlipTheThing
             {
                 displayNameDefault = "Flip Electric Motorcycle";
-                displayName = "Flip Electric Motorcycle";
+                displayName = "$str_epoch_FlipElectricMotorcycle";
                 position = "";
                 radius = 2.7;
                 onlyForPlayer = 1;
@@ -3550,7 +3552,7 @@ class CfgVehicles
         cyclicForwardForceCoef = 0.8;
         backRotorForceCoef = 1.0;
         accuracy = 0.5;
-        displayName = "Mosquito";
+        displayName = "$str_epoch_Mosquito";
         model = "\x\addons\a3_epoch_vehicles_1\mosquito\mosquito.p3d";
         driveOnComponent[] = {"Wheels"};
         icon = "\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
@@ -3881,7 +3883,7 @@ class CfgVehicles
     };
     class mosquito_epoch : mosquito_epoch_base
     {
-        displayName = "Mosquito";
+        displayName = "$str_epoch_Mosquito";
         picture = "\x\addons\a3_epoch_vehicles_1\mosquito\data\mosquito.paa";
         author = "Sequisha";
         scope = "public";
@@ -3976,7 +3978,7 @@ class CfgVehicles
             class PressXToFlipTheThing
             {
                 displayNameDefault = "Flip ATV";
-                displayName = "Flip ATV";
+                displayName = "$str_epoch_FlipATV";
                 position = "";
                 radius = 2.7;
                 onlyForPlayer = 1;
@@ -4020,7 +4022,7 @@ class CfgVehicles
             class PushTheThing
             {
                 displayNameDefault = "Push";
-                displayName = "Push";
+                displayName = "$str_epoch_Push";
                 position = "";
                 radius = 5;
                 onlyForPlayer = 1;
@@ -4046,7 +4048,7 @@ class CfgVehicles
             class PushTheThing
             {
                 displayNameDefault = "Push";
-                displayName = "Push";
+                displayName = "$str_epoch_Push";
                 position = "";
                 radius = 5;
                 onlyForPlayer = 1;
@@ -4072,7 +4074,7 @@ class CfgVehicles
             class PushTheThing
             {
                 displayNameDefault = "Push";
-                displayName = "Push";
+                displayName = "$str_epoch_Push";
                 position = "";
                 radius = 5;
                 onlyForPlayer = 1;
@@ -4098,7 +4100,7 @@ class CfgVehicles
             class PushTheThing
             {
                 displayNameDefault = "Push";
-                displayName = "Push";
+                displayName = "$str_epoch_Push";
                 position = "";
                 radius = 5;
                 onlyForPlayer = 1;
@@ -4153,7 +4155,7 @@ class CfgVehicles
             class PushTheThing
             {
                 displayNameDefault = "Push";
-                displayName = "Push";
+                displayName = "$str_epoch_Push";
                 position = "";
                 radius = 5;
                 onlyForPlayer = 1;
@@ -4178,7 +4180,7 @@ class CfgVehicles
             class PushTheThing
             {
                 displayNameDefault = "Push";
-                displayName = "Push";
+                displayName = "$str_epoch_Push";
                 position = "";
                 radius = 5;
                 onlyForPlayer = 1;
@@ -4203,7 +4205,7 @@ class CfgVehicles
             class PushTheThing
             {
                 displayNameDefault = "Push";
-                displayName = "Push";
+                displayName = "$str_epoch_Push";
                 position = "";
                 radius = 5;
                 onlyForPlayer = 1;
@@ -4276,7 +4278,7 @@ class CfgVehicles
             class PushTheThing
             {
                 displayNameDefault = "Push";
-                displayName = "Push";
+                displayName = "$str_epoch_Push";
                 position = "";
                 radius = 5;
                 onlyForPlayer = 1;
@@ -4814,7 +4816,7 @@ class CfgVehicles
         mapSize = 1.0;
         author = "Kiory";
         scope = 2;
-        displayName = "Container";
+        displayName = "$str_epoch_Container";
         model = "\x\addons\a3_epoch_assets_2\container.p3d";
         icon = "iconObject_circle";
         vehicleClass = "epoch_objects";
@@ -4868,7 +4870,7 @@ class CfgVehicles
         {
             class open_lid
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 position = "lid_open";
                 radius = 3;
@@ -4878,7 +4880,7 @@ class CfgVehicles
             };
             class open_quickTake
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 position = "lid_open";
                 radius = 3;
                 onlyForPlayer = 0;
@@ -4891,7 +4893,7 @@ class CfgVehicles
     {
         author = "Axle";
         scope = 2;
-        displayName = "Bobber";
+        displayName = "$str_epoch_Bobber";
         model = "\x\addons\a3_epoch_assets_3\fishing\bobber.p3d";
         canFloat = 1;
         waterLeakiness = 0;
@@ -4919,7 +4921,7 @@ class CfgVehicles
         {
             class open_door_l
             {
-                displayName = "Take Krypto";
+                displayName = "$str_epoch_TakeKrypto";
                 position = "left";
                 radius = 9;
                 onlyForPlayer = 0;
@@ -4933,7 +4935,8 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 0;
-        displayName = "";
+        class displayName
+        {
         model = "\A3\Weapons_F\empty.p3d";
         icon = "iconObject_5x4";
         armor = 1000;
@@ -4947,28 +4950,28 @@ class CfgVehicles
         author = "Aaron Clark";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
-        displayName = "Spike Trap (SIM)";
+        displayName = "$str_epoch_SpikeTrapSIM";
     };
     class Metal_TRAP_SIM_EPOCH : Constructions_modular_F
     {
         author = "Aaron Clark";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
-        displayName = "Metal Trap (SIM)";
+        displayName = "$str_epoch_MetalTrapSIM";
     };
     class TankTrap_SIM_EPOCH : Constructions_modular_F
     {
         author = "Axle";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Defense\tank_trap.p3d";
-        displayName = "Tank Trap (SIM)";
+        displayName = "$str_epoch_TankTrapSIM";
     };
     class Hesco3_SIM_EPOCH : Constructions_modular_F
     {
         author = "Axle";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Defense\hesco.p3d";
-        displayName = "Hesco Wide (SIM)";
+        displayName = "$str_epoch_HescoWideSIM";
         slingLoadCargoMemoryPoints[] = {};
     };
     class SapperHead_SIM_EPOCH : Constructions_modular_F
@@ -4976,14 +4979,14 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\sapper_head.p3d";
-        displayName = "Sapper Head";
+        displayName = "$str_epoch_SapperHead";
     };
     class SapperCorpse_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sapper_corpse.p3d";
-        displayName = "Sapper Corpse";
+        displayName = "$str_epoch_SapperCorpse";
     };
     class Secure_Storage_Temp : Constructions_modular_F
     {
@@ -4994,28 +4997,28 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\lockbox.p3d";
-        displayName = "Lockbox";
+        displayName = "$str_epoch_Lockbox";
     };
     class Safe_SIM_EPOCH : Secure_Storage_Temp
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
-        displayName = "Safe";
+        displayName = "$str_epoch_Safe";
     };
     class Fireplace_SIM_EPOCH : Constructions_modular_F
     {
         author = "Kiory";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_2\fireplace.p3d";
-        displayName = "Empty Fireplace (SIM)";
+        displayName = "$str_epoch_EmptyFireplaceSIM";
     };
     class Jack_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\jack.p3d";
-        displayName = "Jack";
+        displayName = "$str_epoch_Jack";
         class AnimationSources
         {
             class raise
@@ -5036,7 +5039,7 @@ class CfgVehicles
         {
             class Open_left
             {
-                displayName = "Raise";
+                displayName = "$str_epoch_Raise";
                 onlyforplayer = 1;
                 position = "Door_knopf";
                 radius = 3;
@@ -5045,13 +5048,13 @@ class CfgVehicles
             };
             class Close_left : Open_left
             {
-                displayName = "Lower";
+                displayName = "$str_epoch_Lower";
                 condition = "this animationPhase ""raise"" >= 0.1";
                 statement = "this animate [""raise"", ((this animationPhase ""raise"")-0.1)]; this animate [""pump"", ((this animationPhase ""pump"")-0.1)];";
             };
             class Pack
             {
-                displayName = "Pickup";
+                displayName = "$str_epoch_Pickup";
                 onlyforplayer = 1;
                 position = "Door_knopf";
                 radius = 3;
@@ -5065,7 +5068,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wood_Ramp.p3d";
-        displayName = "Wood Ramp";
+        displayName = "$str_epoch_WoodRamp";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
     class CinderWallHalf_SIM_EPOCH : Constructions_modular_F
@@ -5073,7 +5076,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\cinder_half_SIM.p3d";
-        displayName = "Half Cinder Block Wall";
+        displayName = "$str_epoch_HalfCinderBlockWall";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
     class CinderWall_SIM_EPOCH : Constructions_modular_F
@@ -5081,7 +5084,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\cinder_SIM.p3d";
-        displayName = "Cinder Block Wall";
+        displayName = "$str_epoch_CinderBlockWall";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
     class CinderWallGarage_SIM_EPOCH : Constructions_modular_F
@@ -5089,7 +5092,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\cGarage_SIM.p3d";
-        displayName = "Cinder Block Garage";
+        displayName = "$str_epoch_CinderBlockGarage";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
         hiddenSelections[] = {"camo","camo1"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\cinder\cinder_eco.paa","\x\addons\a3_epoch_assets\textures\cinder garage\cgarage_co.paa"};
@@ -5121,7 +5124,7 @@ class CfgVehicles
         {
             class Open_left
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5131,13 +5134,13 @@ class CfgVehicles
             };
             class Close_left : Open_left
             {
-                displayName = "Close";
+                displayName = "$str_epoch_Close";
                 condition = "this animationPhase ""open_left"" >= 0.5";
                 statement = "this animate [""open_left"", 0]; this animate [""open_right"", 0]";
             };
             class Lock_cGarage
             {
-                displayName = "Lock";
+                displayName = "$str_epoch_Lock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5147,7 +5150,7 @@ class CfgVehicles
             };
             class Unlock_cGarage : Lock_cGarage
             {
-                displayName = "Unlock";
+                displayName = "$str_epoch_Unlock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
                 condition = "(this animationPhase ""open_left"" < 0.5) && (this animationPhase ""lock_cGarage"" >= 0.5)";
                 statement = "this animate [""lock_cGarage"", 0];";
@@ -5159,7 +5162,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Floor.p3d";
-        displayName = "Wood Floor";
+        displayName = "$str_epoch_WoodFloor";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
     class MetalFloor_SIM_EPOCH : Constructions_modular_F
@@ -5167,7 +5170,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\metal_floor.p3d";
-        displayName = "Metal Floor";
+        displayName = "$str_epoch_MetalFloor";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
     class WoodLargeWall_SIM_EPOCH : Constructions_modular_F
@@ -5175,7 +5178,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_SIM.p3d";
-        displayName = "Large Wall";
+        displayName = "$str_epoch_LargeWall";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
     class WoodWall1_SIM_EPOCH : Constructions_modular_F
@@ -5183,14 +5186,14 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_wall\Wooden_Wall_ply.p3d";
-        displayName = "Plywood Wall (SIM)";
+        displayName = "$str_epoch_PlywoodWallSIM";
     };
     class WoodLargeWallCor_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Cor_SIM.p3d";
-        displayName = "Wall";
+        displayName = "$str_epoch_Wall";
         sections[] = {"camo_cor","camo"};
         hiddenSelections[] = {"camo_cor","camo"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets\textures\cor\corrugated_co.paa","x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -5200,7 +5203,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_doorway\Wooden_Wall_Doorway.p3d";
-        displayName = "Plywood Wall Doorway (SIM)";
+        displayName = "$str_epoch_PlywoodWallDoorwaySIM";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
     class WoodLargeWallDoorway_SIM_EPOCH : Constructions_modular_F
@@ -5208,7 +5211,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Doorway.p3d";
-        displayName = "Wall Doorway";
+        displayName = "$str_epoch_WallDoorway";
         sections[] = {"camo_cor","camo"};
         hiddenSelections[] = {"camo_cor","camo"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets\textures\cor\corrugated_co.paa","x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -5220,7 +5223,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_door\Wooden_Wall_Door.p3d";
-        displayName = "Plywood Wall Doorway w/ Door (SIM)";
+        displayName = "$str_epoch_PlywoodWallDoorwaywDoorSIM";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
         class AnimationSources
         {
@@ -5235,7 +5238,7 @@ class CfgVehicles
         {
             class Open_door
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5245,7 +5248,7 @@ class CfgVehicles
             };
             class Close_door : Open_door
             {
-                displayName = "Close";
+                displayName = "$str_epoch_Close";
                 condition = "this animationPhase ""Open_Door"" >= 0.5";
                 statement = "this animate [""Open_Door"", 0];";
             };
@@ -5256,7 +5259,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Door_SIM.p3d";
-        displayName = "Wall Doorway w/ Door";
+        displayName = "$str_epoch_WallDoorwaywDoor";
         sections[] = {"camo_cor","camo"};
         hiddenSelections[] = {"camo_cor","camo"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets\textures\cor\corrugated_co.paa","x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -5274,7 +5277,7 @@ class CfgVehicles
         {
             class Open_door
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5284,7 +5287,7 @@ class CfgVehicles
             };
             class Close_door : Open_door
             {
-                displayName = "Close";
+                displayName = "$str_epoch_Close";
                 condition = "this animationPhase ""Open_Door"" >= 0.5";
                 statement = "this animate [""Open_Door"", 0];";
             };
@@ -5295,7 +5298,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\Plywood_DoorW_L\Plywood_DoorL.p3d";
-        displayName = "Wall Doorway w/ Locking Door";
+        displayName = "$str_epoch_WallDoorwaywLockingDoor";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
         class AnimationSources
         {
@@ -5317,7 +5320,7 @@ class CfgVehicles
         {
             class Open_door
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5327,13 +5330,13 @@ class CfgVehicles
             };
             class Close_door : Open_door
             {
-                displayName = "Close";
+                displayName = "$str_epoch_Close";
                 condition = "(this animationPhase ""Open_Door"" >= 0.5) && (this animationPhase ""lock_Door"" == 0)";
                 statement = "this animate [""Open_Door"", 0];";
             };
             class Lock_Door
             {
-                displayName = "Lock";
+                displayName = "$str_epoch_Lock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5343,7 +5346,7 @@ class CfgVehicles
             };
             class Unlock_Door : Lock_Door
             {
-                displayName = "Unlock";
+                displayName = "$str_epoch_Unlock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
                 condition = "!(call EPOCH_lockCheck) && (this animationPhase ""Open_Door"" == 0) && (this animationPhase ""lock_Door"" == 1)";
                 statement = "this animate [""lock_Door"", 0];";
@@ -5355,7 +5358,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_DoorL_SIM.p3d";
-        displayName = "Wall Doorway w/ Locking Door";
+        displayName = "$str_epoch_WallDoorwaywLockingDoor";
         sections[] = {"camo_cor","camo"};
         hiddenSelections[] = {"camo_cor","camo"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets\textures\cor\corrugated_co.paa","x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -5380,7 +5383,7 @@ class CfgVehicles
         {
             class Open_door
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5390,13 +5393,13 @@ class CfgVehicles
             };
             class Close_door : Open_door
             {
-                displayName = "Close";
+                displayName = "$str_epoch_Close";
                 condition = "(this animationPhase ""Open_Door"" >= 0.5) && (this animationPhase ""lock_Door"" == 0)";
                 statement = "this animate [""Open_Door"", 0];";
             };
             class Lock_Door
             {
-                displayName = "Lock";
+                displayName = "$str_epoch_Lock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5406,7 +5409,7 @@ class CfgVehicles
             };
             class Unlock_Door : Lock_Door
             {
-                displayName = "Unlock";
+                displayName = "$str_epoch_Unlock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
                 condition = "!(call EPOCH_lockCheck) && (this animationPhase ""Open_Door"" == 0) && (this animationPhase ""lock_Door"" == 1)";
                 statement = "this animate [""lock_Door"", 0];";
@@ -5418,7 +5421,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wood_stairs.p3d";
-        displayName = "Wood Stairs";
+        displayName = "$str_epoch_WoodStairs";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -5429,7 +5432,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wood_stairs_upgrade.p3d";
-        displayName = "Wood Stairs";
+        displayName = "$str_epoch_WoodStairs";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -5440,7 +5443,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Tower\Tower\Base_Tower_Frame.p3d";
-        displayName = "Wood Tower";
+        displayName = "$str_epoch_WoodTower";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -5477,7 +5480,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Ladder\wood_ladder.p3d";
-        displayName = "Wood Ladder";
+        displayName = "$str_epoch_WoodLadder";
         ladders[] = {};
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -5487,14 +5490,14 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\tp.p3d";
-        displayName = "Tipi Sim";
+        displayName = "$str_epoch_TipiSim";
     };
     class Shelf_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\metalStorage.p3d";
-        displayName = "Metal Shelf Sim";
+        displayName = "$str_epoch_MetalShelfSim";
         simulClass = "Shelf_SIM_EPOCH";
         staticClass = "Shelf_EPOCH";
     };
@@ -5503,14 +5506,14 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\shelf.p3d";
-        displayName = "Metal Shelf Sim";
+        displayName = "$str_epoch_MetalShelfSim";
     };
     class WorkBench_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\workbench.p3d";
-        displayName = "WorkBench (SIM)";
+        displayName = "$str_epoch_WorkBenchSIM";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets_1\textures\plyplank_co.paa"};
     };
@@ -5519,7 +5522,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\tarp.p3d";
-        displayName = "Tarp Covered Pallet";
+        displayName = "$str_epoch_TarpCoveredPallet";
         simulClass = "Tarp_SIM_EPOCH";
         staticClass = "Tarp_EPOCH";
     };
@@ -5528,7 +5531,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\freezer.p3d";
-        displayName = "Chest Freezer";
+        displayName = "$str_epoch_ChestFreezer";
         simulClass = "Freezer_SIM_EPOCH";
         staticClass = "Freezer_EPOCH";
     };
@@ -5537,21 +5540,21 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
-        displayName = "Frequency Jammer (SIM)";
+        displayName = "$str_epoch_FrequencyJammerSIM";
     };
     class SolarGen_SIM_EPOCH : Constructions_modular_F
     {
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
-        displayName = "Solar Power Generator (SIM)";
+        displayName = "$str_epoch_SolarPowerGeneratorSIM";
     };
     class ToolRack_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\toolRack.p3d";
-        displayName = "Tool Rack";
+        displayName = "$str_epoch_ToolRack";
         simulClass = "ToolRack_SIM_EPOCH";
         staticClass = "ToolRack_EPOCH";
     };
@@ -5560,7 +5563,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\chair_adult.p3d";
-        displayName = "Chair";
+        displayName = "$str_epoch_Chair";
         simulClass = "Chair_SIM_EPOCH";
         staticClass = "Chair_EPOCH";
         hiddenSelections[] = {"Camo"};
@@ -5572,7 +5575,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\chair_adult.p3d";
-        displayName = "Chair (Red)";
+        displayName = "$str_epoch_ChairRed";
         simulClass = "ChairRed_SIM_EPOCH";
         staticClass = "ChairRed_EPOCH";
         hiddenSelections[] = {"Camo"};
@@ -5584,7 +5587,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\filing.p3d";
-        displayName = "Filing Cabinet";
+        displayName = "$str_epoch_FilingCabinet";
         simulClass = "Filing_SIM_EPOCH";
         staticClass = "Filing_EPOCH";
         hiddenSelections[] = {"Camo"};
@@ -5595,7 +5598,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\shoebox.p3d";
-        displayName = "Shoebox";
+        displayName = "$str_epoch_Shoebox";
         simulClass = "Shoebox_SIM_EPOCH";
         staticClass = "Shoebox_EPOCH";
     };
@@ -5604,7 +5607,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\fridge_door_anim.p3d";
-        displayName = "Fridge";
+        displayName = "$str_epoch_Fridge";
         simulClass = "Fridge_SIM_EPOCH";
         staticClass = "Fridge_EPOCH";
         hiddenSelections[] = {"Camo"};
@@ -5629,7 +5632,7 @@ class CfgVehicles
         {
             class Open_bot
             {
-                displayName = "Open Bottom";
+                displayName = "$str_epoch_OpenBottom";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5639,13 +5642,13 @@ class CfgVehicles
             };
             class Close_bot : Open_bot
             {
-                displayName = "Close Bottom";
+                displayName = "$str_epoch_CloseBottom";
                 condition = "this animationPhase ""Open_bot"" >= 0.5";
                 statement = "this animate [""Open_bot"", 0];";
             };
             class Open_top
             {
-                displayName = "Open Top";
+                displayName = "$str_epoch_OpenTop";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5655,7 +5658,7 @@ class CfgVehicles
             };
             class Close_top : Open_top
             {
-                displayName = "Close Top";
+                displayName = "$str_epoch_CloseTop";
                 condition = "this animationPhase ""Open_top"" >= 0.5";
                 statement = "this animate [""Open_top"", 0];";
             };
@@ -5666,7 +5669,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\bed_dummy.p3d";
-        displayName = "Mattress";
+        displayName = "$str_epoch_Mattress";
         simulClass = "Bed_SIM_EPOCH";
         staticClass = "Bed_EPOCH";
         forceSupply = 0;
@@ -5676,7 +5679,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\bunk.p3d";
-        displayName = "Bunk";
+        displayName = "$str_epoch_Bunk";
         simulClass = "Bunk_SIM_EPOCH";
         staticClass = "Bunk_EPOCH";
         forceSupply = 0;
@@ -5686,7 +5689,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\couch_dummy.p3d";
-        displayName = "Couch";
+        displayName = "$str_epoch_Couch";
         simulClass = "Couch_SIM_EPOCH";
         staticClass = "Couch_EPOCH";
     };
@@ -5695,7 +5698,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\coffee_table.p3d";
-        displayName = "Coffee Table";
+        displayName = "$str_epoch_CoffeeTable";
         simulClass = "Table_SIM_EPOCH";
         staticClass = "Table_EPOCH";
     };
@@ -5704,7 +5707,7 @@ class CfgVehicles
         author = "Kiory";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_2\wardrobe.p3d";
-        displayName = "Wardrobe";
+        displayName = "$str_epoch_Wardrobe";
         simulClass = "Wardrobe_SIM_EPOCH";
         staticClass = "wardrobe_epoch";
     };
@@ -5713,7 +5716,7 @@ class CfgVehicles
         author = "Kiory";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_2\lockers.p3d";
-        displayName = "Wardrobe";
+        displayName = "$str_epoch_Wardrobe";
         simulClass = "Locker_SIM_EPOCH";
         staticClass = "locker_epoch";
     };
@@ -5722,7 +5725,7 @@ class CfgVehicles
         author = "Kiory";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_2\cooker.p3d";
-        displayName = "Cooker";
+        displayName = "$str_epoch_Cooker";
         simulClass = "Cooker_SIM_EPOCH";
         staticClass = "cooker_epoch";
     };
@@ -5731,7 +5734,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\pelican.p3d";
-        displayName = "Pelican";
+        displayName = "$str_epoch_Pelican";
         simulClass = "Pelican_SIM_EPOCH";
         staticClass = "Pelican_EPOCH";
         forceSupply = 0;
@@ -5748,7 +5751,7 @@ class CfgVehicles
         {
             class Open_top
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -5763,7 +5766,7 @@ class CfgVehicles
         mapSize = 2.27;
         author = "Sequisha";
         scope = 2;
-        displayName = "DEBUG BOX";
+        displayName = "$str_epoch_DEBUGBOX";
         model = "\x\addons\a3_epoch_assets\models\debug.p3d";
         icon = "iconObject_5x4";
         armor = 1000;
@@ -5776,7 +5779,7 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 2;
-        displayName = "Female Clone Vat";
+        displayName = "$str_epoch_FemaleCloneVat";
         model = "\x\addons\a3_epoch_assets\models\clone_female.p3d";
         icon = "iconObject_1x1";
         armor = 1000;
@@ -5798,7 +5801,7 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 2;
-        displayName = "Male Clone Vat";
+        displayName = "$str_epoch_MaleCloneVat";
         model = "\x\addons\a3_epoch_assets\models\clone_male.p3d";
         icon = "iconObject_1x1";
         armor = 1000;
@@ -5820,7 +5823,7 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 2;
-        displayName = "Empty Clone Vat";
+        displayName = "$str_epoch_EmptyCloneVat";
         model = "\x\addons\a3_epoch_assets\models\clone_male.p3d";
         icon = "iconObject_1x1";
         armor = 1000;
@@ -5835,7 +5838,8 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 0;
-        displayName = "";
+        class displayName
+        {
         model = "\A3\Weapons_F\empty.p3d";
         icon = "iconObject_5x4";
         armor = 5000;
@@ -5849,7 +5853,8 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 0;
-        displayName = "";
+        class displayName
+        {
         model = "\A3\Weapons_F\empty.p3d";
         icon = "iconObject_5x4";
         armor = 5000;
@@ -5863,7 +5868,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Concrete_Col.p3d";
-        displayName = "Concrete Foundation";
+        displayName = "$str_epoch_ConcreteFoundation";
         placement = "vertical";
         armor = 15000;
     };
@@ -5872,7 +5877,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wood_Col.p3d";
-        displayName = "Wood Foundation";
+        displayName = "$str_epoch_WoodFoundation";
         placement = "vertical";
         armor = 5000;
     };
@@ -5881,7 +5886,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Concrete_Col_Ghost.p3d";
-        displayName = "Concrete Foundation (Ghost)";
+        displayName = "$str_epoch_ConcreteFoundationGhost";
         placement = "vertical";
         ladders[] = {};
     };
@@ -5890,7 +5895,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Concrete_Col_Ghost.p3d";
-        displayName = "Wood Foundation (Ghost)";
+        displayName = "$str_epoch_WoodFoundationGhost";
         placement = "vertical";
         ladders[] = {};
     };
@@ -5901,7 +5906,7 @@ class CfgVehicles
         cost = 0;
         isGround = 0;
         author = "Kiory";
-        displayName = "Fireplace";
+        displayName = "$str_epoch_Fireplace";
         destrType = "DestructNo";
         vehicleclass = "Epoch_objects";
         model = "\x\addons\a3_epoch_assets_2\fireplace.p3d";
@@ -5917,7 +5922,7 @@ class CfgVehicles
         cost = 0;
         isGround = 0;
         author = "Kiory";
-        displayName = "Fireplace Full";
+        displayName = "$str_epoch_FireplaceFull";
         destrType = "DestructNo";
         vehicleclass = "Epoch_objects";
         model = "\x\addons\a3_epoch_assets_2\fireplace_full.p3d";
@@ -5988,7 +5993,7 @@ class CfgVehicles
         cost = 0;
         isGround = 0;
         author = "Kiory";
-        displayName = "Fireplace On";
+        displayName = "$str_epoch_FireplaceOn";
         destrType = "DestructNo";
         vehicleclass = "Epoch_objects";
         model = "\x\addons\a3_epoch_assets_2\fireplace_on.p3d";
@@ -6014,7 +6019,7 @@ class CfgVehicles
         scope = 2;
         placement = "vertical";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
-        displayName = "Solar Power Generator";
+        displayName = "$str_epoch_SolarPowerGenerator";
     };
     class PlotPole_EPOCH : NonStrategic
     {
@@ -6026,7 +6031,7 @@ class CfgVehicles
         destrType = "DestructBuilding";
         cost = 1000;
         scope = 2;
-        displayName = "Frequency Jammer";
+        displayName = "$str_epoch_FrequencyJammer";
         placement = "vertical";
         model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
     };
@@ -6071,7 +6076,8 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 0;
-        displayName = "";
+        class displayName
+        {
         model = "\A3\Weapons_F\empty.p3d";
         icon = "iconObject_5x4";
         armor = 5000;
@@ -6089,7 +6095,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\lockbox.p3d";
-        displayName = "Lockbox";
+        displayName = "$str_epoch_Lockbox";
         armor = 5000;
         maximumLoad = 600;
     };
@@ -6098,7 +6104,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
-        displayName = "Lockbox";
+        displayName = "$str_epoch_Lockbox";
         armor = 15000;
         maximumLoad = 3600;
     };
@@ -6107,14 +6113,14 @@ class CfgVehicles
         author = "Axle";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Defense\tank_trap.p3d";
-        displayName = "Tank Trap";
+        displayName = "$str_epoch_TankTrap";
     };
     class Spike_TRAP_EPOCH : Constructions_static_F
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
-        displayName = "Spike Trap (SIM)";
+        displayName = "$str_epoch_SpikeTrapSIM";
         armor = 0.1;
     };
     class Metal_TRAP_EPOCH : Constructions_static_F
@@ -6122,7 +6128,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
-        displayName = "Metal Trap (SIM)";
+        displayName = "$str_epoch_MetalTrapSIM";
         armor = 0.1;
     };
     class Hesco3_EPOCH : Const_All_Walls_F
@@ -6130,7 +6136,7 @@ class CfgVehicles
         author = "Axle";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Defense\hesco.p3d";
-        displayName = "Hesco Wide";
+        displayName = "$str_epoch_HescoWide";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\hesco\hesco_co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\hesco\hesco.rvmat"};
@@ -6140,7 +6146,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wood_Ramp.p3d";
-        displayName = "Wood Ramp";
+        displayName = "$str_epoch_WoodRamp";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
         selectionDamage = "zbytek";
@@ -6155,7 +6161,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\cinder_half.p3d";
-        displayName = "Half Cinder Block Wall";
+        displayName = "$str_epoch_HalfCinderBlockWall";
         armor = 10000;
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\cinder\cinder_eco.paa"};
@@ -6165,7 +6171,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\cinder.p3d";
-        displayName = "Cinder Block Wall";
+        displayName = "$str_epoch_CinderBlockWall";
         armor = 10000;
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\cinder\cinder_eco.paa"};
@@ -6175,7 +6181,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\cGarage.p3d";
-        displayName = "Cinder Block Garage";
+        displayName = "$str_epoch_CinderBlockGarage";
         armor = 15000;
         hiddenSelections[] = {"camo","camo1"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\cinder\cinder_eco.paa","x\addons\a3_epoch_assets\textures\cinder garage\cgarage_co.paa"};
@@ -6207,7 +6213,7 @@ class CfgVehicles
         {
             class Open_left
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6217,13 +6223,13 @@ class CfgVehicles
             };
             class Close_left : Open_left
             {
-                displayName = "Close";
+                displayName = "$str_epoch_Close";
                 condition = "this animationPhase ""open_left"" >= 0.5";
                 statement = "this animate [""open_left"", 0]; this animate [""open_right"", 0]";
             };
             class Lock_cGarage
             {
-                displayName = "Lock";
+                displayName = "$str_epoch_Lock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6233,7 +6239,7 @@ class CfgVehicles
             };
             class Unlock_cGarage : Lock_cGarage
             {
-                displayName = "Unlock";
+                displayName = "$str_epoch_Unlock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
                 condition = "!(call EPOCH_lockCheck) && (this animationPhase ""open_left"" < 0.5) && (this animationPhase ""lock_cGarage"" >= 0.5)";
                 statement = "this animate [""lock_cGarage"", 0];";
@@ -6245,7 +6251,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\jack.p3d";
-        displayName = "Jack";
+        displayName = "$str_epoch_Jack";
         class AnimationSources
         {
             class raise
@@ -6265,7 +6271,7 @@ class CfgVehicles
         {
             class Open_left
             {
-                displayName = "Raise";
+                displayName = "$str_epoch_Raise";
                 onlyforplayer = 1;
                 position = "Door_knopf";
                 radius = 3;
@@ -6274,7 +6280,7 @@ class CfgVehicles
             };
             class Close_left : Open_left
             {
-                displayName = "Lower";
+                displayName = "$str_epoch_Lower";
                 condition = "this animationPhase ""raise"" >= 0.5";
                 statement = "this animate [""raise"", 0]; this animate [""pump"", 0]";
             };
@@ -6285,7 +6291,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Floor.p3d";
-        displayName = "Wood Floor";
+        displayName = "$str_epoch_WoodFloor";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
     };
@@ -6294,7 +6300,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\metal_floor.p3d";
-        displayName = "Metal Floor";
+        displayName = "$str_epoch_MetalFloor";
         armor = 15000;
         hiddenSelections[] = {"camo","camo1","camo2"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets_1\textures\mf_co.paa","a3\structures_f\data\metal\metal_rollup_co.paa","a3\structures_f\data\metal\metal_plates3_co.paa"};
@@ -6310,7 +6316,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall.p3d";
-        displayName = "Large Wall";
+        displayName = "$str_epoch_LargeWall";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
         selectionDamage = "zbytek";
@@ -6325,7 +6331,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\tp_ghost.p3d";
-        displayName = "TiPi Ghost";
+        displayName = "$str_epoch_TiPiGhost";
         ladders[] = {};
     };
     class StorageShelf_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6333,7 +6339,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\shelf_ghost.p3d";
-        displayName = "Shelf Ghost";
+        displayName = "$str_epoch_ShelfGhost";
         ladders[] = {};
     };
     class WorkBench_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6341,7 +6347,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\workbench.p3d";
-        displayName = "WorkBench Ghost";
+        displayName = "$str_epoch_WorkBenchGhost";
         ladders[] = {};
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets_1\textures\plyplank_ca.paa"};
@@ -6351,7 +6357,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Ghost.p3d";
-        displayName = "Wood Wall Ghost";
+        displayName = "$str_epoch_WoodWallGhost";
         ladders[] = {};
     };
     class WoodFloor_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6359,7 +6365,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Floor_Ghost.p3d";
-        displayName = "Wood Floor Ghost";
+        displayName = "$str_epoch_WoodFloorGhost";
         ladders[] = {};
     };
     class MetalFloor_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6367,7 +6373,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\metal_floor_ghost.p3d";
-        displayName = "Metal Floor Ghost";
+        displayName = "$str_epoch_MetalFloorGhost";
         ladders[] = {};
     };
     class WoodLadder_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6375,7 +6381,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Ladder\wood_ladder_ghost.p3d";
-        displayName = "Wood Ladder Ghost";
+        displayName = "$str_epoch_WoodLadderGhost";
         ladders[] = {};
     };
     class WoodStairs_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6383,7 +6389,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wood_stairs90_Ghost.p3d";
-        displayName = "Wood Stairs Ghost";
+        displayName = "$str_epoch_WoodStairsGhost";
         ladders[] = {};
     };
     class WoodTower_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6391,7 +6397,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Tower\Tower\Base_Tower_Frame_Ghost.p3d";
-        displayName = "Wood Tower Ghost";
+        displayName = "$str_epoch_WoodTowerGhost";
         ladders[] = {};
     };
     class WoodRamp_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6399,7 +6405,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wood_Ramp_Ghost.p3d";
-        displayName = "Wood Ramp Ghost";
+        displayName = "$str_epoch_WoodRampGhost";
         ladders[] = {};
     };
     class Hesco3_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6407,7 +6413,7 @@ class CfgVehicles
         author = "Axle";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Defense\hesco_ghost.p3d";
-        displayName = "Hesco Wide (Ghost)";
+        displayName = "$str_epoch_HescoWideGhost";
         ladders[] = {};
     };
     class CinderWallHalf_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6415,7 +6421,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\cinder_half_Ghost.p3d";
-        displayName = "Cinder Half Wall Ghost";
+        displayName = "$str_epoch_CinderHalfWallGhost";
         ladders[] = {};
     };
     class WoodWall1_EPOCH : Const_WoodWalls_static_F
@@ -6423,7 +6429,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_wall\Wooden_Wall_ply.p3d";
-        displayName = "Large Plywood Wall";
+        displayName = "$str_epoch_LargePlywoodWall";
         armor = 1500;
     };
     class WoodLargeWallCor_EPOCH : Const_WoodWalls_static_F
@@ -6431,7 +6437,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Cor.p3d";
-        displayName = "Large Corrugated Wall";
+        displayName = "$str_epoch_LargeCorrugatedWall";
         sections[] = {"camo_cor","camo"};
         hiddenSelections[] = {"camo_cor","camo"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets\textures\cor\corrugated_co.paa","x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -6442,7 +6448,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_doorway\Wooden_Wall_Doorway.p3d";
-        displayName = "Plywood Wall Doorway";
+        displayName = "$str_epoch_PlywoodWallDoorway";
         armor = 1500;
     };
     class WoodLargeWallDoorway_EPOCH : Const_WoodWalls_static_F
@@ -6450,7 +6456,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Doorway.p3d";
-        displayName = "Wall Doorway";
+        displayName = "$str_epoch_WallDoorway";
         sections[] = {"camo_cor","camo"};
         hiddenSelections[] = {"camo_cor","camo"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets\textures\cor\corrugated_co.paa","x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -6460,7 +6466,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\plywood_door\Wooden_Wall_Door.p3d";
-        displayName = "Plywood Wall Doorway w/ Door";
+        displayName = "$str_epoch_PlywoodWallDoorwaywDoor";
         armor = 1500;
         class AnimationSources
         {
@@ -6475,7 +6481,7 @@ class CfgVehicles
         {
             class Open_door
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6485,7 +6491,7 @@ class CfgVehicles
             };
             class Close_door : Open_door
             {
-                displayName = "Close";
+                displayName = "$str_epoch_Close";
                 condition = "this animationPhase ""Open_Door"" >= 0.5";
                 statement = "this animate [""Open_Door"", 0];";
             };
@@ -6496,7 +6502,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Door.p3d";
-        displayName = "Wall Doorway w/ Door";
+        displayName = "$str_epoch_WallDoorwaywDoor";
         sections[] = {"camo_cor","camo"};
         hiddenSelections[] = {"camo_cor","camo"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets\textures\cor\corrugated_co.paa","x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -6514,7 +6520,7 @@ class CfgVehicles
         {
             class Open_door
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6524,7 +6530,7 @@ class CfgVehicles
             };
             class Close_door : Open_door
             {
-                displayName = "Close";
+                displayName = "$str_epoch_Close";
                 condition = "this animationPhase ""Open_Door"" >= 0.5";
                 statement = "this animate [""Open_Door"", 0];";
             };
@@ -6535,7 +6541,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Plywood_Upgrades\Plywood_DoorW_L\Plywood_DoorL.p3d";
-        displayName = "Plywood Wall Doorway w/ Locking Door";
+        displayName = "$str_epoch_PlywoodWallDoorwaywLockingDoor";
         armor = 1500;
         class AnimationSources
         {
@@ -6557,7 +6563,7 @@ class CfgVehicles
         {
             class Open_door
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6567,13 +6573,13 @@ class CfgVehicles
             };
             class Close_door : Open_door
             {
-                displayName = "Close";
+                displayName = "$str_epoch_Close";
                 condition = "(this animationPhase ""Open_Door"" >= 0.5) && (this animationPhase ""lock_Door"" == 0)";
                 statement = "this animate [""Open_Door"", 0];";
             };
             class Lock_Door
             {
-                displayName = "Lock";
+                displayName = "$str_epoch_Lock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6583,7 +6589,7 @@ class CfgVehicles
             };
             class Unlock_Door : Lock_Door
             {
-                displayName = "Unlock";
+                displayName = "$str_epoch_Unlock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
                 condition = "!(call EPOCH_lockCheck) && (this animationPhase ""Open_Door"" == 0) && (this animationPhase ""lock_Door"" == 1)";
                 statement = "this animate [""lock_Door"", 0];";
@@ -6595,7 +6601,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_DoorL.p3d";
-        displayName = "Wall Doorway w/ Locking Door";
+        displayName = "$str_epoch_WallDoorwaywLockingDoor";
         sections[] = {"camo_cor","camo"};
         hiddenSelections[] = {"camo_cor","camo"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets\textures\cor\corrugated_co.paa","x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -6620,7 +6626,7 @@ class CfgVehicles
         {
             class Open_door
             {
-                displayName = "Open";
+                displayName = "$str_epoch_Open";
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6630,13 +6636,13 @@ class CfgVehicles
             };
             class Close_door : Open_door
             {
-                displayName = "Close";
+                displayName = "$str_epoch_Close";
                 condition = "(this animationPhase ""Open_Door"" >= 0.5) && (this animationPhase ""lock_Door"" == 0)";
                 statement = "this animate [""Open_Door"", 0];";
             };
             class Lock_Door
             {
-                displayName = "Lock";
+                displayName = "$str_epoch_Lock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6646,7 +6652,7 @@ class CfgVehicles
             };
             class Unlock_Door : Lock_Door
             {
-                displayName = "Unlock";
+                displayName = "$str_epoch_Unlock";
                 displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
                 condition = "!(call EPOCH_lockCheck) && (this animationPhase ""Open_Door"" == 0) && (this animationPhase ""lock_Door"" == 1)";
                 statement = "this animate [""lock_Door"", 0];";
@@ -6658,7 +6664,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wood_stairs.p3d";
-        displayName = "Wood Stairs";
+        displayName = "$str_epoch_WoodStairs";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
         selectionDamage = "zbytek";
@@ -6673,7 +6679,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wood_stairs_upgrade.p3d";
-        displayName = "Wood Stairs lvl 2";
+        displayName = "$str_epoch_WoodStairslvl2";
         armor = 7500;
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -6683,7 +6689,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Tower\Tower\Base_Tower_Frame.p3d";
-        displayName = "Wood Tower";
+        displayName = "$str_epoch_WoodTower";
         armor = 7500;
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -6718,7 +6724,7 @@ class CfgVehicles
         {
             class add_nwall
             {
-                displayName = "Add Wall";
+                displayName = "$str_epoch_AddWall";
                 onlyforplayer = 1;
                 position = "NWall_trigger";
                 radius = 2.5;
@@ -6727,49 +6733,49 @@ class CfgVehicles
             };
             class remove_nwall : add_nwall
             {
-                displayName = "Remove Wall";
+                displayName = "$str_epoch_RemoveWall";
                 position = "NWall_trigger";
                 condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" >= 0.5)";
                 statement = "[this,""NWall"",0] call EPOCH_changeWallState";
             };
             class add_ewall : add_nwall
             {
-                displayName = "Add Wall";
+                displayName = "$str_epoch_AddWall";
                 position = "EWall_trigger";
                 condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""EWall"" < 0.5)";
                 statement = "[this,""EWall"",1] call EPOCH_changeWallState";
             };
             class remove_ewall : add_nwall
             {
-                displayName = "Remove Wall";
+                displayName = "$str_epoch_RemoveWall";
                 position = "EWall_trigger";
                 condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""EWall"" >= 0.5)";
                 statement = "[this,""EWall"",0] call EPOCH_changeWallState";
             };
             class add_swall : add_nwall
             {
-                displayName = "Add Wall";
+                displayName = "$str_epoch_AddWall";
                 position = "SWall_trigger";
                 condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""SWall"" < 0.5)";
                 statement = "[this,""SWall"",1] call EPOCH_changeWallState";
             };
             class remove_swall : add_nwall
             {
-                displayName = "Remove Wall";
+                displayName = "$str_epoch_RemoveWall";
                 position = "SWall_trigger";
                 condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""SWall"" >= 0.5)";
                 statement = "[this,""SWall"",0] call EPOCH_changeWallState";
             };
             class add_wwall : add_nwall
             {
-                displayName = "Add Wall";
+                displayName = "$str_epoch_AddWall";
                 position = "WWall_trigger";
                 condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""WWall"" < 0.5)";
                 statement = "[this,""WWall"",1] call EPOCH_changeWallState";
             };
             class remove_wwall : add_nwall
             {
-                displayName = "Remove Wall";
+                displayName = "$str_epoch_RemoveWall";
                 position = "WWall_trigger";
                 condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""WWall"" >= 0.5)";
                 statement = "[this,""WWall"",0] call EPOCH_changeWallState";
@@ -6781,7 +6787,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Ladder\wood_ladder.p3d";
-        displayName = "Wood Ladder";
+        displayName = "$str_epoch_WoodLadder";
         ladders[] = {{"start1","end1"}};
         armor = 500;
         hiddenSelections[] = {"Camo"};
@@ -6801,7 +6807,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\tp.p3d";
-        displayName = "Tipi";
+        displayName = "$str_epoch_Tipi";
         maximumLoad = 1200;
     };
     class StorageShelf_EPOCH : Buildable_Storage
@@ -6809,7 +6815,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\shelf.p3d";
-        displayName = "Metal Shelf";
+        displayName = "$str_epoch_MetalShelf";
         maximumLoad = 800;
     };
     class WorkBench_EPOCH : Buildable_Storage
@@ -6817,7 +6823,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\workbench.p3d";
-        displayName = "WorkBench";
+        displayName = "$str_epoch_WorkBench";
         maximumLoad = 800;
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets_1\textures\plyplank_co.paa"};
@@ -6827,7 +6833,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\metalStorage_proxy.p3d";
-        displayName = "Shelf Proxy";
+        displayName = "$str_epoch_ShelfProxy";
         isGround = 0;
     };
     class TarpProxy_EPOCH : WeaponHolder
@@ -6835,7 +6841,7 @@ class CfgVehicles
         scope = 2;
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets\models\tarp_proxy.p3d";
-        displayName = "Pallet Proxy";
+        displayName = "$str_epoch_PalletProxy";
         isGround = 0;
     };
     class MineralProxy_EPOCH : WeaponHolder
@@ -6843,7 +6849,7 @@ class CfgVehicles
         scope = 2;
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets\models\mineral_proxy.p3d";
-        displayName = "Mineral Proxy";
+        displayName = "$str_epoch_MineralProxy";
         isGround = 0;
     };
     class MineralDepositCopper_EPOCH : Animated_Loot
@@ -6851,7 +6857,7 @@ class CfgVehicles
         scope = 2;
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets\models\mineral.p3d";
-        displayName = "Mineral Deposit (Copper)";
+        displayName = "$str_epoch_MineralDepositCopper";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\minerals\mineralBrown_co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\minerals\mineralCopper.rvmat"};
@@ -6898,7 +6904,7 @@ class CfgVehicles
         {
             class LootIT
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6910,14 +6916,14 @@ class CfgVehicles
     };
     class MineralDepositGold_EPOCH : MineralDepositCopper_EPOCH
     {
-        displayName = "Mineral Deposit (Gold)";
+        displayName = "$str_epoch_MineralDepositGold";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\minerals\mineralBrown_co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\minerals\mineralGold.rvmat"};
     };
     class MineralDepositSilver_EPOCH : MineralDepositCopper_EPOCH
     {
-        displayName = "Mineral Deposit (Silver)";
+        displayName = "$str_epoch_MineralDepositSilver";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\minerals\mineralBrown_co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\minerals\mineralSilver.rvmat"};
@@ -6927,7 +6933,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\tarp.p3d";
-        displayName = "Tarp Covered Pallet";
+        displayName = "$str_epoch_TarpCoveredPallet";
         simulClass = "Tarp_SIM_EPOCH";
         staticClass = "Tarp_EPOCH";
         weaponHolderProxy = "TarpProxy_EPOCH";
@@ -6941,7 +6947,7 @@ class CfgVehicles
         {
             class LootIT
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6956,7 +6962,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\metalStorage.p3d";
-        displayName = "Metal Shelf";
+        displayName = "$str_epoch_MetalShelf";
         simulClass = "Shelf_SIM_EPOCH";
         staticClass = "Shelf_EPOCH";
         hiddenSelections[] = {"Camo"};
@@ -6973,7 +6979,7 @@ class CfgVehicles
         {
             class LootIT
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -6991,7 +6997,7 @@ class CfgVehicles
         cost = 0;
         isGround = 0;
         author = "Kiory";
-        displayName = "Wardrobe";
+        displayName = "$str_epoch_Wardrobe";
         destrType = "DestructNo";
         vehicleclass = "Epoch_objects";
         model = "\x\addons\a3_epoch_assets_2\wardrobe.p3d";
@@ -7020,7 +7026,7 @@ class CfgVehicles
         {
             class open_door_l
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 position = "left";
                 radius = 3;
@@ -7037,7 +7043,7 @@ class CfgVehicles
         cost = 0;
         isGround = 0;
         author = "Kiory";
-        displayName = "Locker";
+        displayName = "$str_epoch_Locker";
         destrType = "DestructNo";
         vehicleclass = "Epoch_objects";
         model = "\x\addons\a3_epoch_assets_2\lockers.p3d";
@@ -7072,7 +7078,7 @@ class CfgVehicles
         {
             class open_door_l
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 position = "left";
                 radius = 3;
@@ -7089,7 +7095,7 @@ class CfgVehicles
         cost = 0;
         isGround = 0;
         author = "Kiory";
-        displayName = "Cooker";
+        displayName = "$str_epoch_Cooker";
         destrType = "DestructNo";
         vehicleclass = "Epoch_objects";
         model = "\x\addons\a3_epoch_assets_2\cooker.p3d";
@@ -7179,7 +7185,7 @@ class CfgVehicles
         {
             class open_top_door
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 position = "top";
                 radius = 3;
@@ -7194,7 +7200,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\freezer.p3d";
-        displayName = "Chest Freezer";
+        displayName = "$str_epoch_ChestFreezer";
         simulClass = "Freezer_SIM_EPOCH";
         staticClass = "Freezer_EPOCH";
         forceSupply = 0;
@@ -7212,7 +7218,7 @@ class CfgVehicles
         {
             class Open_top
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7227,7 +7233,7 @@ class CfgVehicles
         author = "SteamPunkGears";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Furniture\medicine_cabinet\mc_door_anim.p3d";
-        displayName = "Medicine Cabinet";
+        displayName = "$str_epoch_MedicineCabinet";
         simulClass = "Cabinet_EPOCH";
         staticClass = "Cabinet_EPOCH";
         forceSupply = 0;
@@ -7245,7 +7251,7 @@ class CfgVehicles
         {
             class Open_bot
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "actionPoint";
@@ -7260,7 +7266,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\fridge_door_anim.p3d";
-        displayName = "Fridge";
+        displayName = "$str_epoch_Fridge";
         simulClass = "Fridge_SIM_EPOCH";
         staticClass = "Fridge_EPOCH";
         forceSupply = 0;
@@ -7287,7 +7293,7 @@ class CfgVehicles
         {
             class Open_bot
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7302,7 +7308,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\pelican.p3d";
-        displayName = "Pelican";
+        displayName = "$str_epoch_Pelican";
         simulClass = "Pelican_SIM_EPOCH";
         staticClass = "Pelican_EPOCH";
         forceSupply = 0;
@@ -7320,7 +7326,7 @@ class CfgVehicles
         {
             class Open_top
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7335,7 +7341,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Bed_proxy.p3d";
-        displayName = "Mattress";
+        displayName = "$str_epoch_Mattress";
         isGround = 0;
     };
     class Bed_EPOCH : Animated_Loot
@@ -7343,7 +7349,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\bed.p3d";
-        displayName = "Mattress";
+        displayName = "$str_epoch_Mattress";
         simulClass = "Bed_SIM_EPOCH";
         staticClass = "Bed_EPOCH";
         weaponHolderProxy = "BedProxy_EPOCH";
@@ -7357,7 +7363,7 @@ class CfgVehicles
         {
             class FlipMattress
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7372,7 +7378,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\bunk.p3d";
-        displayName = "Bunk";
+        displayName = "$str_epoch_Bunk";
         simulClass = "Bunk_SIM_EPOCH";
         staticClass = "Bunk_EPOCH";
         weaponHolderProxy = "BedProxy_EPOCH";
@@ -7386,7 +7392,7 @@ class CfgVehicles
         {
             class FlipMattress
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7403,7 +7409,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\couch_proxy.p3d";
-        displayName = "Couch";
+        displayName = "$str_epoch_Couch";
         isGround = 0;
     };
     class Couch_EPOCH : Animated_Loot
@@ -7411,7 +7417,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\couch.p3d";
-        displayName = "Couch";
+        displayName = "$str_epoch_Couch";
         simulClass = "Couch_SIM_EPOCH";
         staticClass = "Couch_EPOCH";
         weaponHolderProxy = "CouchProxy_EPOCH";
@@ -7425,7 +7431,7 @@ class CfgVehicles
         {
             class SearchCouch
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7440,7 +7446,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\coffee_table.p3d";
-        displayName = "Coffee Table";
+        displayName = "$str_epoch_CoffeeTable";
         simulClass = "Table_SIM_EPOCH";
         staticClass = "Table_EPOCH";
         weaponHolderProxy = "TableProxy_EPOCH";
@@ -7454,7 +7460,7 @@ class CfgVehicles
         {
             class SearchCouch
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7469,7 +7475,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\coffee_table_proxy.p3d";
-        displayName = "Coffee Table Proxy";
+        displayName = "$str_epoch_CoffeeTableProxy";
         isGround = 0;
     };
     class ChairProxy_EPOCH : WeaponHolder
@@ -7477,7 +7483,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\chair_proxy.p3d";
-        displayName = "Chair";
+        displayName = "$str_epoch_Chair";
         isGround = 0;
     };
     class Chair_EPOCH : Animated_Loot
@@ -7485,7 +7491,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\chair_adult.p3d";
-        displayName = "Chair";
+        displayName = "$str_epoch_Chair";
         simulClass = "Chair_SIM_EPOCH";
         staticClass = "Chair_EPOCH";
         weaponHolderProxy = "ChairProxy_EPOCH";
@@ -7503,7 +7509,7 @@ class CfgVehicles
         {
             class FlipMattress
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7518,7 +7524,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\toolRack_proxy.p3d";
-        displayName = "Tool Rack";
+        displayName = "$str_epoch_ToolRack";
         isGround = 0;
     };
     class ToolRack_EPOCH : Animated_Loot
@@ -7526,7 +7532,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\toolRack.p3d";
-        displayName = "Tool Rack";
+        displayName = "$str_epoch_ToolRack";
         simulClass = "ToolRack_SIM_EPOCH";
         staticClass = "ToolRack_EPOCH";
         weaponHolderProxy = "ToolRackProxy_EPOCH";
@@ -7540,7 +7546,7 @@ class CfgVehicles
         {
             class LootIT
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7554,7 +7560,7 @@ class CfgVehicles
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Chair (Red)";
+        displayName = "$str_epoch_ChairRed";
         simulClass = "ChairRed_SIM_EPOCH";
         staticClass = "ChairRed_EPOCH";
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\chair\chair_kid_ECO.paa"};
@@ -7566,7 +7572,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\shoebox_proxy.p3d";
-        displayName = "Shoebox proxy";
+        displayName = "$str_epoch_Shoeboxproxy";
         isGround = 0;
     };
     class Shoebox_EPOCH : Animated_Loot
@@ -7574,7 +7580,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\shoebox.p3d";
-        displayName = "Shoebox";
+        displayName = "$str_epoch_Shoebox";
         simulClass = "Shoebox_SIM_EPOCH";
         staticClass = "Shoebox_EPOCH";
         weaponHolderProxy = "ShoeboxProxy_EPOCH";
@@ -7588,7 +7594,7 @@ class CfgVehicles
         {
             class OpenCabinet
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7603,7 +7609,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\filing_proxy.p3d";
-        displayName = "Filing Cabinet";
+        displayName = "$str_epoch_FilingCabinet";
         isGround = 0;
     };
     class Filing_EPOCH : Animated_Loot
@@ -7611,7 +7617,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\filing.p3d";
-        displayName = "Filing Cabinet";
+        displayName = "$str_epoch_FilingCabinet";
         simulClass = "Filing_SIM_EPOCH";
         staticClass = "Filing_EPOCH";
         weaponHolderProxy = "FilingProxy_EPOCH";
@@ -7628,7 +7634,7 @@ class CfgVehicles
         {
             class OpenCabinet
             {
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
                 onlyforplayer = 1;
                 position = "Door_knopf";
@@ -7643,7 +7649,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\filing_proxy.p3d";
-        displayName = "Filing Cabinet";
+        displayName = "$str_epoch_FilingCabinet";
         isGround = 0;
     };
     class Carnival_Tent : Static
@@ -7651,7 +7657,7 @@ class CfgVehicles
         author = "Sequisha";
         mapSize = 6.19;
         scope = 2;
-        displayName = "Carnival Tent";
+        displayName = "$str_epoch_CarnivalTent";
         model = "\x\addons\a3_epoch_assets_3\carnival\models\carnyTent.p3d";
         ladders[] = {{"start1","end1"}};
         icon = "iconObject_5x2";
@@ -7701,7 +7707,7 @@ class CfgVehicles
             class OpenDoor_1
             {
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-                displayName = "Search";
+                displayName = "$str_epoch_Search";
                 position = "Door_1_trigger";
                 priority = 0.4;
                 radius = 1.5;
@@ -7722,7 +7728,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\poppy.p3d";
-        displayName = "Poppy";
+        displayName = "$str_epoch_Poppy";
         transportMaxItems = 0;
         transportMaxMagazines = 1;
         transportMaxWeapons = 0;
@@ -7740,7 +7746,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\vegetation\models\goldenseal.p3d";
-        displayName = "Goldenseal";
+        displayName = "$str_epoch_Goldenseal";
         transportMaxItems = 0;
         transportMaxMagazines = 1;
         transportMaxWeapons = 0;
@@ -7758,7 +7764,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\vegetation\models\pumpkin.p3d";
-        displayName = "Pumpkin";
+        displayName = "$str_epoch_Pumpkin";
         transportMaxItems = 0;
         transportMaxMagazines = 1;
         transportMaxWeapons = 0;
@@ -7802,7 +7808,7 @@ class CfgVehicles
             class EnterBuilding
             {
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-                displayName = "Teleport";
+                displayName = "$str_epoch_Teleport";
                 position = "Epoch_Action_Point";
                 priority = 1;
                 radius = 3;
@@ -7841,7 +7847,7 @@ class CfgVehicles
         mapSize = 1;
         author = "Kiory";
         scope = 2;
-        displayName = "centerplane";
+        displayName = "$str_epoch_centerplane";
         vehicleClass = "Helpers";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\center_plane.p3d";
         hiddenSelections[] = {"usertexture","usertextureL","usertextureR"};
@@ -7852,7 +7858,7 @@ class CfgVehicles
         mapSize = 1;
         author = "Awol";
         scope = 2;
-        displayName = "Epoch Logo";
+        displayName = "$str_epoch_EpochLogo";
         vehicleClass = "Helpers";
         model = "\x\addons\a3_epoch_assets\models\logo.p3d";
     };
@@ -7865,7 +7871,7 @@ class CfgVehicles
     {
         author = "Sequisha";
         scope = 2;
-        displayName = "Constuct";
+        displayName = "$str_epoch_Constuct";
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\construct.p3d";
         hasGeometry = 1;
         moves = "CfgMovesConstruct_F";
@@ -7895,7 +7901,7 @@ class CfgVehicles
     {
         author = "Sequisha";
         scope = 1;
-        displayName = "Great White";
+        displayName = "$str_epoch_GreatWhite";
         model = "\x\addons\a3_epoch_assets\models\shark_epoch.p3d";
         picture = "\x\addons\a3_epoch_assets\models\shark.paa";
         moves = "CfgMovesGreatWhite_F";
@@ -7997,7 +8003,7 @@ class CfgVehicles
     {
         scope = 1;
         agentTasks[] = {};
-        displayName = "Dice Snake";
+        displayName = "$str_epoch_DiceSnake";
         model = "\A3\Animals_F\Snakes\snake_F.p3d";
         side = 3;
         moves = "CfgMovesSnakes_F";
@@ -8014,7 +8020,7 @@ class CfgVehicles
     };
     class Snake2_random_EPOCH : Snake_random_EPOCH
     {
-        displayName = "Leopard Snake";
+        displayName = "$str_epoch_LeopardSnake";
         hiddenSelectionsTextures[] = {"\A3\Animals_F\Snakes\data\Snake_Leopard_CO.paa"};
     };
     class Snake_random_F : Animal_Base_F
@@ -8059,7 +8065,7 @@ class CfgVehicles
             class PressXToFlipTheThing
             {
                 displayNameDefault = "Flip Kart";
-                displayName = "Flip Kart";
+                displayName = "$str_epoch_FlipKart";
                 position = "";
                 radius = 2.7;
                 onlyForPlayer = 1;
@@ -8076,7 +8082,7 @@ class CfgVehicles
             class PressXToFlipTheThing
             {
                 displayNameDefault = "Flip Kart";
-                displayName = "Flip Kart";
+                displayName = "$str_epoch_FlipKart";
                 position = "";
                 radius = 2.7;
                 onlyForPlayer = 1;
@@ -8093,7 +8099,7 @@ class CfgVehicles
             class PressXToFlipTheThing
             {
                 displayNameDefault = "Flip Kart";
-                displayName = "Flip Kart";
+                displayName = "$str_epoch_FlipKart";
                 position = "";
                 radius = 2.7;
                 onlyForPlayer = 1;
@@ -8110,7 +8116,7 @@ class CfgVehicles
             class PressXToFlipTheThing
             {
                 displayNameDefault = "Flip Kart";
-                displayName = "Flip Kart";
+                displayName = "$str_epoch_FlipKart";
                 position = "";
                 radius = 2.7;
                 onlyForPlayer = 1;
