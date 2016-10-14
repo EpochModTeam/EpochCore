@@ -12,7 +12,7 @@
     Github:
     https://github.com/EpochModTeam/Epoch/tree/release/Sources/epoch_config/config.cpp
 */
-
+#include "basicdefines_A3.hpp"
 #define _ARMA_
 
 enum {
@@ -27,8 +27,8 @@ class CfgPatches
 {
 	class A3_epoch_config
 	{
-		units[] = { "Epoch_Female_F", "Epoch_Male_F", "Epoch_Cloak_F", "Epoch_Sapper_F", "Epoch_Ent_Small_F", "Epoch_Ent_Med_F", "Epoch_Ent_Large_F", "Land_Test_House_01_F", "Land_Test_House_01_dam_F", "Land_Test_House_01_ruins_F", "Epoch_Test", "C_Test_Car_01_F", "C_Hatchback_01_EPOCH", "C_Hatchback_02_EPOCH", "C_Offroad_01_EPOCH", "C_Quadbike_01_EPOCH", "C_SUV_01_EPOCH", "C_Rubberboat_EPOCH", "C_Rubberboat_02_EPOCH", "C_Rubberboat_03_EPOCH", "C_Rubberboat_04_EPOCH", "C_Van_01_box_EPOCH", "C_Van_01_transport_EPOCH", "C_Boat_Civil_01_EPOCH", "C_Boat_Civil_01_police_EPOCH", "C_Boat_Civil_01_rescue_EPOCH", "B_Heli_Light_01_EPOCH", "B_Heli_Transport_01_EPOCH", "B_Heli_Transport_01_camo_EPOCH", "B_SDV_01_EPOCH", "B_MRAP_01_EPOCH", "B_Truck_01_transport_EPOCH", "B_Truck_01_covered_EPOCH", "B_Truck_01_mover_EPOCH", "B_Truck_01_box_EPOCH", "O_Truck_02_covered_EPOCH", "O_Truck_02_transport_EPOCH", "O_Truck_03_covered_EPOCH", "O_Truck_02_box_EPOCH", "O_Heli_Light_02_unarmed_EPOCH", "I_Heli_Transport_02_EPOCH", "I_Heli_light_03_unarmed_EPOCH", "O_Test_Tank_01", "Sword_SIM_EPOCH", "SapperHead_SIM_EPOCH", "SapperCorpse_SIM_EPOCH", "MetalFloor_SIM_EPOCH", "WoodRamp_SIM_EPOCH", "CinderWallHalf_SIM_EPOCH", "CinderWall_SIM_EPOCH", "CinderWallDoorway_SIM_EPOCH", "CinderWallSmallDoorway_SIM_EPOCH", "WoodFloor_SIM_EPOCH", "WoodFloorHalf_SIM_EPOCH", "WoodFloorQuarter_SIM_EPOCH", "WoodLargeWall_SIM_EPOCH", "WoodLargeWallCor_SIM_EPOCH", "WoodLargeWallDoorway_SIM_EPOCH", "WoodLargeWallDoor_SIM_EPOCH", "WoodLargeWallWin_SIM_EPOCH", "WoodSmallWallThird_SIM_EPOCH", "WoodStairs_SIM_EPOCH", "WoodLadder_SIM_EPOCH", "WoodStairsSans_SIM_EPOCH", "Shelf_SIM_EPOCH", "Chair_SIM_EPOCH", "ChairRed_SIM_EPOCH", "Filing_SIM_EPOCH", "Fridge_SIM_EPOCH", "Bed_SIM_EPOCH", "Couch_SIM_EPOCH", "Wardrobe_SIM_EPOCH", "Locker_SIM_EPOCH", "Cooker_SIM_EPOCH", "Pelican_SIM_EPOCH", "Land_SIM_EPOCH_WoodDoor_Base", "Land_SIM_EPOCH_WoodDoorLocked_Base", "CinderWallDoor_SIM_EPOCH_Base", "CinderWallDoorLocked_SIM_EPOCH_Base", "Land_SIM_EPOCH_WoodDoor", "Land_SIM_EPOCH_WoodDoorLocked", "Land_SIM_EPOCH_LargeWoodDoor", "Land_SIM_EPOCH_LargeWoodDoorLocked", "Land_SIM_EPOCH_GarageWoodDoor", "Land_SIM_EPOCH_GarageWoodDoorLocked", "CinderWallDoorLocked_SIM_EPOCH", "CinderWallDoor_SIM_EPOCH", "CinderWallDoorSmallLocked_SIM_EPOCH", "CinderWallDoorSmall_SIM_EPOCH", "Foundation_EPOCH", "Foundation_Ghost_EPOCH", "Sword_EPOCH", "MetalFloor_EPOCH", "WoodRamp_EPOCH", "CinderWallHalf_EPOCH", "CinderWall_EPOCH", "CinderWallDoorway_EPOCH", "CinderWallSmallDoorway_EPOCH", "WoodFloor_EPOCH", "WoodFloorHalf_EPOCH", "WoodFloorQuarter_EPOCH", "WoodLargeWall_EPOCH", "WoodLargeWallCor_EPOCH", "WoodLargeWallDoorway_EPOCH", "WoodLargeWallDoor_EPOCH", "WoodLargeWallWin_EPOCH", "WoodSmallWallThird_EPOCH", "WoodStairs_EPOCH", "WoodLadder_EPOCH", "WoodStairsSans_EPOCH", "Shelf_EPOCH", "Fridge_EPOCH", "Pelican_EPOCH", "BedProxy_EPOCH", "Bed_EPOCH", "CouchProxy_EPOCH", "Couch_EPOCH", "ChairProxy_EPOCH", "Chair_EPOCH", "ChairRed_EPOCH", "FilingProxy_EPOCH", "Filing_EPOCH", "Land_EPOCH_WoodDoor_Base", "Land_EPOCH_WoodDoorLocked_Base", "CinderWallDoor_EPOCH_Base", "CinderWallDoorLocked_EPOCH_Base", "Land_EPOCH_WoodDoor", "Land_EPOCH_WoodDoorLocked", "Land_EPOCH_LargeWoodDoor", "Land_EPOCH_LargeWoodDoorLocked", "Land_EPOCH_GarageWoodDoor", "Land_EPOCH_GarageWoodDoorLocked", "CinderWallDoorLocked_EPOCH", "CinderWallDoor_EPOCH", "CinderWallDoorSmallLocked_EPOCH", "CinderWallDoorSmall_EPOCH", "Poppy_EPOCH", "Land_WoodenBox_C_EPOCH", "Land_PaperBox_C_EPOCH", "centerplane_ui" };
-		weapons[] = { "U_Test_uniform", "U_Test1_uniform", "V_F0_EPOCH", "V_F1_EPOCH", "V_F2_EPOCH", "V_F3_EPOCH", "V_F4_EPOCH", "V_F5_EPOCH", "V_F6_EPOCH", "V_F7_EPOCH", "V_1_EPOCH", "V_2_EPOCH", "V_3_EPOCH", "V_4_EPOCH", "V_5_EPOCH", "V_6_EPOCH", "V_7_EPOCH", "V_8_EPOCH", "V_9_EPOCH", "V_10_EPOCH", "V_11_EPOCH", "V_12_EPOCH", "V_13_EPOCH", "V_14_EPOCH", "V_15_EPOCH", "V_16_EPOCH", "V_17_EPOCH", "V_18_EPOCH", "V_19_EPOCH", "V_20_EPOCH", "V_21_EPOCH", "V_22_EPOCH", "V_23_EPOCH", "V_24_EPOCH", "V_25_EPOCH", "V_26_EPOCH", "V_27_EPOCH", "V_28_EPOCH", "V_29_EPOCH", "V_30_EPOCH", "V_31_EPOCH", "V_32_EPOCH", "V_33_EPOCH", "V_34_EPOCH", "V_35_EPOCH", "V_36_EPOCH", "V_37_EPOCH", "V_38_EPOCH", "V_39_EPOCH", "V_40_EPOCH", "H_F0_EPOCH", "H_F1_EPOCH", "H_F2_EPOCH", "H_F3_EPOCH", "H_F4_EPOCH", "H_F5_EPOCH", "H_11_EPOCH", "H_28_EPOCH", "Rollins_F", "ChainSaw", "ChainSawB", "ChainSawG", "ChainSawP", "ChainSawR", "MultiGun", "Drink", "MeleeSledge", "test_suppressor", "Defib_EPOCH", "Heal_EPOCH", "Repair_EPOCH", , "sr25_epoch", "sr25_ec_epoch", "muzzle_sr25S_epoch", "l85a2_base_epoch", "l85a2_epoch", "l85a2_ris_epoch", "l85a2_ris_ng_epoch", "l85a2_pink_epoch", "l85a2_ugl_epoch" };
+		units[] = { "Epoch_Female_F", "Epoch_Male_F", "Epoch_Cloak_F", "Epoch_Sapper_F", "Epoch_Ent_Small_F", "Epoch_Ent_Med_F", "Epoch_Ent_Large_F", "Land_Test_House_01_F", "Land_Test_House_01_dam_F", "Land_Test_House_01_ruins_F", "Epoch_Test", "C_Test_Car_01_F", "C_Hatchback_01_EPOCH", "C_Hatchback_02_EPOCH", "C_Offroad_01_EPOCH", "C_Quadbike_01_EPOCH", "C_SUV_01_EPOCH", "C_Rubberboat_EPOCH", "C_Rubberboat_02_EPOCH", "C_Rubberboat_03_EPOCH", "C_Rubberboat_04_EPOCH", "C_Van_01_box_EPOCH", "C_Van_01_transport_EPOCH", "C_Boat_Civil_01_EPOCH", "C_Boat_Civil_01_police_EPOCH", "C_Boat_Civil_01_rescue_EPOCH", "B_Heli_Light_01_EPOCH", "B_Heli_Transport_01_EPOCH", "B_Heli_Transport_01_camo_EPOCH", "B_SDV_01_EPOCH", "B_MRAP_01_EPOCH", "B_Truck_01_transport_EPOCH", "B_Truck_01_covered_EPOCH", "B_Truck_01_mover_EPOCH", "B_Truck_01_box_EPOCH", "O_Truck_02_covered_EPOCH", "O_Truck_02_transport_EPOCH", "O_Truck_03_covered_EPOCH", "O_Truck_02_box_EPOCH", "O_Heli_Light_02_unarmed_EPOCH", "I_Heli_Transport_02_EPOCH", "I_Heli_light_03_unarmed_EPOCH", "O_Test_Tank_01", "Sword_SIM_EPOCH", "SapperHead_SIM_EPOCH", "SapperCorpse_SIM_EPOCH", "MetalFloor_SIM_EPOCH", "WoodRamp_SIM_EPOCH", "CinderWallHalf_SIM_EPOCH", "CinderWall_SIM_EPOCH", "CinderWallDoorway_SIM_EPOCH", "CinderWallSmallDoorway_SIM_EPOCH", "WoodFloor_SIM_EPOCH", "WoodFloorHalf_SIM_EPOCH", "WoodFloorQuarter_SIM_EPOCH", "WoodLargeWall_SIM_EPOCH", "WoodLargeWallCor_SIM_EPOCH", "WoodLargeWallDoorway_SIM_EPOCH", "WoodLargeWallDoor_SIM_EPOCH", "WoodLargeWallWin_SIM_EPOCH", "WoodSmallWallThird_SIM_EPOCH", "WoodStairs_SIM_EPOCH", "WoodLadder_SIM_EPOCH", "WoodStairsSans_SIM_EPOCH", "Shelf_SIM_EPOCH", "Chair_SIM_EPOCH", "ChairRed_SIM_EPOCH", "Filing_SIM_EPOCH", "Fridge_SIM_EPOCH", "Bed_SIM_EPOCH", "Couch_SIM_EPOCH", "Wardrobe_SIM_EPOCH", "Locker_SIM_EPOCH", "Cooker_SIM_EPOCH", "Pelican_SIM_EPOCH", "Land_SIM_EPOCH_WoodDoor_Base", "Land_SIM_EPOCH_WoodDoorLocked_Base", "CinderWallDoor_SIM_EPOCH_Base", "CinderWallDoorLocked_SIM_EPOCH_Base", "Land_SIM_EPOCH_WoodDoor", "Land_SIM_EPOCH_WoodDoorLocked", "Land_SIM_EPOCH_LargeWoodDoor", "Land_SIM_EPOCH_LargeWoodDoorLocked", "Land_SIM_EPOCH_GarageWoodDoor", "Land_SIM_EPOCH_GarageWoodDoorLocked", "CinderWallDoorLocked_SIM_EPOCH", "CinderWallDoor_SIM_EPOCH", "CinderWallDoorSmallLocked_SIM_EPOCH", "CinderWallDoorSmall_SIM_EPOCH", "Foundation_EPOCH", "Foundation_Ghost_EPOCH", "Sword_EPOCH", "MetalFloor_EPOCH", "WoodRamp_EPOCH", "CinderWallHalf_EPOCH", "CinderWall_EPOCH", "CinderWallDoorway_EPOCH", "CinderWallSmallDoorway_EPOCH", "WoodFloor_EPOCH", "WoodFloorHalf_EPOCH", "WoodFloorQuarter_EPOCH", "WoodLargeWall_EPOCH", "WoodLargeWallCor_EPOCH", "WoodLargeWallDoorway_EPOCH", "WoodLargeWallDoor_EPOCH", "WoodLargeWallWin_EPOCH", "WoodSmallWallThird_EPOCH", "WoodStairs_EPOCH", "WoodLadder_EPOCH", "WoodStairsSans_EPOCH", "Shelf_EPOCH", "Fridge_EPOCH", "Pelican_EPOCH", "BedProxy_EPOCH", "Bed_EPOCH", "CouchProxy_EPOCH", "Couch_EPOCH", "ChairProxy_EPOCH", "Chair_EPOCH", "ChairRed_EPOCH", "FilingProxy_EPOCH", "Filing_EPOCH", "Land_EPOCH_WoodDoor_Base", "Land_EPOCH_WoodDoorLocked_Base", "CinderWallDoor_EPOCH_Base", "CinderWallDoorLocked_EPOCH_Base", "Land_EPOCH_WoodDoor", "Land_EPOCH_WoodDoorLocked", "Land_EPOCH_LargeWoodDoor", "Land_EPOCH_LargeWoodDoorLocked", "Land_EPOCH_GarageWoodDoor", "Land_EPOCH_GarageWoodDoorLocked", "CinderWallDoorLocked_EPOCH", "CinderWallDoor_EPOCH", "CinderWallDoorSmallLocked_EPOCH", "CinderWallDoorSmall_EPOCH", "Poppy_EPOCH", "Land_WoodenBox_C_EPOCH", "Land_PaperBox_C_EPOCH", "centerplane_ui", "mosquito_epoch", "ferrisWheel_EPOCH","wardrobe_epoch","container_epoch","cooker_epoch","locker_epoch", "smallbackpack_red_epoch", "smallbackpack_green_epoch", "smallbackpack_teal_epoch", "smallbackpack_pink_epoch" };
+		weapons[] = { "U_Test_uniform", "U_Test1_uniform", "V_F0_EPOCH", "V_F1_EPOCH", "V_F2_EPOCH", "V_F3_EPOCH", "V_F4_EPOCH", "V_F5_EPOCH", "V_F6_EPOCH", "V_F7_EPOCH", "V_1_EPOCH", "V_2_EPOCH", "V_3_EPOCH", "V_4_EPOCH", "V_5_EPOCH", "V_6_EPOCH", "V_7_EPOCH", "V_8_EPOCH", "V_9_EPOCH", "V_10_EPOCH", "V_11_EPOCH", "V_12_EPOCH", "V_13_EPOCH", "V_14_EPOCH", "V_15_EPOCH", "V_16_EPOCH", "V_17_EPOCH", "V_18_EPOCH", "V_19_EPOCH", "V_20_EPOCH", "V_21_EPOCH", "V_22_EPOCH", "V_23_EPOCH", "V_24_EPOCH", "V_25_EPOCH", "V_26_EPOCH", "V_27_EPOCH", "V_28_EPOCH", "V_29_EPOCH", "V_30_EPOCH", "V_31_EPOCH", "V_32_EPOCH", "V_33_EPOCH", "V_34_EPOCH", "V_35_EPOCH", "V_36_EPOCH", "V_37_EPOCH", "V_38_EPOCH", "V_39_EPOCH", "V_40_EPOCH", "H_F0_EPOCH", "H_F1_EPOCH", "H_F2_EPOCH", "H_F3_EPOCH", "H_F4_EPOCH", "H_F5_EPOCH", "H_11_EPOCH", "H_28_EPOCH", "Rollins_F", "ChainSaw", "ChainSawB", "ChainSawG", "ChainSawP", "ChainSawR", "MultiGun", "Drink", "MeleeSledge", "test_suppressor", "Defib_EPOCH", "Heal_EPOCH", "Repair_EPOCH", , "sr25_epoch", "sr25_ec_epoch", "muzzle_sr25S_epoch", "l85a2_base_epoch", "l85a2_epoch", "l85a2_ris_epoch", "l85a2_ris_ng_epoch", "l85a2_pink_epoch", "l85a2_ugl_epoch", "ruger_pistol_epoch","ruger_pistol_epoch_snds_F","ruger_pistol_epoch_pointer_F","1911_pistol_epoch"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 
@@ -52,6 +52,8 @@ class CfgPatches
 			"a3_epoch_structures",
 			"a3_epoch_code",
 			"a2_epoch_weapons",
+            "a3_epoch_community",
+            "A3_epoch_language"
 
 			"A3_Soft_F",
 			"A3_Structures_F",
@@ -107,9 +109,10 @@ class CfgPatches
 			"A3_Weapons_F_Ammoboxes",
 			"A3_UI_F",
 			"A3_UI_F_Curator",
+            "A3_Air_F"
 		 };
-		magazines[] = { "30Rnd_test_mag", "5Rnd_rollins_mag", "CSGAS", "sledge_swing", "30Rnd_test_mag_Tracer", "EnergyPack", "1Rnd_Soda", "1Rnd_Food", "WoodLog_EPOCH", "PaintCanBlk", "PaintCanBlu", "PaintCanBrn", "PaintCanGrn", "PaintCanOra", "PaintCanPur", "PaintCanRed", "PaintCanTeal", "PaintCanYel" };
-		ammo[] = { "B_EnergyPack", "B_Swing", "Sapper_Charge_Ammo", "SapperB_Charge_Ammo", "B_Soda", "B_Food", "B_Test_Caseless", "ChainSaw_Bullet", "SmokeShellCustom" };
+		magazines[] = { "30Rnd_test_mag", "5Rnd_rollins_mag", "CSGAS", "sledge_swing", "30Rnd_test_mag_Tracer", "EnergyPack", "1Rnd_Soda", "1Rnd_Food", "WoodLog_EPOCH", "PaintCanBlk", "PaintCanBlu", "PaintCanBrn", "PaintCanGrn", "PaintCanOra", "PaintCanPur", "PaintCanRed", "PaintCanTeal", "PaintCanYel", "10rnd_22X44_magazine", "9rnd_45X88_magazine", "spear_magazine", "20rnd_762_magazine","30rnd_556_magazine" };
+		ammo[] = { "B_EnergyPack", "B_Swing", "Sapper_Charge_Ammo", "SapperB_Charge_Ammo", "B_Soda", "B_Food", "B_Test_Caseless", "ChainSaw_Bullet", "SmokeShellCustom", "E_22X44_ball", "E_45_ball", "spear_ball", "K_762_ball", "K_556_ball" };
 		epochVersion = "0.4.0.0";
 	};
 };
@@ -137,23 +140,131 @@ class Mode_FullAuto;
 class SlotInfo;
 class CowsSlot;
 class PointerSlot;
+class UniformSlotInfo;
+
+// epoch objects
+class CfgVehicleClasses
+{
+	class epoch_objects
+	{
+		displayName = "Epoch Objects";
+	};
+};
+class CfgFactionClasses
+{
+	class Epoch_objects
+	{
+		displayName = "Epoch objects";
+		priority = 100;
+		side = 3;
+	};
+};
+
 
 #include "\A3\ui_f\hpp\defineCommonGrids.inc"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMissions.hpp"
+
+#include "\x\addons\a3_epoch_configs\Configs\CfgActions.hpp"
+
+#include "\x\addons\a3_epoch_configs\Configs\CfgCloudlets.hpp"
+class epoch_ammocloud
+{
+	class epoch_ammocloud
+	{
+		simulation = "particles";
+		type = "epoch_ammocloud1";
+		position[] = {0,0,0};
+		intensity = 1;
+		interval = 1;
+		lifeTime = 0.05;
+	};
+};
+class epoch_smoketrail
+{
+	class epoch_smoketrail
+	{
+		simulation = "particles";
+		type = "epoch_smoketrail1";
+		position[] = {0,0,0};
+		intensity = 1;
+		interval = 1;
+		lifeTime = 0.05;
+	};
+};
+
+// effects for traps
+class CraterSpike {
+	class CraterSmokeCustom1
+	{
+		simulation = "particles";
+		type = "SpikeCraterEffect"; // CraterSmokeCustom
+		position[] = {0,0,0};
+	    intensity = 1;
+	    interval = 0.1;
+	    lifeTime = 0.5;
+	};
+	class CraterSmokeCustom4
+	{
+		simulation = "particles";
+		type = "WoodChippings3"; // CraterSmokeCustom
+		position[] = {0,0,0};
+	    intensity = 1;
+	    interval = 1;
+	    lifeTime = 0.5;
+	};
+
+};
+
+class CraterMetal {
+	class CraterSmokeCustom1
+	{
+		simulation = "particles";
+		type = "SpikeCraterEffect"; // CraterSmokeCustom
+		position[] = {0,0,0};
+    intensity = 1;
+    interval = 0.1;
+    lifeTime = 0.5;
+	};
+	class CraterSmokeCustom2
+	{
+		simulation = "particles";
+		type = "ScrapsCraterEffect"; // CraterSmokeCustom
+		position[] = {0,0,0};
+    intensity = 1;
+    interval = 0.1;
+    lifeTime = 0.5;
+	};
+	class CraterSmokeCustom3
+	{
+		simulation = "particles";
+		type = "WoodChippings3"; // CraterSmokeCustom
+		position[] = {0,0,0};
+    intensity = 1;
+    interval = 1;
+    lifeTime = 0.5;
+	};
+
+};
+
+
+#include "\x\addons\a3_epoch_configs\Configs\CfgInGameUI.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgFontFamilies.hpp"
+
+#include "\x\addons\a3_epoch_configs\Configs\CfgMagazines.hpp"
+
+#include "\x\addons\a3_epoch_configs\Configs\CfgVehicles.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgWeapons.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMovesBasic.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesMaleSdr.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesSapperBasic.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesSapperSdr.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgGesturesMale.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesAnimal.hpp"
-#include "\x\addons\a3_epoch_configs\Configs\CfgActions.hpp"
-#include "\x\addons\a3_epoch_configs\Configs\CfgCloudlets.hpp"
-#include "\x\addons\a3_epoch_configs\Configs\CfgVehicles.hpp"
-#include "\x\addons\a3_epoch_configs\Configs\CfgInGameUI.hpp"
-#include "\x\addons\a3_epoch_configs\Configs\CfgFontFamilies.hpp"
+
 #include "\x\addons\a3_epoch_configs\Configs\cfgRecoils.hpp"
-#include "\x\addons\a3_epoch_configs\Configs\CfgMagazines.hpp"
+
 #include "\x\addons\a3_epoch_configs\Configs\CfgAmmo.hpp"
-#include "\x\addons\a3_epoch_configs\Configs\CfgWeapons.hpp"
+
 #include "\x\addons\a3_epoch_configs\Configs\CfgAnimationSourceSounds.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgFunctions.hpp"
 //
