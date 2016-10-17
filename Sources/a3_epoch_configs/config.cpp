@@ -39,6 +39,7 @@ class CfgPatches
 			"A3_Data_F",
 			"A3_Weapons_F",
 			"A3_Functions_F",
+            "A3_Boat_F",
 
 			"a3_map_altis",
 			"a3_map_stratis",
@@ -53,7 +54,7 @@ class CfgPatches
 			"a3_epoch_code",
 			"a2_epoch_weapons",
             "a3_epoch_community",
-            "A3_epoch_language"
+            "A3_epoch_language",
 
 			"A3_Soft_F",
 			"A3_Structures_F",

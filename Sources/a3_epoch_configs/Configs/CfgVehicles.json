@@ -2713,7 +2713,7 @@
             "author": "$STR_A3_Bohemia_Interactive",
             "scope": 0,
             "scopeCurator": 0,
-            "displayName": { "_translate" : "" },
+            "displayName": "",
             "model": "\\A3\\Weapons_F\\empty.p3d",
             "vehicleClass": "Structures_Infrastructure",
             "cost": 100,
@@ -2728,7 +2728,7 @@
             "author": "$STR_A3_Bohemia_Interactive",
             "scope": 0,
             "scopeCurator": 0,
-            "displayName": { "_translate" : "" },
+            "displayName": "",
             "model": "\\A3\\Weapons_F\\empty.p3d",
             "vehicleClass": "Structures_Infrastructure",
             "compatibleWires": [],
@@ -2943,7 +2943,7 @@
         "smallbackpack_red_epoch": {
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Small Backpack Red" },
+            "displayName": { "_translate" : "Small Backpack (Red)" },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_smallbackpack_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_2\\small_backpack.p3d",
             "sections": [
@@ -2962,7 +2962,7 @@
         "smallbackpack_green_epoch": {
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Small Backpack Green" },
+            "displayName": { "_translate" : "Small Backpack (Green)" },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_smallbackpack_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_2\\small_backpack.p3d",
             "sections": [
@@ -2981,7 +2981,7 @@
         "smallbackpack_teal_epoch": {
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Small Backpack Teal" },
+            "displayName": { "_translate" : "Small Backpack (Teal)" },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_smallbackpack_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_2\\small_backpack.p3d",
             "sections": [
@@ -3000,7 +3000,7 @@
         "smallbackpack_pink_epoch": {
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Small Backpack Pink" },
+            "displayName": { "_translate" : "Small Backpack (Pink)" },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_smallbackpack_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_2\\small_backpack.p3d",
             "sections": [
@@ -3068,6 +3068,9 @@
             "mass": 60,
             "_inherit": "Bag_Base"
         },
+        "LandVehicle": {
+            "_isExtern": true
+        },
         "Car": {
             "HitPoints": {
                 "_isExtern": true
@@ -3109,13 +3112,17 @@
             },
             "_inherit": "Car"
         },
+        "Ship": {
+            "_isExtern": true
+        },
         "Ship_F": {
             "Eventhandlers": {
                 "_inherit": "DefaultEventhandlers"
             },
             "transportMaxMagazines": 100,
             "transportMaxWeapons": 20,
-            "transportMaxBackpacks": 4
+            "transportMaxBackpacks": 4,
+            "_inherit": "Ship"
         },
         "jetski_epoch": {
             "author": "Kiory",
@@ -6231,7 +6238,7 @@
             "mapSize": 1.27,
             "author": "Sequisha",
             "scope": 0,
-            "displayName": { "_translate" : "" },
+            "displayName": "",
             "model": "\\A3\\Weapons_F\\empty.p3d",
             "icon": "iconObject_5x4",
             "armor": 1000,
@@ -7263,7 +7270,7 @@
             "mapSize": 1.27,
             "author": "Sequisha",
             "scope": 0,
-            "displayName": { "_translate" : "" },
+            "displayName": "",
             "model": "\\A3\\Weapons_F\\empty.p3d",
             "icon": "iconObject_5x4",
             "armor": 5000,
@@ -7277,7 +7284,7 @@
             "mapSize": 1.27,
             "author": "Sequisha",
             "scope": 0,
-            "displayName": { "_translate" : "" },
+            "displayName": "",
             "model": "\\A3\\Weapons_F\\empty.p3d",
             "icon": "iconObject_5x4",
             "armor": 5000,
@@ -7510,7 +7517,7 @@
             "mapSize": 1.27,
             "author": "Sequisha",
             "scope": 0,
-            "displayName": { "_translate" : "" },
+            "displayName": "",
             "model": "\\A3\\Weapons_F\\empty.p3d",
             "icon": "iconObject_5x4",
             "armor": 5000,

@@ -2273,8 +2273,7 @@ class CfgVehicles
         author = "$STR_A3_Bohemia_Interactive";
         scope = 0;
         scopeCurator = 0;
-        class displayName
-        {
+        displayName = "";
         model = "\A3\Weapons_F\empty.p3d";
         vehicleClass = "Structures_Infrastructure";
         cost = 100;
@@ -2290,8 +2289,7 @@ class CfgVehicles
         author = "$STR_A3_Bohemia_Interactive";
         scope = 0;
         scopeCurator = 0;
-        class displayName
-        {
+        displayName = "";
         model = "\A3\Weapons_F\empty.p3d";
         vehicleClass = "Structures_Infrastructure";
         compatibleWires[] = {};
@@ -2594,6 +2592,7 @@ class CfgVehicles
         maximumLoad = 550;
         mass = 60;
     };
+    class LandVehicle;
     class Car : LandVehicle
     {
         class HitPoints;
@@ -2614,7 +2613,8 @@ class CfgVehicles
         };
         class EventHandlers;
     };
-    class Ship_F
+    class Ship;
+    class Ship_F : Ship
     {
         class Eventhandlers : DefaultEventhandlers {};
         transportMaxMagazines = 100;
@@ -4668,7 +4668,6 @@ class CfgVehicles
         class Eventhandlers {};
         class RenderTargets {};
     };
-    class LandVehicle;
     class Tank : LandVehicle
     {
         class NewTurret;
@@ -4935,8 +4934,7 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 0;
-        class displayName
-        {
+        displayName = "";
         model = "\A3\Weapons_F\empty.p3d";
         icon = "iconObject_5x4";
         armor = 1000;
@@ -5838,8 +5836,7 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 0;
-        class displayName
-        {
+        displayName = "";
         model = "\A3\Weapons_F\empty.p3d";
         icon = "iconObject_5x4";
         armor = 5000;
@@ -5853,8 +5850,7 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 0;
-        class displayName
-        {
+        displayName = "";
         model = "\A3\Weapons_F\empty.p3d";
         icon = "iconObject_5x4";
         armor = 5000;
@@ -6076,8 +6072,7 @@ class CfgVehicles
         mapSize = 1.27;
         author = "Sequisha";
         scope = 0;
-        class displayName
-        {
+        displayName = "";
         model = "\A3\Weapons_F\empty.p3d";
         icon = "iconObject_5x4";
         armor = 5000;
