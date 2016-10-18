@@ -252,9 +252,9 @@ class CraterMetal {
 #include "\x\addons\a3_epoch_configs\Configs\CfgFontFamilies.hpp"
 
 #include "\x\addons\a3_epoch_configs\Configs\CfgMagazines.hpp"
-
 #include "\x\addons\a3_epoch_configs\Configs\CfgVehicles.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgWeapons.hpp"
+
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesBasic.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesMaleSdr.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesSapperBasic.hpp"
@@ -263,8 +263,8 @@ class CraterMetal {
 #include "\x\addons\a3_epoch_configs\Configs\CfgMovesAnimal.hpp"
 
 #include "\x\addons\a3_epoch_configs\Configs\cfgRecoils.hpp"
-
 #include "\x\addons\a3_epoch_configs\Configs\CfgAmmo.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgSounds.hpp"
 
 #include "\x\addons\a3_epoch_configs\Configs\CfgAnimationSourceSounds.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgFunctions.hpp"
