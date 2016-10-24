@@ -121,7 +121,7 @@ class CfgMagazines
     };
     class 30Rnd_762x39_Mag : CA_Magazine
     {
-        scope = "public";
+        scope = 2;
         displayName = "$STR_EPOCH_762mm30rndAKMMag";
         picture = "\x\addons\a2_epoch_weapons\akm\data\UI\gear_30Rnd_akm_ca.paa";
         count = 30;
@@ -134,7 +134,7 @@ class CfgMagazines
     };
     class 200Rnd_556x45_M249 : CA_Magazine
     {
-        scope = "public";
+        scope = 2;
         displayName = "$STR_EPOCH_556mm200rndSawBelt";
         picture = "\x\addons\a2_epoch_weapons\m249\data\UI\gear_m249_mag_ca.paa";
         ammo = "B_556x45_Ball";

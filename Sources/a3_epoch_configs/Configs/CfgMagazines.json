@@ -112,7 +112,7 @@
             "_inherit": "CA_Magazine"
         },
         "30Rnd_762x39_Mag": {
-            "scope": "public",
+            "scope": 2,
             "displayName": { "_translate" : "7.62mm 30rnd AKM Mag" },
             "picture": "\\x\\addons\\a2_epoch_weapons\\akm\\data\\UI\\gear_30Rnd_akm_ca.paa",
             "count": 30,
@@ -125,7 +125,7 @@
             "_inherit": "CA_Magazine"
         },
         "200Rnd_556x45_M249": {
-            "scope": "public",
+            "scope": 2,
             "displayName": { "_translate" : "5.56mm 200rnd Saw Belt" },
             "picture": "\\x\\addons\\a2_epoch_weapons\\m249\\data\\UI\\gear_m249_mag_ca.paa",
             "ammo": "B_556x45_Ball",

@@ -3886,7 +3886,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Mosquito";
         picture = "\x\addons\a3_epoch_vehicles_1\mosquito\data\mosquito.paa";
         author = "Sequisha";
-        scope = "public";
+        scope = 2;
         side = 3;
         faction = "CIV_F";
         crew = "";
