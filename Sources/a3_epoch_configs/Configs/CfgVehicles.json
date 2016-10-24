@@ -1155,7 +1155,7 @@
                 "Camo"
             ],
             "hiddenSelectionsTextures": [
-                "\\a3\\characters_f\\common\\data\\ghillie_3_ca.paa"
+                "\\a3\\characters_f\\common\\data\\ghillie_desert_co.paa"
             ],
             "modelSides": [
                 1
@@ -1304,7 +1304,7 @@
                 "Camo"
             ],
             "hiddenSelectionsTextures": [
-                "\\a3\\characters_f\\common\\data\\ghillie_2_ca.paa"
+                "\\a3\\characters_f\\common\\data\\ghillie_woodland_co.paa"
             ],
             "modelSides": [
                 1
@@ -1321,7 +1321,7 @@
                 "Camo"
             ],
             "hiddenSelectionsTextures": [
-                "\\a3\\characters_f\\common\\data\\ghillie_1_ca.paa"
+                "\\a3\\characters_f\\common\\data\\ghillie_mcamo_co.paa"
             ],
             "modelSides": [
                 1
