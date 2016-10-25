@@ -711,9 +711,9 @@ class CfgMagazines
         scope = 2;
         count = 1;
         type = 256;
-        displayName = "$STR_EPOCH_Water";
+        displayName = "$STR_EPOCH_DirtyWater";
         model = "\x\addons\a3_epoch_assets_2\water_jar.p3d";
-        picture = "\x\addons\a3_epoch_assets_2\gear\gear_water_x_ca.paa";
+        picture = "\x\addons\a3_epoch_assets_2\gear\gear_dirtywater_x_ca.paa";
         descriptionShort = "$STR_EPOCH_Jarredwatermayormaynotcontainparasites";
         mass = 1;
     };
@@ -1506,18 +1506,6 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_Largepileofassortedmetalparts";
         mass = 12;
     };
-    class 30Rnd_test_mag : CA_Magazine
-    {
-        scope = 2;
-        displayName = "$STR_EPOCH_Testmagazine";
-        picture = "\A3\Weapons_F\Data\placeholder_co.paa";
-        ammo = "B_Test_Caseless";
-        count = 30;
-        initSpeed = 795;
-        tracersEvery = 0;
-        lastRoundsTracer = 4;
-        descriptionShort = "$STR_EPOCH_Usedtoshoottestbullets";
-    };
     class 5Rnd_rollins_mag : CA_Magazine
     {
         author = "Sequisha";
@@ -1588,14 +1576,6 @@ class CfgMagazines
         lastRoundsTracer = 9999;
         descriptionShort = "$STR_EPOCH_Swing";
         mass = 0;
-    };
-    class 30Rnd_test_mag_Tracer : 30Rnd_test_mag
-    {
-        tracersEvery = 1;
-        lastRoundsTracer = 30;
-        displayName = "$STR_EPOCH_Testtracermagazine";
-        descriptionShort = "$STR_EPOCH_Usedtoshoottesttracerbullets";
-        displaynameshort = "Tracers";
     };
     class EnergyPack : CA_Magazine
     {
@@ -2130,7 +2110,7 @@ class CfgMagazines
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\poppy.p3d";
-        picture = "\x\addons\a3_epoch_assets\textures\moist\gear_moist_ca.paa";
+        picture = "\x\addons\a3_epoch_assets_3\vegetation\gear_poppy_ca.paa";
         displayName = "$STR_EPOCH_Poppy";
         descriptionShort = "$STR_EPOCH_Podoffofapoppyplant";
         count = 1;

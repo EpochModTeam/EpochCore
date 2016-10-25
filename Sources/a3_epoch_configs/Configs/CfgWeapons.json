@@ -5115,8 +5115,7 @@
         },
         "Epoch_weapon_01_Base_F": {
             "magazines": [
-                "30Rnd_test_mag_Tracer",
-                "30Rnd_test_mag"
+                "30rnd_556_magazine"
             ],
             "reloadAction": "GestureReloadMX",
             "discreteDistanceInitIndex": 0,

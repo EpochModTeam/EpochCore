@@ -702,9 +702,9 @@
             "scope": 2,
             "count": 1,
             "type": 256,
-            "displayName": { "_translate" : "Water" },
+            "displayName": { "_translate" : "Dirty Water" },
             "model": "\\x\\addons\\a3_epoch_assets_2\\water_jar.p3d",
-            "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_water_x_ca.paa",
+            "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_dirtywater_x_ca.paa",
             "descriptionShort": { "_translate" : "Jarred water, may or may not contain parasites." },
             "mass": 1,
             "_inherit": "CA_Magazine"
@@ -1498,18 +1498,6 @@
             "mass": 12,
             "_inherit": "CA_Magazine"
         },
-        "30Rnd_test_mag": {
-            "scope": 2,
-            "displayName": { "_translate" : "Test magazine" },
-            "picture": "\\A3\\Weapons_F\\Data\\placeholder_co.paa",
-            "ammo": "B_Test_Caseless",
-            "count": 30,
-            "initSpeed": 795,
-            "tracersEvery": 0,
-            "lastRoundsTracer": 4,
-            "descriptionShort": { "_translate" : "Used to shoot test bullets" },
-            "_inherit": "CA_Magazine"
-        },
         "5Rnd_rollins_mag": {
             "author": "Sequisha",
             "scope": 2,
@@ -1580,14 +1568,6 @@
             "descriptionShort": { "_translate" : "Swing" },
             "mass": 0,
             "_inherit": "CA_Magazine"
-        },
-        "30Rnd_test_mag_Tracer": {
-            "tracersEvery": 1,
-            "lastRoundsTracer": 30,
-            "displayName": { "_translate" : "Test tracer magazine" },
-            "descriptionShort": { "_translate" : "Used to shoot test tracer bullets" },
-            "displaynameshort": "Tracers",
-            "_inherit": "30Rnd_test_mag"
         },
         "EnergyPack": {
             "author": "Sequisha",
@@ -2141,7 +2121,7 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\poppy.p3d",
-            "picture": "\\x\\addons\\a3_epoch_assets\\textures\\moist\\gear_moist_ca.paa",
+            "picture": "\\x\\addons\\a3_epoch_assets_3\\vegetation\\gear_poppy_ca.paa",
             "displayName": { "_translate" : "Poppy" },
             "descriptionShort": { "_translate" : "Pod off of a poppy plant." },
             "count": 1,

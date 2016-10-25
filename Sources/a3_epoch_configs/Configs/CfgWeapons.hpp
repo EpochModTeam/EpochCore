@@ -3393,7 +3393,7 @@ class CfgWeapons
     class UGL_F;
     class Epoch_weapon_01_Base_F : Rifle_Base_F
     {
-        magazines[] = {"30Rnd_test_mag_Tracer","30Rnd_test_mag"};
+        magazines[] = {"30rnd_556_magazine"};
         reloadAction = "GestureReloadMX";
         discreteDistanceInitIndex = 0;
         maxRecoilSway = 0.0125;

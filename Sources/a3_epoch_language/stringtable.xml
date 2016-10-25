@@ -1819,5 +1819,8 @@
         <Key ID="STR_EPOCH_ElcanOpticReflex">
             <Original>Elcan Optic Reflex</Original>
         </Key>
+        <Key ID="STR_EPOCH_DirtyWater">
+            <Original>Dirty Water</Original>
+        </Key>
     </Package>
 </Project>
