@@ -7,6 +7,7 @@
             "_isExtern": true
         },
         "UniformItem": {
+            "scope": 0,
             "type": 801,
             "_inherit": "InventoryItem_Base_F"
         },
@@ -25,7 +26,6 @@
             "_inherit": "ItemCore"
         },
         "U_EPOCH_RyanZombie_1": {
-            "author": "Epoch",
             "scope": 1,
             "displayName": { "_translate" : "Zombie 1" },
             "picture": "\\A3\\characters_f\\data\\ui\\icon_U_C_Poloshirt_blue_ca.paa",
@@ -430,6 +430,7 @@
             "_inherit": "Itemcore"
         },
         "VestItem": {
+            "scope": 0,
             "author": "$STR_A3_Bohemia_Interactive",
             "type": 701,
             "uniformType": "Default",
@@ -1703,6 +1704,7 @@
         },
         "V_F41_EPOCH": {
             "maleVest": "V_41_EPOCH",
+            "author": "Sequisha",
             "scope": 2,
             "displayName": { "_translate" : "Side Pack (female)" },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\side pack\\equip_sidepack_ca.paa",
@@ -1722,6 +1724,7 @@
         },
         "V_41_EPOCH": {
             "femaleVest": "V_F41_EPOCH",
+            "author": "Sequisha",
             "scope": 2,
             "displayName": { "_translate" : "Side Pack (male)" },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\side pack\\equip_sidepack_ca.paa",
@@ -1740,6 +1743,7 @@
             "_inherit": "Vest_Camo_Base"
         },
         "HeadgearItem": {
+            "scope": 0,
             "allowedSlots": [
                 901,
                 605
@@ -1749,7 +1753,7 @@
             "_inherit": "InventoryItem_Base_F"
         },
         "clown_mask_epoch": {
-            "author": "Aaron Clark",
+            "author": "AWOL",
             "scope": 2,
             "weaponPoolAvailable": 1,
             "displayName": { "_translate" : "Clown Mask" },
@@ -1770,6 +1774,7 @@
         },
         "wolf_mask_epoch": {
             "scope": 2,
+            "author": "Kiory",
             "weaponPoolAvailable": 1,
             "displayName": { "_translate" : "Scary Wolf Mask" },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_wolfmask_x_ca.paa",
@@ -1792,6 +1797,7 @@
         },
         "pkin_mask_epoch": {
             "scope": 2,
+            "author": "Kiory",
             "weaponPoolAvailable": 1,
             "displayName": { "_translate" : "Scary Pumpkin Mask" },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_pkinmask_x_ca.paa",
@@ -1815,7 +1821,7 @@
         "H_F0_EPOCH": {
             "scope": 2,
             "displayName": { "_translate" : "Red Beret" },
-            "author": "Paul Tomany",
+            "author": "Sequisha",
             "picture": "\\A3\\characters_f\\Data\\UI\\icon_H_Cap_blk_CA.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "hiddenSelections": [
@@ -2633,6 +2639,7 @@
             "_isExtern": true
         },
         "Rifle_Base_F": {
+            "scope": 0,
             "WeaponSlotsInfo": {
                 "_isExtern": true
             },
@@ -2642,6 +2649,7 @@
             "_inherit": "Rifle"
         },
         "Rifle_Long_Base_F": {
+            "scope": 0,
             "WeaponSlotsInfo": {
                 "allowedSlots": [
                     901
@@ -2651,6 +2659,7 @@
             "_inherit": "Rifle_Base_F"
         },
         "AKM_EPOCH_Base": {
+            "scope": 0,
             "magazines": [
                 "30Rnd_762x39_Mag"
             ],
@@ -3058,6 +3067,7 @@
             "_inherit": "AKM_Epoch_Base"
         },
         "m4a3_EPOCH_Base": {
+            "scope": 0,
             "magazines": [
                 "30Rnd_556x45_Stanag",
                 "30Rnd_556x45_Stanag_Tracer_Red",
@@ -3461,6 +3471,7 @@
             "_inherit": "m4a3_Epoch_Base"
         },
         "M14_EPOCH_Base": {
+            "scope": 0,
             "magazines": [
                 "20Rnd_762x51_Mag"
             ],
@@ -3874,6 +3885,7 @@
             "_inherit": "M14_Epoch_Base"
         },
         "m16_EPOCH_Base": {
+            "scope": 0,
             "magazines": [
                 "30Rnd_556x45_Stanag",
                 "30Rnd_556x45_Stanag_Tracer_Red",
@@ -4280,6 +4292,7 @@
             "_inherit": "m16_Epoch_Base"
         },
         "m107_EPOCH_Base": {
+            "scope": 0,
             "magazines": [
                 "5Rnd_127x108_Mag",
                 "5Rnd_127x108_APDS_Mag"
@@ -4692,6 +4705,7 @@
             "_inherit": "m107_Epoch_Base"
         },
         "m249_EPOCH_Base": {
+            "scope": 0,
             "magazines": [
                 "200Rnd_556x45_M249",
                 "30Rnd_556x45_Stanag_Tracer_Red",
@@ -5114,6 +5128,7 @@
             "_isExtern": true
         },
         "Epoch_weapon_01_Base_F": {
+            "scope": 0,
             "magazines": [
                 "30rnd_556_magazine"
             ],
@@ -5593,6 +5608,7 @@
             "_isExtern": true
         },
         "Pistol_Base_F": {
+            "scope": 0,
             "WeaponSlotsInfo": {
                 "_isExtern": true
             },
@@ -5603,7 +5619,7 @@
         },
         "ruger_pistol_epoch": {
             "scope": 2,
-            "author": "kiory",
+            "author": "Kiory",
             "model": "\\x\\addons\\a3_epoch_weapons\\ruger.p3d",
             "picture": "\\x\\addons\\a3_epoch_weapons\\gear\\gear_ruger_x_ca.paa",
             "magazines": [
@@ -5789,7 +5805,7 @@
         },
         "1911_pistol_epoch": {
             "scope": 2,
-            "author": "kiory",
+            "author": "Kiory",
             "model": "\\x\\addons\\a3_epoch_weapons\\1911.p3d",
             "picture": "\\x\\addons\\a3_epoch_weapons\\gear\\gear_1911_x_ca.paa",
             "magazines": [
@@ -6167,6 +6183,7 @@
             "_inherit": "Pistol_Base_F"
         },
         "MeleeWeapon": {
+            "scope": 0,
             "distanceZoomMin": 50,
             "distanceZoomMax": 50,
             "canDrop": 0,
@@ -6404,7 +6421,7 @@
             "_isExtern": true
         },
         "test_suppressor": {
-            "scope": 2,
+            "scope": 0,
             "displayName": "$STR_A3_cfgWeapons_muzzle_snds_H0",
             "picture": "\\A3\\weapons_F\\Data\\UI\\gear_acca_snds_h_CA.paa",
             "model": "\\A3\\weapons_f\\acc\\acca_snds_h_F",

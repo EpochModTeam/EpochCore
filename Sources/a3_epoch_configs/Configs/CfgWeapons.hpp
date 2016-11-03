@@ -20,6 +20,7 @@ class CfgWeapons
     class ItemCore;
     class UniformItem : InventoryItem_Base_F
     {
+        scope = 0;
         type = 801;
     };
     class Uniform_Base : ItemCore
@@ -36,7 +37,6 @@ class CfgWeapons
     };
     class U_EPOCH_RyanZombie_1 : Uniform_Base
     {
-        author = "Epoch";
         scope = 1;
         displayName = "$STR_EPOCH_Zombie1";
         picture = "\A3\characters_f\data\ui\icon_U_C_Poloshirt_blue_ca.paa";
@@ -389,6 +389,7 @@ class CfgWeapons
     };
     class VestItem : InventoryItem_Base_F
     {
+        scope = 0;
         author = "$STR_A3_Bohemia_Interactive";
         type = 701;
         uniformType = "Default";
@@ -1601,6 +1602,7 @@ class CfgWeapons
     class V_F41_EPOCH : Vest_Camo_Base
     {
         maleVest = "V_41_EPOCH";
+        author = "Sequisha";
         scope = 2;
         displayName = "$STR_EPOCH_SidePackfemale";
         picture = "\x\addons\a3_epoch_assets\textures\side pack\equip_sidepack_ca.paa";
@@ -1618,6 +1620,7 @@ class CfgWeapons
     class V_41_EPOCH : Vest_Camo_Base
     {
         femaleVest = "V_F41_EPOCH";
+        author = "Sequisha";
         scope = 2;
         displayName = "$STR_EPOCH_SidePackmale";
         picture = "\x\addons\a3_epoch_assets\textures\side pack\equip_sidepack_ca.paa";
@@ -1634,13 +1637,14 @@ class CfgWeapons
     };
     class HeadgearItem : InventoryItem_Base_F
     {
+        scope = 0;
         allowedSlots[] = {901,605};
         type = 605;
         hiddenSelections[] = {};
     };
     class clown_mask_epoch : ItemCore
     {
-        author = "Aaron Clark";
+        author = "AWOL";
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "$STR_EPOCH_ClownMask";
@@ -1657,6 +1661,7 @@ class CfgWeapons
     class wolf_mask_epoch : ItemCore
     {
         scope = 2;
+        author = "Kiory";
         weaponPoolAvailable = 1;
         displayName = "$STR_EPOCH_ScaryWolfMask";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_wolfmask_x_ca.paa";
@@ -1673,6 +1678,7 @@ class CfgWeapons
     class pkin_mask_epoch : ItemCore
     {
         scope = 2;
+        author = "Kiory";
         weaponPoolAvailable = 1;
         displayName = "$STR_EPOCH_ScaryPumpkinMask";
         picture = "\x\addons\a3_epoch_assets_2\gear\gear_pkinmask_x_ca.paa";
@@ -1690,7 +1696,7 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "$STR_EPOCH_RedBeret";
-        author = "Paul Tomany";
+        author = "Sequisha";
         picture = "\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         hiddenSelections[] = {"camo"};
@@ -2267,11 +2273,13 @@ class CfgWeapons
     class Rifle;
     class Rifle_Base_F : Rifle
     {
+        scope = 0;
         class WeaponSlotsInfo;
         class GunParticles;
     };
     class Rifle_Long_Base_F : Rifle_Base_F
     {
+        scope = 0;
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
             allowedSlots[] = {901};
@@ -2279,6 +2287,7 @@ class CfgWeapons
     };
     class AKM_EPOCH_Base : Rifle_Base_F
     {
+        scope = 0;
         magazines[] = {"30Rnd_762x39_Mag"};
         reloadAction = "GestureReloadEBR";
         discreteDistanceInitIndex = 0;
@@ -2458,6 +2467,7 @@ class CfgWeapons
     };
     class m4a3_EPOCH_Base : Rifle_Base_F
     {
+        scope = 0;
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow","20Rnd_556x45_UW_mag"};
         reloadAction = "GestureReloadMk20";
         discreteDistanceInitIndex = 0;
@@ -2636,6 +2646,7 @@ class CfgWeapons
     };
     class M14_EPOCH_Base : Rifle_Base_F
     {
+        scope = 0;
         magazines[] = {"20Rnd_762x51_Mag"};
         reloadAction = "GestureReloadEBR";
         discreteDistanceInitIndex = 0;
@@ -2828,6 +2839,7 @@ class CfgWeapons
     };
     class m16_EPOCH_Base : Rifle_Base_F
     {
+        scope = 0;
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow","20Rnd_556x45_UW_mag"};
         reloadAction = "GestureReloadMk20";
         discreteDistanceInitIndex = 0;
@@ -3008,6 +3020,7 @@ class CfgWeapons
     };
     class m107_EPOCH_Base : Rifle_Long_Base_F
     {
+        scope = 0;
         magazines[] = {"5Rnd_127x108_Mag","5Rnd_127x108_APDS_Mag"};
         reloadAction = "ReloadGM6";
         discreteDistanceInitIndex = 0;
@@ -3200,6 +3213,7 @@ class CfgWeapons
     };
     class m249_EPOCH_Base : Rifle_Long_Base_F
     {
+        scope = 0;
         magazines[] = {"200Rnd_556x45_M249","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow","30Rnd_556x45_Stanag"};
         reloadAction = "GestureReloadM200";
         discreteDistanceInitIndex = 0;
@@ -3393,6 +3407,7 @@ class CfgWeapons
     class UGL_F;
     class Epoch_weapon_01_Base_F : Rifle_Base_F
     {
+        scope = 0;
         magazines[] = {"30rnd_556_magazine"};
         reloadAction = "GestureReloadMX";
         discreteDistanceInitIndex = 0;
@@ -3658,13 +3673,14 @@ class CfgWeapons
     class Pistol;
     class Pistol_Base_F : Pistol
     {
+        scope = 0;
         class WeaponSlotsInfo;
         class GunParticles;
     };
     class ruger_pistol_epoch : Pistol_Base_F
     {
         scope = 2;
-        author = "kiory";
+        author = "Kiory";
         model = "\x\addons\a3_epoch_weapons\ruger.p3d";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_ruger_x_ca.paa";
         magazines[] = {"10rnd_22X44_magazine"};
@@ -3774,7 +3790,7 @@ class CfgWeapons
     class 1911_pistol_epoch : Pistol_Base_F
     {
         scope = 2;
-        author = "kiory";
+        author = "Kiory";
         model = "\x\addons\a3_epoch_weapons\1911.p3d";
         picture = "\x\addons\a3_epoch_weapons\gear\gear_1911_x_ca.paa";
         magazines[] = {"9rnd_45X88_magazine"};
@@ -3990,6 +4006,7 @@ class CfgWeapons
     };
     class MeleeWeapon : Rifle
     {
+        scope = 0;
         distanceZoomMin = 50;
         distanceZoomMax = 50;
         canDrop = 0;
@@ -4142,7 +4159,7 @@ class CfgWeapons
     class InventoryMuzzleItem_Base_F;
     class test_suppressor : ItemCore
     {
-        scope = 2;
+        scope = 0;
         displayName = "$STR_A3_cfgWeapons_muzzle_snds_H0";
         picture = "\A3\weapons_F\Data\UI\gear_acca_snds_h_CA.paa";
         model = "\A3\weapons_f\acc\acca_snds_h_F";

@@ -19,6 +19,7 @@
             "_isExtern": true
         },
         "CAManBase": {
+            "scope": 0,
             "ViewPilot": {
                 "_isExtern": true
             },
@@ -39,6 +40,7 @@
             "_inherit": "Man"
         },
         "EPOCH_CAManBase": {
+            "scope": 0,
             "HitPoints": {
                 "HitFace": {
                     "armor": 1,
@@ -416,6 +418,7 @@
             "_inherit": "CAManBase"
         },
         "Civilian_F": {
+            "scope": 0,
             "modelsides": [
                 3,
                 2,
@@ -2798,6 +2801,7 @@
             "scope": 2,
             "displayName": { "_translate" : "Ferris Wheel" },
             "model": "\\x\\addons\\a3_epoch_structures\\Ferris\\ferrisWheel.p3d",
+            "picture": "\\x\\addons\\a3_epoch_structures\\Ferris\\Data\\ferris_ca.paa",
             "placement": "vertical",
             "vehicleClass": "Structures",
             "mapSize": 20.27,
@@ -2907,7 +2911,7 @@
         },
         "bunker_epoch": {
             "scope": 2,
-            "author": "Awol",
+            "author": "AWOL",
             "displayName": { "_translate" : "Four Way Bunker" },
             "model": "\\x\\addons\\a3_epoch_community\\models\\4_way_bunker.p3d",
             "vehicleClass": "Structures",
@@ -3017,6 +3021,7 @@
             "_inherit": "Bag_Base"
         },
         "B_AssaultPack_Base": {
+            "scope": 0,
             "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Compact",
             "descriptionShort": { "_translate" : "Load: 360, Mass: 20" },
             "hiddenSelectionsTextures": [
@@ -3027,6 +3032,7 @@
             "_inherit": "Bag_Base"
         },
         "B_FieldPack_Base": {
+            "scope": 0,
             "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Gorod",
             "descriptionShort": { "_translate" : "Load: 400, Mass: 30" },
             "hiddenSelectionsTextures": [
@@ -3037,6 +3043,7 @@
             "_inherit": "Bag_Base"
         },
         "B_TacticalPack_Base": {
+            "scope": 0,
             "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Small",
             "descriptionShort": { "_translate" : "Load: 480, Mass: 40" },
             "hiddenSelectionsTextures": [
@@ -3047,6 +3054,7 @@
             "_inherit": "Bag_Base"
         },
         "B_Kitbag_Base": {
+            "scope": 0,
             "picture": "\\A3\\Weapons_F\\ammoboxes\\bags\\data\\ui\\icon_B_C_Kitbag_rgr",
             "descriptionShort": { "_translate" : "Load: 520, Mass: 50" },
             "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Fast",
@@ -3058,6 +3066,7 @@
             "_inherit": "Bag_Base"
         },
         "B_Carryall_Base": {
+            "scope": 0,
             "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Tortila",
             "descriptionShort": { "_translate" : "Load: 550, Mass: 60" },
             "picture": "\\A3\\Weapons_F\\Ammoboxes\\Bags\\data\\UI\\icon_B_C_Tortila_khk.paa",
@@ -3072,12 +3081,14 @@
             "_isExtern": true
         },
         "Car": {
+            "scope": 0,
             "HitPoints": {
                 "_isExtern": true
             },
             "_inherit": "LandVehicle"
         },
         "Car_F": {
+            "scope": 0,
             "HitPoints": {
                 "HitLFWheel": {
                     "_isExtern": true
@@ -3116,6 +3127,7 @@
             "_isExtern": true
         },
         "Ship_F": {
+            "scope": 0,
             "Eventhandlers": {
                 "_inherit": "DefaultEventhandlers"
             },
@@ -3132,7 +3144,7 @@
             "attenuationEffectType": "OpenCarAttenuation",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_vehicles\\Jetski.p3d",
-            "picture": "\\A3\\boat_F\\Boat_Transport_01\\data\\UI\\Boat_Transport_01_CA.paa",
+            "picture": "\\x\\addons\\a3_epoch_vehicles\\data\\jetski.paa",
             "Icon": "\\A3\\boat_F\\Boat_Transport_01\\data\\UI\\map_Boat_Transport_01_CA.paa",
             "cost": 50000,
             "leftEngineEffect": "LEngEffectsSmall",
@@ -4631,12 +4643,14 @@
             "_isExtern": true
         },
         "Helicopter_Base_F": {
+            "scope": 0,
             "Turrets": {
                 "_isExtern": true
             },
             "_inherit": "Helicopter"
         },
         "Helicopter_Base_H": {
+            "scope": 0,
             "Turrets": {
                 "CopilotTurret": {
                     "_isExtern": true
@@ -4669,6 +4683,7 @@
             "_inherit": "Helicopter_Base_F"
         },
         "mosquito_epoch_base": {
+            "scope": 0,
             "armor": 10,
             "altFullForce": 4000,
             "altNoForce": 6000,
@@ -5956,6 +5971,7 @@
             "_isExtern": true
         },
         "Tank": {
+            "scope": 0,
             "NewTurret": {
                 "_isExtern": true
             },
@@ -5968,6 +5984,7 @@
             "_inherit": "LandVehicle"
         },
         "Tank_F": {
+            "scope": 0,
             "Turrets": {
                 "MainTurret": {
                     "Turrets": {
@@ -6249,14 +6266,14 @@
             "_inherit": "ThingX"
         },
         "Spike_TRAP_SIM_EPOCH": {
-            "author": "Aaron Clark",
+            "author": "AWOL",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\sticks.p3d",
             "displayName": { "_translate" : "Spike Trap (SIM)" },
             "_inherit": "Constructions_modular_F"
         },
         "Metal_TRAP_SIM_EPOCH": {
-            "author": "Aaron Clark",
+            "author": "AWOL",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\sticks.p3d",
             "displayName": { "_translate" : "Metal Trap (SIM)" },
@@ -9419,6 +9436,7 @@
             "_inherit": "Transport_EPOCH"
         },
         "BloodSplat": {
+            "author": "$STR_A3_Bohemia_Interactive",
             "model": "\\A3\\characters_F\\blood_splash.p3d",
             "mapSize": 2,
             "accuracy": 1000,
@@ -9445,7 +9463,7 @@
         },
         "logo_plane_EPOCH": {
             "mapSize": 1,
-            "author": "Awol",
+            "author": "AWOL",
             "scope": 2,
             "displayName": { "_translate" : "Epoch Logo" },
             "vehicleClass": "Helpers",
@@ -9456,6 +9474,7 @@
             "_isExtern": true
         },
         "Animal_Base_F": {
+            "scope": 0,
             "EventHandlers": {
                 "_isExtern": true
             },
@@ -9484,6 +9503,7 @@
             "_inherit": "Animal_Base_F"
         },
         "Shark_Base_F": {
+            "scope": 0,
             "moves": "CfgMovesGreatWhite_F",
             "memoryPointAim": "pilot",
             "memoryPointCameraTarget": "camera",

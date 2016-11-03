@@ -9,7 +9,7 @@
         "1Rnd_Soda": {
             "picture": "",
             "displayName": { "_translate" : "Soda" },
-            "scope": 2,
+            "scope": 0,
             "descriptionShort": { "_translate" : "Soda" },
             "count": 1,
             "mass": 1,
@@ -18,7 +18,7 @@
         "1Rnd_Food": {
             "picture": "",
             "displayName": { "_translate" : "Food" },
-            "scope": 2,
+            "scope": 0,
             "descriptionShort": { "_translate" : "Food" },
             "count": 1,
             "mass": 1,
@@ -415,6 +415,7 @@
             "_inherit": "CA_Magazine"
         },
         "Item_PackedBag_base": {
+            "author": "Sequisha",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\backpack\\gear_packedBag_ca.paa",
             "scope": 0,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\PackedBag.p3d",
@@ -422,13 +423,12 @@
             "_inherit": "CA_Magazine"
         },
         "Item_AssaultPack_cbr": {
-            "author": "Sequisha",
             "displayName": "$STR_A3_B_AssaultPack_cbr0",
             "scope": 2,
             "descriptionShort": { "_translate" : "Packed Backpack" },
             "count": 1,
             "mass": 20,
-            "_inherit": "CA_Magazine"
+            "_inherit": "Item_PackedBag_base"
         },
         "Item_AssaultPack_dgtl": {
             "displayName": "$STR_A3_B_AssaultPack_dgtl0",

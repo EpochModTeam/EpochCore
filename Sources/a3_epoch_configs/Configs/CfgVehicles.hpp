@@ -23,6 +23,7 @@ class CfgVehicles
     class Man;
     class CAManBase : Man
     {
+        scope = 0;
         class ViewPilot;
         class HitPoints
         {
@@ -34,6 +35,7 @@ class CfgVehicles
     };
     class EPOCH_CAManBase : CAManBase
     {
+        scope = 0;
         class HitPoints : HitPoints
         {
             class HitFace : HitHead
@@ -388,6 +390,7 @@ class CfgVehicles
     };
     class Civilian_F : Civilian
     {
+        scope = 0;
         modelsides[] = {3,2,0};
     };
     class C_man_1 : Civilian_F
@@ -2347,6 +2350,7 @@ class CfgVehicles
         scope = 2;
         displayName = "$STR_EPOCH_FerrisWheel";
         model = "\x\addons\a3_epoch_structures\Ferris\ferrisWheel.p3d";
+        picture = "\x\addons\a3_epoch_structures\Ferris\Data\ferris_ca.paa";
         placement = "vertical";
         vehicleClass = "Structures";
         mapSize = 20.27;
@@ -2463,7 +2467,7 @@ class CfgVehicles
     class bunker_epoch : House
     {
         scope = 2;
-        author = "Awol";
+        author = "AWOL";
         displayName = "$STR_EPOCH_FourWayBunker";
         model = "\x\addons\a3_epoch_community\models\4_way_bunker.p3d";
         vehicleClass = "Structures";
@@ -2552,6 +2556,7 @@ class CfgVehicles
     };
     class B_AssaultPack_Base : Bag_Base
     {
+        scope = 0;
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Compact";
         descriptionShort = "$STR_EPOCH_Load360Mass20";
         hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_compact_khk_co.paa"};
@@ -2560,6 +2565,7 @@ class CfgVehicles
     };
     class B_FieldPack_Base : Bag_Base
     {
+        scope = 0;
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Gorod";
         descriptionShort = "$STR_EPOCH_Load400Mass30";
         hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_gorod_cbr_co.paa"};
@@ -2568,6 +2574,7 @@ class CfgVehicles
     };
     class B_TacticalPack_Base : Bag_Base
     {
+        scope = 0;
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Small";
         descriptionShort = "$STR_EPOCH_Load480Mass40";
         hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_small_co.paa"};
@@ -2576,6 +2583,7 @@ class CfgVehicles
     };
     class B_Kitbag_Base : Bag_Base
     {
+        scope = 0;
         picture = "\A3\Weapons_F\ammoboxes\bags\data\ui\icon_B_C_Kitbag_rgr";
         descriptionShort = "$STR_EPOCH_Load520Mass50";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
@@ -2585,6 +2593,7 @@ class CfgVehicles
     };
     class B_Carryall_Base : Bag_Base
     {
+        scope = 0;
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
         descriptionShort = "$STR_EPOCH_Load550Mass60";
         picture = "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_C_Tortila_khk.paa";
@@ -2595,10 +2604,12 @@ class CfgVehicles
     class LandVehicle;
     class Car : LandVehicle
     {
+        scope = 0;
         class HitPoints;
     };
     class Car_F : Car
     {
+        scope = 0;
         class HitPoints
         {
             class HitLFWheel;
@@ -2616,6 +2627,7 @@ class CfgVehicles
     class Ship;
     class Ship_F : Ship
     {
+        scope = 0;
         class Eventhandlers : DefaultEventhandlers {};
         transportMaxMagazines = 100;
         transportMaxWeapons = 20;
@@ -2630,7 +2642,7 @@ class CfgVehicles
         attenuationEffectType = "OpenCarAttenuation";
         scope = 2;
         model = "\x\addons\a3_epoch_vehicles\Jetski.p3d";
-        picture = "\A3\boat_F\Boat_Transport_01\data\UI\Boat_Transport_01_CA.paa";
+        picture = "\x\addons\a3_epoch_vehicles\data\jetski.paa";
         Icon = "\A3\boat_F\Boat_Transport_01\data\UI\map_Boat_Transport_01_CA.paa";
         cost = 50000;
         leftEngineEffect = "LEngEffectsSmall";
@@ -3518,10 +3530,12 @@ class CfgVehicles
     class Helicopter;
     class Helicopter_Base_F : Helicopter
     {
+        scope = 0;
         class Turrets;
     };
     class Helicopter_Base_H : Helicopter_Base_F
     {
+        scope = 0;
         class Turrets : Turrets
         {
             class CopilotTurret;
@@ -3539,6 +3553,7 @@ class CfgVehicles
     };
     class mosquito_epoch_base : Helicopter_Base_H
     {
+        scope = 0;
         armor = 10;
         altFullForce = 4000;
         altNoForce = 6000;
@@ -4670,12 +4685,14 @@ class CfgVehicles
     };
     class Tank : LandVehicle
     {
+        scope = 0;
         class NewTurret;
         class Sounds;
         class HitPoints;
     };
     class Tank_F : Tank
     {
+        scope = 0;
         class Turrets
         {
             class MainTurret : NewTurret
@@ -4945,14 +4962,14 @@ class CfgVehicles
     };
     class Spike_TRAP_SIM_EPOCH : Constructions_modular_F
     {
-        author = "Aaron Clark";
+        author = "AWOL";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
         displayName = "$STR_EPOCH_SpikeTrapSIM";
     };
     class Metal_TRAP_SIM_EPOCH : Constructions_modular_F
     {
-        author = "Aaron Clark";
+        author = "AWOL";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\sticks.p3d";
         displayName = "$STR_EPOCH_MetalTrapSIM";
@@ -7831,6 +7848,7 @@ class CfgVehicles
     };
     class BloodSplat : NonStrategic
     {
+        author = "$STR_A3_Bohemia_Interactive";
         model = "\A3\characters_F\blood_splash.p3d";
         mapSize = 2;
         accuracy = 1000;
@@ -7851,7 +7869,7 @@ class CfgVehicles
     class logo_plane_EPOCH : NonStrategic
     {
         mapSize = 1;
-        author = "Awol";
+        author = "AWOL";
         scope = 2;
         displayName = "$STR_EPOCH_EpochLogo";
         vehicleClass = "Helpers";
@@ -7860,6 +7878,7 @@ class CfgVehicles
     class Animal;
     class Animal_Base_F : Animal
     {
+        scope = 0;
         class EventHandlers;
     };
     class Construct_F : Animal_Base_F
@@ -7881,6 +7900,7 @@ class CfgVehicles
     };
     class Shark_Base_F : Animal_Base_F
     {
+        scope = 0;
         moves = "CfgMovesGreatWhite_F";
         memoryPointAim = "pilot";
         memoryPointCameraTarget = "camera";

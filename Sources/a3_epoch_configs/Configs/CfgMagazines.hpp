@@ -18,7 +18,7 @@ class CfgMagazines
     {
         picture = "";
         displayName = "$STR_EPOCH_Soda";
-        scope = 2;
+        scope = 0;
         descriptionShort = "$STR_EPOCH_Soda";
         count = 1;
         mass = 1;
@@ -27,7 +27,7 @@ class CfgMagazines
     {
         picture = "";
         displayName = "$STR_EPOCH_Food";
-        scope = 2;
+        scope = 0;
         descriptionShort = "$STR_EPOCH_Food";
         count = 1;
         mass = 1;
@@ -424,14 +424,14 @@ class CfgMagazines
     };
     class Item_PackedBag_base : CA_Magazine
     {
+        author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets\textures\backpack\gear_packedBag_ca.paa";
         scope = 0;
         model = "\x\addons\a3_epoch_assets\models\PackedBag.p3d";
         count = 1;
     };
-    class Item_AssaultPack_cbr : CA_Magazine
+    class Item_AssaultPack_cbr : Item_PackedBag_base
     {
-        author = "Sequisha";
         displayName = "$STR_A3_B_AssaultPack_cbr0";
         scope = 2;
         descriptionShort = "$STR_EPOCH_PackedBackpack";
