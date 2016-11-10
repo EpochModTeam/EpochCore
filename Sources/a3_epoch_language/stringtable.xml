@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <Project name="Epoch">
     <Package name="ArmA">
         <Key ID="str_epoch_pvar_Temp">
@@ -228,1109 +229,1598 @@
             <Russian>Server restart in %1 minutes.</Russian>
             <Spanish>Server restart in %1 minutes.</Spanish>
         </Key>
-        <Key ID="str_epoch_ItemHotwire_displayName">
-            <Original>Hotwire Kit</Original>
-            <English>Hotwire Kit</English>
-            <German>Vehicle Hotwire Kit</German>
-            <Czech>Vehicle Hotwire Kit</Czech>
-            <French>Vehicle Hotwire Kit</French>
-            <Italian>Vehicle Hotwire Kit</Italian>
-            <Polish>Vehicle Hotwire Kit</Polish>
-            <Portuguese>Vehicle Hotwire Kit</Portuguese>
-            <Russian>Vehicle Hotwire Kit</Russian>
-            <Spanish>Vehicle Hotwire Kit</Spanish>
+        <Key ID="STR_EPOCH_Soda">
+            <Original>Soda</Original>
         </Key>
-        <Key ID="str_epoch_ItemHotwire_descriptionShort">
-            <Original>Used to hack open door locks.</Original>
-            <English>Used to hack open door locks.</English>
-            <German>Used to unlock vehicles.</German>
-            <Czech>Used to unlock vehicles.</Czech>
-            <French>Used to unlock vehicles.</French>
-            <Italian>Used to unlock vehicles.</Italian>
-            <Polish>Used to unlock vehicles.</Polish>
-            <Portuguese>Used to unlock vehicles.</Portuguese>
-            <Russian>Used to unlock vehicles.</Russian>
-            <Spanish>Used to unlock vehicles.</Spanish>
+        <Key ID="STR_EPOCH_Food">
+            <Original>Food</Original>
         </Key>
-        <Key ID="str_epoch_ItemKeyKit_displayName">
-            <Original>Key Makers Kit</Original>
-            <English>Key Makers Kit</English>
-            <German>Key Makers Kit</German>
-            <Czech>Key Makers Kit</Czech>
-            <French>Key Makers Kit</French>
-            <Italian>Key Makers Kit</Italian>
-            <Polish>Key Makers Kit</Polish>
-            <Portuguese>Key Makers Kit</Portuguese>
-            <Russian>Key Makers Kit</Russian>
-            <Spanish>Key Makers Kit</Spanish>
+        <Key ID="STR_EPOCH_EmptyTinCan">
+            <Original>Empty Tin Can</Original>
         </Key>
-        <Key ID="str_epoch_ItemKeyKit_descriptionShort">
-            <Original>Used to craft duplicate keys.</Original>
-            <English>Used to craft duplicate keys.</English>
-            <German>Used to craft duplicate keys.</German>
-            <Czech>Used to craft duplicate keys.</Czech>
-            <French>Used to craft duplicate keys.</French>
-            <Italian>Used to craft duplicate keys.</Italian>
-            <Polish>Used to craft duplicate keys.</Polish>
-            <Portuguese>Used to craft duplicate keys.</Portuguese>
-            <Russian>Used to craft duplicate keys.</Russian>
-            <Spanish>Used to craft duplicate keys.</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemBarrelF_displayName">
-            <Original>Fuel Barrel (Full)</Original>
-            <English>Fuel Barrel (Full)</English>
-            <German>Fuel Barrel (Full)</German>
-            <Czech>Fuel Barrel (Full)</Czech>
-            <French>Fuel Barrel (Full)</French>
-            <Italian>Fuel Barrel (Full)</Italian>
-            <Polish>Fuel Barrel (Full)</Polish>
-            <Portuguese>Fuel Barrel (Full)</Portuguese>
-            <Russian>Fuel Barrel (Full)</Russian>
-            <Spanish>Fuel Barrel (Full)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemBarrelF_descriptionShort">
-            <Original>55 gallon fuel barrel.</Original>
-            <English>55 gallon fuel barrel.</English>
-            <German>55 gallon fuel barrel.</German>
-            <Czech>55 gallon fuel barrel.</Czech>
-            <French>55 gallon fuel barrel.</French>
-            <Italian>55 gallon fuel barrel.</Italian>
-            <Polish>55 gallon fuel barrel.</Polish>
-            <Portuguese>55 gallon fuel barrel.</Portuguese>
-            <Russian>55 gallon fuel barrel.</Russian>
-            <Spanish>55 gallon fuel barrel.</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemBarrelE_displayName">
-            <Original>Fuel Barrel (Empty)</Original>
-            <English>Fuel Barrel (Empty)</English>
-            <German>Fuel Barrel (Empty)</German>
-            <Czech>Fuel Barrel (Empty)</Czech>
-            <French>Fuel Barrel (Empty)</French>
-            <Italian>Fuel Barrel (Empty)</Italian>
-            <Polish>Fuel Barrel (Empty)</Polish>
-            <Portuguese>Fuel Barrel (Empty)</Portuguese>
-            <Russian>Fuel Barrel (Empty)</Russian>
-            <Spanish>Fuel Barrel (Empty)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemBarrelE_descriptionShort">
-            <Original>Empty 55 gallon fuel barrel.</Original>
-            <English>Empty 55 gallon fuel barrel.</English>
-            <German>Empty 55 gallon fuel barrel.</German>
-            <Czech>Empty 55 gallon fuel barrel.</Czech>
-            <French>Empty 55 gallon fuel barrel.</French>
-            <Italian>Empty 55 gallon fuel barrel.</Italian>
-            <Polish>Empty 55 gallon fuel barrel.</Polish>
-            <Portuguese>Empty 55 gallon fuel barrel.</Portuguese>
-            <Russian>Empty 55 gallon fuel barrel.</Russian>
-            <Spanish>Empty 55 gallon fuel barrel.</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemPipe_displayName">
-            <Original>Pipes</Original>
-            <English>Pipes</English>
-            <German>Pipes</German>
-            <Czech>Pipes</Czech>
-            <French>Pipes</French>
-            <Italian>Pipes</Italian>
-            <Polish>Pipes</Polish>
-            <Portuguese>Pipes</Portuguese>
-            <Russian>Pipes</Russian>
-            <Spanish>Pipes</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemPipe_descriptionShort">
-            <Original>Small pile of metal pipes.</Original>
-            <English>Small pile of metal pipes.</English>
-            <German>Small pile of metal pipes.</German>
-            <Czech>Small pile of metal pipes.</Czech>
-            <French>Small pile of metal pipes.</French>
-            <Italian>Small pile of metal pipes.</Italian>
-            <Polish>Small pile of metal pipes.</Polish>
-            <Portuguese>Small pile of metal pipes.</Portuguese>
-            <Russian>Small pile of metal pipes.</Russian>
-            <Spanish>Small pile of metal pipes.</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemKey_displayName">
-            <Original>Key</Original>
-            <English>Key</English>
-            <German>Key</German>
-            <Czech>Key</Czech>
-            <French>Key</French>
-            <Italian>Key</Italian>
-            <Polish>Key</Polish>
-            <Portuguese>Key</Portuguese>
-            <Russian>Key</Russian>
-            <Spanish>Key</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemKey_descriptionShort">
-            <Original>Key used in a lock.</Original>
-            <English>Key used in a lock.</English>
-            <German>Key used in a lock.</German>
-            <Czech>Key used in a lock.</Czech>
-            <French>Key used in a lock.</French>
-            <Italian>Key used in a lock.</Italian>
-            <Polish>Key used in a lock.</Polish>
-            <Portuguese>Key used in a lock.</Portuguese>
-            <Russian>Key used in a lock.</Russian>
-            <Spanish>Key used in a lock.</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemKeyBlue_displayName">
-            <Original>Key (Blue)</Original>
-            <English>Key (Blue)</English>
-            <German>Key (Blue)</German>
-            <Czech>Key (Blue)</Czech>
-            <French>Key (Blue)</French>
-            <Italian>Key (Blue)</Italian>
-            <Polish>Key (Blue)</Polish>
-            <Portuguese>Key (Blue)</Portuguese>
-            <Russian>Key (Blue)</Russian>
-            <Spanish>Key (Blue)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemKeyGreen_displayName">
-            <Original>Key (Green)</Original>
-            <English>Key (Green)</English>
-            <German>Key (Green)</German>
-            <Czech>Key (Green)</Czech>
-            <French>Key (Green)</French>
-            <Italian>Key (Green)</Italian>
-            <Polish>Key (Green)</Polish>
-            <Portuguese>Key (Green)</Portuguese>
-            <Russian>Key (Green)</Russian>
-            <Spanish>Key (Green)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemKeyRed_displayName">
-            <Original>Key (Red)</Original>
-            <English>Key (Red)</English>
-            <German>Key (Red)</German>
-            <Czech>Key (Red)</Czech>
-            <French>Key (Red)</French>
-            <Italian>Key (Red)</Italian>
-            <Polish>Key (Red)</Polish>
-            <Portuguese>Key (Red)</Portuguese>
-            <Russian>Key (Red)</Russian>
-            <Spanish>Key (Red)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemKeyYellow_displayName">
-            <Original>Key (Yellow)</Original>
-            <English>Key (Yellow)</English>
-            <German>Key (Yellow)</German>
-            <Czech>Key (Yellow)</Czech>
-            <French>Key (Yellow)</French>
-            <Italian>Key (Yellow)</Italian>
-            <Polish>Key (Yellow)</Polish>
-            <Portuguese>Key (Yellow)</Portuguese>
-            <Russian>Key (Yellow)</Russian>
-            <Spanish>Key (Yellow)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemDoc1_displayName">
-            <Original>Book</Original>
-            <English>Book</English>
-            <German>Book</German>
-            <Czech>Book</Czech>
-            <French>Book</French>
-            <Italian>Book</Italian>
-            <Polish>Book</Polish>
-            <Portuguese>Book</Portuguese>
-            <Russian>Book</Russian>
-            <Spanish>Book</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemDoc1_descriptionShort">
-            <Original>Book</Original>
-            <English>Book</English>
-            <German>Book</German>
-            <Czech>Book</Czech>
-            <French>Book</French>
-            <Italian>Book</Italian>
-            <Polish>Book</Polish>
-            <Portuguese>Book</Portuguese>
-            <Russian>Book</Russian>
-            <Spanish>Book</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemDoc2_displayName">
-            <Original>Book</Original>
-            <English>Book</English>
-            <German>Book</German>
-            <Czech>Book</Czech>
-            <French>Book</French>
-            <Italian>Book</Italian>
-            <Polish>Book</Polish>
-            <Portuguese>Book</Portuguese>
-            <Russian>Book</Russian>
-            <Spanish>Book</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemDoc3_displayName">
-            <Original>Book</Original>
-            <English>Book</English>
-            <German>Book</German>
-            <Czech>Book</Czech>
-            <French>Book</French>
-            <Italian>Book</Italian>
-            <Polish>Book</Polish>
-            <Portuguese>Book</Portuguese>
-            <Russian>Book</Russian>
-            <Spanish>Book</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemDoc4_displayName">
-            <Original>Book</Original>
-            <English>Book</English>
-            <German>Book</German>
-            <Czech>Book</Czech>
-            <French>Book</French>
-            <Italian>Book</Italian>
-            <Polish>Book</Polish>
-            <Portuguese>Book</Portuguese>
-            <Russian>Book</Russian>
-            <Spanish>Book</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemDoc5_displayName">
-            <Original>Letter</Original>
-            <English>Letter</English>
-            <German>Letter</German>
-            <Czech>Letter</Czech>
-            <French>Letter</French>
-            <Italian>Letter</Italian>
-            <Polish>Letter</Polish>
-            <Portuguese>Letter</Portuguese>
-            <Russian>Letter</Russian>
-            <Spanish>Letter</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemDoc6_displayName">
-            <Original>Book</Original>
-            <English>Book</English>
-            <German>Book</German>
-            <Czech>Book</Czech>
-            <French>Book</French>
-            <Italian>Book</Italian>
-            <Polish>Book</Polish>
-            <Portuguese>Book</Portuguese>
-            <Russian>Book</Russian>
-            <Spanish>Book</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemDoc7_displayName">
-            <Original>Letter</Original>
-            <English>Letter</English>
-            <German>Letter</German>
-            <Czech>Letter</Czech>
-            <French>Letter</French>
-            <Italian>Letter</Italian>
-            <Polish>Letter</Polish>
-            <Portuguese>Letter</Portuguese>
-            <Russian>Letter</Russian>
-            <Spanish>Letter</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemDoc8_displayName">
-            <Original>Letter</Original>
-            <English>Letter</English>
-            <German>Letter</German>
-            <Czech>Letter</Czech>
-            <French>Letter</French>
-            <Italian>Letter</Italian>
-            <Polish>Letter</Polish>
-            <Portuguese>Letter</Portuguese>
-            <Russian>Letter</Russian>
-            <Spanish>Letter</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemVehDoc1_displayName">
-            <Original>Vehicle Manual I</Original>
-            <English>Vehicle Manual I</English>
-            <German>Vehicle Manual I</German>
-            <Czech>Vehicle Manual I</Czech>
-            <French>Vehicle Manual I</French>
-            <Italian>Vehicle Manual I</Italian>
-            <Polish>Vehicle Manual I</Polish>
-            <Portuguese>Vehicle Manual I</Portuguese>
-            <Russian>Vehicle Manual I</Russian>
-            <Spanish>Vehicle Manual I</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemVehDoc2_displayName">
-            <Original>Vehicle Manual II</Original>
-            <English>Vehicle Manual II</English>
-            <German>Vehicle Manual II</German>
-            <Czech>Vehicle Manual II</Czech>
-            <French>Vehicle Manual II</French>
-            <Italian>Vehicle Manual II</Italian>
-            <Polish>Vehicle Manual II</Polish>
-            <Portuguese>Vehicle Manual II</Portuguese>
-            <Russian>Vehicle Manual II</Russian>
-            <Spanish>Vehicle Manual II</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemVehDoc3_displayName">
-            <Original>Vehicle Manual III</Original>
-            <English>Vehicle Manual III</English>
-            <German>Vehicle Manual III</German>
-            <Czech>Vehicle Manual III</Czech>
-            <French>Vehicle Manual III</French>
-            <Italian>Vehicle Manual III</Italian>
-            <Polish>Vehicle Manual III</Polish>
-            <Portuguese>Vehicle Manual III</Portuguese>
-            <Russian>Vehicle Manual III</Russian>
-            <Spanish>Vehicle Manual III</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemVehDoc4_displayName">
-            <Original>Vehicle Manual IV</Original>
-            <English>Vehicle Manual IV</English>
-            <German>Vehicle Manual IV</German>
-            <Czech>Vehicle Manual IV</Czech>
-            <French>Vehicle Manual IV</French>
-            <Italian>Vehicle Manual IV</Italian>
-            <Polish>Vehicle Manual IV</Polish>
-            <Portuguese>Vehicle Manual IV</Portuguese>
-            <Russian>Vehicle Manual IV</Russian>
-            <Spanish>Vehicle Manual IV</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemBulb_displayName">
-            <Original>Light Bulb</Original>
-            <English>Light Bulb</English>
-            <German>Light Bulb</German>
-            <Czech>Light Bulb</Czech>
-            <French>Light Bulb</French>
-            <Italian>Light Bulb</Italian>
-            <Polish>Light Bulb</Polish>
-            <Portuguese>Light Bulb</Portuguese>
-            <Russian>Light Bulb</Russian>
-            <Spanish>Light Bulb</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemBulb_descriptionShort">
-            <Original>Light Bulb in factory package. Gives off light when powered.</Original>
-            <English>Light Bulb in factory package. Gives off light when powered.</English>
-            <German>Light Bulb in factory package. Gives off light when powered.</German>
-            <Czech>Light Bulb in factory package. Gives off light when powered.</Czech>
-            <French>Light Bulb in factory package. Gives off light when powered.</French>
-            <Italian>Light Bulb in factory package. Gives off light when powered.</Italian>
-            <Polish>Light Bulb in factory package. Gives off light when powered.</Polish>
-            <Portuguese>Light Bulb in factory package. Gives off light when powered.</Portuguese>
-            <Russian>Light Bulb in factory package. Gives off light when powered.</Russian>
-            <Spanish>Light Bulb in factory package. Gives off light when powered.</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemBurlap_displayName">
-            <Original>Burlap</Original>
-            <English>Burlap</English>
-            <German>Burlap</German>
-            <Czech>Burlap</Czech>
-            <French>Burlap</French>
-            <Italian>Burlap</Italian>
-            <Polish>Burlap</Polish>
-            <Portuguese>Burlap</Portuguese>
-            <Russian>Burlap</Russian>
-            <Spanish>Burlap</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemBurlap_descriptionShort">
-            <Original>Woven fabric made from plant fibers.</Original>
-            <English>Woven fabric made from plant fibers.</English>
-            <German>Woven fabric made from plant fibers.</German>
-            <Czech>Woven fabric made from plant fibers.</Czech>
-            <French>Woven fabric made from plant fibers.</French>
-            <Italian>Woven fabric made from plant fibers.</Italian>
-            <Polish>Woven fabric made from plant fibers.</Polish>
-            <Portuguese>Woven fabric made from plant fibers.</Portuguese>
-            <Russian>Woven fabric made from plant fibers.</Russian>
-            <Spanish>Woven fabric made from plant fibers.</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemBriefcaseE_displayName">
-            <Original>Empty Briefcase</Original>
-            <English>Empty Briefcase</English>
-            <German>Empty Briefcase</German>
-            <Czech>Empty Briefcase</Czech>
-            <French>Empty Briefcase</French>
-            <Italian>Empty Briefcase</Italian>
-            <Polish>Empty Briefcase</Polish>
-            <Portuguese>Empty Briefcase</Portuguese>
-            <Russian>Empty Briefcase</Russian>
-            <Spanish>Empty Briefcase</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemBriefcaseE_descriptionShort">
-            <Original>A rectangular container, good for carrying books and papers.</Original>
-            <English>A rectangular container, good for carrying books and papers.</English>
-            <German>A rectangular container, for carrying books and papers.</German>
-            <Czech>A rectangular container, for carrying books and papers.</Czech>
-            <French>A rectangular container, for carrying books and papers.</French>
-            <Italian>A rectangular container, for carrying books and papers.</Italian>
-            <Polish>A rectangular container, for carrying books and papers.</Polish>
-            <Portuguese>A rectangular container, for carrying books and papers.</Portuguese>
-            <Russian>A rectangular container, for carrying books and papers.</Russian>
-            <Spanish>A rectangular container, for carrying books and papers.</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemAluminumBar_displayName">
-            <Original>Aluminum Bar (1oz)</Original>
-            <English>Aluminum Bar (1oz)</English>
-            <German>Aluminum Bar (1oz)</German>
-            <Czech>Aluminum Bar (1oz)</Czech>
-            <French>Aluminum Bar (1oz)</French>
-            <Italian>Aluminum Bar (1oz)</Italian>
-            <Polish>Aluminum Bar (1oz)</Polish>
-            <Portuguese>Aluminum Bar (1oz)</Portuguese>
-            <Russian>Aluminum Bar (1oz)</Russian>
-            <Spanish>Aluminum Bar (1oz)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemAluminumBar_descriptionShort">
-            <Original>Aluminum Bar (1oz)</Original>
-            <English>Aluminum Bar (1oz)</English>
-            <German>Aluminum Bar (1oz)</German>
-            <Czech>Aluminum Bar (1oz)</Czech>
-            <French>Aluminum Bar (1oz)</French>
-            <Italian>Aluminum Bar (1oz)</Italian>
-            <Polish>Aluminum Bar (1oz)</Polish>
-            <Portuguese>Aluminum Bar (1oz)</Portuguese>
-            <Russian>Aluminum Bar (1oz)</Russian>
-            <Spanish>Aluminum Bar (1oz)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemCopperBar_displayName">
-            <Original>Copper Bar (1oz)</Original>
-            <English>Copper Bar (1oz)</English>
-            <German>Copper Bar (1oz)</German>
-            <Czech>Copper Bar (1oz)</Czech>
-            <French>Copper Bar (1oz)</French>
-            <Italian>Copper Bar (1oz)</Italian>
-            <Polish>Copper Bar (1oz)</Polish>
-            <Portuguese>Copper Bar (1oz)</Portuguese>
-            <Russian>Copper Bar (1oz)</Russian>
-            <Spanish>Copper Bar (1oz)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemCopperBar_descriptionShort">
-            <Original>Copper Bar (1oz)</Original>
-            <English>Copper Bar (1oz)</English>
-            <German>Copper Bar (1oz)</German>
-            <Czech>Copper Bar (1oz)</Czech>
-            <French>Copper Bar (1oz)</French>
-            <Italian>Copper Bar (1oz)</Italian>
-            <Polish>Copper Bar (1oz)</Polish>
-            <Portuguese>Copper Bar (1oz)</Portuguese>
-            <Russian>Copper Bar (1oz)</Russian>
-            <Spanish>Copper Bar (1oz)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemTinBar_displayName">
-            <Original>Tin Bar (1oz)</Original>
-            <English>Tin Bar (1oz)</English>
-            <German>Tin Bar (1oz)</German>
-            <Czech>Tin Bar (1oz)</Czech>
-            <French>Tin Bar (1oz)</French>
-            <Italian>Tin Bar (1oz)</Italian>
-            <Polish>Tin Bar (1oz)</Polish>
-            <Portuguese>Tin Bar (1oz)</Portuguese>
-            <Russian>Tin Bar (1oz)</Russian>
-            <Spanish>Tin Bar (1oz)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemTinBar_descriptionShort">
-            <Original>Tin Bar (1oz)</Original>
-            <English>Tin Bar (1oz)</English>
-            <German>Tin Bar (1oz)</German>
-            <Czech>Tin Bar (1oz)</Czech>
-            <French>Tin Bar (1oz)</French>
-            <Italian>Tin Bar (1oz)</Italian>
-            <Polish>Tin Bar (1oz)</Polish>
-            <Portuguese>Tin Bar (1oz)</Portuguese>
-            <Russian>Tin Bar (1oz)</Russian>
-            <Spanish>Tin Bar (1oz)</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemPlywood_displayName">
-            <Original>Plywood</Original>
-            <English>Plywood</English>
-            <German>Plywood</German>
-            <Czech>Plywood</Czech>
-            <French>Plywood</French>
-            <Italian>Plywood</Italian>
-            <Polish>Plywood</Polish>
-            <Portuguese>Plywood</Portuguese>
-            <Russian>Plywood</Russian>
-            <Spanish>Plywood</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemPlywood_descriptionShort">
-            <Original>Plywood Sheets</Original>
-            <English>Plywood Sheets</English>
-            <German>Plywood Sheets</German>
-            <Czech>Plywood Sheets</Czech>
-            <French>Plywood Sheets</French>
-            <Italian>Plywood Sheets</Italian>
-            <Polish>Plywood Sheets</Polish>
-            <Portuguese>Plywood Sheets</Portuguese>
-            <Russian>Plywood Sheets</Russian>
-            <Spanish>Plywood Sheets</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemPlywoodPack_displayName">
-            <Original>Plywood</Original>
-            <English>Plywood</English>
-            <German>Plywood Pack</German>
-            <Czech>Plywood Pack</Czech>
-            <French>Plywood Pack</French>
-            <Italian>Plywood Pack</Italian>
-            <Polish>Plywood Pack</Polish>
-            <Portuguese>Plywood Pack</Portuguese>
-            <Russian>Plywood Pack</Russian>
-            <Spanish>Plywood Pack</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemPlywoodPack_descriptionShort">
-            <Original>Stack of Plywood Sheets</Original>
-            <English>Stack of Plywood Sheets</English>
-            <German>Stack of Plywood Sheets</German>
-            <Czech>Stack of Plywood Sheets</Czech>
-            <French>Stack of Plywood Sheets</French>
-            <Italian>Stack of Plywood Sheets</Italian>
-            <Polish>Stack of Plywood Sheets</Polish>
-            <Portuguese>Stack of Plywood Sheets</Portuguese>
-            <Russian>Stack of Plywood Sheets</Russian>
-            <Spanish>Stack of Plywood Sheets</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemComboLock_displayName">
-            <Original>Combination Lock</Original>
-            <English>Combination Lock</English>
-            <German>Combination Lock</German>
-            <Czech>Combination Lock</Czech>
-            <French>Combination Lock</French>
-            <Italian>Combination Lock</Italian>
-            <Polish>Combination Lock</Polish>
-            <Portuguese>Combination Lock</Portuguese>
-            <Russian>Combination Lock</Russian>
-            <Spanish>Combination Lock</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemComboLock_descriptionShort">
-            <Original>Combination Lock</Original>
-            <English>Combination Lock</English>
-            <German>Combination Lock</German>
-            <Czech>Combination Lock</Czech>
-            <French>Combination Lock</French>
-            <Italian>Combination Lock</Italian>
-            <Polish>Combination Lock</Polish>
-            <Portuguese>Combination Lock</Portuguese>
-            <Russian>Combination Lock</Russian>
-            <Spanish>Combination Lock</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_AssaultPack_cbr_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_AssaultPack_dgtl_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_AssaultPack_khk_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_AssaultPack_mcamo_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_AssaultPack_ocamo_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_AssaultPack_rgr_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_AssaultPack_sgg_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_AssaultPack_blk_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_Carryall_cbr_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_Carryall_khk_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_Carryall_mcamo_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_Carryall_ocamo_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_Carryall_oli_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_Carryall_oucamo_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_FieldPack_blk_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_FieldPack_cbr_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_FieldPack_khk_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_FieldPack_ocamo_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_FieldPack_oli_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_FieldPack_oucamo_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_Kitbag_cbr_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_Kitbag_mcamo_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_Kitbag_rgr_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_Kitbag_sgg_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_TacticalPack_blk_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_TacticalPack_mcamo_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_TacticalPack_ocamo_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_TacticalPack_oli_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_TacticalPack_rgr_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_smallbackpack_red_displayName">
-            <Original>Small Backpack (Red)</Original>
-            <English>Small Backpack (Red)</English>
-            <German>Small Backpack (Red)</German>
-            <Czech>Small Backpack (Red)</Czech>
-            <French>Small Backpack (Red)</French>
-            <Italian>Small Backpack (Red)</Italian>
-            <Polish>Small Backpack (Red)</Polish>
-            <Portuguese>Small Backpack (Red)</Portuguese>
-            <Russian>Small Backpack (Red)</Russian>
-            <Spanish>Small Backpack (Red)</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_smallbackpack_red_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_smallbackpack_green_displayName">
-            <Original>Small Backpack (Green)</Original>
-            <English>Small Backpack (Green)</English>
-            <German>Small Backpack (Green)</German>
-            <Czech>Small Backpack (Green)</Czech>
-            <French>Small Backpack (Green)</French>
-            <Italian>Small Backpack (Green)</Italian>
-            <Polish>Small Backpack (Green)</Polish>
-            <Portuguese>Small Backpack (Green)</Portuguese>
-            <Russian>Small Backpack (Green)</Russian>
-            <Spanish>Small Backpack (Green)</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_smallbackpack_green_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_smallbackpack_teal_displayName">
-            <Original>Small Backpack (Teal)</Original>
-            <English>Small Backpack (Teal)</English>
-            <German>Small Backpack (Teal)</German>
-            <Czech>Small Backpack (Teal)</Czech>
-            <French>Small Backpack (Teal)</French>
-            <Italian>Small Backpack (Teal)</Italian>
-            <Polish>Small Backpack (Teal)</Polish>
-            <Portuguese>Small Backpack (Teal)</Portuguese>
-            <Russian>Small Backpack (Teal)</Russian>
-            <Spanish>Small Backpack (Teal)</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_smallbackpack_teal_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_smallbackpack_pink_displayName">
-            <Original>Small Backpack (Pink)</Original>
-            <English>Small Backpack (Pink)</English>
-            <German>Small Backpack (Pink)</German>
-            <Czech>Small Backpack (Pink)</Czech>
-            <French>Small Backpack (Pink)</French>
-            <Italian>Small Backpack (Pink)</Italian>
-            <Polish>Small Backpack (Pink)</Polish>
-            <Portuguese>Small Backpack (Pink)</Portuguese>
-            <Russian>Small Backpack (Pink)</Russian>
-            <Spanish>Small Backpack (Pink)</Spanish>
-        </Key>
-        <Key ID="str_epoch_Item_smallbackpack_pink_descriptionShort">
-            <Original>Packed Backpack</Original>
-            <English>Packed Backpack</English>
-            <German>Packed Backpack</German>
-            <Czech>Packed Backpack</Czech>
-            <French>Packed Backpack</French>
-            <Italian>Packed Backpack</Italian>
-            <Polish>Packed Backpack</Polish>
-            <Portuguese>Packed Backpack</Portuguese>
-            <Russian>Packed Backpack</Russian>
-            <Spanish>Packed Backpack</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemSodaAlpineDude_displayName">
-            <Original>Alpine Dude Soda</Original>
-            <English>Alpine Dude Soda</English>
-            <German>Alpine Dude Soda</German>
-            <Czech>Alpine Dude Soda</Czech>
-            <French>Alpine Dude Soda</French>
-            <Italian>Alpine Dude Soda</Italian>
-            <Polish>Alpine Dude Soda</Polish>
-            <Portuguese>Alpine Dude Soda</Portuguese>
-            <Russian>Alpine Dude Soda</Russian>
-            <Spanish>Alpine Dude Soda</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemSodaAlpineDude_descriptionShort">
-            <Original>Do the dude!</Original>
-            <English>Do the dude!</English>
-            <German>Do the dude!</German>
-            <Czech>Do the dude!</Czech>
-            <French>Do the dude!</French>
-            <Italian>Do the dude!</Italian>
-            <Polish>Do the dude!</Polish>
-            <Portuguese>Do the dude!</Portuguese>
-            <Russian>Do the dude!</Russian>
-            <Spanish>Do the dude!</Spanish>
-        </Key>
-        <Key ID="str_epoch_ItemSodaEmpty_displayName">
+        <Key ID="STR_EPOCH_EmptySodaCan">
             <Original>Empty Soda Can</Original>
-            <English>Empty Soda Can</English>
-            <German>Empty Soda Can</German>
-            <Czech>Empty Soda Can</Czech>
-            <French>Empty Soda Can</French>
-            <Italian>Empty Soda Can</Italian>
-            <Polish>Empty Soda Can</Polish>
-            <Portuguese>Empty Soda Can</Portuguese>
-            <Russian>Empty Soda Can</Russian>
-            <Spanish>Empty Soda Can</Spanish>
         </Key>
-        <Key ID="str_epoch_ItemSodaEmpty_descriptionShort">
+        <Key ID="STR_EPOCH_EmptyAluminumSodaCan">
             <Original>Empty Aluminum Soda Can</Original>
-            <English>Empty Aluminum Soda Can</English>
-            <German>Empty Aluminum Soda Can</German>
-            <Czech>Empty Aluminum Soda Can</Czech>
-            <French>Empty Aluminum Soda Can</French>
-            <Italian>Empty Aluminum Soda Can</Italian>
-            <Polish>Empty Aluminum Soda Can</Polish>
-            <Portuguese>Empty Aluminum Soda Can</Portuguese>
-            <Russian>Empty Aluminum Soda Can</Russian>
-            <Spanish>Empty Aluminum Soda Can</Spanish>
         </Key>
-        <Key ID="str_epoch_ItemEmptyTin_displayName">
-            <Original>Empty Tin Can</Original>
-            <English>Empty Tin Can</English>
-            <German>Empty Tin Can</German>
-            <Czech>Empty Tin Can</Czech>
-            <French>Empty Tin Can</French>
-            <Italian>Empty Tin Can</Italian>
-            <Polish>Empty Tin Can</Polish>
-            <Portuguese>Empty Tin Can</Portuguese>
-            <Russian>Empty Tin Can</Russian>
-            <Spanish>Empty Tin Can</Spanish>
+        <Key ID="STR_EPOCH_10Rnd22magazine">
+            <Original>10Rnd .22 magazine</Original>
         </Key>
-        <Key ID="str_epoch_ItemEmptyTin_descriptionShort">
-            <Original>Empty Tin Can</Original>
-            <English>Empty Tin Can</English>
-            <German>Empty Tin Can</German>
-            <Czech>Empty Tin Can</Czech>
-            <French>Empty Tin Can</French>
-            <Italian>Empty Tin Can</Italian>
-            <Polish>Empty Tin Can</Polish>
-            <Portuguese>Empty Tin Can</Portuguese>
-            <Russian>Empty Tin Can</Russian>
-            <Spanish>Empty Tin Can</Spanish>
+        <Key ID="STR_EPOCH_AtenroundmagazinefortheRuger">
+            <Original>A ten round magazine for the Ruger.</Original>
         </Key>
-        <Key ID="str_epoch_ItemBriefcaseGold100oz_displayName">
+        <Key ID="STR_EPOCH_9Rnd45magazine">
+            <Original>9Rnd .45 magazine</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Anineroundmagazineforthe1911">
+            <Original>A nine round magazine for the 1911.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Spearround">
+            <Original>Spear round</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Aspearforthespearrifle">
+            <Original>A spear for the spear rifle.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_20Rnd762Magazine">
+            <Original>20Rnd 7.62 Magazine</Original>
+        </Key>
+        <Key ID="STR_EPOCH_20rounddetachableboxmagazine">
+            <Original>20-round detachable box magazine</Original>
+        </Key>
+        <Key ID="STR_EPOCH_30Rnd556Magazine">
+            <Original>30Rnd 5.56 Magazine</Original>
+        </Key>
+        <Key ID="STR_EPOCH_30RoundStanagMagazine">
+            <Original>30 Round Stanag Magazine</Original>
+        </Key>
+        <Key ID="STR_EPOCH_762mm30rndAKMMag">
+            <Original>7.62mm 30rnd AKM Mag</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Caliber762x39mmUsedinAKMRPK">
+            <Original>Caliber: 7.62x39 mm, Used in: AKM, RPK</Original>
+        </Key>
+        <Key ID="STR_EPOCH_556mm200rndSawBelt">
+            <Original>5.56mm 200rnd Saw Belt</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Caliber556x45mmUsedinM249Saw">
+            <Original>Caliber: 5.56x45 mm, Used in: M249 Saw</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HotwireKit">
+            <Original>Hotwire Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Usedtohackopendoorlocks">
+            <Original>Used to hack open door locks.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeyMakersKit">
+            <Original>Key Makers Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Usedtocraftduplicatekeys">
+            <Original>Used to craft duplicate keys.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FuelBarrelFull">
+            <Original>Fuel Barrel (Full)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_55gallonfuelbarrel">
+            <Original>55 gallon fuel barrel.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FuelBarrelEmpty">
+            <Original>Fuel Barrel (Empty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Empty55gallonfuelbarrel">
+            <Original>Empty 55 gallon fuel barrel.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Pipes">
+            <Original>Pipes</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Smallpileofmetalpipes">
+            <Original>Small pile of metal pipes.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Key">
+            <Original>Key</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Keyusedinalock">
+            <Original>Key used in a lock.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeyBlue">
+            <Original>Key (Blue)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeyGreen">
+            <Original>Key (Green)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeyRed">
+            <Original>Key (Red)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeyYellow">
+            <Original>Key (Yellow)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Book">
+            <Original>Book</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Letter">
+            <Original>Letter</Original>
+        </Key>
+        <Key ID="STR_EPOCH_VehicleManualI">
+            <Original>Vehicle Manual I</Original>
+        </Key>
+        <Key ID="STR_EPOCH_VehicleManualII">
+            <Original>Vehicle Manual II</Original>
+        </Key>
+        <Key ID="STR_EPOCH_VehicleManualIII">
+            <Original>Vehicle Manual III</Original>
+        </Key>
+        <Key ID="STR_EPOCH_VehicleManualIV">
+            <Original>Vehicle Manual IV</Original>
+        </Key>
+        <Key ID="STR_EPOCH_LightBulb">
+            <Original>Light Bulb</Original>
+        </Key>
+        <Key ID="STR_EPOCH_LightBulbinfactorypackageGivesofflightwhenpowered">
+            <Original>Light Bulb in factory package. Gives off light when powered.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Burlap">
+            <Original>Burlap</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Wovenfabricmadefromplantfibers">
+            <Original>Woven fabric made from plant fibers.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EmptyBriefcase">
+            <Original>Empty Briefcase</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Arectangularcontainergoodforcarryingbooksandpapers">
+            <Original>A rectangular container, good for carrying books and papers.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FullBriefcaseGold">
             <Original>Full Briefcase (Gold)</Original>
-            <English>Full Briefcase (Gold)</English>
-            <German>Full Briefcase (Gold)</German>
-            <Czech>Full Briefcase (Gold)</Czech>
-            <French>Full Briefcase (Gold)</French>
-            <Italian>Full Briefcase (Gold)</Italian>
-            <Polish>Full Briefcase (Gold)</Polish>
-            <Portuguese>Full Briefcase (Gold)</Portuguese>
-            <Russian>Full Briefcase (Gold)</Russian>
-            <Spanish>Full Briefcase (Gold)</Spanish>
         </Key>
-        <Key ID="str_epoch_ItemBriefcaseGold100oz_descriptionShort">
+        <Key ID="STR_EPOCH_Briefcasethatcontainsten10oz100ozGoldBars">
             <Original>Briefcase that contains ten 10oz (100oz) Gold Bars.</Original>
-            <English>Briefcase that contains ten 10oz (100oz) Gold Bars.</English>
-            <German>Briefcase that contains ten 10oz (100oz) Gold Bars.</German>
-            <Czech>Briefcase that contains ten 10oz (100oz) Gold Bars.</Czech>
-            <French>Briefcase that contains ten 10oz (100oz) Gold Bars.</French>
-            <Italian>Briefcase that contains ten 10oz (100oz) Gold Bars.</Italian>
-            <Polish>Briefcase that contains ten 10oz (100oz) Gold Bars.</Polish>
-            <Portuguese>Briefcase that contains ten 10oz (100oz) Gold Bars.</Portuguese>
-            <Russian>Briefcase that contains ten 10oz (100oz) Gold Bars.</Russian>
-            <Spanish>Briefcase that contains ten 10oz (100oz) Gold Bars.</Spanish>
+        </Key>
+        <Key ID="STR_EPOCH_AluminumBar1oz">
+            <Original>Aluminum Bar (1oz)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CopperBar1oz">
+            <Original>Copper Bar (1oz)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TinBar1oz">
+            <Original>Tin Bar (1oz)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Plywood">
+            <Original>Plywood</Original>
+        </Key>
+        <Key ID="STR_EPOCH_StackofPlywoodSheets">
+            <Original>Stack of Plywood Sheets</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CombinationLock">
+            <Original>Combination Lock</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PackedBackpack">
+            <Original>Packed Backpack</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SmallBackpackRed">
+            <Original>Small Backpack (Red)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SmallBackpackGreen">
+            <Original>Small Backpack (Green)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SmallBackpackTeal">
+            <Original>Small Backpack (Teal)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SmallBackpackPink">
+            <Original>Small Backpack (Pink)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Honey">
+            <Original>Honey</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Probablycollectedsometimeago">
+            <Original>Probably collected some time ago.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Water">
+            <Original>Water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Jarredwatermayormaynotcontainparasites">
+            <Original>Jarred water, may or may not contain parasites.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Jarredwaterwasonceboiledunlikelytocontainparasites">
+            <Original>Jarred water, was once boiled unlikely to contain parasites.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Emptyjar">
+            <Original>Empty jar</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Couldbefilledwithmanythings">
+            <Original>Could be filled with many things.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Sardines">
+            <Original>Sardines</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Smallfishnobodylikesthem">
+            <Original>Small fish, nobody likes them.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Meatballs">
+            <Original>Meatballs</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Warningwillmakeyoufat">
+            <Original>Warning, will make you fat.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Scam">
+            <Original>Scam</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Wasgiventhenameduetofakemeat">
+            <Original>Was given the name due to fake meat.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Sweetcorn">
+            <Original>Sweetcorn</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Cheapbrandstilltasty">
+            <Original>Cheap brand, still tasty.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Jerrycan">
+            <Original>Jerrycan</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FullofFuel">
+            <Original>Full of Fuel.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_JerrycanEmpty">
+            <Original>Jerrycan (Empty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Trustworthyforgettingfuel">
+            <Original>Trustworthy for getting fuel.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Lighter">
+            <Original>Lighter</Original>
+        </Key>
+        <Key ID="STR_EPOCH_AveryordinarylookinglighterBURNSTUFF">
+            <Original>A very ordinary looking lighter, BURN STUFF!</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Lockbox">
+            <Original>Lockbox</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Semisecurelockbox">
+            <Original>Semi secure lockbox</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Safe">
+            <Original>Safe</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SecureSafe">
+            <Original>Secure Safe</Original>
+        </Key>
+        <Key ID="STR_EPOCH_LumberPack">
+            <Original>Lumber Pack</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Lumberinastack">
+            <Original>Lumber in a stack</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CinderBlocks">
+            <Original>Cinder Blocks</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Stackofninecinderblocks">
+            <Original>Stack of nine cinder blocks</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BucketofMortar">
+            <Original>Bucket of Mortar</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Premixedmasticadhesivethatwillbondtoconcreteblock">
+            <Original>Premixed mastic adhesive that will bond to concrete block.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KiloofHemp">
+            <Original>Kilo of Hemp</Original>
+        </Key>
+        <Key ID="STR_EPOCH_AlpineDudeSoda">
+            <Original>Alpine Dude Soda</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Dothedude">
+            <Original>Do the dude!</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RedGull">
+            <Original>Red Gull</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RedGullSoda">
+            <Original>Red Gull Soda</Original>
+        </Key>
+        <Key ID="STR_EPOCH_OrangeSherbet">
+            <Original>Orange Sherbet</Original>
+        </Key>
+        <Key ID="STR_EPOCH_OrangeSherbetSoda">
+            <Original>Orange Sherbet Soda</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PurpleNurple">
+            <Original>Purple Nurple</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PurpleNurpleSoda">
+            <Original>Purple Nurple Soda</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MochaCola">
+            <Original>Mocha Cola</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MochaColaSoda">
+            <Original>Mocha Cola Soda</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BurstKoke">
+            <Original>Burst Koke</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BurstKokeSoda">
+            <Original>Burst Koke Soda</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RainbowTrout">
+            <Original>Rainbow Trout</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RainbowTroutAsmallfishthatcanbefairlyeasytocatch">
+            <Original>Rainbow Trout: A small fish that can be fairly easy to catch.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SeaBass">
+            <Original>Sea Bass</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SeaBassAmediumsizedfishthatisfairlyrare">
+            <Original>Sea Bass: A medium sized fish that is fairly rare.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BlueFinTuna">
+            <Original>Blue Fin Tuna</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BlueFinTunaAverylargeandhardtocatchfishSushianyone">
+            <Original>Blue Fin Tuna: A very large and hard to catch fish. Sushi anyone?</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RainbowTroutCooked">
+            <Original>Rainbow Trout (Cooked)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SeaBassCooked">
+            <Original>Sea Bass (Cooked)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BlueFinTunaCooked">
+            <Original>Blue Fin Tuna (Cooked)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BioMeat">
+            <Original>Bio Meat</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BioMeatAverygoodsourceofnutritionandaveryhighchanceofinfect96">
+            <Original>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MeepsCandy">
+            <Original>Meeps Candy</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Pumpkinmarshmallowcandy">
+            <Original>Pumpkin marshmallow candy</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SnootersCandy">
+            <Original>Snooters Candy</Original>
+        </Key>
+        <Key ID="STR_EPOCH_NothungrygrabaSnooters">
+            <Original>Not hungry? grab a Snooters</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WalkNSonsSoda">
+            <Original>Walk N' Sons Soda</Original>
+        </Key>
+        <Key ID="STR_EPOCH_StuckwalkingrabaWalkNSonsSoda">
+            <Original>Stuck walkin' grab a Walk N' Sons Soda</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Topaz">
+            <Original>Topaz</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Onyx">
+            <Original>Onyx</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Sapphire">
+            <Original>Sapphire</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Amethyst">
+            <Original>Amethyst</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Emerald">
+            <Original>Emerald</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Citrine">
+            <Original>Citrine</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Ruby">
+            <Original>Ruby</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Quartz">
+            <Original>Quartz</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Jade">
+            <Original>Jade</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Garnet">
+            <Original>Garnet</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Jack">
+            <Original>Jack</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ContainsmmmBacon">
+            <Original>Contains: mmm... Bacon!</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FoodCoolerempty">
+            <Original>Food Cooler (empty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SealaMealitscoldinhere">
+            <Original>Seal-a-Meal, its cold in here.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FoodCooler">
+            <Original>Food Cooler</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ContainsCookedSnakeMeat">
+            <Original>Contains: Cooked Snake Meat</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ContainsCookedRabbitMeat">
+            <Original>Contains: Cooked Rabbit Meat</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ContainsCookedChicken">
+            <Original>Contains: Cooked Chicken</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ContainsCookedGoatLeg">
+            <Original>Contains: Cooked Goat Leg</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ContainsCookedSheepLeg">
+            <Original>Contains: Cooked Sheep Leg</Original>
+        </Key>
+        <Key ID="STR_EPOCH_2StrokeEngineOil">
+            <Original>2-Stroke Engine Oil</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Document">
+            <Original>Document</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Unknowndocument">
+            <Original>Unknown document</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MissionDocument">
+            <Original>Mission Document</Original>
+        </Key>
+        <Key ID="STR_EPOCH_AveryimportantmessageEyesOnly">
+            <Original>A very important message, Eyes Only !</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Silver">
+            <Original>Silver</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SilverBar">
+            <Original>Silver Bar</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Gold">
+            <Original>Gold</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GoldBar">
+            <Original>Gold Bar</Original>
+        </Key>
+        <Key ID="STR_EPOCH_10ozGold">
+            <Original>10oz Gold</Original>
+        </Key>
+        <Key ID="STR_EPOCH_10x1ozGoldBar">
+            <Original>10 x 1oz Gold Bar</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Rock">
+            <Original>Rock</Original>
+        </Key>
+        <Key ID="STR_EPOCH_UsedforcraftingfireplacesandmortarCanbeminedfromrocksusingasl86">
+            <Original>Used for crafting fireplaces and mortar. Can be mined from rocks using a sledgehammer.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Stick">
+            <Original>Stick</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Usedforcrafting">
+            <Original>Used for crafting.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Rope">
+            <Original>Rope</Original>
+        </Key>
+        <Key ID="STR_EPOCH_IronOre">
+            <Original>Iron Ore</Original>
+        </Key>
+        <Key ID="STR_EPOCH_UsedforcraftingscrapmetalCanbeminedfromrocksusingasledgehammer76">
+            <Original>Used for crafting scrap metal. Can be mined from rocks using a sledgehammer.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SilverOre">
+            <Original>Silver Ore</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canbeminedfromrocksusingasledgehammer">
+            <Original>Can be mined from rocks using a sledgehammer.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GoldOre">
+            <Original>Gold Ore</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Brandnewbackpackstillinthepackage">
+            <Original>Brand new backpack still in the package</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarPanels">
+            <Original>Solar Panels</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Nextgensolarpanels">
+            <Original>Next gen solar panels</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WireCables">
+            <Original>Wire Cables</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Copperwireisulatedwithrubber">
+            <Original>Copper wire isulated with rubber.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EnclosedBattery">
+            <Original>Enclosed Battery</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Batteryinaprotectivecase">
+            <Original>Battery in a protective case.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalScraps">
+            <Original>Metal Scraps</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Pieceofmetalscrap">
+            <Original>Piece of metal scrap</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SalvageMetalSmall">
+            <Original>Salvage Metal (Small)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Smallpileofassortedmetalparts">
+            <Original>Small pile of assorted metal parts</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SalvageMetalLarge">
+            <Original>Salvage Metal (Large)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Largepileofassortedmetalparts">
+            <Original>Large pile of assorted metal parts</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Testmagazine">
+            <Original>Test magazine</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Usedtoshoottestbullets">
+            <Original>Used to shoot test bullets</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Rollinsmagazine">
+            <Original>Rollins magazine</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Rollins5RndMagazine">
+            <Original>Rollins 5Rnd Magazine</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ChainsawGas">
+            <Original>Chainsaw Gas</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Swing">
+            <Original>Swing</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Testtracermagazine">
+            <Original>Test tracer magazine</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Usedtoshoottesttracerbullets">
+            <Original>Used to shoot test tracer bullets</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Smallenergypack">
+            <Original>Small energy pack</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Twopartcontainerfilledwithenoughenergyandmatterforoneuse">
+            <Original>Two part container filled with enough energy and matter for one use</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Largeenergypack">
+            <Original>Large energy pack</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Largetwopartcontainerfilledwithenoughenergyandmatter10uses">
+            <Original>Large two part container filled with enough energy and matter 10 uses</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WhiskyNoodle">
+            <Original>Whisky Noodle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SayitslowDrinkitfast">
+            <Original>Say it slow, Drink it fast..</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Electroniccomponents">
+            <Original>Electronic components</Original>
+        </Key>
+        <Key ID="STR_EPOCH_VehicleRepairParts">
+            <Original>Vehicle Repair Parts</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Repairsthemostdamagedpart">
+            <Original>Repairs the most damaged part</Original>
+        </Key>
+        <Key ID="STR_EPOCH_VehicleRepairKit">
+            <Original>Vehicle Repair Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Fullyrepairsanyvehicle">
+            <Original>Fully repairs any vehicle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ScrapPelt">
+            <Original>Scrap Pelt</Original>
+        </Key>
+        <Key ID="STR_EPOCH_VenomSack">
+            <Original>Venom Sack</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SnakeCarcass">
+            <Original>Snake Carcass</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Guttedandcleaned">
+            <Original>Gutted and cleaned</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CookedSnakeMeat">
+            <Original>Cooked Snake Meat</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Tasteslikechicken">
+            <Original>Tastes like chicken.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RabbitCarcass">
+            <Original>Rabbit Carcass</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CookedRabbit">
+            <Original>Cooked Rabbit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MmmTasty">
+            <Original>Mmm Tasty!</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ChickenCarcass">
+            <Original>Chicken Carcass</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CookedChicken">
+            <Original>Cooked Chicken</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Roastedtoperfection">
+            <Original>Roasted to perfection!</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RawGoatLeg">
+            <Original>Raw Goat Leg</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RawDogLeg">
+            <Original>Raw Dog Leg</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CookedGoatLeg">
+            <Original>Cooked Goat Leg</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CookedDogLeg">
+            <Original>Cooked Dog Leg</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RawSheepLeg">
+            <Original>Raw Sheep Leg</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CookedSheepLeg">
+            <Original>Cooked Sheep Leg</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodenSpikeTrap">
+            <Original>Wooden Spike Trap</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalSpikeTrap">
+            <Original>Metal Spike Trap</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodenStudWall">
+            <Original>Wooden Stud Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodenFloor">
+            <Original>Wooden Floor</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodenStairs">
+            <Original>Wooden Stairs</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodenTower">
+            <Original>Wooden Tower</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodenRamp">
+            <Original>Wooden Ramp</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TankTrap">
+            <Original>Tank Trap</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HescoWide">
+            <Original>Hesco Wide</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodenLadder">
+            <Original>Wooden Ladder</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Fireplace">
+            <Original>Fireplace</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TiPiKit">
+            <Original>TiPi Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TeePeeTiPi">
+            <Original>TeePee (TiPi)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ShelfKit">
+            <Original>Shelf Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Shelf">
+            <Original>Shelf</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WorkbenchKit">
+            <Original>Workbench Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Workbench">
+            <Original>Workbench</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ConcreteFoundation">
+            <Original>Concrete Foundation</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodFoundation">
+            <Original>Wood Foundation</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarGeneratorKit">
+            <Original>Solar Generator Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FrequencyJammer">
+            <Original>Frequency Jammer</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CinderWall">
+            <Original>Cinder Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintCan">
+            <Original>Paint Can</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CrustOLeumOilbasedprotectiveenamel">
+            <Original>Crust-O-Leum, Oil based protective enamel.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintStripper">
+            <Original>Paint Stripper</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Removespaintandotherfinishes">
+            <Original>Removes paint and other finishes.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintCanBlack">
+            <Original>Paint Can (Black)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintCanBlue">
+            <Original>Paint Can (Blue)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintCanBrown">
+            <Original>Paint Can (Brown)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintCanGreen">
+            <Original>Paint Can (Green)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintCanOrange">
+            <Original>Paint Can (Orange)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintCanPurple">
+            <Original>Paint Can (Purple)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintCanRed">
+            <Original>Paint Can (Red)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintCanTeal">
+            <Original>Paint Can (Teal)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PaintCanYellow">
+            <Original>Paint Can (Yellow)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Poppy">
+            <Original>Poppy</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Podoffofapoppyplant">
+            <Original>Pod off of a poppy plant.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Goldenseal">
+            <Original>Goldenseal</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Helpsreducetoxicity">
+            <Original>Helps reduce toxicity</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Pumpkin">
+            <Original>Pumpkin</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MoistTowelette">
+            <Original>Moist Towelette</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Tearopenpacketremovetoweletteanduse">
+            <Original>Tear open packet, remove towelette and use.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HeatPack">
+            <Original>Heat Pack</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Dontsufferinthecoldjustopenoneoftheseandgettoasty">
+            <Original>Don't suffer in the cold... just open one of these and get toasty!</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ColdPack">
+            <Original>Cold Pack</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RunningHotcoolitoff">
+            <Original>Running Hot? cool it off!</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EpochPlayerSlot">
+            <Original>Epoch Player Slot</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EpochMilitiaSoldier">
+            <Original>Epoch Militia Soldier</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EpochMilitiaGuerilla">
+            <Original>Epoch Militia Guerilla</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EpochMilitiaGhillie">
+            <Original>Epoch Militia Ghillie</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TESTUnderwear">
+            <Original>TEST: Underwear</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleWetsuit">
+            <Original>Female Wetsuit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleWetsuitwhite">
+            <Original>Female Wetsuit (white)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleWetsuitblue">
+            <Original>Female Wetsuit (blue)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleWetsuitpurple">
+            <Original>Female Wetsuit (purple)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleWetsuitcamo">
+            <Original>Female Wetsuit (camo)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleGhillietan">
+            <Original>Female Ghillie (tan)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleGhillielightgreen">
+            <Original>Female Ghillie (light green)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleGhilliegreen">
+            <Original>Female Ghillie (green)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamo">
+            <Original>Female Camo</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoBlue">
+            <Original>Female Camo (Blue)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoBrown">
+            <Original>Female Camo (Brown)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoRed">
+            <Original>Female Camo (Red)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Female">
+            <Original>Female</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Male">
+            <Original>Male</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Cloak">
+            <Original>Cloak</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Sapper">
+            <Original>Sapper</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SapperToxic">
+            <Original>Sapper (Toxic)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SapperBloated">
+            <Original>Sapper (Bloated)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie1">
+            <Original>Zombie 1</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie2">
+            <Original>Zombie 2</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie3">
+            <Original>Zombie 3</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie4">
+            <Original>Zombie 4</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie5">
+            <Original>Zombie 5</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie1Crawler">
+            <Original>Zombie 1 (Crawler)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie2Crawler">
+            <Original>Zombie 2 (Crawler)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie3Crawler">
+            <Original>Zombie 3 (Crawler)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie4Crawler">
+            <Original>Zombie 4 (Crawler)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie5Crawler">
+            <Original>Zombie 5 (Crawler)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie1Spider">
+            <Original>Zombie 1 (Spider)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie2Spider">
+            <Original>Zombie 2 (Spider)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie3Spider">
+            <Original>Zombie 3 (Spider)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie4Spider">
+            <Original>Zombie 4 (Spider)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie5Spider">
+            <Original>Zombie 5 (Spider)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie1Boss">
+            <Original>Zombie 1 (Boss)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie2Boss">
+            <Original>Zombie 2 (Boss)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie3Boss">
+            <Original>Zombie 3 (Boss)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie4Boss">
+            <Original>Zombie 4 (Boss)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie5Boss">
+            <Original>Zombie 5 (Boss)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie1Walker">
+            <Original>Zombie 1 (Walker)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie2Walker">
+            <Original>Zombie 2 (Walker)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie3Walker">
+            <Original>Zombie 3 (Walker)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie4Walker">
+            <Original>Zombie 4 (Walker)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie5Walker">
+            <Original>Zombie 5 (Walker)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie1Medium">
+            <Original>Zombie 1 (Medium)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie2Medium">
+            <Original>Zombie 2 (Medium)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie3Medium">
+            <Original>Zombie 3 (Medium)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie4Medium">
+            <Original>Zombie 4 (Medium)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Zombie5Medium">
+            <Original>Zombie 5 (Medium)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FerrisWheel">
+            <Original>Ferris Wheel</Original>
+        </Key>
+        <Key ID="STR_EPOCH_StartRide">
+            <Original>Start Ride</Original>
+        </Key>
+        <Key ID="STR_EPOCH_StopRide">
+            <Original>Stop Ride</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FourWayBunker">
+            <Original>Four Way Bunker</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Load360Mass20">
+            <Original>Load: 360, Mass: 20</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Load400Mass30">
+            <Original>Load: 400, Mass: 30</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Load480Mass40">
+            <Original>Load: 480, Mass: 40</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Load520Mass50">
+            <Original>Load: 520, Mass: 50</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Load550Mass60">
+            <Original>Load: 550, Mass: 60</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BlueJetski">
+            <Original>Blue Jetski</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Push">
+            <Original>Push</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ElectricMotorcycle">
+            <Original>Electric Motorcycle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FlipElectricMotorcycle">
+            <Original>Flip Electric Motorcycle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Mosquito">
+            <Original>Mosquito</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FlipATV">
+            <Original>Flip ATV</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Container">
+            <Original>Container</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Search">
+            <Original>Search</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Open">
+            <Original>Open</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bobber">
+            <Original>Bobber</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TakeKrypto">
+            <Original>Take Krypto</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SpikeTrapSIM">
+            <Original>Spike Trap (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalTrapSIM">
+            <Original>Metal Trap (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TankTrapSIM">
+            <Original>Tank Trap (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HescoWideSIM">
+            <Original>Hesco Wide (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SapperHead">
+            <Original>Sapper Head</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SapperCorpse">
+            <Original>Sapper Corpse</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EmptyFireplaceSIM">
+            <Original>Empty Fireplace (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Raise">
+            <Original>Raise</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Lower">
+            <Original>Lower</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Pickup">
+            <Original>Pickup</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodRamp">
+            <Original>Wood Ramp</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HalfCinderBlockWall">
+            <Original>Half Cinder Block Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CinderBlockWall">
+            <Original>Cinder Block Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CinderBlockGarage">
+            <Original>Cinder Block Garage</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Close">
+            <Original>Close</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Lock">
+            <Original>Lock</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Unlock">
+            <Original>Unlock</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodFloor">
+            <Original>Wood Floor</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalFloor">
+            <Original>Metal Floor</Original>
+        </Key>
+        <Key ID="STR_EPOCH_LargeWall">
+            <Original>Large Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PlywoodWallSIM">
+            <Original>Plywood Wall (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Wall">
+            <Original>Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PlywoodWallDoorwaySIM">
+            <Original>Plywood Wall Doorway (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WallDoorway">
+            <Original>Wall Doorway</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PlywoodWallDoorwaywDoorSIM">
+            <Original>Plywood Wall Doorway w/ Door (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WallDoorwaywDoor">
+            <Original>Wall Doorway w/ Door</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WallDoorwaywLockingDoor">
+            <Original>Wall Doorway w/ Locking Door</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodStairs">
+            <Original>Wood Stairs</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodTower">
+            <Original>Wood Tower</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodLadder">
+            <Original>Wood Ladder</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TipiSim">
+            <Original>Tipi Sim</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalShelfSim">
+            <Original>Metal Shelf Sim</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WorkBenchSIM">
+            <Original>WorkBench (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TarpCoveredPallet">
+            <Original>Tarp Covered Pallet</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ChestFreezer">
+            <Original>Chest Freezer</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FrequencyJammerSIM">
+            <Original>Frequency Jammer (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarPowerGeneratorSIM">
+            <Original>Solar Power Generator (SIM)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ToolRack">
+            <Original>Tool Rack</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Chair">
+            <Original>Chair</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ChairRed">
+            <Original>Chair (Red)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FilingCabinet">
+            <Original>Filing Cabinet</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Shoebox">
+            <Original>Shoebox</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Fridge">
+            <Original>Fridge</Original>
+        </Key>
+        <Key ID="STR_EPOCH_OpenBottom">
+            <Original>Open Bottom</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CloseBottom">
+            <Original>Close Bottom</Original>
+        </Key>
+        <Key ID="STR_EPOCH_OpenTop">
+            <Original>Open Top</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CloseTop">
+            <Original>Close Top</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Mattress">
+            <Original>Mattress</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bunk">
+            <Original>Bunk</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Couch">
+            <Original>Couch</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CoffeeTable">
+            <Original>Coffee Table</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Wardrobe">
+            <Original>Wardrobe</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Cooker">
+            <Original>Cooker</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Pelican">
+            <Original>Pelican</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DEBUGBOX">
+            <Original>DEBUG BOX</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCloneVat">
+            <Original>Female Clone Vat</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MaleCloneVat">
+            <Original>Male Clone Vat</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EmptyCloneVat">
+            <Original>Empty Clone Vat</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ConcreteFoundationGhost">
+            <Original>Concrete Foundation (Ghost)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodFoundationGhost">
+            <Original>Wood Foundation (Ghost)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FireplaceFull">
+            <Original>Fireplace Full</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FireplaceOn">
+            <Original>Fireplace On</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarPowerGenerator">
+            <Original>Solar Power Generator</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TiPiGhost">
+            <Original>TiPi Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ShelfGhost">
+            <Original>Shelf Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WorkBenchGhost">
+            <Original>WorkBench Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodWallGhost">
+            <Original>Wood Wall Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodFloorGhost">
+            <Original>Wood Floor Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalFloorGhost">
+            <Original>Metal Floor Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodLadderGhost">
+            <Original>Wood Ladder Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodStairsGhost">
+            <Original>Wood Stairs Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodTowerGhost">
+            <Original>Wood Tower Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodRampGhost">
+            <Original>Wood Ramp Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HescoWideGhost">
+            <Original>Hesco Wide (Ghost)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CinderHalfWallGhost">
+            <Original>Cinder Half Wall Ghost</Original>
+        </Key>
+        <Key ID="STR_EPOCH_LargePlywoodWall">
+            <Original>Large Plywood Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_LargeCorrugatedWall">
+            <Original>Large Corrugated Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PlywoodWallDoorway">
+            <Original>Plywood Wall Doorway</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PlywoodWallDoorwaywDoor">
+            <Original>Plywood Wall Doorway w/ Door</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PlywoodWallDoorwaywLockingDoor">
+            <Original>Plywood Wall Doorway w/ Locking Door</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodStairslvl2">
+            <Original>Wood Stairs lvl 2</Original>
+        </Key>
+        <Key ID="STR_EPOCH_AddWall">
+            <Original>Add Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RemoveWall">
+            <Original>Remove Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Tipi">
+            <Original>Tipi</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalShelf">
+            <Original>Metal Shelf</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WorkBench">
+            <Original>WorkBench</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ShelfProxy">
+            <Original>Shelf Proxy</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PalletProxy">
+            <Original>Pallet Proxy</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MineralProxy">
+            <Original>Mineral Proxy</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MineralDepositCopper">
+            <Original>Mineral Deposit (Copper)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MineralDepositGold">
+            <Original>Mineral Deposit (Gold)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MineralDepositSilver">
+            <Original>Mineral Deposit (Silver)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Locker">
+            <Original>Locker</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MedicineCabinet">
+            <Original>Medicine Cabinet</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CoffeeTableProxy">
+            <Original>Coffee Table Proxy</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Shoeboxproxy">
+            <Original>Shoebox proxy</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CarnivalTent">
+            <Original>Carnival Tent</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Teleport">
+            <Original>Teleport</Original>
+        </Key>
+        <Key ID="STR_EPOCH_centerplane">
+            <Original>centerplane</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EpochLogo">
+            <Original>Epoch Logo</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Constuct">
+            <Original>Constuct</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GreatWhite">
+            <Original>Great White</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DiceSnake">
+            <Original>Dice Snake</Original>
+        </Key>
+        <Key ID="STR_EPOCH_LeopardSnake">
+            <Original>Leopard Snake</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FlipKart">
+            <Original>Flip Kart</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaUnderwear">
+            <Original>Keesha Underwear</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Keesha">
+            <Original>Keesha</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamo">
+            <Original>Keesha Camo</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoBlue">
+            <Original>Keesha Camo (Blue)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoBrown">
+            <Original>Keesha Camo (Brown)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoRed">
+            <Original>Keesha Camo (Red)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Dan">
+            <Original>Dan</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Unknown">
+            <Original>Unknown</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleVestBlack">
+            <Original>Female Vest (Black)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleVestKhaki">
+            <Original>Female Vest (Khaki)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleVestOlive">
+            <Original>Female Vest (Olive)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleVestBrown">
+            <Original>Female Vest (Brown)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleVestCamo">
+            <Original>Female Vest (Camo)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleVestPolice">
+            <Original>Female Vest (Police)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SidePackfemale">
+            <Original>Side Pack (female)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SidePackmale">
+            <Original>Side Pack (male)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ClownMask">
+            <Original>Clown Mask</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ScaryWolfMask">
+            <Original>Scary Wolf Mask</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ScaryPumpkinMask">
+            <Original>Scary Pumpkin Mask</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RedBeret">
+            <Original>Red Beret</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GreenBeret">
+            <Original>Green Beret</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PinkBeret">
+            <Original>Pink Beret</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BlueBeret">
+            <Original>Blue Beret</Original>
+        </Key>
+        <Key ID="STR_EPOCH_OrangeBeret">
+            <Original>Orange Beret</Original>
+        </Key>
+        <Key ID="STR_EPOCH_YellowBeret">
+            <Original>Yellow Beret</Original>
+        </Key>
+        <Key ID="STR_EPOCH_AKMAssaultRifle">
+            <Original>AKM Assault Rifle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_AKM">
+            <Original>AKM</Original>
+        </Key>
+        <Key ID="STR_EPOCH_m4a3AssaultRifle">
+            <Original>m4a3 Assault Rifle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M4a3">
+            <Original>M4a3</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M14Rifle">
+            <Original>M14 Rifle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M14">
+            <Original>M14</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M14Green">
+            <Original>M14 (Green)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M16AssaultRifle">
+            <Original>M16 Assault Rifle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M16">
+            <Original>M16</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M16Red">
+            <Original>M16 (Red)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M107SniperRifle">
+            <Original>M107 Sniper Rifle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M107">
+            <Original>M107</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M107Tan">
+            <Original>M107 (Tan)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_m249LMG">
+            <Original>m249 LMG</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M249">
+            <Original>M249</Original>
+        </Key>
+        <Key ID="STR_EPOCH_M249Tan">
+            <Original>M249 Tan</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Testingweaponwithgrenadelauncher">
+            <Original>Testing weapon with grenade launcher</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Testgrenadelauncher">
+            <Original>Test grenade launcher</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TGL">
+            <Original>TGL</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RollinsRifle">
+            <Original>Rollins Rifle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_194045RollinsRifle">
+            <Original>1940 .45 Rollins Rifle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Chainsaw">
+            <Original>Chainsaw</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HermliteChainsaw">
+            <Original>Hermlite Chainsaw</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HermliteChainsawBlue">
+            <Original>Hermlite Chainsaw (Blue)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HermliteChainsawGreen">
+            <Original>Hermlite Chainsaw (Green)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HermliteChainsawPink">
+            <Original>Hermlite Chainsaw (Pink)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HermliteChainsawRed">
+            <Original>Hermlite Chainsaw (Red)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Ruger">
+            <Original>Ruger</Original>
+        </Key>
+        <Key ID="STR_EPOCH_22caliberpistol">
+            <Original>.22 caliber pistol</Original>
+        </Key>
+        <Key ID="STR_EPOCH_1911">
+            <Original>1911</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Hatchet">
+            <Original>Hatchet</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CrudeHatchet">
+            <Original>Crude Hatchet</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MultiGun">
+            <Original>Multi Gun</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Sledge">
+            <Original>Sledge</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SledgeHammer">
+            <Original>Sledge Hammer</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Kruhm">
+            <Original>Kruhm</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PowerfulAtlanteanSword">
+            <Original>Powerful Atlantean Sword</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Maul">
+            <Original>Maul</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MaulHammer">
+            <Original>Maul Hammer</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WoodClub">
+            <Original>Wood Club</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FishingRod">
+            <Original>Fishing Rod</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Plunger">
+            <Original>Plunger</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RevivePlayer">
+            <Original>Revive Player</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HealPlayer">
+            <Original>Heal Player</Original>
+        </Key>
+        <Key ID="STR_EPOCH_VehicleRepair">
+            <Original>Vehicle Repair</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TWSdefect">
+            <Original>TWS (defect)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TWSMGdefect">
+            <Original>TWS MG (defect)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RadioQuartz">
+            <Original>Radio (Quartz)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RadioGarnet">
+            <Original>Radio (Garnet)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RadioCitrine">
+            <Original>Radio (Citrine)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RadioAmethyst">
+            <Original>Radio (Amethyst)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RadioTopaz">
+            <Original>Radio (Topaz)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RadioSapphire">
+            <Original>Radio (Sapphire)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RadioOnyx">
+            <Original>Radio (Onyx)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RadioEmerald">
+            <Original>Radio (Emerald)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RadioRuby">
+            <Original>Radio (Ruby)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RadioJade">
+            <Original>Radio (Jade)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Speargun">
+            <Original>Speargun</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SR25">
+            <Original>SR 25</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SniperriflebrCaliber762x51mmNATO">
+            <Original>Sniper rifle &lt;br/&gt;Caliber: 7.62x51 mm NATO</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SR25EC">
+            <Original>SR 25 EC</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SR25RifleSuppressor">
+            <Original>SR-25 Rifle Suppressor</Original>
+        </Key>
+        <Key ID="STR_EPOCH_L85A2">
+            <Original>L85A2</Original>
+        </Key>
+        <Key ID="STR_EPOCH_L85A2Ris">
+            <Original>L85A2 Ris</Original>
+        </Key>
+        <Key ID="STR_EPOCH_L85A2PinkEdition">
+            <Original>L85A2 Pink Edition</Original>
+        </Key>
+        <Key ID="STR_EPOCH_L85A2UGL">
+            <Original>L85A2 UGL</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ElcanOptic">
+            <Original>Elcan Optic</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Elcanoptic4xmagnification">
+            <Original>Elcan optic, 4x magnification.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ElcanOpticReflex">
+            <Original>Elcan Optic Reflex</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DirtyWater">
+            <Original>Dirty Water</Original>
         </Key>
     </Package>
 </Project>

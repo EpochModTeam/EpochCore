@@ -1,0 +1,112 @@
+{
+    "CfgMovesBasic": {
+        "DefaultDie": {
+            "_isExtern": true
+        },
+        "ManActions": {
+            "GestureSwing0": "",
+            "GestureSwing1": "",
+            "GestureSwing2": "",
+            "GestureFinger": "",
+            "SledgeSwing": "",
+            "Driver_Jetski": "Driver_Jetski",
+            "Driver_Ebike": "Driver_Ebike",
+            "Cargo_Jetski": "Cargo_Jetski",
+            "GestureReloadSR25": [
+                "GestureReloadSR25",
+                "Gesture"
+            ],
+            "GestureReloadSR25Prone": [
+                "GestureReloadSR25Prone",
+                "Gesture"
+            ],
+            "GestureReloadL85A2": [
+                "GestureReloadL85A2",
+                "Gesture"
+            ],
+            "GestureReloadL85A2UGL": [
+                "GestureReloadL85A2UGL",
+                "Gesture"
+            ],
+            "GestureReloadL85A2RIS": [
+                "GestureReloadL85A2RIS",
+                "Gesture"
+            ],
+            "GestureReloadL85A2Prone": [
+                "GestureReloadL85A2Prone",
+                "Gesture"
+            ],
+            "GestureReloadL85A2UGLProne": [
+                "GestureReloadL85A2UGLProne",
+                "Gesture"
+            ],
+            "GestureReloadL85A2RISProne": [
+                "GestureReloadL85A2RISProne",
+                "Gesture"
+            ]
+        },
+        "Actions": {
+            "NoActions": {
+                "GestureSwing0": [
+                    "GestureSwing0",
+                    "Gesture"
+                ],
+                "GestureSwing1": [
+                    "GestureSwing1",
+                    "Gesture"
+                ],
+                "GestureSwing2": [
+                    "GestureSwing2",
+                    "Gesture"
+                ],
+                "GestureFinger": [
+                    "GestureFinger",
+                    "Gesture"
+                ],
+                "SledgeSwing": [
+                    "SledgeSwing",
+                    "Gesture"
+                ],
+                "GestureReloadSR25": [
+                    "GestureReloadSR25",
+                    "Gesture"
+                ],
+                "GestureReloadL85A2": [
+                    "GestureReloadL85A2",
+                    "Gesture"
+                ],
+                "GestureReloadL85A2UGL": [
+                    "GestureReloadL85A2UGL",
+                    "Gesture"
+                ],
+                "GestureReloadL85A2RIS": [
+                    "GestureReloadL85A2RIS",
+                    "Gesture"
+                ],
+                "_inherit": "ManActions"
+            },
+            "RifleBaseStandActions": {
+                "_isExtern": true
+            },
+            "RifleProneActions": {
+                "GestureReloadSR25": [
+                    "GestureReloadSR25Prone",
+                    "Gesture"
+                ],
+                "GestureReloadL85A2": [
+                    "GestureReloadL85A2Prone",
+                    "Gesture"
+                ],
+                "GestureReloadL85A2UGL": [
+                    "GestureReloadL85A2UGLProne",
+                    "Gesture"
+                ],
+                "GestureReloadL85A2RIS": [
+                    "GestureReloadL85A2RISProne",
+                    "Gesture"
+                ],
+                "_inherit": "RifleBaseStandActions"
+            }
+        }
+    }
+}

@@ -1,0 +1,649 @@
+{
+    "CfgAmmo": {
+        "Default": {
+            "_isExtern": true
+        },
+        "BulletCore": {
+            "_isExtern": true
+        },
+        "BulletBase": {
+            "_isExtern": true
+        },
+        "B_762x39_Ball": {
+            "hit": 12,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cartridge": "FxCartridge_762",
+            "visibleFire": 6,
+            "audibleFire": 9,
+            "cost": 1.2,
+            "airLock": true,
+            "typicalSpeed": 820,
+            "caliber": 1.6,
+            "model": "\\A3\\Weapons_f\\Data\\bullettracer\\tracer_red",
+            "tracerScale": 1.0,
+            "tracerStartTime": 0.0075,
+            "tracerEndTime": 5,
+            "airFriction": -0.001,
+            "CamShakeFire": {
+                "power": 0.2,
+                "duration": 0.03,
+                "frequency": 0.5,
+                "distance": 0.01
+            },
+            "CamShakePlayerFire": {
+                "power": 0.2,
+                "duration": 0.03,
+                "frequency": 0.5,
+                "distance": 0.01
+            },
+            "_inherit": "BulletBase"
+        },
+        "B_127x108_Ball": {
+            "hit": 30,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cartridge": "FxCartridge_127",
+            "visibleFire": 48,
+            "audibleFire": 48,
+            "visibleFireTime": 3,
+            "cost": 5,
+            "airLock": 1,
+            "caliber": 2.8,
+            "typicalSpeed": 820,
+            "model": "\\A3\\Weapons_f\\Data\\bullettracer\\tracer_green",
+            "tracerScale": 1.5,
+            "tracerStartTime": 0.075,
+            "tracerEndTime": 1,
+            "airFriction": -0.00056,
+            "CamShakeFire": {
+                "power": "(13^0.5)",
+                "duration": "((round (13^0.5))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": "((13^0.5)*3)"
+            },
+            "CamShakePlayerFire": {
+                "power": 13,
+                "duration": "((round (13^0.25))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": 1
+            },
+            "_inherit": "BulletBase"
+        },
+        "B_127x108_APDS": {
+            "hit": 60,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "caliber": 3.6,
+            "deflecting": 10,
+            "typicalSpeed": 1060,
+            "airFriction": -0.00036,
+            "visibleFire": 10,
+            "audibleFire": 15,
+            "cost": 15,
+            "CamShakeExplode": {
+                "power": "(20^0.5)",
+                "duration": "((round (20^0.5))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": "((20^0.5)*3)"
+            },
+            "CamShakeHit": {
+                "power": 20,
+                "duration": "((round (20^0.25))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": 1
+            },
+            "_inherit": "B_127x108_Ball"
+        },
+        "E_22X44_ball": {
+            "hit": 3.5,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cost": 1,
+            "typicalSpeed": 100,
+            "airFriction": -0.0032,
+            "waterFriction": -0.3,
+            "caliber": 0.2,
+            "deflecting": 3,
+            "model": "\\A3\\Weapons_f\\Data\\bullettracer\\tracer_yellow",
+            "tracerScale": 1,
+            "tracerStartTime": 0.05,
+            "tracerEndTime": 1,
+            "visibleFire": 4,
+            "audibleFire": 6,
+            "CamShakeExplode": {
+                "power": "(5^0.5)",
+                "duration": "((round (5^0.5))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": "((5^0.5)*3)"
+            },
+            "CamShakeHit": {
+                "power": 5,
+                "duration": "((round (5^0.25))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": 1
+            },
+            "_inherit": "BulletBase"
+        },
+        "E_45_ball": {
+            "hit": 5.5,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cost": 1,
+            "cartridge": "FxCartridge_9mm",
+            "typicalSpeed": 200,
+            "airFriction": -0.0032,
+            "waterFriction": -0.3,
+            "caliber": 2.6,
+            "deflecting": 3,
+            "model": "\\A3\\Weapons_f\\Data\\bullettracer\\tracer_green",
+            "tracerScale": 1,
+            "tracerStartTime": 0.05,
+            "tracerEndTime": 1,
+            "visibleFire": 4,
+            "audibleFire": 6,
+            "CamShakeExplode": {
+                "power": "(5^0.5)",
+                "duration": "((round (5^0.5))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": "((5^0.5)*3)"
+            },
+            "CamShakeHit": {
+                "power": 5,
+                "duration": "((round (5^0.25))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": 1
+            },
+            "_inherit": "BulletBase"
+        },
+        "spear_ball": {
+            "hit": 20,
+            "timeToLive": 30,
+            "cost": 1,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cartridge": "FxCartridge_9mm",
+            "typicalSpeed": 185,
+            "airFriction": -0.001,
+            "waterFriction": 0,
+            "whistleDist": 16,
+            "caliber": 7.6,
+            "deflecting": 3,
+            "model": "\\x\\addons\\a3_epoch_weapons\\spearmag",
+            "tracerScale": 2,
+            "tracerStartTime": 0.05,
+            "tracerEndTime": 1,
+            "visibleFire": 4,
+            "audibleFire": 6,
+            "_inherit": "BulletBase"
+        },
+        "K_762_ball": {
+            "hit": 12,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cost": 1.2,
+            "typicalSpeed": 800,
+            "cartridge": "FxCartridge_762",
+            "airFriction": -0.001,
+            "waterFriction": -0.3,
+            "caliber": 1.6,
+            "model": "\\A3\\Weapons_f\\Data\\bullettracer\\tracer_yellow",
+            "tracerScale": 0.6,
+            "tracerStartTime": 0.0075,
+            "tracerEndTime": 5,
+            "visibleFire": 6,
+            "audibleFire": 9,
+            "CamShakeExplode": {
+                "power": "(8^0.5)",
+                "duration": "((round (8^0.5))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": "((8^0.5)*3)"
+            },
+            "CamShakeHit": {
+                "power": 5,
+                "duration": "((round (5^0.25))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": 1
+            },
+            "_inherit": "BulletBase"
+        },
+        "K_556_ball": {
+            "hit": 10,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cost": 1.2,
+            "typicalSpeed": 820,
+            "airFriction": -0.0009,
+            "waterFriction": -0.3,
+            "caliber": 1,
+            "model": "\\A3\\Weapons_f\\Data\\bullettracer\\tracer_yellow",
+            "tracerScale": 1,
+            "tracerStartTime": 0.05,
+            "tracerEndTime": 1,
+            "visibleFire": 5,
+            "audibleFire": 8,
+            "CamShakeExplode": {
+                "power": "(5^0.5)",
+                "duration": "((round (5^0.5))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": "((5^0.5)*3)"
+            },
+            "CamShakeHit": {
+                "power": 5,
+                "duration": "((round (5^0.25))*0.2 max 0.2)",
+                "frequency": 20,
+                "distance": 1
+            },
+            "_inherit": "BulletBase"
+        },
+        "DirectionalBombBase": {
+            "_isExtern": true
+        },
+        "Spike_TRAP_AMMO_EPOCH": {
+            "hit": 10,
+            "indirectHit": 5,
+            "indirectHitRange": 3,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\swing_box.p3d",
+            "mineModelDisabled": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\swing_box.p3d",
+            "defaultMagazine": "APERSTripMine_Wire_Mag",
+            "icon": "iconExplosiveAP",
+            "soundHit": [
+                "a3\\sounds_f\\characters\\movements\\bodyfalls\\bodyfall_concrete_2",
+                2.5,
+                1,
+                150
+            ],
+            "soundTrigger": [
+                "a3\\sounds_f\\arsenal\\sfx\\bullet_hits\\body_08",
+                0.56234133,
+                1,
+                40
+            ],
+            "soundActivation": [
+                "",
+                1,
+                1,
+                40
+            ],
+            "minimumSafeZone": 0,
+            "explosionAngle": 360,
+            "explosionEffects": "",
+            "CraterEffects": "CraterSpike",
+            "whistleDist": 8,
+            "cost": 200,
+            "mineTrigger": "RangeTriggerBounding",
+            "mineInconspicuousness": 100,
+            "CamShakeHit": {
+                "power": 1,
+                "duration": 1,
+                "frequency": 20
+            },
+            "_inherit": "DirectionalBombBase"
+        },
+        "Metal_TRAP_AMMO_EPOCH": {
+            "hit": 15,
+            "indirectHit": 8,
+            "indirectHitRange": 4,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\swing_box.p3d",
+            "mineModelDisabled": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\swing_box.p3d",
+            "defaultMagazine": "APERSTripMine_Wire_Mag",
+            "icon": "iconExplosiveAP",
+            "soundHit": [
+                "a3\\sounds_f\\characters\\movements\\bodyfalls\\bodyfall_concrete_2",
+                2.5,
+                1,
+                150
+            ],
+            "soundTrigger": [
+                "a3\\sounds_f\\arsenal\\sfx\\bullet_hits\\body_08",
+                0.56234133,
+                1,
+                40
+            ],
+            "soundActivation": [
+                "a3\\sounds_f\\vehicles\\boat\\noises\\Light_metal_boat_crash_wood_02",
+                1,
+                1,
+                40
+            ],
+            "minimumSafeZone": 0,
+            "explosionAngle": 360,
+            "explosionEffects": "",
+            "CraterEffects": "CraterMetal",
+            "whistleDist": 8,
+            "cost": 200,
+            "mineTrigger": "RangeTriggerBounding",
+            "mineInconspicuousness": 100,
+            "CamShakeHit": {
+                "power": 1.2,
+                "duration": 1,
+                "frequency": 20
+            },
+            "_inherit": "DirectionalBombBase"
+        },
+        "B_EnergyPack": {
+            "hit": 0,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cartridge": "FxCartridge_9mm",
+            "caliber": 2.6,
+            "deflecting": 45,
+            "visibleFire": 5,
+            "audibleFire": 9,
+            "cost": 100,
+            "typicalSpeed": 280,
+            "airFriction": -0.0018,
+            "_inherit": "BulletBase"
+        },
+        "B_Hatchet": {
+            "hit": 3,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cartridge": "FxCartridge_9mm",
+            "caliber": 2.6,
+            "deflecting": 45,
+            "visibleFire": 5,
+            "audibleFire": 9,
+            "cost": 100,
+            "typicalSpeed": 10,
+            "airFriction": -0.0018,
+            "muzzleEffect": "",
+            "minRange": 1,
+            "minRangeProbab": 0.8,
+            "midRange": 2,
+            "midRangeProbab": 1.5,
+            "maxRange": 3,
+            "maxRangeProbab": 2.5,
+            "explosive": 0,
+            "simulationStep": 0.001,
+            "timeToLive": 0.03,
+            "soundHit": [
+                "",
+                "db-90",
+                1
+            ],
+            "soundEngine": [
+                "",
+                "db-80",
+                4
+            ],
+            "_inherit": "BulletBase"
+        },
+        "B_Swing": {
+            "hit": 8,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cartridge": "FxCartridge_9mm",
+            "simulation": "shotRocket",
+            "effectsMissileInit": "",
+            "effectsMissile": "EmptyEffect",
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\swing_box.p3d",
+            "caliber": 0.26,
+            "deflecting": 0,
+            "visibleFire": 0.1,
+            "audibleFire": 1,
+            "cost": 100,
+            "typicalSpeed": 275,
+            "airFriction": -0.0018,
+            "minRange": 1,
+            "minRangeProbab": 0.8,
+            "midRange": 2,
+            "midRangeProbab": 1.5,
+            "maxRange": 3,
+            "maxRangeProbab": 2.5,
+            "explosive": 0,
+            "simulationStep": 0.001,
+            "timeToLive": 0.005,
+            "soundHit": [
+                "",
+                "db-90",
+                1
+            ],
+            "soundEngine": [
+                "",
+                "db-80",
+                4
+            ],
+            "_inherit": "BulletBase"
+        },
+        "B_Stick": {
+            "hit": 2,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cartridge": "FxCartridge_9mm",
+            "simulation": "shotRocket",
+            "effectsMissileInit": "",
+            "effectsMissile": "EmptyEffect",
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\swing_box.p3d",
+            "caliber": 0.26,
+            "deflecting": 0,
+            "visibleFire": 0.1,
+            "audibleFire": 1,
+            "cost": 100,
+            "typicalSpeed": 275,
+            "airFriction": -0.0018,
+            "minRange": 1,
+            "minRangeProbab": 0.8,
+            "midRange": 2,
+            "midRangeProbab": 1.5,
+            "maxRange": 3,
+            "maxRangeProbab": 2.5,
+            "explosive": 0,
+            "simulationStep": 0.001,
+            "timeToLive": 0.004,
+            "soundHit": [
+                "",
+                "db-90",
+                1
+            ],
+            "soundEngine": [
+                "",
+                "db-80",
+                4
+            ],
+            "_inherit": "BulletBase"
+        },
+        "PipeBombBase": {
+            "_isExtern": true
+        },
+        "Sapper_Charge_Ammo": {
+            "hit": 50,
+            "indirectHit": 10,
+            "indirectHitRange": 5,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\swing_box.p3d",
+            "mineModelDisabled": "",
+            "defaultMagazine": "IEDLandSmall_Remote_Mag",
+            "soundHit": [
+                "A3\\sounds_f\\weapons\\Mines\\mine_debris_6",
+                2.5118864,
+                1,
+                1500
+            ],
+            "soundTrigger": [
+                "A3\\Sounds_F\\weapons\\mines\\mech_trigger_1",
+                0.56234133,
+                1,
+                40
+            ],
+            "soundActivation": [
+                "A3\\Sounds_F\\weapons\\mines\\mech_activate_mine_1",
+                0.56234133,
+                1,
+                40
+            ],
+            "CraterEffects": "IEDMineSmallLandCrater",
+            "explosionEffects": "IEDMineSmallExplosion",
+            "whistleDist": 6,
+            "cost": 200,
+            "mineInconspicuousness": 50,
+            "mineTrigger": "RemoteTrigger",
+            "_inherit": "PipeBombBase"
+        },
+        "SapperB_Charge_Ammo": {
+            "hit": 1500,
+            "indirectHit": 1500,
+            "indirectHitRange": 5,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\swing_box.p3d",
+            "mineModelDisabled": "",
+            "defaultMagazine": "SatchelCharge_Remote_Mag",
+            "soundHit": [
+                "A3\\Sounds_F\\weapons\\Mines\\mine_debris_2",
+                3.1622777,
+                1,
+                1500
+            ],
+            "ExplosionEffects": "MineNondirectionalExplosion",
+            "CraterEffects": "MineNondirectionalCrater",
+            "whistleDist": 10,
+            "cost": 200,
+            "mineInconspicuousness": 50,
+            "mineTrigger": "RemoteTrigger",
+            "_inherit": "PipeBombBase"
+        },
+        "GrenadeHand": {
+            "_isExtern": true
+        },
+        "SmokeShellCustom": {
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\swing_box.p3d",
+            "hit": 0,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "typicalspeed": 22,
+            "cost": 100,
+            "simulation": "shotSmokeX",
+            "explosive": 0,
+            "deflecting": 60,
+            "explosionTime": 2,
+            "timeToLive": 60,
+            "fuseDistance": 0,
+            "soundHit": [
+                "",
+                0,
+                1
+            ],
+            "SmokeShellSoundLoop1": [
+                "A3\\Sounds_F\\weapons\\smokeshell\\smoke_loop1",
+                0.12589253,
+                1,
+                70
+            ],
+            "SmokeShellSoundLoop2": [
+                "A3\\Sounds_F\\weapons\\smokeshell\\smoke_loop2",
+                0.12589253,
+                1,
+                70
+            ],
+            "grenadeFireSound": [],
+            "grenadeBurningSound": [
+                "SmokeShellSoundLoop1",
+                0.5,
+                "SmokeShellSoundLoop2",
+                0.5
+            ],
+            "impactGroundSoft": [],
+            "impactGroundHard": [],
+            "impactIron": [],
+            "impactArmor": [],
+            "impactBuilding": [],
+            "impactFoliage": [],
+            "impactWood": [],
+            "impactGlass": [],
+            "impactGlassArmored": [],
+            "impactConcrete": [],
+            "impactRubber": [],
+            "impactPlastic": [],
+            "impactDefault": [],
+            "impactMetal": [],
+            "impactMetalplate": [],
+            "impactWater": [],
+            "effectsSmoke": "SmokeShellWhiteEffect",
+            "whistleDist": 0,
+            "smokeColor": [
+                0.039,
+                0.278,
+                0,
+                0.5
+            ],
+            "_inherit": "GrenadeHand"
+        },
+        "B_Test_Caseless": {
+            "hit": 10,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cartridge": "FxCartridge_65_caseless",
+            "visibleFire": 5,
+            "audibleFire": 8,
+            "cost": 1.2,
+            "airLock": 1,
+            "typicalSpeed": 820,
+            "caliber": 1.0,
+            "model": "\\A3\\Weapons_f\\Data\\bullettracer\\tracer_red",
+            "tracerScale": 1.0,
+            "tracerStartTime": 0.05,
+            "tracerEndTime": 1,
+            "airFriction": -0.00096,
+            "CamShakeFire": {
+                "power": 0,
+                "duration": 0,
+                "frequency": 0,
+                "distance": 0
+            },
+            "CamShakePlayerFire": {
+                "power": 0,
+                "duration": 0,
+                "frequency": 0,
+                "distance": 0
+            },
+            "_inherit": "BulletBase"
+        },
+        "ChainSaw_Bullet": {
+            "hit": 5,
+            "indirectHit": 0,
+            "indirectHitRange": 0,
+            "cartridge": "FxCartridge_65_caseless",
+            "visibleFire": 5,
+            "audibleFire": 8,
+            "cost": 1.2,
+            "airLock": 0,
+            "typicalSpeed": 100,
+            "caliber": 1.0,
+            "model": "\\A3\\Weapons_f\\Data\\bullettracer\\tracer_red",
+            "tracerScale": 1.0,
+            "tracerStartTime": 0.05,
+            "tracerEndTime": 1,
+            "airFriction": -0.00096,
+            "CamShakeFire": {
+                "power": 0,
+                "duration": 0,
+                "frequency": 0,
+                "distance": 0
+            },
+            "CamShakePlayerFire": {
+                "power": 0,
+                "duration": 0,
+                "frequency": 0,
+                "distance": 0
+            },
+            "minRange": 1,
+            "minRangeProbab": 0.8,
+            "midRange": 2,
+            "midRangeProbab": 1.5,
+            "maxRange": 2.5,
+            "maxRangeProbab": 2,
+            "explosive": 0,
+            "simulationStep": 0.001,
+            "timeToLive": 0.03,
+            "soundHit": [
+                "",
+                "db-90",
+                1
+            ],
+            "soundEngine": [
+                "",
+                "db-80",
+                4
+            ],
+            "_inherit": "BulletBase"
+        }
+    }
+}
