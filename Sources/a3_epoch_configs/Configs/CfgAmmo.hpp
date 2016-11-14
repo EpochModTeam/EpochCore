@@ -27,7 +27,7 @@ class CfgAmmo
         visibleFire = 6;
         audibleFire = 9;
         cost = 1.2;
-        airLock = True;
+        airLock = true;
         typicalSpeed = 820;
         caliber = 1.6;
         model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
