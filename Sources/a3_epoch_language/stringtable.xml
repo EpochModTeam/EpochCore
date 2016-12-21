@@ -1819,5 +1819,14 @@
         <Key ID="STR_EPOCH_DirtyWater">
             <Original>Dirty Water</Original>
         </Key>
+        <Key ID="STR_EPOCH_SpareTire">
+            <Original>Spare Tire</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Usedtofixablownouttire">
+            <Original>Used to fix a blown out tire.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WorkBench">
+            <Original>WorkBench</Original>
+        </Key>
     </Package>
 </Project>

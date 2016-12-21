@@ -2182,6 +2182,17 @@
             "count": 1,
             "mass": 1,
             "_inherit": "CA_Magazine"
+        },
+        "SpareTire": {
+            "author": "$STR_A3_Bohemia_Interactive",
+            "scope": 2,
+            "model": "\\A3\\Structures_F\\Civ\\Garbage\\Tyre_F.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\SpareTire.paa",
+            "displayName": {"_translate": "Spare Tire"},
+            "descriptionShort": {"_translate": "Used to fix a blown out tire."},
+            "count": 1,
+            "mass": 100,
+            "_inherit": "CA_Magazine"
         }
     }
 }

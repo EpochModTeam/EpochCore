@@ -2171,6 +2171,17 @@ class CfgMagazines
         count = 1;
         mass = 1;
     };
+    class SpareTire : CA_Magazine
+    {
+        author = "$STR_A3_Bohemia_Interactive";
+        scope = 2;
+        model = "\A3\Structures_F\Civ\Garbage\Tyre_F.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\SpareTire.paa";
+        displayName = "$STR_EPOCH_SpareTire";
+        descriptionShort = "$STR_EPOCH_Usedtofixablownouttire";
+        count = 1;
+        mass = 100;
+    };
 };
 
 /*[[[end]]]*/
