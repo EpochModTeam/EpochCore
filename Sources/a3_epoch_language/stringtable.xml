@@ -1828,5 +1828,14 @@
         <Key ID="STR_EPOCH_WorkBench">
             <Original>WorkBench</Original>
         </Key>
+        <Key ID="STR_EPOCH_SmokeGrenadeToxic">
+            <Original>Smoke Grenade (Toxic)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TypeSmokeGrenadeToxicltbrgtRounds1ltbrgtUsedinHand">
+            <Original>Type: Smoke Grenade - Toxic&amp;lt;br /&amp;gt;Rounds: 1&amp;lt;br /&amp;gt;Used in: Hand</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ToxicSmoke">
+            <Original>Toxic Smoke</Original>
+        </Key>
     </Package>
 </Project>

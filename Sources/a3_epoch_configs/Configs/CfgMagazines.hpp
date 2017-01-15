@@ -32,6 +32,17 @@ class CfgMagazines
         count = 1;
         mass = 1;
     };
+    class SmokeShellGreen;
+    class SmokeShellToxic : SmokeShellGreen
+    {
+        displayName = "$STR_EPOCH_SmokeGrenadeToxic";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_TypeSmokeGrenadeToxicltbrgtRounds1ltbrgtUsedinHand";
+        displayNameShort = "$STR_EPOCH_ToxicSmoke";
+        count = 1;
+        mass = 10;
+        ammo = "SmokeShellCustom";
+    };
     class ItemEmptyTin : CA_Magazine
     {
         author = "Sequisha";
