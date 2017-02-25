@@ -1131,7 +1131,7 @@ class FSM
            "_sapperFoundMessages = [""Ok, I see him. You need to get right back.\nGet out of sight so I can guide him in."",""Get yourself out of sight, I have control of him...just.\nThe people who made this guy left a chip in his head."",""Find a spot out of his sight.\nI don't need him wound up when caging him.""];" \n
            "titleText [selectRandom _sapperFoundMessages,""PLAIN""];" \n
            "_callComplete = true;" \n
-           "sapperHndl setFSMVariable [""_traderDispose"",true];" \n
+           "(_sapper getVariable [""sapperHndl"",-1]) setFSMVariable [""_traderDispose"",true];" \n
            "};" \n
            "" \n
            "_sanityCheck = 0 ;" \n
