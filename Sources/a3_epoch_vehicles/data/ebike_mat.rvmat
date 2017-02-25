@@ -1,0 +1,108 @@
+class StageTI
+{
+	texture="a3\weapons_f_gamma\smgs\pdw2000\data\pdw2000_ti_ca.paa";
+};
+ambient[]={2,2,2,1};
+diffuse[]={0.99996096,0.99996096,0.99996096,0};
+forcedDiffuse[]={0,0,0,0};
+emmisive[]={8.7626279e-007,7.7195466e-007,7.5292587e-007,1};
+specular[]={0.22000028,0.22000028,0.22000028,1};
+specularPower=350;
+PixelShaderID="Super";
+VertexShaderID="Super";
+class Stage0
+{
+	uvSource="tex";
+	Filter="Anizotropic";
+};
+class Stage1
+{
+	texture="x\addons\a3_epoch_vehicles\data\ebike_nohq.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+	Filter="Anizotropic";
+};
+class Stage2
+{
+	texture="#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={4,0,0};
+		up[]={0,6,0};
+		dir[]={0,0,2};
+		pos[]={0,0,0};
+	};
+	Filter="Anizotropic";
+};
+class Stage3
+{
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+	Filter="Anizotropic";
+};
+class Stage4
+{
+	texture="x\addons\a3_epoch_vehicles\data\ebike_as.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+	Filter="Anizotropic";
+};
+class Stage5
+{
+	texture="x\addons\a3_epoch_vehicles\data\ebike_smdi.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+	Filter="Anizotropic";
+};
+class Stage6
+{
+	texture="#(rgb,256,256,8)fresnel(0.11,0.22)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+	Filter="Anizotropic";
+};
+class Stage7
+{
+	texture="x\addons\a3_epoch_vehicles\data\env_co.paa";
+	uvSource="tex1";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+	Filter="Anizotropic";
+};
