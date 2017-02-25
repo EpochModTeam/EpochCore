@@ -10,7 +10,7 @@
     Arma Public License Share Alike (APL-SA) - https://www.bistudio.com/community/licenses/arma-public-license-share-alike
 
     Github:
-    https://github.com/EpochModTeam/EpochCore/tree/release/Sources/a3_epoch_code/compile/interactions/EPOCH_fnc_mirrorSetup.sqf
+    https://github.com/EpochModTeam/EpochCore/tree/release/Sources/a3_epoch_code/compile/interactions/fn_mirrorSetup.sqf
 */
 params [ ["_mirror",[objNull],[objNull]] ];
 if !(isNull _mirror) then {
