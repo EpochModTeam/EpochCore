@@ -3427,7 +3427,7 @@ class CfgWeapons
             class MuzzleSlot : SlotInfo
             {
                 linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-                compatibleItems[] = {"test_suppressor"};
+                compatibleItems[] = {};
             };
             class CowsSlot : CowsSlot {};
             class PointerSlot : PointerSlot {};

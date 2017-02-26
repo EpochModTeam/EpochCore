@@ -5147,9 +5147,7 @@
             "WeaponSlotsInfo": {
                 "MuzzleSlot": {
                     "linkProxy": "\\A3\\data_f\\proxies\\weapon_slots\\MUZZLE",
-                    "compatibleItems": [
-                        "test_suppressor"
-                    ],
+                    "compatibleItems": [],
                     "_inherit": "SlotInfo"
                 },
                 "CowsSlot": {
