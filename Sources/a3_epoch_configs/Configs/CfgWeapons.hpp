@@ -4271,6 +4271,7 @@ class CfgWeapons
     class Defib_EPOCH : test_suppressor
     {
         author = "Sequisha";
+        scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairDefib.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_defib_ca.paa";
         displayName = "$STR_EPOCH_RevivePlayer";
@@ -4278,6 +4279,7 @@ class CfgWeapons
     class Heal_EPOCH : test_suppressor
     {
         author = "Sequisha";
+        scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairHeal.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_heal_ca.paa";
         displayName = "$STR_EPOCH_HealPlayer";
@@ -4285,6 +4287,7 @@ class CfgWeapons
     class Repair_EPOCH : test_suppressor
     {
         author = "Sequisha";
+        scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairVehicle.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_repair_ca.paa";
         displayName = "$STR_EPOCH_VehicleRepair";

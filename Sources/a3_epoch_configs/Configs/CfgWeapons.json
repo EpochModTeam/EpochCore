@@ -6611,6 +6611,7 @@
         },
         "Defib_EPOCH": {
             "author": "Sequisha",
+            "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\repairDefib.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\repairGun\\gear_defib_ca.paa",
             "displayName": { "_translate" : "Revive Player" },
@@ -6618,6 +6619,7 @@
         },
         "Heal_EPOCH": {
             "author": "Sequisha",
+            "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\repairHeal.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\repairGun\\gear_heal_ca.paa",
             "displayName": { "_translate" : "Heal Player" },
@@ -6625,6 +6627,7 @@
         },
         "Repair_EPOCH": {
             "author": "Sequisha",
+            "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\repairVehicle.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\repairGun\\gear_repair_ca.paa",
             "displayName": { "_translate" : "Vehicle Repair" },
