@@ -921,10 +921,10 @@ class CfgMagazines
     };
     class ItemSodaAlpineDude : 1Rnd_Soda
     {
+        scope = 2;
         author = "vbgreen";
         picture = "\x\addons\a3_epoch_assets_1\pictures\soda_alpinedude_ca.paa";
         displayname = "$STR_EPOCH_AlpineDudeSoda";
-        scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\soda_alpine.p3d";
         descriptionShort = "$STR_EPOCH_Dothedude";
         count = 1;
@@ -932,6 +932,7 @@ class CfgMagazines
     };
     class ItemSodaRbull : 1Rnd_Soda
     {
+        scope = 2;
         author = "vbgreen";
         displayName = "$STR_EPOCH_RedGull";
         descriptionShort = "$STR_EPOCH_RedGullSoda";
@@ -941,6 +942,7 @@ class CfgMagazines
     };
     class ItemSodaOrangeSherbet : 1Rnd_Soda
     {
+        scope = 2;
         author = "Sequisha";
         displayName = "$STR_EPOCH_OrangeSherbet";
         descriptionShort = "$STR_EPOCH_OrangeSherbetSoda";
@@ -950,6 +952,7 @@ class CfgMagazines
     };
     class ItemSodaPurple : 1Rnd_Soda
     {
+        scope = 2;
         author = "vbgreen";
         displayName = "$STR_EPOCH_PurpleNurple";
         descriptionShort = "$STR_EPOCH_PurpleNurpleSoda";
@@ -959,6 +962,7 @@ class CfgMagazines
     };
     class ItemSodaMocha : 1Rnd_Soda
     {
+        scope = 2;
         author = "vbgreen";
         displayName = "$STR_EPOCH_MochaCola";
         descriptionShort = "$STR_EPOCH_MochaColaSoda";
@@ -968,6 +972,7 @@ class CfgMagazines
     };
     class ItemSodaBurst : 1Rnd_Soda
     {
+        scope = 2;
         author = "vbgreen";
         displayName = "$STR_EPOCH_BurstKoke";
         descriptionShort = "$STR_EPOCH_BurstKokeSoda";

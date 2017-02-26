@@ -914,6 +914,7 @@
             "_inherit": "CA_Magazine"
         },
         "ItemSodaAlpineDude": {
+            "scope": 2,
             "author": "vbgreen",
             "picture": "\\x\\addons\\a3_epoch_assets_1\\pictures\\soda_alpinedude_ca.paa",
             "displayname": { "_translate" : "Alpine Dude Soda" },
@@ -925,6 +926,7 @@
             "_inherit": "1Rnd_Soda"
         },
         "ItemSodaRbull": {
+            "scope": 2,
             "author": "vbgreen",
             "displayName": { "_translate" : "Red Gull" },
             "descriptionShort": { "_translate" : "Red Gull Soda" },
@@ -934,6 +936,7 @@
             "_inherit": "1Rnd_Soda"
         },
         "ItemSodaOrangeSherbet": {
+            "scope": 2,
             "author": "Sequisha",
             "displayName": { "_translate" : "Orange Sherbet" },
             "descriptionShort": { "_translate" : "Orange Sherbet Soda" },
@@ -943,6 +946,7 @@
             "_inherit": "1Rnd_Soda"
         },
         "ItemSodaPurple": {
+            "scope": 2,
             "author": "vbgreen",
             "displayName": { "_translate" : "Purple Nurple" },
             "descriptionShort": { "_translate" : "Purple Nurple Soda" },
@@ -952,6 +956,7 @@
             "_inherit": "1Rnd_Soda"
         },
         "ItemSodaMocha": {
+            "scope": 2,
             "author": "vbgreen",
             "displayName": { "_translate" : "Mocha Cola" },
             "descriptionShort": { "_translate" : "Mocha Cola Soda" },
@@ -961,6 +966,7 @@
             "_inherit": "1Rnd_Soda"
         },
         "ItemSodaBurst": {
+            "scope": 2,
             "author": "vbgreen",
             "displayName": { "_translate" : "Burst Koke" },
             "descriptionShort": { "_translate" : "Burst Koke Soda" },
