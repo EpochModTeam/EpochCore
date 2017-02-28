@@ -4933,18 +4933,6 @@ class CfgVehicles
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\A3\Structures_F\Items\Electronics\Data\Electronics_screens_mobilePhone_smart_CO.paa"};
         hiddenSelectionsMaterials[] = {"\A3\Structures_F\Items\Electronics\Data\electronics_screens.rvmat"};
-        class UserActions
-        {
-            class open_door_l
-            {
-                displayName = "$STR_EPOCH_TakeKrypto";
-                position = "left";
-                radius = 9;
-                onlyForPlayer = 0;
-                condition = "(this getVariable [""Crypto"",0]) > 0";
-                statement = "this call EPOCH_takeCrypto;";
-            };
-        };
     };
     class Constructions_modular_F : ThingX
     {

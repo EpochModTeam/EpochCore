@@ -6239,16 +6239,6 @@
             "hiddenSelectionsMaterials": [
                 "\\A3\\Structures_F\\Items\\Electronics\\Data\\electronics_screens.rvmat"
             ],
-            "UserActions": {
-                "open_door_l": {
-                    "displayName": { "_translate" : "Take Krypto" },
-                    "position": "left",
-                    "radius": 9,
-                    "onlyForPlayer": 0,
-                    "condition": "(this getVariable [\"Crypto\",0]) > 0",
-                    "statement": "this call EPOCH_takeCrypto;"
-                }
-            },
             "_inherit": "ThingX"
         },
         "Constructions_modular_F": {
