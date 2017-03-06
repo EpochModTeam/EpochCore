@@ -487,6 +487,14 @@ class CfgAmmo
         whistleDist = 0;
         smokeColor[] = {0.039,0.278,0,0.5};
     };
+    class SmokeShellToxic : SmokeShellCustom
+    {
+        hit = 1;
+        indirectHit = 1;
+        indirectHitRange = 1;
+        timeToLive = 120;
+        mineTrigger = "RemoteTrigger";
+    };
     class B_Test_Caseless : BulletBase
     {
         hit = 10;
