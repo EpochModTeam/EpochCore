@@ -41,7 +41,7 @@ class CfgMagazines
         displayNameShort = "$STR_EPOCH_ToxicSmoke";
         count = 1;
         mass = 10;
-        ammo = "SmokeShellCustom";
+        ammo = "SmokeShellToxic_Ammo";
     };
     class ItemEmptyTin : CA_Magazine
     {

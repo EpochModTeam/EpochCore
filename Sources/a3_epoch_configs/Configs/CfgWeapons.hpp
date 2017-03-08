@@ -35,6 +35,17 @@ class CfgWeapons
             mass = 0;
         };
     };
+    class GrenadeLauncher;
+    class Throw : GrenadeLauncher
+    {
+        muzzles[] += {"SmokeShellToxicMuzzle"};
+        class ThrowMuzzle;
+        class SmokeShellToxicMuzzle : ThrowMuzzle
+        {
+            displayName = "$STR_EPOCH_SmokeGrenadeToxic";
+            magazines[] = {"SmokeShellToxic"};
+        };
+    };
     class U_EPOCH_RyanZombie_1 : Uniform_Base
     {
         scope = 1;

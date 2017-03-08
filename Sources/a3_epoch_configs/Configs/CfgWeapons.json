@@ -25,6 +25,25 @@
             },
             "_inherit": "ItemCore"
         },
+        "GrenadeLauncher": {
+            "_isExtern": true
+        },
+        "Throw": {
+            "muzzles": [
+                "SmokeShellToxic"
+            ],
+            "ThrowMuzzle": {
+                "_isExtern": true
+            },
+            "SmokeShellToxicMuzzle": {
+                "displayName": { "_translate" : "Smoke Grenade (Toxic)" },
+                "magazines": [
+                    "SmokeShellToxic"
+                ],
+                "_inherit": "ThrowMuzzle"
+            },
+            "_inherit": "GrenadeLauncher"
+        },
         "U_EPOCH_RyanZombie_1": {
             "scope": 1,
             "displayName": { "_translate" : "Zombie 1" },

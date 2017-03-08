@@ -487,7 +487,11 @@ class CfgAmmo
         whistleDist = 0;
         smokeColor[] = {0.039,0.278,0,0.5};
     };
-    class SmokeShellToxic : SmokeShellCustom
+    class SmokeShellToxic_Ammo : SmokeShellCustom
+    {
+        model="\A3\Weapons_f\ammo\smokegrenade_green";
+    };
+    class SmokeShellToxicSapper : SmokeShellCustom
     {
         hit = 1;
         indirectHit = 1;

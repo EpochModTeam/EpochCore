@@ -30,11 +30,11 @@
         "SmokeShellToxic": {
             "displayName": { "_translate" : "Smoke Grenade (Toxic)" },
             "scope": 2,
-            "descriptionShort": { "_translate" : "Type: Smoke Grenade - Toxic&lt;br /&gt;Rounds: 1&lt;br /&gt;Used in: Hand" },
+            "descriptionShort": { "_translate" : "Type: Smoke Grenade - Toxic" },
             "displayNameShort": { "_translate" : "Toxic Smoke" },
             "count": 1,
             "mass": 10,
-            "ammo": "SmokeShellCustom",
+            "ammo": "SmokeShellToxic_Ammo",
             "_inherit": "SmokeShellGreen"
         },
         "ItemEmptyTin": {
