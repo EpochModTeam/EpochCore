@@ -36,7 +36,9 @@
                 "_isExtern": true
             },
             "SmokeShellToxicMuzzle": {
-                "displayName": { "_translate" : "Smoke Grenade (Toxic)" },
+                "displayName": {
+                    "_translate": "Smoke Grenade (Toxic)"
+                },
                 "magazines": [
                     "SmokeShellToxic"
                 ],
@@ -46,7 +48,9 @@
         },
         "U_EPOCH_RyanZombie_1": {
             "scope": 1,
-            "displayName": { "_translate" : "Zombie 1" },
+            "displayName": {
+                "_translate": "Zombie 1"
+            },
             "picture": "\\A3\\characters_f\\data\\ui\\icon_U_C_Poloshirt_blue_ca.paa",
             "model": "\\A3\\Characters_F\\Common\\Suitpacks\\suitpack_civilian_F.p3d",
             "hiddenSelections": [
@@ -65,7 +69,9 @@
             "_inherit": "Uniform_Base"
         },
         "U_EPOCH_RyanZombie_2": {
-            "displayName": { "_translate" : "Zombie 2" },
+            "displayName": {
+                "_translate": "Zombie 2"
+            },
             "picture": "\\A3\\characters_f\\data\\ui\\icon_U_C_Poor_1_ca.paa",
             "model": "\\A3\\Characters_F\\Common\\Suitpacks\\suitpack_civilian_F.p3d",
             "hiddenSelections": [
@@ -84,7 +90,9 @@
             "_inherit": "U_EPOCH_RyanZombie_1"
         },
         "U_EPOCH_RyanZombie_3": {
-            "displayName": { "_translate" : "Zombie 3" },
+            "displayName": {
+                "_translate": "Zombie 3"
+            },
             "picture": "\\A3\\characters_f\\data\\ui\\icon_U_C_WorkerCoveralls_ca.paa",
             "model": "\\A3\\Characters_F\\Common\\Suitpacks\\suitpack_civilian_F.p3d",
             "hiddenSelections": [
@@ -103,7 +111,9 @@
             "_inherit": "U_EPOCH_RyanZombie_1"
         },
         "U_EPOCH_RyanZombie_4": {
-            "displayName": { "_translate" : "Zombie 4" },
+            "displayName": {
+                "_translate": "Zombie 4"
+            },
             "picture": "\\A3\\characters_F_EPC\\data\\ui\\icon_U_Journalist_ca.paa",
             "model": "\\A3\\Characters_F\\Common\\Suitpacks\\suitpack_original_F.p3d",
             "hiddenSelections": [
@@ -122,7 +132,9 @@
             "_inherit": "U_EPOCH_RyanZombie_1"
         },
         "U_EPOCH_RyanZombie_5": {
-            "displayName": { "_translate" : "Zombie 5" },
+            "displayName": {
+                "_translate": "Zombie 5"
+            },
             "picture": "\\A3\\characters_F_EPC\\data\\ui\\icon_U_Scientist_ca.paa",
             "model": "\\A3\\Characters_F\\Common\\Suitpacks\\suitpack_civilian_F.p3d",
             "hiddenSelections": [
@@ -143,7 +155,9 @@
         "U_BasicBodyFemale": {
             "author": "Sequisha",
             "scope": 2,
-            "displayName": { "_translate" : "Keesha Underwear" },
+            "displayName": {
+                "_translate": "Keesha Underwear"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\keesha\\icon_femaleW_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -161,7 +175,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Keesha" },
+            "displayName": {
+                "_translate": "Keesha"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\keesha\\icon_femaleW_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -179,7 +195,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Female Wetsuit" },
+            "displayName": {
+                "_translate": "Female Wetsuit"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\wetsuit\\icon_wetsuit_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -198,7 +216,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Female Wetsuit (white)" },
+            "displayName": {
+                "_translate": "Female Wetsuit (white)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\wetsuit\\icon_wetsuitWhite_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -217,7 +237,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Female Wetsuit (blue)" },
+            "displayName": {
+                "_translate": "Female Wetsuit (blue)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\wetsuit\\icon_wetsuitBlue_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -236,7 +258,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Female Wetsuit (purple)" },
+            "displayName": {
+                "_translate": "Female Wetsuit (purple)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\wetsuit\\icon_wetsuitPurp_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -255,7 +279,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Female Wetsuit (camo)" },
+            "displayName": {
+                "_translate": "Female Wetsuit (camo)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\wetsuit\\gear_femaleWetsuit_camo_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -274,7 +300,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Keesha Camo" },
+            "displayName": {
+                "_translate": "Keesha Camo"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\camo\\icon_camoDark_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -292,7 +320,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Female Ghillie (tan)" },
+            "displayName": {
+                "_translate": "Female Ghillie (tan)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\ghillie\\gear_femaleGhillie_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -310,7 +340,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Female Ghillie (light green)" },
+            "displayName": {
+                "_translate": "Female Ghillie (light green)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\ghillie\\gear_femaleGhillie2_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -328,7 +360,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Female Ghillie (green)" },
+            "displayName": {
+                "_translate": "Female Ghillie (green)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\ghillie\\gear_femaleGhillie3_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -346,7 +380,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Keesha Camo (Blue)" },
+            "displayName": {
+                "_translate": "Keesha Camo (Blue)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\camo\\icon_camoBlue_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -364,7 +400,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Keesha Camo (Brown)" },
+            "displayName": {
+                "_translate": "Keesha Camo (Brown)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\camo\\icon_camoBrown_ca.pqq.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -382,7 +420,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Keesha Camo (Red)" },
+            "displayName": {
+                "_translate": "Keesha Camo (Red)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\camo\\icon_camoRed_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -400,7 +440,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Dan" },
+            "displayName": {
+                "_translate": "Dan"
+            },
             "picture": "\\A3\\characters_f\\data\\ui\\icon_U_BasicBody_CA.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -418,7 +460,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Sapper" },
+            "displayName": {
+                "_translate": "Sapper"
+            },
             "picture": "\\A3\\characters_f\\data\\ui\\icon_U_BasicBody_CA.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -436,7 +480,9 @@
             "allowedSlots": [
                 901
             ],
-            "displayName": { "_translate" : "Unknown" },
+            "displayName": {
+                "_translate": "Unknown"
+            },
             "picture": "\\A3\\characters_f\\data\\ui\\icon_U_BasicBody_CA.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "ItemInfo": {
@@ -514,7 +560,9 @@
         "V_F0_EPOCH": {
             "maleVest": "V_16_EPOCH",
             "scope": 2,
-            "displayName": { "_translate" : "Female Vest (Black)" },
+            "displayName": {
+                "_translate": "Female Vest (Black)"
+            },
             "picture": "\\A3\\characters_f\\Data\\UI\\icon_V_TacVest_blk_CA.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "hiddenSelectionsTextures": [
@@ -553,7 +601,9 @@
         "V_F1_EPOCH": {
             "maleVest": "V_13_EPOCH",
             "scope": 2,
-            "displayName": { "_translate" : "Female Vest (Khaki)" },
+            "displayName": {
+                "_translate": "Female Vest (Khaki)"
+            },
             "picture": "\\A3\\characters_f\\Data\\UI\\icon_V_TacVest_khk_CA.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "hiddenSelectionsTextures": [
@@ -564,7 +614,9 @@
         "V_F2_EPOCH": {
             "maleVest": "V_15_EPOCH",
             "scope": 2,
-            "displayName": { "_translate" : "Female Vest (Olive)" },
+            "displayName": {
+                "_translate": "Female Vest (Olive)"
+            },
             "picture": "\\A3\\characters_f\\Data\\UI\\icon_V_TacVest_khk_CA.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "hiddenSelectionsTextures": [
@@ -575,7 +627,9 @@
         "V_F3_EPOCH": {
             "maleVest": "V_14_EPOCH",
             "scope": 2,
-            "displayName": { "_translate" : "Female Vest (Brown)" },
+            "displayName": {
+                "_translate": "Female Vest (Brown)"
+            },
             "picture": "\\A3\\characters_f\\Data\\UI\\icon_V_TacVest_khk_CA.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "hiddenSelectionsTextures": [
@@ -586,7 +640,9 @@
         "V_F4_EPOCH": {
             "maleVest": "V_25_EPOCH",
             "scope": 2,
-            "displayName": { "_translate" : "Female Vest (Camo)" },
+            "displayName": {
+                "_translate": "Female Vest (Camo)"
+            },
             "picture": "\\A3\\Characters_F\\data\\ui\\icon_V_TacVest_camo_CA.paa",
             "hiddenSelectionsTextures": [
                 "\\A3\\Characters_F\\Common\\Data\\tacticalvest_camo_co.paa"
@@ -625,7 +681,9 @@
         "V_F5_EPOCH": {
             "maleVest": "V_26_EPOCH",
             "scope": 2,
-            "displayName": { "_translate" : "Female Vest (Police)" },
+            "displayName": {
+                "_translate": "Female Vest (Police)"
+            },
             "picture": "\\A3\\characters_f\\Data\\UI\\icon_V_TacVest_blk_police_CA.paa",
             "hiddenSelectionsTextures": [
                 "\\A3\\Characters_F\\Common\\Data\\tacticalvest_police_co.paa"
@@ -1725,7 +1783,9 @@
             "maleVest": "V_41_EPOCH",
             "author": "Sequisha",
             "scope": 2,
-            "displayName": { "_translate" : "Side Pack (female)" },
+            "displayName": {
+                "_translate": "Side Pack (female)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\side pack\\equip_sidepack_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "hiddenSelectionsTextures": [
@@ -1745,7 +1805,9 @@
             "femaleVest": "V_F41_EPOCH",
             "author": "Sequisha",
             "scope": 2,
-            "displayName": { "_translate" : "Side Pack (male)" },
+            "displayName": {
+                "_translate": "Side Pack (male)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\side pack\\equip_sidepack_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
             "hiddenSelectionsTextures": [
@@ -1775,7 +1837,9 @@
             "author": "AWOL",
             "scope": 2,
             "weaponPoolAvailable": 1,
-            "displayName": { "_translate" : "Clown Mask" },
+            "displayName": {
+                "_translate": "Clown Mask"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\clown\\gear_clownmask_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\clown.p3d",
             "ItemInfo": {
@@ -1795,7 +1859,9 @@
             "scope": 2,
             "author": "Kiory",
             "weaponPoolAvailable": 1,
-            "displayName": { "_translate" : "Scary Wolf Mask" },
+            "displayName": {
+                "_translate": "Scary Wolf Mask"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_wolfmask_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_2\\wolf_mask.p3d",
             "ItemInfo": {
@@ -1818,7 +1884,9 @@
             "scope": 2,
             "author": "Kiory",
             "weaponPoolAvailable": 1,
-            "displayName": { "_translate" : "Scary Pumpkin Mask" },
+            "displayName": {
+                "_translate": "Scary Pumpkin Mask"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_pkinmask_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_2\\pkin_mask.p3d",
             "ItemInfo": {
@@ -1839,7 +1907,9 @@
         },
         "H_F0_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "Red Beret" },
+            "displayName": {
+                "_translate": "Red Beret"
+            },
             "author": "Sequisha",
             "picture": "\\A3\\characters_f\\Data\\UI\\icon_H_Cap_blk_CA.paa",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\parcel.p3d",
@@ -1872,7 +1942,9 @@
         },
         "H_F1_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "Green Beret" },
+            "displayName": {
+                "_translate": "Green Beret"
+            },
             "hiddenSelectionsTextures": [
                 "\\x\\addons\\a3_epoch_assets\\textures\\Beret\\beretGcamo_Co.paa"
             ],
@@ -1883,7 +1955,9 @@
         },
         "H_F2_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "Pink Beret" },
+            "displayName": {
+                "_translate": "Pink Beret"
+            },
             "hiddenSelectionsTextures": [
                 "\\x\\addons\\a3_epoch_assets\\textures\\Beret\\beretPcamo_Co.paa"
             ],
@@ -1894,7 +1968,9 @@
         },
         "H_F3_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "Blue Beret" },
+            "displayName": {
+                "_translate": "Blue Beret"
+            },
             "hiddenSelectionsTextures": [
                 "\\x\\addons\\a3_epoch_assets\\textures\\Beret\\beretBcamo_Co.paa"
             ],
@@ -1905,7 +1981,9 @@
         },
         "H_F4_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "Orange Beret" },
+            "displayName": {
+                "_translate": "Orange Beret"
+            },
             "hiddenSelectionsTextures": [
                 "\\x\\addons\\a3_epoch_assets\\textures\\Beret\\beretOcamo_Co.paa"
             ],
@@ -1916,7 +1994,9 @@
         },
         "H_F5_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "Yellow Beret" },
+            "displayName": {
+                "_translate": "Yellow Beret"
+            },
             "hiddenSelectionsTextures": [
                 "\\x\\addons\\a3_epoch_assets\\textures\\Beret\\beretYcamo_Co.paa"
             ],
@@ -2717,7 +2797,9 @@
             "opticsZoomInit": 0.55,
             "distanceZoomMin": 300,
             "distanceZoomMax": 800,
-            "descriptionShort": { "_translate" : "AKM Assault Rifle" },
+            "descriptionShort": {
+                "_translate": "AKM Assault Rifle"
+            },
             "handAnim": [
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a2_epoch_weapons\\akm\\AKM.rtm"
@@ -2725,49 +2807,49 @@
             "dexterity": 1.8,
             "bullet1": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet2": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet3": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet4": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt4",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet5": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet6": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet7": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet8": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard4",
-                1.0,
+                1,
                 1,
                 15
             ],
@@ -3011,7 +3093,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 30,
                 "maxRangeProbab": 0.1,
-                "aiRateOfFire": 1e-06,
+                "aiRateOfFire": 0.000001,
                 "_inherit": "Mode_FullAuto"
             },
             "fullauto_medium": {
@@ -3023,7 +3105,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 150,
                 "maxRangeProbab": 0.05,
-                "aiRateOfFire": 2.0,
+                "aiRateOfFire": 2,
                 "aiRateOfFireDistance": 200,
                 "_inherit": "FullAuto"
             },
@@ -3053,8 +3135,8 @@
                 "aiRateOfFireDistance": 700,
                 "_inherit": "single_medium_optics1"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 "db-5",
@@ -3071,7 +3153,9 @@
         },
         "AKM_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "AKM" },
+            "displayName": {
+                "_translate": "AKM"
+            },
             "model": "\\x\\addons\\a2_epoch_weapons\\akm\\akm_epoch.p3d",
             "picture": "\\x\\addons\\a2_epoch_weapons\\akm\\data\\UI\\gear_akm_x_ca.paa",
             "UiPicture": "\\A3\\Weapons_F\\Data\\UI\\icon_mg_ca.paa",
@@ -3129,7 +3213,9 @@
             "opticsZoomInit": 0.55,
             "distanceZoomMin": 300,
             "distanceZoomMax": 800,
-            "descriptionShort": { "_translate" : "m4a3 Assault Rifle" },
+            "descriptionShort": {
+                "_translate": "m4a3 Assault Rifle"
+            },
             "handAnim": [
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a2_epoch_weapons\\m4a3\\m4a3.rtm"
@@ -3137,49 +3223,49 @@
             "dexterity": 1.8,
             "bullet1": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet2": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet3": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet4": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt4",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet5": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet6": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet7": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet8": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard4",
-                1.0,
+                1,
                 1,
                 15
             ],
@@ -3415,7 +3501,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 30,
                 "maxRangeProbab": 0.1,
-                "aiRateOfFire": 1e-06,
+                "aiRateOfFire": 0.000001,
                 "_inherit": "Mode_FullAuto"
             },
             "fullauto_medium": {
@@ -3427,7 +3513,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 150,
                 "maxRangeProbab": 0.05,
-                "aiRateOfFire": 2.0,
+                "aiRateOfFire": 2,
                 "aiRateOfFireDistance": 200,
                 "_inherit": "FullAuto"
             },
@@ -3457,8 +3543,8 @@
                 "aiRateOfFireDistance": 700,
                 "_inherit": "single_medium_optics1"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 "db-5",
@@ -3475,7 +3561,9 @@
         },
         "m4a3_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "M4a3" },
+            "displayName": {
+                "_translate": "M4a3"
+            },
             "model": "\\x\\addons\\a2_epoch_weapons\\m4a3\\m4a3_epoch.p3d",
             "picture": "\\x\\addons\\a2_epoch_weapons\\m4a3\\data\\UI\\gear_m4a3_x_ca.paa",
             "UiPicture": "\\A3\\Weapons_F\\Data\\UI\\icon_mg_ca.paa",
@@ -3529,7 +3617,9 @@
             "opticsZoomInit": 0.55,
             "distanceZoomMin": 300,
             "distanceZoomMax": 800,
-            "descriptionShort": { "_translate" : "M14 Rifle" },
+            "descriptionShort": {
+                "_translate": "M14 Rifle"
+            },
             "handAnim": [
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a2_epoch_weapons\\M14\\M14.rtm"
@@ -3537,49 +3627,49 @@
             "dexterity": 1.8,
             "bullet1": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet2": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet3": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet4": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt4",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet5": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet6": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet7": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet8": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard4",
-                1.0,
+                1,
                 1,
                 15
             ],
@@ -3813,7 +3903,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 30,
                 "maxRangeProbab": 0.1,
-                "aiRateOfFire": 1e-06,
+                "aiRateOfFire": 0.000001,
                 "_inherit": "Mode_FullAuto"
             },
             "fullauto_medium": {
@@ -3825,7 +3915,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 150,
                 "maxRangeProbab": 0.05,
-                "aiRateOfFire": 2.0,
+                "aiRateOfFire": 2,
                 "aiRateOfFireDistance": 200,
                 "_inherit": "FullAuto"
             },
@@ -3855,8 +3945,8 @@
                 "aiRateOfFireDistance": 700,
                 "_inherit": "single_medium_optics1"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 "db-5",
@@ -3873,7 +3963,9 @@
         },
         "M14_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "M14" },
+            "displayName": {
+                "_translate": "M14"
+            },
             "model": "\\x\\addons\\a2_epoch_weapons\\m14\\m14_epoch.p3d",
             "picture": "\\x\\addons\\a2_epoch_weapons\\m14\\Data\\UI\\gear_m14_x_ca.paa",
             "UiPicture": "\\A3\\Weapons_F\\Data\\UI\\icon_sniper_ca.paa",
@@ -3889,7 +3981,9 @@
         },
         "M14Grn_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "M14 (Green)" },
+            "displayName": {
+                "_translate": "M14 (Green)"
+            },
             "model": "\\x\\addons\\a2_epoch_weapons\\m14\\m14_green_epoch.p3d",
             "picture": "\\x\\addons\\a2_epoch_weapons\\m14\\Data\\UI\\gear_m14g_x_ca.paa",
             "UiPicture": "\\A3\\Weapons_F\\Data\\UI\\icon_sniper_ca.paa",
@@ -3947,7 +4041,9 @@
             "opticsZoomInit": 0.55,
             "distanceZoomMin": 300,
             "distanceZoomMax": 800,
-            "descriptionShort": { "_translate" : "M16 Assault Rifle" },
+            "descriptionShort": {
+                "_translate": "M16 Assault Rifle"
+            },
             "handAnim": [
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a2_epoch_weapons\\m16\\m16_anim.rtm"
@@ -3955,49 +4051,49 @@
             "dexterity": 1.8,
             "bullet1": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet2": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet3": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet4": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt4",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet5": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet6": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet7": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet8": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard4",
-                1.0,
+                1,
                 1,
                 15
             ],
@@ -4233,7 +4329,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 30,
                 "maxRangeProbab": 0.1,
-                "aiRateOfFire": 1e-06,
+                "aiRateOfFire": 0.000001,
                 "_inherit": "Mode_Burst"
             },
             "single_medium_optics1": {
@@ -4262,8 +4358,8 @@
                 "aiRateOfFireDistance": 700,
                 "_inherit": "single_medium_optics1"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 "db-5",
@@ -4280,7 +4376,9 @@
         },
         "m16_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "M16" },
+            "displayName": {
+                "_translate": "M16"
+            },
             "model": "\\x\\addons\\a2_epoch_weapons\\m16\\m16_epoch.p3d",
             "picture": "\\x\\addons\\a2_epoch_weapons\\m16\\data\\UI\\gear_m16_x_ca.paa",
             "UiPicture": "\\A3\\Weapons_F\\Data\\UI\\icon_mg_ca.paa",
@@ -4296,7 +4394,9 @@
         },
         "m16Red_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "M16 (Red)" },
+            "displayName": {
+                "_translate": "M16 (Red)"
+            },
             "model": "\\x\\addons\\a2_epoch_weapons\\m16\\m16Red_epoch.p3d",
             "picture": "\\x\\addons\\a2_epoch_weapons\\m16\\data\\UI\\gear_m16_x_ca.paa",
             "UiPicture": "\\A3\\Weapons_F\\Data\\UI\\icon_mg_ca.paa",
@@ -4320,7 +4420,7 @@
             "discreteDistanceInitIndex": 0,
             "maxRecoilSway": 0.0225,
             "swayDecaySpeed": 1.05,
-            "inertia": 1.0,
+            "inertia": 1,
             "maxZeroing": 2000,
             "GunParticles": {
                 "SecondEffect": {
@@ -4349,7 +4449,9 @@
             "opticsZoomInit": 0.55,
             "distanceZoomMin": 300,
             "distanceZoomMax": 800,
-            "descriptionShort": { "_translate" : "M107 Sniper Rifle" },
+            "descriptionShort": {
+                "_translate": "M107 Sniper Rifle"
+            },
             "handAnim": [
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a2_epoch_weapons\\m107\\m107.rtm"
@@ -4357,49 +4459,49 @@
             "dexterity": 1.8,
             "bullet1": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet2": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet3": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet4": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt4",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet5": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet6": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet7": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet8": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard4",
-                1.0,
+                1,
                 1,
                 15
             ],
@@ -4633,7 +4735,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 30,
                 "maxRangeProbab": 0.1,
-                "aiRateOfFire": 1e-06,
+                "aiRateOfFire": 0.000001,
                 "_inherit": "Mode_FullAuto"
             },
             "fullauto_medium": {
@@ -4645,7 +4747,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 150,
                 "maxRangeProbab": 0.05,
-                "aiRateOfFire": 2.0,
+                "aiRateOfFire": 2,
                 "aiRateOfFireDistance": 200,
                 "_inherit": "FullAuto"
             },
@@ -4675,8 +4777,8 @@
                 "aiRateOfFireDistance": 700,
                 "_inherit": "single_medium_optics1"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 "db-5",
@@ -4693,7 +4795,9 @@
         },
         "m107_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "M107" },
+            "displayName": {
+                "_translate": "M107"
+            },
             "model": "\\x\\addons\\a2_epoch_weapons\\m107\\m107_epoch.p3d",
             "picture": "\\x\\addons\\a2_epoch_weapons\\m107\\data\\UI\\gear_m107_x_ca.paa",
             "UiPicture": "\\A3\\Weapons_F\\Data\\UI\\icon_mg_ca.paa",
@@ -4709,7 +4813,9 @@
         },
         "m107Tan_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "M107 (Tan)" },
+            "displayName": {
+                "_translate": "M107 (Tan)"
+            },
             "model": "\\x\\addons\\a2_epoch_weapons\\m107\\m107Tan_epoch.p3d",
             "picture": "\\x\\addons\\a2_epoch_weapons\\m107\\data\\UI\\gear_m107Tan_x_ca.paa",
             "UiPicture": "\\A3\\Weapons_F\\Data\\UI\\icon_mg_ca.paa",
@@ -4767,7 +4873,9 @@
             "opticsZoomInit": 0.55,
             "distanceZoomMin": 300,
             "distanceZoomMax": 800,
-            "descriptionShort": { "_translate" : "m249 LMG" },
+            "descriptionShort": {
+                "_translate": "m249 LMG"
+            },
             "handAnim": [
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a2_epoch_weapons\\m249\\m249.rtm"
@@ -4775,49 +4883,49 @@
             "dexterity": 1.8,
             "bullet1": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet2": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet3": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet4": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-dirt4",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet5": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard1",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet6": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard2",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet7": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard3",
-                1.0,
+                1,
                 1,
                 15
             ],
             "bullet8": [
                 "A3\\Sounds_F\\weapons\\bullets\\7_62-hard4",
-                1.0,
+                1,
                 1,
                 15
             ],
@@ -5053,7 +5161,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 30,
                 "maxRangeProbab": 0.1,
-                "aiRateOfFire": 1e-06,
+                "aiRateOfFire": 0.000001,
                 "_inherit": "Mode_FullAuto"
             },
             "fullauto_medium": {
@@ -5065,7 +5173,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 150,
                 "maxRangeProbab": 0.05,
-                "aiRateOfFire": 2.0,
+                "aiRateOfFire": 2,
                 "aiRateOfFireDistance": 200,
                 "_inherit": "FullAuto"
             },
@@ -5095,8 +5203,8 @@
                 "aiRateOfFireDistance": 700,
                 "_inherit": "single_medium_optics1"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 "db-5",
@@ -5113,7 +5221,9 @@
         },
         "m249_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "M249" },
+            "displayName": {
+                "_translate": "M249"
+            },
             "model": "\\x\\addons\\a2_epoch_weapons\\m249\\m249_epoch.p3d",
             "picture": "\\x\\addons\\a2_epoch_weapons\\m249\\data\\UI\\gear_m249_x_ca.paa",
             "UiPicture": "\\A3\\Weapons_F\\Data\\UI\\icon_mg_ca.paa",
@@ -5129,7 +5239,9 @@
         },
         "m249Tan_EPOCH": {
             "scope": 2,
-            "displayName": { "_translate" : "M249 Tan" },
+            "displayName": {
+                "_translate": "M249 Tan"
+            },
             "model": "\\x\\addons\\a2_epoch_weapons\\m249\\m249Tan_epoch.p3d",
             "picture": "\\x\\addons\\a2_epoch_weapons\\m249\\data\\UI\\gear_m249_x_ca.paa",
             "UiPicture": "\\A3\\Weapons_F\\Data\\UI\\icon_mg_ca.paa",
@@ -5182,7 +5294,9 @@
             "opticsZoomInit": 0.75,
             "distanceZoomMin": 300,
             "distanceZoomMax": 300,
-            "descriptionShort": { "_translate" : "Testing weapon with grenade launcher" },
+            "descriptionShort": {
+                "_translate": "Testing weapon with grenade launcher"
+            },
             "handAnim": [
                 "OFP2_ManSkeleton",
                 "\\A3\\Weapons_F\\Rifles\\MX\\data\\Anim\\MX_gl.rtm"
@@ -5316,7 +5430,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 150,
                 "maxRangeProbab": 0.05,
-                "aiRateOfFire": 2.0,
+                "aiRateOfFire": 2,
                 "aiRateOfFireDistance": 200,
                 "_inherit": "FullAuto"
             },
@@ -5347,8 +5461,12 @@
                 "_inherit": "single_medium_optics1"
             },
             "Test_GL_F": {
-                "displayName": { "_translate" : "Test grenade launcher" },
-                "descriptionShort": { "_translate" : "TGL" },
+                "displayName": {
+                    "_translate": "Test grenade launcher"
+                },
+                "descriptionShort": {
+                    "_translate": "TGL"
+                },
                 "useModelOptics": 0,
                 "useExternalOptic": 0,
                 "magazines": [
@@ -5370,8 +5488,8 @@
                 "discreteDistanceInitIndex": 1,
                 "_inherit": "UGL_F"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 "db-5",
@@ -5389,8 +5507,12 @@
         "Rollins_F": {
             "author": "Sequisha",
             "scope": 2,
-            "displayName": { "_translate" : "Rollins Rifle" },
-            "descriptionShort": { "_translate" : "1940 .45 Rollins Rifle" },
+            "displayName": {
+                "_translate": "Rollins Rifle"
+            },
+            "descriptionShort": {
+                "_translate": "1940 .45 Rollins Rifle"
+            },
             "magazines": [
                 "5Rnd_rollins_mag"
             ],
@@ -5508,8 +5630,12 @@
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\chainsaw.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_1\\pictures\\equip_chainsaw_CA.paa",
-            "displayName": { "_translate" : "Chainsaw" },
-            "descriptionShort": { "_translate" : "Hermlite Chainsaw" },
+            "displayName": {
+                "_translate": "Chainsaw"
+            },
+            "descriptionShort": {
+                "_translate": "Hermlite Chainsaw"
+            },
             "magazines": [
                 "CSGAS"
             ],
@@ -5600,25 +5726,33 @@
         "ChainSawB": {
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\chainsaw_B.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_1\\pictures\\equip_chainsawB_CA.paa",
-            "descriptionShort": { "_translate" : "Hermlite Chainsaw (Blue)" },
+            "descriptionShort": {
+                "_translate": "Hermlite Chainsaw (Blue)"
+            },
             "_inherit": "ChainSaw"
         },
         "ChainSawG": {
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\chainsaw_G.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_1\\pictures\\equip_chainsawG_CA.paa",
-            "descriptionShort": { "_translate" : "Hermlite Chainsaw (Green)" },
+            "descriptionShort": {
+                "_translate": "Hermlite Chainsaw (Green)"
+            },
             "_inherit": "ChainSaw"
         },
         "ChainSawP": {
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\chainsaw_P.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_1\\pictures\\equip_chainsawP_CA.paa",
-            "descriptionShort": { "_translate" : "Hermlite Chainsaw (Pink)" },
+            "descriptionShort": {
+                "_translate": "Hermlite Chainsaw (Pink)"
+            },
             "_inherit": "ChainSaw"
         },
         "ChainSawR": {
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\chainsaw_R.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_1\\pictures\\equip_chainsawR_CA.paa",
-            "descriptionShort": { "_translate" : "Hermlite Chainsaw (Red)" },
+            "descriptionShort": {
+                "_translate": "Hermlite Chainsaw (Red)"
+            },
             "_inherit": "ChainSaw"
         },
         "Pistol": {
@@ -5642,8 +5776,12 @@
             "magazines": [
                 "10rnd_22X44_magazine"
             ],
-            "displayname": { "_translate" : "Ruger" },
-            "descriptionShort": { "_translate" : ".22 caliber pistol" },
+            "displayname": {
+                "_translate": "Ruger"
+            },
+            "descriptionShort": {
+                "_translate": ".22 caliber pistol"
+            },
             "Library": {
                 "libTextDesc": ".22 caliber pistol"
             },
@@ -5828,7 +5966,9 @@
             "magazines": [
                 "9rnd_45X88_magazine"
             ],
-            "displayname": { "_translate" : "1911" },
+            "displayname": {
+                "_translate": "1911"
+            },
             "descriptionShort": "$STR_A3_CFGWEAPONS_HGUN_ACPC2_F_2",
             "Library": {
                 "libTextDesc": "$STR_A3_CfgWeapons_hgun_Pistol_heavy_01_F_Library0"
@@ -5975,8 +6115,12 @@
             "magazines": [
                 "hatchet_swing"
             ],
-            "displayName": { "_translate" : "Hatchet" },
-            "descriptionShort": { "_translate" : "Hatchet" },
+            "displayName": {
+                "_translate": "Hatchet"
+            },
+            "descriptionShort": {
+                "_translate": "Hatchet"
+            },
             "cursor": "EmptyCursor",
             "cursorAim": "throw",
             "cursorSize": 1,
@@ -6003,7 +6147,7 @@
                     ],
                     "soundClosure": [
                         "closure1",
-                        1.0
+                        1
                     ]
                 },
                 "StandardSound": {
@@ -6015,7 +6159,7 @@
                     ],
                     "soundBegin": [
                         "begin1",
-                        1.0
+                        1
                     ],
                     "_inherit": "BaseSoundModeType"
                 },
@@ -6028,7 +6172,7 @@
                     ],
                     "soundBegin": [
                         "begin1",
-                        1.0
+                        1
                     ],
                     "_inherit": "BaseSoundModeType"
                 },
@@ -6056,8 +6200,12 @@
             "magazines": [
                 "hatchet_swing"
             ],
-            "displayName": { "_translate" : "Crude Hatchet" },
-            "descriptionShort": { "_translate" : "Crude Hatchet" },
+            "displayName": {
+                "_translate": "Crude Hatchet"
+            },
+            "descriptionShort": {
+                "_translate": "Crude Hatchet"
+            },
             "cursor": "EmptyCursor",
             "cursorAim": "throw",
             "cursorSize": 1,
@@ -6084,7 +6232,7 @@
                     ],
                     "soundClosure": [
                         "closure1",
-                        1.0
+                        1
                     ]
                 },
                 "StandardSound": {
@@ -6096,7 +6244,7 @@
                     ],
                     "soundBegin": [
                         "begin1",
-                        1.0
+                        1
                     ],
                     "_inherit": "BaseSoundModeType"
                 },
@@ -6109,7 +6257,7 @@
                     ],
                     "soundBegin": [
                         "begin1",
-                        1.0
+                        1
                     ],
                     "_inherit": "BaseSoundModeType"
                 },
@@ -6138,8 +6286,12 @@
                 "EnergyPack",
                 "EnergyPackLg"
             ],
-            "displayName": { "_translate" : "Multi Gun" },
-            "descriptionShort": { "_translate" : "Multi Gun" },
+            "displayName": {
+                "_translate": "Multi Gun"
+            },
+            "descriptionShort": {
+                "_translate": "Multi Gun"
+            },
             "Library": {
                 "libTextDesc": "Multi Gun"
             },
@@ -6150,13 +6302,13 @@
             "recoilProne": "recoil_prone_pistol_heavy",
             "closure1": [
                 "A3\\sounds_f\\weapons\\closure\\closure_handgun_3",
-                1.0,
+                1,
                 1,
                 10
             ],
             "closure2": [
                 "A3\\sounds_f\\weapons\\closure\\closure_handgun_3",
-                1.0,
+                1,
                 1.1,
                 10
             ],
@@ -6318,7 +6470,9 @@
             "magazineReloadTime": 0,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\sledge_weaponized.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\Sledge\\equip_sledge_CA.paa",
-            "displayName": { "_translate" : "Sledge" },
+            "displayName": {
+                "_translate": "Sledge"
+            },
             "magazines": [
                 "sledge_swing"
             ],
@@ -6326,7 +6480,9 @@
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Sledge_hold.rtm"
             ],
-            "descriptionShort": { "_translate" : "Sledge Hammer" },
+            "descriptionShort": {
+                "_translate": "Sledge Hammer"
+            },
             "_inherit": "MeleeWeapon"
         },
         "MeleeSword": {
@@ -6339,7 +6495,9 @@
             "magazineReloadTime": 0,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\sword_weaponized.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\sword\\equip_sword_ca.paa",
-            "displayName": { "_translate" : "Kruhm" },
+            "displayName": {
+                "_translate": "Kruhm"
+            },
             "magazines": [
                 "sledge_swing"
             ],
@@ -6347,7 +6505,9 @@
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Sledge_hold.rtm"
             ],
-            "descriptionShort": { "_translate" : "Powerful Atlantean Sword" },
+            "descriptionShort": {
+                "_translate": "Powerful Atlantean Sword"
+            },
             "_inherit": "MeleeWeapon"
         },
         "MeleeMaul": {
@@ -6360,7 +6520,9 @@
             "magazineReloadTime": 0,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\maul_weaponized.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\improv_weapon\\gear_maul_ca.paa",
-            "displayName": { "_translate" : "Maul" },
+            "displayName": {
+                "_translate": "Maul"
+            },
             "magazines": [
                 "sledge_swing"
             ],
@@ -6368,7 +6530,9 @@
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Sledge_hold.rtm"
             ],
-            "descriptionShort": { "_translate" : "Maul Hammer" },
+            "descriptionShort": {
+                "_translate": "Maul Hammer"
+            },
             "_inherit": "MeleeWeapon"
         },
         "WoodClub": {
@@ -6381,7 +6545,9 @@
             "magazineReloadTime": 0,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\stick_weaponized.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\improv_weapon\\gear_stick_ca.paa",
-            "displayName": { "_translate" : "Wood Club" },
+            "displayName": {
+                "_translate": "Wood Club"
+            },
             "magazines": [
                 "stick_swing"
             ],
@@ -6389,7 +6555,9 @@
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Sledge_hold.rtm"
             ],
-            "descriptionShort": { "_translate" : "Wood Club" },
+            "descriptionShort": {
+                "_translate": "Wood Club"
+            },
             "_inherit": "MeleeWeapon"
         },
         "MeleeRod": {
@@ -6402,7 +6570,9 @@
             "magazineReloadTime": 0,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\fishingpole_weaponized.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\fishing\\equip_fishingRod_ca.paa",
-            "displayName": { "_translate" : "Fishing Rod" },
+            "displayName": {
+                "_translate": "Fishing Rod"
+            },
             "magazines": [
                 "stick_swing"
             ],
@@ -6410,7 +6580,9 @@
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Sledge_hold.rtm"
             ],
-            "descriptionShort": { "_translate" : "Fishing Rod" },
+            "descriptionShort": {
+                "_translate": "Fishing Rod"
+            },
             "_inherit": "MeleeWeapon"
         },
         "Plunger": {
@@ -6423,7 +6595,9 @@
             "magazineReloadTime": 0,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\plunger_weaponized.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\improv_weapon\\gear_plunger_ca.paa",
-            "displayName": { "_translate" : "Plunger" },
+            "displayName": {
+                "_translate": "Plunger"
+            },
             "magazines": [
                 "stick_swing"
             ],
@@ -6431,7 +6605,9 @@
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Sledge_hold.rtm"
             ],
-            "descriptionShort": { "_translate" : "Plunger" },
+            "descriptionShort": {
+                "_translate": "Plunger"
+            },
             "_inherit": "MeleeWeapon"
         },
         "InventoryMuzzleItem_Base_F": {
@@ -6453,9 +6629,9 @@
                     "audibleFire": 0.3,
                     "visibleFireTime": 0.5,
                     "audibleFireTime": 0.5,
-                    "cost": 1.0,
+                    "cost": 1,
                     "typicalSpeed": 0.6,
-                    "airFriction": 1.0
+                    "airFriction": 1
                 },
                 "muzzleEnd": "zaslehPoint",
                 "alternativeFire": "Zasleh2",
@@ -6592,7 +6768,7 @@
                     "midRangeProbab": 0.7,
                     "maxRange": 150,
                     "maxRangeProbab": 0.05,
-                    "aiRateOfFire": 2.0,
+                    "aiRateOfFire": 2,
                     "aiRateOfFireDistance": 200,
                     "_inherit": "FullAuto"
                 },
@@ -6631,7 +6807,9 @@
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\repairDefib.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\repairGun\\gear_defib_ca.paa",
-            "displayName": { "_translate" : "Revive Player" },
+            "displayName": {
+                "_translate": "Revive Player"
+            },
             "_inherit": "test_suppressor"
         },
         "Heal_EPOCH": {
@@ -6639,7 +6817,9 @@
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\repairHeal.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\repairGun\\gear_heal_ca.paa",
-            "displayName": { "_translate" : "Heal Player" },
+            "displayName": {
+                "_translate": "Heal Player"
+            },
             "_inherit": "test_suppressor"
         },
         "Repair_EPOCH": {
@@ -6647,7 +6827,9 @@
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgWeapons\\repairVehicle.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\textures\\repairGun\\gear_repair_ca.paa",
-            "displayName": { "_translate" : "Vehicle Repair" },
+            "displayName": {
+                "_translate": "Vehicle Repair"
+            },
             "_inherit": "test_suppressor"
         },
         "NVGoggles": {
@@ -6721,7 +6903,9 @@
             "_inherit": "ItemCore"
         },
         "optic_tws": {
-            "displayName": { "_translate" : "TWS (defect)" },
+            "displayName": {
+                "_translate": "TWS (defect)"
+            },
             "ItemInfo": {
                 "OpticsModes": {
                     "TWS": {
@@ -6772,7 +6956,9 @@
             "_inherit": "ItemCore"
         },
         "optic_tws_mg": {
-            "displayName": { "_translate" : "TWS MG (defect)" },
+            "displayName": {
+                "_translate": "TWS MG (defect)"
+            },
             "ItemInfo": {
                 "OpticsModes": {
                     "TWS": {
@@ -6819,7 +7005,9 @@
             "_isExtern": true
         },
         "EpochRadio0": {
-            "displayName": { "_translate" : "Radio (Quartz)" },
+            "displayName": {
+                "_translate": "Radio (Quartz)"
+            },
             "channelID": 0,
             "channelColor": [
                 0.588,
@@ -6830,7 +7018,9 @@
             "_inherit": "ItemRadio"
         },
         "EpochRadio1": {
-            "displayName": { "_translate" : "Radio (Garnet)" },
+            "displayName": {
+                "_translate": "Radio (Garnet)"
+            },
             "channelID": 1,
             "channelColor": [
                 0.314,
@@ -6841,7 +7031,9 @@
             "_inherit": "ItemRadio"
         },
         "EpochRadio2": {
-            "displayName": { "_translate" : "Radio (Citrine)" },
+            "displayName": {
+                "_translate": "Radio (Citrine)"
+            },
             "channelID": 2,
             "channelColor": [
                 0.714,
@@ -6852,7 +7044,9 @@
             "_inherit": "ItemRadio"
         },
         "EpochRadio3": {
-            "displayName": { "_translate" : "Radio (Amethyst)" },
+            "displayName": {
+                "_translate": "Radio (Amethyst)"
+            },
             "channelID": 3,
             "channelColor": [
                 0.604,
@@ -6863,7 +7057,9 @@
             "_inherit": "ItemRadio"
         },
         "EpochRadio4": {
-            "displayName": { "_translate" : "Radio (Topaz)" },
+            "displayName": {
+                "_translate": "Radio (Topaz)"
+            },
             "channelID": 4,
             "channelColor": [
                 0.718,
@@ -6874,7 +7070,9 @@
             "_inherit": "ItemRadio"
         },
         "EpochRadio5": {
-            "displayName": { "_translate" : "Radio (Sapphire)" },
+            "displayName": {
+                "_translate": "Radio (Sapphire)"
+            },
             "channelID": 5,
             "channelColor": [
                 0.161,
@@ -6885,7 +7083,9 @@
             "_inherit": "ItemRadio"
         },
         "EpochRadio6": {
-            "displayName": { "_translate" : "Radio (Onyx)" },
+            "displayName": {
+                "_translate": "Radio (Onyx)"
+            },
             "channelID": 6,
             "channelColor": [
                 0.4,
@@ -6896,7 +7096,9 @@
             "_inherit": "ItemRadio"
         },
         "EpochRadio7": {
-            "displayName": { "_translate" : "Radio (Emerald)" },
+            "displayName": {
+                "_translate": "Radio (Emerald)"
+            },
             "channelID": 7,
             "channelColor": [
                 0.008,
@@ -6907,7 +7109,9 @@
             "_inherit": "ItemRadio"
         },
         "EpochRadio8": {
-            "displayName": { "_translate" : "Radio (Ruby)" },
+            "displayName": {
+                "_translate": "Radio (Ruby)"
+            },
             "channelID": 8,
             "channelColor": [
                 0.835,
@@ -6918,7 +7122,9 @@
             "_inherit": "ItemRadio"
         },
         "EpochRadio9": {
-            "displayName": { "_translate" : "Radio (Jade)" },
+            "displayName": {
+                "_translate": "Radio (Jade)"
+            },
             "channelID": 9,
             "channelColor": [
                 0,
@@ -6930,7 +7136,9 @@
         },
         "speargun_epoch": {
             "author": "Kiory",
-            "displayName": { "_translate" : "Speargun" },
+            "displayName": {
+                "_translate": "Speargun"
+            },
             "scope": 2,
             "picture": "\\x\\addons\\a3_epoch_weapons\\gear\\gear_speargun_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_weapons\\speargun.p3d",
@@ -7020,13 +7228,13 @@
                 "StandardSound": {
                     "begin1": [
                         "",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin2": [
                         "",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
@@ -7079,8 +7287,8 @@
                 "maxRangeProbab": 0.3,
                 "_inherit": "Mode_SemiAuto"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 0.56234133,
@@ -7089,7 +7297,7 @@
             ],
             "reloadMagazineSound": [
                 "A3\\sounds_f\\weapons\\reloads\\new_MX",
-                1.0,
+                1,
                 1,
                 10
             ],
@@ -7097,7 +7305,9 @@
         },
         "sr25_epoch": {
             "author": "Kiory",
-            "displayName": { "_translate" : "SR 25" },
+            "displayName": {
+                "_translate": "SR 25"
+            },
             "scope": 2,
             "magazines": [
                 "20Rnd_762x51_Mag"
@@ -7142,7 +7352,9 @@
             "opticsZoomInit": 0.75,
             "distanceZoomMin": 300,
             "distanceZoomMax": 300,
-            "descriptionShort": { "_translate" : "Sniper rifle <br/>Caliber: 7.62x51 mm NATO" },
+            "descriptionShort": {
+                "_translate": "Sniper rifle <br/>Caliber: 7.62x51 mm NATO"
+            },
             "handAnim": [
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a3_epoch_weapons\\data\\handanims\\sr25_handanim2.rtm"
@@ -7266,8 +7478,8 @@
                 "aiRateOfFireDistance": 700,
                 "_inherit": "single_medium_optics1"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 0.56234133,
@@ -7285,7 +7497,9 @@
         "sr25_ec_epoch": {
             "author": "Kiory",
             "model": "\\x\\addons\\a3_epoch_weapons\\SR25_EC.p3d",
-            "displayName": { "_translate" : "SR 25 EC" },
+            "displayName": {
+                "_translate": "SR 25 EC"
+            },
             "handAnim": [
                 "OFP2_ManSkeleton",
                 "\\x\\addons\\a3_epoch_weapons\\data\\handanims\\sr25_handanim.rtm"
@@ -7305,7 +7519,9 @@
             "mFact": 1,
             "tBody": 100,
             "scope": 2,
-            "displayName": { "_translate" : "SR-25 Rifle Suppressor" },
+            "displayName": {
+                "_translate": "SR-25 Rifle Suppressor"
+            },
             "picture": "\\x\\addons\\a3_epoch_weapons\\gear\\gear_sr25_suppressor_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_weapons\\sr25_suppressor",
             "ItemInfo": {
@@ -7462,25 +7678,25 @@
                 "StandardSound": {
                     "begin1": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire1",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin2": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire2",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin3": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire3",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin4": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire4",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
@@ -7566,25 +7782,25 @@
                 "StandardSound": {
                     "begin1": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire1",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin2": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire2",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin3": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire3",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin4": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire4",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
@@ -7651,7 +7867,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 150,
                 "maxRangeProbab": 0.05,
-                "aiRateOfFire": 2.0,
+                "aiRateOfFire": 2,
                 "aiRateOfFireDistance": 200,
                 "_inherit": "FullAuto"
             },
@@ -7681,8 +7897,8 @@
                 "aiRateOfFireDistance": 700,
                 "_inherit": "single_medium_optics1"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 0.56234133,
@@ -7691,7 +7907,7 @@
             ],
             "reloadMagazineSound": [
                 "A3\\sounds_f\\weapons\\reloads\\new_MX",
-                1.0,
+                1,
                 1,
                 10
             ],
@@ -7699,7 +7915,9 @@
         },
         "l85a2_epoch": {
             "scope": 2,
-            "displayName": { "_translate" : "L85A2" },
+            "displayName": {
+                "_translate": "L85A2"
+            },
             "model": "\\x\\addons\\a3_epoch_weapons\\L85A2.p3d",
             "picture": "\\x\\addons\\a3_epoch_weapons\\gear\\gear_l85a2_x_ca.paa",
             "PointerSlot": {
@@ -7709,7 +7927,9 @@
         },
         "l85a2_ris_epoch": {
             "reloadAction": "GestureReloadL85A2RIS",
-            "displayName": { "_translate" : "L85A2 Ris" },
+            "displayName": {
+                "_translate": "L85A2 Ris"
+            },
             "scope": 2,
             "magazines": [
                 "30Rnd_556x45_Stanag",
@@ -7823,25 +8043,25 @@
                 "StandardSound": {
                     "begin1": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire1",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin2": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire2",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin3": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire3",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin4": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire4",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
@@ -7927,25 +8147,25 @@
                 "StandardSound": {
                     "begin1": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire1",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin2": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire2",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin3": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire3",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin4": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire4",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
@@ -8012,7 +8232,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 150,
                 "maxRangeProbab": 0.05,
-                "aiRateOfFire": 2.0,
+                "aiRateOfFire": 2,
                 "aiRateOfFireDistance": 200,
                 "_inherit": "FullAuto"
             },
@@ -8042,8 +8262,8 @@
                 "aiRateOfFireDistance": 700,
                 "_inherit": "single_medium_optics1"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 0.56234133,
@@ -8052,7 +8272,7 @@
             ],
             "reloadMagazineSound": [
                 "A3\\sounds_f\\weapons\\reloads\\new_MX",
-                1.0,
+                1,
                 1,
                 10
             ],
@@ -8060,7 +8280,9 @@
         },
         "l85a2_ris_ng_epoch": {
             "scope": 2,
-            "displayName": { "_translate" : "L85A2 Ris" },
+            "displayName": {
+                "_translate": "L85A2 Ris"
+            },
             "model": "\\x\\addons\\a3_epoch_weapons\\L85A2_Ris_ng.p3d",
             "picture": "\\x\\addons\\a3_epoch_weapons\\gear\\gear_l85a2_ris_ng_x_ca.paa",
             "handAnim": [
@@ -8079,7 +8301,9 @@
         "l85a2_pink_epoch": {
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "L85A2 Pink Edition" },
+            "displayName": {
+                "_translate": "L85A2 Pink Edition"
+            },
             "model": "\\x\\addons\\a3_epoch_weapons\\L85A2_pink.p3d",
             "picture": "\\x\\addons\\a3_epoch_weapons\\gear\\gear_l85a2P_x_ca.paa",
             "PointerSlot": {
@@ -8089,7 +8313,9 @@
         },
         "l85a2_ugl_epoch": {
             "reloadAction": "GestureReloadL85A2UGL",
-            "displayName": { "_translate" : "L85A2 UGL" },
+            "displayName": {
+                "_translate": "L85A2 UGL"
+            },
             "scope": 2,
             "magazines": [
                 "30Rnd_556x45_Stanag",
@@ -8206,25 +8432,25 @@
                 "StandardSound": {
                     "begin1": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire1",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin2": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire2",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin3": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire3",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin4": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire4",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
@@ -8310,25 +8536,25 @@
                 "StandardSound": {
                     "begin1": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire1",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin2": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire2",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin3": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire3",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
                     "begin4": [
                         "x\\addons\\a3_epoch_weapons\\sounds\\L85_Fire4",
-                        1.0,
+                        1,
                         1,
                         1200
                     ],
@@ -8395,7 +8621,7 @@
                 "midRangeProbab": 0.7,
                 "maxRange": 150,
                 "maxRangeProbab": 0.05,
-                "aiRateOfFire": 2.0,
+                "aiRateOfFire": 2,
                 "aiRateOfFireDistance": 200,
                 "_inherit": "FullAuto"
             },
@@ -8450,8 +8676,8 @@
                 "discreteDistanceInitIndex": 1,
                 "_inherit": "UGL_F"
             },
-            "aiDispersionCoefY": 6.0,
-            "aiDispersionCoefX": 4.0,
+            "aiDispersionCoefY": 6,
+            "aiDispersionCoefX": 4,
             "drySound": [
                 "A3\\sounds_f\\weapons\\Other\\dry_1",
                 0.56234133,
@@ -8460,7 +8686,7 @@
             ],
             "reloadMagazineSound": [
                 "A3\\sounds_f\\weapons\\reloads\\new_MX",
-                1.0,
+                1,
                 1,
                 10
             ],
@@ -8469,10 +8695,14 @@
         "Elcan_epoch": {
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Elcan Optic" },
+            "displayName": {
+                "_translate": "Elcan Optic"
+            },
             "picture": "\\x\\addons\\a3_epoch_weapons\\gear\\gear_elcan_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_weapons\\Elcan.p3d",
-            "descriptionShort": { "_translate" : "Elcan optic, 4x magnification." },
+            "descriptionShort": {
+                "_translate": "Elcan optic, 4x magnification."
+            },
             "weaponInfoType": "RscWeaponZeroing",
             "ItemInfo": {
                 "mass": 8,
@@ -8503,7 +8733,9 @@
             "_inherit": "ItemCore"
         },
         "Elcan_reflex_epoch": {
-            "displayName": { "_translate" : "Elcan Optic Reflex" },
+            "displayName": {
+                "_translate": "Elcan Optic Reflex"
+            },
             "picture": "\\x\\addons\\a3_epoch_weapons\\gear\\gear_elcan_reflex_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_weapons\\Elcan_reflex.p3d",
             "ItemInfo": {

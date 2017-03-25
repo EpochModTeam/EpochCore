@@ -224,9 +224,9 @@ class CfgVehicles
             mat[] = {};
         };
         class EventHandlers;
-        primaryAmmoCoef = 0.0;
-        secondaryAmmoCoef = 0.0;
-        handgunAmmoCoef = 0.0;
+        primaryAmmoCoef = 0;
+        secondaryAmmoCoef = 0;
+        handgunAmmoCoef = 0;
     };
     class Civilian : CAManBase
     {
@@ -384,9 +384,9 @@ class CfgVehicles
             mat[] = {};
         };
         class EventHandlers;
-        primaryAmmoCoef = 0.0;
-        secondaryAmmoCoef = 0.0;
-        handgunAmmoCoef = 0.0;
+        primaryAmmoCoef = 0;
+        secondaryAmmoCoef = 0;
+        handgunAmmoCoef = 0;
     };
     class Civilian_F : Civilian
     {
@@ -878,7 +878,7 @@ class CfgVehicles
         modelSides[] = {1};
         uniformClass = "U_Wetsuit_Camo";
         hiddenUnderwaterSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\wetsuit\wetsuitCamo_co.paa","\x\addons\a3_epoch_assets\textures\wetsuit\wetsuitCamo_co.paa","\A3\characters_f\data\visors_ca.paa"};
-        camouflage = 1.0;
+        camouflage = 1;
     };
     class Epoch_Female_Ghillie1_F : Epoch_Female_base_F
     {
@@ -2365,7 +2365,7 @@ class CfgVehicles
                 material = -1;
                 name = "Dam_1";
                 visual = "DamT_1";
-                passThrough = 1.0;
+                passThrough = 1;
                 radius = 0.375;
                 convexComponent = "Dam_2";
                 explosionShielding = 50;
@@ -2433,7 +2433,7 @@ class CfgVehicles
                 sourceAddress = "loop";
                 angle1 = -360;
                 animPeriod = 25;
-                initPhase = 0.0;
+                initPhase = 0;
                 sound = "ferris_motor";
             };
         };
@@ -2685,10 +2685,10 @@ class CfgVehicles
             };
         };
         insideSoundCoef = 0.5;
-        soundEngineOnInt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_start",1.0,1.0};
-        soundEngineOnExt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_start",1.0,1.0,150};
-        soundEngineOffInt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_stop",1.0,1.0};
-        soundEngineOffExt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_stop",1.0,1.0,150};
+        soundEngineOnInt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_start",1,1};
+        soundEngineOnExt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_start",1,1,150};
+        soundEngineOffInt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_stop",1,1};
+        soundEngineOffExt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_stop",1,1,150};
         buildCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_01",1.7782794,1,200};
         buildCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_02",1.7782794,1,200};
         buildCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_03",1.7782794,1,200};
@@ -2710,13 +2710,13 @@ class CfgVehicles
         {
             class IdleOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_idle_1",0.70794576,1.0,150};
+                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_idle_1",0.70794576,1,150};
                 frequency = "0.95	+	((rpm/	1200) factor[(100/	1200),(200/	1200)])*0.15";
                 volume = "engineOn*(((rpm/	1200) factor[(0/	1200),(30/	1200)])	*	((rpm/	1200) factor[(500/	1200),(300/	1200)]))";
             };
             class Engine
             {
-                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_low2",1.0,1.2,300};
+                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_low2",1,1.2,300};
                 frequency = "0.95	+	((rpm/	1200) factor[(300/	1200),(600/	1200)])*0.2";
                 volume = "engineOn*(((rpm/	1200) factor[(200/	1200),(300/	1200)])	*	((rpm/	1200) factor[(600/	1200),(400/	1200)]))";
             };
@@ -2728,25 +2728,25 @@ class CfgVehicles
             };
             class EngineMaxOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_high2",1.9952624,1.0,500};
+                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_high2",1.9952624,1,500};
                 frequency = "0.95	+	((rpm/	1200) factor[(700/	1200),(1000/	1200)])*0.3";
                 volume = "engineOn*((rpm/	1200) factor[(600/	1200),(1200/	1200)])";
             };
             class WaternoiseOutW0
             {
-                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-0-speed1",1.0,1.0,100};
+                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-0-speed1",1,1,100};
                 frequency = "1";
                 volume = "(speed factor[4, 1])";
             };
             class WaternoiseOutW1
             {
-                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-20-speed",1.0,1.0,150};
+                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-20-speed",1,1,150};
                 frequency = "1";
                 volume = "((speed factor[2, 6]) min (speed factor[6, 4]))";
             };
             class WaternoiseOutW2
             {
-                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-50-speed",1.0,1.0,300};
+                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-50-speed",1,1,300};
                 frequency = "1";
                 volume = "(speed factor[3, 9])";
             };
@@ -2845,8 +2845,8 @@ class CfgVehicles
         };
         class complexGearbox
         {
-            GearboxRatios[] = {"R1",-0.782,"N",0,"D1",2.0,"D2",1.85,"D3",1.75};
-            TransmissionRatios[] = {"High",1.0};
+            GearboxRatios[] = {"R1",-0.782,"N",0,"D1",2,"D2",1.85,"D3",1.75};
+            TransmissionRatios[] = {"High",1};
             gearBoxMode = "auto";
             moveOffGear = 1;
             driveString = "D";
@@ -2882,26 +2882,26 @@ class CfgVehicles
         soundGetIn[] = {"",0.056234132,1};
         soundGetOut[] = {"",0.056234132,1,40};
         soundDammage[] = {"",0.56234133,1};
-        soundEngineOnInt[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-engine_start",0.56234133,1.0};
-        soundEngineOnExt[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-engine_start",0.56234133,1.0,200};
-        soundEngineOffInt[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-engine_stop",0.56234133,1.0};
-        soundEngineOffExt[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-engine_stop",0.56234133,1.0,200};
-        buildCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_01",1.0,1,100};
-        buildCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_02",1.0,1,100};
-        buildCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_03",1.0,1,100};
-        buildCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_04",1.0,1,100};
+        soundEngineOnInt[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-engine_start",0.56234133,1};
+        soundEngineOnExt[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-engine_start",0.56234133,1,200};
+        soundEngineOffInt[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-engine_stop",0.56234133,1};
+        soundEngineOffExt[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-engine_stop",0.56234133,1,200};
+        buildCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_01",1,1,100};
+        buildCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_02",1,1,100};
+        buildCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_03",1,1,100};
+        buildCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_04",1,1,100};
         soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-        WoodCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_01",1.0,1,100};
-        WoodCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_02",1.0,1,100};
-        WoodCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_03",1.0,1,100};
-        WoodCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_04",1.0,1,100};
-        WoodCrash4[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_05",1.0,1,100};
-        WoodCrash5[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_06",1.0,1,100};
+        WoodCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_01",1,1,100};
+        WoodCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_02",1,1,100};
+        WoodCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_03",1,1,100};
+        WoodCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_04",1,1,100};
+        WoodCrash4[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_05",1,1,100};
+        WoodCrash5[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_06",1,1,100};
         soundWoodCrash[] = {"woodCrash0",0.166,"woodCrash1",0.166,"woodCrash2",0.166,"woodCrash3",0.166,"woodCrash4",0.166,"woodCrash5",0.166};
-        ArmorCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_01",1.0,1,100};
-        ArmorCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_02",1.0,1,100};
-        ArmorCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_03",1.0,1,100};
-        ArmorCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_04",1.0,1,100};
+        ArmorCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_01",1,1,100};
+        ArmorCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_02",1,1,100};
+        ArmorCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_03",1,1,100};
+        ArmorCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_04",1,1,100};
         soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
         Crash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_01",1.7782794,1,100};
         Crash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_02",1.7782794,1,100};
@@ -2914,7 +2914,7 @@ class CfgVehicles
             class Idle_ext
             {
                 sound[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-engine_rpm1",0.31622776,1,100};
-                frequency = 1.0;
+                frequency = 1;
                 volume = "engineOn*camPos*(((rpm/	2000) factor[(200/	2000),(400/	2000)])	*	((rpm/	2000) factor[(750/	2000),( 600/	2000)]))";
             };
             class Engine
@@ -2950,7 +2950,7 @@ class CfgVehicles
             class Idle_int
             {
                 sound[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-engine_rpm1",0.25118864,1};
-                frequency = 1.0;
+                frequency = 1;
                 volume = "engineOn*(1-camPos)*(((rpm/	2000) factor[(200/	2000),(400/	2000)])	*	((rpm/	2000) factor[(750/	2000),( 600/	2000)]))";
             };
             class Engine_int
@@ -2986,7 +2986,7 @@ class CfgVehicles
             class IdleThrust_Int
             {
                 sound[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-exhaust_rpm1",0.56234133,1};
-                frequency = 1.0;
+                frequency = 1;
                 volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	2000) factor[(200/	2000),(400/	2000)])	*	((rpm/	2000) factor[(750/	2000),( 600/	2000)]))";
             };
             class EngineThrust_Int
@@ -3015,91 +3015,91 @@ class CfgVehicles
             };
             class Engine4_Thrust_int
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-exhaust_rpm7",1.0,1};
+                sound[] = {"A3\Sounds_F\vehicles\soft\Quadbike_01\qb-exhaust_rpm7",1,1};
                 frequency = "0.95	+	((rpm/	2000) factor[(1630/	2000),(2000/	2000)]) *0.2";
                 volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	2000) factor[(1650/	2000),(1900/	2000)])";
             };
             class TiresRockOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",1.0,1.0,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",1,1,60};
                 frequency = "1";
                 volume = "camPos*rock*(speed factor[2, 20])";
             };
             class TiresSandOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",1.0,1.0,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",1,1,60};
                 frequency = "1";
                 volume = "camPos*sand*(speed factor[2, 20])";
             };
             class TiresGrassOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",1.0,1.0,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",1,1,60};
                 frequency = "1";
                 volume = "camPos*grass*(speed factor[2, 20])";
             };
             class TiresMudOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",1.0,1.0,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",1,1,60};
                 frequency = "1";
                 volume = "camPos*mud*(speed factor[2, 20])";
             };
             class TiresGravelOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",1.0,1.0,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",1,1,60};
                 frequency = "1";
                 volume = "camPos*gravel*(speed factor[2, 20])";
             };
             class TiresAsphaltOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",1.0,1.0,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",1,1,60};
                 frequency = "1";
                 volume = "camPos*asphalt*(speed factor[2, 20])";
             };
             class NoiseOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\noises\quadbike_noise_04",0.8912509,1.0,90};
+                sound[] = {"A3\Sounds_F\vehicles\soft\noises\quadbike_noise_04",0.8912509,1,90};
                 frequency = "1";
                 volume = "camPos*(damper0 max 0.02)*(speed factor[0, 15])";
             };
             class TiresRockIn
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",0.63095737,1.0};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",0.63095737,1};
                 frequency = "1";
                 volume = "(1-camPos)*rock*(speed factor[2, 20])";
             };
             class TiresSandIn
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand2",0.63095737,1.0};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand2",0.63095737,1};
                 frequency = "1";
                 volume = "(1-camPos)*sand*(speed factor[2, 20])";
             };
             class TiresGrassIn
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",0.63095737,1.0};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",0.63095737,1};
                 frequency = "1";
                 volume = "(1-camPos)*grass*(speed factor[2, 20])";
             };
             class TiresMudIn
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",0.63095737,1.0};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",0.63095737,1};
                 frequency = "1";
                 volume = "(1-camPos)*mud*(speed factor[2, 20])";
             };
             class TiresGravelIn
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",0.63095737,1.0};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",0.63095737,1};
                 frequency = "1";
                 volume = "(1-camPos)*gravel*(speed factor[2, 20])";
             };
             class TiresAsphaltIn
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",0.5011872,1.0};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",0.5011872,1};
                 frequency = "1";
                 volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
             };
             class NoiseIn
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\noises\quadbike_noise_04",0.56234133,1.0};
+                sound[] = {"A3\Sounds_F\vehicles\soft\noises\quadbike_noise_04",0.56234133,1};
                 frequency = "1";
                 volume = "(damper0 max 0.1)*(speed factor[0, 15])*(1-camPos)";
             };
@@ -3216,7 +3216,7 @@ class CfgVehicles
         class complexGearbox
         {
             GearboxRatios[] = {"R1",-2.351,"N",0,"D1",2.081,"D2",1.257,"D3",0.737};
-            TransmissionRatios[] = {"High",4.0};
+            TransmissionRatios[] = {"High",4};
             gearBoxMode = "auto";
             moveOffGear = 1;
             driveString = "D";
@@ -3234,17 +3234,17 @@ class CfgVehicles
         frontBias = 1.3;
         rearBias = 1.3;
         centreBias = 1.3;
-        clutchStrength = 15.0;
+        clutchStrength = 15;
         enginePower = 1020;
         maxOmega = 710;
         peakTorque = 380;
         dampingRateFullThrottle = 0.08;
         dampingRateZeroThrottleClutchEngaged = 0.15;
         dampingRateZeroThrottleClutchDisengaged = 0.15;
-        torqueCurve[] = {{0.0,0.6},{0.2,0.65},{0.3,0.8},{0.7,0.95},{0.8,1.0},{0.9,0.95},{1.0,0.5}};
+        torqueCurve[] = {{0,0.6},{0.2,0.65},{0.3,0.8},{0.7,0.95},{0.8,1},{0.9,0.95},{1,0.5}};
         changeGearMinEffectivity[] = {0.95,0.15,0.98,0.98,0.95};
         switchTime = 0.1;
-        latency = 1.0;
+        latency = 1;
         class Wheels
         {
             class LF
@@ -3264,7 +3264,7 @@ class CfgVehicles
                 tireForceAppPointOffset = "wheel_1_1_axis";
                 maxCompression = 0.15;
                 mMaxDroop = 0.1;
-                sprungMass = 100.0;
+                sprungMass = 100;
                 springStrength = 35600;
                 springDamperRate = 2680;
                 longitudinalStiffnessPerUnitGravity = 100000;
@@ -3289,7 +3289,7 @@ class CfgVehicles
                 tireForceAppPointOffset = "wheel_1_2_axis";
                 maxCompression = 0.15;
                 mMaxDroop = 0.1;
-                sprungMass = 100.0;
+                sprungMass = 100;
                 springStrength = 35600;
                 springDamperRate = 2680;
                 longitudinalStiffnessPerUnitGravity = 100000;
@@ -3476,10 +3476,10 @@ class CfgVehicles
                 intensity = 1;
                 useFlare = 0;
                 dayLight = 0;
-                flareSize = 1.0;
+                flareSize = 1;
                 class Attenuation
                 {
-                    start = 1.0;
+                    start = 1;
                     constant = 0;
                     linear = 0;
                     quadratic = 0.25;
@@ -3561,11 +3561,11 @@ class CfgVehicles
         destrType = "DestructWreck";
         maxFordingDepth = 0.55;
         mainBladeRadius = 2.5;
-        liftForceCoef = 1.0;
+        liftForceCoef = 1;
         bodyFrictionCoef = 0.7;
         cyclicAsideForceCoef = 0.8;
         cyclicForwardForceCoef = 0.8;
-        backRotorForceCoef = 1.0;
+        backRotorForceCoef = 1;
         accuracy = 0.5;
         displayName = "$STR_EPOCH_Mosquito";
         model = "\x\addons\a3_epoch_vehicles_1\mosquito\mosquito.p3d";
@@ -3738,7 +3738,7 @@ class CfgVehicles
         magazines[] = {};
         class ViewPilot : ViewPilot
         {
-            initFov = 1.0;
+            initFov = 1;
             minFov = 0.375;
             maxFov = 1.2;
         };
@@ -3763,32 +3763,32 @@ class CfgVehicles
         attenuationEffectType = "CarAttenuation";
         soundGetIn[] = {"A3\Sounds_F\air\Heli_Light_02\open","db-5",1};
         soundGetOut[] = {"A3\Sounds_F\air\Heli_Light_02\close","db0",1,50};
-        soundEnviron[] = {"","db-30",1.0};
+        soundEnviron[] = {"","db-30",1};
         soundDammage[] = {"A3\Sounds_F\air\Heli_Light_02\crash","db-5",1};
-        soundEngineOnInt[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_int_start_v2","db-5",1.0};
-        soundEngineOnExt[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_ext_start_v2","db-2",1.0,600};
-        soundEngineOffInt[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_int_stop_v2","db-5",1.0};
-        soundEngineOffExt[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_ext_stop_v2","db-2",1.0,600};
+        soundEngineOnInt[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_int_start_v2","db-5",1};
+        soundEngineOnExt[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_ext_start_v2","db-2",1,600};
+        soundEngineOffInt[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_int_stop_v2","db-5",1};
+        soundEngineOffExt[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_ext_stop_v2","db-2",1,600};
         soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1","db-20",1};
         soundIncommingMissile[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_2","db-20",1};
         class Sounds
         {
             class Engine
             {
-                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_ext_engine_v2","db5",1.0,900};
+                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_ext_engine_v2","db5",1,900};
                 frequency = "rotorSpeed";
                 volume = "camPos*((rotorSpeed-0.72)*4)";
             };
             class RotorLowOut
             {
-                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_ext_rotor_normal_new","db3",1.0,1200};
+                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_ext_rotor_normal_new","db3",1,1200};
                 frequency = "rotorSpeed";
                 volume = "camPos*(0 max (rotorSpeed-0.1))";
                 cone[] = {1.6,3.14,1.6,0.95};
             };
             class RotorHighOut
             {
-                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_ext_rotor_high","db5",1.0,1500};
+                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_ext_rotor_high","db5",1,1500};
                 frequency = "rotorSpeed";
                 volume = "camPos*10*(0 max (rotorThrust-0.9))";
                 cone[] = {1.6,3.14,1.6,0.95};
@@ -3798,23 +3798,23 @@ class CfgVehicles
                 sound[] = {"A3\Sounds_F\air\Heli_Light_02\rotor_swist","db0",1,800};
                 frequency = 1;
                 volume = "(camPos*(rotorSpeed factor [0.6, 0.85]))";
-                cone[] = {0.7,1.3,1.0,0};
+                cone[] = {0.7,1.3,1,0};
             };
             class EngineIn
             {
-                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_int_engine_v2","db0",1.0};
+                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_int_engine_v2","db0",1};
                 frequency = "rotorSpeed";
                 volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
             };
             class RotorLowIn
             {
-                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_int_rotor_normal","db2",1.0};
+                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_int_rotor_normal","db2",1};
                 frequency = "rotorSpeed";
                 volume = "(1-camPos)*(0 max (rotorSpeed-0.1))";
             };
             class RotorHighIn
             {
-                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_int_rotor_high","db3",1.0};
+                sound[] = {"A3\Sounds_F\air\Heli_Light_02\Heli_Light_02_int_rotor_high","db3",1};
                 frequency = "rotorSpeed";
                 volume = "(1-camPos)*3*(rotorThrust-0.9)";
             };
@@ -4735,7 +4735,7 @@ class CfgVehicles
         typicalCargo[] = {};
         vehicleClass = "Ammo";
         waterResistanceCoef = 1.8;
-        waterAngularDampingCoef = 10.0;
+        waterAngularDampingCoef = 10;
         class DestructionEffects
         {
             class Light1
@@ -4829,7 +4829,7 @@ class CfgVehicles
     };
     class container_epoch : WeaponHolderSimulatedAlt
     {
-        mapSize = 1.0;
+        mapSize = 1;
         author = "Kiory";
         scope = 2;
         displayName = "$STR_EPOCH_Container";
