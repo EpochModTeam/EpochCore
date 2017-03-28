@@ -324,7 +324,7 @@ class CfgWeapons
         scope = 2;
         allowedSlots[] = {901};
         displayName = "$STR_EPOCH_KeeshaCamoBrown";
-        picture = "\x\addons\a3_epoch_assets\textures\camo\icon_camoBrown_ca.pqq.paa";
+        picture = "\x\addons\a3_epoch_assets\textures\camo\icon_camoBrown_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
         {
@@ -346,6 +346,118 @@ class CfgWeapons
         {
             uniformModel = "-";
             uniformClass = "Epoch_Female_CamoRed_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoAloha_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoAloha";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_aloha_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoAloha_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoBiker_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoBiker";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_biker_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoBiker_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoBubblegum_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoBubblegum";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_bubblegum_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoBubblegum_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoLumberjack_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoLumberjack";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_lumberjack_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoLumberjack_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoOutback_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoOutback";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_outback_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoOutback_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoPink_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoPink";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_pink_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoPink_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoPinkPolka_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoPinkPolka";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_pinkpolka_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoPinkPolka_F";
             containerClass = "Supply30";
             mass = 30;
         };

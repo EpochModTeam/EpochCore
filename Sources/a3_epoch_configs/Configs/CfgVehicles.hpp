@@ -657,6 +657,7 @@ class CfgVehicles
         scope = 1;
         scopeCurator = 0;
         displayName = "$STR_EPOCH_TESTUnderwear";
+        hiddenSelections[] = {};
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
         uniformClass = "U_BasicBodyFemale";
@@ -1113,6 +1114,125 @@ class CfgVehicles
         };
         modelSides[] = {1};
         uniformClass = "U_CamoRed_uniform";
+    };
+    class Epoch_Female_CamoAloha_F : Epoch_Female_Camo_F
+    {
+        displayName = "$STR_EPOCH_FemaleCamoAloha";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_aloha_icon.paa";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\camo_aloha.paa"};
+        hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\female_camoAloha.rvmat"};
+        class Wounds
+        {
+            tex[] = {};
+            mat[] = {"x\addons\a3_epoch_community\textures\keesha\camo\female_camoAloha.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat"};
+        };
+        modelSides[] = {1};
+        uniformClass = "U_CamoAloha_uniform";
+    };
+    class Epoch_Female_CamoBiker_F : Epoch_Female_Camo_F
+    {
+        displayName = "$STR_EPOCH_FemaleCamoBiker";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_biker_icon.paa";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\camo_biker.paa"};
+        hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\female_camoBiker.rvmat"};
+        class Wounds
+        {
+            tex[] = {};
+            mat[] = {"x\addons\a3_epoch_community\textures\keesha\camo\female_camoBiker.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat"};
+        };
+        modelSides[] = {1};
+        uniformClass = "U_CamoBiker_uniform";
+    };
+    class Epoch_Female_CamoBubblegum_F : Epoch_Female_Camo_F
+    {
+        displayName = "$STR_EPOCH_FemaleCamoBubblegum";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_bubblegum_icon.paa";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\camo_bubblegum.paa"};
+        hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\female_camoBubblegum.rvmat"};
+        class Wounds
+        {
+            tex[] = {};
+            mat[] = {"x\addons\a3_epoch_community\textures\keesha\camo\female_camoBubblegum.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat"};
+        };
+        modelSides[] = {1};
+        uniformClass = "U_CamoBubblegum_uniform";
+    };
+    class Epoch_Female_CamoLumberjack_F : Epoch_Female_Camo_F
+    {
+        displayName = "$STR_EPOCH_FemaleCamoLumberjack";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_lumberjack_icon.paa";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\camo_lumberjack.paa"};
+        hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\female_camoLumberjack.rvmat"};
+        class Wounds
+        {
+            tex[] = {};
+            mat[] = {"x\addons\a3_epoch_community\textures\keesha\camo\female_camoLumberjack.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat"};
+        };
+        modelSides[] = {1};
+        uniformClass = "U_CamoLumberjack_uniform";
+    };
+    class Epoch_Female_CamoOutback_F : Epoch_Female_Camo_F
+    {
+        displayName = "$STR_EPOCH_FemaleCamoOutback";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_outback_icon.paa";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\camo_outback.paa"};
+        hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\female_camoOutback.rvmat"};
+        class Wounds
+        {
+            tex[] = {};
+            mat[] = {"x\addons\a3_epoch_community\textures\keesha\camo\female_camoOutback.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat"};
+        };
+        modelSides[] = {1};
+        uniformClass = "U_CamoOutback_uniform";
+    };
+    class Epoch_Female_CamoPink_F : Epoch_Female_Camo_F
+    {
+        displayName = "$STR_EPOCH_FemaleCamoPink";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_pink_icon.paa";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\camo_pink.paa"};
+        hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\female_camoPink.rvmat"};
+        class Wounds
+        {
+            tex[] = {};
+            mat[] = {"x\addons\a3_epoch_community\textures\keesha\camo\female_camoPink.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat"};
+        };
+        modelSides[] = {1};
+        uniformClass = "U_CamoPink_uniform";
+    };
+    class Epoch_Female_CamoPinkPolka_F : Epoch_Female_Camo_F
+    {
+        displayName = "$STR_EPOCH_FemaleCamoPinkPolka";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_pinkpolka_icon.paa";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\camo_pinkpolka.paa"};
+        hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\female_camoPinkPolka.rvmat"};
+        class Wounds
+        {
+            tex[] = {};
+            mat[] = {"x\addons\a3_epoch_community\textures\keesha\camo\female_camoPinkPolka.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat","x\addons\a3_epoch_assets\textures\camo\female_camoinjury.rvmat"};
+        };
+        modelSides[] = {1};
+        uniformClass = "U_CamoPinkPolka_uniform";
     };
     class Epoch_Female_F : Epoch_Female_base_F
     {

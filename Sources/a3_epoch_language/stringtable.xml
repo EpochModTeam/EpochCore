@@ -1837,5 +1837,47 @@
         <Key ID="STR_EPOCH_ToxicSmoke">
             <Original>Toxic Smoke</Original>
         </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoAloha">
+            <Original>Keesha Camo (Aloha)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoAloha">
+            <Original>Female Camo (Aloha)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoBiker">
+            <Original>Female Camo (Biker)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoBubblegum">
+            <Original>Female Camo (Bubblegum)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoLumberjack">
+            <Original>Female Camo (Lumberjack)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoOutback">
+            <Original>Female Camo (Outback)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoPink">
+            <Original>Female Camo (Pink)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoPinkPolka">
+            <Original>Female Camo (Pink Polka)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoBiker">
+            <Original>Keesha Camo (Biker)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoBubblegum">
+            <Original>Keesha Camo (Bubblegum)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoLumberjack">
+            <Original>Keesha Camo (Lumberjack)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoOutback">
+            <Original>Keesha Camo (Outback)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoPink">
+            <Original>Keesha Camo (Pink)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoPinkPolka">
+            <Original>Keesha Camo (Pink Polka)</Original>
+        </Key>
     </Package>
 </Project>

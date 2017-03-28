@@ -867,6 +867,7 @@
             "displayName": {
                 "_translate": "TEST: Underwear"
             },
+            "hiddenSelections": [],
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Keesha_character.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Keesha_base.paa",
             "uniformClass": "U_BasicBodyFemale",
@@ -1476,6 +1477,216 @@
                 1
             ],
             "uniformClass": "U_CamoRed_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoAloha_F": {
+            "displayName": {
+                "_translate": "Female Camo (Aloha)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_aloha_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_aloha.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoAloha.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoAloha.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoAloha_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoBiker_F": {
+            "displayName": {
+                "_translate": "Female Camo (Biker)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_biker_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_biker.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoBiker.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoBiker.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoBiker_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoBubblegum_F": {
+            "displayName": {
+                "_translate": "Female Camo (Bubblegum)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_bubblegum_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_bubblegum.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoBubblegum.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoBubblegum.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoBubblegum_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoLumberjack_F": {
+            "displayName": {
+                "_translate": "Female Camo (Lumberjack)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_lumberjack_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_lumberjack.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoLumberjack.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoLumberjack.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoLumberjack_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoOutback_F": {
+            "displayName": {
+                "_translate": "Female Camo (Outback)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_outback_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_outback.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoOutback.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoOutback.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoOutback_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoPink_F": {
+            "displayName": {
+                "_translate": "Female Camo (Pink)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_pink_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_pink.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoPink.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoPink.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoPink_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoPinkPolka_F": {
+            "displayName": {
+                "_translate": "Female Camo (Pink Polka)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_pinkpolka_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_pinkpolka.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoPinkPolka.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoPinkPolka.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoPinkPolka_uniform",
             "_inherit": "Epoch_Female_Camo_F"
         },
         "Epoch_Female_F": {
