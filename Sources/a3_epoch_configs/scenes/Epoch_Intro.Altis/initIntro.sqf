@@ -141,7 +141,7 @@ titleCut ["", "BLACK OUT", 2];
 /*
 if (true) then {
 	[] spawn {
-		_group = createGroup resistance;
+		_group = createGroup [RESISTANCE, true];
 		_pos = [3937.4,12655.1,0.0014286];
 		_unit = _group createUnit ["Epoch_Cloak_F", _pos, [], 0, "CAN_COLLIDE"];
 		uiSleep 0.5;

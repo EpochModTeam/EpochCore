@@ -250,9 +250,9 @@
             "EventHandlers": {
                 "_isExtern": true
             },
-            "primaryAmmoCoef": 0.0,
-            "secondaryAmmoCoef": 0.0,
-            "handgunAmmoCoef": 0.0,
+            "primaryAmmoCoef": 0,
+            "secondaryAmmoCoef": 0,
+            "handgunAmmoCoef": 0,
             "_inherit": "EPOCH_CAManBase"
         },
         "Civilian": {
@@ -412,9 +412,9 @@
             "EventHandlers": {
                 "_isExtern": true
             },
-            "primaryAmmoCoef": 0.0,
-            "secondaryAmmoCoef": 0.0,
-            "handgunAmmoCoef": 0.0,
+            "primaryAmmoCoef": 0,
+            "secondaryAmmoCoef": 0,
+            "handgunAmmoCoef": 0,
             "_inherit": "CAManBase"
         },
         "Civilian_F": {
@@ -494,7 +494,9 @@
             "_isExtern": true
         },
         "VirtualMan_EPOCH": {
-            "displayName": { "_translate" : "Epoch Player Slot" },
+            "displayName": {
+                "_translate": "Epoch Player Slot"
+            },
             "weapons": [],
             "Eventhandlers": {
                 "init": "_this call EPOCH_localCleanup;"
@@ -508,7 +510,9 @@
             "author": "$STR_A3_Bohemia_Interactive",
             "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
             "scope": 2,
-            "displayName": { "_translate" : "Epoch Militia Soldier" },
+            "displayName": {
+                "_translate": "Epoch Militia Soldier"
+            },
             "cost": 90000,
             "camouflage": 1.2,
             "uniformClass": "",
@@ -564,7 +568,9 @@
             "author": "$STR_A3_Bohemia_Interactive",
             "model": "\\A3\\characters_F_gamma\\Guerrilla\\ig_guerrilla2_1.p3d",
             "scope": 2,
-            "displayName": { "_translate" : "Epoch Militia Guerilla" },
+            "displayName": {
+                "_translate": "Epoch Militia Guerilla"
+            },
             "cost": 90000,
             "camouflage": 1.2,
             "uniformClass": "",
@@ -620,7 +626,9 @@
             "author": "$STR_A3_Bohemia_Interactive",
             "model": "A3\\Characters_F_Beta\\INDEP\\ia_sniper.p3d",
             "scope": 2,
-            "displayName": { "_translate" : "Epoch Militia Ghillie" },
+            "displayName": {
+                "_translate": "Epoch Militia Ghillie"
+            },
             "cost": 90000,
             "camouflage": 1.4,
             "uniformClass": "",
@@ -856,7 +864,10 @@
             "author": "Sequisha",
             "scope": 1,
             "scopeCurator": 0,
-            "displayName": { "_translate" : "TEST: Underwear" },
+            "displayName": {
+                "_translate": "TEST: Underwear"
+            },
+            "hiddenSelections": [],
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Keesha_character.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Keesha_base.paa",
             "uniformClass": "U_BasicBodyFemale",
@@ -872,7 +883,9 @@
             "side": 1,
             "engineer": 1,
             "vehicleClass": "Women",
-            "displayName": { "_translate" : "Female Wetsuit" },
+            "displayName": {
+                "_translate": "Female Wetsuit"
+            },
             "scope": 2,
             "hiddenSelections": [
                 "Camo"
@@ -1054,7 +1067,9 @@
             "_inherit": "Epoch_Female_base_F"
         },
         "Epoch_Female_wetsuitW_F": {
-            "displayName": { "_translate" : "Female Wetsuit (white)" },
+            "displayName": {
+                "_translate": "Female Wetsuit (white)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_wetsuit_white.paa",
             "scope": 2,
             "hiddenSelections": [
@@ -1086,7 +1101,9 @@
             "_inherit": "Epoch_Female_wetsuit_F"
         },
         "Epoch_Female_wetsuitB_F": {
-            "displayName": { "_translate" : "Female Wetsuit (blue)" },
+            "displayName": {
+                "_translate": "Female Wetsuit (blue)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_wetsuit_blue.paa",
             "scope": 2,
             "hiddenSelections": [
@@ -1107,7 +1124,9 @@
             "_inherit": "Epoch_Female_wetsuit_F"
         },
         "Epoch_Female_wetsuitP_F": {
-            "displayName": { "_translate" : "Female Wetsuit (purple)" },
+            "displayName": {
+                "_translate": "Female Wetsuit (purple)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_wetsuit_purple.paa",
             "scope": 2,
             "hiddenSelections": [
@@ -1128,7 +1147,9 @@
             "_inherit": "Epoch_Female_wetsuit_F"
         },
         "Epoch_Female_wetsuitC_F": {
-            "displayName": { "_translate" : "Female Wetsuit (camo)" },
+            "displayName": {
+                "_translate": "Female Wetsuit (camo)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_wetsuit_camo.paa",
             "scope": 2,
             "hiddenSelections": [
@@ -1146,11 +1167,13 @@
                 "\\x\\addons\\a3_epoch_assets\\textures\\wetsuit\\wetsuitCamo_co.paa",
                 "\\A3\\characters_f\\data\\visors_ca.paa"
             ],
-            "camouflage": 1.0,
+            "camouflage": 1,
             "_inherit": "Epoch_Female_wetsuit_F"
         },
         "Epoch_Female_Ghillie1_F": {
-            "displayName": { "_translate" : "Female Ghillie (tan)" },
+            "displayName": {
+                "_translate": "Female Ghillie (tan)"
+            },
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_ghillie.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_ghilie_tan.paa",
@@ -1299,7 +1322,9 @@
             "_inherit": "Epoch_Female_base_F"
         },
         "Epoch_Female_Ghillie2_F": {
-            "displayName": { "_translate" : "Female Ghillie (light green)" },
+            "displayName": {
+                "_translate": "Female Ghillie (light green)"
+            },
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_ghillie.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_ghilie_green2.paa",
@@ -1316,7 +1341,9 @@
             "_inherit": "Epoch_Female_Ghillie1_F"
         },
         "Epoch_Female_Ghillie3_F": {
-            "displayName": { "_translate" : "Female Ghillie (green)" },
+            "displayName": {
+                "_translate": "Female Ghillie (green)"
+            },
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_ghillie.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_ghilie_green.paa",
@@ -1333,7 +1360,9 @@
             "_inherit": "Epoch_Female_Ghillie1_F"
         },
         "Epoch_Female_Camo_F": {
-            "displayName": { "_translate" : "Female Camo" },
+            "displayName": {
+                "_translate": "Female Camo"
+            },
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_green.paa",
@@ -1361,7 +1390,9 @@
             "_inherit": "Epoch_Female_base_F"
         },
         "Epoch_Female_CamoBlue_F": {
-            "displayName": { "_translate" : "Female Camo (Blue)" },
+            "displayName": {
+                "_translate": "Female Camo (Blue)"
+            },
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_blue.paa",
@@ -1389,7 +1420,9 @@
             "_inherit": "Epoch_Female_Camo_F"
         },
         "Epoch_Female_CamoBrn_F": {
-            "displayName": { "_translate" : "Female Camo (Brown)" },
+            "displayName": {
+                "_translate": "Female Camo (Brown)"
+            },
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_brown.paa",
@@ -1417,7 +1450,9 @@
             "_inherit": "Epoch_Female_Camo_F"
         },
         "Epoch_Female_CamoRed_F": {
-            "displayName": { "_translate" : "Female Camo (Red)" },
+            "displayName": {
+                "_translate": "Female Camo (Red)"
+            },
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\keesha_red.paa",
@@ -1444,10 +1479,223 @@
             "uniformClass": "U_CamoRed_uniform",
             "_inherit": "Epoch_Female_Camo_F"
         },
+        "Epoch_Female_CamoAloha_F": {
+            "displayName": {
+                "_translate": "Female Camo (Aloha)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_aloha_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_aloha.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoAloha.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoAloha.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoAloha_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoBiker_F": {
+            "displayName": {
+                "_translate": "Female Camo (Biker)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_biker_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_biker.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoBiker.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoBiker.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoBiker_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoBubblegum_F": {
+            "displayName": {
+                "_translate": "Female Camo (Bubblegum)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_bubblegum_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_bubblegum.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoBubblegum.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoBubblegum.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoBubblegum_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoLumberjack_F": {
+            "displayName": {
+                "_translate": "Female Camo (Lumberjack)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_lumberjack_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_lumberjack.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoLumberjack.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoLumberjack.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoLumberjack_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoOutback_F": {
+            "displayName": {
+                "_translate": "Female Camo (Outback)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_outback_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_outback.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoOutback.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoOutback.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoOutback_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoPink_F": {
+            "displayName": {
+                "_translate": "Female Camo (Pink)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_pink_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_pink.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoPink.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoPink.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoPink_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
+        "Epoch_Female_CamoPinkPolka_F": {
+            "displayName": {
+                "_translate": "Female Camo (Pink Polka)"
+            },
+            "scope": 2,
+            "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\female_camo.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\keesha\\camo\\camo_pinkpolka_icon.paa",
+            "hiddenSelections": [
+                "Camo"
+            ],
+            "hiddenSelectionsTextures": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\camo_pinkpolka.paa"
+            ],
+            "hiddenSelectionsMaterials": [
+                "\\x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoPinkPolka.rvmat"
+            ],
+            "Wounds": {
+                "tex": [],
+                "mat": [
+                    "x\\addons\\a3_epoch_community\\textures\\keesha\\camo\\female_camoPinkPolka.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat",
+                    "x\\addons\\a3_epoch_assets\\textures\\camo\\female_camoinjury.rvmat"
+                ]
+            },
+            "modelSides": [
+                1
+            ],
+            "uniformClass": "U_CamoPinkPolka_uniform",
+            "_inherit": "Epoch_Female_Camo_F"
+        },
         "Epoch_Female_F": {
             "woman": 1,
             "scope": 2,
-            "displayName": { "_translate" : "Female" },
+            "hiddenSelections": [],
+            "displayName": {
+                "_translate": "Female"
+            },
             "_inherit": "Epoch_Female_base_F"
         },
         "O_Soldier_base_F": {
@@ -1643,7 +1891,9 @@
         },
         "Epoch_Male_F": {
             "scope": 2,
-            "displayName": { "_translate" : "Male" },
+            "displayName": {
+                "_translate": "Male"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Dan.paa",
             "_inherit": "Epoch_Man_base_F"
         },
@@ -2030,7 +2280,9 @@
         "Epoch_Cloak_F": {
             "scope": 2,
             "faceType": "Default",
-            "displayName": { "_translate" : "Cloak" },
+            "displayName": {
+                "_translate": "Cloak"
+            },
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Cloak_Character.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\cultist.paa",
             "glassesEnabled": 0,
@@ -2163,7 +2415,9 @@
         "Epoch_Sapper_F": {
             "scope": 2,
             "faceType": "Default",
-            "displayName": { "_translate" : "Sapper" },
+            "displayName": {
+                "_translate": "Sapper"
+            },
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Sapper_Character.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Sapper.paa",
             "hiddenSelections": [
@@ -2305,7 +2559,9 @@
         },
         "Epoch_SapperG_F": {
             "scope": 2,
-            "displayName": { "_translate" : "Sapper (Toxic)" },
+            "displayName": {
+                "_translate": "Sapper (Toxic)"
+            },
             "moves": "CfgMovesSapperSdr",
             "hiddenSelections": [
                 "camo",
@@ -2320,7 +2576,9 @@
         "Epoch_SapperB_F": {
             "scope": 2,
             "faceType": "Default",
-            "displayName": { "_translate" : "Sapper (Bloated)" },
+            "displayName": {
+                "_translate": "Sapper (Bloated)"
+            },
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Sapper_Bloated.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\bossSapper.paa",
             "glassesEnabled": 0,
@@ -2459,7 +2717,9 @@
                 "NoGlasses"
             ],
             "scope": 2,
-            "displayName": { "_translate" : "Zombie 1" },
+            "displayName": {
+                "_translate": "Zombie 1"
+            },
             "armor": 10,
             "armorStructural": 20,
             "explosionShielding": 0.3,
@@ -2502,14 +2762,18 @@
             "hiddenSelectionsTextures": [
                 "A3\\characters_f\\civil\\data\\c_cloth1_v2_co.paa"
             ],
-            "displayName": { "_translate" : "Zombie 2" },
+            "displayName": {
+                "_translate": "Zombie 2"
+            },
             "uniformClass": "",
             "nakedUniform": "U_EPOCH_RyanZombie_2",
             "_inherit": "EPOCH_RyanZombie_1"
         },
         "EPOCH_RyanZombie_3": {
             "model": "\\A3\\characters_F\\common\\coveralls",
-            "displayName": { "_translate" : "Zombie 3" },
+            "displayName": {
+                "_translate": "Zombie 3"
+            },
             "uniformClass": "",
             "hiddenSelections": [
                 "Camo",
@@ -2522,7 +2786,9 @@
             "_inherit": "EPOCH_RyanZombie_1"
         },
         "EPOCH_RyanZombie_4": {
-            "displayName": { "_translate" : "Zombie 4" },
+            "displayName": {
+                "_translate": "Zombie 4"
+            },
             "uniformClass": "",
             "hiddenSelectionsTextures": [
                 "A3\\Characters_F\\Common\\Data\\coveralls_sage_co.paa"
@@ -2531,7 +2797,9 @@
             "_inherit": "EPOCH_RyanZombie_3"
         },
         "EPOCH_RyanZombie_5": {
-            "displayName": { "_translate" : "Zombie 5" },
+            "displayName": {
+                "_translate": "Zombie 5"
+            },
             "hiddenSelections": [
                 "camo"
             ],
@@ -2543,156 +2811,216 @@
             "_inherit": "EPOCH_RyanZombie_3"
         },
         "EPOCH_RyanZombie_1_C": {
-            "displayName": { "_translate" : "Zombie 1 (Crawler)" },
+            "displayName": {
+                "_translate": "Zombie 1 (Crawler)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrCrawler",
             "_inherit": "EPOCH_RyanZombie_1"
         },
         "EPOCH_RyanZombie_2_C": {
-            "displayName": { "_translate" : "Zombie 2 (Crawler)" },
+            "displayName": {
+                "_translate": "Zombie 2 (Crawler)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrCrawler",
             "_inherit": "EPOCH_RyanZombie_2"
         },
         "EPOCH_RyanZombie_3_C": {
-            "displayName": { "_translate" : "Zombie 3 (Crawler)" },
+            "displayName": {
+                "_translate": "Zombie 3 (Crawler)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrCrawler",
             "_inherit": "EPOCH_RyanZombie_3"
         },
         "EPOCH_RyanZombie_4_C": {
-            "displayName": { "_translate" : "Zombie 4 (Crawler)" },
+            "displayName": {
+                "_translate": "Zombie 4 (Crawler)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrCrawler",
             "_inherit": "EPOCH_RyanZombie_4"
         },
         "EPOCH_RyanZombie_5_C": {
-            "displayName": { "_translate" : "Zombie 5 (Crawler)" },
+            "displayName": {
+                "_translate": "Zombie 5 (Crawler)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrCrawler",
             "_inherit": "EPOCH_RyanZombie_5"
         },
         "EPOCH_RyanZombie_1_Sp": {
-            "displayName": { "_translate" : "Zombie 1 (Spider)" },
+            "displayName": {
+                "_translate": "Zombie 1 (Spider)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrSpider",
             "_inherit": "EPOCH_RyanZombie_1"
         },
         "EPOCH_RyanZombie_2_Sp": {
-            "displayName": { "_translate" : "Zombie 2 (Spider)" },
+            "displayName": {
+                "_translate": "Zombie 2 (Spider)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrSpider",
             "_inherit": "EPOCH_RyanZombie_2"
         },
         "EPOCH_RyanZombie_3_Sp": {
-            "displayName": { "_translate" : "Zombie 3 (Spider)" },
+            "displayName": {
+                "_translate": "Zombie 3 (Spider)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrSpider",
             "_inherit": "EPOCH_RyanZombie_3"
         },
         "EPOCH_RyanZombie_4_Sp": {
-            "displayName": { "_translate" : "Zombie 4 (Spider)" },
+            "displayName": {
+                "_translate": "Zombie 4 (Spider)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrSpider",
             "_inherit": "EPOCH_RyanZombie_4"
         },
         "EPOCH_RyanZombie_5_Sp": {
-            "displayName": { "_translate" : "Zombie 5 (Spider)" },
+            "displayName": {
+                "_translate": "Zombie 5 (Spider)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrSpider",
             "_inherit": "EPOCH_RyanZombie_5"
         },
         "EPOCH_RyanZombie_1_B": {
             "armor": 20,
-            "displayName": { "_translate" : "Zombie 1 (Boss)" },
+            "displayName": {
+                "_translate": "Zombie 1 (Boss)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrBoss",
             "_inherit": "EPOCH_RyanZombie_1"
         },
         "EPOCH_RyanZombie_2_B": {
             "armor": 20,
-            "displayName": { "_translate" : "Zombie 2 (Boss)" },
+            "displayName": {
+                "_translate": "Zombie 2 (Boss)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrBoss",
             "_inherit": "EPOCH_RyanZombie_2"
         },
         "EPOCH_RyanZombie_3_B": {
             "armor": 20,
-            "displayName": { "_translate" : "Zombie 3 (Boss)" },
+            "displayName": {
+                "_translate": "Zombie 3 (Boss)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrBoss",
             "_inherit": "EPOCH_RyanZombie_3"
         },
         "EPOCH_RyanZombie_4_B": {
-            "displayName": { "_translate" : "Zombie 4 (Boss)" },
+            "displayName": {
+                "_translate": "Zombie 4 (Boss)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrBoss",
             "_inherit": "EPOCH_RyanZombie_4"
         },
         "EPOCH_RyanZombie_5_B": {
             "armor": 20,
-            "displayName": { "_translate" : "Zombie 5 (Boss)" },
+            "displayName": {
+                "_translate": "Zombie 5 (Boss)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrBoss",
             "_inherit": "EPOCH_RyanZombie_5"
         },
         "EPOCH_RyanZombie_1_W": {
-            "displayName": { "_translate" : "Zombie 1 (Walker)" },
+            "displayName": {
+                "_translate": "Zombie 1 (Walker)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrwalker",
             "_inherit": "EPOCH_RyanZombie_1"
         },
         "EPOCH_RyanZombie_2_W": {
-            "displayName": { "_translate" : "Zombie 2 (Walker)" },
+            "displayName": {
+                "_translate": "Zombie 2 (Walker)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrwalker",
             "_inherit": "EPOCH_RyanZombie_2"
         },
         "EPOCH_RyanZombie_3_W": {
-            "displayName": { "_translate" : "Zombie 3 (Walker)" },
+            "displayName": {
+                "_translate": "Zombie 3 (Walker)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrwalker",
             "_inherit": "EPOCH_RyanZombie_3"
         },
         "EPOCH_RyanZombie_4_W": {
-            "displayName": { "_translate" : "Zombie 4 (Walker)" },
+            "displayName": {
+                "_translate": "Zombie 4 (Walker)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrwalker",
             "_inherit": "EPOCH_RyanZombie_4"
         },
         "EPOCH_RyanZombie_5_W": {
-            "displayName": { "_translate" : "Zombie 5 (Walker)" },
+            "displayName": {
+                "_translate": "Zombie 5 (Walker)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrwalker",
             "_inherit": "EPOCH_RyanZombie_5"
         },
         "EPOCH_RyanZombie_1_M": {
-            "displayName": { "_translate" : "Zombie 1 (Medium)" },
+            "displayName": {
+                "_translate": "Zombie 1 (Medium)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrMedium",
             "_inherit": "EPOCH_RyanZombie_1"
         },
         "EPOCH_RyanZombie_2_M": {
-            "displayName": { "_translate" : "Zombie 2 (Medium)" },
+            "displayName": {
+                "_translate": "Zombie 2 (Medium)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrMedium",
             "_inherit": "EPOCH_RyanZombie_2"
         },
         "EPOCH_RyanZombie_3_M": {
-            "displayName": { "_translate" : "Zombie 3 (Medium)" },
+            "displayName": {
+                "_translate": "Zombie 3 (Medium)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrMedium",
             "_inherit": "EPOCH_RyanZombie_3"
         },
         "EPOCH_RyanZombie_4_M": {
-            "displayName": { "_translate" : "Zombie 4 (Medium)" },
+            "displayName": {
+                "_translate": "Zombie 4 (Medium)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrMedium",
             "_inherit": "EPOCH_RyanZombie_4"
         },
         "EPOCH_RyanZombie_5_M": {
-            "displayName": { "_translate" : "Zombie 5 (Medium)" },
+            "displayName": {
+                "_translate": "Zombie 5 (Medium)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrMedium",
             "_inherit": "EPOCH_RyanZombie_5"
         },
         "EPOCH_RyanZombie_1_S": {
-            "displayName": { "_translate" : "Zombie 1 (Medium)" },
+            "displayName": {
+                "_translate": "Zombie 1 (Medium)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrSlow2",
             "_inherit": "EPOCH_RyanZombie_1"
         },
         "EPOCH_RyanZombie_2_S": {
-            "displayName": { "_translate" : "Zombie 2 (Medium)" },
+            "displayName": {
+                "_translate": "Zombie 2 (Medium)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrSlow2",
             "_inherit": "EPOCH_RyanZombie_2"
         },
         "EPOCH_RyanZombie_3_S": {
-            "displayName": { "_translate" : "Zombie 3 (Medium)" },
+            "displayName": {
+                "_translate": "Zombie 3 (Medium)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrSlow2",
             "_inherit": "EPOCH_RyanZombie_3"
         },
         "EPOCH_RyanZombie_4_S": {
-            "displayName": { "_translate" : "Zombie 4 (Medium)" },
+            "displayName": {
+                "_translate": "Zombie 4 (Medium)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrSlow2",
             "_inherit": "EPOCH_RyanZombie_4"
         },
         "EPOCH_RyanZombie_5_S": {
-            "displayName": { "_translate" : "Zombie 5 (Medium)" },
+            "displayName": {
+                "_translate": "Zombie 5 (Medium)"
+            },
             "moves": "CfgRyanZombiesMovesMaleSdrSlow2",
             "_inherit": "EPOCH_RyanZombie_5"
         },
@@ -2799,7 +3127,9 @@
                 ]
             ],
             "scope": 2,
-            "displayName": { "_translate" : "Ferris Wheel" },
+            "displayName": {
+                "_translate": "Ferris Wheel"
+            },
             "model": "\\x\\addons\\a3_epoch_structures\\Ferris\\ferrisWheel.p3d",
             "picture": "\\x\\addons\\a3_epoch_structures\\Ferris\\Data\\ferris_ca.paa",
             "placement": "vertical",
@@ -2817,7 +3147,7 @@
                     "material": -1,
                     "name": "Dam_1",
                     "visual": "DamT_1",
-                    "passThrough": 1.0,
+                    "passThrough": 1,
                     "radius": 0.375,
                     "convexComponent": "Dam_2",
                     "explosionShielding": 50,
@@ -2880,14 +3210,16 @@
                     "sourceAddress": "loop",
                     "angle1": -360,
                     "animPeriod": 25,
-                    "initPhase": 0.0,
+                    "initPhase": 0,
                     "sound": "ferris_motor"
                 }
             },
             "UserActions": {
                 "startFerris": {
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
-                    "displayName": { "_translate" : "Start Ride" },
+                    "displayName": {
+                        "_translate": "Start Ride"
+                    },
                     "position": "start_ride",
                     "priority": 0.4,
                     "radius": 10,
@@ -2897,7 +3229,9 @@
                 },
                 "stopFerris": {
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
-                    "displayName": { "_translate" : "Stop Ride" },
+                    "displayName": {
+                        "_translate": "Stop Ride"
+                    },
                     "position": "start_ride",
                     "priority": 0.4,
                     "radius": 10,
@@ -2912,7 +3246,9 @@
         "bunker_epoch": {
             "scope": 2,
             "author": "AWOL",
-            "displayName": { "_translate" : "Four Way Bunker" },
+            "displayName": {
+                "_translate": "Four Way Bunker"
+            },
             "model": "\\x\\addons\\a3_epoch_community\\models\\4_way_bunker.p3d",
             "vehicleClass": "Structures",
             "mapSize": 20.27,
@@ -2947,7 +3283,9 @@
         "smallbackpack_red_epoch": {
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Small Backpack (Red)" },
+            "displayName": {
+                "_translate": "Small Backpack (Red)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_smallbackpack_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_2\\small_backpack.p3d",
             "sections": [
@@ -2966,7 +3304,9 @@
         "smallbackpack_green_epoch": {
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Small Backpack (Green)" },
+            "displayName": {
+                "_translate": "Small Backpack (Green)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_smallbackpack_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_2\\small_backpack.p3d",
             "sections": [
@@ -2985,7 +3325,9 @@
         "smallbackpack_teal_epoch": {
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Small Backpack (Teal)" },
+            "displayName": {
+                "_translate": "Small Backpack (Teal)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_smallbackpack_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_2\\small_backpack.p3d",
             "sections": [
@@ -3004,7 +3346,9 @@
         "smallbackpack_pink_epoch": {
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Small Backpack (Pink)" },
+            "displayName": {
+                "_translate": "Small Backpack (Pink)"
+            },
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_smallbackpack_x_ca.paa",
             "model": "\\x\\addons\\a3_epoch_assets_2\\small_backpack.p3d",
             "sections": [
@@ -3023,7 +3367,9 @@
         "B_AssaultPack_Base": {
             "scope": 0,
             "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Compact",
-            "descriptionShort": { "_translate" : "Load: 360, Mass: 20" },
+            "descriptionShort": {
+                "_translate": "Load: 360, Mass: 20"
+            },
             "hiddenSelectionsTextures": [
                 "\\A3\\weapons_f\\ammoboxes\\bags\\data\\backpack_compact_khk_co.paa"
             ],
@@ -3034,7 +3380,9 @@
         "B_FieldPack_Base": {
             "scope": 0,
             "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Gorod",
-            "descriptionShort": { "_translate" : "Load: 400, Mass: 30" },
+            "descriptionShort": {
+                "_translate": "Load: 400, Mass: 30"
+            },
             "hiddenSelectionsTextures": [
                 "\\A3\\weapons_f\\ammoboxes\\bags\\data\\backpack_gorod_cbr_co.paa"
             ],
@@ -3045,7 +3393,9 @@
         "B_TacticalPack_Base": {
             "scope": 0,
             "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Small",
-            "descriptionShort": { "_translate" : "Load: 480, Mass: 40" },
+            "descriptionShort": {
+                "_translate": "Load: 480, Mass: 40"
+            },
             "hiddenSelectionsTextures": [
                 "\\A3\\weapons_f\\ammoboxes\\bags\\data\\backpack_small_co.paa"
             ],
@@ -3056,7 +3406,9 @@
         "B_Kitbag_Base": {
             "scope": 0,
             "picture": "\\A3\\Weapons_F\\ammoboxes\\bags\\data\\ui\\icon_B_C_Kitbag_rgr",
-            "descriptionShort": { "_translate" : "Load: 520, Mass: 50" },
+            "descriptionShort": {
+                "_translate": "Load: 520, Mass: 50"
+            },
             "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Fast",
             "hiddenSelectionsTextures": [
                 "\\A3\\weapons_f\\ammoboxes\\bags\\data\\backpack_fast_rgr_co.paa"
@@ -3068,7 +3420,9 @@
         "B_Carryall_Base": {
             "scope": 0,
             "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Tortila",
-            "descriptionShort": { "_translate" : "Load: 550, Mass: 60" },
+            "descriptionShort": {
+                "_translate": "Load: 550, Mass: 60"
+            },
             "picture": "\\A3\\Weapons_F\\Ammoboxes\\Bags\\data\\UI\\icon_B_C_Tortila_khk.paa",
             "hiddenSelectionsTextures": [
                 "\\A3\\weapons_f\\ammoboxes\\bags\\data\\backpack_tortila_khk_co.paa"
@@ -3138,7 +3492,9 @@
         },
         "jetski_epoch": {
             "author": "Kiory",
-            "displayName": { "_translate" : "Blue Jetski" },
+            "displayName": {
+                "_translate": "Blue Jetski"
+            },
             "vehicleclass": "Epoch_objects",
             "accuracy": 0.5,
             "attenuationEffectType": "OpenCarAttenuation",
@@ -3184,24 +3540,24 @@
             "insideSoundCoef": 0.5,
             "soundEngineOnInt": [
                 "A3\\Sounds_F\\vehicles\\boat\\Boat_Transport_01\\Boat_Transport_01_start",
-                1.0,
-                1.0
+                1,
+                1
             ],
             "soundEngineOnExt": [
                 "A3\\Sounds_F\\vehicles\\boat\\Boat_Transport_01\\Boat_Transport_01_start",
-                1.0,
-                1.0,
+                1,
+                1,
                 150
             ],
             "soundEngineOffInt": [
                 "A3\\Sounds_F\\vehicles\\boat\\Boat_Transport_01\\Boat_Transport_01_stop",
-                1.0,
-                1.0
+                1,
+                1
             ],
             "soundEngineOffExt": [
                 "A3\\Sounds_F\\vehicles\\boat\\Boat_Transport_01\\Boat_Transport_01_stop",
-                1.0,
-                1.0,
+                1,
+                1,
                 150
             ],
             "buildCrash0": [
@@ -3327,7 +3683,7 @@
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\boat\\Boat_Transport_01\\Boat_Transport_01_idle_1",
                         0.70794576,
-                        1.0,
+                        1,
                         150
                     ],
                     "frequency": "0.95\t+\t((rpm/\t1200) factor[(100/\t1200),(200/\t1200)])*0.15",
@@ -3336,7 +3692,7 @@
                 "Engine": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\boat\\Boat_Transport_01\\Boat_Transport_01_low2",
-                        1.0,
+                        1,
                         1.2,
                         300
                     ],
@@ -3357,7 +3713,7 @@
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\boat\\Boat_Transport_01\\Boat_Transport_01_high2",
                         1.9952624,
-                        1.0,
+                        1,
                         500
                     ],
                     "frequency": "0.95\t+\t((rpm/\t1200) factor[(700/\t1200),(1000/\t1200)])*0.3",
@@ -3366,8 +3722,8 @@
                 "WaternoiseOutW0": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\boat\\SFX\\voda-o-bok-lodi-0-speed1",
-                        1.0,
-                        1.0,
+                        1,
+                        1,
                         100
                     ],
                     "frequency": "1",
@@ -3376,8 +3732,8 @@
                 "WaternoiseOutW1": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\boat\\SFX\\voda-o-bok-lodi-20-speed",
-                        1.0,
-                        1.0,
+                        1,
+                        1,
                         150
                     ],
                     "frequency": "1",
@@ -3386,8 +3742,8 @@
                 "WaternoiseOutW2": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\boat\\SFX\\voda-o-bok-lodi-50-speed",
-                        1.0,
-                        1.0,
+                        1,
+                        1,
                         300
                     ],
                     "frequency": "1",
@@ -3482,7 +3838,9 @@
             "UserActions": {
                 "PushTheThing": {
                     "displayNameDefault": "Push",
-                    "displayName": { "_translate" : "Push" },
+                    "displayName": {
+                        "_translate": "Push"
+                    },
                     "position": "",
                     "radius": 5,
                     "onlyForPlayer": 1,
@@ -3504,7 +3862,7 @@
                     "N",
                     0,
                     "D1",
-                    2.0,
+                    2,
                     "D2",
                     1.85,
                     "D3",
@@ -3512,7 +3870,7 @@
                 ],
                 "TransmissionRatios": [
                     "High",
-                    1.0
+                    1
                 ],
                 "gearBoxMode": "auto",
                 "moveOffGear": 1,
@@ -3539,7 +3897,9 @@
             "mapSize": 3.56,
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Electric Motorcycle" },
+            "displayName": {
+                "_translate": "Electric Motorcycle"
+            },
             "vehicleclass": "Epoch_objects",
             "model": "\\x\\addons\\a3_epoch_vehicles\\ebike.p3d",
             "picture": "\\x\\addons\\a3_epoch_vehicles\\data\\ebike.paa",
@@ -3567,46 +3927,46 @@
             "soundEngineOnInt": [
                 "A3\\Sounds_F\\vehicles\\soft\\Quadbike_01\\qb-engine_start",
                 0.56234133,
-                1.0
+                1
             ],
             "soundEngineOnExt": [
                 "A3\\Sounds_F\\vehicles\\soft\\Quadbike_01\\qb-engine_start",
                 0.56234133,
-                1.0,
+                1,
                 200
             ],
             "soundEngineOffInt": [
                 "A3\\Sounds_F\\vehicles\\soft\\Quadbike_01\\qb-engine_stop",
                 0.56234133,
-                1.0
+                1
             ],
             "soundEngineOffExt": [
                 "A3\\Sounds_F\\vehicles\\soft\\Quadbike_01\\qb-engine_stop",
                 0.56234133,
-                1.0,
+                1,
                 200
             ],
             "buildCrash0": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_building_01",
-                1.0,
+                1,
                 1,
                 100
             ],
             "buildCrash1": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_building_02",
-                1.0,
+                1,
                 1,
                 100
             ],
             "buildCrash2": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_building_03",
-                1.0,
+                1,
                 1,
                 100
             ],
             "buildCrash3": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_building_04",
-                1.0,
+                1,
                 1,
                 100
             ],
@@ -3622,37 +3982,37 @@
             ],
             "WoodCrash0": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_mix_wood_01",
-                1.0,
+                1,
                 1,
                 100
             ],
             "WoodCrash1": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_mix_wood_02",
-                1.0,
+                1,
                 1,
                 100
             ],
             "WoodCrash2": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_mix_wood_03",
-                1.0,
+                1,
                 1,
                 100
             ],
             "WoodCrash3": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_mix_wood_04",
-                1.0,
+                1,
                 1,
                 100
             ],
             "WoodCrash4": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_mix_wood_05",
-                1.0,
+                1,
                 1,
                 100
             ],
             "WoodCrash5": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_mix_wood_06",
-                1.0,
+                1,
                 1,
                 100
             ],
@@ -3672,25 +4032,25 @@
             ],
             "ArmorCrash0": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_vehicle_01",
-                1.0,
+                1,
                 1,
                 100
             ],
             "ArmorCrash1": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_vehicle_02",
-                1.0,
+                1,
                 1,
                 100
             ],
             "ArmorCrash2": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_vehicle_03",
-                1.0,
+                1,
                 1,
                 100
             ],
             "ArmorCrash3": [
                 "A3\\sounds_f\\Vehicles\\soft\\noises\\crash_vehicle_04",
-                1.0,
+                1,
                 1,
                 100
             ],
@@ -3754,7 +4114,7 @@
                         1,
                         100
                     ],
-                    "frequency": 1.0,
+                    "frequency": 1,
                     "volume": "engineOn*camPos*(((rpm/\t2000) factor[(200/\t2000),(400/\t2000)])\t*\t((rpm/\t2000) factor[(750/\t2000),( 600/\t2000)]))"
                 },
                 "Engine": {
@@ -3813,7 +4173,7 @@
                         0.25118864,
                         1
                     ],
-                    "frequency": 1.0,
+                    "frequency": 1,
                     "volume": "engineOn*(1-camPos)*(((rpm/\t2000) factor[(200/\t2000),(400/\t2000)])\t*\t((rpm/\t2000) factor[(750/\t2000),( 600/\t2000)]))"
                 },
                 "Engine_int": {
@@ -3867,7 +4227,7 @@
                         0.56234133,
                         1
                     ],
-                    "frequency": 1.0,
+                    "frequency": 1,
                     "volume": "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/\t2000) factor[(200/\t2000),(400/\t2000)])\t*\t((rpm/\t2000) factor[(750/\t2000),( 600/\t2000)]))"
                 },
                 "EngineThrust_Int": {
@@ -3909,7 +4269,7 @@
                 "Engine4_Thrust_int": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\Quadbike_01\\qb-exhaust_rpm7",
-                        1.0,
+                        1,
                         1
                     ],
                     "frequency": "0.95\t+\t((rpm/\t2000) factor[(1630/\t2000),(2000/\t2000)]) *0.2",
@@ -3918,8 +4278,8 @@
                 "TiresRockOut": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext_tires_dirt_soft_1",
-                        1.0,
-                        1.0,
+                        1,
+                        1,
                         60
                     ],
                     "frequency": "1",
@@ -3928,8 +4288,8 @@
                 "TiresSandOut": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext-tires-sand1",
-                        1.0,
-                        1.0,
+                        1,
+                        1,
                         60
                     ],
                     "frequency": "1",
@@ -3938,8 +4298,8 @@
                 "TiresGrassOut": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext_tires_dirt_soft_2",
-                        1.0,
-                        1.0,
+                        1,
+                        1,
                         60
                     ],
                     "frequency": "1",
@@ -3948,8 +4308,8 @@
                 "TiresMudOut": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext-tires-mud2",
-                        1.0,
-                        1.0,
+                        1,
+                        1,
                         60
                     ],
                     "frequency": "1",
@@ -3958,8 +4318,8 @@
                 "TiresGravelOut": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext_tires_gravel_1",
-                        1.0,
-                        1.0,
+                        1,
+                        1,
                         60
                     ],
                     "frequency": "1",
@@ -3968,8 +4328,8 @@
                 "TiresAsphaltOut": {
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext_tires_asfalt_2",
-                        1.0,
-                        1.0,
+                        1,
+                        1,
                         60
                     ],
                     "frequency": "1",
@@ -3979,7 +4339,7 @@
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\noises\\quadbike_noise_04",
                         0.8912509,
-                        1.0,
+                        1,
                         90
                     ],
                     "frequency": "1",
@@ -3989,7 +4349,7 @@
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext_tires_dirt_soft_1",
                         0.63095737,
-                        1.0
+                        1
                     ],
                     "frequency": "1",
                     "volume": "(1-camPos)*rock*(speed factor[2, 20])"
@@ -3998,7 +4358,7 @@
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext-tires-sand2",
                         0.63095737,
-                        1.0
+                        1
                     ],
                     "frequency": "1",
                     "volume": "(1-camPos)*sand*(speed factor[2, 20])"
@@ -4007,7 +4367,7 @@
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext_tires_dirt_soft_2",
                         0.63095737,
-                        1.0
+                        1
                     ],
                     "frequency": "1",
                     "volume": "(1-camPos)*grass*(speed factor[2, 20])"
@@ -4016,7 +4376,7 @@
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext-tires-mud2",
                         0.63095737,
-                        1.0
+                        1
                     ],
                     "frequency": "1",
                     "volume": "(1-camPos)*mud*(speed factor[2, 20])"
@@ -4025,7 +4385,7 @@
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext_tires_gravel_1",
                         0.63095737,
-                        1.0
+                        1
                     ],
                     "frequency": "1",
                     "volume": "(1-camPos)*gravel*(speed factor[2, 20])"
@@ -4034,7 +4394,7 @@
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\tires\\ext_tires_asfalt_2",
                         0.5011872,
-                        1.0
+                        1
                     ],
                     "frequency": "1",
                     "volume": "(1-camPos)*asphalt*(speed factor[2, 20])"
@@ -4043,7 +4403,7 @@
                     "sound": [
                         "A3\\Sounds_F\\vehicles\\soft\\noises\\quadbike_noise_04",
                         0.56234133,
-                        1.0
+                        1
                     ],
                     "frequency": "1",
                     "volume": "(damper0 max 0.1)*(speed factor[0, 15])*(1-camPos)"
@@ -4229,7 +4589,7 @@
                 ],
                 "TransmissionRatios": [
                     "High",
-                    4.0
+                    4
                 ],
                 "gearBoxMode": "auto",
                 "moveOffGear": 1,
@@ -4248,7 +4608,7 @@
             "frontBias": 1.3,
             "rearBias": 1.3,
             "centreBias": 1.3,
-            "clutchStrength": 15.0,
+            "clutchStrength": 15,
             "enginePower": 1020,
             "maxOmega": 710,
             "peakTorque": 380,
@@ -4257,7 +4617,7 @@
             "dampingRateZeroThrottleClutchDisengaged": 0.15,
             "torqueCurve": [
                 [
-                    0.0,
+                    0,
                     0.6
                 ],
                 [
@@ -4274,14 +4634,14 @@
                 ],
                 [
                     0.8,
-                    1.0
+                    1
                 ],
                 [
                     0.9,
                     0.95
                 ],
                 [
-                    1.0,
+                    1,
                     0.5
                 ]
             ],
@@ -4293,7 +4653,7 @@
                 0.95
             ],
             "switchTime": 0.1,
-            "latency": 1.0,
+            "latency": 1,
             "Wheels": {
                 "LF": {
                     "boneName": "wheel_1_1_damper",
@@ -4315,7 +4675,7 @@
                     "tireForceAppPointOffset": "wheel_1_1_axis",
                     "maxCompression": 0.15,
                     "mMaxDroop": 0.1,
-                    "sprungMass": 100.0,
+                    "sprungMass": 100,
                     "springStrength": 35600,
                     "springDamperRate": 2680,
                     "longitudinalStiffnessPerUnitGravity": 100000,
@@ -4356,7 +4716,7 @@
                     "tireForceAppPointOffset": "wheel_1_2_axis",
                     "maxCompression": 0.15,
                     "mMaxDroop": 0.1,
-                    "sprungMass": 100.0,
+                    "sprungMass": 100,
                     "springStrength": 35600,
                     "springDamperRate": 2680,
                     "longitudinalStiffnessPerUnitGravity": 100000,
@@ -4578,9 +4938,9 @@
                     "intensity": 1,
                     "useFlare": 0,
                     "dayLight": 0,
-                    "flareSize": 1.0,
+                    "flareSize": 1,
                     "Attenuation": {
-                        "start": 1.0,
+                        "start": 1,
                         "constant": 0,
                         "linear": 0,
                         "quadratic": 0.25,
@@ -4607,7 +4967,9 @@
             "UserActions": {
                 "PressXToFlipTheThing": {
                     "displayNameDefault": "Flip Electric Motorcycle",
-                    "displayName": { "_translate" : "Flip Electric Motorcycle" },
+                    "displayName": {
+                        "_translate": "Flip Electric Motorcycle"
+                    },
                     "position": "",
                     "radius": 2.7,
                     "onlyForPlayer": 1,
@@ -4691,13 +5053,15 @@
             "destrType": "DestructWreck",
             "maxFordingDepth": 0.55,
             "mainBladeRadius": 2.5,
-            "liftForceCoef": 1.0,
+            "liftForceCoef": 1,
             "bodyFrictionCoef": 0.7,
             "cyclicAsideForceCoef": 0.8,
             "cyclicForwardForceCoef": 0.8,
-            "backRotorForceCoef": 1.0,
+            "backRotorForceCoef": 1,
             "accuracy": 0.5,
-            "displayName": { "_translate" : "Mosquito" },
+            "displayName": {
+                "_translate": "Mosquito"
+            },
             "model": "\\x\\addons\\a3_epoch_vehicles_1\\mosquito\\mosquito.p3d",
             "driveOnComponent": [
                 "Wheels"
@@ -4858,7 +5222,7 @@
             "weapons": [],
             "magazines": [],
             "ViewPilot": {
-                "initFov": 1.0,
+                "initFov": 1,
                 "minFov": 0.375,
                 "maxFov": 1.2,
                 "_inherit": "ViewPilot"
@@ -4905,7 +5269,7 @@
             "soundEnviron": [
                 "",
                 "db-30",
-                1.0
+                1
             ],
             "soundDammage": [
                 "A3\\Sounds_F\\air\\Heli_Light_02\\crash",
@@ -4915,23 +5279,23 @@
             "soundEngineOnInt": [
                 "A3\\Sounds_F\\air\\Heli_Light_02\\Heli_Light_02_int_start_v2",
                 "db-5",
-                1.0
+                1
             ],
             "soundEngineOnExt": [
                 "A3\\Sounds_F\\air\\Heli_Light_02\\Heli_Light_02_ext_start_v2",
                 "db-2",
-                1.0,
+                1,
                 600
             ],
             "soundEngineOffInt": [
                 "A3\\Sounds_F\\air\\Heli_Light_02\\Heli_Light_02_int_stop_v2",
                 "db-5",
-                1.0
+                1
             ],
             "soundEngineOffExt": [
                 "A3\\Sounds_F\\air\\Heli_Light_02\\Heli_Light_02_ext_stop_v2",
                 "db-2",
-                1.0,
+                1,
                 600
             ],
             "soundLocked": [
@@ -4949,7 +5313,7 @@
                     "sound": [
                         "A3\\Sounds_F\\air\\Heli_Light_02\\Heli_Light_02_ext_engine_v2",
                         "db5",
-                        1.0,
+                        1,
                         900
                     ],
                     "frequency": "rotorSpeed",
@@ -4959,7 +5323,7 @@
                     "sound": [
                         "A3\\Sounds_F\\air\\Heli_Light_02\\Heli_Light_02_ext_rotor_normal_new",
                         "db3",
-                        1.0,
+                        1,
                         1200
                     ],
                     "frequency": "rotorSpeed",
@@ -4975,7 +5339,7 @@
                     "sound": [
                         "A3\\Sounds_F\\air\\Heli_Light_02\\Heli_Light_02_ext_rotor_high",
                         "db5",
-                        1.0,
+                        1,
                         1500
                     ],
                     "frequency": "rotorSpeed",
@@ -4999,7 +5363,7 @@
                     "cone": [
                         0.7,
                         1.3,
-                        1.0,
+                        1,
                         0
                     ]
                 },
@@ -5007,7 +5371,7 @@
                     "sound": [
                         "A3\\Sounds_F\\air\\Heli_Light_02\\Heli_Light_02_int_engine_v2",
                         "db0",
-                        1.0
+                        1
                     ],
                     "frequency": "rotorSpeed",
                     "volume": "(1-camPos)*((rotorSpeed-0.75)*4)"
@@ -5016,7 +5380,7 @@
                     "sound": [
                         "A3\\Sounds_F\\air\\Heli_Light_02\\Heli_Light_02_int_rotor_normal",
                         "db2",
-                        1.0
+                        1
                     ],
                     "frequency": "rotorSpeed",
                     "volume": "(1-camPos)*(0 max (rotorSpeed-0.1))"
@@ -5025,7 +5389,7 @@
                     "sound": [
                         "A3\\Sounds_F\\air\\Heli_Light_02\\Heli_Light_02_int_rotor_high",
                         "db3",
-                        1.0
+                        1
                     ],
                     "frequency": "rotorSpeed",
                     "volume": "(1-camPos)*3*(rotorThrust-0.9)"
@@ -5117,7 +5481,9 @@
             "_inherit": "Helicopter_Base_H"
         },
         "mosquito_epoch": {
-            "displayName": { "_translate" : "Mosquito" },
+            "displayName": {
+                "_translate": "Mosquito"
+            },
             "picture": "\\x\\addons\\a3_epoch_vehicles_1\\mosquito\\data\\mosquito.paa",
             "author": "Sequisha",
             "scope": 2,
@@ -5223,7 +5589,9 @@
             "UserActions": {
                 "PressXToFlipTheThing": {
                     "displayNameDefault": "Flip ATV",
-                    "displayName": { "_translate" : "Flip ATV" },
+                    "displayName": {
+                        "_translate": "Flip ATV"
+                    },
                     "position": "",
                     "radius": 2.7,
                     "onlyForPlayer": 1,
@@ -5271,7 +5639,9 @@
             "UserActions": {
                 "PushTheThing": {
                     "displayNameDefault": "Push",
-                    "displayName": { "_translate" : "Push" },
+                    "displayName": {
+                        "_translate": "Push"
+                    },
                     "position": "",
                     "radius": 5,
                     "onlyForPlayer": 1,
@@ -5299,7 +5669,9 @@
             "UserActions": {
                 "PushTheThing": {
                     "displayNameDefault": "Push",
-                    "displayName": { "_translate" : "Push" },
+                    "displayName": {
+                        "_translate": "Push"
+                    },
                     "position": "",
                     "radius": 5,
                     "onlyForPlayer": 1,
@@ -5327,7 +5699,9 @@
             "UserActions": {
                 "PushTheThing": {
                     "displayNameDefault": "Push",
-                    "displayName": { "_translate" : "Push" },
+                    "displayName": {
+                        "_translate": "Push"
+                    },
                     "position": "",
                     "radius": 5,
                     "onlyForPlayer": 1,
@@ -5355,7 +5729,9 @@
             "UserActions": {
                 "PushTheThing": {
                     "displayNameDefault": "Push",
-                    "displayName": { "_translate" : "Push" },
+                    "displayName": {
+                        "_translate": "Push"
+                    },
                     "position": "",
                     "radius": 5,
                     "onlyForPlayer": 1,
@@ -5414,7 +5790,9 @@
             "UserActions": {
                 "PushTheThing": {
                     "displayNameDefault": "Push",
-                    "displayName": { "_translate" : "Push" },
+                    "displayName": {
+                        "_translate": "Push"
+                    },
                     "position": "",
                     "radius": 5,
                     "onlyForPlayer": 1,
@@ -5439,7 +5817,9 @@
             "UserActions": {
                 "PushTheThing": {
                     "displayNameDefault": "Push",
-                    "displayName": { "_translate" : "Push" },
+                    "displayName": {
+                        "_translate": "Push"
+                    },
                     "position": "",
                     "radius": 5,
                     "onlyForPlayer": 1,
@@ -5464,7 +5844,9 @@
             "UserActions": {
                 "PushTheThing": {
                     "displayNameDefault": "Push",
-                    "displayName": { "_translate" : "Push" },
+                    "displayName": {
+                        "_translate": "Push"
+                    },
                     "position": "",
                     "radius": 5,
                     "onlyForPlayer": 1,
@@ -5543,7 +5925,9 @@
             "UserActions": {
                 "PushTheThing": {
                     "displayNameDefault": "Push",
-                    "displayName": { "_translate" : "Push" },
+                    "displayName": {
+                        "_translate": "Push"
+                    },
                     "position": "",
                     "radius": 5,
                     "onlyForPlayer": 1,
@@ -5967,9 +6351,6 @@
             "RenderTargets": {},
             "_inherit": "C_Heli_Light_01_civil_F"
         },
-        "LandVehicle": {
-            "_isExtern": true
-        },
         "Tank": {
             "scope": 0,
             "NewTurret": {
@@ -6053,7 +6434,7 @@
             "typicalCargo": [],
             "vehicleClass": "Ammo",
             "waterResistanceCoef": 1.8,
-            "waterAngularDampingCoef": 10.0,
+            "waterAngularDampingCoef": 10,
             "DestructionEffects": {
                 "Light1": {
                     "simulation": "light",
@@ -6138,10 +6519,12 @@
             "_inherit": "ThingX"
         },
         "container_epoch": {
-            "mapSize": 1.0,
+            "mapSize": 1,
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "Container" },
+            "displayName": {
+                "_translate": "Container"
+            },
             "model": "\\x\\addons\\a3_epoch_assets_2\\container.p3d",
             "icon": "iconObject_circle",
             "vehicleClass": "epoch_objects",
@@ -6187,7 +6570,9 @@
             },
             "UserActions": {
                 "open_lid": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "position": "lid_open",
                     "radius": 3,
@@ -6196,7 +6581,9 @@
                     "statement": "this spawn { _this animate [\"open_lock3\", 1]; uiSleep 0.1; _this animate [\"open_lock1\", 1];sleep 0.1; _this animate [\"open_lock2\", 1]; uiSleep 0.1; _this animate [\"open_lock4\", 1]; uiSleep 0.6; _this animate [\"open_lid\", 1];}; this call EPOCH_LootIT; "
                 },
                 "open_quickTake": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "position": "lid_open",
                     "radius": 3,
                     "onlyForPlayer": 0,
@@ -6209,7 +6596,9 @@
         "Bobber_EPOCH": {
             "author": "Axle",
             "scope": 2,
-            "displayName": { "_translate" : "Bobber" },
+            "displayName": {
+                "_translate": "Bobber"
+            },
             "model": "\\x\\addons\\a3_epoch_assets_3\\fishing\\bobber.p3d",
             "canFloat": 1,
             "waterLeakiness": 0,
@@ -6239,16 +6628,6 @@
             "hiddenSelectionsMaterials": [
                 "\\A3\\Structures_F\\Items\\Electronics\\Data\\electronics_screens.rvmat"
             ],
-            "UserActions": {
-                "open_door_l": {
-                    "displayName": { "_translate" : "Take Krypto" },
-                    "position": "left",
-                    "radius": 9,
-                    "onlyForPlayer": 0,
-                    "condition": "(this getVariable [\"Crypto\",0]) > 0",
-                    "statement": "this call EPOCH_takeCrypto;"
-                }
-            },
             "_inherit": "ThingX"
         },
         "Constructions_modular_F": {
@@ -6269,28 +6648,36 @@
             "author": "AWOL",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\sticks.p3d",
-            "displayName": { "_translate" : "Spike Trap (SIM)" },
+            "displayName": {
+                "_translate": "Spike Trap (SIM)"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "Metal_TRAP_SIM_EPOCH": {
             "author": "AWOL",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\sticks.p3d",
-            "displayName": { "_translate" : "Metal Trap (SIM)" },
+            "displayName": {
+                "_translate": "Metal Trap (SIM)"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "TankTrap_SIM_EPOCH": {
             "author": "Axle",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Defense\\tank_trap.p3d",
-            "displayName": { "_translate" : "Tank Trap (SIM)" },
+            "displayName": {
+                "_translate": "Tank Trap (SIM)"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "Hesco3_SIM_EPOCH": {
             "author": "Axle",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Defense\\hesco.p3d",
-            "displayName": { "_translate" : "Hesco Wide (SIM)" },
+            "displayName": {
+                "_translate": "Hesco Wide (SIM)"
+            },
             "slingLoadCargoMemoryPoints": [],
             "_inherit": "Constructions_modular_F"
         },
@@ -6298,14 +6685,18 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\sapper_head.p3d",
-            "displayName": { "_translate" : "Sapper Head" },
+            "displayName": {
+                "_translate": "Sapper Head"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "SapperCorpse_SIM_EPOCH": {
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\Sapper_corpse.p3d",
-            "displayName": { "_translate" : "Sapper Corpse" },
+            "displayName": {
+                "_translate": "Sapper Corpse"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "Secure_Storage_Temp": {
@@ -6316,28 +6707,36 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\lockbox.p3d",
-            "displayName": { "_translate" : "Lockbox" },
+            "displayName": {
+                "_translate": "Lockbox"
+            },
             "_inherit": "Secure_Storage_Temp"
         },
         "Safe_SIM_EPOCH": {
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\safe.p3d",
-            "displayName": { "_translate" : "Safe" },
+            "displayName": {
+                "_translate": "Safe"
+            },
             "_inherit": "Secure_Storage_Temp"
         },
         "Fireplace_SIM_EPOCH": {
             "author": "Kiory",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_2\\fireplace.p3d",
-            "displayName": { "_translate" : "Empty Fireplace (SIM)" },
+            "displayName": {
+                "_translate": "Empty Fireplace (SIM)"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "Jack_SIM_EPOCH": {
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\jack.p3d",
-            "displayName": { "_translate" : "Jack" },
+            "displayName": {
+                "_translate": "Jack"
+            },
             "AnimationSources": {
                 "raise": {
                     "source": "user",
@@ -6353,7 +6752,9 @@
             },
             "UserActions": {
                 "Open_left": {
-                    "displayName": { "_translate" : "Raise" },
+                    "displayName": {
+                        "_translate": "Raise"
+                    },
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
                     "radius": 3,
@@ -6361,13 +6762,17 @@
                     "statement": "this animate [\"raise\", ((this animationPhase \"raise\")+0.1)]; this animate [\"pump\", ((this animationPhase \"pump\")+0.1)];"
                 },
                 "Close_left": {
-                    "displayName": { "_translate" : "Lower" },
+                    "displayName": {
+                        "_translate": "Lower"
+                    },
                     "condition": "this animationPhase \"raise\" >= 0.1",
                     "statement": "this animate [\"raise\", ((this animationPhase \"raise\")-0.1)]; this animate [\"pump\", ((this animationPhase \"pump\")-0.1)];",
                     "_inherit": "Open_left"
                 },
                 "Pack": {
-                    "displayName": { "_translate" : "Pickup" },
+                    "displayName": {
+                        "_translate": "Pickup"
+                    },
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
                     "radius": 3,
@@ -6381,7 +6786,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wood_Ramp.p3d",
-            "displayName": { "_translate" : "Wood Ramp" },
+            "displayName": {
+                "_translate": "Wood Ramp"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6394,7 +6801,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\cinder_half_SIM.p3d",
-            "displayName": { "_translate" : "Half Cinder Block Wall" },
+            "displayName": {
+                "_translate": "Half Cinder Block Wall"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6407,7 +6816,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\cinder_SIM.p3d",
-            "displayName": { "_translate" : "Cinder Block Wall" },
+            "displayName": {
+                "_translate": "Cinder Block Wall"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6420,7 +6831,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\cGarage_SIM.p3d",
-            "displayName": { "_translate" : "Cinder Block Garage" },
+            "displayName": {
+                "_translate": "Cinder Block Garage"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6457,7 +6870,9 @@
             },
             "UserActions": {
                 "Open_left": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -6466,13 +6881,17 @@
                     "statement": "this animate [\"open_left\", 1]; this animate [\"open_right\", 1]"
                 },
                 "Close_left": {
-                    "displayName": { "_translate" : "Close" },
+                    "displayName": {
+                        "_translate": "Close"
+                    },
                     "condition": "this animationPhase \"open_left\" >= 0.5",
                     "statement": "this animate [\"open_left\", 0]; this animate [\"open_right\", 0]",
                     "_inherit": "Open_left"
                 },
                 "Lock_cGarage": {
-                    "displayName": { "_translate" : "Lock" },
+                    "displayName": {
+                        "_translate": "Lock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconlock_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -6481,7 +6900,9 @@
                     "statement": "this animate [\"lock_cGarage\", 1]"
                 },
                 "Unlock_cGarage": {
-                    "displayName": { "_translate" : "Unlock" },
+                    "displayName": {
+                        "_translate": "Unlock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconunlock_ca.paa' size='2.5' />",
                     "condition": "(this animationPhase \"open_left\" < 0.5) && (this animationPhase \"lock_cGarage\" >= 0.5)",
                     "statement": "this animate [\"lock_cGarage\", 0];",
@@ -6494,7 +6915,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Floor.p3d",
-            "displayName": { "_translate" : "Wood Floor" },
+            "displayName": {
+                "_translate": "Wood Floor"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6507,7 +6930,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\metal_floor.p3d",
-            "displayName": { "_translate" : "Metal Floor" },
+            "displayName": {
+                "_translate": "Metal Floor"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6520,7 +6945,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall_SIM.p3d",
-            "displayName": { "_translate" : "Large Wall" },
+            "displayName": {
+                "_translate": "Large Wall"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6533,14 +6960,18 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Plywood_Upgrades\\plywood_wall\\Wooden_Wall_ply.p3d",
-            "displayName": { "_translate" : "Plywood Wall (SIM)" },
+            "displayName": {
+                "_translate": "Plywood Wall (SIM)"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "WoodLargeWallCor_SIM_EPOCH": {
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall_Cor_SIM.p3d",
-            "displayName": { "_translate" : "Wall" },
+            "displayName": {
+                "_translate": "Wall"
+            },
             "sections": [
                 "camo_cor",
                 "camo"
@@ -6559,7 +6990,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Plywood_Upgrades\\plywood_doorway\\Wooden_Wall_Doorway.p3d",
-            "displayName": { "_translate" : "Plywood Wall Doorway (SIM)" },
+            "displayName": {
+                "_translate": "Plywood Wall Doorway (SIM)"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6572,7 +7005,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall_Doorway.p3d",
-            "displayName": { "_translate" : "Wall Doorway" },
+            "displayName": {
+                "_translate": "Wall Doorway"
+            },
             "sections": [
                 "camo_cor",
                 "camo"
@@ -6609,7 +7044,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Plywood_Upgrades\\plywood_door\\Wooden_Wall_Door.p3d",
-            "displayName": { "_translate" : "Plywood Wall Doorway w/ Door (SIM)" },
+            "displayName": {
+                "_translate": "Plywood Wall Doorway w/ Door (SIM)"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6625,7 +7062,9 @@
             },
             "UserActions": {
                 "Open_door": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -6634,7 +7073,9 @@
                     "statement": "this animate [\"Open_Door\", 1]"
                 },
                 "Close_door": {
-                    "displayName": { "_translate" : "Close" },
+                    "displayName": {
+                        "_translate": "Close"
+                    },
                     "condition": "this animationPhase \"Open_Door\" >= 0.5",
                     "statement": "this animate [\"Open_Door\", 0];",
                     "_inherit": "Open_door"
@@ -6646,7 +7087,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall_Door_SIM.p3d",
-            "displayName": { "_translate" : "Wall Doorway w/ Door" },
+            "displayName": {
+                "_translate": "Wall Doorway w/ Door"
+            },
             "sections": [
                 "camo_cor",
                 "camo"
@@ -6674,7 +7117,9 @@
             },
             "UserActions": {
                 "Open_door": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -6683,7 +7128,9 @@
                     "statement": "this animate [\"Open_Door\", 1]"
                 },
                 "Close_door": {
-                    "displayName": { "_translate" : "Close" },
+                    "displayName": {
+                        "_translate": "Close"
+                    },
                     "condition": "this animationPhase \"Open_Door\" >= 0.5",
                     "statement": "this animate [\"Open_Door\", 0];",
                     "_inherit": "Open_door"
@@ -6695,7 +7142,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Plywood_Upgrades\\Plywood_DoorW_L\\Plywood_DoorL.p3d",
-            "displayName": { "_translate" : "Wall Doorway w/ Locking Door" },
+            "displayName": {
+                "_translate": "Wall Doorway w/ Locking Door"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6717,7 +7166,9 @@
             },
             "UserActions": {
                 "Open_door": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -6726,13 +7177,17 @@
                     "statement": "this animate [\"Open_Door\", 1]"
                 },
                 "Close_door": {
-                    "displayName": { "_translate" : "Close" },
+                    "displayName": {
+                        "_translate": "Close"
+                    },
                     "condition": "(this animationPhase \"Open_Door\" >= 0.5) && (this animationPhase \"lock_Door\" == 0)",
                     "statement": "this animate [\"Open_Door\", 0];",
                     "_inherit": "Open_door"
                 },
                 "Lock_Door": {
-                    "displayName": { "_translate" : "Lock" },
+                    "displayName": {
+                        "_translate": "Lock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconlock_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -6741,7 +7196,9 @@
                     "statement": "this animate [\"lock_Door\", 1]"
                 },
                 "Unlock_Door": {
-                    "displayName": { "_translate" : "Unlock" },
+                    "displayName": {
+                        "_translate": "Unlock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconunlock_ca.paa' size='2.5' />",
                     "condition": "!(call EPOCH_lockCheck) && (this animationPhase \"Open_Door\" == 0) && (this animationPhase \"lock_Door\" == 1)",
                     "statement": "this animate [\"lock_Door\", 0];",
@@ -6754,7 +7211,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall_DoorL_SIM.p3d",
-            "displayName": { "_translate" : "Wall Doorway w/ Locking Door" },
+            "displayName": {
+                "_translate": "Wall Doorway w/ Locking Door"
+            },
             "sections": [
                 "camo_cor",
                 "camo"
@@ -6788,7 +7247,9 @@
             },
             "UserActions": {
                 "Open_door": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -6797,13 +7258,17 @@
                     "statement": "this animate [\"Open_Door\", 1]"
                 },
                 "Close_door": {
-                    "displayName": { "_translate" : "Close" },
+                    "displayName": {
+                        "_translate": "Close"
+                    },
                     "condition": "(this animationPhase \"Open_Door\" >= 0.5) && (this animationPhase \"lock_Door\" == 0)",
                     "statement": "this animate [\"Open_Door\", 0];",
                     "_inherit": "Open_door"
                 },
                 "Lock_Door": {
-                    "displayName": { "_translate" : "Lock" },
+                    "displayName": {
+                        "_translate": "Lock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconlock_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -6812,7 +7277,9 @@
                     "statement": "this animate [\"lock_Door\", 1]"
                 },
                 "Unlock_Door": {
-                    "displayName": { "_translate" : "Unlock" },
+                    "displayName": {
+                        "_translate": "Unlock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconunlock_ca.paa' size='2.5' />",
                     "condition": "!(call EPOCH_lockCheck) && (this animationPhase \"Open_Door\" == 0) && (this animationPhase \"lock_Door\" == 1)",
                     "statement": "this animate [\"lock_Door\", 0];",
@@ -6825,7 +7292,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wood_stairs.p3d",
-            "displayName": { "_translate" : "Wood Stairs" },
+            "displayName": {
+                "_translate": "Wood Stairs"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6845,7 +7314,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wood_stairs_upgrade.p3d",
-            "displayName": { "_translate" : "Wood Stairs" },
+            "displayName": {
+                "_translate": "Wood Stairs"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6865,7 +7336,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Tower\\Tower\\Base_Tower_Frame.p3d",
-            "displayName": { "_translate" : "Wood Tower" },
+            "displayName": {
+                "_translate": "Wood Tower"
+            },
             "slingLoadCargoMemoryPoints": [
                 "N",
                 "S",
@@ -6906,7 +7379,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Ladder\\wood_ladder.p3d",
-            "displayName": { "_translate" : "Wood Ladder" },
+            "displayName": {
+                "_translate": "Wood Ladder"
+            },
             "ladders": [],
             "hiddenSelections": [
                 "Camo"
@@ -6920,14 +7395,18 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\tp.p3d",
-            "displayName": { "_translate" : "Tipi Sim" },
+            "displayName": {
+                "_translate": "Tipi Sim"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "Shelf_SIM_EPOCH": {
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\metalStorage.p3d",
-            "displayName": { "_translate" : "Metal Shelf Sim" },
+            "displayName": {
+                "_translate": "Metal Shelf Sim"
+            },
             "simulClass": "Shelf_SIM_EPOCH",
             "staticClass": "Shelf_EPOCH",
             "_inherit": "Constructions_modular_F"
@@ -6936,14 +7415,18 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\shelf.p3d",
-            "displayName": { "_translate" : "Metal Shelf Sim" },
+            "displayName": {
+                "_translate": "Metal Shelf Sim"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "WorkBench_SIM_EPOCH": {
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\workbench.p3d",
-            "displayName": { "_translate" : "WorkBench (SIM)" },
+            "displayName": {
+                "_translate": "WorkBench (SIM)"
+            },
             "hiddenSelections": [
                 "Camo"
             ],
@@ -6956,7 +7439,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\tarp.p3d",
-            "displayName": { "_translate" : "Tarp Covered Pallet" },
+            "displayName": {
+                "_translate": "Tarp Covered Pallet"
+            },
             "simulClass": "Tarp_SIM_EPOCH",
             "staticClass": "Tarp_EPOCH",
             "_inherit": "Constructions_modular_F"
@@ -6965,7 +7450,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\freezer.p3d",
-            "displayName": { "_translate" : "Chest Freezer" },
+            "displayName": {
+                "_translate": "Chest Freezer"
+            },
             "simulClass": "Freezer_SIM_EPOCH",
             "staticClass": "Freezer_EPOCH",
             "_inherit": "Constructions_modular_F"
@@ -6974,21 +7461,27 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\jammer.p3d",
-            "displayName": { "_translate" : "Frequency Jammer (SIM)" },
+            "displayName": {
+                "_translate": "Frequency Jammer (SIM)"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "SolarGen_SIM_EPOCH": {
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Solar_Generator_Complete\\Solar_generator.p3d",
-            "displayName": { "_translate" : "Solar Power Generator (SIM)" },
+            "displayName": {
+                "_translate": "Solar Power Generator (SIM)"
+            },
             "_inherit": "Constructions_modular_F"
         },
         "ToolRack_SIM_EPOCH": {
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\toolRack.p3d",
-            "displayName": { "_translate" : "Tool Rack" },
+            "displayName": {
+                "_translate": "Tool Rack"
+            },
             "simulClass": "ToolRack_SIM_EPOCH",
             "staticClass": "ToolRack_EPOCH",
             "_inherit": "Constructions_modular_F"
@@ -6997,7 +7490,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\chair_adult.p3d",
-            "displayName": { "_translate" : "Chair" },
+            "displayName": {
+                "_translate": "Chair"
+            },
             "simulClass": "Chair_SIM_EPOCH",
             "staticClass": "Chair_EPOCH",
             "hiddenSelections": [
@@ -7015,7 +7510,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\chair_adult.p3d",
-            "displayName": { "_translate" : "Chair (Red)" },
+            "displayName": {
+                "_translate": "Chair (Red)"
+            },
             "simulClass": "ChairRed_SIM_EPOCH",
             "staticClass": "ChairRed_EPOCH",
             "hiddenSelections": [
@@ -7033,7 +7530,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\filing.p3d",
-            "displayName": { "_translate" : "Filing Cabinet" },
+            "displayName": {
+                "_translate": "Filing Cabinet"
+            },
             "simulClass": "Filing_SIM_EPOCH",
             "staticClass": "Filing_EPOCH",
             "hiddenSelections": [
@@ -7048,7 +7547,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\shoebox.p3d",
-            "displayName": { "_translate" : "Shoebox" },
+            "displayName": {
+                "_translate": "Shoebox"
+            },
             "simulClass": "Shoebox_SIM_EPOCH",
             "staticClass": "Shoebox_EPOCH",
             "_inherit": "Constructions_modular_F"
@@ -7057,7 +7558,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\fridge_door_anim.p3d",
-            "displayName": { "_translate" : "Fridge" },
+            "displayName": {
+                "_translate": "Fridge"
+            },
             "simulClass": "Fridge_SIM_EPOCH",
             "staticClass": "Fridge_EPOCH",
             "hiddenSelections": [
@@ -7086,7 +7589,9 @@
             },
             "UserActions": {
                 "Open_bot": {
-                    "displayName": { "_translate" : "Open Bottom" },
+                    "displayName": {
+                        "_translate": "Open Bottom"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -7095,13 +7600,17 @@
                     "statement": "this animate [\"Open_bot\", 1]"
                 },
                 "Close_bot": {
-                    "displayName": { "_translate" : "Close Bottom" },
+                    "displayName": {
+                        "_translate": "Close Bottom"
+                    },
                     "condition": "this animationPhase \"Open_bot\" >= 0.5",
                     "statement": "this animate [\"Open_bot\", 0];",
                     "_inherit": "Open_bot"
                 },
                 "Open_top": {
-                    "displayName": { "_translate" : "Open Top" },
+                    "displayName": {
+                        "_translate": "Open Top"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -7110,7 +7619,9 @@
                     "statement": "this animate [\"Open_top\", 1]"
                 },
                 "Close_top": {
-                    "displayName": { "_translate" : "Close Top" },
+                    "displayName": {
+                        "_translate": "Close Top"
+                    },
                     "condition": "this animationPhase \"Open_top\" >= 0.5",
                     "statement": "this animate [\"Open_top\", 0];",
                     "_inherit": "Open_top"
@@ -7122,7 +7633,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\bed_dummy.p3d",
-            "displayName": { "_translate" : "Mattress" },
+            "displayName": {
+                "_translate": "Mattress"
+            },
             "simulClass": "Bed_SIM_EPOCH",
             "staticClass": "Bed_EPOCH",
             "forceSupply": 0,
@@ -7132,7 +7645,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\bunk.p3d",
-            "displayName": { "_translate" : "Bunk" },
+            "displayName": {
+                "_translate": "Bunk"
+            },
             "simulClass": "Bunk_SIM_EPOCH",
             "staticClass": "Bunk_EPOCH",
             "forceSupply": 0,
@@ -7142,7 +7657,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\couch_dummy.p3d",
-            "displayName": { "_translate" : "Couch" },
+            "displayName": {
+                "_translate": "Couch"
+            },
             "simulClass": "Couch_SIM_EPOCH",
             "staticClass": "Couch_EPOCH",
             "_inherit": "Constructions_modular_F"
@@ -7151,7 +7668,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\coffee_table.p3d",
-            "displayName": { "_translate" : "Coffee Table" },
+            "displayName": {
+                "_translate": "Coffee Table"
+            },
             "simulClass": "Table_SIM_EPOCH",
             "staticClass": "Table_EPOCH",
             "_inherit": "Constructions_modular_F"
@@ -7160,7 +7679,9 @@
             "author": "Kiory",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_2\\wardrobe.p3d",
-            "displayName": { "_translate" : "Wardrobe" },
+            "displayName": {
+                "_translate": "Wardrobe"
+            },
             "simulClass": "Wardrobe_SIM_EPOCH",
             "staticClass": "wardrobe_epoch",
             "_inherit": "Constructions_modular_F"
@@ -7169,7 +7690,9 @@
             "author": "Kiory",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_2\\lockers.p3d",
-            "displayName": { "_translate" : "Wardrobe" },
+            "displayName": {
+                "_translate": "Wardrobe"
+            },
             "simulClass": "Locker_SIM_EPOCH",
             "staticClass": "locker_epoch",
             "_inherit": "Constructions_modular_F"
@@ -7178,7 +7701,9 @@
             "author": "Kiory",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_2\\cooker.p3d",
-            "displayName": { "_translate" : "Cooker" },
+            "displayName": {
+                "_translate": "Cooker"
+            },
             "simulClass": "Cooker_SIM_EPOCH",
             "staticClass": "cooker_epoch",
             "_inherit": "Constructions_modular_F"
@@ -7187,7 +7712,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\pelican.p3d",
-            "displayName": { "_translate" : "Pelican" },
+            "displayName": {
+                "_translate": "Pelican"
+            },
             "simulClass": "Pelican_SIM_EPOCH",
             "staticClass": "Pelican_EPOCH",
             "forceSupply": 0,
@@ -7200,7 +7727,9 @@
             },
             "UserActions": {
                 "Open_top": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -7215,7 +7744,9 @@
             "mapSize": 2.27,
             "author": "Sequisha",
             "scope": 2,
-            "displayName": { "_translate" : "DEBUG BOX" },
+            "displayName": {
+                "_translate": "DEBUG BOX"
+            },
             "model": "\\x\\addons\\a3_epoch_assets\\models\\debug.p3d",
             "icon": "iconObject_5x4",
             "armor": 1000,
@@ -7228,7 +7759,9 @@
             "mapSize": 1.27,
             "author": "Sequisha",
             "scope": 2,
-            "displayName": { "_translate" : "Female Clone Vat" },
+            "displayName": {
+                "_translate": "Female Clone Vat"
+            },
             "model": "\\x\\addons\\a3_epoch_assets\\models\\clone_female.p3d",
             "icon": "iconObject_1x1",
             "armor": 1000,
@@ -7248,7 +7781,9 @@
             "mapSize": 1.27,
             "author": "Sequisha",
             "scope": 2,
-            "displayName": { "_translate" : "Male Clone Vat" },
+            "displayName": {
+                "_translate": "Male Clone Vat"
+            },
             "model": "\\x\\addons\\a3_epoch_assets\\models\\clone_male.p3d",
             "icon": "iconObject_1x1",
             "armor": 1000,
@@ -7268,7 +7803,9 @@
             "mapSize": 1.27,
             "author": "Sequisha",
             "scope": 2,
-            "displayName": { "_translate" : "Empty Clone Vat" },
+            "displayName": {
+                "_translate": "Empty Clone Vat"
+            },
             "model": "\\x\\addons\\a3_epoch_assets\\models\\clone_male.p3d",
             "icon": "iconObject_1x1",
             "armor": 1000,
@@ -7315,7 +7852,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Concrete_Col.p3d",
-            "displayName": { "_translate" : "Concrete Foundation" },
+            "displayName": {
+                "_translate": "Concrete Foundation"
+            },
             "placement": "vertical",
             "armor": 15000,
             "_inherit": "Constructions_foundation_F"
@@ -7324,7 +7863,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wood_Col.p3d",
-            "displayName": { "_translate" : "Wood Foundation" },
+            "displayName": {
+                "_translate": "Wood Foundation"
+            },
             "placement": "vertical",
             "armor": 5000,
             "_inherit": "Constructions_foundation_F"
@@ -7333,7 +7874,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Concrete_Col_Ghost.p3d",
-            "displayName": { "_translate" : "Concrete Foundation (Ghost)" },
+            "displayName": {
+                "_translate": "Concrete Foundation (Ghost)"
+            },
             "placement": "vertical",
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
@@ -7342,7 +7885,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Concrete_Col_Ghost.p3d",
-            "displayName": { "_translate" : "Wood Foundation (Ghost)" },
+            "displayName": {
+                "_translate": "Wood Foundation (Ghost)"
+            },
             "placement": "vertical",
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
@@ -7353,7 +7898,9 @@
             "cost": 0,
             "isGround": 0,
             "author": "Kiory",
-            "displayName": { "_translate" : "Fireplace" },
+            "displayName": {
+                "_translate": "Fireplace"
+            },
             "destrType": "DestructNo",
             "vehicleclass": "Epoch_objects",
             "model": "\\x\\addons\\a3_epoch_assets_2\\fireplace.p3d",
@@ -7369,7 +7916,9 @@
             "cost": 0,
             "isGround": 0,
             "author": "Kiory",
-            "displayName": { "_translate" : "Fireplace Full" },
+            "displayName": {
+                "_translate": "Fireplace Full"
+            },
             "destrType": "DestructNo",
             "vehicleclass": "Epoch_objects",
             "model": "\\x\\addons\\a3_epoch_assets_2\\fireplace_full.p3d",
@@ -7441,7 +7990,9 @@
             "cost": 0,
             "isGround": 0,
             "author": "Kiory",
-            "displayName": { "_translate" : "Fireplace On" },
+            "displayName": {
+                "_translate": "Fireplace On"
+            },
             "destrType": "DestructNo",
             "vehicleclass": "Epoch_objects",
             "model": "\\x\\addons\\a3_epoch_assets_2\\fireplace_on.p3d",
@@ -7466,7 +8017,9 @@
             "scope": 2,
             "placement": "vertical",
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Solar_Generator_Complete\\Solar_generator.p3d",
-            "displayName": { "_translate" : "Solar Power Generator" },
+            "displayName": {
+                "_translate": "Solar Power Generator"
+            },
             "_inherit": "Constructions_static_F"
         },
         "PlotPole_EPOCH": {
@@ -7478,7 +8031,9 @@
             "destrType": "DestructBuilding",
             "cost": 1000,
             "scope": 2,
-            "displayName": { "_translate" : "Frequency Jammer" },
+            "displayName": {
+                "_translate": "Frequency Jammer"
+            },
             "placement": "vertical",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\jammer.p3d",
             "_inherit": "NonStrategic"
@@ -7552,7 +8107,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\lockbox.p3d",
-            "displayName": { "_translate" : "Lockbox" },
+            "displayName": {
+                "_translate": "Lockbox"
+            },
             "armor": 5000,
             "maximumLoad": 600,
             "_inherit": "Constructions_lockedstatic_F"
@@ -7561,7 +8118,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\safe.p3d",
-            "displayName": { "_translate" : "Lockbox" },
+            "displayName": {
+                "_translate": "Lockbox"
+            },
             "armor": 15000,
             "maximumLoad": 3600,
             "_inherit": "Constructions_lockedstatic_F"
@@ -7570,14 +8129,18 @@
             "author": "Axle",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Defense\\tank_trap.p3d",
-            "displayName": { "_translate" : "Tank Trap" },
+            "displayName": {
+                "_translate": "Tank Trap"
+            },
             "_inherit": "Constructions_static_F"
         },
         "Spike_TRAP_EPOCH": {
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\sticks.p3d",
-            "displayName": { "_translate" : "Spike Trap (SIM)" },
+            "displayName": {
+                "_translate": "Spike Trap (SIM)"
+            },
             "armor": 0.1,
             "_inherit": "Constructions_static_F"
         },
@@ -7585,7 +8148,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\sticks.p3d",
-            "displayName": { "_translate" : "Metal Trap (SIM)" },
+            "displayName": {
+                "_translate": "Metal Trap (SIM)"
+            },
             "armor": 0.1,
             "_inherit": "Constructions_static_F"
         },
@@ -7593,7 +8158,9 @@
             "author": "Axle",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Defense\\hesco.p3d",
-            "displayName": { "_translate" : "Hesco Wide" },
+            "displayName": {
+                "_translate": "Hesco Wide"
+            },
             "hiddenSelections": [
                 "Camo"
             ],
@@ -7609,7 +8176,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wood_Ramp.p3d",
-            "displayName": { "_translate" : "Wood Ramp" },
+            "displayName": {
+                "_translate": "Wood Ramp"
+            },
             "hiddenSelections": [
                 "Camo"
             ],
@@ -7631,7 +8200,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\cinder_half.p3d",
-            "displayName": { "_translate" : "Half Cinder Block Wall" },
+            "displayName": {
+                "_translate": "Half Cinder Block Wall"
+            },
             "armor": 10000,
             "hiddenSelections": [
                 "Camo"
@@ -7645,7 +8216,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\cinder.p3d",
-            "displayName": { "_translate" : "Cinder Block Wall" },
+            "displayName": {
+                "_translate": "Cinder Block Wall"
+            },
             "armor": 10000,
             "hiddenSelections": [
                 "Camo"
@@ -7659,7 +8232,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\cGarage.p3d",
-            "displayName": { "_translate" : "Cinder Block Garage" },
+            "displayName": {
+                "_translate": "Cinder Block Garage"
+            },
             "armor": 15000,
             "hiddenSelections": [
                 "camo",
@@ -7691,7 +8266,9 @@
             },
             "UserActions": {
                 "Open_left": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -7700,13 +8277,17 @@
                     "statement": "this animate [\"open_left\", 1]; this animate [\"open_right\", 1]"
                 },
                 "Close_left": {
-                    "displayName": { "_translate" : "Close" },
+                    "displayName": {
+                        "_translate": "Close"
+                    },
                     "condition": "this animationPhase \"open_left\" >= 0.5",
                     "statement": "this animate [\"open_left\", 0]; this animate [\"open_right\", 0]",
                     "_inherit": "Open_left"
                 },
                 "Lock_cGarage": {
-                    "displayName": { "_translate" : "Lock" },
+                    "displayName": {
+                        "_translate": "Lock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconlock_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -7715,7 +8296,9 @@
                     "statement": "this animate [\"lock_cGarage\", 1]"
                 },
                 "Unlock_cGarage": {
-                    "displayName": { "_translate" : "Unlock" },
+                    "displayName": {
+                        "_translate": "Unlock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconunlock_ca.paa' size='2.5' />",
                     "condition": "!(call EPOCH_lockCheck) && (this animationPhase \"open_left\" < 0.5) && (this animationPhase \"lock_cGarage\" >= 0.5)",
                     "statement": "this animate [\"lock_cGarage\", 0];",
@@ -7728,7 +8311,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\jack.p3d",
-            "displayName": { "_translate" : "Jack" },
+            "displayName": {
+                "_translate": "Jack"
+            },
             "AnimationSources": {
                 "raise": {
                     "source": "user",
@@ -7743,7 +8328,9 @@
             },
             "UserActions": {
                 "Open_left": {
-                    "displayName": { "_translate" : "Raise" },
+                    "displayName": {
+                        "_translate": "Raise"
+                    },
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
                     "radius": 3,
@@ -7751,7 +8338,9 @@
                     "statement": "this animate [\"raise\", 1]; this animate [\"pump\", 1]"
                 },
                 "Close_left": {
-                    "displayName": { "_translate" : "Lower" },
+                    "displayName": {
+                        "_translate": "Lower"
+                    },
                     "condition": "this animationPhase \"raise\" >= 0.5",
                     "statement": "this animate [\"raise\", 0]; this animate [\"pump\", 0]",
                     "_inherit": "Open_left"
@@ -7763,7 +8352,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Floor.p3d",
-            "displayName": { "_translate" : "Wood Floor" },
+            "displayName": {
+                "_translate": "Wood Floor"
+            },
             "hiddenSelections": [
                 "camo"
             ],
@@ -7776,7 +8367,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\metal_floor.p3d",
-            "displayName": { "_translate" : "Metal Floor" },
+            "displayName": {
+                "_translate": "Metal Floor"
+            },
             "armor": 15000,
             "hiddenSelections": [
                 "camo",
@@ -7803,7 +8396,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall.p3d",
-            "displayName": { "_translate" : "Large Wall" },
+            "displayName": {
+                "_translate": "Large Wall"
+            },
             "hiddenSelections": [
                 "Camo"
             ],
@@ -7825,7 +8420,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\tp_ghost.p3d",
-            "displayName": { "_translate" : "TiPi Ghost" },
+            "displayName": {
+                "_translate": "TiPi Ghost"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7833,7 +8430,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\shelf_ghost.p3d",
-            "displayName": { "_translate" : "Shelf Ghost" },
+            "displayName": {
+                "_translate": "Shelf Ghost"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7841,7 +8440,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\workbench.p3d",
-            "displayName": { "_translate" : "WorkBench Ghost" },
+            "displayName": {
+                "_translate": "WorkBench Ghost"
+            },
             "ladders": [],
             "hiddenSelections": [
                 "Camo"
@@ -7855,7 +8456,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall_Ghost.p3d",
-            "displayName": { "_translate" : "Wood Wall Ghost" },
+            "displayName": {
+                "_translate": "Wood Wall Ghost"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7863,7 +8466,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Floor_Ghost.p3d",
-            "displayName": { "_translate" : "Wood Floor Ghost" },
+            "displayName": {
+                "_translate": "Wood Floor Ghost"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7871,7 +8476,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\metal_floor_ghost.p3d",
-            "displayName": { "_translate" : "Metal Floor Ghost" },
+            "displayName": {
+                "_translate": "Metal Floor Ghost"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7879,7 +8486,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Ladder\\wood_ladder_ghost.p3d",
-            "displayName": { "_translate" : "Wood Ladder Ghost" },
+            "displayName": {
+                "_translate": "Wood Ladder Ghost"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7887,7 +8496,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wood_stairs90_Ghost.p3d",
-            "displayName": { "_translate" : "Wood Stairs Ghost" },
+            "displayName": {
+                "_translate": "Wood Stairs Ghost"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7895,7 +8506,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Tower\\Tower\\Base_Tower_Frame_Ghost.p3d",
-            "displayName": { "_translate" : "Wood Tower Ghost" },
+            "displayName": {
+                "_translate": "Wood Tower Ghost"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7903,7 +8516,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wood_Ramp_Ghost.p3d",
-            "displayName": { "_translate" : "Wood Ramp Ghost" },
+            "displayName": {
+                "_translate": "Wood Ramp Ghost"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7911,7 +8526,9 @@
             "author": "Axle",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Defense\\hesco_ghost.p3d",
-            "displayName": { "_translate" : "Hesco Wide (Ghost)" },
+            "displayName": {
+                "_translate": "Hesco Wide (Ghost)"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7919,7 +8536,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\cinder_half_Ghost.p3d",
-            "displayName": { "_translate" : "Cinder Half Wall Ghost" },
+            "displayName": {
+                "_translate": "Cinder Half Wall Ghost"
+            },
             "ladders": [],
             "_inherit": "Const_Ghost_EPOCH"
         },
@@ -7927,7 +8546,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Plywood_Upgrades\\plywood_wall\\Wooden_Wall_ply.p3d",
-            "displayName": { "_translate" : "Large Plywood Wall" },
+            "displayName": {
+                "_translate": "Large Plywood Wall"
+            },
             "armor": 1500,
             "_inherit": "Const_WoodWalls_static_F"
         },
@@ -7935,7 +8556,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall_Cor.p3d",
-            "displayName": { "_translate" : "Large Corrugated Wall" },
+            "displayName": {
+                "_translate": "Large Corrugated Wall"
+            },
             "sections": [
                 "camo_cor",
                 "camo"
@@ -7955,7 +8578,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Plywood_Upgrades\\plywood_doorway\\Wooden_Wall_Doorway.p3d",
-            "displayName": { "_translate" : "Plywood Wall Doorway" },
+            "displayName": {
+                "_translate": "Plywood Wall Doorway"
+            },
             "armor": 1500,
             "_inherit": "Const_WoodWalls_static_F"
         },
@@ -7963,7 +8588,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall_Doorway.p3d",
-            "displayName": { "_translate" : "Wall Doorway" },
+            "displayName": {
+                "_translate": "Wall Doorway"
+            },
             "sections": [
                 "camo_cor",
                 "camo"
@@ -7982,7 +8609,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Plywood_Upgrades\\plywood_door\\Wooden_Wall_Door.p3d",
-            "displayName": { "_translate" : "Plywood Wall Doorway w/ Door" },
+            "displayName": {
+                "_translate": "Plywood Wall Doorway w/ Door"
+            },
             "armor": 1500,
             "AnimationSources": {
                 "Open_Door": {
@@ -7993,7 +8622,9 @@
             },
             "UserActions": {
                 "Open_door": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8002,7 +8633,9 @@
                     "statement": "this animate [\"Open_Door\", 1]"
                 },
                 "Close_door": {
-                    "displayName": { "_translate" : "Close" },
+                    "displayName": {
+                        "_translate": "Close"
+                    },
                     "condition": "this animationPhase \"Open_Door\" >= 0.5",
                     "statement": "this animate [\"Open_Door\", 0];",
                     "_inherit": "Open_door"
@@ -8014,7 +8647,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall_Door.p3d",
-            "displayName": { "_translate" : "Wall Doorway w/ Door" },
+            "displayName": {
+                "_translate": "Wall Doorway w/ Door"
+            },
             "sections": [
                 "camo_cor",
                 "camo"
@@ -8037,7 +8672,9 @@
             },
             "UserActions": {
                 "Open_door": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8046,7 +8683,9 @@
                     "statement": "this animate [\"Open_Door\", 1]"
                 },
                 "Close_door": {
-                    "displayName": { "_translate" : "Close" },
+                    "displayName": {
+                        "_translate": "Close"
+                    },
                     "condition": "this animationPhase \"Open_Door\" >= 0.5",
                     "statement": "this animate [\"Open_Door\", 0];",
                     "_inherit": "Open_door"
@@ -8058,7 +8697,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Plywood_Upgrades\\Plywood_DoorW_L\\Plywood_DoorL.p3d",
-            "displayName": { "_translate" : "Plywood Wall Doorway w/ Locking Door" },
+            "displayName": {
+                "_translate": "Plywood Wall Doorway w/ Locking Door"
+            },
             "armor": 1500,
             "AnimationSources": {
                 "Open_Door": {
@@ -8075,7 +8716,9 @@
             },
             "UserActions": {
                 "Open_door": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8084,13 +8727,17 @@
                     "statement": "this animate [\"Open_Door\", 1]"
                 },
                 "Close_door": {
-                    "displayName": { "_translate" : "Close" },
+                    "displayName": {
+                        "_translate": "Close"
+                    },
                     "condition": "(this animationPhase \"Open_Door\" >= 0.5) && (this animationPhase \"lock_Door\" == 0)",
                     "statement": "this animate [\"Open_Door\", 0];",
                     "_inherit": "Open_door"
                 },
                 "Lock_Door": {
-                    "displayName": { "_translate" : "Lock" },
+                    "displayName": {
+                        "_translate": "Lock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconlock_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8099,7 +8746,9 @@
                     "statement": "this animate [\"lock_Door\", 1]"
                 },
                 "Unlock_Door": {
-                    "displayName": { "_translate" : "Unlock" },
+                    "displayName": {
+                        "_translate": "Unlock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconunlock_ca.paa' size='2.5' />",
                     "condition": "!(call EPOCH_lockCheck) && (this animationPhase \"Open_Door\" == 0) && (this animationPhase \"lock_Door\" == 1)",
                     "statement": "this animate [\"lock_Door\", 0];",
@@ -8112,7 +8761,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wooden_Wall_DoorL.p3d",
-            "displayName": { "_translate" : "Wall Doorway w/ Locking Door" },
+            "displayName": {
+                "_translate": "Wall Doorway w/ Locking Door"
+            },
             "sections": [
                 "camo_cor",
                 "camo"
@@ -8141,7 +8792,9 @@
             },
             "UserActions": {
                 "Open_door": {
-                    "displayName": { "_translate" : "Open" },
+                    "displayName": {
+                        "_translate": "Open"
+                    },
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8150,13 +8803,17 @@
                     "statement": "this animate [\"Open_Door\", 1]"
                 },
                 "Close_door": {
-                    "displayName": { "_translate" : "Close" },
+                    "displayName": {
+                        "_translate": "Close"
+                    },
                     "condition": "(this animationPhase \"Open_Door\" >= 0.5) && (this animationPhase \"lock_Door\" == 0)",
                     "statement": "this animate [\"Open_Door\", 0];",
                     "_inherit": "Open_door"
                 },
                 "Lock_Door": {
-                    "displayName": { "_translate" : "Lock" },
+                    "displayName": {
+                        "_translate": "Lock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconlock_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8165,7 +8822,9 @@
                     "statement": "this animate [\"lock_Door\", 1]"
                 },
                 "Unlock_Door": {
-                    "displayName": { "_translate" : "Unlock" },
+                    "displayName": {
+                        "_translate": "Unlock"
+                    },
                     "displayNameDefault": "<img image='\\A3\\modules_f\\data\\iconunlock_ca.paa' size='2.5' />",
                     "condition": "!(call EPOCH_lockCheck) && (this animationPhase \"Open_Door\" == 0) && (this animationPhase \"lock_Door\" == 1)",
                     "statement": "this animate [\"lock_Door\", 0];",
@@ -8178,7 +8837,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wood_stairs.p3d",
-            "displayName": { "_translate" : "Wood Stairs" },
+            "displayName": {
+                "_translate": "Wood Stairs"
+            },
             "hiddenSelections": [
                 "Camo"
             ],
@@ -8200,7 +8861,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Wood_stairs_upgrade.p3d",
-            "displayName": { "_translate" : "Wood Stairs lvl 2" },
+            "displayName": {
+                "_translate": "Wood Stairs lvl 2"
+            },
             "armor": 7500,
             "hiddenSelections": [
                 "Camo"
@@ -8214,7 +8877,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Tower\\Tower\\Base_Tower_Frame.p3d",
-            "displayName": { "_translate" : "Wood Tower" },
+            "displayName": {
+                "_translate": "Wood Tower"
+            },
             "armor": 7500,
             "hiddenSelections": [
                 "Camo"
@@ -8246,7 +8911,9 @@
             },
             "UserActions": {
                 "add_nwall": {
-                    "displayName": { "_translate" : "Add Wall" },
+                    "displayName": {
+                        "_translate": "Add Wall"
+                    },
                     "onlyforplayer": 1,
                     "position": "NWall_trigger",
                     "radius": 2.5,
@@ -8254,49 +8921,63 @@
                     "statement": "[this,\"NWall\",1] call EPOCH_changeWallState"
                 },
                 "remove_nwall": {
-                    "displayName": { "_translate" : "Remove Wall" },
+                    "displayName": {
+                        "_translate": "Remove Wall"
+                    },
                     "position": "NWall_trigger",
                     "condition": "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase \"NWall\" >= 0.5)",
                     "statement": "[this,\"NWall\",0] call EPOCH_changeWallState",
                     "_inherit": "add_nwall"
                 },
                 "add_ewall": {
-                    "displayName": { "_translate" : "Add Wall" },
+                    "displayName": {
+                        "_translate": "Add Wall"
+                    },
                     "position": "EWall_trigger",
                     "condition": "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase \"EWall\" < 0.5)",
                     "statement": "[this,\"EWall\",1] call EPOCH_changeWallState",
                     "_inherit": "add_nwall"
                 },
                 "remove_ewall": {
-                    "displayName": { "_translate" : "Remove Wall" },
+                    "displayName": {
+                        "_translate": "Remove Wall"
+                    },
                     "position": "EWall_trigger",
                     "condition": "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase \"EWall\" >= 0.5)",
                     "statement": "[this,\"EWall\",0] call EPOCH_changeWallState",
                     "_inherit": "add_nwall"
                 },
                 "add_swall": {
-                    "displayName": { "_translate" : "Add Wall" },
+                    "displayName": {
+                        "_translate": "Add Wall"
+                    },
                     "position": "SWall_trigger",
                     "condition": "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase \"SWall\" < 0.5)",
                     "statement": "[this,\"SWall\",1] call EPOCH_changeWallState",
                     "_inherit": "add_nwall"
                 },
                 "remove_swall": {
-                    "displayName": { "_translate" : "Remove Wall" },
+                    "displayName": {
+                        "_translate": "Remove Wall"
+                    },
                     "position": "SWall_trigger",
                     "condition": "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase \"SWall\" >= 0.5)",
                     "statement": "[this,\"SWall\",0] call EPOCH_changeWallState",
                     "_inherit": "add_nwall"
                 },
                 "add_wwall": {
-                    "displayName": { "_translate" : "Add Wall" },
+                    "displayName": {
+                        "_translate": "Add Wall"
+                    },
                     "position": "WWall_trigger",
                     "condition": "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase \"WWall\" < 0.5)",
                     "statement": "[this,\"WWall\",1] call EPOCH_changeWallState",
                     "_inherit": "add_nwall"
                 },
                 "remove_wwall": {
-                    "displayName": { "_translate" : "Remove Wall" },
+                    "displayName": {
+                        "_translate": "Remove Wall"
+                    },
                     "position": "WWall_trigger",
                     "condition": "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase \"WWall\" >= 0.5)",
                     "statement": "[this,\"WWall\",0] call EPOCH_changeWallState",
@@ -8309,7 +8990,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Ladder\\wood_ladder.p3d",
-            "displayName": { "_translate" : "Wood Ladder" },
+            "displayName": {
+                "_translate": "Wood Ladder"
+            },
             "ladders": [
                 [
                     "start1",
@@ -8338,7 +9021,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\tp.p3d",
-            "displayName": { "_translate" : "Tipi" },
+            "displayName": {
+                "_translate": "Tipi"
+            },
             "maximumLoad": 1200,
             "_inherit": "Buildable_Storage"
         },
@@ -8346,7 +9031,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\shelf.p3d",
-            "displayName": { "_translate" : "Metal Shelf" },
+            "displayName": {
+                "_translate": "Metal Shelf"
+            },
             "maximumLoad": 800,
             "_inherit": "Buildable_Storage"
         },
@@ -8354,7 +9041,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_1\\models\\workbench.p3d",
-            "displayName": { "_translate" : "WorkBench" },
+            "displayName": {
+                "_translate": "WorkBench"
+            },
             "maximumLoad": 800,
             "hiddenSelections": [
                 "Camo"
@@ -8368,7 +9057,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\metalStorage_proxy.p3d",
-            "displayName": { "_translate" : "Shelf Proxy" },
+            "displayName": {
+                "_translate": "Shelf Proxy"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -8376,7 +9067,9 @@
             "scope": 2,
             "author": "Sequisha",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\tarp_proxy.p3d",
-            "displayName": { "_translate" : "Pallet Proxy" },
+            "displayName": {
+                "_translate": "Pallet Proxy"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -8384,7 +9077,9 @@
             "scope": 2,
             "author": "Sequisha",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\mineral_proxy.p3d",
-            "displayName": { "_translate" : "Mineral Proxy" },
+            "displayName": {
+                "_translate": "Mineral Proxy"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -8392,7 +9087,9 @@
             "scope": 2,
             "author": "Sequisha",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\mineral.p3d",
-            "displayName": { "_translate" : "Mineral Deposit (Copper)" },
+            "displayName": {
+                "_translate": "Mineral Deposit (Copper)"
+            },
             "hiddenSelections": [
                 "Camo"
             ],
@@ -8444,7 +9141,9 @@
             },
             "UserActions": {
                 "LootIT": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8456,7 +9155,9 @@
             "_inherit": "Animated_Loot"
         },
         "MineralDepositGold_EPOCH": {
-            "displayName": { "_translate" : "Mineral Deposit (Gold)" },
+            "displayName": {
+                "_translate": "Mineral Deposit (Gold)"
+            },
             "hiddenSelections": [
                 "Camo"
             ],
@@ -8469,7 +9170,9 @@
             "_inherit": "MineralDepositCopper_EPOCH"
         },
         "MineralDepositSilver_EPOCH": {
-            "displayName": { "_translate" : "Mineral Deposit (Silver)" },
+            "displayName": {
+                "_translate": "Mineral Deposit (Silver)"
+            },
             "hiddenSelections": [
                 "Camo"
             ],
@@ -8485,7 +9188,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\tarp.p3d",
-            "displayName": { "_translate" : "Tarp Covered Pallet" },
+            "displayName": {
+                "_translate": "Tarp Covered Pallet"
+            },
             "simulClass": "Tarp_SIM_EPOCH",
             "staticClass": "Tarp_EPOCH",
             "weaponHolderProxy": "TarpProxy_EPOCH",
@@ -8502,7 +9207,9 @@
             },
             "UserActions": {
                 "LootIT": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8517,7 +9224,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\metalStorage.p3d",
-            "displayName": { "_translate" : "Metal Shelf" },
+            "displayName": {
+                "_translate": "Metal Shelf"
+            },
             "simulClass": "Shelf_SIM_EPOCH",
             "staticClass": "Shelf_EPOCH",
             "hiddenSelections": [
@@ -8547,7 +9256,9 @@
             },
             "UserActions": {
                 "LootIT": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8567,7 +9278,9 @@
             "cost": 0,
             "isGround": 0,
             "author": "Kiory",
-            "displayName": { "_translate" : "Wardrobe" },
+            "displayName": {
+                "_translate": "Wardrobe"
+            },
             "destrType": "DestructNo",
             "vehicleclass": "Epoch_objects",
             "model": "\\x\\addons\\a3_epoch_assets_2\\wardrobe.p3d",
@@ -8597,7 +9310,9 @@
             },
             "UserActions": {
                 "open_door_l": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "position": "left",
                     "radius": 3,
@@ -8614,7 +9329,9 @@
             "cost": 0,
             "isGround": 0,
             "author": "Kiory",
-            "displayName": { "_translate" : "Locker" },
+            "displayName": {
+                "_translate": "Locker"
+            },
             "destrType": "DestructNo",
             "vehicleclass": "Epoch_objects",
             "model": "\\x\\addons\\a3_epoch_assets_2\\lockers.p3d",
@@ -8645,7 +9362,9 @@
             },
             "UserActions": {
                 "open_door_l": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "position": "left",
                     "radius": 3,
@@ -8662,7 +9381,9 @@
             "cost": 0,
             "isGround": 0,
             "author": "Kiory",
-            "displayName": { "_translate" : "Cooker" },
+            "displayName": {
+                "_translate": "Cooker"
+            },
             "destrType": "DestructNo",
             "vehicleclass": "Epoch_objects",
             "model": "\\x\\addons\\a3_epoch_assets_2\\cooker.p3d",
@@ -8739,7 +9460,9 @@
             },
             "UserActions": {
                 "open_top_door": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "position": "top",
                     "radius": 3,
@@ -8754,7 +9477,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\freezer.p3d",
-            "displayName": { "_translate" : "Chest Freezer" },
+            "displayName": {
+                "_translate": "Chest Freezer"
+            },
             "simulClass": "Freezer_SIM_EPOCH",
             "staticClass": "Freezer_EPOCH",
             "forceSupply": 0,
@@ -8768,7 +9493,9 @@
             },
             "UserActions": {
                 "Open_top": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8783,7 +9510,9 @@
             "author": "SteamPunkGears",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Furniture\\medicine_cabinet\\mc_door_anim.p3d",
-            "displayName": { "_translate" : "Medicine Cabinet" },
+            "displayName": {
+                "_translate": "Medicine Cabinet"
+            },
             "simulClass": "Cabinet_EPOCH",
             "staticClass": "Cabinet_EPOCH",
             "forceSupply": 0,
@@ -8797,7 +9526,9 @@
             },
             "UserActions": {
                 "Open_bot": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "actionPoint",
@@ -8812,7 +9543,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\fridge_door_anim.p3d",
-            "displayName": { "_translate" : "Fridge" },
+            "displayName": {
+                "_translate": "Fridge"
+            },
             "simulClass": "Fridge_SIM_EPOCH",
             "staticClass": "Fridge_EPOCH",
             "forceSupply": 0,
@@ -8843,7 +9576,9 @@
             },
             "UserActions": {
                 "Open_bot": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8858,7 +9593,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\pelican.p3d",
-            "displayName": { "_translate" : "Pelican" },
+            "displayName": {
+                "_translate": "Pelican"
+            },
             "simulClass": "Pelican_SIM_EPOCH",
             "staticClass": "Pelican_EPOCH",
             "forceSupply": 0,
@@ -8872,7 +9609,9 @@
             },
             "UserActions": {
                 "Open_top": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8887,7 +9626,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\Bed_proxy.p3d",
-            "displayName": { "_translate" : "Mattress" },
+            "displayName": {
+                "_translate": "Mattress"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -8895,7 +9636,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\bed.p3d",
-            "displayName": { "_translate" : "Mattress" },
+            "displayName": {
+                "_translate": "Mattress"
+            },
             "simulClass": "Bed_SIM_EPOCH",
             "staticClass": "Bed_EPOCH",
             "weaponHolderProxy": "BedProxy_EPOCH",
@@ -8912,7 +9655,9 @@
             },
             "UserActions": {
                 "FlipMattress": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8927,7 +9672,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\bunk.p3d",
-            "displayName": { "_translate" : "Bunk" },
+            "displayName": {
+                "_translate": "Bunk"
+            },
             "simulClass": "Bunk_SIM_EPOCH",
             "staticClass": "Bunk_EPOCH",
             "weaponHolderProxy": "BedProxy_EPOCH",
@@ -8944,7 +9691,9 @@
             },
             "UserActions": {
                 "FlipMattress": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -8965,7 +9714,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\couch_proxy.p3d",
-            "displayName": { "_translate" : "Couch" },
+            "displayName": {
+                "_translate": "Couch"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -8973,7 +9724,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\couch.p3d",
-            "displayName": { "_translate" : "Couch" },
+            "displayName": {
+                "_translate": "Couch"
+            },
             "simulClass": "Couch_SIM_EPOCH",
             "staticClass": "Couch_EPOCH",
             "weaponHolderProxy": "CouchProxy_EPOCH",
@@ -8990,7 +9743,9 @@
             },
             "UserActions": {
                 "SearchCouch": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -9005,7 +9760,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\coffee_table.p3d",
-            "displayName": { "_translate" : "Coffee Table" },
+            "displayName": {
+                "_translate": "Coffee Table"
+            },
             "simulClass": "Table_SIM_EPOCH",
             "staticClass": "Table_EPOCH",
             "weaponHolderProxy": "TableProxy_EPOCH",
@@ -9022,7 +9779,9 @@
             },
             "UserActions": {
                 "SearchCouch": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -9037,7 +9796,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\coffee_table_proxy.p3d",
-            "displayName": { "_translate" : "Coffee Table Proxy" },
+            "displayName": {
+                "_translate": "Coffee Table Proxy"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -9045,7 +9806,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\chair_proxy.p3d",
-            "displayName": { "_translate" : "Chair" },
+            "displayName": {
+                "_translate": "Chair"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -9053,7 +9816,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\chair_adult.p3d",
-            "displayName": { "_translate" : "Chair" },
+            "displayName": {
+                "_translate": "Chair"
+            },
             "simulClass": "Chair_SIM_EPOCH",
             "staticClass": "Chair_EPOCH",
             "weaponHolderProxy": "ChairProxy_EPOCH",
@@ -9083,7 +9848,9 @@
             },
             "UserActions": {
                 "FlipMattress": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -9098,7 +9865,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\toolRack_proxy.p3d",
-            "displayName": { "_translate" : "Tool Rack" },
+            "displayName": {
+                "_translate": "Tool Rack"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -9106,7 +9875,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\toolRack.p3d",
-            "displayName": { "_translate" : "Tool Rack" },
+            "displayName": {
+                "_translate": "Tool Rack"
+            },
             "simulClass": "ToolRack_SIM_EPOCH",
             "staticClass": "ToolRack_EPOCH",
             "weaponHolderProxy": "ToolRackProxy_EPOCH",
@@ -9123,7 +9894,9 @@
             },
             "UserActions": {
                 "LootIT": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -9137,7 +9910,9 @@
         "ChairRed_EPOCH": {
             "author": "Sequisha",
             "scope": 2,
-            "displayName": { "_translate" : "Chair (Red)" },
+            "displayName": {
+                "_translate": "Chair (Red)"
+            },
             "simulClass": "ChairRed_SIM_EPOCH",
             "staticClass": "ChairRed_EPOCH",
             "hiddenSelectionsTextures": [
@@ -9156,7 +9931,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\shoebox_proxy.p3d",
-            "displayName": { "_translate" : "Shoebox proxy" },
+            "displayName": {
+                "_translate": "Shoebox proxy"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -9164,7 +9941,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\shoebox.p3d",
-            "displayName": { "_translate" : "Shoebox" },
+            "displayName": {
+                "_translate": "Shoebox"
+            },
             "simulClass": "Shoebox_SIM_EPOCH",
             "staticClass": "Shoebox_EPOCH",
             "weaponHolderProxy": "ShoeboxProxy_EPOCH",
@@ -9181,7 +9960,9 @@
             },
             "UserActions": {
                 "OpenCabinet": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -9196,7 +9977,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\filing_proxy.p3d",
-            "displayName": { "_translate" : "Filing Cabinet" },
+            "displayName": {
+                "_translate": "Filing Cabinet"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -9204,7 +9987,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\filing.p3d",
-            "displayName": { "_translate" : "Filing Cabinet" },
+            "displayName": {
+                "_translate": "Filing Cabinet"
+            },
             "simulClass": "Filing_SIM_EPOCH",
             "staticClass": "Filing_EPOCH",
             "weaponHolderProxy": "FilingProxy_EPOCH",
@@ -9232,7 +10017,9 @@
             },
             "UserActions": {
                 "OpenCabinet": {
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "displayNameDefault": "<img image='\\A3\\ui_f\\data\\map\\VehicleIcons\\iconvehicle_ca.paa' size='2.5' />",
                     "onlyforplayer": 1,
                     "position": "Door_knopf",
@@ -9247,7 +10034,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\filing_proxy.p3d",
-            "displayName": { "_translate" : "Filing Cabinet" },
+            "displayName": {
+                "_translate": "Filing Cabinet"
+            },
             "isGround": 0,
             "_inherit": "WeaponHolder"
         },
@@ -9255,7 +10044,9 @@
             "author": "Sequisha",
             "mapSize": 6.19,
             "scope": 2,
-            "displayName": { "_translate" : "Carnival Tent" },
+            "displayName": {
+                "_translate": "Carnival Tent"
+            },
             "model": "\\x\\addons\\a3_epoch_assets_3\\carnival\\models\\carnyTent.p3d",
             "ladders": [
                 [
@@ -9309,7 +10100,9 @@
             "UserActions": {
                 "OpenDoor_1": {
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
-                    "displayName": { "_translate" : "Search" },
+                    "displayName": {
+                        "_translate": "Search"
+                    },
                     "position": "Door_1_trigger",
                     "priority": 0.4,
                     "radius": 1.5,
@@ -9334,7 +10127,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets\\models\\poppy.p3d",
-            "displayName": { "_translate" : "Poppy" },
+            "displayName": {
+                "_translate": "Poppy"
+            },
             "transportMaxItems": 0,
             "transportMaxMagazines": 1,
             "transportMaxWeapons": 0,
@@ -9350,7 +10145,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\vegetation\\models\\goldenseal.p3d",
-            "displayName": { "_translate" : "Goldenseal" },
+            "displayName": {
+                "_translate": "Goldenseal"
+            },
             "transportMaxItems": 0,
             "transportMaxMagazines": 1,
             "transportMaxWeapons": 0,
@@ -9366,7 +10163,9 @@
             "author": "Sequisha",
             "scope": 2,
             "model": "\\x\\addons\\a3_epoch_assets_3\\vegetation\\models\\pumpkin.p3d",
-            "displayName": { "_translate" : "Pumpkin" },
+            "displayName": {
+                "_translate": "Pumpkin"
+            },
             "transportMaxItems": 0,
             "transportMaxMagazines": 1,
             "transportMaxWeapons": 0,
@@ -9408,7 +10207,9 @@
             "UserActions": {
                 "EnterBuilding": {
                     "displayNameDefault": "<img image='\\A3\\Ui_f\\data\\IGUI\\Cfg\\Actions\\open_door_ca.paa' size='2.5' />",
-                    "displayName": { "_translate" : "Teleport" },
+                    "displayName": {
+                        "_translate": "Teleport"
+                    },
                     "position": "Epoch_Action_Point",
                     "priority": 1,
                     "radius": 3,
@@ -9448,7 +10249,9 @@
             "mapSize": 1,
             "author": "Kiory",
             "scope": 2,
-            "displayName": { "_translate" : "centerplane" },
+            "displayName": {
+                "_translate": "centerplane"
+            },
             "vehicleClass": "Helpers",
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\center_plane.p3d",
             "hiddenSelections": [
@@ -9465,7 +10268,9 @@
             "mapSize": 1,
             "author": "AWOL",
             "scope": 2,
-            "displayName": { "_translate" : "Epoch Logo" },
+            "displayName": {
+                "_translate": "Epoch Logo"
+            },
             "vehicleClass": "Helpers",
             "model": "\\x\\addons\\a3_epoch_assets\\models\\logo.p3d",
             "_inherit": "NonStrategic"
@@ -9483,7 +10288,9 @@
         "Construct_F": {
             "author": "Sequisha",
             "scope": 2,
-            "displayName": { "_translate" : "Constuct" },
+            "displayName": {
+                "_translate": "Constuct"
+            },
             "model": "\\x\\addons\\a3_epoch_assets_3\\CfgVehicles\\Characters\\construct.p3d",
             "hasGeometry": 1,
             "moves": "CfgMovesConstruct_F",
@@ -9519,7 +10326,9 @@
         "GreatWhite_F": {
             "author": "Sequisha",
             "scope": 1,
-            "displayName": { "_translate" : "Great White" },
+            "displayName": {
+                "_translate": "Great White"
+            },
             "model": "\\x\\addons\\a3_epoch_assets\\models\\shark_epoch.p3d",
             "picture": "\\x\\addons\\a3_epoch_assets\\models\\shark.paa",
             "moves": "CfgMovesGreatWhite_F",
@@ -9637,7 +10446,9 @@
         "Snake_random_EPOCH": {
             "scope": 1,
             "agentTasks": [],
-            "displayName": { "_translate" : "Dice Snake" },
+            "displayName": {
+                "_translate": "Dice Snake"
+            },
             "model": "\\A3\\Animals_F\\Snakes\\snake_F.p3d",
             "side": 3,
             "moves": "CfgMovesSnakes_F",
@@ -9658,7 +10469,9 @@
             "_inherit": "Animal_Base_F"
         },
         "Snake2_random_EPOCH": {
-            "displayName": { "_translate" : "Leopard Snake" },
+            "displayName": {
+                "_translate": "Leopard Snake"
+            },
             "hiddenSelectionsTextures": [
                 "\\A3\\Animals_F\\Snakes\\data\\Snake_Leopard_CO.paa"
             ],
@@ -9709,7 +10522,9 @@
             "UserActions": {
                 "PressXToFlipTheThing": {
                     "displayNameDefault": "Flip Kart",
-                    "displayName": { "_translate" : "Flip Kart" },
+                    "displayName": {
+                        "_translate": "Flip Kart"
+                    },
                     "position": "",
                     "radius": 2.7,
                     "onlyForPlayer": 1,
@@ -9726,7 +10541,9 @@
             "UserActions": {
                 "PressXToFlipTheThing": {
                     "displayNameDefault": "Flip Kart",
-                    "displayName": { "_translate" : "Flip Kart" },
+                    "displayName": {
+                        "_translate": "Flip Kart"
+                    },
                     "position": "",
                     "radius": 2.7,
                     "onlyForPlayer": 1,
@@ -9743,7 +10560,9 @@
             "UserActions": {
                 "PressXToFlipTheThing": {
                     "displayNameDefault": "Flip Kart",
-                    "displayName": { "_translate" : "Flip Kart" },
+                    "displayName": {
+                        "_translate": "Flip Kart"
+                    },
                     "position": "",
                     "radius": 2.7,
                     "onlyForPlayer": 1,
@@ -9760,7 +10579,9 @@
             "UserActions": {
                 "PressXToFlipTheThing": {
                     "displayNameDefault": "Flip Kart",
-                    "displayName": { "_translate" : "Flip Kart" },
+                    "displayName": {
+                        "_translate": "Flip Kart"
+                    },
                     "position": "",
                     "radius": 2.7,
                     "onlyForPlayer": 1,

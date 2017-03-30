@@ -911,7 +911,7 @@ class FSM
        "if (_pos isEqualTo []) then {" \n
        "_pos = getPosATL player;" \n
        "};" \n
-       "_grp = createGroup (side _plyr);" \n
+       "_grp = createGroup [(side _plyr), true];" \n
        "axeVIP = _grp createUnit [""Epoch_Female_CamoRed_F"",_pos,[],0,""FORM""];" \n
        "" \n
        "if !(isNull axeVIP) then {" \n
@@ -1029,7 +1029,7 @@ class FSM
       name = "spawn_general_and";
       init = /*%FSM<STATEINIT""">*/"" \n
        "" \n
-       "	grpVIPGeneral = createGroup RESISTANCE;" \n
+       "	grpVIPGeneral = createGroup [RESISTANCE, true];" \n
        "" \n
        "	axeGeneral = grpVIPGeneral createUnit [""I_Soldier_EPOCH"", axeGeneralPos, [], 1, ""CAN_COLLIDE""];" \n
        "	axeGeneral setUnitPos ""UP"";" \n

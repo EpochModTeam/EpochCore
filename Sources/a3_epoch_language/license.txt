@@ -1,4 +1,4 @@
-Epoch Mod for Arma 3
+Epoch Mod for Arma 3 
 http://epochmod.com
 by Epoch Mod Team
 https://github.com/EpochModTeam/Epoch/blob/release/CREDITS.md

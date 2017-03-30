@@ -35,6 +35,17 @@ class CfgWeapons
             mass = 0;
         };
     };
+    class GrenadeLauncher;
+    class Throw : GrenadeLauncher
+    {
+        muzzles[] += {"SmokeShellToxicMuzzle"};
+        class ThrowMuzzle;
+        class SmokeShellToxicMuzzle : ThrowMuzzle
+        {
+            displayName = "$STR_EPOCH_SmokeGrenadeToxic";
+            magazines[] = {"SmokeShellToxic"};
+        };
+    };
     class U_EPOCH_RyanZombie_1 : Uniform_Base
     {
         scope = 1;
@@ -313,7 +324,7 @@ class CfgWeapons
         scope = 2;
         allowedSlots[] = {901};
         displayName = "$STR_EPOCH_KeeshaCamoBrown";
-        picture = "\x\addons\a3_epoch_assets\textures\camo\icon_camoBrown_ca.pqq.paa";
+        picture = "\x\addons\a3_epoch_assets\textures\camo\icon_camoBrown_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
         class ItemInfo : UniformItem
         {
@@ -335,6 +346,118 @@ class CfgWeapons
         {
             uniformModel = "-";
             uniformClass = "Epoch_Female_CamoRed_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoAloha_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoAloha";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_aloha_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoAloha_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoBiker_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoBiker";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_biker_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoBiker_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoBubblegum_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoBubblegum";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_bubblegum_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoBubblegum_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoLumberjack_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoLumberjack";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_lumberjack_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoLumberjack_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoOutback_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoOutback";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_outback_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoOutback_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoPink_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoPink";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_pink_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoPink_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+    class U_CamoPinkPolka_uniform : Itemcore
+    {
+        author = "Sequisha";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_KeeshaCamoPinkPolka";
+        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_pinkpolka_icon.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_CamoPinkPolka_F";
             containerClass = "Supply30";
             mass = 30;
         };
@@ -2322,14 +2445,14 @@ class CfgWeapons
         descriptionShort = "$STR_EPOCH_AKMAssaultRifle";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\akm\AKM.rtm"};
         dexterity = 1.8;
-        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
-        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1.0,1,15};
-        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1.0,1,15};
-        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1.0,1,15};
-        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1.0,1,15};
-        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1.0,1,15};
-        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1.0,1,15};
-        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1.0,1,15};
+        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1,1,15};
+        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1,1,15};
+        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1,1,15};
+        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1,1,15};
+        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1,1,15};
+        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1,1,15};
+        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1,1,15};
+        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1,1,15};
         soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083};
         selectionFireAnim = "zasleh";
         modes[] = {"Single","single_medium_optics1","single_far_optics2","fullAuto","fullauto_medium"};
@@ -2417,7 +2540,7 @@ class CfgWeapons
             midRangeProbab = 0.7;
             maxRange = 150;
             maxRangeProbab = 0.05;
-            aiRateOfFire = 2.0;
+            aiRateOfFire = 2;
             aiRateOfFireDistance = 200;
         };
         class single_medium_optics1 : Single
@@ -2446,8 +2569,8 @@ class CfgWeapons
             aiRateOfFire = 8;
             aiRateOfFireDistance = 700;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1","db-5",1,10};
         reloadMagazineSound[] = {"x\addons\a2_epoch_weapons\akm\sound\reload-ak-1","db-8",1,30};
     };
@@ -2502,14 +2625,14 @@ class CfgWeapons
         descriptionShort = "$STR_EPOCH_m4a3AssaultRifle";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\m4a3\m4a3.rtm"};
         dexterity = 1.8;
-        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
-        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1.0,1,15};
-        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1.0,1,15};
-        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1.0,1,15};
-        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1.0,1,15};
-        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1.0,1,15};
-        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1.0,1,15};
-        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1.0,1,15};
+        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1,1,15};
+        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1,1,15};
+        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1,1,15};
+        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1,1,15};
+        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1,1,15};
+        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1,1,15};
+        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1,1,15};
+        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1,1,15};
         soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083};
         selectionFireAnim = "zasleh";
         modes[] = {"Single","single_medium_optics1","single_far_optics2","fullAuto","fullauto_medium"};
@@ -2596,7 +2719,7 @@ class CfgWeapons
             midRangeProbab = 0.7;
             maxRange = 150;
             maxRangeProbab = 0.05;
-            aiRateOfFire = 2.0;
+            aiRateOfFire = 2;
             aiRateOfFireDistance = 200;
         };
         class single_medium_optics1 : Single
@@ -2625,8 +2748,8 @@ class CfgWeapons
             aiRateOfFire = 8;
             aiRateOfFireDistance = 700;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1","db-5",1,10};
         reloadMagazineSound[] = {"a3\sounds_f\weapons\Reloads\new_trg","db-8",1,30};
     };
@@ -2681,14 +2804,14 @@ class CfgWeapons
         descriptionShort = "$STR_EPOCH_M14Rifle";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\M14\M14.rtm"};
         dexterity = 1.8;
-        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
-        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1.0,1,15};
-        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1.0,1,15};
-        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1.0,1,15};
-        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1.0,1,15};
-        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1.0,1,15};
-        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1.0,1,15};
-        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1.0,1,15};
+        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1,1,15};
+        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1,1,15};
+        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1,1,15};
+        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1,1,15};
+        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1,1,15};
+        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1,1,15};
+        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1,1,15};
+        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1,1,15};
         soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083};
         selectionFireAnim = "zasleh";
         modes[] = {"Single","single_medium_optics1","single_far_optics2"};
@@ -2775,7 +2898,7 @@ class CfgWeapons
             midRangeProbab = 0.7;
             maxRange = 150;
             maxRangeProbab = 0.05;
-            aiRateOfFire = 2.0;
+            aiRateOfFire = 2;
             aiRateOfFireDistance = 200;
         };
         class single_medium_optics1 : Single
@@ -2804,8 +2927,8 @@ class CfgWeapons
             aiRateOfFire = 8;
             aiRateOfFireDistance = 700;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1","db-5",1,10};
         reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\ebr_reload","db-8",1,30};
     };
@@ -2874,14 +2997,14 @@ class CfgWeapons
         descriptionShort = "$STR_EPOCH_M16AssaultRifle";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\m16\m16_anim.rtm"};
         dexterity = 1.8;
-        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
-        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1.0,1,15};
-        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1.0,1,15};
-        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1.0,1,15};
-        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1.0,1,15};
-        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1.0,1,15};
-        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1.0,1,15};
-        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1.0,1,15};
+        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1,1,15};
+        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1,1,15};
+        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1,1,15};
+        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1,1,15};
+        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1,1,15};
+        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1,1,15};
+        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1,1,15};
+        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1,1,15};
         soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083};
         selectionFireAnim = "zasleh";
         modes[] = {"Single","single_medium_optics1","single_far_optics2","Burst"};
@@ -2985,8 +3108,8 @@ class CfgWeapons
             aiRateOfFire = 8;
             aiRateOfFireDistance = 700;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1","db-5",1,10};
         reloadMagazineSound[] = {"a3\sounds_f\weapons\Reloads\new_trg","db-8",1,30};
     };
@@ -3026,7 +3149,7 @@ class CfgWeapons
         discreteDistanceInitIndex = 0;
         maxRecoilSway = 0.0225;
         swayDecaySpeed = 1.05;
-        inertia = 1.0;
+        inertia = 1;
         maxZeroing = 2000;
         class GunParticles : GunParticles
         {
@@ -3055,14 +3178,14 @@ class CfgWeapons
         descriptionShort = "$STR_EPOCH_M107SniperRifle";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\m107\m107.rtm"};
         dexterity = 1.8;
-        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
-        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1.0,1,15};
-        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1.0,1,15};
-        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1.0,1,15};
-        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1.0,1,15};
-        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1.0,1,15};
-        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1.0,1,15};
-        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1.0,1,15};
+        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1,1,15};
+        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1,1,15};
+        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1,1,15};
+        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1,1,15};
+        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1,1,15};
+        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1,1,15};
+        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1,1,15};
+        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1,1,15};
         soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083};
         selectionFireAnim = "zasleh";
         modes[] = {"Single","single_medium_optics1","single_far_optics2"};
@@ -3149,7 +3272,7 @@ class CfgWeapons
             midRangeProbab = 0.7;
             maxRange = 150;
             maxRangeProbab = 0.05;
-            aiRateOfFire = 2.0;
+            aiRateOfFire = 2;
             aiRateOfFireDistance = 200;
         };
         class single_medium_optics1 : Single
@@ -3178,8 +3301,8 @@ class CfgWeapons
             aiRateOfFire = 8;
             aiRateOfFireDistance = 700;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1","db-5",1,10};
         reloadMagazineSound[] = {"a3\sounds_f\weapons\Reloads\new_trg","db-8",1,30};
     };
@@ -3248,14 +3371,14 @@ class CfgWeapons
         descriptionShort = "$STR_EPOCH_m249LMG";
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons\m249\m249.rtm"};
         dexterity = 1.8;
-        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1.0,1,15};
-        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1.0,1,15};
-        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1.0,1,15};
-        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1.0,1,15};
-        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1.0,1,15};
-        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1.0,1,15};
-        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1.0,1,15};
-        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1.0,1,15};
+        bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1,1,15};
+        bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1,1,15};
+        bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1,1,15};
+        bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1,1,15};
+        bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1,1,15};
+        bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1,1,15};
+        bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1,1,15};
+        bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1,1,15};
         soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083};
         selectionFireAnim = "zasleh";
         modes[] = {"Single","single_medium_optics1","single_far_optics2","fullAuto","fullauto_medium"};
@@ -3342,7 +3465,7 @@ class CfgWeapons
             midRangeProbab = 0.7;
             maxRange = 150;
             maxRangeProbab = 0.05;
-            aiRateOfFire = 2.0;
+            aiRateOfFire = 2;
             aiRateOfFireDistance = 200;
         };
         class single_medium_optics1 : Single
@@ -3371,8 +3494,8 @@ class CfgWeapons
             aiRateOfFire = 8;
             aiRateOfFireDistance = 700;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1","db-5",1,10};
         reloadMagazineSound[] = {"a3\sounds_f\weapons\Reloads\new_m200","db-8",1,30};
     };
@@ -3427,7 +3550,7 @@ class CfgWeapons
             class MuzzleSlot : SlotInfo
             {
                 linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-                compatibleItems[] = {"test_suppressor"};
+                compatibleItems[] = {};
             };
             class CowsSlot : CowsSlot {};
             class PointerSlot : PointerSlot {};
@@ -3495,7 +3618,7 @@ class CfgWeapons
             midRangeProbab = 0.7;
             maxRange = 150;
             maxRangeProbab = 0.05;
-            aiRateOfFire = 2.0;
+            aiRateOfFire = 2;
             aiRateOfFireDistance = 200;
         };
         class single_medium_optics1 : Single
@@ -3536,8 +3659,8 @@ class CfgWeapons
             discreteDistanceCameraPoint[] = {"OP_eye","OP_eye2","OP_eye3","OP_eye4"};
             discreteDistanceInitIndex = 1;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1","db-5",1,10};
         reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX","db-8",1,30};
     };
@@ -3886,17 +4009,17 @@ class CfgWeapons
             class BaseSoundModeType
             {
                 closure1[] = {"",0.2238721,1,10};
-                soundClosure[] = {"closure1",1.0};
+                soundClosure[] = {"closure1",1};
             };
             class StandardSound : BaseSoundModeType
             {
                 begin1[] = {"",3.981072,1,1200};
-                soundBegin[] = {"begin1",1.0};
+                soundBegin[] = {"begin1",1};
             };
             class SilencedSound : BaseSoundModeType
             {
                 begin1[] = {"",0.56234133,1,400};
-                soundBegin[] = {"begin1",1.0};
+                soundBegin[] = {"begin1",1};
             };
             recoil = "recoil_pistol_light";
             recoilProne = "recoil_prone_pistol_light";
@@ -3938,17 +4061,17 @@ class CfgWeapons
             class BaseSoundModeType
             {
                 closure1[] = {"",0.2238721,1,10};
-                soundClosure[] = {"closure1",1.0};
+                soundClosure[] = {"closure1",1};
             };
             class StandardSound : BaseSoundModeType
             {
                 begin1[] = {"",3.981072,1,1200};
-                soundBegin[] = {"begin1",1.0};
+                soundBegin[] = {"begin1",1};
             };
             class SilencedSound : BaseSoundModeType
             {
                 begin1[] = {"",0.56234133,1,400};
-                soundBegin[] = {"begin1",1.0};
+                soundBegin[] = {"begin1",1};
             };
             recoil = "recoil_pistol_light";
             recoilProne = "recoil_prone_pistol_light";
@@ -3982,8 +4105,8 @@ class CfgWeapons
         dispersion = 0.004;
         recoil = "recoil_pistol_heavy";
         recoilProne = "recoil_prone_pistol_heavy";
-        closure1[] = {"A3\sounds_f\weapons\closure\closure_handgun_3",1.0,1,10};
-        closure2[] = {"A3\sounds_f\weapons\closure\closure_handgun_3",1.0,1.1,10};
+        closure1[] = {"A3\sounds_f\weapons\closure\closure_handgun_3",1,1,10};
+        closure2[] = {"A3\sounds_f\weapons\closure\closure_handgun_3",1,1.1,10};
         soundClosure[] = {"closure1",0.5,"closure2",0.5};
         weaponSoundEffect = "DefaultRifle";
         drySound[] = {"A3\Sounds_F\weapons\pistol_heavy_01\dry",0.39810717,1,20};
@@ -4177,9 +4300,9 @@ class CfgWeapons
                 audibleFire = 0.3;
                 visibleFireTime = 0.5;
                 audibleFireTime = 0.5;
-                cost = 1.0;
+                cost = 1;
                 typicalSpeed = 0.6;
-                airFriction = 1.0;
+                airFriction = 1;
             };
             muzzleEnd = "zaslehPoint";
             alternativeFire = "Zasleh2";
@@ -4237,7 +4360,7 @@ class CfgWeapons
                 midRangeProbab = 0.7;
                 maxRange = 150;
                 maxRangeProbab = 0.05;
-                aiRateOfFire = 2.0;
+                aiRateOfFire = 2;
                 aiRateOfFireDistance = 200;
             };
             class single_medium_optics1 : Single
@@ -4271,6 +4394,7 @@ class CfgWeapons
     class Defib_EPOCH : test_suppressor
     {
         author = "Sequisha";
+        scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairDefib.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_defib_ca.paa";
         displayName = "$STR_EPOCH_RevivePlayer";
@@ -4278,6 +4402,7 @@ class CfgWeapons
     class Heal_EPOCH : test_suppressor
     {
         author = "Sequisha";
+        scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairHeal.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_heal_ca.paa";
         displayName = "$STR_EPOCH_HealPlayer";
@@ -4285,6 +4410,7 @@ class CfgWeapons
     class Repair_EPOCH : test_suppressor
     {
         author = "Sequisha";
+        scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairVehicle.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_repair_ca.paa";
         displayName = "$STR_EPOCH_VehicleRepair";
@@ -4517,8 +4643,8 @@ class CfgWeapons
             };
             class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"",1.0,1,1200};
-                begin2[] = {"",1.0,1,1200};
+                begin1[] = {"",1,1,1200};
+                begin2[] = {"",1,1,1200};
                 soundBegin[] = {"begin1",0.5,"begin2",0.5};
             };
             class SilencedSound : BaseSoundModeType
@@ -4539,10 +4665,10 @@ class CfgWeapons
             maxRange = 400;
             maxRangeProbab = 0.3;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
-        reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",1.0,1,10};
+        reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",1,1,10};
     };
     class sr25_epoch : Rifle_Base_F
     {
@@ -4650,8 +4776,8 @@ class CfgWeapons
             aiRateOfFire = 8;
             aiRateOfFireDistance = 700;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
         reloadMagazineSound[] = {"x\addons\a3_epoch_weapons\sounds\SR25_Reload",1.5,1,10};
     };
@@ -4786,10 +4912,10 @@ class CfgWeapons
             };
             class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1.0,1,1200};
-                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1.0,1,1200};
-                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1.0,1,1200};
-                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1.0,1,1200};
+                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1,1,1200};
+                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1,1,1200};
+                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1,1,1200};
+                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1,1,1200};
                 soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5,"begin4",0.5};
             };
             class SilencedSound : BaseSoundModeType
@@ -4822,10 +4948,10 @@ class CfgWeapons
             };
             class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1.0,1,1200};
-                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1.0,1,1200};
-                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1.0,1,1200};
-                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1.0,1,1200};
+                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1,1,1200};
+                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1,1,1200};
+                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1,1,1200};
+                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1,1,1200};
                 soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5,"begin4",0.5};
             };
             class SilencedSound : BaseSoundModeType
@@ -4857,7 +4983,7 @@ class CfgWeapons
             midRangeProbab = 0.7;
             maxRange = 150;
             maxRangeProbab = 0.05;
-            aiRateOfFire = 2.0;
+            aiRateOfFire = 2;
             aiRateOfFireDistance = 200;
         };
         class single_medium_optics1 : Single
@@ -4886,10 +5012,10 @@ class CfgWeapons
             aiRateOfFire = 8;
             aiRateOfFireDistance = 700;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
-        reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",1.0,1,10};
+        reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",1,1,10};
     };
     class l85a2_epoch : l85a2_base_epoch
     {
@@ -4966,10 +5092,10 @@ class CfgWeapons
             };
             class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1.0,1,1200};
-                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1.0,1,1200};
-                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1.0,1,1200};
-                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1.0,1,1200};
+                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1,1,1200};
+                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1,1,1200};
+                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1,1,1200};
+                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1,1,1200};
                 soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5,"begin4",0.5};
             };
             class SilencedSound : BaseSoundModeType
@@ -5002,10 +5128,10 @@ class CfgWeapons
             };
             class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1.0,1,1200};
-                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1.0,1,1200};
-                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1.0,1,1200};
-                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1.0,1,1200};
+                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1,1,1200};
+                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1,1,1200};
+                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1,1,1200};
+                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1,1,1200};
                 soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5,"begin4",0.5};
             };
             class SilencedSound : BaseSoundModeType
@@ -5037,7 +5163,7 @@ class CfgWeapons
             midRangeProbab = 0.7;
             maxRange = 150;
             maxRangeProbab = 0.05;
-            aiRateOfFire = 2.0;
+            aiRateOfFire = 2;
             aiRateOfFireDistance = 200;
         };
         class single_medium_optics1 : Single
@@ -5066,10 +5192,10 @@ class CfgWeapons
             aiRateOfFire = 8;
             aiRateOfFireDistance = 700;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
-        reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",1.0,1,10};
+        reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",1,1,10};
     };
     class l85a2_ris_ng_epoch : l85a2_ris_epoch
     {
@@ -5162,10 +5288,10 @@ class CfgWeapons
             };
             class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1.0,1,1200};
-                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1.0,1,1200};
-                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1.0,1,1200};
-                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1.0,1,1200};
+                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1,1,1200};
+                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1,1,1200};
+                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1,1,1200};
+                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1,1,1200};
                 soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5,"begin4",0.5};
             };
             class SilencedSound : BaseSoundModeType
@@ -5198,10 +5324,10 @@ class CfgWeapons
             };
             class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1.0,1,1200};
-                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1.0,1,1200};
-                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1.0,1,1200};
-                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1.0,1,1200};
+                begin1[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire1",1,1,1200};
+                begin2[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire2",1,1,1200};
+                begin3[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire3",1,1,1200};
+                begin4[] = {"x\addons\a3_epoch_weapons\sounds\L85_Fire4",1,1,1200};
                 soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5,"begin4",0.5};
             };
             class SilencedSound : BaseSoundModeType
@@ -5233,7 +5359,7 @@ class CfgWeapons
             midRangeProbab = 0.7;
             maxRange = 150;
             maxRangeProbab = 0.05;
-            aiRateOfFire = 2.0;
+            aiRateOfFire = 2;
             aiRateOfFireDistance = 200;
         };
         class single_medium_optics1 : Single
@@ -5271,10 +5397,10 @@ class CfgWeapons
             discreteDistanceCameraPoint[] = {"OP_eye","OP_eye2","OP_eye3","OP_eye4","OP_eye5","OP_eye6","OP_eye7"};
             discreteDistanceInitIndex = 1;
         };
-        aiDispersionCoefY = 6.0;
-        aiDispersionCoefX = 4.0;
+        aiDispersionCoefY = 6;
+        aiDispersionCoefX = 4;
         drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
-        reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",1.0,1,10};
+        reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",1,1,10};
     };
     class Elcan_epoch : ItemCore
     {

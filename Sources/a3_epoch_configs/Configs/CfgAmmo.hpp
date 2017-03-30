@@ -27,7 +27,7 @@ class CfgAmmo
         visibleFire = 6;
         audibleFire = 9;
         cost = 1.2;
-        airLock = True;
+        airLock = true;
         typicalSpeed = 820;
         caliber = 1.6;
         model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
@@ -408,7 +408,7 @@ class CfgAmmo
         maxRangeProbab = 2.5;
         explosive = 0;
         simulationStep = 0.001;
-        timeToLive = 0.004;
+        timeToLive = 0.005;
         soundHit[] = {"","db-90",1};
         soundEngine[] = {"","db-80",4};
     };
@@ -486,6 +486,18 @@ class CfgAmmo
         effectsSmoke = "SmokeShellWhiteEffect";
         whistleDist = 0;
         smokeColor[] = {0.039,0.278,0,0.5};
+    };
+    class SmokeShellToxic_Ammo : SmokeShellCustom
+    {
+        model="\A3\Weapons_f\ammo\smokegrenade_green";
+    };
+    class SmokeShellToxicSapper : SmokeShellCustom
+    {
+        hit = 1;
+        indirectHit = 1;
+        indirectHitRange = 1;
+        timeToLive = 120;
+        mineTrigger = "RemoteTrigger";
     };
     class B_Test_Caseless : BulletBase
     {

@@ -1477,9 +1477,6 @@
         <Key ID="STR_EPOCH_MetalShelf">
             <Original>Metal Shelf</Original>
         </Key>
-        <Key ID="STR_EPOCH_WorkBench">
-            <Original>WorkBench</Original>
-        </Key>
         <Key ID="STR_EPOCH_ShelfProxy">
             <Original>Shelf Proxy</Original>
         </Key>
@@ -1821,6 +1818,66 @@
         </Key>
         <Key ID="STR_EPOCH_DirtyWater">
             <Original>Dirty Water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SpareTire">
+            <Original>Spare Tire</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Usedtofixablownouttire">
+            <Original>Used to fix a blown out tire.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WorkBench">
+            <Original>WorkBench</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SmokeGrenadeToxic">
+            <Original>Smoke Grenade (Toxic)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TypeSmokeGrenadeToxicltbrgtRounds1ltbrgtUsedinHand">
+            <Original>Type: Smoke Grenade - Toxic&amp;lt;br /&amp;gt;Rounds: 1&amp;lt;br /&amp;gt;Used in: Hand</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ToxicSmoke">
+            <Original>Toxic Smoke</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoAloha">
+            <Original>Keesha Camo (Aloha)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoAloha">
+            <Original>Female Camo (Aloha)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoBiker">
+            <Original>Female Camo (Biker)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoBubblegum">
+            <Original>Female Camo (Bubblegum)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoLumberjack">
+            <Original>Female Camo (Lumberjack)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoOutback">
+            <Original>Female Camo (Outback)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoPink">
+            <Original>Female Camo (Pink)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FemaleCamoPinkPolka">
+            <Original>Female Camo (Pink Polka)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoBiker">
+            <Original>Keesha Camo (Biker)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoBubblegum">
+            <Original>Keesha Camo (Bubblegum)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoLumberjack">
+            <Original>Keesha Camo (Lumberjack)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoOutback">
+            <Original>Keesha Camo (Outback)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoPink">
+            <Original>Keesha Camo (Pink)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KeeshaCamoPinkPolka">
+            <Original>Keesha Camo (Pink Polka)</Original>
         </Key>
     </Package>
 </Project>

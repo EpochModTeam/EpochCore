@@ -32,6 +32,17 @@ class CfgMagazines
         count = 1;
         mass = 1;
     };
+    class SmokeShellGreen;
+    class SmokeShellToxic : SmokeShellGreen
+    {
+        displayName = "$STR_EPOCH_SmokeGrenadeToxic";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_TypeSmokeGrenadeToxicltbrgtRounds1ltbrgtUsedinHand";
+        displayNameShort = "$STR_EPOCH_ToxicSmoke";
+        count = 1;
+        mass = 10;
+        ammo = "SmokeShellToxic_Ammo";
+    };
     class ItemEmptyTin : CA_Magazine
     {
         author = "Sequisha";
@@ -910,10 +921,10 @@ class CfgMagazines
     };
     class ItemSodaAlpineDude : 1Rnd_Soda
     {
+        scope = 2;
         author = "vbgreen";
         picture = "\x\addons\a3_epoch_assets_1\pictures\soda_alpinedude_ca.paa";
         displayname = "$STR_EPOCH_AlpineDudeSoda";
-        scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\soda_alpine.p3d";
         descriptionShort = "$STR_EPOCH_Dothedude";
         count = 1;
@@ -921,6 +932,7 @@ class CfgMagazines
     };
     class ItemSodaRbull : 1Rnd_Soda
     {
+        scope = 2;
         author = "vbgreen";
         displayName = "$STR_EPOCH_RedGull";
         descriptionShort = "$STR_EPOCH_RedGullSoda";
@@ -930,6 +942,7 @@ class CfgMagazines
     };
     class ItemSodaOrangeSherbet : 1Rnd_Soda
     {
+        scope = 2;
         author = "Sequisha";
         displayName = "$STR_EPOCH_OrangeSherbet";
         descriptionShort = "$STR_EPOCH_OrangeSherbetSoda";
@@ -939,6 +952,7 @@ class CfgMagazines
     };
     class ItemSodaPurple : 1Rnd_Soda
     {
+        scope = 2;
         author = "vbgreen";
         displayName = "$STR_EPOCH_PurpleNurple";
         descriptionShort = "$STR_EPOCH_PurpleNurpleSoda";
@@ -948,6 +962,7 @@ class CfgMagazines
     };
     class ItemSodaMocha : 1Rnd_Soda
     {
+        scope = 2;
         author = "vbgreen";
         displayName = "$STR_EPOCH_MochaCola";
         descriptionShort = "$STR_EPOCH_MochaColaSoda";
@@ -957,6 +972,7 @@ class CfgMagazines
     };
     class ItemSodaBurst : 1Rnd_Soda
     {
+        scope = 2;
         author = "vbgreen";
         displayName = "$STR_EPOCH_BurstKoke";
         descriptionShort = "$STR_EPOCH_BurstKokeSoda";
@@ -2170,6 +2186,17 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_RunningHotcoolitoff";
         count = 1;
         mass = 1;
+    };
+    class SpareTire : CA_Magazine
+    {
+        author = "$STR_A3_Bohemia_Interactive";
+        scope = 2;
+        model = "\A3\Structures_F\Civ\Garbage\Tyre_F.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\SpareTire.paa";
+        displayName = "$STR_EPOCH_SpareTire";
+        descriptionShort = "$STR_EPOCH_Usedtofixablownouttire";
+        count = 1;
+        mass = 100;
     };
 };
 

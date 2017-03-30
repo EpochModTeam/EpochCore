@@ -1,0 +1,17 @@
+class StageTI
+{
+	texture="a3\data_f\default_vehicle_ti_ca.paa";
+};
+ambient[]={7.2725118e-007,7.2725118e-007,7.2725118e-007,1};
+diffuse[]={0.070000671,0.070000671,0.070000671,1};
+forcedDiffuse[]={0,0,0,0};
+emmisive[]={0,0,0,0};
+specular[]={0,0,0,0};
+specularPower=0;
+renderFlags[]=
+{
+	"AlphaTest128",
+	"AddBlend"
+};
+PixelShaderID="Normal";
+VertexShaderID="Basic";

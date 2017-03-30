@@ -24,6 +24,19 @@
             "mass": 1,
             "_inherit": "CA_Magazine"
         },
+        "SmokeShellGreen": {
+            "_isExtern": true
+        },
+        "SmokeShellToxic": {
+            "displayName": { "_translate" : "Smoke Grenade (Toxic)" },
+            "scope": 2,
+            "descriptionShort": { "_translate" : "Type: Smoke Grenade - Toxic" },
+            "displayNameShort": { "_translate" : "Toxic Smoke" },
+            "count": 1,
+            "mass": 10,
+            "ammo": "SmokeShellToxic_Ammo",
+            "_inherit": "SmokeShellGreen"
+        },
         "ItemEmptyTin": {
             "author": "Sequisha",
             "picture": "\\x\\addons\\a3_epoch_assets_2\\gear\\gear_emptytincan_x_ca.paa",
@@ -901,6 +914,7 @@
             "_inherit": "CA_Magazine"
         },
         "ItemSodaAlpineDude": {
+            "scope": 2,
             "author": "vbgreen",
             "picture": "\\x\\addons\\a3_epoch_assets_1\\pictures\\soda_alpinedude_ca.paa",
             "displayname": { "_translate" : "Alpine Dude Soda" },
@@ -912,6 +926,7 @@
             "_inherit": "1Rnd_Soda"
         },
         "ItemSodaRbull": {
+            "scope": 2,
             "author": "vbgreen",
             "displayName": { "_translate" : "Red Gull" },
             "descriptionShort": { "_translate" : "Red Gull Soda" },
@@ -921,6 +936,7 @@
             "_inherit": "1Rnd_Soda"
         },
         "ItemSodaOrangeSherbet": {
+            "scope": 2,
             "author": "Sequisha",
             "displayName": { "_translate" : "Orange Sherbet" },
             "descriptionShort": { "_translate" : "Orange Sherbet Soda" },
@@ -930,6 +946,7 @@
             "_inherit": "1Rnd_Soda"
         },
         "ItemSodaPurple": {
+            "scope": 2,
             "author": "vbgreen",
             "displayName": { "_translate" : "Purple Nurple" },
             "descriptionShort": { "_translate" : "Purple Nurple Soda" },
@@ -939,6 +956,7 @@
             "_inherit": "1Rnd_Soda"
         },
         "ItemSodaMocha": {
+            "scope": 2,
             "author": "vbgreen",
             "displayName": { "_translate" : "Mocha Cola" },
             "descriptionShort": { "_translate" : "Mocha Cola Soda" },
@@ -948,6 +966,7 @@
             "_inherit": "1Rnd_Soda"
         },
         "ItemSodaBurst": {
+            "scope": 2,
             "author": "vbgreen",
             "displayName": { "_translate" : "Burst Koke" },
             "descriptionShort": { "_translate" : "Burst Koke Soda" },
@@ -2181,6 +2200,17 @@
             "descriptionShort": { "_translate" : "Running Hot? cool it off!" },
             "count": 1,
             "mass": 1,
+            "_inherit": "CA_Magazine"
+        },
+        "SpareTire": {
+            "author": "$STR_A3_Bohemia_Interactive",
+            "scope": 2,
+            "model": "\\A3\\Structures_F\\Civ\\Garbage\\Tyre_F.p3d",
+            "picture": "\\x\\addons\\a3_epoch_community\\icons\\SpareTire.paa",
+            "displayName": {"_translate": "Spare Tire"},
+            "descriptionShort": {"_translate": "Used to fix a blown out tire."},
+            "count": 1,
+            "mass": 100,
             "_inherit": "CA_Magazine"
         }
     }

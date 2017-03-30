@@ -1531,7 +1531,7 @@ class FSM
        "}else{" \n
        "" \n
        "" \n
-       "_grp = createGroup _side;" \n
+       "_grp = createGroup [_side, true];" \n
        "" \n
        " for ""_i"" from 0 to 1 step 1 do" \n
        "{" \n

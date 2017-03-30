@@ -9,10 +9,6 @@ class FSM
                         itemno = ;
                         init = "//Developer code" \n
                          "//Author: axeman (Andrew Gregory | andrew@andgregor.co.uk)" \n
-                         "//Licence:" \n
-                         "//You may not copy, reproduce, edit, move or transfer in any way without the express permission of the author." \n
-                         "//All files contained in this MPMission also folder fall under the Epoch Mod Creative Commons Licence: https://creativecommons.org/licenses/by-nc-nd/4.0/" \n
-                         "//Any files triggered, called, execVM'ed, execFSM'ed etc, by this file fall under the same agreement." \n
                          "" \n
                          "_unit = _this select 0;" \n
                          "_bomb = _this select 1;" \n
