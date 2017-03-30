@@ -1222,7 +1222,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_FemaleCamoPinkPolka";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_camo.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\keesha\camo\camo_pinkpolka_icon.paa";
+        picture = "\x\addons\a3_epoch_community\textures\keesha\camo\camo_pinkpolka_icon.paa";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\camo_pinkpolka.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_community\textures\keesha\camo\female_camoPinkPolka.rvmat"};
@@ -1238,6 +1238,7 @@ class CfgVehicles
     {
         woman = 1;
         scope = 2;
+        hiddenSelections[] = {};
         displayName = "$STR_EPOCH_Female";
     };
     class O_Soldier_base_F;
