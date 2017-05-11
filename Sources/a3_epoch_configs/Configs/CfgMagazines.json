@@ -2210,7 +2210,7 @@
             "displayName": {"_translate": "Spare Tire"},
             "descriptionShort": {"_translate": "Used to fix a blown out tire."},
             "count": 1,
-            "mass": 100,
+            "mass": 300,
             "_inherit": "CA_Magazine"
         }
     }
