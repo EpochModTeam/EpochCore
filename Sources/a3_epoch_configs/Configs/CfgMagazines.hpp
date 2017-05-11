@@ -2196,7 +2196,7 @@ class CfgMagazines
         displayName = "$STR_EPOCH_SpareTire";
         descriptionShort = "$STR_EPOCH_Usedtofixablownouttire";
         count = 1;
-        mass = 100;
+        mass = 250;
     };
 };
 
