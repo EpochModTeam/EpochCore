@@ -574,6 +574,22 @@ class CfgAmmo
         soundHit[] = {"","db-90",1};
         soundEngine[] = {"","db-80",4};
     };
+	class F_40mm_White;
+	class F_40mm_Purple: F_40mm_White
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = {0.25, 0, 0.5, 0};
+	};
+	class F_40mm_Blue: F_40mm_White
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = {0.1, 0.1, 0.75, 0};
+	};
+	class F_40mm_Orange: F_40mm_White
+	{
+		model = "\A3\Weapons_F\Ammo\UGL_Flare";
+		lightColor[] = {0.8, 0.4, 0, 0};
+	};
 };
 
 /*[[[end]]]*/
