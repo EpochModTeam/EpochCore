@@ -4675,24 +4675,191 @@ class CfgVehicles
             };
         };
     };
-    class C_SUV_01_F;
-    class C_SUV_01_EPOCH : C_SUV_01_F
-    {
-        scope = 2;
-        crew = "";
-        side = 3;
-        armor = 45;
-        fuelCapacity = 45;
-        fuelConsumptionRate = 0.02;
-        transportMaxWeapons = 12;
-        transportMaxMagazines = 64;
-        transportMaxBackpacks = 12;
-        maximumLoad = 2000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers {};
-    };
+	class C_SUV_01_F;
+	class C_SUV_01_EPOCH: C_SUV_01_F
+	{
+		scope = 2;
+		scopeCurator=2;
+		crew = "";
+		side = 3;
+		armor = 45;
+		fuelCapacity = 45;
+		fuelConsumptionRate = 0.02;
+		transportMaxWeapons = 12;
+		transportMaxMagazines = 64;
+		transportMaxBackpacks = 12;
+		maximumLoad = 2000;
+		faction = "CIV_F";
+		typicalCargo[] = {};
+		class TransportItems{};
+		class Eventhandlers;
+		class HitPoints;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH1";
+		};
+	};
+	class C_SUV_01_EPOCH1: C_SUV_01_EPOCH
+	{
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		brakeDistance = 6.2;
+		acceleration 	= 17;
+		maxSpeed = 274;
+		fuelConsumptionRate = 0.025;
+		enginePower = 454;
+		peakTorque = 750;
+		idleRpm = 850;
+		redRpm = 6250;
+		class HitPoints: HitPoints 
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitRGlass;
+			class HitLGlass;
+			class HitBody;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH2";
+		};
+	};
+	class C_SUV_01_EPOCH2: C_SUV_01_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.1;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints 
+		{
+			class HitLFWheel: HitLFWheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 2.3;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 4.25;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 1.2; // 1
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitBody: HitBody {
+				armor = 1.25;
+				passThrough = 0.75;
+				explosionShielding = 1.25;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH3";
+		};
+	};
+	class C_SUV_01_EPOCH3: C_SUV_01_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 18;
+		maximumLoad = 3750;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH4";
+		};
+	};
+	class C_SUV_01_EPOCH4: C_SUV_01_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 90;
+		fuelConsumptionRate = 0.0185;
+	};
     class C_Rubberboat;
     class C_Rubberboat_EPOCH : C_Rubberboat
     {
