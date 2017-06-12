@@ -2230,6 +2230,21 @@ class CfgMagazines
 		ammo = "F_40mm_Orange";
 		initSpeed = 120;
 	};
+	class VehicleMagazine: CA_Magazine {};
+	class 3Rnd_MosquitoGrenade: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "Grenade";
+		descriptionShort = "";
+		ammo = "MosquitoGrenade";
+		count = 3;
+		initSpeed = 3;
+		maxLeadSpeed = 200;
+		sound[] = {"",1.0,1};
+		reloadSound[] = {"",0.00031622773,1};
+		nameSound = "cannon";		
+	};
 };
 
 /*[[[end]]]*/
