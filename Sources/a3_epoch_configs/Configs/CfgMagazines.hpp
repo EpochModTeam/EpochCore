@@ -2198,6 +2198,38 @@ class CfgMagazines
         count = 1;
         mass = 100;
     };
+	class 6Rnd_GreenSignal_F;
+	class 6Rnd_BlueSignal_F: 6Rnd_GreenSignal_F
+	{
+		author = "DirtySanchez";
+		displayName = "6Rnd Signal Cylinder (Blue)";
+		descriptionShort = "Type: Flare Slugs - Blue<br />Rounds: 6<br />Used in: Starter Pistol";
+		displayNameShort = "Blue Flare";
+		picture = "\A3\Weapons_F_Kart\Pistols\Pistol_Signal_F\Data\UI\M_6Rnd_GreenSignal_CA.paa";
+		ammo = "F_40mm_Blue";
+		initSpeed = 120;
+	};
+	class 6Rnd_PurpleSignal_F: 6Rnd_GreenSignal_F
+	{
+		author = "DirtySanchez";
+		hit = 5;
+		displayName = "6Rnd Signal Cylinder (Purple)";
+		descriptionShort = "Type: Flare Slugs - Purple<br />Rounds: 6<br />Used in: Starter Pistol";
+		displayNameShort = "Purple Flare";
+		picture = "\A3\Weapons_F_Kart\Pistols\Pistol_Signal_F\Data\UI\M_6Rnd_RedSignal_CA.paa";
+		ammo = "F_40mm_Purple";
+		initSpeed = 120;
+	};
+	class 6Rnd_OrangeSignal_F: 6Rnd_GreenSignal_F
+	{
+		author = "DirtySanchez";
+		displayName = "6Rnd Signal Cylinder (Orange)";
+		descriptionShort = "Type: Flare Slugs - Orange<br />Rounds: 6<br />Used in: Starter Pistol";
+		displayNameShort = "Orange Flare";
+		picture = "\A3\Weapons_F_Kart\Pistols\Pistol_Signal_F\Data\UI\M_6Rnd_RedSignal_CA.paa";
+		ammo = "F_40mm_Orange";
+		initSpeed = 120;
+	};
 };
 
 /*[[[end]]]*/

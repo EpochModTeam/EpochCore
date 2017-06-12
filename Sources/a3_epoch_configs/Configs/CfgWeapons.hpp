@@ -5485,6 +5485,395 @@ class CfgWeapons
         };
         inertia = 0.1;
     };
+	class hgun_Pistol_Signal_F: Pistol_Base_F 
+	{
+		author = "Bohemia Interactive / DirtySanchez";
+		_generalMacro = "hgun_Pistol_Signal_F";
+		DLC = "Kart";
+		overviewPicture = "\A3\Data_F_Kart\Images\watermarkInfo_page09_ca.paa";
+		scope = 2;
+		model = "\A3\Weapons_F_Kart\Pistols\Pistol_Signal_F\Pistol_Signal_01_F.p3d";
+		picture = "\A3\Weapons_F_Kart\Pistols\Pistol_Signal_F\Data\UI\gear_Pistol_Signal_01_X_ca.paa";
+		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		inertia = 0.2;
+		dexterity = 1.8;
+		initSpeed = 240;
+		recoil = "recoil_pistol_signal";
+		maxZeroing = 100;
+		magazines[] = {"6Rnd_GreenSignal_F", "6Rnd_RedSignal_F","6Rnd_BlueSignal_F","6Rnd_PurpleSignal_F","6Rnd_OrangeSignal_F"};
+		reloadAction = "GestureReloadPistolHeavy02";
+		drySound[] = {"A3\sounds_f\weapons\other\dry1", 0.398107, 1, 20};
+		reloadMagazineSound[] = {"A3\Sounds_F_Kart\Weapons\starting_pistol_reload", 0.562341, 1, 30};
+		modes[] = {"Single"};
+		class Single: Mode_SemiAuto {
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType {
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {"", 1.03514, 1, 10};
+				closure2[] = {"", 1.03514, 1.1, 10};
+				soundClosure[] = {"closure1", 0.5, "closure2", 0.5};
+			};
+			class StandardSound: BaseSoundModeType {
+				begin1[] = {"A3\Sounds_F_Kart\Weapons\starting_pistol_1", 1, 1, 700};
+				begin2[] = {"A3\Sounds_F_Kart\Weapons\starting_pistol_2", 1, 1, 700};
+				begin3[] = {"A3\Sounds_F_Kart\Weapons\starting_pistol_3", 1, 1, 700};
+				soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.34};
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {"", 1.03514, 1, 10};
+				closure2[] = {"", 1.03514, 1.1, 10};
+				soundClosure[] = {"closure1", 0.5, "closure2", 0.5};
+			};
+			recoil = "recoil_pistol_light";
+			recoilProne = "recoil_prone_pistol_light";
+			reloadTime = 0.25;
+			dispersion = 0.025;
+			minRange = 5;
+			minRangeProbab = 0.3;
+			midRange = 25;
+			midRangeProbab = 0.6;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
+			multiplier = 1;
+			burst = 1;
+			burstRangeMax = -1;
+			sound[] = {"", 10, 1};
+			soundBegin[] = {"sound", 1};
+			soundBeginWater[] = {"sound", 1};
+			soundClosure[] = {"sound", 1};
+			soundEnd[] = {};
+			soundLoop[] = {};
+			soundContinuous = 0;
+			weaponSoundEffect = "";
+			ffCount = 1;
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			flash = "gunfire";
+			flashSize = 0.1;
+			autoFire = 0;
+			useAction = 0;
+			useActionTitle = "";
+			showToPlayer = 1;
+			artilleryDispersion = 1;
+			artilleryCharge = 1;
+			canShootInWater = 0;
+			displayName = "Semi";
+			textureType = "semi";
+			aiDispersionCoefY = 1.7;
+			aiDispersionCoefX = 1.4;
+			soundBurst = 0;
+			requiredOpticType = -1;
+			aiRateOfFireDispersion = 1;
+		};
+		class Library {
+			libTextDesc = "Starter pistol is a revolver commonly used to start competitive races. Only the sound of the shot is used as the starting singal. This pistol uses flares, and a cloud of smoke can be seen when the gun goes off.";
+		};
+		descriptionShort = "Non-combat gun<br />Caliber: 10 mm Signal Slugs";
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+			mass = 20;
+			holsterScale = 0.9;
+			class CowsSlot {};
+			class MuzzleSlot {};
+			allowedSlots[] = {801, 701, 901};
+			holsterOffset = "holster";
+		};
+		class ItemInfo {
+			priority = 2;
+		};
+		class GunParticles {
+			class Effect1 {
+				effectName = "StarterPistolCloud1";
+				positionName = "usti hlavne";
+				directionName = "konec hlavne";
+			};
+			class Effect2 {
+				effectName = "StarterPistolCloud2";
+				positionName = "konec hlavne";
+				directionName = "usti hlavne";
+			};
+		};
+		bullet1[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet2[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet3[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet4[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet5[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet6[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet7[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet8[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet9[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet10[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet11[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet12[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		displayName = "Taurus Judge";
+		soundBullet[] = {"bullet1", 0.083, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
+		optics = 1;
+		modelOptics = "-";
+		opticsZoomMin = 0.25;
+		opticsZoomMax = 1.25;
+		opticsZoomInit = 0.75;
+		cursor = "hgun";
+		cursoraim = "cursorAim";
+		minRange = 0;
+		minRangeProbab = 0.1;
+		midRange = 30;
+		midRangeProbab = 0.3;
+		maxRange = 50;
+		maxRangeProbab = 0.04;
+		weaponPoolAvailable = 1;
+		textureType = "semi";
+		htMin = 1;
+		htMax = 300;
+		afMax = 0;
+		mfMax = 0;
+		mFact = 1;
+		tBody = 100;
+		autoReload = 0;
+		discreteDistance[] = {50};
+		discreteDistanceInitIndex = 0;
+		magazineReloadTime = 2;
+		opticsFlare = 0;
+		nameSound = "Pistol";
+		type = 2;
+		canLock = 0;
+		access = 3;
+		value = 2;
+		ammo = "";
+		cursorSize = 1;
+		showAimCursorInternal = 1;
+		cursorAimOn = "";
+		laser = 0;
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		hiddenUnderwaterSelections[] = {};
+		shownUnderwaterSelections[] = {};
+		hiddenUnderwaterSelectionsTextures[] = {};
+		simulation = "Weapon";
+		count = 0;
+		multiplier = 1;
+		burst = 1;
+		reloadTime = 1;
+		magazineReloadSwitchPhase = 1;
+		sound[] = {"", 1, 1};
+		soundBegin[] = {"sound", 1};
+		soundBeginWater[] = {"sound", 1};
+		soundClosure[] = {"sound", 1};
+		soundEnd[] = {"sound", 1};
+		soundLoop[] = {"sound", 1};
+		soundContinuous = 0;
+		weaponSoundEffect = "";
+		soundBurst = 1;
+		zeroingSound[] = {"", 1, 1};
+		reloadSound[] = {"", 1, 1};
+		changeFiremodeSound[] = {"", 1, 1};
+		emptySound[] = {"", 1, 1};
+		ballisticsComputer = 0;
+		irDistance = 0;
+		irDotIntensity = 0.001;
+		dispersion = 0.002;
+		aiDispersionCoefX = 1;
+		aiDispersionCoefY = 1;
+		lockAcquire = 1;
+		enableAttack = 1;
+		ffMagnitude = 0;
+		ffFrequency = 1;
+		ffCount = 1;
+		recoilProne = "";
+		maxRecoilSway = 0.008;
+		swayDecaySpeed = 2;
+		modelSpecial = "";
+		modelMagazine = "";
+		muzzlePos = "usti hlavne";
+		muzzleEnd = "konec hlavne";
+		irLaserPos = "laser pos";
+		irLaserEnd = "laser dir";
+		cartridgePos = "nabojnicestart";
+		cartridgeVel = "nabojniceend";
+		selectionFireAnim = "zasleh";
+		memoryPointCamera = "eye";
+		fireSpreadAngle = 3;
+		useModelOptics = 1;
+		opticsID = 0;
+		opticsPPEffects[] = {};
+		forceOptics = 0;
+		useAsBinocular = 0;
+		opticsDisablePeripherialVision = 0.67;
+		distanceZoomMin = 400;
+		distanceZoomMax = 400;
+		primary = 10;
+		showSwitchAction = 0;
+		showEmpty = 1;
+		autoFire = 0;
+		showToPlayer = 1;
+		canShootInWater = 0;
+		aiRateOfFire = 5;
+		aiRateOfFireDistance = 500;
+		aiRateOfFireDispersion = 0;
+		fireLightDuration = 0.05;
+		fireLightIntensity = 0.2;
+		fireLightDiffuse[] = {0.937, 0.631, 0.259};
+		fireLightAmbient[] = {0, 0, 0};
+		backgroundReload = 0;
+		muzzles[] = {"this"};
+		useAction = 0;
+		useActionTitle = "";
+		canDrop = 1;
+		weaponLockDelay = 0;
+		weaponLockSystem = 0;
+		cmImmunity = 1;
+		weight = 0;
+		handAnim[] = {};
+		lockingTargetSound[] = {"", 0.000316228, 2};
+		lockedTargetSound[] = {"", 0.000316228, 6};
+		detectRange = 0;
+		artilleryDispersion = 1;
+		artilleryCharge = 1;
+		fireAnims[] = {};
+		class GunFire {
+			access = 0;
+			cloudletDuration = 0.2;
+			cloudletAnimPeriod = 1;
+			cloudletSize = 1;
+			cloudletAlpha = 1;
+			cloudletGrowUp = 0.2;
+			cloudletFadeIn = 0.01;
+			cloudletFadeOut = 0.5;
+			cloudletAccY = 0;
+			cloudletMinYSpeed = -100;
+			cloudletMaxYSpeed = 100;
+			cloudletShape = "cloudletFire";
+			cloudletColor[] = {1, 1, 1, 0};
+			cloudletDensityCoef = -1;
+			interval = -0.01;
+			size = 3;
+			sourceSize = 0.5;
+			timeToLive = 0;
+			initT = 4500;
+			deltaT = -3000;
+			class Table {
+				class T0 {
+					maxT = 0;
+					color[] = {0.82, 0.95, 0.93, 0};
+				};
+				class T1 {
+					maxT = 200;
+					color[] = {0.75, 0.77, 0.9, 0};
+				};
+				class T2 {
+					maxT = 400;
+					color[] = {0.56, 0.62, 0.67, 0};
+				};
+				class T3 {
+					maxT = 600;
+					color[] = {0.39, 0.46, 0.47, 0};
+				};
+				class T4 {
+					maxT = 800;
+					color[] = {0.24, 0.31, 0.31, 0};
+				};
+				class T5 {
+					maxT = 1000;
+					color[] = {0.23, 0.31, 0.29, 0};
+				};
+				class T6 {
+					maxT = 1500;
+					color[] = {0.21, 0.29, 0.27, 0};
+				};
+				class T7 {
+					maxT = 2000;
+					color[] = {0.19, 0.23, 0.21, 0};
+				};
+				class T8 {
+					maxT = 2300;
+					color[] = {0.22, 0.19, 0.1, 0};
+				};
+				class T9 {
+					maxT = 2500;
+					color[] = {0.35, 0.2, 0.02, 0};
+				};
+				class T10 {
+					maxT = 2600;
+					color[] = {0.62, 0.29, 0.03, 0};
+				};
+				class T11 {
+					maxT = 2650;
+					color[] = {0.59, 0.35, 0.05, 0};
+				};
+				class T12 {
+					maxT = 2700;
+					color[] = {0.75, 0.37, 0.03, 0};
+				};
+				class T13 {
+					maxT = 2750;
+					color[] = {0.88, 0.34, 0.03, 0};
+				};
+				class T14 {
+					maxT = 2800;
+					color[] = {0.91, 0.5, 0.17, 0};
+				};
+				class T15 {
+					maxT = 2850;
+					color[] = {1, 0.6, 0.2, 0};
+				};
+				class T16 {
+					maxT = 2900;
+					color[] = {1, 0.71, 0.3, 0};
+				};
+				class T17 {
+					maxT = 2950;
+					color[] = {0.98, 0.83, 0.41, 0};
+				};
+				class T18 {
+					maxT = 3000;
+					color[] = {0.98, 0.91, 0.54, 0};
+				};
+				class T19 {
+					maxT = 3100;
+					color[] = {0.98, 0.99, 0.6, 0};
+				};
+				class T20 {
+					maxT = 3300;
+					color[] = {0.96, 0.99, 0.72, 0};
+				};
+				class T21 {
+					maxT = 3600;
+					color[] = {1, 0.98, 0.91, 0};
+				};
+				class T22 {
+					maxT = 4200;
+					color[] = {1, 1, 1, 0};
+				};
+			};
+		};
+		class GunClouds {
+			access = 0;
+			cloudletGrowUp = 0.05;
+			cloudletFadeIn = 0;
+			cloudletFadeOut = 0.1;
+			cloudletDuration = 0.05;
+			cloudletAlpha = 0.3;
+			cloudletAccY = 0;
+			cloudletMinYSpeed = -100;
+			cloudletMaxYSpeed = 100;
+			interval = -0.02;
+			size = 0.3;
+			sourceSize = 0.02;
+			cloudletAnimPeriod = 1;
+			cloudletSize = 1;
+			cloudletShape = "cloudletClouds";
+			cloudletColor[] = {1, 1, 1, 0};
+			timeToLive = 0;
+			initT = 0;
+			deltaT = 0;
+			class Table {
+				class T0 {
+					maxT = 0;
+					color[] = {1, 1, 1, 0};
+				};
+			};
+		};
+		aimTransitionSpeed = 1;
+	};
 };
 
 /*[[[end]]]*/
