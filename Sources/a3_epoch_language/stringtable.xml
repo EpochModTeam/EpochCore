@@ -913,9 +913,6 @@
         <Key ID="STR_EPOCH_WorkbenchKit">
             <Original>Workbench Kit</Original>
         </Key>
-        <Key ID="STR_EPOCH_Workbench">
-            <Original>Workbench</Original>
-        </Key>
         <Key ID="STR_EPOCH_ConcreteFoundation">
             <Original>Concrete Foundation</Original>
         </Key>
