@@ -4620,6 +4620,32 @@ class CfgVehicles
 		author = "DirtySanchez";
 		textureList[] = {"White", 1};
 		animationList[] = {"HidePolice", 0, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class UserActions: UserActions {
+			class beacons_start {
+				userActionID = 50;
+				displayName = "Beacons On";
+				displayNameDefault = "Beacons On";
+				position = "temp";
+				priority = 1.5;
+				radius = 2;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase 'BeaconsStart' < 0.5 AND Alive this AND driver this == player AND this animationPhase 'hidePolice' < 0.5";
+				statement = "if(isNil 'EPOCH_Siren')then{EPOCH_Siren = 0;};this animate ['BeaconsStart',1]; if(diag_tickTime > EPOCH_Siren + 31)then{vehicle player say3d 'police_siren'; EPOCH_Siren = diag_tickTime;};";
+			};
+			class beacons_stop: beacons_start {
+				userActionID = 51;
+				displayName = "Beacons Off";
+				displayNameDefault = "Beacons Off";
+				condition = "this animationPhase 'BeaconsStart' > 0.5 AND Alive this AND driver this == player AND this animationPhase 'hidePolice' < 0.5";
+				statement = "this animate ['BeaconsStart',0];";
+				position = "temp";
+				priority = 1.5;
+				radius = 2;
+				animPeriod = 2;
+				onlyForplayer = 0;
+			};
+		};
 	};
     class C_Quadbike_01_F;
     class C_Quadbike_01_EPOCH : C_Quadbike_01_F
