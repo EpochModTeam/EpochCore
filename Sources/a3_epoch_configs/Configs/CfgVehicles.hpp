@@ -4044,11 +4044,13 @@ class CfgVehicles
         };
         cost = 900000;
     };
-    class C_Hatchback_01_F;
+	class C_Hatchback_01_F;
     class C_Hatchback_01_EPOCH : C_Hatchback_01_F
     {
         scope = 2;
-        crew = "";
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
         side = 3;
         armor = 40;
         fuelCapacity = 45;
@@ -4059,13 +4061,178 @@ class CfgVehicles
         maximumLoad = 1500;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers {};
+        class TransportItems{};
+        class Eventhandlers;
+		class HitPoints;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH1";
+		};
     };
+	class C_Hatchback_01_EPOCH1: C_Hatchback_01_EPOCH
+	{
+		author = "DirtySanchez";
+		
+		terrainCoef = 4.0;
+		brakeDistance = 3.2;
+		acceleration 	= 16;
+		maxSpeed = 190;
+		fuelConsumptionRate = 0.025;
+		enginePower = 150;
+		peakTorque = 500;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH2";
+		};
+	};
+	class C_Hatchback_01_EPOCH2: C_Hatchback_01_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.05;
+		crewCrashProtection	= 0.15;
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 0.6;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 1;
+				passThrough = 0.4;
+				explosionShielding = 0.25; 
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.4;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH3";
+		};
+	};
+	class C_Hatchback_01_EPOCH3: C_Hatchback_01_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 18;
+		maximumLoad = 3000;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH4";
+		};
+	};
+	class C_Hatchback_01_EPOCH4: C_Hatchback_01_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 90;
+		fuelConsumptionRate = 0.0175;
+	};
     class C_Hatchback_01_sport_F;
     class C_Hatchback_02_EPOCH : C_Hatchback_01_sport_F
     {
         scope = 2;
+		scopeCurator=2;
         crew = "";
         side = 3;
         armor = 40;
@@ -4078,12 +4245,178 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class Eventhandlers;
+		class HitPoints;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH1";
+		};
     };
-    class C_Offroad_01_F;
+	class C_Hatchback_02_EPOCH1: C_Hatchback_02_EPOCH
+	{
+		author = "DirtySanchez";
+		
+		terrainCoef = 4.0;
+		brakeDistance = 4.75;
+		acceleration = 16;
+		maxSpeed = 350;
+		fuelConsumptionRate = 0.035;
+		enginePower = 375;
+		peakTorque = 820;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH2";
+		};
+	};
+	class C_Hatchback_02_EPOCH2: C_Hatchback_02_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.05;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 0.6;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 1;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.4;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH3";
+		};
+	};
+	class C_Hatchback_02_EPOCH3: C_Hatchback_02_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 18;
+		maximumLoad = 3000;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH4";
+		};
+	};
+	class C_Hatchback_02_EPOCH4: C_Hatchback_02_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 90;
+		fuelConsumptionRate = 0.0275;
+	};
+	class C_Offroad_01_F;
     class C_Offroad_01_EPOCH : C_Offroad_01_F
     {
         scope = 2;
+		scopeCurator = 2;
+		forceInGarage=1;
         crew = "";
         side = 3;
         armor = 50;
@@ -4093,8 +4426,201 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class Eventhandlers;
+		class HitPoints;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 1, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 0.27, "HideBumper2", 1, "HideConstruction", 1};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH1";
+		};
     };
+	class C_Offroad_01_EPOCH1: C_Offroad_01_EPOCH
+	{
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		brakeDistance = 45;
+		maxSpeed = 225;
+		fuelConsumptionRate = 0.0325;
+		enginePower = 375;
+		peakTorque = 800;
+		idleRpm = 800;
+		redRpm = 6000;
+		class complexGearbox {
+			GearboxRatios[] = {"R1", -3.231, "N", 0, "D1", 4.462, "D2", 3.57, "D3", 2.571, "D4", 1.97, "D5", 1.601, "D6", 0.9, "D7", 0.65};
+			TransmissionRatios[] = {"High", 4.111};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+			gearUpMaxCoef = 0.95;
+			gearDownMaxCoef = 0.85;
+			gearUpMinCoef = 0.65;
+			gearDownMinCoef = 0.55;
+			transmissionDelay = 0.75;
+		};
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 1};
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH2";
+		};
+	};
+	class C_Offroad_01_EPOCH2: C_Offroad_01_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 125;
+		armorLights = 0.6;
+		crewCrashProtection	= 1.5;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 2.5;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 4.5;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.75;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5; 
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH3";
+		};
+	};
+	class C_Offroad_01_EPOCH3: C_Offroad_01_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 4;
+		maximumLoad = 3000;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH4";
+		};
+	};
+	class C_Offroad_01_EPOCH4: C_Offroad_01_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 100;
+		fuelConsumptionRate = 0.0275;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDocPolice",1},{"CircuitParts",2},{"ItemScraps",2},{"ItemBulb",4}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH5";
+		};
+	};
+	class C_Offroad_01_EPOCH5: C_Offroad_01_EPOCH4
+	{
+		author = "DirtySanchez";
+		textureList[] = {"White", 1};
+		animationList[] = {"HidePolice", 0, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+	};
     class C_Quadbike_01_F;
     class C_Quadbike_01_EPOCH : C_Quadbike_01_F
     {
@@ -4532,21 +5058,204 @@ class CfgVehicles
         class TransportItems {};
         class Eventhandlers {};
     };
-    class B_G_Offroad_01_armed_F;
-    class B_G_Offroad_01_armed_EPOCH : B_G_Offroad_01_armed_F
-    {
-        scope = 2;
-        crew = "";
-        side = 3;
-        armor = 80;
-        fuelCapacity = 350;
-        fuelConsumptionRate = 26;
-        maximumLoad = 3500;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers {};
-    };
+	class B_G_Offroad_01_armed_F;
+	class B_G_Offroad_01_armed_EPOCH: B_G_Offroad_01_armed_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		crew = "";
+		side = 3;
+		armor = 80;
+		fuelCapacity = 350;
+		fuelConsumptionRate = 26;
+		maximumLoad = 3500;
+		faction = "CIV_F";
+		typicalCargo[] = {};
+		class TransportItems{};
+		class Eventhandlers;
+		class HitPoints;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 1, "HideConstruction", 1};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH1";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH1: B_G_Offroad_01_armed_EPOCH
+	{
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		brakeDistance = 45;
+		maxSpeed = 225;
+		enginePower = 375;
+		peakTorque = 800;
+		idleRpm = 800;
+		redRpm = 6000;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 1};
+		class complexGearbox {
+			GearboxRatios[] = {"R1", -3.231, "N", 0, "D1", 4.462, "D2", 3.57, "D3", 2.571, "D4", 1.97, "D5", 1.601, "D6", 0.9, "D7", 0.65};
+			TransmissionRatios[] = {"High", 4.111};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+			gearUpMaxCoef = 0.95;
+			gearDownMaxCoef = 0.85;
+			gearUpMinCoef = 0.65;
+			gearDownMinCoef = 0.55;
+			transmissionDelay = 0.75; // 2
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH2";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH2: B_G_Offroad_01_armed_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 185;
+		armorLights = 0.6;
+		crewCrashProtection	= 1.5;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 2.5;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 4.5;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.75;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH3";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH3: B_G_Offroad_01_armed_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 4;
+		maximumLoad = 5500;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH4";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH4: B_G_Offroad_01_armed_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 550;
+		fuelConsumptionRate = 24;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+	};
     class B_Truck_01_covered_F;
     class B_Truck_01_covered_EPOCH : B_Truck_01_covered_F
     {
