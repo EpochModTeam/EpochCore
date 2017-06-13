@@ -590,6 +590,28 @@ class CfgAmmo
 		model = "\A3\Weapons_F\Ammo\UGL_Flare";
 		lightColor[] = {0.8, 0.4, 0, 0};
 	};
+	class RocketCore;
+	class MosquitoGrenade: RocketCore
+	{
+		model = "\A3\Weapons_f\ammo\Handgrenade";
+		hit = 20;
+		indirectHit = 18;
+		indirectHitRange = 7;
+		explosive = 1;
+		explosionEffectsRadius = 5;		
+		soundHit[] = {"A3\Sounds_F\arsenal\explosives\grenades\Explosion_HE_grenade_01",15.848933,1,1000};
+		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.5011872,1.3,400};
+		CraterEffects = "GrenadeCrater";
+		explosionEffects = "GrenadeExplosion";
+		visibleFire = 18;
+		audibleFire = 18;
+		visibleFireTime = 3;
+		cost = 10;
+		initTime = 0;
+		thrustTime = 0;
+		thrust = 0;
+		whistleDist = 0;
+	};
 };
 
 /*[[[end]]]*/

@@ -5874,6 +5874,28 @@ class CfgWeapons
 		};
 		aimTransitionSpeed = 1;
 	};
+	class RocketPods;
+	class MosquitoGrenadeLauncher: RocketPods
+	{
+		scope = 1;
+		displayName = "Grenades";
+		cursor = "EmptyCursor";
+		cursorAim = "EmptyCursor";
+		autoFire = 0;
+		sound[] = {"",10.0,1};
+		magazines[] = {"3Rnd_MosquitoGrenade"};
+		reloadTime = 3;
+		magazineReloadTime = 5;
+		dispersion = 0;
+		minRange = 1;
+		minRangeProbab = 0.8;
+		midRange = 50;
+		midRangeProbab = 0.7;
+		maxRange = 150;
+		maxRangeProbab = 0.1;
+		autoReload = 1;
+		canLock = 0;
+	};
 };
 
 /*[[[end]]]*/

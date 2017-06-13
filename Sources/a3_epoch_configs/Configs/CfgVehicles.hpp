@@ -4044,6 +4044,22 @@ class CfgVehicles
         };
         cost = 900000;
     };
+	class mosquito_epoch_armedG: mosquito_epoch
+	{
+		author = "DirtySanchez";
+		displayName = "Mosquito Armed(Grenades)";
+		_generalMacro = "mosquito_epoch_armedG";
+		weapons[] = {"MosquitoGrenadeLauncher"};
+		magazines[] = {"3Rnd_MosquitoGrenade"};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_vehicles_1\mosquito\data\mosquito_co.paa"};
+		fuelCapacity = 242;
+		fuelConsumptionRate = 0.0322;
+		slingLoadMaxCargoMass = 200;
+		driverCanSee = 31;
+		driverCanEject = 1;
+		ejectDeadCargo = 1;
+	};
 	class C_Hatchback_01_F;
     class C_Hatchback_01_EPOCH : C_Hatchback_01_F
     {
