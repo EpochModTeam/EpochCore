@@ -4667,6 +4667,7 @@ class CfgVehicles
     class C_Quadbike_01_EPOCH : C_Quadbike_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 30;
@@ -4676,7 +4677,7 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class Eventhandlers;
         class UserActions
         {
             class PressXToFlipTheThing
@@ -4880,6 +4881,7 @@ class CfgVehicles
     class C_Rubberboat_EPOCH : C_Rubberboat
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4887,7 +4889,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_civilian_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4906,6 +4908,7 @@ class CfgVehicles
     class C_Rubberboat_02_EPOCH : O_Boat_Transport_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4913,7 +4916,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_OPFOR_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4932,6 +4935,7 @@ class CfgVehicles
     class C_Rubberboat_03_EPOCH : O_Lifeboat
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4939,7 +4943,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_rescue_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4958,6 +4962,7 @@ class CfgVehicles
     class C_Rubberboat_04_EPOCH : I_Boat_Transport_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4965,7 +4970,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_INDP_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4984,6 +4989,7 @@ class CfgVehicles
     class C_Van_01_box_EPOCH : C_Van_01_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4993,12 +4999,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class C_Van_01_transport_F;
     class C_Van_01_transport_EPOCH : C_Van_01_transport_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -5008,19 +5015,20 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class C_Boat_Civil_01_F;
     class C_Boat_Civil_01_EPOCH : C_Boat_Civil_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 800;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -5039,13 +5047,14 @@ class CfgVehicles
     class C_Boat_Civil_01_police_EPOCH : C_Boat_Civil_01_police_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 800;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -5064,13 +5073,14 @@ class CfgVehicles
     class C_Boat_Civil_01_rescue_EPOCH : C_Boat_Civil_01_rescue_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 600;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -5089,6 +5099,7 @@ class CfgVehicles
     class B_Heli_Light_01_EPOCH : B_Heli_Light_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 35;
@@ -5099,12 +5110,13 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class B_Heli_Transport_01_F;
     class B_Heli_Transport_01_EPOCH : B_Heli_Transport_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 60;
@@ -5115,12 +5127,13 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class B_Heli_Transport_01_camo_F;
     class B_Heli_Transport_01_camo_EPOCH : B_Heli_Transport_01_camo_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 60;
@@ -5131,19 +5144,20 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class B_SDV_01_F;
     class B_SDV_01_EPOCH : B_SDV_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -5162,6 +5176,7 @@ class CfgVehicles
     class B_MRAP_01_EPOCH : B_MRAP_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 75;
@@ -5169,12 +5184,13 @@ class CfgVehicles
         maximumLoad = 3500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class O_MRAP_02_F;
     class O_MRAP_02_EPOCH : O_MRAP_02_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 75;
@@ -5182,13 +5198,14 @@ class CfgVehicles
         maximumLoad = 3500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class I_MRAP_03_F;
     class I_MRAP_03_EPOCH : I_MRAP_03_F
     {
         author = "$STR_A3_Bohemia_Interactive";
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 75;
@@ -5196,7 +5213,7 @@ class CfgVehicles
         maximumLoad = 3500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets
         {
             class commander_display
@@ -5253,6 +5270,7 @@ class CfgVehicles
     class B_Truck_01_transport_EPOCH : B_Truck_01_transport_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -5265,7 +5283,7 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
 	class B_G_Offroad_01_armed_F;
 	class B_G_Offroad_01_armed_EPOCH: B_G_Offroad_01_armed_F
@@ -5469,6 +5487,7 @@ class CfgVehicles
     class B_Truck_01_covered_EPOCH : B_Truck_01_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -5478,12 +5497,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class B_Truck_01_mover_F;
     class B_Truck_01_mover_EPOCH : B_Truck_01_mover_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -5493,12 +5513,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class B_Truck_01_box_F;
     class B_Truck_01_box_EPOCH : B_Truck_01_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -5511,12 +5532,13 @@ class CfgVehicles
         transportMaxWeapons = 64;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class O_Truck_02_covered_F;
     class O_Truck_02_covered_EPOCH : O_Truck_02_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 45;
@@ -5526,12 +5548,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class O_Truck_02_transport_F;
     class O_Truck_02_transport_EPOCH : O_Truck_02_transport_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 45;
@@ -5541,12 +5564,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class O_Truck_03_covered_F;
     class O_Truck_03_covered_EPOCH : O_Truck_03_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 64;
@@ -5556,12 +5580,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class O_Truck_02_box_F;
     class O_Truck_02_box_EPOCH : O_Truck_02_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         transportRepair = 0;
@@ -5575,12 +5600,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class O_Heli_Light_02_unarmed_F;
     class O_Heli_Light_02_unarmed_EPOCH : O_Heli_Light_02_unarmed_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 30;
@@ -5591,12 +5617,13 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class I_Heli_Transport_02_F;
     class I_Heli_Transport_02_EPOCH : I_Heli_Transport_02_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 50;
@@ -5607,12 +5634,13 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class I_Heli_light_03_unarmed_F;
     class I_Heli_light_03_unarmed_EPOCH : I_Heli_light_03_unarmed_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 50;
@@ -5623,13 +5651,14 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class O_Heli_Transport_04_F;
     class O_Heli_Transport_04_EPOCH : O_Heli_Transport_04_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -5639,13 +5668,14 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class O_Heli_Transport_04_bench_F;
     class O_Heli_Transport_04_bench_EPOCH : O_Heli_Transport_04_bench_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -5655,13 +5685,14 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class O_Heli_Transport_04_box_F;
     class O_Heli_Transport_04_box_EPOCH : O_Heli_Transport_04_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -5671,13 +5702,14 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class O_Heli_Transport_04_covered_F;
     class O_Heli_Transport_04_covered_EPOCH : O_Heli_Transport_04_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -5687,13 +5719,14 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class B_Heli_Transport_03_unarmed_F;
     class B_Heli_Transport_03_unarmed_EPOCH : B_Heli_Transport_03_unarmed_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -5703,13 +5736,14 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class C_Heli_Light_01_civil_F;
     class C_Heli_Light_01_civil_EPOCH : C_Heli_Light_01_civil_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -5719,7 +5753,7 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class Tank : LandVehicle
