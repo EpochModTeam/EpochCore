@@ -4667,6 +4667,7 @@ class CfgVehicles
     class C_Quadbike_01_EPOCH : C_Quadbike_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 30;
@@ -4676,7 +4677,7 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class Eventhandlers;
         class UserActions
         {
             class PressXToFlipTheThing
