@@ -4636,7 +4636,7 @@ class CfgVehicles
 		author = "DirtySanchez";
 		textureList[] = {"White", 1};
 		animationList[] = {"HidePolice", 0, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
-		class UserActions: UserActions {
+		class UserActions {
 			class beacons_start {
 				userActionID = 50;
 				displayName = "Beacons On";
@@ -5028,20 +5028,21 @@ class CfgVehicles
         maximumLoad = 800;
         typicalCargo[] = {};
         class TransportItems {};
-        class EventHandlers;
-        class UserActions
-        {
-            class PushTheThing
-            {
-                displayNameDefault = "Push";
-                displayName = "$STR_EPOCH_Push";
-                position = "";
-                radius = 5;
-                onlyForPlayer = 1;
-                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
-                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
-            };
-        };
+        class Eventhandlers;
+		animationList[] = {"hidePolice", 0, "HideRescueSigns", 0, "HidePoliceSigns", 0};
+		class UserActions
+		{
+			class PushTheThing
+			{
+				displayNameDefault = "Push";
+				displayName = "$STR_EPOCH_Push";
+				position = "";
+				radius = 5;
+				onlyForPlayer = 1;
+				condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
+				statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
+			};
+		};
     };
     class C_Boat_Civil_01_police_F;
     class C_Boat_Civil_01_police_EPOCH : C_Boat_Civil_01_police_F
@@ -5054,20 +5055,42 @@ class CfgVehicles
         maximumLoad = 800;
         typicalCargo[] = {};
         class TransportItems {};
-        class EventHandlers;
-        class UserActions
-        {
-            class PushTheThing
-            {
-                displayNameDefault = "Push";
-                displayName = "$STR_EPOCH_Push";
-                position = "";
-                radius = 5;
-                onlyForPlayer = 1;
-                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
-                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
-            };
-        };
+        class Eventhandlers;
+		animationList[] = {"hidePolice", 1, "HideRescueSigns", 0, "HidePoliceSigns", 1};
+		class UserActions
+		{
+			class PushTheThing
+			{
+				displayNameDefault = "Push";
+				displayName = "$STR_EPOCH_Push";
+				position = "";
+				radius = 5;
+				onlyForPlayer = 1;
+				condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
+				statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
+			};
+			class beacons_start
+			{
+				userActionID = 50;
+				displayName = "Beacons On";
+				displayNameDefault = "Beacons On";
+				position = "mph_axis";
+				priority = 1.5;
+				radius = 1.8;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase 'BeaconsStart' < 0.5 AND Alive(this) AND driver this == player";
+				statement = "if(isNil 'EPOCH_Siren')then{EPOCH_Siren = 0;}; this animate ['BeaconsStart',1]; if(diag_tickTime > EPOCH_Siren + 31)then{vehicle player say3d 'police_siren'; EPOCH_Siren = diag_tickTime;};";
+			};
+			class beacons_stop: beacons_start 
+			{
+				userActionID = 51;
+				displayName = "Beacons Off";
+				displayNameDefault = "Beacons Off";
+				condition = "this animationPhase 'BeaconsStart' > 0.5 AND Alive(this) AND driver this == player";
+				statement = "this animate ['BeaconsStart',0];";
+			};
+		};
     };
     class C_Boat_Civil_01_rescue_F;
     class C_Boat_Civil_01_rescue_EPOCH : C_Boat_Civil_01_rescue_F
@@ -5080,20 +5103,21 @@ class CfgVehicles
         maximumLoad = 600;
         typicalCargo[] = {};
         class TransportItems {};
-        class EventHandlers;
-        class UserActions
-        {
-            class PushTheThing
-            {
-                displayNameDefault = "Push";
-                displayName = "$STR_EPOCH_Push";
-                position = "";
-                radius = 5;
-                onlyForPlayer = 1;
-                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
-                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
-            };
-        };
+        class Eventhandlers;
+		animationList[] = {"hidePolice", 0, "HideRescueSigns", 1, "HidePoliceSigns", 0};
+		class UserActions
+		{
+			class PushTheThing
+			{
+				displayNameDefault = "Push";
+				displayName = "$STR_EPOCH_Push";
+				position = "";
+				radius = 5;
+				onlyForPlayer = 1;
+				condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
+				statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
+			};
+		};
     };
     class B_Heli_Light_01_F;
     class B_Heli_Light_01_EPOCH : B_Heli_Light_01_F
@@ -5111,6 +5135,47 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class UserActions {
+			class BenchL_Fold {
+				userActionID = 58;
+				displayName = "Fold left bench";
+				displayNameDefault = "";
+				textToolTip = "";
+				position = "action_doorL_front";
+				priority = 1.5;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchL_Up') == 0) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [3,4]} count fullCrew [this, 'Turret'] == 0 ";
+				statement = "this animate ['BenchL_Up', 1]; {this lockCargo [_x, true]} forEach [3,4]";
+			};
+			class BenchR_Fold: BenchL_Fold {
+				userActionID = 60;
+				displayName = "Fold right bench";
+				position = "action_doorR_front";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchR_Up') == 0) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [2,5]} count fullCrew [this, 'Turret'] == 0";
+				statement = "this animate ['BenchR_Up', 1]; {this lockCargo [_x, true]} forEach [2,5]";
+			};
+			class BenchL_Unfold: BenchL_Fold {
+				userActionID = 59;
+				displayName = "Unfold left bench";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchL_Up') == 1) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [3,4]} count fullCrew [this, 'Turret'] == 0";
+				statement = "this animate ['BenchL_Up', 0]; {this lockCargo [_x, false]} forEach [3,4]";
+				textToolTip = "";
+				displayNameDefault = "";
+			};
+			class BenchR_Unfold: BenchL_Unfold {
+				userActionID = 61;
+				displayName = "Unfold right bench";
+				position = "action_doorR_front";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchR_Up') == 1) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [2,5]} count fullCrew [this, 'Turret'] == 0";
+				statement = "this animate ['BenchR_Up', 0]; {this lockCargo [_x, false]} forEach [2,5]";
+			};
+		};
     };
     class B_Heli_Transport_01_F;
     class B_Heli_Transport_01_EPOCH : B_Heli_Transport_01_F
@@ -5128,6 +5193,42 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class UserActions {
+			class DoorL1_Open {
+				userActionID = 50;
+				displayName = "Open Left Door";
+				position = "door_L";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_L') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 1]";
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				priority = 0.5;
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+			};
+			class DoorR1_Open: DoorL1_Open {
+				userActionID = 51;
+				displayName = "Open Right Door";
+				position = "door_R";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_R') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 1]";
+			};
+			class DoorL1_Close: DoorL1_Open {
+				userActionID = 53;
+				displayName = "Close Left Door";
+				condition = "((this doorPhase 'door_L') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 0]";
+			};
+			class DoorR1_Close: DoorR1_Open {
+				userActionID = 54;
+				displayName = "Close Right Door";
+				condition = "((this doorPhase 'door_R') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 0]";
+			};
+		};
     };
     class B_Heli_Transport_01_camo_F;
     class B_Heli_Transport_01_camo_EPOCH : B_Heli_Transport_01_camo_F
@@ -5145,6 +5246,42 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class UserActions {
+			class DoorL1_Open {
+				userActionID = 50;
+				displayName = "Open Left Door";
+				position = "door_L";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_L') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 1]";
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				priority = 0.5;
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+			};
+			class DoorR1_Open: DoorL1_Open {
+				userActionID = 51;
+				displayName = "Open Right Door";
+				position = "door_R";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_R') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 1]";
+			};
+			class DoorL1_Close: DoorL1_Open {
+				userActionID = 53;
+				displayName = "Close Left Door";
+				condition = "((this doorPhase 'door_L') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 0]";
+			};
+			class DoorR1_Close: DoorR1_Open {
+				userActionID = 54;
+				displayName = "Close Right Door";
+				condition = "((this doorPhase 'door_R') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 0]";
+			};
+		};
     };
     class B_SDV_01_F;
     class B_SDV_01_EPOCH : B_SDV_01_F
@@ -5185,6 +5322,68 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class UserActions {
+			class Door_LF_Open {
+				userActionID = 50;
+				displayName = "Open Driver Door";
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				priority = 0.5;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF') == 0) AND Alive(this) && (speed this < 5) ";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class Door_RF_Open: Door_LF_Open {
+				userActionID = 51;
+				displayName = "Open Passenger Door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class Door_LB_Open: Door_LF_Open {
+				userActionID = 52;
+				displayName = "Open RearL Door";
+				position = "door_LB";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LB') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_LB', 1]";
+			};
+			class Door_RB_Open: Door_LF_Open {
+				userActionID = 53;
+				displayName = "Open RearR Door";
+				position = "Door_RB";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RB') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_RB', 1]";
+			};
+			class Door_LF_Close: Door_LF_Open {
+				userActionID = 50;
+				displayName = "Close Driver Door";
+				condition = "((this doorPhase 'Door_LF') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class Door_RF_Close: Door_RF_Open {
+				userActionID = 51;
+				displayName = "Close Passenger Door";
+				condition = "((this doorPhase 'Door_RF') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+			class Door_LB_Close: Door_LB_Open {
+				userActionID = 52;
+				displayName = "Close RearL Door";
+				condition = "((this doorPhase 'Door_LB') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_LB', 0]";
+			};
+			class Door_RB_Close: Door_RB_Open {
+				userActionID = 53;
+				displayName = "Close RearR Door";
+				condition = "((this doorPhase 'Door_RB') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_RB', 0]";
+			};
+		};
     };
     class O_MRAP_02_F;
     class O_MRAP_02_EPOCH : O_MRAP_02_F
@@ -5199,6 +5398,93 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class UserActions {
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door1_axis";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door3_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+			class DoorLM_Open: DoorLF_Open {
+				userActionID = 54;
+				displayName = "Open left middle door";
+				position = "door5_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LM')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LM', 1]";
+			};
+			class DoorLM_Close: DoorLM_Open {
+				userActionID = 55;
+				displayName = "Close left middle door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LM') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LM', 0]";
+			};
+			class DoorRM_Open: DoorLM_Open {
+				userActionID = 56;
+				displayName = "Open right middle door";
+				position = "door7_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RM')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RM', 1]";
+			};
+			class DoorRM_Close: DoorRM_Open {
+				userActionID = 57;
+				displayName = "Close right middle door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RM') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RM', 0]";
+			};
+			class Door_rear_Open: DoorLM_Open {
+				userActionID = 58;
+				displayName = "Open rear door";
+				position = "door9_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_rear')  ==  0) && (alive this)";
+				statement = "this animateDoor ['Door_rear', 1]";
+			};
+			class Door_rear_Close: Door_rear_Open {
+				userActionID = 59;
+				displayName = "Close rear door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_rear') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_rear', 0]";
+			};
+		};
     };
     class I_MRAP_03_F;
     class I_MRAP_03_EPOCH : I_MRAP_03_F
@@ -5265,6 +5551,49 @@ class CfgVehicles
                 };
             };
         };
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door1_axis";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door3_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
     class B_Truck_01_transport_F;
     class B_Truck_01_transport_EPOCH : B_Truck_01_transport_F
@@ -5549,6 +5878,49 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
     class O_Truck_02_transport_F;
     class O_Truck_02_transport_EPOCH : O_Truck_02_transport_F
@@ -5565,6 +5937,49 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
     class O_Truck_03_covered_F;
     class O_Truck_03_covered_EPOCH : O_Truck_03_covered_F
@@ -5601,6 +6016,49 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
     class O_Heli_Light_02_unarmed_F;
     class O_Heli_Light_02_unarmed_EPOCH : O_Heli_Light_02_unarmed_F
@@ -5635,6 +6093,73 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class UserActions {
+			class DoorL1_Open {
+				userActionID = 50;
+				displayName = "Open Left Door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open Left Door";
+				priority = 1.5;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "action_door_back_L";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && this animationPhase 'door_back_L' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_L', 1]";
+			};
+			class DoorR1_Open: DoorL1_Open {
+				userActionID = 51;
+				displayName = "Open Right Door";
+				textToolTip = "Open Right Door";
+				position = "action_door_back_R";
+				condition = "((locked this) != 2) && this animationPhase 'door_back_R' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_R', 1]";
+			};
+			class DoorL1_Close: DoorL1_Open {
+				userActionID = 53;
+				displayName = "Close Left Door";
+				textToolTip = "Close Left Door";
+				condition = "this animationPhase 'door_back_L' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_L', 0]";
+			};
+			class DoorR1_Close: DoorL1_Close {
+				userActionID = 54;
+				displayName = "Close Right Door";
+				textToolTip = "Close Right Door";
+				position = "action_door_back_R";
+				condition = "this animationPhase 'door_back_R' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_R', 0]";
+			};
+			class Ramp_Open: DoorL1_Open {
+				userActionID = 55;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				position = "";
+				showWindow = 0;
+				condition = "((locked this) != 2) && this doorPhase 'CargoRamp_Open' < 0.5 && {alive this} && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2]]) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)}";
+				statement = "this animateDoor ['CargoRamp_Open', 1]";
+			};
+			class Ramp_Close: Ramp_Open {
+				userActionID = 56;
+				displayName = "Close ramp";
+				textToolTip = "Close ramp";
+				condition = "this doorPhase 'CargoRamp_Open' > 0.5 && {alive this} && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2]]) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)}";
+				statement = "this animateDoor ['CargoRamp_Open', 0]";
+			};
+			class Ramp_Open1: DoorL1_Open {
+				userActionID = 55;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				position = "action_door_back_R";
+				showWindow = 1;
+				condition = "((locked this) != 2) && this doorPhase 'CargoRamp_Open' < 0.5 && {alive this} && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['CargoRamp_Open', 1]";
+			};
+		};
     };
     class I_Heli_light_03_unarmed_F;
     class I_Heli_light_03_unarmed_EPOCH : I_Heli_light_03_unarmed_F
@@ -5670,6 +6195,46 @@ class CfgVehicles
         class TransportItems {};
         class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+		};
     };
     class O_Heli_Transport_04_bench_F;
     class O_Heli_Transport_04_bench_EPOCH : O_Heli_Transport_04_bench_F
@@ -5687,6 +6252,46 @@ class CfgVehicles
         class TransportItems {};
         class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+		};
     };
     class O_Heli_Transport_04_box_F;
     class O_Heli_Transport_04_box_EPOCH : O_Heli_Transport_04_box_F
@@ -5704,6 +6309,46 @@ class CfgVehicles
         class TransportItems {};
         class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+		};
     };
     class O_Heli_Transport_04_covered_F;
     class O_Heli_Transport_04_covered_EPOCH : O_Heli_Transport_04_covered_F
@@ -5721,6 +6366,97 @@ class CfgVehicles
         class TransportItems {};
         class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "(((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+			class OpenDoor_4: OpenDoor_1 {
+				displayName = "Open Left Pod Door";
+				position = "Door_4_trigger";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_4_move_1') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_4_source', 1])";
+			};
+			class CloseDoor_4: OpenDoor_4 {
+				displayName = "Close Left Pod Door";
+				condition = "((this animationPhase 'Door_4_move_1') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_4_source', 0])";
+			};
+			class OpenDoor_5: OpenDoor_1 {
+				displayName = "Open Right Pod Door";
+				position = "Door_5_trigger";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_5_move_1') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_5_source', 1])";
+			};
+			class CloseDoor_5: OpenDoor_5 {
+				displayName = "Close Right Pod Door";
+				condition = "((this animationPhase 'Door_5_move_1') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_5_source', 0])";
+			};
+			class OpenDoor_6: OpenDoor_1 {
+				displayName = "Open ramp";
+				position = "Door_6_trigger";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_6_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_6_source', 1])";
+			};
+			class CloseDoor_6: OpenDoor_6 {
+				displayName = "Close ramp";
+				condition = "((this animationPhase 'Door_6_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_6_source', 0])";
+			};
+			class Ramp_Open: OpenDoor_6 {
+				userActionID = 60;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				position = "";
+				showWindow = 0;
+				condition = "this doorPhase 'Door_6_source' < 0.5 AND Alive(this) && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2], this turretUnit [3]])} && {((this getVariable ['bis_disabled_Ramp',0]) isEqualTo 0)} ";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+			};
+			class Ramp_Close: CloseDoor_6 {
+				userActionID = 61;
+				displayName = "Close ramp";
+				textToolTip = "Close ramp";
+				position = "";
+				showWindow = 0;
+				condition = "this doorPhase 'Door_6_source' > 0.5 AND Alive(this) && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2], this turretUnit [3]])} && {((this getVariable ['bis_disabled_Ramp',0]) isEqualTo 0)} ";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+			};
+		};
     };
     class B_Heli_Transport_03_unarmed_F;
     class B_Heli_Transport_03_unarmed_EPOCH : B_Heli_Transport_03_unarmed_F
@@ -5738,6 +6474,109 @@ class CfgVehicles
         class TransportItems {};
         class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class Ramp_Open {
+				userActionID = 60;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				position = "";
+				condition = "this doorPhase 'Door_rear_source' < 0.5 AND Alive(this) && ({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['Door_rear_source', 1]";
+				priority = 1.5;
+				radius = 1.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				showWindow = 0;
+				onlyForPlayer = 1;
+				shortcut = "";
+			};
+			class Ramp_Close: Ramp_Open {
+				userActionID = 61;
+				displayName = "Close ramp";
+				textToolTip = "Close ramp";
+				condition = "this doorPhase 'Door_rear_source' > 0.5 AND Alive(this) && ({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['Door_rear_source', 0]";
+			};
+			class RightDoor_Open: Ramp_Open {
+				userActionID = 666;
+				displayName = "Open Right Door";
+				textToolTip = "Open Right Door";
+				condition = "this doorPhase 'Door_R_source' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 1]";
+				displayNameDefault = "Open Right Door";
+			};
+			class RightDoor_Close: Ramp_Open {
+				userActionID = 666;
+				displayName = "Close Right Door";
+				textToolTip = "Close Right Door";
+				condition = "this doorPhase 'Door_R_source' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 0]";
+				displayNameDefault = "Close Right Door";
+			};
+			class LeftDoor_Open: Ramp_Open {
+				userActionID = 666;
+				displayName = "Open Left Door";
+				textToolTip = "Open Left Door";
+				condition = "this doorPhase 'Door_L_Source' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 1]";
+				displayNameDefault = "Open Left Door";
+			};
+			class LeftDoor_Close: Ramp_Open {
+				userActionID = 666;
+				displayName = "Close Left Door";
+				textToolTip = "Close Left Door";
+				condition = "this doorPhase 'Door_L_Source' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 0]";
+				displayNameDefault = "Close Left Door";
+			};
+			class RDoor_Open {
+				displayName = "Open Right Door";
+				displayNameDefault = "Open Right Door";
+				radius = 7.5;
+				condition = "((locked this) != 2) && (this doorPhase 'Door_R_Source' < 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 1]";
+				position = "";
+				priority = 1.5;
+				onlyForplayer = 0;
+			};
+			class RDoor_Close: RDoor_Open {
+				displayName = "Close Right Door";
+				displayNameDefault = "Close Right Door";
+				radius = 7.5;
+				condition = "(this doorPhase 'Door_R_Source' > 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 0]";
+			};
+			class LDoor_Open: RDoor_Open {
+				displayName = "Open Left Door";
+				displayNameDefault = "Open Left Door";
+				radius = 7.5;
+				condition = "((locked this) != 2) && (this doorPhase 'Door_L_Source' < 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 1]";
+			};
+			class LDoor_Close: RDoor_Open {
+				displayName = "Close Left Door";
+				displayNameDefault = "Close Left Door";
+				radius = 7.5;
+				condition = "(this doorPhase 'Door_L_Source' > 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 0]";
+			};
+			class RampDoor_Open: RDoor_Open {
+				displayName = "Open ramp";
+				displayNameDefault = "Open ramp";
+				radius = 7.5;
+				condition = "((locked this) != 2) && (this doorPhase 'Door_rear_source' < 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_rear_source', 1]";
+			};
+			class RampDoor_Close: RDoor_Open {
+				displayName = "Close ramp";
+				displayNameDefault = "Close ramp";
+				radius = 7.5;
+				condition = "(this doorPhase 'Door_rear_source' > 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_rear_source', 0]";
+			};
+		};
     };
     class C_Heli_Light_01_civil_F;
     class C_Heli_Light_01_civil_EPOCH : C_Heli_Light_01_civil_F
