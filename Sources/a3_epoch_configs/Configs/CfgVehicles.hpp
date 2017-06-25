@@ -7080,6 +7080,22 @@ class CfgVehicles
         displayName = "$STR_EPOCH_WoodFloor";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
+	class WoodHalfFloor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\half_floor.p3d";
+        displayName = "$STR_EPOCH_WoodHalfFloor";
+        slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+    };
+	class WoodQuarterFloor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor.p3d";
+        displayName = "$STR_EPOCH_WoodQuarterFloor";
+        slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+    };
     class MetalFloor_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
@@ -8207,6 +8223,24 @@ class CfgVehicles
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
     };
+	class WoodHalfFloor_EPOCH : Const_floors_static_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets\models\half_floor.p3d";
+        displayName = "$STR_EPOCH_WoodHalfFloor";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
+    };
+	class WoodQuarterFloor_EPOCH : Const_floors_static_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets\models\quarter_floor.p3d";
+        displayName = "$STR_EPOCH_WoodQuarterFloor";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
+    };
     class MetalFloor_EPOCH : Const_floors_static_F
     {
         author = "Sequisha";
@@ -8278,6 +8312,22 @@ class CfgVehicles
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Floor_Ghost.p3d";
         displayName = "$STR_EPOCH_WoodFloorGhost";
+        ladders[] = {};
+    };
+	class WoodHalfFloor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets\models\half_floor_ghost.p3d";
+        displayName = "$STR_EPOCH_WoodHalfFloor";
+        ladders[] = {};
+    };
+	class WoodQuarterFloor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets\models\quarter_floor_ghost.p3d";
+        displayName = "$STR_EPOCH_WoodQuarterFloor";
         ladders[] = {};
     };
     class MetalFloor_Ghost_EPOCH : Const_Ghost_EPOCH
