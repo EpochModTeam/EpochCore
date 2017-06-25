@@ -4044,11 +4044,29 @@ class CfgVehicles
         };
         cost = 900000;
     };
-    class C_Hatchback_01_F;
+	class mosquito_epoch_armedG: mosquito_epoch
+	{
+		author = "DirtySanchez";
+		displayName = "Mosquito Armed(Grenades)";
+		_generalMacro = "mosquito_epoch_armedG";
+		weapons[] = {"MosquitoGrenadeLauncher"};
+		magazines[] = {"3Rnd_MosquitoGrenade"};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_vehicles_1\mosquito\data\mosquito_co.paa"};
+		fuelCapacity = 242;
+		fuelConsumptionRate = 0.0322;
+		slingLoadMaxCargoMass = 200;
+		driverCanSee = 31;
+		driverCanEject = 1;
+		ejectDeadCargo = 1;
+	};
+	class C_Hatchback_01_F;
     class C_Hatchback_01_EPOCH : C_Hatchback_01_F
     {
         scope = 2;
-        crew = "";
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
         side = 3;
         armor = 40;
         fuelCapacity = 45;
@@ -4059,13 +4077,178 @@ class CfgVehicles
         maximumLoad = 1500;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers {};
+        class TransportItems{};
+        class Eventhandlers;
+		class HitPoints;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH1";
+		};
     };
+	class C_Hatchback_01_EPOCH1: C_Hatchback_01_EPOCH
+	{
+		author = "DirtySanchez";
+		
+		terrainCoef = 4.0;
+		brakeDistance = 3.2;
+		acceleration 	= 16;
+		maxSpeed = 190;
+		fuelConsumptionRate = 0.025;
+		enginePower = 150;
+		peakTorque = 500;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH2";
+		};
+	};
+	class C_Hatchback_01_EPOCH2: C_Hatchback_01_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.05;
+		crewCrashProtection	= 0.15;
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 0.6;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 1;
+				passThrough = 0.4;
+				explosionShielding = 0.25; 
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.4;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH3";
+		};
+	};
+	class C_Hatchback_01_EPOCH3: C_Hatchback_01_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 18;
+		maximumLoad = 3000;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH4";
+		};
+	};
+	class C_Hatchback_01_EPOCH4: C_Hatchback_01_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 90;
+		fuelConsumptionRate = 0.0175;
+	};
     class C_Hatchback_01_sport_F;
     class C_Hatchback_02_EPOCH : C_Hatchback_01_sport_F
     {
         scope = 2;
+		scopeCurator=2;
         crew = "";
         side = 3;
         armor = 40;
@@ -4078,12 +4261,178 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class Eventhandlers;
+		class HitPoints;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH1";
+		};
     };
-    class C_Offroad_01_F;
+	class C_Hatchback_02_EPOCH1: C_Hatchback_02_EPOCH
+	{
+		author = "DirtySanchez";
+		
+		terrainCoef = 4.0;
+		brakeDistance = 4.75;
+		acceleration = 16;
+		maxSpeed = 350;
+		fuelConsumptionRate = 0.035;
+		enginePower = 375;
+		peakTorque = 820;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH2";
+		};
+	};
+	class C_Hatchback_02_EPOCH2: C_Hatchback_02_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.05;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 0.6;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 1;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.4;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH3";
+		};
+	};
+	class C_Hatchback_02_EPOCH3: C_Hatchback_02_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 18;
+		maximumLoad = 3000;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH4";
+		};
+	};
+	class C_Hatchback_02_EPOCH4: C_Hatchback_02_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 90;
+		fuelConsumptionRate = 0.0275;
+	};
+	class C_Offroad_01_F;
     class C_Offroad_01_EPOCH : C_Offroad_01_F
     {
         scope = 2;
+		scopeCurator = 2;
+		forceInGarage=1;
         crew = "";
         side = 3;
         armor = 50;
@@ -4093,12 +4442,232 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class Eventhandlers;
+		class HitPoints;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 1, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 0.27, "HideBumper2", 1, "HideConstruction", 1};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH1";
+		};
     };
+	class C_Offroad_01_EPOCH1: C_Offroad_01_EPOCH
+	{
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		brakeDistance = 45;
+		maxSpeed = 225;
+		fuelConsumptionRate = 0.0325;
+		enginePower = 375;
+		peakTorque = 800;
+		idleRpm = 800;
+		redRpm = 6000;
+		class complexGearbox {
+			GearboxRatios[] = {"R1", -3.231, "N", 0, "D1", 4.462, "D2", 3.57, "D3", 2.571, "D4", 1.97, "D5", 1.601, "D6", 0.9, "D7", 0.65};
+			TransmissionRatios[] = {"High", 4.111};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+			gearUpMaxCoef = 0.95;
+			gearDownMaxCoef = 0.85;
+			gearUpMinCoef = 0.65;
+			gearDownMinCoef = 0.55;
+			transmissionDelay = 0.75;
+		};
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 1};
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH2";
+		};
+	};
+	class C_Offroad_01_EPOCH2: C_Offroad_01_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 125;
+		armorLights = 0.6;
+		crewCrashProtection	= 1.5;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 2.5;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 4.5;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.75;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5; 
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH3";
+		};
+	};
+	class C_Offroad_01_EPOCH3: C_Offroad_01_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 4;
+		maximumLoad = 3000;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH4";
+		};
+	};
+	class C_Offroad_01_EPOCH4: C_Offroad_01_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 100;
+		fuelConsumptionRate = 0.0275;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDocPolice",1},{"CircuitParts",2},{"ItemScraps",2},{"ItemBulb",4}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH5";
+		};
+	};
+	class C_Offroad_01_EPOCH5: C_Offroad_01_EPOCH4
+	{
+		author = "DirtySanchez";
+		textureList[] = {"White", 1};
+		animationList[] = {"HidePolice", 0, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class UserActions {
+			class beacons_start {
+				userActionID = 50;
+				displayName = "Beacons On";
+				displayNameDefault = "Beacons On";
+				position = "temp";
+				priority = 1.5;
+				radius = 2;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase 'BeaconsStart' < 0.5 AND Alive this AND driver this == player AND this animationPhase 'hidePolice' < 0.5";
+				statement = "if(isNil 'EPOCH_Siren')then{EPOCH_Siren = 0;};this animate ['BeaconsStart',1]; if(diag_tickTime > EPOCH_Siren + 31)then{vehicle player say3d 'police_siren'; EPOCH_Siren = diag_tickTime;};";
+			};
+			class beacons_stop: beacons_start {
+				userActionID = 51;
+				displayName = "Beacons Off";
+				displayNameDefault = "Beacons Off";
+				condition = "this animationPhase 'BeaconsStart' > 0.5 AND Alive this AND driver this == player AND this animationPhase 'hidePolice' < 0.5";
+				statement = "this animate ['BeaconsStart',0];";
+				position = "temp";
+				priority = 1.5;
+				radius = 2;
+				animPeriod = 2;
+				onlyForplayer = 0;
+			};
+		};
+	};
     class C_Quadbike_01_F;
     class C_Quadbike_01_EPOCH : C_Quadbike_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 30;
@@ -4108,7 +4677,7 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class Eventhandlers;
         class UserActions
         {
             class PressXToFlipTheThing
@@ -4123,28 +4692,196 @@ class CfgVehicles
             };
         };
     };
-    class C_SUV_01_F;
-    class C_SUV_01_EPOCH : C_SUV_01_F
-    {
-        scope = 2;
-        crew = "";
-        side = 3;
-        armor = 45;
-        fuelCapacity = 45;
-        fuelConsumptionRate = 0.02;
-        transportMaxWeapons = 12;
-        transportMaxMagazines = 64;
-        transportMaxBackpacks = 12;
-        maximumLoad = 2000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers {};
-    };
+	class C_SUV_01_F;
+	class C_SUV_01_EPOCH: C_SUV_01_F
+	{
+		scope = 2;
+		scopeCurator=2;
+		crew = "";
+		side = 3;
+		armor = 45;
+		fuelCapacity = 45;
+		fuelConsumptionRate = 0.02;
+		transportMaxWeapons = 12;
+		transportMaxMagazines = 64;
+		transportMaxBackpacks = 12;
+		maximumLoad = 2000;
+		faction = "CIV_F";
+		typicalCargo[] = {};
+		class TransportItems{};
+		class Eventhandlers;
+		class HitPoints;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH1";
+		};
+	};
+	class C_SUV_01_EPOCH1: C_SUV_01_EPOCH
+	{
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		brakeDistance = 6.2;
+		acceleration 	= 17;
+		maxSpeed = 274;
+		fuelConsumptionRate = 0.025;
+		enginePower = 454;
+		peakTorque = 750;
+		idleRpm = 850;
+		redRpm = 6250;
+		class HitPoints: HitPoints 
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitRGlass;
+			class HitLGlass;
+			class HitBody;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH2";
+		};
+	};
+	class C_SUV_01_EPOCH2: C_SUV_01_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.1;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints 
+		{
+			class HitLFWheel: HitLFWheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 2.3;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 4.25;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 1.2; // 1
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitBody: HitBody {
+				armor = 1.25;
+				passThrough = 0.75;
+				explosionShielding = 1.25;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH3";
+		};
+	};
+	class C_SUV_01_EPOCH3: C_SUV_01_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 18;
+		maximumLoad = 3750;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH4";
+		};
+	};
+	class C_SUV_01_EPOCH4: C_SUV_01_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 90;
+		fuelConsumptionRate = 0.0185;
+	};
     class C_Rubberboat;
     class C_Rubberboat_EPOCH : C_Rubberboat
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4152,7 +4889,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_civilian_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4171,6 +4908,7 @@ class CfgVehicles
     class C_Rubberboat_02_EPOCH : O_Boat_Transport_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4178,7 +4916,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_OPFOR_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4197,6 +4935,7 @@ class CfgVehicles
     class C_Rubberboat_03_EPOCH : O_Lifeboat
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4204,7 +4943,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_rescue_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4223,6 +4962,7 @@ class CfgVehicles
     class C_Rubberboat_04_EPOCH : I_Boat_Transport_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4230,7 +4970,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_INDP_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4249,6 +4989,7 @@ class CfgVehicles
     class C_Van_01_box_EPOCH : C_Van_01_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4258,12 +4999,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class C_Van_01_transport_F;
     class C_Van_01_transport_EPOCH : C_Van_01_transport_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4273,87 +5015,115 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class C_Boat_Civil_01_F;
     class C_Boat_Civil_01_EPOCH : C_Boat_Civil_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 800;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
-        class UserActions
-        {
-            class PushTheThing
-            {
-                displayNameDefault = "Push";
-                displayName = "$STR_EPOCH_Push";
-                position = "";
-                radius = 5;
-                onlyForPlayer = 1;
-                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
-                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
-            };
-        };
+        class Eventhandlers;
+		animationList[] = {"hidePolice", 0, "HideRescueSigns", 0, "HidePoliceSigns", 0};
+		class UserActions
+		{
+			class PushTheThing
+			{
+				displayNameDefault = "Push";
+				displayName = "$STR_EPOCH_Push";
+				position = "";
+				radius = 5;
+				onlyForPlayer = 1;
+				condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
+				statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
+			};
+		};
     };
     class C_Boat_Civil_01_police_F;
     class C_Boat_Civil_01_police_EPOCH : C_Boat_Civil_01_police_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 800;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
-        class UserActions
-        {
-            class PushTheThing
-            {
-                displayNameDefault = "Push";
-                displayName = "$STR_EPOCH_Push";
-                position = "";
-                radius = 5;
-                onlyForPlayer = 1;
-                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
-                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
-            };
-        };
+        class Eventhandlers;
+		animationList[] = {"hidePolice", 1, "HideRescueSigns", 0, "HidePoliceSigns", 1};
+		class UserActions
+		{
+			class PushTheThing
+			{
+				displayNameDefault = "Push";
+				displayName = "$STR_EPOCH_Push";
+				position = "";
+				radius = 5;
+				onlyForPlayer = 1;
+				condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
+				statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
+			};
+			class beacons_start
+			{
+				userActionID = 50;
+				displayName = "Beacons On";
+				displayNameDefault = "Beacons On";
+				position = "mph_axis";
+				priority = 1.5;
+				radius = 1.8;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase 'BeaconsStart' < 0.5 AND Alive(this) AND driver this == player";
+				statement = "if(isNil 'EPOCH_Siren')then{EPOCH_Siren = 0;}; this animate ['BeaconsStart',1]; if(diag_tickTime > EPOCH_Siren + 31)then{vehicle player say3d 'police_siren'; EPOCH_Siren = diag_tickTime;};";
+			};
+			class beacons_stop: beacons_start 
+			{
+				userActionID = 51;
+				displayName = "Beacons Off";
+				displayNameDefault = "Beacons Off";
+				condition = "this animationPhase 'BeaconsStart' > 0.5 AND Alive(this) AND driver this == player";
+				statement = "this animate ['BeaconsStart',0];";
+			};
+		};
     };
     class C_Boat_Civil_01_rescue_F;
     class C_Boat_Civil_01_rescue_EPOCH : C_Boat_Civil_01_rescue_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 600;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
-        class UserActions
-        {
-            class PushTheThing
-            {
-                displayNameDefault = "Push";
-                displayName = "$STR_EPOCH_Push";
-                position = "";
-                radius = 5;
-                onlyForPlayer = 1;
-                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
-                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
-            };
-        };
+        class Eventhandlers;
+		animationList[] = {"hidePolice", 0, "HideRescueSigns", 1, "HidePoliceSigns", 0};
+		class UserActions
+		{
+			class PushTheThing
+			{
+				displayNameDefault = "Push";
+				displayName = "$STR_EPOCH_Push";
+				position = "";
+				radius = 5;
+				onlyForPlayer = 1;
+				condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
+				statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
+			};
+		};
     };
     class B_Heli_Light_01_F;
     class B_Heli_Light_01_EPOCH : B_Heli_Light_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 35;
@@ -4364,12 +5134,54 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions {
+			class BenchL_Fold {
+				userActionID = 58;
+				displayName = "Fold left bench";
+				displayNameDefault = "";
+				textToolTip = "";
+				position = "action_doorL_front";
+				priority = 1.5;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchL_Up') == 0) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [3,4]} count fullCrew [this, 'Turret'] == 0 ";
+				statement = "this animate ['BenchL_Up', 1]; {this lockCargo [_x, true]} forEach [3,4]";
+			};
+			class BenchR_Fold: BenchL_Fold {
+				userActionID = 60;
+				displayName = "Fold right bench";
+				position = "action_doorR_front";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchR_Up') == 0) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [2,5]} count fullCrew [this, 'Turret'] == 0";
+				statement = "this animate ['BenchR_Up', 1]; {this lockCargo [_x, true]} forEach [2,5]";
+			};
+			class BenchL_Unfold: BenchL_Fold {
+				userActionID = 59;
+				displayName = "Unfold left bench";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchL_Up') == 1) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [3,4]} count fullCrew [this, 'Turret'] == 0";
+				statement = "this animate ['BenchL_Up', 0]; {this lockCargo [_x, false]} forEach [3,4]";
+				textToolTip = "";
+				displayNameDefault = "";
+			};
+			class BenchR_Unfold: BenchL_Unfold {
+				userActionID = 61;
+				displayName = "Unfold right bench";
+				position = "action_doorR_front";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchR_Up') == 1) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [2,5]} count fullCrew [this, 'Turret'] == 0";
+				statement = "this animate ['BenchR_Up', 0]; {this lockCargo [_x, false]} forEach [2,5]";
+			};
+		};
     };
     class B_Heli_Transport_01_F;
     class B_Heli_Transport_01_EPOCH : B_Heli_Transport_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 60;
@@ -4380,12 +5192,49 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions {
+			class DoorL1_Open {
+				userActionID = 50;
+				displayName = "Open Left Door";
+				position = "door_L";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_L') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 1]";
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				priority = 0.5;
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+			};
+			class DoorR1_Open: DoorL1_Open {
+				userActionID = 51;
+				displayName = "Open Right Door";
+				position = "door_R";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_R') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 1]";
+			};
+			class DoorL1_Close: DoorL1_Open {
+				userActionID = 53;
+				displayName = "Close Left Door";
+				condition = "((this doorPhase 'door_L') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 0]";
+			};
+			class DoorR1_Close: DoorR1_Open {
+				userActionID = 54;
+				displayName = "Close Right Door";
+				condition = "((this doorPhase 'door_R') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 0]";
+			};
+		};
     };
     class B_Heli_Transport_01_camo_F;
     class B_Heli_Transport_01_camo_EPOCH : B_Heli_Transport_01_camo_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 60;
@@ -4396,19 +5245,56 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions {
+			class DoorL1_Open {
+				userActionID = 50;
+				displayName = "Open Left Door";
+				position = "door_L";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_L') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 1]";
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				priority = 0.5;
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+			};
+			class DoorR1_Open: DoorL1_Open {
+				userActionID = 51;
+				displayName = "Open Right Door";
+				position = "door_R";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_R') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 1]";
+			};
+			class DoorL1_Close: DoorL1_Open {
+				userActionID = 53;
+				displayName = "Close Left Door";
+				condition = "((this doorPhase 'door_L') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 0]";
+			};
+			class DoorR1_Close: DoorR1_Open {
+				userActionID = 54;
+				displayName = "Close Right Door";
+				condition = "((this doorPhase 'door_R') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 0]";
+			};
+		};
     };
     class B_SDV_01_F;
     class B_SDV_01_EPOCH : B_SDV_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4427,6 +5313,7 @@ class CfgVehicles
     class B_MRAP_01_EPOCH : B_MRAP_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 75;
@@ -4434,12 +5321,75 @@ class CfgVehicles
         maximumLoad = 3500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions {
+			class Door_LF_Open {
+				userActionID = 50;
+				displayName = "Open Driver Door";
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				priority = 0.5;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF') == 0) AND Alive(this) && (speed this < 5) ";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class Door_RF_Open: Door_LF_Open {
+				userActionID = 51;
+				displayName = "Open Passenger Door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class Door_LB_Open: Door_LF_Open {
+				userActionID = 52;
+				displayName = "Open RearL Door";
+				position = "door_LB";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LB') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_LB', 1]";
+			};
+			class Door_RB_Open: Door_LF_Open {
+				userActionID = 53;
+				displayName = "Open RearR Door";
+				position = "Door_RB";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RB') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_RB', 1]";
+			};
+			class Door_LF_Close: Door_LF_Open {
+				userActionID = 50;
+				displayName = "Close Driver Door";
+				condition = "((this doorPhase 'Door_LF') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class Door_RF_Close: Door_RF_Open {
+				userActionID = 51;
+				displayName = "Close Passenger Door";
+				condition = "((this doorPhase 'Door_RF') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+			class Door_LB_Close: Door_LB_Open {
+				userActionID = 52;
+				displayName = "Close RearL Door";
+				condition = "((this doorPhase 'Door_LB') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_LB', 0]";
+			};
+			class Door_RB_Close: Door_RB_Open {
+				userActionID = 53;
+				displayName = "Close RearR Door";
+				condition = "((this doorPhase 'Door_RB') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_RB', 0]";
+			};
+		};
     };
     class O_MRAP_02_F;
     class O_MRAP_02_EPOCH : O_MRAP_02_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 75;
@@ -4447,13 +5397,101 @@ class CfgVehicles
         maximumLoad = 3500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions {
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door1_axis";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door3_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+			class DoorLM_Open: DoorLF_Open {
+				userActionID = 54;
+				displayName = "Open left middle door";
+				position = "door5_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LM')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LM', 1]";
+			};
+			class DoorLM_Close: DoorLM_Open {
+				userActionID = 55;
+				displayName = "Close left middle door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LM') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LM', 0]";
+			};
+			class DoorRM_Open: DoorLM_Open {
+				userActionID = 56;
+				displayName = "Open right middle door";
+				position = "door7_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RM')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RM', 1]";
+			};
+			class DoorRM_Close: DoorRM_Open {
+				userActionID = 57;
+				displayName = "Close right middle door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RM') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RM', 0]";
+			};
+			class Door_rear_Open: DoorLM_Open {
+				userActionID = 58;
+				displayName = "Open rear door";
+				position = "door9_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_rear')  ==  0) && (alive this)";
+				statement = "this animateDoor ['Door_rear', 1]";
+			};
+			class Door_rear_Close: Door_rear_Open {
+				userActionID = 59;
+				displayName = "Close rear door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_rear') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_rear', 0]";
+			};
+		};
     };
     class I_MRAP_03_F;
     class I_MRAP_03_EPOCH : I_MRAP_03_F
     {
         author = "$STR_A3_Bohemia_Interactive";
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 75;
@@ -4461,7 +5499,7 @@ class CfgVehicles
         maximumLoad = 3500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets
         {
             class commander_display
@@ -4513,11 +5551,55 @@ class CfgVehicles
                 };
             };
         };
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door1_axis";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door3_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
     class B_Truck_01_transport_F;
     class B_Truck_01_transport_EPOCH : B_Truck_01_transport_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4530,27 +5612,211 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
-    class B_G_Offroad_01_armed_F;
-    class B_G_Offroad_01_armed_EPOCH : B_G_Offroad_01_armed_F
-    {
-        scope = 2;
-        crew = "";
-        side = 3;
-        armor = 80;
-        fuelCapacity = 350;
-        fuelConsumptionRate = 26;
-        maximumLoad = 3500;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers {};
-    };
+	class B_G_Offroad_01_armed_F;
+	class B_G_Offroad_01_armed_EPOCH: B_G_Offroad_01_armed_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		crew = "";
+		side = 3;
+		armor = 80;
+		fuelCapacity = 350;
+		fuelConsumptionRate = 26;
+		maximumLoad = 3500;
+		faction = "CIV_F";
+		typicalCargo[] = {};
+		class TransportItems{};
+		class Eventhandlers;
+		class HitPoints;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 1, "HideConstruction", 1};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH1";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH1: B_G_Offroad_01_armed_EPOCH
+	{
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		brakeDistance = 45;
+		maxSpeed = 225;
+		enginePower = 375;
+		peakTorque = 800;
+		idleRpm = 800;
+		redRpm = 6000;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 1};
+		class complexGearbox {
+			GearboxRatios[] = {"R1", -3.231, "N", 0, "D1", 4.462, "D2", 3.57, "D3", 2.571, "D4", 1.97, "D5", 1.601, "D6", 0.9, "D7", 0.65};
+			TransmissionRatios[] = {"High", 4.111};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+			gearUpMaxCoef = 0.95;
+			gearDownMaxCoef = 0.85;
+			gearUpMinCoef = 0.65;
+			gearDownMinCoef = 0.55;
+			transmissionDelay = 0.75; // 2
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH2";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH2: B_G_Offroad_01_armed_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 185;
+		armorLights = 0.6;
+		crewCrashProtection	= 1.5;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 2.5;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 4.5;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.75;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH3";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH3: B_G_Offroad_01_armed_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 4;
+		maximumLoad = 5500;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH4";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH4: B_G_Offroad_01_armed_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 550;
+		fuelConsumptionRate = 24;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+	};
     class B_Truck_01_covered_F;
     class B_Truck_01_covered_EPOCH : B_Truck_01_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4560,12 +5826,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class B_Truck_01_mover_F;
     class B_Truck_01_mover_EPOCH : B_Truck_01_mover_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4575,12 +5842,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class B_Truck_01_box_F;
     class B_Truck_01_box_EPOCH : B_Truck_01_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4593,12 +5861,13 @@ class CfgVehicles
         transportMaxWeapons = 64;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class O_Truck_02_covered_F;
     class O_Truck_02_covered_EPOCH : O_Truck_02_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 45;
@@ -4608,12 +5877,56 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
     class O_Truck_02_transport_F;
     class O_Truck_02_transport_EPOCH : O_Truck_02_transport_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 45;
@@ -4623,12 +5936,56 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
     class O_Truck_03_covered_F;
     class O_Truck_03_covered_EPOCH : O_Truck_03_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 64;
@@ -4638,12 +5995,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class O_Truck_02_box_F;
     class O_Truck_02_box_EPOCH : O_Truck_02_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         transportRepair = 0;
@@ -4657,12 +6015,56 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
     class O_Heli_Light_02_unarmed_F;
     class O_Heli_Light_02_unarmed_EPOCH : O_Heli_Light_02_unarmed_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 30;
@@ -4673,12 +6075,13 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class I_Heli_Transport_02_F;
     class I_Heli_Transport_02_EPOCH : I_Heli_Transport_02_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 50;
@@ -4689,12 +6092,80 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions {
+			class DoorL1_Open {
+				userActionID = 50;
+				displayName = "Open Left Door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open Left Door";
+				priority = 1.5;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "action_door_back_L";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && this animationPhase 'door_back_L' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_L', 1]";
+			};
+			class DoorR1_Open: DoorL1_Open {
+				userActionID = 51;
+				displayName = "Open Right Door";
+				textToolTip = "Open Right Door";
+				position = "action_door_back_R";
+				condition = "((locked this) != 2) && this animationPhase 'door_back_R' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_R', 1]";
+			};
+			class DoorL1_Close: DoorL1_Open {
+				userActionID = 53;
+				displayName = "Close Left Door";
+				textToolTip = "Close Left Door";
+				condition = "this animationPhase 'door_back_L' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_L', 0]";
+			};
+			class DoorR1_Close: DoorL1_Close {
+				userActionID = 54;
+				displayName = "Close Right Door";
+				textToolTip = "Close Right Door";
+				position = "action_door_back_R";
+				condition = "this animationPhase 'door_back_R' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_R', 0]";
+			};
+			class Ramp_Open: DoorL1_Open {
+				userActionID = 55;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				position = "";
+				showWindow = 0;
+				condition = "((locked this) != 2) && this doorPhase 'CargoRamp_Open' < 0.5 && {alive this} && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2]]) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)}";
+				statement = "this animateDoor ['CargoRamp_Open', 1]";
+			};
+			class Ramp_Close: Ramp_Open {
+				userActionID = 56;
+				displayName = "Close ramp";
+				textToolTip = "Close ramp";
+				condition = "this doorPhase 'CargoRamp_Open' > 0.5 && {alive this} && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2]]) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)}";
+				statement = "this animateDoor ['CargoRamp_Open', 0]";
+			};
+			class Ramp_Open1: DoorL1_Open {
+				userActionID = 55;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				position = "action_door_back_R";
+				showWindow = 1;
+				condition = "((locked this) != 2) && this doorPhase 'CargoRamp_Open' < 0.5 && {alive this} && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['CargoRamp_Open', 1]";
+			};
+		};
     };
     class I_Heli_light_03_unarmed_F;
     class I_Heli_light_03_unarmed_EPOCH : I_Heli_light_03_unarmed_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 50;
@@ -4705,13 +6176,14 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class O_Heli_Transport_04_F;
     class O_Heli_Transport_04_EPOCH : O_Heli_Transport_04_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4721,13 +6193,54 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+		};
     };
     class O_Heli_Transport_04_bench_F;
     class O_Heli_Transport_04_bench_EPOCH : O_Heli_Transport_04_bench_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4737,13 +6250,54 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+		};
     };
     class O_Heli_Transport_04_box_F;
     class O_Heli_Transport_04_box_EPOCH : O_Heli_Transport_04_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4753,13 +6307,54 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+		};
     };
     class O_Heli_Transport_04_covered_F;
     class O_Heli_Transport_04_covered_EPOCH : O_Heli_Transport_04_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4769,13 +6364,105 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "(((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+			class OpenDoor_4: OpenDoor_1 {
+				displayName = "Open Left Pod Door";
+				position = "Door_4_trigger";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_4_move_1') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_4_source', 1])";
+			};
+			class CloseDoor_4: OpenDoor_4 {
+				displayName = "Close Left Pod Door";
+				condition = "((this animationPhase 'Door_4_move_1') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_4_source', 0])";
+			};
+			class OpenDoor_5: OpenDoor_1 {
+				displayName = "Open Right Pod Door";
+				position = "Door_5_trigger";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_5_move_1') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_5_source', 1])";
+			};
+			class CloseDoor_5: OpenDoor_5 {
+				displayName = "Close Right Pod Door";
+				condition = "((this animationPhase 'Door_5_move_1') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_5_source', 0])";
+			};
+			class OpenDoor_6: OpenDoor_1 {
+				displayName = "Open ramp";
+				position = "Door_6_trigger";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_6_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_6_source', 1])";
+			};
+			class CloseDoor_6: OpenDoor_6 {
+				displayName = "Close ramp";
+				condition = "((this animationPhase 'Door_6_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_6_source', 0])";
+			};
+			class Ramp_Open: OpenDoor_6 {
+				userActionID = 60;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				position = "";
+				showWindow = 0;
+				condition = "this doorPhase 'Door_6_source' < 0.5 AND Alive(this) && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2], this turretUnit [3]])} && {((this getVariable ['bis_disabled_Ramp',0]) isEqualTo 0)} ";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+			};
+			class Ramp_Close: CloseDoor_6 {
+				userActionID = 61;
+				displayName = "Close ramp";
+				textToolTip = "Close ramp";
+				position = "";
+				showWindow = 0;
+				condition = "this doorPhase 'Door_6_source' > 0.5 AND Alive(this) && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2], this turretUnit [3]])} && {((this getVariable ['bis_disabled_Ramp',0]) isEqualTo 0)} ";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+			};
+		};
     };
     class B_Heli_Transport_03_unarmed_F;
     class B_Heli_Transport_03_unarmed_EPOCH : B_Heli_Transport_03_unarmed_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4785,13 +6472,117 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class Ramp_Open {
+				userActionID = 60;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				position = "";
+				condition = "this doorPhase 'Door_rear_source' < 0.5 AND Alive(this) && ({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['Door_rear_source', 1]";
+				priority = 1.5;
+				radius = 1.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				showWindow = 0;
+				onlyForPlayer = 1;
+				shortcut = "";
+			};
+			class Ramp_Close: Ramp_Open {
+				userActionID = 61;
+				displayName = "Close ramp";
+				textToolTip = "Close ramp";
+				condition = "this doorPhase 'Door_rear_source' > 0.5 AND Alive(this) && ({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['Door_rear_source', 0]";
+			};
+			class RightDoor_Open: Ramp_Open {
+				userActionID = 666;
+				displayName = "Open Right Door";
+				textToolTip = "Open Right Door";
+				condition = "this doorPhase 'Door_R_source' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 1]";
+				displayNameDefault = "Open Right Door";
+			};
+			class RightDoor_Close: Ramp_Open {
+				userActionID = 666;
+				displayName = "Close Right Door";
+				textToolTip = "Close Right Door";
+				condition = "this doorPhase 'Door_R_source' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 0]";
+				displayNameDefault = "Close Right Door";
+			};
+			class LeftDoor_Open: Ramp_Open {
+				userActionID = 666;
+				displayName = "Open Left Door";
+				textToolTip = "Open Left Door";
+				condition = "this doorPhase 'Door_L_Source' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 1]";
+				displayNameDefault = "Open Left Door";
+			};
+			class LeftDoor_Close: Ramp_Open {
+				userActionID = 666;
+				displayName = "Close Left Door";
+				textToolTip = "Close Left Door";
+				condition = "this doorPhase 'Door_L_Source' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 0]";
+				displayNameDefault = "Close Left Door";
+			};
+			class RDoor_Open {
+				displayName = "Open Right Door";
+				displayNameDefault = "Open Right Door";
+				radius = 7.5;
+				condition = "((locked this) != 2) && (this doorPhase 'Door_R_Source' < 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 1]";
+				position = "";
+				priority = 1.5;
+				onlyForplayer = 0;
+			};
+			class RDoor_Close: RDoor_Open {
+				displayName = "Close Right Door";
+				displayNameDefault = "Close Right Door";
+				radius = 7.5;
+				condition = "(this doorPhase 'Door_R_Source' > 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 0]";
+			};
+			class LDoor_Open: RDoor_Open {
+				displayName = "Open Left Door";
+				displayNameDefault = "Open Left Door";
+				radius = 7.5;
+				condition = "((locked this) != 2) && (this doorPhase 'Door_L_Source' < 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 1]";
+			};
+			class LDoor_Close: RDoor_Open {
+				displayName = "Close Left Door";
+				displayNameDefault = "Close Left Door";
+				radius = 7.5;
+				condition = "(this doorPhase 'Door_L_Source' > 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 0]";
+			};
+			class RampDoor_Open: RDoor_Open {
+				displayName = "Open ramp";
+				displayNameDefault = "Open ramp";
+				radius = 7.5;
+				condition = "((locked this) != 2) && (this doorPhase 'Door_rear_source' < 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_rear_source', 1]";
+			};
+			class RampDoor_Close: RDoor_Open {
+				displayName = "Close ramp";
+				displayNameDefault = "Close ramp";
+				radius = 7.5;
+				condition = "(this doorPhase 'Door_rear_source' > 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_rear_source', 0]";
+			};
+		};
     };
     class C_Heli_Light_01_civil_F;
     class C_Heli_Light_01_civil_EPOCH : C_Heli_Light_01_civil_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4801,7 +6592,7 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class Tank : LandVehicle
@@ -5287,6 +7078,22 @@ class CfgVehicles
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Floor.p3d";
         displayName = "$STR_EPOCH_WoodFloor";
+        slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+    };
+	class WoodHalfFloor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\half_floor.p3d";
+        displayName = "$STR_EPOCH_WoodHalfFloor";
+        slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+    };
+	class WoodQuarterFloor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor.p3d";
+        displayName = "$STR_EPOCH_WoodQuarterFloor";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
     class MetalFloor_SIM_EPOCH : Constructions_modular_F
@@ -6416,6 +8223,24 @@ class CfgVehicles
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
     };
+	class WoodHalfFloor_EPOCH : Const_floors_static_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets\models\half_floor.p3d";
+        displayName = "$STR_EPOCH_WoodHalfFloor";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
+    };
+	class WoodQuarterFloor_EPOCH : Const_floors_static_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets\models\quarter_floor.p3d";
+        displayName = "$STR_EPOCH_WoodQuarterFloor";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
+    };
     class MetalFloor_EPOCH : Const_floors_static_F
     {
         author = "Sequisha";
@@ -6487,6 +8312,22 @@ class CfgVehicles
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Floor_Ghost.p3d";
         displayName = "$STR_EPOCH_WoodFloorGhost";
+        ladders[] = {};
+    };
+	class WoodHalfFloor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets\models\half_floor_ghost.p3d";
+        displayName = "$STR_EPOCH_WoodHalfFloor";
+        ladders[] = {};
+    };
+	class WoodQuarterFloor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets\models\quarter_floor_ghost.p3d";
+        displayName = "$STR_EPOCH_WoodQuarterFloor";
         ladders[] = {};
     };
     class MetalFloor_Ghost_EPOCH : Const_Ghost_EPOCH

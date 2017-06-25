@@ -98,6 +98,11 @@ class CfgSounds
         sound[] = {"\x\addons\a3_epoch_assets\sounds\cloak\cultist_taunt",0.7,1.0};
         titles[] = {};
     };
+	class police_siren
+	{
+		sound[] = {"\x\addons\a3_epoch_community\sounds\police_siren\police_siren.wav",0.7,1.0};
+		titles[] = {};
+	};
 };
 
 /*[[[end]]]*/

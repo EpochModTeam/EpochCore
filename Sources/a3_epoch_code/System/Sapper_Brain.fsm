@@ -833,7 +833,7 @@ class FSM
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"_sanityCheck > 90;"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/"_nrstTrgt = objNull;" \n
-                                         "_nrTrgts = getPos _sapper nearEntities [_trgtArr, _sRange];" \n
+                                         "_nrTrgts = _sapper nearEntities [_trgtArr, _sRange];" \n
                                          "_lowDist = _sRange;" \n
                                          "" \n
                                          "_upwindPos = [_sapper, _smellDistPerm, _windDir] call BIS_fnc_relPos;" \n
