@@ -286,6 +286,120 @@
         <Key ID="STR_EPOCH_Caliber556x45mmUsedinM249Saw">
             <Original>Caliber: 5.56x45 mm, Used in: M249 Saw</Original>
         </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99name">
+            <Original>500Rnd 12.7 mm AA MG Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99desc">
+            <Original>Caliber: 12.7x99 mm NATO<br/>Rounds: 500<br />Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99redname">
+            <Original>500Rnd 12.7 mm AA MG Tracer (Red) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99reddesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Red<br/>Rounds: 500<br />Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99grnname">
+            <Original>500Rnd 12.7 mm AA MG Tracer (Green) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99grndesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Green<br/>Rounds: 500<br />Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99ylwname">
+            <Original>500Rnd 12.7 mm AA MG Tracer (Yellow) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99ylwdesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Yellow<br/>Rounds: 500<br />Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99name">
+            <Original>200Rnd 12.7 mm RCWS MG Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99desc">
+            <Original>Caliber: 12.7x99 mm NATO<br/>Rounds: 200<br />Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99redname">
+            <Original>200Rnd 12.7 mm RCWS MG Tracer (Red) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99reddesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Red<br/>Rounds: 200<br />Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99grnname">
+            <Original>200Rnd 12.7 mm RCWS MG Tracer (Green) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99grndesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Green<br/>Rounds: 200<br />Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99ylwname">
+            <Original>200Rnd 12.7 mm RCWS MG Tracer (Yellow) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99ylwdesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Yellow<br/>Rounds: 200<br />Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99name">
+            <Original>100Rnd 12.7 mm M2 HMG Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99desc">
+            <Original>Caliber: 12.7x99 mm NATO<br/>Rounds: 100<br />Used in: Offroad + HMMW M2</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99redname">
+            <Original>100Rnd 12.7 mm M2 HMG Tracer (Red) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99reddesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Red<br/>Rounds: 100<br />Used in: Offroad + HMMW M2</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99grnname">
+            <Original>100Rnd 12.7 mm M2 HMG Tracer (Green) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99grndesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Green<br/>Rounds: 100<br />Used in: Offroad + HMMW M2</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99ylwname">
+            <Original>100Rnd 12.7 mm M2 HMG Tracer (Yellow) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99ylwdesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Yellow<br/>Rounds: 100<br />Used in: Offroad + HMMW M2</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd762x51Beltname">
+            <Original>7.62 mm Minigun Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd762x51Beltdesc">
+            <Original>Caliber: 7.62x51 mm<br />Rounds: 2000<br />Used in: AH-9 Pawnee</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd40mmGname">
+            <Original>40 mm HE Grenade Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd40mmGdesc">
+            <Original>Caliber: 40 mm <br/>Rounds: 200 DSS<br />Used in: GMG, RCWS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_32Rnd40mmGname">
+            <Original>Caliber: 40 mm <br/>Rounds: 32 DSS<br />Used in: GMG, RCWS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_64Rnd40mmGname">
+            <Original>Caliber: 40 mm <br/>Rounds: 64 DSS<br />Used in: GMG, RCWS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_96Rnd40mmGname">
+            <Original>Caliber: 40 mm <br/>Rounds: 96 DSS<br />Used in: GMG, RCWS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd30mmGname">
+            <Original>30 mm HE Grenade Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd30mmGdesc">
+            <Original>Caliber: 30 mm <br/>Rounds: 200 DSS<br />Used in: Static Grenade Launcher</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd30mmGdesc">
+            <Original>Caliber: 30 mm <br/>Rounds: 40 DSS<br />Used in: Static Grenade Launcher</Original>
+        </Key>
+		
+		<Key ID="STR_EPOCH_mas127x107DSHKMname">
+            <Original>DShKM</Original>
+        </Key>
+		<Key ID="STR_EPOCH_mas50Rnd127x107DSHKMdesc">
+            <Original>Type: DShKM<br/>Rounds: 50<br />Used in: Static Grenade Launcher</Original>
+        </Key>
+
+		<Key ID="STR_EPOCH_mas150Rnd127x107DSHKMdesc">
+            <Original>Type: DShKM<br/>Rounds: 150<br />Used in: Static Grenade Launcher</Original>
+        </Key>
+		
         <Key ID="STR_EPOCH_HotwireKit">
             <Original>Hotwire Kit</Original>
         </Key>
@@ -373,17 +487,32 @@
         <Key ID="STR_EPOCH_FullBriefcaseGold">
             <Original>Full Briefcase (Gold)</Original>
         </Key>
+		<Key ID="STR_EPOCH_FullBriefcaseSilver">
+            <Original>Full Briefcase (Silver)</Original>
+        </Key>
         <Key ID="STR_EPOCH_Briefcasethatcontainsten10oz100ozGoldBars">
             <Original>Briefcase that contains ten 10oz (100oz) Gold Bars.</Original>
+        </Key>
+		<Key ID="STR_EPOCH_Briefcasethatcontainsten10oz100ozSilverBars">
+            <Original>Briefcase that contains ten 10oz (100oz) Silver Bars.</Original>
         </Key>
         <Key ID="STR_EPOCH_AluminumBar1oz">
             <Original>Aluminum Bar (1oz)</Original>
         </Key>
+		<Key ID="STR_EPOCH_AluminumBar10oz">
+            <Original>Aluminum Bar (10oz)</Original>
+        </Key>
         <Key ID="STR_EPOCH_CopperBar1oz">
             <Original>Copper Bar (1oz)</Original>
         </Key>
+		<Key ID="STR_EPOCH_CopperBar10oz">
+            <Original>Copper Bar (10oz)</Original>
+        </Key>
         <Key ID="STR_EPOCH_TinBar1oz">
             <Original>Tin Bar (1oz)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_TinBar10oz">
+            <Original>Tin Bar (10oz)</Original>
         </Key>
         <Key ID="STR_EPOCH_Plywood">
             <Original>Plywood</Original>
@@ -673,6 +802,12 @@
         <Key ID="STR_EPOCH_SilverBar">
             <Original>Silver Bar</Original>
         </Key>
+		<Key ID="STR_EPOCH_10ozSilver">
+            <Original>10oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_10x1ozSilverBar">
+            <Original>10 x 1oz Silver</Original>
+        </Key>
         <Key ID="STR_EPOCH_Gold">
             <Original>Gold</Original>
         </Key>
@@ -876,6 +1011,12 @@
         </Key>
         <Key ID="STR_EPOCH_WoodenFloor">
             <Original>Wooden Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_WoodenHalfFloor">
+            <Original>Wooden Half Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_WoodenQuarterFloor">
+            <Original>Wooden Quarter Floor</Original>
         </Key>
         <Key ID="STR_EPOCH_WoodenStairs">
             <Original>Wooden Stairs</Original>
@@ -1272,6 +1413,12 @@
         </Key>
         <Key ID="STR_EPOCH_WoodFloor">
             <Original>Wood Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_WoodHalfFloor">
+            <Original>Wood Half Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_WoodQuarterFloor">
+            <Original>Wood Quarter Floor</Original>
         </Key>
         <Key ID="STR_EPOCH_MetalFloor">
             <Original>Metal Floor</Original>

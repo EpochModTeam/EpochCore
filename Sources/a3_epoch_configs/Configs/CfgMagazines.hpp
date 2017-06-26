@@ -376,9 +376,24 @@ class CfgMagazines
         model = "\x\addons\a3_epoch_assets_1\models\briefcase.p3d";
         descriptionShort = "$STR_EPOCH_Briefcasethatcontainsten10oz100ozGoldBars";
         count = 1;
+        worth = 10000;
+        type = 256;
         mass = 100;
     };
-    class ItemAluminumBar : CA_Magazine
+    class ItemBriefcaseSilver100oz : CA_Magazine
+	{
+		author = "DirtySanchez";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_silvercase_100oz_CA.paa";
+        displayname = "$STR_EPOCH_FullBriefcaseSilver";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\silvercase.p3d";
+        descriptionShort = "$STR_EPOCH_Briefcasethatcontainsten10oz100ozSilverBars";
+        count = 1;
+		worth = 1000;
+		type = 256;
+        mass = 100;
+	};
+	class ItemAluminumBar : CA_Magazine
     {
         author = "Sequisha";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_alum_bar_CA.paa";
@@ -387,7 +402,22 @@ class CfgMagazines
         model = "\x\addons\a3_epoch_assets_1\models\aluminum_bar.p3d";
         descriptionShort = "$STR_EPOCH_AluminumBar1oz";
         count = 1;
+		worth = 5;
+		type = 256;
         mass = 1;
+    };
+	class ItemAluminumBar10oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_alum_bar_10oz_CA.paa";
+        displayname = "$STR_EPOCH_AluminumBar10oz";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\aluminum_bar_10oz.p3d";
+        descriptionShort = "$$STR_EPOCH_AluminumBar10oz";
+        count = 1;
+		worth = 50;
+		type = 256;
+        mass = 10;
     };
     class ItemCopperBar : CA_Magazine
     {
@@ -398,7 +428,22 @@ class CfgMagazines
         model = "\x\addons\a3_epoch_assets_1\models\copper_bar.p3d";
         descriptionShort = "$STR_EPOCH_CopperBar1oz";
         count = 1;
+		worth = 1;
+		type = 256;
         mass = 1;
+    };
+	class ItemCopperBar10oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_copper_bar_10oz_CA.paa";
+        displayname = "$STR_EPOCH_CopperBar10oz";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\copper_bar_10oz.p3d";
+        descriptionShort = "$STR_EPOCH_CopperBar10oz";
+        count = 1;
+		worth = 10;
+		type = 256;
+        mass = 10;
     };
     class ItemTinBar : CA_Magazine
     {
@@ -409,7 +454,22 @@ class CfgMagazines
         model = "\x\addons\a3_epoch_assets_1\models\tin_bar.p3d";
         descriptionShort = "$STR_EPOCH_TinBar1oz";
         count = 1;
+		worth = 1;
+		type = 256;
         mass = 1;
+    };
+    class ItemTinBar10oz : CA_Magazine
+    {
+        author = "Sequisha";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_tin_bar_10oz_CA.paa";
+        displayname = "$STR_EPOCH_TinBar10oz";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\tin_bar_10oz.p3d";
+        descriptionShort = "$STR_EPOCH_TinBar10oz";
+        count = 1;
+		worth = 10;
+		type = 256;
+        mass = 10;
     };
     class ItemPlywoodPack : CA_Magazine
     {
@@ -1332,13 +1392,26 @@ class CfgMagazines
         author = "Sequisha";
         scope = 2;
         count = 1;
-        worth = 1;
+        worth = 10;
         type = 256;
         displayName = "$STR_EPOCH_Silver";
         model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar1oz.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_silver_bar_CA.paa";
         descriptionShort = "$STR_EPOCH_SilverBar";
         mass = 1;
+    };
+	class ItemSilverBar10oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 100;
+        type = 256;
+        displayName = "$STR_EPOCH_10ozSilver";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar10oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_silver_bar_10oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_10x1ozSilverBar";
+        mass = 10;
     };
     class ItemGoldBar : CA_Magazine
     {
@@ -1874,6 +1947,28 @@ class CfgMagazines
         count = 1;
         mass = 20;
     };
+	class KitWoodHalfFloor : CA_Magazine
+    {
+        author = "Sequisha";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodenFloor_ca.paa";
+        displayName = "$STR_EPOCH_WoodenHalfFloor";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_WoodenHalfFloor";
+        count = 1;
+        mass = 10;
+    };
+	class KitWoodQuarterFloor : CA_Magazine
+    {
+        author = "Sequisha";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets\textures\kits\equip_woodenFloor_ca.paa";
+        displayName = "$STR_EPOCH_WoodenQuarterFloor";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_WoodenQuarterFloor";
+        count = 1;
+        mass = 5;
+    };
     class KitWoodStairs : CA_Magazine
     {
         author = "Sequisha";
@@ -2244,6 +2339,195 @@ class CfgMagazines
 		sound[] = {"",1.0,1};
 		reloadSound[] = {"",0.00031622773,1};
 		nameSound = "cannon";		
+	};
+	class 500Rnd_127x99_mag: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_500Rnd127x99name";
+		descriptionShort = "$STR_EPOCH_500Rnd127x99desc";
+		model = "x\addons\a3_epoch_assets_1\models\50cal_mag.p3d";
+		picture = "equip_50cal_mag_ca";
+		mass = 100;
+		count = 500;
+		ammo = "B_127x99_Ball";
+		initSpeed = 910;
+		maxLeadSpeed = 200;
+		tracersEvery = 4;
+		nameSound = "mgun";
+	};
+	class 500Rnd_127x99_mag_Tracer_Red: 500Rnd_127x99_mag
+	{
+		author = "DirtySanchez";
+		ammo = "B_127x99_Ball_Tracer_Red";
+		displayName = "$STR_EPOCH_500Rnd127x99redname";
+		descriptionShort = "$STR_EPOCH_500Rnd127x99reddesc";
+		displaynameshort = "Tracer";
+	};
+	class 500Rnd_127x99_mag_Tracer_Green: 500Rnd_127x99_mag_Tracer_Red 
+	{
+		author = "DirtySanchez";
+		ammo = "B_127x99_Ball_Tracer_Green";
+		displayName = "$STR_EPOCH_500Rnd127x99grnname";
+		descriptionShort = "$STR_EPOCH_500Rnd127x99grndesc";
+	};
+	class 500Rnd_127x99_mag_Tracer_Yellow: 500Rnd_127x99_mag_Tracer_Red
+	{
+		author = "DirtySanchez";
+		ammo = "B_127x99_Ball_Tracer_Yellow";
+		displayName = "$STR_EPOCH_500Rnd127x99ylwname";
+		descriptionShort = "$STR_EPOCH_500Rnd127x99ylwdesc";
+	};
+	class 200Rnd_127x99_mag: 500Rnd_127x99_mag
+	{
+		author = "DirtySanchez";
+		count = 200;
+		tracersEvery = 3;
+		displayName = "$STR_EPOCH_200Rnd127x99name";
+		descriptionShort = "$STR_EPOCH_200Rnd127x99desc";
+	};
+	class 200Rnd_127x99_mag_Tracer_Red: 200Rnd_127x99_mag
+	{
+		author = "DirtySanchez";
+		ammo = "B_127x99_Ball_Tracer_Red";
+		displayName = "$STR_EPOCH_200Rnd127x99redname";
+		descriptionShort = "$STR_EPOCH_200Rnd127x99reddesc";
+		displaynameshort = "Tracer";
+	};
+	class 200Rnd_127x99_mag_Tracer_Green: 200Rnd_127x99_mag_Tracer_Red 
+	{
+		author = "DirtySanchez";
+		ammo = "B_127x99_Ball_Tracer_Green";
+		displayName = "$STR_EPOCH_200Rnd127x99grnname";
+		descriptionShort = "$STR_EPOCH_200Rnd127x99grndesc";
+	};
+	class 200Rnd_127x99_mag_Tracer_Yellow: 200Rnd_127x99_mag_Tracer_Red
+	{
+		author = "Bohemia Interactive";
+		ammo = "B_127x99_Ball_Tracer_Yellow";
+		displayName = "$STR_EPOCH_200Rnd127x99ylwname";
+		descriptionShort = "$STR_EPOCH_200Rnd127x99ylwdesc";
+	};
+	class 100Rnd_127x99_mag: 200Rnd_127x99_mag
+	{
+		author = "DirtySanchez";
+		count = 100;
+		displayName = "$STR_EPOCH_100Rnd127x99name";
+		descriptionShort = "$STR_EPOCH_100Rnd127x99desc";
+	};
+	class 100Rnd_127x99_mag_Tracer_Red: 100Rnd_127x99_mag
+	{
+		author = "DirtySanchez";
+		ammo = "B_127x99_Ball_Tracer_Red";
+		displayName = "$STR_EPOCH_100Rnd127x99redname";
+		descriptionShort = "$STR_EPOCH_100Rnd127x99reddesc";
+		displaynameshort = "Tracer";
+	};
+	class 100Rnd_127x99_mag_Tracer_Green: 100Rnd_127x99_mag_Tracer_Red
+	{
+		author = "DirtySanchez";
+		ammo = "B_127x99_Ball_Tracer_Green";
+		displayName = "$STR_EPOCH_100Rnd127x99grnname";
+		descriptionShort = "$STR_EPOCH_100Rnd127x99grndesc";
+	};
+	class 100Rnd_127x99_mag_Tracer_Yellow: 100Rnd_127x99_mag_Tracer_Red
+	{
+		author = "DirtySanchez";
+		ammo = "B_127x99_Ball_Tracer_Yellow";
+		displayName = "$STR_EPOCH_100Rnd127x99ylwname";
+		descriptionShort = "$STR_EPOCH_100Rnd127x99ylwdesc";
+	};
+	class 2000Rnd_762x51_Belt: VehicleMagazine 
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_2000Rnd762x51Beltname";
+		descriptionShort = "$STR_EPOCH_2000Rnd762x51Beltdesc";
+		model = "x\addons\a3_epoch_assets_1\models\m134_mag.p3d";
+		picture = "equip_m134_mag_ca";
+		ammo = "B_762x51_Ball";
+		count = 2000;
+		initSpeed = 860;
+		maxLeadSpeed = 200;
+		tracersEvery = 5;
+		lastRoundsTracer = 4;
+		nameSound = "mgun";
+	};
+	class 200Rnd_40mm_G_belt: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_200Rnd40mmGname";
+		descriptionShort = "$STR_EPOCH_200Rnd40mmGdesc";
+		model = "x\addons\a3_epoch_assets_1\models\40mm_mag.p3d";
+		picture = "equip_40mm_mag_ca";
+		ammo = "G_40mm_HEDP";
+		initSpeed = 241;
+		maxLeadSpeed = 400;
+		nameSound = "";
+		count = 200;
+	};
+	class 32Rnd_40mm_G_belt: 200Rnd_40mm_G_belt
+	{
+		author = "DirtySanchez";
+		count = 32;
+		descriptionShort = "$STR_EPOCH_32Rnd40mmGdesc";
+	};
+	class 64Rnd_40mm_G_belt: 200Rnd_40mm_G_belt
+	{
+		author = "DirtySanchez";
+		count = 64;
+		descriptionShort = "$STR_EPOCH_64Rnd40mmGdesc";
+	};
+	class 96Rnd_40mm_G_belt: 200Rnd_40mm_G_belt
+	{
+		author = "DirtySanchez";
+		count = 96;
+		descriptionShort = "$STR_EPOCH_96Rnd40mmGdesc";
+	};
+	class 200Rnd_20mm_G_belt: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_200Rnd30mmGname";
+		descriptionShort = "$STR_EPOCH_200Rnd30mmGdesc";
+		displayNameShort = "HE";
+		model = "x\addons\a3_epoch_assets_1\models\30mm_mag.p3d";
+		picture = "equip_30mm_mag_ca";
+		ammo = "G_20mm_HE";
+		initSpeed = 185;
+		maxLeadSpeed = 400;
+		nameSound = "";
+		count = 200;
+	};
+	class 40Rnd_20mm_G_belt: 200Rnd_20mm_G_belt
+	{
+		author = "DirtySanchez";
+		count = 40;
+		descriptionShort = "$STR_EPOCH_40Rnd30mmGdesc";
+	};
+	class mas_50Rnd_127x107_DSHKM: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_mas127x107DSHKMname";
+		descriptionShort = "$STR_EPOCH_mas50Rnd127x107DSHKMdesc";
+		model = "x\addons\a3_epoch_assets_1\models\dshkm_mag.p3d";
+		picture = "equip_Dshkm_mag_ca";
+		ammo = "mas_B_127x107_Ball";
+		count = 50;
+		mass = 100;
+		initSpeed = 850;
+		maxLeadSpeed = 200;
+		tracersEvery = 3;
+		lastRoundsTracer = 5;
+		nameSound = "mgun";
+	};
+	class mas_150Rnd_127x107_DSHKM: mas_50Rnd_127x107_DSHKM
+	{
+		author = "DirtySanchez";
+		count = 150;
+		descriptionShort = "$STR_EPOCH_mas150Rnd127x107DSHKMdesc";
 	};
 };
 
