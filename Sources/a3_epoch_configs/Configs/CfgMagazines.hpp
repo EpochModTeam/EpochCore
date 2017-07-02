@@ -2346,8 +2346,8 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_500Rnd127x99name";
 		descriptionShort = "$STR_EPOCH_500Rnd127x99desc";
-		model = "x\addons\a3_epoch_assets_1\models\50cal_mag.p3d";
-		picture = "equip_50cal_mag_ca";
+		model = "\x\addons\a3_epoch_assets_1\models\50cal_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_50cal_mag_ca.paa";
 		mass = 100;
 		count = 500;
 		ammo = "B_127x99_Ball";
@@ -2443,8 +2443,8 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_2000Rnd762x51Beltname";
 		descriptionShort = "$STR_EPOCH_2000Rnd762x51Beltdesc";
-		model = "x\addons\a3_epoch_assets_1\models\m134_mag.p3d";
-		picture = "equip_m134_mag_ca";
+		model = "\x\addons\a3_epoch_assets_1\models\m134_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_m134_mag_ca.paa";
 		ammo = "B_762x51_Ball";
 		count = 2000;
 		initSpeed = 860;
@@ -2459,8 +2459,8 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_200Rnd40mmGname";
 		descriptionShort = "$STR_EPOCH_200Rnd40mmGdesc";
-		model = "x\addons\a3_epoch_assets_1\models\40mm_mag.p3d";
-		picture = "equip_40mm_mag_ca";
+		model = "\x\addons\a3_epoch_assets_1\models\40mm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_40mm_mag_ca.paa";
 		ammo = "G_40mm_HEDP";
 		initSpeed = 241;
 		maxLeadSpeed = 400;
@@ -2492,8 +2492,8 @@ class CfgMagazines
 		displayName = "$STR_EPOCH_200Rnd30mmGname";
 		descriptionShort = "$STR_EPOCH_200Rnd30mmGdesc";
 		displayNameShort = "HE";
-		model = "x\addons\a3_epoch_assets_1\models\30mm_mag.p3d";
-		picture = "equip_30mm_mag_ca";
+		model = "\x\addons\a3_epoch_assets_1\models\30mm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_30mm_mag_ca.paa";
 		ammo = "G_20mm_HE";
 		initSpeed = 185;
 		maxLeadSpeed = 400;
@@ -2512,8 +2512,8 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_mas127x107DSHKMname";
 		descriptionShort = "$STR_EPOCH_mas50Rnd127x107DSHKMdesc";
-		model = "x\addons\a3_epoch_assets_1\models\dshkm_mag.p3d";
-		picture = "equip_Dshkm_mag_ca";
+		model = "\x\addons\a3_epoch_assets_1\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
 		ammo = "mas_B_127x107_Ball";
 		count = 50;
 		mass = 100;

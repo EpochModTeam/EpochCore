@@ -8227,7 +8227,7 @@ class CfgVehicles
     {
         author = "DirtySanchez";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets\models\half_floor.p3d";
+        model = "\x\addons\a3_epoch_assets_1\models\half_floor.p3d";
         displayName = "$STR_EPOCH_WoodHalfFloor";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -8236,7 +8236,7 @@ class CfgVehicles
     {
         author = "DirtySanchez";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets\models\quarter_floor.p3d";
+        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor.p3d";
         displayName = "$STR_EPOCH_WoodQuarterFloor";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
@@ -8318,7 +8318,7 @@ class CfgVehicles
     {
         author = "DirtySanchez";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets\models\half_floor_ghost.p3d";
+        model = "\x\addons\a3_epoch_assets_1\models\half_floor.p3d";
         displayName = "$STR_EPOCH_WoodHalfFloor";
         ladders[] = {};
     };
@@ -8326,7 +8326,7 @@ class CfgVehicles
     {
         author = "DirtySanchez";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets\models\quarter_floor_ghost.p3d";
+        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor.p3d";
         displayName = "$STR_EPOCH_WoodQuarterFloor";
         ladders[] = {};
     };
