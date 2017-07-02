@@ -290,114 +290,114 @@
             <Original>500Rnd 12.7 mm AA MG Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_500Rnd127x99desc">
-            <Original>Caliber: 12.7x99 mm NATO<br/>Rounds: 500<br />Used in: HMG + Static HMG</Original>
+            <Original>Caliber: 12.7x99 mm NATO - Rounds: 500 - Used in: HMG + Static HMG</Original>
         </Key>
 		<Key ID="STR_EPOCH_500Rnd127x99redname">
             <Original>500Rnd 12.7 mm AA MG Tracer (Red) Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_500Rnd127x99reddesc">
-            <Original>Caliber: 12.7x99 mm Tracer - Red<br/>Rounds: 500<br />Used in: HMG + Static HMG</Original>
+            <Original>Caliber: 12.7x99 mm Tracer - Red - Rounds: 500 - Used in: HMG + Static HMG</Original>
         </Key>
 		<Key ID="STR_EPOCH_500Rnd127x99grnname">
             <Original>500Rnd 12.7 mm AA MG Tracer (Green) Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_500Rnd127x99grndesc">
-            <Original>Caliber: 12.7x99 mm Tracer - Green<br/>Rounds: 500<br />Used in: HMG + Static HMG</Original>
+            <Original>Caliber: 12.7x99 mm Tracer - Green - Rounds: 500 - Used in: HMG + Static HMG</Original>
         </Key>
 		<Key ID="STR_EPOCH_500Rnd127x99ylwname">
             <Original>500Rnd 12.7 mm AA MG Tracer (Yellow) Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_500Rnd127x99ylwdesc">
-            <Original>Caliber: 12.7x99 mm Tracer - Yellow<br/>Rounds: 500<br />Used in: HMG + Static HMG</Original>
+            <Original>Caliber: 12.7x99 mm Tracer - Yellow - Rounds: 500 - Used in: HMG + Static HMG</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd127x99name">
             <Original>200Rnd 12.7 mm RCWS MG Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd127x99desc">
-            <Original>Caliber: 12.7x99 mm NATO<br/>Rounds: 200<br />Used in: HMG + Static HMG</Original>
+            <Original>Caliber: 12.7x99 mm NATO - Rounds: 200 - Used in: HMG + Static HMG</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd127x99redname">
             <Original>200Rnd 12.7 mm RCWS MG Tracer (Red) Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd127x99reddesc">
-            <Original>Caliber: 12.7x99 mm Tracer - Red<br/>Rounds: 200<br />Used in: HMG + Static HMG</Original>
+            <Original>Caliber: 12.7x99 mm Tracer - Red - Rounds: 200 - Used in: HMG + Static HMG</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd127x99grnname">
             <Original>200Rnd 12.7 mm RCWS MG Tracer (Green) Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd127x99grndesc">
-            <Original>Caliber: 12.7x99 mm Tracer - Green<br/>Rounds: 200<br />Used in: HMG + Static HMG</Original>
+            <Original>Caliber: 12.7x99 mm Tracer - Green - Rounds: 200 - Used in: HMG + Static HMG</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd127x99ylwname">
             <Original>200Rnd 12.7 mm RCWS MG Tracer (Yellow) Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd127x99ylwdesc">
-            <Original>Caliber: 12.7x99 mm Tracer - Yellow<br/>Rounds: 200<br />Used in: HMG + Static HMG</Original>
+            <Original>Caliber: 12.7x99 mm Tracer - Yellow - Rounds: 200 - Used in: HMG + Static HMG</Original>
         </Key>
 		<Key ID="STR_EPOCH_100Rnd127x99name">
             <Original>100Rnd 12.7 mm M2 HMG Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_100Rnd127x99desc">
-            <Original>Caliber: 12.7x99 mm NATO<br/>Rounds: 100<br />Used in: Offroad + HMMW M2</Original>
+            <Original>Caliber: 12.7x99 mm NATO - Rounds: 100 - Used in: Offroad + HMMW M2</Original>
         </Key>
 		<Key ID="STR_EPOCH_100Rnd127x99redname">
             <Original>100Rnd 12.7 mm M2 HMG Tracer (Red) Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_100Rnd127x99reddesc">
-            <Original>Caliber: 12.7x99 mm Tracer - Red<br/>Rounds: 100<br />Used in: Offroad + HMMW M2</Original>
+            <Original>Caliber: 12.7x99 mm Tracer - Red - Rounds: 100 - Used in: Offroad + HMMW M2</Original>
         </Key>
 		<Key ID="STR_EPOCH_100Rnd127x99grnname">
             <Original>100Rnd 12.7 mm M2 HMG Tracer (Green) Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_100Rnd127x99grndesc">
-            <Original>Caliber: 12.7x99 mm Tracer - Green<br/>Rounds: 100<br />Used in: Offroad + HMMW M2</Original>
+            <Original>Caliber: 12.7x99 mm Tracer - Green - Rounds: 100 - Used in: Offroad + HMMW M2</Original>
         </Key>
 		<Key ID="STR_EPOCH_100Rnd127x99ylwname">
             <Original>100Rnd 12.7 mm M2 HMG Tracer (Yellow) Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_100Rnd127x99ylwdesc">
-            <Original>Caliber: 12.7x99 mm Tracer - Yellow<br/>Rounds: 100<br />Used in: Offroad + HMMW M2</Original>
+            <Original>Caliber: 12.7x99 mm Tracer - Yellow - Rounds: 100 - Used in: Offroad + HMMW M2</Original>
         </Key>
 		<Key ID="STR_EPOCH_2000Rnd762x51Beltname">
             <Original>7.62 mm Minigun Belt</Original>
         </Key>
 		<Key ID="STR_EPOCH_2000Rnd762x51Beltdesc">
-            <Original>Caliber: 7.62x51 mm<br />Rounds: 2000<br />Used in: AH-9 Pawnee</Original>
+            <Original>Caliber: 7.62x51 mm - Rounds: 2000 - Used in: AH-9 Pawnee</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd40mmGname">
             <Original>40 mm HE Grenade Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd40mmGdesc">
-            <Original>Caliber: 40 mm <br/>Rounds: 200 DSS<br />Used in: GMG, RCWS</Original>
+            <Original>Caliber: 40 mm  - Rounds: 200 DSS - Used in: GMG, RCWS</Original>
         </Key>
 		<Key ID="STR_EPOCH_32Rnd40mmGname">
-            <Original>Caliber: 40 mm <br/>Rounds: 32 DSS<br />Used in: GMG, RCWS</Original>
+            <Original>Caliber: 40 mm  - Rounds: 32 DSS - Used in: GMG, RCWS</Original>
         </Key>
 		<Key ID="STR_EPOCH_64Rnd40mmGname">
-            <Original>Caliber: 40 mm <br/>Rounds: 64 DSS<br />Used in: GMG, RCWS</Original>
+            <Original>Caliber: 40 mm  - Rounds: 64 DSS - Used in: GMG, RCWS</Original>
         </Key>
 		<Key ID="STR_EPOCH_96Rnd40mmGname">
-            <Original>Caliber: 40 mm <br/>Rounds: 96 DSS<br />Used in: GMG, RCWS</Original>
+            <Original>Caliber: 40 mm  - Rounds: 96 DSS - Used in: GMG, RCWS</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd30mmGname">
             <Original>30 mm HE Grenade Mag</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd30mmGdesc">
-            <Original>Caliber: 30 mm <br/>Rounds: 200 DSS<br />Used in: Static Grenade Launcher</Original>
+            <Original>Caliber: 30 mm  - Rounds: 200 DSS - Used in: Static Grenade Launcher</Original>
         </Key>
 		<Key ID="STR_EPOCH_40Rnd30mmGdesc">
-            <Original>Caliber: 30 mm <br/>Rounds: 40 DSS<br />Used in: Static Grenade Launcher</Original>
+            <Original>Caliber: 30 mm  - Rounds: 40 DSS - Used in: Static Grenade Launcher</Original>
         </Key>
 		
 		<Key ID="STR_EPOCH_mas127x107DSHKMname">
             <Original>DShKM</Original>
         </Key>
 		<Key ID="STR_EPOCH_mas50Rnd127x107DSHKMdesc">
-            <Original>Type: DShKM<br/>Rounds: 50<br />Used in: Static Grenade Launcher</Original>
+            <Original>Type: DShKM - Rounds: 50 - Used in: Static Grenade Launcher</Original>
         </Key>
 
 		<Key ID="STR_EPOCH_mas150Rnd127x107DSHKMdesc">
-            <Original>Type: DShKM<br/>Rounds: 150<br />Used in: Static Grenade Launcher</Original>
+            <Original>Type: DShKM - Rounds: 150 - Used in: Static Grenade Launcher</Original>
         </Key>
 		
         <Key ID="STR_EPOCH_HotwireKit">
@@ -802,8 +802,59 @@
         <Key ID="STR_EPOCH_SilverBar">
             <Original>Silver Bar</Original>
         </Key>
+		<Key ID="STR_EPOCH_1ozSilver">
+            <Original>1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2ozSilver">
+            <Original>2oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_3ozSilver">
+            <Original>3oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_4ozSilver">
+            <Original>4oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5ozSilver">
+            <Original>5oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_6ozSilver">
+            <Original>6oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_7ozSilver">
+            <Original>7oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8ozSilver">
+            <Original>8oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_9ozSilver">
+            <Original>9oz Silver</Original>
+        </Key>
 		<Key ID="STR_EPOCH_10ozSilver">
             <Original>10oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2x1ozSilver">
+            <Original>2 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_3x1ozSilver">
+            <Original>3 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_4x1ozSilver">
+            <Original>4 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5x1ozSilver">
+            <Original>5 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_6x1ozSilver">
+            <Original>6 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_7x1ozSilver">
+            <Original>7 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8x1ozSilver">
+            <Original>8 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_9x1ozSilver">
+            <Original>9 x 1oz Silver</Original>
         </Key>
 		<Key ID="STR_EPOCH_10x1ozSilverBar">
             <Original>10 x 1oz Silver</Original>
@@ -814,8 +865,59 @@
         <Key ID="STR_EPOCH_GoldBar">
             <Original>Gold Bar</Original>
         </Key>
+		<Key ID="STR_EPOCH_1ozGold">
+            <Original>1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2ozGold">
+            <Original>2oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_3ozGold">
+            <Original>3oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_4ozGold">
+            <Original>4oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5ozGold">
+            <Original>5oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_6ozGold">
+            <Original>6oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_7ozGold">
+            <Original>7oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8ozGold">
+            <Original>8oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_9ozGold">
+            <Original>9oz Gold</Original>
+        </Key>
         <Key ID="STR_EPOCH_10ozGold">
             <Original>10oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2x1ozGold">
+            <Original>2 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_3x1ozGold">
+            <Original>3 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_4x1ozGold">
+            <Original>4 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5x1ozGold">
+            <Original>5 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_6x1ozGold">
+            <Original>6 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_7x1ozGold">
+            <Original>7 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8x1ozGold">
+            <Original>8 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_9x1ozGold">
+            <Original>9 x 1oz Gold</Original>
         </Key>
         <Key ID="STR_EPOCH_10x1ozGoldBar">
             <Original>10 x 1oz Gold Bar</Original>
