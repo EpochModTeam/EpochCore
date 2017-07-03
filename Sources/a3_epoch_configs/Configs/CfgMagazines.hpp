@@ -1400,6 +1400,123 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_SilverBar";
         mass = 1;
     };
+	class ItemSilverBar : CA_Magazine
+    {
+        author = "Sequisha";
+        scope = 2;
+        count = 1;
+        worth = 10;
+        type = 256;
+        displayName = "$STR_EPOCH_Silver";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar1oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_silver_bar_CA.paa";
+        descriptionShort = "$STR_EPOCH_SilverBar";
+        mass = 1;
+    };
+	class ItemSilverBar2oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 20;
+        type = 256;
+        displayName = "$STR_EPOCH_2ozSilver";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar2oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Silver_bar_2oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_2x1ozSilverBar";
+        mass = 2;
+    };
+	class ItemSilverBar3oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 30;
+        type = 256;
+        displayName = "$STR_EPOCH_3ozSilver";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar3oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Silver_bar_3oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_3x1ozSilverBar";
+        mass = 3;
+    };
+	class ItemSilverBar4oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 40;
+        type = 256;
+        displayName = "$STR_EPOCH_4ozSilver";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar4oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Silver_bar_4oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_4x1ozSilverBar";
+        mass = 4;
+    };
+	class ItemSilverBar5oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 50;
+        type = 256;
+        displayName = "$STR_EPOCH_5ozSilver";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar5oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Silver_bar_5oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_5x1ozSilverBar";
+        mass = 5;
+    };
+	class ItemSilverBar6oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 60;
+        type = 256;
+        displayName = "$STR_EPOCH_6ozSilver";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar6oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Silver_bar_6oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_6x1ozSilverBar";
+        mass = 6;
+    };
+	class ItemSilverBar7oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 70;
+        type = 256;
+        displayName = "$STR_EPOCH_7ozSilver";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar7oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Silver_bar_7oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_7x1ozSilverBar";
+        mass = 7;
+    };
+	class ItemSilverBar8oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 80;
+        type = 256;
+        displayName = "$STR_EPOCH_8ozSilver";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar8oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Silver_bar_8oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_8x1ozSilverBar";
+        mass = 8;
+    };
+	class ItemSilverBar9oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 90;
+        type = 256;
+        displayName = "$STR_EPOCH_9ozSilver";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemSilverBar9oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Silver_bar_9oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_9x1ozSilverBar";
+        mass = 9;
+    };
 	class ItemSilverBar10oz : CA_Magazine
     {
         author = "DirtySanchez";
@@ -1426,7 +1543,111 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_GoldBar";
         mass = 1;
     };
-    class ItemGoldBar10oz : CA_Magazine
+    class ItemGoldBar2oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 200;
+        type = 256;
+        displayName = "$STR_EPOCH_2ozGold";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemGoldBar2oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_bar_2oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_2x1ozGoldBar";
+        mass = 2;
+    };
+	class ItemGoldBar3oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 300;
+        type = 256;
+        displayName = "$STR_EPOCH_3ozGold";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemGoldBar3oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_bar_3oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_3x1ozGoldBar";
+        mass = 3;
+    };
+	class ItemGoldBar4oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 400;
+        type = 256;
+        displayName = "$STR_EPOCH_4ozGold";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemGoldBar4oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_bar_4oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_4x1ozGoldBar";
+        mass = 4;
+    };
+	class ItemGoldBar5oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 500;
+        type = 256;
+        displayName = "$STR_EPOCH_5ozGold";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemGoldBar5oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_bar_5oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_5x1ozGoldBar";
+        mass = 5;
+    };
+	class ItemGoldBar6oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 600;
+        type = 256;
+        displayName = "$STR_EPOCH_6ozGold";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemGoldBar6oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_bar_6oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_6x1ozGoldBar";
+        mass = 6;
+    };
+	class ItemGoldBar7oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 700;
+        type = 256;
+        displayName = "$STR_EPOCH_7ozGold";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemGoldBar7oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_bar_7oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_7x1ozGoldBar";
+        mass = 7;
+    };
+	class ItemGoldBar8oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 800;
+        type = 256;
+        displayName = "$STR_EPOCH_8ozGold";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemGoldBar8oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_bar_8oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_8x1ozGoldBar";
+        mass = 8;
+    };
+	class ItemGoldBar9oz : CA_Magazine
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        count = 1;
+        worth = 900;
+        type = 256;
+        displayName = "$STR_EPOCH_9ozGold";
+        model = "\x\addons\a3_epoch_assets_1\models\ItemGoldBar9oz.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_gold_bar_9oz_CA.paa";
+        descriptionShort = "$STR_EPOCH_9x1ozGoldBar";
+        mass = 9;
+    };
+	class ItemGoldBar10oz : CA_Magazine
     {
         author = "Sequisha";
         scope = 2;
