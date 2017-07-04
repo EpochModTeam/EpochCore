@@ -2533,7 +2533,7 @@ class CfgMagazines
     {
         author = "DirtySanchez/He-Man";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
+        picture = "\x\addons\a3_epoch_community\icons\KitVehUpgI.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeI_Kit100_name";
         scope = 2;
         descriptionShort = "$STR_EPOCH_VehicleUpgradeI_Kit100_desc";
@@ -2542,14 +2542,12 @@ class CfgMagazines
     };
 	class KitVehicleUpgradeI_200_EPOCH : KitVehicleUpgradeI_100_EPOCH
     {
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeI_Kit200_name";
         descriptionShort = "$STR_EPOCH_VehicleUpgradeI_Kit200_desc";
         mass = 200;
     };
 	class KitVehicleUpgradeI_300_EPOCH : KitVehicleUpgradeI_100_EPOCH
     {
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeI_Kit300_name";
         descriptionShort = "$STR_EPOCH_VehicleUpgradeI_Kit300_desc";
         mass = 300;
@@ -2558,7 +2556,7 @@ class CfgMagazines
     {
         author = "DirtySanchez/He-Man";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
+        picture = "\x\addons\a3_epoch_community\icons\KitVehUpgII.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeII_Kit100_name";
         scope = 2;
         descriptionShort = "$STR_EPOCH_VehicleUpgradeII_Kit100_desc";
@@ -2567,14 +2565,12 @@ class CfgMagazines
     };
 	class KitVehicleUpgradeII_200_EPOCH : KitVehicleUpgradeII_100_EPOCH
     {
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeII_Kit200_name";
         descriptionShort = "$STR_EPOCH_VehicleUpgradeII_Kit200_desc";
         mass = 200;
     };
 	class KitVehicleUpgradeII_300_EPOCH : KitVehicleUpgradeII_100_EPOCH
     {
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeII_Kit300_name";
         descriptionShort = "$STR_EPOCH_VehicleUpgradeII_Kit300_desc";
         mass = 300;
@@ -2583,7 +2579,7 @@ class CfgMagazines
     {
         author = "DirtySanchez/He-Man";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
+        picture = "\x\addons\a3_epoch_community\icons\KitVehUpgIII.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeIII_Kit100_name";
         scope = 2;
         descriptionShort = "$STR_EPOCH_VehicleUpgradeIII_Kit100_desc";
@@ -2592,14 +2588,12 @@ class CfgMagazines
     };
 	class KitVehicleUpgradeIII_200_EPOCH : KitVehicleUpgradeIII_100_EPOCH
     {
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeIII_Kit200_name";
         descriptionShort = "$STR_EPOCH_VehicleUpgradeIII_Kit200_desc";
         mass = 200;
     };
 	class KitVehicleUpgradeIII_300_EPOCH : KitVehicleUpgradeIII_100_EPOCH
     {
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeIII_Kit300_name";
         descriptionShort = "$STR_EPOCH_VehicleUpgradeIII_Kit300_desc";
         mass = 300;
@@ -2608,7 +2602,7 @@ class CfgMagazines
     {
         author = "DirtySanchez/He-Man";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
+        picture = "\x\addons\a3_epoch_community\icons\KitVehUpgIV.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeIV_Kit100_name";
         scope = 2;
         descriptionShort = "$STR_EPOCH_VehicleUpgradeIV_Kit100_desc";
@@ -2617,14 +2611,12 @@ class CfgMagazines
     };
 	class KitVehicleUpgradeIV_200_EPOCH : KitVehicleUpgradeIV_100_EPOCH
     {
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeIV_Kit200_name";
         descriptionShort = "$STR_EPOCH_VehicleUpgradeIV_Kit200_desc";
         mass = 200;
     };
 	class KitVehicleUpgradeIV_300_EPOCH : KitVehicleUpgradeIV_100_EPOCH
     {
-        picture = "\x\addons\a3_epoch_community\textures\.paa";
         displayName = "$STR_EPOCH_VehicleUpgradeIV_Kit300_name";
         descriptionShort = "$STR_EPOCH_VehicleUpgradeIV_Kit300_desc";
         mass = 300;
