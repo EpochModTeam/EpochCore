@@ -2125,5 +2125,77 @@
         <Key ID="STR_EPOCH_KeeshaCamoPinkPolka">
             <Original>Keesha Camo (Pink Polka)</Original>
         </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit100_name">
+            <Original>Vehicle Upgrade I Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit100_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade I (100 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit100_name">
+            <Original>Vehicle Upgrade II Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit100_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade II (100 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit100_name">
+            <Original>Vehicle Upgrade III Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit100_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade III (100 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit100_name">
+            <Original>Vehicle Upgrade IV Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit100_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade IV (100 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit200_name">
+            <Original>Vehicle Upgrade I Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit200_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade I (200 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit200_name">
+            <Original>Vehicle Upgrade II Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit200_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade II (200 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit200_name">
+            <Original>Vehicle Upgrade III Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit200_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade III (200 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit200_name">
+            <Original>Vehicle Upgrade IV Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit200_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade IV (200 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit300_name">
+            <Original>Vehicle Upgrade I Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit300_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade I (300 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit300_name">
+            <Original>Vehicle Upgrade II Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit300_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade II (300 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit300_name">
+            <Original>Vehicle Upgrade III Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit300_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade III (300 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit300_name">
+            <Original>Vehicle Upgrade IV Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit300_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade IV (300 mass)</Original>
+        </Key>
     </Package>
 </Project>
