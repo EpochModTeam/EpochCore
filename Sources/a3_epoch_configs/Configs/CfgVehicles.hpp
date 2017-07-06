@@ -5701,23 +5701,23 @@ class CfgVehicles
 				armor = 0.75;
 				explosionShielding = 4.2;
 			};
-			class HitReserveWheel {
+			class HitReserveWheel: HitRF2Wheel {
 				armor = 0.75;
 				explosionShielding = 0.9;
 			};
-			class HitFuel {
+			class HitFuel: HitFuel {
 				armor = 0.55;
 				explosionShielding = 0.15;
 			};
-			class HitHull {
+			class HitHull: HitHull {
 				armor = 1.2;
 				explosionShielding = 0.4;
 			};
-			class HitEngine {
+			class HitEngine: HitEngine {
 				armor = 0.75;
 				explosionShielding = 0.5;
 			};
-			class HitBody {
+			class HitBody: HitBody {
 				armor = 4.2;
 				explosionShielding = 1.2;
 			};
@@ -5765,27 +5765,27 @@ class CfgVehicles
 				armor = 1.75;
 				explosionShielding = 3.2;
 			};
-			class HitRGlass {
+			class HitRGlass: HitRGlass {
 				armor = 0.4;
 				explosionShielding = 2.2;
 			};
-			class HitLGlass {
+			class HitLGlass: HitLGlass {
 				armor = 0.4;
 				explosionShielding = 2.2;
 			};
-			class HitLBWheel {
+			class HitLBWheel: HitLBWheel {
 				armor = 0.4;
 				explosionShielding = 4.2;
 			};
-			class HitLMWheel {
+			class HitLMWheel: HitLMWheel {
 				armor = 0.4;
 				explosionShielding = 4.2;
 			};
-			class HitRBWheel {
+			class HitRBWheel: HitRBWheel {
 				armor = 0.4;
 				explosionShielding = 4.2;
 			};
-			class HitRMWheel {
+			class HitRMWheel: HitRMWheel {
 				armor = 0.4;
 				explosionShielding = 4.2;
 			};
