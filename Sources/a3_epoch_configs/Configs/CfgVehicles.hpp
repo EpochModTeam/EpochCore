@@ -5001,6 +5001,20 @@ class CfgVehicles
         class TransportItems {};
         class EventHandlers;
     };
+	class C_Van_01_box_EPOCH3 : C_Van_01_box_EPOCH
+    {
+		author = "DirtySanchez";
+		maximumLoad = 6000;
+		transportMaxWeapons = 96;
+		transportMaxMagazines = 512;
+		transportMaxBackpacks = 128;
+	};
+	class C_Van_01_box_EPOCH4 : C_Van_01_box_EPOCH3
+    {
+		author = "DirtySanchez";
+		fuelCapacity = 75;
+        fuelConsumptionRate = 0.018;
+	};
     class C_Van_01_transport_F;
     class C_Van_01_transport_EPOCH : C_Van_01_transport_F
     {
@@ -5017,6 +5031,8 @@ class CfgVehicles
         class TransportItems {};
         class EventHandlers;
     };
+	class C_Van_01_transport_EPOCH3 : C_Van_01_box_EPOCH3{};
+	class C_Van_01_transport_EPOCH4 : C_Van_01_box_EPOCH4{};
     class C_Boat_Civil_01_F;
     class C_Boat_Civil_01_EPOCH : C_Boat_Civil_01_F
     {
