@@ -5322,6 +5322,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class HitPoints;
 		class UserActions {
 			class Door_LF_Open {
 				userActionID = 50;
@@ -5385,6 +5386,159 @@ class CfgVehicles
 			};
 		};
     };
+	class B_MRAP_01_EPOCH1 : B_MRAP_01_EPOCH
+    {
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		maxSpeed = 135;
+		fuelConsumptionRate = 0.012;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitHull;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitRGlass;
+			class HitLGlass;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+		};
+	};
+	class B_MRAP_01_EPOCH2 : B_MRAP_01_EPOCH1
+    {
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.45;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel: HitLFWheel 
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel
+			{
+				armor = 0.55;
+				explosionShielding = 0.25;
+			};
+			class HitHull: HitHull
+			{
+				armor = 1.2;
+				explosionShielding = 0.45;
+			};
+			class HitEngine: HitHull
+			{
+				armor = 0.55;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitHull
+			{
+				explosionShielding = 2.5;
+			};
+			class HitGlass1: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass2: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass3: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass4: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass5: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass6: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitRGlass: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 2.2;
+			};
+			class HitLGlass: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 2.2;
+			};
+			class HitLBWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitLMWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitRBWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitRMWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+		};
+	};
+	class B_MRAP_01_EPOCH3 : B_MRAP_01_EPOCH
+    {	
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 8;
+		maximumLoad = 4250;
+	};
+	class B_MRAP_01_EPOCH4 : B_MRAP_01_EPOCH3
+    {
+		author = "DirtySanchez";
+		fuelCapacity = 115;
+		fuelConsumptionRate = 0.009;
+	};
     class O_MRAP_02_F;
     class O_MRAP_02_EPOCH : O_MRAP_02_F
     {
@@ -5398,6 +5552,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class HitPoints;
 		class UserActions {
 			class DoorLF_Open {
 				userActionID = 50;
@@ -5486,6 +5641,170 @@ class CfgVehicles
 			};
 		};
     };
+	class O_MRAP_02_EPOCH1 : O_MRAP_02_EPOCH
+    {
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		maxSpeed = 145;
+		fuelConsumptionRate = 0.012;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitReserveWheel;
+			class HitFuel;
+			class HitHull;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitGlass7;
+			class HitGlass8;
+			class HitGlass9;
+			class HitGlass10;
+			class HitGlass11;
+			class HitRGlass;
+			class HitLGlass;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+		};
+	};
+	class O_MRAP_02_EPOCH2 : O_MRAP_02_EPOCH1
+    {
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.45;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints 
+		{
+			class HitLFWheel: HitLFWheel {
+				armor = 0.75;
+				explosionShielding = 4.2;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.75;
+				explosionShielding = 4.2;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.75;
+				explosionShielding = 4.2;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.75;
+				explosionShielding = 4.2;
+			};
+			class HitReserveWheel {
+				armor = 0.75;
+				explosionShielding = 0.9;
+			};
+			class HitFuel {
+				armor = 0.55;
+				explosionShielding = 0.15;
+			};
+			class HitHull {
+				armor = 1.2;
+				explosionShielding = 0.4;
+			};
+			class HitEngine {
+				armor = 0.75;
+				explosionShielding = 0.5;
+			};
+			class HitBody {
+				armor = 4.2;
+				explosionShielding = 1.2;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass6: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass7: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass8: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass9: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass10: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass11: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitRGlass {
+				armor = 0.4;
+				explosionShielding = 2.2;
+			};
+			class HitLGlass {
+				armor = 0.4;
+				explosionShielding = 2.2;
+			};
+			class HitLBWheel {
+				armor = 0.4;
+				explosionShielding = 4.2;
+			};
+			class HitLMWheel {
+				armor = 0.4;
+				explosionShielding = 4.2;
+			};
+			class HitRBWheel {
+				armor = 0.4;
+				explosionShielding = 4.2;
+			};
+			class HitRMWheel {
+				armor = 0.4;
+				explosionShielding = 4.2;
+			};
+		};
+	};
+	class O_MRAP_02_EPOCH3 : O_MRAP_02_EPOCH2
+    {	
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 8;
+		maximumLoad = 4250;
+	};
+	class O_MRAP_02_EPOCH4 : O_MRAP_02_EPOCH3
+    {
+		author = "DirtySanchez";
+		fuelCapacity = 115;
+		fuelConsumptionRate = 0.009;
+	};
     class I_MRAP_03_F;
     class I_MRAP_03_EPOCH : I_MRAP_03_F
     {
@@ -5500,6 +5819,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         class EventHandlers;
+		class HitPoints;
         class RenderTargets
         {
             class commander_display
@@ -5595,6 +5915,159 @@ class CfgVehicles
 			};
 		};
     };
+	class I_MRAP_03_EPOCH1 : I_MRAP_03_EPOCH
+    {
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		maxSpeed = 140;
+		fuelConsumptionRate = 0.012;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitHull;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+		};
+	};
+	class I_MRAP_03_EPOCH2 : I_MRAP_03_EPOCH1
+    {
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.45;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel: HitLFWheel 
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel
+			{
+				armor = 0.55;
+				explosionShielding = 0.25;
+			};
+			class HitHull: HitHull
+			{
+				armor = 1.2;
+				explosionShielding = 0.45;
+			};
+			class HitEngine: HitHull
+			{
+				armor = 0.55;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitHull
+			{
+				explosionShielding = 2.5;
+			};
+			class HitGlass1: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass2: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass3: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass4: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass5: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitRGlass: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 2.2;
+			};
+			class HitLGlass: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 2.2;
+			};
+			class HitGlass6: HitHull
+			{
+				armor = 0.15;
+				explosionShielding = 2.2;
+			};
+			class HitLBWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitLMWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitRBWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitRMWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+		};
+	};
+	class I_MRAP_03_EPOCH3 : I_MRAP_03_EPOCH2
+    {	
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 8;
+		maximumLoad = 4250;
+	};
+	class I_MRAP_03_EPOCH4 : I_MRAP_03_EPOCH3
+    {
+		author = "DirtySanchez";
+		fuelCapacity = 115;
+		fuelConsumptionRate = 0.009;
+	};
     class B_Truck_01_transport_F;
     class B_Truck_01_transport_EPOCH : B_Truck_01_transport_F
     {
