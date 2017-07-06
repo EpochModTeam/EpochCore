@@ -6411,6 +6411,20 @@ class CfgVehicles
 			};
 		};
     };
+	class O_Truck_02_covered_EPOCH3 : O_Truck_02_covered_EPOCH
+    {
+		author = "DirtySanchez";
+		maximumLoad = 6500;
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 8;
+	};
+	class O_Truck_02_covered_EPOCH4 : O_Truck_02_covered_EPOCH
+    {
+		author = "DirtySanchez";
+		fuelCapacity = 450;
+        fuelConsumptionRate = 22;
+	};
     class O_Truck_02_transport_F;
     class O_Truck_02_transport_EPOCH : O_Truck_02_transport_F
     {
@@ -6470,7 +6484,9 @@ class CfgVehicles
 			};
 		};
     };
-    class O_Truck_03_covered_F;
+    class O_Truck_02_transport_EPOCH3 : O_Truck_02_covered_EPOCH3 {};
+	class O_Truck_02_transport_EPOCH4 : O_Truck_02_transport_EPOCH3 {};
+	class O_Truck_03_covered_F;
     class O_Truck_03_covered_EPOCH : O_Truck_03_covered_F
     {
         scope = 2;
