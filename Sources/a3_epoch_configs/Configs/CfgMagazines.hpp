@@ -386,7 +386,7 @@ class CfgMagazines
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_silvercase_100oz_CA.paa";
         displayname = "$STR_EPOCH_FullBriefcaseSilver";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets_1\models\silvercase.p3d";
+        model = "\x\addons\a3_epoch_community\models\briefcase_brown.p3d";
         descriptionShort = "$STR_EPOCH_Briefcasethatcontainsten10oz100ozSilverBars";
         count = 1;
 		worth = 1000;
