@@ -2842,6 +2842,15 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_VehicleUpgradeIV_Kit300_desc";
         mass = 300;
     };
+	class ItemVehDocRara : ItemDoc1
+	{
+		author = "DirtySanchez";
+		picture = "\x\addons\a3_epoch_community\icons\equip_topsecret_ca.paa";
+        displayname = "$STR_EPOCH_VehUpgTopSecretRareDoc_name";
+        scope = 2;
+		descriptionShort = "$STR_EPOCH_VehUpgTopSecretRareDoc_desc";
+        model = "\x\addons\a3_epoch_community\models\topsecret.p3d";
+	};
 };
 
 /*[[[end]]]*/
