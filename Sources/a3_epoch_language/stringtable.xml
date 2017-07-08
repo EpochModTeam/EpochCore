@@ -2197,5 +2197,11 @@
 		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit300_desc">
             <Original>This crafted kit has all you need for Vehicle Upgrade IV (300 mass)</Original>
         </Key>
+		<Key ID="STR_EPOCH_VehUpgTopSecretRareDoc_name">
+            <Original>Top Secret Upgrade</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehUpgTopSecretRareDoc_desc">
+            <Original>This Top Secret and Rare Document will allow special upgrades the server has</Original>
+        </Key>
     </Package>
 </Project>
