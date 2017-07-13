@@ -57,7 +57,7 @@ class FSM
                          "_sounds = [""sapper_groan0"",""sapper_groan1"",""sapper_groan2""];" \n
                          "_sound = selectRandom _sounds;" \n
                          "" \n
-                         "_unit say3D [_sound,500,1];" \n
+                         "_unit say3D [_sound,1500,1];" \n
                          "[player, _unit,_sound, Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "};" \n
                          "" \n

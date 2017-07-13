@@ -81,7 +81,7 @@ link43[] = {30,1};
 link44[] = {31,32};
 link45[] = {32,26};
 globals[] = {0.000000,0,0,0,0,640,480,1,259,6316128,1,-172.606018,777.806519,701.906738,-450.277008,683,884,1};
-window[] = {2,-1,-1,-1,-1,707,182,1207,182,3,701};
+window[] = {2,-1,-1,-1,-1,629,104,1129,104,3,701};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -699,14 +699,14 @@ class FSM
                          "" \n
                          "" \n
                          "if(diag_tickTime - _lastAlert > 480 && random 100 < _cAggression)then{" \n
-                         "_unit say3D [""cultist_laugh"",500,1];" \n
+                         "_unit say3D [""cultist_laugh"",1500,1];" \n
                          "[player, _unit, ""cultist_laugh"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "_lastAlert = diag_tickTime;" \n
                          "" \n
                          "" \n
                          "}else{" \n
                          "" \n
-                         "_unit say3D [""cultist_talk"",500,1];" \n
+                         "_unit say3D [""cultist_talk"",1500,1];" \n
                          "[player, _unit, ""cultist_talk"",Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "" \n
                          "};" \n

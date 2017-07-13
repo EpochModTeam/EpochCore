@@ -193,7 +193,7 @@ link110[] = {75,76};
 link111[] = {76,46};
 link112[] = {77,17};
 globals[] = {0.000000,0,0,0,0,640,480,1,250,6316128,1,-470.770630,879.122192,761.920715,-449.556824,985,884,1};
-window[] = {2,-1,-1,-1,-1,681,156,1181,156,3,1003};
+window[] = {2,-1,-1,-1,-1,655,130,1155,130,3,1003};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -322,7 +322,7 @@ class FSM
                          "_sounds = [""sapper_groan0"",""sapper_groan1"",""sapper_groan2""];" \n
                          "_sound = selectRandom _sounds;" \n
                          "" \n
-                         "_sapper say3D [_sound,500,1];" \n
+                         "_sapper say3D [_sound,1500,1];" \n
                          "[player, _sapper,_sound, Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "};" \n
                          "" \n
@@ -769,7 +769,7 @@ class FSM
                         init = /*%FSM<STATEINIT""">*/"_t = diag_tickTime;" \n
                          "" \n
                          "_sound = ""sapper_explode"";" \n
-                         "_sapper say3D [_sound,500,1];" \n
+                         "_sapper say3D [_sound,1500,1];" \n
                          "[player,_sapper,_sound,Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "_sapper playMoveNow ""Unconscious"";" \n
                          "" \n
@@ -1311,7 +1311,7 @@ class FSM
                          "{" \n
                          "" \n
                          "_sound = ""sapper_explode"";" \n
-                         "_x say3D [_sound,500,1];" \n
+                         "_x say3D [_sound,1500,1];" \n
                          "[player,_x,_sound,Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "_x playMoveNow ""Unconscious"";" \n
                          "" \n
@@ -1710,7 +1710,7 @@ class FSM
                                          "if (diag_tickTime - _lastAlert > 60) then {" \n
                                          "	_lastAlert = diag_tickTime;" \n
                                          "	_sound = ""sapper_groan2"";" \n
-                                         "	_sapper say3D [_sound,500,1];" \n
+                                         "	_sapper say3D [_sound,1500,1];" \n
                                          "	[player, _sapper,_sound, Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                                          "};" \n
                                          ""/*%FSM</ACTION""">*/;
