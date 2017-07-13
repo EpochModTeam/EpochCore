@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "C:\Program Files (x86)\PoseidonTools\Data\Packages\Bin\fsmEditor\scriptedFSM.cfg, sapper">*/
+/*%FSM<COMPILE "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, sapper">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"sapper",0,250,-225.000000,-325.000000,-125.000000,-275.000000,0.000000,"sapper"};
@@ -46,7 +46,7 @@ item41[] = {"_",8,218,625.000000,425.000000,675.000000,450.000000,0.000000,""};
 item42[] = {"nest_disturbed",4,218,850.000000,450.000000,950.000000,500.000000,30.000000,"nest disturbed"};
 item43[] = {"ba_boom",2,250,975.000000,450.000000,1075.000000,500.000000,0.000000,"ba boom"};
 item44[] = {"groan",4,218,700.000000,550.000000,800.000000,600.000000,20.000000,"groan"};
-item45[] = {"end",1,4346,975.000000,0.000000,1075.000000,50.000000,0.000000,"end"};
+item45[] = {"end",1,250,975.000000,0.000000,1075.000000,50.000000,0.000000,"end"};
 item46[] = {"Wait_to_delete",4,218,975.000000,150.000000,1075.000000,200.000000,10.000000,"Wait to delete"};
 item47[] = {"handle_dispose",2,250,525.000000,125.000000,625.000000,175.000000,0.000000,"handle dispose"};
 item48[] = {"Wait_1_5_sec",4,218,650.000000,300.000000,750.000000,350.000000,0.000000,"Wait" \n "1.5 sec"};
@@ -65,7 +65,7 @@ item60[] = {"not_safe",4,218,-250.000000,500.000000,-150.000000,550.000000,10.00
 item61[] = {"is_safe",4,218,-150.000000,500.000000,-50.000000,550.000000,5.000000,"is safe"};
 item62[] = {"do_hide",2,250,-150.000000,625.000000,-50.000000,675.000000,0.000000,"do hide"};
 item63[] = {"smoke",2,250,775.000000,150.000000,875.000000,200.000000,0.000000,"smoke"};
-item64[] = {"charged",4,218,-50.000000,275.000000,50.000000,325.000000,10.000000,"charged"};
+item64[] = {"charged",4,4314,-50.000000,275.000000,50.000000,325.000000,10.000000,"charged"};
 item65[] = {"_",8,218,125.000000,375.000000,175.000000,400.000000,0.000000,""};
 item66[] = {"circled",4,218,-50.000000,100.000000,50.000000,150.000000,10.000000,"circled"};
 item67[] = {"stuck",4,218,800.000000,-25.000000,900.000000,25.000000,30.000000,"stuck"};
@@ -192,7 +192,7 @@ link109[] = {74,2};
 link110[] = {75,76};
 link111[] = {76,46};
 link112[] = {77,17};
-globals[] = {0.000000,0,0,0,0,640,480,1,250,6316128,1,-211.859909,1179.353516,608.731812,-465.357819,985,884,1};
+globals[] = {0.000000,0,0,0,0,640,480,1,250,6316128,1,-470.770630,879.122192,761.920715,-449.556824,985,884,1};
 window[] = {2,-1,-1,-1,-1,655,130,1155,130,3,1003};
 *//*%FSM</HEAD>*/
 class FSM
@@ -322,7 +322,7 @@ class FSM
                          "_sounds = [""sapper_groan0"",""sapper_groan1"",""sapper_groan2""];" \n
                          "_sound = selectRandom _sounds;" \n
                          "" \n
-                         "_sapper say3D _sound;" \n
+                         "_sapper say3D [_sound,1500,1];" \n
                          "[player, _sapper,_sound, Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "};" \n
                          "" \n
@@ -769,7 +769,7 @@ class FSM
                         init = /*%FSM<STATEINIT""">*/"_t = diag_tickTime;" \n
                          "" \n
                          "_sound = ""sapper_explode"";" \n
-                         "_sapper say3D _sound;" \n
+                         "_sapper say3D [_sound,1500,1];" \n
                          "[player,_sapper,_sound,Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "_sapper playMoveNow ""Unconscious"";" \n
                          "" \n
@@ -833,7 +833,7 @@ class FSM
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"_sanityCheck > 90;"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/"_nrstTrgt = objNull;" \n
-                                         "_nrTrgts = _sapper nearEntities [_trgtArr, _sRange];" \n
+                                         "_nrTrgts = getPos _sapper nearEntities [_trgtArr, _sRange];" \n
                                          "_lowDist = _sRange;" \n
                                          "" \n
                                          "_upwindPos = [_sapper, _smellDistPerm, _windDir] call BIS_fnc_relPos;" \n
@@ -1311,7 +1311,7 @@ class FSM
                          "{" \n
                          "" \n
                          "_sound = ""sapper_explode"";" \n
-                         "_x say3D _sound;" \n
+                         "_x say3D [_sound,1500,1];" \n
                          "[player,_x,_sound,Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "_x playMoveNow ""Unconscious"";" \n
                          "" \n
@@ -1710,7 +1710,7 @@ class FSM
                                          "if (diag_tickTime - _lastAlert > 60) then {" \n
                                          "	_lastAlert = diag_tickTime;" \n
                                          "	_sound = ""sapper_groan2"";" \n
-                                         "	_sapper say3D _sound;" \n
+                                         "	_sapper say3D [_sound,1500,1];" \n
                                          "	[player, _sapper,_sound, Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                                          "};" \n
                                          ""/*%FSM</ACTION""">*/;
