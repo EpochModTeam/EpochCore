@@ -1,7 +1,7 @@
-/*%FSM<COMPILE "C:\Program Files (x86)\PoseidonTools\Data\Packages\Bin\fsmEditor\scriptedFSM.cfg, sapperAlt">*/
+/*%FSM<COMPILE "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, sapperAlt">*/
 /*%FSM<HEAD>*/
 /*
-item0[] = {"sapper",0,4346,-225.000000,-325.000000,-125.000000,-275.000000,0.000000,"sapper"};
+item0[] = {"sapper",0,250,-225.000000,-325.000000,-125.000000,-275.000000,0.000000,"sapper"};
 item1[] = {"_",8,218,75.000000,-200.000000,125.000000,-175.000000,0.000000,""};
 item2[] = {"instinct",2,250,150.000000,-200.000000,250.000000,-150.000000,0.000000,"instinct"};
 item3[] = {"no_decision",4,218,375.000000,-125.000000,475.000000,-75.000000,10.000000,"no decision"};
@@ -54,7 +54,7 @@ item49[] = {"not_safe",4,218,-250.000000,500.000000,-150.000000,550.000000,10.00
 item50[] = {"is_safe",4,218,-150.000000,500.000000,-50.000000,550.000000,5.000000,"is safe"};
 item51[] = {"do_hide",2,250,-150.000000,625.000000,-50.000000,675.000000,0.000000,"do hide"};
 item52[] = {"smoke",2,250,775.000000,150.000000,875.000000,200.000000,0.000000,"smoke"};
-item53[] = {"charged",4,218,-50.000000,275.000000,50.000000,325.000000,10.000000,"charged"};
+item53[] = {"charged",4,4314,-50.000000,275.000000,50.000000,325.000000,10.000000,"charged"};
 item54[] = {"_",8,218,125.000000,375.000000,175.000000,400.000000,0.000000,""};
 item55[] = {"circled",4,218,-50.000000,100.000000,50.000000,150.000000,10.000000,"circled"};
 item56[] = {"stuck",4,218,775.000000,0.000000,875.000000,50.000000,30.000000,"stuck"};
@@ -158,8 +158,8 @@ link88[] = {61,62};
 link89[] = {62,35};
 link90[] = {63,64};
 link91[] = {64,39};
-globals[] = {0.000000,0,0,0,0,640,480,1,253,6316128,1,-270.233551,719.632935,454.690369,-420.351807,1000,884,1};
-window[] = {2,-1,-1,-1,-1,681,156,1181,156,3,1018};
+globals[] = {0.000000,0,0,0,0,640,480,1,253,6316128,1,-401.770874,851.169312,570.968201,-536.630859,1000,884,1};
+window[] = {2,-1,-1,-1,-1,759,234,1259,234,3,1018};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -271,7 +271,7 @@ class FSM
                          "_sounds = [""sapper_groan0"",""sapper_groan1"",""sapper_groan2""];" \n
                          "_sound = selectRandom _sounds;" \n
                          "" \n
-                         "_sapper say3D _sound;" \n
+                         "_sapper say3D [_sound,1500,1];" \n
                          "[player, _sapper,_sound, Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "};" \n
                          "" \n
@@ -662,7 +662,7 @@ class FSM
                         init = /*%FSM<STATEINIT""">*/"_t = diag_tickTime;" \n
                          "" \n
                          "_sound = ""sapper_explode"";" \n
-                         "_sapper say3D _sound;" \n
+                         "_sapper say3D [_sound,1500,1];" \n
                          "[player,_sapper,_sound,Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                          "_sapper playMoveNow ""Unconscious"";" \n
                          "" \n
@@ -1329,7 +1329,7 @@ class FSM
                                          "if (diag_tickTime - _lastAlert > 60) then {" \n
                                          "	_lastAlert = diag_tickTime;" \n
                                          "	_sound = ""sapper_groan2"";" \n
-                                         "	_sapper say3D _sound;" \n
+                                         "	_sapper say3D [_sound,1500,1];" \n
                                          "	[player, _sapper,_sound, Epoch_personalToken] remoteExec [""EPOCH_server_handle_say3D"",2];" \n
                                          "};" \n
                                          ""/*%FSM</ACTION""">*/;
