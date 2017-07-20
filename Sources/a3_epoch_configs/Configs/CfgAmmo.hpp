@@ -612,6 +612,37 @@ class CfgAmmo
 		thrust = 0;
 		whistleDist = 0;
 	};
+	class BarrelBomb_EPOCH_Remote_Ammo: PipeBombBase 
+	{
+		author = "DirtySanchez";
+		hit = 3000;
+		indirectHit = 3000;
+		indirectHitRange = 5;
+		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_F.p3d";
+		mineModelDisabled = "\A3\Structures_F\Items\Vessels\MetalBarrel_F.p3d";
+		defaultMagazine = "BarrelBomb_EPOCH_Remote_Mag";
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\bombs\Explosion_satchel_01", 3.16228, 1, 1500};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\bombs\Explosion_satchel_02", 3.16228, 1, 1500};
+		multiSoundHit[] = {"soundHit1", 0.5, "soundHit2", 0.5};
+		ExplosionEffects = "MineNondirectionalExplosion";
+		CraterEffects = "MineNondirectionalCrater";
+		whistleDist = 10;
+		mineInconspicuousness = 3;
+		mineTrigger = "RemoteTrigger";
+		SoundSetExplosion[] = {"ClaymoreMine_Exp_SoundSet", "ClaymoreMine_Tail_SoundSet", "Explosion_Debris_SoundSet"};
+	};
+	class BarrelBomb_EPOCH_Remote_Ammo_Scripted: BarrelBomb_EPOCH_Remote_Ammo 
+	{
+	};
+	class BarrelBomb2_EPOCH_Remote_Ammo: BarrelBomb_EPOCH_Remote_Ammo 
+	{
+		model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
+		mineModelDisabled = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
+		defaultMagazine = "BarrelBomb2_EPOCH_Remote_Mag";
+	};
+	class BarrelBomb2_EPOCH_Remote_Ammo_Scripted: BarrelBomb2_EPOCH_Remote_Ammo 
+	{
+	};
 };
 
 /*[[[end]]]*/
