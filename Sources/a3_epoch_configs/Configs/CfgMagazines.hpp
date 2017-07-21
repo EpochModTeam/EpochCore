@@ -2851,6 +2851,42 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_VehUpgTopSecretRareDoc_desc";
         model = "\x\addons\a3_epoch_community\models\topsecret.p3d";
 	};
+	class BarrelBomb_EPOCH_Remote_Mag: CA_Magazine 
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "Barrel Bomb(Upright)";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MetalBarrel_F.jpg";
+		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_F.p3d";
+		descriptionShort = "Type: BarrelBomb<br />Rounds: 1<br />Used on: Ground";
+		class Library 
+		{
+			libTextDesc = "A Barrel Bomb is a large explosive placeable on the ground. It can be set to detonate either by using the built-in timer or a remote detonator. They are stronger than an explosive charge, capable of destroying whole buildings, but easier to spot.";
+		};
+		descriptionUse = "<t color='#9cf953'>Use: </t>Set Charge";
+		type = "2*		256";
+		allowedSlots[] = {901};
+		value = 5;
+		ammo = "BarrelBomb_EPOCH_Remote_Ammo";
+		mass = 150;
+		count = 1;
+		initSpeed = 0;
+		maxLeadSpeed = 0;
+		nameSoundWeapon = "satchelcharge";
+		nameSound = "satchelcharge";
+		weaponPoolAvailable = 1;
+		useAction = 0;
+		useActionTitle = "Put %1 (%2 left)";
+		sound[] = {"A3\sounds_f\dummysound", 0.000316228, 1, 10};
+	};
+	class BarrelBomb2_EPOCH_Remote_Mag: BarrelBomb_EPOCH_Remote_Mag 
+	{
+		author = "DirtySanchez";
+		displayName = "Barrel Bomb(Horizontal)";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_oildrum_e_CA.paa";
+		model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
+		ammo = "BarrelBomb2_EPOCH_Remote_Ammo";
+	};
 };
 
 /*[[[end]]]*/

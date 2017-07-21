@@ -10600,6 +10600,35 @@ class CfgVehicles
     {
         fuelCapacity = 50000;
     };
+	class MineBase;
+	class BarrelBomb_EPOCH: MineBase 
+	{
+		author = "DirtySanchez";
+		mapSize = 0.43;
+		class SimpleObject
+		{
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = -0.001;
+			verticalOffsetWorld = 0;
+		};
+		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MetalBarrel_F.jpg";
+		_generalMacro = "BarrelBomb_EPOCH";
+		scope = 2;
+		icon = "iconExplosiveGP";
+		ammo = "BarrelBomb_EPOCH_Remote_Ammo";
+		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_F.p3d";
+		displayName = "Barrel Bomb(Upright)";
+		DLC = "Curator";
+	};
+	class BarrelBomb2_EPOCH: BarrelBomb_EPOCH 
+	{
+		author = "DirtySanchez";
+		editorPreview = "\x\addons\a3_epoch_assets_1\pictures\equip_oildrum_e_CA.paa";
+		ammo = "BarrelBomb2_EPOCH_Remote_Ammo";
+		model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
+		displayName = "Barrel Bomb(Horizontal)";
+	};
 };
 
 /*[[[end]]]*/
