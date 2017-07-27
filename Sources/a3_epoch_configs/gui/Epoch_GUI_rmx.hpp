@@ -837,3 +837,10 @@ class rmx_t1
 	tooltipColorBox[]={1,1,1,1};
 	tooltipColorShade[]={0,0,0,0.64999998};
 };
+
+class fav_keymap: RscText
+{
+	//style = 0x00; //align to left
+	style = 0x01; //align to right
+	sizeEx = 0.04;
+};
