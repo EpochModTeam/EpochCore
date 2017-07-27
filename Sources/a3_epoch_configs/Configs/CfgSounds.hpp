@@ -103,6 +103,26 @@ class CfgSounds
 		sound[] = {"\x\addons\a3_epoch_community\sounds\police_siren\police_siren.wav",0.7,1.0};
 		titles[] = {};
 	};
+    class geiger_0
+	{
+		sound[] = {"\x\addons\a3_epoch_community\sounds\digital_geiger\digital_geiger_0.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_1
+	{
+		sound[] = {"\x\addons\a3_epoch_community\sounds\digital_geiger\digital_geiger_1.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_2
+	{
+		sound[] = {"\x\addons\a3_epoch_community\sounds\digital_geiger\digital_geiger_2.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_3
+	{
+		sound[] = {"\x\addons\a3_epoch_community\sounds\digital_geiger\digital_geiger_3.ogg",1.0,1.0};
+		titles[] = {};
+	};
 };
 
 /*[[[end]]]*/
