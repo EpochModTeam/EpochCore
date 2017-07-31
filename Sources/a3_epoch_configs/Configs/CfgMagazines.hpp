@@ -1768,6 +1768,18 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_Copperwireisulatedwithrubber";
         mass = 10;
     };
+	class ItemDuctTape: CA_Magazine
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		scope=2;
+		count=1;
+		type=256;
+		displayName="$STR_EPOCH_DuctTape";
+		model="\A3\structures_f_epa\Items\Tools\DuctTape_F.p3d";
+		picture="\x\addons\a3_epoch_assets_1\pictures\ItemDuctTape.paa";
+		descriptionShort="$STR_EPOCH_RollOfDuctTape";
+		mass=2;
+	};
     class ItemBattery : CA_Magazine
     {
         author = "SteamPunkGears";

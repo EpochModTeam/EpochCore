@@ -967,6 +967,12 @@
         <Key ID="STR_EPOCH_Copperwireisulatedwithrubber">
             <Original>Copper wire isulated with rubber.</Original>
         </Key>
+        <Key ID="STR_EPOCH_DuctTape">
+            <Original>Duct Tape</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RollOfDuctTape">
+            <Original>Roll of Duct Tape.</Original>
+        </Key>
         <Key ID="STR_EPOCH_EnclosedBattery">
             <Original>Enclosed Battery</Original>
         </Key>
