@@ -4531,60 +4531,70 @@ class CfgWeapons
         displayName = "$STR_EPOCH_RadioQuartz";
         channelID = 0;
         channelColor[] = {0.588,0.647,0.729,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioQuartz.paa";
     };
     class EpochRadio1 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioGarnet";
         channelID = 1;
         channelColor[] = {0.314,0.086,0.055,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioGarnet.paa";
     };
     class EpochRadio2 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioCitrine";
         channelID = 2;
         channelColor[] = {0.714,0.306,0.102,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioCitrine.paa";
     };
     class EpochRadio3 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioAmethyst";
         channelID = 3;
         channelColor[] = {0.604,0.396,0.804,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioAmethyst.paa";
     };
     class EpochRadio4 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioTopaz";
         channelID = 4;
         channelColor[] = {0.718,0.494,0.184,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioTopaz.paa";
     };
     class EpochRadio5 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioSapphire";
         channelID = 5;
         channelColor[] = {0.161,0.329,0.792,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioSapphire.paa";
     };
     class EpochRadio6 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioOnyx";
         channelID = 6;
         channelColor[] = {0.4,0.4,0.4,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioObsidian.paa";
     };
     class EpochRadio7 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioEmerald";
         channelID = 7;
         channelColor[] = {0.008,0.596,0.459,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioEmerald.paa";
     };
     class EpochRadio8 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioRuby";
         channelID = 8;
         channelColor[] = {0.835,0.247,0.243,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioRuby.paa";
     };
     class EpochRadio9 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioJade";
         channelID = 9;
         channelColor[] = {0,0.659,0.42,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioJade.paa";
     };
     class speargun_epoch : Rifle_Base_F
     {
