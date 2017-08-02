@@ -10612,12 +10612,12 @@ class CfgVehicles
 			verticalOffset = -0.001;
 			verticalOffsetWorld = 0;
 		};
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MetalBarrel_F.jpg";
+		editorPreview = "\x\addons\a3_epoch_community\textures\barrelbomb_icon_ca.paa";
 		_generalMacro = "BarrelBomb_EPOCH";
 		scope = 2;
 		icon = "iconExplosiveGP";
 		ammo = "BarrelBomb_EPOCH_Remote_Ammo";
-		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_F.p3d";
+		model = "\x\addons\a3_epoch_community\models\barrel_bomb.p3d";
 		displayName = "Barrel Bomb(Upright)";
 		DLC = "Curator";
 	};
