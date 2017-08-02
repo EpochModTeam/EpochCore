@@ -618,8 +618,8 @@ class CfgAmmo
 		hit = 3000;
 		indirectHit = 3000;
 		indirectHitRange = 5;
-		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_F.p3d";
-		mineModelDisabled = "\A3\Structures_F\Items\Vessels\MetalBarrel_F.p3d";
+		model = "\x\addons\a3_epoch_community\models\barrel_bomb.p3d";
+		mineModelDisabled = "\x\addons\a3_epoch_community\models\barrel_bomb.p3d";
 		defaultMagazine = "BarrelBomb_EPOCH_Remote_Mag";
 		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\bombs\Explosion_satchel_01", 3.16228, 1, 1500};
 		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\bombs\Explosion_satchel_02", 3.16228, 1, 1500};

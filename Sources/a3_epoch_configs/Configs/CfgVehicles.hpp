@@ -10612,12 +10612,12 @@ class CfgVehicles
 			verticalOffset = -0.001;
 			verticalOffsetWorld = 0;
 		};
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MetalBarrel_F.jpg";
+		editorPreview = "\x\addons\a3_epoch_community\textures\barrelbomb_icon_ca.paa";
 		_generalMacro = "BarrelBomb_EPOCH";
 		scope = 2;
 		icon = "iconExplosiveGP";
 		ammo = "BarrelBomb_EPOCH_Remote_Ammo";
-		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_F.p3d";
+		model = "\x\addons\a3_epoch_community\models\barrel_bomb.p3d";
 		displayName = "Barrel Bomb(Upright)";
 		DLC = "Curator";
 	};
@@ -10628,6 +10628,38 @@ class CfgVehicles
 		ammo = "BarrelBomb2_EPOCH_Remote_Ammo";
 		model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
 		displayName = "Barrel Bomb(Horizontal)";
+	};
+	class CinderFloor_SIM_EPOCH: Constructions_modular_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\cinderfloor.p3d";
+		displayName = "$STR_EPOCH_CinderFloor";
+		slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+	};
+	class CinderFloor_EPOCH: Const_floors_static_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\cinderfloor.p3d";
+		displayName = "$STR_EPOCH_CinderFloor";
+		armor = 12000;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\cinderfloor_co.paa"};
+		selectionDamage = "zbytek";
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {"x\addons\a3_epoch_assets_1\textures\metal_floor.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
+		};
+	};
+	class CinderFloor_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\cinderfloor_Ghost.p3d";
+		displayName = "$STR_EPOCH_CinderFloorGhost";
+		ladders[] = {};
 	};
 };
 

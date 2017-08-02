@@ -2868,8 +2868,8 @@ class CfgMagazines
 		author = "DirtySanchez";
 		scope = 2;
 		displayName = "Barrel Bomb(Upright)";
-		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MetalBarrel_F.jpg";
-		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_F.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\barrelbomb_icon_ca.jpg";
+		model = "\x\addons\a3_epoch_community\models\barrel_bomb.p3d";
 		descriptionShort = "Type: BarrelBomb<br />Rounds: 1<br />Used on: Ground";
 		class Library 
 		{

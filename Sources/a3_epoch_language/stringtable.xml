@@ -2209,5 +2209,11 @@
 		<Key ID="STR_EPOCH_VehUpgTopSecretRareDoc_desc">
             <Original>This Top Secret and Rare Document will allow special upgrades the server has</Original>
         </Key>
+		<Key ID="STR_EPOCH_CinderFloor">
+            <Original>Cinder Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderFloorGhost">
+            <Original>Cinder Floor Ghost</Original>
+        </Key>
     </Package>
 </Project>
