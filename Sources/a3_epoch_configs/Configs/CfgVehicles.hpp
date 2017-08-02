@@ -10629,6 +10629,38 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
 		displayName = "Barrel Bomb(Horizontal)";
 	};
+	class CinderFloor_SIM_EPOCH: Constructions_modular_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\cinderfloor.p3d";
+		displayName = "$STR_EPOCH_CinderFloor";
+		slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+	};
+	class CinderFloor_EPOCH: Const_floors_static_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\cinderfloor.p3d";
+		displayName = "$STR_EPOCH_CinderFloor";
+		armor = 12000;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\cinderfloor_co.paa"};
+		selectionDamage = "zbytek";
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {"x\addons\a3_epoch_assets_1\textures\metal_floor.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
+		};
+	};
+	class CinderFloor_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\cinderfloor_Ghost.p3d";
+		displayName = "$STR_EPOCH_CinderFloorGhost";
+		ladders[] = {};
+	};
 };
 
 /*[[[end]]]*/
