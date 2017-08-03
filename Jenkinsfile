@@ -1,7 +1,12 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'testing'
+    }
+    
+  }
   stages {
-    stage('') {
+    stage('Release') {
       steps {
         bat 'C:/GITTEMP/release_client.cmd'
       }
