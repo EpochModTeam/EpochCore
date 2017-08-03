@@ -2524,8 +2524,68 @@ class CfgMagazines
         displayName = "$STR_EPOCH_SpareTire";
         descriptionShort = "$STR_EPOCH_Usedtofixablownouttire";
         count = 1;
-        mass = 100;
+        mass = 150;
     };
+	class EngineParts: CA_Magazine
+	{
+		author = "Helion4";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "EngineParts";
+		model = "\x\addons\a3_epoch_community\models\enginespares.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\enginespares_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_EnginePartsDesc";
+		mass = 150;
+	};
+	class EngineBlock: CA_Magazine
+	{
+		author = "Helion4";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "EngineBlock";
+		model = "\x\addons\a3_epoch_community\models\engineblock.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\engineblock_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_EngineBlockDesc";
+		mass = 200;
+	};	
+	class ItemGlass: CA_Magazine
+	{
+		author = "Helion4";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "ItemGlass";
+		model = "\x\addons\a3_epoch_community\models\itemglass.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\itemglass_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_ItemGlassDesc";
+		mass = 50;
+	};
+	class FuelTank: CA_Magazine
+	{
+		author = "Helion4";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "FuelTank";
+		model = "\x\addons\a3_epoch_community\models\fueltank.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\fueltank_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_FuelTankDesc";
+		mass = 100;
+	};
+	class ItemRotor: CA_Magazine
+	{
+		author = "Helion4";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "ItemRotor";
+		model = "\x\addons\a3_epoch_community\models\itemrotor.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\itemroto_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_ItemRotorDesc";
+		mass = 150;
+	};		
 	class 6Rnd_GreenSignal_F;
 	class 6Rnd_BlueSignal_F: 6Rnd_GreenSignal_F
 	{
