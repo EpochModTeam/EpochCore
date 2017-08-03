@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="repair\textures\engineblock\engineblock_nohq.paa";
+	texture="x\addons\a3_epoch_community\textures\engineblock\engineblock_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="repair\textures\engineblock\engineblock_AS.paa";
+	texture="x\addons\a3_epoch_community\textures\engineblock\engineblock_AS.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="repair\textures\engineblock\engineblock_smdi.paa";
+	texture="x\addons\a3_epoch_community\textures\engineblock\engineblock_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
