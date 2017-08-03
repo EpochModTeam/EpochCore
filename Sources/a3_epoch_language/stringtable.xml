@@ -2077,6 +2077,21 @@
         <Key ID="STR_EPOCH_Usedtofixablownouttire">
             <Original>Used to fix a blown out tire.</Original>
         </Key>
+        <Key ID="STR_EPOCH_EnginePartsDesc">
+            <Original>Engine Parts</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EngineBlockDesc">
+            <Original>Engine Block</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ItemGlassDesc">
+            <Original>Spare Glass</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FuelTankDesc">
+            <Original>Fuel Tank</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ItemRotorDesc">
+            <Original>Spare Rotor</Original>
+        </Key>		
         <Key ID="STR_EPOCH_WorkBench">
             <Original>WorkBench</Original>
         </Key>
