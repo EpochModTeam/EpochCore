@@ -2959,6 +2959,42 @@ class CfgMagazines
 		model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
 		ammo = "BarrelBomb2_EPOCH_Remote_Ammo";
 	};
+	class adrenaline_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_Adrenaline";
+		model = "\x\addons\a3_epoch_community\models\adrenaline.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\adrenaline_ca.paa";
+		descriptionShort = "$STR_EPOCH_AdrenalineShotDesc";
+		mass = 1;
+	};
+	class caffeinepills_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_caffeinepills";
+		model = "\x\addons\a3_epoch_community\models\caffeinepills.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\caffeinepills_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_CaffeinePillsDesc";
+		mass = 1;
+	};
+	class orlistat_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_orlistat";
+		model = "\x\addons\a3_epoch_community\models\orlistat.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\orlistat_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_OrlistatDesc";
+		mass = 1;
+	};
 };
 
 /*[[[end]]]*/
