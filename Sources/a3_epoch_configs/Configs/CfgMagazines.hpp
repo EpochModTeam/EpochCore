@@ -2582,7 +2582,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "ItemRotor";
 		model = "\x\addons\a3_epoch_community\models\itemrotor.p3d";
-		picture = "\x\addons\a3_epoch_community\icons\itemroto_icon_ca.paa";
+		picture = "\x\addons\a3_epoch_community\icons\rotor_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_ItemRotorDesc";
 		mass = 150;
 	};		
