@@ -2248,5 +2248,37 @@
 		<Key ID="STR_EPOCH_OrlistatDesc">
             <Original>Step aside Fen/Phen there's a new doctor in town</Original>
         </Key>
+        </Key>
+		<Key ID="STR_EPOCH_Cereals">
+            <Original>Box of Cereal</Original>
+        </Key>
+        </Key>
+		<Key ID="STR_EPOCH_CerealsDesc">
+            <Original>A nutritious box of vitamin and sugar soaked flakes</Original>
+        </Key>
+        </Key>
+		<Key ID="STR_EPOCH_PowderedMilk">
+            <Original>Dry Powder Milk</Original>
+        </Key>
+        </Key>
+		<Key ID="STR_EPOCH_PowderedMilkDesc">
+            <Original>Suggested to add water or liquid before ingestion</Original>
+        </Key>
+        </Key>
+		<Key ID="STR_EPOCH_ItemRiceBox">
+            <Original>Box of Rice</Original>
+        </Key>
+        </Key>
+		<Key ID="STR_EPOCH_ItemRiceBoxDesc">
+            <Original>Boiled up these make great tummy stickers through cold nights</Original>
+        </Key>
+        </Key>
+		<Key ID="STR_EPOCH_ItemVitamins">
+            <Original>Bottle of Vitamins</Original>
+        </Key>
+        </Key>
+		<Key ID="STR_EPOCH_ItemVitaminsDesc">
+            <Original>One of these a day can keep the Sappers away!</Original>
+        </Key>
     </Package>
 </Project>
