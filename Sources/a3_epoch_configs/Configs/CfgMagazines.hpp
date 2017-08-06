@@ -3008,7 +3008,7 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_CerealsDesc";
 		mass = 1;
 	};
-	class ItemPowderMilk_F: CA_Magazine
+	class ItemPowderMilk: CA_Magazine
 	{
 		author = "He-Man/DirtySanchez";
 		scope = 2;
