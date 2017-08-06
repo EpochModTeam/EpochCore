@@ -162,7 +162,7 @@ class CfgFactionClasses
 };
 
 
-#include "\A3\ui_f\hpp\defineCommonGrids.inc"
+#include "\x\addons\a3_epoch_configs\defines\defineCommonGrids.inc"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMissions.hpp"
 
 #include "\x\addons\a3_epoch_configs\Configs\CfgActions.hpp"
@@ -270,8 +270,6 @@ class CraterMetal {
 #include "\x\addons\a3_epoch_configs\Configs\CfgFunctions.hpp"
 //
 #include "\x\addons\a3_epoch_configs\Configs\CfgEpochCoreClientFunctions.hpp"
-
-#include "\A3\ui_f\hpp\defineCommonGrids.inc"
 
 class IGUIBack;
 class RscListBox;
