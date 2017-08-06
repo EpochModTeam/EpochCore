@@ -162,7 +162,7 @@ class CfgFactionClasses
 };
 
 
-#include "\x\addons\a3_epoch_configs\defines\defineCommonGrids.inc"
+#include "\x\addons\a3_epoch_configs\defines\defineCommonGrids.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMissions.hpp"
 
 #include "\x\addons\a3_epoch_configs\Configs\CfgActions.hpp"
