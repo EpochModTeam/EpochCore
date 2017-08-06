@@ -2995,6 +2995,58 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_OrlistatDesc";
 		mass = 1;
 	};
+	class ItemCereals: CA_Magazine
+	{
+		author = "He-Man/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CerealsBox_F.jpg";
+		displayName = "$STR_EPOCH_Cereals";
+		model = "\A3\Structures_F_EPA\Items\Food\CerealsBox_F.p3d";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_CerealsDesc";
+		mass = 1;
+	};
+	class ItemPowderMilk: CA_Magazine
+	{
+		author = "He-Man/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_PowderedMilk_F.jpg";
+		displayName = "$STR_EPOCH_PowderedMilk";
+		model = "\A3\Structures_F_EPA\Items\Food\PowderedMilk_F.p3d";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_PowderedMilkDesc";
+		mass = 1;
+	};
+	class ItemRiceBox: CA_Magazine
+	{
+		author = "He-Man/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_RiceBox_F.jpg";
+		displayName = "$STR_EPOCH_ItemRice";
+		model = "\A3\Structures_F_EPA\Items\Food\RiceBox_F.p3d";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_ItemRiceDesc";
+		mass = 1;
+	};
+	class ItemVitamins: CA_Magazine
+	{
+		author = "He-Man/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_VitaminBottle_F.jpg";
+		displayName = "$STR_EPOCH_Vitamin";
+		model = "\A3\Structures_F_EPA\Items\Medical\VitaminBottle_F.p3d";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_VitaminDesc";
+		mass = 1;
+	};
 };
 
 /*[[[end]]]*/
