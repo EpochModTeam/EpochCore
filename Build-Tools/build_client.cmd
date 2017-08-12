@@ -1,4 +1,4 @@
-REM@Echo Off
+@Echo Off
 SETLOCAL enabledelayedexpansion
 
 REM Workshop IDs:

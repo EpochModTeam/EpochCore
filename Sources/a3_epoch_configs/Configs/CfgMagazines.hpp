@@ -2549,7 +2549,7 @@ class CfgMagazines
 		picture = "\x\addons\a3_epoch_community\icons\engineblock_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_EngineBlockDesc";
 		mass = 200;
-	};	
+	};
 	class ItemGlass: CA_Magazine
 	{
 		author = "Helion4";
@@ -2585,7 +2585,7 @@ class CfgMagazines
 		picture = "\x\addons\a3_epoch_community\icons\itemroto_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_ItemRotorDesc";
 		mass = 150;
-	};		
+	};
 	class 6Rnd_GreenSignal_F;
 	class 6Rnd_BlueSignal_F: 6Rnd_GreenSignal_F
 	{
@@ -2631,7 +2631,7 @@ class CfgMagazines
 		maxLeadSpeed = 200;
 		sound[] = {"",1.0,1};
 		reloadSound[] = {"",0.00031622773,1};
-		nameSound = "cannon";		
+		nameSound = "cannon";
 	};
 	class 500Rnd_127x99_mag: VehicleMagazine
 	{
@@ -2657,7 +2657,7 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_500Rnd127x99reddesc";
 		displaynameshort = "Tracer";
 	};
-	class 500Rnd_127x99_mag_Tracer_Green: 500Rnd_127x99_mag_Tracer_Red 
+	class 500Rnd_127x99_mag_Tracer_Green: 500Rnd_127x99_mag_Tracer_Red
 	{
 		author = "DirtySanchez";
 		ammo = "B_127x99_Ball_Tracer_Green";
@@ -2687,7 +2687,7 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_200Rnd127x99reddesc";
 		displaynameshort = "Tracer";
 	};
-	class 200Rnd_127x99_mag_Tracer_Green: 200Rnd_127x99_mag_Tracer_Red 
+	class 200Rnd_127x99_mag_Tracer_Green: 200Rnd_127x99_mag_Tracer_Red
 	{
 		author = "DirtySanchez";
 		ammo = "B_127x99_Ball_Tracer_Green";
@@ -2730,7 +2730,7 @@ class CfgMagazines
 		displayName = "$STR_EPOCH_100Rnd127x99ylwname";
 		descriptionShort = "$STR_EPOCH_100Rnd127x99ylwdesc";
 	};
-	class 2000Rnd_762x51_Belt: VehicleMagazine 
+	class 2000Rnd_762x51_Belt: VehicleMagazine
 	{
 		author = "DirtySanchez";
 		scope = 2;
@@ -2923,7 +2923,7 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_VehUpgTopSecretRareDoc_desc";
         model = "\x\addons\a3_epoch_community\models\topsecret.p3d";
 	};
-	class BarrelBomb_EPOCH_Remote_Mag: CA_Magazine 
+	class BarrelBomb_EPOCH_Remote_Mag: CA_Magazine
 	{
 		author = "DirtySanchez";
 		scope = 2;
@@ -2931,7 +2931,7 @@ class CfgMagazines
 		picture = "\x\addons\a3_epoch_community\textures\barrelbomb_icon_ca.jpg";
 		model = "\x\addons\a3_epoch_community\models\barrel_bomb.p3d";
 		descriptionShort = "Type: BarrelBomb<br />Rounds: 1<br />Used on: Ground";
-		class Library 
+		class Library
 		{
 			libTextDesc = "A Barrel Bomb is a large explosive placeable on the ground. It can be set to detonate either by using the built-in timer or a remote detonator. They are stronger than an explosive charge, capable of destroying whole buildings, but easier to spot.";
 		};
@@ -2951,7 +2951,7 @@ class CfgMagazines
 		useActionTitle = "Put %1 (%2 left)";
 		sound[] = {"A3\sounds_f\dummysound", 0.000316228, 1, 10};
 	};
-	class BarrelBomb2_EPOCH_Remote_Mag: BarrelBomb_EPOCH_Remote_Mag 
+	class BarrelBomb2_EPOCH_Remote_Mag: BarrelBomb_EPOCH_Remote_Mag
 	{
 		author = "DirtySanchez";
 		displayName = "Barrel Bomb(Horizontal)";
@@ -3004,7 +3004,6 @@ class CfgMagazines
 		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CerealsBox_F.jpg";
 		displayName = "$STR_EPOCH_Cereals";
 		model = "\A3\Structures_F_EPA\Items\Food\CerealsBox_F.p3d";
-		scope = 2;
 		descriptionShort = "$STR_EPOCH_CerealsDesc";
 		mass = 1;
 	};
@@ -3017,7 +3016,6 @@ class CfgMagazines
 		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_PowderedMilk_F.jpg";
 		displayName = "$STR_EPOCH_PowderedMilk";
 		model = "\A3\Structures_F_EPA\Items\Food\PowderedMilk_F.p3d";
-		scope = 2;
 		descriptionShort = "$STR_EPOCH_PowderedMilkDesc";
 		mass = 1;
 	};
@@ -3030,7 +3028,6 @@ class CfgMagazines
 		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_RiceBox_F.jpg";
 		displayName = "$STR_EPOCH_ItemRice";
 		model = "\A3\Structures_F_EPA\Items\Food\RiceBox_F.p3d";
-		scope = 2;
 		descriptionShort = "$STR_EPOCH_ItemRiceDesc";
 		mass = 1;
 	};
@@ -3043,7 +3040,6 @@ class CfgMagazines
 		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_VitaminBottle_F.jpg";
 		displayName = "$STR_EPOCH_Vitamin";
 		model = "\A3\Structures_F_EPA\Items\Medical\VitaminBottle_F.p3d";
-		scope = 2;
 		descriptionShort = "$STR_EPOCH_VitaminDesc";
 		mass = 1;
 	};
