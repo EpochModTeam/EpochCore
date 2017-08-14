@@ -2582,7 +2582,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "ItemRotor";
 		model = "\x\addons\a3_epoch_community\models\itemrotor.p3d";
-		picture = "\x\addons\a3_epoch_community\icons\itemroto_icon_ca.paa";
+		picture = "\x\addons\a3_epoch_community\icons\itemrotor_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_ItemRotorDesc";
 		mass = 150;
 	};
@@ -2928,7 +2928,7 @@ class CfgMagazines
 		author = "DirtySanchez";
 		scope = 2;
 		displayName = "Barrel Bomb(Upright)";
-		picture = "\x\addons\a3_epoch_community\textures\barrelbomb_icon_ca.jpg";
+		picture = "\x\addons\a3_epoch_community\textures\barrelbomb_icon_ca.paa";
 		model = "\x\addons\a3_epoch_community\models\barrel_bomb.p3d";
 		descriptionShort = "Type: BarrelBomb<br />Rounds: 1<br />Used on: Ground";
 		class Library
