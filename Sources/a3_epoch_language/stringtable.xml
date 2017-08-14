@@ -388,7 +388,7 @@
 		<Key ID="STR_EPOCH_40Rnd30mmGdesc">
             <Original>Caliber: 30 mm  - Rounds: 40 DSS - Used in: Static Grenade Launcher</Original>
         </Key>
-		
+
 		<Key ID="STR_EPOCH_mas127x107DSHKMname">
             <Original>DShKM</Original>
         </Key>
@@ -399,7 +399,7 @@
 		<Key ID="STR_EPOCH_mas150Rnd127x107DSHKMdesc">
             <Original>Type: DShKM - Rounds: 150 - Used in: Static Grenade Launcher</Original>
         </Key>
-		
+
         <Key ID="STR_EPOCH_HotwireKit">
             <Original>Hotwire Kit</Original>
         </Key>
@@ -702,6 +702,12 @@
         </Key>
         <Key ID="STR_EPOCH_BioMeatAverygoodsourceofnutritionandaveryhighchanceofinfect96">
             <Original>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BioHazardBag">
+            <Original>Bio Hazard Bag</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BioHazardBagDesc">
+            <Original>A bag full of infected body parts.</Original>
         </Key>
         <Key ID="STR_EPOCH_MeepsCandy">
             <Original>Meeps Candy</Original>
@@ -2091,7 +2097,7 @@
         </Key>
         <Key ID="STR_EPOCH_ItemRotorDesc">
             <Original>Spare Rotor</Original>
-        </Key>		
+        </Key>
         <Key ID="STR_EPOCH_WorkBench">
             <Original>WorkBench</Original>
         </Key>

@@ -931,6 +931,18 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_SecureSafe";
         mass = 50;
     };
+    class ItemBioHazardBag : CA_Magazine
+    {
+        author = "vbgreen,vbawol";
+        scope = 2;
+        count = 1;
+        displayName = "$STR_EPOCH_ItemZombiePartsBag";
+        model = "\x\addons\a3_epoch_assets_1\models\zombie_parts_bag_v2.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_zparts_CA.paa";
+        descriptionShort = "$STR_EPOCH_BioHazardBagDesc";
+        type = 256;
+        mass = 5;
+    };
     class PartPlankPack : CA_Magazine
     {
         author = "Sequisha";
