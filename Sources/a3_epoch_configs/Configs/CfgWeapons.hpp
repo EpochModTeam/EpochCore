@@ -18,6 +18,7 @@ class CfgWeapons
 {
     class InventoryItem_Base_F;
     class ItemCore;
+	class ItemWatch;
     class UniformItem : InventoryItem_Base_F
     {
         scope = 0;
@@ -5905,6 +5906,258 @@ class CfgWeapons
 		maxRangeProbab = 0.1;
 		autoReload = 1;
 		canLock = 0;
+	};
+	class ItemHandyCam_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_HandyCam_F.jpg";
+		model = "a3\structures_f\items\electronics\handycam_f.p3d";
+		displayName = "$STR_EPOCH_HandyCam";
+		descriptionShort = "$STR_EPOCH_HandyCamDesc";
+		class ItemInfo
+		{
+			mass=12;
+		};
+	};
+	class ItemLaptop_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Laptop_unfolded_F.jpg";
+		model="\A3\structures_f\Items\Electronics\Laptop_unfolded_F.p3d";
+		displayName = "$STR_EPOCH_Laptop";
+		descriptionShort = "$STR_EPOCH_LaptopDesc";
+		class ItemInfo
+		{
+			mass=20;
+		};
+	};
+	class ItemMobilePhone_old_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MobilePhone_old_F.jpg";
+		model="\A3\structures_f\Items\Electronics\MobilePhone_old_F.p3d";
+		displayName = "$STR_EPOCH_MobilePhone_old";
+		descriptionShort = "$STR_EPOCH_MobilePhone_oldDesc";
+		class ItemInfo
+		{
+			mass=6;
+		};
+	};
+	class ItemMobilePhone_smart_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MobilePhone_smart_F.jpg";
+		model="\A3\Structures_F\Items\Electronics\MobilePhone_smart_F.p3d";
+		displayName = "$STR_EPOCH_MobilePhone_smart";
+		descriptionShort = "$STR_EPOCH_MobilePhone_smartDesc";
+		class ItemInfo
+		{
+			mass=6;
+		};
+	};
+	class ItemPortableLongRangeRadio_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_PortableLongRangeRadio_F.jpg";
+		model="\A3\structures_f\Items\Electronics\PortableLongRangeRadio_F.p3d";
+		displayName = "$STR_EPOCH_PortableLongRangeRadio";
+		descriptionShort = "$STR_EPOCH_PortableLongRangeRadioDesc";
+		class ItemInfo
+		{
+			mass=8;
+		};
+	};
+	class ItemSatellitePhone_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_SatellitePhone_F.jpg";
+		model="\A3\structures_f\Items\Electronics\SatellitePhone_F.p3d";
+		displayName = "$STR_EPOCH_SatellitePhone";
+		descriptionShort = "$STR_EPOCH_SatellitePhoneDesc";
+		class ItemInfo
+		{
+			mass=40;
+		};
+	};
+	class ItemDrillAku_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_DrillAku_F.jpg";
+		model="\A3\structures_f\Items\Tools\DrillAku_F.p3d";
+		displayName="$STR_EPOCH_DrillAku";
+		descriptionShort="$STR_EPOCH_DrillAkuDesc";
+		class ItemInfo
+		{
+			mass=10;
+		};
+	};
+	class ItemMultiMeter_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MultiMeter_F.jpg";
+		model="\A3\Structures_F\Items\Tools\MultiMeter_F.p3d";
+		displayName="$STR_EPOCH_MultiMeter";
+		descriptionShort="$STR_EPOCH_MultiMeterDesc";
+		class ItemInfo
+		{
+			mass=8;
+		};
+	};
+	class ItemPliers_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Pliers_F.jpg";
+		model="\A3\structures_f\Items\Tools\Pliers_F.p3d";
+		displayName="$STR_EPOCH_Pliers";
+		descriptionShort="$STR_EPOCH_PliersDesc";
+		class ItemInfo
+		{
+			mass=5;
+		};
+	};
+	class ItemSaw_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Saw_F.jpg";
+		model="\A3\structures_f\Items\Tools\Saw_F.p3d";
+		displayName="$STR_EPOCH_Saw";
+		descriptionShort="$STR_EPOCH_SawDesc";
+		class ItemInfo
+		{
+			mass=8;
+		};
+	};
+	class ItemScrewdriver_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Screwdriver_V1_F.jpg";
+		model="\A3\structures_f\Items\Tools\Screwdriver_V1_F.p3d";
+		displayName="$STR_EPOCH_Screwdriver";
+		descriptionShort="$STR_EPOCH_ScrewdriverDesc";
+		class ItemInfo
+		{
+			mass=5;
+		};
+	};
+	class ItemWrench_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Wrench_F.jpg";
+		model="\A3\Structures_F\Items\Tools\Wrench_F.p3d";
+		displayName="$STR_EPOCH_Wrench";
+		descriptionShort="$STR_EPOCH_WrenchDesc";
+		class ItemInfo
+		{
+			mass=7;
+		};
+	};
+	class ItemDefibrillator_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Defibrillator_F.jpg";
+		model="\A3\structures_f_epa\Items\Medical\Defibrillator_F.p3d";
+		displayName="$STR_EPOCH_Defibrillator";
+		descriptionShort="$STR_EPOCH_DefibrillatorDesc";
+		class ItemInfo
+		{
+			mass=30;
+		};
+	};
+	class ItemCanOpener_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CanOpener_F.jpg";
+		model="\A3\Structures_F_EPA\Items\Tools\CanOpener_F.p3d";
+		displayName="$STR_EPOCH_CanOpener";
+		descriptionShort="$STR_EPOCH_CanOpenerDesc";
+		class ItemInfo
+		{
+			mass=8;
+		};
+	};
+	class ItemFireExtinguisher_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_FireExtinguisher_F.jpg";
+		model="\A3\structures_f_epa\Items\Tools\FireExtinguisher_F.p3d";
+		displayName="$STR_EPOCH_FireExtinguisher";
+		descriptionShort="$STR_EPOCH_FireExtinguisherDesc";
+		class ItemInfo
+		{
+			mass=30;
+		};
+	};
+	class ItemShovel_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Shovel_F.jpg";
+		model="\A3\Structures_F_epa\Items\Tools\Shovel_F.p3d";
+		displayName="$STR_EPOCH_Shovel";
+		descriptionShort="$STR_EPOCH_ShovelDesc";
+		class ItemInfo
+		{
+			mass=10;
+		};
+	};
+	class ItemTinContainer_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_TinContainer_F.jpg";
+		model="a3\structures_f_epa\items\vessels\tincontainer_f.p3d";
+		displayName="$STR_EPOCH_TinContainer";
+		descriptionShort="$STR_EPOCH_TinContainerDesc";
+		class ItemInfo
+		{
+			mass=6;
+		};
+	};
+	class ItemCampingLight_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Camping_Light_F.jpg";
+		model = "a3\structures_f_epb\civ\camping\camping_light_f.p3d";
+		displayName="$STR_EPOCH_CampingLight";
+		descriptionShort="$STR_EPOCH_CampingLightDesc";
+		class ItemInfo
+		{
+			mass=12;
+		};
 	};
 };
 

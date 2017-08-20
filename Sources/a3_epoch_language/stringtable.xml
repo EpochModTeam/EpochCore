@@ -2038,6 +2038,318 @@
         <Key ID="STR_EPOCH_RadioJade">
             <Original>Radio (Jade)</Original>
         </Key>
+        <Key ID="STR_EPOCH_Antibiotic">
+            <Original>Antibiotic</Original>
+        </Key>
+        <Key ID="STR_EPOCH_AntibioticDesc">
+            <Original>Antibiotic</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Knife">
+            <Original>Knife</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KnifeDesc">
+            <Original>Used to cut things</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Rubber">
+            <Original>Rubber</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RubberDesc">
+            <Original>Some Rubber for Crafting</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HumanSkull">
+            <Original>Human Skull</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HumanSkullDesc">
+            <Original>A Human Skull</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ExtensionCord">
+            <Original>Extension Cord</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ExtensionCordDesc">
+            <Original>An Extension Cord</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HandyCam">
+            <Original>Handy Cam</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HandyCamDesc">
+            <Original>A small Camera</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Laptop">
+            <Original>Laptop</Original>
+        </Key>
+        <Key ID="STR_EPOCH_LaptopDesc">
+            <Original>A Laptop</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MobilePhone_old">
+            <Original>Mobile Phone (old)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MobilePhone_oldDesc">
+            <Original>An old Mobile Phone</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MobilePhone_smart">
+            <Original>Mobile Phone (Smartphone)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MobilePhone_smartDesc">
+            <Original>A Smartphone</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PortableGenerator">
+            <Original>Portable Generator</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PortableGeneratorDesc">
+            <Original>A Generator to produce electrical power</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PortableLongRangeRadio">
+            <Original>Portable Longrange-Radio</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PortableLongRangeRadioDesc">
+            <Original>A Portable Longrange-Radio</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SatellitePhone">
+            <Original>Satellite Phone</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SatellitePhoneDesc">
+            <Original>A Phone to make calls over Satellites</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SurivalRadio">
+            <Original>Survival Radio</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SurivalRadioDesc">
+            <Original>A robust Survival Radio</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_Empty">
+            <Original>Plastic Bottle (empty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_EmptyDesc">
+            <Original>Empty Plastic Bottle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_Dirty">
+            <Original>Plastic Bottle (dirty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_DirtyDesc">
+            <Original>Full Plastic Bottle filled with dirty water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_Clean">
+            <Original>Plastic Bottle (clean)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_CleanDesc">
+            <Original>Full Plastic Bottle filled with clean water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Suitcase">
+            <Original>Suitcase</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SuitcaseDesc">
+            <Original>A Suitcase</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PenBlack">
+            <Original>Pen (Black)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PenBlackDesc">
+            <Original>A Black Pen</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DrillAku">
+            <Original>Drill</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DrillAkuDesc">
+            <Original>A tool for drilling holes</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Grinder">
+            <Original>Grinder</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GrinderDesc">
+            <Original>A tool for grinding Metal</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Hammer">
+            <Original>Hammer</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HammerDesc">
+            <Original>A tool for hammering</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Meter3m">
+            <Original>Measuring Tape</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Meter3mDesc">
+            <Original>A tool for measuring</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MultiMeter">
+            <Original>Multimeter</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MultiMeterDesc">
+            <Original>A tool for measuring Voltage</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Pliers">
+            <Original>Pliers</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PliersDesc">
+            <Original>A tool for everything</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Saw">
+            <Original>Saw</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SawDesc">
+            <Original>A tool for cutting Wood</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Screwdriver">
+            <Original>Screwdriver</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ScrewdriverDesc">
+            <Original>A tool for small screws</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Wrench">
+            <Original>Wrench</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WrenchDesc">
+            <Original>A tool for big screws</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Money">
+            <Original>Money</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MoneyDesc">
+            <Original>A pack of money</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CanisterOil">
+            <Original>Canister Oil</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CanisterOilDesc">
+            <Original>A Canister with Oil</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Battery">
+            <Original>Battery</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BatteryDesc">
+            <Original>A small Battery</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BakedBeans">
+            <Original>Baked Beans</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BakedBeansDesc">
+            <Original>A tin with Baked Beans</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_Empty">
+            <Original>Canteen (empty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_EmptyDesc">
+            <Original>An empty Canteen</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_Dirty">
+            <Original>Canteen (dirty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_DirtyDesc">
+            <Original>A Canteen full of dirty water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_Clean">
+            <Original>Canteen (clean)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_CleanDesc">
+            <Original>A Canteen full of clean water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bandage">
+            <Original>Bandage</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BandageDesc">
+            <Original>Used to cover smaller wounds</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bloodbag_Empty">
+            <Original>Bloodbag (empty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bloodbag_EmptyDesc">
+            <Original>An empty Bloodbag</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bloodbag_Full">
+            <Original>Bloodbag (full)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bloodbag_FullDesc">
+            <Original>A Bloodbag filled with Blood</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Defibrillator">
+            <Original>Defibrillator</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DefibrillatorDesc">
+            <Original>Used to reanimate a person</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DisinfectantSpray">
+            <Original>Disinfectant</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DisinfectantSprayDesc">
+            <Original>Used for disinfecting wounds and clothings</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PainKillers">
+            <Original>Painkillers</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PainKillersDesc">
+            <Original>Used for reduce your Pain</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WaterPurificationTablets">
+            <Original>WaterPurification</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WaterPurificationTabletsDesc">
+            <Original>Tablets to clarify Water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ButaneCanister">
+            <Original>Butane Canister</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ButaneCanisterDesc">
+            <Original>Butane Canister</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ButaneTorch">
+            <Original>Butane Torch</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ButaneTorchDesc">
+            <Original>Butane Torch</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CanOpener">
+            <Original>Can Opener</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CanOpenerDesc">
+            <Original>A tool to open cans</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FireExtinguisher">
+            <Original>Fire Extinguisher</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FireExtinguisherDesc">
+            <Original>Used to extinguish fires</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GasCanister">
+            <Original>Gas Canister</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GasCanisterDesc">
+            <Original>A Canister filles with Gas</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GasCooker">
+            <Original>Gas Cooker</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GasCookerDesc">
+            <Original>Used to cook Foods</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Matches">
+            <Original>Matches</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MatchesDesc">
+            <Original>Used to light a Fire</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalWire">
+            <Original>Metal Wire</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalWireDesc">
+            <Original>A strong metal wire</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Shovel">
+            <Original>Shovel</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ShovelDesc">
+            <Original>A tool for digging</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TinContainer">
+            <Original>Tin Container</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TinContainerDesc">
+            <Original>Used to hold Tins</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CampingLight">
+            <Original>Camping Light</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CampingLightDesc">
+            <Original>A small Camping Light</Original>
+        </Key>
         <Key ID="STR_EPOCH_Speargun">
             <Original>Speargun</Original>
         </Key>
