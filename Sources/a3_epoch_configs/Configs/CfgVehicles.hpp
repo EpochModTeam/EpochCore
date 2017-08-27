@@ -10661,6 +10661,26 @@ class CfgVehicles
 		displayName = "$STR_EPOCH_CinderFloorGhost";
 		ladders[] = {};
 	};
+	class Wreck_base_F;
+	class Land_Wreck_Satellite_EPOCH: Wreck_base_F
+	{
+		author = "Helion4/DirtySanchez";
+		mapSize = 4.91;
+		class SimpleObject
+		{
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.727;
+			verticalOffsetWorld = 0;
+		};
+		editorPreview = "";
+		_generalMacro = "Land_Wreck_Satellite_EPOCH";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_SatelliteWreckName";
+		model = "\x\addons\a3_epoch_community\models\satellite.p3d";
+		icon = "iconObject_1x2";
+	};
 };
 
 /*[[[end]]]*/
