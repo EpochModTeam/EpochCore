@@ -10662,7 +10662,7 @@ class CfgVehicles
 		ladders[] = {};
 	};
 	class Wreck_base_F;
-	class Land_Wreck_Satelite_EPOCH: Wreck_base_F
+	class Land_Wreck_Satellite_EPOCH: Wreck_base_F
 	{
 		author = "Helion4/DirtySanchez";
 		mapSize = 4.91;
@@ -10674,11 +10674,11 @@ class CfgVehicles
 			verticalOffsetWorld = 0;
 		};
 		editorPreview = "";
-		_generalMacro = "Land_Wreck_Satelite_EPOCH";
+		_generalMacro = "Land_Wreck_Satellite_EPOCH";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "$STR_EPOCH_SateliteWreckName";
-		model = "\x\addons\a3_epoch_community\models\satelite.p3d";
+		displayName = "$STR_EPOCH_SatelliteWreckName";
+		model = "\x\addons\a3_epoch_community\models\satellite.p3d";
 		icon = "iconObject_1x2";
 	};
 };

@@ -2590,8 +2590,8 @@
 		<Key ID="STR_EPOCH_ItemVitaminsDesc">
             <Original>One of these a day can keep the Sappers away!</Original>
         </Key>
-		<Key ID="STR_EPOCH_SateliteWreckName">
-            <Original>Crashed Satelite</Original>
+		<Key ID="STR_EPOCH_SatelliteWreckName">
+            <Original>Crashed Satellite</Original>
         </Key>
     </Package>
 </Project>
