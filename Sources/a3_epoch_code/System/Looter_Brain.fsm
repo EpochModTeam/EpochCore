@@ -506,7 +506,7 @@ class FSM
        "_bldMap = _bldMap -  [_closestBld];" \n
        "} forEach _bldMap;" \n
        "" \n
-       "_bldMap = [] + _sortBuilds;" \n
+       "_bldMap = +_sortBuilds;" \n
        "_moveTo = _sortBuilds select 0;" \n
        "_bldMap set [0,""byebye""];" \n
        "_bldMap = _bldMap - [""byebye""];" \n
@@ -724,7 +724,7 @@ class FSM
            "};" \n
            "" \n
            "" \n
-           "_lLastPos = [] + _sanityPos;" \n
+           "_lLastPos = +_sanityPos;" \n
            "_sanityCheck = 20;" \n
            ""/*%FSM</ACTION""">*/;
         };

@@ -86,7 +86,7 @@ class FSM
                                         condition="!(_moveTo isEqualTo _nextPos)";
                                         action="_doMove = true;" \n
                                          "_decisionMade = true;" \n
-                                         "_moveTo = [] + _nextPos;" \n
+                                         "_moveTo = +_nextPos;" \n
                                          "";
                                 };
                         };
