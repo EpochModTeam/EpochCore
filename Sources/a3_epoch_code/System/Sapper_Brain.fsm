@@ -667,9 +667,9 @@ class FSM
                                         to="find_nest";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"_doNest;"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/"_nrBuilds = nearestObjects [getPos _sapper,[""house""],500];" \n
+                                        action=/*%FSM<ACTION""">*/"_nrBuilds = nearestObjects [_sapper,[""house""],500];" \n
                                          "_nrBuild = nearestBuilding _sapper;" \n
-                                         "_jammers = nearestObjects[position _sapper, [""PlotPole_EPOCH""], _jammerRange];" \n
+                                         "_jammers = nearestObjects[_sapper, [""PlotPole_EPOCH""], _jammerRange];" \n
                                          "_arrNest = [];" \n
                                          "_nestFind = 0;" \n
                                          "_s = diag_tickTime;" \n

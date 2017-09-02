@@ -753,7 +753,7 @@ class FSM
     class create_map
     {
       name = "create_map";
-      init = /*%FSM<STATEINIT""">*/"_nrBuilds = nearestObjects [getPosATL _looter,[""house""],50];" \n
+      init = /*%FSM<STATEINIT""">*/"_nrBuilds = nearestObjects [_looter,[""house""],50];" \n
        "" \n
        "_strDebug = _strDebug +  format [""Found %1 Buildings\n"",count _nrBuilds];" \n
        "" \n
