@@ -2593,5 +2593,11 @@
 		<Key ID="STR_EPOCH_SatelliteWreckName">
             <Original>Crashed Satellite</Original>
         </Key>
+		<Key ID="STR_EPOCH_SmeltingToolsName">
+            <Original>Smelting Tools</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SmeltingToolsDesc">
+            <Original>Used for melting down metals for blades, bullets, precious metals and more</Original>
+		</Key>
     </Package>
 </Project>

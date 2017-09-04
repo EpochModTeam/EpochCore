@@ -3666,6 +3666,17 @@ class CfgMagazines
 		descriptionShort="$STR_EPOCH_CampingLightDesc";
 		mass=12;
 	};
+	class SmeltingTools_EPOCH: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		mass = 20;
+		model = "\x\addons\a3_epoch_community\models\smelting.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\smelting\smelting_icon_ca.paa";
+		displayName = "$STR_EPOCH_SmeltingToolsName";
+		descriptionShort = "$STR_EPOCH_SmeltingToolsDesc";
+	};
 };
 
 /*[[[end]]]*/
