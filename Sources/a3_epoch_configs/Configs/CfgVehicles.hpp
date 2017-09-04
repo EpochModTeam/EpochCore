@@ -10681,6 +10681,26 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_community\models\satellite.p3d";
 		icon = "iconObject_1x2";
 	};
+	class Item_ItemGPS;
+	class Item_ItemGeigerCounter_EPOCH: Item_ItemGPS
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_ItemGeigerName";
+		author = "Helion4/DirtySanchez";
+		editorCategory = "EdCat_Equipment";
+		editorSubcategory = "EdSubcat_InventoryItems";
+		vehicleClass = "Items";
+		class TransportItems
+		{
+			class ItemGeigerCounter_EPOCH
+			{
+				name = "ItemGeigerCounter_EPOCH";
+				count = 1;
+			};
+		};
+	};
+
 };
 
 /*[[[end]]]*/

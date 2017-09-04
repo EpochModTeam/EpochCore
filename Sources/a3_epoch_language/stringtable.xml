@@ -2599,5 +2599,16 @@
 		<Key ID="STR_EPOCH_SmeltingToolsDesc">
             <Original>Used for melting down metals for blades, bullets, precious metals and more</Original>
 		</Key>
+		<Key ID="STR_EPOCH_ItemGeigerName">
+            <Original>Geiger Counter</Original>
+			<Czech>Geigerův počítač</Czech>
+			<German>Geigerzähler</German>
+            <French>Compteur Geiger</French>
+            <Italian>Contatore Geiger</Italian>
+            <Polish>Licznik Geigera</Polish>
+            <Portuguese>Contador Geiger</Portuguese>
+			<Spanish>Contador Geiger</Spanish>
+			<Russian>Счетчик Гейгера</Russian>
+        </Key>
     </Package>
 </Project>
