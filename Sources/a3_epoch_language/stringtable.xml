@@ -2610,5 +2610,11 @@
 			<Spanish>Contador Geiger</Spanish>
 			<Russian>Счетчик Гейгера</Russian>
         </Key>
+		<Key ID="STR_EPOCH_atropine">
+            <Original>Atropine Shot</Original>
+        </Key>
+		<Key ID="STR_EPOCH_AtropineShotDesc">
+            <Original>Used to treat certain types of nerve agent and pesticide poisonings</Original>
+        </Key>
     </Package>
 </Project>

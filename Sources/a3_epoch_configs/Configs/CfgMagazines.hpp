@@ -3671,11 +3671,24 @@ class CfgMagazines
 		author = "Helion4/DirtySanchez";
 		scope = 2;
 		count = 1;
-		mass = 20;
+		type = 256;
 		model = "\x\addons\a3_epoch_community\models\smelting.p3d";
 		picture = "\x\addons\a3_epoch_community\textures\smelting\smelting_icon_ca.paa";
 		displayName = "$STR_EPOCH_SmeltingToolsName";
 		descriptionShort = "$STR_EPOCH_SmeltingToolsDesc";
+		mass = 20;
+	};
+	class atropine_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_atropine";
+		model = "\x\addons\a3_epoch_community\models\atropine.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\atropine\atropine_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_AtropineShotDesc";
+		mass = 1;
 	};
 };
 
