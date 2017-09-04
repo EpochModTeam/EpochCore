@@ -4088,7 +4088,7 @@ class CfgVehicles
 	class C_Hatchback_01_EPOCH1: C_Hatchback_01_EPOCH
 	{
 		author = "DirtySanchez";
-		
+
 		terrainCoef = 4.0;
 		brakeDistance = 3.2;
 		acceleration 	= 16;
@@ -4155,7 +4155,7 @@ class CfgVehicles
 			class HitEngine: HitEngine {
 				armor = 1;
 				passThrough = 0.4;
-				explosionShielding = 0.25; 
+				explosionShielding = 0.25;
 			};
 			class HitBody: HitBody {
 				armor = 1.5;
@@ -4271,7 +4271,7 @@ class CfgVehicles
 	class C_Hatchback_02_EPOCH1: C_Hatchback_02_EPOCH
 	{
 		author = "DirtySanchez";
-		
+
 		terrainCoef = 4.0;
 		brakeDistance = 4.75;
 		acceleration = 16;
@@ -4545,7 +4545,7 @@ class CfgVehicles
 			};
 			class HitGlass1: HitGlass1 {
 				armor = 0.35;
-				explosionShielding = 1.5; 
+				explosionShielding = 1.5;
 			};
 			class HitGlass2: HitGlass2 {
 				armor = 0.35;
@@ -4728,7 +4728,7 @@ class CfgVehicles
 		peakTorque = 750;
 		idleRpm = 850;
 		redRpm = 6250;
-		class HitPoints: HitPoints 
+		class HitPoints: HitPoints
 		{
 			class HitLFWheel;
 			class HitLF2Wheel;
@@ -4762,7 +4762,7 @@ class CfgVehicles
 		armor = 100;
 		armorLights = 0.1;
 		crewCrashProtection	= 1.5;
-		class HitPoints: HitPoints 
+		class HitPoints: HitPoints
 		{
 			class HitLFWheel: HitLFWheel {
 				armor = 0.9;
@@ -5098,7 +5098,7 @@ class CfgVehicles
 				condition = "this animationPhase 'BeaconsStart' < 0.5 AND Alive(this) AND driver this == player";
 				statement = "if(isNil 'EPOCH_Siren')then{EPOCH_Siren = 0;}; this animate ['BeaconsStart',1]; if(diag_tickTime > EPOCH_Siren + 31)then{vehicle player say3d 'police_siren'; EPOCH_Siren = diag_tickTime;};";
 			};
-			class beacons_stop: beacons_start 
+			class beacons_stop: beacons_start
 			{
 				userActionID = 51;
 				displayName = "Beacons Off";
@@ -5440,7 +5440,7 @@ class CfgVehicles
 		crewCrashProtection	= 1.5;
 		class HitPoints: HitPoints
 		{
-			class HitLFWheel: HitLFWheel 
+			class HitLFWheel: HitLFWheel
 			{
 				armor = 0.75;
 				explosionShielding = 3.5;
@@ -5542,7 +5542,7 @@ class CfgVehicles
 		};
 	};
 	class B_MRAP_01_EPOCH3 : B_MRAP_01_EPOCH
-    {	
+    {
 		author = "DirtySanchez";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
@@ -5699,7 +5699,7 @@ class CfgVehicles
 		armor = 100;
 		armorLights = 0.45;
 		crewCrashProtection	= 1.5;
-		class HitPoints: HitPoints 
+		class HitPoints: HitPoints
 		{
 			class HitLFWheel: HitLFWheel {
 				armor = 0.75;
@@ -5808,7 +5808,7 @@ class CfgVehicles
 		};
 	};
 	class O_MRAP_02_EPOCH3 : O_MRAP_02_EPOCH2
-    {	
+    {
 		author = "DirtySanchez";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
@@ -5969,7 +5969,7 @@ class CfgVehicles
 		crewCrashProtection	= 1.5;
 		class HitPoints: HitPoints
 		{
-			class HitLFWheel: HitLFWheel 
+			class HitLFWheel: HitLFWheel
 			{
 				armor = 0.75;
 				explosionShielding = 3.5;
@@ -6071,7 +6071,7 @@ class CfgVehicles
 		};
 	};
 	class I_MRAP_03_EPOCH3 : I_MRAP_03_EPOCH2
-    {	
+    {
 		author = "DirtySanchez";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
@@ -7928,6 +7928,20 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_assets\models\tp.p3d";
         displayName = "$STR_EPOCH_TipiSim";
     };
+	class TentA_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Sequisha";
+        scope = 2;
+        model = "\A3\Structures\Civ\Camping\TentA_F.p3d";
+        displayName = "$STR_EPOCH_TentA";
+    };
+	class TentDome_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Sequisha";
+        scope = 2;
+        model = "\A3\Structures\Civ\Camping\TentDome_F.p3d";
+        displayName = "$STR_EPOCH_TentDome";
+    };
     class Shelf_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
@@ -8785,6 +8799,22 @@ class CfgVehicles
         displayName = "$STR_EPOCH_TiPiGhost";
         ladders[] = {};
     };
+	class TentA_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "BI";
+        scope = 2;
+        model = "\A3\Structures\Civ\Camping\TentA_F.p3d";
+        displayName = "$STR_EPOCH_TentA";
+        ladders[] = {};
+    };
+	class TentDome_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "BI";
+        scope = 2;
+        model = "\A3\Structures\Civ\Camping\TentDome_F.p3d";
+        displayName = "$STR_EPOCH_TentDome";
+        ladders[] = {};
+    };
     class StorageShelf_Ghost_EPOCH : Const_Ghost_EPOCH
     {
         author = "Sequisha";
@@ -9277,6 +9307,22 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Tipi";
         maximumLoad = 1200;
     };
+	class TentA_EPOCH : Buildable_Storage
+	{
+		author = "BI";
+		scope = 2;
+		model = "\A3\Structures\Civ\Camping\TentA_F.p3d";
+		displayName = "$STR_EPOCH_TentA";
+		maximumLoad = 800;
+	};
+	class TentDome_EPOCH : Buildable_Storage
+	{
+		author = "BI";
+		scope = 2;
+		model = "\A3\Structures\Civ\Camping\TentDome_F.p3d";
+		displayName = "$STR_EPOCH_TentDome";
+		maximumLoad = 1200;
+	};
     class StorageShelf_EPOCH : Buildable_Storage
     {
         author = "Sequisha";
@@ -10601,7 +10647,7 @@ class CfgVehicles
         fuelCapacity = 50000;
     };
 	class MineBase;
-	class BarrelBomb_EPOCH: MineBase 
+	class BarrelBomb_EPOCH: MineBase
 	{
 		author = "DirtySanchez";
 		mapSize = 0.43;
@@ -10621,7 +10667,7 @@ class CfgVehicles
 		displayName = "Barrel Bomb(Upright)";
 		DLC = "Curator";
 	};
-	class BarrelBomb2_EPOCH: BarrelBomb_EPOCH 
+	class BarrelBomb2_EPOCH: BarrelBomb_EPOCH
 	{
 		author = "DirtySanchez";
 		editorPreview = "\x\addons\a3_epoch_assets_1\pictures\equip_oildrum_e_CA.paa";
@@ -10742,7 +10788,7 @@ class CfgVehicles
 				animPeriod = 3;
 				initPhase = 0;
 				sound = "ServoDoorsSound";
-			};			
+			};
 		};
 		class UserActions
 		{

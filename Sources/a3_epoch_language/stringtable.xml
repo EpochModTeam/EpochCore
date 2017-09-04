@@ -1732,6 +1732,12 @@
         <Key ID="STR_EPOCH_Tipi">
             <Original>Tipi</Original>
         </Key>
+		<Key ID="STR_EPOCH_TentA">
+        	<Original>A small one-person tent</Original>
+    	</Key>
+		<Key ID="STR_EPOCH_TentDome">
+        	<Original>A roomier camping tent</Original>
+    	</Key>
         <Key ID="STR_EPOCH_MetalShelf">
             <Original>Metal Shelf</Original>
         </Key>
