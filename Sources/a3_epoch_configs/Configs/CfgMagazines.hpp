@@ -2966,7 +2966,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "$STR_EPOCH_Adrenaline";
 		model = "\x\addons\a3_epoch_community\models\adrenaline.p3d";
-		picture = "\x\addons\a3_epoch_community\textures\adrenaline_ca.paa";
+		picture = "\x\addons\a3_epoch_community\textures\adrenaline\adrenaline_ca.paa";
 		descriptionShort = "$STR_EPOCH_AdrenalineShotDesc";
 		mass = 1;
 	};
