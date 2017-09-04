@@ -10612,7 +10612,7 @@ class CfgVehicles
 			verticalOffset = -0.001;
 			verticalOffsetWorld = 0;
 		};
-		editorPreview = "\x\addons\a3_epoch_community\textures\barrelbomb_icon_ca.paa";
+		editorPreview = "\x\addons\a3_epoch_community\textures\barrelbomb\barrelbomb_icon_ca.paa";
 		_generalMacro = "BarrelBomb_EPOCH";
 		scope = 2;
 		icon = "iconExplosiveGP";
@@ -10645,7 +10645,7 @@ class CfgVehicles
 		displayName = "$STR_EPOCH_CinderFloor";
 		armor = 12000;
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\cinderfloor_co.paa"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\cinderfloor\cinderfloor_co.paa"};
 		selectionDamage = "zbytek";
 		class Damage
 		{

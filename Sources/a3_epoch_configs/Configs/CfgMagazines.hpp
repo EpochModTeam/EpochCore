@@ -2927,7 +2927,7 @@ class CfgMagazines
 		author = "DirtySanchez";
 		scope = 2;
 		displayName = "Barrel Bomb(Upright)";
-		picture = "\x\addons\a3_epoch_community\textures\barrelbomb_icon_ca.paa";
+		picture = "\x\addons\a3_epoch_community\textures\barrelbomb\barrelbomb_icon_ca.paa";
 		model = "\x\addons\a3_epoch_community\models\barrel_bomb.p3d";
 		descriptionShort = "Type: BarrelBomb<br />Rounds: 1<br />Used on: Ground";
 		class Library
@@ -2966,7 +2966,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "$STR_EPOCH_Adrenaline";
 		model = "\x\addons\a3_epoch_community\models\adrenaline.p3d";
-		picture = "\x\addons\a3_epoch_community\textures\adrenaline_ca.paa";
+		picture = "\x\addons\a3_epoch_community\textures\adrenaline\adrenaline_ca.paa";
 		descriptionShort = "$STR_EPOCH_AdrenalineShotDesc";
 		mass = 1;
 	};
@@ -2978,7 +2978,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "$STR_EPOCH_caffeinepills";
 		model = "\x\addons\a3_epoch_community\models\caffeinepills.p3d";
-		picture = "\x\addons\a3_epoch_community\textures\caffeinepills_icon_ca.paa";
+		picture = "\x\addons\a3_epoch_community\textures\caffeinepills\caffeinepills_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_CaffeinePillsDesc";
 		mass = 1;
 	};
@@ -2990,7 +2990,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "$STR_EPOCH_orlistat";
 		model = "\x\addons\a3_epoch_community\models\orlistat.p3d";
-		picture = "\x\addons\a3_epoch_community\textures\orlistat_icon_ca.paa";
+		picture = "\x\addons\a3_epoch_community\textures\orlistat\orlistat_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_OrlistatDesc";
 		mass = 1;
 	};
