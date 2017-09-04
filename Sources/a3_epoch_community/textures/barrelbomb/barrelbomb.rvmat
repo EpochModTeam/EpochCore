@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="x\addons\a3_epoch_community\textures\barrel_bomb_nohq.paa";
+	texture="x\addons\a3_epoch_community\textures\barrelbomb\barrel_bomb_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
