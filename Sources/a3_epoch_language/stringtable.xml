@@ -2616,5 +2616,35 @@
 		<Key ID="STR_EPOCH_AtropineShotDesc">
             <Original>Used to treat certain types of nerve agent and pesticide poisonings</Original>
         </Key>
+		<Key ID="STR_EPOCH_KryptoCandyName">
+            <Original>100 Krypto Candy</Original>
+		</Key>
+		<Key ID="STR_EPOCH_KryptoCandyDesc">
+            <Original>This beats a Snackers anyday. Gimme a break...</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BluKingBurgerName">
+            <Original>BluKing Burger</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BluKingBurgerDesc">
+            <Original>BluKing makes a mighty meal outta the finest meats</Original>
+		</Key>
+		<Key ID="STR_EPOCH_RedKingBurgerName">
+            <Original>RedKing Burger</Original>
+		</Key>
+		<Key ID="STR_EPOCH_RedKingBurgerDesc">
+            <Original>RedKing picks up our leftovers for the best Sapper Burger in your life</Original>
+		</Key>
+		<Key ID="STR_EPOCH_GyroWrapName">
+            <Original>Gyro Wrap</Original>
+		</Key>
+		<Key ID="STR_EPOCH_GyroWrapDesc">
+            <Original>Gyro's from the farthest reaches of Altis. BAHHHHHHH</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IceCreamName">
+            <Original>Ice Cream</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IceCreamDesc">
+            <Original>Ice Cream, You Scream, We All Scream 4 Ice Cream!</Original>
+		</Key>
     </Package>
 </Project>

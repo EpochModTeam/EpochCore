@@ -3690,6 +3690,66 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_AtropineShotDesc";
 		mass = 1;
 	};
+	class krypto_candy_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_KryptoCandyName";
+		model = "\x\addons\a3_epoch_community\models\krypto.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\food\krypto_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_KryptoCandyDesc";
+		mass = 1;
+	};
+	class bluburger_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_BluKingBurgerName";
+		model = "\x\addons\a3_epoch_community\models\bluburger.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\food\bluburger_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_BluKingBurgerDesc";
+		mass = 1;
+	};
+	class redburger_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_RedKingBurgerName";
+		model = "\x\addons\a3_epoch_community\models\redburger.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\food\redburger_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_RedKingBurgerDesc";
+		mass = 1;
+	};
+	class gyro_wrap_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_GyroWrapName";
+		model = "\x\addons\a3_epoch_community\models\wrap.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\food\gyro_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_GyroWrapDesc";
+		mass = 1;
+	};
+	class icecream_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_IceCreamName";
+		model = "\x\addons\a3_epoch_community\models\icecream.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\food\icecream_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_IceCreamDesc";
+		mass = 1;
+	};
 };
 
 /*[[[end]]]*/
