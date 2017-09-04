@@ -10645,7 +10645,7 @@ class CfgVehicles
 		displayName = "$STR_EPOCH_CinderFloor";
 		armor = 12000;
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\cinderfloor_co.paa"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\cinderfloor\cinderfloor_co.paa"};
 		selectionDamage = "zbytek";
 		class Damage
 		{

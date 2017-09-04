@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="x\addons\a3_epoch_community\textures\cinderfloor_nohq.paa";
+	texture="x\addons\a3_epoch_community\textures\cinderfloor\cinderfloor_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
