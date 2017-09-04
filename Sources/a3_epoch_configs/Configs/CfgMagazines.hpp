@@ -3666,6 +3666,112 @@ class CfgMagazines
 		descriptionShort="$STR_EPOCH_CampingLightDesc";
 		mass=12;
 	};
+	class SmeltingTools_EPOCH: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		model = "\x\addons\a3_epoch_community\models\smelting.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\smelting\smelting_icon_ca.paa";
+		displayName = "$STR_EPOCH_SmeltingToolsName";
+		descriptionShort = "$STR_EPOCH_SmeltingToolsDesc";
+		mass = 20;
+	};
+	class atropine_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_atropine";
+		model = "\x\addons\a3_epoch_community\models\atropine.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\atropine\atropine_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_AtropineShotDesc";
+		mass = 1;
+	};
+	class krypto_candy_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_KryptoCandyName";
+		model = "\x\addons\a3_epoch_community\models\krypto.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\food\krypto_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_KryptoCandyDesc";
+		mass = 1;
+	};
+	class bluburger_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_BluKingBurgerName";
+		model = "\x\addons\a3_epoch_community\models\bluburger.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\food\bluburger_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_BluKingBurgerDesc";
+		mass = 1;
+	};
+	class redburger_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_RedKingBurgerName";
+		model = "\x\addons\a3_epoch_community\models\redburger.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\food\redburger_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_RedKingBurgerDesc";
+		mass = 1;
+	};
+	class gyro_wrap_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_GyroWrapName";
+		model = "\x\addons\a3_epoch_community\models\wrap.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\food\gyro_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_GyroWrapDesc";
+		mass = 1;
+	};
+	class icecream_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_IceCreamName";
+		model = "\x\addons\a3_epoch_community\models\icecream.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\food\icecream_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_IceCreamDesc";
+		mass = 1;
+	};
+	class KitBarbedWire : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+		scope = 2;
+        count = 1;
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_BarbedWire";
+        descriptionShort = "$STR_EPOCH_BarbedWireDesc";
+        mass = 20;
+    };
+	class KitCinderWallDoorwHatch : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+		scope = 2;
+        count = 1;
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_CinderBlockDoorwHatch";
+        descriptionShort = "$STR_EPOCH_CinderBlockDoorwHatchDesc";
+        mass = 20;
+    };
 };
 
 /*[[[end]]]*/

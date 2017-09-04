@@ -6159,6 +6159,17 @@ class CfgWeapons
 			mass=12;
 		};
 	};
+	class ItemGPS;
+	class ItemGeigerCounter_EPOCH: ItemGPS
+	{
+		scope = 2;
+		displayName = "$STR_EPOCH_ItemGeigerName";
+		author = "Helion4/DirtySanchez";
+		picture = "\x\addons\a3_epoch_community\textures\geiger\geigercounter_icon_ca.paa";
+		model = "\x\addons\a3_epoch_community\models\geigercounter.p3d";
+		descriptionUse = "<t color='#9cf953'>Use: </t>Detect Radiation Levels";
+		descriptionShort = "This warning system alerts you to abnormal Radiation Levels";
+	};
 };
 
 /*[[[end]]]*/

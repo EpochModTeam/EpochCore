@@ -2593,5 +2593,76 @@
 		<Key ID="STR_EPOCH_SatelliteWreckName">
             <Original>Crashed Satellite</Original>
         </Key>
+		<Key ID="STR_EPOCH_SmeltingToolsName">
+            <Original>Smelting Tools</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SmeltingToolsDesc">
+            <Original>Used for melting down metals for blades, bullets, precious metals and more</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ItemGeigerName">
+            <Original>Geiger Counter</Original>
+			<Czech>Geigerův počítač</Czech>
+			<German>Geigerzähler</German>
+            <French>Compteur Geiger</French>
+            <Italian>Contatore Geiger</Italian>
+            <Polish>Licznik Geigera</Polish>
+            <Portuguese>Contador Geiger</Portuguese>
+			<Spanish>Contador Geiger</Spanish>
+			<Russian>Счетчик Гейгера</Russian>
+        </Key>
+		<Key ID="STR_EPOCH_atropine">
+            <Original>Atropine Shot</Original>
+        </Key>
+		<Key ID="STR_EPOCH_AtropineShotDesc">
+            <Original>Used to treat certain types of nerve agent and pesticide poisonings</Original>
+        </Key>
+		<Key ID="STR_EPOCH_KryptoCandyName">
+            <Original>100 Krypto Candy</Original>
+		</Key>
+		<Key ID="STR_EPOCH_KryptoCandyDesc">
+            <Original>This beats a Snackers anyday. Gimme a break...</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BluKingBurgerName">
+            <Original>BluKing Burger</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BluKingBurgerDesc">
+            <Original>BluKing makes a mighty meal outta the finest meats</Original>
+		</Key>
+		<Key ID="STR_EPOCH_RedKingBurgerName">
+            <Original>RedKing Burger</Original>
+		</Key>
+		<Key ID="STR_EPOCH_RedKingBurgerDesc">
+            <Original>RedKing picks up our leftovers for the best Sapper Burger in your life</Original>
+		</Key>
+		<Key ID="STR_EPOCH_GyroWrapName">
+            <Original>Gyro Wrap</Original>
+		</Key>
+		<Key ID="STR_EPOCH_GyroWrapDesc">
+            <Original>Gyro's from the farthest reaches of Altis. BAHHHHHHH</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IceCreamName">
+            <Original>Ice Cream</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IceCreamDesc">
+            <Original>Ice Cream, You Scream, We All Scream 4 Ice Cream!</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BarbedWire">
+            <Original>Barbed Wire</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BarbedWireDesc">
+            <Original>Barbed wire fence to protect yourself from many different enemies</Original>
+		</Key>
+		<Key ID="STR_EPOCH_CinderBlockDoorwHatch">
+            <Original>Cinder Door with Hatch</Original>
+		</Key>
+		<Key ID="STR_EPOCH_CinderBlockDoorwHatchDesc">
+            <Original>Cinder Door with Hatch</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OpenHatch">
+            <Original>Open Hatch</Original>
+		</Key>
+		<Key ID="STR_EPOCH_CloseHatch">
+            <Original>Close Hatch</Original>
+		</Key>
     </Package>
 </Project>
