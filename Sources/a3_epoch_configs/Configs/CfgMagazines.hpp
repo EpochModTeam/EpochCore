@@ -3753,15 +3753,25 @@ class CfgMagazines
 	class KitBarbedWire : CA_Magazine
     {
         author = "Helion4/DirtySanchez";
-        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		scope = 2;
+        count = 1;
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
         displayName = "$STR_EPOCH_BarbedWire";
-        scope = 2;
         descriptionShort = "$STR_EPOCH_BarbedWireDesc";
-        count = 1;
         mass = 20;
     };
-
+	class KitCinderWallDoorwHatch : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+		scope = 2;
+        count = 1;
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_CinderBlockDoorwHatch";
+        descriptionShort = "$STR_EPOCH_CinderBlockDoorwHatchDesc";
+        mass = 20;
+    };
 };
 
 /*[[[end]]]*/

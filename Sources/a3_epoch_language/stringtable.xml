@@ -2652,5 +2652,17 @@
 		<Key ID="STR_EPOCH_BarbedWireDesc">
             <Original>Barbed wire fence to protect yourself from many different enemies</Original>
 		</Key>
+		<Key ID="STR_EPOCH_CinderBlockDoorwHatch">
+            <Original>Cinder Door with Hatch</Original>
+		</Key>
+		<Key ID="STR_EPOCH_CinderBlockDoorwHatchDesc">
+            <Original>Cinder Door with Hatch</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OpenHatch">
+            <Original>Open Hatch</Original>
+		</Key>
+		<Key ID="STR_EPOCH_CloseHatch">
+            <Original>Close Hatch</Original>
+		</Key>
     </Package>
 </Project>

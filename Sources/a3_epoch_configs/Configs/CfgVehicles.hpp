@@ -10714,6 +10714,86 @@ class CfgVehicles
 			mat[] = {"\x\addons\a3_epoch_community\textures\barbed_wire\barbed_wire.rvmat"};
 		};
 	};
+		class CinderWallDoorwHatch_EPOCH: Const_Cinder_static_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\cinder_door\cinder_door.p3d";
+		displayName = "$STR_EPOCH_CinderBlockDoorwHatch";
+		class AnimationSources
+		{
+			class open_door
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+				sound = "MetalBigDoorsSound";
+			};
+			class open_hatch
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+				sound = "MetalOldBigDoorsSound";
+			};
+			class lock_door
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+				sound = "ServoDoorsSound";
+			};			
+		};
+		class UserActions
+		{
+			class Open_door
+			{
+				displayName = "$STR_EPOCH_Open";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				onlyforplayer = 1;
+				position = "door";
+				radius = 3;
+				condition = "(this animationPhase ""open_door"" < 0.5) && (this animationPhase ""lock_door"" < 0.5)";
+				statement = "this animate [""open_door"", 1]";
+			};
+			class Close_door: Open_door
+			{
+				displayName = "$STR_EPOCH_Close";
+				condition = "this animationPhase ""open_door"" >= 0.5";
+				statement = "this animate [""open_door"", 0]";
+			};
+			class Lock_door: Open_door
+			{
+				displayName = "$STR_EPOCH_Lock";
+				displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
+				condition = "!(call EPOCH_lockCheck) && (this animationPhase ""open_door"" < 0.5) && (this animationPhase ""lock_door"" < 0.5)";
+				statement = "this animate [""lock_door"", 1]";
+			};
+			class Unlock_door: Lock_door
+			{
+				displayName = "$STR_EPOCH_Unlock";
+				displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
+				condition = "!(call EPOCH_lockCheck) && (this animationPhase ""open_door"" < 0.5) && (this animationPhase ""Lock_door"" >= 0.5)";
+				statement = "this animate [""Lock_door"", 0];";
+			};
+			class Open_hatch
+			{
+				displayName = "$STR_EPOCH_OpenHatch";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				onlyforplayer = 1;
+				position = "hatch";
+				radius = 3;
+				condition = "this animationPhase ""open_hatch"" < 0.5";
+				statement = "this animate [""open_hatch"", 1]";
+			};
+			class Close_hatch: Open_hatch
+			{
+				displayName = "$STR_EPOCH_CloseHatch";
+				condition = "this animationPhase ""open_hatch"" >= 0.5";
+				statement = "this animate [""open_hatch"", 0]";
+			};
+		};
+	};
 };
 
 /*[[[end]]]*/
