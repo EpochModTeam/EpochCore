@@ -3037,9 +3037,9 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_VitaminBottle_F.jpg";
-		displayName = "$STR_EPOCH_Vitamin";
+		displayName = "$STR_EPOCH_ItemVitamins";
 		model = "\A3\Structures_F_EPA\Items\Medical\VitaminBottle_F.p3d";
-		descriptionShort = "$STR_EPOCH_VitaminDesc";
+		descriptionShort = "$STR_EPOCH_ItemVitaminsDesc";
 		mass = 1;
 	};
 	class ItemAntibiotic: CA_Magazine
