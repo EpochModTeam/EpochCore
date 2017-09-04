@@ -2646,5 +2646,11 @@
 		<Key ID="STR_EPOCH_IceCreamDesc">
             <Original>Ice Cream, You Scream, We All Scream 4 Ice Cream!</Original>
 		</Key>
+		<Key ID="STR_EPOCH_BarbedWire">
+            <Original>Barbed Wire</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BarbedWireDesc">
+            <Original>Barbed wire fence to protect yourself from many different enemies</Original>
+		</Key>
     </Package>
 </Project>

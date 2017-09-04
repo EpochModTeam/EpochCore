@@ -10700,7 +10700,20 @@ class CfgVehicles
 			};
 		};
 	};
-
+	class Land_New_WiredFence_10m_F;
+	class BarbedWire_EPOCH: Land_New_WiredFence_10m_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\barbed_wire.p3d";
+		displayName = "$STR_EPOCH_BarbedWire";
+		armor = 1000;
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {"\x\addons\a3_epoch_community\textures\barbed_wire\barbed_wire.rvmat"};
+		};
+	};
 };
 
 /*[[[end]]]*/
