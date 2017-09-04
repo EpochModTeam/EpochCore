@@ -2978,7 +2978,7 @@ class CfgMagazines
 		type = 256;
 		displayName = "$STR_EPOCH_caffeinepills";
 		model = "\x\addons\a3_epoch_community\models\caffeinepills.p3d";
-		picture = "\x\addons\a3_epoch_community\textures\caffeinepills_icon_ca.paa";
+		picture = "\x\addons\a3_epoch_community\textures\caffeinepills\caffeinepills_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_CaffeinePillsDesc";
 		mass = 1;
 	};
