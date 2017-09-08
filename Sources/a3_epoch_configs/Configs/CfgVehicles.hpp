@@ -10786,7 +10786,7 @@ class CfgVehicles
 			{
 				source = "user";
 				animPeriod = 3;
-				initPhase = 0;
+				initPhase = 1;
 				sound = "ServoDoorsSound";
 			};
 		};
