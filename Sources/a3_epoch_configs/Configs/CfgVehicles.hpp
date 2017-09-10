@@ -7932,14 +7932,14 @@ class CfgVehicles
     {
         author = "Sequisha";
         scope = 2;
-        model = "\A3\Structures\Civ\Camping\TentA_F.p3d";
+        model = "\A3\Structures_f\Civ\Camping\TentA_F.p3d";
         displayName = "$STR_EPOCH_TentA";
     };
 	class TentDome_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
         scope = 2;
-        model = "\A3\Structures\Civ\Camping\TentDome_F.p3d";
+        model = "\A3\Structures_f\Civ\Camping\TentDome_F.p3d";
         displayName = "$STR_EPOCH_TentDome";
     };
     class Shelf_SIM_EPOCH : Constructions_modular_F
@@ -8803,7 +8803,7 @@ class CfgVehicles
     {
         author = "BI";
         scope = 2;
-        model = "\A3\Structures\Civ\Camping\TentA_F.p3d";
+        model = "\A3\Structures_f\Civ\Camping\TentA_F.p3d";
         displayName = "$STR_EPOCH_TentA";
         ladders[] = {};
     };
@@ -8811,7 +8811,7 @@ class CfgVehicles
     {
         author = "BI";
         scope = 2;
-        model = "\A3\Structures\Civ\Camping\TentDome_F.p3d";
+        model = "\A3\Structures_f\Civ\Camping\TentDome_F.p3d";
         displayName = "$STR_EPOCH_TentDome";
         ladders[] = {};
     };
@@ -9311,7 +9311,7 @@ class CfgVehicles
 	{
 		author = "BI";
 		scope = 2;
-		model = "\A3\Structures\Civ\Camping\TentA_F.p3d";
+		model = "\A3\Structures_f\Civ\Camping\TentA_F.p3d";
 		displayName = "$STR_EPOCH_TentA";
 		maximumLoad = 800;
 	};
@@ -9319,7 +9319,7 @@ class CfgVehicles
 	{
 		author = "BI";
 		scope = 2;
-		model = "\A3\Structures\Civ\Camping\TentDome_F.p3d";
+		model = "\A3\Structures_f\Civ\Camping\TentDome_F.p3d";
 		displayName = "$STR_EPOCH_TentDome";
 		maximumLoad = 1200;
 	};
