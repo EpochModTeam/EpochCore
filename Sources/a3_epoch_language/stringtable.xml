@@ -2670,5 +2670,44 @@
 		<Key ID="STR_EPOCH_CloseHatch">
             <Original>Close Hatch</Original>
 		</Key>
+		<Key ID="STR_EPOCH_ItemCanvas">
+            <Original>Canvas Material</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ItemCanvasDesc">
+            <Original>Material can be used in crafting a personal tent</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ItemSeedBag">
+            <Original>Empty SeedBag</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ItemSeedBagDesc">
+            <Original>Collect seeds and place them in this empty bag</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SeedPacketGoldenSeal">
+            <Original>Goldenseal Seeds(Packet)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SeedPacketHemp">
+            <Original>Hemp Seeds(Packet)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SeedPacketPoppy">
+            <Original>Poppy Seeds(Packet)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SeedPacketPumpkin">
+            <Original>Pumkin Seeds(Packet)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SeedPacketSunflower">
+            <Original>Sunflower Seeds(Packet)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TentA">
+			<Original>Tent A-Frame</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TentADesc">
+			<Original>A small one-person tent</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TentDome">
+			<Original>Tent Dome</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TentDomeDesc">
+			<Original>A spacious camping tent</Original>
+		</Key>
     </Package>
 </Project>
