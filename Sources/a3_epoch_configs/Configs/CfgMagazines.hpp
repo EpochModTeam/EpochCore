@@ -3772,6 +3772,115 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_CinderBlockDoorwHatchDesc";
         mass = 20;
     };
+	class ItemCanvas : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+        picture = "\x\addons\a3_epoch_community\textures\canvas\canvas_icon_ca.paa";
+        displayname = "$STR_EPOCH_ItemCanvas";
+        model = "\x\addons\a3_epoch_community\models\canvas.p3d";
+        descriptionShort = "$STR_EPOCH_ItemCanvasDesc";
+        mass = 1;
+    };
+	class ItemSeedBag : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 1;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds\seedbag_icon_ca.paa";
+        displayname = "$STR_EPOCH_ItemSeedBag";
+        model = "\x\addons\a3_epoch_community\models\seeds.p3d";
+        descriptionShort = "$STR_EPOCH_ItemSeedBagDesc";
+        mass = 10;
+    };
+	class SeedPacket_GoldenSeal : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 10;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds_food\goldenseal_packet_icon_ca.paa";
+        displayname = "$STR_EPOCH_SeedPacketGoldenSeal";
+        model = "\x\addons\a3_epoch_community\models\goldenseal.p3d";
+        descriptionShort = "$STR_EPOCH_SeedPacketGoldenSeal";
+        mass = 1;
+    };
+	class SeedPacket_Hemp : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 10;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds_food\hemp_packet_icon_ca.paa";
+        displayname = "$STR_EPOCH_SeedPacketHemp";
+        model = "\x\addons\a3_epoch_community\models\hemp.p3d";
+        descriptionShort = "$STR_EPOCH_SeedPacketHemp";
+        mass = 1;
+    };
+	class SeedPacket_Poppy : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 10;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds_food\poppy_packet_icon_ca.paa";
+        displayname = "$STR_EPOCH_SeedPacketPoppy";
+        model = "\x\addons\a3_epoch_community\models\poppy.p3d";
+        descriptionShort = "$STR_EPOCH_SeedPacketPoppy";
+        mass = 1;
+    };
+	class SeedPacket_Pumpkin : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 10;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds_food\pumpkin_packet_icon_ca.paa";
+        displayname = "$STR_EPOCH_SeedPacketPumpkin";
+        model = "\x\addons\a3_epoch_community\models\pumpkin.p3d";
+        descriptionShort = "$STR_EPOCH_SeedPacketPumpkin";
+        mass = 1;
+    };
+	class SeedPacket_Sunflower : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 10;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds_food\sunflower_packet_icon_ca.paa";
+        displayname = "$STR_EPOCH_SeedPacketSunflower";
+        model = "\x\addons\a3_epoch_community\models\sunflower.p3d";
+        descriptionShort = "$STR_EPOCH_SeedPacketSunflower";
+        mass = 1;
+    };
+
+	class KitTentA : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 1;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\tentbags\tentbag_icon_ca.paa";
+        displayname = "$STR_EPOCH_TentA";
+        model = "\x\addons\a3_epoch_community\models\tent_camo.p3d";
+        descriptionShort = "$STR_EPOCH_TentADesc";
+        mass = 15;
+    };
+	class KitTentDome : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 1;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\tentbags\dome_icon_ca.paa"; // need dome color ICON
+        displayname = "$STR_EPOCH_TentDome";
+        model = "\x\addons\a3_epoch_community\models\tent_dome.p3d";
+        descriptionShort = "$STR_EPOCH_TentDomeDesc";
+        mass = 20;
+    };
 };
 
 /*[[[end]]]*/
