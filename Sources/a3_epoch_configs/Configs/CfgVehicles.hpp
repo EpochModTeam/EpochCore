@@ -1248,7 +1248,7 @@ class CfgVehicles
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Dan.paa";
         maxGunElev = 80;
         faceType = "Man_A3";
-        side = 0;
+        side = 3;
         vehicleClass = "Men";
         engineer = 1;
         scope = 0;
