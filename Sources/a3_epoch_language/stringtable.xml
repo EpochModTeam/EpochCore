@@ -2423,7 +2423,7 @@
             <Original>Smoke Grenade (Toxic)</Original>
         </Key>
         <Key ID="STR_EPOCH_TypeSmokeGrenadeToxicltbrgtRounds1ltbrgtUsedinHand">
-            <Original>Type: Smoke Grenade - Toxic&amp;lt;br /&amp;gt;Rounds: 1&amp;lt;br /&amp;gt;Used in: Hand</Original>
+            <Original>Type: Smoke Grenade - Toxic&lt;br/&gt;Rounds: 1&lt;br/&gt;Used in: Hand</Original>
         </Key>
         <Key ID="STR_EPOCH_ToxicSmoke">
             <Original>Toxic Smoke</Original>
