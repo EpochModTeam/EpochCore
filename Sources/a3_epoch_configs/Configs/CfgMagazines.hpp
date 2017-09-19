@@ -3025,9 +3025,9 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_RiceBox_F.jpg";
-		displayName = "$STR_EPOCH_ItemRice";
+		displayName = "$STR_EPOCH_ItemRiceBox";
 		model = "\A3\Structures_F_EPA\Items\Food\RiceBox_F.p3d";
-		descriptionShort = "$STR_EPOCH_ItemRiceDesc";
+		descriptionShort = "$STR_EPOCH_ItemRiceBoxDesc";
 		mass = 1;
 	};
 	class ItemVitamins: CA_Magazine
@@ -3881,6 +3881,30 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_TentDomeDesc";
         mass = 20;
     };
+	class Kit_IG_Box_s: CA_Magazine
+	{
+		author="Helion / Timst";
+		scope=2;
+		count=1;
+		type=256;
+		displayName="Storage Box small";
+		model="\x\addons\a3_epoch_community\models\IG_box_small.p3d";
+		picture="\x\addons\a3_epoch_community\icons\IG_box.paa";
+		descriptionShort="A small storage Box";
+		mass=50;
+	};
+	class Kit_IG_Box_l: CA_Magazine
+	{
+		author="Helion / Timst";
+		scope=2;
+		count=1;
+		type=256;
+		displayName="Storage Box large";
+		model="\x\addons\a3_epoch_community\models\IG_box_large.p3d";
+		picture="\x\addons\a3_epoch_community\icons\IG_box.paa";
+		descriptionShort="A large storage Box";
+		mass=150;
+	};
 };
 
 /*[[[end]]]*/
