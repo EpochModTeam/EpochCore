@@ -2709,5 +2709,35 @@
 		<Key ID="STR_EPOCH_TentDomeDesc">
 			<Original>A spacious camping tent</Original>
 		</Key>
+		<Key ID="STR_EPOCH_MetalFloor">
+            <Original>Metal Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalFloorDesc">
+            <Original>Hand crafted and forged by your own strength and wisdom</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalTower">
+            <Original>Metal Tower</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalTowerDesc">
+            <Original>A tower made of metal to show your skills abroad</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalTowerGhost">
+            <Original>Metal Tower Ghost</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderFloor">
+            <Original>Cinder Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderFloorDesc">
+            <Original>Hand poured and formed with your new knowledge of cinder construction</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderTower">
+            <Original>Cinder Tower</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderTowerDesc">
+            <Original>A tower made of the strongest material</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderTowerGhost">
+            <Original>Cinder Tower Ghost</Original>
+        </Key>
     </Package>
 </Project>
