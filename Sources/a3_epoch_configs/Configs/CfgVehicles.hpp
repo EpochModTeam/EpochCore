@@ -10760,7 +10760,7 @@ class CfgVehicles
 			mat[] = {"\x\addons\a3_epoch_community\textures\barbed_wire\barbed_wire.rvmat"};
 		};
 	};
-		class CinderWallDoorwHatch_EPOCH: Const_Cinder_static_F
+	class CinderWallDoorwHatch_EPOCH: Const_Cinder_static_F
 	{
 		author = "Helion4/DirtySanchez";
 		scope = 2;
@@ -10839,6 +10839,290 @@ class CfgVehicles
 				statement = "this animate [""open_hatch"", 0]";
 			};
 		};
+	};
+	class MetalTower_EPOCH: Const_floors_static_F
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Metal_Base_Tower\Metal_floor_tower.p3d";
+		displayName = "$STR_EPOCH_MetalTower";
+		armor = 7500;
+		hiddenSelections[] = {"bot","camo","camo3","top"};
+		hiddenSelectionsTextures[] = {"a3\structures_f\data\metal\metal_plates3_co.paa", "x\addons\a3_epoch_assets_1\textures\mf_co.paa","x\addons\a3_epoch_assets_1\textures\mf_co.paa","x\addons\a3_epoch_assets_1\textures\mf_co.paa"};
+		class AnimationSources
+		{
+			class NWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class EWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class SWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class WWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+		};
+		class UserActions
+		{
+			class add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				onlyforplayer = 1;
+				position = "NWall_trigger";
+				radius = 2.5;
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" < 0.5)";
+				statement = "[this,""NWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_nwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "NWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" >= 0.5)";
+				statement = "[this,""NWall"",0] call EPOCH_changeWallState";
+			};
+			class add_ewall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "EWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""EWall"" < 0.5)";
+				statement = "[this,""EWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_ewall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "EWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""EWall"" >= 0.5)";
+				statement = "[this,""EWall"",0] call EPOCH_changeWallState";
+			};
+			class add_swall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "SWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""SWall"" < 0.5)";
+				statement = "[this,""SWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_swall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "SWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""SWall"" >= 0.5)";
+				statement = "[this,""SWall"",0] call EPOCH_changeWallState";
+			};
+			class add_wwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "WWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""WWall"" < 0.5)";
+				statement = "[this,""WWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_wwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "WWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""WWall"" >= 0.5)";
+				statement = "[this,""WWall"",0] call EPOCH_changeWallState";
+			};
+		};
+	};
+	class MetalTower_SIM_EPOCH: Constructions_modular_F
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Metal_Base_Tower\Metal_floor_tower.p3d";
+		displayName = "$STR_EPOCH_MetalTower";
+		slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+		hiddenSelections[] = {"Camo","camo3"};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets_1\textures\mf_co.paa","a3\structures_f\data\metal\metal_plates3_co.paa"};
+		class AnimationSources
+		{
+			class NWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class EWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class SWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class WWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+		};
+	};
+	class MetalTower_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Metal_Base_Tower\Metal_floor_tower.p3d";
+		displayName = "$STR_EPOCH_MetalTowerGhost";
+		ladders[] = {};
+	};
+	class CinderTower_EPOCH: Const_floors_static_F
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Cinder_Base_Tower\cinder_tower_upgrade.p3d";
+		displayName = "$STR_EPOCH_CinderTower";
+		armor = 7500;
+		class AnimationSources
+		{
+			class NWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class EWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class SWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class WWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+		};
+		class UserActions
+		{
+			class add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				onlyforplayer = 1;
+				position = "NWall_trigger";
+				radius = 2.5;
+				condition = "true"; //"(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" < 0.5)";
+				statement = "[this,""NWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_nwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "NWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" >= 0.5)";
+				statement = "[this,""NWall"",0] call EPOCH_changeWallState";
+			};
+			class add_ewall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "EWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""EWall"" < 0.5)";
+				statement = "[this,""EWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_ewall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "EWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""EWall"" >= 0.5)";
+				statement = "[this,""EWall"",0] call EPOCH_changeWallState";
+			};
+			class add_swall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "SWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""SWall"" < 0.5)";
+				statement = "[this,""SWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_swall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "SWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""SWall"" >= 0.5)";
+				statement = "[this,""SWall"",0] call EPOCH_changeWallState";
+			};
+			class add_wwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "WWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""WWall"" < 0.5)";
+				statement = "[this,""WWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_wwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "WWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""WWall"" >= 0.5)";
+				statement = "[this,""WWall"",0] call EPOCH_changeWallState";
+			};
+		};
+	};
+	class CinderTower_SIM_EPOCH: Constructions_modular_F
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Cinder_Base_Tower\cinder_tower_upgrade.p3d";
+		displayName = "$STR_EPOCH_CinderTower";
+		slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+		hiddenSelections[] = {"Camo","camo3"};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets_1\textures\mf_co.paa","a3\structures_f\data\metal\metal_plates3_co.paa"};
+		class AnimationSources
+		{
+			class NWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class EWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class SWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class WWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+		};
+	};
+	class CinderTower_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Cinder_Base_Tower\cinder_tower_upgrade_ghost.p3d";
+		displayName = "$STR_EPOCH_CinderTowerGhost";
+		ladders[] = {};
 	};
 };
 
