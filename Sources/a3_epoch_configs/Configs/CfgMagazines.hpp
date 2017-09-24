@@ -2745,6 +2745,24 @@ class CfgMagazines
 		lastRoundsTracer = 4;
 		nameSound = "mgun";
 	};
+	class 5000Rnd_762x51_Belt: 2000Rnd_762x51_Belt 
+	{
+		ammo = "B_762x51_Minigun_Tracer_Red_splash";
+		displayName = "$STR_EPOCH_5000Rnd762x51Beltname";
+		descriptionShort = "$STR_EPOCH_5000Rnd762x51Beltdesc";
+		displayName = "7.62 mm Minigun Belt";
+		descriptionShort = "Caliber: 7.62x51 mm<br />Rounds: 2000<br />Used in: AH-9";
+		tracersEvery = 1;
+		count = 5000;
+		initSpeed = 860;
+		weight = 128;
+	};
+	class 5000Rnd_762x51_Yellow_Belt: 2000Rnd_762x51_Belt
+	{
+		displayName = "$STR_EPOCH_5000Rnd762x51YellowBeltname";
+		descriptionShort = "$STR_EPOCH_5000Rnd762x51YellowBeltdesc";
+		ammo = "B_762x51_Minigun_Tracer_Yellow_splash";
+	};
 	class 200Rnd_40mm_G_belt: VehicleMagazine
 	{
 		author = "DirtySanchez";
@@ -2820,6 +2838,472 @@ class CfgMagazines
 		author = "DirtySanchez";
 		count = 150;
 		descriptionShort = "$STR_EPOCH_mas150Rnd127x107DSHKMdesc";
+	};
+	class 60Rnd_CMFlareMagazine: CA_Magazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_60Rnd_CMFlareMagazine";
+		descriptionShort = "$STR_EPOCH_60Rnd_CMFlareMagazine";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		count = 60;
+		ammo = "CMflareAmmo";
+		initSpeed = 30;
+	};
+	class 120Rnd_CMFlareMagazine: 60Rnd_CMFlareMagazine 
+	{
+		displayName = "$STR_EPOCH_120Rnd_CMFlareMagazine";
+		descriptionShort = "$STR_EPOCH_120Rnd_CMFlareMagazine";
+		count = 120;
+	};
+	class 240Rnd_CMFlareMagazine: 60Rnd_CMFlareMagazine
+	{
+		displayName = "$STR_EPOCH_240Rnd_CMFlareMagazine";
+		descriptionShort = "$STR_EPOCH_240Rnd_CMFlareMagazine";
+		count = 240;
+	};
+	class 60Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlareMagazine
+	{
+		displayName = "$STR_EPOCH_60Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_60Rnd_CMFlare_Chaff_Magazine";
+		ammo = "CMflare_Chaff_Ammo";
+	};
+	class 120Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
+	{
+		displayName = "$STR_EPOCH_120Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_120Rnd_CMFlare_Chaff_Magazine";
+		count = 120;
+	};
+	class 240Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
+	{
+		displayName = "$STR_EPOCH_240Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_240Rnd_CMFlare_Chaff_Magazine";
+		count = 240;
+	};
+	class 192Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
+	{
+		displayName = "$STR_EPOCH_192Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_192Rnd_CMFlare_Chaff_Magazine";
+		count = 192;
+	};
+	class 168Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
+	{
+		displayName = "$STR_EPOCH_168Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_168Rnd_CMFlare_Chaff_Magazine";
+		count = 168;
+	};
+	class 300Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
+	{
+		displayName = "$STR_EPOCH_300Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_300Rnd_CMFlare_Chaff_Magazine";
+		count = 300;
+	};
+	class SmokeLauncherMag: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_SmokeLauncherMag";
+		descriptionShort = "$STR_EPOCH_SmokeLauncherMag";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		ammo = "SmokeLauncherAmmo";
+		count = 2;
+		nameSound = "smokeshell";
+		initSpeed = 14;
+	};
+	class SmokeLauncherMag_boat: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_SmokeLauncherMag_boat";
+		descriptionShort = "$STR_EPOCH_SmokeLauncherMag_boat";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		ammo = "SmokeLauncherAmmo_boat";
+		count = 2;
+		nameSound = "smokeshell";
+		initSpeed = 14;
+	};
+	class 200Rnd_65x39_Belt: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_200Rnd_65x39_BeltName";
+		descriptionShort = "$STR_EPOCH_200Rnd_65x39_BeltDesc";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		count = 200;
+		ammo = "B_65x39_Caseless";
+		initSpeed = 825;
+		maxLeadSpeed = 200;
+		tracersEvery = 5;
+		nameSound = "mgun";
+	};
+	class 200Rnd_65x39_Belt_Tracer_Red: 200Rnd_65x39_Belt
+	{
+		displayName = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_RedName";
+		descriptionShort = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_RedDesc";
+		ammo = "B_65x39_Caseless";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 200Rnd_65x39_Belt_Tracer_Green: 200Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenName";
+		descriptionShort = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenDesc";
+		ammo = "B_65x39_Case_green";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 200Rnd_65x39_Belt_Tracer_Yellow: 200Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowName";
+		descriptionShort = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowDesc";
+		ammo = "B_65x39_Case_yellow";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 1000Rnd_65x39_Belt: 200Rnd_65x39_Belt 
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_1000Rnd_65x39_BeltName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_BeltDesc";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		count = 1000;
+	};
+	class 1000Rnd_65x39_Belt_Tracer_Red: 1000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedDesc";
+		tracersEvery = 1;
+		ammo = "B_65x39_Caseless";
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 1000Rnd_65x39_Belt_Green: 1000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_GreenName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_GreenDesc";
+		ammo = "B_65x39_Case_green";
+	};
+	class 1000Rnd_65x39_Belt_Tracer_Green: 1000Rnd_65x39_Belt_Green 
+	{
+		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenDesc";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 1000Rnd_65x39_Belt_Yellow: 1000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_YellowName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_YellowDesc";
+		ammo = "B_65x39_Case_Yellow";
+	};
+	class 1000Rnd_65x39_Belt_Tracer_Yellow: 1000Rnd_65x39_Belt_Yellow 
+	{
+		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowDesc";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 2000Rnd_65x39_Belt: 200Rnd_65x39_Belt 
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_2000Rnd_65x39_BeltName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_BeltDesc";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		count = 2000;
+	};
+	class 2000Rnd_65x39_Belt_Tracer_Red: 2000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedDesc";
+		tracersEvery = 1;
+		ammo = "B_65x39_Minigun_Caseless_Red_splash";
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+		weight = 30;
+	};
+	class 2000Rnd_65x39_Belt_Green: 2000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_GreenName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_GreenDesc";
+		ammo = "B_65x39_Case_Green";
+	};
+	class 2000Rnd_65x39_Belt_Tracer_Green: 2000Rnd_65x39_Belt_Green 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenDesc";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+		weight = 30;
+	};
+	class 2000Rnd_65x39_Belt_Tracer_Green_Splash: 2000Rnd_65x39_Belt_Tracer_Green 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashDesc";
+		ammo = "B_65x39_Minigun_Caseless_Green_splash";
+	};
+	class 2000Rnd_65x39_Belt_Yellow: 2000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_YellowName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_YellowDesc";
+		ammo = "B_65x39_Case_Yellow";
+	};
+	class 2000Rnd_65x39_Belt_Tracer_Yellow: 2000Rnd_65x39_Belt_Yellow 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowDesc";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 2000Rnd_65x39_Belt_Tracer_Yellow_Splash: 2000Rnd_65x39_Belt_Tracer_Yellow 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashDesc";
+		ammo = "B_65x39_Minigun_Caseless_Yellow_splash";
+	};
+	class 8Rnd_82mm_Mo_shells: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_8Rnd_82mm_Mo_shellsName";
+		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_shellsNameShort";
+		count = 8;
+		ammo = "Sh_82mm_AMOS";
+		initSpeed = 200;
+		nameSound = "heat";
+	};
+	class 8Rnd_82mm_Mo_Flare_white: 8Rnd_82mm_Mo_shells
+	{
+		displayName = "$STR_EPOCH_8Rnd_82mm_Mo_Flare_whiteName";
+		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_Flare_whiteNameShort";
+		ammo = "Flare_82mm_AMOS_White";
+	};
+	class 8Rnd_82mm_Mo_Smoke_white: 8Rnd_82mm_Mo_shells
+	{
+		displayName = "$STR_EPOCH_8Rnd_82mm_Mo_Smoke_whiteName";
+		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_Smoke_whiteNameShort";
+		ammo = "Smoke_82mm_AMOS_White";
+	};
+	class 8Rnd_82mm_Mo_guided: 8Rnd_82mm_Mo_shells
+	{
+		displayName = "$STR_EPOCH_8Rnd_82mm_Mo_guidedName";
+		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_guidedNameShort";
+		ammo = "Sh_82mm_AMOS_guided";
+	};
+	class 8Rnd_82mm_Mo_LG: 8Rnd_82mm_Mo_shells
+	{
+		displayName = "$STR_EPOCH_8Rnd_82mm_Mo_LGName";
+		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_LGNameShort";
+		ammo = "Sh_82mm_AMOS_LG";
+	};
+	class 24Rnd_PG_missiles: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_24Rnd_PG_missilesName";
+		displayNameShort = "$STR_EPOCH_24Rnd_PG_missilesNameShort";
+		descriptionShort = "$STR_EPOCH_24Rnd_PG_missilesDesc";
+		model = "\x\addons\a3_epoch_assets_1\models\m134_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_m134_mag_ca.paa";
+		count = 24;
+		ammo = "M_PG_AT";
+		initSpeed = 30;
+		maxLeadSpeed = 650;
+		nameSound = "missiles";
+		sound[] = {"A3\sounds_f\dummysound", 3.16228, 1};
+		reloadSound[] = {"A3\sounds_f\dummysound", 0.000316228, 1};
+	};
+	class 12Rnd_PG_missiles: 24Rnd_PG_missiles
+	{
+		displayName = "$STR_EPOCH_24Rnd_PG_missilesName";
+		displayNameShort = "$STR_EPOCH_24Rnd_PG_missilesNameShort";
+		descriptionShort = "$STR_EPOCH_12Rnd_PG_missilesDesc";
+		count = 12;
+		weight = 72;
+	};
+	class 24Rnd_missiles: VehicleMagazine
+	{
+		displayName = "$STR_EPOCH_24Rnd_missilesName";
+		displayNameShort = "$STR_EPOCH_24Rnd_missilesNameShort";
+		descriptionShort = "$STR_EPOCH_24Rnd_missilesDesc";
+		scope = 2;
+		count = 24;
+		ammo = "M_AT";
+		initSpeed = 44;
+		maxLeadSpeed = 800;
+		nameSound = "rockets";
+		sound[] = {"A3\sounds_f\weapons\rockets\explosion_missile_01", 1, 1, 1200};
+		reloadSound[] = {"", 0.000316228, 1};
+		weight = 144;
+	};
+	class 12Rnd_missiles: 24Rnd_missiles
+	{
+		displayName = "$STR_EPOCH_24Rnd_missilesName";
+		displayNameShort = "$STR_EPOCH_24Rnd_missilesNameShort";
+		descriptionShort = "$STR_EPOCH_12Rnd_missilesDesc";
+		count = 12;
+	};
+	class 60Rnd_40mm_GPR_shells: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_60Rnd_40mm_GPR_shellsName";
+		descriptionShort = "$STR_EPOCH_60Rnd_40mm_GPR_shellsDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_40mm_GPR_shellsNameShort";
+		model = "\x\addons\a3_epoch_assets_1\models\40mm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_40mm_mag_ca.paa";
+		ammo = "B_40mm_GPR";
+		count = 60;
+		initSpeed = 1035;
+		maxLeadSpeed = 100;
+		nameSound = "cannon";
+		tracersEvery = 1;
+	};
+	class 60Rnd_40mm_GPR_Tracer_Red_shells: 60Rnd_40mm_GPR_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsName";
+		descriptionShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsNameShort";
+		ammo = "B_40mm_GPR_Tracer_Red";
+	};
+	class 60Rnd_40mm_GPR_Tracer_Green_shells: 60Rnd_40mm_GPR_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsName";
+		descriptionShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsNameShort";
+		displayName = "40 mm GPR-T";
+		displayNameShort = "GPR-T";
+		ammo = "B_40mm_GPR_Tracer_Green";
+	};
+	class 60Rnd_40mm_GPR_Tracer_Yellow_shells: 60Rnd_40mm_GPR_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsName";
+		descriptionShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsNameShort";
+		displayName = "40 mm GPR-T";
+		displayNameShort = "GPR-T";
+		ammo = "B_40mm_GPR_Tracer_Yellow";
+	};
+	class 40Rnd_40mm_APFSDS_shells: 60Rnd_40mm_GPR_shells
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_40Rnd_40mm_APFSDS_shellsName";
+		descriptionShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_shellsDesc";
+		displayNameShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_shellsNameShort";
+		model = "\x\addons\a3_epoch_assets_1\models\40mm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_40mm_mag_ca.paa";
+		ammo = "B_40mm_APFSDS";
+		initSpeed = 1600;
+		count = 40;
+		maxLeadSpeed = 100;
+		nameSound = "cannon";
+		tracersEvery = 1;
+	};
+	class 40Rnd_40mm_APFSDS_Tracer_Red_shells: 40Rnd_40mm_APFSDS_shells
+	{
+		displayName = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsName";
+		descriptionShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsDesc";
+		displayNameShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsNameShort";
+		ammo = "B_40mm_APFSDS_Tracer_Red";
+		count = 40;
+	};
+	class 40Rnd_40mm_APFSDS_Tracer_Green_shells: 40Rnd_40mm_APFSDS_Tracer_Red_shells
+	{
+		displayName = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsName";
+		descriptionShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsDesc";
+		displayNameShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsNameShort";
+		ammo = "B_40mm_APFSDS_Tracer_Green";
+	};
+	class 40Rnd_40mm_APFSDS_Tracer_Yellow_shells: 40Rnd_40mm_APFSDS_Tracer_Red_shells
+	{
+		displayName = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsName";
+		descriptionShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsDesc";
+		displayNameShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsNameShort";
+		ammo = "B_40mm_APFSDS_Tracer_Yellow";
+	};
+	class 140Rnd_30mm_MP_shells: 250Rnd_30mm_HE_shells
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_140Rnd_30mm_MP_shellsName";
+		descriptionShort = "$STR_EPOCH_140Rnd_30mm_MP_shellsDesc";
+		displayNameShort = "$STR_EPOCH_140Rnd_30mm_MP_shellsNameShort";
+		model = "\x\addons\a3_epoch_assets_1\models\30mm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_30mm_mag_ca.paa";
+		ammo = "B_30mm_MP";
+		initSpeed = 1070;
+		count = 140;
+		maxLeadSpeed = 300;
+		nameSound = "cannon";
+		tracersEvery = 1;
+		weight = 126;
+	};
+	class 140Rnd_30mm_MP_shells_Tracer_Red: 140Rnd_30mm_MP_shells
+	{
+		displayName = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedName";
+		descriptionShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedDesc";
+		displayNameShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedNameShort";
+		displayName = "30 mm MP-T";
+		ammo = "B_30mm_MP_Tracer_Red";
+		displaynameshort = "MP-T";
+		count = 140;
+	};
+	class 140Rnd_30mm_MP_shells_Tracer_Green: 140Rnd_30mm_MP_shells_Tracer_Red
+	{
+		displayName = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenName";
+		descriptionShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenDesc";
+		displayNameShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenNameShort";
+		ammo = "B_30mm_MP_Tracer_Green";
+	};
+	class 140Rnd_30mm_MP_shells_Tracer_Yellow: 140Rnd_30mm_MP_shells_Tracer_Red
+	{
+		displayName = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowName";
+		descriptionShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowDesc";
+		displayNameShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowNameShort";
+		ammo = "B_30mm_MP_Tracer_Yellow";
+	};
+	class 60Rnd_30mm_APFSDS_shells: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_60Rnd_30mm_APFSDS_shellsName";
+		descriptionShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shellsDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shellsNameShort";
+		model = "\x\addons\a3_epoch_assets_1\models\30mm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_30mm_mag_ca.paa";
+		ammo = "B_30mm_APFSDS";
+		initSpeed = 1430;
+		count = 60;
+	};
+	class 60Rnd_30mm_APFSDS_shells_Tracer_Red: 60Rnd_30mm_APFSDS_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedName";
+		descriptionShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedNameShort";
+		ammo = "B_30mm_APFSDS_Tracer_Red";
+		tracersEvery = 1;
+	};
+	class 60Rnd_30mm_APFSDS_shells_Tracer_Green: 60Rnd_30mm_APFSDS_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenName";
+		descriptionShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenNameShort";
+		ammo = "B_30mm_APFSDS_Tracer_Green";
+		tracersEvery = 1;
+	};
+	class 60Rnd_30mm_APFSDS_shells_Tracer_Yellow: 60Rnd_30mm_APFSDS_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowName";
+		descriptionShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowNameShort";
+		ammo = "B_30mm_APFSDS_Tracer_Yellow";
+		tracersEvery = 1;
 	};
 	class KitVehicleUpgradeI_100_EPOCH : CA_Magazine
     {

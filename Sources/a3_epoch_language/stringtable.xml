@@ -2739,5 +2739,359 @@
 		<Key ID="STR_EPOCH_CinderTowerGhost">
             <Original>Cinder Tower Ghost</Original>
         </Key>
-    </Package>
+		<Key ID="STR_EPOCH_60Rnd_CMFlareMagazine">
+            <Original>60Rnd Flare Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_120Rnd_CMFlareMagazine">
+            <Original>120Rnd Flare Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_240Rnd_CMFlareMagazine">
+            <Original>240Rnd Flare Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_CMFlare_Chaff_Magazine">
+            <Original>60Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_120Rnd_CMFlare_Chaff_Magazine">
+            <Original>120Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_240Rnd_CMFlare_Chaff_Magazine">
+            <Original>240Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_192Rnd_CMFlare_Chaff_Magazine">
+            <Original>192Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_168Rnd_CMFlare_Chaff_Magazine">
+            <Original>168Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_300Rnd_CMFlare_Chaff_Magazine">
+            <Original>300Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_SmokeLauncherMag">
+            <Original>Smoke Launcher Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_SmokeLauncherMag_boat">
+            <Original>Smoke Launcher Mag(Boats)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_BeltName">
+            <Original>6.5 mm 200Rnd Belt Case</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_BeltDesc">
+            <Original>Caliber: 6.5x39 mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_RedName">
+            <Original>6.5 mm 200Rnd Belt Case Tracer (Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_RedDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Red&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Mk200</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenName">
+            <Original>6.5 mm 200Rnd Belt Case Tracer (Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Mk200</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowName">
+            <Original>6.5 mm 200Rnd Belt Tracer (Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Mk200</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_BeltName">
+            <Original>6.5 mm 1000Rnd LMG Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_BeltDesc">
+            <Original>Caliber: 6.5x39 mm&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedName">
+            <Original>6.5 mm 1000Rnd LMG Tracer (Red) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Red&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_GreenName">
+            <Original>6.5 mm 1000Rnd LMG (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Green&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenName">
+            <Original>6.5 mm 1000Rnd LMG Tracer (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_YellowName">
+            <Original>6.5 mm 1000Rnd LMG (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Yellow&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowName">
+            <Original>6.5 mm 1000Rnd LMG Tracer (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_BeltName">
+            <Original>6.5 mm 2000Rnd LMG Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_BeltDesc">
+            <Original>Caliber: 6.5x39 mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Red) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Red&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_GreenName">
+            <Original>6.5 mm 2000Rnd LMG (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Green&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Green Splash) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green Splash&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_YellowName">
+            <Original>6.5 mm 2000Rnd LMG (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Yellow&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Yellow Splash) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow Splash&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER">
+            <Original>Tracer</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51Beltname">
+            <Original>7.62 mm Minigun Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51Beltdesc">
+            <Original>Caliber: 7.62x51 mm&lt;br/&gt;Rounds: 5000&lt;br/&gt;Used in: AH-9</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51YellowBeltname">
+            <Original>7.62 mm Minigun Belt(Yellow Splash)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51YellowBeltdesc">
+            <Original>Caliber: 7.62x51 mm Yellow Splash&lt;br/&gt;Rounds: 5000&lt;br/&gt;Used in: AH-9</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_shellsName">
+            <Original>HE Mortar Shells</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_shellsNameShort">
+            <Original>HE</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Flare_whiteName">
+            <Original>Mortar Flare (White)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Flare_whiteNameShort">
+            <Original>White Flare</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Smoke_whiteName">
+            <Original>Mortar Smoke Shell (White)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Smoke_whiteNameShort">
+            <Original>White Smoke</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_guidedName">
+            <Original>Guided Mortar</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_guidedNameShort">
+            <Original>Guided </Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_LGName">
+            <Original>Laser Guided Mortar</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_LGNameShort">
+            <Original>Laser Guided</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_PG_missilesName">
+            <Original>DAGR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_PG_missilesNameShort">
+            <Original>HE</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_PG_missilesDesc">
+            <Original>Type: ATGM&lt;br/&gt;Rounds: 24&lt;br/&gt;Used in: A-143, AH-9, AH-99</Original>
+        </Key>
+		<Key ID="STR_EPOCH_12Rnd_PG_missilesDesc">
+            <Original>Type: ATGM&lt;br/&gt;Rounds: 12&lt;br/&gt;Used in: Ka-60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_missilesName">
+            <Original>DAR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_missilesNameShort">
+            <Original>HE</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_missilesDesc">
+            <Original>Type: DAR&lt;br/&gt;Rounds: 24&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_12Rnd_missilesDesc">
+            <Original>Type: DAR&lt;br/&gt;Rounds: 12&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_shellsName">
+            <Original>40 mm GPR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_shellsNameShort">
+            <Original>GPR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_shellsDesc">
+            <Original>Type: GPR&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsName">
+            <Original>40 mm GPR-T(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsNameShort">
+            <Original>GPR-T - Red</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsDesc">
+            <Original>Type: GPR-T - Red&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsName">
+            <Original>40 mm GPR-T(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsNameShort">
+            <Original>GPR-T - Green</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsDesc">
+            <Original>Type: GPR-T - Green&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsName">
+            <Original>40 mm GPR-T(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsNameShort">
+            <Original>GPR-T - Tellow</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsDesc">
+            <Original>Type: GPR-T - Tellow&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_shellsName">
+            <Original>40 mm APFSDS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_shellsNameShort">
+            <Original>APFSDS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_shellsDesc">
+            <Original>Type: APFSDS&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsName">
+            <Original>40 mm APFSDS-T(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsNameShort">
+            <Original>APFSDS-T - Red</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsDesc">
+            <Original>Type: APFSDS-T - Red&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsName">
+            <Original>40 mm APFSDS-T(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsNameShort">
+            <Original>APFSDS-T - Green</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsDesc">
+            <Original>Type: APFSDS-T - Green&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsName">
+            <Original>40 mm APFSDS-T(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsNameShort">
+            <Original>APFSDS-T - Yellow</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsDesc">
+            <Original>Type: APFSDS-T - Yellow&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shellsName">
+            <Original>30 mm Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shellsDesc">
+            <Original>Type: MP&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shellsNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedName">
+            <Original>30 mm Multi-purpose(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedDesc">
+            <Original>Type: MP - Red&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenName">
+            <Original>30 mm Multi-purpose(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenDesc">
+            <Original>Type: MP - Green&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowName">
+            <Original>30 mm Multi-purpose(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowDesc">
+            <Original>Type: MP - Yellow&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shellsName">
+            <Original>30 mm APFSDS-T</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shellsDesc">
+            <Original>Type: APFSDS&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shellsNameShort">
+            <Original>APFSDS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedName">
+            <Original>30 mm APFSDS-T(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedDesc">
+            <Original>Type: APFSDS-T - Red&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedNameShort">
+            <Original>APFSDS-T</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenName">
+            <Original>30 mm APFSDS-T(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenDesc">
+            <Original>Type: APFSDS-T - Green&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenNameShort">
+            <Original>APFSDS-T</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowName">
+            <Original>30 mm APFSDS-T(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowDesc">
+            <Original>Type: APFSDS-T - Yellow&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowNameShort">
+            <Original>APFSDS-T</Original>
+        </Key>
+	</Package>
 </Project>
