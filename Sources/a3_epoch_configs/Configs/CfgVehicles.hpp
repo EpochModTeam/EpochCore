@@ -11123,6 +11123,46 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_community\Cinder_Base_Tower\cinder_tower_upgrade_ghost.p3d";
 		displayName = "$STR_EPOCH_CinderTowerGhost";
 		ladders[] = {};
+  };
+	class IG_Logo: NonStrategic
+	{
+		author="Timst";
+		model="\x\addons\a3_epoch_community\models\IG_logo.p3d";
+		mapSize=2;
+		accuracy=1000;
+		destrType="IG Logo";
+		armor=20;
+	};
+	class IG_Box_s_SIM: Constructions_modular_F
+	{
+		author="Helion / Timst";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\IG_box_small.p3d";
+		displayName="IG Box small";
+	};
+	class IG_Box_s: Buildable_Storage
+	{
+		author="Helion / Timst";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\IG_box_small.p3d";
+		displayName="IG Box small";
+		maximumLoad=900;
+	};
+	class IG_Box_l_SIM: Constructions_modular_F
+	{
+		author="Helion / Timst";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\IG_box_large.p3d";
+		displayName="IG Box small";
+	};
+	class IG_Box_l: Buildable_Storage
+	{
+		author="Helion / Timst";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\IG_box_large.p3d";
+		displayName="IG Box large";
+		maximumLoad=4200;
+
 	};
 };
 
