@@ -3875,12 +3875,56 @@ class CfgMagazines
         scope = 2;
 		count = 1;
 		type = 256;
-		picture = "\x\addons\a3_epoch_community\textures\tentbags\dome_icon_ca.paa"; // need dome color ICON
+		picture = "\x\addons\a3_epoch_community\textures\tentbags\dome_icon_ca.paa";
         displayname = "$STR_EPOCH_TentDome";
         model = "\x\addons\a3_epoch_community\models\tent_dome.p3d";
         descriptionShort = "$STR_EPOCH_TentDomeDesc";
         mass = 20;
     };
+	class KitMetalFloor: CA_Magazine
+	{
+		author = "DirtySanchez";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_MetalFloor";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_MetalFloorDesc";
+		count = 1;
+		mass = 20;
+	};
+	class KitMetalTower: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "$STR_EPOCH_MetalTower";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_MetalTowerDesc";
+		count = 1;
+		mass = 20;
+	};
+	class KitCinderFloor: CA_Magazine
+	{
+		author = "DirtySanchez";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_CinderFloor";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_CinderFloorDesc";
+		count = 1;
+		mass = 20;
+	};
+	class KitCinderTower: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_CinderTower";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_CinderTowerDesc";
+		count = 1;
+		mass = 20;
+  };
 	class Kit_IG_Box_s: CA_Magazine
 	{
 		author="Helion / Timst";
