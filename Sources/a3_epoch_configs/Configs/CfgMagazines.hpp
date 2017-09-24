@@ -2745,6 +2745,24 @@ class CfgMagazines
 		lastRoundsTracer = 4;
 		nameSound = "mgun";
 	};
+	class 5000Rnd_762x51_Belt: 2000Rnd_762x51_Belt 
+	{
+		ammo = "B_762x51_Minigun_Tracer_Red_splash";
+		displayName = "$STR_EPOCH_5000Rnd762x51Beltname";
+		descriptionShort = "$STR_EPOCH_5000Rnd762x51Beltdesc";
+		displayName = "7.62 mm Minigun Belt";
+		descriptionShort = "Caliber: 7.62x51 mm<br />Rounds: 2000<br />Used in: AH-9";
+		tracersEvery = 1;
+		count = 5000;
+		initSpeed = 860;
+		weight = 128;
+	};
+	class 5000Rnd_762x51_Yellow_Belt: 2000Rnd_762x51_Belt
+	{
+		displayName = "$STR_EPOCH_5000Rnd762x51YellowBeltname";
+		descriptionShort = "$STR_EPOCH_5000Rnd762x51YellowBeltdesc";
+		ammo = "B_762x51_Minigun_Tracer_Yellow_splash";
+	};
 	class 200Rnd_40mm_G_belt: VehicleMagazine
 	{
 		author = "DirtySanchez";

@@ -2883,5 +2883,17 @@
 		<Key ID="STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER">
             <Original>Tracer</Original>
         </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51Beltname">
+            <Original>7.62 mm Minigun Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51Beltdesc">
+            <Original>Caliber: 7.62x51 mm&lt;br/&gt;Rounds: 5000&lt;br/&gt;Used in: AH-9</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51YellowBeltname">
+            <Original>7.62 mm Minigun Belt(Yellow Splash)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51YellowBeltdesc">
+            <Original>Caliber: 7.62x51 mm Yellow Splash&lt;br/&gt;Rounds: 5000&lt;br/&gt;Used in: AH-9</Original>
+        </Key>
 	</Package>
 </Project>
