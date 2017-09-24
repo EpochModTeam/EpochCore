@@ -3006,20 +3006,92 @@
 		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsName">
             <Original>40 mm APFSDS-T(Green)</Original>
         </Key>
-		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsDesc">
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsNameShort">
             <Original>APFSDS-T - Green</Original>
         </Key>
-		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsNameShort">
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsDesc">
             <Original>Type: APFSDS-T - Green&lt;br/&gt;Rounds: 40</Original>
         </Key>
 		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsName">
             <Original>40 mm APFSDS-T(Yellow)</Original>
         </Key>
-		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsName">
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsNameShort">
             <Original>APFSDS-T - Yellow</Original>
         </Key>
-		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsName">
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsDesc">
             <Original>Type: APFSDS-T - Yellow&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shellsName">
+            <Original>30 mm Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shellsDesc">
+            <Original>Type: MP&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shellsNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedName">
+            <Original>30 mm Multi-purpose(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedDesc">
+            <Original>Type: MP - Red&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenName">
+            <Original>30 mm Multi-purpose(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenDesc">
+            <Original>Type: MP - Green&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowName">
+            <Original>30 mm Multi-purpose(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowDesc">
+            <Original>Type: MP - Yellow&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shellsName">
+            <Original>30 mm APFSDS-T</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shellsDesc">
+            <Original>Type: APFSDS&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shellsNameShort">
+            <Original>APFSDS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedName">
+            <Original>30 mm APFSDS-T(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedDesc">
+            <Original>Type: APFSDS-T - Red&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedNameShort">
+            <Original>APFSDS-T</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenName">
+            <Original>30 mm APFSDS-T(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenDesc">
+            <Original>Type: APFSDS-T - Green&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenNameShort">
+            <Original>APFSDS-T</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowName">
+            <Original>30 mm APFSDS-T(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowDesc">
+            <Original>Type: APFSDS-T - Yellow&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowNameShort">
+            <Original>APFSDS-T</Original>
         </Key>
 	</Package>
 </Project>

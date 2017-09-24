@@ -3227,6 +3227,84 @@ class CfgMagazines
 		displayNameShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsNameShort";
 		ammo = "B_40mm_APFSDS_Tracer_Yellow";
 	};
+	class 140Rnd_30mm_MP_shells: 250Rnd_30mm_HE_shells
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_140Rnd_30mm_MP_shellsName";
+		descriptionShort = "$STR_EPOCH_140Rnd_30mm_MP_shellsDesc";
+		displayNameShort = "$STR_EPOCH_140Rnd_30mm_MP_shellsNameShort";
+		model = "\x\addons\a3_epoch_assets_1\models\30mm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_30mm_mag_ca.paa";
+		ammo = "B_30mm_MP";
+		initSpeed = 1070;
+		count = 140;
+		maxLeadSpeed = 300;
+		nameSound = "cannon";
+		tracersEvery = 1;
+		weight = 126;
+	};
+	class 140Rnd_30mm_MP_shells_Tracer_Red: 140Rnd_30mm_MP_shells
+	{
+		displayName = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedName";
+		descriptionShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedDesc";
+		displayNameShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedNameShort";
+		displayName = "30 mm MP-T";
+		ammo = "B_30mm_MP_Tracer_Red";
+		displaynameshort = "MP-T";
+		count = 140;
+	};
+	class 140Rnd_30mm_MP_shells_Tracer_Green: 140Rnd_30mm_MP_shells_Tracer_Red
+	{
+		displayName = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenName";
+		descriptionShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenDesc";
+		displayNameShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenNameShort";
+		ammo = "B_30mm_MP_Tracer_Green";
+	};
+	class 140Rnd_30mm_MP_shells_Tracer_Yellow: 140Rnd_30mm_MP_shells_Tracer_Red
+	{
+		displayName = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowName";
+		descriptionShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowDesc";
+		displayNameShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowNameShort";
+		ammo = "B_30mm_MP_Tracer_Yellow";
+	};
+	class 60Rnd_30mm_APFSDS_shells: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_60Rnd_30mm_APFSDS_shellsName";
+		descriptionShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shellsDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shellsNameShort";
+		model = "\x\addons\a3_epoch_assets_1\models\30mm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_30mm_mag_ca.paa";
+		ammo = "B_30mm_APFSDS";
+		initSpeed = 1430;
+		count = 60;
+	};
+	class 60Rnd_30mm_APFSDS_shells_Tracer_Red: 60Rnd_30mm_APFSDS_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedName";
+		descriptionShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedNameShort";
+		ammo = "B_30mm_APFSDS_Tracer_Red";
+		tracersEvery = 1;
+	};
+	class 60Rnd_30mm_APFSDS_shells_Tracer_Green: 60Rnd_30mm_APFSDS_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenName";
+		descriptionShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenNameShort";
+		ammo = "B_30mm_APFSDS_Tracer_Green";
+		tracersEvery = 1;
+	};
+	class 60Rnd_30mm_APFSDS_shells_Tracer_Yellow: 60Rnd_30mm_APFSDS_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowName";
+		descriptionShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowNameShort";
+		ammo = "B_30mm_APFSDS_Tracer_Yellow";
+		tracersEvery = 1;
+	};
 	class KitVehicleUpgradeI_100_EPOCH : CA_Magazine
     {
         author = "DirtySanchez/He-Man";
