@@ -2895,7 +2895,6 @@
 		<Key ID="STR_EPOCH_5000Rnd762x51YellowBeltdesc">
             <Original>Caliber: 7.62x51 mm Yellow Splash&lt;br/&gt;Rounds: 5000&lt;br/&gt;Used in: AH-9</Original>
         </Key>
-		
 		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_shellsName">
             <Original>HE Mortar Shells</Original>
         </Key>
@@ -2949,6 +2948,78 @@
         </Key>
 		<Key ID="STR_EPOCH_12Rnd_missilesDesc">
             <Original>Type: DAR&lt;br/&gt;Rounds: 12&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_shellsName">
+            <Original>40 mm GPR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_shellsNameShort">
+            <Original>GPR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_shellsDesc">
+            <Original>Type: GPR&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsName">
+            <Original>40 mm GPR-T(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsNameShort">
+            <Original>GPR-T - Red</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsDesc">
+            <Original>Type: GPR-T - Red&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsName">
+            <Original>40 mm GPR-T(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsNameShort">
+            <Original>GPR-T - Green</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsDesc">
+            <Original>Type: GPR-T - Green&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsName">
+            <Original>40 mm GPR-T(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsNameShort">
+            <Original>GPR-T - Tellow</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsDesc">
+            <Original>Type: GPR-T - Tellow&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_shellsName">
+            <Original>40 mm APFSDS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_shellsNameShort">
+            <Original>APFSDS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_shellsDesc">
+            <Original>Type: APFSDS&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsName">
+            <Original>40 mm APFSDS-T(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsNameShort">
+            <Original>APFSDS-T - Red</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsDesc">
+            <Original>Type: APFSDS-T - Red&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsName">
+            <Original>40 mm APFSDS-T(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsDesc">
+            <Original>APFSDS-T - Green</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsNameShort">
+            <Original>Type: APFSDS-T - Green&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsName">
+            <Original>40 mm APFSDS-T(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsName">
+            <Original>APFSDS-T - Yellow</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsName">
+            <Original>Type: APFSDS-T - Yellow&lt;br/&gt;Rounds: 40</Original>
         </Key>
 	</Package>
 </Project>

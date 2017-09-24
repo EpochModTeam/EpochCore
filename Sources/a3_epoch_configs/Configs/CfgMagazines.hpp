@@ -3148,6 +3148,85 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_12Rnd_missilesDesc";
 		count = 12;
 	};
+	class 60Rnd_40mm_GPR_shells: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_60Rnd_40mm_GPR_shellsName";
+		descriptionShort = "$STR_EPOCH_60Rnd_40mm_GPR_shellsDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_40mm_GPR_shellsNameShort";
+		model = "\x\addons\a3_epoch_assets_1\models\40mm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_40mm_mag_ca.paa";
+		ammo = "B_40mm_GPR";
+		count = 60;
+		initSpeed = 1035;
+		maxLeadSpeed = 100;
+		nameSound = "cannon";
+		tracersEvery = 1;
+	};
+	class 60Rnd_40mm_GPR_Tracer_Red_shells: 60Rnd_40mm_GPR_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsName";
+		descriptionShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsNameShort";
+		ammo = "B_40mm_GPR_Tracer_Red";
+	};
+	class 60Rnd_40mm_GPR_Tracer_Green_shells: 60Rnd_40mm_GPR_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsName";
+		descriptionShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsNameShort";
+		displayName = "40 mm GPR-T";
+		displayNameShort = "GPR-T";
+		ammo = "B_40mm_GPR_Tracer_Green";
+	};
+	class 60Rnd_40mm_GPR_Tracer_Yellow_shells: 60Rnd_40mm_GPR_shells
+	{
+		displayName = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsName";
+		descriptionShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsDesc";
+		displayNameShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsNameShort";
+		displayName = "40 mm GPR-T";
+		displayNameShort = "GPR-T";
+		ammo = "B_40mm_GPR_Tracer_Yellow";
+	};
+	class 40Rnd_40mm_APFSDS_shells: 60Rnd_40mm_GPR_shells
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_40Rnd_40mm_APFSDS_shellsName";
+		descriptionShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_shellsDesc";
+		displayNameShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_shellsNameShort";
+		model = "\x\addons\a3_epoch_assets_1\models\40mm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_40mm_mag_ca.paa";
+		ammo = "B_40mm_APFSDS";
+		initSpeed = 1600;
+		count = 40;
+		maxLeadSpeed = 100;
+		nameSound = "cannon";
+		tracersEvery = 1;
+	};
+	class 40Rnd_40mm_APFSDS_Tracer_Red_shells: 40Rnd_40mm_APFSDS_shells
+	{
+		displayName = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsName";
+		descriptionShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsDesc";
+		displayNameShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsNameShort";
+		ammo = "B_40mm_APFSDS_Tracer_Red";
+		count = 40;
+	};
+	class 40Rnd_40mm_APFSDS_Tracer_Green_shells: 40Rnd_40mm_APFSDS_Tracer_Red_shells
+	{
+		displayName = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsName";
+		descriptionShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsDesc";
+		displayNameShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsNameShort";
+		ammo = "B_40mm_APFSDS_Tracer_Green";
+	};
+	class 40Rnd_40mm_APFSDS_Tracer_Yellow_shells: 40Rnd_40mm_APFSDS_Tracer_Red_shells
+	{
+		displayName = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsName";
+		descriptionShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsDesc";
+		displayNameShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsNameShort";
+		ammo = "B_40mm_APFSDS_Tracer_Yellow";
+	};
 	class KitVehicleUpgradeI_100_EPOCH : CA_Magazine
     {
         author = "DirtySanchez/He-Man";
