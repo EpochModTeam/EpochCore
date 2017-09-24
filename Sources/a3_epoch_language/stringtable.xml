@@ -3093,5 +3093,512 @@
 		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowNameShort">
             <Original>APFSDS-T</Original>
         </Key>
+		<Key ID="STR_EPOCH_FemalePantsNShirt">
+			<Original>Female Pants/Shirt</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched1">
+			<Original>Jeans-Blue Shirt-Gray</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched2">
+			<Original>Jeans-Blue Shirt-Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched3">
+			<Original>Jeans-Blue Shirt-Blue Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched4">
+			<Original>Jeans-Blue Shirt-CSAT Desert</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched5">
+			<Original>Jeans-Blue Shirt-CSAT Urban</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched6">
+			<Original>Jeans-Blue Shirt-Dark Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched7">
+			<Original>Jeans-Blue Shirt-Green Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched8">
+			<Original>Jeans-Blue Shirt-Hero2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched9">
+			<Original>Jeans-Blue Shirt-Hero</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched10">
+			<Original>Jeans-Blue Shirt-LumberJack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched11">
+			<Original>Jeans-Blue Shirt-LumberJack Green</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched12">
+			<Original>Jeans-Blue Shirt-Nemo</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched13">
+			<Original>Jeans-Blue Shirt-Pink2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched14">
+			<Original>Jeans-Blue Shirt-Pink Hearts</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched15">
+			<Original>Jeans-Blue Shirt-Pink Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched16">
+			<Original>Jeans-Blue Shirt-Pink Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched17">
+			<Original>Jeans-Blue Shirt-Purple Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched18">
+			<Original>Jeans-Blue Shirt-Purple Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched19">
+			<Original>Jeans-Blue Shirt-Red Green Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched20">
+			<Original>Jeans-Blue Shirt-Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched21">
+			<Original>Jeans-Blue Shirt-Black Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched1Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Gray)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched2Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched3Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Blue Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched4Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(CSAT Desert)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched5Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(CSAT Urban)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched6Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Dark Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched7Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Green Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched8Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Hero2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched9Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Hero)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched10Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(LumberJack)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched11Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(LumberJack Green)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched12Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Nemo)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched13Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Pink2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched14Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Pink Hearts)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched15Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Pink Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched16Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Pink Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched17Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Purple Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched18Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Purple Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched19Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Red Green Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched20Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched21Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Black Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn1">
+			<Original>Jeans-BlkBrn Shirt-Gray</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn2">
+			<Original>Jeans-BlkBrn Shirt-Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn3">
+			<Original>Jeans-BlkBrn Shirt-Blue Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn4">
+			<Original>Jeans-BlkBrn Shirt-CSAT Desert</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn5">
+			<Original>Jeans-BlkBrn Shirt-CSAT Urban</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn6">
+			<Original>Jeans-BlkBrn Shirt-Dark Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn7">
+			<Original>Jeans-BlkBrn Shirt-Green Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn8">
+			<Original>Jeans-BlkBrn Shirt-Hero2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn9">
+			<Original>Jeans-BlkBrn Shirt-Hero</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn10">
+			<Original>Jeans-BlkBrn Shirt-LumberJack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn11">
+			<Original>Jeans-BlkBrn Shirt-LumberJack Green</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn12">
+			<Original>Jeans-BlkBrn Shirt-Nemo</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn13">
+			<Original>Jeans-BlkBrn Shirt-Pink2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn14">
+			<Original>Jeans-BlkBrn Shirt-Pink Hearts</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn15">
+			<Original>Jeans-BlkBrn Shirt-Pink Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn16">
+			<Original>Jeans-BlkBrn Shirt-Pink Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn17">
+			<Original>Jeans-BlkBrn Shirt-Purple Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn18">
+			<Original>Jeans-BlkBrn Shirt-Purple Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn19">
+			<Original>Jeans-BlkBrn Shirt-Red Green Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn20">
+			<Original>Jeans-BlkBrn Shirt-Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn21">
+			<Original>Jeans-BlkBrn Shirt-Black Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn1Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Gray)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn2Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn3Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Blue Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn4Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(CSAT Desert)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn5Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(CSAT Urban)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn6Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Dark Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn7Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Green Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn8Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Hero2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn9Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Hero)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn10Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(LumberJack)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn11Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(LumberJack Green)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn12Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Nemo)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn13Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Pink2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn14Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Pink Hearts)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn15Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Pink Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn16Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Pink Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn17Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Purple Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn18Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Purple Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn19Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Red Green Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn20Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn21Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Black Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn1">
+			<Original>Jeans-ArBrn Shirt-Gray</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn2">
+			<Original>Jeans-ArBrn Shirt-Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn3">
+			<Original>Jeans-ArBrn Shirt-Blue Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn4">
+			<Original>Jeans-ArBrn Shirt-CSAT Desert</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn5">
+			<Original>Jeans-ArBrn Shirt-CSAT Urban</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn6">
+			<Original>Jeans-ArBrn Shirt-Dark Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn7">
+			<Original>Jeans-ArBrn Shirt-Green Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn8">
+			<Original>Jeans-ArBrn Shirt-Hero2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn9">
+			<Original>Jeans-ArBrn Shirt-Hero</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn10">
+			<Original>Jeans-ArBrn Shirt-LumberJack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn11">
+			<Original>Jeans-ArBrn Shirt-LumberJack Green</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn12">
+			<Original>Jeans-ArBrn Shirt-Nemo</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn13">
+			<Original>Jeans-ArBrn Shirt-Pink2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn14">
+			<Original>Jeans-ArBrn Shirt-Pink Hearts</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn15">
+			<Original>Jeans-ArBrn Shirt-Pink Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn16">
+			<Original>Jeans-ArBrn Shirt-Pink Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn17">
+			<Original>Jeans-ArBrn Shirt-Purple Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn18">
+			<Original>Jeans-ArBrn Shirt-Purple Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn19">
+			<Original>Jeans-ArBrn Shirt-Red Green Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn20">
+			<Original>Jeans-ArBrn Shirt-Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn21">
+			<Original>Jeans-ArBrn Shirt-Black Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn1Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Gray)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn2Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn3Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Blue Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn4Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(CSAT Desert)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn5Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(CSAT Urban)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn6Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Dark Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn7Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Green Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn8Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Hero2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn9Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Hero)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn10Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(LumberJack)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn11Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(LumberJack Green)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn12Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Nemo)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn13Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Pink2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn14Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Pink Hearts)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn15Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Pink Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn16Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Pink Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn17Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Purple Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn18Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Purple Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn19Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Red Green Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn20Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn21Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Black Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack1">
+			<Original>Jeans-Black Shirt-Gray</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack2">
+			<Original>Jeans-Black Shirt-Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack3">
+			<Original>Jeans-Black Shirt-Blue Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack4">
+			<Original>Jeans-Black Shirt-CSAT Desert</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack5">
+			<Original>Jeans-Black Shirt-CSAT Urban</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack6">
+			<Original>Jeans-Black Shirt-Dark Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack7">
+			<Original>Jeans-Black Shirt-Green Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack8">
+			<Original>Jeans-Black Shirt-Hero2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack9">
+			<Original>Jeans-Black Shirt-Hero</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack10">
+			<Original>Jeans-Black Shirt-LumberJack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack11">
+			<Original>Jeans-Black Shirt-LumberJack Green</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack12">
+			<Original>Jeans-Black Shirt-Nemo</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack13">
+			<Original>Jeans-Black Shirt-Pink2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack14">
+			<Original>Jeans-Black Shirt-Pink Hearts</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack15">
+			<Original>Jeans-Black Shirt-Pink Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack16">
+			<Original>Jeans-Black Shirt-Pink Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack17">
+			<Original>Jeans-Black Shirt-Purple Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack18">
+			<Original>Jeans-Black Shirt-Purple Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack19">
+			<Original>Jeans-Black Shirt-Red Green Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack20">
+			<Original>Jeans-Black Shirt-Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack21">
+			<Original>Jeans-Black Shirt-Black Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack1Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Gray)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack2Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack3Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Blue Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack4Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(CSAT Desert)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack5Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(CSAT Urban)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack6Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Dark Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack7Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Green Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack8Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Hero2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack9Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Hero)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack10Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(LumberJack)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack11Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(LumberJack Green)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack12Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Nemo)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack13Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Pink2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack14Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Pink Hearts)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack15Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Pink Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack16Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Pink Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack17Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Purple Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack18Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Purple Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack19Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Red Green Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack20Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack21Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Black Skullz)</Original>
+		</Key>
 	</Package>
 </Project>
