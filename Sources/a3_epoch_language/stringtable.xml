@@ -2739,5 +2739,39 @@
 		<Key ID="STR_EPOCH_CinderTowerGhost">
             <Original>Cinder Tower Ghost</Original>
         </Key>
-    </Package>
+		<Key ID="STR_EPOCH_60Rnd_CMFlareMagazine">
+            <Original>60Rnd Flare Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_120Rnd_CMFlareMagazine">
+            <Original>120Rnd Flare Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_240Rnd_CMFlareMagazine">
+            <Original>240Rnd Flare Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_CMFlare_Chaff_Magazine">
+            <Original>60Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_120Rnd_CMFlare_Chaff_Magazine">
+            <Original>120Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_240Rnd_CMFlare_Chaff_Magazine">
+            <Original>240Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_192Rnd_CMFlare_Chaff_Magazine">
+            <Original>192Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_168Rnd_CMFlare_Chaff_Magazine">
+            <Original>168Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_300Rnd_CMFlare_Chaff_Magazine">
+            <Original>300Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_SmokeLauncherMag">
+            <Original>Smoke Launcher Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_SmokeLauncherMag_boat">
+            <Original>Smoke Launcher Mag(Boats)</Original>
+        </Key>
+
+	</Package>
 </Project>

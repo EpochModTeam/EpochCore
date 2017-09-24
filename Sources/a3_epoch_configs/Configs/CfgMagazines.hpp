@@ -2821,6 +2821,92 @@ class CfgMagazines
 		count = 150;
 		descriptionShort = "$STR_EPOCH_mas150Rnd127x107DSHKMdesc";
 	};
+	class 60Rnd_CMFlareMagazine: CA_Magazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_60Rnd_CMFlareMagazine";
+		descriptionShort = "$STR_EPOCH_60Rnd_CMFlareMagazine";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		count = 60;
+		ammo = "CMflareAmmo";
+		initSpeed = 30;
+	};
+	class 120Rnd_CMFlareMagazine: 60Rnd_CMFlareMagazine 
+	{
+		displayName = "$STR_EPOCH_120Rnd_CMFlareMagazine";
+		descriptionShort = "$STR_EPOCH_120Rnd_CMFlareMagazine";
+		count = 120;
+	};
+	class 240Rnd_CMFlareMagazine: 60Rnd_CMFlareMagazine
+	{
+		displayName = "$STR_EPOCH_240Rnd_CMFlareMagazine";
+		descriptionShort = "$STR_EPOCH_240Rnd_CMFlareMagazine";
+		count = 240;
+	};
+	class 60Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlareMagazine
+	{
+		displayName = "$STR_EPOCH_60Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_60Rnd_CMFlare_Chaff_Magazine";
+		ammo = "CMflare_Chaff_Ammo";
+	};
+	class 120Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
+	{
+		displayName = "$STR_EPOCH_120Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_120Rnd_CMFlare_Chaff_Magazine";
+		count = 120;
+	};
+	class 240Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
+	{
+		displayName = "$STR_EPOCH_240Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_240Rnd_CMFlare_Chaff_Magazine";
+		count = 240;
+	};
+	class 192Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
+	{
+		displayName = "$STR_EPOCH_192Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_192Rnd_CMFlare_Chaff_Magazine";
+		count = 192;
+	};
+	class 168Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
+	{
+		displayName = "$STR_EPOCH_168Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_168Rnd_CMFlare_Chaff_Magazine";
+		count = 168;
+	};
+	class 300Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
+	{
+		displayName = "$STR_EPOCH_300Rnd_CMFlare_Chaff_Magazine";
+		descriptionShort = "$STR_EPOCH_300Rnd_CMFlare_Chaff_Magazine";
+		count = 300;
+	};
+	class SmokeLauncherMag: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_SmokeLauncherMag";
+		descriptionShort = "$STR_EPOCH_SmokeLauncherMag";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		ammo = "SmokeLauncherAmmo";
+		count = 2;
+		nameSound = "smokeshell";
+		initSpeed = 14;
+	};
+	class SmokeLauncherMag_boat: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_SmokeLauncherMag_boat";
+		descriptionShort = "$STR_EPOCH_SmokeLauncherMag_boat";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		ammo = "SmokeLauncherAmmo_boat";
+		count = 2;
+		nameSound = "smokeshell";
+		initSpeed = 14;
+	};
 	class KitVehicleUpgradeI_100_EPOCH : CA_Magazine
     {
         author = "DirtySanchez/He-Man";
