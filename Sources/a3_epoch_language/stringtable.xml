@@ -2895,5 +2895,36 @@
 		<Key ID="STR_EPOCH_5000Rnd762x51YellowBeltdesc">
             <Original>Caliber: 7.62x51 mm Yellow Splash&lt;br/&gt;Rounds: 5000&lt;br/&gt;Used in: AH-9</Original>
         </Key>
+		
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_shellsName">
+            <Original>HE Mortar Shells</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_shellsNameShort">
+            <Original>HE</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Flare_whiteName">
+            <Original>Mortar Flare (White)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Flare_whiteNameShort">
+            <Original>White Flare</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Smoke_whiteName">
+            <Original>Mortar Smoke Shell (White)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Smoke_whiteNameShort">
+            <Original>White Smoke</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_guidedName">
+            <Original>Guided Mortar</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_guidedNameShort">
+            <Original>Guided </Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_LGName">
+            <Original>Laser Guided Mortar</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_LGNameShort">
+            <Original>Laser Guided</Original>
+        </Key>
 	</Package>
 </Project>

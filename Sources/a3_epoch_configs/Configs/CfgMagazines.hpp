@@ -3066,6 +3066,41 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashDesc";
 		ammo = "B_65x39_Minigun_Caseless_Yellow_splash";
 	};
+	class 8Rnd_82mm_Mo_shells: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_8Rnd_82mm_Mo_shellsName";
+		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_shellsNameShort";
+		count = 8;
+		ammo = "Sh_82mm_AMOS";
+		initSpeed = 200;
+		nameSound = "heat";
+	};
+	class 8Rnd_82mm_Mo_Flare_white: 8Rnd_82mm_Mo_shells
+	{
+		displayName = "$STR_EPOCH_8Rnd_82mm_Mo_Flare_whiteName";
+		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_Flare_whiteNameShort";
+		ammo = "Flare_82mm_AMOS_White";
+	};
+	class 8Rnd_82mm_Mo_Smoke_white: 8Rnd_82mm_Mo_shells
+	{
+		displayName = "$STR_EPOCH_8Rnd_82mm_Mo_Smoke_whiteName";
+		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_Smoke_whiteNameShort";
+		ammo = "Smoke_82mm_AMOS_White";
+	};
+	class 8Rnd_82mm_Mo_guided: 8Rnd_82mm_Mo_shells
+	{
+		displayName = "$STR_EPOCH_8Rnd_82mm_Mo_guidedName";
+		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_guidedNameShort";
+		ammo = "Sh_82mm_AMOS_guided";
+	};
+	class 8Rnd_82mm_Mo_LG: 8Rnd_82mm_Mo_shells
+	{
+		displayName = "$STR_EPOCH_8Rnd_82mm_Mo_LGName";
+		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_LGNameShort";
+		ammo = "Sh_82mm_AMOS_LG";
+	};
 	class KitVehicleUpgradeI_100_EPOCH : CA_Magazine
     {
         author = "DirtySanchez/He-Man";
