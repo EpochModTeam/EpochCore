@@ -2926,5 +2926,29 @@
 		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_LGNameShort">
             <Original>Laser Guided</Original>
         </Key>
+		<Key ID="STR_EPOCH_24Rnd_PG_missilesName">
+            <Original>DAGR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_PG_missilesNameShort">
+            <Original>HE</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_PG_missilesDesc">
+            <Original>Type: ATGM&lt;br/&gt;Rounds: 24&lt;br/&gt;Used in: A-143, AH-9, AH-99</Original>
+        </Key>
+		<Key ID="STR_EPOCH_12Rnd_PG_missilesDesc">
+            <Original>Type: ATGM&lt;br/&gt;Rounds: 12&lt;br/&gt;Used in: Ka-60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_missilesName">
+            <Original>DAR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_missilesNameShort">
+            <Original>HE</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_missilesDesc">
+            <Original>Type: DAR&lt;br/&gt;Rounds: 24&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_12Rnd_missilesDesc">
+            <Original>Type: DAR&lt;br/&gt;Rounds: 12&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
 	</Package>
 </Project>

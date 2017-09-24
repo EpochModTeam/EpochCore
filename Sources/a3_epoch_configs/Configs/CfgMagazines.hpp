@@ -3101,6 +3101,53 @@ class CfgMagazines
 		displayNameShort = "$STR_EPOCH_8Rnd_82mm_Mo_LGNameShort";
 		ammo = "Sh_82mm_AMOS_LG";
 	};
+	class 24Rnd_PG_missiles: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_24Rnd_PG_missilesName";
+		displayNameShort = "$STR_EPOCH_24Rnd_PG_missilesNameShort";
+		descriptionShort = "$STR_EPOCH_24Rnd_PG_missilesDesc";
+		model = "\x\addons\a3_epoch_assets_1\models\m134_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_m134_mag_ca.paa";
+		count = 24;
+		ammo = "M_PG_AT";
+		initSpeed = 30;
+		maxLeadSpeed = 650;
+		nameSound = "missiles";
+		sound[] = {"A3\sounds_f\dummysound", 3.16228, 1};
+		reloadSound[] = {"A3\sounds_f\dummysound", 0.000316228, 1};
+	};
+	class 12Rnd_PG_missiles: 24Rnd_PG_missiles
+	{
+		displayName = "$STR_EPOCH_24Rnd_PG_missilesName";
+		displayNameShort = "$STR_EPOCH_24Rnd_PG_missilesNameShort";
+		descriptionShort = "$STR_EPOCH_12Rnd_PG_missilesDesc";
+		count = 12;
+		weight = 72;
+	};
+	class 24Rnd_missiles: VehicleMagazine
+	{
+		displayName = "$STR_EPOCH_24Rnd_missilesName";
+		displayNameShort = "$STR_EPOCH_24Rnd_missilesNameShort";
+		descriptionShort = "$STR_EPOCH_24Rnd_missilesDesc";
+		scope = 2;
+		count = 24;
+		ammo = "M_AT";
+		initSpeed = 44;
+		maxLeadSpeed = 800;
+		nameSound = "rockets";
+		sound[] = {"A3\sounds_f\weapons\rockets\explosion_missile_01", 1, 1, 1200};
+		reloadSound[] = {"", 0.000316228, 1};
+		weight = 144;
+	};
+	class 12Rnd_missiles: 24Rnd_missiles
+	{
+		displayName = "$STR_EPOCH_24Rnd_missilesName";
+		displayNameShort = "$STR_EPOCH_24Rnd_missilesNameShort";
+		descriptionShort = "$STR_EPOCH_12Rnd_missilesDesc";
+		count = 12;
+	};
 	class KitVehicleUpgradeI_100_EPOCH : CA_Magazine
     {
         author = "DirtySanchez/He-Man";
