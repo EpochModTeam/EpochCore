@@ -2907,6 +2907,147 @@ class CfgMagazines
 		nameSound = "smokeshell";
 		initSpeed = 14;
 	};
+	class 200Rnd_65x39_Belt: VehicleMagazine
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_200Rnd_65x39_BeltName";
+		descriptionShort = "$STR_EPOCH_200Rnd_65x39_BeltDesc";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		count = 200;
+		ammo = "B_65x39_Caseless";
+		initSpeed = 825;
+		maxLeadSpeed = 200;
+		tracersEvery = 5;
+		nameSound = "mgun";
+	};
+	class 200Rnd_65x39_Belt_Tracer_Red: 200Rnd_65x39_Belt
+	{
+		displayName = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_RedName";
+		descriptionShort = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_RedDesc";
+		ammo = "B_65x39_Caseless";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 200Rnd_65x39_Belt_Tracer_Green: 200Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenName";
+		descriptionShort = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenDesc";
+		ammo = "B_65x39_Case_green";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 200Rnd_65x39_Belt_Tracer_Yellow: 200Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowName";
+		descriptionShort = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowDesc";
+		ammo = "B_65x39_Case_yellow";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 1000Rnd_65x39_Belt: 200Rnd_65x39_Belt 
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_1000Rnd_65x39_BeltName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_BeltDesc";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		count = 1000;
+	};
+	class 1000Rnd_65x39_Belt_Tracer_Red: 1000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedDesc";
+		tracersEvery = 1;
+		ammo = "B_65x39_Caseless";
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 1000Rnd_65x39_Belt_Green: 1000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_GreenName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_GreenDesc";
+		ammo = "B_65x39_Case_green";
+	};
+	class 1000Rnd_65x39_Belt_Tracer_Green: 1000Rnd_65x39_Belt_Green 
+	{
+		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenDesc";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 1000Rnd_65x39_Belt_Yellow: 1000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_YellowName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_YellowDesc";
+		ammo = "B_65x39_Case_Yellow";
+	};
+	class 1000Rnd_65x39_Belt_Tracer_Yellow: 1000Rnd_65x39_Belt_Yellow 
+	{
+		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowName";
+		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowDesc";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 2000Rnd_65x39_Belt: 200Rnd_65x39_Belt 
+	{
+		author = "DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_2000Rnd_65x39_BeltName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_BeltDesc";
+		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
+		count = 2000;
+	};
+	class 2000Rnd_65x39_Belt_Tracer_Red: 2000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedDesc";
+		tracersEvery = 1;
+		ammo = "B_65x39_Minigun_Caseless_Red_splash";
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+		weight = 30;
+	};
+	class 2000Rnd_65x39_Belt_Green: 2000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_GreenName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_GreenDesc";
+		ammo = "B_65x39_Case_Green";
+	};
+	class 2000Rnd_65x39_Belt_Tracer_Green: 2000Rnd_65x39_Belt_Green 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenDesc";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+		weight = 30;
+	};
+	class 2000Rnd_65x39_Belt_Tracer_Green_Splash: 2000Rnd_65x39_Belt_Tracer_Green 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashDesc";
+		ammo = "B_65x39_Minigun_Caseless_Green_splash";
+	};
+	class 2000Rnd_65x39_Belt_Yellow: 2000Rnd_65x39_Belt 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_YellowName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_YellowDesc";
+		ammo = "B_65x39_Case_Yellow";
+	};
+	class 2000Rnd_65x39_Belt_Tracer_Yellow: 2000Rnd_65x39_Belt_Yellow 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowDesc";
+		tracersEvery = 1;
+		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
+	};
+	class 2000Rnd_65x39_Belt_Tracer_Yellow_Splash: 2000Rnd_65x39_Belt_Tracer_Yellow 
+	{
+		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashName";
+		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashDesc";
+		ammo = "B_65x39_Minigun_Caseless_Yellow_splash";
+	};
 	class KitVehicleUpgradeI_100_EPOCH : CA_Magazine
     {
         author = "DirtySanchez/He-Man";

@@ -2772,6 +2772,116 @@
 		<Key ID="STR_EPOCH_SmokeLauncherMag_boat">
             <Original>Smoke Launcher Mag(Boats)</Original>
         </Key>
-
+		<Key ID="STR_EPOCH_200Rnd_65x39_BeltName">
+            <Original>6.5 mm 200Rnd Belt Case</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_BeltDesc">
+            <Original>Caliber: 6.5x39 mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_RedName">
+            <Original>6.5 mm 200Rnd Belt Case Tracer (Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_RedDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Red&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Mk200</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenName">
+            <Original>6.5 mm 200Rnd Belt Case Tracer (Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Mk200</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowName">
+            <Original>6.5 mm 200Rnd Belt Tracer (Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Mk200</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_BeltName">
+            <Original>6.5 mm 1000Rnd LMG Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_BeltDesc">
+            <Original>Caliber: 6.5x39 mm&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedName">
+            <Original>6.5 mm 1000Rnd LMG Tracer (Red) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Red&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_GreenName">
+            <Original>6.5 mm 1000Rnd LMG (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Green&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenName">
+            <Original>6.5 mm 1000Rnd LMG Tracer (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_YellowName">
+            <Original>6.5 mm 1000Rnd LMG (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Yellow&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowName">
+            <Original>6.5 mm 1000Rnd LMG Tracer (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_BeltName">
+            <Original>6.5 mm 2000Rnd LMG Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_BeltDesc">
+            <Original>Caliber: 6.5x39 mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Red) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Red&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_GreenName">
+            <Original>6.5 mm 2000Rnd LMG (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Green&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Green Splash) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green Splash&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_YellowName">
+            <Original>6.5 mm 2000Rnd LMG (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Yellow&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Yellow Splash) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow Splash&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER">
+            <Original>Tracer</Original>
+        </Key>
 	</Package>
 </Project>
