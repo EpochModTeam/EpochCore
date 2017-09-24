@@ -11124,6 +11124,613 @@ class CfgVehicles
 		displayName = "$STR_EPOCH_CinderTowerGhost";
 		ladders[] = {};
 	};
+	class Epoch_Female_JeansPatched1_F : Epoch_Female_base_F
+	{
+		author = "ComatoseBadger/DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_FemaleJeansPatched1";
+		modelSides[] = {1};
+		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        hiddenSelections[] = {"camo","camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\kTorso_Eco.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched1_uniform";
+	};
+	class Epoch_Female_JeansPatched2_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched2"; //"Female Jeans(Blue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched2_uniform";
+    };
+	class Epoch_Female_JeansPatched3_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched3"; //"Female Jeans(Blue Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched3_uniform";
+    };
+	class Epoch_Female_JeansPatched4_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched4"; //"Female Jeans(CSAT Desert)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATDesert.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched4_uniform";
+    };
+	class Epoch_Female_JeansPatched5_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched5"; //"Female Jeans(CSAT Urban)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATUrban.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched5_uniform";
+    };
+	class Epoch_Female_JeansPatched6_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched6"; //"Female Jeans(DarkBlue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_DarkBluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched6_uniform";
+    };
+	class Epoch_Female_JeansPatched7_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched7"; //"Female Jeans(Green Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_GreenSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched7_uniform";
+    };
+	class Epoch_Female_JeansPatched8_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched8"; //"Female Jeans(Hero2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero 2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched8_uniform";
+    };
+	class Epoch_Female_JeansPatched9_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched9"; //"Female Jeans(Hero)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched9_uniform";
+    };
+	class Epoch_Female_JeansPatched10_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched10"; //"Female Jeans(LumberJack)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Lumberjack.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched10_uniform";
+    };
+	class Epoch_Female_JeansPatched11_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched11"; //"Female Jeans(LumberJack Green)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_LumberjackGreen.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched11_uniform";
+    };
+	class Epoch_Female_JeansPatched12_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched12"; //"Female Jeans(Nemo)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Nemo.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched12_uniform";
+    };
+	class Epoch_Female_JeansPatched13_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched13"; //"Female Jeans(Pink 2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Pink2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched13_uniform";
+    };
+	class Epoch_Female_JeansPatched14_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched14"; //"Female Jeans(Pink Hearts)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkHearts.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched14_uniform";
+    };
+	class Epoch_Female_JeansPatched15_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched15"; //"Female Jeans(Pink Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched15_uniform";
+    };
+	class Epoch_Female_JeansPatched16_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched16"; //"Female Jeans(Pink Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkWoodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched16_uniform";
+    };
+	class Epoch_Female_JeansPatched17_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched17"; //"Female Jeans(Purple Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched17_uniform";
+    };
+	class Epoch_Female_JeansPatched18_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched18"; //"Female Jeans(Purple Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched18_uniform";
+    };
+	class Epoch_Female_JeansPatched19_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched19"; //"Female Jeans(RG Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_RGPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched19_uniform";
+    };
+	class Epoch_Female_JeansPatched20_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched20"; //"Female Jeans(Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Woodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched20_uniform";
+    };
+	class Epoch_Female_JeansPatched21_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched21"; //"Female Jeans(Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched21_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn1_F : Epoch_Female_base_F
+	{
+		author = "ComatoseBadger/DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_FemaleJeansBlkBrn1"; // "Female Jeans(Black Brown)";
+		modelSides[] = {1};
+		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        hiddenSelections[] = {"camo","camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\kTorso_Eco.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn1_uniform";
+	};
+	class Epoch_Female_JeansBlkBrn2_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn2"; //"Female JeansBB(Blue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn2_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn3_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn3"; //"Female JeansBB(Blue Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn3_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn4_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn4"; //"Female JeansBB(CSAT Desert)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATDesert.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn4_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn5_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn5"; //"Female JeansBB(CSAT Urban)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATUrban.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn5_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn6_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn6"; //"Female JeansBB(DarkBlue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_DarkBluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn6_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn7_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn7"; //"Female JeansBB(Green Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_GreenSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn7_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn8_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn8"; //"Female JeansBB(Hero2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero 2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn8_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn9_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn9"; //"Female JeansBB(Hero)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn9_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn10_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn10"; //"Female JeansBB(LumberJack)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Lumberjack.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn10_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn11_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn11"; //"Female JeansBB(LumberJack Green)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_LumberjackGreen.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn11_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn12_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn12"; //"Female JeansBB(Nemo)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Nemo.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn12_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn13_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn13"; //"Female JeansBB(Pink 2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Pink2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn13_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn14_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn14"; //"Female JeansBB(Pink Hearts)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkHearts.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn14_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn15_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn15"; //"Female JeansBB(Pink Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn15_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn16_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn16"; //"Female JeansBB(Pink Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkWoodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn16_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn17_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn17"; //"Female JeansBB(Purple Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn17_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn18_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn18"; //"Female JeansBB(Purple Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn18_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn19_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn19"; //"Female JeansBB(RG Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_RGPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn19_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn20_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn20"; //"Female JeansBB(Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Woodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn20_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn21_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn21"; //"Female JeansBB(Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn21_uniform";
+    };
+	class Epoch_Female_JeansArBrn1_F : Epoch_Female_base_F
+	{
+		author = "ComatoseBadger/DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_FemaleJeansArBrn1"; // "Female Jeans(Arid Brown)";
+		modelSides[] = {1};
+		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        hiddenSelections[] = {"camo","camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\kTorso_Eco.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn1_uniform";
+	};
+	class Epoch_Female_JeansArBrn2_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn2"; //"Female Jeans(Blue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn2_uniform";
+    };
+	class Epoch_Female_JeansArBrn3_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn3"; //"Female Jeans(Blue Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn3_uniform";
+    };
+	class Epoch_Female_JeansArBrn4_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn4"; //"Female Jeans(CSAT Desert)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATDesert.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn4_uniform";
+    };
+	class Epoch_Female_JeansArBrn5_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn5"; //"Female Jeans(CSAT Urban)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATUrban.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn5_uniform";
+    };
+	class Epoch_Female_JeansArBrn6_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn6"; //"Female Jeans(DarkBlue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_DarkBluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn6_uniform";
+    };
+	class Epoch_Female_JeansArBrn7_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn7"; //"Female Jeans(Green Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_GreenSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn7_uniform";
+    };
+	class Epoch_Female_JeansArBrn8_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn8"; //"Female Jeans(Hero2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero 2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn8_uniform";
+    };
+	class Epoch_Female_JeansArBrn9_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn9"; //"Female Jeans(Hero)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn9_uniform";
+    };
+	class Epoch_Female_JeansArBrn10_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn10"; //"Female Jeans(LumberJack)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Lumberjack.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn10_uniform";
+    };
+	class Epoch_Female_JeansArBrn11_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn11"; //"Female Jeans(LumberJack Green)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_LumberjackGreen.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn11_uniform";
+    };
+	class Epoch_Female_JeansArBrn12_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn12"; //"Female Jeans(Nemo)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Nemo.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn12_uniform";
+    };
+	class Epoch_Female_JeansArBrn13_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn13"; //"Female Jeans(Pink 2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Pink2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn13_uniform";
+    };
+	class Epoch_Female_JeansArBrn14_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn14"; //"Female Jeans(Pink Hearts)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkHearts.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn14_uniform";
+    };
+	class Epoch_Female_JeansArBrn15_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn15"; //"Female Jeans(Pink Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn15_uniform";
+    };
+	class Epoch_Female_JeansArBrn16_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn16"; //"Female Jeans(Pink Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkWoodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn16_uniform";
+    };
+	class Epoch_Female_JeansArBrn17_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn17"; //"Female Jeans(Purple Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn17_uniform";
+    };
+	class Epoch_Female_JeansArBrn18_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn18"; //"Female Jeans(Purple Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn18_uniform";
+    };
+	class Epoch_Female_JeansArBrn19_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn19"; //"Female Jeans(RG Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_RGPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn19_uniform";
+    };
+	class Epoch_Female_JeansArBrn20_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn20"; //"Female Jeans(Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Woodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn20_uniform";
+    };
+	class Epoch_Female_JeansArBrn21_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn21"; //"Female Jeans(Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn21_uniform";
+    };
+	class Epoch_Female_JeansBlack1_F : Epoch_Female_base_F
+	{
+		author = "ComatoseBadger/DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_FemaleJeansBlack1"; // "Female Jeans(Arid Brown)";
+		modelSides[] = {1};
+		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        hiddenSelections[] = {"camo","camo1","camo2"};
+		uniformClass = "U_JeansBlack1_uniform";
+	};
+	class Epoch_Female_JeansBlack2_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack2"; //"Female Jeans(Blue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack2_uniform";
+    };
+	class Epoch_Female_JeansBlack3_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack3"; //"Female Jeans(Blue Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack3_uniform";
+    };
+	class Epoch_Female_JeansBlack4_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack4"; //"Female Jeans(CSAT Desert)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATDesert.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack4_uniform";
+    };
+	class Epoch_Female_JeansBlack5_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack5"; //"Female Jeans(CSAT Urban)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATUrban.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack5_uniform";
+    };
+	class Epoch_Female_JeansBlack6_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack6"; //"Female Jeans(DarkBlue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_DarkBluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack6_uniform";
+    };
+	class Epoch_Female_JeansBlack7_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack7"; //"Female Jeans(Green Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_GreenSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack7_uniform";
+    };
+	class Epoch_Female_JeansBlack8_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack8"; //"Female Jeans(Hero2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero 2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack8_uniform";
+    };
+	class Epoch_Female_JeansBlack9_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack9"; //"Female Jeans(Hero)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack9_uniform";
+    };
+	class Epoch_Female_JeansBlack10_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack10"; //"Female Jeans(LumberJack)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Lumberjack.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack10_uniform";
+    };
+	class Epoch_Female_JeansBlack11_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack11"; //"Female Jeans(LumberJack Green)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_LumberjackGreen.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack11_uniform";
+    };
+	class Epoch_Female_JeansBlack12_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack12"; //"Female Jeans(Nemo)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Nemo.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack12_uniform";
+    };
+	class Epoch_Female_JeansBlack13_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack13"; //"Female Jeans(Pink 2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Pink2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack13_uniform";
+    };
+	class Epoch_Female_JeansBlack14_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack14"; //"Female Jeans(Pink Hearts)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkHearts.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack14_uniform";
+    };
+	class Epoch_Female_JeansBlack15_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack15"; //"Female Jeans(Pink Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack15_uniform";
+    };
+	class Epoch_Female_JeansBlack16_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack16"; //"Female Jeans(Pink Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkWoodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack16_uniform";
+    };
+	class Epoch_Female_JeansBlack17_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack17"; //"Female Jeans(Purple Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack17_uniform";
+    };
+	class Epoch_Female_JeansBlack18_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack18"; //"Female Jeans(Purple Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack18_uniform";
+    };
+	class Epoch_Female_JeansBlack19_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack19"; //"Female Jeans(RG Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_RGPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack19_uniform";
+    };
+	class Epoch_Female_JeansBlack20_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack20"; //"Female Jeans(Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Woodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack20_uniform";
+    };
+	class Epoch_Female_JeansBlack21_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack21"; //"Female Jeans(Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack21_uniform";
+    };
 };
 
 /*[[[end]]]*/
