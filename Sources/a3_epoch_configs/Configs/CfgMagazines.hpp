@@ -936,7 +936,7 @@ class CfgMagazines
         author = "vbgreen,vbawol";
         scope = 2;
         count = 1;
-        displayName = "$STR_EPOCH_ItemZombiePartsBag";
+        displayName = "$STR_EPOCH_BioHazardBag";
         model = "\x\addons\a3_epoch_assets_1\models\zombie_parts_bag_v2.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_zparts_CA.paa";
         descriptionShort = "$STR_EPOCH_BioHazardBagDesc";
@@ -2745,7 +2745,7 @@ class CfgMagazines
 		lastRoundsTracer = 4;
 		nameSound = "mgun";
 	};
-	class 5000Rnd_762x51_Belt: 2000Rnd_762x51_Belt 
+	class 5000Rnd_762x51_Belt: 2000Rnd_762x51_Belt
 	{
 		ammo = "B_762x51_Minigun_Tracer_Red_splash";
 		displayName = "$STR_EPOCH_5000Rnd762x51Beltname";
@@ -2851,7 +2851,7 @@ class CfgMagazines
 		ammo = "CMflareAmmo";
 		initSpeed = 30;
 	};
-	class 120Rnd_CMFlareMagazine: 60Rnd_CMFlareMagazine 
+	class 120Rnd_CMFlareMagazine: 60Rnd_CMFlareMagazine
 	{
 		displayName = "$STR_EPOCH_120Rnd_CMFlareMagazine";
 		descriptionShort = "$STR_EPOCH_120Rnd_CMFlareMagazine";
@@ -2948,7 +2948,7 @@ class CfgMagazines
 		tracersEvery = 1;
 		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
 	};
-	class 200Rnd_65x39_Belt_Tracer_Green: 200Rnd_65x39_Belt 
+	class 200Rnd_65x39_Belt_Tracer_Green: 200Rnd_65x39_Belt
 	{
 		displayName = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenName";
 		descriptionShort = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenDesc";
@@ -2956,7 +2956,7 @@ class CfgMagazines
 		tracersEvery = 1;
 		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
 	};
-	class 200Rnd_65x39_Belt_Tracer_Yellow: 200Rnd_65x39_Belt 
+	class 200Rnd_65x39_Belt_Tracer_Yellow: 200Rnd_65x39_Belt
 	{
 		displayName = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowName";
 		descriptionShort = "$STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowDesc";
@@ -2964,7 +2964,7 @@ class CfgMagazines
 		tracersEvery = 1;
 		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
 	};
-	class 1000Rnd_65x39_Belt: 200Rnd_65x39_Belt 
+	class 1000Rnd_65x39_Belt: 200Rnd_65x39_Belt
 	{
 		author = "DirtySanchez";
 		scope = 2;
@@ -2974,7 +2974,7 @@ class CfgMagazines
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
 		count = 1000;
 	};
-	class 1000Rnd_65x39_Belt_Tracer_Red: 1000Rnd_65x39_Belt 
+	class 1000Rnd_65x39_Belt_Tracer_Red: 1000Rnd_65x39_Belt
 	{
 		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedName";
 		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedDesc";
@@ -2982,33 +2982,33 @@ class CfgMagazines
 		ammo = "B_65x39_Caseless";
 		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
 	};
-	class 1000Rnd_65x39_Belt_Green: 1000Rnd_65x39_Belt 
+	class 1000Rnd_65x39_Belt_Green: 1000Rnd_65x39_Belt
 	{
 		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_GreenName";
 		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_GreenDesc";
 		ammo = "B_65x39_Case_green";
 	};
-	class 1000Rnd_65x39_Belt_Tracer_Green: 1000Rnd_65x39_Belt_Green 
+	class 1000Rnd_65x39_Belt_Tracer_Green: 1000Rnd_65x39_Belt_Green
 	{
 		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenName";
 		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenDesc";
 		tracersEvery = 1;
 		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
 	};
-	class 1000Rnd_65x39_Belt_Yellow: 1000Rnd_65x39_Belt 
+	class 1000Rnd_65x39_Belt_Yellow: 1000Rnd_65x39_Belt
 	{
 		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_YellowName";
 		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_YellowDesc";
 		ammo = "B_65x39_Case_Yellow";
 	};
-	class 1000Rnd_65x39_Belt_Tracer_Yellow: 1000Rnd_65x39_Belt_Yellow 
+	class 1000Rnd_65x39_Belt_Tracer_Yellow: 1000Rnd_65x39_Belt_Yellow
 	{
 		displayName = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowName";
 		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowDesc";
 		tracersEvery = 1;
 		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
 	};
-	class 2000Rnd_65x39_Belt: 200Rnd_65x39_Belt 
+	class 2000Rnd_65x39_Belt: 200Rnd_65x39_Belt
 	{
 		author = "DirtySanchez";
 		scope = 2;
@@ -3018,7 +3018,7 @@ class CfgMagazines
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
 		count = 2000;
 	};
-	class 2000Rnd_65x39_Belt_Tracer_Red: 2000Rnd_65x39_Belt 
+	class 2000Rnd_65x39_Belt_Tracer_Red: 2000Rnd_65x39_Belt
 	{
 		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedName";
 		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedDesc";
@@ -3027,13 +3027,13 @@ class CfgMagazines
 		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
 		weight = 30;
 	};
-	class 2000Rnd_65x39_Belt_Green: 2000Rnd_65x39_Belt 
+	class 2000Rnd_65x39_Belt_Green: 2000Rnd_65x39_Belt
 	{
 		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_GreenName";
 		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_GreenDesc";
 		ammo = "B_65x39_Case_Green";
 	};
-	class 2000Rnd_65x39_Belt_Tracer_Green: 2000Rnd_65x39_Belt_Green 
+	class 2000Rnd_65x39_Belt_Tracer_Green: 2000Rnd_65x39_Belt_Green
 	{
 		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenName";
 		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenDesc";
@@ -3041,26 +3041,26 @@ class CfgMagazines
 		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
 		weight = 30;
 	};
-	class 2000Rnd_65x39_Belt_Tracer_Green_Splash: 2000Rnd_65x39_Belt_Tracer_Green 
+	class 2000Rnd_65x39_Belt_Tracer_Green_Splash: 2000Rnd_65x39_Belt_Tracer_Green
 	{
 		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashName";
 		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashDesc";
 		ammo = "B_65x39_Minigun_Caseless_Green_splash";
 	};
-	class 2000Rnd_65x39_Belt_Yellow: 2000Rnd_65x39_Belt 
+	class 2000Rnd_65x39_Belt_Yellow: 2000Rnd_65x39_Belt
 	{
 		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_YellowName";
 		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_YellowDesc";
 		ammo = "B_65x39_Case_Yellow";
 	};
-	class 2000Rnd_65x39_Belt_Tracer_Yellow: 2000Rnd_65x39_Belt_Yellow 
+	class 2000Rnd_65x39_Belt_Tracer_Yellow: 2000Rnd_65x39_Belt_Yellow
 	{
 		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowName";
 		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowDesc";
 		tracersEvery = 1;
 		displaynameshort = "$STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER";
 	};
-	class 2000Rnd_65x39_Belt_Tracer_Yellow_Splash: 2000Rnd_65x39_Belt_Tracer_Yellow 
+	class 2000Rnd_65x39_Belt_Tracer_Yellow_Splash: 2000Rnd_65x39_Belt_Tracer_Yellow
 	{
 		displayName = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashName";
 		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashDesc";
