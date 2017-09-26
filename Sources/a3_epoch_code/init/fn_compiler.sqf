@@ -39,7 +39,7 @@ _customVarsInit = getArray(getMissionConfig "CfgEpochClient" >> "customVarsDefau
 _customVarNames = _customVarsInit apply {_x param [0,""]};
 _header = "";
 {
-    _header = _header + format["_player%1Key = EPOCH_%2;",_x, round(diag_tickTime + random 99999)];
+    _header = _header + format["_player%1Key = 'EPOCH_%2';",_x, round(diag_tickTime + random 99999)];
 } forEach _customVarNames;
 
 _version = getNumber(_config >> "version");
@@ -75,7 +75,6 @@ if (_version >= 1) then {
 						_code = "";
 						if (getNumber(_x >> "customHeader") == 1) then {
 							_code = _header + (preprocessFileLineNumbers _fnc_path);
-							diag_log _code;
 						} else {
 							_code = (preprocessFileLineNumbers _fnc_path);
 						};
