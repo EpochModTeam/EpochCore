@@ -123,6 +123,11 @@ class CfgSounds
 		sound[] = {"\x\addons\a3_epoch_community\sounds\digital_geiger\digital_geiger_3.ogg",1.0,1.0};
 		titles[] = {};
 	};
+	class vehicle_repair
+	{
+		sound[] = {"A3\Sounds_F\sfx\UI\vehicles\Vehicle_Repair",1.0,1.0};
+		titles[] = {};
+	};
 };
 
 /*[[[end]]]*/
