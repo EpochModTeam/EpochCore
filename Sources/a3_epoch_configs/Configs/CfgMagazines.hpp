@@ -2750,8 +2750,6 @@ class CfgMagazines
 		ammo = "B_762x51_Minigun_Tracer_Red_splash";
 		displayName = "$STR_EPOCH_5000Rnd762x51Beltname";
 		descriptionShort = "$STR_EPOCH_5000Rnd762x51Beltdesc";
-		displayName = "7.62 mm Minigun Belt";
-		descriptionShort = "Caliber: 7.62x51 mm<br />Rounds: 2000<br />Used in: AH-9";
 		tracersEvery = 1;
 		count = 5000;
 		initSpeed = 860;
@@ -2801,7 +2799,6 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_200Rnd30mmGname";
 		descriptionShort = "$STR_EPOCH_200Rnd30mmGdesc";
-		displayNameShort = "HE";
 		model = "\x\addons\a3_epoch_assets_1\models\30mm_mag.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_30mm_mag_ca.paa";
 		ammo = "G_20mm_HE";
@@ -3176,8 +3173,6 @@ class CfgMagazines
 		displayName = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsName";
 		descriptionShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsDesc";
 		displayNameShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsNameShort";
-		displayName = "40 mm GPR-T";
-		displayNameShort = "GPR-T";
 		ammo = "B_40mm_GPR_Tracer_Green";
 	};
 	class 60Rnd_40mm_GPR_Tracer_Yellow_shells: 60Rnd_40mm_GPR_shells
@@ -3185,8 +3180,6 @@ class CfgMagazines
 		displayName = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsName";
 		descriptionShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsDesc";
 		displayNameShort = "$STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsNameShort";
-		displayName = "40 mm GPR-T";
-		displayNameShort = "GPR-T";
 		ammo = "B_40mm_GPR_Tracer_Yellow";
 	};
 	class 40Rnd_40mm_APFSDS_shells: 60Rnd_40mm_GPR_shells
