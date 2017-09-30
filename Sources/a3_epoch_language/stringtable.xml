@@ -1534,9 +1534,6 @@
 		<Key ID="STR_EPOCH_WoodQuarterFloor">
             <Original>Wood Quarter Floor</Original>
         </Key>
-        <Key ID="STR_EPOCH_MetalFloor">
-            <Original>Metal Floor</Original>
-        </Key>
         <Key ID="STR_EPOCH_LargeWall">
             <Original>Large Wall</Original>
         </Key>
@@ -1684,6 +1681,9 @@
         <Key ID="STR_EPOCH_WoodFloorGhost">
             <Original>Wood Floor Ghost</Original>
         </Key>
+		<Key ID="STR_EPOCH_MetalFloor">
+            <Original>Metal Floor</Original>
+        </Key>
         <Key ID="STR_EPOCH_MetalFloorGhost">
             <Original>Metal Floor Ghost</Original>
         </Key>
@@ -1732,12 +1732,6 @@
         <Key ID="STR_EPOCH_Tipi">
             <Original>Tipi</Original>
         </Key>
-		<Key ID="STR_EPOCH_TentA">
-        	<Original>A small one-person tent</Original>
-    	</Key>
-		<Key ID="STR_EPOCH_TentDome">
-        	<Original>A roomier camping tent</Original>
-    	</Key>
         <Key ID="STR_EPOCH_MetalShelf">
             <Original>Metal Shelf</Original>
         </Key>
@@ -2548,12 +2542,6 @@
 		<Key ID="STR_EPOCH_VehUpgTopSecretRareDoc_desc">
             <Original>This Top Secret and Rare Document will allow special upgrades the server has</Original>
         </Key>
-		<Key ID="STR_EPOCH_CinderFloor">
-            <Original>Cinder Floor</Original>
-        </Key>
-		<Key ID="STR_EPOCH_CinderFloorGhost">
-            <Original>Cinder Floor Ghost</Original>
-        </Key>
 		<Key ID="STR_EPOCH_Adrenaline">
             <Original>Adrenaline Shot</Original>
         </Key>
@@ -2709,9 +2697,6 @@
 		<Key ID="STR_EPOCH_TentDomeDesc">
 			<Original>A spacious camping tent</Original>
 		</Key>
-		<Key ID="STR_EPOCH_MetalFloor">
-            <Original>Metal Floor</Original>
-        </Key>
 		<Key ID="STR_EPOCH_MetalFloorDesc">
             <Original>Hand crafted and forged by your own strength and wisdom</Original>
         </Key>
@@ -2727,6 +2712,9 @@
 		<Key ID="STR_EPOCH_CinderFloor">
             <Original>Cinder Floor</Original>
         </Key>
+		<Key ID="STR_EPOCH_CinderFloorGhost">
+			<Original>Cinder Floor Ghost</Original>
+		</Key>
 		<Key ID="STR_EPOCH_CinderFloorDesc">
             <Original>Hand poured and formed with your new knowledge of cinder construction</Original>
         </Key>
