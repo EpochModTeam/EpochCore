@@ -3220,6 +3220,7 @@ class CfgMagazines
 		displayNameShort = "$STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsNameShort";
 		ammo = "B_40mm_APFSDS_Tracer_Yellow";
 	};
+	class 250Rnd_30mm_HE_shells;
 	class 140Rnd_30mm_MP_shells: 250Rnd_30mm_HE_shells
 	{
 		author = "DirtySanchez";
