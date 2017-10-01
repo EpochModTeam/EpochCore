@@ -6958,6 +6958,86 @@ class CfgWeapons
             uniformClass = "Epoch_Female_JeansBlack21_F";
         };
     };
+	class hockey_mask_epoch : ItemCore
+    {
+        author = "AWOL/Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_EPOCH_HockeyMask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\hockey_mask_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\hockey.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\hockey.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
+	class plague_mask_epoch : ItemCore
+    {
+        author = "AWOL/Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_EPOCH_PlagueMask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\plague_mask_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\plague.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\plague.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
+	class ghostface_mask_epoch : ItemCore
+    {
+        author = "AWOL/Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_EPOCH_GhostFaceMask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\plague_mask_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\scream.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\scream.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
+	class skull_mask_epoch : ItemCore
+    {
+        author = "AWOL/Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_EPOCH_SkullMask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\skullhead_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\skull_mask01.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\skull_mask01.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
+	class witch_mask_epoch : ItemCore
+    {
+        author = "AWOL/Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_EPOCH_WitchMask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\witch_mask_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\witch.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\witch.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
 };
 
 /*[[[end]]]*/

@@ -3597,5 +3597,20 @@
 		<Key ID="STR_EPOCH_MarkerSkull">
 			<Original>Epoch Death Marker</Original>
 		</Key>
+		<Key ID="STR_EPOCH_HockeyMask">
+			<Original>Hockey Mask</Original>
+		</Key>
+		<Key ID="STR_EPOCH_PlagueMask">
+			<Original>Plague Mask</Original>
+		</Key>
+		<Key ID="STR_EPOCH_GhostFaceMask">
+			<Original>GhostFace Mask</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SkullMask">
+			<Original>Skull Mask</Original>
+		</Key>
+		<Key ID="STR_EPOCH_WitchMask">
+			<Original>Witch Mask</Original>
+		</Key>
 	</Package>
 </Project>
