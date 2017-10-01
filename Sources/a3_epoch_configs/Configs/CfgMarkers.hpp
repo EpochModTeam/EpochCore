@@ -25,7 +25,7 @@ class cfgMarkers
 	class EpochSkull
 	{
 		name = "$STR_EPOCH_MarkerSkull";
-		icon = "\x\addons\a3_epoch_community\markers\markericon_skull.paa";
+		icon = "\x\addons\a3_epoch_community\markers\marker_icon_skull.paa";
 		color[] = {1,1,1,1};
 		size = 32;
 		scope = 2;
@@ -58,7 +58,7 @@ class cfgMarkers
 	class EpochAttachment
 	{
 		name = "$STR_EPOCH_MarkerAttachment";
-		icon = "\x\addons\a3_epoch_community\markers\marker_icon_attachment.paa";
+		icon = "\x\addons\a3_epoch_community\markers\marker_icon_attachments.paa";
 		color[] = {1,1,1,1};
 		size = 32;
 		scope = 2;
