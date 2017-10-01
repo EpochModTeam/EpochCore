@@ -3588,5 +3588,14 @@
 		<Key ID="STR_EPOCH_FemaleJeansBlack21Desc">
 			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Black Skullz)</Original>
 		</Key>
+		<Key ID="STR_EPOCH_MarkerActive">
+			<Original>Epoch Active Marker</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHex">
+			<Original>Epoch Hex Marker</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerSkull">
+			<Original>Epoch Death Marker</Original>
+		</Key>
 	</Package>
 </Project>

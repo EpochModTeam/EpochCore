@@ -270,6 +270,11 @@ class CraterMetal {
 #include "\x\addons\a3_epoch_configs\Configs\CfgFunctions.hpp"
 //
 #include "\x\addons\a3_epoch_configs\Configs\CfgEpochCoreClientFunctions.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMarkerClasses.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMarkers.hpp"
+
+
+
 
 class IGUIBack;
 class RscListBox;
