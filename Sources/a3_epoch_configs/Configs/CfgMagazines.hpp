@@ -2842,7 +2842,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_60Rnd_CMFlareMagazine";
 		descriptionShort = "$STR_EPOCH_60Rnd_CMFlareMagazine";
-		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		model = "\x\addons\a3_epoch_assets_1\models\dshkm_mag.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
 		count = 60;
 		ammo = "CMflareAmmo";
@@ -2902,7 +2902,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_SmokeLauncherMag";
 		descriptionShort = "$STR_EPOCH_SmokeLauncherMag";
-		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		model = "\x\addons\a3_epoch_assets_1\models\dshkm_mag.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
 		ammo = "SmokeLauncherAmmo";
 		count = 2;
@@ -2915,7 +2915,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_SmokeLauncherMag_boat";
 		descriptionShort = "$STR_EPOCH_SmokeLauncherMag_boat";
-		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		model = "\x\addons\a3_epoch_assets_1\models\dshkm_mag.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
 		ammo = "SmokeLauncherAmmo_boat";
 		count = 2;
@@ -2928,7 +2928,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_200Rnd_65x39_BeltName";
 		descriptionShort = "$STR_EPOCH_200Rnd_65x39_BeltDesc";
-		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		model = "\x\addons\a3_epoch_assets_1\models\dshkm_mag.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
 		count = 200;
 		ammo = "B_65x39_Caseless";
@@ -2967,7 +2967,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_1000Rnd_65x39_BeltName";
 		descriptionShort = "$STR_EPOCH_1000Rnd_65x39_BeltDesc";
-		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		model = "\x\addons\a3_epoch_assets_1\models\dshkm_mag.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
 		count = 1000;
 	};
@@ -3011,7 +3011,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "$STR_EPOCH_2000Rnd_65x39_BeltName";
 		descriptionShort = "$STR_EPOCH_2000Rnd_65x39_BeltDesc";
-		model = "\x\addons\a3_epoch_c\models\dshkm_mag.p3d";
+		model = "\x\addons\a3_epoch_assets_1\models\dshkm_mag.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
 		count = 2000;
 	};
