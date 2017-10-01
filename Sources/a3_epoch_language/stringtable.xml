@@ -3588,15 +3588,6 @@
 		<Key ID="STR_EPOCH_FemaleJeansBlack21Desc">
 			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Black Skullz)</Original>
 		</Key>
-		<Key ID="STR_EPOCH_MarkerActive">
-			<Original>Epoch Active Marker</Original>
-		</Key>
-		<Key ID="STR_EPOCH_MarkerHex">
-			<Original>Epoch Hex Marker</Original>
-		</Key>
-		<Key ID="STR_EPOCH_MarkerSkull">
-			<Original>Epoch Death Marker</Original>
-		</Key>
 		<Key ID="STR_EPOCH_HockeyMask">
 			<Original>Hockey Mask</Original>
 		</Key>
@@ -3612,5 +3603,171 @@
 		<Key ID="STR_EPOCH_WitchMask">
 			<Original>Witch Mask</Original>
 		</Key>
+		<Key ID="STR_EPOCH_MarkerActive">
+			<Original>Active</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHex">
+			<Original>Hex</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerSkull">
+			<Original>Death</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerAirdrop">
+			<Original>Airdrop</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerAmmo">
+			<Original>Ammo</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerAttachment">
+			<Original>Attachment</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBackpack">
+			<Original>Backpack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBiohazard">
+			<Original>Biohazard</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBoat">
+			<Original>Boat</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBricks">
+			<Original>Bricks</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerCar">
+			<Original>Vehicle</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerCarnival">
+			<Original>Carnival</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerCash">
+			<Original>Cash</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerChat">
+			<Original>Chat</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerContainer">
+			<Original>Backpack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerDollar1">
+			<Original>Dollar</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerDollar2">
+			<Original>Dollar</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerWater">
+			<Original>Water</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerDynamicTrader">
+			<Original>Dynamic Trader</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerExplosive">
+			<Original>Explosives</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerFirstAid">
+			<Original>FirstAid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerFood">
+			<Original>Food</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerGem">
+			<Original>Gem</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHeart">
+			<Original>Heart</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHeli">
+			<Original>Heli</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHeli">
+			<Original>Heli</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHelmet">
+			<Original>Helmet</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerJet">
+			<Original>Jet</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerKrypto">
+			<Original>Krypto</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerKryptoBag">
+			<Original>Krypto</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerLightning">
+			<Original>Lightning</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission1_1">
+			<Original>Mission Level1-1</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission1_2">
+			<Original>Mission Level1-2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission2_1">
+			<Original>Mission Level2-1</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission2_2">
+			<Original>Mission Level2-2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission3_1">
+			<Original>Mission Level3-1</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission3_2">
+			<Original>Mission Level3-2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission4_1">
+			<Original>Mission Level4-1</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission4_2">
+			<Original>Mission Level4-2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMixer">
+			<Original>Mixer</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerPistol">
+			<Original>Pistol</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerPlant">
+			<Original>Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerQuad">
+			<Original>Quad</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerRadiation">
+			<Original>Radiation</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerRespawn">
+			<Original>Respawn</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerRifle">
+			<Original>Rifle</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerService">
+			<Original>Service</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerShipwreck">
+			<Original>Shipwreck</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerSniper">
+			<Original>Sniper</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerStaticTrader">
+			<Original>Static Trader</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerTank">
+			<Original>Tank</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerTruck">
+			<Original>Truck</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerUniform">
+			<Original>Uniform</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerVest">
+			<Original>Vest</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerWood">
+			<Original>Wood</Original>
+		</Key>
+
 	</Package>
 </Project>
