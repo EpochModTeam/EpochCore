@@ -3768,6 +3768,41 @@
 		<Key ID="STR_EPOCH_MarkerWood">
 			<Original>Wood</Original>
 		</Key>
-
+		<Key ID="STR_EPOCH_Garden">
+			<Original>Epoch Garden Plot</Original>
+		</Key>
+		<Key ID="STR_EPOCH_GardenGhost">
+			<Original>Garden Ghost</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HempPlant">
+			<Original>Hemp Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hemp">
+			<Original>Hemp</Original>
+		</Key>
+		<Key ID="STR_EPOCH_PoppyPlant">
+			<Original>Poppy Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Poppy">
+			<Original>Poppy</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SunflowerPlant">
+			<Original>Sunflower Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Sunflower">
+			<Original>Sunflower</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SaplingPlant">
+			<Original>Sapling Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Sapling">
+			<Original>Sapling</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SaplingTeenPlant">
+			<Original>Sapling Teen Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SaplingTeen">
+			<Original>Sapling Teen</Original>
+		</Key>
 	</Package>
 </Project>

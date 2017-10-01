@@ -11771,6 +11771,119 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
 		uniformClass = "U_JeansBlack21_uniform";
     };
+	class Garden_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\epoch_Garden.p3d";
+        displayName = "$STR_EPOCH_Garden";
+    };
+    class Garden_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\epoch_Garden_ghost.p3d";
+        displayName = "$STR_EPOCH_GardenGhost";
+        ladders[] = {};
+    };
+    class Garden_EPOCH : Buildable_Storage
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\epoch_Garden.p3d";
+        displayName = "$STR_EPOCH_Garden";
+        maximumLoad = 800;
+    };
+    class HempPlant_EPOCH : Grown_Plants_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\hemp_plant.p3d";
+        displayName = "$STR_EPOCH_HempPlant";
+        transportMaxItems = 0;
+        transportMaxMagazines = 1;
+        transportMaxWeapons = 0;
+        class TransportMagazines
+        {
+            class _xx_Hemp
+            {
+                magazine = "Hemp";
+                count = 1;
+            };
+        };
+    };
+	class PoppyPlant_EPOCH : Grown_Plants_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\poppy_plant.p3d";
+        displayName = "$STR_EPOCH_PoppyPlant";
+        transportMaxItems = 0;
+        transportMaxMagazines = 1;
+        transportMaxWeapons = 0;
+        class TransportMagazines
+        {
+            class _xx_Poppy
+            {
+                magazine = "Poppy";
+                count = 1;
+            };
+        };
+    };
+	class SunflowerPlant_EPOCH : Grown_Plants_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\Sunflower_plant.p3d";
+        displayName = "$STR_EPOCH_SunflowerPlant";
+        transportMaxItems = 0;
+        transportMaxMagazines = 1;
+        transportMaxWeapons = 0;
+        class TransportMagazines
+        {
+            class _xx_Sunflower
+            {
+                magazine = "Sunflower";
+                count = 1;
+            };
+        };
+    };
+	class SaplingPlant_EPOCH : Grown_Plants_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\sapling.p3d";
+        displayName = "$STR_EPOCH_SaplingPlant";
+        transportMaxItems = 0;
+        transportMaxMagazines = 1;
+        transportMaxWeapons = 0;
+        class TransportMagazines
+        {
+            class _xx_Sapling
+            {
+                magazine = "Sapling";
+                count = 1;
+            };
+        };
+    };
+	class SaplingTeenPlant_EPOCH : Grown_Plants_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\sapling_teen.p3d";
+        displayName = "$STR_EPOCH_SaplingTeenPlant";
+        transportMaxItems = 0;
+        transportMaxMagazines = 1;
+        transportMaxWeapons = 0;
+        class TransportMagazines
+        {
+            class _xx_SaplingTeen
+            {
+                magazine = "SaplingTeen";
+                count = 1;
+            };
+        };
+    };
 };
 
 /*[[[end]]]*/
