@@ -205,6 +205,18 @@
             <Russian>Radiation</Russian>
             <Spanish>Radiation</Spanish>
         </Key>
+        <Key ID="str_epoch_pvar_Nuisance">
+            <Original>Nuisance</Original>
+            <English>Nuisance</English>
+            <German>Nuisance</German>
+            <Czech>Nuisance</Czech>
+            <French>Nuisance</French>
+            <Italian>Nuisance</Italian>
+            <Polish>Nuisance</Polish>
+            <Portuguese>Nuisance</Portuguese>
+            <Russian>Nuisance</Russian>
+            <Spanish>Nuisance</Spanish>
+        </Key>
         <Key ID="str_epoch_abort">
             <Original>Abort in %1</Original>
             <English>Abort in %1</English>
