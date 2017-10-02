@@ -3672,6 +3672,9 @@
 		<Key ID="STR_EPOCH_MarkerGem">
 			<Original>Gem</Original>
 		</Key>
+		<Key ID="STR_EPOCH_MarkerGPS">
+			<Original>GPS</Original>
+		</Key>
 		<Key ID="STR_EPOCH_MarkerHeart">
 			<Original>Heart</Original>
 		</Key>

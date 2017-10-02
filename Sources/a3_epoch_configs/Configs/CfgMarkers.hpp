@@ -253,6 +253,17 @@ class cfgMarkers
 		shadow = 1;
 		markerClass = "epochmod_assets";
 	};
+	class EpochGPS
+	{
+		name = "$STR_EPOCH_MarkerGPS";
+		icon = "\x\addons\a3_epoch_community\markers\marker_icon_gps.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
 	class EpochHeart
 	{
 		name = "$STR_EPOCH_MarkerHeart";
