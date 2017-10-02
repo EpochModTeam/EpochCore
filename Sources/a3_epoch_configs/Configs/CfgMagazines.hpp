@@ -4483,6 +4483,11 @@ class CfgMagazines
         count = 1;
         mass = 1;
     };
+	class Sapling_GoldenSeal : Sapling {};
+	class Sapling_Hemp : Sapling {};
+	class Sapling_Poppy : Sapling {};
+	class Sapling_Pumpkin : Sapling {};
+	class Sapling_Sunflower : Sapling {};
 	class SaplingTeen : CA_Magazine
     {
         author = "Helion4/DirtySanchez";
@@ -4494,6 +4499,11 @@ class CfgMagazines
         count = 1;
         mass = 1;
     };
+	class SaplingTeen_GoldenSeal : SaplingTeen {};
+	class SaplingTeen_Hemp : SaplingTeen {};
+	class SaplingTeen_Poppy : SaplingTeen {};
+	class SaplingTeen_Pumpkin : SaplingTeen {};
+	class SaplingTeen_Sunflower : SaplingTeen {};
 };
 
 /*[[[end]]]*/
