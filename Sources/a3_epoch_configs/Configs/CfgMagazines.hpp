@@ -4444,7 +4444,7 @@ class CfgMagazines
         author = "Helion4/DirtySanchez";
         scope = 2;
         model = "\x\addons\a3_epoch_community\models\Farming\hemp_plant.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\Farming\hemp_icon_ca.paa";
+        picture = "\x\addons\a3_epoch_community\icons\hemp_icon_ca.paa";
         displayName = "$STR_EPOCH_Hemp";
         descriptionShort = "$STR_EPOCH_Hemp";
         count = 1;
@@ -4455,7 +4455,7 @@ class CfgMagazines
         author = "Helion4/DirtySanchez";
         scope = 2;
         model = "\x\addons\a3_epoch_community\models\Farming\poppy_plant.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\Farming\poppy_icon_ca.paa";
+        picture = "\x\addons\a3_epoch_community\icons\poppy_icon_ca.paa";
         displayName = "$STR_EPOCH_Poppy";
         descriptionShort = "$STR_EPOCH_Poppy";
         count = 1;
@@ -4466,7 +4466,7 @@ class CfgMagazines
         author = "Helion4/DirtySanchez";
         scope = 2;
         model = "\x\addons\a3_epoch_community\models\Farming\Sunflower_plant.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\Farming\sunflower_icon_ca.paa";
+        picture = "\x\addons\a3_epoch_community\icons\sunflower_icon_ca.paa";
         displayName = "$STR_EPOCH_Sunflower";
         descriptionShort = "$STR_EPOCH_Sunflower";
         count = 1;
@@ -4477,7 +4477,7 @@ class CfgMagazines
         author = "Helion4/DirtySanchez";
         scope = 2;
         model = "\x\addons\a3_epoch_community\models\Farming\sapling.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\Farming\seedling_icon_ca.paa";
+        picture = "\x\addons\a3_epoch_community\icons\seedling_icon_ca.paa";
         displayName = "$STR_EPOCH_Sapling";
         descriptionShort = "$STR_EPOCH_Sapling";
         count = 1;
@@ -4488,7 +4488,7 @@ class CfgMagazines
         author = "Helion4/DirtySanchez";
         scope = 2;
         model = "\x\addons\a3_epoch_community\models\Farming\sapling_teen.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\Farming\seedling_icon_ca.paa";
+        picture = "\x\addons\a3_epoch_community\icons\seedling_icon_ca.paa";
         displayName = "$STR_EPOCH_SaplingTeen";
         descriptionShort = "$STR_EPOCH_SaplingTeen";
         count = 1;
