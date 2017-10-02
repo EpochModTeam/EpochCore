@@ -1,14 +1,14 @@
-ambient[]={1,1,1,1};
+ambient[]={0,0,0,1};
 diffuse[]={1,1,1,1};
-forcedDiffuse[]={0,0,0,1};
+forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,0};
-specular[]={1,1,1,1};
-specularPower=30;
+specular[]={0,0,0,0};
+specularPower=0;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="x\addons\a3_epoch_community\textures\satellite\crashedsat_nohq.paa";
+	texture="x\addons\a3_epoch_community\textures\satellite\rock_nohq.paa";	
 	uvSource="tex";
 	class uvTransform
 	{
@@ -42,10 +42,9 @@ class Stage3
 		pos[]={0,0,0};
 	};
 };
-
 class Stage4
 {
-	texture="x\addons\a3_epoch_community\textures\satellite\crashedsat_as.paa";
+	texture="x\addons\a3_epoch_community\textures\satellite\rock_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -55,10 +54,9 @@ class Stage4
 		pos[]={0,0,0};
 	};
 };
-
 class Stage5
 {
-	texture="x\addons\a3_epoch_community\textures\satellite\crashedsat_smdi.paa";
+	texture="x\addons\a3_epoch_community\textures\satellite\rock_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -68,7 +66,6 @@ class Stage5
 		pos[]={0,0,0};
 	};
 };
-
 class Stage6
 {
 	texture="#(ai,64,64,1)fresnel(0.4,0.2)";
