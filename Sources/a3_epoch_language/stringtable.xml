@@ -3807,5 +3807,65 @@
 		<Key ID="STR_EPOCH_SaplingTeen">
 			<Original>Sapling Teen</Original>
 		</Key>
+      		<Key ID="STR_EPOCH_BurnBarrel">
+            		<Original>Burn Barrel</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_LightPole">
+            		<Original>Light Pole</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_SmallForestCamoNet">
+            		<Original>Small Forest CamoNet</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_SmallDesertCamoNet">
+            		<Original>Small Desert CamoNet</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_LargeForestCamoNet">
+            		<Original>Large ForestCamoNet</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_LargeDesertCamoNet">
+            		<Original>Large Desert CamoNet</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_FirePlace_02">
+            		<Original>Camp Fire</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_FieldToilet">
+            		<Original>Field Toilet</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_Scaffolding">
+            		<Original>Scaffolding</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_Sink">
+            		<Original>Sink</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_PortableLight_Single">
+            		<Original>Single Portable Light</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_PortableLight_Double">
+            		<Original>Double Portable Light</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_WatchTower">
+            		<Original>Watch Tower</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_SunShade">
+            		<Original>Sun Shade</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_FuelPump">
+            		<Original>Fuel Pump</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_BagBunker">
+            		<Original>Bag Bunker</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_SandbagWall">
+            		<Original>Sandbag Wall</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_SandbagWallLong">
+            		<Original>Long Sandbag Wall</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_BarGate">
+            		<Original>Bar Gate</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_WaterPump">
+            		<Original>Water Pump</Original>
+        	</Key>
 	</Package>
 </Project>
