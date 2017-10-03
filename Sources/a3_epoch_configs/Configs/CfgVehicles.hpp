@@ -11884,6 +11884,1048 @@ class CfgVehicles
             };
         };
     };
+    class BurnBarrel_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "BI";
+        scope = 2;
+		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_empty_F.p3d";
+        displayName = "$STR_EPOCH_BurnBarrel";
+    };
+    class BurnBarrel_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_empty_F.p3d";
+        displayName = "$STR_EPOCH_BurnBarrel";
+        ladders[] = {};
+    };
+    class BurnBarrel_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 0.62;
+        scope = 2;
+		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_empty_F.p3d";
+        displayName = "$STR_EPOCH_BurnBarrel";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructEngine";
+		simulation = "fire";
+		keepHorizontalPlacement = 0;
+        class EventHandlers
+		{
+			init = "(_this select 0) inflame false";
+		};
+		class UserActions
+		{
+			class FlameON
+			{
+				displayNameDefault = ""; // can add fire icon here
+				displayName = "Light Fire";
+				position = "";
+				priority = 11;
+				radius = 1.5;
+				aiMaxRange = "1 * 3";
+				onlyForPlayer = 0;
+				condition = "!inflamed && ('lighter_epoch' in magazines player)";
+				statement = "(_this select 0) inflame true";
+			};
+			class FlameOFF
+			{
+				displayNameDefault = "";
+				displayName = "Put Out Fire";
+				position = "";
+				priority = 11;
+				radius = 1.5;
+				aiMaxRange = "1 * 3";
+				onlyForPlayer = 0;
+				condition = "inflamed";
+				statement = "(_this select 0) inflame false";
+			};
+		};
+		class Effects
+		{
+			class Light1
+			{
+				simulation = "light";
+				type = "SmallFireLight";
+			};
+			class sound
+			{
+				simulation = "sound";
+				type = "Fire";
+			};
+			class Smoke1
+			{
+				simulation = "particles";
+				type = "SmallFireS";
+			};
+			class Fire1: Smoke1
+			{
+				simulation = "particles";
+				type = "SmallFireBarrel";
+			};
+			class Refract1
+			{
+				simulation = "particles";
+				type = "Refract";
+			};
+		};
+    };	
+    class LightPole_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "BI";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Lamps\LampShabby_F.p3d";
+        displayName = "$STR_EPOCH_LightPole";
+    };
+    class LightPole_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Lamps\LampShabby_F.p3d";
+        displayName = "$STR_EPOCH_LightPole";
+        ladders[] = {};
+    };
+    class LightPole_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 0.79;
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Lamps\LampShabby_F.p3d";
+        displayName = "$STR_EPOCH_LightPole";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTree";
+		armor = 200;
+		class Reflectors
+		{
+			class Light_1
+			{
+				color[] = {1100,700,500};
+				ambient[] = {11,7,5};
+				intensity = 5;
+				size = 1;
+				innerAngle = 80;
+				outerAngle = 130;
+				coneFadeCoef = 3;
+				position = "Light_1_pos";
+				direction = "Light_1_dir";
+				hitpoint = "Light_1_hitpoint";
+				selection = "Light_1_hide";
+				useFlare = 1;
+				flareSize = 0.9;
+				flareMaxDistance = 100;
+				class Attenuation
+				{
+					start = 0;
+					constant = 0;
+					linear = 0;
+					quadratic = 0.8;
+					hardLimitStart = 30;
+					hardLimitEnd = 40;
+				};
+			};
+		};
+    };	
+    class SmallForestCamoNet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "BI";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallForestCamoNet";
+    };
+    class SmallForestCamoNet_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallForestCamoNet";
+        ladders[] = {};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };
+    class SmallForestCamoNet_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 14.59;
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallForestCamoNet";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTent";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };	
+    class SmallDesertCamoNet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "BI";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallDesertCamoNet";
+    };
+    class SmallDesertCamoNet_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallDesertCamoNet";
+        ladders[] = {};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_OPFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };
+    class SmallDesertCamoNet_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 14.59;
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallDesertCamoNet";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTent";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_OPFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };	
+    class LargeForestCamoNet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeForestCamoNet";
+    };
+    class LargeForestCamoNet_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeForestCamoNet";
+        ladders[] = {};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };
+    class LargeForestCamoNet_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 19.32;
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeForestCamoNet";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTent";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };	
+    class LargeDesertCamoNet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeDesertCamoNet";
+    };
+    class LargeDesertCamoNet_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeDesertCamoNet";
+        ladders[] = {};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_OPFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };
+    class LargeDesertCamoNet_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 14.59;
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeDesertCamoNet";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTent";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_OPFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };	
+    class FirePlace_02_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Campfire_F.p3d";
+        displayName = "$STR_EPOCH_FirePlace_02";
+    };
+    class FirePlace_02_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Campfire_F.p3d";
+        displayName = "$STR_EPOCH_FirePlace_02";
+        ladders[] = {};
+    };
+    class FirePlace_02_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.17;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.19;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Campfire_F.p3d";
+        displayName = "$STR_EPOCH_FirePlace_02";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+		simulation = "fire";
+		cost = 0;
+		keepHorizontalPlacement = 0;
+        class EventHandlers
+		{
+			init = "(_this select 0) inflame false";
+		};
+		class UserActions
+		{
+			class FlameON
+			{
+				displayNameDefault = ""; // can add fire icon here
+				displayName = "Light Fire";
+				position = "";
+				priority = 11;
+				radius = 1.5;
+				aiMaxRange = "1 * 3";
+				onlyForPlayer = 0;
+				condition = "!inflamed && ('lighter_epoch' in magazines player)";
+				statement = "(_this select 0) inflame true";
+			};
+			class FlameOFF
+			{
+				displayNameDefault = "";
+				displayName = "Put Out Fire";
+				position = "";
+				priority = 11;
+				radius = 1.5;
+				aiMaxRange = "1 * 3";
+				onlyForPlayer = 0;
+				condition = "inflamed";
+				statement = "(_this select 0) inflame false";
+			};
+		};
+		class Effects
+		{
+			class Light1
+			{
+				simulation = "light";
+				type = "SmallFireLight";
+			};
+			class sound
+			{
+				simulation = "sound";
+				type = "Fire_camp";
+			};
+			class Smoke1
+			{
+				simulation = "particles";
+				type = "SmallFireS";
+			};
+			class Fire1: Smoke1
+			{
+				simulation = "particles";
+				type = "SmallFireF";
+			};
+			class Refract1
+			{
+				simulation = "particles";
+				type = "SmallFireFRefract";
+			};
+		};
+	};	
+    class FieldToilet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\FieldToilet_F.p3d";
+        displayName = "$STR_EPOCH_FieldToilet";
+    };
+    class FieldToilet_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\FieldToilet_F.p3d";
+        displayName = "$STR_EPOCH_FieldToilet";
+        ladders[] = {};
+    };
+    class FieldToilet_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.24;
+		class SimpleObject
+		{
+			eden = 1;
+			animate[] = {{"door_1_rot",0},{"door_1_locked_rot",0}};
+			hide[] = {};
+			verticalOffset = 1.22;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\FieldToilet_F.p3d";
+        displayName = "$STR_EPOCH_FieldToilet";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+        maximumLoad = 50;
+		numberOfDoors = 1;
+		waterLeakiness = 0.2;
+		class AnimationSources
+		{
+			class Door_1_sound_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 1;
+				sound = "PlasticDoorsSound";
+				soundPosition = "Door_1_trigger";
+			};
+			class Door_1_noSound_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 1;
+			};
+			class Door_1_locked_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.8;
+			};
+		};
+		class UserActions
+		{
+			class OpenDoor_1
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "$STR_DN_OUT_O_DOOR";
+				position = "Door_1_trigger";
+				priority = 11;
+				radius = 1;
+				aiMaxRange = "1 * 3";
+				onlyForPlayer = 0;
+				condition = "((this animationSourcePhase 'Door_1_sound_source') < 0.5) && (cameraOn isKindOf 'CAManBase')";
+				statement = "([this, 1, 1] call BIS_fnc_Door)";
+			};
+			class CloseDoor_1: OpenDoor_1
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "$STR_DN_OUT_C_DOOR";
+				priority = 11;
+				condition = "((this animationSourcePhase 'Door_1_sound_source') >= 0.5) && ((this getVariable ['bis_disabled_Door_1', 0]) != 1) && (cameraOn isKindOf 'CAManBase')";
+				statement = "([this, 1, 0] call BIS_fnc_Door)";
+			};
+		};
+		actionBegin1 = "OpenDoor_1";
+		actionEnd1 = "OpenDoor_1";
+	};	
+    class Scaffolding_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Constructions\Scaffolding_F.p3d";
+        displayName = "$STR_EPOCH_Scaffolding";
+    };
+    class Scaffolding_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Constructions\Scaffolding_F.p3d";
+        displayName = "$STR_EPOCH_Scaffolding";
+        ladders[] = {};
+    };
+    class Scaffolding_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 15.782;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 2.694;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Constructions\Scaffolding_F.p3d";
+        displayName = "$STR_EPOCH_Scaffolding";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructBuilding";
+		armor = 500;
+		keepHorizontalPlacement = 1;
+    };	
+    class Sink_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Sink_F.p3d";
+        displayName = "$STR_EPOCH_Sink";
+    };
+    class Sink_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Sink_F.p3d";
+        displayName = "$STR_EPOCH_Sink";
+        ladders[] = {};
+    };
+    class Sink_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.17;
+		class SimpleObject
+		{
+			eden = 1;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.618;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Sink_F.p3d";
+        displayName = "$STR_EPOCH_Sink";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructDefault";
+		armor = 300;
+    };	
+    class PortableLight_Single_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_single_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Single";
+    };
+    class PortableLight_Single_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_single_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Single";
+        ladders[] = {};
+    };
+    class PortableLight_Single_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 0.824;
+		class SimpleObject
+		{
+			animate[] = {{"light_1_pitch_rot",0},{"light_1_jaw_rot",0.13}};
+			hide[] = {"light_1_hide"};
+			verticalOffset = 1.082;
+			verticalOffsetWorld = 0;
+		};
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_single_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Single";
+		vehicleClass = "Epoch_objects";
+		class AnimationSources
+		{
+			class Light_1_pitch_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = "1/45";
+			};
+			class Light_1_jaw_source
+			{
+				source = "user";
+				initPhase = 0.13;
+				animPeriod = 2;
+			};
+		};
+		class Reflectors
+		{
+			class Light_1
+			{
+				color[] = {1000,1000,1200};
+				ambient[] = {10,10,12};
+				intensity = 5;
+				size = 1;
+				innerAngle = 60;
+				outerAngle = 130;
+				coneFadeCoef = 6;
+				position = "Light_1_pos";
+				direction = "Light_1_dir";
+				hitpoint = "Light_1_hitpoint";
+				selection = "Light_1_hide";
+				useFlare = 1;
+				flareSize = 0.9;
+				flareMaxDistance = 250;
+				class Attenuation
+				{
+					start = 0;
+					constant = 0;
+					linear = 2;
+					quadratic = 0.5;
+					hardLimitStart = 50;
+					hardLimitEnd = 70;
+				};
+			};
+		};
+	};	
+    class PortableLight_Double_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_double_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Double";
+    };
+    class PortableLight_Double_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_double_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Double";
+        ladders[] = {};
+    };
+    class PortableLight_Double_EPOCH : PortableLight_Single_EPOCH
+    {
+        author = "BI";
+		mapSize = 1.352;
+		class SimpleObject
+		{
+			animate[] = {{"light_1_pitch_rot",0},{"light_1_jaw_rot",0.13}};
+			hide[] = {"light_1_hide","light_2_hide"};
+			verticalOffset = 1.082;
+			verticalOffsetWorld = 0;
+		};
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_double_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Double";
+		vehicleClass = "Epoch_objects";
+		aggregateReflectors[] = {{"Light_1","Light_2"}};
+		class Reflectors: Reflectors
+		{
+			class Light_1: Light_1{};
+			class Light_2: Light_1
+			{
+				position = "Light_2_pos";
+				direction = "Light_2_dir";
+				hitpoint = "Light_2_hitpoint";
+				selection = "Light_2_hide";
+			};
+		};
+	};	
+    class WatchTower_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Accessories\LifeguardTower_01_F.p3d";
+        displayName = "$STR_EPOCH_WatchTower";
+    };
+    class WatchTower_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Accessories\LifeguardTower_01_F.p3d";
+        displayName = "$STR_EPOCH_WatchTower";
+		ladders[] = {{"Ladder_1_start","Ladder_1_end"}};
+    };
+    class WatchTower_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 3.67;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Accessories\LifeguardTower_01_F.p3d";
+        displayName = "$STR_EPOCH_WatchTower";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructDefault";
+		armor = 300;
+		ladders[] = {{"Ladder_1_start","Ladder_1_end"}};
+    };	
+    class SunShade_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Camping\Sunshade_01_F.p3d";
+        displayName = "$STR_EPOCH_SunShade";
+    };
+    class SunShade_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Camping\Sunshade_03_F.p3d";
+        displayName = "$STR_EPOCH_SunShade";
+        ladders[] = {};
+    };
+    class SunShade_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.17;
+		class SimpleObject
+		{
+			eden = 1;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.618;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Camping\Sunshade_03_F.p3d";
+        displayName = "$STR_EPOCH_SunShade";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTree";
+		armor = 5;
+    };	
+    class FuelPump_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Camping\Sunshade_03_F.p3d";
+        displayName = "$STR_EPOCH_FuelPump";
+    };
+    class FuelPump_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_f\Ind\FuelStation_Small\fs_feed_F.p3d";
+        displayName = "$STR_EPOCH_FuelPump";
+        ladders[] = {};
+    };
+    class FuelPump_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.17;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.826;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_f\Ind\FuelStation_Small\fs_feed_F.p3d";
+        displayName = "$STR_EPOCH_FuelPump";
+		vehicleClass = "Epoch_objects";
+		memoryPointSupply = "Refuel_pos";
+		transportFuel = 50000;
+		disableInventory = 1;
+		class DestructionEffects
+		{
+			class FuelStationSmk1
+			{
+				simulation = "particles";
+				type = "FuelStationSmk1";
+				position = "";
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 0.001;
+			};
+			class Light1
+			{
+				simulation = "light";
+				type = "ObjectDestructionLight";
+				position = "DestructionFire";
+				intensity = 0.001;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+			class FuelFire1
+			{
+				simulation = "particles";
+				type = "FuelFire1";
+				position = "DestructionFire";
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+			class FuelDestr
+			{
+				simulation = "destroy";
+				type = "FuelStationDestr";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+			class FuelSmoke1
+			{
+				simulation = "particles";
+				type = "FuelFire1";
+				position = "ObjectDestructionSmokeFuelS";
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+			class FuelSmoke2
+			{
+				simulation = "particles";
+				type = "ObjectDestructionSmokeFuelS1_2";
+				position = "DestructionFire";
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+		};
+	};	
+    class BagBunker_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\BagBunker\BagBunker_Small_F.p3d";
+        displayName = "$STR_EPOCH_BagBunker";
+    };
+    class BagBunker_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\BagBunker\BagBunker_Small_F.p3d";
+        displayName = "$STR_EPOCH_BagBunker";
+        ladders[] = {};
+    };
+    class BagBunker_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 4.215;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.966;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Mil\BagBunker\BagBunker_Small_F.p3d";
+        displayName = "$STR_EPOCH_BagBunker";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructBuilding";
+		accuracy = 1000;
+		armor = 500;
+		class DestructionEffects{};
+    };	
+    class SandbagWall_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Short_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWall";
+    };
+    class SandbagWall_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Short_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWall";
+        ladders[] = {};
+    };
+    class SandbagWall_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 1.98;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.415;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Short_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWall";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+		armor = 1000;
+		cost = 1000;
+		accuracy = 1000;
+		animated = 0;
+		class AttributeValues
+		{
+			objectIsSimple = 0;
+		};
+		class DestructionEffects{};
+    };	
+    class SandbagWallLong_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Long_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWallLong";
+    };
+    class SandbagWallLong_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Long_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWallLong";
+        ladders[] = {};
+    };
+    class SandbagWallLong_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 3.12;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.42;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Long_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWallLong";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+		armor = 1000;
+		cost = 1000;
+		accuracy = 1000;
+		animated = 0;
+		class AttributeValues
+		{
+			objectIsSimple = 0;
+		};
+		class DestructionEffects{};
+    };	
+    class BarGate_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Walls\BarGate_F.p3d";
+        displayName = "$STR_EPOCH_BarGate";
+    };
+    class BarGate_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Walls\BarGate_F.p3d";
+        displayName = "$STR_EPOCH_BarGate";
+        ladders[] = {};
+    };
+    class BarGate_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 8.75;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {{"door_1_rot",0}};
+			hide[] = {};
+			verticalOffset = 4.05;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Walls\BarGate_F.p3d";
+        displayName = "$STR_EPOCH_BarGate";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructWall";
+		animated = 1;
+		armor = 150;
+		cost = 1000;
+		numberOfDoors = 1;
+		class AnimationSources
+		{
+			class Door_1_sound_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 1;
+				sound = "RoadGateDoors";
+				soundPosition = "Door_1_trigger";
+			};
+			class Door_1_noSound_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 1;
+			};
+			class Door_1_locked_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.8;
+			};
+		};
+		class UserActions
+		{
+			class OpenGate_1
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "$STR_DN_OUT_O_DOOR";
+				position = "Bar_1_trigger";
+				radius = 3;
+				aiMaxRange = 9;
+				onlyForPlayer = 0;
+				condition = "this animationPhase 'Door_1_rot' < 0.5";
+				statement = "this animate ['Door_1_rot', 1]";
+			};
+			class CloseGate_1: OpenGate_1
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "$STR_DN_OUT_C_DOOR";
+				condition = "this animationPhase 'Door_1_rot' >= 0.5";
+				statement = "this animate ['Door_1_rot', 0]";
+			};
+		};
+		actionBegin1 = "OpenGate_1";
+		actionEnd1 = "OpenGate_1";
+	};	
+    class WaterPump_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Water_source_F.p3d";
+        displayName = "$STR_EPOCH_WaterPump";
+    };
+    class WaterPump_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Water_source_F.p3d";
+        displayName = "$STR_EPOCH_WaterPump";
+        ladders[] = {};
+    };
+    class WaterPump_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.17;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 1.143;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Water_source_F.p3d";
+        displayName = "$STR_EPOCH_WaterPump";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+		keepHorizontalPlacement = 1;
+		class DestructionEffects{};
+    };	
 };
 
 /*[[[end]]]*/
