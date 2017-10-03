@@ -286,6 +286,120 @@
         <Key ID="STR_EPOCH_Caliber556x45mmUsedinM249Saw">
             <Original>Caliber: 5.56x45 mm, Used in: M249 Saw</Original>
         </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99name">
+            <Original>500Rnd 12.7 mm AA MG Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99desc">
+            <Original>Caliber: 12.7x99 mm NATO - Rounds: 500 - Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99redname">
+            <Original>500Rnd 12.7 mm AA MG Tracer (Red) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99reddesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Red - Rounds: 500 - Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99grnname">
+            <Original>500Rnd 12.7 mm AA MG Tracer (Green) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99grndesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Green - Rounds: 500 - Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99ylwname">
+            <Original>500Rnd 12.7 mm AA MG Tracer (Yellow) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_500Rnd127x99ylwdesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Yellow - Rounds: 500 - Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99name">
+            <Original>200Rnd 12.7 mm RCWS MG Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99desc">
+            <Original>Caliber: 12.7x99 mm NATO - Rounds: 200 - Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99redname">
+            <Original>200Rnd 12.7 mm RCWS MG Tracer (Red) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99reddesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Red - Rounds: 200 - Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99grnname">
+            <Original>200Rnd 12.7 mm RCWS MG Tracer (Green) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99grndesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Green - Rounds: 200 - Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99ylwname">
+            <Original>200Rnd 12.7 mm RCWS MG Tracer (Yellow) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd127x99ylwdesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Yellow - Rounds: 200 - Used in: HMG + Static HMG</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99name">
+            <Original>100Rnd 12.7 mm M2 HMG Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99desc">
+            <Original>Caliber: 12.7x99 mm NATO - Rounds: 100 - Used in: Offroad + HMMW M2</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99redname">
+            <Original>100Rnd 12.7 mm M2 HMG Tracer (Red) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99reddesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Red - Rounds: 100 - Used in: Offroad + HMMW M2</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99grnname">
+            <Original>100Rnd 12.7 mm M2 HMG Tracer (Green) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99grndesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Green - Rounds: 100 - Used in: Offroad + HMMW M2</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99ylwname">
+            <Original>100Rnd 12.7 mm M2 HMG Tracer (Yellow) Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_100Rnd127x99ylwdesc">
+            <Original>Caliber: 12.7x99 mm Tracer - Yellow - Rounds: 100 - Used in: Offroad + HMMW M2</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd762x51Beltname">
+            <Original>7.62 mm Minigun Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd762x51Beltdesc">
+            <Original>Caliber: 7.62x51 mm - Rounds: 2000 - Used in: AH-9 Pawnee</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd40mmGname">
+            <Original>40 mm HE Grenade Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd40mmGdesc">
+            <Original>Caliber: 40 mm  - Rounds: 200 DSS - Used in: GMG, RCWS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_32Rnd40mmGname">
+            <Original>Caliber: 40 mm  - Rounds: 32 DSS - Used in: GMG, RCWS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_64Rnd40mmGname">
+            <Original>Caliber: 40 mm  - Rounds: 64 DSS - Used in: GMG, RCWS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_96Rnd40mmGname">
+            <Original>Caliber: 40 mm  - Rounds: 96 DSS - Used in: GMG, RCWS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd30mmGname">
+            <Original>30 mm HE Grenade Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd30mmGdesc">
+            <Original>Caliber: 30 mm  - Rounds: 200 DSS - Used in: Static Grenade Launcher</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd30mmGdesc">
+            <Original>Caliber: 30 mm  - Rounds: 40 DSS - Used in: Static Grenade Launcher</Original>
+        </Key>
+
+		<Key ID="STR_EPOCH_mas127x107DSHKMname">
+            <Original>DShKM</Original>
+        </Key>
+		<Key ID="STR_EPOCH_mas50Rnd127x107DSHKMdesc">
+            <Original>Type: DShKM - Rounds: 50 - Used in: Static Grenade Launcher</Original>
+        </Key>
+
+		<Key ID="STR_EPOCH_mas150Rnd127x107DSHKMdesc">
+            <Original>Type: DShKM - Rounds: 150 - Used in: Static Grenade Launcher</Original>
+        </Key>
+
         <Key ID="STR_EPOCH_HotwireKit">
             <Original>Hotwire Kit</Original>
         </Key>
@@ -373,17 +487,32 @@
         <Key ID="STR_EPOCH_FullBriefcaseGold">
             <Original>Full Briefcase (Gold)</Original>
         </Key>
+		<Key ID="STR_EPOCH_FullBriefcaseSilver">
+            <Original>Full Briefcase (Silver)</Original>
+        </Key>
         <Key ID="STR_EPOCH_Briefcasethatcontainsten10oz100ozGoldBars">
             <Original>Briefcase that contains ten 10oz (100oz) Gold Bars.</Original>
+        </Key>
+		<Key ID="STR_EPOCH_Briefcasethatcontainsten10oz100ozSilverBars">
+            <Original>Briefcase that contains ten 10oz (100oz) Silver Bars.</Original>
         </Key>
         <Key ID="STR_EPOCH_AluminumBar1oz">
             <Original>Aluminum Bar (1oz)</Original>
         </Key>
+		<Key ID="STR_EPOCH_AluminumBar10oz">
+            <Original>Aluminum Bar (10oz)</Original>
+        </Key>
         <Key ID="STR_EPOCH_CopperBar1oz">
             <Original>Copper Bar (1oz)</Original>
         </Key>
+		<Key ID="STR_EPOCH_CopperBar10oz">
+            <Original>Copper Bar (10oz)</Original>
+        </Key>
         <Key ID="STR_EPOCH_TinBar1oz">
             <Original>Tin Bar (1oz)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_TinBar10oz">
+            <Original>Tin Bar (10oz)</Original>
         </Key>
         <Key ID="STR_EPOCH_Plywood">
             <Original>Plywood</Original>
@@ -574,6 +703,12 @@
         <Key ID="STR_EPOCH_BioMeatAverygoodsourceofnutritionandaveryhighchanceofinfect96">
             <Original>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</Original>
         </Key>
+        <Key ID="STR_EPOCH_BioHazardBag">
+            <Original>Bio Hazard Bag</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BioHazardBagDesc">
+            <Original>A bag full of infected body parts.</Original>
+        </Key>
         <Key ID="STR_EPOCH_MeepsCandy">
             <Original>Meeps Candy</Original>
         </Key>
@@ -673,14 +808,122 @@
         <Key ID="STR_EPOCH_SilverBar">
             <Original>Silver Bar</Original>
         </Key>
+		<Key ID="STR_EPOCH_1ozSilver">
+            <Original>1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2ozSilver">
+            <Original>2oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_3ozSilver">
+            <Original>3oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_4ozSilver">
+            <Original>4oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5ozSilver">
+            <Original>5oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_6ozSilver">
+            <Original>6oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_7ozSilver">
+            <Original>7oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8ozSilver">
+            <Original>8oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_9ozSilver">
+            <Original>9oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_10ozSilver">
+            <Original>10oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2x1ozSilver">
+            <Original>2 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_3x1ozSilver">
+            <Original>3 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_4x1ozSilver">
+            <Original>4 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5x1ozSilver">
+            <Original>5 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_6x1ozSilver">
+            <Original>6 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_7x1ozSilver">
+            <Original>7 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8x1ozSilver">
+            <Original>8 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_9x1ozSilver">
+            <Original>9 x 1oz Silver</Original>
+        </Key>
+		<Key ID="STR_EPOCH_10x1ozSilverBar">
+            <Original>10 x 1oz Silver</Original>
+        </Key>
         <Key ID="STR_EPOCH_Gold">
             <Original>Gold</Original>
         </Key>
         <Key ID="STR_EPOCH_GoldBar">
             <Original>Gold Bar</Original>
         </Key>
+		<Key ID="STR_EPOCH_1ozGold">
+            <Original>1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2ozGold">
+            <Original>2oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_3ozGold">
+            <Original>3oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_4ozGold">
+            <Original>4oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5ozGold">
+            <Original>5oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_6ozGold">
+            <Original>6oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_7ozGold">
+            <Original>7oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8ozGold">
+            <Original>8oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_9ozGold">
+            <Original>9oz Gold</Original>
+        </Key>
         <Key ID="STR_EPOCH_10ozGold">
             <Original>10oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2x1ozGold">
+            <Original>2 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_3x1ozGold">
+            <Original>3 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_4x1ozGold">
+            <Original>4 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5x1ozGold">
+            <Original>5 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_6x1ozGold">
+            <Original>6 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_7x1ozGold">
+            <Original>7 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8x1ozGold">
+            <Original>8 x 1oz Gold</Original>
+        </Key>
+		<Key ID="STR_EPOCH_9x1ozGold">
+            <Original>9 x 1oz Gold</Original>
         </Key>
         <Key ID="STR_EPOCH_10x1ozGoldBar">
             <Original>10 x 1oz Gold Bar</Original>
@@ -729,6 +972,12 @@
         </Key>
         <Key ID="STR_EPOCH_Copperwireisulatedwithrubber">
             <Original>Copper wire isulated with rubber.</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DuctTape">
+            <Original>Duct Tape</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RollOfDuctTape">
+            <Original>Roll of Duct Tape.</Original>
         </Key>
         <Key ID="STR_EPOCH_EnclosedBattery">
             <Original>Enclosed Battery</Original>
@@ -877,6 +1126,12 @@
         <Key ID="STR_EPOCH_WoodenFloor">
             <Original>Wooden Floor</Original>
         </Key>
+		<Key ID="STR_EPOCH_WoodenHalfFloor">
+            <Original>Wooden Half Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_WoodenQuarterFloor">
+            <Original>Wooden Quarter Floor</Original>
+        </Key>
         <Key ID="STR_EPOCH_WoodenStairs">
             <Original>Wooden Stairs</Original>
         </Key>
@@ -912,9 +1167,6 @@
         </Key>
         <Key ID="STR_EPOCH_WorkbenchKit">
             <Original>Workbench Kit</Original>
-        </Key>
-        <Key ID="STR_EPOCH_Workbench">
-            <Original>Workbench</Original>
         </Key>
         <Key ID="STR_EPOCH_ConcreteFoundation">
             <Original>Concrete Foundation</Original>
@@ -1276,8 +1528,11 @@
         <Key ID="STR_EPOCH_WoodFloor">
             <Original>Wood Floor</Original>
         </Key>
-        <Key ID="STR_EPOCH_MetalFloor">
-            <Original>Metal Floor</Original>
+		<Key ID="STR_EPOCH_WoodHalfFloor">
+            <Original>Wood Half Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_WoodQuarterFloor">
+            <Original>Wood Quarter Floor</Original>
         </Key>
         <Key ID="STR_EPOCH_LargeWall">
             <Original>Large Wall</Original>
@@ -1425,6 +1680,9 @@
         </Key>
         <Key ID="STR_EPOCH_WoodFloorGhost">
             <Original>Wood Floor Ghost</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalFloor">
+            <Original>Metal Floor</Original>
         </Key>
         <Key ID="STR_EPOCH_MetalFloorGhost">
             <Original>Metal Floor Ghost</Original>
@@ -1780,6 +2038,318 @@
         <Key ID="STR_EPOCH_RadioJade">
             <Original>Radio (Jade)</Original>
         </Key>
+        <Key ID="STR_EPOCH_Antibiotic">
+            <Original>Antibiotic</Original>
+        </Key>
+        <Key ID="STR_EPOCH_AntibioticDesc">
+            <Original>Antibiotic</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Knife">
+            <Original>Knife</Original>
+        </Key>
+        <Key ID="STR_EPOCH_KnifeDesc">
+            <Original>Used to cut things</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Rubber">
+            <Original>Rubber</Original>
+        </Key>
+        <Key ID="STR_EPOCH_RubberDesc">
+            <Original>Some Rubber for Crafting</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HumanSkull">
+            <Original>Human Skull</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HumanSkullDesc">
+            <Original>A Human Skull</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ExtensionCord">
+            <Original>Extension Cord</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ExtensionCordDesc">
+            <Original>An Extension Cord</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HandyCam">
+            <Original>Handy Cam</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HandyCamDesc">
+            <Original>A small Camera</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Laptop">
+            <Original>Laptop</Original>
+        </Key>
+        <Key ID="STR_EPOCH_LaptopDesc">
+            <Original>A Laptop</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MobilePhone_old">
+            <Original>Mobile Phone (old)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MobilePhone_oldDesc">
+            <Original>An old Mobile Phone</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MobilePhone_smart">
+            <Original>Mobile Phone (Smartphone)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MobilePhone_smartDesc">
+            <Original>A Smartphone</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PortableGenerator">
+            <Original>Portable Generator</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PortableGeneratorDesc">
+            <Original>A Generator to produce electrical power</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PortableLongRangeRadio">
+            <Original>Portable Longrange-Radio</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PortableLongRangeRadioDesc">
+            <Original>A Portable Longrange-Radio</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SatellitePhone">
+            <Original>Satellite Phone</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SatellitePhoneDesc">
+            <Original>A Phone to make calls over Satellites</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SurivalRadio">
+            <Original>Survival Radio</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SurivalRadioDesc">
+            <Original>A robust Survival Radio</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_Empty">
+            <Original>Plastic Bottle (empty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_EmptyDesc">
+            <Original>Empty Plastic Bottle</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_Dirty">
+            <Original>Plastic Bottle (dirty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_DirtyDesc">
+            <Original>Full Plastic Bottle filled with dirty water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_Clean">
+            <Original>Plastic Bottle (clean)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BottlePlastic_CleanDesc">
+            <Original>Full Plastic Bottle filled with clean water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Suitcase">
+            <Original>Suitcase</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SuitcaseDesc">
+            <Original>A Suitcase</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PenBlack">
+            <Original>Pen (Black)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PenBlackDesc">
+            <Original>A Black Pen</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DrillAku">
+            <Original>Drill</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DrillAkuDesc">
+            <Original>A tool for drilling holes</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Grinder">
+            <Original>Grinder</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GrinderDesc">
+            <Original>A tool for grinding Metal</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Hammer">
+            <Original>Hammer</Original>
+        </Key>
+        <Key ID="STR_EPOCH_HammerDesc">
+            <Original>A tool for hammering</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Meter3m">
+            <Original>Measuring Tape</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Meter3mDesc">
+            <Original>A tool for measuring</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MultiMeter">
+            <Original>Multimeter</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MultiMeterDesc">
+            <Original>A tool for measuring Voltage</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Pliers">
+            <Original>Pliers</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PliersDesc">
+            <Original>A tool for everything</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Saw">
+            <Original>Saw</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SawDesc">
+            <Original>A tool for cutting Wood</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Screwdriver">
+            <Original>Screwdriver</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ScrewdriverDesc">
+            <Original>A tool for small screws</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Wrench">
+            <Original>Wrench</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WrenchDesc">
+            <Original>A tool for big screws</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Money">
+            <Original>Money</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MoneyDesc">
+            <Original>A pack of money</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CanisterOil">
+            <Original>Canister Oil</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CanisterOilDesc">
+            <Original>A Canister with Oil</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Battery">
+            <Original>Battery</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BatteryDesc">
+            <Original>A small Battery</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BakedBeans">
+            <Original>Baked Beans</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BakedBeansDesc">
+            <Original>A tin with Baked Beans</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_Empty">
+            <Original>Canteen (empty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_EmptyDesc">
+            <Original>An empty Canteen</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_Dirty">
+            <Original>Canteen (dirty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_DirtyDesc">
+            <Original>A Canteen full of dirty water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_Clean">
+            <Original>Canteen (clean)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Canteen_CleanDesc">
+            <Original>A Canteen full of clean water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bandage">
+            <Original>Bandage</Original>
+        </Key>
+        <Key ID="STR_EPOCH_BandageDesc">
+            <Original>Used to cover smaller wounds</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bloodbag_Empty">
+            <Original>Bloodbag (empty)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bloodbag_EmptyDesc">
+            <Original>An empty Bloodbag</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bloodbag_Full">
+            <Original>Bloodbag (full)</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Bloodbag_FullDesc">
+            <Original>A Bloodbag filled with Blood</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Defibrillator">
+            <Original>Defibrillator</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DefibrillatorDesc">
+            <Original>Used to reanimate a person</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DisinfectantSpray">
+            <Original>Disinfectant</Original>
+        </Key>
+        <Key ID="STR_EPOCH_DisinfectantSprayDesc">
+            <Original>Used for disinfecting wounds and clothings</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PainKillers">
+            <Original>Painkillers</Original>
+        </Key>
+        <Key ID="STR_EPOCH_PainKillersDesc">
+            <Original>Used for reduce your Pain</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WaterPurificationTablets">
+            <Original>WaterPurification</Original>
+        </Key>
+        <Key ID="STR_EPOCH_WaterPurificationTabletsDesc">
+            <Original>Tablets to clarify Water</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ButaneCanister">
+            <Original>Butane Canister</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ButaneCanisterDesc">
+            <Original>Butane Canister</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ButaneTorch">
+            <Original>Butane Torch</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ButaneTorchDesc">
+            <Original>Butane Torch</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CanOpener">
+            <Original>Can Opener</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CanOpenerDesc">
+            <Original>A tool to open cans</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FireExtinguisher">
+            <Original>Fire Extinguisher</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FireExtinguisherDesc">
+            <Original>Used to extinguish fires</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GasCanister">
+            <Original>Gas Canister</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GasCanisterDesc">
+            <Original>A Canister filles with Gas</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GasCooker">
+            <Original>Gas Cooker</Original>
+        </Key>
+        <Key ID="STR_EPOCH_GasCookerDesc">
+            <Original>Used to cook Foods</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Matches">
+            <Original>Matches</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MatchesDesc">
+            <Original>Used to light a Fire</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalWire">
+            <Original>Metal Wire</Original>
+        </Key>
+        <Key ID="STR_EPOCH_MetalWireDesc">
+            <Original>A strong metal wire</Original>
+        </Key>
+        <Key ID="STR_EPOCH_Shovel">
+            <Original>Shovel</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ShovelDesc">
+            <Original>A tool for digging</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TinContainer">
+            <Original>Tin Container</Original>
+        </Key>
+        <Key ID="STR_EPOCH_TinContainerDesc">
+            <Original>Used to hold Tins</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CampingLight">
+            <Original>Camping Light</Original>
+        </Key>
+        <Key ID="STR_EPOCH_CampingLightDesc">
+            <Original>A small Camping Light</Original>
+        </Key>
         <Key ID="STR_EPOCH_Speargun">
             <Original>Speargun</Original>
         </Key>
@@ -1825,6 +2395,21 @@
         <Key ID="STR_EPOCH_Usedtofixablownouttire">
             <Original>Used to fix a blown out tire.</Original>
         </Key>
+        <Key ID="STR_EPOCH_EnginePartsDesc">
+            <Original>Engine Parts</Original>
+        </Key>
+        <Key ID="STR_EPOCH_EngineBlockDesc">
+            <Original>Engine Block</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ItemGlassDesc">
+            <Original>Spare Glass</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FuelTankDesc">
+            <Original>Fuel Tank</Original>
+        </Key>
+        <Key ID="STR_EPOCH_ItemRotorDesc">
+            <Original>Spare Rotor</Original>
+        </Key>
         <Key ID="STR_EPOCH_WorkBench">
             <Original>WorkBench</Original>
         </Key>
@@ -1832,7 +2417,7 @@
             <Original>Smoke Grenade (Toxic)</Original>
         </Key>
         <Key ID="STR_EPOCH_TypeSmokeGrenadeToxicltbrgtRounds1ltbrgtUsedinHand">
-            <Original>Type: Smoke Grenade - Toxic&amp;lt;br /&amp;gt;Rounds: 1&amp;lt;br /&amp;gt;Used in: Hand</Original>
+            <Original>Type: Smoke Grenade - Toxic&lt;br/&gt;Rounds: 1&lt;br/&gt;Used in: Hand</Original>
         </Key>
         <Key ID="STR_EPOCH_ToxicSmoke">
             <Original>Toxic Smoke</Original>
@@ -1879,5 +2464,1408 @@
         <Key ID="STR_EPOCH_KeeshaCamoPinkPolka">
             <Original>Keesha Camo (Pink Polka)</Original>
         </Key>
-    </Package>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit100_name">
+            <Original>Vehicle Upgrade I Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit100_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade I (100 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit100_name">
+            <Original>Vehicle Upgrade II Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit100_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade II (100 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit100_name">
+            <Original>Vehicle Upgrade III Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit100_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade III (100 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit100_name">
+            <Original>Vehicle Upgrade IV Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit100_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade IV (100 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit200_name">
+            <Original>Vehicle Upgrade I Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit200_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade I (200 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit200_name">
+            <Original>Vehicle Upgrade II Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit200_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade II (200 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit200_name">
+            <Original>Vehicle Upgrade III Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit200_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade III (200 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit200_name">
+            <Original>Vehicle Upgrade IV Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit200_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade IV (200 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit300_name">
+            <Original>Vehicle Upgrade I Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeI_Kit300_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade I (300 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit300_name">
+            <Original>Vehicle Upgrade II Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeII_Kit300_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade II (300 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit300_name">
+            <Original>Vehicle Upgrade III Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIII_Kit300_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade III (300 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit300_name">
+            <Original>Vehicle Upgrade IV Kit</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehicleUpgradeIV_Kit300_desc">
+            <Original>This crafted kit has all you need for Vehicle Upgrade IV (300 mass)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehUpgTopSecretRareDoc_name">
+            <Original>Top Secret Upgrade</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VehUpgTopSecretRareDoc_desc">
+            <Original>This Top Secret and Rare Document will allow special upgrades the server has</Original>
+        </Key>
+		<Key ID="STR_EPOCH_Adrenaline">
+            <Original>Adrenaline Shot</Original>
+        </Key>
+		<Key ID="STR_EPOCH_AdrenalineShotDesc">
+            <Original>Sapper adrenal gland extract on the cheap, up yours Martin Shkreli</Original>
+        </Key>
+		<Key ID="STR_EPOCH_caffeinepills">
+            <Original>Caffeine Pills</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CaffeinePillsDesc">
+            <Original>Super fast acting, stronger than Covfefe and definately non-habit forming </Original>
+        </Key>
+		<Key ID="STR_EPOCH_orlistat">
+            <Original>Orlistat Pills</Original>
+        </Key>
+		<Key ID="STR_EPOCH_OrlistatDesc">
+            <Original>Step aside Fen/Phen there's a new doctor in town</Original>
+        </Key>
+		<Key ID="STR_EPOCH_Cereals">
+            <Original>Box of Cereal</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CerealsDesc">
+            <Original>A nutritious box of vitamin and sugar soaked flakes</Original>
+        </Key>
+		<Key ID="STR_EPOCH_PowderedMilk">
+            <Original>Dry Powder Milk</Original>
+        </Key>
+		<Key ID="STR_EPOCH_PowderedMilkDesc">
+            <Original>Suggested to add water or liquid before ingestion</Original>
+        </Key>
+		<Key ID="STR_EPOCH_ItemRiceBox">
+            <Original>Box of Rice</Original>
+        </Key>
+		<Key ID="STR_EPOCH_ItemRiceBoxDesc">
+            <Original>Boiled up these make great tummy stickers through cold nights</Original>
+        </Key>
+		<Key ID="STR_EPOCH_ItemVitamins">
+            <Original>Bottle of Vitamins</Original>
+        </Key>
+		<Key ID="STR_EPOCH_ItemVitaminsDesc">
+            <Original>One of these a day can keep the Sappers away!</Original>
+        </Key>
+		<Key ID="STR_EPOCH_SatelliteWreckName">
+            <Original>Crashed Satellite</Original>
+        </Key>
+		<Key ID="STR_EPOCH_SmeltingToolsName">
+            <Original>Smelting Tools</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SmeltingToolsDesc">
+            <Original>Used for melting down metals for blades, bullets, precious metals and more</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ItemGeigerName">
+            <Original>Geiger Counter</Original>
+			<Czech>Geigerův počítač</Czech>
+			<German>Geigerzähler</German>
+            <French>Compteur Geiger</French>
+            <Italian>Contatore Geiger</Italian>
+            <Polish>Licznik Geigera</Polish>
+            <Portuguese>Contador Geiger</Portuguese>
+			<Spanish>Contador Geiger</Spanish>
+			<Russian>Счетчик Гейгера</Russian>
+        </Key>
+		<Key ID="STR_EPOCH_atropine">
+            <Original>Atropine Shot</Original>
+        </Key>
+		<Key ID="STR_EPOCH_AtropineShotDesc">
+            <Original>Used to treat certain types of nerve agent and pesticide poisonings</Original>
+        </Key>
+		<Key ID="STR_EPOCH_KryptoCandyName">
+            <Original>100 Krypto Candy</Original>
+		</Key>
+		<Key ID="STR_EPOCH_KryptoCandyDesc">
+            <Original>This beats a Snackers anyday. Gimme a break...</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BluKingBurgerName">
+            <Original>BluKing Burger</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BluKingBurgerDesc">
+            <Original>BluKing makes a mighty meal outta the finest meats</Original>
+		</Key>
+		<Key ID="STR_EPOCH_RedKingBurgerName">
+            <Original>RedKing Burger</Original>
+		</Key>
+		<Key ID="STR_EPOCH_RedKingBurgerDesc">
+            <Original>RedKing picks up our leftovers for the best Sapper Burger in your life</Original>
+		</Key>
+		<Key ID="STR_EPOCH_GyroWrapName">
+            <Original>Gyro Wrap</Original>
+		</Key>
+		<Key ID="STR_EPOCH_GyroWrapDesc">
+            <Original>Gyro's from the farthest reaches of Altis. BAHHHHHHH</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IceCreamName">
+            <Original>Ice Cream</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IceCreamDesc">
+            <Original>Ice Cream, You Scream, We All Scream 4 Ice Cream!</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BarbedWire">
+            <Original>Barbed Wire</Original>
+		</Key>
+		<Key ID="STR_EPOCH_BarbedWireDesc">
+            <Original>Barbed wire fence to protect yourself from many different enemies</Original>
+		</Key>
+		<Key ID="STR_EPOCH_CinderBlockDoorwHatch">
+            <Original>Cinder Door with Hatch</Original>
+		</Key>
+		<Key ID="STR_EPOCH_CinderBlockDoorwHatchDesc">
+            <Original>Cinder Door with Hatch</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OpenHatch">
+            <Original>Open Hatch</Original>
+		</Key>
+		<Key ID="STR_EPOCH_CloseHatch">
+            <Original>Close Hatch</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ItemCanvas">
+            <Original>Canvas Material</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ItemCanvasDesc">
+            <Original>Material can be used in crafting a personal tent</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ItemSeedBag">
+            <Original>Empty SeedBag</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ItemSeedBagDesc">
+            <Original>Collect seeds and place them in this empty bag</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SeedPacketGoldenSeal">
+            <Original>Goldenseal Seeds(Packet)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SeedPacketHemp">
+            <Original>Hemp Seeds(Packet)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SeedPacketPoppy">
+            <Original>Poppy Seeds(Packet)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SeedPacketPumpkin">
+            <Original>Pumpkin Seeds(Packet)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SeedPacketSunflower">
+            <Original>Sunflower Seeds(Packet)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TentA">
+			<Original>Tent A-Frame</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TentADesc">
+			<Original>A small one-person tent</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TentDome">
+			<Original>Tent Dome</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TentDomeDesc">
+			<Original>A spacious camping tent</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MetalFloorDesc">
+            <Original>Hand crafted and forged by your own strength and wisdom</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalTower">
+            <Original>Metal Tower</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalTowerDesc">
+            <Original>A tower made of metal to show your skills abroad</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalTowerGhost">
+            <Original>Metal Tower Ghost</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderFloor">
+            <Original>Cinder Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderFloorGhost">
+			<Original>Cinder Floor Ghost</Original>
+		</Key>
+		<Key ID="STR_EPOCH_CinderFloorDesc">
+            <Original>Hand poured and formed with your new knowledge of cinder construction</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderTower">
+            <Original>Cinder Tower</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderTowerDesc">
+            <Original>A tower made of the strongest material</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderTowerGhost">
+            <Original>Cinder Tower Ghost</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_CMFlareMagazine">
+            <Original>60Rnd Flare Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_120Rnd_CMFlareMagazine">
+            <Original>120Rnd Flare Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_240Rnd_CMFlareMagazine">
+            <Original>240Rnd Flare Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_CMFlare_Chaff_Magazine">
+            <Original>60Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_120Rnd_CMFlare_Chaff_Magazine">
+            <Original>120Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_240Rnd_CMFlare_Chaff_Magazine">
+            <Original>240Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_192Rnd_CMFlare_Chaff_Magazine">
+            <Original>192Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_168Rnd_CMFlare_Chaff_Magazine">
+            <Original>168Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_300Rnd_CMFlare_Chaff_Magazine">
+            <Original>300Rnd Chaff Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_SmokeLauncherMag">
+            <Original>Smoke Launcher Mag</Original>
+        </Key>
+		<Key ID="STR_EPOCH_SmokeLauncherMag_boat">
+            <Original>Smoke Launcher Mag(Boats)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_BeltName">
+            <Original>6.5 mm 200Rnd Belt Case</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_BeltDesc">
+            <Original>Caliber: 6.5x39 mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_RedName">
+            <Original>6.5 mm 200Rnd Belt Case Tracer (Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_RedDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Red&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Mk200</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenName">
+            <Original>6.5 mm 200Rnd Belt Case Tracer (Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Mk200</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowName">
+            <Original>6.5 mm 200Rnd Belt Tracer (Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_200Rnd_65x39_Belt_Tracer_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Mk200</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_BeltName">
+            <Original>6.5 mm 1000Rnd LMG Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_BeltDesc">
+            <Original>Caliber: 6.5x39 mm&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedName">
+            <Original>6.5 mm 1000Rnd LMG Tracer (Red) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_RedDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Red&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_GreenName">
+            <Original>6.5 mm 1000Rnd LMG (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Green&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenName">
+            <Original>6.5 mm 1000Rnd LMG Tracer (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_YellowName">
+            <Original>6.5 mm 1000Rnd LMG (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Yellow&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowName">
+            <Original>6.5 mm 1000Rnd LMG Tracer (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_1000Rnd_65x39_Belt_Tracer_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_BeltName">
+            <Original>6.5 mm 2000Rnd LMG Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_BeltDesc">
+            <Original>Caliber: 6.5x39 mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Red) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_RedDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Red&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_GreenName">
+            <Original>6.5 mm 2000Rnd LMG (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Green&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Green) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_GreenDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Green Splash) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Green_SplashDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Green Splash&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_YellowName">
+            <Original>6.5 mm 2000Rnd LMG (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Yellow&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Yellow) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_YellowDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashName">
+            <Original>6.5 mm 2000Rnd LMG Tracer (Yellow Splash) Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_2000Rnd_65x39_Belt_Tracer_Yellow_SplashDesc">
+            <Original>Caliber: 6.5x39 mm Tracer - Yellow Splash&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_VEHICLE_AMMO_DISPLAY_NAME_SHORT_TRACER">
+            <Original>Tracer</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51Beltname">
+            <Original>7.62 mm Minigun Belt</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51Beltdesc">
+            <Original>Caliber: 7.62x51 mm&lt;br/&gt;Rounds: 5000&lt;br/&gt;Used in: AH-9</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51YellowBeltname">
+            <Original>7.62 mm Minigun Belt(Yellow Splash)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_5000Rnd762x51YellowBeltdesc">
+            <Original>Caliber: 7.62x51 mm Yellow Splash&lt;br/&gt;Rounds: 5000&lt;br/&gt;Used in: AH-9</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_shellsName">
+            <Original>HE Mortar Shells</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_shellsNameShort">
+            <Original>HE</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Flare_whiteName">
+            <Original>Mortar Flare (White)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Flare_whiteNameShort">
+            <Original>White Flare</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Smoke_whiteName">
+            <Original>Mortar Smoke Shell (White)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_Smoke_whiteNameShort">
+            <Original>White Smoke</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_guidedName">
+            <Original>Guided Mortar</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_guidedNameShort">
+            <Original>Guided </Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_LGName">
+            <Original>Laser Guided Mortar</Original>
+        </Key>
+		<Key ID="STR_EPOCH_8Rnd_82mm_Mo_LGNameShort">
+            <Original>Laser Guided</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_PG_missilesName">
+            <Original>DAGR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_PG_missilesNameShort">
+            <Original>HE</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_PG_missilesDesc">
+            <Original>Type: ATGM&lt;br/&gt;Rounds: 24&lt;br/&gt;Used in: A-143, AH-9, AH-99</Original>
+        </Key>
+		<Key ID="STR_EPOCH_12Rnd_PG_missilesDesc">
+            <Original>Type: ATGM&lt;br/&gt;Rounds: 12&lt;br/&gt;Used in: Ka-60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_missilesName">
+            <Original>DAR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_missilesNameShort">
+            <Original>HE</Original>
+        </Key>
+		<Key ID="STR_EPOCH_24Rnd_missilesDesc">
+            <Original>Type: DAR&lt;br/&gt;Rounds: 24&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_12Rnd_missilesDesc">
+            <Original>Type: DAR&lt;br/&gt;Rounds: 12&lt;br/&gt;Used in: Vehicles</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_shellsName">
+            <Original>40 mm GPR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_shellsNameShort">
+            <Original>GPR</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_shellsDesc">
+            <Original>Type: GPR&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsName">
+            <Original>40 mm GPR-T(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsNameShort">
+            <Original>GPR-T - Red</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Red_shellsDesc">
+            <Original>Type: GPR-T - Red&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsName">
+            <Original>40 mm GPR-T(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsNameShort">
+            <Original>GPR-T - Green</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Green_shellsDesc">
+            <Original>Type: GPR-T - Green&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsName">
+            <Original>40 mm GPR-T(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsNameShort">
+            <Original>GPR-T - Tellow</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_40mm_GPR_Tracer_Yellow_shellsDesc">
+            <Original>Type: GPR-T - Tellow&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_shellsName">
+            <Original>40 mm APFSDS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_shellsNameShort">
+            <Original>APFSDS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_shellsDesc">
+            <Original>Type: APFSDS&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsName">
+            <Original>40 mm APFSDS-T(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsNameShort">
+            <Original>APFSDS-T - Red</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Red_shellsDesc">
+            <Original>Type: APFSDS-T - Red&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsName">
+            <Original>40 mm APFSDS-T(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsNameShort">
+            <Original>APFSDS-T - Green</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Green_shellsDesc">
+            <Original>Type: APFSDS-T - Green&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsName">
+            <Original>40 mm APFSDS-T(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsNameShort">
+            <Original>APFSDS-T - Yellow</Original>
+        </Key>
+		<Key ID="STR_EPOCH_40Rnd_40mm_APFSDS_Tracer_Yellow_shellsDesc">
+            <Original>Type: APFSDS-T - Yellow&lt;br/&gt;Rounds: 40</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shellsName">
+            <Original>30 mm Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shellsDesc">
+            <Original>Type: MP&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shellsNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedName">
+            <Original>30 mm Multi-purpose(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedDesc">
+            <Original>Type: MP - Red&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenName">
+            <Original>30 mm Multi-purpose(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenDesc">
+            <Original>Type: MP - Green&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_GreenNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowName">
+            <Original>30 mm Multi-purpose(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowDesc">
+            <Original>Type: MP - Yellow&lt;br/&gt;Rounds: 140</Original>
+        </Key>
+		<Key ID="STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_YellowNameShort">
+            <Original>Multi-purpose</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shellsName">
+            <Original>30 mm APFSDS-T</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shellsDesc">
+            <Original>Type: APFSDS&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shellsNameShort">
+            <Original>APFSDS</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedName">
+            <Original>30 mm APFSDS-T(Red)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedDesc">
+            <Original>Type: APFSDS-T - Red&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_RedNameShort">
+            <Original>APFSDS-T</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenName">
+            <Original>30 mm APFSDS-T(Green)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenDesc">
+            <Original>Type: APFSDS-T - Green&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_GreenNameShort">
+            <Original>APFSDS-T</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowName">
+            <Original>30 mm APFSDS-T(Yellow)</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowDesc">
+            <Original>Type: APFSDS-T - Yellow&lt;br/&gt;Rounds: 60</Original>
+        </Key>
+		<Key ID="STR_EPOCH_60Rnd_30mm_APFSDS_shells_Tracer_YellowNameShort">
+            <Original>APFSDS-T</Original>
+        </Key>
+		<Key ID="STR_EPOCH_FemalePantsNShirt">
+			<Original>Female Pants/Shirt</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched1">
+			<Original>Jeans-Blue Shirt-Gray</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched2">
+			<Original>Jeans-Blue Shirt-Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched3">
+			<Original>Jeans-Blue Shirt-Blue Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched4">
+			<Original>Jeans-Blue Shirt-CSAT Desert</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched5">
+			<Original>Jeans-Blue Shirt-CSAT Urban</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched6">
+			<Original>Jeans-Blue Shirt-Dark Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched7">
+			<Original>Jeans-Blue Shirt-Green Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched8">
+			<Original>Jeans-Blue Shirt-Hero2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched9">
+			<Original>Jeans-Blue Shirt-Hero</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched10">
+			<Original>Jeans-Blue Shirt-LumberJack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched11">
+			<Original>Jeans-Blue Shirt-LumberJack Green</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched12">
+			<Original>Jeans-Blue Shirt-Nemo</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched13">
+			<Original>Jeans-Blue Shirt-Pink2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched14">
+			<Original>Jeans-Blue Shirt-Pink Hearts</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched15">
+			<Original>Jeans-Blue Shirt-Pink Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched16">
+			<Original>Jeans-Blue Shirt-Pink Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched17">
+			<Original>Jeans-Blue Shirt-Purple Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched18">
+			<Original>Jeans-Blue Shirt-Purple Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched19">
+			<Original>Jeans-Blue Shirt-Red Green Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched20">
+			<Original>Jeans-Blue Shirt-Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched21">
+			<Original>Jeans-Blue Shirt-Black Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched1Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Gray)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched2Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched3Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Blue Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched4Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(CSAT Desert)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched5Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(CSAT Urban)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched6Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Dark Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched7Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Green Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched8Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Hero2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched9Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Hero)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched10Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(LumberJack)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched11Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(LumberJack Green)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched12Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Nemo)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched13Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Pink2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched14Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Pink Hearts)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched15Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Pink Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched16Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Pink Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched17Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Purple Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched18Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Purple Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched19Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Red Green Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched20Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansPatched21Desc">
+			<Original>Jeans(Blue Patched)&lt;br/&gt;Tank Top(Black Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn1">
+			<Original>Jeans-BlkBrn Shirt-Gray</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn2">
+			<Original>Jeans-BlkBrn Shirt-Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn3">
+			<Original>Jeans-BlkBrn Shirt-Blue Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn4">
+			<Original>Jeans-BlkBrn Shirt-CSAT Desert</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn5">
+			<Original>Jeans-BlkBrn Shirt-CSAT Urban</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn6">
+			<Original>Jeans-BlkBrn Shirt-Dark Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn7">
+			<Original>Jeans-BlkBrn Shirt-Green Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn8">
+			<Original>Jeans-BlkBrn Shirt-Hero2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn9">
+			<Original>Jeans-BlkBrn Shirt-Hero</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn10">
+			<Original>Jeans-BlkBrn Shirt-LumberJack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn11">
+			<Original>Jeans-BlkBrn Shirt-LumberJack Green</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn12">
+			<Original>Jeans-BlkBrn Shirt-Nemo</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn13">
+			<Original>Jeans-BlkBrn Shirt-Pink2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn14">
+			<Original>Jeans-BlkBrn Shirt-Pink Hearts</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn15">
+			<Original>Jeans-BlkBrn Shirt-Pink Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn16">
+			<Original>Jeans-BlkBrn Shirt-Pink Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn17">
+			<Original>Jeans-BlkBrn Shirt-Purple Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn18">
+			<Original>Jeans-BlkBrn Shirt-Purple Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn19">
+			<Original>Jeans-BlkBrn Shirt-Red Green Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn20">
+			<Original>Jeans-BlkBrn Shirt-Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn21">
+			<Original>Jeans-BlkBrn Shirt-Black Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn1Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Gray)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn2Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn3Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Blue Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn4Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(CSAT Desert)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn5Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(CSAT Urban)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn6Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Dark Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn7Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Green Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn8Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Hero2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn9Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Hero)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn10Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(LumberJack)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn11Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(LumberJack Green)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn12Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Nemo)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn13Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Pink2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn14Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Pink Hearts)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn15Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Pink Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn16Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Pink Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn17Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Purple Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn18Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Purple Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn19Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Red Green Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn20Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlkBrn21Desc">
+			<Original>Jeans(Black Brown)&lt;br/&gt;Tank Top(Black Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn1">
+			<Original>Jeans-ArBrn Shirt-Gray</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn2">
+			<Original>Jeans-ArBrn Shirt-Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn3">
+			<Original>Jeans-ArBrn Shirt-Blue Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn4">
+			<Original>Jeans-ArBrn Shirt-CSAT Desert</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn5">
+			<Original>Jeans-ArBrn Shirt-CSAT Urban</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn6">
+			<Original>Jeans-ArBrn Shirt-Dark Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn7">
+			<Original>Jeans-ArBrn Shirt-Green Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn8">
+			<Original>Jeans-ArBrn Shirt-Hero2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn9">
+			<Original>Jeans-ArBrn Shirt-Hero</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn10">
+			<Original>Jeans-ArBrn Shirt-LumberJack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn11">
+			<Original>Jeans-ArBrn Shirt-LumberJack Green</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn12">
+			<Original>Jeans-ArBrn Shirt-Nemo</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn13">
+			<Original>Jeans-ArBrn Shirt-Pink2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn14">
+			<Original>Jeans-ArBrn Shirt-Pink Hearts</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn15">
+			<Original>Jeans-ArBrn Shirt-Pink Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn16">
+			<Original>Jeans-ArBrn Shirt-Pink Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn17">
+			<Original>Jeans-ArBrn Shirt-Purple Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn18">
+			<Original>Jeans-ArBrn Shirt-Purple Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn19">
+			<Original>Jeans-ArBrn Shirt-Red Green Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn20">
+			<Original>Jeans-ArBrn Shirt-Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn21">
+			<Original>Jeans-ArBrn Shirt-Black Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn1Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Gray)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn2Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn3Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Blue Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn4Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(CSAT Desert)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn5Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(CSAT Urban)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn6Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Dark Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn7Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Green Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn8Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Hero2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn9Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Hero)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn10Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(LumberJack)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn11Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(LumberJack Green)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn12Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Nemo)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn13Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Pink2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn14Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Pink Hearts)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn15Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Pink Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn16Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Pink Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn17Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Purple Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn18Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Purple Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn19Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Red Green Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn20Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansArBrn21Desc">
+			<Original>Jeans(Arid Brown)&lt;br/&gt;Tank Top(Black Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack1">
+			<Original>Jeans-Black Shirt-Gray</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack2">
+			<Original>Jeans-Black Shirt-Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack3">
+			<Original>Jeans-Black Shirt-Blue Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack4">
+			<Original>Jeans-Black Shirt-CSAT Desert</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack5">
+			<Original>Jeans-Black Shirt-CSAT Urban</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack6">
+			<Original>Jeans-Black Shirt-Dark Blue Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack7">
+			<Original>Jeans-Black Shirt-Green Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack8">
+			<Original>Jeans-Black Shirt-Hero2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack9">
+			<Original>Jeans-Black Shirt-Hero</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack10">
+			<Original>Jeans-Black Shirt-LumberJack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack11">
+			<Original>Jeans-Black Shirt-LumberJack Green</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack12">
+			<Original>Jeans-Black Shirt-Nemo</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack13">
+			<Original>Jeans-Black Shirt-Pink2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack14">
+			<Original>Jeans-Black Shirt-Pink Hearts</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack15">
+			<Original>Jeans-Black Shirt-Pink Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack16">
+			<Original>Jeans-Black Shirt-Pink Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack17">
+			<Original>Jeans-Black Shirt-Purple Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack18">
+			<Original>Jeans-Black Shirt-Purple Polka</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack19">
+			<Original>Jeans-Black Shirt-Red Green Plaid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack20">
+			<Original>Jeans-Black Shirt-Woodland</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack21">
+			<Original>Jeans-Black Shirt-Black Skullz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack1Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Gray)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack2Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack3Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Blue Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack4Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(CSAT Desert)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack5Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(CSAT Urban)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack6Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Dark Blue Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack7Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Green Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack8Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Hero2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack9Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Hero)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack10Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(LumberJack)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack11Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(LumberJack Green)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack12Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Nemo)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack13Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Pink2)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack14Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Pink Hearts)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack15Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Pink Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack16Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Pink Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack17Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Purple Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack18Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Purple Polka)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack19Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Red Green Plaid)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack20Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Woodland)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_FemaleJeansBlack21Desc">
+			<Original>Jeans(Black)&lt;br/&gt;Tank Top(Black Skullz)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HockeyMask">
+			<Original>Hockey Mask</Original>
+		</Key>
+		<Key ID="STR_EPOCH_PlagueMask">
+			<Original>Plague Mask</Original>
+		</Key>
+		<Key ID="STR_EPOCH_GhostFaceMask">
+			<Original>GhostFace Mask</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SkullMask">
+			<Original>Skull Mask</Original>
+		</Key>
+		<Key ID="STR_EPOCH_WitchMask">
+			<Original>Witch Mask</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerActive">
+			<Original>Active</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHex">
+			<Original>Hex</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerSkull">
+			<Original>Death</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerAirdrop">
+			<Original>Airdrop</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerAmmo">
+			<Original>Ammo</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerAttachment">
+			<Original>Attachment</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBackpack">
+			<Original>Backpack</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBiohazard">
+			<Original>Biohazard</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBoat">
+			<Original>Boat</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBricks">
+			<Original>Bricks</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerCar">
+			<Original>Vehicle</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerCarnival">
+			<Original>Carnival</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerCash">
+			<Original>Cash</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerChat">
+			<Original>Chat</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerContainer">
+			<Original>Container</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerDollar1">
+			<Original>Dollar</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerDollar2">
+			<Original>Dollar</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerWater">
+			<Original>Water</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerDynamicTrader">
+			<Original>Dynamic Trader</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerExplosive">
+			<Original>Explosives</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerFirstAid">
+			<Original>FirstAid</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerFood">
+			<Original>Food</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerGem">
+			<Original>Gem</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerGPS">
+			<Original>GPS</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHeart">
+			<Original>Heart</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHeli">
+			<Original>Heli</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHeli">
+			<Original>Heli</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerHelmet">
+			<Original>Helmet</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerJet">
+			<Original>Jet</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerKrypto">
+			<Original>Krypto</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerKryptoBag">
+			<Original>Krypto</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerLightning">
+			<Original>Lightning</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission1_1">
+			<Original>Mission Level1-1</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission1_2">
+			<Original>Mission Level1-2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission2_1">
+			<Original>Mission Level2-1</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission2_2">
+			<Original>Mission Level2-2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission3_1">
+			<Original>Mission Level3-1</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission3_2">
+			<Original>Mission Level3-2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission4_1">
+			<Original>Mission Level4-1</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMission4_2">
+			<Original>Mission Level4-2</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerMixer">
+			<Original>Mixer</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerPistol">
+			<Original>Pistol</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerPlant">
+			<Original>Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerQuad">
+			<Original>Quad</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerRadiation">
+			<Original>Radiation</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerRespawn">
+			<Original>Respawn</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerRifle">
+			<Original>Rifle</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerService">
+			<Original>Service</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerShipwreck">
+			<Original>Shipwreck</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerSniper">
+			<Original>Sniper</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerStaticTrader">
+			<Original>Static Trader</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerTank">
+			<Original>Tank</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerTruck">
+			<Original>Truck</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerUniform">
+			<Original>Uniform</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerVest">
+			<Original>Vest</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerWood">
+			<Original>Wood</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Garden">
+			<Original>Epoch Garden Plot</Original>
+		</Key>
+		<Key ID="STR_EPOCH_GardenGhost">
+			<Original>Garden Ghost</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HempPlant">
+			<Original>Hemp Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hemp">
+			<Original>Hemp</Original>
+		</Key>
+		<Key ID="STR_EPOCH_PoppyPlant">
+			<Original>Poppy Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Poppy">
+			<Original>Poppy</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SunflowerPlant">
+			<Original>Sunflower Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Sunflower">
+			<Original>Sunflower</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SaplingPlant">
+			<Original>Sapling Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Sapling">
+			<Original>Sapling</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SaplingTeenPlant">
+			<Original>Sapling Teen Plant</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SaplingTeen">
+			<Original>Sapling Teen</Original>
+		</Key>
+      		<Key ID="STR_EPOCH_BurnBarrel">
+            		<Original>Burn Barrel</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_LightPole">
+            		<Original>Light Pole</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_SmallForestCamoNet">
+            		<Original>Small Forest CamoNet</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_SmallDesertCamoNet">
+            		<Original>Small Desert CamoNet</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_LargeForestCamoNet">
+            		<Original>Large ForestCamoNet</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_LargeDesertCamoNet">
+            		<Original>Large Desert CamoNet</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_FirePlace_02">
+            		<Original>Camp Fire</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_FieldToilet">
+            		<Original>Field Toilet</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_Scaffolding">
+            		<Original>Scaffolding</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_Sink">
+            		<Original>Sink</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_PortableLight_Single">
+            		<Original>Single Portable Light</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_PortableLight_Double">
+            		<Original>Double Portable Light</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_WatchTower">
+            		<Original>Watch Tower</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_SunShade">
+            		<Original>Sun Shade</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_FuelPump">
+            		<Original>Fuel Pump</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_BagBunker">
+            		<Original>Bag Bunker</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_SandbagWall">
+            		<Original>Sandbag Wall</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_SandbagWallLong">
+            		<Original>Long Sandbag Wall</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_BarGate">
+            		<Original>Bar Gate</Original>
+        	</Key>
+        	<Key ID="STR_EPOCH_WaterPump">
+            		<Original>Water Pump</Original>
+        	</Key>
+	</Package>
 </Project>

@@ -1248,7 +1248,7 @@ class CfgVehicles
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Dan.paa";
         maxGunElev = 80;
         faceType = "Man_A3";
-        side = 0;
+        side = 3;
         vehicleClass = "Men";
         engineer = 1;
         scope = 0;
@@ -4044,11 +4044,29 @@ class CfgVehicles
         };
         cost = 900000;
     };
-    class C_Hatchback_01_F;
+	class mosquito_epoch_armedG: mosquito_epoch
+	{
+		author = "DirtySanchez";
+		displayName = "Mosquito Armed(Grenades)";
+		_generalMacro = "mosquito_epoch_armedG";
+		weapons[] = {"MosquitoGrenadeLauncher"};
+		magazines[] = {"3Rnd_MosquitoGrenade"};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_vehicles_1\mosquito\data\mosquito_co.paa"};
+		fuelCapacity = 242;
+		fuelConsumptionRate = 0.0322;
+		slingLoadMaxCargoMass = 200;
+		driverCanSee = 31;
+		driverCanEject = 1;
+		ejectDeadCargo = 1;
+	};
+	class C_Hatchback_01_F;
     class C_Hatchback_01_EPOCH : C_Hatchback_01_F
     {
         scope = 2;
-        crew = "";
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
         side = 3;
         armor = 40;
         fuelCapacity = 45;
@@ -4059,13 +4077,178 @@ class CfgVehicles
         maximumLoad = 1500;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers {};
+        class TransportItems{};
+        class Eventhandlers;
+		class HitPoints;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH1";
+		};
     };
+	class C_Hatchback_01_EPOCH1: C_Hatchback_01_EPOCH
+	{
+		author = "DirtySanchez";
+
+		terrainCoef = 4.0;
+		brakeDistance = 3.2;
+		acceleration 	= 16;
+		maxSpeed = 190;
+		fuelConsumptionRate = 0.025;
+		enginePower = 150;
+		peakTorque = 500;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH2";
+		};
+	};
+	class C_Hatchback_01_EPOCH2: C_Hatchback_01_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.05;
+		crewCrashProtection	= 0.15;
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 0.6;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 1;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.4;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH3";
+		};
+	};
+	class C_Hatchback_01_EPOCH3: C_Hatchback_01_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 18;
+		maximumLoad = 3000;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH4";
+		};
+	};
+	class C_Hatchback_01_EPOCH4: C_Hatchback_01_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 90;
+		fuelConsumptionRate = 0.0175;
+	};
     class C_Hatchback_01_sport_F;
     class C_Hatchback_02_EPOCH : C_Hatchback_01_sport_F
     {
         scope = 2;
+		scopeCurator=2;
         crew = "";
         side = 3;
         armor = 40;
@@ -4078,12 +4261,178 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class Eventhandlers;
+		class HitPoints;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH1";
+		};
     };
-    class C_Offroad_01_F;
+	class C_Hatchback_02_EPOCH1: C_Hatchback_02_EPOCH
+	{
+		author = "DirtySanchez";
+
+		terrainCoef = 4.0;
+		brakeDistance = 4.75;
+		acceleration = 16;
+		maxSpeed = 350;
+		fuelConsumptionRate = 0.035;
+		enginePower = 375;
+		peakTorque = 820;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH2";
+		};
+	};
+	class C_Hatchback_02_EPOCH2: C_Hatchback_02_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.05;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.25;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 0.6;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 1;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.4;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH3";
+		};
+	};
+	class C_Hatchback_02_EPOCH3: C_Hatchback_02_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 18;
+		maximumLoad = 3000;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_Hatchback_02_EPOCH4";
+		};
+	};
+	class C_Hatchback_02_EPOCH4: C_Hatchback_02_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 90;
+		fuelConsumptionRate = 0.0275;
+	};
+	class C_Offroad_01_F;
     class C_Offroad_01_EPOCH : C_Offroad_01_F
     {
         scope = 2;
+		scopeCurator = 2;
+		forceInGarage=1;
         crew = "";
         side = 3;
         armor = 50;
@@ -4093,12 +4442,232 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class Eventhandlers;
+		class HitPoints;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 1, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 0.27, "HideBumper2", 1, "HideConstruction", 1};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH1";
+		};
     };
+	class C_Offroad_01_EPOCH1: C_Offroad_01_EPOCH
+	{
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		brakeDistance = 45;
+		maxSpeed = 225;
+		fuelConsumptionRate = 0.0325;
+		enginePower = 375;
+		peakTorque = 800;
+		idleRpm = 800;
+		redRpm = 6000;
+		class complexGearbox {
+			GearboxRatios[] = {"R1", -3.231, "N", 0, "D1", 4.462, "D2", 3.57, "D3", 2.571, "D4", 1.97, "D5", 1.601, "D6", 0.9, "D7", 0.65};
+			TransmissionRatios[] = {"High", 4.111};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+			gearUpMaxCoef = 0.95;
+			gearDownMaxCoef = 0.85;
+			gearUpMinCoef = 0.65;
+			gearDownMinCoef = 0.55;
+			transmissionDelay = 0.75;
+		};
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 1};
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH2";
+		};
+	};
+	class C_Offroad_01_EPOCH2: C_Offroad_01_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 125;
+		armorLights = 0.6;
+		crewCrashProtection	= 1.5;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 2.5;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 4.5;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.75;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_Hatchback_01_EPOCH3";
+		};
+	};
+	class C_Offroad_01_EPOCH3: C_Offroad_01_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 4;
+		maximumLoad = 3000;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH4";
+		};
+	};
+	class C_Offroad_01_EPOCH4: C_Offroad_01_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 100;
+		fuelConsumptionRate = 0.0275;
+		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDocPolice",1},{"CircuitParts",2},{"ItemScraps",2},{"ItemBulb",4}};
+			upgradeToVehicle = "C_Offroad_01_EPOCH5";
+		};
+	};
+	class C_Offroad_01_EPOCH5: C_Offroad_01_EPOCH4
+	{
+		author = "DirtySanchez";
+		textureList[] = {"White", 1};
+		animationList[] = {"HidePolice", 0, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class UserActions {
+			class beacons_start {
+				userActionID = 50;
+				displayName = "Beacons On";
+				displayNameDefault = "Beacons On";
+				position = "temp";
+				priority = 1.5;
+				radius = 2;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase 'BeaconsStart' < 0.5 AND Alive this AND driver this == player AND this animationPhase 'hidePolice' < 0.5";
+				statement = "if(isNil 'EPOCH_Siren')then{EPOCH_Siren = 0;};this animate ['BeaconsStart',1]; if(diag_tickTime > EPOCH_Siren + 31)then{vehicle player say3d 'police_siren'; EPOCH_Siren = diag_tickTime;};";
+			};
+			class beacons_stop: beacons_start {
+				userActionID = 51;
+				displayName = "Beacons Off";
+				displayNameDefault = "Beacons Off";
+				condition = "this animationPhase 'BeaconsStart' > 0.5 AND Alive this AND driver this == player AND this animationPhase 'hidePolice' < 0.5";
+				statement = "this animate ['BeaconsStart',0];";
+				position = "temp";
+				priority = 1.5;
+				radius = 2;
+				animPeriod = 2;
+				onlyForplayer = 0;
+			};
+		};
+	};
     class C_Quadbike_01_F;
     class C_Quadbike_01_EPOCH : C_Quadbike_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 30;
@@ -4108,7 +4677,7 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class Eventhandlers;
         class UserActions
         {
             class PressXToFlipTheThing
@@ -4123,28 +4692,196 @@ class CfgVehicles
             };
         };
     };
-    class C_SUV_01_F;
-    class C_SUV_01_EPOCH : C_SUV_01_F
-    {
-        scope = 2;
-        crew = "";
-        side = 3;
-        armor = 45;
-        fuelCapacity = 45;
-        fuelConsumptionRate = 0.02;
-        transportMaxWeapons = 12;
-        transportMaxMagazines = 64;
-        transportMaxBackpacks = 12;
-        maximumLoad = 2000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers {};
-    };
+	class C_SUV_01_F;
+	class C_SUV_01_EPOCH: C_SUV_01_F
+	{
+		scope = 2;
+		scopeCurator=2;
+		crew = "";
+		side = 3;
+		armor = 45;
+		fuelCapacity = 45;
+		fuelConsumptionRate = 0.02;
+		transportMaxWeapons = 12;
+		transportMaxMagazines = 64;
+		transportMaxBackpacks = 12;
+		maximumLoad = 2000;
+		faction = "CIV_F";
+		typicalCargo[] = {};
+		class TransportItems{};
+		class Eventhandlers;
+		class HitPoints;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH1";
+		};
+	};
+	class C_SUV_01_EPOCH1: C_SUV_01_EPOCH
+	{
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		brakeDistance = 6.2;
+		acceleration 	= 17;
+		maxSpeed = 274;
+		fuelConsumptionRate = 0.025;
+		enginePower = 454;
+		peakTorque = 750;
+		idleRpm = 850;
+		redRpm = 6250;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitRGlass;
+			class HitLGlass;
+			class HitBody;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH2";
+		};
+	};
+	class C_SUV_01_EPOCH2: C_SUV_01_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.1;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel: HitLFWheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.9;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 2.3;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 4.25;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 2.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 1.2; // 1
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitBody: HitBody {
+				armor = 1.25;
+				passThrough = 0.75;
+				explosionShielding = 1.25;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH3";
+		};
+	};
+	class C_SUV_01_EPOCH3: C_SUV_01_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 18;
+		maximumLoad = 3750;
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "C_SUV_01_EPOCH4";
+		};
+	};
+	class C_SUV_01_EPOCH4: C_SUV_01_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 90;
+		fuelConsumptionRate = 0.0185;
+	};
     class C_Rubberboat;
     class C_Rubberboat_EPOCH : C_Rubberboat
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4152,7 +4889,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_civilian_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4171,6 +4908,7 @@ class CfgVehicles
     class C_Rubberboat_02_EPOCH : O_Boat_Transport_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4178,7 +4916,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_OPFOR_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4197,6 +4935,7 @@ class CfgVehicles
     class C_Rubberboat_03_EPOCH : O_Lifeboat
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4204,7 +4943,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_rescue_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4223,6 +4962,7 @@ class CfgVehicles
     class C_Rubberboat_04_EPOCH : I_Boat_Transport_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4230,7 +4970,7 @@ class CfgVehicles
         typicalCargo[] = {};
         class TransportItems {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_INDP_CO.paa"};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4249,6 +4989,7 @@ class CfgVehicles
     class C_Van_01_box_EPOCH : C_Van_01_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4258,12 +4999,27 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
+	class C_Van_01_box_EPOCH3 : C_Van_01_box_EPOCH
+    {
+		author = "DirtySanchez";
+		maximumLoad = 6000;
+		transportMaxWeapons = 96;
+		transportMaxMagazines = 512;
+		transportMaxBackpacks = 128;
+	};
+	class C_Van_01_box_EPOCH4 : C_Van_01_box_EPOCH3
+    {
+		author = "DirtySanchez";
+		fuelCapacity = 75;
+        fuelConsumptionRate = 0.018;
+	};
     class C_Van_01_transport_F;
     class C_Van_01_transport_EPOCH : C_Van_01_transport_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4273,87 +5029,117 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
+	class C_Van_01_transport_EPOCH3 : C_Van_01_box_EPOCH3{};
+	class C_Van_01_transport_EPOCH4 : C_Van_01_box_EPOCH4{};
     class C_Boat_Civil_01_F;
     class C_Boat_Civil_01_EPOCH : C_Boat_Civil_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 800;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
-        class UserActions
-        {
-            class PushTheThing
-            {
-                displayNameDefault = "Push";
-                displayName = "$STR_EPOCH_Push";
-                position = "";
-                radius = 5;
-                onlyForPlayer = 1;
-                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
-                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
-            };
-        };
+        class Eventhandlers;
+		animationList[] = {"hidePolice", 0, "HideRescueSigns", 0, "HidePoliceSigns", 0};
+		class UserActions
+		{
+			class PushTheThing
+			{
+				displayNameDefault = "Push";
+				displayName = "$STR_EPOCH_Push";
+				position = "";
+				radius = 5;
+				onlyForPlayer = 1;
+				condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
+				statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
+			};
+		};
     };
     class C_Boat_Civil_01_police_F;
     class C_Boat_Civil_01_police_EPOCH : C_Boat_Civil_01_police_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 800;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
-        class UserActions
-        {
-            class PushTheThing
-            {
-                displayNameDefault = "Push";
-                displayName = "$STR_EPOCH_Push";
-                position = "";
-                radius = 5;
-                onlyForPlayer = 1;
-                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
-                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
-            };
-        };
+        class Eventhandlers;
+		animationList[] = {"hidePolice", 1, "HideRescueSigns", 0, "HidePoliceSigns", 1};
+		class UserActions
+		{
+			class PushTheThing
+			{
+				displayNameDefault = "Push";
+				displayName = "$STR_EPOCH_Push";
+				position = "";
+				radius = 5;
+				onlyForPlayer = 1;
+				condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
+				statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
+			};
+			class beacons_start
+			{
+				userActionID = 50;
+				displayName = "Beacons On";
+				displayNameDefault = "Beacons On";
+				position = "mph_axis";
+				priority = 1.5;
+				radius = 1.8;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase 'BeaconsStart' < 0.5 AND Alive(this) AND driver this == player";
+				statement = "if(isNil 'EPOCH_Siren')then{EPOCH_Siren = 0;}; this animate ['BeaconsStart',1]; if(diag_tickTime > EPOCH_Siren + 31)then{vehicle player say3d 'police_siren'; EPOCH_Siren = diag_tickTime;};";
+			};
+			class beacons_stop: beacons_start
+			{
+				userActionID = 51;
+				displayName = "Beacons Off";
+				displayNameDefault = "Beacons Off";
+				condition = "this animationPhase 'BeaconsStart' > 0.5 AND Alive(this) AND driver this == player";
+				statement = "this animate ['BeaconsStart',0];";
+			};
+		};
     };
     class C_Boat_Civil_01_rescue_F;
     class C_Boat_Civil_01_rescue_EPOCH : C_Boat_Civil_01_rescue_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 600;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
-        class UserActions
-        {
-            class PushTheThing
-            {
-                displayNameDefault = "Push";
-                displayName = "$STR_EPOCH_Push";
-                position = "";
-                radius = 5;
-                onlyForPlayer = 1;
-                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
-                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
-            };
-        };
+        class Eventhandlers;
+		animationList[] = {"hidePolice", 0, "HideRescueSigns", 1, "HidePoliceSigns", 0};
+		class UserActions
+		{
+			class PushTheThing
+			{
+				displayNameDefault = "Push";
+				displayName = "$STR_EPOCH_Push";
+				position = "";
+				radius = 5;
+				onlyForPlayer = 1;
+				condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
+				statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
+			};
+		};
     };
     class B_Heli_Light_01_F;
     class B_Heli_Light_01_EPOCH : B_Heli_Light_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 35;
@@ -4364,12 +5150,54 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions {
+			class BenchL_Fold {
+				userActionID = 58;
+				displayName = "Fold left bench";
+				displayNameDefault = "";
+				textToolTip = "";
+				position = "action_doorL_front";
+				priority = 1.5;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchL_Up') == 0) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [3,4]} count fullCrew [this, 'Turret'] == 0 ";
+				statement = "this animate ['BenchL_Up', 1]; {this lockCargo [_x, true]} forEach [3,4]";
+			};
+			class BenchR_Fold: BenchL_Fold {
+				userActionID = 60;
+				displayName = "Fold right bench";
+				position = "action_doorR_front";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchR_Up') == 0) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [2,5]} count fullCrew [this, 'Turret'] == 0";
+				statement = "this animate ['BenchR_Up', 1]; {this lockCargo [_x, true]} forEach [2,5]";
+			};
+			class BenchL_Unfold: BenchL_Fold {
+				userActionID = 59;
+				displayName = "Unfold left bench";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchL_Up') == 1) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [3,4]} count fullCrew [this, 'Turret'] == 0";
+				statement = "this animate ['BenchL_Up', 0]; {this lockCargo [_x, false]} forEach [3,4]";
+				textToolTip = "";
+				displayNameDefault = "";
+			};
+			class BenchR_Unfold: BenchL_Unfold {
+				userActionID = 61;
+				displayName = "Unfold right bench";
+				position = "action_doorR_front";
+				condition = "((locked this) != 2) && ((this animationPhase 'BenchR_Up') == 1) && (alive this) && ((this animationPhase 'AddBenches') == 1) && {(_x select 2) in [2,5]} count fullCrew [this, 'Turret'] == 0";
+				statement = "this animate ['BenchR_Up', 0]; {this lockCargo [_x, false]} forEach [2,5]";
+			};
+		};
     };
     class B_Heli_Transport_01_F;
     class B_Heli_Transport_01_EPOCH : B_Heli_Transport_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 60;
@@ -4380,12 +5208,49 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions {
+			class DoorL1_Open {
+				userActionID = 50;
+				displayName = "Open Left Door";
+				position = "door_L";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_L') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 1]";
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				priority = 0.5;
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+			};
+			class DoorR1_Open: DoorL1_Open {
+				userActionID = 51;
+				displayName = "Open Right Door";
+				position = "door_R";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_R') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 1]";
+			};
+			class DoorL1_Close: DoorL1_Open {
+				userActionID = 53;
+				displayName = "Close Left Door";
+				condition = "((this doorPhase 'door_L') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 0]";
+			};
+			class DoorR1_Close: DoorR1_Open {
+				userActionID = 54;
+				displayName = "Close Right Door";
+				condition = "((this doorPhase 'door_R') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 0]";
+			};
+		};
     };
     class B_Heli_Transport_01_camo_F;
     class B_Heli_Transport_01_camo_EPOCH : B_Heli_Transport_01_camo_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 60;
@@ -4396,19 +5261,56 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions {
+			class DoorL1_Open {
+				userActionID = 50;
+				displayName = "Open Left Door";
+				position = "door_L";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_L') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 1]";
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				priority = 0.5;
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+			};
+			class DoorR1_Open: DoorL1_Open {
+				userActionID = 51;
+				displayName = "Open Right Door";
+				position = "door_R";
+				condition = "((locked this) != 2) && ((this doorPhase 'door_R') == 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 1]";
+			};
+			class DoorL1_Close: DoorL1_Open {
+				userActionID = 53;
+				displayName = "Close Left Door";
+				condition = "((this doorPhase 'door_L') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_L', 0]";
+			};
+			class DoorR1_Close: DoorR1_Open {
+				userActionID = 54;
+				displayName = "Close Right Door";
+				condition = "((this doorPhase 'door_R') > 0) AND Alive(this) AND driver this != player AND gunner this != player";
+				statement = "this animateDoor ['door_R', 0]";
+			};
+		};
     };
     class B_SDV_01_F;
     class B_SDV_01_EPOCH : B_SDV_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
         maximumLoad = 500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class UserActions
         {
             class PushTheThing
@@ -4427,6 +5329,7 @@ class CfgVehicles
     class B_MRAP_01_EPOCH : B_MRAP_01_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 75;
@@ -4434,12 +5337,229 @@ class CfgVehicles
         maximumLoad = 3500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class HitPoints;
+		class UserActions {
+			class Door_LF_Open {
+				userActionID = 50;
+				displayName = "Open Driver Door";
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				priority = 0.5;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF') == 0) AND Alive(this) && (speed this < 5) ";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class Door_RF_Open: Door_LF_Open {
+				userActionID = 51;
+				displayName = "Open Passenger Door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class Door_LB_Open: Door_LF_Open {
+				userActionID = 52;
+				displayName = "Open RearL Door";
+				position = "door_LB";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LB') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_LB', 1]";
+			};
+			class Door_RB_Open: Door_LF_Open {
+				userActionID = 53;
+				displayName = "Open RearR Door";
+				position = "Door_RB";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RB') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_RB', 1]";
+			};
+			class Door_LF_Close: Door_LF_Open {
+				userActionID = 50;
+				displayName = "Close Driver Door";
+				condition = "((this doorPhase 'Door_LF') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class Door_RF_Close: Door_RF_Open {
+				userActionID = 51;
+				displayName = "Close Passenger Door";
+				condition = "((this doorPhase 'Door_RF') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+			class Door_LB_Close: Door_LB_Open {
+				userActionID = 52;
+				displayName = "Close RearL Door";
+				condition = "((this doorPhase 'Door_LB') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_LB', 0]";
+			};
+			class Door_RB_Close: Door_RB_Open {
+				userActionID = 53;
+				displayName = "Close RearR Door";
+				condition = "((this doorPhase 'Door_RB') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_RB', 0]";
+			};
+		};
     };
+	class B_MRAP_01_EPOCH1 : B_MRAP_01_EPOCH
+    {
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		maxSpeed = 135;
+		fuelConsumptionRate = 0.012;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitHull;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitRGlass;
+			class HitLGlass;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+		};
+	};
+	class B_MRAP_01_EPOCH2 : B_MRAP_01_EPOCH1
+    {
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.45;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel: HitLFWheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel
+			{
+				armor = 0.55;
+				explosionShielding = 0.25;
+			};
+			class HitHull: HitHull
+			{
+				armor = 1.2;
+				explosionShielding = 0.45;
+			};
+			class HitEngine: HitHull
+			{
+				armor = 0.55;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitHull
+			{
+				explosionShielding = 2.5;
+			};
+			class HitGlass1: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass2: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass3: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass4: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass5: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass6: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitRGlass: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 2.2;
+			};
+			class HitLGlass: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 2.2;
+			};
+			class HitLBWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitLMWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitRBWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitRMWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+		};
+	};
+	class B_MRAP_01_EPOCH3 : B_MRAP_01_EPOCH
+    {
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 8;
+		maximumLoad = 4250;
+	};
+	class B_MRAP_01_EPOCH4 : B_MRAP_01_EPOCH3
+    {
+		author = "DirtySanchez";
+		fuelCapacity = 115;
+		fuelConsumptionRate = 0.009;
+	};
     class O_MRAP_02_F;
     class O_MRAP_02_EPOCH : O_MRAP_02_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 75;
@@ -4447,13 +5567,266 @@ class CfgVehicles
         maximumLoad = 3500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class HitPoints;
+		class UserActions {
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door1_axis";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door3_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+			class DoorLM_Open: DoorLF_Open {
+				userActionID = 54;
+				displayName = "Open left middle door";
+				position = "door5_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LM')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LM', 1]";
+			};
+			class DoorLM_Close: DoorLM_Open {
+				userActionID = 55;
+				displayName = "Close left middle door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LM') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LM', 0]";
+			};
+			class DoorRM_Open: DoorLM_Open {
+				userActionID = 56;
+				displayName = "Open right middle door";
+				position = "door7_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RM')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RM', 1]";
+			};
+			class DoorRM_Close: DoorRM_Open {
+				userActionID = 57;
+				displayName = "Close right middle door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RM') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RM', 0]";
+			};
+			class Door_rear_Open: DoorLM_Open {
+				userActionID = 58;
+				displayName = "Open rear door";
+				position = "door9_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_rear')  ==  0) && (alive this)";
+				statement = "this animateDoor ['Door_rear', 1]";
+			};
+			class Door_rear_Close: Door_rear_Open {
+				userActionID = 59;
+				displayName = "Close rear door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_rear') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_rear', 0]";
+			};
+		};
     };
+	class O_MRAP_02_EPOCH1 : O_MRAP_02_EPOCH
+    {
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		maxSpeed = 145;
+		fuelConsumptionRate = 0.012;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitReserveWheel;
+			class HitFuel;
+			class HitHull;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitGlass7;
+			class HitGlass8;
+			class HitGlass9;
+			class HitGlass10;
+			class HitGlass11;
+			class HitRGlass;
+			class HitLGlass;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+		};
+	};
+	class O_MRAP_02_EPOCH2 : O_MRAP_02_EPOCH1
+    {
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.45;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel: HitLFWheel {
+				armor = 0.75;
+				explosionShielding = 4.2;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.75;
+				explosionShielding = 4.2;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.75;
+				explosionShielding = 4.2;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.75;
+				explosionShielding = 4.2;
+			};
+			class HitReserveWheel: HitRF2Wheel {
+				armor = 0.75;
+				explosionShielding = 0.9;
+			};
+			class HitFuel: HitFuel {
+				armor = 0.55;
+				explosionShielding = 0.15;
+			};
+			class HitHull: HitHull {
+				armor = 1.2;
+				explosionShielding = 0.4;
+			};
+			class HitEngine: HitEngine {
+				armor = 0.75;
+				explosionShielding = 0.5;
+			};
+			class HitBody: HitBody {
+				armor = 4.2;
+				explosionShielding = 1.2;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass6: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass7: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass8: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass9: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass10: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass11: HitGlass5 {
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.4;
+				explosionShielding = 2.2;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.4;
+				explosionShielding = 2.2;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.4;
+				explosionShielding = 4.2;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.4;
+				explosionShielding = 4.2;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.4;
+				explosionShielding = 4.2;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.4;
+				explosionShielding = 4.2;
+			};
+		};
+	};
+	class O_MRAP_02_EPOCH3 : O_MRAP_02_EPOCH2
+    {
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 8;
+		maximumLoad = 4250;
+	};
+	class O_MRAP_02_EPOCH4 : O_MRAP_02_EPOCH3
+    {
+		author = "DirtySanchez";
+		fuelCapacity = 115;
+		fuelConsumptionRate = 0.009;
+	};
     class I_MRAP_03_F;
     class I_MRAP_03_EPOCH : I_MRAP_03_F
     {
         author = "$STR_A3_Bohemia_Interactive";
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 75;
@@ -4461,7 +5834,8 @@ class CfgVehicles
         maximumLoad = 3500;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class HitPoints;
         class RenderTargets
         {
             class commander_display
@@ -4513,11 +5887,208 @@ class CfgVehicles
                 };
             };
         };
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door1_axis";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door3_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
+	class I_MRAP_03_EPOCH1 : I_MRAP_03_EPOCH
+    {
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		maxSpeed = 140;
+		fuelConsumptionRate = 0.012;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitHull;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+		};
+	};
+	class I_MRAP_03_EPOCH2 : I_MRAP_03_EPOCH1
+    {
+		author = "DirtySanchez";
+		armor = 100;
+		armorLights = 0.45;
+		crewCrashProtection	= 1.5;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel: HitLFWheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel
+			{
+				armor = 0.75;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel
+			{
+				armor = 0.55;
+				explosionShielding = 0.25;
+			};
+			class HitHull: HitHull
+			{
+				armor = 1.2;
+				explosionShielding = 0.45;
+			};
+			class HitEngine: HitHull
+			{
+				armor = 0.55;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitHull
+			{
+				explosionShielding = 2.5;
+			};
+			class HitGlass1: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass2: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass3: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass4: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitGlass5: HitHull
+			{
+				armor = 1.75;
+				explosionShielding = 3.2;
+			};
+			class HitRGlass: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 2.2;
+			};
+			class HitLGlass: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 2.2;
+			};
+			class HitGlass6: HitHull
+			{
+				armor = 0.15;
+				explosionShielding = 2.2;
+			};
+			class HitLBWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitLMWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitRBWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+			class HitRMWheel: HitHull
+			{
+				armor = 0.25;
+				explosionShielding = 4.2;
+			};
+		};
+	};
+	class I_MRAP_03_EPOCH3 : I_MRAP_03_EPOCH2
+    {
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 8;
+		maximumLoad = 4250;
+	};
+	class I_MRAP_03_EPOCH4 : I_MRAP_03_EPOCH3
+    {
+		author = "DirtySanchez";
+		fuelCapacity = 115;
+		fuelConsumptionRate = 0.009;
+	};
     class B_Truck_01_transport_F;
     class B_Truck_01_transport_EPOCH : B_Truck_01_transport_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4530,27 +6101,211 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
-    class B_G_Offroad_01_armed_F;
-    class B_G_Offroad_01_armed_EPOCH : B_G_Offroad_01_armed_F
-    {
-        scope = 2;
-        crew = "";
-        side = 3;
-        armor = 80;
-        fuelCapacity = 350;
-        fuelConsumptionRate = 26;
-        maximumLoad = 3500;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers {};
-    };
+	class B_G_Offroad_01_armed_F;
+	class B_G_Offroad_01_armed_EPOCH: B_G_Offroad_01_armed_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		crew = "";
+		side = 3;
+		armor = 80;
+		fuelCapacity = 350;
+		fuelConsumptionRate = 26;
+		maximumLoad = 3500;
+		faction = "CIV_F";
+		typicalCargo[] = {};
+		class TransportItems{};
+		class Eventhandlers;
+		class HitPoints;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 1, "HideConstruction", 1};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH1";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH1: B_G_Offroad_01_armed_EPOCH
+	{
+		author = "DirtySanchez";
+		terrainCoef = 1.75;
+		brakeDistance = 45;
+		maxSpeed = 225;
+		enginePower = 375;
+		peakTorque = 800;
+		idleRpm = 800;
+		redRpm = 6000;
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitFuel;
+			class HitEngine;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitHull;
+		};
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 1};
+		class complexGearbox {
+			GearboxRatios[] = {"R1", -3.231, "N", 0, "D1", 4.462, "D2", 3.57, "D3", 2.571, "D4", 1.97, "D5", 1.601, "D6", 0.9, "D7", 0.65};
+			TransmissionRatios[] = {"High", 4.111};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+			gearUpMaxCoef = 0.95;
+			gearDownMaxCoef = 0.85;
+			gearUpMinCoef = 0.65;
+			gearDownMinCoef = 0.55;
+			transmissionDelay = 0.75; // 2
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH2";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH2: B_G_Offroad_01_armed_EPOCH1
+	{
+		author = "DirtySanchez";
+		armor = 185;
+		armorLights = 0.6;
+		crewCrashProtection	= 1.5;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class HitPoints: HitPoints {
+			class HitLFWheel: HitLFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitLF2Wheel: HitLF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRFWheel: HitRFWheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitRF2Wheel: HitRF2Wheel {
+				armor = 0.7;
+				explosionShielding = 3.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 2.5;
+				passThrough = 0;
+				explosionShielding = 1.25;
+			};
+			class HitEngine: HitEngine {
+				armor = 4.5;
+				passThrough = 0.4;
+				explosionShielding = 0.25;
+			};
+			class HitBody: HitBody {
+				armor = 1.5;
+				passThrough = 0.75;
+				explosionShielding = 1.25;
+			};
+			class HitGlass1: HitGlass1 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitGlass2: HitGlass2 {
+				armor = 0.35;
+				explosionShielding = 1.5;
+			};
+			class HitRGlass: HitRGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitLGlass: HitLGlass {
+				armor = 0.3;
+				explosionShielding = 1.5;
+			};
+			class HitGlass3: HitGlass3 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass4: HitGlass4 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass5: HitGlass5 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitGlass6: HitGlass6 {
+				armor = 0.2;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel: HitLBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitLMWheel: HitLMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRBWheel: HitRBWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitRMWheel: HitRMWheel {
+				armor = 0.25;
+				passThrough = 0.2;
+				explosionShielding = 3.5;
+			};
+			class HitHull: HitHull {
+				armor = 1.75;
+				passThrough = 0.4;
+				explosionShielding = 6;
+				minimalHit = 0.2;
+			};
+		};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH3";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH3: B_G_Offroad_01_armed_EPOCH2
+	{
+		author = "DirtySanchez";
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 4;
+		maximumLoad = 5500;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class Upgrades{
+			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
+			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH4";
+		};
+	};
+	class B_G_Offroad_01_armed_EPOCH4: B_G_Offroad_01_armed_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 550;
+		fuelConsumptionRate = 24;
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+	};
     class B_Truck_01_covered_F;
     class B_Truck_01_covered_EPOCH : B_Truck_01_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4560,12 +6315,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class B_Truck_01_mover_F;
     class B_Truck_01_mover_EPOCH : B_Truck_01_mover_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 80;
@@ -4575,12 +6331,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class B_Truck_01_box_F;
     class B_Truck_01_box_EPOCH : B_Truck_01_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4593,12 +6350,13 @@ class CfgVehicles
         transportMaxWeapons = 64;
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class O_Truck_02_covered_F;
     class O_Truck_02_covered_EPOCH : O_Truck_02_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 45;
@@ -4608,12 +6366,70 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
+	class O_Truck_02_covered_EPOCH3 : O_Truck_02_covered_EPOCH
+    {
+		author = "DirtySanchez";
+		maximumLoad = 6500;
+		transportMaxWeapons = 18;
+		transportMaxMagazines = 96;
+		transportMaxBackpacks = 8;
+	};
+	class O_Truck_02_covered_EPOCH4 : O_Truck_02_covered_EPOCH
+    {
+		author = "DirtySanchez";
+		fuelCapacity = 450;
+        fuelConsumptionRate = 22;
+	};
     class O_Truck_02_transport_F;
     class O_Truck_02_transport_EPOCH : O_Truck_02_transport_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 45;
@@ -4623,12 +6439,58 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
-    class O_Truck_03_covered_F;
+    class O_Truck_02_transport_EPOCH3 : O_Truck_02_covered_EPOCH3 {};
+	class O_Truck_02_transport_EPOCH4 : O_Truck_02_transport_EPOCH3 {};
+	class O_Truck_03_covered_F;
     class O_Truck_03_covered_EPOCH : O_Truck_03_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 64;
@@ -4638,12 +6500,13 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class O_Truck_02_box_F;
     class O_Truck_02_box_EPOCH : O_Truck_02_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         transportRepair = 0;
@@ -4657,12 +6520,56 @@ class CfgVehicles
         faction = "CIV_F";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
     };
     class O_Heli_Light_02_unarmed_F;
     class O_Heli_Light_02_unarmed_EPOCH : O_Heli_Light_02_unarmed_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 30;
@@ -4673,12 +6580,13 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
     };
     class I_Heli_Transport_02_F;
     class I_Heli_Transport_02_EPOCH : I_Heli_Transport_02_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 50;
@@ -4689,12 +6597,80 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
+		class UserActions {
+			class DoorL1_Open {
+				userActionID = 50;
+				displayName = "Open Left Door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open Left Door";
+				priority = 1.5;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "action_door_back_L";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && this animationPhase 'door_back_L' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_L', 1]";
+			};
+			class DoorR1_Open: DoorL1_Open {
+				userActionID = 51;
+				displayName = "Open Right Door";
+				textToolTip = "Open Right Door";
+				position = "action_door_back_R";
+				condition = "((locked this) != 2) && this animationPhase 'door_back_R' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_R', 1]";
+			};
+			class DoorL1_Close: DoorL1_Open {
+				userActionID = 53;
+				displayName = "Close Left Door";
+				textToolTip = "Close Left Door";
+				condition = "this animationPhase 'door_back_L' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_L', 0]";
+			};
+			class DoorR1_Close: DoorL1_Close {
+				userActionID = 54;
+				displayName = "Close Right Door";
+				textToolTip = "Close Right Door";
+				position = "action_door_back_R";
+				condition = "this animationPhase 'door_back_R' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['door_back_R', 0]";
+			};
+			class Ramp_Open: DoorL1_Open {
+				userActionID = 55;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				position = "";
+				showWindow = 0;
+				condition = "((locked this) != 2) && this doorPhase 'CargoRamp_Open' < 0.5 && {alive this} && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2]]) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)}";
+				statement = "this animateDoor ['CargoRamp_Open', 1]";
+			};
+			class Ramp_Close: Ramp_Open {
+				userActionID = 56;
+				displayName = "Close ramp";
+				textToolTip = "Close ramp";
+				condition = "this doorPhase 'CargoRamp_Open' > 0.5 && {alive this} && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2]]) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)}";
+				statement = "this animateDoor ['CargoRamp_Open', 0]";
+			};
+			class Ramp_Open1: DoorL1_Open {
+				userActionID = 55;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				position = "action_door_back_R";
+				showWindow = 1;
+				condition = "((locked this) != 2) && this doorPhase 'CargoRamp_Open' < 0.5 && {alive this} && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['CargoRamp_Open', 1]";
+			};
+		};
     };
     class I_Heli_light_03_unarmed_F;
     class I_Heli_light_03_unarmed_EPOCH : I_Heli_light_03_unarmed_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         armor = 50;
@@ -4705,13 +6681,14 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class O_Heli_Transport_04_F;
     class O_Heli_Transport_04_EPOCH : O_Heli_Transport_04_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4721,13 +6698,54 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+		};
     };
     class O_Heli_Transport_04_bench_F;
     class O_Heli_Transport_04_bench_EPOCH : O_Heli_Transport_04_bench_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4737,13 +6755,54 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+		};
     };
     class O_Heli_Transport_04_box_F;
     class O_Heli_Transport_04_box_EPOCH : O_Heli_Transport_04_box_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4753,13 +6812,54 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+		};
     };
     class O_Heli_Transport_04_covered_F;
     class O_Heli_Transport_04_covered_EPOCH : O_Heli_Transport_04_covered_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4769,13 +6869,105 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Open Pilots Door";
+				position = "Door_1_axis";
+				priority = 1.5;
+				radius = 2;
+				onlyForPlayer = 1;
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_1_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_1_source', 1])";
+			};
+			class CloseDoor_1: OpenDoor_1 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "Close Pilots Door";
+				condition = "((this animationPhase 'Door_1_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_1_source', 0])";
+			};
+			class OpenDoor_2: OpenDoor_1 {
+				displayName = "Open CoPilots Door";
+				position = "Door_2_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_2_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_2_source', 1])";
+			};
+			class CloseDoor_2: OpenDoor_2 {
+				displayName = "Close CoPilots Door";
+				condition = "(((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				statement = "(this animateDoor ['Door_2_source', 0])";
+			};
+			class OpenDoor_3: OpenDoor_1 {
+				displayName = "Open Loadmasters Door";
+				position = "Door_3_axis";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_3_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_3_source', 1])";
+			};
+			class CloseDoor_3: OpenDoor_3 {
+				displayName = "Close Loadmasters Door";
+				condition = "((this animationPhase 'Door_3_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_3_source', 0])";
+			};
+			class OpenDoor_4: OpenDoor_1 {
+				displayName = "Open Left Pod Door";
+				position = "Door_4_trigger";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_4_move_1') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_4_source', 1])";
+			};
+			class CloseDoor_4: OpenDoor_4 {
+				displayName = "Close Left Pod Door";
+				condition = "((this animationPhase 'Door_4_move_1') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_4_source', 0])";
+			};
+			class OpenDoor_5: OpenDoor_1 {
+				displayName = "Open Right Pod Door";
+				position = "Door_5_trigger";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_5_move_1') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_5_source', 1])";
+			};
+			class CloseDoor_5: OpenDoor_5 {
+				displayName = "Close Right Pod Door";
+				condition = "((this animationPhase 'Door_5_move_1') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_5_source', 0])";
+			};
+			class OpenDoor_6: OpenDoor_1 {
+				displayName = "Open ramp";
+				position = "Door_6_trigger";
+				condition = "((locked this) != 2) && {((this animationPhase 'Door_6_rot') < 0.5) && (alive this)}";
+				statement = "(this animateDoor ['Door_6_source', 1])";
+			};
+			class CloseDoor_6: OpenDoor_6 {
+				displayName = "Close ramp";
+				condition = "((this animationPhase 'Door_6_rot') >= 0.5) && (alive this)";
+				statement = "(this animateDoor ['Door_6_source', 0])";
+			};
+			class Ramp_Open: OpenDoor_6 {
+				userActionID = 60;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				position = "";
+				showWindow = 0;
+				condition = "this doorPhase 'Door_6_source' < 0.5 AND Alive(this) && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2], this turretUnit [3]])} && {((this getVariable ['bis_disabled_Ramp',0]) isEqualTo 0)} ";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+			};
+			class Ramp_Close: CloseDoor_6 {
+				userActionID = 61;
+				displayName = "Close ramp";
+				textToolTip = "Close ramp";
+				position = "";
+				showWindow = 0;
+				condition = "this doorPhase 'Door_6_source' > 0.5 AND Alive(this) && {(player in [driver this, this turretUnit [0], this turretUnit [1], this turretUnit [2], this turretUnit [3]])} && {((this getVariable ['bis_disabled_Ramp',0]) isEqualTo 0)} ";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+			};
+		};
     };
     class B_Heli_Transport_03_unarmed_F;
     class B_Heli_Transport_03_unarmed_EPOCH : B_Heli_Transport_03_unarmed_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4785,13 +6977,117 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
+		class UserActions {
+			class Ramp_Open {
+				userActionID = 60;
+				displayName = "Open ramp";
+				textToolTip = "Open ramp";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				position = "";
+				condition = "this doorPhase 'Door_rear_source' < 0.5 AND Alive(this) && ({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['Door_rear_source', 1]";
+				priority = 1.5;
+				radius = 1.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				showWindow = 0;
+				onlyForPlayer = 1;
+				shortcut = "";
+			};
+			class Ramp_Close: Ramp_Open {
+				userActionID = 61;
+				displayName = "Close ramp";
+				textToolTip = "Close ramp";
+				condition = "this doorPhase 'Door_rear_source' > 0.5 AND Alive(this) && ({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['Door_rear_source', 0]";
+			};
+			class RightDoor_Open: Ramp_Open {
+				userActionID = 666;
+				displayName = "Open Right Door";
+				textToolTip = "Open Right Door";
+				condition = "this doorPhase 'Door_R_source' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 1]";
+				displayNameDefault = "Open Right Door";
+			};
+			class RightDoor_Close: Ramp_Open {
+				userActionID = 666;
+				displayName = "Close Right Door";
+				textToolTip = "Close Right Door";
+				condition = "this doorPhase 'Door_R_source' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 0]";
+				displayNameDefault = "Close Right Door";
+			};
+			class LeftDoor_Open: Ramp_Open {
+				userActionID = 666;
+				displayName = "Open Left Door";
+				textToolTip = "Open Left Door";
+				condition = "this doorPhase 'Door_L_Source' < 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 1]";
+				displayNameDefault = "Open Left Door";
+			};
+			class LeftDoor_Close: Ramp_Open {
+				userActionID = 666;
+				displayName = "Close Left Door";
+				textToolTip = "Close Left Door";
+				condition = "this doorPhase 'Door_L_Source' > 0.5 AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 0]";
+				displayNameDefault = "Close Left Door";
+			};
+			class RDoor_Open {
+				displayName = "Open Right Door";
+				displayNameDefault = "Open Right Door";
+				radius = 7.5;
+				condition = "((locked this) != 2) && (this doorPhase 'Door_R_Source' < 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 1]";
+				position = "";
+				priority = 1.5;
+				onlyForplayer = 0;
+			};
+			class RDoor_Close: RDoor_Open {
+				displayName = "Close Right Door";
+				displayNameDefault = "Close Right Door";
+				radius = 7.5;
+				condition = "(this doorPhase 'Door_R_Source' > 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_R_Source', 0]";
+			};
+			class LDoor_Open: RDoor_Open {
+				displayName = "Open Left Door";
+				displayNameDefault = "Open Left Door";
+				radius = 7.5;
+				condition = "((locked this) != 2) && (this doorPhase 'Door_L_Source' < 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 1]";
+			};
+			class LDoor_Close: RDoor_Open {
+				displayName = "Close Left Door";
+				displayNameDefault = "Close Left Door";
+				radius = 7.5;
+				condition = "(this doorPhase 'Door_L_Source' > 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_L_Source', 0]";
+			};
+			class RampDoor_Open: RDoor_Open {
+				displayName = "Open ramp";
+				displayNameDefault = "Open ramp";
+				radius = 7.5;
+				condition = "((locked this) != 2) && (this doorPhase 'Door_rear_source' < 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_rear_source', 1]";
+			};
+			class RampDoor_Close: RDoor_Open {
+				displayName = "Close ramp";
+				displayNameDefault = "Close ramp";
+				radius = 7.5;
+				condition = "(this doorPhase 'Door_rear_source' > 0.5) && !({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_rear_source', 0]";
+			};
+		};
     };
     class C_Heli_Light_01_civil_F;
     class C_Heli_Light_01_civil_EPOCH : C_Heli_Light_01_civil_F
     {
         scope = 2;
+		scopeCurator = 2;
         crew = "";
         side = 3;
         faction = "CIV_F";
@@ -4801,7 +7097,7 @@ class CfgVehicles
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
         class TransportItems {};
-        class Eventhandlers {};
+        class EventHandlers;
         class RenderTargets {};
     };
     class Tank : LandVehicle
@@ -5289,6 +7585,22 @@ class CfgVehicles
         displayName = "$STR_EPOCH_WoodFloor";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
+	class WoodHalfFloor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\half_floor.p3d";
+        displayName = "$STR_EPOCH_WoodHalfFloor";
+        slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+    };
+	class WoodQuarterFloor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor.p3d";
+        displayName = "$STR_EPOCH_WoodQuarterFloor";
+        slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+    };
     class MetalFloor_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
@@ -5615,6 +7927,20 @@ class CfgVehicles
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\tp.p3d";
         displayName = "$STR_EPOCH_TipiSim";
+    };
+	class TentA_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Sequisha";
+        scope = 2;
+        model = "\A3\Structures_f\Civ\Camping\TentA_F.p3d";
+        displayName = "$STR_EPOCH_TentA";
+    };
+	class TentDome_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Sequisha";
+        scope = 2;
+        model = "\A3\Structures_f\Civ\Camping\TentDome_F.p3d";
+        displayName = "$STR_EPOCH_TentDome";
     };
     class Shelf_SIM_EPOCH : Constructions_modular_F
     {
@@ -6416,6 +8742,24 @@ class CfgVehicles
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
     };
+	class WoodHalfFloor_EPOCH : Const_floors_static_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\half_floor.p3d";
+        displayName = "$STR_EPOCH_WoodHalfFloor";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
+    };
+	class WoodQuarterFloor_EPOCH : Const_floors_static_F
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor.p3d";
+        displayName = "$STR_EPOCH_WoodQuarterFloor";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
+    };
     class MetalFloor_EPOCH : Const_floors_static_F
     {
         author = "Sequisha";
@@ -6455,6 +8799,22 @@ class CfgVehicles
         displayName = "$STR_EPOCH_TiPiGhost";
         ladders[] = {};
     };
+	class TentA_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "BI";
+        scope = 2;
+        model = "\A3\Structures_f\Civ\Camping\TentA_F.p3d";
+        displayName = "$STR_EPOCH_TentA";
+        ladders[] = {};
+    };
+	class TentDome_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "BI";
+        scope = 2;
+        model = "\A3\Structures_f\Civ\Camping\TentDome_F.p3d";
+        displayName = "$STR_EPOCH_TentDome";
+        ladders[] = {};
+    };
     class StorageShelf_Ghost_EPOCH : Const_Ghost_EPOCH
     {
         author = "Sequisha";
@@ -6487,6 +8847,22 @@ class CfgVehicles
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Floor_Ghost.p3d";
         displayName = "$STR_EPOCH_WoodFloorGhost";
+        ladders[] = {};
+    };
+	class WoodHalfFloor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\half_floor.p3d";
+        displayName = "$STR_EPOCH_WoodHalfFloor";
+        ladders[] = {};
+    };
+	class WoodQuarterFloor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor.p3d";
+        displayName = "$STR_EPOCH_WoodQuarterFloor";
         ladders[] = {};
     };
     class MetalFloor_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -6931,6 +9307,22 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Tipi";
         maximumLoad = 1200;
     };
+	class TentA_EPOCH : Buildable_Storage
+	{
+		author = "BI";
+		scope = 2;
+		model = "\A3\Structures_f\Civ\Camping\TentA_F.p3d";
+		displayName = "$STR_EPOCH_TentA";
+		maximumLoad = 800;
+	};
+	class TentDome_EPOCH : Buildable_Storage
+	{
+		author = "BI";
+		scope = 2;
+		model = "\A3\Structures_f\Civ\Camping\TentDome_F.p3d";
+		displayName = "$STR_EPOCH_TentDome";
+		maximumLoad = 1200;
+	};
     class StorageShelf_EPOCH : Buildable_Storage
     {
         author = "Sequisha";
@@ -8254,6 +10646,2286 @@ class CfgVehicles
     {
         fuelCapacity = 50000;
     };
+	class MineBase;
+	class BarrelBomb_EPOCH: MineBase
+	{
+		author = "DirtySanchez";
+		mapSize = 0.43;
+		class SimpleObject
+		{
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = -0.001;
+			verticalOffsetWorld = 0;
+		};
+		editorPreview = "\x\addons\a3_epoch_community\textures\barrelbomb\barrelbomb_icon_ca.paa";
+		_generalMacro = "BarrelBomb_EPOCH";
+		scope = 2;
+		icon = "iconExplosiveGP";
+		ammo = "BarrelBomb_EPOCH_Remote_Ammo";
+		model = "\x\addons\a3_epoch_community\models\barrel_bomb.p3d";
+		displayName = "Barrel Bomb(Upright)";
+		DLC = "Curator";
+	};
+	class BarrelBomb2_EPOCH: BarrelBomb_EPOCH
+	{
+		author = "DirtySanchez";
+		editorPreview = "\x\addons\a3_epoch_assets_1\pictures\equip_oildrum_e_CA.paa";
+		ammo = "BarrelBomb2_EPOCH_Remote_Ammo";
+		model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
+		displayName = "Barrel Bomb(Horizontal)";
+	};
+	class CinderFloor_SIM_EPOCH: Constructions_modular_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\cinderfloor.p3d";
+		displayName = "$STR_EPOCH_CinderFloor";
+		slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+	};
+	class CinderFloor_EPOCH: Const_floors_static_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\cinderfloor.p3d";
+		displayName = "$STR_EPOCH_CinderFloor";
+		armor = 12000;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\cinderfloor\cinderfloor_co.paa"};
+		selectionDamage = "zbytek";
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {"x\addons\a3_epoch_assets_1\textures\metal_floor.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
+		};
+	};
+	class CinderFloor_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\cinderfloor_Ghost.p3d";
+		displayName = "$STR_EPOCH_CinderFloorGhost";
+		ladders[] = {};
+	};
+	class Wreck_base_F;
+	class Land_Wreck_Satellite_EPOCH: Wreck_base_F
+	{
+		author = "Helion4/DirtySanchez";
+		mapSize = 4.91;
+		class SimpleObject
+		{
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.727;
+			verticalOffsetWorld = 0;
+		};
+		editorPreview = "";
+		_generalMacro = "Land_Wreck_Satellite_EPOCH";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_SatelliteWreckName";
+		model = "\x\addons\a3_epoch_community\models\satellite.p3d";
+		icon = "iconObject_1x2";
+	};
+	class Item_ItemGPS;
+	class Item_ItemGeigerCounter_EPOCH: Item_ItemGPS
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_ItemGeigerName";
+		author = "Helion4/DirtySanchez";
+		editorCategory = "EdCat_Equipment";
+		editorSubcategory = "EdSubcat_InventoryItems";
+		vehicleClass = "Items";
+		class TransportItems
+		{
+			class ItemGeigerCounter_EPOCH
+			{
+				name = "ItemGeigerCounter_EPOCH";
+				count = 1;
+			};
+		};
+	};
+	class Land_New_WiredFence_10m_F;
+	class BarbedWire_EPOCH: Land_New_WiredFence_10m_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\barbed_wire.p3d";
+		displayName = "$STR_EPOCH_BarbedWire";
+		armor = 1000;
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {"\x\addons\a3_epoch_community\textures\barbed_wire\barbed_wire.rvmat"};
+		};
+	};
+	class CinderWallDoorwHatch_EPOCH: Const_Cinder_static_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\cinder_door\cinder_door.p3d";
+		displayName = "$STR_EPOCH_CinderBlockDoorwHatch";
+		class AnimationSources
+		{
+			class open_door
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+				sound = "MetalBigDoorsSound";
+			};
+			class open_hatch
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+				sound = "MetalOldBigDoorsSound";
+			};
+			class lock_door
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 1;
+				sound = "ServoDoorsSound";
+			};
+		};
+		class UserActions
+		{
+			class Open_door
+			{
+				displayName = "$STR_EPOCH_Open";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				onlyforplayer = 1;
+				position = "door";
+				radius = 3;
+				condition = "(this animationPhase ""open_door"" < 0.5) && (this animationPhase ""lock_door"" < 0.5)";
+				statement = "this animate [""open_door"", 1]";
+			};
+			class Close_door: Open_door
+			{
+				displayName = "$STR_EPOCH_Close";
+				condition = "this animationPhase ""open_door"" >= 0.5";
+				statement = "this animate [""open_door"", 0]";
+			};
+			class Lock_door: Open_door
+			{
+				displayName = "$STR_EPOCH_Lock";
+				displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
+				condition = "!(call EPOCH_lockCheck) && (this animationPhase ""open_door"" < 0.5) && (this animationPhase ""lock_door"" < 0.5)";
+				statement = "this animate [""lock_door"", 1]";
+			};
+			class Unlock_door: Lock_door
+			{
+				displayName = "$STR_EPOCH_Unlock";
+				displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
+				condition = "!(call EPOCH_lockCheck) && (this animationPhase ""open_door"" < 0.5) && (this animationPhase ""Lock_door"" >= 0.5)";
+				statement = "this animate [""Lock_door"", 0];";
+			};
+			class Open_hatch
+			{
+				displayName = "$STR_EPOCH_OpenHatch";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				onlyforplayer = 1;
+				position = "hatch";
+				radius = 3;
+				condition = "this animationPhase ""open_hatch"" < 0.5";
+				statement = "this animate [""open_hatch"", 1]";
+			};
+			class Close_hatch: Open_hatch
+			{
+				displayName = "$STR_EPOCH_CloseHatch";
+				condition = "this animationPhase ""open_hatch"" >= 0.5";
+				statement = "this animate [""open_hatch"", 0]";
+			};
+		};
+	};
+	class MetalTower_EPOCH: Const_floors_static_F
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Metal_Base_Tower\Metal_floor_tower.p3d";
+		displayName = "$STR_EPOCH_MetalTower";
+		armor = 7500;
+		hiddenSelections[] = {"bot","camo","camo3","top"};
+		hiddenSelectionsTextures[] = {"a3\structures_f\data\metal\metal_plates3_co.paa", "x\addons\a3_epoch_assets_1\textures\mf_co.paa","x\addons\a3_epoch_assets_1\textures\mf_co.paa","x\addons\a3_epoch_assets_1\textures\mf_co.paa"};
+		class AnimationSources
+		{
+			class NWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class EWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class SWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class WWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+		};
+		class UserActions
+		{
+			class add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				onlyforplayer = 1;
+				position = "NWall_trigger";
+				radius = 2.5;
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" < 0.5)";
+				statement = "[this,""NWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_nwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "NWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" >= 0.5)";
+				statement = "[this,""NWall"",0] call EPOCH_changeWallState";
+			};
+			class add_ewall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "EWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""EWall"" < 0.5)";
+				statement = "[this,""EWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_ewall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "EWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""EWall"" >= 0.5)";
+				statement = "[this,""EWall"",0] call EPOCH_changeWallState";
+			};
+			class add_swall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "SWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""SWall"" < 0.5)";
+				statement = "[this,""SWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_swall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "SWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""SWall"" >= 0.5)";
+				statement = "[this,""SWall"",0] call EPOCH_changeWallState";
+			};
+			class add_wwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "WWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""WWall"" < 0.5)";
+				statement = "[this,""WWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_wwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "WWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""WWall"" >= 0.5)";
+				statement = "[this,""WWall"",0] call EPOCH_changeWallState";
+			};
+		};
+	};
+	class MetalTower_SIM_EPOCH: Constructions_modular_F
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Metal_Base_Tower\Metal_floor_tower.p3d";
+		displayName = "$STR_EPOCH_MetalTower";
+		slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+		hiddenSelections[] = {"Camo","camo3"};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets_1\textures\mf_co.paa","a3\structures_f\data\metal\metal_plates3_co.paa"};
+		class AnimationSources
+		{
+			class NWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class EWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class SWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class WWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+		};
+	};
+	class MetalTower_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Metal_Base_Tower\Metal_floor_tower.p3d";
+		displayName = "$STR_EPOCH_MetalTowerGhost";
+		ladders[] = {};
+	};
+	class CinderTower_EPOCH: Const_floors_static_F
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Cinder_Base_Tower\cinder_tower_upgrade.p3d";
+		displayName = "$STR_EPOCH_CinderTower";
+		armor = 7500;
+		class AnimationSources
+		{
+			class NWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class EWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class SWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class WWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+		};
+		class UserActions
+		{
+			class add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				onlyforplayer = 1;
+				position = "NWall_trigger";
+				radius = 2.5;
+				condition = "true"; //"(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" < 0.5)";
+				statement = "[this,""NWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_nwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "NWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" >= 0.5)";
+				statement = "[this,""NWall"",0] call EPOCH_changeWallState";
+			};
+			class add_ewall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "EWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""EWall"" < 0.5)";
+				statement = "[this,""EWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_ewall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "EWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""EWall"" >= 0.5)";
+				statement = "[this,""EWall"",0] call EPOCH_changeWallState";
+			};
+			class add_swall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "SWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""SWall"" < 0.5)";
+				statement = "[this,""SWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_swall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "SWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""SWall"" >= 0.5)";
+				statement = "[this,""SWall"",0] call EPOCH_changeWallState";
+			};
+			class add_wwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_AddWall";
+				position = "WWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""WWall"" < 0.5)";
+				statement = "[this,""WWall"",1] call EPOCH_changeWallState";
+			};
+			class remove_wwall: add_nwall
+			{
+				displayName = "$STR_EPOCH_RemoveWall";
+				position = "WWall_trigger";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""WWall"" >= 0.5)";
+				statement = "[this,""WWall"",0] call EPOCH_changeWallState";
+			};
+		};
+	};
+	class CinderTower_SIM_EPOCH: Constructions_modular_F
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Cinder_Base_Tower\cinder_tower_upgrade.p3d";
+		displayName = "$STR_EPOCH_CinderTower";
+		slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+		hiddenSelections[] = {"Camo","camo3"};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets_1\textures\mf_co.paa","a3\structures_f\data\metal\metal_plates3_co.paa"};
+		class AnimationSources
+		{
+			class NWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class EWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class SWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class WWall
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+		};
+	};
+	class CinderTower_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author = "SteamPunkGears/Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Cinder_Base_Tower\cinder_tower_upgrade_ghost.p3d";
+		displayName = "$STR_EPOCH_CinderTowerGhost";
+		ladders[] = {};
+  };
+	class IG_Logo: NonStrategic
+	{
+		author="Timst";
+		model="\x\addons\a3_epoch_community\models\IG_logo.p3d";
+		mapSize=2;
+		accuracy=1000;
+		destrType="IG Logo";
+		armor=20;
+	};
+	class IG_Box_s_SIM: Constructions_modular_F
+	{
+		author="Helion / Timst";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\IG_box_small.p3d";
+		displayName="IG Box small";
+	};
+	class IG_Box_s: Buildable_Storage
+	{
+		author="Helion / Timst";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\IG_box_small.p3d";
+		displayName="IG Box small";
+		maximumLoad=900;
+	};
+	class IG_Box_l_SIM: Constructions_modular_F
+	{
+		author="Helion / Timst";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\IG_box_large.p3d";
+		displayName="IG Box small";
+	};
+	class IG_Box_l: Buildable_Storage
+	{
+		author="Helion / Timst";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\IG_box_large.p3d";
+		displayName="IG Box large";
+		maximumLoad=4200;
+
+	};
+	class Epoch_Female_JeansPatched1_F : Epoch_Female_base_F
+	{
+		author = "ComatoseBadger/DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_FemaleJeansPatched1";
+		modelSides[] = {1};
+		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        hiddenSelections[] = {"camo","camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\kTorso_Eco.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched1_uniform";
+	};
+	class Epoch_Female_JeansPatched2_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched2"; //"Female Jeans(Blue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched2_uniform";
+    };
+	class Epoch_Female_JeansPatched3_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched3"; //"Female Jeans(Blue Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched3_uniform";
+    };
+	class Epoch_Female_JeansPatched4_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched4"; //"Female Jeans(CSAT Desert)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATDesert.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched4_uniform";
+    };
+	class Epoch_Female_JeansPatched5_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched5"; //"Female Jeans(CSAT Urban)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATUrban.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched5_uniform";
+    };
+	class Epoch_Female_JeansPatched6_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched6"; //"Female Jeans(DarkBlue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_DarkBluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched6_uniform";
+    };
+	class Epoch_Female_JeansPatched7_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched7"; //"Female Jeans(Green Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_GreenSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched7_uniform";
+    };
+	class Epoch_Female_JeansPatched8_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched8"; //"Female Jeans(Hero2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero 2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched8_uniform";
+    };
+	class Epoch_Female_JeansPatched9_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched9"; //"Female Jeans(Hero)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched9_uniform";
+    };
+	class Epoch_Female_JeansPatched10_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched10"; //"Female Jeans(LumberJack)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Lumberjack.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched10_uniform";
+    };
+	class Epoch_Female_JeansPatched11_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched11"; //"Female Jeans(LumberJack Green)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_LumberjackGreen.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched11_uniform";
+    };
+	class Epoch_Female_JeansPatched12_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched12"; //"Female Jeans(Nemo)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Nemo.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched12_uniform";
+    };
+	class Epoch_Female_JeansPatched13_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched13"; //"Female Jeans(Pink 2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Pink2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched13_uniform";
+    };
+	class Epoch_Female_JeansPatched14_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched14"; //"Female Jeans(Pink Hearts)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkHearts.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched14_uniform";
+    };
+	class Epoch_Female_JeansPatched15_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched15"; //"Female Jeans(Pink Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched15_uniform";
+    };
+	class Epoch_Female_JeansPatched16_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched16"; //"Female Jeans(Pink Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkWoodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched16_uniform";
+    };
+	class Epoch_Female_JeansPatched17_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched17"; //"Female Jeans(Purple Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched17_uniform";
+    };
+	class Epoch_Female_JeansPatched18_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched18"; //"Female Jeans(Purple Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched18_uniform";
+    };
+	class Epoch_Female_JeansPatched19_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched19"; //"Female Jeans(RG Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_RGPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched19_uniform";
+    };
+	class Epoch_Female_JeansPatched20_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched20"; //"Female Jeans(Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Woodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched20_uniform";
+    };
+	class Epoch_Female_JeansPatched21_F : Epoch_Female_JeansPatched1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansPatched21"; //"Female Jeans(Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlueJeansPatched.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansPatched21_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn1_F : Epoch_Female_base_F
+	{
+		author = "ComatoseBadger/DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_FemaleJeansBlkBrn1"; // "Female Jeans(Black Brown)";
+		modelSides[] = {1};
+		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        hiddenSelections[] = {"camo","camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\kTorso_Eco.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn1_uniform";
+	};
+	class Epoch_Female_JeansBlkBrn2_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn2"; //"Female JeansBB(Blue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn2_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn3_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn3"; //"Female JeansBB(Blue Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn3_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn4_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn4"; //"Female JeansBB(CSAT Desert)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATDesert.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn4_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn5_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn5"; //"Female JeansBB(CSAT Urban)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATUrban.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn5_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn6_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn6"; //"Female JeansBB(DarkBlue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_DarkBluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn6_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn7_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn7"; //"Female JeansBB(Green Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_GreenSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn7_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn8_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn8"; //"Female JeansBB(Hero2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero 2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn8_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn9_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn9"; //"Female JeansBB(Hero)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn9_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn10_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn10"; //"Female JeansBB(LumberJack)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Lumberjack.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn10_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn11_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn11"; //"Female JeansBB(LumberJack Green)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_LumberjackGreen.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn11_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn12_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn12"; //"Female JeansBB(Nemo)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Nemo.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn12_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn13_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn13"; //"Female JeansBB(Pink 2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Pink2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn13_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn14_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn14"; //"Female JeansBB(Pink Hearts)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkHearts.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn14_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn15_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn15"; //"Female JeansBB(Pink Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn15_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn16_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn16"; //"Female JeansBB(Pink Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkWoodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn16_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn17_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn17"; //"Female JeansBB(Purple Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn17_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn18_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn18"; //"Female JeansBB(Purple Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn18_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn19_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn19"; //"Female JeansBB(RG Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_RGPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn19_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn20_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn20"; //"Female JeansBB(Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Woodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn20_uniform";
+    };
+	class Epoch_Female_JeansBlkBrn21_F : Epoch_Female_JeansBlkBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn21"; //"Female JeansBB(Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_BlackBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlkBrn21_uniform";
+    };
+	class Epoch_Female_JeansArBrn1_F : Epoch_Female_base_F
+	{
+		author = "ComatoseBadger/DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_FemaleJeansArBrn1"; // "Female Jeans(Arid Brown)";
+		modelSides[] = {1};
+		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        hiddenSelections[] = {"camo","camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\kTorso_Eco.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn1_uniform";
+	};
+	class Epoch_Female_JeansArBrn2_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn2"; //"Female Jeans(Blue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn2_uniform";
+    };
+	class Epoch_Female_JeansArBrn3_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn3"; //"Female Jeans(Blue Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn3_uniform";
+    };
+	class Epoch_Female_JeansArBrn4_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn4"; //"Female Jeans(CSAT Desert)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATDesert.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn4_uniform";
+    };
+	class Epoch_Female_JeansArBrn5_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn5"; //"Female Jeans(CSAT Urban)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATUrban.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn5_uniform";
+    };
+	class Epoch_Female_JeansArBrn6_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn6"; //"Female Jeans(DarkBlue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_DarkBluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn6_uniform";
+    };
+	class Epoch_Female_JeansArBrn7_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn7"; //"Female Jeans(Green Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_GreenSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn7_uniform";
+    };
+	class Epoch_Female_JeansArBrn8_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn8"; //"Female Jeans(Hero2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero 2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn8_uniform";
+    };
+	class Epoch_Female_JeansArBrn9_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn9"; //"Female Jeans(Hero)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn9_uniform";
+    };
+	class Epoch_Female_JeansArBrn10_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn10"; //"Female Jeans(LumberJack)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Lumberjack.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn10_uniform";
+    };
+	class Epoch_Female_JeansArBrn11_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn11"; //"Female Jeans(LumberJack Green)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_LumberjackGreen.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn11_uniform";
+    };
+	class Epoch_Female_JeansArBrn12_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn12"; //"Female Jeans(Nemo)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Nemo.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn12_uniform";
+    };
+	class Epoch_Female_JeansArBrn13_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn13"; //"Female Jeans(Pink 2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Pink2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn13_uniform";
+    };
+	class Epoch_Female_JeansArBrn14_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn14"; //"Female Jeans(Pink Hearts)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkHearts.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn14_uniform";
+    };
+	class Epoch_Female_JeansArBrn15_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn15"; //"Female Jeans(Pink Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn15_uniform";
+    };
+	class Epoch_Female_JeansArBrn16_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn16"; //"Female Jeans(Pink Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkWoodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn16_uniform";
+    };
+	class Epoch_Female_JeansArBrn17_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn17"; //"Female Jeans(Purple Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn17_uniform";
+    };
+	class Epoch_Female_JeansArBrn18_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn18"; //"Female Jeans(Purple Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn18_uniform";
+    };
+	class Epoch_Female_JeansArBrn19_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn19"; //"Female Jeans(RG Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_RGPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn19_uniform";
+    };
+	class Epoch_Female_JeansArBrn20_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn20"; //"Female Jeans(Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Woodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn20_uniform";
+    };
+	class Epoch_Female_JeansArBrn21_F : Epoch_Female_JeansArBrn1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansArBrn21"; //"Female Jeans(Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansArBrn21_uniform";
+    };
+	class Epoch_Female_JeansBlack1_F : Epoch_Female_base_F
+	{
+		author = "ComatoseBadger/DirtySanchez";
+		scope = 2;
+		displayName = "$STR_EPOCH_FemaleJeansBlack1"; // "Female Jeans(Arid Brown)";
+		modelSides[] = {1};
+		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        hiddenSelections[] = {"camo","camo1","camo2"};
+		uniformClass = "U_JeansBlack1_uniform";
+	};
+	class Epoch_Female_JeansBlack2_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack2"; //"Female Jeans(Blue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack2_uniform";
+    };
+	class Epoch_Female_JeansBlack3_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack3"; //"Female Jeans(Blue Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BluePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack3_uniform";
+    };
+	class Epoch_Female_JeansBlack4_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack4"; //"Female Jeans(CSAT Desert)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATDesert.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack4_uniform";
+    };
+	class Epoch_Female_JeansBlack5_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack5"; //"Female Jeans(CSAT Urban)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_CSATUrban.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack5_uniform";
+    };
+	class Epoch_Female_JeansBlack6_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack6"; //"Female Jeans(DarkBlue Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_DarkBluePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack6_uniform";
+    };
+	class Epoch_Female_JeansBlack7_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack7"; //"Female Jeans(Green Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_GreenSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack7_uniform";
+    };
+	class Epoch_Female_JeansBlack8_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack8"; //"Female Jeans(Hero2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero 2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack8_uniform";
+    };
+	class Epoch_Female_JeansBlack9_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack9"; //"Female Jeans(Hero)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Hero.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack9_uniform";
+    };
+	class Epoch_Female_JeansBlack10_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack10"; //"Female Jeans(LumberJack)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Lumberjack.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack10_uniform";
+    };
+	class Epoch_Female_JeansBlack11_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack11"; //"Female Jeans(LumberJack Green)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_LumberjackGreen.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack11_uniform";
+    };
+	class Epoch_Female_JeansBlack12_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack12"; //"Female Jeans(Nemo)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Nemo.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack12_uniform";
+    };
+	class Epoch_Female_JeansBlack13_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack13"; //"Female Jeans(Pink 2)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Pink2.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack13_uniform";
+    };
+	class Epoch_Female_JeansBlack14_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack14"; //"Female Jeans(Pink Hearts)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkHearts.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack14_uniform";
+    };
+	class Epoch_Female_JeansBlack15_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack15"; //"Female Jeans(Pink Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack15_uniform";
+    };
+	class Epoch_Female_JeansBlack16_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack16"; //"Female Jeans(Pink Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PinkWoodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack16_uniform";
+    };
+	class Epoch_Female_JeansBlack17_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack17"; //"Female Jeans(Purple Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack17_uniform";
+    };
+	class Epoch_Female_JeansBlack18_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack18"; //"Female Jeans(Purple Polka)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_PurplePolka.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack18_uniform";
+    };
+	class Epoch_Female_JeansBlack19_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack19"; //"Female Jeans(RG Plaid)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_RGPlaid.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack19_uniform";
+    };
+	class Epoch_Female_JeansBlack20_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack20"; //"Female Jeans(Woodland)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_Woodland.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack20_uniform";
+    };
+	class Epoch_Female_JeansBlack21_F : Epoch_Female_JeansBlack1_F
+    {
+        displayName = "$STR_EPOCH_FemaleJeansBlack21"; //"Female Jeans(Skullz)";
+		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
+		uniformClass = "U_JeansBlack21_uniform";
+    };
+	class Garden_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\epoch_Garden.p3d";
+        displayName = "$STR_EPOCH_Garden";
+    };
+    class Garden_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\epoch_Garden_ghost.p3d";
+        displayName = "$STR_EPOCH_GardenGhost";
+        ladders[] = {};
+    };
+    class Garden_EPOCH : Buildable_Storage
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\epoch_Garden.p3d";
+        displayName = "$STR_EPOCH_Garden";
+        maximumLoad = 800;
+    };
+    class HempPlant_EPOCH : Grown_Plants_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\hemp_plant.p3d";
+        displayName = "$STR_EPOCH_HempPlant";
+        transportMaxItems = 0;
+        transportMaxMagazines = 1;
+        transportMaxWeapons = 0;
+        class TransportMagazines
+        {
+            class _xx_Hemp
+            {
+                magazine = "Hemp";
+                count = 1;
+            };
+        };
+    };
+	class PoppyPlant_EPOCH : Grown_Plants_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\poppy_plant.p3d";
+        displayName = "$STR_EPOCH_PoppyPlant";
+        transportMaxItems = 0;
+        transportMaxMagazines = 1;
+        transportMaxWeapons = 0;
+        class TransportMagazines
+        {
+            class _xx_Poppy
+            {
+                magazine = "Poppy";
+                count = 1;
+            };
+        };
+    };
+	class SunflowerPlant_EPOCH : Grown_Plants_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\Sunflower_plant.p3d";
+        displayName = "$STR_EPOCH_SunflowerPlant";
+        transportMaxItems = 0;
+        transportMaxMagazines = 1;
+        transportMaxWeapons = 0;
+        class TransportMagazines
+        {
+            class _xx_Sunflower
+            {
+                magazine = "Sunflower";
+                count = 1;
+            };
+        };
+    };
+	class SaplingPlant_EPOCH : Grown_Plants_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\sapling.p3d";
+        displayName = "$STR_EPOCH_SaplingPlant";
+        transportMaxItems = 0;
+        transportMaxMagazines = 1;
+        transportMaxWeapons = 0;
+        class TransportMagazines
+        {
+            class _xx_Sapling
+            {
+                magazine = "Sapling";
+                count = 1;
+            };
+        };
+    };
+	class SaplingTeenPlant_EPOCH : Grown_Plants_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\sapling_teen.p3d";
+        displayName = "$STR_EPOCH_SaplingTeenPlant";
+        transportMaxItems = 0;
+        transportMaxMagazines = 1;
+        transportMaxWeapons = 0;
+        class TransportMagazines
+        {
+            class _xx_SaplingTeen
+            {
+                magazine = "SaplingTeen";
+                count = 1;
+            };
+        };
+    };
+    class BurnBarrel_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "BI";
+        scope = 2;
+		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_empty_F.p3d";
+        displayName = "$STR_EPOCH_BurnBarrel";
+    };
+    class BurnBarrel_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_empty_F.p3d";
+        displayName = "$STR_EPOCH_BurnBarrel";
+        ladders[] = {};
+    };
+    class BurnBarrel_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 0.62;
+        scope = 2;
+		model = "\A3\Structures_F\Items\Vessels\MetalBarrel_empty_F.p3d";
+        displayName = "$STR_EPOCH_BurnBarrel";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructEngine";
+		simulation = "fire";
+		keepHorizontalPlacement = 0;
+        class EventHandlers
+		{
+			init = "(_this select 0) inflame false";
+		};
+		class UserActions
+		{
+			class FlameON
+			{
+				displayNameDefault = ""; // can add fire icon here
+				displayName = "Light Fire";
+				position = "";
+				priority = 11;
+				radius = 1.5;
+				aiMaxRange = "1 * 3";
+				onlyForPlayer = 0;
+				condition = "!inflamed && ('lighter_epoch' in magazines player)";
+				statement = "(_this select 0) inflame true";
+			};
+			class FlameOFF
+			{
+				displayNameDefault = "";
+				displayName = "Put Out Fire";
+				position = "";
+				priority = 11;
+				radius = 1.5;
+				aiMaxRange = "1 * 3";
+				onlyForPlayer = 0;
+				condition = "inflamed";
+				statement = "(_this select 0) inflame false";
+			};
+		};
+		class Effects
+		{
+			class Light1
+			{
+				simulation = "light";
+				type = "SmallFireLight";
+			};
+			class sound
+			{
+				simulation = "sound";
+				type = "Fire";
+			};
+			class Smoke1
+			{
+				simulation = "particles";
+				type = "SmallFireS";
+			};
+			class Fire1: Smoke1
+			{
+				simulation = "particles";
+				type = "SmallFireBarrel";
+			};
+			class Refract1
+			{
+				simulation = "particles";
+				type = "Refract";
+			};
+		};
+    };	
+    class LightPole_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "BI";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Lamps\LampShabby_F.p3d";
+        displayName = "$STR_EPOCH_LightPole";
+    };
+    class LightPole_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Lamps\LampShabby_F.p3d";
+        displayName = "$STR_EPOCH_LightPole";
+        ladders[] = {};
+    };
+    class LightPole_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 0.79;
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Lamps\LampShabby_F.p3d";
+        displayName = "$STR_EPOCH_LightPole";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTree";
+		armor = 200;
+		class Reflectors
+		{
+			class Light_1
+			{
+				color[] = {1100,700,500};
+				ambient[] = {11,7,5};
+				intensity = 5;
+				size = 1;
+				innerAngle = 80;
+				outerAngle = 130;
+				coneFadeCoef = 3;
+				position = "Light_1_pos";
+				direction = "Light_1_dir";
+				hitpoint = "Light_1_hitpoint";
+				selection = "Light_1_hide";
+				useFlare = 1;
+				flareSize = 0.9;
+				flareMaxDistance = 100;
+				class Attenuation
+				{
+					start = 0;
+					constant = 0;
+					linear = 0;
+					quadratic = 0.8;
+					hardLimitStart = 30;
+					hardLimitEnd = 40;
+				};
+			};
+		};
+    };	
+    class SmallForestCamoNet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "BI";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallForestCamoNet";
+    };
+    class SmallForestCamoNet_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallForestCamoNet";
+        ladders[] = {};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };
+    class SmallForestCamoNet_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 14.59;
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallForestCamoNet";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTent";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };	
+    class SmallDesertCamoNet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "BI";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallDesertCamoNet";
+    };
+    class SmallDesertCamoNet_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallDesertCamoNet";
+        ladders[] = {};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_OPFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };
+    class SmallDesertCamoNet_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 14.59;
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_F.p3d";
+        displayName = "$STR_EPOCH_SmallDesertCamoNet";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTent";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_OPFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };	
+    class LargeForestCamoNet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeForestCamoNet";
+    };
+    class LargeForestCamoNet_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeForestCamoNet";
+        ladders[] = {};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };
+    class LargeForestCamoNet_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 19.32;
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeForestCamoNet";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTent";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };	
+    class LargeDesertCamoNet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeDesertCamoNet";
+    };
+    class LargeDesertCamoNet_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeDesertCamoNet";
+        ladders[] = {};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_OPFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };
+    class LargeDesertCamoNet_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 14.59;
+        scope = 2;
+		model = "\A3\Structures_F\Mil\Shelters\CamoNet_Big_F.p3d";
+        displayName = "$STR_EPOCH_LargeDesertCamoNet";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTent";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_OPFOR_CA.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
+    };	
+    class FirePlace_02_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Campfire_F.p3d";
+        displayName = "$STR_EPOCH_FirePlace_02";
+    };
+    class FirePlace_02_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Campfire_F.p3d";
+        displayName = "$STR_EPOCH_FirePlace_02";
+        ladders[] = {};
+    };
+    class FirePlace_02_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.17;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.19;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Campfire_F.p3d";
+        displayName = "$STR_EPOCH_FirePlace_02";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+		simulation = "fire";
+		cost = 0;
+		keepHorizontalPlacement = 0;
+        class EventHandlers
+		{
+			init = "(_this select 0) inflame false";
+		};
+		class UserActions
+		{
+			class FlameON
+			{
+				displayNameDefault = ""; // can add fire icon here
+				displayName = "Light Fire";
+				position = "";
+				priority = 11;
+				radius = 1.5;
+				aiMaxRange = "1 * 3";
+				onlyForPlayer = 0;
+				condition = "!inflamed && ('lighter_epoch' in magazines player)";
+				statement = "(_this select 0) inflame true";
+			};
+			class FlameOFF
+			{
+				displayNameDefault = "";
+				displayName = "Put Out Fire";
+				position = "";
+				priority = 11;
+				radius = 1.5;
+				aiMaxRange = "1 * 3";
+				onlyForPlayer = 0;
+				condition = "inflamed";
+				statement = "(_this select 0) inflame false";
+			};
+		};
+		class Effects
+		{
+			class Light1
+			{
+				simulation = "light";
+				type = "SmallFireLight";
+			};
+			class sound
+			{
+				simulation = "sound";
+				type = "Fire_camp";
+			};
+			class Smoke1
+			{
+				simulation = "particles";
+				type = "SmallFireS";
+			};
+			class Fire1: Smoke1
+			{
+				simulation = "particles";
+				type = "SmallFireF";
+			};
+			class Refract1
+			{
+				simulation = "particles";
+				type = "SmallFireFRefract";
+			};
+		};
+	};	
+    class FieldToilet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\FieldToilet_F.p3d";
+        displayName = "$STR_EPOCH_FieldToilet";
+    };
+    class FieldToilet_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\FieldToilet_F.p3d";
+        displayName = "$STR_EPOCH_FieldToilet";
+        ladders[] = {};
+    };
+    class FieldToilet_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.24;
+		class SimpleObject
+		{
+			eden = 1;
+			animate[] = {{"door_1_rot",0},{"door_1_locked_rot",0}};
+			hide[] = {};
+			verticalOffset = 1.22;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\FieldToilet_F.p3d";
+        displayName = "$STR_EPOCH_FieldToilet";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+        maximumLoad = 50;
+		numberOfDoors = 1;
+		waterLeakiness = 0.2;
+		class AnimationSources
+		{
+			class Door_1_sound_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 1;
+				sound = "PlasticDoorsSound";
+				soundPosition = "Door_1_trigger";
+			};
+			class Door_1_noSound_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 1;
+			};
+			class Door_1_locked_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.8;
+			};
+		};
+		class UserActions
+		{
+			class OpenDoor_1
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "$STR_DN_OUT_O_DOOR";
+				position = "Door_1_trigger";
+				priority = 11;
+				radius = 1;
+				aiMaxRange = "1 * 3";
+				onlyForPlayer = 0;
+				condition = "((this animationSourcePhase 'Door_1_sound_source') < 0.5) && (cameraOn isKindOf 'CAManBase')";
+				statement = "([this, 1, 1] call BIS_fnc_Door)";
+			};
+			class CloseDoor_1: OpenDoor_1
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "$STR_DN_OUT_C_DOOR";
+				priority = 11;
+				condition = "((this animationSourcePhase 'Door_1_sound_source') >= 0.5) && ((this getVariable ['bis_disabled_Door_1', 0]) != 1) && (cameraOn isKindOf 'CAManBase')";
+				statement = "([this, 1, 0] call BIS_fnc_Door)";
+			};
+		};
+		actionBegin1 = "OpenDoor_1";
+		actionEnd1 = "OpenDoor_1";
+	};	
+    class Scaffolding_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Constructions\Scaffolding_F.p3d";
+        displayName = "$STR_EPOCH_Scaffolding";
+    };
+    class Scaffolding_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Constructions\Scaffolding_F.p3d";
+        displayName = "$STR_EPOCH_Scaffolding";
+        ladders[] = {};
+    };
+    class Scaffolding_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 15.782;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 2.694;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Constructions\Scaffolding_F.p3d";
+        displayName = "$STR_EPOCH_Scaffolding";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructBuilding";
+		armor = 500;
+		keepHorizontalPlacement = 1;
+    };	
+    class Sink_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Sink_F.p3d";
+        displayName = "$STR_EPOCH_Sink";
+    };
+    class Sink_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Sink_F.p3d";
+        displayName = "$STR_EPOCH_Sink";
+        ladders[] = {};
+    };
+    class Sink_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.17;
+		class SimpleObject
+		{
+			eden = 1;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.618;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Sink_F.p3d";
+        displayName = "$STR_EPOCH_Sink";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructDefault";
+		armor = 300;
+    };	
+    class PortableLight_Single_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_single_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Single";
+    };
+    class PortableLight_Single_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_single_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Single";
+        ladders[] = {};
+    };
+    class PortableLight_Single_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 0.824;
+		class SimpleObject
+		{
+			animate[] = {{"light_1_pitch_rot",0},{"light_1_jaw_rot",0.13}};
+			hide[] = {"light_1_hide"};
+			verticalOffset = 1.082;
+			verticalOffsetWorld = 0;
+		};
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_single_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Single";
+		vehicleClass = "Epoch_objects";
+		class AnimationSources
+		{
+			class Light_1_pitch_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = "1/45";
+			};
+			class Light_1_jaw_source
+			{
+				source = "user";
+				initPhase = 0.13;
+				animPeriod = 2;
+			};
+		};
+		class Reflectors
+		{
+			class Light_1
+			{
+				color[] = {1000,1000,1200};
+				ambient[] = {10,10,12};
+				intensity = 5;
+				size = 1;
+				innerAngle = 60;
+				outerAngle = 130;
+				coneFadeCoef = 6;
+				position = "Light_1_pos";
+				direction = "Light_1_dir";
+				hitpoint = "Light_1_hitpoint";
+				selection = "Light_1_hide";
+				useFlare = 1;
+				flareSize = 0.9;
+				flareMaxDistance = 250;
+				class Attenuation
+				{
+					start = 0;
+					constant = 0;
+					linear = 2;
+					quadratic = 0.5;
+					hardLimitStart = 50;
+					hardLimitEnd = 70;
+				};
+			};
+		};
+	};	
+    class PortableLight_Double_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_double_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Double";
+    };
+    class PortableLight_Double_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_double_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Double";
+        ladders[] = {};
+    };
+    class PortableLight_Double_EPOCH : PortableLight_Single_EPOCH
+    {
+        author = "BI";
+		mapSize = 1.352;
+		class SimpleObject
+		{
+			animate[] = {{"light_1_pitch_rot",0},{"light_1_jaw_rot",0.13}};
+			hide[] = {"light_1_hide","light_2_hide"};
+			verticalOffset = 1.082;
+			verticalOffsetWorld = 0;
+		};
+        scope = 2;
+		model = "\A3\Structures_F_EPA\Civ\Constructions\PortableLight_double_F.p3d";
+        displayName = "$STR_EPOCH_PortableLight_Double";
+		vehicleClass = "Epoch_objects";
+		aggregateReflectors[] = {{"Light_1","Light_2"}};
+		class Reflectors: Reflectors
+		{
+			class Light_1: Light_1{};
+			class Light_2: Light_1
+			{
+				position = "Light_2_pos";
+				direction = "Light_2_dir";
+				hitpoint = "Light_2_hitpoint";
+				selection = "Light_2_hide";
+			};
+		};
+	};	
+    class WatchTower_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Accessories\LifeguardTower_01_F.p3d";
+        displayName = "$STR_EPOCH_WatchTower";
+    };
+    class WatchTower_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Accessories\LifeguardTower_01_F.p3d";
+        displayName = "$STR_EPOCH_WatchTower";
+		ladders[] = {{"Ladder_1_start","Ladder_1_end"}};
+    };
+    class WatchTower_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 3.67;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Accessories\LifeguardTower_01_F.p3d";
+        displayName = "$STR_EPOCH_WatchTower";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructDefault";
+		armor = 300;
+		ladders[] = {{"Ladder_1_start","Ladder_1_end"}};
+    };	
+    class SunShade_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Camping\Sunshade_01_F.p3d";
+        displayName = "$STR_EPOCH_SunShade";
+    };
+    class SunShade_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Camping\Sunshade_03_F.p3d";
+        displayName = "$STR_EPOCH_SunShade";
+        ladders[] = {};
+    };
+    class SunShade_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.17;
+		class SimpleObject
+		{
+			eden = 1;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.618;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Camping\Sunshade_03_F.p3d";
+        displayName = "$STR_EPOCH_SunShade";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructTree";
+		armor = 5;
+    };	
+    class FuelPump_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_EPC\Civ\Camping\Sunshade_03_F.p3d";
+        displayName = "$STR_EPOCH_FuelPump";
+    };
+    class FuelPump_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_f\Ind\FuelStation_Small\fs_feed_F.p3d";
+        displayName = "$STR_EPOCH_FuelPump";
+        ladders[] = {};
+    };
+    class FuelPump_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.17;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.826;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_f\Ind\FuelStation_Small\fs_feed_F.p3d";
+        displayName = "$STR_EPOCH_FuelPump";
+		vehicleClass = "Epoch_objects";
+		memoryPointSupply = "Refuel_pos";
+		transportFuel = 50000;
+		disableInventory = 1;
+		class DestructionEffects
+		{
+			class FuelStationSmk1
+			{
+				simulation = "particles";
+				type = "FuelStationSmk1";
+				position = "";
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 0.001;
+			};
+			class Light1
+			{
+				simulation = "light";
+				type = "ObjectDestructionLight";
+				position = "DestructionFire";
+				intensity = 0.001;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+			class FuelFire1
+			{
+				simulation = "particles";
+				type = "FuelFire1";
+				position = "DestructionFire";
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+			class FuelDestr
+			{
+				simulation = "destroy";
+				type = "FuelStationDestr";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+			class FuelSmoke1
+			{
+				simulation = "particles";
+				type = "FuelFire1";
+				position = "ObjectDestructionSmokeFuelS";
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+			class FuelSmoke2
+			{
+				simulation = "particles";
+				type = "ObjectDestructionSmokeFuelS1_2";
+				position = "DestructionFire";
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+		};
+	};	
+    class BagBunker_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\BagBunker\BagBunker_Small_F.p3d";
+        displayName = "$STR_EPOCH_BagBunker";
+    };
+    class BagBunker_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Mil\BagBunker\BagBunker_Small_F.p3d";
+        displayName = "$STR_EPOCH_BagBunker";
+        ladders[] = {};
+    };
+    class BagBunker_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 4.215;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.966;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Mil\BagBunker\BagBunker_Small_F.p3d";
+        displayName = "$STR_EPOCH_BagBunker";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructBuilding";
+		accuracy = 1000;
+		armor = 500;
+		class DestructionEffects{};
+    };	
+    class SandbagWall_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Short_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWall";
+    };
+    class SandbagWall_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Short_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWall";
+        ladders[] = {};
+    };
+    class SandbagWall_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 1.98;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.415;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Short_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWall";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+		armor = 1000;
+		cost = 1000;
+		accuracy = 1000;
+		animated = 0;
+		class AttributeValues
+		{
+			objectIsSimple = 0;
+		};
+		class DestructionEffects{};
+    };	
+    class SandbagWallLong_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Long_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWallLong";
+    };
+    class SandbagWallLong_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Long_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWallLong";
+        ladders[] = {};
+    };
+    class SandbagWallLong_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 3.12;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.42;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "A3\Structures_F\Mil\BagFence\BagFence_Long_F.p3d";
+        displayName = "$STR_EPOCH_SandbagWallLong";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+		armor = 1000;
+		cost = 1000;
+		accuracy = 1000;
+		animated = 0;
+		class AttributeValues
+		{
+			objectIsSimple = 0;
+		};
+		class DestructionEffects{};
+    };	
+    class BarGate_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Walls\BarGate_F.p3d";
+        displayName = "$STR_EPOCH_BarGate";
+    };
+    class BarGate_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Walls\BarGate_F.p3d";
+        displayName = "$STR_EPOCH_BarGate";
+        ladders[] = {};
+    };
+    class BarGate_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 8.75;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {{"door_1_rot",0}};
+			hide[] = {};
+			verticalOffset = 4.05;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Walls\BarGate_F.p3d";
+        displayName = "$STR_EPOCH_BarGate";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructWall";
+		animated = 1;
+		armor = 150;
+		cost = 1000;
+		numberOfDoors = 1;
+		class AnimationSources
+		{
+			class Door_1_sound_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 1;
+				sound = "RoadGateDoors";
+				soundPosition = "Door_1_trigger";
+			};
+			class Door_1_noSound_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 1;
+			};
+			class Door_1_locked_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.8;
+			};
+		};
+		class UserActions
+		{
+			class OpenGate_1
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "$STR_DN_OUT_O_DOOR";
+				position = "Bar_1_trigger";
+				radius = 3;
+				aiMaxRange = 9;
+				onlyForPlayer = 0;
+				condition = "this animationPhase 'Door_1_rot' < 0.5";
+				statement = "this animate ['Door_1_rot', 1]";
+			};
+			class CloseGate_1: OpenGate_1
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName = "$STR_DN_OUT_C_DOOR";
+				condition = "this animationPhase 'Door_1_rot' >= 0.5";
+				statement = "this animate ['Door_1_rot', 0]";
+			};
+		};
+		actionBegin1 = "OpenGate_1";
+		actionEnd1 = "OpenGate_1";
+	};	
+    class WaterPump_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Water_source_F.p3d";
+        displayName = "$STR_EPOCH_WaterPump";
+    };
+    class WaterPump_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Water_source_F.p3d";
+        displayName = "$STR_EPOCH_WaterPump";
+        ladders[] = {};
+    };
+    class WaterPump_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.17;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 1.143;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Accessories\Water_source_F.p3d";
+        displayName = "$STR_EPOCH_WaterPump";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+		keepHorizontalPlacement = 1;
+		class DestructionEffects{};
+    };	
 };
 
 /*[[[end]]]*/

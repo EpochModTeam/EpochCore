@@ -18,6 +18,7 @@ class CfgWeapons
 {
     class InventoryItem_Base_F;
     class ItemCore;
+	class ItemWatch;
     class UniformItem : InventoryItem_Base_F
     {
         scope = 0;
@@ -4531,60 +4532,70 @@ class CfgWeapons
         displayName = "$STR_EPOCH_RadioQuartz";
         channelID = 0;
         channelColor[] = {0.588,0.647,0.729,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioQuartz.paa";
     };
     class EpochRadio1 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioGarnet";
         channelID = 1;
         channelColor[] = {0.314,0.086,0.055,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioGarnet.paa";
     };
     class EpochRadio2 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioCitrine";
         channelID = 2;
         channelColor[] = {0.714,0.306,0.102,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioCitrine.paa";
     };
     class EpochRadio3 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioAmethyst";
         channelID = 3;
         channelColor[] = {0.604,0.396,0.804,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioAmethyst.paa";
     };
     class EpochRadio4 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioTopaz";
         channelID = 4;
         channelColor[] = {0.718,0.494,0.184,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioTopaz.paa";
     };
     class EpochRadio5 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioSapphire";
         channelID = 5;
         channelColor[] = {0.161,0.329,0.792,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioSapphire.paa";
     };
     class EpochRadio6 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioOnyx";
         channelID = 6;
         channelColor[] = {0.4,0.4,0.4,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioObsidian.paa";
     };
     class EpochRadio7 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioEmerald";
         channelID = 7;
         channelColor[] = {0.008,0.596,0.459,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioEmerald.paa";
     };
     class EpochRadio8 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioRuby";
         channelID = 8;
         channelColor[] = {0.835,0.247,0.243,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioRuby.paa";
     };
     class EpochRadio9 : ItemRadio
     {
         displayName = "$STR_EPOCH_RadioJade";
         channelID = 9;
         channelColor[] = {0,0.659,0.42,0.8};
+		picture = "\x\addons\a3_epoch_assets_1\pictures\epochRadio\epochRadioJade.paa";
     };
     class speargun_epoch : Rifle_Base_F
     {
@@ -5484,6 +5495,1548 @@ class CfgWeapons
             };
         };
         inertia = 0.1;
+    };
+	class hgun_Pistol_Signal_F: Pistol_Base_F 
+	{
+		author = "Bohemia Interactive / DirtySanchez";
+		_generalMacro = "hgun_Pistol_Signal_F";
+		DLC = "Kart";
+		overviewPicture = "\A3\Data_F_Kart\Images\watermarkInfo_page09_ca.paa";
+		scope = 2;
+		model = "\A3\Weapons_F_Kart\Pistols\Pistol_Signal_F\Pistol_Signal_01_F.p3d";
+		picture = "\A3\Weapons_F_Kart\Pistols\Pistol_Signal_F\Data\UI\gear_Pistol_Signal_01_X_ca.paa";
+		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		inertia = 0.2;
+		dexterity = 1.8;
+		initSpeed = 240;
+		recoil = "recoil_pistol_signal";
+		maxZeroing = 100;
+		magazines[] = {"6Rnd_GreenSignal_F", "6Rnd_RedSignal_F","6Rnd_BlueSignal_F","6Rnd_PurpleSignal_F","6Rnd_OrangeSignal_F"};
+		reloadAction = "GestureReloadPistolHeavy02";
+		drySound[] = {"A3\sounds_f\weapons\other\dry1", 0.398107, 1, 20};
+		reloadMagazineSound[] = {"A3\Sounds_F_Kart\Weapons\starting_pistol_reload", 0.562341, 1, 30};
+		modes[] = {"Single"};
+		class Single: Mode_SemiAuto {
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType {
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {"", 1.03514, 1, 10};
+				closure2[] = {"", 1.03514, 1.1, 10};
+				soundClosure[] = {"closure1", 0.5, "closure2", 0.5};
+			};
+			class StandardSound: BaseSoundModeType {
+				begin1[] = {"A3\Sounds_F_Kart\Weapons\starting_pistol_1", 1, 1, 700};
+				begin2[] = {"A3\Sounds_F_Kart\Weapons\starting_pistol_2", 1, 1, 700};
+				begin3[] = {"A3\Sounds_F_Kart\Weapons\starting_pistol_3", 1, 1, 700};
+				soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.34};
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {"", 1.03514, 1, 10};
+				closure2[] = {"", 1.03514, 1.1, 10};
+				soundClosure[] = {"closure1", 0.5, "closure2", 0.5};
+			};
+			recoil = "recoil_pistol_light";
+			recoilProne = "recoil_prone_pistol_light";
+			reloadTime = 0.25;
+			dispersion = 0.025;
+			minRange = 5;
+			minRangeProbab = 0.3;
+			midRange = 25;
+			midRangeProbab = 0.6;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
+			multiplier = 1;
+			burst = 1;
+			burstRangeMax = -1;
+			sound[] = {"", 10, 1};
+			soundBegin[] = {"sound", 1};
+			soundBeginWater[] = {"sound", 1};
+			soundClosure[] = {"sound", 1};
+			soundEnd[] = {};
+			soundLoop[] = {};
+			soundContinuous = 0;
+			weaponSoundEffect = "";
+			ffCount = 1;
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			flash = "gunfire";
+			flashSize = 0.1;
+			autoFire = 0;
+			useAction = 0;
+			useActionTitle = "";
+			showToPlayer = 1;
+			artilleryDispersion = 1;
+			artilleryCharge = 1;
+			canShootInWater = 0;
+			displayName = "Semi";
+			textureType = "semi";
+			aiDispersionCoefY = 1.7;
+			aiDispersionCoefX = 1.4;
+			soundBurst = 0;
+			requiredOpticType = -1;
+			aiRateOfFireDispersion = 1;
+		};
+		class Library {
+			libTextDesc = "Starter pistol is a revolver commonly used to start competitive races. Only the sound of the shot is used as the starting singal. This pistol uses flares, and a cloud of smoke can be seen when the gun goes off.";
+		};
+		descriptionShort = "Non-combat gun<br />Caliber: 10 mm Signal Slugs";
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+			mass = 20;
+			holsterScale = 0.9;
+			class CowsSlot {};
+			class MuzzleSlot {};
+			allowedSlots[] = {801, 701, 901};
+			holsterOffset = "holster";
+		};
+		class ItemInfo {
+			priority = 2;
+		};
+		class GunParticles {
+			class Effect1 {
+				effectName = "StarterPistolCloud1";
+				positionName = "usti hlavne";
+				directionName = "konec hlavne";
+			};
+			class Effect2 {
+				effectName = "StarterPistolCloud2";
+				positionName = "konec hlavne";
+				directionName = "usti hlavne";
+			};
+		};
+		bullet1[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet2[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet3[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet4[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet5[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet6[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet7[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet8[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet9[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet10[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet11[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		bullet12[] = {"A3\sounds_f\dummysound", 1, 1, 15};
+		displayName = "Taurus Judge";
+		soundBullet[] = {"bullet1", 0.083, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
+		optics = 1;
+		modelOptics = "-";
+		opticsZoomMin = 0.25;
+		opticsZoomMax = 1.25;
+		opticsZoomInit = 0.75;
+		cursor = "hgun";
+		cursoraim = "cursorAim";
+		minRange = 0;
+		minRangeProbab = 0.1;
+		midRange = 30;
+		midRangeProbab = 0.3;
+		maxRange = 50;
+		maxRangeProbab = 0.04;
+		weaponPoolAvailable = 1;
+		textureType = "semi";
+		htMin = 1;
+		htMax = 300;
+		afMax = 0;
+		mfMax = 0;
+		mFact = 1;
+		tBody = 100;
+		autoReload = 0;
+		discreteDistance[] = {50};
+		discreteDistanceInitIndex = 0;
+		magazineReloadTime = 2;
+		opticsFlare = 0;
+		nameSound = "Pistol";
+		type = 2;
+		canLock = 0;
+		access = 3;
+		value = 2;
+		ammo = "";
+		cursorSize = 1;
+		showAimCursorInternal = 1;
+		cursorAimOn = "";
+		laser = 0;
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		hiddenUnderwaterSelections[] = {};
+		shownUnderwaterSelections[] = {};
+		hiddenUnderwaterSelectionsTextures[] = {};
+		simulation = "Weapon";
+		count = 0;
+		multiplier = 1;
+		burst = 1;
+		reloadTime = 1;
+		magazineReloadSwitchPhase = 1;
+		sound[] = {"", 1, 1};
+		soundBegin[] = {"sound", 1};
+		soundBeginWater[] = {"sound", 1};
+		soundClosure[] = {"sound", 1};
+		soundEnd[] = {"sound", 1};
+		soundLoop[] = {"sound", 1};
+		soundContinuous = 0;
+		weaponSoundEffect = "";
+		soundBurst = 1;
+		zeroingSound[] = {"", 1, 1};
+		reloadSound[] = {"", 1, 1};
+		changeFiremodeSound[] = {"", 1, 1};
+		emptySound[] = {"", 1, 1};
+		ballisticsComputer = 0;
+		irDistance = 0;
+		irDotIntensity = 0.001;
+		dispersion = 0.002;
+		aiDispersionCoefX = 1;
+		aiDispersionCoefY = 1;
+		lockAcquire = 1;
+		enableAttack = 1;
+		ffMagnitude = 0;
+		ffFrequency = 1;
+		ffCount = 1;
+		recoilProne = "";
+		maxRecoilSway = 0.008;
+		swayDecaySpeed = 2;
+		modelSpecial = "";
+		modelMagazine = "";
+		muzzlePos = "usti hlavne";
+		muzzleEnd = "konec hlavne";
+		irLaserPos = "laser pos";
+		irLaserEnd = "laser dir";
+		cartridgePos = "nabojnicestart";
+		cartridgeVel = "nabojniceend";
+		selectionFireAnim = "zasleh";
+		memoryPointCamera = "eye";
+		fireSpreadAngle = 3;
+		useModelOptics = 1;
+		opticsID = 0;
+		opticsPPEffects[] = {};
+		forceOptics = 0;
+		useAsBinocular = 0;
+		opticsDisablePeripherialVision = 0.67;
+		distanceZoomMin = 400;
+		distanceZoomMax = 400;
+		primary = 10;
+		showSwitchAction = 0;
+		showEmpty = 1;
+		autoFire = 0;
+		showToPlayer = 1;
+		canShootInWater = 0;
+		aiRateOfFire = 5;
+		aiRateOfFireDistance = 500;
+		aiRateOfFireDispersion = 0;
+		fireLightDuration = 0.05;
+		fireLightIntensity = 0.2;
+		fireLightDiffuse[] = {0.937, 0.631, 0.259};
+		fireLightAmbient[] = {0, 0, 0};
+		backgroundReload = 0;
+		muzzles[] = {"this"};
+		useAction = 0;
+		useActionTitle = "";
+		canDrop = 1;
+		weaponLockDelay = 0;
+		weaponLockSystem = 0;
+		cmImmunity = 1;
+		weight = 0;
+		handAnim[] = {};
+		lockingTargetSound[] = {"", 0.000316228, 2};
+		lockedTargetSound[] = {"", 0.000316228, 6};
+		detectRange = 0;
+		artilleryDispersion = 1;
+		artilleryCharge = 1;
+		fireAnims[] = {};
+		class GunFire {
+			access = 0;
+			cloudletDuration = 0.2;
+			cloudletAnimPeriod = 1;
+			cloudletSize = 1;
+			cloudletAlpha = 1;
+			cloudletGrowUp = 0.2;
+			cloudletFadeIn = 0.01;
+			cloudletFadeOut = 0.5;
+			cloudletAccY = 0;
+			cloudletMinYSpeed = -100;
+			cloudletMaxYSpeed = 100;
+			cloudletShape = "cloudletFire";
+			cloudletColor[] = {1, 1, 1, 0};
+			cloudletDensityCoef = -1;
+			interval = -0.01;
+			size = 3;
+			sourceSize = 0.5;
+			timeToLive = 0;
+			initT = 4500;
+			deltaT = -3000;
+			class Table {
+				class T0 {
+					maxT = 0;
+					color[] = {0.82, 0.95, 0.93, 0};
+				};
+				class T1 {
+					maxT = 200;
+					color[] = {0.75, 0.77, 0.9, 0};
+				};
+				class T2 {
+					maxT = 400;
+					color[] = {0.56, 0.62, 0.67, 0};
+				};
+				class T3 {
+					maxT = 600;
+					color[] = {0.39, 0.46, 0.47, 0};
+				};
+				class T4 {
+					maxT = 800;
+					color[] = {0.24, 0.31, 0.31, 0};
+				};
+				class T5 {
+					maxT = 1000;
+					color[] = {0.23, 0.31, 0.29, 0};
+				};
+				class T6 {
+					maxT = 1500;
+					color[] = {0.21, 0.29, 0.27, 0};
+				};
+				class T7 {
+					maxT = 2000;
+					color[] = {0.19, 0.23, 0.21, 0};
+				};
+				class T8 {
+					maxT = 2300;
+					color[] = {0.22, 0.19, 0.1, 0};
+				};
+				class T9 {
+					maxT = 2500;
+					color[] = {0.35, 0.2, 0.02, 0};
+				};
+				class T10 {
+					maxT = 2600;
+					color[] = {0.62, 0.29, 0.03, 0};
+				};
+				class T11 {
+					maxT = 2650;
+					color[] = {0.59, 0.35, 0.05, 0};
+				};
+				class T12 {
+					maxT = 2700;
+					color[] = {0.75, 0.37, 0.03, 0};
+				};
+				class T13 {
+					maxT = 2750;
+					color[] = {0.88, 0.34, 0.03, 0};
+				};
+				class T14 {
+					maxT = 2800;
+					color[] = {0.91, 0.5, 0.17, 0};
+				};
+				class T15 {
+					maxT = 2850;
+					color[] = {1, 0.6, 0.2, 0};
+				};
+				class T16 {
+					maxT = 2900;
+					color[] = {1, 0.71, 0.3, 0};
+				};
+				class T17 {
+					maxT = 2950;
+					color[] = {0.98, 0.83, 0.41, 0};
+				};
+				class T18 {
+					maxT = 3000;
+					color[] = {0.98, 0.91, 0.54, 0};
+				};
+				class T19 {
+					maxT = 3100;
+					color[] = {0.98, 0.99, 0.6, 0};
+				};
+				class T20 {
+					maxT = 3300;
+					color[] = {0.96, 0.99, 0.72, 0};
+				};
+				class T21 {
+					maxT = 3600;
+					color[] = {1, 0.98, 0.91, 0};
+				};
+				class T22 {
+					maxT = 4200;
+					color[] = {1, 1, 1, 0};
+				};
+			};
+		};
+		class GunClouds {
+			access = 0;
+			cloudletGrowUp = 0.05;
+			cloudletFadeIn = 0;
+			cloudletFadeOut = 0.1;
+			cloudletDuration = 0.05;
+			cloudletAlpha = 0.3;
+			cloudletAccY = 0;
+			cloudletMinYSpeed = -100;
+			cloudletMaxYSpeed = 100;
+			interval = -0.02;
+			size = 0.3;
+			sourceSize = 0.02;
+			cloudletAnimPeriod = 1;
+			cloudletSize = 1;
+			cloudletShape = "cloudletClouds";
+			cloudletColor[] = {1, 1, 1, 0};
+			timeToLive = 0;
+			initT = 0;
+			deltaT = 0;
+			class Table {
+				class T0 {
+					maxT = 0;
+					color[] = {1, 1, 1, 0};
+				};
+			};
+		};
+		aimTransitionSpeed = 1;
+	};
+	class RocketPods;
+	class MosquitoGrenadeLauncher: RocketPods
+	{
+		scope = 1;
+		displayName = "Grenades";
+		cursor = "EmptyCursor";
+		cursorAim = "EmptyCursor";
+		autoFire = 0;
+		sound[] = {"",10.0,1};
+		magazines[] = {"3Rnd_MosquitoGrenade"};
+		reloadTime = 3;
+		magazineReloadTime = 5;
+		dispersion = 0;
+		minRange = 1;
+		minRangeProbab = 0.8;
+		midRange = 50;
+		midRangeProbab = 0.7;
+		maxRange = 150;
+		maxRangeProbab = 0.1;
+		autoReload = 1;
+		canLock = 0;
+	};
+	class ItemHandyCam_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_HandyCam_F.jpg";
+		model = "a3\structures_f\items\electronics\handycam_f.p3d";
+		displayName = "$STR_EPOCH_HandyCam";
+		descriptionShort = "$STR_EPOCH_HandyCamDesc";
+		class ItemInfo
+		{
+			mass=12;
+		};
+	};
+	class ItemLaptop_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Laptop_unfolded_F.jpg";
+		model="\A3\structures_f\Items\Electronics\Laptop_unfolded_F.p3d";
+		displayName = "$STR_EPOCH_Laptop";
+		descriptionShort = "$STR_EPOCH_LaptopDesc";
+		class ItemInfo
+		{
+			mass=20;
+		};
+	};
+	class ItemMobilePhone_old_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MobilePhone_old_F.jpg";
+		model="\A3\structures_f\Items\Electronics\MobilePhone_old_F.p3d";
+		displayName = "$STR_EPOCH_MobilePhone_old";
+		descriptionShort = "$STR_EPOCH_MobilePhone_oldDesc";
+		class ItemInfo
+		{
+			mass=6;
+		};
+	};
+	class ItemMobilePhone_smart_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MobilePhone_smart_F.jpg";
+		model="\A3\Structures_F\Items\Electronics\MobilePhone_smart_F.p3d";
+		displayName = "$STR_EPOCH_MobilePhone_smart";
+		descriptionShort = "$STR_EPOCH_MobilePhone_smartDesc";
+		class ItemInfo
+		{
+			mass=6;
+		};
+	};
+	class ItemPortableLongRangeRadio_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_PortableLongRangeRadio_F.jpg";
+		model="\A3\structures_f\Items\Electronics\PortableLongRangeRadio_F.p3d";
+		displayName = "$STR_EPOCH_PortableLongRangeRadio";
+		descriptionShort = "$STR_EPOCH_PortableLongRangeRadioDesc";
+		class ItemInfo
+		{
+			mass=8;
+		};
+	};
+	class ItemSatellitePhone_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_SatellitePhone_F.jpg";
+		model="\A3\structures_f\Items\Electronics\SatellitePhone_F.p3d";
+		displayName = "$STR_EPOCH_SatellitePhone";
+		descriptionShort = "$STR_EPOCH_SatellitePhoneDesc";
+		class ItemInfo
+		{
+			mass=40;
+		};
+	};
+	class ItemDrillAku_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_DrillAku_F.jpg";
+		model="\A3\structures_f\Items\Tools\DrillAku_F.p3d";
+		displayName="$STR_EPOCH_DrillAku";
+		descriptionShort="$STR_EPOCH_DrillAkuDesc";
+		class ItemInfo
+		{
+			mass=10;
+		};
+	};
+	class ItemMultiMeter_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_MultiMeter_F.jpg";
+		model="\A3\Structures_F\Items\Tools\MultiMeter_F.p3d";
+		displayName="$STR_EPOCH_MultiMeter";
+		descriptionShort="$STR_EPOCH_MultiMeterDesc";
+		class ItemInfo
+		{
+			mass=8;
+		};
+	};
+	class ItemPliers_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Pliers_F.jpg";
+		model="\A3\structures_f\Items\Tools\Pliers_F.p3d";
+		displayName="$STR_EPOCH_Pliers";
+		descriptionShort="$STR_EPOCH_PliersDesc";
+		class ItemInfo
+		{
+			mass=5;
+		};
+	};
+	class ItemSaw_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Saw_F.jpg";
+		model="\A3\structures_f\Items\Tools\Saw_F.p3d";
+		displayName="$STR_EPOCH_Saw";
+		descriptionShort="$STR_EPOCH_SawDesc";
+		class ItemInfo
+		{
+			mass=8;
+		};
+	};
+	class ItemScrewdriver_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Screwdriver_V1_F.jpg";
+		model="\A3\structures_f\Items\Tools\Screwdriver_V1_F.p3d";
+		displayName="$STR_EPOCH_Screwdriver";
+		descriptionShort="$STR_EPOCH_ScrewdriverDesc";
+		class ItemInfo
+		{
+			mass=5;
+		};
+	};
+	class ItemWrench_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Wrench_F.jpg";
+		model="\A3\Structures_F\Items\Tools\Wrench_F.p3d";
+		displayName="$STR_EPOCH_Wrench";
+		descriptionShort="$STR_EPOCH_WrenchDesc";
+		class ItemInfo
+		{
+			mass=7;
+		};
+	};
+	class ItemDefibrillator_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Defibrillator_F.jpg";
+		model="\A3\structures_f_epa\Items\Medical\Defibrillator_F.p3d";
+		displayName="$STR_EPOCH_Defibrillator";
+		descriptionShort="$STR_EPOCH_DefibrillatorDesc";
+		class ItemInfo
+		{
+			mass=30;
+		};
+	};
+	class ItemCanOpener_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CanOpener_F.jpg";
+		model="\A3\Structures_F_EPA\Items\Tools\CanOpener_F.p3d";
+		displayName="$STR_EPOCH_CanOpener";
+		descriptionShort="$STR_EPOCH_CanOpenerDesc";
+		class ItemInfo
+		{
+			mass=8;
+		};
+	};
+	class ItemFireExtinguisher_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_FireExtinguisher_F.jpg";
+		model="\A3\structures_f_epa\Items\Tools\FireExtinguisher_F.p3d";
+		displayName="$STR_EPOCH_FireExtinguisher";
+		descriptionShort="$STR_EPOCH_FireExtinguisherDesc";
+		class ItemInfo
+		{
+			mass=30;
+		};
+	};
+	class ItemShovel_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Shovel_F.jpg";
+		model="\A3\Structures_F_epa\Items\Tools\Shovel_F.p3d";
+		displayName="$STR_EPOCH_Shovel";
+		descriptionShort="$STR_EPOCH_ShovelDesc";
+		class ItemInfo
+		{
+			mass=10;
+		};
+	};
+	class ItemTinContainer_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_TinContainer_F.jpg";
+		model="a3\structures_f_epa\items\vessels\tincontainer_f.p3d";
+		displayName="$STR_EPOCH_TinContainer";
+		descriptionShort="$STR_EPOCH_TinContainerDesc";
+		class ItemInfo
+		{
+			mass=6;
+		};
+	};
+	class ItemCampingLight_wpn: ItemWatch
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Camping_Light_F.jpg";
+		model = "a3\structures_f_epb\civ\camping\camping_light_f.p3d";
+		displayName="$STR_EPOCH_CampingLight";
+		descriptionShort="$STR_EPOCH_CampingLightDesc";
+		class ItemInfo
+		{
+			mass=12;
+		};
+	};
+	class ItemGPS;
+	class ItemGeigerCounter_EPOCH: ItemGPS
+	{
+		scope = 2;
+		displayName = "$STR_EPOCH_ItemGeigerName";
+		author = "Helion4/DirtySanchez";
+		picture = "\x\addons\a3_epoch_community\textures\geiger\geigercounter_icon_ca.paa";
+		model = "\x\addons\a3_epoch_community\models\geigercounter.p3d";
+		descriptionUse = "<t color='#9cf953'>Use: </t>Detect Radiation Levels";
+		descriptionShort = "This warning system alerts you to abnormal Radiation Levels";
+	};
+	class U_JeansPatched1_uniform : Itemcore
+    {
+        author = "ComatoseBadger/DirtySanchez";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_FemalePantsNShirt";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched1Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_JeansPatched1_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+	class U_JeansPatched2_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched2Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched2_F";
+        };
+    };
+	class U_JeansPatched3_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched3Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched3_F";
+        };
+    };
+	class U_JeansPatched4_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched4Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched4_F";
+        };
+    };
+	class U_JeansPatched5_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched5Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched5_F";
+        };
+    };
+	class U_JeansPatched6_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched6Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched6_F";
+        };
+    };
+	class U_JeansPatched7_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched7Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched7_F";
+        };
+    };
+	class U_JeansPatched8_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched8Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched8_F";
+        };
+    };
+	class U_JeansPatched9_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched9Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched9_F";
+        };
+    };
+	class U_JeansPatched10_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched10Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched10_F";
+        };
+    };
+	class U_JeansPatched11_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched11Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched11_F";
+        };
+    };
+	class U_JeansPatched12_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched12Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched12_F";
+        };
+    };
+	class U_JeansPatched13_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched13Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched13_F";
+        };
+    };
+	class U_JeansPatched14_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched14Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched14_F";
+        };
+    };
+	class U_JeansPatched15_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched15Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched15_F";
+        };
+    };
+	class U_JeansPatched16_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched16Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched16_F";
+        };
+    };
+	class U_JeansPatched17_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched17Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched17_F";
+        };
+    };
+	class U_JeansPatched18_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched18Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched18_F";
+        };
+    };
+	class U_JeansPatched19_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched19Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched19_F";
+        };
+    };
+	class U_JeansPatched20_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched20Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched20_F";
+        };
+    };
+	class U_JeansPatched21_uniform : U_JeansPatched1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansPatched21Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansPatched21_F";
+        };
+    };
+	class U_JeansBlkBrn1_uniform : Itemcore
+    {
+        author = "ComatoseBadger/DirtySanchez";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_FemalePantsNShirt";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn1Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_JeansBlkBrn1_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+	class U_JeansBlkBrn2_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn2Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn2_F";
+        };
+    };
+	class U_JeansBlkBrn3_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn3Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn3_F";
+        };
+    };
+	class U_JeansBlkBrn4_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn4Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn4_F";
+        };
+    };
+	class U_JeansBlkBrn5_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn5Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn5_F";
+        };
+    };
+	class U_JeansBlkBrn6_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn6Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn6_F";
+        };
+    };
+	class U_JeansBlkBrn7_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn7Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn7_F";
+        };
+    };
+	class U_JeansBlkBrn8_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn8Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn8_F";
+        };
+    };
+	class U_JeansBlkBrn9_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn9Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn9_F";
+        };
+    };
+	class U_JeansBlkBrn10_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn10Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn10_F";
+        };
+    };
+	class U_JeansBlkBrn11_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn11Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn11_F";
+        };
+    };
+	class U_JeansBlkBrn12_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn12Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn12_F";
+        };
+    };
+	class U_JeansBlkBrn13_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn13Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn13_F";
+        };
+    };
+	class U_JeansBlkBrn14_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn14Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn14_F";
+        };
+    };
+	class U_JeansBlkBrn15_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn15Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn15_F";
+        };
+    };
+	class U_JeansBlkBrn16_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn16Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn16_F";
+        };
+    };
+	class U_JeansBlkBrn17_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn17Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn17_F";
+        };
+    };
+	class U_JeansBlkBrn18_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn18Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn18_F";
+        };
+    };
+	class U_JeansBlkBrn19_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn19Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn19_F";
+        };
+    };
+	class U_JeansBlkBrn20_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn20Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn20_F";
+        };
+    };
+	class U_JeansBlkBrn21_uniform : U_JeansBlkBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn21Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlkBrn21_F";
+        };
+    };
+	class U_JeansArBrn1_uniform : Itemcore
+    {
+        author = "ComatoseBadger/DirtySanchez";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_FemalePantsNShirt";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn1Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_JeansArBrn1_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+	class U_JeansArBrn2_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn2Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn2_F";
+        };
+    };
+	class U_JeansArBrn3_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn3Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn3_F";
+        };
+    };
+	class U_JeansArBrn4_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn4Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn4_F";
+        };
+    };
+	class U_JeansArBrn5_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn5Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn5_F";
+        };
+    };
+	class U_JeansArBrn6_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn6Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn6_F";
+        };
+    };
+	class U_JeansArBrn7_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn7Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn7_F";
+        };
+    };
+	class U_JeansArBrn8_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn8Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn8_F";
+        };
+    };
+	class U_JeansArBrn9_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn9Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn9_F";
+        };
+    };
+	class U_JeansArBrn10_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn10Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn10_F";
+        };
+    };
+	class U_JeansArBrn11_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn11Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn11_F";
+        };
+    };
+	class U_JeansArBrn12_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn12Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn12_F";
+        };
+    };
+	class U_JeansArBrn13_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn13Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn13_F";
+        };
+    };
+	class U_JeansArBrn14_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn14Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn14_F";
+        };
+    };
+	class U_JeansArBrn15_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn15Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn15_F";
+        };
+    };
+	class U_JeansArBrn16_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn16Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn16_F";
+        };
+    };
+	class U_JeansArBrn17_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn17Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn17_F";
+        };
+    };
+	class U_JeansArBrn18_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn18Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn18_F";
+        };
+    };
+	class U_JeansArBrn19_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn19Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn19_F";
+        };
+    };
+	class U_JeansArBrn20_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn20Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn20_F";
+        };
+    };
+	class U_JeansArBrn21_uniform : U_JeansArBrn1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn21Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansArBrn21_F";
+        };
+    };
+	class U_JeansBlack1_uniform : Itemcore
+    {
+        author = "ComatoseBadger/DirtySanchez";
+        scope = 2;
+        allowedSlots[] = {901};
+        displayName = "$STR_EPOCH_FemalePantsNShirt";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack1Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "Epoch_Female_JeansBlack1_F";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+	class U_JeansBlack2_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack2Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack2_F";
+        };
+    };
+	class U_JeansBlack3_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack3Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack3_F";
+        };
+    };
+	class U_JeansBlack4_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack4Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack4_F";
+        };
+    };
+	class U_JeansBlack5_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack5Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack5_F";
+        };
+    };
+	class U_JeansBlack6_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack6Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack6_F";
+        };
+    };
+	class U_JeansBlack7_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack7Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack7_F";
+        };
+    };
+	class U_JeansBlack8_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack8Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack8_F";
+        };
+    };
+	class U_JeansBlack9_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack9Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack9_F";
+        };
+    };
+	class U_JeansBlack10_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack10Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack10_F";
+        };
+    };
+	class U_JeansBlack11_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack11Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack11_F";
+        };
+    };
+	class U_JeansBlack12_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack12Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack12_F";
+        };
+    };
+	class U_JeansBlack13_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack13Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack13_F";
+        };
+    };
+	class U_JeansBlack14_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack14Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack14_F";
+        };
+    };
+	class U_JeansBlack15_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack15Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack15_F";
+        };
+    };
+	class U_JeansBlack16_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack16Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack16_F";
+        };
+    };
+	class U_JeansBlack17_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack17Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack17_F";
+        };
+    };
+	class U_JeansBlack18_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack18Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack18_F";
+        };
+    };
+	class U_JeansBlack19_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack19Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack19_F";
+        };
+    };
+	class U_JeansBlack20_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack20Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack20_F";
+        };
+    };
+	class U_JeansBlack21_uniform : U_JeansBlack1_uniform
+    {
+        descriptionShort = "$STR_EPOCH_FemaleJeansBlack21Desc";
+        picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
+        class ItemInfo : ItemInfo
+        {
+            uniformClass = "Epoch_Female_JeansBlack21_F";
+        };
+    };
+	class hockey_mask_epoch : ItemCore
+    {
+        author = "AWOL/Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_EPOCH_HockeyMask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\hockey_mask_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\hockey.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\hockey.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
+	class plague_mask_epoch : ItemCore
+    {
+        author = "AWOL/Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_EPOCH_PlagueMask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\plague_mask_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\plague.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\plague.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
+	class ghostface_mask_epoch : ItemCore
+    {
+        author = "AWOL/Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_EPOCH_GhostFaceMask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\plague_mask_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\scream.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\scream.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
+	class skull_mask_epoch : ItemCore
+    {
+        author = "AWOL/Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_EPOCH_SkullMask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\skullhead_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\skull_mask01.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\skull_mask01.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
+	class witch_mask_epoch : ItemCore
+    {
+        author = "AWOL/Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_EPOCH_WitchMask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\witch_mask_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\witch.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\witch.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
     };
 };
 
