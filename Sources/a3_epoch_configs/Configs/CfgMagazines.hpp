@@ -4494,6 +4494,226 @@ class CfgMagazines
         count = 1;
         mass = 1;
     };
+	class KitBurnBarrel: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_BurnBarrel";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_BurnBarrel";
+		count = 1;
+		mass = 20;
+  };
+	class KitLightPole: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_LightPole";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_LightPole";
+		count = 1;
+		mass = 20;
+  };
+	class KitSmallForestCamoNet: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_SmallForestCamoNet";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_SmallForestCamoNet";
+		count = 1;
+		mass = 20;
+  };
+	class KitSmallDesertCamoNet: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_SmallDesertCamoNet";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_SmallDesertCamoNet";
+		count = 1;
+		mass = 20;
+  };
+	class KitLargeForestCamoNet: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_LargeForestCamoNet";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_LargeForestCamoNet";
+		count = 1;
+		mass = 20;
+  };
+	class KitLargeDesertCamoNet: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_LargeDesertCamoNet";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_LargeDesertCamoNet";
+		count = 1;
+		mass = 20;
+  };
+	class KitFirePlace_02: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_FirePlace_02";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_FirePlace_02";
+		count = 1;
+		mass = 20;
+  };
+	class KitFieldToilet: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_FieldToilet";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_FieldToilet";
+		count = 1;
+		mass = 20;
+  };
+	class KitScaffolding: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_Scaffolding";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_Scaffolding";
+		count = 1;
+		mass = 20;
+  };
+	class KitSink: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_Sink";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_Sink";
+		count = 1;
+		mass = 20;
+  };
+	class KitPortableLight_Single: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_PortableLight_Single";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_PortableLight_Single";
+		count = 1;
+		mass = 20;
+  };
+	class KitPortableLight_Double: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_PortableLight_Double";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_PortableLight_Double";
+		count = 1;
+		mass = 20;
+  };
+	class KitWatchTower: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_WatchTower";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_WatchTower";
+		count = 1;
+		mass = 20;
+  };
+	class KitSunShade: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_SunShade";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_SunShade";
+		count = 1;
+		mass = 20;
+  };
+	class KitFuelPump: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_FuelPump";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_FuelPump";
+		count = 1;
+		mass = 20;
+  };
+	class KitBagBunker: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_BagBunker";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_BagBunker";
+		count = 1;
+		mass = 20;
+  };
+	class KitSandbagWall: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_SandbagWall";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_SandbagWall";
+		count = 1;
+		mass = 20;
+  };
+	class KitSandbagWallLong: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_SandbagWallLong";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_SandbagWallLong";
+		count = 1;
+		mass = 20;
+  };
+	class KitBarGate: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_BarGate";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_BarGate";
+		count = 1;
+		mass = 20;
+  };
+	class KitWaterPump: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_WaterPump";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_WaterPump";
+		count = 1;
+		mass = 20;
+  };
 };
 
 /*[[[end]]]*/
