@@ -888,7 +888,7 @@ class CfgMagazines
     {
         author = "Kiory";
         scope = 2;
-        count = 1;
+        count = 25;
         type = 256;
         displayName = "$STR_EPOCH_Lighter";
         model = "\x\addons\a3_epoch_assets_2\lighter.p3d";
@@ -3464,7 +3464,7 @@ class CfgMagazines
 	{
 		author = "Helion4/DirtySanchez";
 		scope = 2;
-		count = 1;
+		count = 10;
 		type = 256;
 		displayName = "$STR_EPOCH_caffeinepills";
 		model = "\x\addons\a3_epoch_community\models\caffeinepills.p3d";
@@ -3476,7 +3476,7 @@ class CfgMagazines
 	{
 		author = "Helion4/DirtySanchez";
 		scope = 2;
-		count = 1;
+		count = 10;
 		type = 256;
 		displayName = "$STR_EPOCH_orlistat";
 		model = "\x\addons\a3_epoch_community\models\orlistat.p3d";
