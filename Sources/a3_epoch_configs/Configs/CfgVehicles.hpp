@@ -2590,10 +2590,11 @@ class CfgVehicles
         scope = 2;
         author = "AWOL";
         displayName = "$STR_EPOCH_FourWayBunker";
-        model = "\x\addons\a3_epoch_community\models\4_way_bunker.p3d";
+        model = "\x\addons\a3_epoch_community\models\Bunkers\4_way_bunker.p3d";
         vehicleClass = "Structures";
         mapSize = 20.27;
         cost = 40000;
+		destrType = "DestructNo";
         class AnimationSources
         {
             class One
@@ -2622,6 +2623,47 @@ class CfgVehicles
             };
         };
     };
+	class bunker_epoch_01 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_01.p3d";
+	};
+	class bunker_epoch_02 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_02.p3d";
+	};
+	class bunker_epoch_03 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_03.p3d";
+	};
+	class bunker_epoch_04 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_04.p3d";
+	};
+	class bunker_epoch_05 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_05.p3d";
+	};
+	class bunker_epoch_06 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_06.p3d";
+	};
+	class bunker_epoch_07 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_07.p3d";
+	};
+	class bunker_epoch_08 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_08.p3d";
+	};
+	class bunker_epoch_09 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_09.p3d";
+	};
+	class bunker_epoch_10 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_10.p3d";
+	};
+
     class Bag_Base;
     class smallbackpack_red_epoch : Bag_Base
     {
@@ -11969,7 +12011,7 @@ class CfgVehicles
 				type = "Refract";
 			};
 		};
-    };	
+    };
     class LightPole_SIM_EPOCH : Constructions_modular_F
     {
         author = "BI";
@@ -12024,7 +12066,7 @@ class CfgVehicles
 				};
 			};
 		};
-    };	
+    };
     class SmallForestCamoNet_SIM_EPOCH : Constructions_modular_F
     {
         author = "BI";
@@ -12055,7 +12097,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR_CA.paa"};
 		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
-    };	
+    };
     class SmallDesertCamoNet_SIM_EPOCH : Constructions_modular_F
     {
         author = "BI";
@@ -12086,7 +12128,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_OPFOR_CA.paa"};
 		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
-    };	
+    };
     class LargeForestCamoNet_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12117,7 +12159,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR_CA.paa"};
 		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
-    };	
+    };
     class LargeDesertCamoNet_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12148,7 +12190,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_OPFOR_CA.paa"};
 		hiddenSelectionsMaterials[] = {"\A3\Structures_F\Mil\Shelters\Data\CamoNet_BLUFOR.rvmat"};
-    };	
+    };
     class FirePlace_02_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12244,7 +12286,7 @@ class CfgVehicles
 				type = "SmallFireFRefract";
 			};
 		};
-	};	
+	};
     class FieldToilet_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12329,7 +12371,7 @@ class CfgVehicles
 		};
 		actionBegin1 = "OpenDoor_1";
 		actionEnd1 = "OpenDoor_1";
-	};	
+	};
     class Scaffolding_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12365,7 +12407,7 @@ class CfgVehicles
 		destrType = "DestructBuilding";
 		armor = 500;
 		keepHorizontalPlacement = 1;
-    };	
+    };
     class Sink_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12400,7 +12442,7 @@ class CfgVehicles
 		vehicleClass = "Epoch_objects";
 		destrType = "DestructDefault";
 		armor = 300;
-    };	
+    };
     class PortableLight_Single_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12475,7 +12517,7 @@ class CfgVehicles
 				};
 			};
 		};
-	};	
+	};
     class PortableLight_Double_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12518,7 +12560,7 @@ class CfgVehicles
 				selection = "Light_2_hide";
 			};
 		};
-	};	
+	};
     class WatchTower_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12554,7 +12596,7 @@ class CfgVehicles
 		destrType = "DestructDefault";
 		armor = 300;
 		ladders[] = {{"Ladder_1_start","Ladder_1_end"}};
-    };	
+    };
     class SunShade_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12589,7 +12631,7 @@ class CfgVehicles
 		vehicleClass = "Epoch_objects";
 		destrType = "DestructTree";
 		armor = 5;
-    };	
+    };
     class FuelPump_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12682,7 +12724,7 @@ class CfgVehicles
 				lifeTime = 0.5;
 			};
 		};
-	};	
+	};
     class BagBunker_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12719,7 +12761,7 @@ class CfgVehicles
 		accuracy = 1000;
 		armor = 500;
 		class DestructionEffects{};
-    };	
+    };
     class SandbagWall_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12762,7 +12804,7 @@ class CfgVehicles
 			objectIsSimple = 0;
 		};
 		class DestructionEffects{};
-    };	
+    };
     class SandbagWallLong_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12805,7 +12847,7 @@ class CfgVehicles
 			objectIsSimple = 0;
 		};
 		class DestructionEffects{};
-    };	
+    };
     class BarGate_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12889,7 +12931,7 @@ class CfgVehicles
 		};
 		actionBegin1 = "OpenGate_1";
 		actionEnd1 = "OpenGate_1";
-	};	
+	};
     class WaterPump_SIM_EPOCH : Constructions_modular_F
     {
         author = "Grahame";
@@ -12925,7 +12967,7 @@ class CfgVehicles
 		destrType = "DestructNo";
 		keepHorizontalPlacement = 1;
 		class DestructionEffects{};
-    };	
+    };
 };
 
 /*[[[end]]]*/
