@@ -888,7 +888,7 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_ghillie.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_ghilie_tan.paa";
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\a3\characters_f\common\data\ghillie_desert_co.paa"};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\common\data\ghillie_3_ca.paa"};
         modelSides[] = {1};
         uniformClass = "U_ghillie1_uniform";
         primaryAmmoCoef = 0.2;
@@ -1032,7 +1032,7 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_ghillie.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_ghilie_green2.paa";
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\a3\characters_f\common\data\ghillie_woodland_co.paa"};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\common\data\ghillie_2_ca.paa"};
         modelSides[] = {1};
         uniformClass = "U_ghillie2_uniform";
     };
@@ -1043,7 +1043,7 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\female_ghillie.p3d";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\keesha_ghilie_green.paa";
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\a3\characters_f\common\data\ghillie_mcamo_co.paa"};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\common\data\ghillie_1_ca.paa"};
         modelSides[] = {1};
         uniformClass = "U_ghillie3_uniform";
     };
@@ -9416,6 +9416,7 @@ class CfgVehicles
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\minerals\mineralBrown_co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\minerals\mineralCopper.rvmat"};
+        weaponHolderProxy = "MineralProxy_EPOCH";
         weaponHolderProxy = "MineralProxy_EPOCH";
         destrType = "DestructEngine";
         class DestructionEffects
