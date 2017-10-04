@@ -3879,5 +3879,11 @@
         	<Key ID="STR_EPOCH_WaterPump">
             		<Original>Water Pump</Original>
         	</Key>
+			<Key ID="STR_EPOCH_Morphine">
+            		<Original>Morphine Shot</Original>
+        	</Key>
+			<Key ID="STR_EPOCH_MorphineShotDesc">
+            		<Original>Medical Item or a Quick Fix&lt;br/&gt;To each their own!</Original>
+        	</Key>
 	</Package>
 </Project>

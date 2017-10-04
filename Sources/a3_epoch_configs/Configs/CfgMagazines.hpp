@@ -3448,6 +3448,18 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_AdrenalineShotDesc";
 		mass = 1;
 	};
+	class morphine_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_Morphine";
+		model = "\x\addons\a3_epoch_community\models\morphine.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\morphine_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_MorphineShotDesc";
+		mass = 1;
+	};
 	class caffeinepills_epoch: CA_Magazine
 	{
 		author = "Helion4/DirtySanchez";
