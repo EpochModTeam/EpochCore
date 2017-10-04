@@ -11022,7 +11022,7 @@ class CfgVehicles
 	{
 		author = "SteamPunkGears/Helion4";
 		scope = 2;
-		model = "\x\addons\a3_epoch_community\Metal_Base_Tower\Metal_floor_tower.p3d";
+		model = "\x\addons\a3_epoch_community\Metal_Base_Tower\Metal_floor_tower_ghost.p3d";
 		displayName = "$STR_EPOCH_MetalTowerGhost";
 		ladders[] = {};
 	};
