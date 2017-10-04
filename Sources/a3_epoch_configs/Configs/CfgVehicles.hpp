@@ -10129,6 +10129,7 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_assets\models\shoebox_proxy.p3d";
         displayName = "$STR_EPOCH_Shoeboxproxy";
         isGround = 0;
+		supplyRadius=2;
     };
     class Shoebox_EPOCH : Animated_Loot
     {
