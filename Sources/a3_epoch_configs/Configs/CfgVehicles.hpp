@@ -11673,6 +11673,7 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_character.p3d";
 		picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Keesha_base.paa";
         hiddenSelections[] = {"camo","camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\kTorso_Eco.paa","\x\addons\a3_epoch_assets\textures\kPants_ECO.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
 		uniformClass = "U_JeansBlack1_uniform";
 	};
 	class Epoch_Female_JeansBlack2_F : Epoch_Female_JeansBlack1_F
