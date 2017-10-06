@@ -4446,7 +4446,7 @@ class CfgMagazines
 		count=1;
 		type=256;
 		displayName="$STR_EPOCH_Garden";
-		model="\x\addons\a3_epoch_community\models\Farming\epoch_Garden.p3d";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
 		descriptionShort="A large storage Box";
 		mass=150;
