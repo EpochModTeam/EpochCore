@@ -3892,25 +3892,25 @@
 			<Original>Nanite Cream</Original>
 		</Key>
 		<Key ID="STR_EPOCH_NaniteCreamDesc">
-			<Original>Nanite Cream</Original>
+			<Original>Rub 2.5 million nanite bots into your skin, they will absorb into your pores and help attack and possibly cure radiation poisoning</Original>
 		</Key>
 		<Key ID="STR_EPOCH_NaniteGun">
 			<Original>Nanite Injector</Original>
 		</Key>
 		<Key ID="STR_EPOCH_NaniteGunDesc">
-			<Original>Nanite Injector</Original>
+			<Original>Inject yourself with 10 million nanite bots that will attack and cure radiation poisoning</Original>
 		</Key>
 		<Key ID="STR_EPOCH_NanitePills">
 			<Original>Nanite Pills</Original>
 		</Key>
 		<Key ID="STR_EPOCH_NanitePills">
-			<Original>Nanite Pills</Original>
+			<Original>Ingest 1 million nanite bots that will attack and reduce radiation poisoning</Original>
 		</Key>
 		<Key ID="STR_EPOCH_IodidePills">
 			<Original>Iodide Pills</Original>
 		</Key>
 		<Key ID="STR_EPOCH_IodidePillsDesc">
-			<Original>Iodide Pills</Original>
+			<Original>An expectorant, used after contact with radioactive gases and/or liquids</Original>
 		</Key>
 	</Package>
 </Project>
