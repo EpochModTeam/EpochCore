@@ -2448,16 +2448,111 @@ class CfgMagazines
         colorName = "Yellow";
         textureIndex = 9;
     };
-    class Poppy : CA_Magazine
+	class Kit_Garden: CA_Magazine
+	{
+		author="DirtySanchez";
+		scope=2;
+		count=1;
+		type=256;
+		displayName="$STR_EPOCH_Garden";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		descriptionShort="A large storage Box";
+		mass=150;
+	};
+	class ItemSeedBag : CA_Magazine
     {
-        author = "Sequisha";
+        author = "Helion4/DirtySanchez";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets\models\poppy.p3d";
-        picture = "\x\addons\a3_epoch_assets_3\vegetation\gear_poppy_ca.paa";
-        displayName = "$STR_EPOCH_Poppy";
-        descriptionShort = "$STR_EPOCH_Podoffofapoppyplant";
-        count = 1;
+		count = 1;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds\seedbag_icon_ca.paa";
+        displayname = "$STR_EPOCH_ItemSeedBag";
+        model = "\x\addons\a3_epoch_community\models\seeds.p3d";
+        descriptionShort = "$STR_EPOCH_ItemSeedBagDesc";
+        mass = 10;
+    };
+	class SeedPacket_GoldenSeal : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 10;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds_food\goldenseal_packet_icon_ca.paa";
+        displayname = "$STR_EPOCH_SeedPacketGoldenSeal";
+        model = "\x\addons\a3_epoch_community\models\goldenseal.p3d";
+        descriptionShort = "$STR_EPOCH_SeedPacketGoldenSeal";
         mass = 1;
+    };
+	class SeedPacket_Hemp : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 10;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds_food\hemp_packet_icon_ca.paa";
+        displayname = "$STR_EPOCH_SeedPacketHemp";
+        model = "\x\addons\a3_epoch_community\models\hemp.p3d";
+        descriptionShort = "$STR_EPOCH_SeedPacketHemp";
+        mass = 1;
+    };
+	class SeedPacket_Poppy : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 10;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds_food\poppy_packet_icon_ca.paa";
+        displayname = "$STR_EPOCH_SeedPacketPoppy";
+        model = "\x\addons\a3_epoch_community\models\poppy.p3d";
+        descriptionShort = "$STR_EPOCH_SeedPacketPoppy";
+        mass = 1;
+    };
+	class SeedPacket_Pumpkin : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 10;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds_food\pumpkin_packet_icon_ca.paa";
+        displayname = "$STR_EPOCH_SeedPacketPumpkin";
+        model = "\x\addons\a3_epoch_community\models\pumpkin.p3d";
+        descriptionShort = "$STR_EPOCH_SeedPacketPumpkin";
+        mass = 1;
+    };
+	class SeedPacket_Sunflower : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+		count = 10;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\textures\seeds_food\sunflower_packet_icon_ca.paa";
+        displayname = "$STR_EPOCH_SeedPacketSunflower";
+        model = "\x\addons\a3_epoch_community\models\sunflower.p3d";
+        descriptionShort = "$STR_EPOCH_SeedPacketSunflower";
+        mass = 1;
+    };
+	class Sapling : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\sapling.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\seedling_icon_ca.paa";
+        displayName = "$STR_EPOCH_Sapling";
+        descriptionShort = "$STR_EPOCH_Sapling";
+        count = 1;
+        mass = 10;
+    };
+	class SaplingTeen : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\sapling_teen.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\seedling_icon_ca.paa";
+        displayName = "$STR_EPOCH_SaplingTeen";
+        descriptionShort = "$STR_EPOCH_SaplingTeen";
+        count = 1;
+        mass = 20;
     };
     class Goldenseal : CA_Magazine
     {
@@ -2468,7 +2563,29 @@ class CfgMagazines
         displayName = "$STR_EPOCH_Goldenseal";
         descriptionShort = "$STR_EPOCH_Helpsreducetoxicity";
         count = 1;
-        mass = 1;
+        mass = 10;
+    };
+	class Hemp : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\hemp_plant.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\hemp_icon_ca.paa";
+        displayName = "$STR_EPOCH_Hemp";
+        descriptionShort = "$STR_EPOCH_Hemp";
+        count = 1;
+        mass = 50;
+    };
+	class Poppy : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\poppy_plant.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\poppy_icon_ca.paa";
+        displayName = "$STR_EPOCH_Poppy";
+        descriptionShort = "$STR_EPOCH_Poppy";
+        count = 1;
+        mass = 35;
     };
     class Pumpkin : CA_Magazine
     {
@@ -2478,6 +2595,28 @@ class CfgMagazines
         picture = "\x\addons\a3_epoch_assets_3\vegetation\gear_pumpkin_ca.paa";
         displayName = "$STR_EPOCH_Pumpkin";
         descriptionShort = "$STR_EPOCH_Pumpkin";
+        count = 1;
+        mass = 20;
+    };
+	class Sunflower : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Farming\Sunflower_plant.p3d";
+        picture = "\x\addons\a3_epoch_community\icons\sunflower_icon_ca.paa";
+        displayName = "$STR_EPOCH_Sunflower";
+        descriptionShort = "$STR_EPOCH_Sunflower";
+        count = 1;
+        mass = 25;
+    };
+	class Poppy2 : CA_Magazine
+    {
+        author = "Sequisha";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets\models\poppy.p3d";
+        picture = "\x\addons\a3_epoch_assets_3\vegetation\gear_poppy_ca.paa";
+        displayName = "$STR_EPOCH_Poppy";
+        descriptionShort = "$STR_EPOCH_Podoffofapoppyplant";
         count = 1;
         mass = 1;
     };
@@ -4322,79 +4461,6 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_ItemCanvasDesc";
         mass = 1;
     };
-	class ItemSeedBag : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-		count = 1;
-		type = 256;
-		picture = "\x\addons\a3_epoch_community\textures\seeds\seedbag_icon_ca.paa";
-        displayname = "$STR_EPOCH_ItemSeedBag";
-        model = "\x\addons\a3_epoch_community\models\seeds.p3d";
-        descriptionShort = "$STR_EPOCH_ItemSeedBagDesc";
-        mass = 10;
-    };
-	class SeedPacket_GoldenSeal : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-		count = 10;
-		type = 256;
-		picture = "\x\addons\a3_epoch_community\textures\seeds_food\goldenseal_packet_icon_ca.paa";
-        displayname = "$STR_EPOCH_SeedPacketGoldenSeal";
-        model = "\x\addons\a3_epoch_community\models\goldenseal.p3d";
-        descriptionShort = "$STR_EPOCH_SeedPacketGoldenSeal";
-        mass = 1;
-    };
-	class SeedPacket_Hemp : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-		count = 10;
-		type = 256;
-		picture = "\x\addons\a3_epoch_community\textures\seeds_food\hemp_packet_icon_ca.paa";
-        displayname = "$STR_EPOCH_SeedPacketHemp";
-        model = "\x\addons\a3_epoch_community\models\hemp.p3d";
-        descriptionShort = "$STR_EPOCH_SeedPacketHemp";
-        mass = 1;
-    };
-	class SeedPacket_Poppy : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-		count = 10;
-		type = 256;
-		picture = "\x\addons\a3_epoch_community\textures\seeds_food\poppy_packet_icon_ca.paa";
-        displayname = "$STR_EPOCH_SeedPacketPoppy";
-        model = "\x\addons\a3_epoch_community\models\poppy.p3d";
-        descriptionShort = "$STR_EPOCH_SeedPacketPoppy";
-        mass = 1;
-    };
-	class SeedPacket_Pumpkin : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-		count = 10;
-		type = 256;
-		picture = "\x\addons\a3_epoch_community\textures\seeds_food\pumpkin_packet_icon_ca.paa";
-        displayname = "$STR_EPOCH_SeedPacketPumpkin";
-        model = "\x\addons\a3_epoch_community\models\pumpkin.p3d";
-        descriptionShort = "$STR_EPOCH_SeedPacketPumpkin";
-        mass = 1;
-    };
-	class SeedPacket_Sunflower : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-		count = 10;
-		type = 256;
-		picture = "\x\addons\a3_epoch_community\textures\seeds_food\sunflower_packet_icon_ca.paa";
-        displayname = "$STR_EPOCH_SeedPacketSunflower";
-        model = "\x\addons\a3_epoch_community\models\sunflower.p3d";
-        descriptionShort = "$STR_EPOCH_SeedPacketSunflower";
-        mass = 1;
-    };
-
 	class KitTentA : CA_Magazine
     {
         author = "Helion4/DirtySanchez";
@@ -4487,73 +4553,6 @@ class CfgMagazines
 		descriptionShort="A large storage Box";
 		mass=150;
 	};
-	class Kit_Garden: CA_Magazine
-	{
-		author="DirtySanchez";
-		scope=2;
-		count=1;
-		type=256;
-		displayName="$STR_EPOCH_Garden";
-		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-		descriptionShort="A large storage Box";
-		mass=150;
-	};
-	class Hemp : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-        model = "\x\addons\a3_epoch_community\models\Farming\hemp_plant.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\hemp_icon_ca.paa";
-        displayName = "$STR_EPOCH_Hemp";
-        descriptionShort = "$STR_EPOCH_Hemp";
-        count = 1;
-        mass = 1;
-    };
-	class Poppy : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-        model = "\x\addons\a3_epoch_community\models\Farming\poppy_plant.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\poppy_icon_ca.paa";
-        displayName = "$STR_EPOCH_Poppy";
-        descriptionShort = "$STR_EPOCH_Poppy";
-        count = 1;
-        mass = 1;
-    };
-	class Sunflower : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-        model = "\x\addons\a3_epoch_community\models\Farming\Sunflower_plant.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\sunflower_icon_ca.paa";
-        displayName = "$STR_EPOCH_Sunflower";
-        descriptionShort = "$STR_EPOCH_Sunflower";
-        count = 1;
-        mass = 1;
-    };
-	class Sapling : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-        model = "\x\addons\a3_epoch_community\models\Farming\sapling.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\seedling_icon_ca.paa";
-        displayName = "$STR_EPOCH_Sapling";
-        descriptionShort = "$STR_EPOCH_Sapling";
-        count = 1;
-        mass = 1;
-    };
-	class SaplingTeen : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-        scope = 2;
-        model = "\x\addons\a3_epoch_community\models\Farming\sapling_teen.p3d";
-        picture = "\x\addons\a3_epoch_community\icons\seedling_icon_ca.paa";
-        displayName = "$STR_EPOCH_SaplingTeen";
-        descriptionShort = "$STR_EPOCH_SaplingTeen";
-        count = 1;
-        mass = 1;
-    };
 	class KitBurnBarrel: CA_Magazine
 	{
 		author = "Grahame";
