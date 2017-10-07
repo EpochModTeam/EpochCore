@@ -1651,7 +1651,10 @@
         <Key ID="STR_EPOCH_Pelican">
             <Original>Pelican</Original>
         </Key>
-        <Key ID="STR_EPOCH_DEBUGBOX">
+        <Key ID="STR_EPOCH_Toilet">
+			<Original>Toilet</Original>
+		</Key>
+		<Key ID="STR_EPOCH_DEBUGBOX">
             <Original>DEBUG BOX</Original>
         </Key>
         <Key ID="STR_EPOCH_FemaleCloneVat">

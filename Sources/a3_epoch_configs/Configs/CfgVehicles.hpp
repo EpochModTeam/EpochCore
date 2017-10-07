@@ -8284,7 +8284,16 @@ class CfgVehicles
             };
         };
     };
-    class Debug_static_F : NonStrategic
+    class Toilet_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "DirtySanchez/Helion4";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\toilet\toilet.p3d";
+        displayName = "$STR_EPOCH_Toilet";
+        simulClass = "Toilet_SIM_EPOCH";
+        staticClass = "toilet_epoch";
+    };
+	class Debug_static_F : NonStrategic
     {
         mapSize = 2.27;
         author = "Sequisha";
@@ -9635,8 +9644,8 @@ class CfgVehicles
         vehicleclass = "Epoch_objects";
         model = "\x\addons\a3_epoch_assets_2\lockers.p3d";
         forceSupply = 0;
-        simulClass = "Wardrobe_SIM_EPOCH";
-        staticClass = "wardrobe_epoch";
+        simulClass = "Locker_SIM_EPOCH";
+        staticClass = "locker_epoch";
         sections[] = {};
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {""};
@@ -9923,7 +9932,50 @@ class CfgVehicles
             };
         };
     };
-    class BedProxy_EPOCH : WeaponHolder
+    class toilet_epoch : WH_Loot
+    {
+        scope = 2;
+        mapSize = 1;
+        cost = 0;
+        isGround = 0;
+        author = "DirtySanchez/Helion4";
+        displayName = "$STR_EPOCH_Toilet";
+        destrType = "DestructNo";
+        vehicleclass = "Epoch_objects";
+        model = "\x\addons\a3_epoch_assets_2\wardrobe.p3d";
+        forceSupply = 0;
+        simulClass = "Toilet_SIM_EPOCH";
+        staticClass = "toilet_epoch";
+        class AnimationSources
+        {
+            class open_door_l
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class open_door_r
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_door_l
+            {
+                displayName = "$STR_EPOCH_Search";
+                displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
+                position = "left";
+                radius = 3;
+                onlyForPlayer = 0;
+                condition = "this animationPhase ""open_door_l"" < 0.5";
+                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT; [this] call EPOCH_fnc_mirrorSetup;";
+            };
+        };
+    };
+	class BedProxy_EPOCH : WeaponHolder
     {
         author = "Sequisha";
         scope = 2;
