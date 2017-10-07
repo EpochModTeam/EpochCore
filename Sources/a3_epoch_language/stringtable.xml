@@ -3885,5 +3885,8 @@
 			<Key ID="STR_EPOCH_MorphineShotDesc">
             		<Original>Medical Item or a Quick Fix&lt;br/&gt;To each their own!</Original>
         	</Key>
+			<Key ID="STR_EPOCH_RadMask">
+            		<Original>Radiation Mask</Original>
+        	</Key>
 	</Package>
 </Project>

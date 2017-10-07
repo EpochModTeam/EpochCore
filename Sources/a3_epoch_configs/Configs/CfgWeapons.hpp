@@ -7038,6 +7038,29 @@ class CfgWeapons
             passThrough = 0.5;
         };
     };
+	class radiation_mask_epoch: NVGoggles
+	{
+		author = "DirtySanchez/Helion4";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "$STR_EPOCH_RadMask";
+		picture = "\x\addons\a3_epoch_community\icons\rad_mask_icon.paa";
+		model = "\x\addons\a3_epoch_community\models\Radiation_Mask\Epoch_Rad_Mask.p3d";
+		descriptionShort = "$STR_EPOCH_RadMask";
+		descriptionUse = "<t color='#9cf953'>Use: </t>Protect from Radiation Poisoning and Toxic Gas";
+		visionMode[] = {"Normal"};
+		class ItemInfo
+		{
+			type = 616;
+			uniformModel = "\x\addons\a3_epoch_community\models\Radiation_Mask\Epoch_Rad_Mask.p3d";
+			modelOff = "\x\addons\a3_epoch_community\models\Radiation_Mask\Epoch_Rad_Mask.p3d";
+			mass = 40;
+		};
+		class Library
+		{
+			libTextDesc = "This mask is intended to reduce the possiblity of radiation exposure. This mask can work in certain situation where toxic gases are present";
+		};
+	};
 };
 
 /*[[[end]]]*/
