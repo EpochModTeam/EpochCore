@@ -3484,6 +3484,54 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_OrlistatDesc";
 		mass = 1;
 	};
+	class nanite_cream_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_NaniteCream";
+		model = "\x\addons\a3_epoch_community\models\rad_cream.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\rad_iodide_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_NaniteCreamDesc";
+		mass = 1;
+	};
+	class nanite_gun_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_NaniteGun";
+		model = "\x\addons\a3_epoch_community\models\rad_nanite_gun.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\rad_nanite_gun_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_NaniteGunDesc";
+		mass = 1;
+	};
+	class nanite_pills_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_NanitePills";
+		model = "\x\addons\a3_epoch_community\models\rad_nanite_pills.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\rad_nanite_pills_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_NanitePillsDesc";
+		mass = 1;
+	};
+	class iodide_pills_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_IodidePills";
+		model = "\x\addons\a3_epoch_community\models\rad_pot_iodide.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\rad_iodide_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_IodidePillsDesc";
+		mass = 1;
+	};
 	class ItemCereals: CA_Magazine
 	{
 		author = "He-Man/DirtySanchez";

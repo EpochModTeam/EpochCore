@@ -3888,5 +3888,29 @@
 		<Key ID="STR_EPOCH_RadMask">
 			<Original>Radiation Mask</Original>
 		</Key>
+		<Key ID="STR_EPOCH_NaniteCream">
+			<Original>Nanite Cream</Original>
+		</Key>
+		<Key ID="STR_EPOCH_NaniteCreamDesc">
+			<Original>Nanite Cream</Original>
+		</Key>
+		<Key ID="STR_EPOCH_NaniteGun">
+			<Original>Nanite Injector</Original>
+		</Key>
+		<Key ID="STR_EPOCH_NaniteGunDesc">
+			<Original>Nanite Injector</Original>
+		</Key>
+		<Key ID="STR_EPOCH_NanitePills">
+			<Original>Nanite Pills</Original>
+		</Key>
+		<Key ID="STR_EPOCH_NanitePills">
+			<Original>Nanite Pills</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IodidePills">
+			<Original>Iodide Pills</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IodidePillsDesc">
+			<Original>Iodide Pills</Original>
+		</Key>
 	</Package>
 </Project>
