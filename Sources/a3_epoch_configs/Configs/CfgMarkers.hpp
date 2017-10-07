@@ -1,9 +1,9 @@
 class cfgMarkers
 {
-	class EpochActive
+	class EpochActive_Hex
 	{
-		name = "$STR_EPOCH_MarkerActive";
-		icon = "\x\addons\a3_epoch_community\markers\marker_active.paa";
+		name = "$STR_EPOCH_MarkerActive_Hex";
+		icon = "\x\addons\a3_epoch_community\markers\marker_active_hex.paa";
 		color[] = {1,1,1,1};
 		size = 32;
 		scope = 2;
@@ -11,10 +11,98 @@ class cfgMarkers
 		shadow = 1;
 		markerClass = "epochmod_assets";
 	};
-	class EpochHex
+	class EpochBG_Hex
 	{
-		name = "$STR_EPOCH_MarkerHex";
-		icon = "\x\addons\a3_epoch_community\markers\marker_hex.paa";
+		name = "$STR_EPOCH_MarkerBG_Hex";
+		icon = "\x\addons\a3_epoch_community\markers\marker_bg_hex.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
+	class EpochActive_Circle
+	{
+		name = "$STR_EPOCH_MarkerActive_Circle";
+		icon = "\x\addons\a3_epoch_community\markers\marker_active_circle.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
+	class EpochBG_Circle
+	{
+		name = "$STR_EPOCH_MarkerBG_Circle";
+		icon = "\x\addons\a3_epoch_community\markers\marker_bg_circle.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
+	class EpochActive_Diamond
+	{
+		name = "$STR_EPOCH_MarkerActive_Diamond";
+		icon = "\x\addons\a3_epoch_community\markers\marker_active_diamond.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
+	class EpochBG_Diamond
+	{
+		name = "$STR_EPOCH_MarkerBG_Diamond";
+		icon = "\x\addons\a3_epoch_community\markers\marker_bg_diamond.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
+	class EpochActive_Square
+	{
+		name = "$STR_EPOCH_MarkerActive_Square";
+		icon = "\x\addons\a3_epoch_community\markers\marker_active_square.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
+	class EpochBG_Square
+	{
+		name = "$STR_EPOCH_MarkerBG_Square";
+		icon = "\x\addons\a3_epoch_community\markers\marker_bg_square.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
+	class EpochActive_Triangle
+	{
+		name = "$STR_EPOCH_MarkerActive_Triangle";
+		icon = "\x\addons\a3_epoch_community\markers\marker_active_triangle.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
+	class EpochBG_Triangle
+	{
+		name = "$STR_EPOCH_MarkerBG_Triangle";
+		icon = "\x\addons\a3_epoch_community\markers\marker_bg_triangle.paa";
 		color[] = {1,1,1,1};
 		size = 32;
 		scope = 2;
@@ -510,6 +598,17 @@ class cfgMarkers
 	{
 		name = "$STR_EPOCH_MarkerRifle";
 		icon = "\x\addons\a3_epoch_community\markers\marker_icon_rifle.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
+	class EpochSatellite
+	{
+		name = "$STR_EPOCH_MarkerSatellite";
+		icon = "\x\addons\a3_epoch_community\markers\marker_icon_satellite.paa";
 		color[] = {1,1,1,1};
 		size = 32;
 		scope = 2;

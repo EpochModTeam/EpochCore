@@ -3618,11 +3618,35 @@
 		<Key ID="STR_EPOCH_WitchMask">
 			<Original>Witch Mask</Original>
 		</Key>
-		<Key ID="STR_EPOCH_MarkerActive">
-			<Original>Active</Original>
+		<Key ID="STR_EPOCH_MarkerActive_Hex">
+			<Original>Active Hex</Original>
 		</Key>
-		<Key ID="STR_EPOCH_MarkerHex">
-			<Original>Hex</Original>
+		<Key ID="STR_EPOCH_MarkerBG_Hex">
+			<Original>Background Hex</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerActive_Circle">
+			<Original>Active Circle</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBG_Circle">
+			<Original>Background Circle</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerActive_Diamond">
+			<Original>Active Diamond</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBG_Diamond">
+			<Original>Background Diamond</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerActive_Square">
+			<Original>Active Square</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBG_Square">
+			<Original>Background Square</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerActive_Triangle">
+			<Original>Active Triangle</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBG_Triangle">
+			<Original>Background Triangle</Original>
 		</Key>
 		<Key ID="STR_EPOCH_MarkerSkull">
 			<Original>Death</Original>
@@ -3758,6 +3782,9 @@
 		</Key>
 		<Key ID="STR_EPOCH_MarkerRifle">
 			<Original>Rifle</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerSatellite">
+			<Original>Satellite</Original>
 		</Key>
 		<Key ID="STR_EPOCH_MarkerService">
 			<Original>Service</Original>
