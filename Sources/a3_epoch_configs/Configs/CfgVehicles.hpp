@@ -11920,7 +11920,7 @@ class CfgVehicles
         scope = 2;
         model = "\x\addons\a3_epoch_community\models\Farming\epoch_Garden.p3d";
         displayName = "$STR_EPOCH_Garden";
-        maximumLoad = 800;
+        maximumLoad = 400;
     };
     class HempPlant_EPOCH : Grown_Plants_F
     {
