@@ -4130,7 +4130,7 @@ class CfgVehicles
 	class C_Hatchback_01_EPOCH1: C_Hatchback_01_EPOCH
 	{
 		author = "DirtySanchez";
-
+		displayName = "$STR_EPOCH_HatchBackLevel1";
 		terrainCoef = 4.0;
 		brakeDistance = 3.2;
 		acceleration 	= 16;
@@ -4169,6 +4169,7 @@ class CfgVehicles
 	class C_Hatchback_01_EPOCH2: C_Hatchback_01_EPOCH1
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_HatchBackLevel2";
 		armor = 100;
 		armorLights = 0.05;
 		crewCrashProtection	= 0.15;
@@ -4271,6 +4272,7 @@ class CfgVehicles
 	class C_Hatchback_01_EPOCH3: C_Hatchback_01_EPOCH2
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_HatchBackLevel3";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
 		transportMaxBackpacks = 18;
@@ -4283,6 +4285,7 @@ class CfgVehicles
 	class C_Hatchback_01_EPOCH4: C_Hatchback_01_EPOCH3
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_HatchBackLevel4";
 		fuelCapacity = 90;
 		fuelConsumptionRate = 0.0175;
 	};
@@ -4313,7 +4316,7 @@ class CfgVehicles
 	class C_Hatchback_02_EPOCH1: C_Hatchback_02_EPOCH
 	{
 		author = "DirtySanchez";
-
+		displayName = "$STR_EPOCH_HatchBackSPLevel1";
 		terrainCoef = 4.0;
 		brakeDistance = 4.75;
 		acceleration = 16;
@@ -4352,6 +4355,7 @@ class CfgVehicles
 	class C_Hatchback_02_EPOCH2: C_Hatchback_02_EPOCH1
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_HatchBackSPLevel2";
 		armor = 100;
 		armorLights = 0.05;
 		crewCrashProtection	= 1.5;
@@ -4454,6 +4458,7 @@ class CfgVehicles
 	class C_Hatchback_02_EPOCH3: C_Hatchback_02_EPOCH2
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_HatchBackSPLevel3";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
 		transportMaxBackpacks = 18;
@@ -4466,6 +4471,7 @@ class CfgVehicles
 	class C_Hatchback_02_EPOCH4: C_Hatchback_02_EPOCH3
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_HatchBackSPLevel4";
 		fuelCapacity = 90;
 		fuelConsumptionRate = 0.0275;
 	};
@@ -4495,6 +4501,7 @@ class CfgVehicles
 	class C_Offroad_01_EPOCH1: C_Offroad_01_EPOCH
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_OffroadLevel1";
 		terrainCoef = 1.75;
 		brakeDistance = 45;
 		maxSpeed = 225;
@@ -4549,6 +4556,7 @@ class CfgVehicles
 	class C_Offroad_01_EPOCH2: C_Offroad_01_EPOCH1
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_OffroadLevel2";
 		armor = 125;
 		armorLights = 0.6;
 		crewCrashProtection	= 1.5;
@@ -4652,6 +4660,7 @@ class CfgVehicles
 	class C_Offroad_01_EPOCH3: C_Offroad_01_EPOCH2
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_OffroadLevel";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
 		transportMaxBackpacks = 4;
@@ -4665,6 +4674,7 @@ class CfgVehicles
 	class C_Offroad_01_EPOCH4: C_Offroad_01_EPOCH3
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_OffroadLevel";
 		fuelCapacity = 100;
 		fuelConsumptionRate = 0.0275;
 		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
@@ -4676,6 +4686,7 @@ class CfgVehicles
 	class C_Offroad_01_EPOCH5: C_Offroad_01_EPOCH4
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_OffroadLevel5";
 		textureList[] = {"White", 1};
 		animationList[] = {"HidePolice", 0, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
 		class UserActions {
@@ -4761,6 +4772,7 @@ class CfgVehicles
 	class C_SUV_01_EPOCH1: C_SUV_01_EPOCH
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_SUVLevel1";
 		terrainCoef = 1.75;
 		brakeDistance = 6.2;
 		acceleration 	= 17;
@@ -4801,6 +4813,7 @@ class CfgVehicles
 	class C_SUV_01_EPOCH2: C_SUV_01_EPOCH1
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_SUVLevel2";
 		armor = 100;
 		armorLights = 0.1;
 		crewCrashProtection	= 1.5;
@@ -4904,6 +4917,7 @@ class CfgVehicles
 	class C_SUV_01_EPOCH3: C_SUV_01_EPOCH2
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_SUVLevel3";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
 		transportMaxBackpacks = 18;
@@ -4916,6 +4930,7 @@ class CfgVehicles
 	class C_SUV_01_EPOCH4: C_SUV_01_EPOCH3
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_SUVLevel4";
 		fuelCapacity = 90;
 		fuelConsumptionRate = 0.0185;
 	};
@@ -5447,6 +5462,7 @@ class CfgVehicles
 	class B_MRAP_01_EPOCH1 : B_MRAP_01_EPOCH
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_HunterLevel1";
 		terrainCoef = 1.75;
 		maxSpeed = 135;
 		fuelConsumptionRate = 0.012;
@@ -5477,6 +5493,7 @@ class CfgVehicles
 	class B_MRAP_01_EPOCH2 : B_MRAP_01_EPOCH1
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_HunterLevel2";
 		armor = 100;
 		armorLights = 0.45;
 		crewCrashProtection	= 1.5;
@@ -5586,6 +5603,7 @@ class CfgVehicles
 	class B_MRAP_01_EPOCH3 : B_MRAP_01_EPOCH
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_HunterLevel3";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
 		transportMaxBackpacks = 8;
@@ -5594,6 +5612,7 @@ class CfgVehicles
 	class B_MRAP_01_EPOCH4 : B_MRAP_01_EPOCH3
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_HunterLevel4";
 		fuelCapacity = 115;
 		fuelConsumptionRate = 0.009;
 	};
@@ -5702,6 +5721,7 @@ class CfgVehicles
 	class O_MRAP_02_EPOCH1 : O_MRAP_02_EPOCH
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_IfritLevel1";
 		terrainCoef = 1.75;
 		maxSpeed = 145;
 		fuelConsumptionRate = 0.012;
@@ -5738,6 +5758,7 @@ class CfgVehicles
 	class O_MRAP_02_EPOCH2 : O_MRAP_02_EPOCH1
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_IfritLevel2";
 		armor = 100;
 		armorLights = 0.45;
 		crewCrashProtection	= 1.5;
@@ -5852,6 +5873,7 @@ class CfgVehicles
 	class O_MRAP_02_EPOCH3 : O_MRAP_02_EPOCH2
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_IfritLevel3";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
 		transportMaxBackpacks = 8;
@@ -5860,6 +5882,7 @@ class CfgVehicles
 	class O_MRAP_02_EPOCH4 : O_MRAP_02_EPOCH3
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_IfritLevel4";
 		fuelCapacity = 115;
 		fuelConsumptionRate = 0.009;
 	};
@@ -5976,6 +5999,7 @@ class CfgVehicles
 	class I_MRAP_03_EPOCH1 : I_MRAP_03_EPOCH
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_StriderLevel1";
 		terrainCoef = 1.75;
 		maxSpeed = 140;
 		fuelConsumptionRate = 0.012;
@@ -6006,6 +6030,7 @@ class CfgVehicles
 	class I_MRAP_03_EPOCH2 : I_MRAP_03_EPOCH1
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_StriderLevel2";
 		armor = 100;
 		armorLights = 0.45;
 		crewCrashProtection	= 1.5;
@@ -6115,6 +6140,7 @@ class CfgVehicles
 	class I_MRAP_03_EPOCH3 : I_MRAP_03_EPOCH2
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_StriderLevel3";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
 		transportMaxBackpacks = 8;
@@ -6123,6 +6149,7 @@ class CfgVehicles
 	class I_MRAP_03_EPOCH4 : I_MRAP_03_EPOCH3
     {
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_StriderLevel4";
 		fuelCapacity = 115;
 		fuelConsumptionRate = 0.009;
 	};
@@ -6170,6 +6197,7 @@ class CfgVehicles
 	class B_G_Offroad_01_armed_EPOCH1: B_G_Offroad_01_armed_EPOCH
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_OffroadArmedLevel1";
 		terrainCoef = 1.75;
 		brakeDistance = 45;
 		maxSpeed = 225;
@@ -6223,6 +6251,7 @@ class CfgVehicles
 	class B_G_Offroad_01_armed_EPOCH2: B_G_Offroad_01_armed_EPOCH1
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_OffroadArmedLevel2";
 		armor = 185;
 		armorLights = 0.6;
 		crewCrashProtection	= 1.5;
@@ -6326,6 +6355,7 @@ class CfgVehicles
 	class B_G_Offroad_01_armed_EPOCH3: B_G_Offroad_01_armed_EPOCH2
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_OffroadArmedLevel3";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
 		transportMaxBackpacks = 4;
@@ -6339,6 +6369,7 @@ class CfgVehicles
 	class B_G_Offroad_01_armed_EPOCH4: B_G_Offroad_01_armed_EPOCH3
 	{
 		author = "DirtySanchez";
+		displayName = "$STR_EPOCH_OffroadArmedLevel4";
 		fuelCapacity = 550;
 		fuelConsumptionRate = 24;
 		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};

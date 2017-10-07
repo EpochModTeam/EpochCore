@@ -3912,5 +3912,119 @@
 		<Key ID="STR_EPOCH_IodidePillsDesc">
 			<Original>An expectorant, used after contact with radioactive gases and/or liquids</Original>
 		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel1">
+			<Original>Offroad LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel1Desc">
+			<Original>Offroad Speed and Performance</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel2">
+			<Original>Offroad LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel2Desc">
+			<Original>Offroad Armored Tires, Body and Transparent Aluminum Windscreen</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel3">
+			<Original>Offroad LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel3Desc">
+			<Original>Offroad eXpanded Inventory</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel4">
+			<Original>Offroad LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel4Desc">
+			<Original>Offroad eXpanded Fuel</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel5">
+			<Original>Offroad Fuzz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel5Desc">
+			<Original>Whatcha gonna do when they come for YOU!</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HatchBackLevel1">
+			<Original>HatchBack LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HatchBackLevel2">
+			<Original>HatchBack LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HatchBackLevel3">
+			<Original>HatchBack LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HatchBackLevel4">
+			<Original>HatchBack LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HatchBackSPLevel1">
+			<Original>HatchBack Sport LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HatchBackSPLevel2">
+			<Original>HatchBack Sport LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HatchBackSPLevel3">
+			<Original>HatchBack Sport LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HatchBackSPLevel4">
+			<Original>HatchBack Sport LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SUVLevel1">
+			<Original>SUV LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SUVLevel2">
+			<Original>SUV LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SUVLevel3">
+			<Original>SUV LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_SUVLevel4">
+			<Original>SUV LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HunterLevel1">
+			<Original>Hunter LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HunterLevel2">
+			<Original>Hunter LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HunterLevel3">
+			<Original>Hunter LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HunterLevel4">
+			<Original>Hunter LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IfritLevel1">
+			<Original>Ifrit LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IfritLevel2">
+			<Original>Ifrit LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IfritLevel3">
+			<Original>Ifrit LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_IfritLevel4">
+			<Original>Ifrit LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_StriderLevel1">
+			<Original>Strider LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_StriderLevel2">
+			<Original>Strider LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_StriderLevel3">
+			<Original>Strider LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_StriderLevel4">
+			<Original>Strider LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadArmedLevel1">
+			<Original>Offroad Armed LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadArmedLevel2">
+			<Original>Offroad Armed LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadArmedLevel3">
+			<Original>Offroad Armed LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadArmedLevel4">
+			<Original>Offroad Armed LvL-IV</Original>
+		</Key>
 	</Package>
 </Project>
