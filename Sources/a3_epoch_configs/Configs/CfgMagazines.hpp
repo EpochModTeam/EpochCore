@@ -2975,30 +2975,6 @@ class CfgMagazines
 		count = 150;
 		descriptionShort = "$STR_EPOCH_mas150Rnd127x107DSHKMdesc";
 	};
-	class 60Rnd_CMFlareMagazine: CA_Magazine
-	{
-		author = "DirtySanchez";
-		scope = 2;
-		displayName = "$STR_EPOCH_60Rnd_CMFlareMagazine";
-		descriptionShort = "$STR_EPOCH_60Rnd_CMFlareMagazine";
-		model = "\x\addons\a3_epoch_assets_1\models\dshkm_mag.p3d";
-		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_Dshkm_mag_ca.paa";
-		count = 60;
-		ammo = "CMflareAmmo";
-		initSpeed = 30;
-	};
-	class 120Rnd_CMFlareMagazine: 60Rnd_CMFlareMagazine
-	{
-		displayName = "$STR_EPOCH_120Rnd_CMFlareMagazine";
-		descriptionShort = "$STR_EPOCH_120Rnd_CMFlareMagazine";
-		count = 120;
-	};
-	class 240Rnd_CMFlareMagazine: 60Rnd_CMFlareMagazine
-	{
-		displayName = "$STR_EPOCH_240Rnd_CMFlareMagazine";
-		descriptionShort = "$STR_EPOCH_240Rnd_CMFlareMagazine";
-		count = 240;
-	};
 	class 60Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlareMagazine
 	{
 		displayName = "$STR_EPOCH_60Rnd_CMFlare_Chaff_Magazine";

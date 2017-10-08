@@ -2742,15 +2742,6 @@
 		<Key ID="STR_EPOCH_CinderTowerGhost">
             <Original>Cinder Tower Ghost</Original>
         </Key>
-		<Key ID="STR_EPOCH_60Rnd_CMFlareMagazine">
-            <Original>60Rnd Flare Mag</Original>
-        </Key>
-		<Key ID="STR_EPOCH_120Rnd_CMFlareMagazine">
-            <Original>120Rnd Flare Mag</Original>
-        </Key>
-		<Key ID="STR_EPOCH_240Rnd_CMFlareMagazine">
-            <Original>240Rnd Flare Mag</Original>
-        </Key>
 		<Key ID="STR_EPOCH_60Rnd_CMFlare_Chaff_Magazine">
             <Original>60Rnd Chaff Mag</Original>
         </Key>

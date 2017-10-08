@@ -47,6 +47,10 @@ class CfgWeapons
             magazines[] = {"SmokeShellToxic"};
         };
     };
+	class SmokeLauncher;
+    class CMFlareLauncher: SmokeLauncher {
+        magazines[] = {"60Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "192Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine"};
+    };
     class U_EPOCH_RyanZombie_1 : Uniform_Base
     {
         scope = 1;
