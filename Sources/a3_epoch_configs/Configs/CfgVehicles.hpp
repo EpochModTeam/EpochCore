@@ -9957,7 +9957,7 @@ class CfgVehicles
         staticClass = "toilet_epoch";
         class AnimationSources
         {
-            class open_lid
+            class lift_lid
             {
                 source = "user";
                 animPeriod = 1;
@@ -9966,7 +9966,7 @@ class CfgVehicles
         };
         class UserActions
         {
-            class open_lid
+            class lift_lid
             {
                 displayName = "$STR_EPOCH_Search";
                 displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
