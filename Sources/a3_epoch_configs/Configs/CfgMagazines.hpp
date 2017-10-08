@@ -4749,6 +4749,30 @@ class CfgMagazines
 		count = 1;
 		mass = 20;
 	};
+	class HotAxeSauce_epoch: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		count = 1;
+		type = 256;
+		displayName = "$STR_EPOCH_HotAxeSauce";
+		model = "\x\addons\a3_epoch_community\models\hotsauce.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\hotsauce_icon_ca.paa";
+		descriptionShort = "$STR_EPOCH_HotAxeSauceDesc";
+		mass = 3;
+	};
+	class scam_epoch : CA_Magazine
+    {
+        author = "Kiory";
+        scope = 2;
+        count = 1;
+        type = 256;
+        displayName = "$STR_EPOCH_Scam";
+        model = "\x\addons\a3_epoch_assets_2\scamtin.p3d";
+        picture = "\x\addons\a3_epoch_assets_2\gear\gear_scam_x_ca.paa";
+        descriptionShort = "$STR_EPOCH_Wasgiventhenameduetofakemeat";
+        mass = 1;
+    };
 };
 
 /*[[[end]]]*/

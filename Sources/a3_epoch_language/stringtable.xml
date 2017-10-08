@@ -4050,5 +4050,11 @@
 		<Key ID="STR_EPOCH_OffroadArmedLevel4">
 			<Original>Offroad Armed LvL-IV</Original>
 		</Key>
+		<Key ID="STR_EPOCH_HotAxeSauce">
+			<Original>HotAxe Sauce</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HotAxeSauceDesc">
+			<Original>Take the rust off your bumper or burn a hole through a sapper!</Original>
+		</Key>
 	</Package>
 </Project>
