@@ -8293,6 +8293,15 @@ class CfgVehicles
         simulClass = "Toilet_SIM_EPOCH";
         staticClass = "toilet_epoch";
     };
+	class KitchenSink_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "DirtySanchez/Helion4";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\kitchen_sink\kitchen_sink.p3d";
+        displayName = "$STR_EPOCH_KitchenSink";
+        simulClass = "KitchenSink_SIM_EPOCH";
+        staticClass = "kitchensink_epoch";
+    };
 	class Debug_static_F : NonStrategic
     {
         mapSize = 2.27;
@@ -9942,10 +9951,47 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Toilet";
         destrType = "DestructNo";
         vehicleclass = "Epoch_objects";
-        model = "\x\addons\a3_epoch_assets_2\wardrobe.p3d";
+        model = "\x\addons\a3_epoch_community\models\toilet\toilet.p3d";
         forceSupply = 0;
         simulClass = "Toilet_SIM_EPOCH";
         staticClass = "toilet_epoch";
+        class AnimationSources
+        {
+            class open_lid
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_lid
+            {
+                displayName = "$STR_EPOCH_Search";
+                displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
+                position = "left";
+                radius = 3;
+                onlyForPlayer = 0;
+                condition = "this animationPhase ""lift_lid"" < 0.5";
+                statement = "this animate [""lift_lid"", 1]; this call EPOCH_LootIT;";
+            };
+        };
+    };
+	class KitchenSink_epoch : WH_Loot
+    {
+        scope = 2;
+        mapSize = 1;
+        cost = 0;
+        isGround = 0;
+        author = "Helion4/DirtySanchez";
+        displayName = "$STR_EPOCH_KitchenSink";
+        destrType = "DestructNo";
+        vehicleclass = "Epoch_objects";
+        model = "\x\addons\a3_epoch_community\models\kitchen_sink\kitchen_sink.p3d";
+        forceSupply = 0;
+        simulClass = "KitchenSink_SIM_EPOCH";
+        staticClass = "KitchenSink_epoch";
         class AnimationSources
         {
             class open_door_l
@@ -9971,7 +10017,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_door_l"" < 0.5";
-                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT; [this] call EPOCH_fnc_mirrorSetup;";
+                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;";
             };
         };
     };

@@ -1654,6 +1654,9 @@
         <Key ID="STR_EPOCH_Toilet">
 			<Original>Toilet</Original>
 		</Key>
+		<Key ID="STR_EPOCH_KitchenSink">
+			<Original>Kitchen Sink</Original>
+		</Key>
 		<Key ID="STR_EPOCH_DEBUGBOX">
             <Original>DEBUG BOX</Original>
         </Key>
