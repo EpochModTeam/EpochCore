@@ -1699,6 +1699,12 @@
         <Key ID="STR_EPOCH_WoodFloorGhost">
             <Original>Wood Floor Ghost</Original>
         </Key>
+        <Key ID="STR_EPOCH_WoodHalfFloorGhost">
+            <Original>Wood Half Floor Ghost</Original>		
+		</Key>
+        <Key ID="STR_EPOCH_WoodQuarterFloorGhost">
+            <Original>Wood Quarter Floor Ghost</Original>		
+		</Key>		
 		<Key ID="STR_EPOCH_MetalFloor">
             <Original>Metal Floor</Original>
         </Key>

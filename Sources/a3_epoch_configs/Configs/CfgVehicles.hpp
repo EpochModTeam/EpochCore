@@ -9001,18 +9001,18 @@ class CfgVehicles
     };
 	class WoodHalfFloor_Ghost_EPOCH : Const_Ghost_EPOCH
     {
-        author = "DirtySanchez";
+        author = "helion4\DirtySanchez";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets_1\models\half_floor.p3d";
-        displayName = "$STR_EPOCH_WoodHalfFloor";
+        model = "\x\addons\a3_epoch_assets_1\models\half_floor_ghost.p3d";
+        displayName = "$STR_EPOCH_WoodHalfFloorGhost";
         ladders[] = {};
     };
 	class WoodQuarterFloor_Ghost_EPOCH : Const_Ghost_EPOCH
     {
-        author = "DirtySanchez";
+        author = "helion4\DirtySanchez";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor.p3d";
-        displayName = "$STR_EPOCH_WoodQuarterFloor";
+        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor_ghost.p3d";
+        displayName = "$STR_EPOCH_WoodQuarterFloorGhost";
         ladders[] = {};
     };
     class MetalFloor_Ghost_EPOCH : Const_Ghost_EPOCH
