@@ -2975,6 +2975,7 @@ class CfgMagazines
 		count = 150;
 		descriptionShort = "$STR_EPOCH_mas150Rnd127x107DSHKMdesc";
 	};
+	class 60Rnd_CMFlareMagazine;
 	class 60Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlareMagazine
 	{
 		displayName = "$STR_EPOCH_60Rnd_CMFlare_Chaff_Magazine";
@@ -4671,7 +4672,7 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_WatchTower";
 		count = 1;
 		mass = 20;
-	};	
+	};
 	class KitSunShade: CA_Magazine
 	{
 		author = "Grahame";
