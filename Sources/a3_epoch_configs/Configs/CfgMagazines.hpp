@@ -3606,7 +3606,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "$STR_EPOCH_NaniteCream";
-		model = "\x\addons\a3_epoch_community\models\rad_cream.p3d";
+		model = "\x\addons\a3_epoch_community\models\Rad_treatment\cream\rad_cream.p3d";
 		picture = "\x\addons\a3_epoch_community\icons\rad_iodide_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_NaniteCreamDesc";
 		mass = 1;
@@ -3618,7 +3618,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "$STR_EPOCH_NaniteGun";
-		model = "\x\addons\a3_epoch_community\models\rad_nanite_gun.p3d";
+		model = "\x\addons\a3_epoch_community\models\Rad_treatment\nanite\rad_nanite_gun.p3d";
 		picture = "\x\addons\a3_epoch_community\icons\rad_nanite_gun_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_NaniteGunDesc";
 		mass = 1;
@@ -3630,7 +3630,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "$STR_EPOCH_NanitePills";
-		model = "\x\addons\a3_epoch_community\models\rad_nanite_pills.p3d";
+		model = "\x\addons\a3_epoch_community\models\Rad_treatment\nanite\rad_nanite_pills.p3d";
 		picture = "\x\addons\a3_epoch_community\icons\rad_nanite_pills_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_NanitePillsDesc";
 		mass = 1;
@@ -3642,7 +3642,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "$STR_EPOCH_IodidePills";
-		model = "\x\addons\a3_epoch_community\models\rad_pot_iodide.p3d";
+		model = "\x\addons\a3_epoch_community\models\Rad_treatment\iodide\rad_pot_iodide.p3d";
 		picture = "\x\addons\a3_epoch_community\icons\rad_iodide_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_IodidePillsDesc";
 		mass = 1;
