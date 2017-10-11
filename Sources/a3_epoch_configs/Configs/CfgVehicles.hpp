@@ -409,6 +409,10 @@ class CfgVehicles
     {
         modelsides[] = {3,2,0};
     };
+	class C_man_p_beggar_F : C_man_p_fugitive_F
+    {
+        modelsides[] = {3,2,0};
+    };
     class C_man_w_worker_F : C_man_1
     {
         modelsides[] = {3,2,0};
@@ -421,10 +425,65 @@ class CfgVehicles
     {
         modelsides[] = {3,2,0};
     };
+	class C_man_sport_1_F : C_man_1
+    {
+        modelsides[] = {3,2,0};
+    };
+	class C_Man_casual_1_F : C_man_1
+	{
+		modelsides[] = {3,2,0};
+	};
     class C_scientist_F : C_man_w_worker_F
     {
         modelsides[] = {3,2,0};
     };
+	class SoldierGB;
+	class I_G_Soldier_base_F: SoldierGB
+	{
+        modelsides[] = {3,2,0};
+    };
+	class I_G_Soldier_LAT_F: I_G_Soldier_base_F
+	{
+        modelsides[] = {3,2,0};
+    };
+	class O_G_Soldier_LAT_F: I_G_Soldier_LAT_F
+	{
+        modelsides[] = {3,2,0};
+    };
+	class I_Soldier_base_F: SoldierGB
+	{
+        modelsides[] = {3,2,0};
+    };
+	class I_Soldier_03_F: I_Soldier_base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class I_Soldier_04_F: I_Soldier_base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class I_officer_F: I_Soldier_base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class I_Soldier_diver_base_F: I_Soldier_base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class I_diver_F: I_Soldier_diver_base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class B_RangeMaster_F;
+	class C_Marshal_F: B_RangeMaster_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class I_G_Soldier_base_F: SoldierGB
+	{
+		modelsides[] = {3,2,0};
+	};
+
     class VirtualMan_F;
     class VirtualMan_EPOCH : VirtualMan_F
     {
@@ -1248,7 +1307,7 @@ class CfgVehicles
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Dan.paa";
         maxGunElev = 80;
         faceType = "Man_A3";
-        side = 3;
+        side = 0;
         vehicleClass = "Men";
         engineer = 1;
         scope = 0;
