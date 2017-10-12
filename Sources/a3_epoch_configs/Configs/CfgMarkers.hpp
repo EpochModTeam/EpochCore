@@ -110,6 +110,28 @@ class cfgMarkers
 		shadow = 1;
 		markerClass = "epochmod_assets";
 	};
+	class EpochActive_Yield
+	{
+		name = "$STR_EPOCH_MarkerActive_Yield";
+		icon = "\x\addons\a3_epoch_community\markers\marker_active_yield.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
+	class EpochBG_Yield
+	{
+		name = "$STR_EPOCH_MarkerBG_Yield";
+		icon = "\x\addons\a3_epoch_community\markers\marker_bg_yield.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
 	class EpochSkull
 	{
 		name = "$STR_EPOCH_MarkerSkull";
