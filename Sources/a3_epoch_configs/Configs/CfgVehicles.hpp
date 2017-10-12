@@ -4719,7 +4719,7 @@ class CfgVehicles
 	class C_Offroad_01_EPOCH3: C_Offroad_01_EPOCH2
 	{
 		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadLevel";
+		displayName = "$STR_EPOCH_OffroadLevel3";
 		transportMaxWeapons = 18;
 		transportMaxMagazines = 96;
 		transportMaxBackpacks = 4;
@@ -4733,7 +4733,7 @@ class CfgVehicles
 	class C_Offroad_01_EPOCH4: C_Offroad_01_EPOCH3
 	{
 		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadLevel";
+		displayName = "$STR_EPOCH_OffroadLevel4";
 		fuelCapacity = 100;
 		fuelConsumptionRate = 0.0275;
 		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
