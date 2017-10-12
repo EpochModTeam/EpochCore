@@ -7443,15 +7443,6 @@ class CfgVehicles
                 condition = "this animationPhase ""open_lid"" < 0.5";
                 statement = "this spawn { _this animate [""open_lock3"", 1]; uiSleep 0.1; _this animate [""open_lock1"", 1];sleep 0.1; _this animate [""open_lock2"", 1]; uiSleep 0.1; _this animate [""open_lock4"", 1]; uiSleep 0.6; _this animate [""open_lid"", 1];}; this call EPOCH_LootIT; ";
             };
-            class open_quickTake
-            {
-                displayName = "$STR_EPOCH_Open";
-                position = "lid_open";
-                radius = 3;
-                onlyForPlayer = 0;
-                condition = "this animationPhase ""open_lid"" > 0.5";
-                statement = "call EPOCH_QuickTakeLoad;";
-            };
         };
     };
     class Bobber_EPOCH : FloatingStructure_F
