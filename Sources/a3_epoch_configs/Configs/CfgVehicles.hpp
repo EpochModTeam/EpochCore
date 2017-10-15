@@ -8764,55 +8764,6 @@ class CfgVehicles
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\cinder\cinder_eco.paa"};
     };
-	class CinderWall_window_EPOCH : Const_Cinder_static_F
-    {
-		author = "Helion4\Sequisha";
-		scope = 2; 
-		model = "\x\addons\a3_epoch_community\Cinder_window\cinder_window.p3d"; 
-        displayName = "$STR_EPOCH_CinderBlockWallWindow";
-        armor = 10000;
-        hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\cinder\cinder_eco.paa"};
-		class AnimationSources
-		{
-			class open_shutters
-			{
-				source = "user";
-				animPeriod = 3;
-				initPhase = 0;
-			};
-			class open_shutters_bot
-			{
-				source = "user";
-				animPeriod = 3;
-				initPhase = 0;
-			};	
-			class Glass_1_source
-			{
-				source = Hit;
-				hitpoint = Glass_1_hitpoint;
-				raw = 1;
-			};
-		};
-		class UserActions
-		{
-		    class open_shutters
-			{
-				displayName = "Open Shutters";
-				position = "lock";
-				radius = 1;
-				OnlyForPlayer = 1;
-				condition = "this animationPhase ""open_shutters"" < 0.5";
-                statement = "this animate [""open_shutters"", 1]; this animate [""open_shutters_bot"", 1];";
-			};
-			class Close_shutters: open_shutters
-			{
-				displayName = "Close Shutters";
-				condition = "this animationPhase ""open_shutters"" >= 0.5";
-				statement = "this animate [""open_shutters"", 0]; this animate [""open_shutters_bot"", 0];";
-			};
-		};	
-	};	
     class CinderWallGarage_EPOCH : Const_Cinder_static_F
     {
         author = "Sequisha";
@@ -8981,21 +8932,6 @@ class CfgVehicles
             mat[] = {"x\addons\a3_epoch_assets\textures\plyplank.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
         };
     };
-    class WoodWallWindow_EPOCH : Const_WoodWalls_static_F
-    {
-        author = "Helion4\Sequisha";
-        scope = 2;
-        model = "\x\addons\a3_epoch_community\models\plywall_window.p3d";
-        displayName = "$STR_EPOCH_PlyWallWindow";
-        hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
-        selectionDamage = "zbytek";
-        class Damage
-        {
-            tex[] = {};
-            mat[] = {"x\addons\a3_epoch_assets\textures\plyplank.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
-        };
-    };	
     class Tipi_Ghost_EPOCH : Const_Ghost_EPOCH
     {
         author = "Sequisha";
