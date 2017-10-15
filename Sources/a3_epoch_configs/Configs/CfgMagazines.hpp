@@ -3653,7 +3653,7 @@ class CfgMagazines
 		count = 1;
 		type = 256;
 		displayName = "$STR_EPOCH_IodidePills";
-		model = "\x\addons\a3_epoch_community\models\Rad_treatment\iodide\rad_pot_iodide.p3d";
+		model = "\x\addons\a3_epoch_community\models\Rad_treatment\iodide\pot_iodide.p3d";
 		picture = "\x\addons\a3_epoch_community\icons\rad_iodide_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_IodidePillsDesc";
 		mass = 1;
