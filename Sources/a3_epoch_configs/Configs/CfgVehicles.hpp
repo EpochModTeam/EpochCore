@@ -2722,6 +2722,10 @@ class CfgVehicles
 		author = "AWOL/Helion4";
 		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_10.p3d";
 	};
+	class bunker_epoch_11 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_11.p3d";
+	};	
 
     class Bag_Base;
     class smallbackpack_red_epoch : Bag_Base
