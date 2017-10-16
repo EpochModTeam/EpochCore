@@ -9634,7 +9634,6 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\minerals\mineralBrown_co.paa"};
         hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\minerals\mineralCopper.rvmat"};
         weaponHolderProxy = "MineralProxy_EPOCH";
-        weaponHolderProxy = "MineralProxy_EPOCH";
         destrType = "DestructEngine";
         class DestructionEffects
         {
@@ -9672,19 +9671,6 @@ class CfgVehicles
         class Destruction
         {
             animations[] = {{"x\addons\a3_epoch_assets\models\mineral_move.rtm",0.5,2}};
-        };
-        class UserActions
-        {
-            class LootIT
-            {
-                displayName = "$STR_EPOCH_Search";
-                displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
-                onlyforplayer = 1;
-                position = "Door_knopf";
-                radius = 3;
-                condition = "damage this > 0.5";
-                statement = "this call EPOCH_LootIT;";
-            };
         };
     };
     class MineralDepositGold_EPOCH : MineralDepositCopper_EPOCH
