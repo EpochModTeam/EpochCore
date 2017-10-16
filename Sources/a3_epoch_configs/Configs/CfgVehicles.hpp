@@ -8802,8 +8802,8 @@ class CfgVehicles
 		{
 			tex[] =
 			{
-				"cinderwallWindow\textures\window_set_CA.paa",
-				"cinderwallWindow\textures\destruct_half_window_set_CA.paa",
+				"x\addons\a3_epoch_community\textures\cinder_window\window_set_CA.paa",
+				"x\addons\a3_epoch_community\textures\cinder_window\destruct_half_window_set_CA.paa",
 				"#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,co)",
 				"#(argb,8,8,3)color(0.294118,0.294118,0.294118,1.0,co)",
 				"#(argb,8,8,3)color(0.501961,0.25098,0,1.0,co)",
@@ -8817,8 +8817,8 @@ class CfgVehicles
 			};	
 			mat[] =
 			{
-				"cinderwallWindow\textures\window_set.rvmat",
-				"cinderwallWindow\textures\destruct_half_window_set.rvmat",
+				"x\addons\a3_epoch_community\textures\cinder_window\window_set.rvmat",
+				"x\addons\a3_epoch_community\textures\cinder_window\destruct_half_window_set.rvmat",
 				"A3\Structures_F\Data\Windows\destruct_full_window_set.rvmat"
 		    };	
 	    };
