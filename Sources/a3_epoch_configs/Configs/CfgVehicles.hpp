@@ -8764,6 +8764,105 @@ class CfgVehicles
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\cinder\cinder_eco.paa"};
     };
+	class CinderWall_window_EPOCH : Const_Cinder_static_F
+    {
+		author = "Helion4\Sequisha";
+		scope = 2; 
+		model = "\x\addons\a3_epoch_community\Cinder_window\cinder_window.p3d"; 
+        displayName = "$STR_EPOCH_CinderBlockWallWindow";
+        armor = 10000;
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\cinder\cinder_eco.paa"};
+		class HitPoints
+		{
+			class Glass_1_hitpoint
+			{
+				armor = arm;
+				material = -1;
+				name = Glass_1;
+				visual = Glass_1_hide;
+				passThrough = 0;
+				radius = rad;
+				convexComponent = Glass_1_hide;
+				class DestructionEffects
+				{
+					class BrokenGlass1
+					{
+						simulation = "particles";
+						type = "BrokenGlass1NB";
+						position = Glass_1_effects;
+						intensity = 0.15000001;
+						interval = 1;
+						lifeTime = 0.05;
+					};
+                };
+			};
+		};	
+		class Damage
+		{
+			tex[] =
+			{
+				"cinderwallWindow\textures\window_set_CA.paa",
+				"cinderwallWindow\textures\destruct_half_window_set_CA.paa",
+				"#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,co)",
+				"#(argb,8,8,3)color(0.294118,0.294118,0.294118,1.0,co)",
+				"#(argb,8,8,3)color(0.501961,0.25098,0,1.0,co)",
+				"#(argb,8,8,3)color(0.392157,0.196078,0,1.0,co)",
+				"#(argb,8,8,3)color(1,1,0.501961,1.0,co)",
+				"#(argb,8,8,3)color(0.513725,0.513725,0.203922,1.0,co)",
+				"#(argb,8,8,3)color(0.752941,0.752941,0.752941,1.0,co)",
+				"#(argb,8,8,3)color(0.478431,0.478431,0.478431,1.0,co)",
+				"#(argb,8,8,3)color(1,0,0,1.0,co)",
+				"#(argb,8,8,3)color(0.701961,0,0,1.0,co)"				
+			};	
+			mat[] =
+			{
+				"cinderwallWindow\textures\window_set.rvmat",
+				"cinderwallWindow\textures\destruct_half_window_set.rvmat",
+				"A3\Structures_F\Data\Windows\destruct_full_window_set.rvmat"
+		    };	
+	    };
+        class AnimationSources
+		{
+			class open_shutters
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+			};
+			class open_shutters_bot
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+			};	
+			class Glass_1_source
+			{
+				source = Hit;
+				hitpoint = Glass_1_hitpoint;
+				raw = 1;
+			};
+		};
+		class UserActions
+		{
+		    class open_shutters
+			{
+				displayName = "$STR_EPOCH_OpenHatch";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				position = "lock";
+				radius = 1;
+				OnlyForPlayer = 1;
+				condition = "this animationPhase ""open_shutters"" < 0.5";
+                statement = "this animate [""open_shutters"", 1]; this animate [""open_shutters_bot"", 1];";
+			};
+			class Close_shutters: open_shutters
+			{
+				displayName = "$STR_EPOCH_CloseHatch";
+				condition = "this animationPhase ""open_shutters"" >= 0.5";
+				statement = "this animate [""open_shutters"", 0]; this animate [""open_shutters_bot"", 0];";
+			};
+		};	
+	};	
     class CinderWallGarage_EPOCH : Const_Cinder_static_F
     {
         author = "Sequisha";
@@ -8932,6 +9031,21 @@ class CfgVehicles
             mat[] = {"x\addons\a3_epoch_assets\textures\plyplank.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
         };
     };
+    class WoodWallWindow_EPOCH : Const_WoodWalls_static_F
+    {
+        author = "Helion4\Sequisha";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\plywall_window.p3d";
+        displayName = "$STR_EPOCH_PlyWallWindow";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
+        selectionDamage = "zbytek";
+        class Damage
+        {
+            tex[] = {};
+            mat[] = {"x\addons\a3_epoch_assets\textures\plyplank.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
+        };
+    };	
     class Tipi_Ghost_EPOCH : Const_Ghost_EPOCH
     {
         author = "Sequisha";

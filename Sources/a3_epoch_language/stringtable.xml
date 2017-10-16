@@ -1525,6 +1525,9 @@
         <Key ID="STR_EPOCH_CinderBlockWall">
             <Original>Cinder Block Wall</Original>
         </Key>
+        <Key ID="STR_EPOCH_CinderBlockWallWindow">
+            <Original>Cinder Block Wall Window</Original>
+        </Key>		
         <Key ID="STR_EPOCH_CinderBlockGarage">
             <Original>Cinder Block Garage</Original>
         </Key>
@@ -1558,9 +1561,12 @@
         <Key ID="STR_EPOCH_PlywoodWallDoorwaySIM">
             <Original>Plywood Wall Doorway (SIM)</Original>
         </Key>
+        <Key ID="STR_EPOCH_PlyWallWindow">
+            <Original>Ply Wall Window</Original>
+        </Key>
         <Key ID="STR_EPOCH_WallDoorway">
             <Original>Wall Doorway</Original>
-        </Key>
+        </Key>		
         <Key ID="STR_EPOCH_PlywoodWallDoorwaywDoorSIM">
             <Original>Plywood Wall Doorway w/ Door (SIM)</Original>
         </Key>
