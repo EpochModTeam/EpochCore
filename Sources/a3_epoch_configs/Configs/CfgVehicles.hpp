@@ -2725,8 +2725,24 @@ class CfgVehicles
 	class bunker_epoch_11 : bunker_epoch {
 		author = "AWOL/Helion4";
 		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_11.p3d";
+	};
+	class bunker_epoch_12 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_12.p3d";
 	};	
-
+	class bunker_epoch_13 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_13.p3d";
+	};
+	class bunker_epoch_14 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_14.p3d";
+	};
+	class bunker_epoch_15 : bunker_epoch {
+		author = "AWOL/Helion4";
+		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_15.p3d";
+	};	
+	
     class Bag_Base;
     class smallbackpack_red_epoch : Bag_Base
     {
@@ -8833,6 +8849,7 @@ class CfgVehicles
 				source = "user";
 				animPeriod = 3;
 				initPhase = 0;
+				sound = "MetalOldBigDoorsSound";
 			};
 			class open_shutters_bot
 			{
