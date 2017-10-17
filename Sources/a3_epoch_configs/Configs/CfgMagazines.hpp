@@ -3370,7 +3370,6 @@ class CfgMagazines
 		descriptionShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedDesc";
 		displayNameShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedNameShort";
 		ammo = "B_30mm_MP_Tracer_Red";
-		displaynameshort = "MP-T";
 		count = 140;
 	};
 	class 140Rnd_30mm_MP_shells_Tracer_Green: 140Rnd_30mm_MP_shells_Tracer_Red
