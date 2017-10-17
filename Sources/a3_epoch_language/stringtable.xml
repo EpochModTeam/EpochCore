@@ -3939,7 +3939,7 @@
 		<Key ID="STR_EPOCH_NanitePills">
 			<Original>Nanite Pills</Original>
 		</Key>
-		<Key ID="STR_EPOCH_NanitePills">
+		<Key ID="STR_EPOCH_NanitePillsDesc">
 			<Original>Ingest 1 million nanite bots that will attack and reduce radiation poisoning</Original>
 		</Key>
 		<Key ID="STR_EPOCH_IodidePills">
