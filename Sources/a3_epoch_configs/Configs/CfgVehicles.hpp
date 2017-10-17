@@ -490,7 +490,6 @@ class CfgVehicles
             init = "_this call EPOCH_localCleanup;";
         };
     };
-    class I_Soldier_base_F;
     class I_Soldier_EPOCH : I_Soldier_base_F
     {
         author = "$STR_A3_Bohemia_Interactive";
