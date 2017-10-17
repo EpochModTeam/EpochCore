@@ -3369,7 +3369,6 @@ class CfgMagazines
 		displayName = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedName";
 		descriptionShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedDesc";
 		displayNameShort = "$STR_EPOCH_140Rnd_30mm_MP_shells_Tracer_RedNameShort";
-		displayName = "30 mm MP-T";
 		ammo = "B_30mm_MP_Tracer_Red";
 		displaynameshort = "MP-T";
 		count = 140;
