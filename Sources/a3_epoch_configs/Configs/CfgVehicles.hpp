@@ -479,10 +479,6 @@ class CfgVehicles
 	{
 		modelsides[] = {3,2,0};
 	};
-	class I_G_Soldier_base_F: SoldierGB
-	{
-		modelsides[] = {3,2,0};
-	};
 
     class VirtualMan_F;
     class VirtualMan_EPOCH : VirtualMan_F
