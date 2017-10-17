@@ -9124,7 +9124,7 @@ class CfgVehicles
     {
         author = "helion4\DirtySanchez";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets_1\models\half_floor.p3d"; //half_floor_ghost.p3d";
+        model = "\x\addons\a3_epoch_assets_1\models\half_floor_ghost.p3d";
         displayName = "$STR_EPOCH_WoodHalfFloorGhost";
         ladders[] = {};
     };
@@ -9132,7 +9132,7 @@ class CfgVehicles
     {
         author = "helion4\DirtySanchez";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor.p3d"; // quarter_floor_ghost.p3d";
+        model = "\x\addons\a3_epoch_assets_1\models\quarter_floor_ghost.p3d";
         displayName = "$STR_EPOCH_WoodQuarterFloorGhost";
         ladders[] = {};
     };
