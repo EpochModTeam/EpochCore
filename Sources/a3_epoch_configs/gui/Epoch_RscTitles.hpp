@@ -93,7 +93,7 @@ class EpochGameUI2
 			y = "-2.1 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 			(safezoneY + safezoneH - 		(		((safezoneW / safezoneH) min 1.2) / 1.2)) +  			18 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (1 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20))";
 			w = "2.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			h = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			angle=5;
+			angle=-5;
 		};
 		class RscCryptoText : RscText
 		{
@@ -106,7 +106,7 @@ class EpochGameUI2
 			y = "-2.2 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 			(safezoneY + safezoneH - 		(		((safezoneW / safezoneH) min 1.2) / 1.2)) +  			18 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (1 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20))";
 			w = "15 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			h = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			angle=5;
+			angle=-5;
 		};
 
 	};
@@ -132,7 +132,7 @@ class EpochGameUI3
 			y = "0 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 			(safezoneY + safezoneH - 		(		((safezoneW / safezoneH) min 1.2) / 1.2)) +  			18 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (1 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20))";
 			w = "2.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			h = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			angle=5;
+			angle=-6;
 		};
 		class RscEnergyText : RscText
 		{
@@ -145,7 +145,7 @@ class EpochGameUI3
 			y = "-0.1 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 			(safezoneY + safezoneH - 		(		((safezoneW / safezoneH) min 1.2) / 1.2)) +  			18 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (1 * 			(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20))";
 			w = "15 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			h = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			angle=5;
+			angle=-6;
 		};
 	};
 };
