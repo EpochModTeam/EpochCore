@@ -8797,7 +8797,7 @@ class CfgVehicles
 				name = Glass_1;
 				visual = Glass_1_hide;
 				passThrough = 0;
-				radius = rad;
+				radius = 0.375;
 				convexComponent = Glass_1_hide;
 				class DestructionEffects
 				{

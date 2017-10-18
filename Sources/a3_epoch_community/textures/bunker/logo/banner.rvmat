@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="bunker\bunker\logo\banner_nohq.paa";
+	texture="x\addons\a3_epoch_community\textures\bunker\logo\banner_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="bunker\bunker\logo\banner_smdi.paa";
+	texture="x\addons\a3_epoch_community\textures\bunker\logo\banner_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -68,7 +68,7 @@ class Stage5
 };
 class Stage6
 {
-    	texture="#(ai,32,128,1)fresnel(1.7,7.0)";	//texture="#(ai,64,64,1)fresnel(0.8,0.0)";
+    texture="#(ai,32,128,1)fresnel(1.7,7.0)";
 	uvSource="none";
 };
 class Stage7
