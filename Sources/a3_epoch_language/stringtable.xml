@@ -1234,9 +1234,6 @@
         <Key ID="STR_EPOCH_PaintCanYellow">
             <Original>Paint Can (Yellow)</Original>
         </Key>
-        <Key ID="STR_EPOCH_Poppy">
-            <Original>Poppy</Original>
-        </Key>
         <Key ID="STR_EPOCH_Podoffofapoppyplant">
             <Original>Pod off of a poppy plant.</Original>
         </Key>
@@ -3722,9 +3719,6 @@
 		</Key>
 		<Key ID="STR_EPOCH_MarkerHeart">
 			<Original>Heart</Original>
-		</Key>
-		<Key ID="STR_EPOCH_MarkerHeli">
-			<Original>Heli</Original>
 		</Key>
 		<Key ID="STR_EPOCH_MarkerHeli">
 			<Original>Heli</Original>
