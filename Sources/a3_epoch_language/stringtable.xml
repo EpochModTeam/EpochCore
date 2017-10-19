@@ -382,13 +382,13 @@
 		<Key ID="STR_EPOCH_200Rnd40mmGdesc">
             <Original>Caliber: 40 mm  - Rounds: 200 DSS - Used in: GMG, RCWS</Original>
         </Key>
-		<Key ID="STR_EPOCH_32Rnd40mmGname">
+		<Key ID="STR_EPOCH_32Rnd40mmGdesc">
             <Original>Caliber: 40 mm  - Rounds: 32 DSS - Used in: GMG, RCWS</Original>
         </Key>
-		<Key ID="STR_EPOCH_64Rnd40mmGname">
+		<Key ID="STR_EPOCH_64Rnd40mmGdesc">
             <Original>Caliber: 40 mm  - Rounds: 64 DSS - Used in: GMG, RCWS</Original>
         </Key>
-		<Key ID="STR_EPOCH_96Rnd40mmGname">
+		<Key ID="STR_EPOCH_96Rnd40mmGdesc">
             <Original>Caliber: 40 mm  - Rounds: 96 DSS - Used in: GMG, RCWS</Original>
         </Key>
 		<Key ID="STR_EPOCH_200Rnd30mmGname">
