@@ -3654,6 +3654,12 @@
 		<Key ID="STR_EPOCH_MarkerBG_Triangle">
 			<Original>Background Triangle</Original>
 		</Key>
+		<Key ID="STR_EPOCH_MarkerActive_Yield">
+			<Original>Active Yield</Original>
+		</Key>
+		<Key ID="STR_EPOCH_MarkerBG_Yield">
+			<Original>Background Yield</Original>
+		</Key>
 		<Key ID="STR_EPOCH_MarkerSkull">
 			<Original>Death</Original>
 		</Key>
