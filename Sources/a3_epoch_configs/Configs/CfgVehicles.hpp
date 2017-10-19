@@ -2724,7 +2724,7 @@ class CfgVehicles
 	class bunker_epoch_12 : bunker_epoch {
 		author = "AWOL/Helion4";
 		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_12.p3d";
-	};	
+	};
 	class bunker_epoch_13 : bunker_epoch {
 		author = "AWOL/Helion4";
 		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_13.p3d";
@@ -2736,8 +2736,8 @@ class CfgVehicles
 	class bunker_epoch_15 : bunker_epoch {
 		author = "AWOL/Helion4";
 		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_15.p3d";
-	};	
-	
+	};
+
     class Bag_Base;
     class smallbackpack_red_epoch : Bag_Base
     {
@@ -3102,13 +3102,14 @@ class CfgVehicles
             mat[] = {"A3\boat_f\Boat_Transport_01\data\Boat_Transport_01.rvmat","A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_damage.rvmat","A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_damage.rvmat"};
         };
     };
+
     class ebike_epoch : Car_F
     {
         mapSize = 3.56;
         author = "Kiory";
         scope = 2;
         displayName = "$STR_EPOCH_ElectricMotorcycle";
-        vehicleclass = "Epoch_objects";
+        vehicleclass = "Car";
         model = "\x\addons\a3_epoch_vehicles\ebike.p3d";
         picture = "\x\addons\a3_epoch_vehicles\data\ebike.paa";
         icon = "\A3\Soft_F\Quadbike_01\Data\UI\map_Quad_CA.paa";
@@ -8782,8 +8783,8 @@ class CfgVehicles
 	class CinderWall_window_EPOCH : Const_Cinder_static_F
     {
 		author = "Helion4\Sequisha";
-		scope = 2; 
-		model = "\x\addons\a3_epoch_community\Cinder_window\cinder_window.p3d"; 
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\Cinder_window\cinder_window.p3d";
         displayName = "$STR_EPOCH_CinderBlockWallWindow";
         armor = 10000;
         hiddenSelections[] = {"Camo"};
@@ -8812,7 +8813,7 @@ class CfgVehicles
 					};
                 };
 			};
-		};	
+		};
 		class Damage
 		{
 			tex[] =
@@ -8828,14 +8829,14 @@ class CfgVehicles
 				"#(argb,8,8,3)color(0.752941,0.752941,0.752941,1.0,co)",
 				"#(argb,8,8,3)color(0.478431,0.478431,0.478431,1.0,co)",
 				"#(argb,8,8,3)color(1,0,0,1.0,co)",
-				"#(argb,8,8,3)color(0.701961,0,0,1.0,co)"				
-			};	
+				"#(argb,8,8,3)color(0.701961,0,0,1.0,co)"
+			};
 			mat[] =
 			{
 				"x\addons\a3_epoch_community\textures\cinder_window\window_set.rvmat",
 				"x\addons\a3_epoch_community\textures\cinder_window\destruct_half_window_set.rvmat",
 				"A3\Structures_F\Data\Windows\destruct_full_window_set.rvmat"
-		    };	
+		    };
 	    };
         class AnimationSources
 		{
@@ -8851,7 +8852,7 @@ class CfgVehicles
 				source = "user";
 				animPeriod = 3;
 				initPhase = 0;
-			};	
+			};
 			class Glass_1_source
 			{
 				source = Hit;
@@ -8877,8 +8878,8 @@ class CfgVehicles
 				condition = "this animationPhase ""open_shutters"" >= 0.5";
 				statement = "this animate [""open_shutters"", 0]; this animate [""open_shutters_bot"", 0];";
 			};
-		};	
-	};	
+		};
+	};
     class CinderWallGarage_EPOCH : Const_Cinder_static_F
     {
         author = "Sequisha";
@@ -9061,7 +9062,7 @@ class CfgVehicles
             tex[] = {};
             mat[] = {"x\addons\a3_epoch_assets\textures\plyplank.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
         };
-    };	
+    };
     class Tipi_Ghost_EPOCH : Const_Ghost_EPOCH
     {
         author = "Sequisha";
