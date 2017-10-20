@@ -123,6 +123,31 @@ class CfgSounds
 		sound[] = {"\x\addons\a3_epoch_community\sounds\digital_geiger\digital_geiger_3.ogg",1.0,1.0};
 		titles[] = {};
 	};
+    class geiger_epoch_0
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger0.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_epoch_1
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger1.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_epoch_2
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger2.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_epoch_3
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger3.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_epoch_4
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger4.ogg",1.0,1.0};
+		titles[] = {};
+	};
 	class vehicle_repair
 	{
 		sound[] = {"A3\Sounds_F\sfx\UI\vehicles\Vehicle_Repair",1.0,1.0};
