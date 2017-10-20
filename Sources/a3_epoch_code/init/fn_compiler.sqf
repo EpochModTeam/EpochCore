@@ -10,7 +10,7 @@
     Arma Public License Share Alike (APL-SA) - https://www.bistudio.com/community/licenses/arma-public-license-share-alike
 
     Github:
-    https://github.com/EpochModTeam/EpochCore/tree/release/Sources/a3_epoch_code/init/EPOCH_compiler.sqf
+    https://github.com/EpochModTeam/Epoch/tree/release/Sources/epoch_code/compile/both/EPOCH_compiler.sqf
 
     Example:
     "CfgServerFunctions" call EPOCH_fnc_compiler;
@@ -24,7 +24,7 @@
 	BOOL
 */
 //[[[cog import generate_private_arrays ]]]
-private ["_code","_config","_config_name","_customVarNames","_customVarsInit","_file","_file_raw","_file_tag","_fnc_path","_header","_missionConfig","_tag","_test","_var_name","_version"];
+private ["_code","_config","_config_name","_customVarNames","_customVarsInit","_file","_file_raw","_file_tag","_fnc_path","_header","_missionConfig","_randomValues","_rng","_tag","_var_name","_version"];
 //[[[end]]]
 params [["_configName","",[""] ] ];
 
@@ -37,9 +37,16 @@ if (isClass _missionConfig) then{
 // custom header for interscript communications
 _customVarsInit = getArray(getMissionConfig "CfgEpochClient" >> "customVarsDefaults");
 _customVarNames = _customVarsInit apply {_x param [0,""]};
+_randomValues = [];
 _header = "";
 {
-    _header = _header + format["_player%1Key = 'EPOCH_%2';",_x, round(diag_tickTime + random 99999)];
+	while {true} do {
+		_rng = round(diag_tickTime + random 99999);
+		if !(_rng in _randomValues) exitWith {
+			_randomValues pushBack _rng;
+			_header = _header + format["_player%1Key = 'EPOCH_%2';",_x, _rng];
+		};
+	};
 } forEach _customVarNames;
 
 _version = getNumber(_config >> "version");
