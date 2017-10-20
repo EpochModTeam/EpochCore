@@ -6179,7 +6179,7 @@ class CfgWeapons
         author = "ComatoseBadger/DirtySanchez";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "$STR_EPOCH_FemalePantsNShirt";
+        displayName = "$STR_EPOCH_FemaleJeansPatched1";
 		descriptionShort = "$STR_EPOCH_FemaleJeansPatched1Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched1_icon_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
@@ -6193,7 +6193,8 @@ class CfgWeapons
     };
 	class U_JeansPatched2_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched2Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched2";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched2Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched2_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6202,7 +6203,8 @@ class CfgWeapons
     };
 	class U_JeansPatched3_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched3Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched3";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched3Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched3_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6211,7 +6213,8 @@ class CfgWeapons
     };
 	class U_JeansPatched4_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched4Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched4";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched4Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched4_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6220,7 +6223,8 @@ class CfgWeapons
     };
 	class U_JeansPatched5_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched5Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched5";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched5Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched5_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6229,7 +6233,8 @@ class CfgWeapons
     };
 	class U_JeansPatched6_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched6Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched6";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched6Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched6_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6238,7 +6243,8 @@ class CfgWeapons
     };
 	class U_JeansPatched7_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched7Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched7";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched7Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched7_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6247,7 +6253,8 @@ class CfgWeapons
     };
 	class U_JeansPatched8_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched8Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched8";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched8Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched8_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6256,7 +6263,8 @@ class CfgWeapons
     };
 	class U_JeansPatched9_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched9Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched9";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched9Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched9_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6265,7 +6273,8 @@ class CfgWeapons
     };
 	class U_JeansPatched10_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched10Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched10";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched10Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched10_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6274,7 +6283,8 @@ class CfgWeapons
     };
 	class U_JeansPatched11_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched11Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched11";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched11Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched11_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6283,7 +6293,8 @@ class CfgWeapons
     };
 	class U_JeansPatched12_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched12Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched12";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched12Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched12_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6292,7 +6303,8 @@ class CfgWeapons
     };
 	class U_JeansPatched13_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched13Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched13";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched13Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched13_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6301,7 +6313,8 @@ class CfgWeapons
     };
 	class U_JeansPatched14_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched14Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched14";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched14Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched14_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6310,7 +6323,8 @@ class CfgWeapons
     };
 	class U_JeansPatched15_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched15Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched15";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched15Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched15_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6319,7 +6333,8 @@ class CfgWeapons
     };
 	class U_JeansPatched16_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched16Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched16";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched16Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched16_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6328,7 +6343,8 @@ class CfgWeapons
     };
 	class U_JeansPatched17_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched17Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched17";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched17Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched17_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6337,7 +6353,8 @@ class CfgWeapons
     };
 	class U_JeansPatched18_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched18Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched18";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched18Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched18_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6346,7 +6363,8 @@ class CfgWeapons
     };
 	class U_JeansPatched19_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched19Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched19";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched19Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched19_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6355,7 +6373,8 @@ class CfgWeapons
     };
 	class U_JeansPatched20_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched20Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched20";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched20Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched20_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6364,7 +6383,8 @@ class CfgWeapons
     };
 	class U_JeansPatched21_uniform : U_JeansPatched1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansPatched21Desc";
+        displayName = "$STR_EPOCH_FemaleJeansPatched21";
+		descriptionShort = "$STR_EPOCH_FemaleJeansPatched21Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_Jeanspatched21_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6376,7 +6396,7 @@ class CfgWeapons
         author = "ComatoseBadger/DirtySanchez";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "$STR_EPOCH_FemalePantsNShirt";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn1";
 		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn1Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN1_icon_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
@@ -6390,7 +6410,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn2_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn2Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn2";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn2Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN2_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6399,7 +6420,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn3_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn3Desc";
+		displayName = "$STR_EPOCH_FemaleJeansBlkBrn3";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn3Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN3_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6408,7 +6430,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn4_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn4Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn4";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn4Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN4_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6417,7 +6440,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn5_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn5Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn5";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn5Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN5_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6426,7 +6450,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn6_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn6Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn6";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn6Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN6_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6435,7 +6460,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn7_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn7Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn7";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn7Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN7_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6444,7 +6470,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn8_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn8Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn8";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn8Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN8_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6453,7 +6480,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn9_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn9Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn9";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn9Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN9_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6462,7 +6490,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn10_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn10Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn10";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn10Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN10_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6471,7 +6500,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn11_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn11Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn11";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn11Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN11_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6480,7 +6510,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn12_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn12Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn12";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn12Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN12_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6489,7 +6520,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn13_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn13Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn13";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn13Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN13_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6498,7 +6530,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn14_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn14Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn14";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn14Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN14_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6507,7 +6540,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn15_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn15Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn15";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn15Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN15_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6516,7 +6550,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn16_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn16Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn16";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn16Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN16_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6525,7 +6560,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn17_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn17Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn17";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn17Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN17_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6534,7 +6570,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn18_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn18Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn18";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn18Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN18_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6543,7 +6580,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn19_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn19Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn19";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn19Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN19_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6552,7 +6590,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn20_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn20Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn20";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn20Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN20_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6561,7 +6600,8 @@ class CfgWeapons
     };
 	class U_JeansBlkBrn21_uniform : U_JeansBlkBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn21Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlkBrn21";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlkBrn21Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBLKBRN21_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6573,7 +6613,7 @@ class CfgWeapons
         author = "ComatoseBadger/DirtySanchez";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "$STR_EPOCH_FemalePantsNShirt";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn1";
 		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn1Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn1_icon_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
@@ -6587,7 +6627,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn2_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn2Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn2";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn2Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn2_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6596,7 +6637,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn3_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn3Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn3";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn3Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn3_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6605,7 +6647,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn4_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn4Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn4";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn4Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn4_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6614,7 +6657,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn5_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn5Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn5";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn5Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn5_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6623,7 +6667,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn6_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn6Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn6";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn6Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn6_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6632,7 +6677,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn7_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn7Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn7";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn7Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn7_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6641,7 +6687,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn8_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn8Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn8";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn8Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn8_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6650,7 +6697,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn9_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn9Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn9";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn9Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn9_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6659,7 +6707,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn10_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn10Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn10";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn10Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn10_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6668,7 +6717,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn11_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn11Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn11";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn11Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn11_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6677,7 +6727,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn12_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn12Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn12";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn12Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn12_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6686,7 +6737,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn13_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn13Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn13";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn13Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn13_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6695,7 +6747,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn14_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn14Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn14";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn14Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn14_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6704,7 +6757,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn15_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn15Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn15";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn15Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn15_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6713,7 +6767,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn16_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn16Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn16";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn16Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn16_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6722,7 +6777,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn17_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn17Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn17";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn17Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn17_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6731,7 +6787,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn18_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn18Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn18";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn18Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn18_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6740,7 +6797,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn19_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn19Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn19";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn19Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn19_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6749,7 +6807,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn20_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn20Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn20";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn20Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn20_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6758,7 +6817,8 @@ class CfgWeapons
     };
 	class U_JeansArBrn21_uniform : U_JeansArBrn1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansArBrn21Desc";
+        displayName = "$STR_EPOCH_FemaleJeansArBrn21";
+		descriptionShort = "$STR_EPOCH_FemaleJeansArBrn21Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansArBrn21_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6770,7 +6830,7 @@ class CfgWeapons
         author = "ComatoseBadger/DirtySanchez";
         scope = 2;
         allowedSlots[] = {901};
-        displayName = "$STR_EPOCH_FemalePantsNShirt";
+        displayName = "$STR_EPOCH_FemaleJeansBlack1";
 		descriptionShort = "$STR_EPOCH_FemaleJeansBlack1Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack1_icon_ca.paa";
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
@@ -6784,7 +6844,8 @@ class CfgWeapons
     };
 	class U_JeansBlack2_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack2Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack2";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack2Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack2_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6793,7 +6854,8 @@ class CfgWeapons
     };
 	class U_JeansBlack3_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack3Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack3";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack3Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack3_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6802,7 +6864,8 @@ class CfgWeapons
     };
 	class U_JeansBlack4_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack4Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack4";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack4Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack4_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6811,7 +6874,8 @@ class CfgWeapons
     };
 	class U_JeansBlack5_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack5Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack5";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack5Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack5_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6820,7 +6884,8 @@ class CfgWeapons
     };
 	class U_JeansBlack6_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack6Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack6";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack6Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack6_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6829,7 +6894,8 @@ class CfgWeapons
     };
 	class U_JeansBlack7_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack7Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack7";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack7Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack7_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6838,7 +6904,8 @@ class CfgWeapons
     };
 	class U_JeansBlack8_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack8Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack8";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack8Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack8_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6847,7 +6914,8 @@ class CfgWeapons
     };
 	class U_JeansBlack9_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack9Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack9";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack9Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack9_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6856,7 +6924,8 @@ class CfgWeapons
     };
 	class U_JeansBlack10_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack10Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack10";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack10Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack10_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6865,7 +6934,8 @@ class CfgWeapons
     };
 	class U_JeansBlack11_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack11Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack11";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack11Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack11_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6874,7 +6944,8 @@ class CfgWeapons
     };
 	class U_JeansBlack12_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack12Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack12";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack12Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack12_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6883,7 +6954,8 @@ class CfgWeapons
     };
 	class U_JeansBlack13_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack13Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack13";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack13Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack13_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6892,7 +6964,8 @@ class CfgWeapons
     };
 	class U_JeansBlack14_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack14Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack14";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack14Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack14_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6901,7 +6974,8 @@ class CfgWeapons
     };
 	class U_JeansBlack15_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack15Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack15";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack15Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack15_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6910,7 +6984,8 @@ class CfgWeapons
     };
 	class U_JeansBlack16_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack16Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack16";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack16Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack16_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6919,7 +6994,8 @@ class CfgWeapons
     };
 	class U_JeansBlack17_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack17Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack17";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack17Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack17_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6928,7 +7004,8 @@ class CfgWeapons
     };
 	class U_JeansBlack18_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack18Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack18";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack18Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack18_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6937,7 +7014,8 @@ class CfgWeapons
     };
 	class U_JeansBlack19_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack19Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack19";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack19Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack19_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6946,7 +7024,8 @@ class CfgWeapons
     };
 	class U_JeansBlack20_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack20Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack20";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack20Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack20_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
@@ -6955,7 +7034,8 @@ class CfgWeapons
     };
 	class U_JeansBlack21_uniform : U_JeansBlack1_uniform
     {
-        descriptionShort = "$STR_EPOCH_FemaleJeansBlack21Desc";
+        displayName = "$STR_EPOCH_FemaleJeansBlack21";
+		descriptionShort = "$STR_EPOCH_FemaleJeansBlack21Desc";
         picture = "\x\addons\a3_epoch_community\icons\female_outfits\Female_JeansBlack21_icon_ca.paa";
         class ItemInfo : ItemInfo
         {
