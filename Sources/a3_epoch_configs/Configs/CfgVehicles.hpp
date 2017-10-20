@@ -11094,11 +11094,6 @@ class CfgVehicles
 		displayName = "$STR_EPOCH_BarbedWire";
 		destrType = "DestructWall";
 		armor = 1000;
-		class Damage
-		{
-			tex[] = {};
-			mat[] = {"\x\addons\a3_epoch_community\textures\barbed_wire\barbed_wire.rvmat"};
-		};
 	};
 	class BarbedWire_SIM_EPOCH: Const_Ghost_EPOCH
 	{
