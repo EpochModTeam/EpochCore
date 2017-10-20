@@ -11086,13 +11086,13 @@ class CfgVehicles
 			};
 		};
 	};
-	class Land_New_WiredFence_10m_F;
-	class BarbedWire_EPOCH: Land_New_WiredFence_10m_F
+	class BarbedWire_EPOCH: Constructions_static_F
 	{
 		author = "Helion4/DirtySanchez";
 		scope = 2;
 		model = "\x\addons\a3_epoch_community\models\barbed_wire.p3d";
 		displayName = "$STR_EPOCH_BarbedWire";
+		destrType = "DestructWall";
 		armor = 1000;
 		class Damage
 		{
@@ -11100,7 +11100,15 @@ class CfgVehicles
 			mat[] = {"\x\addons\a3_epoch_community\textures\barbed_wire\barbed_wire.rvmat"};
 		};
 	};
-	class BarbedWire_EPOCH_Ghost: Land_New_WiredFence_10m_F
+	class BarbedWire_SIM_EPOCH: Const_Ghost_EPOCH
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\barbed_wire_Ghost.p3d";
+		displayName = "$STR_EPOCH_BarbedWire_Ghost";
+		ladders[] = {};
+	};
+	class BarbedWire_Ghost_EPOCH: Const_Ghost_EPOCH
 	{
 		author = "Helion4/DirtySanchez";
 		scope = 2;
