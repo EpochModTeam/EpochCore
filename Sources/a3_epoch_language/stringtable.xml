@@ -2673,6 +2673,9 @@
 		<Key ID="STR_EPOCH_BarbedWire">
             <Original>Barbed Wire</Original>
 		</Key>
+		<Key ID="STR_EPOCH_BarbedWire_Ghost">
+            <Original>Barbed Wire Ghost</Original>
+		</Key>
 		<Key ID="STR_EPOCH_BarbedWireDesc">
             <Original>Barbed wire fence to protect yourself from many different enemies</Original>
 		</Key>

@@ -11100,6 +11100,14 @@ class CfgVehicles
 			mat[] = {"\x\addons\a3_epoch_community\textures\barbed_wire\barbed_wire.rvmat"};
 		};
 	};
+	class BarbedWire_EPOCH_Ghost: Land_New_WiredFence_10m_F
+	{
+		author = "Helion4/DirtySanchez";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\barbed_wire_Ghost.p3d";
+		displayName = "$STR_EPOCH_BarbedWire_Ghost";
+		armor = 1000;
+	};	
 	class CinderWallDoorwHatch_EPOCH: Const_Cinder_static_F
 	{
 		author = "Helion4/DirtySanchez";
