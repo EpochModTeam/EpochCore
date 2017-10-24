@@ -133,6 +133,16 @@ class CfgSounds
 		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger_tick.ogg",1.0,1.0};
 		titles[] = {};
 	};
+    class geiger_epoch_alarm_low
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger_alarm_low.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_epoch_tick_low
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger_tick_low.ogg",1.0,1.0};
+		titles[] = {};
+	};
 	class vehicle_repair
 	{
 		sound[] = {"A3\Sounds_F\sfx\UI\vehicles\Vehicle_Repair",1.0,1.0};
