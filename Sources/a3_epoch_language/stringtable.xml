@@ -2730,6 +2730,24 @@
 		<Key ID="STR_EPOCH_MetalFloorDesc">
             <Original>Hand crafted and forged by your own strength and wisdom</Original>
         </Key>
+		<Key ID="STR_EPOCH_MetalHalfFloor">
+            <Original>Metal Half Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalHalfFloorGhost">
+            <Original>Metal Half Floor Ghost</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalHalfFloorDesc">
+            <Original>Hand crafted and forged by your own strength and wisdom</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalQuarterFloor">
+            <Original>Metal Quarter Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalQuarterFloorGhost">
+            <Original>Metal Quarter Floor Ghost</Original>
+        </Key>
+		<Key ID="STR_EPOCH_MetalQuarterFloorDesc">
+            <Original>Hand crafted and forged by your own strength and wisdom</Original>
+        </Key>
 		<Key ID="STR_EPOCH_MetalTower">
             <Original>Metal Tower</Original>
         </Key>
@@ -2747,6 +2765,24 @@
 		</Key>
 		<Key ID="STR_EPOCH_CinderFloorDesc">
             <Original>Hand poured and formed with your new knowledge of cinder construction</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderHalfFloor">
+            <Original>Cinder Half Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderHalfFloorGhost">
+            <Original>Cinder Half Floor Ghost</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderHalfFloorDesc">
+            <Original>Hand crafted and forged by your own strength and wisdom</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderQuarterFloor">
+            <Original>Cinder Quarter Floor</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderQuarterFloorGhost">
+            <Original>Cinder Quarter Floor Ghost</Original>
+        </Key>
+		<Key ID="STR_EPOCH_CinderQuarterFloorDesc">
+            <Original>Hand crafted and forged by your own strength and wisdom</Original>
         </Key>
 		<Key ID="STR_EPOCH_CinderTower">
             <Original>Cinder Tower</Original>

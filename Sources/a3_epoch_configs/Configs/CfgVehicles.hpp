@@ -7748,6 +7748,22 @@ class CfgVehicles
         displayName = "$STR_EPOCH_MetalFloor";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
+	class MetalHalfFloor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\metal_floor_half.p3d";
+        displayName = "$STR_EPOCH_MetalHalfFloor";
+        slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+    };
+	class MetalQuarterFloor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\metal_floor_quarter.p3d";
+        displayName = "$STR_EPOCH_MetalQuarterFloor";
+        slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+    };
     class WoodLargeWall_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
@@ -9033,6 +9049,24 @@ class CfgVehicles
             mat[] = {"x\addons\a3_epoch_assets_1\textures\metal_floor.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
         };
     };
+	class MetalHalfFloor_EPOCH : Const_floors_static_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\metal_floor_half.p3d";
+        displayName = "$STR_EPOCH_MetalHalfFloor";
+        hiddenSelections[] = {"camo","camo1","camo2"};
+        hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets_1\textures\mf_co.paa","a3\structures_f\data\metal\metal_rollup_co.paa","a3\structures_f\data\metal\metal_plates3_co.paa"};
+    };
+	class MetalQuarterFloor_EPOCH : Const_floors_static_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\metal_floor_quarter.p3d";
+        displayName = "$STR_EPOCH_MetalQuarterFloor";
+        hiddenSelections[] = {"camo","camo1","camo2"};
+        hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets_1\textures\mf_co.paa","a3\structures_f\data\metal\metal_rollup_co.paa","a3\structures_f\data\metal\metal_plates3_co.paa"};
+    };
     class WoodLargeWall_EPOCH : Const_WoodWalls_static_F
     {
         author = "Sequisha";
@@ -9143,6 +9177,22 @@ class CfgVehicles
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\metal_floor_ghost.p3d";
         displayName = "$STR_EPOCH_MetalFloorGhost";
+        ladders[] = {};
+    };
+	class MetalHalfFloor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "helion4\DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\metal_floor_half_ghost.p3d";
+        displayName = "$STR_EPOCH_MetalHalfFloorGhost";
+        ladders[] = {};
+    };
+	class MetalQuarterFloor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "helion4\DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\metal_floor_quarter_Ghost.p3d";
+        displayName = "$STR_EPOCH_MetalQuarterFloorGhost";
         ladders[] = {};
     };
     class WoodLadder_Ghost_EPOCH : Const_Ghost_EPOCH
@@ -11023,6 +11073,22 @@ class CfgVehicles
 		displayName = "$STR_EPOCH_CinderFloor";
 		slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
 	};
+	class CinderHalfFloor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\cinderfloor_half.p3d";
+        displayName = "$STR_EPOCH_CinderHalfFloor";
+        slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+    };
+	class CinderQuarterFloor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\cinderfloor_quarter.p3d";
+        displayName = "$STR_EPOCH_CinderQuarterFloor";
+        slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
+    };
 	class CinderFloor_EPOCH: Const_floors_static_F
 	{
 		author = "Helion4/DirtySanchez";
@@ -11039,6 +11105,24 @@ class CfgVehicles
 			mat[] = {"x\addons\a3_epoch_assets_1\textures\metal_floor.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
 		};
 	};
+	class CinderHalfFloor_EPOCH : Const_floors_static_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Cinderfloor_half.p3d";
+        displayName = "$STR_EPOCH_CinderHalfFloor";
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\cinderfloor\cinderfloor_co.paa"};
+    };
+	class CinderQuarterFloor_EPOCH : Const_floors_static_F
+    {
+        author = "Helion4/DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Cinderfloor_quarter.p3d";
+        displayName = "$STR_EPOCH_CinderQuarterFloor";
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\cinderfloor\cinderfloor_co.paa"};
+    };
 	class CinderFloor_Ghost_EPOCH: Const_Ghost_EPOCH
 	{
 		author = "Helion4/DirtySanchez";
@@ -11047,6 +11131,22 @@ class CfgVehicles
 		displayName = "$STR_EPOCH_CinderFloorGhost";
 		ladders[] = {};
 	};
+	class CinderHalfFloor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "helion4\DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\cinderfloor_half_ghost.p3d";
+        displayName = "$STR_EPOCH_CinderHalfFloorGhost";
+        ladders[] = {};
+    };
+	class CinderQuarterFloor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "helion4\DirtySanchez";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\cinderfloor_quarter_Ghost.p3d";
+        displayName = "$STR_EPOCH_CinderQuarterFloorGhost";
+        ladders[] = {};
+    };
 	class Wreck_base_F;
 	class Land_Wreck_Satellite_EPOCH: Wreck_base_F
 	{

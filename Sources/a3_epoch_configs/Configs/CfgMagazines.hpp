@@ -2355,6 +2355,50 @@ class CfgMagazines
         count = 1;
         mass = 20;
     };
+	class KitMetalFloor: CA_Magazine
+	{
+		author = "DirtySanchez";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_MetalFloor";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_MetalFloorDesc";
+		count = 1;
+		mass = 20;
+	};
+	class KitMetalHalfFloor : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_MetalHalfFloor";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_MetalHalfFloorDesc";
+        count = 1;
+        mass = 10;
+    };
+	class KitMetalQuarterFloor : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_MetalQuarterFloor";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_MetalQuarterFloorDesc";
+        count = 1;
+        mass = 5;
+    };
+	class KitMetalTower: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "$STR_EPOCH_MetalTower";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_MetalTowerDesc";
+		count = 1;
+		mass = 20;
+	};
     class KitCinderWall : CA_Magazine
     {
         author = "Sequisha";
@@ -2365,6 +2409,61 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_CinderWall";
         count = 1;
         mass = 20;
+    };
+	class KitCinderWallDoorwHatch : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+		scope = 2;
+        count = 1;
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_CinderBlockDoorwHatch";
+        descriptionShort = "$STR_EPOCH_CinderBlockDoorwHatchDesc";
+        mass = 20;
+    };
+	class KitCinderFloor: CA_Magazine
+	{
+		author = "DirtySanchez";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_CinderFloor";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_CinderFloorDesc";
+		count = 1;
+		mass = 20;
+	};
+	class KitCinderHalfFloor : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_CinderHalfFloor";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_CinderHalfFloorDesc";
+        count = 1;
+        mass = 10;
+    };
+	class KitCinderQuarterFloor : CA_Magazine
+    {
+        author = "Helion4/DirtySanchez";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_CinderQuarterFloor";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_CinderQuarterFloorDesc";
+        count = 1;
+        mass = 5;
+    };
+	class KitCinderTower: CA_Magazine
+	{
+		author = "Helion4/DirtySanchez";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
+		displayName = "$STR_EPOCH_CinderTower";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_CinderTowerDesc";
+		count = 1;
+		mass = 20;
     };
     class PaintCanBase : CA_Magazine
     {
@@ -4423,17 +4522,6 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_BarbedWireDesc";
         mass = 20;
     };
-	class KitCinderWallDoorwHatch : CA_Magazine
-    {
-        author = "Helion4/DirtySanchez";
-		scope = 2;
-        count = 1;
-        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-        displayName = "$STR_EPOCH_CinderBlockDoorwHatch";
-        descriptionShort = "$STR_EPOCH_CinderBlockDoorwHatchDesc";
-        mass = 20;
-    };
 	class ItemCanvas : CA_Magazine
     {
         author = "Helion4/DirtySanchez";
@@ -4470,50 +4558,6 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_TentDomeDesc";
         mass = 20;
     };
-	class KitMetalFloor: CA_Magazine
-	{
-		author = "DirtySanchez";
-		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
-		displayName = "$STR_EPOCH_MetalFloor";
-		scope = 2;
-		descriptionShort = "$STR_EPOCH_MetalFloorDesc";
-		count = 1;
-		mass = 20;
-	};
-	class KitMetalTower: CA_Magazine
-	{
-		author = "Helion4/DirtySanchez";
-		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
-		displayName = "$STR_EPOCH_MetalTower";
-		scope = 2;
-		descriptionShort = "$STR_EPOCH_MetalTowerDesc";
-		count = 1;
-		mass = 20;
-	};
-	class KitCinderFloor: CA_Magazine
-	{
-		author = "DirtySanchez";
-		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
-		displayName = "$STR_EPOCH_CinderFloor";
-		scope = 2;
-		descriptionShort = "$STR_EPOCH_CinderFloorDesc";
-		count = 1;
-		mass = 20;
-	};
-	class KitCinderTower: CA_Magazine
-	{
-		author = "Helion4/DirtySanchez";
-		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa"; // needs icon
-		displayName = "$STR_EPOCH_CinderTower";
-		scope = 2;
-		descriptionShort = "$STR_EPOCH_CinderTowerDesc";
-		count = 1;
-		mass = 20;
-  };
 	class Kit_IG_Box_s: CA_Magazine
 	{
 		author="Helion / Timst";
