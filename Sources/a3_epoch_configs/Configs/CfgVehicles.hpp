@@ -11584,6 +11584,14 @@ class CfgVehicles
 		destrType="IG Logo";
 		armor=20;
 	};
+	class IG_Logo_small: NonStrategic
+	{
+		model="\x\addons\a3_epoch_community\models\IG_logo_small.p3d";
+		mapSize=2;
+		accuracy=1000;
+		destrType="IG Logo small";
+		armor=20;
+	};
 	class IG_Box_s_SIM: Constructions_modular_F
 	{
 		author="Helion / Timst";
