@@ -732,7 +732,7 @@ class Epoch_main_config_title: RscText
 	w = 40 * GUI_GRID_W;
 	h = 1 * GUI_GRID_H;
 	text = "Epoch Configuration";
-	colorBackground[] = {0.76,0.5,0.07,0.8};
+	colorBackground[] = {0,0,0,0.5};
 	colorText[] = {1,1,1,1};
 	shadow = 1;
 };
