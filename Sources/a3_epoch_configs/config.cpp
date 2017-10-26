@@ -36,6 +36,7 @@ class CfgPatches
 			//"A3_Anims_F_Config_Sdr",
 			//"A3_Anims_F_Config_Sdr_WeaponSwitching",
 			"A3_Characters_F",
+			"A3_Characters_F_Exp_Civil",
 			"A3_Data_F",
 			"A3_Weapons_F",
 			"A3_Functions_F",
