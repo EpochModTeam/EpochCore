@@ -250,7 +250,7 @@ class EpochConfigKeyMap: RscControlsGroupNoScrollbars
 			y = 0.022 * safezoneH;
 			w = 0.103171 * safezoneW;
 			h = 0.022 * safezoneH;
-			colorBackground[] = {0.76,0.5,0.07,0.8};
+			colorBackground[] = {0,0,0,0.5};
 		};
 		class rmx_eckm_BG_action: IGUIBack
 		{
@@ -260,7 +260,7 @@ class EpochConfigKeyMap: RscControlsGroupNoScrollbars
 			y = 0.022 * safezoneH;
 			w = 0.103171 * safezoneW;
 			h = 0.022 * safezoneH;
-			colorBackground[] = {0.76,0.5,0.07,0.8};
+			colorBackground[] = {0,0,0,0.5};
 		};
 		class rmx_eckm_txt_assign: RscText
 		{

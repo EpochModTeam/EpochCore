@@ -16,6 +16,7 @@ class RscTitles
 #include "SelectGender.hpp"
 #include "TradeNPCMenu.hpp"
 #include "GroupRequests.hpp"
+#include "TempGroupRequests.hpp"
 #include "InteractBank.hpp"
 #include "Trade.hpp"
 
@@ -25,6 +26,8 @@ class RscTitles
 // #include "RscInGameUI.hpp"
 #include "EpochLoadingScreen.hpp"
 #include "EPOCH_createGrp.hpp"
+#include "EPOCH_createTempGrp.hpp"
 #include "Epoch_myGroup.hpp"
+#include "Epoch_myTempGroup.hpp"
 #include "Epoch_GroupInvite.hpp"
 #include "SKN_AdminMenu.hpp"

@@ -84,7 +84,7 @@ class CfgGesturesMale
             canPullTrigger = 0;
             rightHandIKBeg = 0;
             rightHandIKEnd = 0;
-            rightHandIKCurve[] = {0,1};
+            rightHandIKCurve[] = {1};
             leftHandIKBeg = 1;
             leftHandIKEnd = 1;
             leftHandIKCurve[] = {0,1,0.008333,0,0.991667,0,1.0,1};
@@ -98,7 +98,7 @@ class CfgGesturesMale
             canPullTrigger = 0;
             rightHandIKBeg = 0;
             rightHandIKEnd = 0;
-            rightHandIKCurve[] = {0,1};
+            rightHandIKCurve[] = {1};
             leftHandIKBeg = 1;
             leftHandIKEnd = 1;
             leftHandIKCurve[] = {0,1,0.008333,0,0.991667,0,1.0,1};
@@ -112,7 +112,7 @@ class CfgGesturesMale
             canPullTrigger = 0;
             rightHandIKBeg = 0;
             rightHandIKEnd = 0;
-            rightHandIKCurve[] = {0,1};
+            rightHandIKCurve[] = {1};
             leftHandIKBeg = 1;
             leftHandIKEnd = 1;
             leftHandIKCurve[] = {0,1,0.016667,1,0.02459,0,0.983333,0,0.991667,1};
@@ -126,7 +126,7 @@ class CfgGesturesMale
             canPullTrigger = 0;
             rightHandIKBeg = 0;
             rightHandIKEnd = 0;
-            rightHandIKCurve[] = {0,1};
+            rightHandIKCurve[] = {1};
             leftHandIKBeg = 1;
             leftHandIKEnd = 1;
             leftHandIKCurve[] = {0,1,0.016667,1,0.02459,0,0.983333,0,0.991667,1};
@@ -140,7 +140,7 @@ class CfgGesturesMale
             canPullTrigger = 0;
             rightHandIKBeg = 0;
             rightHandIKEnd = 0;
-            rightHandIKCurve[] = {0,1};
+            rightHandIKCurve[] = {1};
             leftHandIKBeg = 1;
             leftHandIKEnd = 1;
             leftHandIKCurve[] = {0,1,0.016667,1,0.02459,0,0.983333,0,0.991667,1};
@@ -154,7 +154,7 @@ class CfgGesturesMale
             canPullTrigger = 0;
             rightHandIKBeg = 0;
             rightHandIKEnd = 0;
-            rightHandIKCurve[] = {0,1};
+            rightHandIKCurve[] = {1};
             leftHandIKBeg = 1;
             leftHandIKEnd = 1;
             leftHandIKCurve[] = {0,1,0.016667,1,0.02459,0,0.983333,0,0.991667,1};
@@ -168,7 +168,7 @@ class CfgGesturesMale
             canPullTrigger = 0;
             rightHandIKBeg = 0;
             rightHandIKEnd = 0;
-            rightHandIKCurve[] = {0,1};
+            rightHandIKCurve[] = {1};
             leftHandIKBeg = 1;
             leftHandIKEnd = 1;
             leftHandIKCurve[] = {0,1,0.016667,1,0.02459,0,0.983333,0,0.991667,1};
@@ -182,7 +182,7 @@ class CfgGesturesMale
             canPullTrigger = 0;
             rightHandIKBeg = 0;
             rightHandIKEnd = 0;
-            rightHandIKCurve[] = {0,1};
+            rightHandIKCurve[] = {1};
             leftHandIKBeg = 1;
             leftHandIKEnd = 1;
             leftHandIKCurve[] = {0,1,0.016667,1,0.02459,0,0.983333,0,0.991667,1};

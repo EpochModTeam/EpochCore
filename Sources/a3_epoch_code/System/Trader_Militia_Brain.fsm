@@ -533,7 +533,7 @@ class FSM
     {
       name = "do_investigate";
       init = /*%FSM<STATEINIT""">*/"" \n
-       "_nrBodies = nearestObjects [getPos _investigate,_trgtArray , 25];" \n
+       "_nrBodies = nearestObjects [_investigate,_trgtArray , 25];" \n
        "" \n
        "if (count _nrBodies > 0) then {" \n
        "" \n

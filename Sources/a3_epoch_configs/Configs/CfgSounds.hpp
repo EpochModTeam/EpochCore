@@ -98,6 +98,56 @@ class CfgSounds
         sound[] = {"\x\addons\a3_epoch_assets\sounds\cloak\cultist_taunt",0.7,1.0};
         titles[] = {};
     };
+	class police_siren
+	{
+		sound[] = {"\x\addons\a3_epoch_community\sounds\police_siren\police_siren.wav",0.7,1.0};
+		titles[] = {};
+	};
+    class geiger_0
+	{
+		sound[] = {"\x\addons\a3_epoch_community\sounds\digital_geiger\digital_geiger_0.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_1
+	{
+		sound[] = {"\x\addons\a3_epoch_community\sounds\digital_geiger\digital_geiger_1.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_2
+	{
+		sound[] = {"\x\addons\a3_epoch_community\sounds\digital_geiger\digital_geiger_2.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_3
+	{
+		sound[] = {"\x\addons\a3_epoch_community\sounds\digital_geiger\digital_geiger_3.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_epoch_alarm
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger_alarm.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_epoch_tick
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger_tick.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_epoch_alarm_low
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger_alarm_low.ogg",1.0,1.0};
+		titles[] = {};
+	};
+    class geiger_epoch_tick_low
+	{
+		sound[] = {"x\Addons\a3_epoch_assets_1\sounds\geiger\geiger_tick_low.ogg",1.0,1.0};
+		titles[] = {};
+	};
+	class vehicle_repair
+	{
+		sound[] = {"A3\Sounds_F\sfx\UI\vehicles\Vehicle_Repair",1.0,1.0};
+		titles[] = {};
+	};
 };
 
 /*[[[end]]]*/

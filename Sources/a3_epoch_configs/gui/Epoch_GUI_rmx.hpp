@@ -732,7 +732,7 @@ class Epoch_main_config_title: RscText
 	w = 40 * GUI_GRID_W;
 	h = 1 * GUI_GRID_H;
 	text = "Epoch Configuration";
-	colorBackground[] = {0.76,0.5,0.07,0.8};
+	colorBackground[] = {0,0,0,0.5};
 	colorText[] = {1,1,1,1};
 	shadow = 1;
 };
@@ -831,6 +831,35 @@ class rmx_t1
 	font="PolenticalNeon";
 	SizeEx=0.05;
 	colorText[]={1,1,1,1};
+	colorBackground[]={0,0,0,0};
+	linespacing=1;
+	tooltipColorText[]={1,1,1,1};
+	tooltipColorBox[]={1,1,1,1};
+	tooltipColorShade[]={0,0,0,0.64999998};
+};
+
+class fav_keymap: RscText
+{
+	//style = 0x00; //align to left
+	style = 0x01; //align to right
+	sizeEx = 0.04;
+};
+
+class rmx_geigerTXT
+{
+	text="";
+	x=0;
+	y=0;
+	h=0;
+	w=0;
+	type=0;
+	//style=0x02; //align to center
+	style = 0x01; //align to right
+	shadow=1;
+	colorShadow[]={0,0,0,0.1};
+	font="DJBGetDigital";
+	SizeEx=0.08;
+	colorText[]={0.2,0.2,0.2,1};
 	colorBackground[]={0,0,0,0};
 	linespacing=1;
 	tooltipColorText[]={1,1,1,1};

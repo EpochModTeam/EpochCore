@@ -496,7 +496,7 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_sanityCheck > 90;"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_canSee = false;" \n
-           "_nrTrgts = (getPosATL _construct) nearEntities [_trgtArr, _sRange];" \n
+           "_nrTrgts = _construct nearEntities [_trgtArr, _sRange];" \n
            "if(count _nrTrgts >0)then{" \n
            "{" \n
            "if(alive _x)then{" \n

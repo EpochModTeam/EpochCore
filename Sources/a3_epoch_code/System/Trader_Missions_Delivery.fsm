@@ -592,7 +592,7 @@ class FSM
            "" \n
            "if (_plyr getVariable[""inMission"",["""",""""]] select 0 == ""true"") then {" \n
            "_formatMsg = format[""%1"",""You must finish the mission you are on first.""];" \n
-           "[_formatMsg, 5] call Epoch_message;" \n
+           "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
            "_callDispose = true;" \n
            "_doDispose = true;" \n
            "};" \n
@@ -756,14 +756,14 @@ class FSM
        "if (!_skipMIssion && !_callDispose) then {" \n
        "" \n
        "_formatMsg = format[""%1"",_wDiag];" \n
-       "[_formatMsg, 5] call Epoch_message;" \n
+       "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "" \n
        "if (_wDiag2 != """") then {" \n
        "" \n
        "_wDiag2 spawn {" \n
        "	uiSleep 6;" \n
        "	_formatMsg2 = format[""%1"",_this];" \n
-       "[_formatMsg2, 5] call Epoch_message;" \n
+       "[_formatMsg2, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "	uiSleep 12;" \n
        "};" \n
        "" \n
@@ -839,7 +839,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"if (_wDiag != """") then {" \n
        "" \n
        "_formatMsg = format[""%1"",_wDiag];" \n
-       "[_formatMsg, 5] call Epoch_message;" \n
+       "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "};" \n
        "" \n
        "if (_act != """") then {" \n
@@ -878,7 +878,7 @@ class FSM
       name = "in_mission_1_1";
       init = /*%FSM<STATEINIT""">*/"if (_wDiag != """") then {" \n
        "_formatMsg = format[""%1"",_wDiag];" \n
-       "[_formatMsg, 5] call Epoch_message;" \n
+       "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "};" \n
        "" \n
        "if (_act != """") then {" \n
@@ -919,7 +919,7 @@ class FSM
       name = "in_mission_1_2";
       init = /*%FSM<STATEINIT""">*/"if (_wDiag != """") then {" \n
        "_formatMsg = format[""%1"",_wDiag];" \n
-       "[_formatMsg, 5] call Epoch_message;" \n
+       "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "};" \n
        "" \n
        "if (_act != """") then {" \n
@@ -959,7 +959,7 @@ class FSM
     {
       name = "complete";
       init = /*%FSM<STATEINIT""">*/"_formatMsg = format[""%1"",_wDiag];" \n
-       "[_formatMsg, 5] call Epoch_message;" \n
+       "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "" \n
        "{" \n
        "if (_x == _missionItem) then {" \n
@@ -992,7 +992,7 @@ class FSM
        "_wDiag2 spawn {" \n
        "	uiSleep 6;" \n
        "	_formatMsg2 = format[""%1"",_this];" \n
-       "[_formatMsg2, 5] call Epoch_message;" \n
+       "[_formatMsg2, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "	uiSleep 12;" \n
        "};" \n
        "" \n
@@ -1124,7 +1124,7 @@ class FSM
            " _wDiag = _wInDiag select _rndWChoice;" \n
            "" \n
            "_formatMsg = format[""%1"",_wDiag];" \n
-           "[_formatMsg, 5] call Epoch_message;" \n
+           "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
            "" \n
            "_missionTimer = diag_tickTime;" \n
            "};" \n
@@ -1230,7 +1230,7 @@ class FSM
            "_message2 = selectRandom _droppedMessage2;" \n
            "" \n
            "_formatMsg = format[""%1"",_message];" \n
-           "[_formatMsg, 5] call Epoch_message;" \n
+           "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
            "_dropped = diag_tickTime;" \n
            "" \n
            "" \n
@@ -1239,7 +1239,7 @@ class FSM
            "_message2 spawn {" \n
            "	uiSleep 6;" \n
            "	_formatMsg = format[""%1"",_this];" \n
-           "[_formatMsg, 5] call Epoch_message;" \n
+           "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
            "};" \n
            "" \n
            "};" \n
@@ -1303,7 +1303,7 @@ class FSM
       name = "accept_mission";
       init = /*%FSM<STATEINIT""">*/"" \n
        "_formatMsg = format[""%1"",_wDiag];" \n
-       "[_formatMsg, 5] call Epoch_message;" \n
+       "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "" \n
        "" \n
        "if (_act != """") then {" \n
@@ -1315,7 +1315,7 @@ class FSM
        "_wDiag2 spawn {" \n
        "	uiSleep 6;" \n
        "	_formatMsg2 = format[""%1"",_this];" \n
-       "[_formatMsg2, 5] call Epoch_message;" \n
+       "[_formatMsg2, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "	uiSleep 12;" \n
        "};" \n
        "" \n
@@ -1359,14 +1359,14 @@ class FSM
       name = "abandoned";
       init = /*%FSM<STATEINIT""">*/"" \n
        "_formatMsg = format[""%1"",_wDiag];" \n
-       "[_formatMsg, 5] call Epoch_message;" \n
+       "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "" \n
        "if (_wDiag2 != """") then {" \n
        "" \n
        "_wDiag2 spawn {" \n
        "	uiSleep 6;" \n
        "	_formatMsg = format[""%1"",_this];" \n
-       "[_formatMsg, 5] call Epoch_message;" \n
+       "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "};" \n
        "" \n
        "};" \n
@@ -1441,7 +1441,7 @@ class FSM
        "_callDispose = true;" \n
        "_wDiag = getArray ( _config >> _missionName >> ""accept"" >> ""missionDeclined"");" \n
        "_formatMsg = format[""%1"",_wDiag select _rndWChoice];" \n
-       "[_formatMsg, 5] call Epoch_message;" \n
+       "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "_wDiag = """";" \n
        "_plyr removeItemFromVest _missionItem; " \n
        "};" \n
@@ -1470,7 +1470,7 @@ class FSM
       name = "do_alert";
       init = /*%FSM<STATEINIT""">*/"_message = selectRandom _alertMessage;" \n
        "_formatMsg = format[""%1"",_message];" \n
-       "[_formatMsg, 5] call Epoch_message;" \n
+       "[_formatMsg, 5,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;" \n
        "_message = """";" \n
        "_alertMessage = [""""];" \n
        "_alert = diag_tickTime;"/*%FSM</STATEINIT""">*/;

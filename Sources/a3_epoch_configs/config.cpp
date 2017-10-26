@@ -36,6 +36,7 @@ class CfgPatches
 			//"A3_Anims_F_Config_Sdr",
 			//"A3_Anims_F_Config_Sdr_WeaponSwitching",
 			"A3_Characters_F",
+			"A3_Characters_F_Exp_Civil",
 			"A3_Data_F",
 			"A3_Weapons_F",
 			"A3_Functions_F",
@@ -114,7 +115,7 @@ class CfgPatches
 		 };
 		magazines[] = { "5Rnd_rollins_mag", "CSGAS", "sledge_swing", "EnergyPack", "1Rnd_Soda", "1Rnd_Food", "WoodLog_EPOCH", "PaintCanBlk", "PaintCanBlu", "PaintCanBrn", "PaintCanGrn", "PaintCanOra", "PaintCanPur", "PaintCanRed", "PaintCanTeal", "PaintCanYel", "10rnd_22X44_magazine", "9rnd_45X88_magazine", "spear_magazine", "20rnd_762_magazine","30rnd_556_magazine" };
 		ammo[] = { "B_EnergyPack", "B_Swing", "Sapper_Charge_Ammo", "SapperB_Charge_Ammo", "B_Soda", "B_Food", "B_Test_Caseless", "ChainSaw_Bullet", "SmokeShellCustom", "E_22X44_ball", "E_45_ball", "spear_ball", "K_762_ball", "K_556_ball" };
-		epochVersion = "0.5.0.0";
+		epochVersion = "1.0.0";
 	};
 };
 
@@ -162,7 +163,7 @@ class CfgFactionClasses
 };
 
 
-#include "\A3\ui_f\hpp\defineCommonGrids.inc"
+#include "\x\addons\a3_epoch_configs\defines\defineCommonGrids.hpp"
 #include "\x\addons\a3_epoch_configs\Configs\CfgMissions.hpp"
 
 #include "\x\addons\a3_epoch_configs\Configs\CfgActions.hpp"
@@ -270,8 +271,11 @@ class CraterMetal {
 #include "\x\addons\a3_epoch_configs\Configs\CfgFunctions.hpp"
 //
 #include "\x\addons\a3_epoch_configs\Configs\CfgEpochCoreClientFunctions.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMarkerClasses.hpp"
+#include "\x\addons\a3_epoch_configs\Configs\CfgMarkers.hpp"
 
-#include "\A3\ui_f\hpp\defineCommonGrids.inc"
+
+
 
 class IGUIBack;
 class RscListBox;
