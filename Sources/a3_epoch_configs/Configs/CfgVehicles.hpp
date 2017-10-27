@@ -11280,14 +11280,28 @@ class CfgVehicles
 				onlyforplayer = 1;
 				position = "hatch";
 				radius = 3;
-				condition = "this animationPhase ""open_hatch"" < 0.5";
+				condition = "(this animationPhase ""open_hatch"" < 0.5) && !(this animationPhase ""open_hatch"" isEqualTo 0)";
 				statement = "this animate [""open_hatch"", 1]";
 			};
 			class Close_hatch: Open_hatch
 			{
 				displayName = "$STR_EPOCH_CloseHatch";
 				condition = "this animationPhase ""open_hatch"" >= 0.5";
+				statement = "this animate [""open_hatch"", 0.1]";
+			};
+			class Lock_hatch: Open_hatch
+			{
+				displayName = "$STR_EPOCH_Lock";
+				displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
+				condition = "!(call EPOCH_lockCheck) && (this animationPhase ""open_hatch"" isEqualTo 0.1)";
 				statement = "this animate [""open_hatch"", 0]";
+			};
+			class Unlock_hatch: Lock_hatch
+			{
+				displayName = "$STR_EPOCH_Unlock";
+				displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
+				condition = "!(call EPOCH_lockCheck) && (this animationPhase ""open_hatch"" isEqualTo 0)";
+				statement = "this animate [""open_hatch"", 0.1]";
 			};
 		};
 	};
