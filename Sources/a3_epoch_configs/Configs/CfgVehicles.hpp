@@ -429,6 +429,14 @@ class CfgVehicles
     {
         modelsides[] = {3,2,0};
     };
+	class C_man_sport_2_F : C_man_1
+	{
+		modelsides[] = {3,2,0};
+	};
+	class C_man_sport_3_F : C_man_1
+	{
+		modelsides[] = {3,2,0};
+	};
 	class C_Man_casual_1_F : C_man_1
 	{
 		modelsides[] = {3,2,0};
@@ -11210,7 +11218,7 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_community\models\barbed_wire_Ghost.p3d";
 		displayName = "$STR_EPOCH_BarbedWire_Ghost";
 		armor = 1000;
-	};	
+	};
 	class CinderWallDoorwHatch_EPOCH: Const_Cinder_static_F
 	{
 		author = "Helion4/DirtySanchez";
