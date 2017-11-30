@@ -7930,7 +7930,7 @@ class CfgVehicles
             class Close_door : Open_door
             {
                 displayName = "$STR_EPOCH_Close";
-                condition = "(this animationPhase ""Open_Door"" >= 0.5) && (this animationPhase ""lock_Door"" == 0)";
+                condition = "(this animationPhase ""Open_Door"" >= 0.5)";
                 statement = "this animate [""Open_Door"", 0];";
             };
             class Lock_Door
@@ -7993,7 +7993,7 @@ class CfgVehicles
             class Close_door : Open_door
             {
                 displayName = "$STR_EPOCH_Close";
-                condition = "(this animationPhase ""Open_Door"" >= 0.5) && (this animationPhase ""lock_Door"" == 0)";
+                condition = "(this animationPhase ""Open_Door"" >= 0.5)";
                 statement = "this animate [""Open_Door"", 0];";
             };
             class Lock_Door
@@ -9401,7 +9401,7 @@ class CfgVehicles
             class Close_door : Open_door
             {
                 displayName = "$STR_EPOCH_Close";
-                condition = "(this animationPhase ""Open_Door"" >= 0.5) && (this animationPhase ""lock_Door"" == 0)";
+                condition = "(this animationPhase ""Open_Door"" >= 0.5)";
                 statement = "this animate [""Open_Door"", 0];";
             };
             class Lock_Door
@@ -9464,7 +9464,7 @@ class CfgVehicles
             class Close_door : Open_door
             {
                 displayName = "$STR_EPOCH_Close";
-                condition = "(this animationPhase ""Open_Door"" >= 0.5) && (this animationPhase ""lock_Door"" == 0)";
+                condition = "(this animationPhase ""Open_Door"" >= 0.5)";
                 statement = "this animate [""Open_Door"", 0];";
             };
             class Lock_Door
