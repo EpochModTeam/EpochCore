@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="a3\weapons_f\machineguns\m200\data\m200_low_ti_ca.paa";
+	texture="a3\weapons_f\machineguns\m200\data\1st_person_ti_ca.paa";
 };
 ambient[]={0.70588237,0.70588237,0.70588237,1};
 diffuse[]={0.70588237,0.70588237,0.70588237,1};
