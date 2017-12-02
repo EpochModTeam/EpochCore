@@ -12382,33 +12382,6 @@ class CfgVehicles
 		{
 			init = "(_this select 0) inflame false";
 		};
-		class UserActions
-		{
-			class FlameON
-			{
-				displayNameDefault = ""; // can add fire icon here
-				displayName = "Light Fire";
-				position = "";
-				priority = 11;
-				radius = 1.5;
-				aiMaxRange = "1 * 3";
-				onlyForPlayer = 0;
-				condition = "!inflamed && ('lighter_epoch' in magazines player)";
-				statement = "(_this select 0) inflame true";
-			};
-			class FlameOFF
-			{
-				displayNameDefault = "";
-				displayName = "Put Out Fire";
-				position = "";
-				priority = 11;
-				radius = 1.5;
-				aiMaxRange = "1 * 3";
-				onlyForPlayer = 0;
-				condition = "inflamed";
-				statement = "(_this select 0) inflame false";
-			};
-		};
 		class Effects
 		{
 			class Light1
@@ -12656,33 +12629,6 @@ class CfgVehicles
         class EventHandlers
 		{
 			init = "(_this select 0) inflame false";
-		};
-		class UserActions
-		{
-			class FlameON
-			{
-				displayNameDefault = ""; // can add fire icon here
-				displayName = "Light Fire";
-				position = "";
-				priority = 11;
-				radius = 1.5;
-				aiMaxRange = "1 * 3";
-				onlyForPlayer = 0;
-				condition = "!inflamed && ('lighter_epoch' in magazines player)";
-				statement = "(_this select 0) inflame true";
-			};
-			class FlameOFF
-			{
-				displayNameDefault = "";
-				displayName = "Put Out Fire";
-				position = "";
-				priority = 11;
-				radius = 1.5;
-				aiMaxRange = "1 * 3";
-				onlyForPlayer = 0;
-				condition = "inflamed";
-				statement = "(_this select 0) inflame false";
-			};
 		};
 		class Effects
 		{
