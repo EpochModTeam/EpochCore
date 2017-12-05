@@ -4335,7 +4335,7 @@ class CfgMagazines
 	{
 		author = "He-Man/DirtySanchez";
 		scope=2;
-		count = 1;
+		count = 5;
 		type = 256;
 		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_FireExtinguisher_F.jpg";
 		model="\A3\structures_f_epa\Items\Tools\FireExtinguisher_F.p3d";
