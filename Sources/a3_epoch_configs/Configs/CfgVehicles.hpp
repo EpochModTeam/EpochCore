@@ -9211,6 +9211,16 @@ class CfgVehicles
         displayName = "$STR_EPOCH_WoodLadderGhost";
         ladders[] = {};
     };
+	//******XMAS************************************
+	class snowman_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author = "Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\hol_x\epoch_snowman_GHOST.p3d";
+		displayName = "$STR_EPOCH_Snowperson_GHOST";
+		armor = 500;
+	};	
+	//*****XMAS***********************************	
     class WoodStairs_Ghost_EPOCH : Const_Ghost_EPOCH
     {
         author = "Sequisha";
@@ -9620,6 +9630,16 @@ class CfgVehicles
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
     };
+	//**********XMAS******************************
+	class snowman_EPOCH: Constructions_static_F
+	{
+		author = "Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\hol_x\epoch_snowman.p3d";
+		displayName = "$STR_EPOCH_Snowperson";
+		armor = 500;
+	};	
+	//**********XMAS******************************		
     class Buildable_Storage : WeaponHolder
     {
         scope = 0;

@@ -7122,6 +7122,24 @@ class CfgWeapons
             passThrough = 0.5;
         };
     };
+//********XMAS**************************
+	class santa_hat_epoch: ItemCore
+	{
+		author = "Helion4";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "$STR_EPOCH_Santa_Hat";
+		picture = "\x\addons\a3_epoch_community\models\hol_x\data\santa_hat_icon.paa";
+		model = "\x\addons\a3_epoch_community\models\hol_x\santa_hat.p3d";
+		class ItemInfo: HeadgearItem
+		{
+			mass = 40;
+			uniformModel = "\x\addons\a3_epoch_community\models\hol_x\santa_hat.p3d";
+			modelSides[] = {3,2,1};
+			passThrough = 0.5;
+		};
+	};
+//********XMAS*****************************	
 	class radiation_mask_epoch: NVGoggles
 	{
 		author = "DirtySanchez/Helion4";

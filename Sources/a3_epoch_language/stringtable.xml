@@ -4107,5 +4107,14 @@
 		<Key ID="STR_EPOCH_HotAxeSauceDesc">
 			<Original>Take the rust off your bumper or burn a hole through a sapper!</Original>
 		</Key>
+		<Key ID="STR_EPOCH_Snowperson">
+			<Original>The Original A2 Snowman!</Original>
+		</Key>	
+		<Key ID="STR_EPOCH_Santa_Hat">
+			<Original>Santa Hat</Original>
+		</Key>	
+		<Key ID="STR_EPOCH_Snowperson_Ghost">
+			<Original>The Original A2 Snowman's ghost!</Original>
+		</Key>			
 	</Package>
 </Project>
