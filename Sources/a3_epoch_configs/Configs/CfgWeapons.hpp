@@ -7163,6 +7163,40 @@ class CfgWeapons
 			libTextDesc = "This mask is intended to reduce the possiblity of radiation exposure. This mask can work in certain situation where toxic gases are present";
 		};
 	};
+    class U_RadiationSuit_M_uniform: Itemcore
+    {
+		author = "Helion4";
+    	scope = 2;
+    	allowedSlots[] = {901};
+    	displayName = "$STR_EPOCH_P_RadSuit_MALE";
+    	picture = "\x\addons\a3_epoch_community\epoch_radsuit\data\ui\radiationsuit_icon_ca.paa";
+        model =   "\x\addons\a3_epoch_community\epoch_radsuit\radsuit_packed_EPOCH.p3d";
+    	
+    	class ItemInfo: UniformItem
+    	{
+    		uniformModel = "-";
+    		uniformClass = Epoch_RadiationSuit_M;
+    		containerClass = Supply30;
+    		mass = 60;
+    	};
+    };
+    class U_RadiationSuit_F_uniform: Itemcore
+    {
+		author = "Helion4";
+    	scope = 2;
+    	allowedSlots[] = {901};
+    	displayName = "$STR_EPOCH_P_RadSuit_FEMALE";
+    	picture = "\x\addons\a3_epoch_community\epoch_radsuit\data\ui\radiationsuit_icon_ca.paa";
+        model =   "\x\addons\a3_epoch_community\epoch_radsuit\radsuit_packed_EPOCH.p3d";
+    	
+    	class ItemInfo: UniformItem
+    	{
+    		uniformModel = "-";
+    		uniformClass = Epoch_RadiationSuit_F;
+    		containerClass = Supply30;
+    		mass = 60;
+    	};
+    };	
 };
 
 /*[[[end]]]*/

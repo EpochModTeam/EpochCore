@@ -1468,6 +1468,34 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Male";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Dan.paa";
     };
+	class Epoch_RadiationSuit_M: Epoch_Male_F
+	{
+		scope = 2;
+		displayName = "$STR_EPOCH_RadSuit_MALE";
+		model = "\x\addons\a3_epoch_community\epoch_radsuit\Radiation_suit_full_EPOCH.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_co.paa"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_injury.rvmat"};
+		};
+		uniformClass = "U_RadiationSuit_M_uniform";
+	};	
+	class Epoch_RadiationSuit_F: Epoch_Female_F
+	{
+		scope = 2;
+		displayName = "$STR_EPOCH_RadSuit_FEMALE";
+		model = "\x\addons\a3_epoch_community\epoch_radsuit\Radiation_suit_full_EPOCH.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_co.paa"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_injury.rvmat"};
+		};
+		uniformClass = "U_RadiationSuit_F_uniform";
+	};	
     class Epoch_Char_base_F : Civilian
     {
         faceType = "Man_A3";

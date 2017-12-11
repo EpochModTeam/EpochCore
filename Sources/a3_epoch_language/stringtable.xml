@@ -4115,6 +4115,18 @@
 		</Key>	
 		<Key ID="STR_EPOCH_Snowperson_Ghost">
 			<Original>The Original A2 Snowman's ghost!</Original>
-		</Key>			
+		</Key>	
+		<Key ID="STR_EPOCH_P_RadSuit_MALE">
+			<Original>Packed Radiation Suit for Males</Original>
+		</Key>
+		<Key ID="STR_EPOCH_P_RadSuit_FEMALE">
+			<Original>Packed Radiation Suit for Females</Original>
+		</Key>
+		<Key ID="STR_EPOCH_RadSuit_MALE">
+			<Original>Packed Radiation Suit for Males</Original>
+		</Key>
+		<Key ID="STR_EPOCH_RadSuit_FEMALE">
+			<Original>Packed Radiation Suit for Females</Original>
+		</Key>		
 	</Package>
 </Project>
