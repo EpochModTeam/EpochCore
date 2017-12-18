@@ -5169,13 +5169,23 @@ class CfgVehicles
         class TransportItems {};
         class EventHandlers;
     };
-	class C_Van_01_box_EPOCH3 : C_Van_01_box_EPOCH
+	class C_Van_01_box_EPOCH1 : C_Van_01_box_EPOCH
     {
 		author = "DirtySanchez";
-		maximumLoad = 6000;
+		maximumLoad = 4500;
 		transportMaxWeapons = 96;
 		transportMaxMagazines = 512;
 		transportMaxBackpacks = 128;
+	};
+	class C_Van_01_box_EPOCH2 : C_Van_01_box_EPOCH1
+    {
+		author = "DirtySanchez";
+		maximumLoad = 5000;
+	};
+	class C_Van_01_box_EPOCH3 : C_Van_01_box_EPOCH2
+    {
+		author = "DirtySanchez";
+		maximumLoad = 6000;
 	};
 	class C_Van_01_box_EPOCH4 : C_Van_01_box_EPOCH3
     {
@@ -5199,8 +5209,30 @@ class CfgVehicles
         class TransportItems {};
         class EventHandlers;
     };
-	class C_Van_01_transport_EPOCH3 : C_Van_01_box_EPOCH3{};
-	class C_Van_01_transport_EPOCH4 : C_Van_01_box_EPOCH4{};
+	class C_Van_01_transport_EPOCH1 : C_Van_01_transport_EPOCH
+	{
+		author = "DirtySanchez";
+		maximumLoad = 4500;
+		transportMaxWeapons = 96;
+		transportMaxMagazines = 512;
+		transportMaxBackpacks = 128;
+	};
+	class C_Van_01_transport_EPOCH2 : C_Van_01_transport_EPOCH1
+	{
+		author = "DirtySanchez";
+		maximumLoad = 5000;
+	};
+	class C_Van_01_transport_EPOCH3 : C_Van_01_transport_EPOCH2
+	{
+		author = "DirtySanchez";
+		maximumLoad = 6000;
+	};
+	class C_Van_01_transport_EPOCH4 : C_Van_01_transport_EPOCH3
+	{
+		author = "DirtySanchez";
+		fuelCapacity = 75;
+        fuelConsumptionRate = 0.018;
+	};
     class C_Boat_Civil_01_F;
     class C_Boat_Civil_01_EPOCH : C_Boat_Civil_01_F
     {
@@ -6670,6 +6702,22 @@ class CfgVehicles
     };
     class O_Truck_02_transport_EPOCH3 : O_Truck_02_covered_EPOCH3 {};
 	class O_Truck_02_transport_EPOCH4 : O_Truck_02_transport_EPOCH3 {};
+	class O_Truck_03_transport_F;
+    class O_Truck_03_transport_EPOCH : O_Truck_03_transport_F
+    {
+        scope = 2;
+		scopeCurator = 2;
+        crew = "";
+        side = 3;
+        armor = 64;
+        fuelCapacity = 250;
+        fuelConsumptionRate = 36;
+        maximumLoad = 5000;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems {};
+        class EventHandlers;
+    };
 	class O_Truck_03_covered_F;
     class O_Truck_03_covered_EPOCH : O_Truck_03_covered_F
     {
