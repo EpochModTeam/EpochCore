@@ -10714,7 +10714,7 @@ class CfgVehicles
             class OpenDoor_1
             {
                 displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-                displayName = "$STR_EPOCH_Search";
+                displayName = "$STR_EPOCH_Open";
                 position = "Door_1_trigger";
                 priority = 0.4;
                 radius = 1.5;
