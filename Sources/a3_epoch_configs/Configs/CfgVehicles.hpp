@@ -8577,6 +8577,15 @@ class CfgVehicles
         placement = "vertical";
         armor = 15000;
     };
+    class Foundation_Tall_EPOCH : Constructions_foundation_F
+    {
+        author = "Sequisha/Helion4";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets\models\Concrete_Col_2x.p3d";
+        displayName = "$STR_EPOCH_ConcreteFoundationTall";
+        placement = "vertical";
+        armor = 15000;
+    };	
     class WoodFoundation_EPOCH : Constructions_foundation_F
     {
         author = "Sequisha";
@@ -8595,6 +8604,15 @@ class CfgVehicles
         placement = "vertical";
         ladders[] = {};
     };
+    class Foundation_Tall_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Sequisha/Helion4";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\Concrete_Col_2x_Ghost.p3d";
+        displayName = "$STR_EPOCH_ConcreteFoundationTallGhost";
+        placement = "vertical";
+        ladders[] = {};
+    };	
     class WoodFoundation_Ghost_EPOCH : Const_Ghost_EPOCH
     {
         author = "Sequisha";

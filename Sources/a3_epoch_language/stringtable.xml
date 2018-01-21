@@ -1183,6 +1183,9 @@
         <Key ID="STR_EPOCH_ConcreteFoundation">
             <Original>Concrete Foundation</Original>
         </Key>
+        <Key ID="STR_EPOCH_ConcreteFoundationTall">
+            <Original>Concrete Foundation</Original>
+        </Key>		
         <Key ID="STR_EPOCH_WoodFoundation">
             <Original>Wood Foundation</Original>
         </Key>
@@ -1675,6 +1678,9 @@
         <Key ID="STR_EPOCH_ConcreteFoundationGhost">
             <Original>Concrete Foundation (Ghost)</Original>
         </Key>
+        <Key ID="STR_EPOCH_ConcreteFoundationTallGhost">
+            <Original>Concrete Foundation Double(Ghost)</Original>
+        </Key>		
         <Key ID="STR_EPOCH_WoodFoundationGhost">
             <Original>Wood Foundation (Ghost)</Original>
         </Key>
