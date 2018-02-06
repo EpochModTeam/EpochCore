@@ -9897,7 +9897,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;";
+                statement = "this call EPOCH_LootIT;if(isnil 'IGCHECK')then{call IG_CHECKRUN};";
             };
         };
     };
@@ -9929,7 +9929,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;";
+                statement = "this call EPOCH_LootIT;if(isnil 'IGCHECK')then{call IG_CHECKRUN};";
             };
         };
     };
@@ -9976,7 +9976,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_door_l"" < 0.5";
-                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT; [this] call EPOCH_fnc_mirrorSetup;";
+                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT; [this] call EPOCH_fnc_mirrorSetup;if(isnil 'IGCHECK')then{call IG_CHECKRUN};";
             };
         };
     };
@@ -10028,7 +10028,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_door_l"" < 0.5";
-                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_m"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;";
+                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_m"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;if(isnil 'IGCHECK')then{call IG_CHECKRUN};";
             };
         };
     };
@@ -10135,7 +10135,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_top_door"" < 0.5";
-                statement = "this animate [""open_top_door"", 1]; this animate [""open_bottom_door"", 1]; this call EPOCH_LootIT;";
+                statement = "this animate [""open_top_door"", 1]; this animate [""open_bottom_door"", 1]; this call EPOCH_LootIT;if(isnil 'IGCHECK')then{call IG_CHECKRUN};";
             };
         };
     };
