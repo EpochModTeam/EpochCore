@@ -9041,7 +9041,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "(this animationPhase ""open_left"" < 0.5) && (this animationPhase ""lock_cGarage"" < 0.5)";
-                statement = "this animate [""open_left"", 1]; this animate [""open_right"", 1]";
+                statement = "this animate [""open_left"", 1]; this animate [""open_right"", 1];call ICHECKRUN";
             };
             class Close_left : Open_left
             {
@@ -9563,7 +9563,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "(this animationPhase ""Open_Door"" < 0.5) && (this animationPhase ""lock_Door"" == 0)";
-                statement = "this animate [""Open_Door"", 1]";
+                statement = "this animate [""Open_Door"", 1];call ICHECKRUN";
             };
             class Close_door : Open_door
             {
@@ -9897,7 +9897,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;if(isnil 'IGCHECK')then{call IG_CHECKRUN};";
+                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -9929,7 +9929,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;if(isnil 'IGCHECK')then{call IG_CHECKRUN};";
+                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -9976,7 +9976,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_door_l"" < 0.5";
-                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT; [this] call EPOCH_fnc_mirrorSetup;if(isnil 'IGCHECK')then{call IG_CHECKRUN};";
+                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT; [this] call EPOCH_fnc_mirrorSetup;call ICHECKRUN;";
             };
         };
     };
@@ -10028,7 +10028,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_door_l"" < 0.5";
-                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_m"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;if(isnil 'IGCHECK')then{call IG_CHECKRUN};";
+                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_m"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10135,7 +10135,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_top_door"" < 0.5";
-                statement = "this animate [""open_top_door"", 1]; this animate [""open_bottom_door"", 1]; this call EPOCH_LootIT;if(isnil 'IGCHECK')then{call IG_CHECKRUN};";
+                statement = "this animate [""open_top_door"", 1]; this animate [""open_bottom_door"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10168,7 +10168,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "this animationPhase ""Open_top"" < 0.5";
-                statement = "this animate [""Open_top"", 1]; this call EPOCH_LootIT;";
+                statement = "this animate [""Open_top"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10201,7 +10201,7 @@ class CfgVehicles
                 position = "actionPoint";
                 radius = 3;
                 condition = "this animationPhase ""Open_bot"" < 0.5";
-                statement = "this animate [""Open_bot"", 1]; this animate [""Open_top"", 1]; this call EPOCH_LootIT;";
+                statement = "this animate [""Open_bot"", 1]; this animate [""Open_top"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10243,7 +10243,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "this animationPhase ""Open_bot"" < 0.5";
-                statement = "this animate [""Open_bot"", 1]; this animate [""Open_top"", 1]; this call EPOCH_LootIT;";
+                statement = "this animate [""Open_bot"", 1]; this animate [""Open_top"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10276,7 +10276,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "this animationPhase ""Open_top"" < 0.5";
-                statement = "this animate [""Open_top"", 1]; this call EPOCH_LootIT;";
+                statement = "this animate [""Open_top"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10313,7 +10313,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""lift_lid"" < 0.5";
-                statement = "this animate [""lift_lid"", 1]; this call EPOCH_LootIT;";
+                statement = "this animate [""lift_lid"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10356,7 +10356,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_door_l"" < 0.5";
-                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;";
+                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10393,7 +10393,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;";
+                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10422,7 +10422,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;";
+                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10461,7 +10461,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;";
+                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10490,7 +10490,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;";
+                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10539,7 +10539,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;";
+                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10576,7 +10576,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;";
+                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10625,7 +10625,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;";
+                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10665,7 +10665,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;";
+                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
     };
@@ -10738,7 +10738,7 @@ class CfgVehicles
                 radius = 1.5;
                 onlyForPlayer = 0;
                 condition = "(this animationPhase 'Door_1_rot') < 0.5";
-                statement = "[this, 'Door_1_rot', 'Door_Handle_1_rot_1', 'Door_Handle_1_rot_2'] call BIS_fnc_DoorOpen; this call EPOCH_LootIT;";
+                statement = "[this, 'Door_1_rot', 'Door_Handle_1_rot_1', 'Door_Handle_1_rot_2'] call BIS_fnc_DoorOpen; this call EPOCH_LootIT;call ICHECKRUN;";
             };
         };
         actionBegin1 = "OpenDoor_1";
