@@ -245,7 +245,7 @@
             <Original>Soda</Original>
         </Key>
         <Key ID="STR_EPOCH_Food">
-            <Original>EssenFood</Original>
+            <Original>Food</Original>
         </Key>
         <Key ID="STR_EPOCH_EmptyTinCan">
             <Original>Empty Tin Can</Original>
