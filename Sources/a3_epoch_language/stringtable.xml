@@ -4,7 +4,7 @@
         <Key ID="str_epoch_pvar_Temp">
             <Original>Temperature</Original>
             <English>Temperature</English>
-            <German>Temperature</German>
+            <German>Temperatur</German>
             <Czech>Temperature</Czech>
             <French>Temperature</French>
             <Italian>Temperature</Italian>
@@ -28,7 +28,7 @@
         <Key ID="str_epoch_pvar_Thirst">
             <Original>Thirst</Original>
             <English>Thirst</English>
-            <German>Thirst</German>
+            <German>Durst</German>
             <Czech>Thirst</Czech>
             <French>Thirst</French>
             <Italian>Thirst</Italian>
@@ -64,7 +64,7 @@
         <Key ID="str_epoch_pvar_Wet">
             <Original>Wet</Original>
             <English>Wet</English>
-            <German>Wet</German>
+            <German>Nass</German>
             <Czech>Wet</Czech>
             <French>Wet</French>
             <Italian>Wet</Italian>
@@ -76,7 +76,7 @@
         <Key ID="str_epoch_pvar_Soiled">
             <Original>Soiled</Original>
             <English>Soiled</English>
-            <German>Soiled</German>
+            <German>Verschmutzt</German>
             <Czech>Soiled</Czech>
             <French>Soiled</French>
             <Italian>Soiled</Italian>
@@ -88,7 +88,7 @@
         <Key ID="str_epoch_pvar_Immunity">
             <Original>Immunity</Original>
             <English>Immunity</English>
-            <German>Immunity</German>
+            <German>Immunität</German>
             <Czech>Immunity</Czech>
             <French>Immunity</French>
             <Italian>Immunity</Italian>
@@ -100,7 +100,7 @@
         <Key ID="str_epoch_pvar_Toxicity">
             <Original>Toxicity</Original>
             <English>Toxicity</English>
-            <German>Toxicity</German>
+            <German>Vergiftung</German>
             <Czech>Toxicity</Czech>
             <French>Toxicity</French>
             <Italian>Toxicity</Italian>
@@ -112,7 +112,7 @@
         <Key ID="str_epoch_pvar_Stamina">
             <Original>Stamina</Original>
             <English>Stamina</English>
-            <German>Stamina</German>
+            <German>Ausdauer</German>
             <Czech>Stamina</Czech>
             <French>Stamina</French>
             <Italian>Stamina</Italian>
@@ -148,7 +148,7 @@
         <Key ID="str_epoch_pvar_BloodP">
             <Original>Blood Pressure</Original>
             <English>Blood Pressure</English>
-            <German>Blood Pressure</German>
+            <German>Blutdruck</German>
             <Czech>Blood Pressure</Czech>
             <French>Blood Pressure</French>
             <Italian>Blood Pressure</Italian>
@@ -184,7 +184,7 @@
         <Key ID="str_epoch_pvar_Alcohol">
             <Original>Alcohol</Original>
             <English>Alcohol</English>
-            <German>Alcohol</German>
+            <German>Alkohol</German>
             <Czech>Alcohol</Czech>
             <French>Alcohol</French>
             <Italian>Alcohol</Italian>
@@ -196,7 +196,7 @@
         <Key ID="str_epoch_pvar_Radiation">
             <Original>Radiation</Original>
             <English>Radiation</English>
-            <German>Radiation</German>
+            <German>Strahlung</German>
             <Czech>Radiation</Czech>
             <French>Radiation</French>
             <Italian>Radiation</Italian>
@@ -208,7 +208,7 @@
         <Key ID="str_epoch_pvar_Nuisance">
             <Original>Nuisance</Original>
             <English>Nuisance</English>
-            <German>Nuisance</German>
+            <German>Lärm</German>
             <Czech>Nuisance</Czech>
             <French>Nuisance</French>
             <Italian>Nuisance</Italian>
@@ -245,7 +245,7 @@
             <Original>Soda</Original>
         </Key>
         <Key ID="STR_EPOCH_Food">
-            <Original>Food</Original>
+            <Original>EssenFood</Original>
         </Key>
         <Key ID="STR_EPOCH_EmptyTinCan">
             <Original>Empty Tin Can</Original>
