@@ -6,7 +6,7 @@
             <English>Temperature</English>
             <German>Temperatur</German>
             <Czech>Temperature</Czech>
-            <French>Temperature</French>
+            <French>Température</French>
             <Italian>Temperature</Italian>
             <Polish>Temperature</Polish>
             <Portuguese>Temperature</Portuguese>
@@ -18,7 +18,7 @@
             <English>Hunger</English>
             <German>Hunger</German>
             <Czech>Hunger</Czech>
-            <French>Hunger</French>
+            <French>Faim</French>
             <Italian>Hunger</Italian>
             <Polish>Hunger</Polish>
             <Portuguese>Hunger</Portuguese>
@@ -30,7 +30,7 @@
             <English>Thirst</English>
             <German>Durst</German>
             <Czech>Thirst</Czech>
-            <French>Thirst</French>
+            <French>Soif</French>
             <Italian>Thirst</Italian>
             <Polish>Thirst</Polish>
             <Portuguese>Thirst</Portuguese>
@@ -42,7 +42,7 @@
             <English>Alive Time</English>
             <German>Alive Time</German>
             <Czech>Alive Time</Czech>
-            <French>Alive Time</French>
+            <French>Temps en vie</French>
             <Italian>Alive Time</Italian>
             <Polish>Alive Time</Polish>
             <Portuguese>Alive Time</Portuguese>
@@ -54,7 +54,7 @@
             <English>Energy</English>
             <German>Energy</German>
             <Czech>Energy</Czech>
-            <French>Energy</French>
+            <French>Energie</French>
             <Italian>Energy</Italian>
             <Polish>Energy</Polish>
             <Portuguese>Energy</Portuguese>
@@ -66,7 +66,7 @@
             <English>Wet</English>
             <German>Nass</German>
             <Czech>Wet</Czech>
-            <French>Wet</French>
+            <French>Humidité</French>
             <Italian>Wet</Italian>
             <Polish>Wet</Polish>
             <Portuguese>Wet</Portuguese>
@@ -78,7 +78,7 @@
             <English>Soiled</English>
             <German>Verschmutzt</German>
             <Czech>Soiled</Czech>
-            <French>Soiled</French>
+            <French>Souillé</French>
             <Italian>Soiled</Italian>
             <Polish>Soiled</Polish>
             <Portuguese>Soiled</Portuguese>
@@ -90,7 +90,7 @@
             <English>Immunity</English>
             <German>Immunität</German>
             <Czech>Immunity</Czech>
-            <French>Immunity</French>
+            <French>Immunité</French>
             <Italian>Immunity</Italian>
             <Polish>Immunity</Polish>
             <Portuguese>Immunity</Portuguese>
@@ -102,7 +102,7 @@
             <English>Toxicity</English>
             <German>Vergiftung</German>
             <Czech>Toxicity</Czech>
-            <French>Toxicity</French>
+            <French>Toxicité</French>
             <Italian>Toxicity</Italian>
             <Polish>Toxicity</Polish>
             <Portuguese>Toxicity</Portuguese>
@@ -114,7 +114,7 @@
             <English>Stamina</English>
             <German>Ausdauer</German>
             <Czech>Stamina</Czech>
-            <French>Stamina</French>
+            <French>Endurance</French>
             <Italian>Stamina</Italian>
             <Polish>Stamina</Polish>
             <Portuguese>Stamina</Portuguese>
@@ -138,7 +138,7 @@
             <English>Hit Points</English>
             <German>Hit Points</German>
             <Czech>Hit Points</Czech>
-            <French>Hit Points</French>
+            <French>Points de frappe</French>
             <Italian>Hit Points</Italian>
             <Polish>Hit Points</Polish>
             <Portuguese>Hit Points</Portuguese>
@@ -150,7 +150,7 @@
             <English>Blood Pressure</English>
             <German>Blutdruck</German>
             <Czech>Blood Pressure</Czech>
-            <French>Blood Pressure</French>
+            <French>Préssion Artérielle</French>
             <Italian>Blood Pressure</Italian>
             <Polish>Blood Pressure</Polish>
             <Portuguese>Blood Pressure</Portuguese>
@@ -162,7 +162,7 @@
             <English>Spawn Array</English>
             <German>Spawn Array</German>
             <Czech>Spawn Array</Czech>
-            <French>Spawn Array</French>
+            <French>Téléportation</French>
             <Italian>Spawn Array</Italian>
             <Polish>Spawn Array</Polish>
             <Portuguese>Spawn Array</Portuguese>
@@ -186,7 +186,7 @@
             <English>Alcohol</English>
             <German>Alkohol</German>
             <Czech>Alcohol</Czech>
-            <French>Alcohol</French>
+            <French>Alcool</French>
             <Italian>Alcohol</Italian>
             <Polish>Alcohol</Polish>
             <Portuguese>Alcohol</Portuguese>
@@ -234,7 +234,7 @@
             <English>Server restart in %1 minutes.</English>
             <German>Server restart in %1 minutes.</German>
             <Czech>Server restart in %1 minutes.</Czech>
-            <French>Server restart in %1 minutes.</French>
+            <French>Le serveur redémarre dans %1 minutes.</French>
             <Italian>Server restart in %1 minutes.</Italian>
             <Polish>Server restart in %1 minutes.</Polish>
             <Portuguese>Server restart in %1 minutes.</Portuguese>
