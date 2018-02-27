@@ -3360,7 +3360,10 @@ class CfgVehicles
         damageTexDelay = 0.5;
         fuelExplosionPower = 0;
         maximumLoad = 600;
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class DestructionEffects
         {
             class UAVCrashSmoke
@@ -3575,7 +3578,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 80;
 		enginePower = 25;
 		peakTorque = 280;
@@ -3624,7 +3630,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 150;
 		enginePower = 100;
 		peakTorque = 350;
@@ -3704,7 +3713,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 325;
 		enginePower = 350;
 		peakTorque = 800;
@@ -3783,7 +3795,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 249;
 		enginePower = 408;
 		peakTorque = 680;
@@ -3863,7 +3878,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 200;
 		enginePower = 150;
 		peakTorque = 425;
@@ -3975,7 +3993,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 1, "HideConstruction", 1};
 		maxSpeed = 200;
 		enginePower = 150;
@@ -4055,7 +4076,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 115;
 		enginePower = 170;
 		peakTorque = 550;
@@ -4134,7 +4158,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 115;
 		enginePower = 170;
 		peakTorque = 550;
@@ -4214,7 +4241,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 115;
 		enginePower = 276;
 		peakTorque = 1253;
@@ -4356,7 +4386,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 135;
 		enginePower = 276;
 		peakTorque = 1546;
@@ -4522,7 +4555,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 125;
 		enginePower = 289;
 		peakTorque = 1950;
@@ -4691,7 +4727,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 80;
 		enginePower = 206;
 		peakTorque = 1180;
@@ -4813,7 +4852,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 80;
 		enginePower = 206;
 		peakTorque = 1180;
@@ -4935,7 +4977,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 80;
 		enginePower = 206;
 		peakTorque = 1180;
@@ -5057,7 +5102,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 90;
 		enginePower = 180;
 		peakTorque = 1520;
@@ -5136,7 +5184,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 90;
 		enginePower = 180;
 		peakTorque = 1520;
@@ -5216,7 +5267,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 80;
 		enginePower = 450;
 		peakTorque = 1450;
@@ -5296,7 +5350,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 80;
 		enginePower = 450;
 		peakTorque = 1450;
@@ -5376,7 +5433,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 80;
 		enginePower = 450;
 		peakTorque = 1450;
@@ -5456,7 +5516,10 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
-        class TransportItems{};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		maxSpeed = 80;
 		enginePower = 450;
 		peakTorque = 1450;
@@ -5534,7 +5597,10 @@ class CfgVehicles
         cost = 50000;
         leftEngineEffect = "LEngEffectsSmall";
         rightEngineEffect = "REngEffectsSmall";
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class HitPoints
         {
             class Hitleftmirror
@@ -5820,8 +5886,10 @@ class CfgVehicles
         memoryPointsGetInCargoDir = "pos cargo dir";
         hideWeaponsCargo = 1;
         cargoProxyIndexes[] = {1};
-        class TransportBackpacks {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         maximumLoad = 1000;
         cargoCanEject = 1;
         driverCanEject = 1;
@@ -6183,7 +6251,10 @@ class CfgVehicles
         faction = "CIV_F";
         maximumLoad = 500;
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_civilian_CO.paa"};
         class EventHandlers;
         class UserActions
@@ -6210,7 +6281,10 @@ class CfgVehicles
         faction = "CIV_F";
         maximumLoad = 500;
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_OPFOR_CO.paa"};
         class EventHandlers;
         class UserActions
@@ -6237,7 +6311,10 @@ class CfgVehicles
         faction = "CIV_F";
         maximumLoad = 500;
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_rescue_CO.paa"};
         class EventHandlers;
         class UserActions
@@ -6264,7 +6341,10 @@ class CfgVehicles
         faction = "CIV_F";
         maximumLoad = 500;
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         hiddenSelectionsTextures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_INDP_CO.paa"};
         class EventHandlers;
         class UserActions
@@ -6291,7 +6371,10 @@ class CfgVehicles
         faction = "CIV_F";
         maximumLoad = 800;
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class Eventhandlers;
 		animationList[] = {"hidePolice", 0, "HideRescueSigns", 0, "HidePoliceSigns", 0};
 		class UserActions
@@ -6318,7 +6401,10 @@ class CfgVehicles
         faction = "CIV_F";
         maximumLoad = 800;
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class Eventhandlers;
 		animationList[] = {"hidePolice", 1, "HideRescueSigns", 0, "HidePoliceSigns", 1};
 		class UserActions
@@ -6366,7 +6452,10 @@ class CfgVehicles
         faction = "CIV_F";
         maximumLoad = 600;
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class Eventhandlers;
 		animationList[] = {"hidePolice", 0, "HideRescueSigns", 1, "HidePoliceSigns", 0};
 		class UserActions
@@ -6397,7 +6486,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
 		class UserActions {
 			class BenchL_Fold {
@@ -6455,7 +6547,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
 		class UserActions {
 			class DoorL1_Open {
@@ -6508,7 +6603,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
 		class UserActions {
 			class DoorL1_Open {
@@ -6557,7 +6655,10 @@ class CfgVehicles
         faction = "CIV_F";
         maximumLoad = 500;
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
         class UserActions
         {
@@ -6587,7 +6688,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
     };
     class I_Heli_Transport_02_F;
@@ -6604,7 +6708,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
 		class UserActions {
 			class DoorL1_Open {
@@ -6688,7 +6795,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
     };
@@ -6705,7 +6815,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
 		class UserActions {
@@ -6762,7 +6875,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
 		class UserActions {
@@ -6819,7 +6935,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
 		class UserActions {
@@ -6876,7 +6995,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
 		class UserActions {
@@ -6984,7 +7106,10 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
-        class TransportItems {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
 		class UserActions {
@@ -7104,7 +7229,10 @@ class CfgVehicles
 		gunnerCanSee = "2+16+32";
 		driverCanSee = "2+16+32";
 		typicalCargo[] = {};
+		class TransportMagazines {};
 		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
 		class EventHandlers;
 		class RenderTargets {};
 	};
@@ -7116,6 +7244,66 @@ class CfgVehicles
 	{
 		animationList[] = {"AddDoors",0.9,"AddBackseats",1,"AddTread_Short",0.5,"AddTread",0.4};
 	};
+    class B_T_VTOL_01_vehicle_blue_F;
+    class B_T_VTOL_01_vehicle_blue_EPOCH : B_T_VTOL_01_vehicle_blue_F
+    {
+        scope = 2;
+		scopeCurator = 2;
+        crew = "";
+        side = 3;
+		armor=25;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
+    };
+    class B_T_VTOL_01_infantry_olive_F;
+    class B_T_VTOL_01_infantry_olive_EPOCH : B_T_VTOL_01_infantry_olive_F
+    {
+        scope = 2;
+		scopeCurator = 2;
+        crew = "";
+        side = 3;
+		armor=25;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
+    };
+    class O_T_VTOL_02_infantry_F;
+    class O_T_VTOL_02_infantry_EPOCH : O_T_VTOL_02_infantry_F
+    {
+        scope = 2;
+		scopeCurator = 2;
+        crew = "";
+        side = 3;
+		armor=25;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
+    };
+    class O_T_VTOL_02_vehicle_grey_F;
+    class O_T_VTOL_02_vehicle_grey_EPOCH : O_T_VTOL_02_vehicle_grey_F
+    {
+        scope = 2;
+		scopeCurator = 2;
+        crew = "";
+        side = 3;
+		armor=25;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
+    };
     class Tank : LandVehicle
     {
         scope = 0;
@@ -7252,7 +7440,10 @@ class CfgVehicles
         cost = 0;
         armor = 200;
         mapSize = 2;
-        class TransportMagazines {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         forceSupply = 1;
         showWeaponCargo = 1;
         transportMaxMagazines = "1e+009";
@@ -8573,7 +8764,10 @@ class CfgVehicles
     class WallHolder : WeaponHolder
     {
         scopeCurator = 0;
-        class TransportMagazines {};
+		class TransportMagazines {};
+		class TransportItems {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
         forceSupply = 0;
         showWeaponCargo = 1;
         isGround = 0;
