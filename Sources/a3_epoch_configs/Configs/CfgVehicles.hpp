@@ -2897,247 +2897,6 @@ class CfgVehicles
         };
         class EventHandlers;
     };
-    class Ship;
-    class Ship_F : Ship
-    {
-        scope = 0;
-        class Eventhandlers : DefaultEventhandlers {};
-        transportMaxMagazines = 100;
-        transportMaxWeapons = 20;
-        transportMaxBackpacks = 4;
-    };
-    class jetski_epoch : Ship_F
-    {
-        author = "Kiory";
-        displayName = "$STR_EPOCH_BlueJetski";
-        vehicleclass = "Epoch_objects";
-        accuracy = 0.5;
-        attenuationEffectType = "OpenCarAttenuation";
-        scope = 2;
-        model = "\x\addons\a3_epoch_vehicles\Jetski.p3d";
-        picture = "\x\addons\a3_epoch_vehicles\data\jetski.paa";
-        Icon = "\A3\boat_F\Boat_Transport_01\data\UI\map_Boat_Transport_01_CA.paa";
-        cost = 50000;
-        leftEngineEffect = "LEngEffectsSmall";
-        rightEngineEffect = "REngEffectsSmall";
-        class TransportItems {};
-        class HitPoints
-        {
-            class Hitleftmirror
-            {
-                armor = 0.7;
-                material = 50;
-                name = "left_mirror";
-                visual = "";
-                passThrough = 1;
-            };
-            class Hitrighttmirror
-            {
-                armor = 0.7;
-                material = 50;
-                name = "right_mirror";
-                visual = "";
-                passThrough = 1;
-            };
-            class HitEngine
-            {
-                armor = 0.12;
-                material = -1;
-                name = "Engine";
-                visual = "";
-                passThrough = 1;
-            };
-            class HitHull
-            {
-                armor = 1;
-                material = 50;
-                name = "hull";
-                visual = "zbytek";
-                passThrough = 1;
-                explosionShielding = 1;
-            };
-        };
-        insideSoundCoef = 0.5;
-        soundEngineOnInt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_start",1,1};
-        soundEngineOnExt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_start",1,1,150};
-        soundEngineOffInt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_stop",1,1};
-        soundEngineOffExt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_stop",1,1,150};
-        buildCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_01",1.7782794,1,200};
-        buildCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_02",1.7782794,1,200};
-        buildCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_03",1.7782794,1,200};
-        buildCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_04",1.7782794,1,200};
-        soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-        WoodCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_01",1.7782794,1,200};
-        WoodCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_02",1.7782794,1,200};
-        WoodCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_03",1.7782794,1,200};
-        WoodCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_04",1.7782794,1,200};
-        WoodCrash4[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_05",1.7782794,1,200};
-        WoodCrash5[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_06",1.7782794,1,200};
-        soundWoodCrash[] = {"woodCrash0",0.166,"woodCrash1",0.166,"woodCrash2",0.166,"woodCrash3",0.166,"woodCrash4",0.166,"woodCrash5",0.166};
-        ArmorCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_01",1.7782794,1,200};
-        ArmorCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_02",1.7782794,1,200};
-        ArmorCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_03",1.7782794,1,200};
-        ArmorCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_04",1.7782794,1,200};
-        soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
-        class Sounds
-        {
-            class IdleOut
-            {
-                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_idle_1",0.70794576,1,150};
-                frequency = "0.95	+	((rpm/	1200) factor[(100/	1200),(200/	1200)])*0.15";
-                volume = "engineOn*(((rpm/	1200) factor[(0/	1200),(30/	1200)])	*	((rpm/	1200) factor[(500/	1200),(300/	1200)]))";
-            };
-            class Engine
-            {
-                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_low2",1,1.2,300};
-                frequency = "0.95	+	((rpm/	1200) factor[(300/	1200),(600/	1200)])*0.2";
-                volume = "engineOn*(((rpm/	1200) factor[(200/	1200),(300/	1200)])	*	((rpm/	1200) factor[(600/	1200),(400/	1200)]))";
-            };
-            class EngineMidOut
-            {
-                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_mid2",1.4125376,0.6,400};
-                frequency = "0.95	+	((rpm/	1200) factor[(600/	1200),(900/	1200)])*0.2";
-                volume = "engineOn*(((rpm/	1200) factor[(350/	1200),(500/	1200)])	*	((rpm/	1200) factor[(1200/	1200),(900/	1200)]))";
-            };
-            class EngineMaxOut
-            {
-                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_high2",1.9952624,1,500};
-                frequency = "0.95	+	((rpm/	1200) factor[(700/	1200),(1000/	1200)])*0.3";
-                volume = "engineOn*((rpm/	1200) factor[(600/	1200),(1200/	1200)])";
-            };
-            class WaternoiseOutW0
-            {
-                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-0-speed1",1,1,100};
-                frequency = "1";
-                volume = "(speed factor[4, 1])";
-            };
-            class WaternoiseOutW1
-            {
-                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-20-speed",1,1,150};
-                frequency = "1";
-                volume = "((speed factor[2, 6]) min (speed factor[6, 4]))";
-            };
-            class WaternoiseOutW2
-            {
-                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-50-speed",1,1,300};
-                frequency = "1";
-                volume = "(speed factor[3, 9])";
-            };
-        };
-        class RenderTargets
-        {
-            class Left_Mirror
-            {
-                renderTarget = "rendertarget0";
-                class CameraView1
-                {
-                    pointPosition = "PIP0_pos";
-                    pointDirection = "PIP0_dir";
-                    renderVisionMode = 0;
-                    renderQuality = 2;
-                    fov = 0.7;
-                };
-            };
-            class Right_Mirror
-            {
-                renderTarget = "rendertarget1";
-                class CameraView2
-                {
-                    pointPosition = "PIP1_pos";
-                    pointDirection = "PIP1_dir";
-                    renderVisionMode = 0;
-                    renderQuality = 2;
-                    fov = 0.7;
-                };
-            };
-        };
-        driverLeftHandAnimName = "handle";
-        driverRightHandAnimName = "handle";
-        driverAction = "Driver_Jetski";
-        weapons[] = {"MiniCarHorn"};
-        cargoAction[] = {"Cargo_Jetski"};
-        getInAction = "GetInLow";
-        getOutAction = "GetOutLow";
-        cargoGetInAction[] = {"GetInLow"};
-        cargoGetOutAction[] = {"GetOutLow"};
-        castDriverShadow = 1;
-        castCargoShadow = 1;
-        ejectDeadDriver = 1;
-        ejectDeadCargo = 1;
-        extCameraPosition[] = {0,1.5,-4.5};
-        maxSpeed = 190;
-        turnCoef = 0.1;
-        simulation = "shipX";
-        overSpeedBrakeCoef = 0;
-        enginePower = 220;
-        engineShiftY = 0;
-        waterLeakiness = 0;
-        waterResistanceCoef = 0.015;
-        thrustDelay = 2;
-        waterLinearDampingCoefY = 10;
-        waterLinearDampingCoefX = 0.2;
-        waterAngularDampingCoef = 1.5;
-        rudderForceCoef = 0.06;
-        rudderForceCoefAtMaxSpeed = 0.001;
-        enableGPS = 1;
-        transportSoldier = 1;
-        supplyRadius = 10;
-        idleRpm = 200;
-        redRpm = 1200;
-        fuelCapacity = 5;
-        hiddenSelections[] = {"num_1","num_2","num_3","num_4","num_5"};
-        slingLoadMaxCargoMass = 4000;
-        slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1"};
-        slingLoadMemoryPoint = "slingLoad0";
-        class EventHandlers : EventHandlers
-        {
-            GetIn = "params ['','','_u']; if (player isEqualTo _u) then {EPOCH_inEpochVeh = true; 0 = _this spawn {params ['_v'];_p = '\x\addons\a3_epoch_vehicles\data\'; while {EPOCH_inEpochVeh} do {_h = floor ((date select 3)/10);_m = floor ((date select 4)/10);{_v setObjectTexture [_forEachIndex,_x]} forEach [format['%1num%2_ca.paa',_p,_h],format['%1num%2_ca.paa',_p,(date select 3)-(_h*10)],format['%1num%2_ca.paa',_p,_m],format['%1num%2_ca.paa',_p,(date select 4)-(_m*10)],format['%1fuel%2_ca.paa',_p,floor(fuel _v*10)]];uisleep 1;};};};";
-            GetOut = "params ['','','_u']; if (player isEqualTo _u) then {EPOCH_inEpochVeh = false};";
-        };
-        class UserActions
-        {
-            class PushTheThing
-            {
-                displayNameDefault = "Push";
-                displayName = "$STR_EPOCH_Push";
-                position = "";
-                radius = 5;
-                onlyForPlayer = 1;
-                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
-                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
-            };
-        };
-        class Exhausts
-        {
-            class Exhaust1
-            {
-                position = "exhaust";
-                direction = "exhaust_dir";
-                effect = "ExhaustsEffect";
-            };
-        };
-        class complexGearbox
-        {
-            GearboxRatios[] = {"R1",-0.782,"N",0,"D1",2,"D2",1.85,"D3",1.75};
-            TransmissionRatios[] = {"High",1};
-            gearBoxMode = "auto";
-            moveOffGear = 1;
-            driveString = "D";
-            neutralString = "N";
-            reverseString = "R";
-        };
-        armor = 15;
-        class Turrets {};
-        class Library
-        {
-            libTextDesc = "$STR_A3_CfgVehicles_Rubber_duck_base_Library0";
-        };
-        class Damage
-        {
-            tex[] = {};
-            mat[] = {"A3\boat_f\Boat_Transport_01\data\Boat_Transport_01.rvmat","A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_damage.rvmat","A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_damage.rvmat"};
-        };
-    };
 
     class ebike_epoch : Car_F
     {
@@ -3792,6 +3551,2207 @@ class CfgVehicles
         side = 1;
         typicalCargo[] = {"B_Soldier_F"};
     };
+    class C_Quadbike_01_F;
+/*
+	class C_Quadbike_01_F
+	{
+		maxSpeed = 80;
+		enginePower = 25;
+		peakTorque = 280;
+		brakeDistance = 1;
+		fuelCapacity = 30;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2;
+        maximumLoad = 600;
+        armor = 30;
+		crewCrashProtection	= 4.85;
+	};
+*/
+    class C_Quadbike_01_EPOCH : C_Quadbike_01_F
+    {
+        scope = 2;
+		scopeCurator=2;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 80;
+		enginePower = 25;
+		peakTorque = 280;
+		brakeDistance = 1;
+		fuelCapacity = 30;
+		terrainCoef = 2.0;
+        maximumLoad = 600;
+        armor = 30;
+		crewCrashProtection	= 4.85;
+        class UserActions
+        {
+            class PressXToFlipTheThing
+            {
+                displayNameDefault = "Flip ATV";
+                displayName = "$STR_EPOCH_FlipATV";
+                position = "";
+                radius = 2.7;
+                onlyForPlayer = 1;
+                condition = "alive this && not canmove this && crew this isEqualTo []";
+                statement = "this setvectorup [0,0,1]";
+            };
+        };
+    };
+	class C_Hatchback_01_F;
+/*
+	class C_Hatchback_01_F
+	{
+		maxSpeed = 150;
+		enginePower = 100;
+		peakTorque = 350;
+		brakeDistance = 3;
+		fuelCapacity = 45;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 6.5;
+        maximumLoad = 2000;
+        armor = 30;
+		crewCrashProtection	= 2.75;
+	};
+*/
+    class C_Hatchback_01_EPOCH : C_Hatchback_01_F
+    {
+        scope = 2;
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 150;
+		enginePower = 100;
+		peakTorque = 350;
+		brakeDistance = 3;
+		fuelCapacity = 45;
+		terrainCoef = 6.5;
+        maximumLoad = 1250;
+        armor = 40;
+		crewCrashProtection	= 2.75;
+    };
+	class C_Hatchback_01_EPOCH1: C_Hatchback_01_EPOCH
+	{
+		displayName = "$STR_EPOCH_HatchBackLevel1";
+		maxSpeed = 155;
+		peakTorque = 400;
+        fuelCapacity = 50;
+		terrainCoef = 6.00;
+        maximumLoad = 1300;
+        armor = 50;
+		crewCrashProtection	= 2.50;
+	};
+	class C_Hatchback_01_EPOCH2: C_Hatchback_01_EPOCH1
+	{
+		displayName = "$STR_EPOCH_HatchBackLevel2";
+		maxSpeed = 160;
+		peakTorque = 450;
+        fuelCapacity = 55;
+		terrainCoef = 5.00;
+        maximumLoad = 1350;
+        armor = 60;
+		crewCrashProtection	= 2.25;
+	};
+	class C_Hatchback_01_EPOCH3: C_Hatchback_01_EPOCH2
+	{
+		displayName = "$STR_EPOCH_HatchBackLevel3";
+		maxSpeed = 165;
+		peakTorque = 500;
+        fuelCapacity = 60;
+		terrainCoef = 4.00;
+        maximumLoad = 1400;
+        armor = 70;
+		crewCrashProtection	= 2.00;
+	};
+	class C_Hatchback_01_EPOCH4: C_Hatchback_01_EPOCH3
+	{
+		displayName = "$STR_EPOCH_HatchBackLevel4";
+		maxSpeed = 170;
+		peakTorque = 550;
+        fuelCapacity = 65;
+		terrainCoef = 3.00;
+        maximumLoad = 1450;
+        armor = 80;
+		crewCrashProtection	= 1.75;
+	};
+    class C_Hatchback_01_sport_F;
+/*
+	class C_Hatchback_01_F
+	{
+		maxSpeed = 325;
+		enginePower = 350;
+		peakTorque = 800;
+		brakeDistance = 5;
+		fuelCapacity = 45;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 6.5;
+        maximumLoad = 2000;
+        armor = 30;
+		crewCrashProtection	= 2.75;
+	};
+*/
+    class C_Hatchback_02_EPOCH : C_Hatchback_01_sport_F
+    {
+        scope = 2;
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 325;
+		enginePower = 350;
+		peakTorque = 800;
+		brakeDistance = 5;
+		fuelCapacity = 45;
+		terrainCoef = 6.5;
+        maximumLoad = 1250;
+        armor = 40;
+		crewCrashProtection	= 2.75;
+    };
+	class C_Hatchback_02_EPOCH1: C_Hatchback_02_EPOCH
+	{
+		displayName = "$STR_EPOCH_HatchBackSPLevel1";
+		maxSpeed = 330;
+		peakTorque = 850;
+        fuelCapacity = 50;
+		terrainCoef = 6.00;
+        maximumLoad = 1300;
+        armor = 50;
+		crewCrashProtection	= 2.50;
+	};
+	class C_Hatchback_02_EPOCH2: C_Hatchback_02_EPOCH1
+	{
+		displayName = "$STR_EPOCH_HatchBackSPLevel2";
+		maxSpeed = 335;
+		peakTorque = 900;
+        fuelCapacity = 55;
+		terrainCoef = 5.00;
+        maximumLoad = 1350;
+        armor = 60;
+		crewCrashProtection	= 2.25;
+	};
+	class C_Hatchback_02_EPOCH3: C_Hatchback_02_EPOCH2
+	{
+		displayName = "$STR_EPOCH_HatchBackSPLevel3";
+		maxSpeed = 340;
+		peakTorque = 950;
+        fuelCapacity = 60;
+		terrainCoef = 4.00;
+        maximumLoad = 1400;
+        armor = 70;
+		crewCrashProtection	= 2.00;
+	};
+	class C_Hatchback_02_EPOCH4: C_Hatchback_02_EPOCH3
+	{
+		displayName = "$STR_EPOCH_HatchBackSPLevel4";
+		maxSpeed = 345;
+		peakTorque = 1000;
+        fuelCapacity = 65;
+		terrainCoef = 3.00;
+        maximumLoad = 1450;
+        armor = 80;
+		crewCrashProtection	= 1.75;
+	};
+	class C_SUV_01_F;
+/*	
+	class C_SUV_01_F
+	{
+		maxSpeed = 249;
+		enginePower = 408;
+		peakTorque = 680;
+		brakeDistance = 7;
+		fuelCapacity = 45;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2.5;
+        maximumLoad = 2000;
+        armor = 30;
+		crewCrashProtection	= 2.75;
+	};
+*/
+	class C_SUV_01_EPOCH: C_SUV_01_F
+	{
+        scope = 2;
+		scopeCurator=2;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 249;
+		enginePower = 408;
+		peakTorque = 680;
+		brakeDistance = 7;
+		fuelCapacity = 45;
+		terrainCoef = 2.5;
+        maximumLoad = 1500;
+        armor = 45;
+		crewCrashProtection	= 2.75;
+	};
+	class C_SUV_01_EPOCH1: C_SUV_01_EPOCH
+	{
+		displayName = "$STR_EPOCH_SUVLevel1";
+		maxSpeed = 255;
+		peakTorque = 700;
+        fuelCapacity = 50;
+		terrainCoef = 2.3;
+        maximumLoad = 1550;
+        armor = 55;
+		crewCrashProtection	= 2.50;
+	};
+	class C_SUV_01_EPOCH2: C_SUV_01_EPOCH1
+	{
+		displayName = "$STR_EPOCH_SUVLevel2";
+		maxSpeed = 260;
+		peakTorque = 750;
+        fuelCapacity = 55;
+		terrainCoef = 2.1;
+        maximumLoad = 1600;
+        armor = 65;
+		crewCrashProtection	= 2.25;
+	};
+	class C_SUV_01_EPOCH3: C_SUV_01_EPOCH2
+	{
+		displayName = "$STR_EPOCH_SUVLevel3";
+		maxSpeed = 265;
+		peakTorque = 800;
+        fuelCapacity = 60;
+		terrainCoef = 1.9;
+        maximumLoad = 1650;
+        armor = 70;
+		crewCrashProtection	= 2.00;
+	};
+	class C_SUV_01_EPOCH4: C_SUV_01_EPOCH3
+	{
+		displayName = "$STR_EPOCH_SUVLevel4";
+		maxSpeed = 270;
+		peakTorque = 850;
+        fuelCapacity = 65;
+		terrainCoef = 1.7;
+        maximumLoad = 1700;
+        armor = 75;
+		crewCrashProtection	= 1.75;
+	};
+	class C_Offroad_01_F;
+/*
+	class C_Offroad_01_F
+	{
+		maxSpeed = 200;
+		enginePower = 150;
+		peakTorque = 425;
+		brakeDistance = 50;
+		fuelCapacity = 45;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2;
+        maximumLoad = 4000;
+        armor = 30;
+		crewCrashProtection	= 2.75;
+	};
+*/
+    class C_Offroad_01_EPOCH : C_Offroad_01_F
+    {
+        scope = 2;
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 200;
+		enginePower = 150;
+		peakTorque = 425;
+		brakeDistance = 50;
+		fuelCapacity = 45;
+		terrainCoef = 2;
+        maximumLoad = 1750;
+        armor = 50;
+		crewCrashProtection	= 2.75;
+    };
+	class C_Offroad_01_EPOCH1: C_Offroad_01_EPOCH
+	{
+		displayName = "$STR_EPOCH_OffroadLevel1";
+		maxSpeed = 205;
+		peakTorque = 450;
+        fuelCapacity = 50;
+		terrainCoef = 1.8;
+        maximumLoad = 1800;
+        armor = 60;
+		crewCrashProtection	= 2.50;
+	};
+	class C_Offroad_01_EPOCH2: C_Offroad_01_EPOCH1
+	{
+		displayName = "$STR_EPOCH_OffroadLevel2";
+		maxSpeed = 210;
+		peakTorque = 500;
+        fuelCapacity = 55;
+		terrainCoef = 1.6;
+        maximumLoad = 1850;
+        armor = 70;
+		crewCrashProtection	= 2.25;
+	};
+	class C_Offroad_01_EPOCH3: C_Offroad_01_EPOCH2
+	{
+		displayName = "$STR_EPOCH_OffroadLevel3";
+		maxSpeed = 215;
+		peakTorque = 550;
+        fuelCapacity = 60;
+		terrainCoef = 1.4;
+        maximumLoad = 1900;
+        armor = 80;
+		crewCrashProtection	= 2.00;
+	};
+	class C_Offroad_01_EPOCH4: C_Offroad_01_EPOCH3
+	{
+		displayName = "$STR_EPOCH_OffroadLevel4";
+		maxSpeed = 220;
+		peakTorque = 600;
+        fuelCapacity = 65;
+		terrainCoef = 1.2;
+        maximumLoad = 1950;
+        armor = 90;
+		crewCrashProtection	= 1.75;
+	};
+	class C_Offroad_01_EPOCH5: C_Offroad_01_EPOCH4
+	{
+		displayName = "$STR_EPOCH_OffroadLevel5";
+		textureList[] = {"White", 1};
+		animationList[] = {"HidePolice", 0, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
+		class UserActions {
+			class beacons_start {
+				userActionID = 50;
+				displayName = "Beacons On";
+				displayNameDefault = "Beacons On";
+				position = "temp";
+				priority = 1.5;
+				radius = 2;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase 'BeaconsStart' < 0.5 AND Alive this AND driver this == player AND this animationPhase 'hidePolice' < 0.5";
+				statement = "if(isNil 'EPOCH_Siren')then{EPOCH_Siren = 0;};this animate ['BeaconsStart',1]; if(diag_tickTime > EPOCH_Siren + 31)then{vehicle player say3d 'police_siren'; EPOCH_Siren = diag_tickTime;};";
+			};
+			class beacons_stop: beacons_start {
+				userActionID = 51;
+				displayName = "Beacons Off";
+				displayNameDefault = "Beacons Off";
+				condition = "this animationPhase 'BeaconsStart' > 0.5 AND Alive this AND driver this == player AND this animationPhase 'hidePolice' < 0.5";
+				statement = "this animate ['BeaconsStart',0];";
+				position = "temp";
+				priority = 1.5;
+				radius = 2;
+				animPeriod = 2;
+				onlyForplayer = 0;
+			};
+		};
+	};
+	class B_G_Offroad_01_armed_F;
+/*
+	class B_G_Offroad_01_armed_F
+	{
+		maxSpeed = 200;
+		enginePower = 150;
+		peakTorque = 425;
+		brakeDistance = 50;
+		fuelCapacity = 45;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2;
+        maximumLoad = 4000;
+        armor = 30;
+		crewCrashProtection	= 2.75;
+	};
+*/
+	class B_G_Offroad_01_armed_EPOCH: B_G_Offroad_01_armed_F
+	{
+        scope = 2;
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 1, "HideConstruction", 1};
+		maxSpeed = 200;
+		enginePower = 150;
+		peakTorque = 425;
+		brakeDistance = 50;
+		fuelCapacity = 45;
+		terrainCoef = 2;
+        maximumLoad = 1500;
+        armor = 50;
+		crewCrashProtection	= 2.75;
+	};
+	class B_G_Offroad_01_armed_EPOCH1: B_G_Offroad_01_armed_EPOCH
+	{
+		displayName = "$STR_EPOCH_OffroadArmedLevel1";
+		maxSpeed = 205;
+		peakTorque = 450;
+        fuelCapacity = 50;
+		terrainCoef = 1.8;
+        maximumLoad = 1550;
+        armor = 60;
+		crewCrashProtection	= 2.50;
+	};
+	class B_G_Offroad_01_armed_EPOCH2: B_G_Offroad_01_armed_EPOCH1
+	{
+		displayName = "$STR_EPOCH_OffroadArmedLevel2";
+		maxSpeed = 210;
+		peakTorque = 500;
+        fuelCapacity = 55;
+		terrainCoef = 1.6;
+        maximumLoad = 1600;
+        armor = 70;
+		crewCrashProtection	= 2.25;
+	};
+	class B_G_Offroad_01_armed_EPOCH3: B_G_Offroad_01_armed_EPOCH2
+	{
+		displayName = "$STR_EPOCH_OffroadArmedLevel3";
+		maxSpeed = 215;
+		peakTorque = 550;
+        fuelCapacity = 60;
+		terrainCoef = 1.4;
+        maximumLoad = 1650;
+        armor = 80;
+		crewCrashProtection	= 2.00;
+	};
+	class B_G_Offroad_01_armed_EPOCH4: B_G_Offroad_01_armed_EPOCH3
+	{
+		displayName = "$STR_EPOCH_OffroadArmedLevel4";
+		maxSpeed = 220;
+		peakTorque = 600;
+        fuelCapacity = 65;
+		terrainCoef = 1.2;
+        maximumLoad = 1700;
+        armor = 90;
+		crewCrashProtection	= 1.75;
+	};
+    class C_Van_01_transport_F;
+/*	
+	class O_Truck_03_covered_F
+	{
+		maxSpeed = 115;
+		enginePower = 170;
+		peakTorque = 550;
+		brakeDistance = 15;
+		fuelCapacity = 45;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2.5;
+        maximumLoad = 3000;
+        armor = 80;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class C_Van_01_transport_EPOCH : C_Van_01_transport_F
+    {
+        scope = 2;
+		scopeCurator=2;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 115;
+		enginePower = 170;
+		peakTorque = 550;
+		brakeDistance = 15;
+		fuelCapacity = 45;
+		terrainCoef = 2.5;
+        maximumLoad = 1750;
+        armor = 80;
+		crewCrashProtection	= 2.65;
+    };
+	class C_Van_01_transport_EPOCH1 : C_Van_01_transport_EPOCH
+	{
+		displayName = "$STR_EPOCH_TruckLevel1";
+		maxSpeed = 120;
+		peakTorque = 600;
+        fuelCapacity = 50;
+		terrainCoef = 2.25;
+        maximumLoad = 1800;
+        armor = 90;
+		crewCrashProtection	= 2.50;
+	};
+	class C_Van_01_transport_EPOCH2 : C_Van_01_transport_EPOCH1
+	{
+		displayName = "$STR_EPOCH_TruckLevel2";
+		maxSpeed = 125;
+		peakTorque = 650;
+        fuelCapacity = 55;
+		terrainCoef = 2.00;
+        maximumLoad = 1850;
+        armor = 100;
+		crewCrashProtection	= 2.25;
+	};
+	class C_Van_01_transport_EPOCH3 : C_Van_01_transport_EPOCH2
+	{
+		displayName = "$STR_EPOCH_TruckLevel3";
+		maxSpeed = 130;
+		peakTorque = 700;
+        fuelCapacity = 60;
+		terrainCoef = 1.75;
+        maximumLoad = 1900;
+        armor = 110;
+		crewCrashProtection	= 2.00;
+	};
+	class C_Van_01_transport_EPOCH4 : C_Van_01_transport_EPOCH3
+	{
+		displayName = "$STR_EPOCH_TruckLevel4";
+		maxSpeed = 135;
+		peakTorque = 750;
+        fuelCapacity = 65;
+		terrainCoef = 1.50;
+        maximumLoad = 1950;
+        armor = 120;
+		crewCrashProtection	= 1.75;
+	};
+    class C_Van_01_box_F;
+/*	
+	class C_Van_01_box_F
+	{
+		maxSpeed = 115;
+		enginePower = 170;
+		peakTorque = 550;
+		brakeDistance = 15;
+		fuelCapacity = 45;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2.5;
+        maximumLoad = 3000;
+        armor = 80;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class C_Van_01_box_EPOCH : C_Van_01_box_F
+    {
+        scope = 2;
+		scopeCurator=2;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 115;
+		enginePower = 170;
+		peakTorque = 550;
+		brakeDistance = 15;
+		fuelCapacity = 45;
+		terrainCoef = 2.5;
+        maximumLoad = 2000;
+        armor = 80;
+		crewCrashProtection	= 2.65;
+    };
+	class C_Van_01_box_EPOCH1 : C_Van_01_box_EPOCH
+	{
+		displayName = "$STR_EPOCH_TruckBoxLevel1";
+		maxSpeed = 120;
+		peakTorque = 600;
+        fuelCapacity = 50;
+		terrainCoef = 2.25;
+        maximumLoad = 2050;
+        armor = 90;
+		crewCrashProtection	= 2.50;
+	};
+	class C_Van_01_box_EPOCH2 : C_Van_01_box_EPOCH1
+	{
+		displayName = "$STR_EPOCH_TruckBoxLevel2";
+		maxSpeed = 125;
+		peakTorque = 650;
+        fuelCapacity = 55;
+		terrainCoef = 2.00;
+        maximumLoad = 2100;
+        armor = 100;
+		crewCrashProtection	= 2.25;
+	};
+	class C_Van_01_box_EPOCH3 : C_Van_01_box_EPOCH2
+	{
+		displayName = "$STR_EPOCH_TruckBoxLevel3";
+		maxSpeed = 130;
+		peakTorque = 700;
+        fuelCapacity = 60;
+		terrainCoef = 1.75;
+        maximumLoad = 2150;
+        armor = 110;
+		crewCrashProtection	= 2.00;
+	};
+	class C_Van_01_box_EPOCH4 : C_Van_01_box_EPOCH3
+	{
+		displayName = "$STR_EPOCH_TruckBoxLevel4";
+		maxSpeed = 135;
+		peakTorque = 750;
+        fuelCapacity = 65;
+		terrainCoef = 1.50;
+        maximumLoad = 2200;
+        armor = 120;
+		crewCrashProtection	= 1.75;
+	};
+    class B_MRAP_01_F;
+/*
+	class B_MRAP_01_F
+	{
+		maxSpeed = 115;
+		enginePower = 276;
+		peakTorque = 1253;
+		brakeDistance = 1;
+		fuelCapacity = 94;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 1.5;
+        maximumLoad = 2000;
+        armor = 200;
+		crewCrashProtection	= 1.35;
+	};
+*/
+    class B_MRAP_01_EPOCH : B_MRAP_01_F
+    {
+        scope = 2;
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 115;
+		enginePower = 276;
+		peakTorque = 1253;
+		brakeDistance = 1;
+		fuelCapacity = 94;
+		terrainCoef = 1.5;
+        maximumLoad = 1500;
+        armor = 120;
+		crewCrashProtection	= 1.35;
+		class UserActions {
+			class Door_LF_Open {
+				userActionID = 50;
+				displayName = "Open Driver Door";
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				priority = 0.5;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF') == 0) AND Alive(this) && (speed this < 5) ";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class Door_RF_Open: Door_LF_Open {
+				userActionID = 51;
+				displayName = "Open Passenger Door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class Door_LB_Open: Door_LF_Open {
+				userActionID = 52;
+				displayName = "Open RearL Door";
+				position = "door_LB";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LB') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_LB', 1]";
+			};
+			class Door_RB_Open: Door_LF_Open {
+				userActionID = 53;
+				displayName = "Open RearR Door";
+				position = "Door_RB";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RB') == 0) AND Alive(this) && (speed this < 5)";
+				statement = "this animateDoor ['Door_RB', 1]";
+			};
+			class Door_LF_Close: Door_LF_Open {
+				userActionID = 50;
+				displayName = "Close Driver Door";
+				condition = "((this doorPhase 'Door_LF') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class Door_RF_Close: Door_RF_Open {
+				userActionID = 51;
+				displayName = "Close Passenger Door";
+				condition = "((this doorPhase 'Door_RF') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+			class Door_LB_Close: Door_LB_Open {
+				userActionID = 52;
+				displayName = "Close RearL Door";
+				condition = "((this doorPhase 'Door_LB') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_LB', 0]";
+			};
+			class Door_RB_Close: Door_RB_Open {
+				userActionID = 53;
+				displayName = "Close RearR Door";
+				condition = "((this doorPhase 'Door_RB') > 0) AND Alive(this)";
+				statement = "this animateDoor ['Door_RB', 0]";
+			};
+		};
+    };
+	class B_MRAP_01_EPOCH1 : B_MRAP_01_EPOCH
+    {
+		displayName = "$STR_EPOCH_HunterLevel1";
+		maxSpeed = 120;
+		peakTorque = 1400;
+        fuelCapacity = 100;
+		terrainCoef = 1.45;
+        maximumLoad = 1550;
+        armor = 140;
+		crewCrashProtection	= 1.30;
+	};
+	class B_MRAP_01_EPOCH2 : B_MRAP_01_EPOCH1
+    {
+		displayName = "$STR_EPOCH_HunterLevel2";
+		maxSpeed = 125;
+		peakTorque = 1500;
+        fuelCapacity = 105;
+		terrainCoef = 1.40;
+        maximumLoad = 1600;
+        armor = 160;
+		crewCrashProtection	= 1.25;
+	};
+	class B_MRAP_01_EPOCH3 : B_MRAP_01_EPOCH
+    {
+		displayName = "$STR_EPOCH_HunterLevel3";
+		maxSpeed = 130;
+		peakTorque = 1600;
+        fuelCapacity = 110;
+		terrainCoef = 1.35;
+        maximumLoad = 1650;
+        armor = 180;
+		crewCrashProtection	= 1.20;
+	};
+	class B_MRAP_01_EPOCH4 : B_MRAP_01_EPOCH3
+    {
+		displayName = "$STR_EPOCH_HunterLevel4";
+		maxSpeed = 135;
+		peakTorque = 1700;
+        fuelCapacity = 115;
+		terrainCoef = 1.30;
+        maximumLoad = 1700;
+        armor = 200;
+		crewCrashProtection	= 1.15;
+	};
+    class O_MRAP_02_F;
+/*
+	class O_MRAP_02_F
+	{
+		maxSpeed = 135;
+		enginePower = 276;
+		peakTorque = 1546;
+		brakeDistance = 1;
+		fuelCapacity = 94;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 1.5;
+        maximumLoad = 2000;
+        armor = 200;
+		crewCrashProtection	= 1.35;
+	};
+*/
+    class O_MRAP_02_EPOCH : O_MRAP_02_F
+    {
+        scope = 2;
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 135;
+		enginePower = 276;
+		peakTorque = 1546;
+		brakeDistance = 1;
+		fuelCapacity = 94;
+		terrainCoef = 1.5;
+        maximumLoad = 1500;
+        armor = 120;
+		crewCrashProtection	= 1.35;
+		class UserActions {
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door1_axis";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door3_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+			class DoorLM_Open: DoorLF_Open {
+				userActionID = 54;
+				displayName = "Open left middle door";
+				position = "door5_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LM')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LM', 1]";
+			};
+			class DoorLM_Close: DoorLM_Open {
+				userActionID = 55;
+				displayName = "Close left middle door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LM') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LM', 0]";
+			};
+			class DoorRM_Open: DoorLM_Open {
+				userActionID = 56;
+				displayName = "Open right middle door";
+				position = "door7_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RM')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RM', 1]";
+			};
+			class DoorRM_Close: DoorRM_Open {
+				userActionID = 57;
+				displayName = "Close right middle door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RM') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RM', 0]";
+			};
+			class Door_rear_Open: DoorLM_Open {
+				userActionID = 58;
+				displayName = "Open rear door";
+				position = "door9_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_rear')  ==  0) && (alive this)";
+				statement = "this animateDoor ['Door_rear', 1]";
+			};
+			class Door_rear_Close: Door_rear_Open {
+				userActionID = 59;
+				displayName = "Close rear door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_rear') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_rear', 0]";
+			};
+		};
+    };
+	class O_MRAP_02_EPOCH1 : O_MRAP_02_EPOCH
+    {
+		displayName = "$STR_EPOCH_IfritLevel1";
+		maxSpeed = 140;
+		peakTorque = 1600;
+        fuelCapacity = 100;
+		terrainCoef = 1.45;
+        maximumLoad = 1550;
+        armor = 140;
+		crewCrashProtection	= 1.30;
+	};
+	class O_MRAP_02_EPOCH2 : O_MRAP_02_EPOCH1
+    {
+		displayName = "$STR_EPOCH_IfritLevel2";
+		maxSpeed = 145;
+		peakTorque = 1700;
+        fuelCapacity = 105;
+		terrainCoef = 1.40;
+        maximumLoad = 1600;
+        armor = 160;
+		crewCrashProtection	= 1.25;
+	};
+	class O_MRAP_02_EPOCH3 : O_MRAP_02_EPOCH2
+    {
+		displayName = "$STR_EPOCH_IfritLevel3";
+		maxSpeed = 150;
+		peakTorque = 1800;
+        fuelCapacity = 110;
+		terrainCoef = 1.35;
+        maximumLoad = 1650;
+        armor = 180;
+		crewCrashProtection	= 1.20;
+	};
+	class O_MRAP_02_EPOCH4 : O_MRAP_02_EPOCH3
+    {
+		displayName = "$STR_EPOCH_IfritLevel4";
+		maxSpeed = 155;
+		peakTorque = 1900;
+        fuelCapacity = 115;
+		terrainCoef = 1.30;
+        maximumLoad = 1700;
+        armor = 200;
+		crewCrashProtection	= 1.15;
+	};
+    class I_MRAP_03_F;
+/*
+	class I_MRAP_03_F
+	{
+		maxSpeed = 125;
+		enginePower = 289;
+		peakTorque = 1950;
+		brakeDistance = 1;
+		fuelCapacity = 94;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 1.0;
+        maximumLoad = 4000;
+        armor = 200;
+		crewCrashProtection	= 1.35;
+	};
+*/
+    class I_MRAP_03_EPOCH : I_MRAP_03_F
+    {
+        scope = 2;
+		scopeCurator=2;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 125;
+		enginePower = 289;
+		peakTorque = 1950;
+		brakeDistance = 1;
+		fuelCapacity = 94;
+		terrainCoef = 1.0;
+        maximumLoad = 1500;
+        armor = 120;
+		crewCrashProtection	= 1.35;
+        class RenderTargets
+        {
+            class commander_display
+            {
+                renderTarget = "rendertarget0";
+                class CameraView1
+                {
+                    pointPosition = "PIP0_pos";
+                    pointDirection = "PIP0_dir";
+                    renderVisionMode = 0;
+                    renderQuality = 2;
+                    fov = 0.5;
+                };
+            };
+            class driver_display
+            {
+                renderTarget = "rendertarget2";
+                class CameraView1
+                {
+                    pointPosition = "PIP2_pos";
+                    pointDirection = "PIP2_dir";
+                    renderVisionMode = 0;
+                    renderQuality = 2;
+                    fov = 0.6;
+                };
+            };
+            class mirrorL
+            {
+                renderTarget = "rendertarget4";
+                class CameraView1
+                {
+                    pointPosition = "PIP4_pos";
+                    pointDirection = "PIP4_dir";
+                    renderVisionMode = 4;
+                    renderQuality = 2;
+                    fov = 0.35;
+                };
+            };
+            class mirrorR
+            {
+                renderTarget = "rendertarget5";
+                class CameraView1
+                {
+                    pointPosition = "PIP5_pos";
+                    pointDirection = "PIP5_dir";
+                    renderVisionMode = 4;
+                    renderQuality = 2;
+                    fov = 0.35;
+                };
+            };
+        };
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 2.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door1_axis";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door3_axis";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
+    };
+	class I_MRAP_03_EPOCH1 : I_MRAP_03_EPOCH
+    {
+		displayName = "$STR_EPOCH_StriderLevel1";
+		maxSpeed = 130;
+		peakTorque = 2000;
+        fuelCapacity = 100;
+        maximumLoad = 1550;
+        armor = 140;
+		crewCrashProtection	= 1.30;
+	};
+	class I_MRAP_03_EPOCH2 : I_MRAP_03_EPOCH1
+    {
+		displayName = "$STR_EPOCH_StriderLevel2";
+		maxSpeed = 135;
+		peakTorque = 2100;
+        fuelCapacity = 105;
+        maximumLoad = 1600;
+        armor = 160;
+		crewCrashProtection	= 1.25;
+	};
+	class I_MRAP_03_EPOCH3 : I_MRAP_03_EPOCH2
+    {
+		displayName = "$STR_EPOCH_StriderLevel3";
+		maxSpeed = 140;
+		peakTorque = 2200;
+        fuelCapacity = 110;
+        maximumLoad = 1650;
+        armor = 180;
+		crewCrashProtection	= 1.20;
+	};
+	class I_MRAP_03_EPOCH4 : I_MRAP_03_EPOCH3
+    {
+		displayName = "$STR_EPOCH_StriderLevel4";
+		maxSpeed = 145;
+		peakTorque = 2300;
+        fuelCapacity = 115;
+        maximumLoad = 1700;
+        armor = 200;
+		crewCrashProtection	= 1.15;
+	};
+    class O_Truck_02_transport_F;
+/*	
+	class O_Truck_02_transport_F
+	{
+		maxSpeed = 80;
+		enginePower = 206;
+		peakTorque = 1180;
+		brakeDistance = 15;
+		fuelCapacity = 50;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2.0;
+        maximumLoad = 3000;
+        armor = 100;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class O_Truck_02_transport_EPOCH : O_Truck_02_transport_F
+    {
+        scope = 2;
+		scopeCurator=2;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 80;
+		enginePower = 206;
+		peakTorque = 1180;
+		brakeDistance = 15;
+		fuelCapacity = 50;
+		terrainCoef = 2.0;
+        maximumLoad = 2000;
+        armor = 60;
+		crewCrashProtection	= 2.65;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
+    };
+	class O_Truck_02_transport_EPOCH1 : O_Truck_02_transport_EPOCH
+    {
+		displayName = "$STR_EPOCH_ZamakLevel1";
+		maxSpeed = 85;
+		peakTorque = 1250;
+        fuelCapacity = 55;
+		terrainCoef = 1.8;
+        maximumLoad = 2050;
+        armor = 70;
+		crewCrashProtection	= 2.50;
+	};
+	class O_Truck_02_transport_EPOCH2 : O_Truck_02_transport_EPOCH1
+    {
+		displayName = "$STR_EPOCH_ZamakLevel2";
+		maxSpeed = 90;
+		peakTorque = 1350;
+        fuelCapacity = 60;
+		terrainCoef = 1.6;
+        maximumLoad = 2100;
+        armor = 80;
+		crewCrashProtection	= 2.25;
+	};
+	class O_Truck_02_transport_EPOCH3 : O_Truck_02_transport_EPOCH2
+    {
+		displayName = "$STR_EPOCH_ZamakLevel3";
+		maxSpeed = 95;
+		peakTorque = 1450;
+        fuelCapacity = 65;
+		terrainCoef = 1.40;
+        maximumLoad = 2150;
+        armor = 90;
+		crewCrashProtection	= 2.0;
+	};
+	class O_Truck_02_transport_EPOCH4 : O_Truck_02_transport_EPOCH3
+    {
+		displayName = "$STR_EPOCH_ZamakLevel4";
+		maxSpeed = 100;
+		peakTorque = 1550;
+        fuelCapacity = 70;
+		terrainCoef = 1.2;
+        maximumLoad = 2200;
+        armor = 100;
+		crewCrashProtection	= 1.75;
+	};
+    class O_Truck_02_covered_F;
+/*	
+	class O_Truck_02_covered_F
+	{
+		maxSpeed = 80;
+		enginePower = 206;
+		peakTorque = 1180;
+		brakeDistance = 15;
+		fuelCapacity = 50;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2.0;
+        maximumLoad = 3000;
+        armor = 100;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class O_Truck_02_covered_EPOCH : O_Truck_02_covered_F
+    {
+        scope = 2;
+		scopeCurator=2;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 80;
+		enginePower = 206;
+		peakTorque = 1180;
+		brakeDistance = 15;
+		fuelCapacity = 50;
+		terrainCoef = 2.0;
+        maximumLoad = 2250;
+        armor = 60;
+		crewCrashProtection	= 2.65;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
+    };
+	class O_Truck_02_covered_EPOCH1 : O_Truck_02_covered_EPOCH
+    {
+		displayName = "$STR_EPOCH_ZamakCoveredLevel1";
+		maxSpeed = 85;
+		peakTorque = 1250;
+        fuelCapacity = 55;
+		terrainCoef = 1.8;
+        maximumLoad = 2300;
+        armor = 70;
+		crewCrashProtection	= 2.50;
+	};
+	class O_Truck_02_covered_EPOCH2 : O_Truck_02_covered_EPOCH1
+    {
+		displayName = "$STR_EPOCH_ZamakCoveredLevel2";
+		maxSpeed = 90;
+		peakTorque = 1350;
+        fuelCapacity = 60;
+		terrainCoef = 1.6;
+        maximumLoad = 2350;
+        armor = 80;
+		crewCrashProtection	= 2.25;
+	};
+	class O_Truck_02_covered_EPOCH3 : O_Truck_02_covered_EPOCH2
+    {
+		displayName = "$STR_EPOCH_ZamakCoveredLevel3";
+		maxSpeed = 95;
+		peakTorque = 1450;
+        fuelCapacity = 65;
+		terrainCoef = 1.40;
+        maximumLoad = 2400;
+        armor = 90;
+		crewCrashProtection	= 2.0;
+	};
+	class O_Truck_02_covered_EPOCH4 : O_Truck_02_covered_EPOCH3
+    {
+		displayName = "$STR_EPOCH_ZamakCoveredLevel4";
+		maxSpeed = 100;
+		peakTorque = 1550;
+        fuelCapacity = 70;
+		terrainCoef = 1.2;
+        maximumLoad = 2450;
+        armor = 100;
+		crewCrashProtection	= 1.75;
+	};
+    class O_Truck_02_box_F;
+/*	
+	class O_Truck_02_box_F
+	{
+		maxSpeed = 80;
+		enginePower = 206;
+		peakTorque = 1180;
+		brakeDistance = 15;
+		fuelCapacity = 50;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2.0;
+        maximumLoad = 3000;
+        armor = 100;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class O_Truck_02_box_EPOCH : O_Truck_02_box_F
+    {
+        scope = 2;
+		scopeCurator=2;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 80;
+		enginePower = 206;
+		peakTorque = 1180;
+		brakeDistance = 15;
+		fuelCapacity = 50;
+		terrainCoef = 2.0;
+        maximumLoad = 2500;
+        armor = 60;
+		crewCrashProtection	= 2.65;
+		class UserActions
+		{
+			class DoorLF_Open {
+				userActionID = 50;
+				displayName = "Open left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Open door";
+				priority = 0.1;
+				radius = 3.5;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				position = "door_LF";
+				showWindow = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_LF', 1]";
+			};
+			class DoorLF_Close: DoorLF_Open {
+				userActionID = 51;
+				displayName = "Close left front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_LF', 0]";
+			};
+			class DoorRF_Open: DoorLF_Open {
+				userActionID = 52;
+				displayName = "Open right front door";
+				position = "door_RF";
+				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
+				statement = "this animateDoor ['Door_RF', 1]";
+			};
+			class DoorRF_Close: DoorRF_Open {
+				userActionID = 53;
+				displayName = "Close right front door";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				textToolTip = "Close door";
+				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
+				statement = "this animateDoor ['Door_RF', 0]";
+			};
+		};
+    };
+	class O_Truck_02_box_EPOCH1 : O_Truck_02_box_EPOCH
+    {
+		displayName = "$STR_EPOCH_ZamakBoxLevel1";
+		maxSpeed = 85;
+		peakTorque = 1250;
+        fuelCapacity = 55;
+		terrainCoef = 1.8;
+        maximumLoad = 2550;
+        armor = 70;
+		crewCrashProtection	= 2.50;
+	};
+	class O_Truck_02_box_EPOCH2 : O_Truck_02_box_EPOCH1
+    {
+		displayName = "$STR_EPOCH_ZamakBoxLevel2";
+		maxSpeed = 90;
+		peakTorque = 1350;
+        fuelCapacity = 60;
+		terrainCoef = 1.6;
+        maximumLoad = 2600;
+        armor = 80;
+		crewCrashProtection	= 2.25;
+	};
+	class O_Truck_02_box_EPOCH3 : O_Truck_02_box_EPOCH2
+    {
+		displayName = "$STR_EPOCH_ZamakBoxLevel3";
+		maxSpeed = 95;
+		peakTorque = 1450;
+        fuelCapacity = 65;
+		terrainCoef = 1.40;
+        maximumLoad = 2650;
+        armor = 90;
+		crewCrashProtection	= 2.0;
+	};
+	class O_Truck_02_box_EPOCH4 : O_Truck_02_box_EPOCH3
+    {
+		displayName = "$STR_EPOCH_ZamakBoxLevel4";
+		maxSpeed = 100;
+		peakTorque = 1550;
+        fuelCapacity = 70;
+		terrainCoef = 1.2;
+        maximumLoad = 2700;
+        armor = 100;
+		crewCrashProtection	= 1.75;
+	};
+	class O_Truck_03_transport_F;
+/*	
+	class O_Truck_03_transport_F
+	{
+		maxSpeed = 90;
+		enginePower = 180;
+		peakTorque = 1520;
+		brakeDistance = 15;
+		fuelCapacity = 250;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 1.8;
+        maximumLoad = 3000;
+        armor = 200;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class O_Truck_03_transport_EPOCH : O_Truck_03_transport_F
+    {
+        scope = 2;
+		scopeCurator=2;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 90;
+		enginePower = 180;
+		peakTorque = 1520;
+		brakeDistance = 15;
+		fuelCapacity = 250;
+		terrainCoef = 1.8;
+        maximumLoad = 2250;
+        armor = 100;
+		crewCrashProtection	= 2.65;
+    };
+	class O_Truck_03_transport_EPOCH1 : O_Truck_03_transport_EPOCH
+    {
+		displayName = "$STR_EPOCH_TempestLevel1";
+		maxSpeed = 95;
+		peakTorque = 1600;
+        fuelCapacity = 255;
+		terrainCoef = 1.7;
+        maximumLoad = 2300;
+        armor = 120;
+		crewCrashProtection	= 2.50;
+	};
+	class O_Truck_03_transport_EPOCH2 : O_Truck_03_transport_EPOCH1
+    {
+		displayName = "$STR_EPOCH_TempestLevel2";
+		maxSpeed = 100;
+		peakTorque = 1700;
+        fuelCapacity = 260;
+		terrainCoef = 1.6;
+        maximumLoad = 2350;
+        armor = 140;
+		crewCrashProtection	= 2.25;
+	};
+	class O_Truck_03_transport_EPOCH3 : O_Truck_03_transport_EPOCH2
+    {
+		displayName = "$STR_EPOCH_TempestLevel3";
+		maxSpeed = 105;
+		peakTorque = 1800;
+        fuelCapacity = 265;
+		terrainCoef = 1.5;
+        maximumLoad = 2400;
+        armor = 160;
+		crewCrashProtection	= 2.00;
+	};
+	class O_Truck_03_transport_EPOCH4 : O_Truck_03_transport_EPOCH3
+    {
+		displayName = "$STR_EPOCH_TempestLevel4";
+		maxSpeed = 110;
+		peakTorque = 1900;
+        fuelCapacity = 270;
+		terrainCoef = 1.4;
+        maximumLoad = 2450;
+        armor = 180;
+		crewCrashProtection	= 1.75;
+	};
+	class O_Truck_03_covered_F;
+/*	
+	class O_Truck_03_covered_F
+	{
+		maxSpeed = 90;
+		enginePower = 180;
+		peakTorque = 1520;
+		brakeDistance = 15;
+		fuelCapacity = 250;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 1.8;
+        maximumLoad = 3000;
+        armor = 200;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class O_Truck_03_covered_EPOCH : O_Truck_03_covered_F
+    {
+        scope = 2;
+		scopeCurator=2;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 90;
+		enginePower = 180;
+		peakTorque = 1520;
+		brakeDistance = 15;
+		fuelCapacity = 250;
+		terrainCoef = 1.8;
+        maximumLoad = 2500;
+        armor = 100;
+		crewCrashProtection	= 2.65;
+    };
+	class O_Truck_03_covered_EPOCH1 : O_Truck_03_covered_EPOCH
+    {
+		displayName = "$STR_EPOCH_TempestCoveredLevel1";
+		maxSpeed = 95;
+		peakTorque = 1600;
+        fuelCapacity = 255;
+		terrainCoef = 1.7;
+        maximumLoad = 2550;
+        armor = 120;
+		crewCrashProtection	= 2.50;
+	};
+	class O_Truck_03_covered_EPOCH2 : O_Truck_03_covered_EPOCH1
+    {
+		displayName = "$STR_EPOCH_TempestCoveredLevel2";
+		maxSpeed = 100;
+		peakTorque = 1700;
+        fuelCapacity = 260;
+		terrainCoef = 1.6;
+        maximumLoad = 2600;
+        armor = 140;
+		crewCrashProtection	= 2.25;
+	};
+	class O_Truck_03_covered_EPOCH3 : O_Truck_03_covered_EPOCH2
+    {
+		displayName = "$STR_EPOCH_TempestCoveredLevel3";
+		maxSpeed = 105;
+		peakTorque = 1800;
+        fuelCapacity = 265;
+		terrainCoef = 1.5;
+        maximumLoad = 2650;
+        armor = 160;
+		crewCrashProtection	= 2.00;
+	};
+	class O_Truck_03_covered_EPOCH4 : O_Truck_03_covered_EPOCH3
+    {
+		displayName = "$STR_EPOCH_TempestCoveredLevel4";
+		maxSpeed = 110;
+		peakTorque = 1900;
+        fuelCapacity = 270;
+		terrainCoef = 1.4;
+        maximumLoad = 2700;
+        armor = 180;
+		crewCrashProtection	= 1.75;
+	};
+    class B_Truck_01_mover_F;
+/*
+	class B_Truck_01_mover_F
+	{
+		maxSpeed = 80;
+		enginePower = 450;
+		peakTorque = 1450;
+		brakeDistance = 15;
+		fuelCapacity = 245;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2.5;
+        maximumLoad = 3000;
+        armor = 200;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class B_Truck_01_mover_EPOCH : B_Truck_01_mover_F
+    {
+        scope = 2;
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 80;
+		enginePower = 450;
+		peakTorque = 1450;
+		brakeDistance = 15;
+		fuelCapacity = 245;
+		terrainCoef = 2.5;
+        maximumLoad = 2250;
+        armor = 100;
+		crewCrashProtection	= 2.65;
+    };
+    class B_Truck_01_mover_EPOCH1 : B_Truck_01_mover_EPOCH
+    {
+		displayName = "$STR_EPOCH_HemttMoverLevel1";
+		maxSpeed = 85;
+		peakTorque = 1550;
+        fuelCapacity = 250;
+		terrainCoef = 2.25;
+        maximumLoad = 2300;
+        armor = 120;
+		crewCrashProtection	= 2.5;
+    };
+    class B_Truck_01_mover_EPOCH2 : B_Truck_01_mover_EPOCH1
+    {
+		displayName = "$STR_EPOCH_HemttMoverLevel2";
+		maxSpeed = 90;
+		peakTorque = 1650;
+        fuelCapacity = 255;
+		terrainCoef = 2;
+        maximumLoad = 2350;
+        armor = 140;
+		crewCrashProtection	= 2.25;
+    };
+    class B_Truck_01_mover_EPOCH3 : B_Truck_01_mover_EPOCH2
+    {
+		displayName = "$STR_EPOCH_HemttMoverLevel3";
+		maxSpeed = 95;
+		peakTorque = 1750;
+        fuelCapacity = 260;
+		terrainCoef = 1.75;
+        maximumLoad = 2400;
+        armor = 160;
+		crewCrashProtection	= 2.00;
+    };
+    class B_Truck_01_mover_EPOCH4 : B_Truck_01_mover_EPOCH3
+    {
+		displayName = "$STR_EPOCH_HemttMoverLevel4";
+		maxSpeed = 100;
+		peakTorque = 1850;
+        fuelCapacity = 265;
+		terrainCoef = 1.5;
+        maximumLoad = 2450;
+        armor = 180;
+		crewCrashProtection	= 1.75;
+    };
+    class B_Truck_01_transport_F;
+/*
+	class B_Truck_01_transport_F
+	{
+		maxSpeed = 80;
+		enginePower = 450;
+		peakTorque = 1450;
+		brakeDistance = 15;
+		fuelCapacity = 245;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2.5;
+        maximumLoad = 3000;
+        armor = 200;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class B_Truck_01_transport_EPOCH : B_Truck_01_transport_F
+    {
+        scope = 2;
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 80;
+		enginePower = 450;
+		peakTorque = 1450;
+		brakeDistance = 15;
+		fuelCapacity = 245;
+		terrainCoef = 2.5;
+        maximumLoad = 2500;
+        armor = 100;
+		crewCrashProtection	= 2.65;
+    };
+    class B_Truck_01_transport_EPOCH1 : B_Truck_01_transport_EPOCH
+    {
+		displayName = "$STR_EPOCH_HemttLevel1";
+		maxSpeed = 85;
+		peakTorque = 1550;
+        fuelCapacity = 250;
+		terrainCoef = 2.25;
+        maximumLoad = 2550;
+        armor = 120;
+		crewCrashProtection	= 2.5;
+    };
+    class B_Truck_01_transport_EPOCH2 : B_Truck_01_transport_EPOCH1
+    {
+		displayName = "$STR_EPOCH_HemttLevel2";
+		maxSpeed = 90;
+		peakTorque = 1650;
+        fuelCapacity = 255;
+		terrainCoef = 2;
+        maximumLoad = 2600;
+        armor = 140;
+		crewCrashProtection	= 2.25;
+    };
+    class B_Truck_01_transport_EPOCH3 : B_Truck_01_transport_EPOCH2
+    {
+		displayName = "$STR_EPOCH_HemttLevel3";
+		maxSpeed = 95;
+		peakTorque = 1750;
+        fuelCapacity = 260;
+		terrainCoef = 1.75;
+        maximumLoad = 2650;
+        armor = 160;
+		crewCrashProtection	= 2.00;
+    };
+    class B_Truck_01_transport_EPOCH4 : B_Truck_01_transport_EPOCH3
+    {
+		displayName = "$STR_EPOCH_HemttLevel4";
+		maxSpeed = 100;
+		peakTorque = 1850;
+        fuelCapacity = 265;
+		terrainCoef = 1.5;
+        maximumLoad = 2700;
+        armor = 180;
+		crewCrashProtection	= 1.75;
+    };
+    class B_Truck_01_covered_F;
+/*
+	class B_Truck_01_covered_F
+	{
+		maxSpeed = 80;
+		enginePower = 450;
+		peakTorque = 1450;
+		brakeDistance = 15;
+		fuelCapacity = 245;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2.5;
+        maximumLoad = 3000;
+        armor = 200;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class B_Truck_01_covered_EPOCH : B_Truck_01_covered_F
+    {
+        scope = 2;
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 80;
+		enginePower = 450;
+		peakTorque = 1450;
+		brakeDistance = 15;
+		fuelCapacity = 245;
+		terrainCoef = 2.5;
+        maximumLoad = 2750;
+        armor = 100;
+		crewCrashProtection	= 2.65;
+    };
+    class B_Truck_01_covered_EPOCH1 : B_Truck_01_covered_EPOCH
+    {
+		displayName = "$STR_EPOCH_HemttCoveredLevel1";
+		maxSpeed = 85;
+		peakTorque = 1550;
+        fuelCapacity = 250;
+		terrainCoef = 2.25;
+        maximumLoad = 2800;
+        armor = 120;
+		crewCrashProtection	= 2.5;
+    };
+    class B_Truck_01_covered_EPOCH2 : B_Truck_01_covered_EPOCH1
+    {
+		displayName = "$STR_EPOCH_HemttCoveredLevel2";
+		maxSpeed = 90;
+		peakTorque = 1650;
+        fuelCapacity = 255;
+		terrainCoef = 2;
+        maximumLoad = 2850;
+        armor = 140;
+		crewCrashProtection	= 2.25;
+    };
+    class B_Truck_01_covered_EPOCH3 : B_Truck_01_covered_EPOCH2
+    {
+		displayName = "$STR_EPOCH_HemttCoveredLevel3";
+		maxSpeed = 95;
+		peakTorque = 1750;
+        fuelCapacity = 260;
+		terrainCoef = 1.75;
+        maximumLoad = 2900;
+        armor = 160;
+		crewCrashProtection	= 2.00;
+    };
+    class B_Truck_01_covered_EPOCH4 : B_Truck_01_covered_EPOCH3
+    {
+		displayName = "$STR_EPOCH_HemttCoveredLevel4";
+		maxSpeed = 100;
+		peakTorque = 1850;
+        fuelCapacity = 265;
+		terrainCoef = 1.5;
+        maximumLoad = 2950;
+        armor = 180;
+		crewCrashProtection	= 1.75;
+    };
+    class B_Truck_01_box_F;
+/*
+	class B_Truck_01_box_F
+	{
+		maxSpeed = 80;
+		enginePower = 450;
+		peakTorque = 1450;
+		brakeDistance = 15;
+		fuelCapacity = 245;
+        fuelConsumptionRate = 0.01;
+		terrainCoef = 2.5;
+        maximumLoad = 3000;
+        armor = 200;
+		crewCrashProtection	= 2.65;
+	};
+*/
+    class B_Truck_01_box_EPOCH : B_Truck_01_box_F
+    {
+        scope = 2;
+		scopeCurator=2;
+        forceInGarage=1;
+		crew = "";
+        side = 3;
+        faction = "CIV_F";
+        typicalCargo[] = {};
+        class TransportItems{};
+		maxSpeed = 80;
+		enginePower = 450;
+		peakTorque = 1450;
+		brakeDistance = 15;
+		fuelCapacity = 245;
+		terrainCoef = 2.5;
+        maximumLoad = 3000;
+        armor = 100;
+		crewCrashProtection	= 2.65;
+    };
+    class B_Truck_01_box_EPOCH1 : B_Truck_01_box_EPOCH
+    {
+		displayName = "$STR_EPOCH_HemttBoxLevel1";
+		maxSpeed = 85;
+		peakTorque = 1550;
+        fuelCapacity = 250;
+		terrainCoef = 2.25;
+        maximumLoad = 3050;
+        armor = 120;
+		crewCrashProtection	= 2.5;
+    };
+    class B_Truck_01_box_EPOCH2 : B_Truck_01_box_EPOCH1
+    {
+		displayName = "$STR_EPOCH_HemttBoxLevel2";
+		maxSpeed = 90;
+		peakTorque = 1650;
+        fuelCapacity = 255;
+		terrainCoef = 2;
+        maximumLoad = 3100;
+        armor = 140;
+		crewCrashProtection	= 2.25;
+    };
+    class B_Truck_01_box_EPOCH3 : B_Truck_01_box_EPOCH2
+    {
+		displayName = "$STR_EPOCH_HemttBoxLevel3";
+		maxSpeed = 95;
+		peakTorque = 1750;
+        fuelCapacity = 260;
+		terrainCoef = 1.75;
+        maximumLoad = 3150;
+        armor = 160;
+		crewCrashProtection	= 2.00;
+    };
+    class B_Truck_01_box_EPOCH4 : B_Truck_01_box_EPOCH3
+    {
+		displayName = "$STR_EPOCH_HemttBoxLevel4";
+		maxSpeed = 100;
+		peakTorque = 1850;
+        fuelCapacity = 265;
+		terrainCoef = 1.5;
+        maximumLoad = 3200;
+        armor = 180;
+		crewCrashProtection	= 1.75;
+    };
+    class Ship;
+    class Ship_F : Ship
+    {
+        scope = 0;
+        class Eventhandlers : DefaultEventhandlers {};
+        transportMaxMagazines = 100;
+        transportMaxWeapons = 20;
+        transportMaxBackpacks = 4;
+    };
+    class jetski_epoch : Ship_F
+    {
+        author = "Kiory";
+        displayName = "$STR_EPOCH_BlueJetski";
+        vehicleclass = "Epoch_objects";
+        accuracy = 0.5;
+        attenuationEffectType = "OpenCarAttenuation";
+        scope = 2;
+        model = "\x\addons\a3_epoch_vehicles\Jetski.p3d";
+        picture = "\x\addons\a3_epoch_vehicles\data\jetski.paa";
+        Icon = "\A3\boat_F\Boat_Transport_01\data\UI\map_Boat_Transport_01_CA.paa";
+        cost = 50000;
+        leftEngineEffect = "LEngEffectsSmall";
+        rightEngineEffect = "REngEffectsSmall";
+        class TransportItems {};
+        class HitPoints
+        {
+            class Hitleftmirror
+            {
+                armor = 0.7;
+                material = 50;
+                name = "left_mirror";
+                visual = "";
+                passThrough = 1;
+            };
+            class Hitrighttmirror
+            {
+                armor = 0.7;
+                material = 50;
+                name = "right_mirror";
+                visual = "";
+                passThrough = 1;
+            };
+            class HitEngine
+            {
+                armor = 0.12;
+                material = -1;
+                name = "Engine";
+                visual = "";
+                passThrough = 1;
+            };
+            class HitHull
+            {
+                armor = 1;
+                material = 50;
+                name = "hull";
+                visual = "zbytek";
+                passThrough = 1;
+                explosionShielding = 1;
+            };
+        };
+        insideSoundCoef = 0.5;
+        soundEngineOnInt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_start",1,1};
+        soundEngineOnExt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_start",1,1,150};
+        soundEngineOffInt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_stop",1,1};
+        soundEngineOffExt[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_stop",1,1,150};
+        buildCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_01",1.7782794,1,200};
+        buildCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_02",1.7782794,1,200};
+        buildCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_03",1.7782794,1,200};
+        buildCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_04",1.7782794,1,200};
+        soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
+        WoodCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_01",1.7782794,1,200};
+        WoodCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_02",1.7782794,1,200};
+        WoodCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_03",1.7782794,1,200};
+        WoodCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_04",1.7782794,1,200};
+        WoodCrash4[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_05",1.7782794,1,200};
+        WoodCrash5[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_06",1.7782794,1,200};
+        soundWoodCrash[] = {"woodCrash0",0.166,"woodCrash1",0.166,"woodCrash2",0.166,"woodCrash3",0.166,"woodCrash4",0.166,"woodCrash5",0.166};
+        ArmorCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_01",1.7782794,1,200};
+        ArmorCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_02",1.7782794,1,200};
+        ArmorCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_03",1.7782794,1,200};
+        ArmorCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_04",1.7782794,1,200};
+        soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
+        class Sounds
+        {
+            class IdleOut
+            {
+                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_idle_1",0.70794576,1,150};
+                frequency = "0.95	+	((rpm/	1200) factor[(100/	1200),(200/	1200)])*0.15";
+                volume = "engineOn*(((rpm/	1200) factor[(0/	1200),(30/	1200)])	*	((rpm/	1200) factor[(500/	1200),(300/	1200)]))";
+            };
+            class Engine
+            {
+                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_low2",1,1.2,300};
+                frequency = "0.95	+	((rpm/	1200) factor[(300/	1200),(600/	1200)])*0.2";
+                volume = "engineOn*(((rpm/	1200) factor[(200/	1200),(300/	1200)])	*	((rpm/	1200) factor[(600/	1200),(400/	1200)]))";
+            };
+            class EngineMidOut
+            {
+                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_mid2",1.4125376,0.6,400};
+                frequency = "0.95	+	((rpm/	1200) factor[(600/	1200),(900/	1200)])*0.2";
+                volume = "engineOn*(((rpm/	1200) factor[(350/	1200),(500/	1200)])	*	((rpm/	1200) factor[(1200/	1200),(900/	1200)]))";
+            };
+            class EngineMaxOut
+            {
+                sound[] = {"A3\Sounds_F\vehicles\boat\Boat_Transport_01\Boat_Transport_01_high2",1.9952624,1,500};
+                frequency = "0.95	+	((rpm/	1200) factor[(700/	1200),(1000/	1200)])*0.3";
+                volume = "engineOn*((rpm/	1200) factor[(600/	1200),(1200/	1200)])";
+            };
+            class WaternoiseOutW0
+            {
+                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-0-speed1",1,1,100};
+                frequency = "1";
+                volume = "(speed factor[4, 1])";
+            };
+            class WaternoiseOutW1
+            {
+                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-20-speed",1,1,150};
+                frequency = "1";
+                volume = "((speed factor[2, 6]) min (speed factor[6, 4]))";
+            };
+            class WaternoiseOutW2
+            {
+                sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-50-speed",1,1,300};
+                frequency = "1";
+                volume = "(speed factor[3, 9])";
+            };
+        };
+        class RenderTargets
+        {
+            class Left_Mirror
+            {
+                renderTarget = "rendertarget0";
+                class CameraView1
+                {
+                    pointPosition = "PIP0_pos";
+                    pointDirection = "PIP0_dir";
+                    renderVisionMode = 0;
+                    renderQuality = 2;
+                    fov = 0.7;
+                };
+            };
+            class Right_Mirror
+            {
+                renderTarget = "rendertarget1";
+                class CameraView2
+                {
+                    pointPosition = "PIP1_pos";
+                    pointDirection = "PIP1_dir";
+                    renderVisionMode = 0;
+                    renderQuality = 2;
+                    fov = 0.7;
+                };
+            };
+        };
+        driverLeftHandAnimName = "handle";
+        driverRightHandAnimName = "handle";
+        driverAction = "Driver_Jetski";
+        weapons[] = {"MiniCarHorn"};
+        cargoAction[] = {"Cargo_Jetski"};
+        getInAction = "GetInLow";
+        getOutAction = "GetOutLow";
+        cargoGetInAction[] = {"GetInLow"};
+        cargoGetOutAction[] = {"GetOutLow"};
+        castDriverShadow = 1;
+        castCargoShadow = 1;
+        ejectDeadDriver = 1;
+        ejectDeadCargo = 1;
+        extCameraPosition[] = {0,1.5,-4.5};
+        maxSpeed = 190;
+        turnCoef = 0.1;
+        simulation = "shipX";
+        overSpeedBrakeCoef = 0;
+        enginePower = 220;
+        engineShiftY = 0;
+        waterLeakiness = 0;
+        waterResistanceCoef = 0.015;
+        thrustDelay = 2;
+        waterLinearDampingCoefY = 10;
+        waterLinearDampingCoefX = 0.2;
+        waterAngularDampingCoef = 1.5;
+        rudderForceCoef = 0.06;
+        rudderForceCoefAtMaxSpeed = 0.001;
+        enableGPS = 1;
+        transportSoldier = 1;
+        supplyRadius = 10;
+        idleRpm = 200;
+        redRpm = 1200;
+        fuelCapacity = 5;
+        hiddenSelections[] = {"num_1","num_2","num_3","num_4","num_5"};
+        slingLoadMaxCargoMass = 4000;
+        slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1"};
+        slingLoadMemoryPoint = "slingLoad0";
+        class EventHandlers : EventHandlers
+        {
+            GetIn = "params ['','','_u']; if (player isEqualTo _u) then {EPOCH_inEpochVeh = true; 0 = _this spawn {params ['_v'];_p = '\x\addons\a3_epoch_vehicles\data\'; while {EPOCH_inEpochVeh} do {_h = floor ((date select 3)/10);_m = floor ((date select 4)/10);{_v setObjectTexture [_forEachIndex,_x]} forEach [format['%1num%2_ca.paa',_p,_h],format['%1num%2_ca.paa',_p,(date select 3)-(_h*10)],format['%1num%2_ca.paa',_p,_m],format['%1num%2_ca.paa',_p,(date select 4)-(_m*10)],format['%1fuel%2_ca.paa',_p,floor(fuel _v*10)]];uisleep 1;};};};";
+            GetOut = "params ['','','_u']; if (player isEqualTo _u) then {EPOCH_inEpochVeh = false};";
+        };
+        class UserActions
+        {
+            class PushTheThing
+            {
+                displayNameDefault = "Push";
+                displayName = "$STR_EPOCH_Push";
+                position = "";
+                radius = 5;
+                onlyForPlayer = 1;
+                condition = "alive this && crew this isEqualTo [] && local this && isTouchingGround player";
+                statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
+            };
+        };
+        class Exhausts
+        {
+            class Exhaust1
+            {
+                position = "exhaust";
+                direction = "exhaust_dir";
+                effect = "ExhaustsEffect";
+            };
+        };
+        class complexGearbox
+        {
+            GearboxRatios[] = {"R1",-0.782,"N",0,"D1",2,"D2",1.85,"D3",1.75};
+            TransmissionRatios[] = {"High",1};
+            gearBoxMode = "auto";
+            moveOffGear = 1;
+            driveString = "D";
+            neutralString = "N";
+            reverseString = "R";
+        };
+        armor = 15;
+        class Turrets {};
+        class Library
+        {
+            libTextDesc = "$STR_A3_CfgVehicles_Rubber_duck_base_Library0";
+        };
+        class Damage
+        {
+            tex[] = {};
+            mat[] = {"A3\boat_f\Boat_Transport_01\data\Boat_Transport_01.rvmat","A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_damage.rvmat","A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_damage.rvmat"};
+        };
+    };
     class jetski_epoch_blu : jetski_epoch
     {
         author = "Kiory";
@@ -4213,838 +6173,6 @@ class CfgVehicles
 		driverCanEject = 1;
 		ejectDeadCargo = 1;
 	};
-	class C_Hatchback_01_F;
-    class C_Hatchback_01_EPOCH : C_Hatchback_01_F
-    {
-        scope = 2;
-		scopeCurator=2;
-        forceInGarage=1;
-		crew = "";
-        side = 3;
-        armor = 40;
-        fuelCapacity = 45;
-        fuelConsumptionRate = 0.02;
-        transportMaxWeapons = 12;
-        transportMaxMagazines = 64;
-        transportMaxBackpacks = 12;
-        maximumLoad = 1500;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems{};
-        class Eventhandlers;
-		class HitPoints;
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
-			upgradeToVehicle = "C_Hatchback_01_EPOCH1";
-		};
-    };
-	class C_Hatchback_01_EPOCH1: C_Hatchback_01_EPOCH
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HatchBackLevel1";
-		terrainCoef = 4.0;
-		brakeDistance = 3.2;
-		acceleration 	= 16;
-		maxSpeed = 190;
-		fuelConsumptionRate = 0.025;
-		enginePower = 150;
-		peakTorque = 500;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRF2Wheel;
-			class HitFuel;
-			class HitEngine;
-			class HitBody;
-			class HitGlass1;
-			class HitGlass2;
-			class HitGlass3;
-			class HitGlass4;
-			class HitRGlass;
-			class HitLGlass;
-			class HitGlass5;
-			class HitGlass6;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-			class HitHull;
-		};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
-			upgradeToVehicle = "C_Hatchback_01_EPOCH2";
-		};
-	};
-	class C_Hatchback_01_EPOCH2: C_Hatchback_01_EPOCH1
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HatchBackLevel2";
-		armor = 100;
-		armorLights = 0.05;
-		crewCrashProtection	= 0.15;
-		class HitPoints: HitPoints {
-			class HitLFWheel: HitLFWheel {
-				armor = 0.25;
-				explosionShielding = 3.5;
-			};
-			class HitLF2Wheel: HitLF2Wheel {
-				armor = 0.25;
-				explosionShielding = 3.5;
-			};
-			class HitRFWheel: HitRFWheel {
-				armor = 0.25;
-				explosionShielding = 3.5;
-			};
-			class HitRF2Wheel: HitRF2Wheel {
-				armor = 0.25;
-				explosionShielding = 3.5;
-			};
-			class HitFuel: HitFuel {
-				armor = 0.6;
-				passThrough = 0;
-				explosionShielding = 1.25;
-			};
-			class HitEngine: HitEngine {
-				armor = 1;
-				passThrough = 0.4;
-				explosionShielding = 0.25;
-			};
-			class HitBody: HitBody {
-				armor = 1.5;
-				passThrough = 0.4;
-				explosionShielding = 1.25;
-			};
-			class HitGlass1: HitGlass1 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitGlass2: HitGlass2 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitGlass3: HitGlass3 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitGlass4: HitGlass4 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitRGlass: HitRGlass {
-				armor = 0.3;
-				explosionShielding = 1.5;
-			};
-			class HitLGlass: HitLGlass {
-				armor = 0.3;
-				explosionShielding = 1.5;
-			};
-			class HitGlass5: HitGlass5 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitGlass6: HitGlass6 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitLBWheel: HitLBWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitLMWheel: HitLMWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitRBWheel: HitRBWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitRMWheel: HitRMWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitHull: HitHull {
-				armor = 1.75;
-				passThrough = 0.4;
-				explosionShielding = 6;
-				minimalHit = 0.2;
-			};
-		};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
-			upgradeToVehicle = "C_Hatchback_01_EPOCH3";
-		};
-	};
-	class C_Hatchback_01_EPOCH3: C_Hatchback_01_EPOCH2
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HatchBackLevel3";
-		transportMaxWeapons = 18;
-		transportMaxMagazines = 96;
-		transportMaxBackpacks = 18;
-		maximumLoad = 3000;
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
-			upgradeToVehicle = "C_Hatchback_01_EPOCH4";
-		};
-	};
-	class C_Hatchback_01_EPOCH4: C_Hatchback_01_EPOCH3
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HatchBackLevel4";
-		fuelCapacity = 90;
-		fuelConsumptionRate = 0.0175;
-	};
-    class C_Hatchback_01_sport_F;
-    class C_Hatchback_02_EPOCH : C_Hatchback_01_sport_F
-    {
-        scope = 2;
-		scopeCurator=2;
-        crew = "";
-        side = 3;
-        armor = 40;
-        fuelCapacity = 45;
-        fuelConsumptionRate = 0.03;
-        transportMaxWeapons = 12;
-        transportMaxMagazines = 64;
-        transportMaxBackpacks = 12;
-        maximumLoad = 1500;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers;
-		class HitPoints;
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
-			upgradeToVehicle = "C_Hatchback_02_EPOCH1";
-		};
-    };
-	class C_Hatchback_02_EPOCH1: C_Hatchback_02_EPOCH
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HatchBackSPLevel1";
-		terrainCoef = 4.0;
-		brakeDistance = 4.75;
-		acceleration = 16;
-		maxSpeed = 350;
-		fuelConsumptionRate = 0.035;
-		enginePower = 375;
-		peakTorque = 820;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRF2Wheel;
-			class HitFuel;
-			class HitEngine;
-			class HitBody;
-			class HitGlass1;
-			class HitGlass2;
-			class HitGlass3;
-			class HitGlass4;
-			class HitRGlass;
-			class HitLGlass;
-			class HitGlass5;
-			class HitGlass6;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-			class HitHull;
-		};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
-			upgradeToVehicle = "C_Hatchback_02_EPOCH2";
-		};
-	};
-	class C_Hatchback_02_EPOCH2: C_Hatchback_02_EPOCH1
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HatchBackSPLevel2";
-		armor = 100;
-		armorLights = 0.05;
-		crewCrashProtection	= 1.5;
-		class HitPoints: HitPoints {
-			class HitLFWheel: HitLFWheel {
-				armor = 0.25;
-				explosionShielding = 3.5;
-			};
-			class HitLF2Wheel: HitLF2Wheel {
-				armor = 0.25;
-				explosionShielding = 3.5;
-			};
-			class HitRFWheel: HitRFWheel {
-				armor = 0.25;
-				explosionShielding = 3.5;
-			};
-			class HitRF2Wheel: HitRF2Wheel {
-				armor = 0.25;
-				explosionShielding = 3.5;
-			};
-			class HitFuel: HitFuel {
-				armor = 0.6;
-				passThrough = 0;
-				explosionShielding = 1.25;
-			};
-			class HitEngine: HitEngine {
-				armor = 1;
-				passThrough = 0.4;
-				explosionShielding = 0.25;
-			};
-			class HitBody: HitBody {
-				armor = 1.5;
-				passThrough = 0.4;
-				explosionShielding = 1.25;
-			};
-			class HitGlass1: HitGlass1 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitGlass2: HitGlass2 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitGlass3: HitGlass3 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitGlass4: HitGlass4 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitRGlass: HitRGlass {
-				armor = 0.3;
-				explosionShielding = 1.5;
-			};
-			class HitLGlass: HitLGlass {
-				armor = 0.3;
-				explosionShielding = 1.5;
-			};
-			class HitGlass5: HitGlass5 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitGlass6: HitGlass6 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitLBWheel: HitLBWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitLMWheel: HitLMWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitRBWheel: HitRBWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitRMWheel: HitRMWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitHull: HitHull {
-				armor = 1.75;
-				passThrough = 0.4;
-				explosionShielding = 6;
-				minimalHit = 0.2;
-			};
-		};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
-			upgradeToVehicle = "C_Hatchback_02_EPOCH3";
-		};
-	};
-	class C_Hatchback_02_EPOCH3: C_Hatchback_02_EPOCH2
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HatchBackSPLevel3";
-		transportMaxWeapons = 18;
-		transportMaxMagazines = 96;
-		transportMaxBackpacks = 18;
-		maximumLoad = 3000;
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
-			upgradeToVehicle = "C_Hatchback_02_EPOCH4";
-		};
-	};
-	class C_Hatchback_02_EPOCH4: C_Hatchback_02_EPOCH3
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HatchBackSPLevel4";
-		fuelCapacity = 90;
-		fuelConsumptionRate = 0.0275;
-	};
-	class C_Offroad_01_F;
-    class C_Offroad_01_EPOCH : C_Offroad_01_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-		forceInGarage=1;
-        crew = "";
-        side = 3;
-        armor = 50;
-        fuelCapacity = 75;
-        fuelConsumptionRate = 0.03;
-        maximumLoad = 3500;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers;
-		class HitPoints;
-		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 1, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 0.27, "HideBumper2", 1, "HideConstruction", 1};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
-			upgradeToVehicle = "C_Offroad_01_EPOCH1";
-		};
-    };
-	class C_Offroad_01_EPOCH1: C_Offroad_01_EPOCH
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadLevel1";
-		terrainCoef = 1.75;
-		brakeDistance = 45;
-		maxSpeed = 225;
-		fuelConsumptionRate = 0.0325;
-		enginePower = 375;
-		peakTorque = 800;
-		idleRpm = 800;
-		redRpm = 6000;
-		class complexGearbox {
-			GearboxRatios[] = {"R1", -3.231, "N", 0, "D1", 4.462, "D2", 3.57, "D3", 2.571, "D4", 1.97, "D5", 1.601, "D6", 0.9, "D7", 0.65};
-			TransmissionRatios[] = {"High", 4.111};
-			gearBoxMode = "auto";
-			moveOffGear = 1;
-			driveString = "D";
-			neutralString = "N";
-			reverseString = "R";
-			gearUpMaxCoef = 0.95;
-			gearDownMaxCoef = 0.85;
-			gearUpMinCoef = 0.65;
-			gearDownMinCoef = 0.55;
-			transmissionDelay = 0.75;
-		};
-		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 1};
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRF2Wheel;
-			class HitFuel;
-			class HitEngine;
-			class HitBody;
-			class HitGlass1;
-			class HitGlass2;
-			class HitRGlass;
-			class HitLGlass;
-			class HitGlass3;
-			class HitGlass4;
-			class HitGlass5;
-			class HitGlass6;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-			class HitHull;
-		};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
-			upgradeToVehicle = "C_Offroad_01_EPOCH2";
-		};
-	};
-	class C_Offroad_01_EPOCH2: C_Offroad_01_EPOCH1
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadLevel2";
-		armor = 125;
-		armorLights = 0.6;
-		crewCrashProtection	= 1.5;
-		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
-		class HitPoints: HitPoints {
-			class HitLFWheel: HitLFWheel {
-				armor = 0.7;
-				explosionShielding = 3.5;
-			};
-			class HitLF2Wheel: HitLF2Wheel {
-				armor = 0.7;
-				explosionShielding = 3.5;
-			};
-			class HitRFWheel: HitRFWheel {
-				armor = 0.7;
-				explosionShielding = 3.5;
-			};
-			class HitRF2Wheel: HitRF2Wheel {
-				armor = 0.7;
-				explosionShielding = 3.5;
-			};
-			class HitFuel: HitFuel {
-				armor = 2.5;
-				passThrough = 0;
-				explosionShielding = 1.25;
-			};
-			class HitEngine: HitEngine {
-				armor = 4.5;
-				passThrough = 0.4;
-				explosionShielding = 0.25;
-			};
-			class HitBody: HitBody {
-				armor = 1.5;
-				passThrough = 0.75;
-				explosionShielding = 1.25;
-			};
-			class HitGlass1: HitGlass1 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitGlass2: HitGlass2 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitRGlass: HitRGlass {
-				armor = 0.3;
-				explosionShielding = 1.5;
-			};
-			class HitLGlass: HitLGlass {
-				armor = 0.3;
-				explosionShielding = 1.5;
-			};
-			class HitGlass3: HitGlass3 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitGlass4: HitGlass4 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitGlass5: HitGlass5 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitGlass6: HitGlass6 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitLBWheel: HitLBWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitLMWheel: HitLMWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitRBWheel: HitRBWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitRMWheel: HitRMWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitHull: HitHull {
-				armor = 1.75;
-				passThrough = 0.4;
-				explosionShielding = 6;
-				minimalHit = 0.2;
-			};
-		};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
-			upgradeToVehicle = "C_Hatchback_01_EPOCH3";
-		};
-	};
-	class C_Offroad_01_EPOCH3: C_Offroad_01_EPOCH2
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadLevel3";
-		transportMaxWeapons = 18;
-		transportMaxMagazines = 96;
-		transportMaxBackpacks = 4;
-		maximumLoad = 3000;
-		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
-			upgradeToVehicle = "C_Offroad_01_EPOCH4";
-		};
-	};
-	class C_Offroad_01_EPOCH4: C_Offroad_01_EPOCH3
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadLevel4";
-		fuelCapacity = 100;
-		fuelConsumptionRate = 0.0275;
-		animationList[] = {"HidePolice", 1, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDocPolice",1},{"CircuitParts",2},{"ItemScraps",2},{"ItemBulb",4}};
-			upgradeToVehicle = "C_Offroad_01_EPOCH5";
-		};
-	};
-	class C_Offroad_01_EPOCH5: C_Offroad_01_EPOCH4
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadLevel5";
-		textureList[] = {"White", 1};
-		animationList[] = {"HidePolice", 0, "HideServices", 1, "HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
-		class UserActions {
-			class beacons_start {
-				userActionID = 50;
-				displayName = "Beacons On";
-				displayNameDefault = "Beacons On";
-				position = "temp";
-				priority = 1.5;
-				radius = 2;
-				animPeriod = 2;
-				onlyForplayer = 0;
-				condition = "this animationPhase 'BeaconsStart' < 0.5 AND Alive this AND driver this == player AND this animationPhase 'hidePolice' < 0.5";
-				statement = "if(isNil 'EPOCH_Siren')then{EPOCH_Siren = 0;};this animate ['BeaconsStart',1]; if(diag_tickTime > EPOCH_Siren + 31)then{vehicle player say3d 'police_siren'; EPOCH_Siren = diag_tickTime;};";
-			};
-			class beacons_stop: beacons_start {
-				userActionID = 51;
-				displayName = "Beacons Off";
-				displayNameDefault = "Beacons Off";
-				condition = "this animationPhase 'BeaconsStart' > 0.5 AND Alive this AND driver this == player AND this animationPhase 'hidePolice' < 0.5";
-				statement = "this animate ['BeaconsStart',0];";
-				position = "temp";
-				priority = 1.5;
-				radius = 2;
-				animPeriod = 2;
-				onlyForplayer = 0;
-			};
-		};
-	};
-    class C_Quadbike_01_F;
-    class C_Quadbike_01_EPOCH : C_Quadbike_01_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 30;
-        fuelCapacity = 30;
-        fuelConsumptionRate = 0.01;
-        maximumLoad = 600;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class Eventhandlers;
-        class UserActions
-        {
-            class PressXToFlipTheThing
-            {
-                displayNameDefault = "Flip ATV";
-                displayName = "$STR_EPOCH_FlipATV";
-                position = "";
-                radius = 2.7;
-                onlyForPlayer = 1;
-                condition = "alive this && not canmove this && crew this isEqualTo []";
-                statement = "this setvectorup [0,0,1]";
-            };
-        };
-    };
-	class C_SUV_01_F;
-	class C_SUV_01_EPOCH: C_SUV_01_F
-	{
-		scope = 2;
-		scopeCurator=2;
-		crew = "";
-		side = 3;
-		armor = 45;
-		fuelCapacity = 45;
-		fuelConsumptionRate = 0.02;
-		transportMaxWeapons = 12;
-		transportMaxMagazines = 64;
-		transportMaxBackpacks = 12;
-		maximumLoad = 2000;
-		faction = "CIV_F";
-		typicalCargo[] = {};
-		class TransportItems{};
-		class Eventhandlers;
-		class HitPoints;
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
-			upgradeToVehicle = "C_SUV_01_EPOCH1";
-		};
-	};
-	class C_SUV_01_EPOCH1: C_SUV_01_EPOCH
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_SUVLevel1";
-		terrainCoef = 1.75;
-		brakeDistance = 6.2;
-		acceleration 	= 17;
-		maxSpeed = 274;
-		fuelConsumptionRate = 0.025;
-		enginePower = 454;
-		peakTorque = 750;
-		idleRpm = 850;
-		redRpm = 6250;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRF2Wheel;
-			class HitFuel;
-			class HitEngine;
-			class HitGlass1;
-			class HitGlass2;
-			class HitGlass3;
-			class HitGlass4;
-			class HitGlass5;
-			class HitGlass6;
-			class HitRGlass;
-			class HitLGlass;
-			class HitBody;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-			class HitHull;
-		};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc2",1},{"SpareTire",2},{"KitTankTrap",2}};
-			upgradeToVehicle = "C_SUV_01_EPOCH2";
-		};
-	};
-	class C_SUV_01_EPOCH2: C_SUV_01_EPOCH1
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_SUVLevel2";
-		armor = 100;
-		armorLights = 0.1;
-		crewCrashProtection	= 1.5;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel: HitLFWheel {
-				armor = 0.9;
-				explosionShielding = 3.5;
-			};
-			class HitLF2Wheel: HitLF2Wheel {
-				armor = 0.9;
-				explosionShielding = 3.5;
-			};
-			class HitRFWheel: HitRFWheel {
-				armor = 0.9;
-				explosionShielding = 3.5;
-			};
-			class HitRF2Wheel: HitRF2Wheel {
-				armor = 0.9;
-				explosionShielding = 3.5;
-			};
-			class HitFuel: HitFuel {
-				armor = 2.3;
-				passThrough = 0;
-				explosionShielding = 1.25;
-			};
-			class HitEngine: HitEngine {
-				armor = 4.25;
-				passThrough = 0.4;
-				explosionShielding = 0.25;
-			};
-			class HitGlass1: HitGlass1 {
-				armor = 2.3;
-				explosionShielding = 1.5;
-			};
-			class HitGlass2: HitGlass2 {
-				armor = 2.3;
-				explosionShielding = 1.5;
-			};
-			class HitGlass3: HitGlass3 {
-				armor = 2.3;
-				explosionShielding = 1.5;
-			};
-			class HitGlass4: HitGlass4 {
-				armor = 2.3;
-				explosionShielding = 1.5;
-			};
-			class HitGlass5: HitGlass5 {
-				armor = 2.3;
-				explosionShielding = 1.5;
-			};
-			class HitGlass6: HitGlass6 {
-				armor = 1.2; // 1
-				explosionShielding = 1.5;
-			};
-			class HitRGlass: HitRGlass {
-				armor = 0.3;
-				explosionShielding = 1.5;
-			};
-			class HitLGlass: HitLGlass {
-				armor = 0.3;
-				explosionShielding = 1.5;
-			};
-			class HitBody: HitBody {
-				armor = 1.25;
-				passThrough = 0.75;
-				explosionShielding = 1.25;
-			};
-			class HitLBWheel: HitLBWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitLMWheel: HitLMWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitRBWheel: HitRBWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitRMWheel: HitRMWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitHull: HitHull {
-				armor = 1.75;
-				passThrough = 0.4;
-				explosionShielding = 6;
-				minimalHit = 0.2;
-			};
-		};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
-			upgradeToVehicle = "C_SUV_01_EPOCH3";
-		};
-	};
-	class C_SUV_01_EPOCH3: C_SUV_01_EPOCH2
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_SUVLevel3";
-		transportMaxWeapons = 18;
-		transportMaxMagazines = 96;
-		transportMaxBackpacks = 18;
-		maximumLoad = 3750;
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
-			upgradeToVehicle = "C_SUV_01_EPOCH4";
-		};
-	};
-	class C_SUV_01_EPOCH4: C_SUV_01_EPOCH3
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_SUVLevel4";
-		fuelCapacity = 90;
-		fuelConsumptionRate = 0.0185;
-	};
     class C_Rubberboat;
     class C_Rubberboat_EPOCH : C_Rubberboat
     {
@@ -5153,86 +6281,6 @@ class CfgVehicles
             };
         };
     };
-    class C_Van_01_box_F;
-    class C_Van_01_box_EPOCH : C_Van_01_box_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 80;
-        fuelCapacity = 55;
-        fuelConsumptionRate = 0.02;
-        maximumLoad = 4000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-    };
-	class C_Van_01_box_EPOCH1 : C_Van_01_box_EPOCH
-    {
-		author = "DirtySanchez";
-		maximumLoad = 4500;
-		transportMaxWeapons = 96;
-		transportMaxMagazines = 512;
-		transportMaxBackpacks = 128;
-	};
-	class C_Van_01_box_EPOCH2 : C_Van_01_box_EPOCH1
-    {
-		author = "DirtySanchez";
-		maximumLoad = 5000;
-	};
-	class C_Van_01_box_EPOCH3 : C_Van_01_box_EPOCH2
-    {
-		author = "DirtySanchez";
-		maximumLoad = 6000;
-	};
-	class C_Van_01_box_EPOCH4 : C_Van_01_box_EPOCH3
-    {
-		author = "DirtySanchez";
-		fuelCapacity = 75;
-        fuelConsumptionRate = 0.018;
-	};
-    class C_Van_01_transport_F;
-    class C_Van_01_transport_EPOCH : C_Van_01_transport_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 80;
-        fuelCapacity = 55;
-        fuelConsumptionRate = 0.02;
-        maximumLoad = 4000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-    };
-	class C_Van_01_transport_EPOCH1 : C_Van_01_transport_EPOCH
-	{
-		author = "DirtySanchez";
-		maximumLoad = 4500;
-		transportMaxWeapons = 96;
-		transportMaxMagazines = 512;
-		transportMaxBackpacks = 128;
-	};
-	class C_Van_01_transport_EPOCH2 : C_Van_01_transport_EPOCH1
-	{
-		author = "DirtySanchez";
-		maximumLoad = 5000;
-	};
-	class C_Van_01_transport_EPOCH3 : C_Van_01_transport_EPOCH2
-	{
-		author = "DirtySanchez";
-		maximumLoad = 6000;
-	};
-	class C_Van_01_transport_EPOCH4 : C_Van_01_transport_EPOCH3
-	{
-		author = "DirtySanchez";
-		fuelCapacity = 75;
-        fuelConsumptionRate = 0.018;
-	};
     class C_Boat_Civil_01_F;
     class C_Boat_Civil_01_EPOCH : C_Boat_Civil_01_F
     {
@@ -5524,1278 +6572,6 @@ class CfgVehicles
                 statement = "_vel = velocity this; _dir = getDir player; this setVelocity[(_vel select 0)+(sin _dir * 2),(_vel select 1)+(cos _dir * 2),(_vel select 2)]; ";
             };
         };
-    };
-    class B_MRAP_01_F;
-    class B_MRAP_01_EPOCH : B_MRAP_01_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 75;
-        faction = "CIV_F";
-        maximumLoad = 3500;
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-		class HitPoints;
-		class UserActions {
-			class Door_LF_Open {
-				userActionID = 50;
-				displayName = "Open Driver Door";
-				radius = 2.5;
-				radiusView = 0.2;
-				showIn3D = 17;
-				available = 0;
-				priority = 0.5;
-				position = "door_LF";
-				showWindow = 1;
-				onlyForPlayer = 1;
-				shortcut = "";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF') == 0) AND Alive(this) && (speed this < 5) ";
-				statement = "this animateDoor ['Door_LF', 1]";
-			};
-			class Door_RF_Open: Door_LF_Open {
-				userActionID = 51;
-				displayName = "Open Passenger Door";
-				position = "door_RF";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF') == 0) AND Alive(this) && (speed this < 5)";
-				statement = "this animateDoor ['Door_RF', 1]";
-			};
-			class Door_LB_Open: Door_LF_Open {
-				userActionID = 52;
-				displayName = "Open RearL Door";
-				position = "door_LB";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_LB') == 0) AND Alive(this) && (speed this < 5)";
-				statement = "this animateDoor ['Door_LB', 1]";
-			};
-			class Door_RB_Open: Door_LF_Open {
-				userActionID = 53;
-				displayName = "Open RearR Door";
-				position = "Door_RB";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_RB') == 0) AND Alive(this) && (speed this < 5)";
-				statement = "this animateDoor ['Door_RB', 1]";
-			};
-			class Door_LF_Close: Door_LF_Open {
-				userActionID = 50;
-				displayName = "Close Driver Door";
-				condition = "((this doorPhase 'Door_LF') > 0) AND Alive(this)";
-				statement = "this animateDoor ['Door_LF', 0]";
-			};
-			class Door_RF_Close: Door_RF_Open {
-				userActionID = 51;
-				displayName = "Close Passenger Door";
-				condition = "((this doorPhase 'Door_RF') > 0) AND Alive(this)";
-				statement = "this animateDoor ['Door_RF', 0]";
-			};
-			class Door_LB_Close: Door_LB_Open {
-				userActionID = 52;
-				displayName = "Close RearL Door";
-				condition = "((this doorPhase 'Door_LB') > 0) AND Alive(this)";
-				statement = "this animateDoor ['Door_LB', 0]";
-			};
-			class Door_RB_Close: Door_RB_Open {
-				userActionID = 53;
-				displayName = "Close RearR Door";
-				condition = "((this doorPhase 'Door_RB') > 0) AND Alive(this)";
-				statement = "this animateDoor ['Door_RB', 0]";
-			};
-		};
-    };
-	class B_MRAP_01_EPOCH1 : B_MRAP_01_EPOCH
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HunterLevel1";
-		terrainCoef = 1.75;
-		maxSpeed = 135;
-		fuelConsumptionRate = 0.012;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRF2Wheel;
-			class HitFuel;
-			class HitHull;
-			class HitEngine;
-			class HitBody;
-			class HitGlass1;
-			class HitGlass2;
-			class HitGlass3;
-			class HitGlass4;
-			class HitGlass5;
-			class HitGlass6;
-			class HitRGlass;
-			class HitLGlass;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-		};
-	};
-	class B_MRAP_01_EPOCH2 : B_MRAP_01_EPOCH1
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HunterLevel2";
-		armor = 100;
-		armorLights = 0.45;
-		crewCrashProtection	= 1.5;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel: HitLFWheel
-			{
-				armor = 0.75;
-				explosionShielding = 3.5;
-			};
-			class HitLF2Wheel: HitLF2Wheel
-			{
-				armor = 0.75;
-				explosionShielding = 3.5;
-			};
-			class HitRFWheel: HitRFWheel
-			{
-				armor = 0.75;
-				explosionShielding = 3.5;
-			};
-			class HitRF2Wheel: HitRF2Wheel
-			{
-				armor = 0.75;
-				explosionShielding = 3.5;
-			};
-			class HitFuel: HitFuel
-			{
-				armor = 0.55;
-				explosionShielding = 0.25;
-			};
-			class HitHull: HitHull
-			{
-				armor = 1.2;
-				explosionShielding = 0.45;
-			};
-			class HitEngine: HitHull
-			{
-				armor = 0.55;
-				explosionShielding = 0.25;
-			};
-			class HitBody: HitHull
-			{
-				explosionShielding = 2.5;
-			};
-			class HitGlass1: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass2: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass3: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass4: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass5: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass6: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitRGlass: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 2.2;
-			};
-			class HitLGlass: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 2.2;
-			};
-			class HitLBWheel: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 4.2;
-			};
-			class HitLMWheel: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 4.2;
-			};
-			class HitRBWheel: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 4.2;
-			};
-			class HitRMWheel: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 4.2;
-			};
-		};
-	};
-	class B_MRAP_01_EPOCH3 : B_MRAP_01_EPOCH
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HunterLevel3";
-		transportMaxWeapons = 18;
-		transportMaxMagazines = 96;
-		transportMaxBackpacks = 8;
-		maximumLoad = 4250;
-	};
-	class B_MRAP_01_EPOCH4 : B_MRAP_01_EPOCH3
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_HunterLevel4";
-		fuelCapacity = 115;
-		fuelConsumptionRate = 0.009;
-	};
-    class O_MRAP_02_F;
-    class O_MRAP_02_EPOCH : O_MRAP_02_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 75;
-        faction = "CIV_F";
-        maximumLoad = 3500;
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-		class HitPoints;
-		class UserActions {
-			class DoorLF_Open {
-				userActionID = 50;
-				displayName = "Open left front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Open door";
-				priority = 0.1;
-				radius = 2.5;
-				radiusView = 0.2;
-				showIn3D = 17;
-				available = 0;
-				position = "door1_axis";
-				showWindow = 1;
-				onlyForPlayer = 1;
-				shortcut = "";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_LF', 1]";
-			};
-			class DoorLF_Close: DoorLF_Open {
-				userActionID = 51;
-				displayName = "Close left front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_LF', 0]";
-			};
-			class DoorRF_Open: DoorLF_Open {
-				userActionID = 52;
-				displayName = "Open right front door";
-				position = "door3_axis";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_RF', 1]";
-			};
-			class DoorRF_Close: DoorRF_Open {
-				userActionID = 53;
-				displayName = "Close right front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_RF', 0]";
-			};
-			class DoorLM_Open: DoorLF_Open {
-				userActionID = 54;
-				displayName = "Open left middle door";
-				position = "door5_axis";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_LM')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_LM', 1]";
-			};
-			class DoorLM_Close: DoorLM_Open {
-				userActionID = 55;
-				displayName = "Close left middle door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_LM') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_LM', 0]";
-			};
-			class DoorRM_Open: DoorLM_Open {
-				userActionID = 56;
-				displayName = "Open right middle door";
-				position = "door7_axis";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_RM')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_RM', 1]";
-			};
-			class DoorRM_Close: DoorRM_Open {
-				userActionID = 57;
-				displayName = "Close right middle door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_RM') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_RM', 0]";
-			};
-			class Door_rear_Open: DoorLM_Open {
-				userActionID = 58;
-				displayName = "Open rear door";
-				position = "door9_axis";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_rear')  ==  0) && (alive this)";
-				statement = "this animateDoor ['Door_rear', 1]";
-			};
-			class Door_rear_Close: Door_rear_Open {
-				userActionID = 59;
-				displayName = "Close rear door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_rear') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_rear', 0]";
-			};
-		};
-    };
-	class O_MRAP_02_EPOCH1 : O_MRAP_02_EPOCH
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_IfritLevel1";
-		terrainCoef = 1.75;
-		maxSpeed = 145;
-		fuelConsumptionRate = 0.012;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRF2Wheel;
-			class HitReserveWheel;
-			class HitFuel;
-			class HitHull;
-			class HitEngine;
-			class HitBody;
-			class HitGlass1;
-			class HitGlass2;
-			class HitGlass3;
-			class HitGlass4;
-			class HitGlass5;
-			class HitGlass6;
-			class HitGlass7;
-			class HitGlass8;
-			class HitGlass9;
-			class HitGlass10;
-			class HitGlass11;
-			class HitRGlass;
-			class HitLGlass;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-		};
-	};
-	class O_MRAP_02_EPOCH2 : O_MRAP_02_EPOCH1
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_IfritLevel2";
-		armor = 100;
-		armorLights = 0.45;
-		crewCrashProtection	= 1.5;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel: HitLFWheel {
-				armor = 0.75;
-				explosionShielding = 4.2;
-			};
-			class HitLF2Wheel: HitLF2Wheel {
-				armor = 0.75;
-				explosionShielding = 4.2;
-			};
-			class HitRFWheel: HitRFWheel {
-				armor = 0.75;
-				explosionShielding = 4.2;
-			};
-			class HitRF2Wheel: HitRF2Wheel {
-				armor = 0.75;
-				explosionShielding = 4.2;
-			};
-			class HitReserveWheel: HitRF2Wheel {
-				armor = 0.75;
-				explosionShielding = 0.9;
-			};
-			class HitFuel: HitFuel {
-				armor = 0.55;
-				explosionShielding = 0.15;
-			};
-			class HitHull: HitHull {
-				armor = 1.2;
-				explosionShielding = 0.4;
-			};
-			class HitEngine: HitEngine {
-				armor = 0.75;
-				explosionShielding = 0.5;
-			};
-			class HitBody: HitBody {
-				armor = 4.2;
-				explosionShielding = 1.2;
-			};
-			class HitGlass1: HitGlass1 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass2: HitGlass2 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass3: HitGlass3 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass4: HitGlass4 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass5: HitGlass5 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass6: HitGlass5 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass7: HitGlass5 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass8: HitGlass5 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass9: HitGlass5 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass10: HitGlass5 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass11: HitGlass5 {
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitRGlass: HitRGlass {
-				armor = 0.4;
-				explosionShielding = 2.2;
-			};
-			class HitLGlass: HitLGlass {
-				armor = 0.4;
-				explosionShielding = 2.2;
-			};
-			class HitLBWheel: HitLBWheel {
-				armor = 0.4;
-				explosionShielding = 4.2;
-			};
-			class HitLMWheel: HitLMWheel {
-				armor = 0.4;
-				explosionShielding = 4.2;
-			};
-			class HitRBWheel: HitRBWheel {
-				armor = 0.4;
-				explosionShielding = 4.2;
-			};
-			class HitRMWheel: HitRMWheel {
-				armor = 0.4;
-				explosionShielding = 4.2;
-			};
-		};
-	};
-	class O_MRAP_02_EPOCH3 : O_MRAP_02_EPOCH2
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_IfritLevel3";
-		transportMaxWeapons = 18;
-		transportMaxMagazines = 96;
-		transportMaxBackpacks = 8;
-		maximumLoad = 4250;
-	};
-	class O_MRAP_02_EPOCH4 : O_MRAP_02_EPOCH3
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_IfritLevel4";
-		fuelCapacity = 115;
-		fuelConsumptionRate = 0.009;
-	};
-    class I_MRAP_03_F;
-    class I_MRAP_03_EPOCH : I_MRAP_03_F
-    {
-        author = "$STR_A3_Bohemia_Interactive";
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 75;
-        faction = "CIV_F";
-        maximumLoad = 3500;
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-		class HitPoints;
-        class RenderTargets
-        {
-            class commander_display
-            {
-                renderTarget = "rendertarget0";
-                class CameraView1
-                {
-                    pointPosition = "PIP0_pos";
-                    pointDirection = "PIP0_dir";
-                    renderVisionMode = 0;
-                    renderQuality = 2;
-                    fov = 0.5;
-                };
-            };
-            class driver_display
-            {
-                renderTarget = "rendertarget2";
-                class CameraView1
-                {
-                    pointPosition = "PIP2_pos";
-                    pointDirection = "PIP2_dir";
-                    renderVisionMode = 0;
-                    renderQuality = 2;
-                    fov = 0.6;
-                };
-            };
-            class mirrorL
-            {
-                renderTarget = "rendertarget4";
-                class CameraView1
-                {
-                    pointPosition = "PIP4_pos";
-                    pointDirection = "PIP4_dir";
-                    renderVisionMode = 4;
-                    renderQuality = 2;
-                    fov = 0.35;
-                };
-            };
-            class mirrorR
-            {
-                renderTarget = "rendertarget5";
-                class CameraView1
-                {
-                    pointPosition = "PIP5_pos";
-                    pointDirection = "PIP5_dir";
-                    renderVisionMode = 4;
-                    renderQuality = 2;
-                    fov = 0.35;
-                };
-            };
-        };
-		class UserActions
-		{
-			class DoorLF_Open {
-				userActionID = 50;
-				displayName = "Open left front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Open door";
-				priority = 0.1;
-				radius = 2.5;
-				radiusView = 0.2;
-				showIn3D = 17;
-				available = 0;
-				position = "door1_axis";
-				showWindow = 1;
-				onlyForPlayer = 1;
-				shortcut = "";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_LF', 1]";
-			};
-			class DoorLF_Close: DoorLF_Open {
-				userActionID = 51;
-				displayName = "Close left front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_LF', 0]";
-			};
-			class DoorRF_Open: DoorLF_Open {
-				userActionID = 52;
-				displayName = "Open right front door";
-				position = "door3_axis";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_RF', 1]";
-			};
-			class DoorRF_Close: DoorRF_Open {
-				userActionID = 53;
-				displayName = "Close right front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_RF', 0]";
-			};
-		};
-    };
-	class I_MRAP_03_EPOCH1 : I_MRAP_03_EPOCH
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_StriderLevel1";
-		terrainCoef = 1.75;
-		maxSpeed = 140;
-		fuelConsumptionRate = 0.012;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRF2Wheel;
-			class HitFuel;
-			class HitHull;
-			class HitEngine;
-			class HitBody;
-			class HitGlass1;
-			class HitGlass2;
-			class HitGlass3;
-			class HitGlass4;
-			class HitGlass5;
-			class HitRGlass;
-			class HitLGlass;
-			class HitGlass6;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-		};
-	};
-	class I_MRAP_03_EPOCH2 : I_MRAP_03_EPOCH1
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_StriderLevel2";
-		armor = 100;
-		armorLights = 0.45;
-		crewCrashProtection	= 1.5;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel: HitLFWheel
-			{
-				armor = 0.75;
-				explosionShielding = 3.5;
-			};
-			class HitLF2Wheel: HitLF2Wheel
-			{
-				armor = 0.75;
-				explosionShielding = 3.5;
-			};
-			class HitRFWheel: HitRFWheel
-			{
-				armor = 0.75;
-				explosionShielding = 3.5;
-			};
-			class HitRF2Wheel: HitRF2Wheel
-			{
-				armor = 0.75;
-				explosionShielding = 3.5;
-			};
-			class HitFuel: HitFuel
-			{
-				armor = 0.55;
-				explosionShielding = 0.25;
-			};
-			class HitHull: HitHull
-			{
-				armor = 1.2;
-				explosionShielding = 0.45;
-			};
-			class HitEngine: HitHull
-			{
-				armor = 0.55;
-				explosionShielding = 0.25;
-			};
-			class HitBody: HitHull
-			{
-				explosionShielding = 2.5;
-			};
-			class HitGlass1: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass2: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass3: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass4: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitGlass5: HitHull
-			{
-				armor = 1.75;
-				explosionShielding = 3.2;
-			};
-			class HitRGlass: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 2.2;
-			};
-			class HitLGlass: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 2.2;
-			};
-			class HitGlass6: HitHull
-			{
-				armor = 0.15;
-				explosionShielding = 2.2;
-			};
-			class HitLBWheel: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 4.2;
-			};
-			class HitLMWheel: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 4.2;
-			};
-			class HitRBWheel: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 4.2;
-			};
-			class HitRMWheel: HitHull
-			{
-				armor = 0.25;
-				explosionShielding = 4.2;
-			};
-		};
-	};
-	class I_MRAP_03_EPOCH3 : I_MRAP_03_EPOCH2
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_StriderLevel3";
-		transportMaxWeapons = 18;
-		transportMaxMagazines = 96;
-		transportMaxBackpacks = 8;
-		maximumLoad = 4250;
-	};
-	class I_MRAP_03_EPOCH4 : I_MRAP_03_EPOCH3
-    {
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_StriderLevel4";
-		fuelCapacity = 115;
-		fuelConsumptionRate = 0.009;
-	};
-    class B_Truck_01_transport_F;
-    class B_Truck_01_transport_EPOCH : B_Truck_01_transport_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 80;
-        fuelCapacity = 350;
-        fuelConsumptionRate = 26;
-        maximumLoad = 6000;
-        transportMaxBackpacks = 64;
-        transportMaxMagazines = 256;
-        transportMaxWeapons = 64;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-    };
-	class B_G_Offroad_01_armed_F;
-	class B_G_Offroad_01_armed_EPOCH: B_G_Offroad_01_armed_F
-	{
-		scope = 2;
-		scopeCurator = 2;
-		crew = "";
-		side = 3;
-		armor = 80;
-		fuelCapacity = 350;
-		fuelConsumptionRate = 26;
-		maximumLoad = 3500;
-		faction = "CIV_F";
-		typicalCargo[] = {};
-		class TransportItems{};
-		class Eventhandlers;
-		class HitPoints;
-		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 1, "HideConstruction", 1};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
-			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH1";
-		};
-	};
-	class B_G_Offroad_01_armed_EPOCH1: B_G_Offroad_01_armed_EPOCH
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadArmedLevel1";
-		terrainCoef = 1.75;
-		brakeDistance = 45;
-		maxSpeed = 225;
-		enginePower = 375;
-		peakTorque = 800;
-		idleRpm = 800;
-		redRpm = 6000;
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRF2Wheel;
-			class HitFuel;
-			class HitEngine;
-			class HitBody;
-			class HitGlass1;
-			class HitGlass2;
-			class HitRGlass;
-			class HitLGlass;
-			class HitGlass3;
-			class HitGlass4;
-			class HitGlass5;
-			class HitGlass6;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-			class HitHull;
-		};
-		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 1, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 1};
-		class complexGearbox {
-			GearboxRatios[] = {"R1", -3.231, "N", 0, "D1", 4.462, "D2", 3.57, "D3", 2.571, "D4", 1.97, "D5", 1.601, "D6", 0.9, "D7", 0.65};
-			TransmissionRatios[] = {"High", 4.111};
-			gearBoxMode = "auto";
-			moveOffGear = 1;
-			driveString = "D";
-			neutralString = "N";
-			reverseString = "R";
-			gearUpMaxCoef = 0.95;
-			gearDownMaxCoef = 0.85;
-			gearUpMinCoef = 0.65;
-			gearDownMinCoef = 0.55;
-			transmissionDelay = 0.75; // 2
-		};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc1",1},{"ItemCables",1},{"CircuitParts",1},{"VehicleRepairLg",2}};
-			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH2";
-		};
-	};
-	class B_G_Offroad_01_armed_EPOCH2: B_G_Offroad_01_armed_EPOCH1
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadArmedLevel2";
-		armor = 185;
-		armorLights = 0.6;
-		crewCrashProtection	= 1.5;
-		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 1,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
-		class HitPoints: HitPoints {
-			class HitLFWheel: HitLFWheel {
-				armor = 0.7;
-				explosionShielding = 3.5;
-			};
-			class HitLF2Wheel: HitLF2Wheel {
-				armor = 0.7;
-				explosionShielding = 3.5;
-			};
-			class HitRFWheel: HitRFWheel {
-				armor = 0.7;
-				explosionShielding = 3.5;
-			};
-			class HitRF2Wheel: HitRF2Wheel {
-				armor = 0.7;
-				explosionShielding = 3.5;
-			};
-			class HitFuel: HitFuel {
-				armor = 2.5;
-				passThrough = 0;
-				explosionShielding = 1.25;
-			};
-			class HitEngine: HitEngine {
-				armor = 4.5;
-				passThrough = 0.4;
-				explosionShielding = 0.25;
-			};
-			class HitBody: HitBody {
-				armor = 1.5;
-				passThrough = 0.75;
-				explosionShielding = 1.25;
-			};
-			class HitGlass1: HitGlass1 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitGlass2: HitGlass2 {
-				armor = 0.35;
-				explosionShielding = 1.5;
-			};
-			class HitRGlass: HitRGlass {
-				armor = 0.3;
-				explosionShielding = 1.5;
-			};
-			class HitLGlass: HitLGlass {
-				armor = 0.3;
-				explosionShielding = 1.5;
-			};
-			class HitGlass3: HitGlass3 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitGlass4: HitGlass4 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitGlass5: HitGlass5 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitGlass6: HitGlass6 {
-				armor = 0.2;
-				explosionShielding = 1.5;
-			};
-			class HitLBWheel: HitLBWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitLMWheel: HitLMWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitRBWheel: HitRBWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitRMWheel: HitRMWheel {
-				armor = 0.25;
-				passThrough = 0.2;
-				explosionShielding = 3.5;
-			};
-			class HitHull: HitHull {
-				armor = 1.75;
-				passThrough = 0.4;
-				explosionShielding = 6;
-				minimalHit = 0.2;
-			};
-		};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc3",1},{"ItemPipe",2},{"KitShelf",2}};
-			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH3";
-		};
-	};
-	class B_G_Offroad_01_armed_EPOCH3: B_G_Offroad_01_armed_EPOCH2
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadArmedLevel3";
-		transportMaxWeapons = 18;
-		transportMaxMagazines = 96;
-		transportMaxBackpacks = 4;
-		maximumLoad = 5500;
-		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
-		class Upgrades{
-			upgradeReqItems[] = {{"ItemVehDoc4",1},{"CircuitParts",1},{"ItemScraps",2},{"jerrycan_epoch",2}};
-			upgradeToVehicle = "B_G_Offroad_01_armed_EPOCH4";
-		};
-	};
-	class B_G_Offroad_01_armed_EPOCH4: B_G_Offroad_01_armed_EPOCH3
-	{
-		author = "DirtySanchez";
-		displayName = "$STR_EPOCH_OffroadArmedLevel4";
-		fuelCapacity = 550;
-		fuelConsumptionRate = 24;
-		animationList[] = {"HideDoor1", 0, "HideDoor2", 0, "HideGlass2", 0, "HideDoor3", 0, "HideBackpacks", 0,"HideBumper1", 1, "HideBumper2", 0, "HideConstruction", 0};
-	};
-    class B_Truck_01_covered_F;
-    class B_Truck_01_covered_EPOCH : B_Truck_01_covered_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 80;
-        fuelCapacity = 350;
-        fuelConsumptionRate = 26;
-        maximumLoad = 6000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-    };
-    class B_Truck_01_mover_F;
-    class B_Truck_01_mover_EPOCH : B_Truck_01_mover_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 80;
-        fuelCapacity = 350;
-        fuelConsumptionRate = 26;
-        maximumLoad = 4000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-    };
-    class B_Truck_01_box_F;
-    class B_Truck_01_box_EPOCH : B_Truck_01_box_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        faction = "CIV_F";
-        armor = 80;
-        fuelCapacity = 350;
-        fuelConsumptionRate = 26;
-        maximumLoad = 6000;
-        transportMaxBackpacks = 64;
-        transportMaxMagazines = 256;
-        transportMaxWeapons = 64;
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-    };
-    class O_Truck_02_covered_F;
-    class O_Truck_02_covered_EPOCH : O_Truck_02_covered_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 45;
-        fuelCapacity = 350;
-        fuelConsumptionRate = 26;
-        maximumLoad = 5000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-		class UserActions
-		{
-			class DoorLF_Open {
-				userActionID = 50;
-				displayName = "Open left front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Open door";
-				priority = 0.1;
-				radius = 3.5;
-				radiusView = 0.2;
-				showIn3D = 17;
-				available = 0;
-				position = "door_LF";
-				showWindow = 1;
-				onlyForPlayer = 1;
-				shortcut = "";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_LF', 1]";
-			};
-			class DoorLF_Close: DoorLF_Open {
-				userActionID = 51;
-				displayName = "Close left front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_LF', 0]";
-			};
-			class DoorRF_Open: DoorLF_Open {
-				userActionID = 52;
-				displayName = "Open right front door";
-				position = "door_RF";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_RF', 1]";
-			};
-			class DoorRF_Close: DoorRF_Open {
-				userActionID = 53;
-				displayName = "Close right front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_RF', 0]";
-			};
-		};
-    };
-	class O_Truck_02_covered_EPOCH3 : O_Truck_02_covered_EPOCH
-    {
-		author = "DirtySanchez";
-		maximumLoad = 6500;
-		transportMaxWeapons = 18;
-		transportMaxMagazines = 96;
-		transportMaxBackpacks = 8;
-	};
-	class O_Truck_02_covered_EPOCH4 : O_Truck_02_covered_EPOCH
-    {
-		author = "DirtySanchez";
-		fuelCapacity = 450;
-        fuelConsumptionRate = 22;
-	};
-    class O_Truck_02_transport_F;
-    class O_Truck_02_transport_EPOCH : O_Truck_02_transport_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 45;
-        fuelCapacity = 350;
-        fuelConsumptionRate = 26;
-        maximumLoad = 5000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-		class UserActions
-		{
-			class DoorLF_Open {
-				userActionID = 50;
-				displayName = "Open left front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Open door";
-				priority = 0.1;
-				radius = 3.5;
-				radiusView = 0.2;
-				showIn3D = 17;
-				available = 0;
-				position = "door_LF";
-				showWindow = 1;
-				onlyForPlayer = 1;
-				shortcut = "";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_LF', 1]";
-			};
-			class DoorLF_Close: DoorLF_Open {
-				userActionID = 51;
-				displayName = "Close left front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_LF', 0]";
-			};
-			class DoorRF_Open: DoorLF_Open {
-				userActionID = 52;
-				displayName = "Open right front door";
-				position = "door_RF";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_RF', 1]";
-			};
-			class DoorRF_Close: DoorRF_Open {
-				userActionID = 53;
-				displayName = "Close right front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_RF', 0]";
-			};
-		};
-    };
-    class O_Truck_02_transport_EPOCH3 : O_Truck_02_covered_EPOCH3 {};
-	class O_Truck_02_transport_EPOCH4 : O_Truck_02_transport_EPOCH3 {};
-	class O_Truck_03_transport_F;
-    class O_Truck_03_transport_EPOCH : O_Truck_03_transport_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 64;
-        fuelCapacity = 250;
-        fuelConsumptionRate = 36;
-        maximumLoad = 5000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-    };
-	class O_Truck_03_covered_F;
-    class O_Truck_03_covered_EPOCH : O_Truck_03_covered_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        armor = 64;
-        fuelCapacity = 250;
-        fuelConsumptionRate = 36;
-        maximumLoad = 5000;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-    };
-    class O_Truck_02_box_F;
-    class O_Truck_02_box_EPOCH : O_Truck_02_box_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        transportRepair = 0;
-        armor = 45;
-        fuelCapacity = 350;
-        fuelConsumptionRate = 26;
-        maximumLoad = 5000;
-        transportMaxBackpacks = 64;
-        transportMaxMagazines = 256;
-        transportMaxWeapons = 64;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-		class UserActions
-		{
-			class DoorLF_Open {
-				userActionID = 50;
-				displayName = "Open left front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Open door";
-				priority = 0.1;
-				radius = 3.5;
-				radiusView = 0.2;
-				showIn3D = 17;
-				available = 0;
-				position = "door_LF";
-				showWindow = 1;
-				onlyForPlayer = 1;
-				shortcut = "";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_LF')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_LF', 1]";
-			};
-			class DoorLF_Close: DoorLF_Open {
-				userActionID = 51;
-				displayName = "Close left front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_LF') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_LF', 0]";
-			};
-			class DoorRF_Open: DoorLF_Open {
-				userActionID = 52;
-				displayName = "Open right front door";
-				position = "door_RF";
-				condition = "((locked this) != 2) && ((this doorPhase 'Door_RF')  ==  0) && (alive this) && this != vehicle player";
-				statement = "this animateDoor ['Door_RF', 1]";
-			};
-			class DoorRF_Close: DoorRF_Open {
-				userActionID = 53;
-				displayName = "Close right front door";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
-				textToolTip = "Close door";
-				condition = "((this doorPhase 'Door_RF') > 0) && (alive this)";
-				statement = "this animateDoor ['Door_RF', 0]";
-			};
-		};
     };
     class O_Heli_Light_02_unarmed_F;
     class O_Heli_Light_02_unarmed_EPOCH : O_Heli_Light_02_unarmed_F
@@ -7315,23 +7091,31 @@ class CfgVehicles
 			};
 		};
     };
-    class C_Heli_Light_01_civil_F;
-    class C_Heli_Light_01_civil_EPOCH : C_Heli_Light_01_civil_F
-    {
-        scope = 2;
+	class C_Heli_Light_01_civil_F;
+	class C_Heli_Light_01_civil_EPOCH : C_Heli_Light_01_civil_F
+	{
+		scope = 2;
 		scopeCurator = 2;
-        crew = "";
-        side = 3;
-        faction = "CIV_F";
-        maximumLoad = 1000;
-        commanderCanSee = "2+16+32";
-        gunnerCanSee = "2+16+32";
-        driverCanSee = "2+16+32";
-        typicalCargo[] = {};
-        class TransportItems {};
-        class EventHandlers;
-        class RenderTargets {};
-    };
+		crew = "";
+		side = 3;
+		faction = "CIV_F";
+		maximumLoad = 1000;
+		commanderCanSee = "2+16+32";
+		gunnerCanSee = "2+16+32";
+		driverCanSee = "2+16+32";
+		typicalCargo[] = {};
+		class TransportItems {};
+		class EventHandlers;
+		class RenderTargets {};
+	};
+	class C_Heli_Light_01_civil_2seat_EPOCH : C_Heli_Light_01_civil_EPOCH
+	{
+		animationList[] = {"AddDoors",0.9,"AddBackseats",0,"AddTread_Short",0.5,"AddTread",0.4};
+	};
+	class C_Heli_Light_01_civil_4seat_EPOCH : C_Heli_Light_01_civil_2seat_EPOCH
+	{
+		animationList[] = {"AddDoors",0.9,"AddBackseats",1,"AddTread_Short",0.5,"AddTread",0.4};
+	};
     class Tank : LandVehicle
     {
         scope = 0;

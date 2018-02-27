@@ -98,7 +98,7 @@ class Epoch_main_config_dynamicHUD: Epoch_main_config_template
 			y = 0.2404 * safezoneH + safezoneY;
 			w = 0.0773437 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "true call epoch_dynamicHUD_adjust;"
+			action = "true call epoch_dynamicHUD_adjust;";
 		};
 		class rmx_dh_btn2: RscShortcutButton
 		{
@@ -108,7 +108,7 @@ class Epoch_main_config_dynamicHUD: Epoch_main_config_template
 			y = 0.28657 * safezoneH + safezoneY;
 			w = 0.0773437 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "false call epoch_dynamicHUD_adjust;"
+			action = "false call epoch_dynamicHUD_adjust;";
 		};
 
 	};

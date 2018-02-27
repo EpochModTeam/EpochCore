@@ -3993,36 +3993,33 @@
 		<Key ID="STR_EPOCH_IodidePillsDesc">
 			<Original>An expectorant, used after contact with radioactive gases and/or liquids</Original>
 		</Key>
-		<Key ID="STR_EPOCH_OffroadLevel1">
-			<Original>Offroad LvL-I</Original>
+		<Key ID="STR_EPOCH_HotAxeSauce">
+			<Original>HotAxe Sauce</Original>
 		</Key>
-		<Key ID="STR_EPOCH_OffroadLevel1Desc">
-			<Original>Offroad Speed and Performance</Original>
+		<Key ID="STR_EPOCH_HotAxeSauceDesc">
+			<Original>Take the rust off your bumper or burn a hole through a sapper!</Original>
 		</Key>
-		<Key ID="STR_EPOCH_OffroadLevel2">
-			<Original>Offroad LvL-II</Original>
+		<Key ID="STR_EPOCH_Snowperson">
+			<Original>The Original A2 Snowman!</Original>
+		</Key>	
+		<Key ID="STR_EPOCH_Santa_Hat">
+			<Original>Santa Hat</Original>
+		</Key>	
+		<Key ID="STR_EPOCH_Snowperson_Ghost">
+			<Original>The Original A2 Snowman's ghost!</Original>
+		</Key>	
+		<Key ID="STR_EPOCH_P_RadSuit_MALE">
+			<Original>Packed Radiation Suit for Males</Original>
 		</Key>
-		<Key ID="STR_EPOCH_OffroadLevel2Desc">
-			<Original>Offroad Armored Tires, Body and Transparent Aluminum Windscreen</Original>
+		<Key ID="STR_EPOCH_P_RadSuit_FEMALE">
+			<Original>Packed Radiation Suit for Females</Original>
 		</Key>
-		<Key ID="STR_EPOCH_OffroadLevel3">
-			<Original>Offroad LvL-III</Original>
+		<Key ID="STR_EPOCH_RadSuit_MALE">
+			<Original>Packed Radiation Suit for Males</Original>
 		</Key>
-		<Key ID="STR_EPOCH_OffroadLevel3Desc">
-			<Original>Offroad eXpanded Inventory</Original>
-		</Key>
-		<Key ID="STR_EPOCH_OffroadLevel4">
-			<Original>Offroad LvL-IV</Original>
-		</Key>
-		<Key ID="STR_EPOCH_OffroadLevel4Desc">
-			<Original>Offroad eXpanded Fuel</Original>
-		</Key>
-		<Key ID="STR_EPOCH_OffroadLevel5">
-			<Original>Offroad Fuzz</Original>
-		</Key>
-		<Key ID="STR_EPOCH_OffroadLevel5Desc">
-			<Original>Whatcha gonna do when they come for YOU!</Original>
-		</Key>
+		<Key ID="STR_EPOCH_RadSuit_FEMALE">
+			<Original>Packed Radiation Suit for Females</Original>
+		</Key>	
 		<Key ID="STR_EPOCH_HatchBackLevel1">
 			<Original>HatchBack LvL-I</Original>
 		</Key>
@@ -4036,16 +4033,16 @@
 			<Original>HatchBack LvL-IV</Original>
 		</Key>
 		<Key ID="STR_EPOCH_HatchBackSPLevel1">
-			<Original>HatchBack Sport LvL-I</Original>
+			<Original>HatchBack (Sport) LvL-I</Original>
 		</Key>
 		<Key ID="STR_EPOCH_HatchBackSPLevel2">
-			<Original>HatchBack Sport LvL-II</Original>
+			<Original>HatchBack (Sport) LvL-II</Original>
 		</Key>
 		<Key ID="STR_EPOCH_HatchBackSPLevel3">
-			<Original>HatchBack Sport LvL-III</Original>
+			<Original>HatchBack (Sport) LvL-III</Original>
 		</Key>
 		<Key ID="STR_EPOCH_HatchBackSPLevel4">
-			<Original>HatchBack Sport LvL-IV</Original>
+			<Original>HatchBack (Sport) LvL-IV</Original>
 		</Key>
 		<Key ID="STR_EPOCH_SUVLevel1">
 			<Original>SUV LvL-I</Original>
@@ -4058,6 +4055,57 @@
 		</Key>
 		<Key ID="STR_EPOCH_SUVLevel4">
 			<Original>SUV LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TruckLevel1">
+			<Original>Truck LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TruckLevel2">
+			<Original>Truck LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TruckLevel3">
+			<Original>Truck LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TruckLevel4">
+			<Original>Truck LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TruckBoxLevel1">
+			<Original>Truck Boxer LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TruckBoxLevel2">
+			<Original>Truck Boxer LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TruckBoxLevel3">
+			<Original>Truck Boxer LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TruckBoxLevel4">
+			<Original>Truck Boxer LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel1">
+			<Original>Offroad LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel2">
+			<Original>Offroad LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel3">
+			<Original>Offroad LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel4">
+			<Original>Offroad LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadLevel5">
+			<Original>Offroad Fuzz</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadArmedLevel1">
+			<Original>Offroad Armed LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadArmedLevel2">
+			<Original>Offroad Armed LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadArmedLevel3">
+			<Original>Offroad Armed LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_OffroadArmedLevel4">
+			<Original>Offroad Armed LvL-IV</Original>
 		</Key>
 		<Key ID="STR_EPOCH_HunterLevel1">
 			<Original>Hunter LvL-I</Original>
@@ -4095,44 +4143,113 @@
 		<Key ID="STR_EPOCH_StriderLevel4">
 			<Original>Strider LvL-IV</Original>
 		</Key>
-		<Key ID="STR_EPOCH_OffroadArmedLevel1">
-			<Original>Offroad Armed LvL-I</Original>
+		<Key ID="STR_EPOCH_ZamakLevel1">
+			<Original>Zamak Transport LvL-I</Original>
 		</Key>
-		<Key ID="STR_EPOCH_OffroadArmedLevel2">
-			<Original>Offroad Armed LvL-II</Original>
+		<Key ID="STR_EPOCH_ZamakLevel2">
+			<Original>Zamak Transport LvL-II</Original>
 		</Key>
-		<Key ID="STR_EPOCH_OffroadArmedLevel3">
-			<Original>Offroad Armed LvL-III</Original>
+		<Key ID="STR_EPOCH_ZamakLevel3">
+			<Original>Zamak Transport LvL-III</Original>
 		</Key>
-		<Key ID="STR_EPOCH_OffroadArmedLevel4">
-			<Original>Offroad Armed LvL-IV</Original>
+		<Key ID="STR_EPOCH_ZamakLevel4">
+			<Original>Zamak Transport LvL-IV</Original>
 		</Key>
-		<Key ID="STR_EPOCH_HotAxeSauce">
-			<Original>HotAxe Sauce</Original>
+		<Key ID="STR_EPOCH_ZamakCoveredLevel1">
+			<Original>Zamak Covered LvL-I</Original>
 		</Key>
-		<Key ID="STR_EPOCH_HotAxeSauceDesc">
-			<Original>Take the rust off your bumper or burn a hole through a sapper!</Original>
+		<Key ID="STR_EPOCH_ZamakCoveredLevel2">
+			<Original>Zamak Covered LvL-II</Original>
 		</Key>
-		<Key ID="STR_EPOCH_Snowperson">
-			<Original>The Original A2 Snowman!</Original>
-		</Key>	
-		<Key ID="STR_EPOCH_Santa_Hat">
-			<Original>Santa Hat</Original>
-		</Key>	
-		<Key ID="STR_EPOCH_Snowperson_Ghost">
-			<Original>The Original A2 Snowman's ghost!</Original>
-		</Key>	
-		<Key ID="STR_EPOCH_P_RadSuit_MALE">
-			<Original>Packed Radiation Suit for Males</Original>
+		<Key ID="STR_EPOCH_ZamakCoveredLevel3">
+			<Original>Zamak Covered LvL-III</Original>
 		</Key>
-		<Key ID="STR_EPOCH_P_RadSuit_FEMALE">
-			<Original>Packed Radiation Suit for Females</Original>
+		<Key ID="STR_EPOCH_ZamakCoveredLevel4">
+			<Original>Zamak Covered LvL-IV</Original>
 		</Key>
-		<Key ID="STR_EPOCH_RadSuit_MALE">
-			<Original>Packed Radiation Suit for Males</Original>
+		<Key ID="STR_EPOCH_ZamakBoxLevel1">
+			<Original>Zamak Box LvL-I</Original>
 		</Key>
-		<Key ID="STR_EPOCH_RadSuit_FEMALE">
-			<Original>Packed Radiation Suit for Females</Original>
-		</Key>		
+		<Key ID="STR_EPOCH_ZamakBoxLevel2">
+			<Original>Zamak Box LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ZamakBoxLevel3">
+			<Original>Zamak Box LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_ZamakBoxLevel4">
+			<Original>Zamak Box LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TempestLevel1">
+			<Original>Tempest Transport LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TempestLevel2">
+			<Original>Tempest Transport LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TempestLevel3">
+			<Original>Tempest Transport LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TempestLevel4">
+			<Original>Tempest Transport LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TempestCoveredLevel1">
+			<Original>Tempest Covered LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TempestCoveredLevel2">
+			<Original>Tempest Covered LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TempestCoveredLevel3">
+			<Original>Tempest Covered LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_TempestCoveredLevel4">
+			<Original>Tempest Covered LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttMoverLevel1">
+			<Original>HEMTT LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttMoverLevel2">
+			<Original>HEMTT LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttMoverLevel3">
+			<Original>HEMTT LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttMoverLevel4">
+			<Original>HEMTT LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttLevel1">
+			<Original>HEMTT Transport LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttLevel2">
+			<Original>HEMTT Transport LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttLevel3">
+			<Original>HEMTT Transport LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttLevel4">
+			<Original>HEMTT Transport LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttCoveredLevel1">
+			<Original>HEMTT Covered LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttCoveredLevel2">
+			<Original>HEMTT Covered LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttCoveredLevel3">
+			<Original>HEMTT Covered LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttCoveredLevel4">
+			<Original>HEMTT Covered LvL-IV</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttBoxLevel1">
+			<Original>HEMTT Box LvL-I</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttBoxLevel2">
+			<Original>HEMTT Box LvL-II</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttBoxLevel3">
+			<Original>HEMTT Box LvL-III</Original>
+		</Key>
+		<Key ID="STR_EPOCH_HemttBoxLevel4">
+			<Original>HEMTT Box LvL-IV</Original>
+		</Key>
 	</Package>
 </Project>
