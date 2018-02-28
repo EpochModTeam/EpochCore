@@ -4241,6 +4241,13 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
+		driverDoor="Door_LF";
+		cargoDoors[]=
+		{
+			"Door_RF",
+			"Door_RB",
+			"Door_LB"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -4386,6 +4393,13 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
+		driverDoor="Door_LF";
+		cargoDoors[]=
+		{
+			"Door_RM",
+			"Door_LM",
+			"Door_rear"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -4555,6 +4569,12 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
+		driverDoor="Door_LF";
+		cargoDoors[]=
+		{
+			"Door_RF",
+			"Door_LF"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -4727,6 +4747,11 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
+		driverDoor="Door_LF";
+		cargoDoors[]=
+		{
+			"Door_RF"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -4852,6 +4877,11 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
+		driverDoor="Door_LF";
+		cargoDoors[]=
+		{
+			"Door_RF"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -4977,6 +5007,11 @@ class CfgVehicles
         side = 3;
         faction = "CIV_F";
         typicalCargo[] = {};
+		driverDoor="Door_LF";
+		cargoDoors[]=
+		{
+			"Door_RF"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -6547,6 +6582,12 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
+		driverDoor="door_L";
+		cargoDoors[]=
+		{
+			"door_R",
+			"door_L"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -6603,6 +6644,12 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
+		driverDoor="door_L";
+		cargoDoors[]=
+		{
+			"door_R",
+			"door_L"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -6708,6 +6755,13 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
+		driverDoor="door_back_L";
+		cargoDoors[]=
+		{
+			"door_back_R",
+			"door_back_L",
+			"CargoRamp_Open"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -6815,6 +6869,11 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
+		driverDoor="Door_1_source";
+		cargoDoors[]=
+		{
+			"Door_2_source"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -6875,6 +6934,11 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
+		driverDoor="Door_1_source";
+		cargoDoors[]=
+		{
+			"Door_2_source"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -6935,6 +6999,11 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
+		driverDoor="Door_1_source";
+		cargoDoors[]=
+		{
+			"Door_2_source"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -6995,6 +7064,13 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
+		driverDoor="Door_1_source";
+		cargoDoors[]=
+		{
+			"Door_5_source",
+			"Door_4_source",
+			"Door_6_source"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
@@ -7026,7 +7102,7 @@ class CfgVehicles
 			};
 			class CloseDoor_2: OpenDoor_2 {
 				displayName = "Close CoPilots Door";
-				condition = "(((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
+				condition = "((this animationPhase 'Door_2_rot') >= 0.5) &&  (alive this)";
 				statement = "(this animateDoor ['Door_2_source', 0])";
 			};
 			class OpenDoor_3: OpenDoor_1 {
@@ -7106,6 +7182,11 @@ class CfgVehicles
         gunnerCanSee = "2+16+32";
         driverCanSee = "2+16+32";
         typicalCargo[] = {};
+		driverDoor="Door_R_Source";
+		cargoDoors[]=
+		{
+			"Door_rear_source"
+		};
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportWeapons {};
