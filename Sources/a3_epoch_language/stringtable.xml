@@ -4168,16 +4168,16 @@
 			<Original>Zamak Covered LvL-IV</Original>
 		</Key>
 		<Key ID="STR_EPOCH_ZamakBoxLevel1">
-			<Original>Zamak Box LvL-I</Original>
+			<Original>Zamak Repair LvL-I</Original>
 		</Key>
 		<Key ID="STR_EPOCH_ZamakBoxLevel2">
-			<Original>Zamak Box LvL-II</Original>
+			<Original>Zamak Repair LvL-II</Original>
 		</Key>
 		<Key ID="STR_EPOCH_ZamakBoxLevel3">
-			<Original>Zamak Box LvL-III</Original>
+			<Original>Zamak Repair LvL-III</Original>
 		</Key>
 		<Key ID="STR_EPOCH_ZamakBoxLevel4">
-			<Original>Zamak Box LvL-IV</Original>
+			<Original>Zamak Repair LvL-IV</Original>
 		</Key>
 		<Key ID="STR_EPOCH_TempestLevel1">
 			<Original>Tempest Transport LvL-I</Original>

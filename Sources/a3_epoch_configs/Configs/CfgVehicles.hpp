@@ -7332,7 +7332,7 @@ class CfgVehicles
 		scopeCurator = 2;
         crew = "";
         side = 3;
-		armor=25;
+		armor=20;
         faction = "CIV_F";
         typicalCargo[] = {};
 		class TransportMagazines {};
@@ -7347,7 +7347,7 @@ class CfgVehicles
 		scopeCurator = 2;
         crew = "";
         side = 3;
-		armor=25;
+		armor=20;
         faction = "CIV_F";
         typicalCargo[] = {};
 		class TransportMagazines {};
