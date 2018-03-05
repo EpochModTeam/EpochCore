@@ -4284,6 +4284,22 @@ class CfgWeapons
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sledge_hold.rtm"};
         descriptionShort = "$STR_EPOCH_Plunger";
     };
+    class Power_Sword : MeleeWeapon
+    {
+        author = "Helion4";
+        scope = 2;
+        type = 4;
+        primary = 0;
+        reloadAction = "ReloadRPG";
+        autoreload = 1;
+        magazineReloadTime = 0;
+        model = "\x\addons\a3_epoch_community\power_sword\power_sword_weaponized.p3d";
+        picture = "\x\addons\a3_epoch_community\power_sword\power_sword_icon.paa";		
+        displayName = "Power Sword";
+        magazines[] = {"sledge_swing"};
+        handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sledge_hold.rtm"};
+        descriptionShort = "Power Sword";
+    };
     class InventoryMuzzleItem_Base_F;
     class test_suppressor : ItemCore
     {
