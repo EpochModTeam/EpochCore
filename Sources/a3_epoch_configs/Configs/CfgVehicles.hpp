@@ -9791,7 +9791,21 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_community\models\hol_x\epoch_snowman.p3d";
 		displayName = "$STR_EPOCH_Snowperson";
 		armor = 500;
-	};	
+	};
+    class snowmanDeco_EPOCH : NonStrategic
+    {
+        mapSize = 1.27;
+        author = "Helion4";
+        icon = "iconObject_5x4";
+        armor = 500;
+        vehicleclass = "Epoch_objects";
+        destrType = "DestructBuilding";
+        cost = 1000;
+        scope = 2;
+        displayName = "$STR_EPOCH_Snowperson";
+        placement = "vertical";
+		model = "\x\addons\a3_epoch_community\models\hol_x\epoch_snowman.p3d";
+    };
 	//**********XMAS******************************		
     class Buildable_Storage : WeaponHolder
     {
