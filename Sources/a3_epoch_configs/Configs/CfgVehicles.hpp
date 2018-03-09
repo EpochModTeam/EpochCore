@@ -7319,10 +7319,12 @@ class CfgVehicles
 	};
 	class C_Heli_Light_01_civil_2seat_EPOCH : C_Heli_Light_01_civil_EPOCH
 	{
+		displayName = "$STR_EPOCH_M900_2Seat";
 		animationList[] = {"AddDoors",0.9,"AddBackseats",0,"AddTread_Short",0.5,"AddTread",0.4};
 	};
 	class C_Heli_Light_01_civil_4seat_EPOCH : C_Heli_Light_01_civil_2seat_EPOCH
 	{
+		displayName = "$STR_EPOCH_M900_4Seat";
 		animationList[] = {"AddDoors",0.9,"AddBackseats",1,"AddTread_Short",0.5,"AddTread",0.4};
 	};
     class B_T_VTOL_01_vehicle_blue_F;

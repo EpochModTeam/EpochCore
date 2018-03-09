@@ -4251,5 +4251,11 @@
 		<Key ID="STR_EPOCH_HemttBoxLevel4">
 			<Original>HEMTT Box LvL-IV</Original>
 		</Key>
+		<Key ID="STR_EPOCH_M900_2Seat">
+			<Original>M-900 (2 Seats)</Original>
+		</Key>
+		<Key ID="STR_EPOCH_M900_4Seat">
+			<Original>M-900 (4 Seats)</Original>
+		</Key>
 	</Package>
 </Project>
