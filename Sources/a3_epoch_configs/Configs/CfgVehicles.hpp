@@ -7603,6 +7603,75 @@ class CfgVehicles
             };
         };
     };
+	class container_heliCrash_epoch : WeaponHolderSimulatedAlt
+    {
+        mapSize = 1;
+        author = "Kiory";
+        scope = 2;
+        displayName = "$STR_EPOCH_Container";
+        model = "\x\addons\a3_epoch_assets_2\container.p3d";
+        icon = "iconObject_circle";
+        vehicleClass = "epoch_objects";
+        destrType = "DestructNo";
+        cost = 100;
+        accuracy = 1000;
+        forceSupply = 0;
+        isGround = 0;
+        waterLeakiness = 0;
+        waterResistanceCoef = 0.8;
+        waterAngularDampingCoef = 10;
+        simulClass = "Container_heliCrash_SIM_EPOCH";
+        staticClass = "container_heliCrash_epoch";
+        sections[] = {};
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        class AnimationSources
+        {
+            class open_lid
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class open_lock1
+            {
+                source = "user";
+                animPeriod = 0.44;
+                initPhase = 0;
+            };
+            class open_lock2
+            {
+                source = "user";
+                animPeriod = 0.35;
+                initPhase = 0;
+            };
+            class open_lock3
+            {
+                source = "user";
+                animPeriod = 0.62;
+                initPhase = 0;
+            };
+            class open_lock4
+            {
+                source = "user";
+                animPeriod = 0.55;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_lid
+            {
+                displayName = "$STR_EPOCH_Search";
+                displayNameDefault = "<img image='\A3\ui_f\data\map\VehicleIcons\iconvehicle_ca.paa' size='2.5' />";
+                position = "lid_open";
+                radius = 3;
+                onlyForPlayer = 0;
+                condition = "this animationPhase ""open_lid"" < 0.5";
+                statement = "this spawn { _this animate [""open_lock3"", 1]; uiSleep 0.1; _this animate [""open_lock1"", 1];sleep 0.1; _this animate [""open_lock2"", 1]; uiSleep 0.1; _this animate [""open_lock4"", 1]; uiSleep 0.6; _this animate [""open_lid"", 1];}; this call EPOCH_LootIT; ";
+            };
+        };
+    };
     class Bobber_EPOCH : FloatingStructure_F
     {
         author = "Axle";
