@@ -13386,6 +13386,172 @@ class CfgVehicles
 		keepHorizontalPlacement = 1;
 		class DestructionEffects{};
     };
+    class Generator_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model="\A3\Structures_F\Items\Electronics\Portable_generator_F.p3d";
+        displayName = "Portable Generator";
+    };
+    class Generator_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model="\A3\Structures_F\Items\Electronics\Portable_generator_F.p3d";
+        displayName = "Portable Generator";
+    };
+    class Generator_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 0.87;
+		class SimpleObject
+		{
+			eden = 1;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.359;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model="\A3\Structures_F\Items\Electronics\Portable_generator_F.p3d";
+        displayName = "Portable Generator";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructDefault";
+    };
+    class SleepingBagGreen_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_F.p3d";
+        displayName = "Green Sleeping Bag";
+    };
+    class SleepingBagGreen_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_F.p3d";
+        displayName = "Green Sleeping Bag";
+    };
+    class SleepingBagGreen_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_F.p3d";
+        displayName = "Green Sleeping Bag";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+    };	
+    class SleepingBagBlue_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_blue_F.p3d";
+        displayName = "Blue Sleeping Bag";
+    };
+    class SleepingBagBlue_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_blue_F.p3d";
+        displayName = "Blue Sleeping Bag";
+    };
+    class SleepingBagBlue_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_blue_F.p3d";
+        displayName = "Blue Sleeping Bag";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+    };	
+    class SleepingBagBrown_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_brown_F.p3d";
+        displayName = "Brown Sleeping Bag";
+    };
+    class SleepingBagBrown_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_brown_F.p3d";
+        displayName = "Brown Sleeping Bag";
+    };
+    class SleepingBagBrown_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_brown_F.p3d";
+        displayName = "Brown Sleeping Bag";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructNo";
+    };	
+    class WorkbenchLarge_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_Heli\Furniture\Workbench_01_F.p3d";
+        displayName = "Large Workbench";
+    };
+    class WorkbenchLarge_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_Heli\Furniture\Workbench_01_F.p3d";
+        displayName = "Large Workbench";
+    };
+    class WorkbenchLarge_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F_Heli\Furniture\Workbench_01_F.p3d";
+        displayName = "Large Workbench";
+		vehicleClass = "Epoch_objects";
+        maximumLoad = 2000;
+		destrType = "DestructNo";
+    };	
 };
 
 /*[[[end]]]*/
