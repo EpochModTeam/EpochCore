@@ -4992,7 +4992,7 @@ class CfgMagazines
 		mass = 5;
 	};
 	
-	class epochz_Generator: CA_Magazine
+	class KitGenerator: CA_Magazine
 	{
 		author = "BI/Grahame";
 		scope=2;
