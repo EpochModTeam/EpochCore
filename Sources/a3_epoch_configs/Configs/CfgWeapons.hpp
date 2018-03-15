@@ -4284,6 +4284,22 @@ class CfgWeapons
         handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sledge_hold.rtm"};
         descriptionShort = "$STR_EPOCH_Plunger";
     };
+    class Power_Sword : MeleeWeapon
+    {
+        author = "Helion4";
+        scope = 2;
+        type = 4;
+        primary = 0;
+        reloadAction = "ReloadRPG";
+        autoreload = 1;
+        magazineReloadTime = 0;
+        model = "\x\addons\a3_epoch_community\power_sword\power_sword_weaponized.p3d";
+        picture = "\x\addons\a3_epoch_community\power_sword\power_sword_icon.paa";		
+        displayName = "Power Sword";
+        magazines[] = {"sledge_swing"};
+        handAnim[] = {"OFP2_ManSkeleton","\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Sledge_hold.rtm"};
+        descriptionShort = "Power Sword";
+    };
     class InventoryMuzzleItem_Base_F;
     class test_suppressor : ItemCore
     {
@@ -7122,6 +7138,24 @@ class CfgWeapons
             passThrough = 0.5;
         };
     };
+//********XMAS**************************
+	class santa_hat_epoch: ItemCore
+	{
+		author = "Helion4";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "$STR_EPOCH_Santa_Hat";
+		picture = "\x\addons\a3_epoch_community\models\hol_x\data\santa_hat_icon.paa";
+		model = "\x\addons\a3_epoch_community\models\hol_x\santa_hat.p3d";
+		class ItemInfo: HeadgearItem
+		{
+			mass = 40;
+			uniformModel = "\x\addons\a3_epoch_community\models\hol_x\santa_hat.p3d";
+			modelSides[] = {3,2,1};
+			passThrough = 0.5;
+		};
+	};
+//********XMAS*****************************	
 	class radiation_mask_epoch: NVGoggles
 	{
 		author = "DirtySanchez/Helion4";
@@ -7145,6 +7179,40 @@ class CfgWeapons
 			libTextDesc = "This mask is intended to reduce the possiblity of radiation exposure. This mask can work in certain situation where toxic gases are present";
 		};
 	};
+    class U_RadiationSuit_M_uniform: Itemcore
+    {
+		author = "Helion4";
+    	scope = 2;
+    	allowedSlots[] = {901};
+    	displayName = "$STR_EPOCH_P_RadSuit_MALE";
+    	picture = "\x\addons\a3_epoch_community\epoch_radsuit\data\ui\radiationsuit_icon_ca.paa";
+        model =   "\x\addons\a3_epoch_community\epoch_radsuit\radsuit_packed_EPOCH.p3d";
+    	
+    	class ItemInfo: UniformItem
+    	{
+    		uniformModel = "-";
+    		uniformClass = Epoch_RadiationSuit_M;
+    		containerClass = Supply30;
+    		mass = 60;
+    	};
+    };
+    class U_RadiationSuit_F_uniform: Itemcore
+    {
+		author = "Helion4";
+    	scope = 2;
+    	allowedSlots[] = {901};
+    	displayName = "$STR_EPOCH_P_RadSuit_FEMALE";
+    	picture = "\x\addons\a3_epoch_community\epoch_radsuit\data\ui\radiationsuit_icon_ca.paa";
+        model =   "\x\addons\a3_epoch_community\epoch_radsuit\radsuit_packed_EPOCH.p3d";
+    	
+    	class ItemInfo: UniformItem
+    	{
+    		uniformModel = "-";
+    		uniformClass = Epoch_RadiationSuit_F;
+    		containerClass = Supply30;
+    		mass = 60;
+    	};
+    };	
 };
 
 /*[[[end]]]*/

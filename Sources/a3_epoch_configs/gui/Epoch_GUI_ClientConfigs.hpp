@@ -98,7 +98,7 @@ class Epoch_main_config_dynamicHUD: Epoch_main_config_template
 			y = 0.2404 * safezoneH + safezoneY;
 			w = 0.0773437 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "true call epoch_dynamicHUD_adjust;"
+			action = "true call epoch_dynamicHUD_adjust;";
 		};
 		class rmx_dh_btn2: RscShortcutButton
 		{
@@ -108,7 +108,7 @@ class Epoch_main_config_dynamicHUD: Epoch_main_config_template
 			y = 0.28657 * safezoneH + safezoneY;
 			w = 0.0773437 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "false call epoch_dynamicHUD_adjust;"
+			action = "false call epoch_dynamicHUD_adjust;";
 		};
 
 	};
@@ -128,7 +128,7 @@ class Epoch_main_config_changelog: Epoch_main_config_template
 			x = 0; //keep x and y absolute
 			y = 0;
 			w = 0.425 * safezoneW;
-			h = 1.4 * safezoneH;
+			h = 1.5 * safezoneH;
 			filename = "changelog.html";
 			text="test";
 
@@ -144,7 +144,7 @@ class Epoch_main_config_changelog: Epoch_main_config_template
 			colorPictureLink[] = {0, 0, 1, 1};
 			colorPictureSelected[] = {0, 1, 0, 1};
 
-			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.9)";
 			prevPage = "\A3\ui_f\data\gui\rsccommon\rschtml\arrow_left_ca.paa";
 			nextPage = "\A3\ui_f\data\gui\rsccommon\rschtml\arrow_right_ca.paa";
 			shadow = 2;
@@ -194,7 +194,7 @@ class Epoch_main_config_changelog: Epoch_main_config_template
 			{
 				font = "PuristaMedium";
 				fontBold = "PuristaSemibold";
-				sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+				sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.9)";
 				align = "left";
 			};
 		};

@@ -812,7 +812,7 @@ class rmx_ST2: RscStructuredText
 		color="#ffffff";
 		colorLink="#D09B43";
 		align="center";
-		valign = "top"
+		valign = "top";
 		shadow=2;
 	};
 };

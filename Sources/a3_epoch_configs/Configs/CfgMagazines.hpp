@@ -4335,7 +4335,7 @@ class CfgMagazines
 	{
 		author = "He-Man/DirtySanchez";
 		scope=2;
-		count = 1;
+		count = 5;
 		type = 256;
 		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_FireExtinguisher_F.jpg";
 		model="\A3\structures_f_epa\Items\Tools\FireExtinguisher_F.p3d";
@@ -4813,6 +4813,193 @@ class CfgMagazines
 		picture = "\x\addons\a3_epoch_community\icons\hotsauce_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_HotAxeSauceDesc";
 		mass = 3;
+	};
+	class KitSleepingBagGreen: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_folded_F.p3d";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Sleeping_bag_folded_F.jpg";
+		displayName = "Green Sleeping Bag";
+		scope = 2;
+		count = 1;
+		mass = 5;
+	};
+
+	class KitSleepingBagBlue: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_blue_folded_F.p3d";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Sleeping_bag_blue_folded_F.jpg";
+		displayName = "Blue Sleeping Bag";
+		scope = 2;
+		count = 1;
+		mass = 5;
+	};
+
+	class KitSleepingBagBrown: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_brown_folded_F.p3d";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Sleeping_bag_brown_folded_F.jpg";
+		displayName = "Brown Sleeping Bag";
+		scope = 2;
+		count = 1;
+		mass = 5;
+	};
+
+	class PC_Case: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\A3\Structures_F_Heli\Items\Electronics\PCSet_01_case_F.p3d";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_PCSet_01_case_F.jpg";
+		displayName = "PC Case";
+		scope = 2;
+		count = 1;
+		mass = 20;
+	};
+
+	class PC_Screen: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\A3\Structures_F_Heli\Items\Electronics\PCSet_01_screen_F.p3d";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_PCSet_01_screen_F.jpg";
+		displayName = "PC Screen";
+		scope = 2;
+		count = 1;
+		mass = 10;
+		hiddenSelections[] = {"Camo_1"};
+		hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(0,0,0,0,co)"};
+		hiddenSelectionsMaterials[] = {"\A3\Data_F\Lights\Lamp_lcd.rvmat"};
+		class Attributes
+		{
+			class ObjectTextureCustom0
+			{
+				displayName = "$STR_3den_object_attribute_objecttexturecustom0_displayname";
+				tooltip = "$STR_3den_object_attribute_objecttexturecustom_tooltip";
+				property = "ObjectTextureCustom0";
+				control = "Edit";
+				expression = "_this setObjectTextureGlobal [0,_value]";
+				defaultValue = "getObjectTextures _this select 0";
+			};
+		};
+	};
+
+	class PC_Mouse: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\A3\Structures_F_Heli\Items\Electronics\PCSet_01_mouse_F.p3d";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_PCSet_01_mouse_F.jpg";
+		displayName = "PC Mouse";
+		scope = 2;
+		count = 1;
+		mass = 1;
+	};
+
+	class PC_Keyboard: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\A3\Structures_F_Heli\Items\Electronics\PCSet_01_keyboard_F.p3d";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_PCSet_01_keyboard_F.jpg";
+		displayName = "PC Keyboard";
+		scope = 2;
+		count = 1;
+		mass = 5;
+	};
+
+	class Tablet: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\A3\Structures_F_Heli\Items\Electronics\Tablet_01_F.p3d";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Tablet_01_F.jpg";
+		displayName = "Tablet";
+		scope = 2;
+		count = 1;
+		mass = 10;
+		hiddenSelections[] = {"Camo_1"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F_Heli\Items\Electronics\Data\Tablet_Screen_CO.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Data_F\Lights\Lamp_lcd2.rvmat"};
+		class Attributes
+		{
+			class ObjectTextureCustom0
+			{
+				displayName = "$STR_3den_object_attribute_objecttexturecustom0_displayname";
+				tooltip = "$STR_3den_object_attribute_objecttexturecustom_tooltip";
+				property = "ObjectTextureCustom0";
+				control = "Edit";
+				expression = "_this setObjectTextureGlobal [0,_value]";
+				defaultValue = "getObjectTextures _this select 0";
+			};
+		};
+	};
+
+	class Rugged_Tablet: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\A3\Props_F_Exp_A\Military\Equipment\Tablet_02_F.p3d";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Tablet_02_F.jpg";
+		displayName = "Rugged Tablet";
+		scope = 2;
+		count = 1;
+		mass = 15;
+		hiddenSelections[] = {"Camo_1"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F_Heli\Items\Electronics\Data\Tablet_Screen_CO.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\Data_F\Lights\Lamp_lcd.rvmat"};
+		class Attributes
+		{
+			class ObjectTextureCustom0
+			{
+				displayName = "$STR_3den_object_attribute_objecttexturecustom0_displayname";
+				tooltip = "$STR_3den_object_attribute_objecttexturecustom_tooltip";
+				property = "ObjectTextureCustom0";
+				control = "Edit";
+				expression = "_this setObjectTextureGlobal [0,_value]";
+				defaultValue = "getObjectTextures _this select 0";
+			};
+		};
+	};
+
+	class Laptop: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\A3\Structures_F\Items\Electronics\Laptop_F.p3d";
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Laptop_F.jpg";
+		displayName = "Laptop";
+		scope = 2;
+		count = 1;
+		mass = 5;
+	};
+
+	class Old_Laptop: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\a3\Props_F_Argo\Items\Electronics\Laptop_02_F.p3d";
+		picture = "\A3\EditorPreviews_F_Argo\Data\CfgVehicles\Land_Laptop_02_F.jpg";
+		displayName = "Old Laptop";
+		scope = 2;
+		count = 1;
+		mass = 5;
+	};
+
+	class KitWorkbenchLarge: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Large Workbench";
+		scope = 2;
+		count = 1;
+		mass = 5;
+	};
+	class KitGenerator: CA_Magazine
+	{
+		author = "He-Man/DirtySanchez";
+		scope=2;
+		count = 1;
+		type = 256;
+		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Portable_generator_F.jpg";
+		model="\A3\Structures_F\Items\Electronics\Portable_generator_F.p3d";
+		displayName = "Portable Generator";
+		mass = 200;
 	};
 };
 
