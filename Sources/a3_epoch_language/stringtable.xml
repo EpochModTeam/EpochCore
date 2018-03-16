@@ -4015,10 +4015,10 @@
 			<Original>Packed Radiation Suit for Females</Original>
 		</Key>
 		<Key ID="STR_EPOCH_RadSuit_MALE">
-			<Original>Packed Radiation Suit for Males</Original>
+			<Original>Radiation Suit for Males</Original>
 		</Key>
 		<Key ID="STR_EPOCH_RadSuit_FEMALE">
-			<Original>Packed Radiation Suit for Females</Original>
+			<Original>Radiation Suit for Females</Original>
 		</Key>	
 		<Key ID="STR_EPOCH_HatchBackLevel1">
 			<Original>HatchBack LvL-I</Original>
