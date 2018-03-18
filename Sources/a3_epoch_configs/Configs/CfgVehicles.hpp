@@ -1478,7 +1478,7 @@ class CfgVehicles
 		class Wounds
 		{
 			tex[] = {};
-			mat[] = {"x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_injury.rvmat"};
+			mat[] = {"x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_injury.rvmat","x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_injury.rvmat","x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_injury.rvmat"};
 		};
 		uniformClass = "U_RadiationSuit_M_uniform";
 	};	
@@ -1492,7 +1492,7 @@ class CfgVehicles
 		class Wounds
 		{
 			tex[] = {};
-			mat[] = {"x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_injury.rvmat"};
+			mat[] = {"x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_injury.rvmat","x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_injury.rvmat","x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_injury.rvmat"};
 		};
 		uniformClass = "U_RadiationSuit_F_uniform";
 	};	

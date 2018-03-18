@@ -49,7 +49,6 @@ class Stage3
 class Stage4
 {
 	texture="x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_AS.paa";
-	//texture="#(argb,8,8,3)color(0,0,0,0,AS)";
 	uvSource="tex";
 	class uvTransform
 	{
