@@ -8,6 +8,6 @@ class CfgPatches
 		requiredAddons[] = {};
 		magazines[] = {};
 		ammo[] = {};
-		epochVersion = "1.1.0";
+		epochVersion = "1.1.1";
 	};
 };
