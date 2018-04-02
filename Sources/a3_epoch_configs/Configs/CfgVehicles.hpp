@@ -7327,66 +7327,364 @@ class CfgVehicles
 		displayName = "$STR_EPOCH_M900_4Seat";
 		animationList[] = {"AddDoors",0.9,"AddBackseats",1,"AddTread_Short",0.5,"AddTread",0.4};
 	};
-    class B_T_VTOL_01_vehicle_blue_F;
-    class B_T_VTOL_01_vehicle_blue_EPOCH : B_T_VTOL_01_vehicle_blue_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-		armor=12;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-		class TransportMagazines {};
-		class TransportItems {};
-		class TransportWeapons {};
-		class TransportBackpacks {};
-    };
-    class B_T_VTOL_01_infantry_olive_F;
-    class B_T_VTOL_01_infantry_olive_EPOCH : B_T_VTOL_01_infantry_olive_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-		armor=12;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-		class TransportMagazines {};
-		class TransportItems {};
-		class TransportWeapons {};
-		class TransportBackpacks {};
-    };
-    class O_T_VTOL_02_infantry_F;
-    class O_T_VTOL_02_infantry_EPOCH : O_T_VTOL_02_infantry_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-		armor=60;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-		class TransportMagazines {};
-		class TransportItems {};
-		class TransportWeapons {};
-		class TransportBackpacks {};
-    };
-    class O_T_VTOL_02_vehicle_grey_F;
-    class O_T_VTOL_02_vehicle_grey_EPOCH : O_T_VTOL_02_vehicle_grey_F
-    {
-        scope = 2;
-		scopeCurator = 2;
-        crew = "";
-        side = 3;
-		armor=60;
-        faction = "CIV_F";
-        typicalCargo[] = {};
-		class TransportMagazines {};
-		class TransportItems {};
-		class TransportWeapons {};
-		class TransportBackpacks {};
-    };
+	class B_T_VTOL_01_vehicle_blue_F;
+	class B_T_VTOL_01_vehicle_blue_EPOCH_base : B_T_VTOL_01_vehicle_blue_F
+	{
+		scope=0;
+		class HitPoints;
+		class HitPoints_base: HitPoints
+		{
+			class HitHull;
+		};
+	};
+	class B_T_VTOL_01_vehicle_blue_EPOCH: B_T_VTOL_01_vehicle_blue_EPOCH_base
+	{
+		scope=2;
+		scopeCurator=2;
+		crew="";
+		side=3;
+		armor=300;		// default = 400
+		faction="CIV_F";
+		typicalCargo[]={};
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+		};
+		class TransportWeapons
+		{
+		};
+		class TransportBackpacks
+		{
+		};
+        class HitPoints : HitPoints_base
+        {
+			class HitHull: HitHull
+			{
+				armor=3;
+				explosionShielding=1;	// default = 5
+				name="HitHull";
+				passThrough=0.5;
+				visual="Hit_Hull";
+				radius=0.8;				// default = 0.4
+				minimalHit=0.02;
+				depends="Total";
+				material=-1;
+			};
+			class HitLCRudder: HitHull
+			{
+				armor=1.2;
+				explosionShielding=3;
+				name="HitLCRudder";
+				passThrough=0.1;
+				visual="Hit_RudderL";
+				radius=0.2;
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitRRudder: HitHull
+			{
+				armor=1.2;
+				explosionShielding=3;
+				name="HitRRudder";
+				passThrough=0.1;
+				visual="Hit_RudderR";
+				radius=0.2;
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitLAileron: HitHull
+			{
+				armor=0.8;				// default 1.3
+				explosionShielding=3;
+				name="HitLRotor";
+				passThrough=0.1;
+				visual="Hit_RotorL";
+				radius=0.35;			// default 0.25
+				minimalHit=0.0099999998;
+				depends="HitEngine2";
+			};
+			class HitRAileron: HitHull
+			{
+				armor=0.8;				// default 1.3
+				explosionShielding=3;
+				name="HitRRotor";
+				passThrough=0.1;
+				visual="Hit_RotorR";
+				radius=0.35;			// default 0.25
+				minimalHit=0.0099999998;
+				depends="HitEngine";
+			};
+			class HitLCElevator: HitLAileron
+			{
+			};
+			class HitRElevator: HitRAileron
+			{
+			};
+        };
+	};
+	class B_T_VTOL_01_infantry_olive_F;
+	class B_T_VTOL_01_infantry_olive_EPOCH_base : B_T_VTOL_01_infantry_olive_F
+	{
+		scope=0;
+		class HitPoints;
+		class HitPoints_base: HitPoints
+		{
+			class HitHull;
+		};
+	};
+	class B_T_VTOL_01_infantry_olive_EPOCH: B_T_VTOL_01_infantry_olive_EPOCH_base
+	{
+		scope=2;
+		scopeCurator=2;
+		crew="";
+		side=3;
+		armor=300;		// default = 400
+		faction="CIV_F";
+		typicalCargo[]={};
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+		};
+		class TransportWeapons
+		{
+		};
+		class TransportBackpacks
+		{
+		};
+        class HitPoints : HitPoints_base
+        {
+			class HitHull: HitHull
+			{
+				armor=3;
+				explosionShielding=1;	// default = 5
+				name="HitHull";
+				passThrough=0.5;
+				visual="Hit_Hull";
+				radius=0.8;				// default = 0.4
+				minimalHit=0.02;
+				depends="Total";
+				material=-1;
+			};
+			class HitLCRudder: HitHull
+			{
+				armor=1.2;
+				explosionShielding=3;
+				name="HitLCRudder";
+				passThrough=0.1;
+				visual="Hit_RudderL";
+				radius=0.2;
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitRRudder: HitHull
+			{
+				armor=1.2;
+				explosionShielding=3;
+				name="HitRRudder";
+				passThrough=0.1;
+				visual="Hit_RudderR";
+				radius=0.2;
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitLAileron: HitHull
+			{
+				armor=0.8;				// default 1.3
+				explosionShielding=3;
+				name="HitLRotor";
+				passThrough=0.1;
+				visual="Hit_RotorL";
+				radius=0.35;			// default 0.25
+				minimalHit=0.0099999998;
+				depends="HitEngine2";
+			};
+			class HitRAileron: HitHull
+			{
+				armor=0.8;				// default 1.3
+				explosionShielding=3;
+				name="HitRRotor";
+				passThrough=0.1;
+				visual="Hit_RotorR";
+				radius=0.35;			// default 0.25
+				minimalHit=0.0099999998;
+				depends="HitEngine";
+			};
+			class HitLCElevator: HitLAileron
+			{
+			};
+			class HitRElevator: HitRAileron
+			{
+			};
+        };
+	};
+	class O_T_VTOL_02_infantry_F;
+	class O_T_VTOL_02_infantry_EPOCH_base : O_T_VTOL_02_infantry_F
+	{
+		scope=0;
+		class HitPoints;
+		class HitPoints_base: HitPoints
+		{
+			class HitHull;
+		};
+	};
+	class O_T_VTOL_02_infantry_EPOCH: O_T_VTOL_02_infantry_EPOCH_base
+	{
+		scope=2;
+		scopeCurator=2;
+		crew="";
+		side=3;
+		armor=120;				// default = 100
+		armorStructural=1;		// default = 2
+		faction="CIV_F";
+		typicalCargo[]={};
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+		};
+		class TransportWeapons
+		{
+		};
+		class TransportBackpacks
+		{
+		};
+		class HitPoints: HitPoints_base
+		{
+			class HitHull: HitHull
+			{
+				armor=3;
+				explosionShielding=2;		// default 1
+				name="HitHull";
+				passThrough=0.5;
+				visual="Hit_Hull";
+				radius=0.30000001;
+				minimalHit=0.02;
+				depends="Total";
+				material=-1;
+			};
+			class HitLAileron: HitHull
+			{
+				armor=2.5;
+				explosionShielding=3;
+				name="HitRotor1";
+				passThrough=0.1;
+				visual="Hit_RotorL";
+				radius=0.44999999;
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitRAileron: HitHull
+			{
+				armor=2.5;
+				explosionShielding=3;
+				name="HitRotor2";
+				passThrough=0.1;
+				visual="Hit_RotorR";
+				radius=0.44999999;
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitLCRudder: HitLAileron
+			{
+			};
+			class HitRRudder: HitRAileron
+			{
+			};
+			class HitLCElevator: HitLAileron
+			{
+			};
+			class HitRElevator: HitRAileron
+			{
+			};
+		};		
+	};
+	class O_T_VTOL_02_vehicle_grey_F;
+	class O_T_VTOL_02_vehicle_grey_EPOCH_base : O_T_VTOL_02_vehicle_grey_F
+	{
+		scope=0;
+		class HitPoints;
+		class HitPoints_base: HitPoints
+		{
+			class HitHull;
+		};
+	};
+	class O_T_VTOL_02_vehicle_grey_EPOCH: O_T_VTOL_02_vehicle_grey_EPOCH_base
+	{
+		scope=2;
+		scopeCurator=2;
+		crew="";
+		side=3;
+		armor=120;			// default = 100
+		armorStructural=1;	// default = 2
+		faction="CIV_F";
+		typicalCargo[]={};
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+		};
+		class TransportWeapons
+		{
+		};
+		class TransportBackpacks
+		{
+		};
+		class HitPoints: HitPoints_base
+		{
+			class HitHull: HitHull
+			{
+				armor=3;
+				explosionShielding=2;		// default 1
+				name="HitHull";
+				passThrough=0.5;
+				visual="Hit_Hull";
+				radius=0.30000001;
+				minimalHit=0.02;
+				depends="Total";
+				material=-1;
+			};
+			class HitLAileron: HitHull
+			{
+				armor=2.5;
+				explosionShielding=3;
+				name="HitRotor1";
+				passThrough=0.1;
+				visual="Hit_RotorL";
+				radius=0.44999999;
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitRAileron: HitHull
+			{
+				armor=2.5;
+				explosionShielding=3;
+				name="HitRotor2";
+				passThrough=0.1;
+				visual="Hit_RotorR";
+				radius=0.44999999;
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitLCRudder: HitLAileron
+			{
+			};
+			class HitRRudder: HitRAileron
+			{
+			};
+			class HitLCElevator: HitLAileron
+			{
+			};
+			class HitRElevator: HitRAileron
+			{
+			};
+		};		
+	};
     class Tank : LandVehicle
     {
         scope = 0;
