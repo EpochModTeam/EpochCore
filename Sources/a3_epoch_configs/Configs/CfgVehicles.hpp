@@ -7360,40 +7360,6 @@ class CfgVehicles
 		};
         class HitPoints : HitPoints_base
         {
-			class HitHull: HitHull
-			{
-				armor=3;
-				explosionShielding=1;	// default = 5
-				name="HitHull";
-				passThrough=0.5;
-				visual="Hit_Hull";
-				radius=0.8;				// default = 0.4
-				minimalHit=0.02;
-				depends="Total";
-				material=-1;
-			};
-			class HitLCRudder: HitHull
-			{
-				armor=1.2;
-				explosionShielding=3;
-				name="HitLCRudder";
-				passThrough=0.1;
-				visual="Hit_RudderL";
-				radius=0.2;
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class HitRRudder: HitHull
-			{
-				armor=1.2;
-				explosionShielding=3;
-				name="HitRRudder";
-				passThrough=0.1;
-				visual="Hit_RudderR";
-				radius=0.2;
-				minimalHit=0.0099999998;
-				depends="0";
-			};
 			class HitLAileron: HitHull
 			{
 				armor=0.8;				// default 1.3
@@ -7401,7 +7367,7 @@ class CfgVehicles
 				name="HitLRotor";
 				passThrough=0.1;
 				visual="Hit_RotorL";
-				radius=0.35;			// default 0.25
+				radius=0.5;				// default 0.25
 				minimalHit=0.0099999998;
 				depends="HitEngine2";
 			};
@@ -7412,7 +7378,7 @@ class CfgVehicles
 				name="HitRRotor";
 				passThrough=0.1;
 				visual="Hit_RotorR";
-				radius=0.35;			// default 0.25
+				radius=0.5;				// default 0.25
 				minimalHit=0.0099999998;
 				depends="HitEngine";
 			};
@@ -7455,42 +7421,12 @@ class CfgVehicles
 		class TransportBackpacks
 		{
 		};
+		cargoDoors[]=
+		{
+			"Door_1_source"
+		};
         class HitPoints : HitPoints_base
         {
-			class HitHull: HitHull
-			{
-				armor=3;
-				explosionShielding=1;	// default = 5
-				name="HitHull";
-				passThrough=0.5;
-				visual="Hit_Hull";
-				radius=0.8;				// default = 0.4
-				minimalHit=0.02;
-				depends="Total";
-				material=-1;
-			};
-			class HitLCRudder: HitHull
-			{
-				armor=1.2;
-				explosionShielding=3;
-				name="HitLCRudder";
-				passThrough=0.1;
-				visual="Hit_RudderL";
-				radius=0.2;
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class HitRRudder: HitHull
-			{
-				armor=1.2;
-				explosionShielding=3;
-				name="HitRRudder";
-				passThrough=0.1;
-				visual="Hit_RudderR";
-				radius=0.2;
-				minimalHit=0.0099999998;
-				depends="0";
-			};
 			class HitLAileron: HitHull
 			{
 				armor=0.8;				// default 1.3
@@ -7498,7 +7434,7 @@ class CfgVehicles
 				name="HitLRotor";
 				passThrough=0.1;
 				visual="Hit_RotorL";
-				radius=0.35;			// default 0.25
+				radius=0.5;				// default 0.25
 				minimalHit=0.0099999998;
 				depends="HitEngine2";
 			};
@@ -7509,7 +7445,7 @@ class CfgVehicles
 				name="HitRRotor";
 				passThrough=0.1;
 				visual="Hit_RotorR";
-				radius=0.35;			// default 0.25
+				radius=0.5;				// default 0.25
 				minimalHit=0.0099999998;
 				depends="HitEngine";
 			};
@@ -7522,22 +7458,13 @@ class CfgVehicles
         };
 	};
 	class O_T_VTOL_02_infantry_F;
-	class O_T_VTOL_02_infantry_EPOCH_base : O_T_VTOL_02_infantry_F
-	{
-		scope=0;
-		class HitPoints;
-		class HitPoints_base: HitPoints
-		{
-			class HitHull;
-		};
-	};
-	class O_T_VTOL_02_infantry_EPOCH: O_T_VTOL_02_infantry_EPOCH_base
+	class O_T_VTOL_02_infantry_EPOCH: O_T_VTOL_02_infantry_F
 	{
 		scope=2;
 		scopeCurator=2;
 		crew="";
 		side=3;
-		armor=120;				// default = 100
+		armor=50;				// default = 100
 		armorStructural=1;		// default = 2
 		faction="CIV_F";
 		typicalCargo[]={};
@@ -7553,73 +7480,19 @@ class CfgVehicles
 		class TransportBackpacks
 		{
 		};
-		class HitPoints: HitPoints_base
+		cargoDoors[]=
 		{
-			class HitHull: HitHull
-			{
-				armor=3;
-				explosionShielding=2;		// default 1
-				name="HitHull";
-				passThrough=0.5;
-				visual="Hit_Hull";
-				radius=0.30000001;
-				minimalHit=0.02;
-				depends="Total";
-				material=-1;
-			};
-			class HitLAileron: HitHull
-			{
-				armor=2.5;
-				explosionShielding=3;
-				name="HitRotor1";
-				passThrough=0.1;
-				visual="Hit_RotorL";
-				radius=0.44999999;
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class HitRAileron: HitHull
-			{
-				armor=2.5;
-				explosionShielding=3;
-				name="HitRotor2";
-				passThrough=0.1;
-				visual="Hit_RotorR";
-				radius=0.44999999;
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class HitLCRudder: HitLAileron
-			{
-			};
-			class HitRRudder: HitRAileron
-			{
-			};
-			class HitLCElevator: HitLAileron
-			{
-			};
-			class HitRElevator: HitRAileron
-			{
-			};
-		};		
-	};
-	class O_T_VTOL_02_vehicle_grey_F;
-	class O_T_VTOL_02_vehicle_grey_EPOCH_base : O_T_VTOL_02_vehicle_grey_F
-	{
-		scope=0;
-		class HitPoints;
-		class HitPoints_base: HitPoints
-		{
-			class HitHull;
+			"Door_1_source"
 		};
 	};
-	class O_T_VTOL_02_vehicle_grey_EPOCH: O_T_VTOL_02_vehicle_grey_EPOCH_base
+	class O_T_VTOL_02_vehicle_grey_F;
+	class O_T_VTOL_02_vehicle_grey_EPOCH: O_T_VTOL_02_vehicle_grey_F
 	{
 		scope=2;
 		scopeCurator=2;
 		crew="";
 		side=3;
-		armor=120;			// default = 100
+		armor=50;			// default = 100
 		armorStructural=1;	// default = 2
 		faction="CIV_F";
 		typicalCargo[]={};
@@ -7635,55 +7508,6 @@ class CfgVehicles
 		class TransportBackpacks
 		{
 		};
-		class HitPoints: HitPoints_base
-		{
-			class HitHull: HitHull
-			{
-				armor=3;
-				explosionShielding=2;		// default 1
-				name="HitHull";
-				passThrough=0.5;
-				visual="Hit_Hull";
-				radius=0.30000001;
-				minimalHit=0.02;
-				depends="Total";
-				material=-1;
-			};
-			class HitLAileron: HitHull
-			{
-				armor=2.5;
-				explosionShielding=3;
-				name="HitRotor1";
-				passThrough=0.1;
-				visual="Hit_RotorL";
-				radius=0.44999999;
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class HitRAileron: HitHull
-			{
-				armor=2.5;
-				explosionShielding=3;
-				name="HitRotor2";
-				passThrough=0.1;
-				visual="Hit_RotorR";
-				radius=0.44999999;
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class HitLCRudder: HitLAileron
-			{
-			};
-			class HitRRudder: HitRAileron
-			{
-			};
-			class HitLCElevator: HitLAileron
-			{
-			};
-			class HitRElevator: HitRAileron
-			{
-			};
-		};		
 	};
     class Tank : LandVehicle
     {
