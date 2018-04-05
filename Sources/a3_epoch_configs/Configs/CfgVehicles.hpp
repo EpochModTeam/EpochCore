@@ -9239,13 +9239,13 @@ class CfgVehicles
 				position = "lock";
 				radius = 1;
 				OnlyForPlayer = 1;
-				condition = "this animationPhase ""open_shutters"" < 0.5";
+				condition = "!(call EPOCH_lockCheck) && this animationPhase ""open_shutters"" < 0.5";
                 statement = "this animate [""open_shutters"", 1]; this animate [""open_shutters_bot"", 1];";
 			};
 			class Close_shutters: open_shutters
 			{
 				displayName = "$STR_EPOCH_CloseHatch";
-				condition = "this animationPhase ""open_shutters"" >= 0.5";
+				condition = "!(call EPOCH_lockCheck) && this animationPhase ""open_shutters"" >= 0.5";
 				statement = "this animate [""open_shutters"", 0]; this animate [""open_shutters_bot"", 0];";
 			};
 		};
@@ -11668,13 +11668,13 @@ class CfgVehicles
 				onlyforplayer = 1;
 				position = "hatch";
 				radius = 3;
-				condition = "this animationPhase ""open_hatch"" < 0.5";
+				condition = "!(call EPOCH_lockCheck) && this animationPhase ""open_hatch"" < 0.5";
 				statement = "this animate [""open_hatch"", 1]";
 			};
 			class Close_hatch: Open_hatch
 			{
 				displayName = "$STR_EPOCH_CloseHatch";
-				condition = "this animationPhase ""open_hatch"" >= 0.5";
+				condition = "!(call EPOCH_lockCheck) && this animationPhase ""open_hatch"" >= 0.5";
 				statement = "this animate [""open_hatch"", 0]";
 			};
 		};
