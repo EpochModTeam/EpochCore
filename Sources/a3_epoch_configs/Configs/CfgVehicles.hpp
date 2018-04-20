@@ -12642,6 +12642,56 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Garden";
         maximumLoad = 400;
     };
+    class SolarCharger_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "SteamPunkGears";
+        scope = 2;
+        placement = "vertical";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
+        displayName = "$STR_EPOCH_SolarCharger";
+    };
+    class SolarCharger_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "SteamPunkGears";
+        scope = 2;
+        placement = "vertical";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
+        displayName = "$STR_EPOCH_SolarCharger";
+    };
+    class SolarCharger_EPOCH : Buildable_Storage
+    {
+        author = "SteamPunkGears";
+        scope = 2;
+        placement = "vertical";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
+        displayName = "$STR_EPOCH_SolarCharger";
+        maximumLoad = 12;
+    };
+    class SolarChargerXL_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "SteamPunkGears";
+        scope = 2;
+        placement = "vertical";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
+        displayName = "$STR_EPOCH_SolarChargerXL";
+    };
+    class SolarChargerXL_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "SteamPunkGears";
+        scope = 2;
+        placement = "vertical";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
+        displayName = "$STR_EPOCH_SolarChargerXL";
+    };
+    class SolarChargerXL_EPOCH : Buildable_Storage
+    {
+        author = "SteamPunkGears";
+        scope = 2;
+        placement = "vertical";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
+        displayName = "$STR_EPOCH_SolarChargerXL";
+        maximumLoad = 40;
+    };
     class HempPlant_EPOCH : Grown_Plants_F
     {
         author = "Helion4/DirtySanchez";

@@ -1192,6 +1192,18 @@
         <Key ID="STR_EPOCH_SolarGeneratorKit">
             <Original>Solar Generator Kit</Original>
         </Key>
+        <Key ID="STR_EPOCH_SolarChargerKit">
+            <Original>Solar Charger Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarChargerKit_Desc">
+            <Original>Holds 3 small Energy Packs for charging</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarChargerXLKit">
+            <Original>Solar Charger XL Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarChargerXLKit_Desc">
+            <Original>Holds 10 small or 1 large Energy Packs for charging</Original>
+        </Key>
         <Key ID="STR_EPOCH_FrequencyJammer">
             <Original>Frequency Jammer</Original>
         </Key>
@@ -1692,6 +1704,12 @@
         </Key>
         <Key ID="STR_EPOCH_SolarPowerGenerator">
             <Original>Solar Power Generator</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarCharger">
+            <Original>Solar Charger</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarChargerXL">
+            <Original>Solar Charger XL</Original>
         </Key>
         <Key ID="STR_EPOCH_TiPiGhost">
             <Original>TiPi Ghost</Original>
