@@ -2344,6 +2344,28 @@ class CfgMagazines
         count = 1;
         mass = 20;
     };
+    class KitSolarCharger : CA_Magazine
+    {
+        author = "Sequisha";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_SolarChargerKit";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_SolarChargerKit_Desc";
+        count = 1;
+        mass = 20;
+    };
+    class KitSolarChargerXL : CA_Magazine
+    {
+        author = "Sequisha";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_SolarChargerXLKit";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_SolarChargerXLKit_Desc";
+        count = 1;
+        mass = 20;
+    };
     class KitPlotPole : CA_Magazine
     {
         author = "Sequisha";
