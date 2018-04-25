@@ -11,7 +11,7 @@ content="text/html; charset=windows-1250">
 <p>
 For the full Changelog click: <a href="https://github.com/EpochModTeam/Epoch/blob/release/changelog.md">Github</a><br>
 <br>
-<b>## [1.1.1.0]</b><br>
+<b>## [1.2.0.0]</b><br>
 <b>### Added</b><br>
 - Config in cfgepochclient.hpp to disable needed items for FireOn / BurnBarrelOff / Hook<br>
 - Missing Config entry "immuneIfStartInBase" in epochconfig.hpp<br>
@@ -20,6 +20,7 @@ For the full Changelog click: <a href="https://github.com/EpochModTeam/Epoch/blo
 - Config to disable Fuelsources in PlotPole Range to epochconfig.hpp<br>
 - Secondary Weapon can now be sold directly from hand<br>
 - Attachments from sold weapons from hand will be put back into your Inventory<br>
+- Solar Charger for EnergyPacks - Put an EnergyPack into the Charger and wait...<br>
 <b>### Fixed</b><br>
 - Mine Rocks / Chop Wood was only possible with Swords after 1.1.0 update.<br>
 - Alive Toxic Sapper was not toxic<br>
@@ -34,11 +35,17 @@ For the full Changelog click: <a href="https://github.com/EpochModTeam/Epoch/blo
 - Ban for "RscMenuTeam" commandmenu<br>
 - Adjusted some SnapPoints for Basebuilding to be more accurate<br>
 - Advanced Vehicle Repair was broken after last Arma Update (Tank DLC)<br>
+- Added missing ItemWaterPurificationTablets to pricing<br>
+- MultiGun was not working on very large Vehicles (VTOL)<br>
+- GoldenSeal will no longer dissapear when fully grown in a Garden<br>
 <b>### Changed</b><br>
 - Build mode is now also available while looking onto Building Elements (only in your PlotRange)<br>
 - Reworked Vehicle Load / Save comands for more precise Vehicle Spawn<br>
 - Made Temp-Vehicles tradeable (will not be stored in Trader after selling them)<br>
 - Wood / Cinder Walls can now snap to each other<br>
+- Energy from windsources / solarsources is now calculated by wind / overcast<br>
+- Ammo of crafted Mags are calculated by the left ammo of used Mags (example: EnergyPacks)<br>
+- Consumed EnergyPacks give only energy calculated by left ammo in the Pack<br>
 </p>
 </body>
 </html>
