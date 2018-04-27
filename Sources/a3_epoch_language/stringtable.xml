@@ -4275,5 +4275,8 @@
 		<Key ID="STR_EPOCH_M900_4Seat">
 			<Original>M-900 (4 Seats)</Original>
 		</Key>
+		<Key ID="STR_EPOCH_MetalElevator">
+			<Original>Metal Elevator</Original>
+		</Key>		
 	</Package>
 </Project>

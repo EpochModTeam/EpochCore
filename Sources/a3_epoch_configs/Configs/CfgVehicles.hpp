@@ -9421,6 +9421,54 @@ class CfgVehicles
         hiddenSelections[] = {"camo","camo1","camo2"};
         hiddenSelectionsTextures[] = {"x\addons\a3_epoch_assets_1\textures\mf_co.paa","a3\structures_f\data\metal\metal_rollup_co.paa","a3\structures_f\data\metal\metal_plates3_co.paa"};
     };
+	class Elevator_Epoch : Const_floors_static_F
+    {
+		author = "Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\elevator\elevator.p3d";
+        displayName = "$STR_EPOCH_MetalElevator";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {};		
+
+		class AnimationSources
+		{
+			class raise
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+				sound = "MetalBigDoorsSound";
+			};
+			class lower
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+				sound = "MetalBigDoorsSound";
+			};			
+        };
+        class UserActions
+		{
+			class raise
+			{
+				displayName = "Raise";
+				position = "raise";
+				radius = 3;
+				OnlyForPlayer = 1;
+				condition = "this animationPhase ""raise"" < 0.5";
+				statement = "this animate [""raise"", 1];";
+			};
+			class lower
+			{
+				displayName = "Lower";
+				position = "lower";
+				radius = 3;
+				OnlyForPlayer = 1;
+				condition = "this animationPhase ""lower"" < 0.5";
+				statement = "this animate [""lower"", 1];";
+			};
+		};
+    };	
     class WoodLargeWall_EPOCH : Const_WoodWalls_static_F
     {
         author = "Sequisha";
