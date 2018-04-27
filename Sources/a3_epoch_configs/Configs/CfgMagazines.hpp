@@ -1902,6 +1902,7 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\A3\Weapons_F\Data\UI\M_battery_CA.paa";
+		model = "\x\addons\a3_epoch_community\models\EnergyPack.p3d";		
         displayName = "$STR_EPOCH_Smallenergypack";
         scope = 2;
         ammo = "B_EnergyPack";
@@ -1915,7 +1916,8 @@ class CfgMagazines
     class EnergyPackLg : CA_Magazine
     {
         author = "Sequisha";
-        picture = "\A3\Weapons_F\Data\UI\M_battery_CA.paa";
+        picture = "\x\addons\a3_epoch_community\textures\energypacks\EnergyPack_LG_icon_ca.paa";
+		model = "\x\addons\a3_epoch_community\models\EnergyPack_large.p3d";
         displayName = "$STR_EPOCH_Largeenergypack";
         scope = 2;
         ammo = "B_EnergyPack";
