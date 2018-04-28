@@ -50,6 +50,14 @@ class CfgMovesMaleSdr : CfgMovesBasic
             leftHandIKCurve[] = {0};
             rightHandIKCurve[] = {0};
         };
+        class hoverboard_driver : Crew
+        {
+            file = "\x\addons\a3_epoch_community\models\Hoverboard\hoverboard_driver.rtm";
+            interpolateTo[] = {"Unconscious",1};
+            speed = -30;
+            leftHandIKCurve[] = {0};
+            rightHandIKCurve[] = {0};
+        };		
         class AovrPercMstpSnonWnonDf;
         class epoch_unarmed_jump : AovrPercMstpSnonWnonDf
         {

@@ -4277,6 +4277,21 @@
 		</Key>
 		<Key ID="STR_EPOCH_MetalElevator">
 			<Original>Metal Elevator</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hoverboard_Base">
+			<Original>Hoverboard_base</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hoverboard_basic">
+			<Original>Basic Hoverboard EMSkin</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hoverboard_cargo">
+			<Original>Hoverboard with cargo space</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hoverboard_BTTF">
+			<Original>Hoverboard BTTF Skin</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hoverboard_BTTF">
+			<Original>Hoverboard A3 Skin</Original>
 		</Key>		
 	</Package>
 </Project>
