@@ -4085,8 +4085,8 @@ class CfgVehicles
         hideWeaponsCargo = 0;
         weapons[] = {"MiniCarHorn"};
         driverAction = "hoverboard_driver";
-        getInAction = "";
-        getOutAction = "";
+        getInAction = "GetInQuadbike";
+        getOutAction = "GetOutQuadbike";
         preciseGetInOut = 1;
         cargoAction[] = {};
         driverCompartments = "Compartment1";
