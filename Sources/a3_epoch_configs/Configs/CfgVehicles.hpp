@@ -3555,7 +3555,7 @@ class CfgVehicles
         typicalCargo[] = {"B_Soldier_F"};
     };
 
-    class hoverboard_epoch : Car_F
+    class hoverboard_epoch_base : Car_F
     {
         mapSize = 3.56;
         author = "Helion4";
@@ -4223,13 +4223,12 @@ class CfgVehicles
 		};
 		aggregateReflectors[] = {{"LightCarHeadR01"}};
         hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_community\textures\Hoverboard\hover_1024_co.paa"};
+		
         class EventHandlers : EventHandlers
-        {
-            GetIn = "params ['','','_u'];if (player isEqualTo _u) then {EPOCH_inEpochVeh = true;0 = _this spawn {params ['_v'];_path = '\x\addons\a3_epoch_vehicles\data\'; while {EPOCH_inEpochVeh} do {{_v setObjectTexture [_forEachIndex,_x]} forEach [format['%1speed%2_ca.paa',_path,floor(speed _v/9) max 0],format['%1energ%2_ca.paa',_path,floor(fuel _v*14)]];uisleep 1;};};};";
-            GetOut = "params ['','','_u']; if (player isEqualTo _u) then {EPOCH_inEpochVeh = false};";
-        };
+        {};
     };
-    class hoverboard_epoch_1 : hoverboard_epoch
+    class hoverboard_epoch_1 : hoverboard_epoch_base
     {
         author = "Helion4";
         scope = 2;
@@ -4239,7 +4238,7 @@ class CfgVehicles
         side = 1;
         typicalCargo[] = {};
     };
-    class hoverboard_epoch_cargo : hoverboard_epoch
+    class hoverboard_epoch_cargo : hoverboard_epoch_base
     {
         author = "Helion4";
 		displayName = "$STR_EPOCH_Hoverboard_cargo";
@@ -4255,7 +4254,7 @@ class CfgVehicles
 		class TransportBackpacks {};		
 		maxSpeed = 40;
     };
-    class hoverboard_epoch_bttf : hoverboard_epoch
+    class hoverboard_epoch_bttf : hoverboard_epoch_base
     {
         author = "Helion4";
         scope = 2;
@@ -4267,7 +4266,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_community\textures\Hoverboard\hover_bttf_co.paa"};
 	};	
-    class hoverboard_epoch_a3 : hoverboard_epoch
+    class hoverboard_epoch_a3 : hoverboard_epoch_base
     {
         author = "Helion4";
         scope = 2;
