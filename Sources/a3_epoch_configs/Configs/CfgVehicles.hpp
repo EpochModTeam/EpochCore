@@ -13416,18 +13416,18 @@ class CfgVehicles
     };
     class SolarCharger_SIM_EPOCH : Constructions_modular_F
     {
-        author = "SteamPunkGears";
+        author = "SteamPunkGears/Helion4";
         scope = 2;
         placement = "vertical";
-        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
+        model = "\x\addons\a3_epoch_community\models\Solar_generator_charger.p3d";
         displayName = "$STR_EPOCH_SolarCharger";
     };
     class SolarCharger_Ghost_EPOCH : Const_Ghost_EPOCH
     {
-        author = "SteamPunkGears";
+        author = "SteamPunkGears/Helion4";
         scope = 2;
         placement = "vertical";
-        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
+        model = "\x\addons\a3_epoch_community\models\Solar_generator_charger.p3d";
         displayName = "$STR_EPOCH_SolarCharger";
     };
     class SolarCharger_EPOCH : Buildable_Storage
@@ -13441,18 +13441,18 @@ class CfgVehicles
     };
     class SolarChargerXL_SIM_EPOCH : Constructions_modular_F
     {
-        author = "SteamPunkGears";
+        author = "SteamPunkGears/Helion4";
         scope = 2;
         placement = "vertical";
-        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
+        model = "\x\addons\a3_epoch_community\models\Solar_generator_charger.p3d";
         displayName = "$STR_EPOCH_SolarChargerXL";
     };
     class SolarChargerXL_Ghost_EPOCH : Const_Ghost_EPOCH
     {
-        author = "SteamPunkGears";
+        author = "SteamPunkGears/Helion4";
         scope = 2;
         placement = "vertical";
-        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
+        model = "\x\addons\a3_epoch_community\models\Solar_generator_charger.p3d";
         displayName = "$STR_EPOCH_SolarChargerXL";
     };
     class SolarChargerXL_EPOCH : Buildable_Storage
