@@ -5946,7 +5946,7 @@ class CfgWeapons
 		author = "He-Man/DirtySanchez";
 		scope=2;
 		count = 1;
-		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Laptop_unfolded_F.jpg";
+		picture="\x\addons\a3_epoch_community\icons\ItemLaptop.paa";
 		model="\A3\structures_f\Items\Electronics\Laptop_unfolded_F.p3d";
 		displayName = "$STR_EPOCH_Laptop";
 		descriptionShort = "$STR_EPOCH_LaptopDesc";
@@ -6100,7 +6100,7 @@ class CfgWeapons
 		author = "He-Man/DirtySanchez";
 		scope=2;
 		count = 1;
-		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Defibrillator_F.jpg";
+		picture="\x\addons\a3_epoch_community\icons\ItemDefibrillator.paa";
 		model="\A3\structures_f_epa\Items\Medical\Defibrillator_F.p3d";
 		displayName="$STR_EPOCH_Defibrillator";
 		descriptionShort="$STR_EPOCH_DefibrillatorDesc";
