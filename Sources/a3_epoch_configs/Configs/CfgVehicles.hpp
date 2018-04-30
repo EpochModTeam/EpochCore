@@ -3572,10 +3572,10 @@ class CfgVehicles
         soundGetIn[] = {"",0.056234132,1};
         soundGetOut[] = {"",0.056234132,1,40};
         soundDammage[] = {"",0.56234133,1};
-        soundEngineOnInt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_hum",0.56234133,1};
-        soundEngineOnExt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_hum",0.56234133,1,200};
-        soundEngineOffInt[] = {"",0.56234133,1};
-        soundEngineOffExt[] = {"",0.56234133,1};
+        soundEngineOnInt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_startup",0.56234133,1};
+        soundEngineOnExt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_startup",0.56234133,1,200};
+        soundEngineOffInt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_stop",0.56234133,1};
+        soundEngineOffExt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_stop",0.56234133,1};
         buildCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_01",1,1,100};
         buildCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_02",1,1,100};
         buildCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_03",1,1,100};
@@ -4085,8 +4085,8 @@ class CfgVehicles
         hideWeaponsCargo = 0;
         weapons[] = {"MiniCarHorn"};
         driverAction = "hoverboard_driver";
-        getInAction = "GetInQuadbike";
-        getOutAction = "GetOutQuadbike";
+        getInAction = "";
+        getOutAction = "";
         preciseGetInOut = 1;
         cargoAction[] = {};
         driverCompartments = "Compartment1";
