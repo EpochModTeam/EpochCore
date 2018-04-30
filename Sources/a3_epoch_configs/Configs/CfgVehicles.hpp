@@ -10768,6 +10768,15 @@ class CfgVehicles
         displayName = "$STR_EPOCH_WoodLadderGhost";
         ladders[] = {};
     };
+	
+    class PlyThirdWall_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Helion4";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\third_ply_wall_ghost.p3d";
+        displayName = "$STR_EPOCH_PLYWallThirdGhost";
+        armor = 7500;
+    };		
 	//******XMAS************************************
 	class snowman_Ghost_EPOCH: Const_Ghost_EPOCH
 	{
@@ -11053,6 +11062,7 @@ class CfgVehicles
             };
         };
     };
+
     class WoodStairs_EPOCH : Constructions_static_F
     {
         author = "Sequisha";
@@ -11187,6 +11197,15 @@ class CfgVehicles
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
     };
+	
+    class PlyThirdWall_EPOCH : Const_WoodWalls_static_F
+    {
+        author = "Helion4";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\third_ply_wall.p3d";
+        displayName = "$STR_EPOCH_PLYWallThird";
+        armor = 7500;
+    };	
 	//**********XMAS******************************
 	class snowman_EPOCH: Constructions_static_F
 	{
