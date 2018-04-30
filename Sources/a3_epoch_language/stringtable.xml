@@ -4295,6 +4295,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_Mountain_Bike">
 			<Original>Mountain Bike</Original>
+		</Key>
+		<Key ID="STR_EPOCH_PLYWallThird">
+			<Original>Third height Plywall</Original>
+		</Key>	
+		<Key ID="STR_EPOCH_PLYWallThirdGhost">
+			<Original>Third height Plywall ghost</Original>
 		</Key>		
 	</Package>
 </Project>
