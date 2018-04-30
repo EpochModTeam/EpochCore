@@ -148,6 +148,11 @@ class CfgSounds
 		sound[] = {"A3\Sounds_F\sfx\UI\vehicles\Vehicle_Repair",1.0,1.0};
 		titles[] = {};
 	};
+	class mbk_bell
+	{
+		sound[] = {"x\addons\a3_epoch_community\MBK\sounds\mbk_bell",1.0,1.0};
+		titles[] = {};
+	};	
 };
 
 /*[[[end]]]*/

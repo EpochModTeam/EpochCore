@@ -58,7 +58,16 @@ class CfgMovesMaleSdr : CfgMovesBasic
             disableWeapons = 1;			
             leftHandIKCurve[] = {0};
             rightHandIKCurve[] = {0};
-        };		
+        };	
+       class mbk_driver : Crew
+        {
+            file = "\x\addons\a3_epoch_community\mbk\mbk_driver.rtm";
+            interpolateTo[] = {"Unconscious",1};
+            speed = -30;
+            disableWeapons = 1;			
+            leftHandIKCurve[] = {0};
+            rightHandIKCurve[] = {0};
+        };			
         class AovrPercMstpSnonWnonDf;
         class epoch_unarmed_jump : AovrPercMstpSnonWnonDf
         {

@@ -4292,6 +4292,9 @@
 		</Key>
 		<Key ID="STR_EPOCH_Hoverboard_A3">
 			<Original>Hoverboard A3 Skin</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Mountain_Bike">
+			<Original>Mountain Bike</Original>
 		</Key>		
 	</Package>
 </Project>
