@@ -4283,6 +4283,17 @@ class CfgMagazines
 		descriptionShort="$STR_EPOCH_DefibrillatorDesc";
 		mass=30;
 	};
+	class BaseCam: CA_Magazine
+	{
+		author="Helion";
+		model="\x\addons\a3_epoch_community\models\base_cam.p3d";
+		picture="\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName="Base Cam";
+		scope=2;
+		descriptionShort="Base Cam";
+		count=1;
+		mass=20;
+	};
 	class BaseCamTerminal: CA_Magazine
 	{
 		author="Helion";
