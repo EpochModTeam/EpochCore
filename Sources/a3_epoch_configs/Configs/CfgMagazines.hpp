@@ -4283,6 +4283,17 @@ class CfgMagazines
 		descriptionShort="$STR_EPOCH_DefibrillatorDesc";
 		mass=30;
 	};
+	class BaseCamTerminal: CA_Magazine
+	{
+		author="Helion";
+		model="\x\addons\a3_epoch_community\models\base_cam_terminal.p3d";
+		picture="\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName="Base Cam Terminal";
+		scope=2;
+		descriptionShort="Base Cam Terminal";
+		count=1;
+		mass=20;
+	};
 	class ItemDisinfectantSpray: CA_Magazine
 	{
 		author = "He-Man/DirtySanchez";

@@ -15166,6 +15166,50 @@ class CfgVehicles
 		vehicleClass = "Epoch_objects";
 		destrType = "DestructDefault";
     };
+	class BaseCam_EPOCH: Constructions_static_F
+	{
+		author="Helion";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\base_cam.p3d";
+		displayName="Base Cam";
+		armor=10000;
+	};
+	class BaseCam_SIM_EPOCH: Constructions_modular_F
+	{
+		author="Helion";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\base_cam.p3d";
+		displayName="Base Cam";
+	};
+	class BaseCam_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author="Helion";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\base_cam.p3d";		// To be changed to Ghost Model!!!
+		displayName="Base Cam";
+	};
+	class BaseCamTerminal_EPOCH: Constructions_static_F
+	{
+		author="Helion";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\base_cam_terminal.p3d";
+		displayName="Base Cam Terminal";
+		armor=10000;
+	};
+	class BaseCamTerminal_SIM_EPOCH: Constructions_modular_F
+	{
+		author="Helion";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\base_cam_terminal.p3d";
+		displayName="Base Cam Terminal";
+	};
+	class BaseCamTerminal_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author="Helion";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\base_cam_terminal.p3d";		// To be changed to Ghost Model!!!
+		displayName="Base Cam Terminal";
+	};
 };
 
 /*[[[end]]]*/
