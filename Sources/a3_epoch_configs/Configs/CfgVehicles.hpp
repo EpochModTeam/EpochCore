@@ -15185,7 +15185,7 @@ class CfgVehicles
 	{
 		author="Helion";
 		scope=2;
-		model="\x\addons\a3_epoch_community\models\base_cam.p3d";		// To be changed to Ghost Model!!!
+		model="\x\addons\a3_epoch_community\models\base_cam_ghost.p3d";
 		displayName="Base Cam";
 	};
 	class BaseCamTerminal_EPOCH: Constructions_static_F
