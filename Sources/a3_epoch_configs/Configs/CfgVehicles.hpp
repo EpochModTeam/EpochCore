@@ -15200,16 +15200,78 @@ class CfgVehicles
 	{
 		author="Helion";
 		scope=2;
-		model="\x\addons\a3_epoch_community\models\base_cam_terminal.p3d";
+		model="\x\addons\a3_epoch_community\models\base_cam_terminal_SIM.p3d";
 		displayName="Base Cam Terminal";
 	};
 	class BaseCamTerminal_Ghost_EPOCH: Const_Ghost_EPOCH
 	{
 		author="Helion";
 		scope=2;
-		model="\x\addons\a3_epoch_community\models\base_cam_terminal.p3d";		// To be changed to Ghost Model!!!
+		model="\x\addons\a3_epoch_community\models\base_cam_terminal_ghost.p3d";		// To be changed to Ghost Model!!!
 		displayName="Base Cam Terminal";
 	};
+	class Stairs_Hatch_EPOCH: Constructions_static_F
+	{
+		author="Helion4";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\stair_hatch\stair_hatch.p3d";
+		displayName="Stair Hatch";
+		armor=10000;
+		class AnimationSources
+		{
+			class unlock
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+			};
+			class unlock2
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+			};			
+			class bar_hide
+			{
+				source = "user";
+				animPeriod = 6;
+				initPhase = 1;
+			};			
+        };
+        class UserActions
+		{
+			class Unlock
+			{
+				displayName = "Unlock";
+				position = "bars";
+				radius = 4;
+				OnlyForPlayer = 1;
+				condition = "this animationPhase ""Unlock"" < 0.5";
+				statement = "this animate [""Unlock"", 1];this animate [""unlock2"", 1,1.2];this animate [""bar_hide"", 1,0.2];";
+			};
+ 
+			class Lock: Unlock
+			{
+				displayName = "Lock";
+				condition = "this animationPhase ""Unlock"" >= 0.5";
+				statement = "this animate [""Unlock"", 0];this animate [""unlock2"", 0,0.8];this animate [""bar_hide"", 0,0.8];";
+			};
+		};
+	};
+	class Stairs_Hatch_Ghost_EPOCH: Const_Ghost_EPOCH
+	{
+		author="Helion";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\stair_hatch\stair_hatch_GHOST.p3d";
+		displayName="Stair Hatch Ghost";
+	};	
+	class Stairs_Hatch__SIM_EPOCH: Constructions_modular_F
+	{
+		author="Helion";
+		scope=2;
+		model="\x\addons\a3_epoch_community\models\stair_hatch\stair_hatch_SIM.p3d";
+		displayName="Stair Hatch";
+	};	
 };
 
 /*[[[end]]]*/
