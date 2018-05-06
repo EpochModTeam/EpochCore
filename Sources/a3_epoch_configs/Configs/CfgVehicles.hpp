@@ -15246,14 +15246,14 @@ class CfgVehicles
 				position = "bars";
 				radius = 4;
 				OnlyForPlayer = 1;
-				condition = "this animationPhase ""Unlock"" < 0.5";
+				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" < 0.5";
 				statement = "this animate [""Unlock"", 1];this animate [""unlock2"", 1,1.2];this animate [""bar_hide"", 1,0.2];";
 			};
  
 			class Lock: Unlock
 			{
 				displayName = "Lock";
-				condition = "this animationPhase ""Unlock"" >= 0.5";
+				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" >= 0.5";
 				statement = "this animate [""Unlock"", 0];this animate [""unlock2"", 0,0.8];this animate [""bar_hide"", 0,0.8];";
 			};
 		};
