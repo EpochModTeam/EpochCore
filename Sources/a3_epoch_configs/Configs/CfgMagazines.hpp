@@ -4287,7 +4287,7 @@ class CfgMagazines
 	{
 		author="Helion";
 		model="\x\addons\a3_epoch_community\models\base_cam.p3d";
-		picture="\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		picture = "\x\addons\a3_epoch_community\icons\BaseCam.paa";
 		displayName="Base Cam";
 		scope=2;
 		descriptionShort="Base Cam";
@@ -4298,7 +4298,7 @@ class CfgMagazines
 	{
 		author="Helion";
 		model="\x\addons\a3_epoch_community\models\base_cam_terminal.p3d";
-		picture="\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		picture = "\x\addons\a3_epoch_community\icons\BaseCam_Terminal.paa";
 		displayName="Base Cam Terminal";
 		scope=2;
 		descriptionShort="Base Cam Terminal";
