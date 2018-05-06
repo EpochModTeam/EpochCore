@@ -15265,7 +15265,7 @@ class CfgVehicles
 		model="\x\addons\a3_epoch_community\models\stair_hatch\stair_hatch_GHOST.p3d";
 		displayName="Stair Hatch Ghost";
 	};	
-	class Stairs_Hatch__SIM_EPOCH: Constructions_modular_F
+	class Stairs_Hatch_SIM_EPOCH: Constructions_modular_F
 	{
 		author="Helion";
 		scope=2;
