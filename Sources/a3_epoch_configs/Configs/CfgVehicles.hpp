@@ -11205,7 +11205,14 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_community\models\third_ply_wall.p3d";
         displayName = "$STR_EPOCH_PLYWallThird";
         armor = 7500;
-    };	
+    };
+    class PlyThirdWall_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion4";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\third_ply_wall.p3d";
+        displayName = "$STR_EPOCH_PLYWallThird";
+    };
 	//**********XMAS******************************
 	class snowman_EPOCH: Constructions_static_F
 	{
@@ -11214,6 +11221,13 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_community\models\hol_x\epoch_snowman.p3d";
 		displayName = "$STR_EPOCH_Snowperson";
 		armor = 500;
+	};
+	class snowman_SIM_EPOCH: Constructions_modular_F
+	{
+		author = "Helion4";
+		scope = 2;
+		model = "\x\addons\a3_epoch_community\models\hol_x\epoch_snowman.p3d";
+		displayName = "$STR_EPOCH_Snowperson";
 	};
     class snowmanDeco_EPOCH : NonStrategic
     {

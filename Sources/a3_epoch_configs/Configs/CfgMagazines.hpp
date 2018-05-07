@@ -2170,6 +2170,17 @@ class CfgMagazines
         count = 1;
         mass = 20;
     };
+    class KitPlyThirdWall_EPOCH : CA_Magazine
+    {
+        author = "Helion";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "1/3 Plywood Wall";
+        scope = 2;
+        descriptionShort = "1/3 Plywood Wall";
+        count = 1;
+        mass = 15;
+    };
     class KitWoodFloor : CA_Magazine
     {
         author = "Sequisha";
@@ -5046,6 +5057,17 @@ class CfgMagazines
 		model="\A3\Structures_F\Items\Electronics\Portable_generator_F.p3d";
 		displayName = "Portable Generator";
 		mass = 200;
+	};
+	class KitSnowman: CA_Magazine
+	{
+		author = "He-Man/Helion";
+		scope=2;
+		count = 1;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\icons\KitSnowman.paa";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		displayName = "Snowman";
+		mass = 20;
 	};
 };
 
