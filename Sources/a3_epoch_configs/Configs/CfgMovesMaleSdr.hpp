@@ -63,10 +63,10 @@ class CfgMovesMaleSdr : CfgMovesBasic
         {
             file = "\x\addons\a3_epoch_community\mbk\mbk_driver.rtm";
             interpolateTo[] = {"Unconscious",1};
-            speed = -30;
+            speed = 1.5;
             disableWeapons = 1;			
-            leftHandIKCurve[] = {0};
-            rightHandIKCurve[] = {0};
+            leftHandIKCurve[] = {1};
+            rightHandIKCurve[] = {1};
         };			
         class AovrPercMstpSnonWnonDf;
         class epoch_unarmed_jump : AovrPercMstpSnonWnonDf

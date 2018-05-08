@@ -4225,8 +4225,21 @@ class CfgVehicles
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_community\textures\Hoverboard\hover_1024_co.paa"};
 		
-        class EventHandlers : EventHandlers
-        {};
+        class EventHandlers : EventHandlers {};
+		
+        class UserActions
+        {
+            class PressXToFlipTheThing
+            {
+                displayNameDefault = "Flip HoverBoard";
+                displayName = "Flip HoverBoard";
+                position = "";
+                radius = 2.7;
+                onlyForPlayer = 1;
+                condition = "alive this && not canmove this && crew this isEqualTo []";
+                statement = "this setvectorup [0,0,1]";
+            };
+        };		
     };
     class hoverboard_epoch_1 : hoverboard_epoch_base
     {
