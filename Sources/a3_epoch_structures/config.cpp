@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		requiredAddons[] = {};
 		requiredVersion = 0.1;
-		epochVersion = "1.1.1";
+		epochVersion = "1.2.0";
 		units[] ={};
 		weapons[] = {};
 	};
