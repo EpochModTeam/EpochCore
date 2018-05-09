@@ -3541,7 +3541,7 @@ class CfgVehicles
                 radius = 2.7;
                 onlyForPlayer = 1;
                 condition = "alive this && not canmove this && crew this isEqualTo []";
-                statement = "this setvectorup [0,0,1]";
+				statement="this setpos [getpos this select 0,getpos this select 1,(getpos this select 2)+2.5]";
             };
         };
     };
@@ -4017,6 +4017,7 @@ class CfgVehicles
         damageEffect = "";
         damageTexDelay = 0.5;
         fuelExplosionPower = 0;
+		disableInventory=1;
         maximumLoad = 0;
 		class TransportItems {};
         class DestructionEffects
@@ -4237,7 +4238,7 @@ class CfgVehicles
                 radius = 2.7;
                 onlyForPlayer = 1;
                 condition = "alive this && not canmove this && crew this isEqualTo []";
-                statement = "this setvectorup [0,0,1]";
+				statement="this setpos [getpos this select 0,getpos this select 1,(getpos this select 2)+2]";
             };
         };		
     };
@@ -4260,6 +4261,7 @@ class CfgVehicles
         faction = "BLU_F";
         side = 1;
         typicalCargo[] = {};
+		disableInventory=0;
         maximumLoad = 400;
 		class TransportMagazines {};
 		class TransportItems {};
@@ -4771,13 +4773,13 @@ class CfgVehicles
         {
             class PressXToFlipTheThing
             {
-                displayNameDefault = "Flip ATV";
-                displayName = "$STR_EPOCH_FlipATV";
+                displayNameDefault = "Flip Quad";
+                displayName = "Flip Quad";
                 position = "";
                 radius = 2.7;
                 onlyForPlayer = 1;
                 condition = "alive this && not canmove this && crew this isEqualTo []";
-                statement = "this setvectorup [0,0,1]";
+				statement="this setpos [getpos this select 0,getpos this select 1,(getpos this select 2)+2]";
             };
         };
     };
@@ -12621,7 +12623,7 @@ class CfgVehicles
                 radius = 2.7;
                 onlyForPlayer = 1;
                 condition = "alive this && not canmove this && crew this isEqualTo []";
-                statement = "this setvectorup [0,0,1]";
+				statement="this setpos [getpos this select 0,getpos this select 1,(getpos this select 2)+2]";
             };
         };
     };
@@ -12638,7 +12640,7 @@ class CfgVehicles
                 radius = 2.7;
                 onlyForPlayer = 1;
                 condition = "alive this && not canmove this && crew this isEqualTo []";
-                statement = "this setvectorup [0,0,1]";
+				statement="this setpos [getpos this select 0,getpos this select 1,(getpos this select 2)+2]";
             };
         };
     };
@@ -12655,7 +12657,7 @@ class CfgVehicles
                 radius = 2.7;
                 onlyForPlayer = 1;
                 condition = "alive this && not canmove this && crew this isEqualTo []";
-                statement = "this setvectorup [0,0,1]";
+				statement="this setpos [getpos this select 0,getpos this select 1,(getpos this select 2)+2]";
             };
         };
     };
@@ -12672,7 +12674,7 @@ class CfgVehicles
                 radius = 2.7;
                 onlyForPlayer = 1;
                 condition = "alive this && not canmove this && crew this isEqualTo []";
-                statement = "this setvectorup [0,0,1]";
+				statement="this setpos [getpos this select 0,getpos this select 1,(getpos this select 2)+2]";
             };
         };
     };
