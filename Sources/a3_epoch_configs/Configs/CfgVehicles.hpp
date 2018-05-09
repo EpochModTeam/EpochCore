@@ -4017,7 +4017,6 @@ class CfgVehicles
         damageEffect = "";
         damageTexDelay = 0.5;
         fuelExplosionPower = 0;
-		disableInventory=1;
         maximumLoad = 0;
 		class TransportItems {};
         class DestructionEffects
@@ -4261,7 +4260,6 @@ class CfgVehicles
         faction = "BLU_F";
         side = 1;
         typicalCargo[] = {};
-		disableInventory=0;
         maximumLoad = 400;
 		class TransportMagazines {};
 		class TransportItems {};
