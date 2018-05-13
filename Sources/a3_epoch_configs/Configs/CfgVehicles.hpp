@@ -15237,12 +15237,12 @@ class CfgVehicles
 		model="\x\addons\a3_epoch_community\models\base_cam_terminal_ghost.p3d";		// To be changed to Ghost Model!!!
 		displayName="Base Cam Terminal";
 	};
-	class Stairs_Hatch_EPOCH: Constructions_static_F
+	class WoodStairs3_EPOCH: Const_floors_static_F
 	{
 		author="Helion4";
 		scope=2;
-		model="\x\addons\a3_epoch_community\models\stair_hatch\stair_hatch.p3d";
-		displayName="Stair Hatch";
+		model="\x\addons\a3_epoch_community\models\stair_hatch\Wood_stairs_upgrade_2.p3d";
+		displayName="Wood Stairs lvl 3";
 		armor=10000;
 		class AnimationSources
 		{
@@ -15285,19 +15285,19 @@ class CfgVehicles
 			};
 		};
 	};
-	class Stairs_Hatch_Ghost_EPOCH: Const_Ghost_EPOCH
+	class WoodStairs3_Ghost_EPOCH: Const_Ghost_EPOCH
 	{
 		author="Helion";
 		scope=2;
-		model="\x\addons\a3_epoch_community\models\stair_hatch\stair_hatch_GHOST.p3d";
-		displayName="Stair Hatch Ghost";
+		model="\x\addons\a3_epoch_community\models\stair_hatch\Wood_stairs_upgrade_2.p3d";
+		displayName="Wood Stairs lvl 3";
 	};	
-	class Stairs_Hatch__SIM_EPOCH: Constructions_modular_F
+	class WoodStairs3_SIM_EPOCH: Constructions_modular_F
 	{
 		author="Helion";
 		scope=2;
-		model="\x\addons\a3_epoch_community\models\stair_hatch\stair_hatch_SIM.p3d";
-		displayName="Stair Hatch";
+		model="\x\addons\a3_epoch_community\models\stair_hatch\Wood_stairs_upgrade_2.p3d";
+		displayName="Wood Stairs lvl 3";
 	};	
 };
 
