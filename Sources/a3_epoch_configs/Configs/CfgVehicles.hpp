@@ -15276,7 +15276,6 @@ class CfgVehicles
 				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" < 0.5";
 				statement = "this animate [""Unlock"", 1];this animate [""unlock2"", 1,1.2];this animate [""bar_hide"", 1,0.2];";
 			};
- 
 			class Lock: Unlock
 			{
 				displayName = "Lock";
@@ -15285,19 +15284,51 @@ class CfgVehicles
 			};
 		};
 	};
-	class WoodStairs3_Ghost_EPOCH: Const_Ghost_EPOCH
-	{
-		author="Helion";
-		scope=2;
-		model="\x\addons\a3_epoch_community\models\stair_hatch\Wood_stairs_upgrade_2.p3d";
-		displayName="Wood Stairs lvl 3";
-	};	
 	class WoodStairs3_SIM_EPOCH: Constructions_modular_F
 	{
 		author="Helion";
 		scope=2;
 		model="\x\addons\a3_epoch_community\models\stair_hatch\Wood_stairs_upgrade_2.p3d";
 		displayName="Wood Stairs lvl 3";
+		class AnimationSources
+		{
+			class unlock
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+			};
+			class unlock2
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+			};			
+			class bar_hide
+			{
+				source = "user";
+				animPeriod = 6;
+				initPhase = 1;
+			};			
+        };
+        class UserActions
+		{
+			class Unlock
+			{
+				displayName = "Unlock";
+				position = "bars";
+				radius = 4;
+				OnlyForPlayer = 1;
+				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" < 0.5";
+				statement = "this animate [""Unlock"", 1];this animate [""unlock2"", 1,1.2];this animate [""bar_hide"", 1,0.2];";
+			};
+			class Lock: Unlock
+			{
+				displayName = "Lock";
+				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" >= 0.5";
+				statement = "this animate [""Unlock"", 0];this animate [""unlock2"", 0,0.8];this animate [""bar_hide"", 0,0.8];";
+			};
+		};
 	};	
 };
 
