@@ -3572,10 +3572,10 @@ class CfgVehicles
         soundGetIn[] = {"",0.056234132,1};
         soundGetOut[] = {"",0.056234132,1,40};
         soundDammage[] = {"",0.56234133,1};
-        soundEngineOnInt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_startup",0.56234133,1};
-        soundEngineOnExt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_startup",0.56234133,1,200};
-        soundEngineOffInt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_stop",0.56234133,1};
-        soundEngineOffExt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_stop",0.56234133,1};
+        soundEngineOnInt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_startup",0.31622776,1};
+        soundEngineOnExt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_startup",0.31622776,1,200};
+        soundEngineOffInt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_stop",0.31622776,1};
+        soundEngineOffExt[] = {"x\addons\a3_epoch_community\models\Hoverboard\sounds\hover_stop",0.31622776,1};
         buildCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_01",1,1,100};
         buildCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_02",1,1,100};
         buildCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_03",1,1,100};
@@ -4496,37 +4496,37 @@ class CfgVehicles
 			*/
             class TiresRockOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",1,1,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",0.63095737,1,60};
                 frequency = "1";
                 volume = "camPos*rock*(speed factor[2, 20])";
             };
             class TiresSandOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",1,1,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",0.63095737,1,60};
                 frequency = "1";
                 volume = "camPos*sand*(speed factor[2, 20])";
             };
             class TiresGrassOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",1,1,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",0.63095737,1,60};
                 frequency = "1";
                 volume = "camPos*grass*(speed factor[2, 20])";
             };
             class TiresMudOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",1,1,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",0.63095737,1,60};
                 frequency = "1";
                 volume = "camPos*mud*(speed factor[2, 20])";
             };
             class TiresGravelOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",1,1,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",0.63095737,1,60};
                 frequency = "1";
                 volume = "camPos*gravel*(speed factor[2, 20])";
             };
             class TiresAsphaltOut
             {
-                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",1,1,60};
+                sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",0.63095737,1,60};
                 frequency = "1";
                 volume = "camPos*asphalt*(speed factor[2, 20])";
             };
