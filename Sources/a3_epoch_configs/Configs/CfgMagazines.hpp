@@ -5067,8 +5067,19 @@ class CfgMagazines
 		picture = "\x\addons\a3_epoch_community\icons\KitSnowman.paa";
 		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
 		displayName = "Snowman";
-		mass = 20;
+		mass = 200;
 	};
+	class Soap_Epoch: CA_Magazine
+	{
+		author = "Helion";
+		scope=2;
+		count = 1;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\icons\soap_icon_ca.paa";
+		model = "\x\addons\a3_epoch_community\models\soap.p3d";
+		displayName = "Bar of Soap";
+		mass = 9;
+	};	
 };
 
 /*[[[end]]]*/
