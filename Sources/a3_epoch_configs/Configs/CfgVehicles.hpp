@@ -9225,6 +9225,73 @@ class CfgVehicles
             };
         };
     };
+    class MetalWallGarage_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion4 / Sequisha";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\metalgate\metalgate.p3d";
+        displayName = "Metal Garage";
+        class AnimationSources
+        {
+            class open_left
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+                sound = "MetalBigDoorsSound";
+            };
+            class open_right
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+                sound = "MetalOldBigDoorsSound";
+            };
+            class Lock_cGarage
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 1;
+                sound = "ServoDoorsSound";
+            };
+        };
+        class UserActions
+        {
+            class Open_left
+            {
+                displayName = "$STR_EPOCH_Open";
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                onlyforplayer = 1;
+                position = "Door_knopf";
+                radius = 3;
+                condition = "(this animationPhase ""open_left"" < 0.5) && (this animationPhase ""Lock_cGarage"" < 0.5)";
+                statement = "this animate [""open_left"", 1]; this animate [""open_right"", 1]";
+            };
+            class Close_left : Open_left
+            {
+                displayName = "$STR_EPOCH_Close";
+                condition = "this animationPhase ""open_left"" >= 0.5";
+                statement = "this animate [""open_left"", 0]; this animate [""open_right"", 0]";
+            };
+            class Lock_cGarage
+            {
+                displayName = "$STR_EPOCH_Lock";
+                displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
+                onlyforplayer = 1;
+                position = "Door_knopf";
+                radius = 3;
+                condition = "(this animationPhase ""open_left"" < 0.5) && (this animationPhase ""Lock_cGarage"" < 0.5)";
+                statement = "this animate [""Lock_cGarage"", 1]";
+            };
+            class Unlock_cGarage : Lock_cGarage
+            {
+                displayName = "$STR_EPOCH_Unlock";
+                displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
+                condition = "(this animationPhase ""open_left"" < 0.5) && (this animationPhase ""Lock_cGarage"" >= 0.5)";
+                statement = "this animate [""Lock_cGarage"", 0];";
+            };
+        };
+    };
     class WoodFloor_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
@@ -10493,6 +10560,74 @@ class CfgVehicles
                 displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
                 condition = "!(call EPOCH_lockCheck) && (this animationPhase ""open_left"" < 0.5) && (this animationPhase ""lock_cGarage"" >= 0.5)";
                 statement = "this animate [""lock_cGarage"", 0];";
+            };
+        };
+    };
+    class MetalWallGarage_EPOCH : Const_WoodWalls_static_F
+    {
+        author = "Helion4 / Sequisha";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\metalgate\metalgate.p3d";
+        displayName = "Metal Garage";
+        armor = 7500;
+        class AnimationSources
+        {
+            class open_left
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+                sound = "MetalBigDoorsSound";
+            };
+            class open_right
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+                sound = "MetalOldBigDoorsSound";
+            };
+            class Lock_cGarage
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 1;
+                sound = "ServoDoorsSound";
+            };
+        };
+        class UserActions
+        {
+            class Open_left
+            {
+                displayName = "$STR_EPOCH_Open";
+                displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+                onlyforplayer = 1;
+                position = "Door_knopf";
+                radius = 3;
+                condition = "(this animationPhase ""open_left"" < 0.5) && (this animationPhase ""Lock_cGarage"" < 0.5)";
+                statement = "this animate [""open_left"", 1]; this animate [""open_right"", 1];call ICHECKRUN";
+            };
+            class Close_left : Open_left
+            {
+                displayName = "$STR_EPOCH_Close";
+                condition = "this animationPhase ""open_left"" >= 0.5";
+                statement = "this animate [""open_left"", 0]; this animate [""open_right"", 0]";
+            };
+            class Lock_cGarage
+            {
+                displayName = "$STR_EPOCH_Lock";
+                displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
+                onlyforplayer = 1;
+                position = "Door_knopf";
+                radius = 3;
+                condition = "!(call EPOCH_lockCheck) && (this animationPhase ""open_left"" < 0.5) && (this animationPhase ""Lock_cGarage"" < 0.5)";
+                statement = "this animate [""Lock_cGarage"", 1]";
+            };
+            class Unlock_cGarage : Lock_cGarage
+            {
+                displayName = "$STR_EPOCH_Unlock";
+                displayNameDefault = "<img image='\A3\modules_f\data\iconunlock_ca.paa' size='2.5' />";
+                condition = "!(call EPOCH_lockCheck) && (this animationPhase ""open_left"" < 0.5) && (this animationPhase ""Lock_cGarage"" >= 0.5)";
+                statement = "this animate [""Lock_cGarage"", 0];";
             };
         };
     };
