@@ -7156,6 +7156,38 @@ class CfgWeapons
 		};
 	};
 //********XMAS*****************************	
+	class thor_mask_epoch : ItemCore
+    {
+        author = "Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "Thor Helmet";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\thor_mask_icon_ca.paa";
+        model =   "\x\addons\a3_epoch_community\models\Halloween_masks\thor_epoch.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\thor_epoch.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
+	class iron_mask_epoch : ItemCore
+    {
+        author = "Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "Iron Man Mask";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\iron_mask_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\ironman.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\ironman.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };	
 	class radiation_mask_epoch: NVGoggles
 	{
 		author = "DirtySanchez/Helion4";
