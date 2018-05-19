@@ -7825,6 +7825,7 @@ class CfgVehicles
 		cargoProxyIndexes[]={2,3,4};
 		cargoCanEject=1;
 		driverCanEject=1;
+		enableManualFire=0;
 		
 		driverCompartments= "Compartment1";
 		cargoCompartments[]= {"Compartment2"};
@@ -7857,6 +7858,7 @@ class CfgVehicles
 				gunnerUsesPilotView = true;
 				primaryGunner = 1;
 				proxyIndex=1;
+				enableManualFire=0;
 			};			
 			class CargoTurret_01: CargoTurret
 			{
