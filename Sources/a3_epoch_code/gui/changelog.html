@@ -13,13 +13,11 @@ For the full Changelog click: <a href="https://github.com/EpochModTeam/Epoch/blo
 <br>
 <b>## [1.2.0.0]</b><br>
 <b>### Added</b><br>
-- Config in cfgepochclient.hpp to disable needed items for FireOn / BurnBarrelOff / Hook<br>
-- Missing Config entry "immuneIfStartInBase" in epochconfig.hpp<br>
 - Radiation Suits to Loot, Pricing and Itemsort<br>
-- Config to restrict tilting angle for Vectorbuilding to cfgEpochClient.hpp<br>
-- Config to disable Fuelsources in PlotPole Range to epochconfig.hpp<br>
-- Secondary Weapon can now be sold directly from hand<br>
-- Attachments from sold weapons from hand will be put back into your Inventory<br>
+- Reworked Trader Menu<br>
+&nbsp;&nbsp;&nbsp;- Secondary Weapon can now be sold directly from hand<br>
+&nbsp;&nbsp;&nbsp;- Attachments from sold weapons from hand will be put back into your Inventory<br>
+&nbsp;&nbsp;&nbsp;- Weapons in hand are now marked in menu as "in Hand"<br>
 - Solar Charger for EnergyPacks - Put an EnergyPack into the Charger and wait...<br>
 - 4 Hoverboard Vehicles:<br>
 &nbsp;&nbsp;&nbsp;- "hoverboard_epoch_1"<br>
@@ -27,18 +25,19 @@ For the full Changelog click: <a href="https://github.com/EpochModTeam/Epoch/blo
 &nbsp;&nbsp;&nbsp;- "hoverboard_epoch_a3"<br>
 &nbsp;&nbsp;&nbsp;- "hoverboard_epoch_cargo"<br>
 - Mountainbike "MBK_01_EPOCH"<br>
+- Helicopter UH1H "uh1h_Epoch"<br>
 - BaseCam + BaseCam Terminal<br>
 &nbsp;&nbsp;&nbsp;- Build Cams at your Base and watch them through the Terminal<br>
 - Wooden Stairs with lockable Bars on the top (upgradeable from Wooden Stairs)<br>
 - Wood and Metal Garage Doors as upgradeable Baseparts<br>
 - 1/3 Plywood wall directly craftable<br>
 - You can now wash yourself with a soap in your inventory at water sources (reduce Soiled)<br>
+- 2 new masks (Thor Helmet "thor_mask_epoch" and Iron Man Mask "iron_mask_epoch")<br>
 <b>### Fixed</b><br>
 - Mine Rocks / Chop Wood was only possible with Swords after 1.1.0 update.<br>
 - Alive Toxic Sapper was not toxic<br>
 - Binocular with "B" was not working, if you are using R3F or AdvSlingLoad<br>
 - Models for Radiation Suits<br>
-- Traps were Indestructible by using indestructible "Constructions_static_F"<br>
 - Hopefully less login issues on BaseSpawn<br>
 - Kick by using Jet ejector seats<br>
 - Wrong calculated Bullets in Traders<br>
@@ -53,6 +52,8 @@ For the full Changelog click: <a href="https://github.com/EpochModTeam/Epoch/blo
 - Items in Subcontainers (Items in BackPacks in Containers) were not saved<br>
 - Drunk effects were not working correctly<br>
 - Model / Graphics fix for Cinder Floors<br>
+- Snapped Walls on Stairs sometimes were not fixed correctly<br>
+- Quadbike handling was a bit too slippery<br>
 <b>### Changed</b><br>
 - Reworked Vehicle Load / Save commands for more precise Vehicle Spawn<br>
 - Made Temp-Vehicles tradable (will not be stored in Trader after selling them)<br>
@@ -60,8 +61,6 @@ For the full Changelog click: <a href="https://github.com/EpochModTeam/Epoch/blo
 - Energy from windsources / solarsources is now calculated by wind / overcast<br>
 - Ammo of crafted Mags are calculated by the left ammo of used Mags (example: EnergyPacks)<br>
 - Consumed EnergyPacks give only energy calculated by left ammo in the Pack<br>
-- Moved server "EpochEvents" folder from epoch_server_settings.pbo to epoch_server_events.pbo<br>
-- Some script optimizations<br>
 - Vehicle pricing adjustments "import tariffs"<br>
 - Some now Icons for Dynamenu<br>
 </p>
