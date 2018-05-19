@@ -4760,7 +4760,7 @@ class CfgVehicles
 		class TransportBackpacks {};
 		maxSpeed = 80;
 		enginePower = 25;
-		peakTorque = 280;
+		peakTorque = 140;
 		brakeDistance = 1;
 		fuelCapacity = 30;
 		terrainCoef = 2.0;
