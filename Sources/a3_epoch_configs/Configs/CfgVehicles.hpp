@@ -4296,8 +4296,8 @@ class CfgVehicles
 	class MBK_EPOCH_BASE: Bicycle
 	{
 		mapSize=3;
-		Picture="\x\addons\a3_epoch_community\textures\mbk\mbk_icon_ca.paa";
-		Icon="\x\addons\a3_epoch_community\textures\mbk\mbk_picture_ca.paa";
+		Picture="\x\addons\a3_epoch_community\textures\mbk\mbk_picture_ca.paa";
+		Icon=   "\x\addons\a3_epoch_community\textures\mbk\mbk_picture_ca.paa";
 		scope=0;
         author = "Bohemia Interactive/Helion4";
 		vehicleClass="Car";
