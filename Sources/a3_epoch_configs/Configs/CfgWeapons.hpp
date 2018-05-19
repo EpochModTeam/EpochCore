@@ -7162,7 +7162,7 @@ class CfgWeapons
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "Thor Helmet";
-        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\thor_mask_icon_ca.paa";
+        picture = "\x\addons\a3_epoch_community\icons\thor_mask_icon_ca.paa";
         model =   "\x\addons\a3_epoch_community\models\Halloween_masks\thor_epoch.p3d";
         class ItemInfo : HeadgearItem
         {
@@ -7178,7 +7178,7 @@ class CfgWeapons
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "Iron Man Mask";
-        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\iron_mask_icon_ca.paa";
+        picture = "\x\addons\a3_epoch_community\icons\iron_mask_icon_ca.paa";
         model = "\x\addons\a3_epoch_community\models\Halloween_masks\ironman.p3d";
         class ItemInfo : HeadgearItem
         {
