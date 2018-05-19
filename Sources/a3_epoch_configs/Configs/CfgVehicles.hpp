@@ -5392,6 +5392,20 @@ class CfgVehicles
         armor = 120;
 		crewCrashProtection	= 1.75;
 	};
+
+	class I_G_Van_02_transport_F;
+	class I_G_Van_02_transport_EPOCH : I_G_Van_02_transport_F {maximumLoad = 2000;};
+	class O_G_Van_02_transport_F;
+	class O_G_Van_02_transport_EPOCH : O_G_Van_02_transport_F {maximumLoad = 2000;};
+	class B_G_Van_02_transport_F;
+	class B_G_Van_02_transport_EPOCH : B_G_Van_02_transport_F {maximumLoad = 2000;};
+	class I_G_Van_02_vehicle_F;
+	class I_G_Van_02_vehicle_EPOCH : I_G_Van_02_vehicle_F {maximumLoad = 2000;};
+	class O_G_Van_02_vehicle_F;
+	class O_G_Van_02_vehicle_EPOCH : O_G_Van_02_vehicle_F {maximumLoad = 2000;};
+	class B_G_Van_02_vehicle_F;
+	class B_G_Van_02_vehicle_EPOCH : B_G_Van_02_vehicle_F {maximumLoad = 2000;};
+
     class B_MRAP_01_F;
 /*
 	class B_MRAP_01_F
