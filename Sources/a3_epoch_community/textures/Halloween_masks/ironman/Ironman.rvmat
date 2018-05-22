@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="x\addons\a3_epoch_community\textures\ironman\ironman_nohq.paa";
+	texture="x\addons\a3_epoch_community\textures\Halloween_masks\ironman\ironman_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="x\addons\a3_epoch_community\textures\ironman\ironman_as.paa";
+	texture="x\addons\a3_epoch_community\textures\Halloween_masks\ironman\ironman_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="x\addons\a3_epoch_community\textures\ironman\ironman_smdi.paa";
+	texture="x\addons\a3_epoch_community\textures\Halloween_masks\ironman\ironman_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
