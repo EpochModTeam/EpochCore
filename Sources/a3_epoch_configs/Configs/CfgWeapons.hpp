@@ -7096,7 +7096,7 @@ class CfgWeapons
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "$STR_EPOCH_GhostFaceMask";
-        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\plague_mask_icon_ca.paa";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\ghostface_mask_icon_ca.paa";
         model = "\x\addons\a3_epoch_community\models\Halloween_masks\scream.p3d";
         class ItemInfo : HeadgearItem
         {
