@@ -1192,6 +1192,18 @@
         <Key ID="STR_EPOCH_SolarGeneratorKit">
             <Original>Solar Generator Kit</Original>
         </Key>
+        <Key ID="STR_EPOCH_SolarChargerKit">
+            <Original>Solar Charger Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarChargerKit_Desc">
+            <Original>Holds 3 small Energy Packs for charging</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarChargerXLKit">
+            <Original>Solar Charger XL Kit</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarChargerXLKit_Desc">
+            <Original>Holds 10 small or 1 large Energy Packs for charging</Original>
+        </Key>
         <Key ID="STR_EPOCH_FrequencyJammer">
             <Original>Frequency Jammer</Original>
         </Key>
@@ -1692,6 +1704,12 @@
         </Key>
         <Key ID="STR_EPOCH_SolarPowerGenerator">
             <Original>Solar Power Generator</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarCharger">
+            <Original>Solar Charger</Original>
+        </Key>
+        <Key ID="STR_EPOCH_SolarChargerXL">
+            <Original>Solar Charger XL</Original>
         </Key>
         <Key ID="STR_EPOCH_TiPiGhost">
             <Original>TiPi Ghost</Original>
@@ -4015,10 +4033,10 @@
 			<Original>Packed Radiation Suit for Females</Original>
 		</Key>
 		<Key ID="STR_EPOCH_RadSuit_MALE">
-			<Original>Packed Radiation Suit for Males</Original>
+			<Original>Radiation Suit for Males</Original>
 		</Key>
 		<Key ID="STR_EPOCH_RadSuit_FEMALE">
-			<Original>Packed Radiation Suit for Females</Original>
+			<Original>Radiation Suit for Females</Original>
 		</Key>	
 		<Key ID="STR_EPOCH_HatchBackLevel1">
 			<Original>HatchBack LvL-I</Original>
@@ -4257,5 +4275,32 @@
 		<Key ID="STR_EPOCH_M900_4Seat">
 			<Original>M-900 (4 Seats)</Original>
 		</Key>
+		<Key ID="STR_EPOCH_MetalElevator">
+			<Original>Metal Elevator</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hoverboard_Base">
+			<Original>Hoverboard_base</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hoverboard_basic">
+			<Original>Basic Hoverboard EMSkin</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hoverboard_cargo">
+			<Original>Hoverboard with cargo space</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hoverboard_BTTF">
+			<Original>Hoverboard BTTF Skin</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Hoverboard_A3">
+			<Original>Hoverboard A3 Skin</Original>
+		</Key>
+		<Key ID="STR_EPOCH_Mountain_Bike">
+			<Original>Mountain Bike</Original>
+		</Key>
+		<Key ID="STR_EPOCH_PLYWallThird">
+			<Original>Third height Plywall</Original>
+		</Key>	
+		<Key ID="STR_EPOCH_PLYWallThirdGhost">
+			<Original>Third height Plywall ghost</Original>
+		</Key>		
 	</Package>
 </Project>

@@ -11,71 +11,58 @@ content="text/html; charset=windows-1250">
 <p>
 For the full Changelog click: <a href="https://github.com/EpochModTeam/Epoch/blob/release/changelog.md">Github</a><br>
 <br>
-<b>## [1.1.0.0]</b><br>
+<b>## [1.2.0.0]</b><br>
 <b>### Added</b><br>
-- Plant Spawner: vehicle object for sunflower. @Helion4<br>
-- MoneyDrop Event: Random Money lump with Mapmarker (like Plants) @He-Man<br>
-- Examples for Vehicle upgrades for Server Admins into CfgVehicleUpgrades.hpp @He-Man<br>
-- Make Lighter refillable at Fuel-Sources (Gasstations / Vehicles) @He-Man<br>
-- Make Trader more configurable in epochconfig.hpp @He-Man<br>
-- Added Examples for Batchfiles to control Server Restarts @DirtySanchez<br>
-- default pops for "center" marker @AWOL<br>
-- More map supports @AWOL<br>
-- Lighter is needed to imflame fires @DirtySanchez<br>
-- FireExtinguisher is needed to "put our fire" on Burn Barrel @DirtySanchez<br>
-- Rope is needed for SlingLoad (get back on release) @DirtySanchez<br>
-- R3F compatibility for SlingLoad @DirtySanchez<br>
-- Hints while using Vehicle Repair (MultiGun) @He-Man<br>
-- Config to completely disable Simulation for BaseParts (if not needed) @He-Man<br>
-- Made Radiation configureable by cfgepochclient.hpp @Raymix<br>
-- Hints for lock / unlock Vehicles / Storages @He-Man<br>
-- Nuisance multiplicator in cfgepochclient.hpp @He-Man<br>
-- Reduce rads over time at cost of immunity @Raymix<br>
-- Wearable Male + Female wearable full radiation suit @Helion4<br>
-- December seasonal items (Santa hat / Snowman) @Helion4<br>
-- Autorun function (suggested by Ghostrider) @He-Man<br>
-&nbsp;&nbsp;&nbsp;- Default Key is "W"<br>
-&nbsp;&nbsp;&nbsp;- You can change the key in EPOCH ESC Menu<br>
-&nbsp;&nbsp;&nbsp;- If choosen key is same as "moveforward" (default), you have to 2x tap it, else you only have to 1x tap it<br>
-&nbsp;&nbsp;&nbsp;- If your legs are broken, you get a hint "can not autorun - legs are broken"<br>
-&nbsp;&nbsp;&nbsp;- If the terrain is too steep, you only walk in AutoRun<br>
-&nbsp;&nbsp;&nbsp;- Inside Water, you can not Autorun<br>
-- Helper 3D-Icon + Line on the part, where element is snapped on (while Base-Building) @He-Man<br>
-- Config in cfgepochclient.hpp to block ATM's in Plotpole range @He-Man<br>
-- Power Sword @Helion<br>
+- Radiation Suits to Loot, Pricing and Itemsort<br>
+- Reworked Trader Menu<br>
+&nbsp;&nbsp;&nbsp;- Secondary Weapon can now be sold directly from hand<br>
+&nbsp;&nbsp;&nbsp;- Attachments from sold weapons from hand will be put back into your Inventory<br>
+&nbsp;&nbsp;&nbsp;- Weapons in hand are now marked in menu as "in Hand"<br>
+- Solar Charger for EnergyPacks - Put an EnergyPack into the Charger and wait...<br>
+- 4 Hoverboard Vehicles:<br>
+&nbsp;&nbsp;&nbsp;- "hoverboard_epoch_1"<br>
+&nbsp;&nbsp;&nbsp;- "hoverboard_epoch_bttf"<br>
+&nbsp;&nbsp;&nbsp;- "hoverboard_epoch_a3"<br>
+&nbsp;&nbsp;&nbsp;- "hoverboard_epoch_cargo"<br>
+- Mountainbike "MBK_01_EPOCH"<br>
+- Helicopter UH1H "uh1h_Epoch"<br>
+- BaseCam + BaseCam Terminal<br>
+&nbsp;&nbsp;&nbsp;- Build Cams at your Base and watch them through the Terminal<br>
+- Wooden Stairs with lockable Bars on the top (upgradeable from Wooden Stairs)<br>
+- Wood and Metal Garage Doors as upgradeable Baseparts<br>
+- 1/3 Plywood wall directly craftable<br>
+- You can now wash yourself with a soap in your inventory at water sources (reduce Soiled)<br>
+- 2 new masks (Thor Helmet "thor_mask_epoch" and Iron Man Mask "iron_mask_epoch")<br>
 <b>### Fixed</b><br>
-- False BE kicks since Arma 3 1.80 update.<br>
-- Nightlight now also follow players inside Vehicles @He-Man<br>
-- Fixed fault disabled DynamicDebris @morgoth0<br>
-- SERVER_VARS (BaseSpawn) was not saved on revive @morgoth0<br>
-- Without Advanced Vehicle Repair, Vehicle upgrade was not available @He-Man<br>
-- Base Storages could be deleted if near Loot containers were auto-deleted @He-Man<br>
-- Some Tarp Loot was spawned under the Floor @He-Man<br>
-- Reworked wall check by getting out of Vehicles @He-Man<br>
-- Garden Plot had no physical ground @Helion4<br>
-- Some Vehicles were missing in EPOCH Admin Spawn Menu @He-Man<br>
+- Mine Rocks / Chop Wood was only possible with Swords after 1.1.0 update.<br>
+- Alive Toxic Sapper was not toxic<br>
+- Binocular with "B" was not working, if you are using R3F or AdvSlingLoad<br>
+- Models for Radiation Suits<br>
+- Hopefully less login issues on BaseSpawn<br>
+- Kick by using Jet ejector seats<br>
+- Wrong calculated Bullets in Traders<br>
+- Locked Vehicles were unlocked after upgrade<br>
+- Everybody was able to open Hatch on Windows / Doors on foreign Bases<br>
+- Ban for "RscMenuTeam" commandmenu<br>
+- Adjusted some SnapPoints for Basebuilding to be more accurate<br>
+- Advanced Vehicle Repair was broken after last Arma Update (Tank DLC)<br>
+- Added missing ItemWaterPurificationTablets to pricing<br>
+- MultiGun was not working on very large Vehicles (VTOL)<br>
+- GoldenSeal will no longer disappear when fully grown in a Garden<br>
+- Items in Subcontainers (Items in BackPacks in Containers) were not saved<br>
+- Drunk effects were not working correctly<br>
+- Model / Graphics fix for Cinder Floors<br>
+- Snapped Walls on Stairs sometimes were not fixed correctly<br>
+- Quadbike handling was a bit too slippery<br>
 <b>### Changed</b><br>
-- RCon Port is now set to 2307 by default since changes in A3 1.78 prevent use of 2306. @AWOL<br>
-- SnapPoints for Building objects (especially full / half / quarter Floors) @He-Man<br>
-- Some performance tweaks<br>
-- Inventory will be opened automatically, if "you found something" @AWOL<br>
-- EPOCH Events reworked (Markers will change if players near / event looted) @DirtySanchez<br>
-- Traders will no longer refill sold magazines @He-Man<br>
-&nbsp;&nbsp;&nbsp;- Magazines will automatic be repacked in Trader<br>
-&nbsp;&nbsp;&nbsp;- First the trader offers full magazines<br>
-&nbsp;&nbsp;&nbsp;- If no full magazine is available, the Trader offer the last not full magazine<br>
-&nbsp;&nbsp;&nbsp;- Not full magazines are colored: Yellow (nearly full) -> Red (nearly empty)<br>
-&nbsp;&nbsp;&nbsp;- You also get a Tooltip, how much bullets left in magazine<br>
-&nbsp;&nbsp;&nbsp;- The prices are calculated by the left bullets in the magazine<br>
-- Increased snap-distance for Foundations (much easier to find snap positions) @He-Man<br>
-- Reworked and added EPOCH Vehicle Classes @He-Man<br>
-&nbsp;&nbsp;&nbsp;- Each upgrade increase Speed, Torque, Fuel, Terrainbehaviour, Load and Armor<br>
-&nbsp;&nbsp;&nbsp;- Hatchback >= lvl2 will no longer stuck in forests<br>
-&nbsp;&nbsp;&nbsp;- Added M900 forced without Backseats -> "C_Heli_Light_01_civil_2seat_EPOCH"<br>
-&nbsp;&nbsp;&nbsp;- Added M900 forced with Backseats -> "C_Heli_Light_01_civil_4seat_EPOCH"<br>
-&nbsp;&nbsp;&nbsp;- The Random M900 will also stay available -> "C_Heli_Light_01_civil_EPOCH"<br>
-&nbsp;&nbsp;&nbsp;- Added very low EPOCH variants of VTOL and Xi'an (eventually we have to change them with the next update a bit)<br>
-&nbsp;&nbsp;&nbsp;- Added Door-Animations to some Vehicles by GetIn / GetOut<br>
+- Reworked Vehicle Load / Save commands for more precise Vehicle Spawn<br>
+- Made Temp-Vehicles tradable (will not be stored in Trader after selling them)<br>
+- Wood / Cinder Walls can now snap to each other<br>
+- Energy from windsources / solarsources is now calculated by wind / overcast<br>
+- Ammo of crafted Mags are calculated by the left ammo of used Mags (example: EnergyPacks)<br>
+- Consumed EnergyPacks give only energy calculated by left ammo in the Pack<br>
+- Vehicle pricing adjustments "import tariffs"<br>
+- Some now Icons for Dynamenu<br>
 </p>
 </body>
 </html>

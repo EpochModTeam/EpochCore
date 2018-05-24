@@ -1902,6 +1902,7 @@ class CfgMagazines
     {
         author = "Sequisha";
         picture = "\A3\Weapons_F\Data\UI\M_battery_CA.paa";
+		model = "\x\addons\a3_epoch_community\models\EnergyPack.p3d";		
         displayName = "$STR_EPOCH_Smallenergypack";
         scope = 2;
         ammo = "B_EnergyPack";
@@ -1915,7 +1916,8 @@ class CfgMagazines
     class EnergyPackLg : CA_Magazine
     {
         author = "Sequisha";
-        picture = "\A3\Weapons_F\Data\UI\M_battery_CA.paa";
+        picture = "\x\addons\a3_epoch_community\textures\energypacks\EnergyPack_LG_icon_ca.paa";
+		model = "\x\addons\a3_epoch_community\models\EnergyPack_large.p3d";
         displayName = "$STR_EPOCH_Largeenergypack";
         scope = 2;
         ammo = "B_EnergyPack";
@@ -2168,6 +2170,17 @@ class CfgMagazines
         count = 1;
         mass = 20;
     };
+    class KitPlyThirdWall_EPOCH : CA_Magazine
+    {
+        author = "Helion";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "1/3 Plywood Wall";
+        scope = 2;
+        descriptionShort = "1/3 Plywood Wall";
+        count = 1;
+        mass = 15;
+    };
     class KitWoodFloor : CA_Magazine
     {
         author = "Sequisha";
@@ -2341,6 +2354,28 @@ class CfgMagazines
         displayName = "$STR_EPOCH_SolarGeneratorKit";
         scope = 2;
         descriptionShort = "$STR_EPOCH_SolarGeneratorKit";
+        count = 1;
+        mass = 20;
+    };
+    class KitSolarCharger : CA_Magazine
+    {
+        author = "Sequisha";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_SolarChargerKit";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_SolarChargerKit_Desc";
+        count = 1;
+        mass = 20;
+    };
+    class KitSolarChargerXL : CA_Magazine
+    {
+        author = "Sequisha";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+        displayName = "$STR_EPOCH_SolarChargerXLKit";
+        scope = 2;
+        descriptionShort = "$STR_EPOCH_SolarChargerXLKit_Desc";
         count = 1;
         mass = 20;
     };
@@ -3881,7 +3916,7 @@ class CfgMagazines
 		scope=2;
 		count = 1;
 		type = 256;
-		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Laptop_unfolded_F.jpg";
+		picture="\x\addons\a3_epoch_community\icons\ItemLaptop.paa";
 		model="\A3\structures_f\Items\Electronics\Laptop_unfolded_F.p3d";
 		displayName = "$STR_EPOCH_Laptop";
 		descriptionShort = "$STR_EPOCH_LaptopDesc";
@@ -4251,13 +4286,35 @@ class CfgMagazines
 	{
 		author = "He-Man/DirtySanchez";
 		scope=2;
-		count = 1;
+		count = 10;
 		type = 256;
-		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Defibrillator_F.jpg";
+		picture="\x\addons\a3_epoch_community\icons\ItemDefibrillator.paa";
 		model="\A3\structures_f_epa\Items\Medical\Defibrillator_F.p3d";
 		displayName="$STR_EPOCH_Defibrillator";
 		descriptionShort="$STR_EPOCH_DefibrillatorDesc";
 		mass=30;
+	};
+	class BaseCam: CA_Magazine
+	{
+		author="Helion";
+		model="\x\addons\a3_epoch_community\models\base_cam.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\BaseCam.paa";
+		displayName="Base Cam";
+		scope=2;
+		descriptionShort="Base Cam";
+		count=1;
+		mass=20;
+	};
+	class BaseCamTerminal: CA_Magazine
+	{
+		author="Helion";
+		model="\x\addons\a3_epoch_community\models\base_cam_terminal.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\BaseCam_Terminal.paa";
+		displayName="Base Cam Terminal";
+		scope=2;
+		descriptionShort="Base Cam Terminal";
+		count=1;
+		mass=20;
 	};
 	class ItemDisinfectantSpray: CA_Magazine
 	{
@@ -5001,6 +5058,28 @@ class CfgMagazines
 		displayName = "Portable Generator";
 		mass = 200;
 	};
+	class KitSnowman: CA_Magazine
+	{
+		author = "He-Man/Helion";
+		scope=2;
+		count = 1;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\icons\KitSnowman.paa";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		displayName = "Snowman";
+		mass = 200;
+	};
+	class Soap_Epoch: CA_Magazine
+	{
+		author = "Helion";
+		scope=2;
+		count = 1;
+		type = 256;
+		picture = "\x\addons\a3_epoch_community\icons\soap_icon_ca.paa";
+		model = "\x\addons\a3_epoch_community\models\soap.p3d";
+		displayName = "Bar of Soap";
+		mass = 9;
+	};	
 };
 
 /*[[[end]]]*/

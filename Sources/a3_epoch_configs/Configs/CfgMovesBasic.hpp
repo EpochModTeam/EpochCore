@@ -25,6 +25,8 @@ class CfgMovesBasic
         SledgeSwing = "";
         Driver_Jetski = "Driver_Jetski";
         Driver_Ebike = "Driver_Ebike";
+        hoverboard_driver = "hoverboard_driver";
+        mbk_driver = "mbk_driver";			
         Cargo_Jetski = "Cargo_Jetski";
         GestureReloadSR25[] = {"GestureReloadSR25","Gesture"};
         GestureReloadSR25Prone[] = {"GestureReloadSR25Prone","Gesture"};

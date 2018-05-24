@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="\x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_nohq.paa";
+	texture="x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -48,8 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="\x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_AS.paa";
-	//texture="#(argb,8,8,3)color(0,0,0,0,AS)";
+	texture="x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_AS.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -61,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="\x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_smdi.paa";
+	texture="x\addons\a3_epoch_community\epoch_radsuit\data\Radsuit2_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

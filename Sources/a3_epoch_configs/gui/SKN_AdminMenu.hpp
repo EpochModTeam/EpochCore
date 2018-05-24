@@ -537,6 +537,20 @@ class Skaronator_AdminMenu
 			colorBackground[] = {0,0,0,0.75};
 			colorActive[] = {0,0,0,0.75};
 		};
+		class SearchFieldLeft: RscEdit
+		{
+			idc = 4101;
+			
+			size = 0.037;
+			text = "";
+			x = 0.294627 * safezoneW + safezoneX;
+			y = (0.3174+0.4576) * safezoneH + safezoneY;
+			w = 0.16401 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorText[] = {1,1,1,1};
+			colorBackground[] = {0,0,0,0.75};
+			onKeyUp = "_this call Skaronator_fnc_handleButton;";
+		};
 		class RightSide: RscText
 		{
 			idc = 42;

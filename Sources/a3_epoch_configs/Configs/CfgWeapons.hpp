@@ -5946,7 +5946,7 @@ class CfgWeapons
 		author = "He-Man/DirtySanchez";
 		scope=2;
 		count = 1;
-		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Laptop_unfolded_F.jpg";
+		picture="\x\addons\a3_epoch_community\icons\ItemLaptop.paa";
 		model="\A3\structures_f\Items\Electronics\Laptop_unfolded_F.p3d";
 		displayName = "$STR_EPOCH_Laptop";
 		descriptionShort = "$STR_EPOCH_LaptopDesc";
@@ -6100,7 +6100,7 @@ class CfgWeapons
 		author = "He-Man/DirtySanchez";
 		scope=2;
 		count = 1;
-		picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Defibrillator_F.jpg";
+		picture="\x\addons\a3_epoch_community\icons\ItemDefibrillator.paa";
 		model="\A3\structures_f_epa\Items\Medical\Defibrillator_F.p3d";
 		displayName="$STR_EPOCH_Defibrillator";
 		descriptionShort="$STR_EPOCH_DefibrillatorDesc";
@@ -7096,7 +7096,7 @@ class CfgWeapons
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "$STR_EPOCH_GhostFaceMask";
-        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\plague_mask_icon_ca.paa";
+        picture = "\x\addons\a3_epoch_community\icons\Halloween_masks\ghostface_mask_icon_ca.paa";
         model = "\x\addons\a3_epoch_community\models\Halloween_masks\scream.p3d";
         class ItemInfo : HeadgearItem
         {
@@ -7156,6 +7156,38 @@ class CfgWeapons
 		};
 	};
 //********XMAS*****************************	
+	class thor_mask_epoch : ItemCore
+    {
+        author = "Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "Thor Helmet";
+        picture = "\x\addons\a3_epoch_community\icons\thor_mask_icon_ca.paa";
+        model =   "\x\addons\a3_epoch_community\models\Halloween_masks\thor_epoch.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\thor_epoch.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };
+	class iron_mask_epoch : ItemCore
+    {
+        author = "Helion4";
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "Iron Man Mask";
+        picture = "\x\addons\a3_epoch_community\icons\iron_mask_icon_ca.paa";
+        model = "\x\addons\a3_epoch_community\models\Halloween_masks\ironman.p3d";
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40;
+            uniformModel = "\x\addons\a3_epoch_community\models\Halloween_masks\ironman.p3d";
+            modelSides[] = {3,2,1};
+            passThrough = 0.5;
+        };
+    };	
 	class radiation_mask_epoch: NVGoggles
 	{
 		author = "DirtySanchez/Helion4";
