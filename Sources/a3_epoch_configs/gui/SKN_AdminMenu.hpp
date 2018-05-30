@@ -548,7 +548,7 @@ class Skaronator_AdminMenu
 			w = 0.16401 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
-			colorBackground[] = {0,0,0,0.75};
+			colorBackground[] = {1,0,0,0.25};
 			onKeyUp = "_this call Skaronator_fnc_handleButton;";
 		};
 		class RightSide: RscText
@@ -586,6 +586,20 @@ class Skaronator_AdminMenu
 			colorBackground[] = {0.78,0.37,0,1};
 			colorActive[] = {0.78,0.37,0,1};
 		};
+		class BtnSpawnAll: SKN_RscButtonMenu
+		{
+			idc = 6000;
+			size = 0.037;
+
+			text = "All";
+			x = 0.46596 * safezoneW + safezoneX;
+			y = 0.3196 * safezoneH + safezoneY;
+			w = 0.0670479 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorText[] = {1,1,1,1};
+			colorBackground[] = {0,0,0,0.9};
+			colorActive[] = {0,0,0,0.9};
+		};
 		class BtnSpawnVehicleAir: SKN_RscButtonMenu
 		{
 			idc = 61;
@@ -593,7 +607,7 @@ class Skaronator_AdminMenu
 
 			text = "V: AIR";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.3196 * safezoneH + safezoneY;
+			y = 0.346 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
@@ -607,7 +621,7 @@ class Skaronator_AdminMenu
 
 			text = "V: LAND";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.346 * safezoneH + safezoneY;
+			y = 0.3724 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
@@ -621,7 +635,7 @@ class Skaronator_AdminMenu
 
 			text = "V: SHIP";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.3724 * safezoneH + safezoneY;
+			y = 0.3988 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
@@ -635,7 +649,7 @@ class Skaronator_AdminMenu
 
 			text = "WEAPONS";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.3988 * safezoneH + safezoneY;
+			y = 0.4252 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
@@ -649,7 +663,7 @@ class Skaronator_AdminMenu
 
 			text = "MAGAZINES";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.4252 * safezoneH + safezoneY;
+			y = 0.4516 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
@@ -663,7 +677,7 @@ class Skaronator_AdminMenu
 
 			text = "ITEMS";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.4516 * safezoneH + safezoneY;
+			y = 0.478 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
@@ -677,7 +691,7 @@ class Skaronator_AdminMenu
 
 			text = "BACKPACKS";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.478 * safezoneH + safezoneY;
+			y = 0.5044 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
@@ -691,7 +705,7 @@ class Skaronator_AdminMenu
 
 			text = "UNIFORMS";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.5044 * safezoneH + safezoneY;
+			y = 0.5308 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
@@ -705,7 +719,7 @@ class Skaronator_AdminMenu
 
 			text = "ATTACHMENTS";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.5308 * safezoneH + safezoneY;
+			y = 0.5572 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
@@ -719,7 +733,7 @@ class Skaronator_AdminMenu
 
 			text = "HEADGEAR";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.5572 * safezoneH + safezoneY;
+			y = 0.5836 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = { 1, 1, 1, 1 };
@@ -733,7 +747,7 @@ class Skaronator_AdminMenu
 
 			text = "VESTS";
 			x = 0.46596 * safezoneW + safezoneX;
-			y = 0.5836 * safezoneH + safezoneY;
+			y = 0.61 * safezoneH + safezoneY;
 			w = 0.0670479 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = { 1, 1, 1, 1 };
