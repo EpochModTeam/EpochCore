@@ -5079,6 +5079,158 @@ class CfgMagazines
 		model = "\x\addons\a3_epoch_community\models\soap.p3d";
 		displayName = "Bar of Soap";
 		mass = 9;
+	};
+	class KitStorageCrate: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Storage Crate";
+		scope = 2;
+		count = 1;
+		mass = 5;
+	};
+	class KitFridge: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Fridge";
+		scope = 2;
+		count = 1;
+		mass = 25;
+	};
+
+	class KitCooker: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Stove";
+		scope = 2;
+		count = 1;
+		mass = 25;
+	};
+
+	class KitFreezer: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Freezer";
+		scope = 2;
+		count = 1;
+		mass = 25;
+	};
+
+	class KitBunk: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Bunk";
+		scope = 2;
+		count = 1;
+		mass = 20;
+	};
+
+	class KitBed: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Bed";
+		scope = 2;
+		count = 1;
+		mass = 20;
+	};
+
+	class KitTable: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Table";
+		scope = 2;
+		count = 1;
+		mass = 20;
+	};
+
+	class KitWardrobe: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Wardrobe";
+		scope = 2;
+		count = 1;
+		mass = 20;
+	};
+
+	class KitPelican: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Pelican";
+		scope = 2;
+		count = 1;
+		mass = 5;
+	};
+
+	class KitCouch: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Couch";
+		scope = 2;
+		count = 1;
+		mass = 20;
+	};
+
+	class KitChair: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Chair";
+		scope = 2;
+		count = 1;
+		mass = 15;
+	};
+
+	class KitKitchenSink: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Kitchen Sink";
+		scope = 2;
+		count = 1;
+		mass = 25;
+	};
+
+	class KitLocker: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Locker";
+		scope = 2;
+		count = 1;
+		mass = 25;
+	};
+
+	class KitPartyTent: CA_Magazine
+	{
+		author = "Grahame";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_assets_1\pictures\equip_wooden_crate_ca.paa";
+		displayName = "Party Tent";
+		scope = 2;
+		count = 1;
+		mass = 25;
 	};	
 };
 
