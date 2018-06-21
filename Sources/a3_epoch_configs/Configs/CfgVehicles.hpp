@@ -16183,6 +16183,1280 @@ class CfgVehicles
 				statement = "this animate [""Unlock"", 0];this animate [""unlock2"", 0,0.8];this animate [""bar_hide"", 0,0.8];";
 			};
 		};
+	};
+    class StorageCrate_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Props_F_Exp\Commercial\Market\WoodenCrate_01_F.p3d";
+        displayName = "Storage Crate";
+    };
+    class StorageCrate_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Props_F_Exp\Commercial\Market\WoodenCrate_01_F.p3d";
+        displayName = "Storage Crate";
+    };
+    class StorageCrate_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Props_F_Exp\Commercial\Market\WoodenCrate_01_F.p3d";
+        displayName = "Storage Crate";
+		vehicleClass = "Epoch_objects";
+        armor = 50;
+        maximumLoad = 1000;
+		destrType = "DestructDefault";
+    };	
+
+	// Buildable Loot Objects - Not Lootable
+    class Buildable_Fridge_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\fridge_door_anim.p3d";
+        displayName = "Fridge";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\fridge\fridge_CO.paa"};
+        availableTextures[] = {"\x\addons\a3_epoch_assets\textures\fridge\fridge_CO.paa","\x\addons\a3_epoch_assets\textures\fridge\fridgeBlack_CO.paa","\x\addons\a3_epoch_assets\textures\fridge\fridgeSteel_co.paa","\x\addons\a3_epoch_assets\textures\fridge\fridgeWhite_co.paa"};
+        class AnimationSources
+        {
+            class Open_bot
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+            class Open_top
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class Open_bot
+            {
+                displayName = "Open Bottom Door";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""Open_bot"" < 0.5";
+                statement = "this animate [""Open_bot"", 1];";
+            };
+            class Close_bot : Open_bot
+            {
+                displayName = "Close Bottom Door";
+                condition = "this animationPhase ""Open_bot"" >= 0.5";
+                statement = "this animate [""Open_bot"", 0];";
+            };
+            class Open_top
+            {
+                displayName = "Open Top Door";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""Open_top"" < 0.5";
+                statement = "this animate [""Open_top"", 1];";
+            };
+            class Close_top : Open_top
+            {
+                displayName = "Close Top Door";
+                condition = "this animationPhase ""Open_top"" >= 0.5";
+                statement = "this animate [""Open_top"", 0];";
+            };
+        };
+	};
+    class Buildable_Fridge_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\fridge_door_anim.p3d";
+        displayName = "Fridge";
+    };
+    class Buildable_Fridge_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\fridge_door_anim.p3d";
+        displayName = "Fridge";
+		vehicleClass = "Epoch_objects";
+        armor = 50;
+        maximumLoad = 800;
+		destrType = "DestructDefault";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\fridge\fridge_CO.paa"};
+        availableTextures[] = {"\x\addons\a3_epoch_assets\textures\fridge\fridge_CO.paa","\x\addons\a3_epoch_assets\textures\fridge\fridgeBlack_CO.paa","\x\addons\a3_epoch_assets\textures\fridge\fridgeSteel_co.paa","\x\addons\a3_epoch_assets\textures\fridge\fridgeWhite_co.paa"};
+        class AnimationSources
+        {
+            class Open_bot
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+            class Open_top
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class Open_bot
+            {
+                displayName = "Open Bottom Door";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""Open_bot"" < 0.5";
+                statement = "this animate [""Open_bot"", 1];";
+            };
+            class Close_bot : Open_bot
+            {
+                displayName = "Close Bottom Door";
+                condition = "this animationPhase ""Open_bot"" >= 0.5";
+                statement = "this animate [""Open_bot"", 0];";
+            };
+            class Open_top
+            {
+                displayName = "Open Top Door";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""Open_top"" < 0.5";
+                statement = "this animate [""Open_top"", 1];";
+            };
+            class Close_top : Open_top
+            {
+                displayName = "Close Top Door";
+                condition = "this animationPhase ""Open_top"" >= 0.5";
+                statement = "this animate [""Open_top"", 0];";
+            };
+        };
+    };	
+    class Buildable_KitchenSink_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_community\models\kitchen_sink\kitchen_sink.p3d";
+        displayName = "Kitchen Sink";
+        class AnimationSources
+        {
+            class open_door_l
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class open_door_r
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_door_l
+            {
+                displayName = "Open";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_l"" < 0.5";
+                statement = "this animate [""open_door_l"", 1];";
+            };
+            class close_door_l : open_door_l
+            {
+                displayName = "Close";
+                condition = "this animationPhase ""open_door_l"" >= 0.5";
+                statement = "this animate [""open_door_l"", 0];";
+            };
+            class open_door_r
+            {
+                displayName = "Open";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_r"" < 0.5";
+                statement = "this animate [""open_door_r"", 1];";
+            };
+            class close_door_r : open_door_r
+            {
+                displayName = "Close";
+                condition = "this animationPhase ""open_door_r"" >= 0.5";
+                statement = "this animate [""open_door_r"", 0];";
+            };
+        };
+	};
+    class Buildable_KitchenSink_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_community\models\kitchen_sink\kitchen_sink.p3d";
+        displayName = "Kitchen Sink";
+    };
+    class Buildable_KitchenSink_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_community\models\kitchen_sink\kitchen_sink.p3d";
+        displayName = "Kitchen Sink";
+		vehicleClass = "Epoch_objects";
+        armor = 50;
+        maximumLoad = 800;
+		destrType = "DestructDefault";
+        class AnimationSources
+        {
+            class open_door_l
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class open_door_r
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_door_l
+            {
+                displayName = "Open";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_l"" < 0.5";
+                statement = "this animate [""open_door_l"", 1];";
+            };
+            class close_door_l : open_door_l
+            {
+                displayName = "Close";
+                condition = "this animationPhase ""open_door_l"" >= 0.5";
+                statement = "this animate [""open_door_l"", 0];";
+            };
+            class open_door_r
+            {
+                displayName = "Open";
+                position = "Door_knopf";
+				onlyForPlayer = 1;
+                radius = 3;
+                condition = "this animationPhase ""open_door_r"" < 0.5";
+                statement = "this animate [""open_door_r"", 1];";
+            };
+            class close_door_r : open_door_r
+            {
+                displayName = "Close";
+                condition = "this animationPhase ""open_door_r"" >= 0.5";
+                statement = "this animate [""open_door_r"", 0];";
+            };
+        };
+    };	
+
+    class Buildable_Freezer_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\freezer.p3d";
+        displayName = "Freezer";
+        class AnimationSources
+        {
+            class Open_top
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class Open_top
+            {
+                displayName = "Open Top";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""Open_top"" < 0.5";
+                statement = "this animate [""Open_top"", 1];";
+            };
+            class Close_top : Open_top
+            {
+                displayName = "Close Lid";
+                condition = "this animationPhase ""Open_top"" >= 0.5";
+                statement = "this animate [""Open_top"", 0];";
+            };
+        };
+	};
+    class Buildable_Freezer_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\freezer.p3d";
+        displayName = "Freezer";
+    };
+    class Buildable_Freezer_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\freezer.p3d";
+        displayName = "Freezer";
+		vehicleClass = "Epoch_objects";
+        armor = 50;
+        maximumLoad = 800;
+		destrType = "DestructDefault";
+        class AnimationSources
+        {
+            class Open_top
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class Open_top
+            {
+                displayName = "Open Top";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""Open_top"" < 0.5";
+                statement = "this animate [""Open_top"", 1];";
+            };
+            class Close_top : Open_top
+            {
+                displayName = "Close Lid";
+                condition = "this animationPhase ""Open_top"" >= 0.5";
+                statement = "this animate [""Open_top"", 0];";
+            };
+        };
+    };	
+    class Buildable_Pelican_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\pelican.p3d";
+        displayName = "Pelican";
+        class AnimationSources
+        {
+            class Open_top
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class Open_top
+            {
+                displayName = "Open Top";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""Open_top"" < 0.5";
+                statement = "this animate [""Open_top"", 1];";
+            };
+            class Close_top : Open_top
+            {
+                displayName = "Close Lid";
+                condition = "this animationPhase ""Open_top"" >= 0.5";
+                statement = "this animate [""Open_top"", 0];";
+            };
+        };
+	};
+    class Buildable_Pelican_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\pelican.p3d";
+        displayName = "Pelican";
+    };
+    class Buildable_Pelican_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\pelican.p3d";
+        displayName = "Pelican";
+		vehicleClass = "Epoch_objects";
+        armor = 50;
+        maximumLoad = 400;
+		destrType = "DestructDefault";
+        class AnimationSources
+        {
+            class Open_top
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class Open_top
+            {
+                displayName = "Open Top";
+                position = "Door_knopf";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""Open_top"" < 0.5";
+                statement = "this animate [""Open_top"", 1];";
+            };
+            class Close_top : Open_top
+            {
+                displayName = "Close Lid";
+                condition = "this animationPhase ""Open_top"" >= 0.5";
+                statement = "this animate [""Open_top"", 0];";
+            };
+        };
+    };	
+    class Buildable_Locker_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets_2\lockers.p3d";
+        displayName = "Locker";
+        sections[] = {};
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {""};
+        class AnimationSources
+        {
+            class open_door_l
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class open_door_m
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class open_door_r
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_door_l
+            {
+                displayName = "Open Left Door";
+                position = "left";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_l"" < 0.5";
+                statement = "this animate [""open_door_l"", 1];";
+            };
+            class close_door_l : open_door_l
+            {
+                displayName = "Close Left Door";
+                condition = "this animationPhase ""open_door_l"" >= 0.5";
+                statement = "this animate [""open_door_l"", 0];";
+            };
+            class open_door_m
+            {
+                displayName = "Open Middle Door";
+                position = "left";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_m"" < 0.5";
+                statement = "this animate [""open_door_m"", 1];";
+            };
+            class close_door_m : open_door_l
+            {
+                displayName = "Close Middle Door";
+                condition = "this animationPhase ""open_door_m"" >= 0.5";
+                statement = "this animate [""open_door_m"", 0];";
+            };
+            class open_door_r
+            {
+                displayName = "Open Right Door";
+                position = "left";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_r"" < 0.5";
+                statement = "this animate [""open_door_r"", 1];";
+            };
+            class close_door_r : open_door_r
+            {
+                displayName = "Close Right Door";
+                condition = "this animationPhase ""open_door_r"" >= 0.5";
+                statement = "this animate [""open_door_r"", 0];";
+            };
+        };
+	};
+    class Buildable_Locker_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets_2\lockers.p3d";
+        displayName = "Locker";
+    };
+    class Buildable_Locker_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets_2\lockers.p3d";
+        displayName = "Locker";
+		vehicleClass = "Epoch_objects";
+        armor = 50;
+        maximumLoad = 1500;
+		destrType = "DestructDefault";
+        sections[] = {};
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {""};
+        class AnimationSources
+        {
+            class open_door_l
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class open_door_m
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class open_door_r
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_door_l
+            {
+                displayName = "Open Left Door";
+                position = "left";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_l"" < 0.5";
+                statement = "this animate [""open_door_l"", 1];";
+            };
+            class close_door_l : open_door_l
+            {
+                displayName = "Close Left Door";
+                condition = "this animationPhase ""open_door_l"" >= 0.5";
+                statement = "this animate [""open_door_l"", 0];";
+            };
+            class open_door_m
+            {
+                displayName = "Open Middle Door";
+                position = "left";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_m"" < 0.5";
+                statement = "this animate [""open_door_m"", 1];";
+            };
+            class close_door_m : open_door_l
+            {
+                displayName = "Close Middle Door";
+                condition = "this animationPhase ""open_door_m"" >= 0.5";
+                statement = "this animate [""open_door_m"", 0];";
+            };
+            class open_door_r
+            {
+                displayName = "Open Right Door";
+                position = "left";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_r"" < 0.5";
+                statement = "this animate [""open_door_r"", 1];";
+            };
+            class close_door_r : open_door_r
+            {
+                displayName = "Close Right Door";
+                condition = "this animationPhase ""open_door_r"" >= 0.5";
+                statement = "this animate [""open_door_r"", 0];";
+            };
+        };
+    };	
+
+    class Buildable_Cooker_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets_2\cooker.p3d";
+        displayName = "Cooker";
+        sections[] = {};
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {""};
+        class AnimationSources
+        {
+            class open_top_door
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class open_bottom_door
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_fl
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_fr
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_bl
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_br
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_oven
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_grill
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class fl_hob_hide
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class fr_hob_hide
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class bl_hob_hide
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class br_hob_hide
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_top_door
+            {
+                displayName = "Open Top Door";
+                position = "top";
+                radius = 3;
+                onlyForPlayer = 1;
+                condition = "this animationPhase ""open_top_door"" < 0.5";
+                statement = "this animate [""open_top_door"", 1];";
+            };
+            class close_top_door : open_top_door
+            {
+                displayName = "Close Top Door";
+                condition = "this animationPhase ""open_top_door"" >= 0.5";
+                statement = "this animate [""open_top_door"", 0];";
+            };
+            class open_bottom_door
+            {
+                displayName = "Open Bottom Door";
+                position = "top";
+                radius = 3;
+                onlyForPlayer = 1;
+                condition = "this animationPhase ""open_bottom_door"" < 0.5";
+                statement = "this animate [""open_bottom_door"", 1];";
+            };
+            class close_bottom_door : open_bottom_door
+            {
+                displayName = "Close Bottom Door";
+                condition = "this animationPhase ""open_bottom_door"" >= 0.5";
+                statement = "this animate [""open_bottom_door"", 0];";
+            };
+        };
+	};
+    class Buildable_Cooker_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets_2\cooker.p3d";
+        displayName = "Cooker";
+    };
+    class Buildable_Cooker_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets_2\cooker.p3d";
+        displayName = "Cooker";
+		vehicleClass = "Epoch_objects";
+        armor = 50;
+        maximumLoad = 800;
+		destrType = "DestructDefault";
+        sections[] = {};
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {""};
+        class AnimationSources
+        {
+            class open_top_door
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class open_bottom_door
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_fl
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_fr
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_bl
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_br
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_oven
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class turn_grill
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class fl_hob_hide
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class fr_hob_hide
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class bl_hob_hide
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+            class br_hob_hide
+            {
+                source = "user";
+                animPeriod = 1;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_top_door
+            {
+                displayName = "Open Top Door";
+                position = "top";
+                radius = 3;
+                onlyForPlayer = 1;
+                condition = "this animationPhase ""open_top_door"" < 0.5";
+                statement = "this animate [""open_top_door"", 1];";
+            };
+            class close_top_door : open_top_door
+            {
+                displayName = "Close Top Door";
+                condition = "this animationPhase ""open_top_door"" >= 0.5";
+                statement = "this animate [""open_top_door"", 0];";
+            };
+            class open_bottom_door
+            {
+                displayName = "Open Bottom Door";
+                position = "top";
+                radius = 3;
+                onlyForPlayer = 1;
+                condition = "this animationPhase ""open_bottom_door"" < 0.5";
+                statement = "this animate [""open_bottom_door"", 1];";
+            };
+            class close_bottom_door : open_bottom_door
+            {
+                displayName = "Close Bottom Door";
+                condition = "this animationPhase ""open_bottom_door"" >= 0.5";
+                statement = "this animate [""open_bottom_door"", 0];";
+            };
+        };
+    };	
+    class Buildable_Bunk_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\bunk.p3d";
+        displayName = "Bunk";
+    };
+    class Buildable_Bunk_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\bunk.p3d";
+        displayName = "Bunk";
+    };
+    class Buildable_Bunk_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 3;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\bunk.p3d";
+        displayName = "Bunk";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructBuilding";
+		armor = 500;
+    };	
+    class Buildable_Bed_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\bed.p3d";
+        displayName = "Bed";
+    };
+    class Buildable_Bed_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\bed.p3d";
+        displayName = "Bed";
+    };
+    class Buildable_Bed_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 3;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\bed.p3d";
+        displayName = "Bed";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructBuilding";
+		armor = 500;
+    };	
+    class Buildable_Table_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\coffee_table.p3d";
+        displayName = "Coffee Table";
+    };
+    class Buildable_Table_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\coffee_table.p3d";
+        displayName = "Coffee Table";
+    };
+    class Buildable_Table_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 3;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\coffee_table.p3d";
+        displayName = "Coffee Table";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructBuilding";
+		armor = 500;
+    };	
+    class Buildable_Couch_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\couch.p3d";
+        displayName = "Couch";
+    };
+    class Buildable_Couch_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\couch.p3d";
+        displayName = "Couch";
+    };
+    class Buildable_Couch_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 3;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\couch.p3d";
+        displayName = "Couch";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructBuilding";
+		armor = 500;
+    };	
+    class Buildable_Chair_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\chair_adult.p3d";
+        displayName = "Chair";
+        availableTextures[] = {"\x\addons\a3_epoch_assets\textures\chair\chair_ECO.paa","\x\addons\a3_epoch_assets\textures\chair\chair_kid_ECO.paa"};
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\chair\chair_ECO.paa"};
+        hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\chair\chair.rvmat"};
+    };
+    class Buildable_Chair_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\chair_adult.p3d";
+        displayName = "Chair";
+    };
+    class Buildable_Chair_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 3;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets\models\chair_adult.p3d";
+        displayName = "Chair";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructBuilding";
+		armor = 500;
+        availableTextures[] = {"\x\addons\a3_epoch_assets\textures\chair\chair_ECO.paa","\x\addons\a3_epoch_assets\textures\chair\chair_kid_ECO.paa"};
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\chair\chair_ECO.paa"};
+        hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_assets\textures\chair\chair.rvmat"};
+    };	
+    class Buildable_Wardrobe_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets_2\wardrobe.p3d";
+        displayName = "Wardrobe";
+        sections[] = {"camo"};
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {""};
+        class AnimationSources
+        {
+            class open_door_l
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+            class open_door_r
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_door_l
+            {
+                displayName = "Open Left Door";
+                position = "left";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_l"" < 0.5";
+                statement = "this animate [""open_door_l"", 1];";
+            };
+            class close_door_l : open_door_l
+            {
+                displayName = "Close Left Door";
+                condition = "this animationPhase ""open_door_l"" >= 0.5";
+                statement = "this animate [""open_door_l"", 0];";
+            };
+            class open_door_r
+            {
+                displayName = "Open Right Door";
+                position = "right";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_r"" < 0.5";
+                statement = "this animate [""open_door_r"", 1];";
+            };
+            class close_door_r : open_door_r
+            {
+                displayName = "Close Right Door";
+                condition = "this animationPhase ""open_door_r"" >= 0.5";
+                statement = "this animate [""open_door_r"", 0];";
+            };
+        };
+	};
+    class Buildable_Wardrobe_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets_2\wardrobe.p3d";
+        displayName = "Wardrobe";
+    };
+    class Buildable_Wardrobe_EPOCH : Buildable_Storage
+    {
+        author = "BI";
+		mapSize = 2.13;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\x\addons\a3_epoch_assets_2\wardrobe.p3d";
+        displayName = "Wardrobe";
+		vehicleClass = "Epoch_objects";
+        armor = 50;
+        maximumLoad = 1500;
+		destrType = "DestructDefault";
+        sections[] = {"camo"};
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {""};
+        class AnimationSources
+        {
+            class open_door_l
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+            class open_door_r
+            {
+                source = "user";
+                animPeriod = 2;
+                initPhase = 0;
+            };
+        };
+        class UserActions
+        {
+            class open_door_l
+            {
+                displayName = "Open Left Door";
+                position = "left";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_l"" < 0.5";
+                statement = "this animate [""open_door_l"", 1];";
+            };
+            class close_door_l : open_door_l
+            {
+                displayName = "Close Left Door";
+                condition = "this animationPhase ""open_door_l"" >= 0.5";
+                statement = "this animate [""open_door_l"", 0];";
+            };
+            class open_door_r
+            {
+                displayName = "Open Right Door";
+                position = "right";
+                radius = 3;
+				onlyForPlayer = 1;
+                condition = "this animationPhase ""open_door_r"" < 0.5";
+                statement = "this animate [""open_door_r"", 1];";
+            };
+            class close_door_r : open_door_r
+            {
+                displayName = "Close Right Door";
+                condition = "this animationPhase ""open_door_r"" >= 0.5";
+                statement = "this animate [""open_door_r"", 0];";
+            };
+        };
+    };	
+    class Buildable_PartyTent_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_Bootcamp\Civ\Camping\PartyTent_01_F.p3d";
+        displayName = "Party Tent";
+		hiddenSelections[] = {"Camo_1"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F_Bootcamp\Civ\Camping\Data\PartyTent_01_CO.paa"};
+	};
+    class Buildable_PartyTent_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Grahame";
+        scope = 2;
+		model = "\A3\Structures_F_Bootcamp\Civ\Camping\PartyTent_01_F.p3d";
+        displayName = "Party Tent";
+    };
+    class Buildable_PartyTent_EPOCH : Constructions_static_F
+    {
+        author = "BI";
+		mapSize = 3;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 3.019;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+        scope = 2;
+		model = "\A3\Structures_F_Bootcamp\Civ\Camping\PartyTent_01_F.p3d";
+        displayName = "Party Tent";
+		vehicleClass = "Epoch_objects";
+		destrType = "DestructBuilding";
+		armor = 500;
+ 		hiddenSelections[] = {"Camo_1"};
+		hiddenSelectionsTextures[] = {"\A3\Structures_F_Bootcamp\Civ\Camping\Data\PartyTent_01_CO.paa"};
 	};	
 };
 
