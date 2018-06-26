@@ -2838,7 +2838,7 @@ class CfgMagazines
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "ItemGlass";
+		displayName = "Glass";
 		model = "\x\addons\a3_epoch_community\models\itemglass.p3d";
 		picture = "\x\addons\a3_epoch_community\icons\itemglass_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_ItemGlassDesc";
@@ -2862,7 +2862,7 @@ class CfgMagazines
 		scope = 2;
 		count = 1;
 		type = 256;
-		displayName = "ItemRotor";
+		displayName = "Rotor";
 		model = "\x\addons\a3_epoch_community\models\itemrotor.p3d";
 		picture = "\x\addons\a3_epoch_community\icons\itemrotor_icon_ca.paa";
 		descriptionShort = "$STR_EPOCH_ItemRotorDesc";
