@@ -10972,7 +10972,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
-        displayName = "$STR_EPOCH_Safe";
+        displayName = "$STR_EPOCH_Lockbox";
         armor = 15000;
         maximumLoad = 3600;
     };
