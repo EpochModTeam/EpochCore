@@ -17,6 +17,7 @@ class CfgVehicles
 {
     class Static;
     class Const_Ghost_EPOCH : Static {};
+	class Buildable_Storage_Ghost : Static {};
     class Animated_Loot : Static {};
     class NonStrategic;
     class WeaponHolder;
@@ -9597,6 +9598,7 @@ class CfgVehicles
         cost = 1000;
         interactMode = 1;
     };
+	class Buildable_Storage_SIM : Constructions_modular_F {};
     class Spike_TRAP_SIM_EPOCH : Constructions_modular_F
     {
         author = "AWOL";
@@ -10303,21 +10305,21 @@ class CfgVehicles
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
     };
-    class Tipi_SIM_EPOCH : Constructions_modular_F
+    class Tipi_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\tp.p3d";
         displayName = "$STR_EPOCH_TipiSim";
     };
-	class TentA_SIM_EPOCH : Constructions_modular_F
+	class TentA_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Sequisha";
         scope = 2;
         model = "\A3\Structures_f\Civ\Camping\TentA_F.p3d";
         displayName = "$STR_EPOCH_TentA";
     };
-	class TentDome_SIM_EPOCH : Constructions_modular_F
+	class TentDome_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Sequisha";
         scope = 2;
@@ -10333,14 +10335,14 @@ class CfgVehicles
         simulClass = "Shelf_SIM_EPOCH";
         staticClass = "Shelf_EPOCH";
     };
-    class StorageShelf_SIM_EPOCH : Constructions_modular_F
+    class StorageShelf_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\shelf.p3d";
         displayName = "$STR_EPOCH_MetalShelfSim";
     };
-    class WorkBench_SIM_EPOCH : Constructions_modular_F
+    class WorkBench_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Sequisha";
         scope = 2;
@@ -11529,7 +11531,7 @@ class CfgVehicles
             mat[] = {"x\addons\a3_epoch_assets\textures\plyplank.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
         };
     };
-    class Tipi_Ghost_EPOCH : Const_Ghost_EPOCH
+    class Tipi_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Sequisha";
         scope = 2;
@@ -11537,7 +11539,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_TiPiGhost";
         ladders[] = {};
     };
-	class TentA_Ghost_EPOCH : Const_Ghost_EPOCH
+	class TentA_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "BI";
         scope = 2;
@@ -11545,7 +11547,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_TentA";
         ladders[] = {};
     };
-	class TentDome_Ghost_EPOCH : Const_Ghost_EPOCH
+	class TentDome_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "BI";
         scope = 2;
@@ -11553,7 +11555,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_TentDome";
         ladders[] = {};
     };
-    class StorageShelf_Ghost_EPOCH : Const_Ghost_EPOCH
+    class StorageShelf_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Sequisha";
         scope = 2;
@@ -11561,7 +11563,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_ShelfGhost";
         ladders[] = {};
     };
-    class WorkBench_Ghost_EPOCH : Const_Ghost_EPOCH
+    class WorkBench_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Sequisha";
         scope = 2;
@@ -14091,7 +14093,7 @@ class CfgVehicles
 		destrType="IG Logo small";
 		armor=20;
 	};
-	class IG_Box_s_SIM: Constructions_modular_F
+	class IG_Box_s_SIM: Buildable_Storage_SIM
 	{
 		author="Helion / Timst";
 		scope=2;
@@ -14106,7 +14108,7 @@ class CfgVehicles
 		displayName="IG Box small";
 		maximumLoad=900;
 	};
-	class IG_Box_l_SIM: Constructions_modular_F
+	class IG_Box_l_SIM: Buildable_Storage_SIM
 	{
 		author="Helion / Timst";
 		scope=2;
@@ -14730,14 +14732,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
 		uniformClass = "U_JeansBlack21_uniform";
     };
-	class Garden_SIM_EPOCH : Constructions_modular_F
+	class Garden_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Helion4/DirtySanchez";
         scope = 2;
         model = "\x\addons\a3_epoch_community\models\Farming\epoch_Garden.p3d";
         displayName = "$STR_EPOCH_Garden";
     };
-    class Garden_Ghost_EPOCH : Const_Ghost_EPOCH
+    class Garden_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Helion4/DirtySanchez";
         scope = 2;
@@ -14753,7 +14755,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Garden";
         maximumLoad = 400;
     };
-    class SolarCharger_SIM_EPOCH : Constructions_modular_F
+    class SolarCharger_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "SteamPunkGears/Helion4";
         scope = 2;
@@ -14761,7 +14763,7 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_community\models\Solar_generator_charger.p3d";
         displayName = "$STR_EPOCH_SolarCharger";
     };
-    class SolarCharger_Ghost_EPOCH : Const_Ghost_EPOCH
+    class SolarCharger_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "SteamPunkGears/Helion4";
         scope = 2;
@@ -14778,7 +14780,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_SolarCharger";
         maximumLoad = 12;
     };
-    class SolarChargerXL_SIM_EPOCH : Constructions_modular_F
+    class SolarChargerXL_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "SteamPunkGears/Helion4";
         scope = 2;
@@ -14786,7 +14788,7 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_community\models\Solar_generator_charger.p3d";
         displayName = "$STR_EPOCH_SolarChargerXL";
     };
-    class SolarChargerXL_Ghost_EPOCH : Const_Ghost_EPOCH
+    class SolarChargerXL_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "SteamPunkGears/Helion4";
         scope = 2;
@@ -15200,14 +15202,14 @@ class CfgVehicles
 			};
 		};
 	};
-    class FieldToilet_SIM_EPOCH : Constructions_modular_F
+    class FieldToilet_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Grahame";
         scope = 2;
 		model = "\A3\Structures_F\Civ\Camping\FieldToilet_F.p3d";
         displayName = "$STR_EPOCH_FieldToilet";
     };
-    class FieldToilet_Ghost_EPOCH : Const_Ghost_EPOCH
+    class FieldToilet_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Grahame";
         scope = 2;
@@ -15980,14 +15982,14 @@ class CfgVehicles
 		vehicleClass = "Epoch_objects";
 		destrType = "DestructNo";
     };	
-    class WorkbenchLarge_SIM_EPOCH : Constructions_modular_F
+    class WorkbenchLarge_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Grahame";
         scope = 2;
 		model = "\A3\Structures_F_Heli\Furniture\Workbench_01_F.p3d";
         displayName = "Large Workbench";
     };
-    class WorkbenchLarge_Ghost_EPOCH : Const_Ghost_EPOCH
+    class WorkbenchLarge_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Grahame";
         scope = 2;
