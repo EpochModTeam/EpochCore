@@ -13975,7 +13975,7 @@ class CfgVehicles
 				onlyforplayer = 1;
 				position = "NWall_trigger";
 				radius = 2.5;
-				condition = "true"; //"(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" < 0.5)";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" < 0.5)";
 				statement = "[this,""NWall"",1] call EPOCH_changeWallState";
 			};
 			class remove_nwall: add_nwall
@@ -16088,7 +16088,7 @@ class CfgVehicles
 	{
 		author="Helion";
 		scope=2;
-		model="\x\addons\a3_epoch_community\models\base_cam_terminal_ghost.p3d";		// To be changed to Ghost Model!!!
+		model="\x\addons\a3_epoch_community\models\base_cam_terminal_ghost.p3d";
 		displayName="Base Cam Terminal";
 	};
 	class WoodStairs3_EPOCH: Const_floors_static_F
