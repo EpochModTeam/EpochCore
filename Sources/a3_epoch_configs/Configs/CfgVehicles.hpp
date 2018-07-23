@@ -7490,7 +7490,7 @@ class CfgVehicles
 		displayName="uh1h_base";
 		//destrType="DestructWreck";
 		icon="\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
-		picture="\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";
+        picture = "\x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1h_Epoch_Base_ca.paa";
 		driverAction="pilot_Heli_Light_02";
 		driverInAction="pilot_Heli_Light_02";
 		precisegetinout=1;
@@ -8023,7 +8023,6 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		displayName="UH1H";
-		picture="\x\addons\a3_epoch_vehicles_1\mosquito\data\mosquito.paa";
 		author="BIS/Helion4";
 		side=3;
 		faction="CIV_F";
