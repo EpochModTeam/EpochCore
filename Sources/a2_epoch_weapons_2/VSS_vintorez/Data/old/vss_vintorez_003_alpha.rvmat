@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: weapons\VSS_vintorez\Data\vss_vintorez_003_alpha.rvmat
+//Produced from mikero's Dos Tools Dll version 6.44
+//'now' is Wed Jun 20 16:07:14 2018 : 'file' last modified on Thu Sep 17 13:36:18 2009
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1.0,1.0,1.0,1.0};
+diffuse[] = {1.0,1.0,1.0,1.0};
+forcedDiffuse[] = {0.0,0.0,0.0,0.0};
+emmisive[] = {0.0,0.0,0.0,1.0};
+specular[] = {0.0,0.0,0.0,1.0};
+specularPower = 1.0;
+renderFlags[] = {"NoZWrite"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
