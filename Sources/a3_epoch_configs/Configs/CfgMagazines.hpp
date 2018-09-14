@@ -156,6 +156,109 @@ class CfgMagazines
         lastRoundsTracer = 4;
         descriptionShort = "$STR_EPOCH_Caliber556x45mmUsedinM249Saw";
     };
+/////////////////A2 Mags start
+	class Bizon_64Rnd_9x19: CA_Magazine 
+	{
+		scope = 2;
+		displayName = "Bizon Classic 64Rnd Ammo";
+		picture = "\x\addons\a2_epoch_weapons_2\ui\m_bizonc_ca.paa";
+		model = "x\addons\a2_epoch_weapons_2\bizon\bizon_mag_epoch.p3d";
+		ammo = B_9x18_Ball;
+		count = 64;
+		initSpeed = 350;
+		tracersEvery = 0;
+		lastRoundsTracer = 1;
+		descriptionShort = "Mag for the Bizon";
+	};
+	class 20Rnd_762x51_DMR: CA_Magazine
+	{
+		scope = 2;
+		displayName = "DMR Classic Ammo";
+		picture = "\x\addons\a2_epoch_weapons_2\ui\m_us_dmr_ca.paa";
+		model = "x\addons\a2_epoch_weapons_2\dmr\dmr_mag_epoch.p3d";
+		ammo = B_762x51_Ball;
+		count = 20;
+		initSpeed = 950;
+		tracersEvery = 0;
+		lastRoundsTracer = 1;
+		descriptionShort = "Mag for the DMR Classic";
+	};	
+	class 20Rnd_762x51_FNFAL: CA_Magazine 
+	{
+		scope = 2;
+		displayName = "FnFal Classic Mag";
+		picture = "\x\addons\a2_epoch_weapons_2\ui\m_20stanag_ca.paa";
+		model = "x\addons\a2_epoch_weapons_2\fnFal\fnFal_mag_epoch.p3d";
+		ammo = B_762x51_Ball;
+		count = 20;
+		initSpeed = 950;
+		tracersEvery = 0;
+		lastRoundsTracer = 1;
+		descriptionShort = "Mag for FnFal Classic";
+	};
+	class 30Rnd_556x45_G36: 30rnd_556_magazine {};
+	class a2_akyellow_mag_EPOCH: 30Rnd_762x39_Mag 
+	{
+		scope = 2;
+		displayName = "30Rnd Classic AK Yellow";
+		picture = "\x\addons\a2_epoch_weapons_2\ui\m_ak74_ca.paa";
+		model = "x\addons\a2_epoch_weapons_2\ak\a2_akyellow_mag_EPOCH.p3d";
+		ammo = B_556x45_Ball;
+		initSpeed = 650;		
+		descriptionShort = "Mag for the AK Classic";
+	};	
+	class 10Rnd_303: CA_Magazine //TODO create asset for mag
+	{
+		scope = 2;
+		displayName = "LeeEnfield Classic Ammo";
+		//model = "x\addons\a2_epoch_weapons_2\leeenfield\fnFal_mag_epoch.p3d";		
+		descriptionShort = "10x_303";
+		picture="\x\addons\a2_epoch_weapons_2\ui\m_m24_ca.paa";
+		count=10;
+		ammo = B_303_Ball;
+		initSpeed = 750;
+		tracersEvery = 0;
+		lastRoundsTracer = 1;		
+	};	
+	class 100Rnd_556x45_BetaCMag: CA_Magazine
+	{
+		scope = 2;
+		displayName = "BetaCMag for MG36 Classic";
+		ammo = "B_556x45_Ball";
+		count = 100;
+		initSpeed = 920;
+		picture = "\x\addons\a2_epoch_weapons_2\ui\m_mg36_ca.paa";
+		model = "x\addons\a2_epoch_weapons_2\g36\MG36_mag_epoch.p3d";
+		type = "2 * 256";
+		tracersEvery = 4;
+		lastRoundsTracer = 4;
+		descriptionShort = "100Rnd BetaCMag MG36";
+	};	
+	class 10Rnd_762x54_SVD: CA_Magazine  //TODO create asset for mag
+	{
+		scope = 2;
+		displayName = "10Rnd SVD Classic Mag";
+		picture = "\x\addons\a2_epoch_weapons_2\ui\m_svd_ca.paa";
+		count = 10;
+		ammo = "B_762x51_Ball";
+		initSpeed = 870;
+		tracersEvery = 10;
+		lastRoundsTracer = 3;		
+		descriptionShort = "SVD Classic Mag";
+	};
+	class 10Rnd_9x39_SP5_VSS: CA_Magazine
+	{
+		scope = 2;
+		displayName = "10Rnd VSS Classic Mag";
+		ammo = "B_9x39_SP5";
+		count = 10;
+		initSpeed = 800;
+		tracersEvery = 0;
+		lastRoundsTracer = 1;		
+		picture = "\x\addons\a2_epoch_weapons_2\ui\m_vssx10_ca.paa";
+		descriptionShort = "10Rnd 9x39 VSS Mag";
+	};
+/////////////////A2 Mags ends	
     class ItemHotwire : CA_Magazine
     {
         author = "Sequisha";

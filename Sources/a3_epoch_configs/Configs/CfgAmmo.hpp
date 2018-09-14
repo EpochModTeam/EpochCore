@@ -259,6 +259,92 @@ class CfgAmmo
             distance = 1;
         };
     };
+//A2 ammo start
+	class B_9x18_Ball: BulletBase
+	{
+		hit = 6;
+		cartridge = "FxCartridge_65_caseless";
+		cost = 5;
+		typicalSpeed = 350;
+		airFriction = -0.002751;
+		caliber = 0.33;
+	};	
+	class B_762x51_Ball: BulletBase
+	{
+		hit = 12;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_65_caseless";
+		visibleFire = 22;
+		audibleFire = 18;
+		visibleFireTime = 3;
+		cost = 1.2;
+		airLock = 1;
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red;
+		tracerScale = 1.2;
+		tracerStartTime = 0.075;
+		tracerEndTime = 1;
+		airFriction = -0.0009324;
+	};
+	class B_762x51_3RndBurst: B_762x51_Ball
+	{
+		hit = 25;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		visibleFire = 25;
+		audibleFire = 22;
+		visibleFireTime = 4;
+	};
+	class B_762x51_noTracer: B_762x51_Ball
+	{
+		visibleFire = 18;
+		audibleFire = 18;
+		visibleFireTime = 2;
+		tracerStartTime = -1;
+	};	
+	class B_303_Ball: BulletBase
+	{
+		hit=11;indirectHit=0;indirectHitRange=0;
+		visibleFire=18;
+		audibleFire=18;
+		visibleFireTime=2;
+		cost = 1.2;
+		airLock=1;
+		tracerStartTime = -1;
+		airFriction = -0.00071225;
+		typicalSpeed=750;
+		caliber=0.9;
+	};	
+	class B_556x45_Ball: BulletBase
+	{
+		hit = 8;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cost = 1;
+		airFriction = -0.001425;
+		caliber = 0.5;
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red;
+		tracerScale = 1;
+		tracerStartTime = 0.05;
+		tracerEndTime = 1;
+		nvgOnly = 1;
+	};	
+	class B_9x39_SP5: BulletBase
+	{
+		hit = 13;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		typicalSpeed = 150;
+		visibleFire = 0.07;
+		audibleFire = 0.07;
+		visibleFireTime = 2;
+		airFriction = -0.001;
+		caliber = 0.33;
+	};	
+
+//a2 ammo end
     class DirectionalBombBase;
     class Spike_TRAP_AMMO_EPOCH : DirectionalBombBase
     {
