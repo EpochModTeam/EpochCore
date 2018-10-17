@@ -3671,7 +3671,7 @@ class UnderBarrelSlot;
 			mass=140;
 		};
 	};
-	class a2_AK107__EPOCH_Base: a2_ak47s_gold_EPOCH_Base
+	class a2_AK107_EPOCH_Base: a2_ak47s_gold_EPOCH_Base
 	{
 		scope = 0;
 		author = "Helion4/BI";
