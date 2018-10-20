@@ -1,18 +1,13 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: weapons\AK\Data\ak107_pso.rvmat
-//Produced from mikero's Dos Tools Dll version 6.44
-//'now' is Wed Jun 20 16:07:00 2018 : 'file' last modified on Wed Sep 09 15:05:35 2009
-//http://dev-heaven.net/projects/list_files/mikero-pbodll
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
-ambient[] = {2.0,2.0,2.0,1.0};
-diffuse[] = {2.0,2.0,2.0,1.0};
-forcedDiffuse[] = {0.0,0.0,0.0,0.0};
-emmisive[] = {0.0,0.0,0.0,1.0};
-specular[] = {0.355,0.333437,0.325,1.0};
-specularPower = 100.0;
+class StageTI
+{
+	texture = "a3\data_f\default_vehicle_ti_ca.tga";
+};
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0.4,0.4,0.4,1};
+specularPower = 175;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
@@ -77,8 +72,15 @@ class Stage5
 };
 class Stage6
 {
-	texture = "#(ai,64,64,1)fresnel(5.64,0.87)";
-	uvSource = "none";
+	texture="#(ai,32,128,1)fresnel(0.7,0.8)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
 };
 class Stage7
 {

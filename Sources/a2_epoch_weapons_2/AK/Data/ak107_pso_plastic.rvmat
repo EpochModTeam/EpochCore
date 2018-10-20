@@ -7,8 +7,8 @@
 
 #define _ARMA_
 
-ambient[] = {3.0,3.0,3.0,1.0};
-diffuse[] = {3.0,3.0,3.0,1.0};
+ambient[] = {1.0,1.0,1.0,1.0};
+diffuse[] = {3.0,3.0,3,1.0};
 forcedDiffuse[] = {0.0,0.0,0.0,0.0};
 emmisive[] = {0.0,0.0,0.0,1.0};
 specular[] = {0.22,0.22,0.22,1.0};
@@ -29,7 +29,7 @@ class Stage1
 };
 class Stage2
 {
-	texture = "x\addons\a2_epoch_weapons_2\detailmaps\metal_detail_dt.paa";
+	texture = "a3\data_f\detailmaps\plastic1_512_DT.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -77,8 +77,17 @@ class Stage5
 };
 class Stage6
 {
-	texture = "#(ai,64,64,1)fresnel(0.52,0.07)";
-	uvSource = "none";
+	//texture = "#(ai,64,64,1)fresnel(0.52,0.07)";
+	texture = "#(ai,64,64,1)fresnel(0.4,0.2)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+	
 };
 class Stage7
 {
