@@ -3830,6 +3830,12 @@ class UnderBarrelSlot;
             class UnderBarrelSlot{};
 		};
 	};
+	class a2_aks74un_EPOCH: a2_AK107_EPOCH_Base
+	{
+		scope = 2;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_aks74un_ca.paa";
+		UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
+    };	
 	class a2_bizon_epoch_base: Rifle_Base_F
 	{
 		scope = 0;
