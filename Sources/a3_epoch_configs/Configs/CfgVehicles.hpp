@@ -19779,7 +19779,7 @@ class CfgVehicles
     {
         model = "\x\addons\a3_epoch_assets\models\tele_central.p3d";
     };
-	class TP_Booth_EPOCH : NonStrategic
+	class TP_Booth_EPOCH : Transport_EPOCH
 	{
 		author = "Helion";
 		model = "\x\addons\a3_epoch_community\models\tp_booth\tp_booth.p3d";
