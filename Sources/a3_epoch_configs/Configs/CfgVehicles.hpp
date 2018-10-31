@@ -19801,6 +19801,51 @@ class CfgVehicles
 			};
 		};
 	};
+    class TP_Booth_EPOCH : Transport_EPOCH
+    {
+        author = "Helion";
+        model = "\x\addons\a3_epoch_community\models\tp_booth\tp_booth.p3d";
+        hiddenSelections[] = {"camo1"};
+        mapSize = 2;
+        accuracy = 1000;
+        destrType = "DestructNo";
+        class UserActions
+        {
+            class EnterBuilding
+            {
+                displayNameDefault = "";
+                displayName = "";
+                position = "";
+                priority = 1;
+                radius = 1;
+                onlyForPlayer = 0;
+                condition = "if ((missionnamespace getvariable ['EPOCH_Teleportlock',0]) < diag_ticktime) then {EPOCH_Teleportlock = diag_ticktime+10; this call EPOCH_EnterBuilding}; false";
+                statement = "";
+            };
+        };
+    };
+    class TP_Booth_c_EPOCH: TP_Booth_EPOCH
+    {
+        author = "Helion";
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\tp_booth\tp_booth_c_co.paa"};
+    };
+    class TP_Booth_n_EPOCH: TP_Booth_EPOCH
+    {
+        author = "Helion";
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\tp_booth\tp_booth_n_co.paa"};
+    };
+    class TP_Booth_s_EPOCH: TP_Booth_EPOCH
+    {
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\tp_booth\tp_booth_s_co.paa"};
+    };    
+    class TP_Booth_e_EPOCH: TP_Booth_EPOCH
+    {
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\tp_booth\tp_booth_e_co.paa"};
+    };
+    class TP_Booth_w_EPOCH: TP_Booth_EPOCH
+    {
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\tp_booth\tp_booth_w_co.paa"};
+    }; 
     class BloodSplat : NonStrategic
     {
         author = "$STR_A3_Bohemia_Interactive";
