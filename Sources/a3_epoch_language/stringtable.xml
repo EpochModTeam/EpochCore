@@ -1564,6 +1564,12 @@
         <Key ID="STR_EPOCH_LargeWall">
             <Original>Large Wall</Original>
         </Key>
+        <Key ID="STR_EPOCH_JailWall">
+            <Original>Jail Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_JailWallDoor">
+            <Original>Jail Wall with Door</Original>
+        </Key>
         <Key ID="STR_EPOCH_PlywoodWallSIM">
             <Original>Plywood Wall (SIM)</Original>
         </Key>

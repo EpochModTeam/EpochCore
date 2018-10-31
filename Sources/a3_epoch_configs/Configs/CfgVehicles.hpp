@@ -16542,6 +16542,20 @@ class CfgVehicles
         displayName = "$STR_EPOCH_LargeWall";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
+    class JailWall_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_wall_01.p3d";
+        displayName = "$STR_EPOCH_JailWall";
+    };
+    class JailWallDoor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_walls_door.p3d";
+        displayName = "$STR_EPOCH_JailWallDoor";
+    };
     class WoodWall1_SIM_EPOCH : Constructions_modular_F
     {
         author = "SteamPunkGears";
@@ -18057,6 +18071,20 @@ class CfgVehicles
             mat[] = {"x\addons\a3_epoch_assets\textures\plyplank.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
         };
     };
+    class JailWall_EPOCH : Const_WoodWalls_static_F
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_wall_01.p3d";
+        displayName = "$STR_EPOCH_JailWall";
+    };
+    class JailWallDoor_EPOCH : Const_WoodWalls_static_F
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_walls_door.p3d";
+        displayName = "$STR_EPOCH_JailWallDoor";
+    };
     class WoodWallWindow_EPOCH : Const_WoodWalls_static_F
     {
         author = "Helion4\Sequisha";
@@ -18120,6 +18148,22 @@ class CfgVehicles
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\Wooden_Wall_Ghost.p3d";
         displayName = "$STR_EPOCH_WoodWallGhost";
+        ladders[] = {};
+    };
+    class JailWall_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_wall_01.p3d";
+        displayName = "$STR_EPOCH_JailWall";
+        ladders[] = {};
+    };
+    class JailWallDoor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_walls_door.p3d";
+        displayName = "$STR_EPOCH_JailWallDoor";
         ladders[] = {};
     };
     class WoodFloor_Ghost_EPOCH : Const_Ghost_EPOCH
