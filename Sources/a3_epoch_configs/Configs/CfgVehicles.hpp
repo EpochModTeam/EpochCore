@@ -19779,28 +19779,6 @@ class CfgVehicles
     {
         model = "\x\addons\a3_epoch_assets\models\tele_central.p3d";
     };
-	class TP_Booth_EPOCH : Transport_EPOCH
-	{
-		author = "Helion";
-		model = "\x\addons\a3_epoch_community\models\tp_booth\tp_booth.p3d";
-		mapSize = 2;
-		accuracy = 1000;
-		destrType = "DestructNo";
-		class UserActions
-		{
-			class EnterBuilding
-			{
-				displayNameDefault = "";
-				displayName = "";
-				position = "";
-				priority = 1;
-				radius = 1;
-				onlyForPlayer = 0;
-				condition = "if ((missionnamespace getvariable ['EPOCH_Teleportlock',0]) < diag_ticktime) then {EPOCH_Teleportlock = diag_ticktime+10; this call EPOCH_EnterBuilding}; false";
-				statement = "";
-			};
-		};
-	};
     class TP_Booth_EPOCH : Transport_EPOCH
     {
         author = "Helion";
