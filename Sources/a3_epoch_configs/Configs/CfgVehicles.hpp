@@ -16546,14 +16546,14 @@ class CfgVehicles
     {
         author = "Helion";
         scope = 2;
-        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_wall_01.p3d";
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_wall_01.p3d";
         displayName = "$STR_EPOCH_JailWall";
     };
     class JailWallDoor_SIM_EPOCH : Constructions_modular_F
     {
         author = "Helion";
         scope = 2;
-        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_walls_door.p3d";
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_walls_door.p3d";
         displayName = "$STR_EPOCH_JailWallDoor";
     };
     class WoodWall1_SIM_EPOCH : Constructions_modular_F
@@ -18075,14 +18075,14 @@ class CfgVehicles
     {
         author = "Helion";
         scope = 2;
-        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_wall_01.p3d";
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_wall_01.p3d";
         displayName = "$STR_EPOCH_JailWall";
     };
     class JailWallDoor_EPOCH : Const_WoodWalls_static_F
     {
         author = "Helion";
         scope = 2;
-        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_walls_door.p3d";
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_walls_door.p3d";
         displayName = "$STR_EPOCH_JailWallDoor";
 		armor=10000;
 		class AnimationSources
@@ -18206,7 +18206,7 @@ class CfgVehicles
     {
         author = "Helion";
         scope = 2;
-        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_wall_01.p3d";
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_wall_01.p3d";
         displayName = "$STR_EPOCH_JailWall";
         ladders[] = {};
     };
@@ -18214,7 +18214,7 @@ class CfgVehicles
     {
         author = "Helion";
         scope = 2;
-        model = "\x\addons\a3_epoch_community\models\jail_walls/jail_walls_door.p3d";
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_walls_door.p3d";
         displayName = "$STR_EPOCH_JailWallDoor";
         ladders[] = {};
     };
