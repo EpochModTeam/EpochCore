@@ -18084,6 +18084,58 @@ class CfgVehicles
         scope = 2;
         model = "\x\addons\a3_epoch_community\models\jail_walls/jail_walls_door.p3d";
         displayName = "$STR_EPOCH_JailWallDoor";
+		armor=10000;
+		class AnimationSources
+		{
+			class open_door
+			{
+				source = "user";
+				animPeriod = 2;
+				initPhase = 0;
+			};
+			class lock
+			{
+				source = "user";
+				animPeriod = 2;
+				initPhase = 1;
+				sound="ServoDoorsSound";
+			};			
+        };
+        class UserActions
+		{
+			class Open
+			{
+				displayName = "$STR_EPOCH_Open";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				position="door";
+				radius=3;
+				OnlyForPlayer=1;
+				condition="this animationPhase ""open_door"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+				statement="this animate [""open_door"", 1];";
+			};
+			class Close: Open
+			{
+				displayName = "$STR_EPOCH_Close";
+				condition="this animationPhase ""open_door"" >= 0.5";
+				statement="this animate [""open_door"", 0];";
+			};
+			class Unlock
+			{
+				displayName = "$STR_EPOCH_Unlock";
+				displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
+				position="door";
+				radius=3;
+				OnlyForPlayer=1;
+				condition="!(call EPOCH_lockCheck) && this animationPhase ""open_door"" < 0.5 && this animationPhase ""lock"" >= 0.5";
+				statement="this animate [""lock"", 0];";
+			};
+			class Lock: Unlock
+			{
+				displayName = "$STR_EPOCH_Lock";
+				condition="!(call EPOCH_lockCheck) && this animationPhase ""open_door"" < 0.5 && this animationPhase ""lock"" < 0.5";
+				statement="this animate [""lock"", 1];";
+			};
+		};
     };
     class WoodWallWindow_EPOCH : Const_WoodWalls_static_F
     {
@@ -22732,41 +22784,59 @@ class CfgVehicles
 		armor=10000;
 		class AnimationSources
 		{
-			class unlock
+			class open_bars1
 			{
 				source = "user";
 				animPeriod = 3;
 				initPhase = 0;
 			};
-			class unlock2
+			class open_bars2
 			{
 				source = "user";
 				animPeriod = 3;
 				initPhase = 0;
 			};			
-			class bar_hide
+			class lock
 			{
 				source = "user";
-				animPeriod = 6;
+				animPeriod = 2;
 				initPhase = 1;
+				sound="ServoDoorsSound";
 			};			
         };
         class UserActions
 		{
+			class Open
+			{
+				displayName = "$STR_EPOCH_Open";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				position="bars";
+				radius=4;
+				OnlyForPlayer=1;
+				condition="this animationPhase ""open_bars1"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+				statement="this animate [""open_bars1"", 1];this animate [""open_bars2"", 1,1.2];";
+			};
+			class Close: Open
+			{
+				displayName = "$STR_EPOCH_Close";
+				condition="this animationPhase ""open_bars1"" >= 0.5";
+				statement="this animate [""open_bars1"", 0];this animate [""open_bars2"", 0,0.8];";
+			};
 			class Unlock
 			{
-				displayName = "Unlock";
-				position = "bars";
-				radius = 4;
-				OnlyForPlayer = 1;
-				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" < 0.5";
-				statement = "this animate [""Unlock"", 1];this animate [""unlock2"", 1,1.2];this animate [""bar_hide"", 1,0.2];";
+				displayName = "$STR_EPOCH_Unlock";
+				displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
+				position="bars";
+				radius=4;
+				OnlyForPlayer=1;
+				condition="!(call EPOCH_lockCheck) && this animationPhase ""open_bars1"" < 0.5 && this animationPhase ""lock"" >= 0.5";
+				statement="this animate [""lock"", 0];";
 			};
 			class Lock: Unlock
 			{
-				displayName = "Lock";
-				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" >= 0.5";
-				statement = "this animate [""Unlock"", 0];this animate [""unlock2"", 0,0.8];this animate [""bar_hide"", 0,0.8];";
+				displayName = "$STR_EPOCH_Lock";
+				condition="!(call EPOCH_lockCheck) && this animationPhase ""open_bars1"" < 0.5 && this animationPhase ""lock"" < 0.5";
+				statement="this animate [""lock"", 1];";
 			};
 		};
 	};
@@ -22776,45 +22846,6 @@ class CfgVehicles
 		scope=2;
 		model="\x\addons\a3_epoch_community\models\stair_hatch\Wood_stairs_upgrade_2.p3d";
 		displayName="Wood Stairs lvl 3";
-		class AnimationSources
-		{
-			class unlock
-			{
-				source = "user";
-				animPeriod = 3;
-				initPhase = 0;
-			};
-			class unlock2
-			{
-				source = "user";
-				animPeriod = 3;
-				initPhase = 0;
-			};			
-			class bar_hide
-			{
-				source = "user";
-				animPeriod = 6;
-				initPhase = 1;
-			};			
-        };
-        class UserActions
-		{
-			class Unlock
-			{
-				displayName = "Unlock";
-				position = "bars";
-				radius = 4;
-				OnlyForPlayer = 1;
-				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" < 0.5";
-				statement = "this animate [""Unlock"", 1];this animate [""unlock2"", 1,1.2];this animate [""bar_hide"", 1,0.2];";
-			};
-			class Lock: Unlock
-			{
-				displayName = "Lock";
-				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" >= 0.5";
-				statement = "this animate [""Unlock"", 0];this animate [""unlock2"", 0,0.8];this animate [""bar_hide"", 0,0.8];";
-			};
-		};
 	};	
 };
 
