@@ -17114,6 +17114,7 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_community\models\jail_walls\jail_wall_01.p3d";
         displayName = "$STR_EPOCH_JailWall";
     };
+/*
     class JailWallDoor_SIM_EPOCH : Constructions_modular_F
     {
         author = "Helion";
@@ -17121,6 +17122,7 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_community\models\jail_walls\jail_walls_door.p3d";
         displayName = "$STR_EPOCH_JailWallDoor";
     };
+*/
     class WoodWall1_SIM_EPOCH : Constructions_modular_F
     {
         author = "SteamPunkGears";
@@ -18775,6 +18777,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_JailWall";
         ladders[] = {};
     };
+/*
     class JailWallDoor_Ghost_EPOCH : Const_Ghost_EPOCH
     {
         author = "Helion";
@@ -18783,6 +18786,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_JailWallDoor";
         ladders[] = {};
     };
+*/
     class WoodFloor_Ghost_EPOCH : Const_Ghost_EPOCH
     {
         author = "Sequisha";
@@ -23411,6 +23415,28 @@ class CfgVehicles
 		scope=2;
 		model="\x\addons\a3_epoch_community\models\stair_hatch\Wood_stairs_upgrade_2.p3d";
 		displayName="Wood Stairs lvl 3";
+		class AnimationSources
+		{
+			class open_bars1
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+			};
+			class open_bars2
+			{
+				source = "user";
+				animPeriod = 3;
+				initPhase = 0;
+			};			
+			class lock
+			{
+				source = "user";
+				animPeriod = 2;
+				initPhase = 1;
+				sound="ServoDoorsSound";
+			};			
+        };
 	};	
 };
 
