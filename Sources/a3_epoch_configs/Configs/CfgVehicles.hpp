@@ -17174,6 +17174,7 @@ class CfgVehicles
                 source = "user";
                 animPeriod = 2;
                 initPhase = 0;
+				sound = "GenericDoorsSound";
             };
         };
         class UserActions
@@ -18659,6 +18660,7 @@ class CfgVehicles
 				source = "user";
 				animPeriod = 2;
 				initPhase = 0;
+				sound = "MetalDoorsSound";
 			};
 			class lock
 			{
@@ -18953,6 +18955,7 @@ class CfgVehicles
                 source = "user";
                 animPeriod = 2;
                 initPhase = 0;
+				sound = "GenericDoorsSound";
             };
         };
         class UserActions
@@ -18992,6 +18995,7 @@ class CfgVehicles
                 source = "user";
                 animPeriod = 2;
                 initPhase = 0;
+				sound = "GenericDoorsSound";
             };
         };
         class UserActions
@@ -19028,6 +19032,7 @@ class CfgVehicles
                 source = "user";
                 animPeriod = 2;
                 initPhase = 0;
+				sound = "GenericDoorsSound";
             };
             class lock_Door
             {
@@ -19091,6 +19096,7 @@ class CfgVehicles
                 source = "user";
                 animPeriod = 2;
                 initPhase = 0;
+				sound = "GenericDoorsSound";
             };
             class lock_Door
             {
@@ -23358,6 +23364,7 @@ class CfgVehicles
 				source = "user";
 				animPeriod = 3;
 				initPhase = 0;
+				sound = "RoadGateDoors";
 			};
 			class open_bars2
 			{
@@ -23422,6 +23429,7 @@ class CfgVehicles
 				source = "user";
 				animPeriod = 3;
 				initPhase = 0;
+				sound = "RoadGateDoors";
 			};
 			class open_bars2
 			{
