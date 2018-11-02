@@ -7658,7 +7658,6 @@ class CfgVehicles
 			class HitGlass3: HitGlass3 {armor=0.25;};
 			class HitGlass4: HitGlass4 {armor=0.25;};
 		};
-		animationList[] = {"AddDoors",0.9,"AddBackseats",0,"AddTread_Short",0.5,"AddTread",0.4};
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[]=
 		{
