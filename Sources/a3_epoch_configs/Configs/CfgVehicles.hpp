@@ -7622,6 +7622,7 @@ class CfgVehicles
 		acceleration 	= 15;
         fireResistance 	= 5;
 		armor 			= 32;
+		maximumLoad		= 1250;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
@@ -7638,7 +7639,7 @@ class CfgVehicles
 		getInAction 		= GetInLow;
 		getOutAction 		= GetOutLow;
 		cargoGetInAction[] 	= {"GetInLow"};
-		cargoGetOutAction[] = {"GetOutLow"}; 
+		cargoGetOutAction[] = {"GetOutLow"};
         class Turrets{};
 		class HitPoints: HitPoints
 		{
@@ -7656,12 +7657,41 @@ class CfgVehicles
 			class HitGlass2: HitGlass2 {armor=0.25;};
 			class HitGlass3: HitGlass3 {armor=0.25;};
 			class HitGlass4: HitGlass4 {armor=0.25;};
-		};		
+		};
+		animationList[] = {"AddDoors",0.9,"AddBackseats",0,"AddTread_Short",0.5,"AddTread",0.4};
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[]=
 		{
              "\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_body_co.paa"
 		};
+		class TextureSources
+		{
+			class Blue
+			{
+				displayName = "Blue";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_bodyblu_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Grey
+			{
+				displayName = "Grey";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_bodygrey_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Pink
+			{
+				displayName = "Pink";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_bodypink_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Red
+			{
+				displayName = "Red";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_body_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+		};
+		textureList[] = {"Blue", 1, "Grey", 1, "Pink", 1, "Red", 1};
 		class Damage
 		{
 			tex[]={};
@@ -7843,7 +7873,10 @@ class CfgVehicles
 			};
         };
         aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
-        class EventHandlers: EventHandlers {};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
 		class RenderTargets
 		{
 			class LeftMirror
@@ -8288,7 +8321,18 @@ class CfgVehicles
 			};
 		};
 	};
-    class a2_golf_1: a2_golf_base
+    class a2_golf_random: a2_golf_base
+	{
+		displayName="Classic Golf";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";		
+		scope=2;
+		scopeCurator=2;
+		crew="C_man_1";
+		side=3;
+		faction	= CIV_F;
+	};
+    class a2_golf_blue: a2_golf_base
 	{
 		displayName="Classic Golf Blue";
 		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";
@@ -8298,13 +8342,9 @@ class CfgVehicles
 		crew="C_man_1";
 		side=3;
 		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_bodyblu_co.paa"
-		};
+		textureList[] = {"Blue", 1};
 	};
-    class a2_golf_2: a2_golf_base
+    class a2_golf_grey: a2_golf_base
 	{
 		displayName="Classic Golf Grey";
 		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_grey_ca.paa";		
@@ -8314,13 +8354,9 @@ class CfgVehicles
 		crew="C_man_1";
 		side=3;
 		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_bodygrey_co.paa"
-		};
+		textureList[] = {"Grey", 1};
 	};
-    class a2_golf_3: a2_golf_base
+    class a2_golf_pink: a2_golf_base
 	{
 		displayName="Classic Golf Pink";
 		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_pink_ca.paa";		
@@ -8330,15 +8366,11 @@ class CfgVehicles
 		crew="C_man_1";
 		side=3;
 		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_bodypink_co.paa"
-		};
+		textureList[] = {"Pink", 1};
 	};	
-    class a2_golf_4: a2_golf_base
+    class a2_golf_red: a2_golf_base
 	{
-		displayName="Classic Golf Pink";
+		displayName="Classic Golf Red";
 		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_red_ca.paa";		
 		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_red_ca.paa";
 		scope=2;
@@ -8346,11 +8378,7 @@ class CfgVehicles
 		crew="C_man_1";
 		side=3;
 		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_body_co.paa"
-		};
+		textureList[] = {"Red", 1};
     };
 	class a2_lada_base: car_F
 	{
