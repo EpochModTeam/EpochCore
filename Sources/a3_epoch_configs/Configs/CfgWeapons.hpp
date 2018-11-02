@@ -2398,6 +2398,51 @@ class CfgWeapons
     {
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
     };
+		class HMG_M2; // MG for huey redefining memory points
+		class E_uh1h_mg_01: HMG_M2
+		{
+			class GunParticles
+			{
+			displayName = "Mounted M240";
+            magazineReloadTime = 7;			
+				class effect1
+				{
+					positionName = "mg1_usti_hlavne";
+					directionName = "mg1_konec_hlavne";
+					effectName = "MachineGunCloud";
+				};
+				class effect2
+				{
+					positionName = "mg1_nabojnicestart";
+					directionName = "mg1_nabojniceend";
+					effectName = "MachineGunEject"; //MachineGunCartridge1; MachineGunEject;MachineGun1
+				};
+				class effect3: effect2
+				{
+					effectName = "MachineGunCartridge1"; //MachineGunCartridge1; MachineGunEject;MachineGun1
+				};
+			};
+		};
+		class E_uh1h_mg_02: E_uh1h_mg_01
+		{
+			class GunParticles: GunParticles
+			{
+				class effect1: effect1
+				{
+					positionName = "mg2_usti_hlavne";
+					directionName = "mg2_konec_hlavne";
+				};
+				class effect2: effect2
+				{
+					positionName = "mg2_nabojnicestart";
+					directionName = "mg2_nabojniceend";
+				};
+				class effect3: effect2
+				{
+					effectName = "MachineGunCartridge1";
+				};
+			};
+		};
     class Rifle;
     class Rifle_Base_F : Rifle
     {
