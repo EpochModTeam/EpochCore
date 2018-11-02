@@ -13607,6 +13607,8 @@ class CfgVehicles
         class Turrets : Turrets
         {
             class CopilotTurret;
+			class MainTurret;
+			class M2_Turret;			
         };
         class AnimationSources;
         class Eventhandlers;
