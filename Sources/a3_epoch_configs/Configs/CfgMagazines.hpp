@@ -2273,6 +2273,17 @@ class CfgMagazines
         count = 1;
         mass = 20;
     };
+	class KitJailWall : CA_Magazine
+	{
+		author = "Helion / He-Man";
+		model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_community\textures\jail_walls\jail_walls_ca.paa";
+		displayName = "$STR_EPOCH_JailWall";
+		scope = 2;
+		descriptionShort = "$STR_EPOCH_JailWall";
+		count = 1;
+		mass = 20;
+	};
     class KitPlyThirdWall_EPOCH : CA_Magazine
     {
         author = "Helion";
