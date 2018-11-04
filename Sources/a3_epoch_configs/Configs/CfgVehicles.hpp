@@ -6971,12 +6971,12 @@ class CfgVehicles
 		antiRollbarForceLimit	= 0.5;
 		antiRollbarSpeedMin 	= 20;
 		antiRollbarSpeedMax		= 80;
-		idleRpm = 900;
-		redRpm = 6900;
+		idleRpm = 600;
+		redRpm = 6000;
 		class complexGearbox
 		{	
-			GearboxRatios[]    = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.870,"D3",1.241,"D4",0.970,"D5",0.711};
-			TransmissionRatios[] = {"High",4.111};
+			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4, "D2", 3, "D3", 2, "D4", 1, "D5", 0.5};
+			TransmissionRatios[] = {"High", 5.69};
 			gearBoxMode        = "auto";
 			moveOffGear        = 1;
 			driveString        = "D";
@@ -6992,8 +6992,8 @@ class CfgVehicles
 		centreBias = 1.3;
 		clutchStrength = 15.0;
 		enginePower = 100; 
-		maxOmega = 720;
-		peakTorque = 350;
+		maxOmega = 600;
+		peakTorque=500;
 		dampingRateFullThrottle = 0.08;
 		dampingRateZeroThrottleClutchEngaged = 0.35;
 		torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
