@@ -13659,9 +13659,9 @@ class CfgVehicles
         maxFordingDepth = 0.55;
         mainBladeRadius = 2.5;
         liftForceCoef = 1;
-        bodyFrictionCoef = 0.7;
-        cyclicAsideForceCoef = 0.8;
-        cyclicForwardForceCoef = 0.8;
+		bodyFrictionCoef = 0.3;
+		cyclicAsideForceCoef = 0.4;
+		cyclicForwardForceCoef = 0.5;
         backRotorForceCoef = 1;
         accuracy = 0.5;
         displayName = "$STR_EPOCH_Mosquito";
@@ -13690,6 +13690,7 @@ class CfgVehicles
         maximumLoad = 1000;
         cargoCanEject = 1;
         driverCanEject = 1;
+		extCameraPosition[] = {0,1.3,-6.2};		
         class HitPoints
         {
             class HitHull
@@ -13859,7 +13860,7 @@ class CfgVehicles
             tex[] = {};
             mat[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext.rvmat","A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_damage.rvmat","A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_destruct.rvmat","A3\Air_F\Heli_Light_02\Data\Heli_Light_02_glass.rvmat","A3\Air_F\Heli_Light_02\Data\Heli_Light_02_glass_damage.rvmat","A3\Air_F\Heli_Light_02\Data\Heli_Light_02_glass_destruct.rvmat","A3\data_F\default.rvmat","A3\data_F\default.rvmat","A3\data_F\default_destruct.rvmat"};
         };
-        attenuationEffectType = "CarAttenuation";
+        attenuationEffectType = "HeliAttenuation";
         soundGetIn[] = {"A3\Sounds_F\air\Heli_Light_02\open","db-5",1};
         soundGetOut[] = {"A3\Sounds_F\air\Heli_Light_02\close","db0",1,50};
         soundEnviron[] = {"","db-30",1};
@@ -14048,9 +14049,9 @@ class CfgVehicles
 		maxFordingDepth = 0.55;
 		mainBladeRadius = 7;
 		liftForceCoef = 1.1;
-		bodyFrictionCoef = 0.7;
-		cyclicAsideForceCoef = 1;
-		cyclicForwardForceCoef = 1;
+		bodyFrictionCoef = 0.6;
+		cyclicAsideForceCoef = 0.6;
+		cyclicForwardForceCoef = 0.6;
 		backRotorForceCoef = 1;
 		accuracy = 0.5;
 		model = "x\addons\a3_epoch_community\uh1h_Epoch\uh1h_Epoch.p3d";
@@ -14624,9 +14625,9 @@ class CfgVehicles
 		maxFordingDepth = 1;
 		mainBladeRadius = 7;
 		liftForceCoef = 1.1;
-		bodyFrictionCoef = 0.7;
-		cyclicAsideForceCoef = 1;
-		cyclicForwardForceCoef = 1;
+		bodyFrictionCoef = 0.4;
+		cyclicAsideForceCoef = 0.4;
+		cyclicForwardForceCoef = 0.4;
 		backRotorForceCoef = 1;
 		accuracy = 0.5;
 		model = "x\addons\a2_epoch_vehicles\air\CH47\a2_ch_47f_epoch.p3d";
