@@ -6903,732 +6903,41 @@ class CfgVehicles
 		crewCrashProtection	= 1.75;
     };
 ///////////////a2 wheeled start
-     class a2_hmmwv_base: car_F
+	class a2_golf_base: car_F
 	{
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\hmmwv";
-		//picture	= "\x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\ui\picture_hmmwv_transport_ca.paa";
+		displayName="Classic Golf";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\golf\a2_golf_base";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";
 		crew 	= "C_man_1";
 		side	= 3;
 		faction	= CIV_F;
-        terrainCoef 	= 6.5;
-		turnCoef 		= 2.5;
-		precision 		= 10;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 190;
+		fuelCapacity	= 40;
+//        terrainCoef 	= 2.5;
+        terrainCoef 	= 4.0;
+		turnCoef = 4;
+		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
         fireResistance 	= 5;
-		armor 			= 32;
-		cost			= 50000;
-        transportMaxBackpacks 	= 3;
-		transportSoldier 		= 3;
-		wheelDamageRadiusCoef 	= 0.9;
-		wheelDestroyRadiusCoef 	= 0.4;
-		maxFordingDepth 		= 0.5;
-		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
-		driverLeftHandAnimName 	= "drivewheel";
-		driverRightHandAnimName = "drivewheel";
-		class TransportItems {};
-        driverAction 		= driver_offroad01;
-		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
-		getInAction 		= GetInLow;
-		getOutAction 		= GetOutLow;
-		cargoGetInAction[] 	= {"GetInLow"};
-		cargoGetOutAction[] = {"GetOutLow"}; 
-        class Turrets{};
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel: HitLFWheel	{armor=0.125; passThrough=0;};
-			class HitLF2Wheel: HitLF2Wheel	{armor=0.125; passThrough=0;};
-
-			class HitRFWheel: HitRFWheel	{armor=0.125; passThrough=0;};
-			class HitRF2Wheel: HitRF2Wheel 	{armor=0.125; passThrough=0;};
-
-			class HitFuel 			{armor=0.50; material=-1; name="fueltank"; visual=""; passThrough=0.2;};
-			class HitEngine 		{armor=0.50; material=-1; name="engine"; visual=""; passThrough=0.2;};
-			class HitBody: HitBody 	{name = "body"; visual="camo1"; passThrough=1;};
-
-			class HitGlass1: HitGlass1 {armor=0.25;};
-			class HitGlass2: HitGlass2 {armor=0.25;};
-			class HitGlass3: HitGlass3 {armor=0.25;};
-			class HitGlass4: HitGlass4 {armor=0.25;};
-		};	
-		class Damage
-		{
-			tex[]={};
-			mat[]=
-			{
-				"x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2.rvmat",
-				"x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2_damage.rvmat",
-				"x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2_destruct.rvmat"
-			};
-		};
-		thrustDelay            	= 0.2;
-		brakeIdleSpeed         	= 1.78;
-		maxSpeed               	= 150;
-		fuelCapacity           	= 45;
-		wheelCircumference     	= 2.277;
-		antiRollbarForceCoef	= 0.5;
-		antiRollbarForceLimit	= 0.5;
-		antiRollbarSpeedMin 	= 20;
-		antiRollbarSpeedMax		= 80;
-		idleRpm = 600;
-		redRpm = 6000;
-		class complexGearbox
-		{	
-			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4, "D2", 3, "D3", 2, "D4", 1, "D5", 0.5};
-			TransmissionRatios[] = {"High", 5.69};
-			gearBoxMode        = "auto";
-			moveOffGear        = 1;
-			driveString        = "D";
-			neutralString      = "N";
-			reverseString      = "R";
-		};		
-		simulation = "carx";
-		dampersBumpCoef = 0.05;
-		differentialType = "front_limited";
-		frontRearSplit = 0.5;
-		frontBias = 1.5;
-		rearBias = 1.3;
-		centreBias = 1.3;
-		clutchStrength = 15.0;
-		enginePower = 100; 
-		maxOmega = 600;
-		peakTorque=500;
-		dampingRateFullThrottle = 0.08;
-		dampingRateZeroThrottleClutchEngaged = 0.35;
-		torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
-		changeGearMinEffectivity[]   = {0.95, 0.15, 0.95, 0.95, 0.95, 0.95, 0.95};
-		switchTime = 0.31;
-		latency = 1.0;
-		class Wheels
-		{
-			class LF
-			{
-				boneName = "wheel_1_1_damper";
-				steering = true;
-				side = "left";
-				center   = "wheel_1_1_axis";
-				boundary = "wheel_1_1_bound";
-				mass = 20;
-				MOI = 3.3;
-				dampingRate = 0.5;
-				maxBrakeTorque = 2000;
-				maxHandBrakeTorque = 0;
-				suspTravelDirection[] = {0, -1, 0};
-				suspForceAppPointOffset = "wheel_1_1_axis";
-				tireForceAppPointOffset = "wheel_1_1_axis";
-				maxCompression = 0.1;
-				mMaxDroop = 0.15;
-				sprungMass = 350.0;
-				springStrength = 22600;
-				springDamperRate = 8680;
-				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 25;
-				latStiffY = 18000;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1,1}};
-			};
-			class LR: LF
-			{
-				boneName = "wheel_1_2_damper";
-				steering = false;
-				center   = "wheel_1_2_axis";
-				boundary = "wheel_1_2_bound";
-				suspForceAppPointOffset = "wheel_1_2_axis";
-				tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;	
-			};
-			class RF: LF
-			{
-				boneName = "wheel_2_1_damper";
-				center   = "wheel_2_1_axis";
-				boundary = "wheel_2_1_bound";
-				suspForceAppPointOffset = "wheel_2_1_axis";
-				tireForceAppPointOffset = "wheel_2_1_axis";
-				steering = true;
-				side = "right";
-			};
-			class RR: RF
-			{
-				boneName = "wheel_2_2_damper";
-				steering = false;
-				center   = "wheel_2_2_axis";
-				boundary = "wheel_2_2_bound";
-				suspForceAppPointOffset = "wheel_2_2_axis";
-				tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;				
-			};
-		};		
-		class PlayerSteeringCoefficients
-		{
-			 turnIncreaseConst 	= 0.3;
-			 turnIncreaseLinear = 1.0;
-			 turnIncreaseTime 	= 1.0;
-             turnDecreaseConst 	= 5.0;
-			 turnDecreaseLinear = 3.0;
-			 turnDecreaseTime 	= 0.0;
-             maxTurnHundred 	= 0.7;
-		};
-        memoryPointTrackFLL = "TrackFLL";
-		memoryPointTrackFLR = "TrackFLR";
-		memoryPointTrackBLL = "TrackBLL";
-		memoryPointTrackBLR = "TrackBLR";
-		memoryPointTrackFRL = "TrackFRL";
-		memoryPointTrackFRR = "TrackFRR";
-		memoryPointTrackBRL = "TrackBRL";
-		memoryPointTrackBRR = "TrackBRR";
-        class Exhausts
-		{
-			class Exhaust1
-			{
-				position 	= "exhaust";
-				direction 	= "exhaust_dir";
-				effect 		= "ExhaustsEffect";
-			};
-
-			class Exhaust2
-			{
-				position 	= "exhaust2_pos";
-				direction 	= "exhaust2_dir";
-				effect 		= "ExhaustsEffect";
-			};
-		};
-
-		class Reflectors
-		{
-			class LightCarHeadL01
-			{
-				color[] 		= {1900, 1800, 1700};
-				ambient[]		= {5, 5, 5};
-				position 		= "LightCarHeadL01";
-				direction 		= "LightCarHeadL01_end";
-				hitpoint 		= "Light_L";
-				selection 		= "Light_L";
-				size 			= 1;
-				innerAngle 		= 100;
-				outerAngle 		= 179;
-				coneFadeCoef 	= 10;
-				intensity 		= 1;
-				useFlare 		= true;
-				dayLight 		= false;
-				flareSize 		= 1.0;
-
-				class Attenuation
-				{
-					start 			= 1.0;
-					constant 		= 0;
-					linear 			= 0;
-					quadratic 		= 0.25;
-					hardLimitStart 	= 30;
-					hardLimitEnd 	= 60;
-				};
-			};
-            class LightCarHeadR01: LightCarHeadL01
-			{
-				position 	= "LightCarHeadR01";
-				direction 	= "LightCarHeadR01_end";
-				hitpoint 	= "Light_R";
-				selection 	= "Light_R";
-			};
-        };
-        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
-        class EventHandlers: EventHandlers {};
-		class RenderTargets
-		{
-			class LeftMirror
-			{
-				renderTarget = "rendertarget0";
-				class CameraView1
-				{
-					pointPosition		= "PIP0_pos";
-					pointDirection		= "PIP0_dir";
-					renderQuality 		= 2;
-					renderVisionMode 	= 0;
-					fov 				= 0.7;
-				}; 			
-			};
-			class RearCam
-			{
-				renderTarget = "rendertarget1";
-				class CameraView1
-				{
-					pointPosition		= "PIP1_pos";
-					pointDirection		= "PIP1_dir";
-					renderQuality 		= 2;
-					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};
-			class FrontCam
-			{
-				renderTarget = "rendertarget2";
-				class CameraView1
-				{
-					pointPosition		= "PIP2_pos";
-					pointDirection		= "PIP2_dir";
-					renderQuality 		= 2;
-					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};			
-		};		
-		attenuationEffectType = "SemiOpenCarAttenuation";
-		soundGetIn[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\Offroad_01-int-openclose",0.4466836,1};
-		soundGetOut[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\Offroad_01-int-openclose",0.4466836,1,40};
-		soundDammage[] = {"",0.56234133,1};
-		soundEngineOnInt[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_int_start",0.31622776,1.0};
-		soundEngineOnExt[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_ext_start",0.39810717,1.0,200};
-		soundEngineOffInt[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_int_stop",0.31622776,1.0};
-		soundEngineOffExt[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_ext_stop",0.39810717,1.0,200};
-		buildCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,500};
-		buildCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,500};
-		buildCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,500};
-		buildCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,500};
-		soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-		WoodCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,500};
-		WoodCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,500};
-		WoodCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,500};
-		WoodCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,500};
-		soundWoodCrash[] = {"woodCrash0",0.25,"woodCrash1",0.25,"woodCrash2",0.25,"woodCrash3",0.25};
-		armorCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,500};
-		armorCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,500};
-		armorCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,500};
-		armorCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,500};
-		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
-		soundWaterCollision1[] = {"A3\Sounds_F\vehicles\crashes\planes\plane_crash_water_1",1.4125376,1,500};
-		soundWaterCollision2[] = {"A3\Sounds_F\vehicles\crashes\planes\plane_crash_water_2",1.4125376,1,500};
-		soundWaterCrashes[] = {"soundWaterCollision1",0.5,"soundWaterCollision2",0.5};
-		Crash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,500};
-		Crash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,500};
-		Crash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,500};
-		Crash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,500};
-		soundCrashes[] = {"Crash0",0.25,"Crash1",0.25,"Crash2",0.25,"Crash3",0.25};
-		class Sounds
-		{
-			class Idle_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_ext_idle",0.31622776,1,100};
-				frequency = "0.95	+	((rpm/	3500) factor[(200/	3500),(580/	3500)])*0.15";
-				volume = "engineOn*camPos*(((rpm/	3500) factor[(200/	3500),(350/	3500)])	*	((rpm/	3500) factor[(580/	3500),(400/	3500)]))";
-			};
-			class Engine
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_ext_rpm1",0.31622776,1,200};
-				frequency = "0.9	+	((rpm/	3500) factor[(380/	3500),(960/	3500)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	3500) factor[(380/	3500),(580/	3500)])	*	((rpm/	3500) factor[(960/	3500),(700/	3500)]))";
-			};
-			class Engine1_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_ext_rpm2",0.3548134,1,225};
-				frequency = "0.9	+	((rpm/	3500) factor[(700/	3500),(1400/	3500)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	3500) factor[(700/	3500),(970/	3500)])	*	((rpm/	3500) factor[(1400/	3500),(1100/	3500)]))";
-			};
-			class Engine2_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_ext_rpm3",0.3548134,1,250};
-				frequency = "0.9	+	((rpm/	3500) factor[(1100/	3500),(1860/	3500)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	3500) factor[(1100/	3500),(1430/	3500)])	*	((rpm/	3500) factor[(1860/	3500),(1570/	3500)]))";
-			};
-			class Engine3_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_ext_rpm4",0.39810717,1,275};
-				frequency = "0.95	+	((rpm/	3500) factor[(1600/	3500),(2200/	3500)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	3500) factor[(1600/	3500),(1860/	3500)])	*	((rpm/	3500) factor[(2200/	3500),(2050/	3500)]))";
-			};
-			class Engine4_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_ext_rpm5",0.4466836,1,300};
-				frequency = "0.95	+	((rpm/	3500) factor[(2040/	3500),(2670/	3500)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	3500) factor[(2040/	3500),(2200/	3500)])	*	((rpm/	3500) factor[(2670/	3500),(2400/	3500)]))";
-			};
-			class Engine5_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_ext_rpm6",0.5011872,1,300};
-				frequency = "0.95	+	((rpm/	3500) factor[(2400/	3500),(3050/	3500)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	3500) factor[(2400/	3500),(2660/	3500)])	*	((rpm/	3500) factor[(3050/	3500),(2800/	3500)]))";
-			};
-			class Engine6_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_ext_rpm7",0.56234133,1,300};
-				frequency = "0.95	+	((rpm/	3500) factor[(2700/	3500),(3500/	3500)])*0.2";
-				volume = "engineOn*camPos*((rpm/	3500) factor[(2700/	3500),(3200/	3500)])";
-			};
-			class IdleThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_ext_idle",0.5011872,1,200};
-				frequency = "0.95	+	((rpm/	3500) factor[(200/	3500),(580/	3500)])*0.15";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(200/	3500),(350/	3500)])	*	((rpm/	3500) factor[(580/	3500),(400/	3500)]))";
-			};
-			class EngineThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_ext_rpm1",0.56234133,1,250};
-				frequency = "0.9	+	((rpm/	3500) factor[(380/	3500),(960/	3500)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(380/	3500),(580/	3500)])	*	((rpm/	3500) factor[(960/	3500),(700/	3500)]))";
-			};
-			class Engine1_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_ext_rpm2",0.63095737,1,275};
-				frequency = "0.9	+	((rpm/	3500) factor[(700/	3500),(1400/	3500)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(700/	3500),(970/	3500)])	*	((rpm/	3500) factor[(1400/	3500),(1100/	3500)]))";
-			};
-			class Engine2_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_ext_rpm3",0.70794576,1,300};
-				frequency = "0.9	+	((rpm/	3500) factor[(1100/	3500),(1860/	3500)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(1100/	3500),(1430/	3500)])	*	((rpm/	3500) factor[(1860/	3500),(1570/	3500)]))";
-			};
-			class Engine3_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_ext_rpm4",0.7943282,1,325};
-				frequency = "0.95	+	((rpm/	3500) factor[(1600/	3500),(2200/	3500)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(1600/	3500),(1860/	3500)])	*	((rpm/	3500) factor[(2200/	3500),(2050/	3500)]))";
-			};
-			class Engine4_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_ext_rpm5",0.8912509,1,350};
-				frequency = "0.95	+	((rpm/	3500) factor[(2040/	3500),(2670/	3500)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(2040/	3500),(2200/	3500)])	*	((rpm/	3500) factor[(2670/	3500),(2400/	3500)]))";
-			};
-			class Engine5_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_ext_rpm6",1.0,1,375};
-				frequency = "0.95	+	((rpm/	3500) factor[(2400/	3500),(3050/	3500)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(2400/	3500),(2660/	3500)])	*	((rpm/	3500) factor[(3050/	3500),(2800/	3500)]))";
-			};
-			class Engine6_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_ext_rpm7",1.1220185,1,400};
-				frequency = "0.95	+	((rpm/	3500) factor[(2700/	3500),(3500/	3500)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	3500) factor[(2700/	3500),(3200/	3500)])";
-			};
-			class Idle_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_int_idle",0.22387211,1};
-				frequency = "0.95	+	((rpm/	3500) factor[(200/	3500),(580/	3500)])*0.15";
-				volume = "engineOn*(1-camPos)*(((rpm/	3500) factor[(200/	3500),(350/	3500)])	*	((rpm/	3500) factor[(580/	3500),(400/	3500)]))";
-			};
-			class Engine_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_int_rpm1",0.25118864,1};
-				frequency = "0.9	+	((rpm/	3500) factor[(380/	3500),(960/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	3500) factor[(380/	3500),(580/	3500)])	*	((rpm/	3500) factor[(960/	3500),(700/	3500)]))";
-			};
-			class Engine1_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_int_rpm2",0.17782794,1};
-				frequency = "0.9	+	((rpm/	3500) factor[(700/	3500),(1400/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	3500) factor[(700/	3500),(970/	3500)])	*	((rpm/	3500) factor[(1400/	3500),(1100/	3500)]))";
-			};
-			class Engine2_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_int_rpm3",0.31622776,1};
-				frequency = "0.9	+	((rpm/	3500) factor[(1100/	3500),(1860/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	3500) factor[(1100/	3500),(1430/	3500)])	*	((rpm/	3500) factor[(1860/	3500),(1570/	3500)]))";
-			};
-			class Engine3_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_int_rpm4",0.3548134,1};
-				frequency = "0.95	+	((rpm/	3500) factor[(1600/	3500),(2200/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	3500) factor[(1600/	3500),(1860/	3500)])	*	((rpm/	3500) factor[(2200/	3500),(2050/	3500)]))";
-			};
-			class Engine4_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_int_rpm5",0.39810717,1};
-				frequency = "0.95	+	((rpm/	3500) factor[(2040/	3500),(2670/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	3500) factor[(2040/	3500),(2200/	3500)])	*	((rpm/	3500) factor[(2670/	3500),(2400/	3500)]))";
-			};
-			class Engine5_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_int_rpm6",0.39810717,1};
-				frequency = "0.95	+	((rpm/	3500) factor[(2400/	3500),(3050/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	3500) factor[(2400/	3500),(2660/	3500)])	*	((rpm/	3500) factor[(3050/	3500),(2800/	3500)]))";
-			};
-			class Engine6_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\engine_int_rpm7",0.4466836,1};
-				frequency = "0.95	+	((rpm/	3500) factor[(2700/	3500),(3500/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*((rpm/	3500) factor[(2700/	3500),(3200/	3500)])";
-			};
-			class IdleThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_int_idle",0.31622776,1};
-				frequency = "0.95	+	((rpm/	3500) factor[(200/	3500),(580/	3500)])*0.15";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(200/	3500),(350/	3500)])	*	((rpm/	3500) factor[(580/	3500),(400/	3500)]))";
-			};
-			class EngineThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_int_rpm1",0.3548134,1};
-				frequency = "0.9	+	((rpm/	3500) factor[(380/	3500),(960/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(380/	3500),(580/	3500)])	*	((rpm/	3500) factor[(960/	3500),(700/	3500)]))";
-			};
-			class Engine1_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_int_rpm2",0.39810717,1};
-				frequency = "0.9	+	((rpm/	3500) factor[(700/	3500),(1400/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(700/	3500),(970/	3500)])	*	((rpm/	3500) factor[(1400/	3500),(1100/	3500)]))";
-			};
-			class Engine2_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_int_rpm3",0.4466836,1};
-				frequency = "0.9	+	((rpm/	3500) factor[(1100/	3500),(1860/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(1100/	3500),(1430/	3500)])	*	((rpm/	3500) factor[(1860/	3500),(1570/	3500)]))";
-			};
-			class Engine3_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_int_rpm4",0.5011872,1};
-				frequency = "0.95	+	((rpm/	3500) factor[(1600/	3500),(2200/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(1600/	3500),(1860/	3500)])	*	((rpm/	3500) factor[(2200/	3500),(2050/	3500)]))";
-			};
-			class Engine4_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_int_rpm5",0.56234133,1};
-				frequency = "0.95	+	((rpm/	3500) factor[(2040/	3500),(2670/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(2040/	3500),(2200/	3500)])	*	((rpm/	3500) factor[(2670/	3500),(2400/	3500)]))";
-			};
-			class Engine5_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_int_rpm6",0.63095737,1};
-				frequency = "0.95	+	((rpm/	3500) factor[(2400/	3500),(3050/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3500) factor[(2400/	3500),(2660/	3500)])	*	((rpm/	3500) factor[(3050/	3500),(2800/	3500)]))";
-			};
-			class Engine6_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Offroad_01\exhaust_int_rpm7",0.70794576,1};
-				frequency = "0.95	+	((rpm/	3500) factor[(2700/	3500),(3500/	3500)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	3500) factor[(2700/	3500),(3200/	3500)])";
-			};
-			class TiresRockOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",0.70794576,1.0,60};
-				frequency = "1";
-				volume = "camPos*rock*(speed factor[2, 20])";
-			};
-			class TiresSandOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",0.70794576,1.0,60};
-				frequency = "1";
-				volume = "camPos*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",0.70794576,1.0,60};
-				frequency = "1";
-				volume = "camPos*grass*(speed factor[2, 20])";
-			};
-			class TiresMudOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",0.70794576,1.0,60};
-				frequency = "1";
-				volume = "camPos*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",0.70794576,1.0,60};
-				frequency = "1";
-				volume = "camPos*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",0.70794576,1.0,60};
-				frequency = "1";
-				volume = "camPos*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_ext_car_3",0.56234133,1.0,90};
-				frequency = "1";
-				volume = "camPos*(damper0 max 0.02)*(speed factor[0, 8])";
-			};
-			class TiresRockIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_1",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*rock*(speed factor[2, 20])";
-			};
-			class TiresSandIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-sand2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*grass*(speed factor[2, 20])";
-			};
-			class TiresMudIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-mud2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_gravel_1",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_asfalt_2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",0.15848932,1.0};
-				frequency = "1";
-				volume = "(damper0 max 0.1)*(speed factor[0, 8])*(1-camPos)";
-			};
-			class breaking_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class acceleration_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 2])";
-			};
-			class turn_left_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[2, 15])";
-			};
-			class turn_right_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class breaking_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class acceleration_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 1])";
-			};
-			class turn_left_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[1, 15])";
-			};
-			class turn_right_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class breaking_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class acceleration_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 1])";
-			};
-			class turn_left_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[1, 15])";
-			};
-			class turn_right_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class breaking_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class acceleration_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 1])";
-			};
-			class turn_left_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[1, 15])";
-			};
-			class turn_right_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class Waternoise_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\soft_driving_in_water",0.5011872,1,300};
-				frequency = "1";
-				volume = "(speed factor[0, 10]) * water * camPos + (speed factor[-0.1, -10]) * water * camPos";
-			};
-			class Waternoise_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\soft_driving_in_water_int",0.3548134,1,100};
-				frequency = "1";
-				volume = "(speed factor[0, 10]) * water * (1-camPos)* 0.8 + (speed factor[-0.1, -10]) * water * (1-camPos) *0.8";
-			};
-			class RainExt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_ext",1.0,1.0,100};
-				frequency = 1;
-				volume = "camPos * (rain - rotorSpeed/2) * 2";
-			};
-			class RainInt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_int",1.0,1.0,100};
-				frequency = 1;
-				volume = "(1-camPos)*(rain - rotorSpeed/2)*2";
-			};
-		};
-	};
-     class a2_hmmwv_EPOCH: a2_hmmwv_base 
-	 {
-		displayName="Classic Hummvee(modded)";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\humvee_ca.paa";
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\humvee_ca.paa";		
-		scope	= 2;
-	 };
-	class a2_golf_base: car_F
-	{
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\golf\a2_golf_base";
-		scope=0; 		
-        terrainCoef 	= 6.5;
-		turnCoef 		= 2.5;
-		precision 		= 10;
-		brakeDistance 	= 3.0;
-		acceleration 	= 15;
-        fireResistance 	= 5;
-		armor 			= 32;
+//		armor = 30;
+		armor = 60;
 		maximumLoad		= 1250;
+//		enginePower = 408;
+		enginePower = 350;
+//		maxOmega = 600;
+		maxOmega = 680;
+//		peakTorque = 680;
+		peakTorque = 600;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
-		maxFordingDepth 		= 0.5;
 		waterResistance 		= 1;
 		crewCrashProtection		= 0.25;
 		driverLeftHandAnimName 	= "drivewheel";
@@ -7640,24 +6949,23 @@ class CfgVehicles
 		getOutAction 		= GetOutLow;
 		cargoGetInAction[] 	= {"GetInLow"};
 		cargoGetOutAction[] = {"GetOutLow"};
-        class Turrets{};
-		class HitPoints: HitPoints
+		idleRpm = 800;
+//		redRpm = 6000;
+		redRpm = 6500;
+		wheelCircumference = 2.805;
+		class complexGearbox
 		{
-			class HitLFWheel: HitLFWheel	{armor=0.125; passThrough=0;};
-			class HitLF2Wheel: HitLF2Wheel	{armor=0.125; passThrough=0;};
-
-			class HitRFWheel: HitRFWheel	{armor=0.125; passThrough=0;};
-			class HitRF2Wheel: HitRF2Wheel 	{armor=0.125; passThrough=0;};
-
-			class HitFuel 			{armor=0.50; material=-1; name="fueltank"; visual=""; passThrough=0.2;};
-			class HitEngine 		{armor=0.50; material=-1; name="engine"; visual=""; passThrough=0.2;};
-			class HitBody: HitBody 	{name = "body"; visual="camo1"; passThrough=1;};
-
-			class HitGlass1: HitGlass1 {armor=0.25;};
-			class HitGlass2: HitGlass2 {armor=0.25;};
-			class HitGlass3: HitGlass3 {armor=0.25;};
-			class HitGlass4: HitGlass4 {armor=0.25;};
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -4.0, "N", 0, "D1", 4.8, "D2", 2.8, "D3", 1.9, "D4", 1.2, "D5", 0.7};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
 		};
+        class Turrets{};
+		class HitPoints: HitPoints {};
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[]=
 		{
@@ -7703,111 +7011,94 @@ class CfgVehicles
 		};
 		thrustDelay            	= 0.2;
 		brakeIdleSpeed         	= 1.78;
-		maxSpeed               	= 150;
-		fuelCapacity           	= 45;
-		wheelCircumference     	= 2.277;
-		antiRollbarForceCoef	= 0.5;
-		antiRollbarForceLimit	= 0.5;
-		antiRollbarSpeedMin 	= 20;
-		antiRollbarSpeedMax		= 80;
-		idleRpm = 900;
-		redRpm = 6900;
-		class complexGearbox
-		{	
-			GearboxRatios[]    = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.870,"D3",1.241,"D4",0.970,"D5",0.711};
-			TransmissionRatios[] = {"High",4.111};
-			gearBoxMode        = "auto";
-			moveOffGear        = 1;
-			driveString        = "D";
-			neutralString      = "N";
-			reverseString      = "R";
-		};		
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
 		simulation = "carx";
-		dampersBumpCoef = 0.05;
-		differentialType = "front_limited";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
 		frontRearSplit = 0.5;
-		frontBias = 1.5;
-		rearBias = 1.3;
-		centreBias = 1.3;
-		clutchStrength = 15.0;
-		enginePower = 100; 
-		maxOmega = 720;
-		peakTorque = 350;
-		dampingRateFullThrottle = 0.08;
-		dampingRateZeroThrottleClutchEngaged = 0.35;
-		torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
-		changeGearMinEffectivity[]   = {0.95, 0.15, 0.95, 0.95, 0.95, 0.95, 0.95};
-		switchTime = 0.31;
-		latency = 1.0;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
 		class Wheels
 		{
 			class LF
 			{
-				boneName = "wheel_1_1_damper";
-				steering = true;
 				side = "left";
-				center   = "wheel_1_1_axis";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
 				boundary = "wheel_1_1_bound";
+				width = "0.23";
 				mass = 20;
-				MOI = 3.3;
+				MOI = 78.625;
 				dampingRate = 0.5;
-				maxBrakeTorque = 2000;
+				maxBrakeTorque = 4000;
 				maxHandBrakeTorque = 0;
-				suspTravelDirection[] = {0, -1, 0};
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				tireForceAppPointOffset = "wheel_1_1_axis";
 				maxCompression = 0.1;
-				mMaxDroop = 0.15;
-				sprungMass = 350.0;
-				springStrength = 22600;
-				springDamperRate = 8680;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
 				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 25;
-				latStiffY = 18000;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1,1}};
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
 			};
 			class LR: LF
 			{
 				boneName = "wheel_1_2_damper";
-				steering = false;
-				center   = "wheel_1_2_axis";
+				steering = 0;
+				center = "wheel_1_2_axis";
 				boundary = "wheel_1_2_bound";
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;	
+				maxHandBrakeTorque = 12000;
 			};
 			class RF: LF
 			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
 				boneName = "wheel_2_1_damper";
-				center   = "wheel_2_1_axis";
+				center = "wheel_2_1_axis";
 				boundary = "wheel_2_1_bound";
 				suspForceAppPointOffset = "wheel_2_1_axis";
 				tireForceAppPointOffset = "wheel_2_1_axis";
-				steering = true;
-				side = "right";
 			};
 			class RR: RF
 			{
 				boneName = "wheel_2_2_damper";
-				steering = false;
-				center   = "wheel_2_2_axis";
+				steering = 0;
+				center = "wheel_2_2_axis";
 				boundary = "wheel_2_2_bound";
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;				
+				maxHandBrakeTorque = 12000;
 			};
-		};		
+		};
 		class PlayerSteeringCoefficients
 		{
-			 turnIncreaseConst 	= 0.3;
-			 turnIncreaseLinear = 1.0;
-			 turnIncreaseTime 	= 1.0;
-             turnDecreaseConst 	= 5.0;
-			 turnDecreaseLinear = 3.0;
-			 turnDecreaseTime 	= 0.0;
-             maxTurnHundred 	= 0.7;
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
 		};
         memoryPointTrackFLL = "TrackFLL";
 		memoryPointTrackFLR = "TrackFLR";
@@ -7833,7 +7124,6 @@ class CfgVehicles
 				effect 		= "ExhaustsEffect";
 			};
 		};
-
 		class Reflectors
 		{
 			class LightCarHeadL01
@@ -7888,7 +7178,7 @@ class CfgVehicles
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
 					fov 				= 0.7;
-				}; 			
+				};
 			};
 			class RearCam
 			{
@@ -7899,8 +7189,8 @@ class CfgVehicles
 					pointDirection		= "PIP1_dir";
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
+					fov 				= 0.7;
+				};
 			};
 			class FrontCam
 			{
@@ -7911,496 +7201,108 @@ class CfgVehicles
 					pointDirection		= "PIP2_dir";
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};			
-		};		
-		attenuationEffectType = "SemiOpenCarAttenuation";
-		soundGetIn[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_door",0.56234133,1};
-		soundGetOut[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_door",0.56234133,1,40};
-		soundDammage[] = {"",0.56234133,1};
-		soundEngineOnInt[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_start",0.39810717,1.0};
-		soundEngineOnExt[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_start",0.4466836,1.0,200};
-		soundEngineOffInt[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_stop",0.39810717,1.0};
-		soundEngineOffExt[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_stop",0.4466836,1.0,200};
-		buildCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,200};
-		buildCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,200};
-		buildCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,200};
-		buildCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,200};
-		soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-		WoodCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		WoodCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		WoodCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		WoodCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		soundWoodCrash[] = {"woodCrash0",0.25,"woodCrash1",0.25,"woodCrash2",0.25,"woodCrash3",0.25};
-		armorCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,200};
-		armorCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,200};
-		armorCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,200};
-		armorCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,200};
-		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
-		class Sounds
-		{
-			class Idle_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_idle",0.22387211,1,150};
-				frequency = "0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class Engine
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_1400rpm",0.2818383,1,200};
-				frequency = "0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2000rpm",0.3548134,1,240};
-				frequency = "0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2600rpm",0.39810717,1,280};
-				frequency = "0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3200rpm",0.4466836,1,320};
-				frequency = "0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3600rpm",0.5011872,1,360};
-				frequency = "0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_4000rpm",0.56234133,1,420};
-				frequency = "0.95	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.15";
-				volume = "engineOn*camPos*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class IdleThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_idle_exhaust",0.5011872,1,200};
-				frequency = "0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class EngineThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_1400rpm_exhaust",0.56234133,1,250};
-				frequency = "0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2000rpm_exhaust",0.63095737,1,280};
-				frequency = "0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2600rpm_exhaust",0.70794576,1,320};
-				frequency = "0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3200rpm_exhaust",0.7943282,1,360};
-				frequency = "0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3600rpm_exhaust",1.0,1,400};
-				frequency = "0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.3";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_4000rpm_exhaust",1.2589254,1,450};
-				frequency = "0.9	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class Idle_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_idle",0.17782794,1};
-				frequency = "0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class Engine_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_1000rpm",0.19952622,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2000rpm",0.25118864,1};
-				frequency = "0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2600rpm",0.2818383,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_3200rpm",0.31622776,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_4000rpm",0.3548134,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_5000rpm",0.5011872,1};
-				frequency = "0.95	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.15";
-				volume = "engineOn*(1-camPos)*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class IdleThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_idle_exhaust",0.31622776,1};
-				frequency = "0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class EngineThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_1000rpm_exhaust",0.3548134,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2000rpm_exhaust",0.39810717,1};
-				frequency = "0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2600rpm_exhaust",0.4466836,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_3200rpm_exhaust",0.5011872,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_4000rpm_exhaust",0.56234133,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.3";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_5000rpm_exhaust",0.63095737,1};
-				frequency = "0.9	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class Movement
-			{
-				sound = "soundEnviron";
-				frequency = "1";
-				volume = "0";
-			};
-			class TiresRockOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*rock*(speed factor[2, 20])";
-			};
-			class TiresSandOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*grass*(speed factor[2, 20])";
-			};
-			class TiresMudOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_ext_car_3",0.39810717,1.0,90};
-				frequency = "1";
-				volume = "camPos*(damper0 max 0.02)*(speed factor[0, 8])";
-			};
-			class TiresRockIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_1",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*rock*(speed factor[2, 20])";
-			};
-			class TiresSandIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-sand2",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_2",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*grass*(speed factor[2, 20])";
-			};
-			class TiresMudIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-mud2",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_gravel_1",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_asfalt_2",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",0.25118864,1.0};
-				frequency = "1";
-				volume = "(damper0 max 0.1)*(speed factor[0, 8])*(1-camPos)";
-			};
-			class breaking_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class acceleration_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 2])";
-			};
-			class turn_left_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[2, 15])";
-			};
-			class turn_right_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class breaking_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class acceleration_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 1])";
-			};
-			class turn_left_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[1, 15])";
-			};
-			class turn_right_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class breaking_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class acceleration_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 2])";
-			};
-			class turn_left_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[2, 15])";
-			};
-			class turn_right_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class breaking_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[-01, -0.4])*(Speed Factor[2, 15])";
-			};
-			class acceleration_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 2])";
-			};
-			class turn_left_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[2, 15])";
-			};
-			class turn_right_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class Waternoise_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\soft_driving_in_water",0.5011872,1,300};
-				frequency = "1";
-				volume = "(speed factor[0, 10]) * water * camPos + (speed factor[-0.1, -10]) * water * camPos";
-			};
-			class Waternoise_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\soft_driving_in_water_int",0.3548134,1,100};
-				frequency = "1";
-				volume = "(speed factor[0, 10]) * water * (1-camPos)* 0.8 + (speed factor[-0.1, -10]) * water * (1-camPos) *0.8";
-			};
-			class RainExt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_ext",1.0,1.0,100};
-				frequency = 1;
-				volume = "camPos * (rain - rotorSpeed/2) * 2";
-			};
-			class RainInt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_int",1.0,1.0,100};
-				frequency = 1;
-				volume = "(1-camPos)*(rain - rotorSpeed/2)*2";
+					fov 				= 0.7;
+				};
 			};
 		};
+		attenuationEffectType = "CarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Start", 0.707946, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Stop", 0.707946, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Start", 1.99526, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Stop", 1.99526, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+				soundSetsInt[] = {"Hatchback_01_Engine_RPM0_INT_SoundSet", "Hatchback_01_Engine_RPM1_INT_SoundSet", "Hatchback_01_Engine_RPM2_INT_SoundSet", "Hatchback_01_Engine_RPM3_INT_SoundSet", "Hatchback_01_Engine_RPM4_INT_SoundSet", "Hatchback_01_Rattling_INT_SoundSet", "Hatchback_01_Stress_INT_SoundSet", "Hatchback_01_Rain_INT_SoundSet", "Hatchback_01_Tires_Rock_Fast_INT_SoundSet", "Hatchback_01_Tires_Grass_Fast_INT_SoundSet", "Hatchback_01_Tires_Sand_Fast_INT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_INT_SoundSet", "Hatchback_01_Tires_Mud_Fast_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_INT_SoundSet", "Hatchback_01_Tires_Water_Fast_INT_SoundSet", "Hatchback_01_Tires_Rock_Slow_INT_SoundSet", "Hatchback_01_Tires_Grass_Slow_INT_SoundSet", "Hatchback_01_Tires_Sand_Slow_INT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_INT_SoundSet", "Hatchback_01_Tires_Mud_Slow_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_INT_SoundSet", "Hatchback_01_Tires_Water_Slow_INT_SoundSet", "Hatchback_01_Tires_Turn_Hard_INT_SoundSet", "Hatchback_01_Tires_Turn_Soft_INT_SoundSet", "Hatchback_01_Tires_Brake_Hard_INT_SoundSet", "Hatchback_01_Tires_Brake_Soft_INT_SoundSet"};
+				soundSetsExt[] = {"Hatchback_01_Engine_RPM0_EXT_SoundSet", "Hatchback_01_Engine_RPM1_EXT_SoundSet", "Hatchback_01_Engine_RPM2_EXT_SoundSet", "Hatchback_01_Engine_RPM3_EXT_SoundSet", "Hatchback_01_Engine_RPM4_EXT_SoundSet", "Hatchback_01_Rain_EXT_SoundSet", "Hatchback_01_Tires_Rock_Fast_EXT_SoundSet", "Hatchback_01_Tires_Grass_Fast_EXT_SoundSet", "Hatchback_01_Tires_Sand_Fast_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_EXT_SoundSet", "Hatchback_01_Tires_Mud_Fast_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_EXT_SoundSet", "Hatchback_01_Tires_Water_Fast_EXT_SoundSet", "Hatchback_01_Tires_Rock_Slow_EXT_SoundSet", "Hatchback_01_Tires_Grass_Slow_EXT_SoundSet", "Hatchback_01_Tires_Sand_Slow_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_EXT_SoundSet", "Hatchback_01_Tires_Mud_Slow_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_EXT_SoundSet", "Hatchback_01_Tires_Water_Slow_EXT_SoundSet", "Hatchback_01_Tires_Turn_Hard_EXT_SoundSet", "Hatchback_01_Tires_Turn_Soft_EXT_SoundSet", "Hatchback_01_Tires_Brake_Hard_EXT_SoundSet", "Hatchback_01_Tires_Brake_Soft_EXT_SoundSet"};
+		};
 	};
-    class a2_golf_random: a2_golf_base
+    class A2_Golf_EPOCH: a2_golf_base
 	{
-		displayName="Classic Golf";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";		
 		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
+		textureList[] = {"Blue", 1, "Grey", 1, "Pink", 1, "Red", 1};
 	};
-    class a2_golf_blue: a2_golf_base
+    class A2_Golf_load_EPOCH: A2_Golf_EPOCH
 	{
-		displayName="Classic Golf Blue";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";		
-		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		textureList[] = {"Blue", 1};
+		displayName="Classic Golf Load";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\golf\a2_golf_base2";
 	};
-    class a2_golf_grey: a2_golf_base
+     class a2_hmmwv_base: car_F
 	{
-		displayName="Classic Golf Grey";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_grey_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_grey_ca.paa";
-		scope=2;
+		displayName="Classic Hummvee";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\hmmwv";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\humvee_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\humvee_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
 		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		textureList[] = {"Grey", 1};
-	};
-    class a2_golf_pink: a2_golf_base
-	{
-		displayName="Classic Golf Pink";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_pink_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_pink_ca.paa";
-		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		textureList[] = {"Pink", 1};
-	};	
-    class a2_golf_red: a2_golf_base
-	{
-		displayName="Classic Golf Red";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_red_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_red_ca.paa";
-		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		textureList[] = {"Red", 1};
-    };
-	class a2_lada_base: car_F
-	{
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\lada\a2_lada_base";
-		displayName="Lada 1";
-		scope=0; 		
-		scopeCurator=2;	
-		crew="C_man_1"; 
-		side=3; 		
-		faction	= CIV_F;
-        terrainCoef 	= 6.5;
-		turnCoef 		= 2.5;
-		precision 		= 10;
+//		maxSpeed = 249;
+		maxSpeed = 120;
+		fuelCapacity	= 40;
+        terrainCoef 	= 2.5;
+		turnCoef = 4;
+		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
         fireResistance 	= 5;
-		armor 			= 32;
+//		armor = 30;
+		armor = 180;
+		maximumLoad		= 1250;
+//		enginePower = 408;
+		enginePower = 200;
+		maxOmega = 600;
+//		peakTorque = 680;
+		peakTorque = 400;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
-		maxFordingDepth 		= 0.5;
 		waterResistance 		= 1;
 		crewCrashProtection		= 0.25;
 		driverLeftHandAnimName 	= "drivewheel";
@@ -8411,25 +7313,385 @@ class CfgVehicles
 		getInAction 		= GetInLow;
 		getOutAction 		= GetOutLow;
 		cargoGetInAction[] 	= {"GetInLow"};
-		cargoGetOutAction[] = {"GetOutLow"}; 
-        class Turrets{};
-		class HitPoints: HitPoints
+		cargoGetOutAction[] = {"GetOutLow"};
+//		idleRpm = 800;
+		idleRpm = 500;
+		redRpm = 6000;
+		wheelCircumference = 2.805;
+		class complexGearbox
 		{
-			class HitLFWheel: HitLFWheel	{armor=0.125; passThrough=0;};
-			class HitLF2Wheel: HitLF2Wheel	{armor=0.125; passThrough=0;};
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 6, "D2", 3.5, "D3", 2, "D4", 1};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+		class HitPoints: HitPoints {};
+/*
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]={""};
+*/
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2_destruct.rvmat"
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.23";
+				mass = 20;
+				MOI = 78.625;
+				dampingRate = 0.5;
+				maxBrakeTorque = 4000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.1;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
+				longitudinalStiffnessPerUnitGravity = 100000;
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
 
-			class HitRFWheel: HitRFWheel	{armor=0.125; passThrough=0;};
-			class HitRF2Wheel: HitRF2Wheel 	{armor=0.125; passThrough=0;};
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
 
-			class HitFuel 			{armor=0.50; material=-1; name="fueltank"; visual=""; passThrough=0.2;};
-			class HitEngine 		{armor=0.50; material=-1; name="engine"; visual=""; passThrough=0.2;};
-			class HitBody: HitBody 	{name = "body"; visual="camo1"; passThrough=1;};
-
-			class HitGlass1: HitGlass1 {armor=0.25;};
-			class HitGlass2: HitGlass2 {armor=0.25;};
-			class HitGlass3: HitGlass3 {armor=0.25;};
-			class HitGlass4: HitGlass4 {armor=0.25;};
-		};		
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+        class EventHandlers: EventHandlers {};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "CarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Exit", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Int_Start", 0.707946, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Int_Stop", 0.707946, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Ext_Start", 1.99526, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Ext_Stop", 1.99526, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+			soundSetsInt[] = {"Suv_01_Engine_RPM0_INT_SoundSet", "Suv_01_Engine_RPM1_INT_SoundSet", "Suv_01_Engine_RPM2_INT_SoundSet", "Suv_01_Engine_RPM3_INT_SoundSet", "Suv_01_Engine_RPM4_INT_SoundSet", "Suv_01_Rattling_INT_SoundSet", "Suv_01_Stress_INT_SoundSet", "Suv_01_Rain_INT_SoundSet", "Suv_01_Tires_Rock_Fast_INT_SoundSet", "Suv_01_Tires_Grass_Fast_INT_SoundSet", "Suv_01_Tires_Sand_Fast_INT_SoundSet", "Suv_01_Tires_Gravel_Fast_INT_SoundSet", "Suv_01_Tires_Mud_Fast_INT_SoundSet", "Suv_01_Tires_Asphalt_Fast_INT_SoundSet", "Suv_01_Tires_Water_Fast_INT_SoundSet", "Suv_01_Tires_Rock_Slow_INT_SoundSet", "Suv_01_Tires_Grass_Slow_INT_SoundSet", "Suv_01_Tires_Sand_Slow_INT_SoundSet", "Suv_01_Tires_Gravel_Slow_INT_SoundSet", "Suv_01_Tires_Mud_Slow_INT_SoundSet", "Suv_01_Tires_Asphalt_Slow_INT_SoundSet", "Suv_01_Tires_Water_Slow_INT_SoundSet", "Suv_01_Tires_Turn_Hard_INT_SoundSet", "Suv_01_Tires_Turn_Soft_INT_SoundSet", "Suv_01_Tires_Brake_Hard_INT_SoundSet", "Suv_01_Tires_Brake_Soft_INT_SoundSet"};
+			soundSetsExt[] = {"Suv_01_Engine_RPM0_EXT_SoundSet", "Suv_01_Engine_RPM1_EXT_SoundSet", "Suv_01_Engine_RPM2_EXT_SoundSet", "Suv_01_Engine_RPM3_EXT_SoundSet", "Suv_01_Engine_RPM4_EXT_SoundSet", "Suv_01_Rain_EXT_SoundSet", "Suv_01_Tires_Rock_Fast_EXT_SoundSet", "Suv_01_Tires_Grass_Fast_EXT_SoundSet", "Suv_01_Tires_Sand_Fast_EXT_SoundSet", "Suv_01_Tires_Gravel_Fast_EXT_SoundSet", "Suv_01_Tires_Mud_Fast_EXT_SoundSet", "Suv_01_Tires_Asphalt_Fast_EXT_SoundSet", "Suv_01_Tires_Water_Fast_EXT_SoundSet", "Suv_01_Tires_Rock_Slow_EXT_SoundSet", "Suv_01_Tires_Grass_Slow_EXT_SoundSet", "Suv_01_Tires_Sand_Slow_EXT_SoundSet", "Suv_01_Tires_Gravel_Slow_EXT_SoundSet", "Suv_01_Tires_Mud_Slow_EXT_SoundSet", "Suv_01_Tires_Asphalt_Slow_EXT_SoundSet", "Suv_01_Tires_Water_Slow_EXT_SoundSet", "Suv_01_Tires_Turn_Hard_EXT_SoundSet", "Suv_01_Tires_Turn_Soft_EXT_SoundSet", "Suv_01_Tires_Brake_Hard_EXT_SoundSet", "Suv_01_Tires_Brake_Soft_EXT_SoundSet"};
+		};
+	};
+	class A2_HMMWV_EPOCH: a2_hmmwv_base 
+	{
+		scope	= 2;
+	};
+	class A2_HMMWV_load_EPOCH: A2_HMMWV_EPOCH 
+	{
+		displayName="Classic Hummvee Load";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\hmmwv_2";
+	};
+	class a2_lada_base: car_F
+	{
+		displayName="Classic Lada";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\lada\a2_lada_base";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\lada_red_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_red_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 140;
+		fuelCapacity	= 40;
+//        terrainCoef 	= 2.5;
+        terrainCoef 	= 4.5;
+		turnCoef = 4;
+		precision 		= 15;
+		brakeDistance 	= 3.0;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+//		armor = 30;
+		armor = 15;
+		maximumLoad		= 1250;
+//		enginePower = 408;
+		enginePower = 340;
+//		maxOmega = 600;
+		maxOmega = 680;
+//		peakTorque = 680;
+		peakTorque = 490;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 0.25;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+		idleRpm = 800;
+//		redRpm = 6000;
+		redRpm = 6500;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -4.0, "N", 0, "D1", 3.2, "D2", 1.9, "D3", 1.1, "D4", 0.8};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+		class HitPoints: HitPoints {};
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[]=
+		{
+             "\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_red_co.paa"
+		};
+		class TextureSources
+		{
+			class Red
+			{
+				displayName = "Red";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_red_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class White
+			{
+				displayName = "White";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_white_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Orange
+			{
+				displayName = "Orange";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_lm_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+		};
+		textureList[] = {"Red", 1, "White", 1, "Orange", 1};
 		class Damage
 		{
 			tex[]={};
@@ -8442,111 +7704,94 @@ class CfgVehicles
 		};
 		thrustDelay            	= 0.2;
 		brakeIdleSpeed         	= 1.78;
-		maxSpeed               	= 150;
-		fuelCapacity           	= 45;
-		wheelCircumference     	= 2.277;
-		antiRollbarForceCoef	= 0.5;
-		antiRollbarForceLimit	= 0.5;
-		antiRollbarSpeedMin 	= 20;
-		antiRollbarSpeedMax		= 80;
-		idleRpm = 900;
-		redRpm = 6900;
-		class complexGearbox
-		{	
-			GearboxRatios[]    = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.870,"D3",1.241,"D4",0.970,"D5",0.711};
-			TransmissionRatios[] = {"High",4.111};
-			gearBoxMode        = "auto";
-			moveOffGear        = 1;
-			driveString        = "D";
-			neutralString      = "N";
-			reverseString      = "R";
-		};		
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
 		simulation = "carx";
-		dampersBumpCoef = 0.05;
-		differentialType = "front_limited";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
 		frontRearSplit = 0.5;
-		frontBias = 1.5;
-		rearBias = 1.3;
-		centreBias = 1.3;
-		clutchStrength = 15.0;
-		enginePower = 100; 
-		maxOmega = 720;
-		peakTorque = 350;
-		dampingRateFullThrottle = 0.08;
-		dampingRateZeroThrottleClutchEngaged = 0.35;
-		torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
-		changeGearMinEffectivity[]   = {0.95, 0.15, 0.95, 0.95, 0.95, 0.95, 0.95};
-		switchTime = 0.31;
-		latency = 1.0;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
 		class Wheels
 		{
 			class LF
 			{
-				boneName = "wheel_1_1_damper";
-				steering = true;
 				side = "left";
-				center   = "wheel_1_1_axis";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
 				boundary = "wheel_1_1_bound";
+				width = "0.23";
 				mass = 20;
-				MOI = 3.3;
+				MOI = 78.625;
 				dampingRate = 0.5;
-				maxBrakeTorque = 2000;
+				maxBrakeTorque = 4000;
 				maxHandBrakeTorque = 0;
-				suspTravelDirection[] = {0, -1, 0};
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				tireForceAppPointOffset = "wheel_1_1_axis";
 				maxCompression = 0.1;
-				mMaxDroop = 0.15;
-				sprungMass = 350.0;
-				springStrength = 22600;
-				springDamperRate = 8680;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
 				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 25;
-				latStiffY = 18000;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1,1}};
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
 			};
 			class LR: LF
 			{
 				boneName = "wheel_1_2_damper";
-				steering = false;
-				center   = "wheel_1_2_axis";
+				steering = 0;
+				center = "wheel_1_2_axis";
 				boundary = "wheel_1_2_bound";
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;	
+				maxHandBrakeTorque = 12000;
 			};
 			class RF: LF
 			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
 				boneName = "wheel_2_1_damper";
-				center   = "wheel_2_1_axis";
+				center = "wheel_2_1_axis";
 				boundary = "wheel_2_1_bound";
 				suspForceAppPointOffset = "wheel_2_1_axis";
 				tireForceAppPointOffset = "wheel_2_1_axis";
-				steering = true;
-				side = "right";
 			};
 			class RR: RF
 			{
 				boneName = "wheel_2_2_damper";
-				steering = false;
-				center   = "wheel_2_2_axis";
+				steering = 0;
+				center = "wheel_2_2_axis";
 				boundary = "wheel_2_2_bound";
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;				
+				maxHandBrakeTorque = 12000;
 			};
-		};		
+		};
 		class PlayerSteeringCoefficients
 		{
-			 turnIncreaseConst 	= 0.3;
-			 turnIncreaseLinear = 1.0;
-			 turnIncreaseTime 	= 1.0;
-             turnDecreaseConst 	= 5.0;
-			 turnDecreaseLinear = 3.0;
-			 turnDecreaseTime 	= 0.0;
-             maxTurnHundred 	= 0.7;
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
 		};
         memoryPointTrackFLL = "TrackFLL";
 		memoryPointTrackFLR = "TrackFLR";
@@ -8572,7 +7817,341 @@ class CfgVehicles
 				effect 		= "ExhaustsEffect";
 			};
 		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
 
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "CarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Start", 0.707946, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Stop", 0.707946, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Start", 1.99526, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Stop", 1.99526, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+				soundSetsInt[] = {"Hatchback_01_Engine_RPM0_INT_SoundSet", "Hatchback_01_Engine_RPM1_INT_SoundSet", "Hatchback_01_Engine_RPM2_INT_SoundSet", "Hatchback_01_Engine_RPM3_INT_SoundSet", "Hatchback_01_Engine_RPM4_INT_SoundSet", "Hatchback_01_Rattling_INT_SoundSet", "Hatchback_01_Stress_INT_SoundSet", "Hatchback_01_Rain_INT_SoundSet", "Hatchback_01_Tires_Rock_Fast_INT_SoundSet", "Hatchback_01_Tires_Grass_Fast_INT_SoundSet", "Hatchback_01_Tires_Sand_Fast_INT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_INT_SoundSet", "Hatchback_01_Tires_Mud_Fast_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_INT_SoundSet", "Hatchback_01_Tires_Water_Fast_INT_SoundSet", "Hatchback_01_Tires_Rock_Slow_INT_SoundSet", "Hatchback_01_Tires_Grass_Slow_INT_SoundSet", "Hatchback_01_Tires_Sand_Slow_INT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_INT_SoundSet", "Hatchback_01_Tires_Mud_Slow_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_INT_SoundSet", "Hatchback_01_Tires_Water_Slow_INT_SoundSet", "Hatchback_01_Tires_Turn_Hard_INT_SoundSet", "Hatchback_01_Tires_Turn_Soft_INT_SoundSet", "Hatchback_01_Tires_Brake_Hard_INT_SoundSet", "Hatchback_01_Tires_Brake_Soft_INT_SoundSet"};
+				soundSetsExt[] = {"Hatchback_01_Engine_RPM0_EXT_SoundSet", "Hatchback_01_Engine_RPM1_EXT_SoundSet", "Hatchback_01_Engine_RPM2_EXT_SoundSet", "Hatchback_01_Engine_RPM3_EXT_SoundSet", "Hatchback_01_Engine_RPM4_EXT_SoundSet", "Hatchback_01_Rain_EXT_SoundSet", "Hatchback_01_Tires_Rock_Fast_EXT_SoundSet", "Hatchback_01_Tires_Grass_Fast_EXT_SoundSet", "Hatchback_01_Tires_Sand_Fast_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_EXT_SoundSet", "Hatchback_01_Tires_Mud_Fast_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_EXT_SoundSet", "Hatchback_01_Tires_Water_Fast_EXT_SoundSet", "Hatchback_01_Tires_Rock_Slow_EXT_SoundSet", "Hatchback_01_Tires_Grass_Slow_EXT_SoundSet", "Hatchback_01_Tires_Sand_Slow_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_EXT_SoundSet", "Hatchback_01_Tires_Mud_Slow_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_EXT_SoundSet", "Hatchback_01_Tires_Water_Slow_EXT_SoundSet", "Hatchback_01_Tires_Turn_Hard_EXT_SoundSet", "Hatchback_01_Tires_Turn_Soft_EXT_SoundSet", "Hatchback_01_Tires_Brake_Hard_EXT_SoundSet", "Hatchback_01_Tires_Brake_Soft_EXT_SoundSet"};
+		};
+	};
+    class A2_Lada_EPOCH: a2_lada_base
+	{
+		scope=2;
+		textureList[] = {"Red", 1, "White", 1, "Orange", 1};
+	};
+	class a2_suv_base: car_F
+	{
+		displayName="Classic SUV";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\suv_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\suv_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 200;
+		fuelCapacity	= 40;
+        terrainCoef 	= 2.5;
+		turnCoef = 4;
+		precision 		= 15;
+		brakeDistance 	= 3.0;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+//		armor = 30;
+		armor = 90;
+		maximumLoad		= 1250;
+		enginePower = 408;
+		maxOmega = 600;
+		peakTorque = 680;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 0.25;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+		idleRpm = 800;
+		redRpm = 6000;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -6.5, "N", 0, "D1", 4.9, "D2", 2.9, "D3", 1.8, "D4", 1.2, "D5", 0.7};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+		class HitPoints: HitPoints {};
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[]=
+		{
+             "x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_co.paa"
+		};
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_destruct.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_chrom.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_chrom_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_chrom_destruct.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_glass.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_glass_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_glass_destruct.rvmat"			
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.23";
+				mass = 20;
+				MOI = 78.625;
+				dampingRate = 0.5;
+				maxBrakeTorque = 4000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.1;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
+				longitudinalStiffnessPerUnitGravity = 100000;
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
+
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
 		class Reflectors
 		{
 			class LightCarHeadL01
@@ -8624,7 +8203,7 @@ class CfgVehicles
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
 					fov 				= 0.7;
-				}; 			
+				};
 			};
 			class RearCam
 			{
@@ -8635,8 +8214,8 @@ class CfgVehicles
 					pointDirection		= "PIP1_dir";
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
+					fov 				= 0.7;
+				};
 			};
 			class FrontCam
 			{
@@ -8647,484 +8226,108 @@ class CfgVehicles
 					pointDirection		= "PIP2_dir";
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};			
-		};		
-		attenuationEffectType = "SemiOpenCarAttenuation";
-		soundGetIn[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_door",0.56234133,1};
-		soundGetOut[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_door",0.56234133,1,40};
-		soundDammage[] = {"",0.56234133,1};
-		soundEngineOnInt[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_start",0.39810717,1.0};
-		soundEngineOnExt[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_start",0.4466836,1.0,200};
-		soundEngineOffInt[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_stop",0.39810717,1.0};
-		soundEngineOffExt[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_stop",0.4466836,1.0,200};
-		buildCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,200};
-		buildCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,200};
-		buildCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,200};
-		buildCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,200};
-		soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-		WoodCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		WoodCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		WoodCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		WoodCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		soundWoodCrash[] = {"woodCrash0",0.25,"woodCrash1",0.25,"woodCrash2",0.25,"woodCrash3",0.25};
-		armorCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,200};
-		armorCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,200};
-		armorCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,200};
-		armorCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,200};
-		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "CarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Exit", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Int_Start", 0.707946, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Int_Stop", 0.707946, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Ext_Start", 1.99526, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Ext_Stop", 1.99526, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
 		class Sounds
 		{
-			class Idle_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_idle",0.22387211,1,150};
-				frequency = "0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class Engine
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_1400rpm",0.2818383,1,200};
-				frequency = "0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2000rpm",0.3548134,1,240};
-				frequency = "0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2600rpm",0.39810717,1,280};
-				frequency = "0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3200rpm",0.4466836,1,320};
-				frequency = "0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3600rpm",0.5011872,1,360};
-				frequency = "0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_4000rpm",0.56234133,1,420};
-				frequency = "0.95	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.15";
-				volume = "engineOn*camPos*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class IdleThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_idle_exhaust",0.5011872,1,200};
-				frequency = "0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class EngineThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_1400rpm_exhaust",0.56234133,1,250};
-				frequency = "0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2000rpm_exhaust",0.63095737,1,280};
-				frequency = "0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2600rpm_exhaust",0.70794576,1,320};
-				frequency = "0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3200rpm_exhaust",0.7943282,1,360};
-				frequency = "0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3600rpm_exhaust",1.0,1,400};
-				frequency = "0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.3";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_4000rpm_exhaust",1.2589254,1,450};
-				frequency = "0.9	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class Idle_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_idle",0.17782794,1};
-				frequency = "0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class Engine_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_1000rpm",0.19952622,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2000rpm",0.25118864,1};
-				frequency = "0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2600rpm",0.2818383,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_3200rpm",0.31622776,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_4000rpm",0.3548134,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_5000rpm",0.5011872,1};
-				frequency = "0.95	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.15";
-				volume = "engineOn*(1-camPos)*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class IdleThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_idle_exhaust",0.31622776,1};
-				frequency = "0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class EngineThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_1000rpm_exhaust",0.3548134,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2000rpm_exhaust",0.39810717,1};
-				frequency = "0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2600rpm_exhaust",0.4466836,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_3200rpm_exhaust",0.5011872,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_4000rpm_exhaust",0.56234133,1};
-				frequency = "0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.3";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_5000rpm_exhaust",0.63095737,1};
-				frequency = "0.9	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class Movement
-			{
-				sound = "soundEnviron";
-				frequency = "1";
-				volume = "0";
-			};
-			class TiresRockOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*rock*(speed factor[2, 20])";
-			};
-			class TiresSandOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*grass*(speed factor[2, 20])";
-			};
-			class TiresMudOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",0.5011872,1.0,60};
-				frequency = "1";
-				volume = "camPos*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_ext_car_3",0.39810717,1.0,90};
-				frequency = "1";
-				volume = "camPos*(damper0 max 0.02)*(speed factor[0, 8])";
-			};
-			class TiresRockIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_1",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*rock*(speed factor[2, 20])";
-			};
-			class TiresSandIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-sand2",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_2",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*grass*(speed factor[2, 20])";
-			};
-			class TiresMudIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-mud2",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_gravel_1",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_asfalt_2",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",0.25118864,1.0};
-				frequency = "1";
-				volume = "(damper0 max 0.1)*(speed factor[0, 8])*(1-camPos)";
-			};
-			class breaking_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class acceleration_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 2])";
-			};
-			class turn_left_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[2, 15])";
-			};
-			class turn_right_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class breaking_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class acceleration_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 1])";
-			};
-			class turn_left_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[1, 15])";
-			};
-			class turn_right_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class breaking_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class acceleration_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 2])";
-			};
-			class turn_left_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[2, 15])";
-			};
-			class turn_right_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class breaking_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[-01, -0.4])*(Speed Factor[2, 15])";
-			};
-			class acceleration_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 2])";
-			};
-			class turn_left_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[2, 15])";
-			};
-			class turn_right_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.31622776,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class Waternoise_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\soft_driving_in_water",0.5011872,1,300};
-				frequency = "1";
-				volume = "(speed factor[0, 10]) * water * camPos + (speed factor[-0.1, -10]) * water * camPos";
-			};
-			class Waternoise_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\soft_driving_in_water_int",0.3548134,1,100};
-				frequency = "1";
-				volume = "(speed factor[0, 10]) * water * (1-camPos)* 0.8 + (speed factor[-0.1, -10]) * water * (1-camPos) *0.8";
-			};
-			class RainExt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_ext",1.0,1.0,100};
-				frequency = 1;
-				volume = "camPos * (rain - rotorSpeed/2) * 2";
-			};
-			class RainInt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_int",1.0,1.0,100};
-				frequency = 1;
-				volume = "(1-camPos)*(rain - rotorSpeed/2)*2";
-			};
+			soundSetsInt[] = {"Suv_01_Engine_RPM0_INT_SoundSet", "Suv_01_Engine_RPM1_INT_SoundSet", "Suv_01_Engine_RPM2_INT_SoundSet", "Suv_01_Engine_RPM3_INT_SoundSet", "Suv_01_Engine_RPM4_INT_SoundSet", "Suv_01_Rattling_INT_SoundSet", "Suv_01_Stress_INT_SoundSet", "Suv_01_Rain_INT_SoundSet", "Suv_01_Tires_Rock_Fast_INT_SoundSet", "Suv_01_Tires_Grass_Fast_INT_SoundSet", "Suv_01_Tires_Sand_Fast_INT_SoundSet", "Suv_01_Tires_Gravel_Fast_INT_SoundSet", "Suv_01_Tires_Mud_Fast_INT_SoundSet", "Suv_01_Tires_Asphalt_Fast_INT_SoundSet", "Suv_01_Tires_Water_Fast_INT_SoundSet", "Suv_01_Tires_Rock_Slow_INT_SoundSet", "Suv_01_Tires_Grass_Slow_INT_SoundSet", "Suv_01_Tires_Sand_Slow_INT_SoundSet", "Suv_01_Tires_Gravel_Slow_INT_SoundSet", "Suv_01_Tires_Mud_Slow_INT_SoundSet", "Suv_01_Tires_Asphalt_Slow_INT_SoundSet", "Suv_01_Tires_Water_Slow_INT_SoundSet", "Suv_01_Tires_Turn_Hard_INT_SoundSet", "Suv_01_Tires_Turn_Soft_INT_SoundSet", "Suv_01_Tires_Brake_Hard_INT_SoundSet", "Suv_01_Tires_Brake_Soft_INT_SoundSet"};
+			soundSetsExt[] = {"Suv_01_Engine_RPM0_EXT_SoundSet", "Suv_01_Engine_RPM1_EXT_SoundSet", "Suv_01_Engine_RPM2_EXT_SoundSet", "Suv_01_Engine_RPM3_EXT_SoundSet", "Suv_01_Engine_RPM4_EXT_SoundSet", "Suv_01_Rain_EXT_SoundSet", "Suv_01_Tires_Rock_Fast_EXT_SoundSet", "Suv_01_Tires_Grass_Fast_EXT_SoundSet", "Suv_01_Tires_Sand_Fast_EXT_SoundSet", "Suv_01_Tires_Gravel_Fast_EXT_SoundSet", "Suv_01_Tires_Mud_Fast_EXT_SoundSet", "Suv_01_Tires_Asphalt_Fast_EXT_SoundSet", "Suv_01_Tires_Water_Fast_EXT_SoundSet", "Suv_01_Tires_Rock_Slow_EXT_SoundSet", "Suv_01_Tires_Grass_Slow_EXT_SoundSet", "Suv_01_Tires_Sand_Slow_EXT_SoundSet", "Suv_01_Tires_Gravel_Slow_EXT_SoundSet", "Suv_01_Tires_Mud_Slow_EXT_SoundSet", "Suv_01_Tires_Asphalt_Slow_EXT_SoundSet", "Suv_01_Tires_Water_Slow_EXT_SoundSet", "Suv_01_Tires_Turn_Hard_EXT_SoundSet", "Suv_01_Tires_Turn_Soft_EXT_SoundSet", "Suv_01_Tires_Brake_Hard_EXT_SoundSet", "Suv_01_Tires_Brake_Soft_EXT_SoundSet"};
 		};
-	};	
-    class a2_lada_1: a2_lada_base
+	};
+    class A2_SUV_EPOCH: a2_suv_base
 	{
-		displayName="Classic Lada Red";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\lada_red_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_red_ca.paa";
-		scope=2; 		
-		scopeCurator=2;	
-		crew="C_man_1"; 
-		side=3; 		
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_red_co.paa"
-		};
-	};	
-    class a2_lada_2: a2_lada_base
+		scope=2;
+	};
+    class A2_SUV_load_EPOCH: A2_SUV_EPOCH
 	{
-		displayName="Classic Lada White";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\lada_grey_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\lada_grey_ca.paa";
-		scope=2; 		
-		scopeCurator=2;	
-		crew="C_man_1"; 
-		side=3; 		
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_white_co.paa"
-		};
-	};	
-    class a2_lada_3: a2_lada_base
-	{
-		displayName="Classic Lada Police";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\lada_police_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\lada_police_ca.paa";
-		scope=2; 		
-		scopeCurator=2;	
-		crew="C_man_1"; 
-		side=3; 		
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_lm_co.paa"
-		};
+		displayName="Classic SUV Load";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv2";
 	};
     class a2_UAZ_base: car_F
 	{
+		displayName="Classic UAZ";
 		model 	= "x\addons\a2_epoch_vehicles\wheeled\uaz\a2_uaz_base";
-		scope=0; 			
-		scopeCurator=2;		
-		crew="C_man_1"; 	
-		side=3; 			
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
 		faction	= CIV_F;
-        terrainCoef 	= 6.5;
-		turnCoef 		= 2.5;
-		precision 		= 10;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 120;
+		fuelCapacity	= 40;
+//        terrainCoef 	= 2.5;
+        terrainCoef 	= 1.8;
+		turnCoef = 4;
+		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
         fireResistance 	= 5;
-		armor 			= 32;
+//		armor = 30;
+		armor = 40;
+		maximumLoad		= 1250;
+		enginePower = 408;
+//		maxOmega = 600;
+		maxOmega = 471;
+//		peakTorque = 680;
+		peakTorque = 400;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
-		maxFordingDepth 		= 0.5;
 		waterResistance 		= 1;
 		crewCrashProtection		= 0.25;
 		driverLeftHandAnimName 	= "drivewheel";
@@ -9135,25 +8338,70 @@ class CfgVehicles
 		getInAction 		= GetInLow;
 		getOutAction 		= GetOutLow;
 		cargoGetInAction[] 	= {"GetInLow"};
-		cargoGetOutAction[] = {"GetOutLow"}; 
-        class Turrets{};		
-		class HitPoints: HitPoints
+		cargoGetOutAction[] = {"GetOutLow"};
+//		idleRpm = 800;
+		idleRpm = 600;
+//		redRpm = 6000;
+		redRpm = 4500;
+		wheelCircumference = 2.805;
+		class complexGearbox
 		{
-			class HitLFWheel: HitLFWheel	{armor=0.125; passThrough=0;}; /// it is easier to destroy wheels than hull of the vehicle
-			class HitLF2Wheel: HitLF2Wheel	{armor=0.125; passThrough=0;};
-
-			class HitRFWheel: HitRFWheel	{armor=0.125; passThrough=0;};
-			class HitRF2Wheel: HitRF2Wheel 	{armor=0.125; passThrough=0;};
-
-			class HitFuel 			{armor=0.50; material=-1; name="fueltank"; visual=""; passThrough=0.2;}; /// correct points for fuel tank, some of the damage is aFRLied to the whole
-			class HitEngine 		{armor=0.50; material=-1; name="engine"; visual=""; passThrough=0.2;};
-			class HitBody: HitBody 	{name = "body"; visual="camo1"; passThrough=1;}; /// all damage to the hull is aFRLied to total damage
-
-			class HitGlass1: HitGlass1 {armor=0.25;}; /// it is pretty easy to puncture the glass but not so easy to remove it
-			class HitGlass2: HitGlass2 {armor=0.25;};
-			class HitGlass3: HitGlass3 {armor=0.25;};
-			class HitGlass4: HitGlass4 {armor=0.25;};
-		};		
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -5.0, "N", 0, "D1", 4.0, "D2", 2.6, "D3", 1.6, "D4", 1.1, "D5", 0.9};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+		class HitPoints: HitPoints {};
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[]=
+		{
+             "\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_red_co.paa"
+		};
+		class TextureSources
+		{
+			class Random1
+			{
+				displayName = "Random1";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_002_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Random2
+			{
+				displayName = "Random2";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_civil_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Random3
+			{
+				displayName = "Random3";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Random4
+			{
+				displayName = "Random4";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_ind_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Random5
+			{
+				displayName = "Random5";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_un_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Random6
+			{
+				displayName = "Random6";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_001_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+		};
+		textureList[] = {"Random1", 1, "Random2", 1, "Random3", 1, "Random4", 1, "Random5", 1, "Random6", 1};
 		class Damage
 		{
 			tex[]={};
@@ -9166,111 +8414,94 @@ class CfgVehicles
 		};
 		thrustDelay            	= 0.2;
 		brakeIdleSpeed         	= 1.78;
-		maxSpeed               	= 150;
-		fuelCapacity           	= 45;
-		wheelCircumference     	= 2.277;
-		antiRollbarForceCoef	= 0.5;
-		antiRollbarForceLimit	= 0.5;
-		antiRollbarSpeedMin 	= 20;
-		antiRollbarSpeedMax		= 80;
-		idleRpm = 900;
-		redRpm = 6900;
-		class complexGearbox
-		{	
-			GearboxRatios[]    = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.870,"D3",1.241,"D4",0.970,"D5",0.711};
-			TransmissionRatios[] = {"High",4.111};
-			gearBoxMode        = "auto";
-			moveOffGear        = 1;
-			driveString        = "D";
-			neutralString      = "N";
-			reverseString      = "R";
-		};		
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
 		simulation = "carx";
-		dampersBumpCoef = 0.05;
-		differentialType = "front_limited";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
 		frontRearSplit = 0.5;
-		frontBias = 1.5;
-		rearBias = 1.3;
-		centreBias = 1.3;
-		clutchStrength = 15.0;
-		enginePower = 100; 
-		maxOmega = 720;
-		peakTorque = 350;
-		dampingRateFullThrottle = 0.08;
-		dampingRateZeroThrottleClutchEngaged = 0.35;
-		torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
-		changeGearMinEffectivity[]   = {0.95, 0.15, 0.95, 0.95, 0.95, 0.95, 0.95};
-		switchTime = 0.31;
-		latency = 1.0;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
 		class Wheels
 		{
 			class LF
 			{
-				boneName = "wheel_1_1_damper";
-				steering = true;
 				side = "left";
-				center   = "wheel_1_1_axis";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
 				boundary = "wheel_1_1_bound";
+				width = "0.23";
 				mass = 20;
-				MOI = 3.3;
+				MOI = 78.625;
 				dampingRate = 0.5;
-				maxBrakeTorque = 2000;
+				maxBrakeTorque = 4000;
 				maxHandBrakeTorque = 0;
-				suspTravelDirection[] = {0, -1, 0};
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				tireForceAppPointOffset = "wheel_1_1_axis";
 				maxCompression = 0.1;
-				mMaxDroop = 0.15;
-				sprungMass = 350.0;
-				springStrength = 22600;
-				springDamperRate = 8680;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
 				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 25;
-				latStiffY = 18000;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1,1}};
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
 			};
 			class LR: LF
 			{
 				boneName = "wheel_1_2_damper";
-				steering = false;
-				center   = "wheel_1_2_axis";
+				steering = 0;
+				center = "wheel_1_2_axis";
 				boundary = "wheel_1_2_bound";
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;	
+				maxHandBrakeTorque = 12000;
 			};
 			class RF: LF
 			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
 				boneName = "wheel_2_1_damper";
-				center   = "wheel_2_1_axis";
+				center = "wheel_2_1_axis";
 				boundary = "wheel_2_1_bound";
 				suspForceAppPointOffset = "wheel_2_1_axis";
 				tireForceAppPointOffset = "wheel_2_1_axis";
-				steering = true;
-				side = "right";
 			};
 			class RR: RF
 			{
 				boneName = "wheel_2_2_damper";
-				steering = false;
-				center   = "wheel_2_2_axis";
+				steering = 0;
+				center = "wheel_2_2_axis";
 				boundary = "wheel_2_2_bound";
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;				
+				maxHandBrakeTorque = 12000;
 			};
-		};		
+		};
 		class PlayerSteeringCoefficients
 		{
-			 turnIncreaseConst 	= 0.3;
-			 turnIncreaseLinear = 1.0;
-			 turnIncreaseTime 	= 1.0;
-             turnDecreaseConst 	= 5.0;
-			 turnDecreaseLinear = 3.0;
-			 turnDecreaseTime 	= 0.0;
-             maxTurnHundred 	= 0.7;
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
 		};
         memoryPointTrackFLL = "TrackFLL";
 		memoryPointTrackFLR = "TrackFLR";
@@ -9296,7 +8527,366 @@ class CfgVehicles
 				effect 		= "ExhaustsEffect";
 			};
 		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
 
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "MrapAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Enter", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_Start", 0.501187, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_stop", 0.398107, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_Start", 0.501187, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_stop", 0.398107, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+			soundSetsInt[] = {"Mrap_01_Engine_RPM0_INT_SoundSet", "Mrap_01_Engine_RPM1_INT_SoundSet", "Mrap_01_Engine_RPM2_INT_SoundSet", "Mrap_01_Engine_RPM3_INT_SoundSet", "Mrap_01_Engine_RPM4_INT_SoundSet", "Mrap_01_Engine_INT_Burst_SoundSet", "Mrap_01_Rattling_INT_SoundSet", "Mrap_01_Stress_INT_SoundSet", "Mrap_01_Rain_INT_SoundSet", "Mrap_01_Tires_Rock_Fast_INT_SoundSet", "Mrap_01_Tires_Grass_Fast_INT_SoundSet", "Mrap_01_Tires_Sand_Fast_INT_SoundSet", "Mrap_01_Tires_Gravel_Fast_INT_SoundSet", "Mrap_01_Tires_Mud_Fast_INT_SoundSet", "Mrap_01_Tires_Asphalt_Fast_INT_SoundSet", "Mrap_01_Tires_Water_Fast_INT_SoundSet", "Mrap_01_Tires_Rock_Slow_INT_SoundSet", "Mrap_01_Tires_Grass_Slow_INT_SoundSet", "Mrap_01_Tires_Sand_Slow_INT_SoundSet", "Mrap_01_Tires_Gravel_Slow_INT_SoundSet", "Mrap_01_Tires_Mud_Slow_INT_SoundSet", "Mrap_01_Tires_Asphalt_Slow_INT_SoundSet", "Mrap_01_Tires_Water_Slow_INT_SoundSet", "Mrap_01_Tires_Turn_Hard_INT_SoundSet", "Mrap_01_Tires_Turn_Soft_INT_SoundSet", "Mrap_01_Tires_Brake_Hard_INT_SoundSet", "Mrap_01_Tires_Brake_Soft_INT_SoundSet", "", "Tires_Movement_Dirt_Int_01_SoundSet"};
+			soundSetsExt[] = {"Mrap_01_Engine_RPM0_EXT_SoundSet", "Mrap_01_Engine_RPM1_EXT_SoundSet", "Mrap_01_Engine_RPM2_EXT_SoundSet", "Mrap_01_Engine_RPM3_EXT_SoundSet", "Mrap_01_Engine_RPM4_EXT_SoundSet", "Mrap_01_Engine_EXT_Burst_SoundSet", "Mrap_01_Rattling_EXT_SoundSet", "Mrap_01_Stress_EXT_SoundSet", "Mrap_01_Rain_EXT_SoundSet", "Mrap_01_Tires_Rock_Fast_EXT_SoundSet", "Mrap_01_Tires_Grass_Fast_EXT_SoundSet", "Mrap_01_Tires_Sand_Fast_EXT_SoundSet", "Mrap_01_Tires_Gravel_Fast_EXT_SoundSet", "Mrap_01_Tires_Mud_Fast_EXT_SoundSet", "Mrap_01_Tires_Asphalt_Fast_EXT_SoundSet", "Mrap_01_Tires_Water_Fast_EXT_SoundSet", "Mrap_01_Tires_Rock_Slow_EXT_SoundSet", "Mrap_01_Tires_Grass_Slow_EXT_SoundSet", "Mrap_01_Tires_Sand_Slow_EXT_SoundSet", "Mrap_01_Tires_Gravel_Slow_EXT_SoundSet", "Mrap_01_Tires_Mud_Slow_EXT_SoundSet", "Mrap_01_Tires_Asphalt_Slow_EXT_SoundSet", "Mrap_01_Tires_Water_Slow_EXT_SoundSet", "Mrap_01_Tires_Turn_Hard_EXT_SoundSet", "Mrap_01_Tires_Turn_Soft_EXT_SoundSet", "Mrap_01_Tires_Brake_Hard_EXT_SoundSet", "Mrap_01_Tires_Brake_Soft_EXT_SoundSet", "", "Tires_Movement_Dirt_Ext_01_SoundSet"};
+		};
+	};
+    class A2_UA_EPOCHZ: a2_UAZ_base
+	{
+		scope=2;
+		textureList[] = {"Random1", 1, "Random2", 1, "Random3", 1, "Random4", 1, "Random5", 1, "Random6", 1};
+	};
+    class A2_UAZ_Open_EPOCH: a2_UAZ_base
+	{
+		scope=2;
+		displayName="Classic UAZ Open";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\uaz\a2_uaz_open";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";
+		textureList[] = {"Random1", 1, "Random2", 1, "Random3", 1, "Random4", 1, "Random5", 1, "Random6", 1};
+    };
+	class a2_ural_base: car_F
+	{
+		displayName="Classic URAL";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\ural\a2_ural_base";
+		picture	= "\A3\Weapons_F\Data\placeholder_co.paa";
+		Icon	= "\A3\Weapons_F\Data\placeholder_co.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 120;
+		fuelCapacity	= 40;
+        terrainCoef 	= 2.5;
+		turnCoef = 4;
+		precision 		= 15;
+		brakeDistance 	= 3.0;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+		armor = 30;
+		maximumLoad		= 1250;
+		enginePower = 408;
+//		maxOmega = 600;
+		maxOmega = 471;
+//		peakTorque = 680;
+		peakTorque = 320;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 0.25;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+//		idleRpm = 800;
+		idleRpm = 600;
+//		redRpm = 6000;
+		redRpm = 4500;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -6.5, "N", 0, "D1", 5.5, "D2", 3.6, "D3", 2.1, "D4", 1.6, "D5", 1.3};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+		class HitPoints: HitPoints {};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[]={"x\addons\a2_epoch_vehicles\wheeled\ural\data\ural_kabina_epoch_co.paa","x\addons\a2_epoch_vehicles\wheeled\ural\data\ural_plachta_co.paa"};
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_interier.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_interier_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_interier_destruct.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_plachta.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_plachta_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_plachta_destruct.rvmat"
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.23";
+				mass = 20;
+				MOI = 78.625;
+				dampingRate = 0.5;
+				maxBrakeTorque = 4000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.1;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
+				longitudinalStiffnessPerUnitGravity = 100000;
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class LM: LF
+			{
+				boneName = "wheel_1_3_damper";
+				steering = 0;
+				center = "wheel_1_3_axis";
+				boundary = "wheel_1_3_bound";
+				suspForceAppPointOffset = "wheel_1_3_axis";
+				tireForceAppPointOffset = "wheel_1_3_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RM: RF
+			{
+				boneName = "wheel_2_3_damper";
+				steering = 0;
+				center = "wheel_2_3_axis";
+				boundary = "wheel_2_3_bound";
+				suspForceAppPointOffset = "wheel_2_3_axis";
+				tireForceAppPointOffset = "wheel_2_3_axis";
+				maxHandBrakeTorque = 12000;
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
+
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
 		class Reflectors
 		{
 			class LightCarHeadL01
@@ -9348,7 +8938,7 @@ class CfgVehicles
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
 					fov 				= 0.7;
-				}; 			
+				};
 			};
 			class RearCam
 			{
@@ -9359,8 +8949,8 @@ class CfgVehicles
 					pointDirection		= "PIP1_dir";
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
+					fov 				= 0.7;
+				};
 			};
 			class FrontCam
 			{
@@ -9371,536 +8961,103 @@ class CfgVehicles
 					pointDirection		= "PIP2_dir";
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};			
-		};		
-		attenuationEffectType = "CarAttenuation";
-		soundGetIn[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\getin",0.56234133,1};
-		soundGetOut[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\getout",0.56234133,1,40};
-		soundDammage[] = {"",0.56234133,1};
-		soundEngineOnInt[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_start",0.3548134,1.0};
-		soundEngineOnExt[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_start",0.70794576,1.0,200};
-		soundEngineOffInt[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_stop",0.3548134,1.0};
-		soundEngineOffExt[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_stop",0.70794576,1.0,200};
-		buildCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,500};
-		buildCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,500};
-		buildCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,500};
-		buildCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,500};
-		soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-		WoodCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,500};
-		WoodCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_2",1.0,1,500};
-		WoodCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_3",1.0,1,500};
-		WoodCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_4",1.0,1,500};
-		soundWoodCrash[] = {"woodCrash0",0.25,"woodCrash1",0.25,"woodCrash2",0.25,"woodCrash3",0.25};
-		armorCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,500};
-		armorCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,500};
-		armorCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,500};
-		armorCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,500};
-		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
-		Crash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,500};
-		Crash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,500};
-		Crash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,500};
-		Crash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,500};
-		soundCrashes[] = {"Crash0",0.25,"Crash1",0.25,"Crash2",0.25,"Crash3",0.25};
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "MrapAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Enter", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_Start", 0.501187, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_stop", 0.398107, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_Start", 0.501187, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_stop", 0.398107, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
 		class Sounds
 		{
-			class Idle_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_idle",0.39810717,1,150};
-				frequency = "0.95	+	((rpm/	4500) factor[(800/	4500),(1400/	4500)])*0.15";
-				volume = "engineOn*camPos*(((rpm/	4500) factor[(600/	4500),(1100/	4500)])	*	((rpm/	4500) factor[(1800/	4500),(1300/	4500)]))";
-			};
-			class Engine
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_low1",0.4466836,1,250};
-				frequency = "0.9	+	((rpm/	4500) factor[(1400/	4500),(2100/	4500)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	4500) factor[(1400/	4500),(1800/	4500)])	*	((rpm/	4500) factor[(2300/	4500),(2000/	4500)]))";
-			};
-			class Engine1_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_low2",0.56234133,1,300};
-				frequency = "0.9	+		((rpm/	4500) factor[(2100/	4500),(2800/	4500)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	4500) factor[(1900/	4500),(2300/	4500)])	*	((rpm/	4500) factor[(3000/	4500),(2500/	4500)]))";
-			};
-			class Engine2_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_mid",0.70794576,1,350};
-				frequency = "0.9	+	((rpm/	4500) factor[(2800/	4500),(3600/	4500)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	4500) factor[(2500/	4500),(3100/	4500)])	*	((rpm/	4500) factor[(4500/	4500),(3700/	4500)]))";
-			};
-			class Engine3_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_high",1.0,1,400};
-				frequency = "0.95	+	((rpm/	4500) factor[(3600/	4500),(4500/	4500)])*0.1";
-				volume = "engineOn*camPos*((rpm/	4500) factor[(3800/	4500),(4500/	4500)])";
-			};
-			class IdleThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_exhaust_idle",0.56234133,1,200};
-				frequency = "0.95	+	((rpm/	4500) factor[(800/	4500),(1400/	4500)])*0.15";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	4500) factor[(600/	4500),(1100/	4500)])	*	((rpm/	4500) factor[(1800/	4500),(1300/	4500)]))";
-			};
-			class EngineThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_exhaust_low1",0.70794576,1,350};
-				frequency = "0.9	+	((rpm/	4500) factor[(1400/	4500),(2100/	4500)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	4500) factor[(1400/	4500),(1800/	4500)])	*	((rpm/	4500) factor[(2300/	4500),(2000/	4500)]))";
-			};
-			class Engine1_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_exhaust_low2",0.8912509,1,400};
-				frequency = "0.9	+		((rpm/	4500) factor[(2100/	4500),(2800/	4500)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	4500) factor[(1900/	4500),(2300/	4500)])	*	((rpm/	4500) factor[(3000/	4500),(2500/	4500)]))";
-			};
-			class Engine2_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_exhaust_mid",1.1220185,1,425};
-				frequency = "0.9	+	((rpm/	4500) factor[(2800/	4500),(3600/	4500)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	4500) factor[(2500/	4500),(3100/	4500)])	*	((rpm/	4500) factor[(4500/	4500),(3700/	4500)]))";
-			};
-			class Engine3_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_ext_exhaust_high",1.2589254,1,450};
-				frequency = "0.95	+	((rpm/	4500) factor[(3600/	4500),(4500/	4500)])*0.1";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	4500) factor[(3800/	4500),(4500/	4500)])";
-			};
-			class Idle_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_idle",0.25118864,1};
-				frequency = "0.95	+	((rpm/	4500) factor[(800/	4500),(1400/	4500)])*0.15";
-				volume = "engineOn*(1-camPos)*(((rpm/	4500) factor[(600/	4500),(1100/	4500)])	*	((rpm/	4500) factor[(1800/	4500),(1300/	4500)]))";
-			};
-			class Engine_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_low1",0.31622776,1};
-				frequency = "0.9	+	((rpm/	4500) factor[(1400/	4500),(2100/	4500)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	4500) factor[(1400/	4500),(1800/	4500)])	*	((rpm/	4500) factor[(2300/	4500),(2000/	4500)]))";
-			};
-			class Engine1_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_low2",0.39810717,1};
-				frequency = "0.9	+		((rpm/	4500) factor[(2100/	4500),(2800/	4500)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	4500) factor[(1900/	4500),(2300/	4500)])	*	((rpm/	4500) factor[(3000/	4500),(2500/	4500)]))";
-			};
-			class Engine2_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_mid",0.5011872,1};
-				frequency = "0.9	+	((rpm/	4500) factor[(2800/	4500),(3600/	4500)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	4500) factor[(2500/	4500),(3100/	4500)])	*	((rpm/	4500) factor[(4500/	4500),(3700/	4500)]))";
-			};
-			class Engine3_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_high",0.63095737,1};
-				frequency = "0.95	+	((rpm/	4500) factor[(3600/	4500),(4500/	4500)])*0.1";
-				volume = "engineOn*(1-camPos)*((rpm/	4500) factor[(3800/	4500),(4500/	4500)])";
-			};
-			class IdleThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_exhaust_idle",0.3548134,1};
-				frequency = "0.95	+	((rpm/	4500) factor[(800/	4500),(1400/	4500)])*0.15";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	4500) factor[(600/	4500),(1100/	4500)])	*	((rpm/	4500) factor[(1800/	4500),(1300/	4500)]))";
-			};
-			class EngineThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_exhaust_low1",0.4466836,1};
-				frequency = "0.9	+	((rpm/	4500) factor[(1400/	4500),(2100/	4500)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	4500) factor[(1400/	4500),(1800/	4500)])	*	((rpm/	4500) factor[(2300/	4500),(2000/	4500)]))";
-			};
-			class Engine1_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_exhaust_low2",0.56234133,1};
-				frequency = "0.9	+		((rpm/	4500) factor[(2100/	4500),(2800/	4500)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	4500) factor[(1900/	4500),(2300/	4500)])	*	((rpm/	4500) factor[(3000/	4500),(2500/	4500)]))";
-			};
-			class Engine2_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_exhaust_mid",0.70794576,1};
-				frequency = "0.9	+	((rpm/	4500) factor[(2800/	4500),(3600/	4500)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	4500) factor[(2500/	4500),(3100/	4500)])	*	((rpm/	4500) factor[(4500/	4500),(3700/	4500)]))";
-			};
-			class Engine3_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\MRAP_01\MRAP_01_int_exhaust_high",0.7943282,1};
-				frequency = "0.95	+	((rpm/	4500) factor[(3600/	4500),(4500/	4500)])*0.1";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	4500) factor[(3800/	4500),(4500/	4500)])";
-			};
-			class TiresRockOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",1.4125376,1.0,60};
-				frequency = "1";
-				volume = "camPos*rock*(speed factor[2, 20])";
-			};
-			class TiresSandOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",1.4125376,1.0,60};
-				frequency = "1";
-				volume = "camPos*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",1.2589254,1.0,60};
-				frequency = "1";
-				volume = "camPos*grass*(speed factor[2, 20])";
-			};
-			class TiresMudOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",1.1220185,1.0,60};
-				frequency = "1";
-				volume = "camPos*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",1.2589254,1.0,60};
-				frequency = "1";
-				volume = "camPos*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",1.1220185,1.0,60};
-				frequency = "1";
-				volume = "camPos*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_ext_car_3",1.1220185,1.0,90};
-				frequency = "1";
-				volume = "camPos*(damper0 max 0.02)*(speed factor[0, 8])";
-			};
-			class TiresRockIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_1",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*rock*(speed factor[2, 20])";
-			};
-			class TiresSandIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-sand2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*grass*(speed factor[2, 20])";
-			};
-			class TiresMudIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-mud2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_gravel_1",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_asfalt_2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",0.56234133,1.0};
-				frequency = "1";
-				volume = "(damper0 max 0.1)*(speed factor[0, 8])*(1-camPos)";
-			};
-			class breaking_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[-0.15, -0.3])*(Speed Factor[2, 10])";
-			};
-			class acceleration_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[0.15, 0.3])*(Speed Factor[10, 0])";
-			};
-			class turn_left_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[-0.15, -0.3])*(Speed Factor[2, 10])";
-			};
-			class acceleration_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\acceleration_dirt_ext_1",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[0.15, 0.3])*(Speed Factor[10, 0])";
-			};
-			class turn_left_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",0.63095737,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[-0.15, -0.3])*(Speed Factor[2, 6])";
-			};
-			class acceleration_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.63095737,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[0.15, 0.3])*(Speed Factor[10, 0])";
-			};
-			class turn_left_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.63095737,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.63095737,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking_int",0.63095737,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[-0.15, -0.3])*(Speed Factor[2, 6])";
-			};
-			class acceleration_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\acceleration_dirt_int_1",0.63095737,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[0.15, 0.3])*(Speed Factor[10, 0])";
-			};
-			class turn_left_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.63095737,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.63095737,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class Waternoise_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\soft_driving_in_water",0.5011872,1,300};
-				frequency = "1";
-				volume = "(speed factor[0, 10]) * water * camPos + (speed factor[-0.1, -10]) * water * camPos";
-			};
-			class Waternoise_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\soft_driving_in_water_int",0.3548134,1,100};
-				frequency = "1";
-				volume = "(speed factor[0, 10]) * water * (1-camPos)* 0.8 + (speed factor[-0.1, -10]) * water * (1-camPos) *0.8";
-			};
-			class RainExt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_ext",1.0,1.0,100};
-				frequency = 1;
-				volume = "camPos * (rain - rotorSpeed/2) * 2";
-			};
-			class RainInt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_int",1.0,1.0,100};
-				frequency = 1;
-				volume = "(1-camPos)*(rain - rotorSpeed/2)*2";
-			};
-		};
-
-	};
-    class a2_UAZ_1: a2_UAZ_base
-	{
-		displayName="Classic UAZ Green2";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";
-		scope=2; 		
-		scopeCurator=2;	
-		crew="C_man_1"; 
-		side=3; 		
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_002_co.paa"
+			soundSetsInt[] = {"Mrap_01_Engine_RPM0_INT_SoundSet", "Mrap_01_Engine_RPM1_INT_SoundSet", "Mrap_01_Engine_RPM2_INT_SoundSet", "Mrap_01_Engine_RPM3_INT_SoundSet", "Mrap_01_Engine_RPM4_INT_SoundSet", "Mrap_01_Engine_INT_Burst_SoundSet", "Mrap_01_Rattling_INT_SoundSet", "Mrap_01_Stress_INT_SoundSet", "Mrap_01_Rain_INT_SoundSet", "Mrap_01_Tires_Rock_Fast_INT_SoundSet", "Mrap_01_Tires_Grass_Fast_INT_SoundSet", "Mrap_01_Tires_Sand_Fast_INT_SoundSet", "Mrap_01_Tires_Gravel_Fast_INT_SoundSet", "Mrap_01_Tires_Mud_Fast_INT_SoundSet", "Mrap_01_Tires_Asphalt_Fast_INT_SoundSet", "Mrap_01_Tires_Water_Fast_INT_SoundSet", "Mrap_01_Tires_Rock_Slow_INT_SoundSet", "Mrap_01_Tires_Grass_Slow_INT_SoundSet", "Mrap_01_Tires_Sand_Slow_INT_SoundSet", "Mrap_01_Tires_Gravel_Slow_INT_SoundSet", "Mrap_01_Tires_Mud_Slow_INT_SoundSet", "Mrap_01_Tires_Asphalt_Slow_INT_SoundSet", "Mrap_01_Tires_Water_Slow_INT_SoundSet", "Mrap_01_Tires_Turn_Hard_INT_SoundSet", "Mrap_01_Tires_Turn_Soft_INT_SoundSet", "Mrap_01_Tires_Brake_Hard_INT_SoundSet", "Mrap_01_Tires_Brake_Soft_INT_SoundSet", "", "Tires_Movement_Dirt_Int_01_SoundSet"};
+			soundSetsExt[] = {"Mrap_01_Engine_RPM0_EXT_SoundSet", "Mrap_01_Engine_RPM1_EXT_SoundSet", "Mrap_01_Engine_RPM2_EXT_SoundSet", "Mrap_01_Engine_RPM3_EXT_SoundSet", "Mrap_01_Engine_RPM4_EXT_SoundSet", "Mrap_01_Engine_EXT_Burst_SoundSet", "Mrap_01_Rattling_EXT_SoundSet", "Mrap_01_Stress_EXT_SoundSet", "Mrap_01_Rain_EXT_SoundSet", "Mrap_01_Tires_Rock_Fast_EXT_SoundSet", "Mrap_01_Tires_Grass_Fast_EXT_SoundSet", "Mrap_01_Tires_Sand_Fast_EXT_SoundSet", "Mrap_01_Tires_Gravel_Fast_EXT_SoundSet", "Mrap_01_Tires_Mud_Fast_EXT_SoundSet", "Mrap_01_Tires_Asphalt_Fast_EXT_SoundSet", "Mrap_01_Tires_Water_Fast_EXT_SoundSet", "Mrap_01_Tires_Rock_Slow_EXT_SoundSet", "Mrap_01_Tires_Grass_Slow_EXT_SoundSet", "Mrap_01_Tires_Sand_Slow_EXT_SoundSet", "Mrap_01_Tires_Gravel_Slow_EXT_SoundSet", "Mrap_01_Tires_Mud_Slow_EXT_SoundSet", "Mrap_01_Tires_Asphalt_Slow_EXT_SoundSet", "Mrap_01_Tires_Water_Slow_EXT_SoundSet", "Mrap_01_Tires_Turn_Hard_EXT_SoundSet", "Mrap_01_Tires_Turn_Soft_EXT_SoundSet", "Mrap_01_Tires_Brake_Hard_EXT_SoundSet", "Mrap_01_Tires_Brake_Soft_EXT_SoundSet", "", "Tires_Movement_Dirt_Ext_01_SoundSet"};
 		};
 	};
-    class a2_UAZ_2: a2_UAZ_base
+	class A2_Ural_EPOCH: a2_ural_base
 	{
-		displayName="Classic UAZ Desert";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_2_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_2_ca.paa";
-		scope=2; 		
-		scopeCurator=2;	
-		crew="C_man_1"; 
-		side=3; 		
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_civil_co.paa"
-		};
+		scope=2;
 	};
-    class a2_UAZ_3: a2_UAZ_base
-	{
-		displayName="Classic UAZ Camo";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_3_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_3_ca.paa";
-		scope=2; 			
-		scopeCurator=2;		
-		crew="C_man_1"; 	
-		side=3; 			
-		faction	= CIV_F;	
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_co.paa"
-		};
-	};
-    class a2_UAZ_4: a2_UAZ_base
-	{
-		displayName="Classic UAZ Camo2";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_4_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_4_ca.paa";
-		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_ind_co.paa"
-		};
-	};
-    class a2_UAZ_5: a2_UAZ_base
-	{
-		displayName="Classic UAZ UN";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_5_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_5_ca.paa";
-		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_un_co.paa"
-		};
-	};	
-    class a2_UAZ_6: a2_UAZ_base
-	{
-		displayName="Classic UAZ UN";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_6_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_6_ca.paa";
-		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_001_co.paa"
-		};
-    };
-    class a2_UAZ_open_1: a2_UAZ_base
-	{
-		displayName="Classic UAZ Open1";
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\uaz\a2_uaz_open";		
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";
-		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_001_co.paa"
-		};
-    };
-    class a2_UAZ_open_2: a2_UAZ_base
-	{
-		displayName="Classic UAZ Open2";
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\uaz\a2_uaz_open";		
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_2_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_2_ca.paa";
-		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_001_co.paa"
-		};
-    };
-    class a2_UAZ_open_3: a2_UAZ_base
-	{
-		displayName="Classic UAZ Open3";
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\uaz\a2_uaz_open";		
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_3_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_3_ca.paa";
-		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_001_co.paa"
-		};
-    };
     class a2_Vodnik_base: car_F
 	{
+        displayName = "Classic Vodnik";
 		model 	= "x\addons\a2_epoch_vehicles\wheeled\vodnik\a2_Vodnik_base";
-        displayName = "Vodnik";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\vodnik_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\vodnik_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-        terrainCoef 	= 6.5;
-		turnCoef 		= 2.5;
-		precision 		= 10;
+//		maxSpeed = 249;
+		maxSpeed = 110;
+		fuelCapacity	= 40;
+//        terrainCoef 	= 2.5;
+        terrainCoef 	= 1.8;
+		turnCoef = 4;
+		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
         fireResistance 	= 5;
-		armor 			= 32;
+//		armor = 30;
+		armor = 75;
+		maximumLoad		= 1250;
+		enginePower = 408;
+//		maxOmega = 600;
+		maxOmega = 241;
+//		peakTorque = 680;
+		peakTorque = 650;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
-		maxFordingDepth 		= 0.5;
 		waterResistance 		= 1;
 		crewCrashProtection		= 0.25;
 		driverLeftHandAnimName 	= "drivewheel";
@@ -9911,94 +9068,30 @@ class CfgVehicles
 		getInAction 		= GetInLow;
 		getOutAction 		= GetOutLow;
 		cargoGetInAction[] 	= {"GetInLow"};
-		cargoGetOutAction[] = {"GetOutLow"}; 
-        class Turrets{};		
-		class HitPoints: HitPoints
+		cargoGetOutAction[] = {"GetOutLow"};
+//		idleRpm = 800;
+		idleRpm = 400;
+//		redRpm = 6000;
+		redRpm = 2300;
+		wheelCircumference = 2.805;
+		class complexGearbox
 		{
-			class HitLFWheel: HitLFWheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-			};
-			class HitLF2Wheel: HitLF2Wheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-			};
-			class HitRFWheel: HitRFWheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-			};
-			class HitRF2Wheel: HitRF2Wheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-			};
-			class HitFuel
-			{
-				armor = 0.5;
-				material = -1;
-				armorComponent = "hit_fuel";
-				name = "palivo";
-				visual = "-";
-				passThrough = 0.5;
-				minimalHit = 0.2;
-				explosionShielding = 0.2;
-				radius = 0.25;
-			};
-			class HitEngine
-			{
-				armor = 0.5;
-				material = -1;
-				armorComponent = "hit_engine";
-				name = "motor";
-				visual = "-";
-				passThrough = 0.3;
-				minimalHit = 0.2;
-				explosionShielding = 0.2;
-				radius = 0.45;
-			};			
-			class HitBody
-			{
-				armor = 6.0;
-				material = -1;
-				name = "karoserie";
-				visual = "zbytek";
-				passThrough = 1.0;
-				minimalHit = 0.01;
-				explosionShielding = 1.5;
-				radius = 0.45;
-			};
-            class HitGlass1: HitGlass1
-			{
-				armor = 1.5;
-				explosionShielding = 3;
-				radius = 0.25;
-			};
-			class HitGlass2: HitGlass2
-			{
-				armor = 1.5;
-				explosionShielding = 3;
-				radius = 0.25;
-			};
-			class HitGlass3: HitGlass3
-			{
-				armor = 1.5;
-				explosionShielding = 3;
-				radius = 0.25;
-			};
-			class HitGlass4: HitGlass4
-			{
-				armor = 1.5;
-				explosionShielding = 3;
-				radius = 0.25;
-			};
-		};		
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -4.5, "N", 0, "D1", 3.43, "D2", 2.01, "D3", 1.42, "D4", 1, "D5", 0.83, "D6", 0.59};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+		class HitPoints: HitPoints {};
+        hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]=
+		{
+            "x\addons\a2_epoch_vehicles\wheeled\vodnik\Data\gaz39371_vodnik_basis_01_co.paa"
+		};
 		class Damage
 		{
 			tex[]={};
@@ -10007,124 +9100,104 @@ class CfgVehicles
 				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Basis_01.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Basis_01_damage.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Basis_01_destruct.rvmat",
-
 				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\gaz39371_vodnik_int.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\gaz39371_vodnik_int.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\gaz39371_vodnik_int_destruct.rvmat",
-				
 				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Module.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Module_damage.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Module_destruct.rvmat"
-				
 			};
-		};	
+		};
 		thrustDelay            	= 0.2;
 		brakeIdleSpeed         	= 1.78;
-		maxSpeed               	= 90;
-		fuelCapacity           	= 50;
-		wheelCircumference     	= 2.277;
-		antiRollbarForceCoef	= 0.5;
-		antiRollbarForceLimit	= 0.5;
-		antiRollbarSpeedMin 	= 20;
-		antiRollbarSpeedMax		= 80;
-		idleRpm = 900;
-		redRpm = 6900;
-		class complexGearbox
-		{	
-			GearboxRatios[]    = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.870,"D3",1.241,"D4",0.970,"D5",0.711};
-			TransmissionRatios[] = {"High",4.111};
-			gearBoxMode        = "auto";
-			moveOffGear        = 1;
-			driveString        = "D";
-			neutralString      = "N";
-			reverseString      = "R";
-		};		
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
 		simulation = "carx";
-		dampersBumpCoef = 0.05;
-		differentialType = "front_limited";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
 		frontRearSplit = 0.5;
-		frontBias = 1.5;
-		rearBias = 1.3;
-		centreBias = 1.3;
-		clutchStrength = 15.0;
-		enginePower = 100; 
-		maxOmega = 720;
-		peakTorque = 350;
-		dampingRateFullThrottle = 0.08;
-		dampingRateZeroThrottleClutchEngaged = 0.35;
-		torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
-		changeGearMinEffectivity[]   = {0.95, 0.15, 0.95, 0.95, 0.95, 0.95, 0.95};
-		switchTime = 0.31;
-		latency = 1.0;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
 		class Wheels
 		{
 			class LF
 			{
-				boneName = "wheel_1_1_damper";
-				steering = true;
 				side = "left";
-				center   = "wheel_1_1_axis";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
 				boundary = "wheel_1_1_bound";
+				width = "0.23";
 				mass = 20;
-				MOI = 3.3;
+				MOI = 78.625;
 				dampingRate = 0.5;
-				maxBrakeTorque = 2000;
+				maxBrakeTorque = 4000;
 				maxHandBrakeTorque = 0;
-				suspTravelDirection[] = {0, -1, 0};
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				tireForceAppPointOffset = "wheel_1_1_axis";
 				maxCompression = 0.1;
-				mMaxDroop = 0.15;
-				sprungMass = 350.0;
-				springStrength = 22600;
-				springDamperRate = 8680;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
 				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 25;
-				latStiffY = 18000;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1,1}};
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
 			};
 			class LR: LF
 			{
 				boneName = "wheel_1_2_damper";
-				steering = false;
-				center   = "wheel_1_2_axis";
+				steering = 0;
+				center = "wheel_1_2_axis";
 				boundary = "wheel_1_2_bound";
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;	
+				maxHandBrakeTorque = 12000;
 			};
 			class RF: LF
 			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
 				boneName = "wheel_2_1_damper";
-				center   = "wheel_2_1_axis";
+				center = "wheel_2_1_axis";
 				boundary = "wheel_2_1_bound";
 				suspForceAppPointOffset = "wheel_2_1_axis";
 				tireForceAppPointOffset = "wheel_2_1_axis";
-				steering = true;
-				side = "right";
 			};
 			class RR: RF
 			{
 				boneName = "wheel_2_2_damper";
-				steering = false;
-				center   = "wheel_2_2_axis";
+				steering = 0;
+				center = "wheel_2_2_axis";
 				boundary = "wheel_2_2_bound";
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;				
+				maxHandBrakeTorque = 12000;
 			};
-		};		
+		};
 		class PlayerSteeringCoefficients
 		{
-			 turnIncreaseConst 	= 0.3;
-			 turnIncreaseLinear = 1.0;
-			 turnIncreaseTime 	= 1.0;
-             turnDecreaseConst 	= 5.0;
-			 turnDecreaseLinear = 3.0;
-			 turnDecreaseTime 	= 0.0;
-             maxTurnHundred 	= 0.7;
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
 		};
         memoryPointTrackFLL = "TrackFLL";
 		memoryPointTrackFLR = "TrackFLR";
@@ -10150,7 +9223,6 @@ class CfgVehicles
 				effect 		= "ExhaustsEffect";
 			};
 		};
-
 		class Reflectors
 		{
 			class LightCarHeadL01
@@ -10202,7 +9274,7 @@ class CfgVehicles
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
 					fov 				= 0.7;
-				}; 			
+				};
 			};
 			class RearCam
 			{
@@ -10213,8 +9285,8 @@ class CfgVehicles
 					pointDirection		= "PIP1_dir";
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
+					fov 				= 0.7;
+				};
 			};
 			class FrontCam
 			{
@@ -10225,436 +9297,86 @@ class CfgVehicles
 					pointDirection		= "PIP2_dir";
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};			
+					fov 				= 0.7;
+				};
+			};
 		};
-		attenuationEffectType = "CarAttenuation";
-		occludeSoundsWhenIn = 1;
-		obstructSoundsWhenIn = 1;
-		soundGetIn[] = {"A3\sounds_f\vehicles\armor\noises\get_in_out",0.56234133,1};
-		soundGetOut[] = {"A3\sounds_f\vehicles\armor\noises\get_in_out",0.56234133,1,20};
-		soundDammage[] = {"",0.56234133,1};
-		soundEngineOnInt[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_start",0.39810717,1.0};
-		soundEngineOnExt[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_start",0.56234133,1.0,200};
-		soundEngineOffInt[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_stop",0.39810717,1.0};
-		soundEngineOffExt[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_stop",0.56234133,1.0,200};
-		buildCrash0[] = {"A3\sounds_f\Vehicles\crashes\crash_08",1.0,1,200};
-		buildCrash1[] = {"A3\sounds_f\Vehicles\crashes\crash_09",1.0,1,200};
-		buildCrash2[] = {"A3\sounds_f\Vehicles\crashes\crash_10",1.0,1,200};
-		buildCrash3[] = {"A3\sounds_f\Vehicles\crashes\crash_11",1.0,1,200};
-		soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-		WoodCrash0[] = {"A3\sounds_f\Vehicles\crashes\crash_08",1.0,1,200};
-		WoodCrash1[] = {"A3\sounds_f\Vehicles\crashes\crash_09",1.0,1,200};
-		WoodCrash2[] = {"A3\sounds_f\Vehicles\crashes\crash_10",1.0,1,200};
-		WoodCrash3[] = {"A3\sounds_f\Vehicles\crashes\crash_11",1.0,1,200};
-		WoodCrash4[] = {"A3\sounds_f\Vehicles\crashes\crash_01",1.0,1,200};
-		WoodCrash5[] = {"A3\sounds_f\Vehicles\crashes\crash_08",1.0,1,200};
-		soundWoodCrash[] = {"woodCrash0",0.166,"woodCrash1",0.166,"woodCrash2",0.166,"woodCrash3",0.166,"woodCrash4",0.166,"woodCrash5",0.166};
-		ArmorCrash0[] = {"A3\sounds_f\Vehicles\crashes\crash_08",1.0,1,200};
-		ArmorCrash1[] = {"A3\sounds_f\Vehicles\crashes\crash_09",1.0,1,200};
-		ArmorCrash2[] = {"A3\sounds_f\Vehicles\crashes\crash_10",1.0,1,200};
-		ArmorCrash3[] = {"A3\sounds_f\Vehicles\crashes\crash_11",1.0,1,200};
-		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
+		attenuationEffectType = "TankAttenuation";
+		soundGetIn[] = {"A3\Sounds_F_EPB\Tracked\noises\get_in_out", 0.562341, 1};
+		soundGetOut[] = {"A3\Sounds_F_EPB\Tracked\noises\get_in_out", 0.562341, 1, 20};
+		soundTurnIn[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.77828, 1, 20};
+		soundTurnOut[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.77828, 1, 20};
+		soundTurnInInternal[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.77828, 1, 20};
+		soundTurnOutInternal[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.77828, 1, 20};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\armor\APC_Wheeled_01\APC_Wheeled_01_Engine_Int_Start", 0.794328, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\armor\APC_Wheeled_01\APC_Wheeled_01_Engine_Int_Stop", 0.794328, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\armor\APC_Wheeled_01\APC_Wheeled_01_Engine_Ext_Start", 1, 1, 100};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\armor\APC_Wheeled_01\APC_Wheeled_01_Engine_Ext_Stop", 1, 1, 100};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Building_01", 1, 1, 200};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Building_02", 1, 1, 200};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Building_03", 1, 1, 200};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Building_04", 1, 1, 200};
+		soundBuildingCrash[] = {"buildCrash0", 0.25, "buildCrash1", 0.25, "buildCrash2", 0.25, "buildCrash3", 0.25};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_01", 1, 1, 200};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_02", 1, 1, 200};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_03", 1, 1, 200};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_04", 1, 1, 200};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_05", 1, 1, 200};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_06", 1, 1, 200};
+		soundWoodCrash[] = {"woodCrash0", 0.166, "woodCrash1", 0.166, "woodCrash2", 0.166, "woodCrash3", 0.166, "woodCrash4", 0.166, "woodCrash5", 0.166};
+		ArmorCrash0[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Armor_01", 1, 1, 200};
+		ArmorCrash1[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Armor_02", 1, 1, 200};
+		ArmorCrash2[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Armor_03", 1, 1, 200};
+		ArmorCrash3[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Armor_04", 1, 1, 200};
+		soundArmorCrash[] = {"ArmorCrash0", 0.25, "ArmorCrash1", 0.25, "ArmorCrash2", 0.25, "ArmorCrash3", 0.25};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Bush_01", 0.630957, 1, 100};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Bush_02", 0.630957, 1, 100};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Bush_03", 0.630957, 1, 100};
+		soundBushCrash[] = {"BushCrash1", 0.33, "BushCrash2", 0.33, "BushCrash3", 0.33};
 		class Sounds
 		{
-			class Idle_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_01",0.35481337,1,200};
-				frequency = "0.95 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
-			};
-			class Engine
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_02",0.39810717,1,200};
-				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
-			};
-			class Engine1_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_03",0.4466836,1,200};
-				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
-			};
-			class Engine2_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_06",0.5011872,1,250};
-				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
-			};
-			class Engine3_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_07",0.56234133,1,300};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
-			};
-			class Engine4_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_08",0.63095737,1,300};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
-			};
-			class Engine5_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_10",0.70794576,1,300};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
-				volume = "engineOn*camPos*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
-			};
-			class IdleThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_01",0.56234133,1,200};
-				frequency = "0.8 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
-			};
-			class EngineThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_02",0.63095737,1,200};
-				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
-			};
-			class Engine1_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_03",0.63095737,1,230};
-				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
-			};
-			class Engine2_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_06",0.70794576,1,250};
-				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
-			};
-			class Engine3_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_07",0.70794576,1,350};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
-			};
-			class Engine4_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_08",1.0,1,350};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
-			};
-			class Engine5_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_10",1.1220185,1,400};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
-			};
-			class Idle_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_01",0.31622776,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
-			};
-			class Engine_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_02",0.35481337,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
-			};
-			class Engine1_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_03",0.39810717,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
-			};
-			class Engine2_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_06",0.4466836,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
-			};
-			class Engine3_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_07",0.5011872,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
-			};
-			class Engine4_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_08",0.56234133,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
-			};
-			class Engine5_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_10",0.63095737,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
-			};
-			class IdleThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_01",0.35481337,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
-			};
-			class EngineThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_02",0.39810717,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
-			};
-			class Engine1_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_03",0.4466836,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
-			};
-			class Engine2_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_06",0.4466836,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
-			};
-			class Engine3_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_07",0.5011872,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
-			};
-			class Engine4_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_08",0.56234133,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
-			};
-			class Engine5_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_10",0.63095737,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
-			};
-			class NoiseInt
-			{
-				sound[] = {"A3\sounds_f\vehicles\armor\noises\noise_tank_int_1",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*(angVelocity max 0.04)*(speed factor[4, 15])";
-			};
-			class NoiseExt
-			{
-				sound[] = {"A3\sounds_f\vehicles\armor\noises\noise_tank_ext_1",0.63095737,1.0,150};
-				frequency = "1";
-				volume = "camPos*(angVelocity max 0.04)*(speed factor[4, 15])";
-			};
-			class TiresRockOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*rock*(speed factor[2, 20])";
-			};
-			class TiresSandOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*grass*(speed factor[2, 20])";
-			};
-			class TiresMudOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",1.5848932,1.0,90};
-				frequency = "1";
-				volume = "camPos*(damper0 max 0.02)*(speed factor[0, 8])";
-			};
-			class TiresRockIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_1",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*rock*(speed factor[2, 20])";
-			};
-			class TiresSandIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-sand2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*grass*(speed factor[2, 20])";
-			};
-			class TiresMudIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-mud2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_gravel_1",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_asfalt_2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",0.5011872,1.0};
-				frequency = "1";
-				volume = "(damper0 max 0.1)*(speed factor[0, 8])*(1-camPos)";
-			};
-			class breaking_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(LongSlipDrive Factor[-0.2, -0.3])*(Speed Factor[2, 10])";
-			};
-			class acceleration_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(LongSlipDrive Factor[0.2, 0.3])*(Speed Factor[10, 1])";
-			};
-			class turn_left_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(LongSlipDrive Factor[-0.2, -0.3])*(Speed Factor[2, 10])";
-			};
-			class acceleration_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(LongSlipDrive Factor[0.2, 0.3])*(Speed Factor[10, 1])";
-			};
-			class turn_left_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(LongSlipDrive Factor[-0.2, -0.3])*(Speed Factor[2, 6])";
-			};
-			class acceleration_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(LongSlipDrive Factor[0.2, 0.3])*(Speed Factor[10, 1])";
-			};
-			class turn_left_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(LongSlipDrive Factor[-0.2, -0.3])*(Speed Factor[2, 6])";
-			};
-			class acceleration_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(LongSlipDrive Factor[0.2, 0.3])*(Speed Factor[10, 1])";
-			};
-			class turn_left_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
+			soundSetsInt[] = {"APC_Wheeled_01_Engine_RPM0_INT_SoundSet", "APC_Wheeled_01_Engine_RPM1_INT_SoundSet", "APC_Wheeled_01_Engine_RPM2_INT_SoundSet", "APC_Wheeled_01_Engine_RPM3_INT_SoundSet", "APC_Wheeled_01_Engine_RPM4_INT_SoundSet", "APC_Wheeled_01_Engine_RPM5_INT_SoundSet", "APC_Wheeled_01_Interior_Tone_Engine_Off_SoundSet", "APC_Wheeled_01_Interior_Tone_Engine_On_SoundSet", "APC_Wheeled_01_Rattling_INT_SoundSet", "APC_Wheeled_01_Stress_INT_SoundSet", "APC_Wheeled_01_Rain_INT_SoundSet", "APC_Wheeled_01_Tires_Rock_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Grass_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Sand_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Mud_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Water_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Rock_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Grass_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Sand_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Mud_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Water_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Turn_Hard_INT_SoundSet", "APC_Wheeled_01_Tires_Turn_Soft_INT_SoundSet", "APC_Wheeled_01_Tires_Brake_Hard_INT_SoundSet", "APC_Wheeled_01_Tires_Brake_Soft_INT_SoundSet"};
+			soundSetsExt[] = {"APC_Wheeled_01_Engine_RPM0_EXT_SoundSet", "APC_Wheeled_01_Engine_RPM1_EXT_SoundSet", "APC_Wheeled_01_Engine_RPM2_EXT_SoundSet", "APC_Wheeled_01_Engine_RPM3_EXT_SoundSet", "APC_Wheeled_01_Engine_RPM4_EXT_SoundSet", "APC_Wheeled_01_Engine_RPM5_EXT_SoundSet", "APC_Wheeled_01_Stress_EXT_SoundSet", "APC_Wheeled_01_Rain_EXT_SoundSet", "APC_Wheeled_01_Tires_Rock_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Grass_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Sand_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Mud_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Water_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Rock_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Grass_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Sand_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Mud_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Water_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Turn_Hard_EXT_SoundSet", "APC_Wheeled_01_Tires_Turn_Soft_EXT_SoundSet", "APC_Wheeled_01_Tires_Brake_Hard_EXT_SoundSet", "APC_Wheeled_01_Tires_Brake_Soft_EXT_SoundSet"};
 		};
-	};	
-    class a2_Vodnik_Epoch: a2_Vodnik_base
+	};
+    class A2_Vodnik_EPOCH: a2_Vodnik_base
 	{
-        displayName = "Classic Vodnik";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\vodnik_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\vodnik_ca.paa";
 		scope=2;
-		scopeCurator=2;
-        hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[]=
-		{
-            "x\addons\a2_epoch_vehicles\wheeled\vodnik\Data\gaz39371_vodnik_basis_01_co.paa"
-		};
 	};
     class a2_Volha_base: car_F
 	{
+		displayName="Classic Volha";
 		model 	= "x\addons\a2_epoch_vehicles\wheeled\volha\a2_Volha_base";
-		displayName="volha blue";
-		scope=0; 		
-		scopeCurator=2;	
-		crew="C_man_1"; 
-		side=3; 		
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\volha_blue_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\volha_blue_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
 		faction	= CIV_F;
-        terrainCoef 	= 6.5;
-		turnCoef 		= 2.5;
-		precision 		= 10;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 150;
+		fuelCapacity	= 40;
+//        terrainCoef 	= 2.5;
+        terrainCoef 	= 4.0;
+		turnCoef = 4;
+		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
         fireResistance 	= 5;
-		armor 			= 32;
+//		armor = 30;
+		armor = 50;
+		maximumLoad		= 1250;
+		enginePower = 408;
+		maxOmega = 600;
+//		peakTorque = 680;
+		peakTorque = 425;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
-		maxFordingDepth 		= 0.5;
 		waterResistance 		= 1;
 		crewCrashProtection		= 0.25;
 		driverLeftHandAnimName 	= "drivewheel";
@@ -10665,26 +9387,44 @@ class CfgVehicles
 		getInAction 		= GetInLow;
 		getOutAction 		= GetOutLow;
 		cargoGetInAction[] 	= {"GetInLow"};
-		cargoGetOutAction[] = {"GetOutLow"}; 
-        class Turrets{};
-		class HitPoints: HitPoints
+		cargoGetOutAction[] = {"GetOutLow"};
+		idleRpm = 800;
+		redRpm = 6000;
+		wheelCircumference = 2.805;
+		class complexGearbox
 		{
-			class HitLFWheel: HitLFWheel	{armor=0.125; passThrough=0;};
-			class HitLF2Wheel: HitLF2Wheel	{armor=0.125; passThrough=0;};
-
-			class HitRFWheel: HitRFWheel	{armor=0.125; passThrough=0;};
-			class HitRF2Wheel: HitRF2Wheel 	{armor=0.125; passThrough=0;};
-
-			class HitFuel 			{armor=0.50; material=-1; name="fueltank"; visual=""; passThrough=0.2;};
-			class HitEngine 		{armor=0.50; material=-1; name="engine"; visual=""; passThrough=0.2;};
-			class HitBody: HitBody 	{name = "body"; visual="camo1"; passThrough=1;};
-
-			class HitGlass1: HitGlass1 {armor=0.25;};
-			class HitGlass2: HitGlass2 {armor=0.25;};
-			class HitGlass3: HitGlass3 {armor=0.25;};
-			class HitGlass4: HitGlass4 {armor=0.25;};
-		};		
-
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -6.5, "N", 0, "D1", 4.5, "D2", 2.5, "D3", 1.0, "D4", 0.7};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+		class HitPoints: HitPoints {};
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[]=
+		{
+             "\x\addons\a2_epoch_vehicles\wheeled\Volha\Data\volha_eciv_co.paa"
+		};
+		class TextureSources
+		{
+			class Blue
+			{
+				displayName = "Blue";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\Volha\Data\volha_eciv_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Grey
+			{
+				displayName = "Grey";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\Volha\Data\volha_gray_eciv_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+		};
+		textureList[] = {"Blue", 1, "Grey", 1};
 		class Damage
 		{
 			tex[]={};
@@ -10693,11 +9433,9 @@ class CfgVehicles
 				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_Chrome_ECIV.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_Chrome_ECIV_damage.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_Chrome_ECIV_destruct.rvmat",
-      
 				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_ECIV.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_ECIV_damage.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_ECIV_destruct.rvmat",
-
 				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_glass_ECIV.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_glass_ECIV_damage.rvmat",
 				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_glass_ECIV_destruct.rvmat"				
@@ -10705,111 +9443,94 @@ class CfgVehicles
 		};
 		thrustDelay            	= 0.2;
 		brakeIdleSpeed         	= 1.78;
-		maxSpeed               	= 150;
-		fuelCapacity           	= 45;
-		wheelCircumference     	= 2.277;
-		antiRollbarForceCoef	= 0.5;
-		antiRollbarForceLimit	= 0.5;
-		antiRollbarSpeedMin 	= 20;
-		antiRollbarSpeedMax		= 80;
-		idleRpm = 900;
-		redRpm = 6900;
-		class complexGearbox
-		{	
-			GearboxRatios[]    = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.870,"D3",1.241,"D4",0.970,"D5",0.711};
-			TransmissionRatios[] = {"High",4.111};
-			gearBoxMode        = "auto";
-			moveOffGear        = 1;
-			driveString        = "D";
-			neutralString      = "N";
-			reverseString      = "R";
-		};		
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
 		simulation = "carx";
-		dampersBumpCoef = 0.05;
-		differentialType = "front_limited";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
 		frontRearSplit = 0.5;
-		frontBias = 1.5;
-		rearBias = 1.3;
-		centreBias = 1.3;
-		clutchStrength = 15.0;
-		enginePower = 100; 
-		maxOmega = 720;
-		peakTorque = 350;
-		dampingRateFullThrottle = 0.08;
-		dampingRateZeroThrottleClutchEngaged = 0.35;
-		torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
-		changeGearMinEffectivity[]   = {0.95, 0.15, 0.95, 0.95, 0.95, 0.95, 0.95};
-		switchTime = 0.31;
-		latency = 1.0;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
 		class Wheels
 		{
 			class LF
 			{
-				boneName = "wheel_1_1_damper";
-				steering = true;
 				side = "left";
-				center   = "wheel_1_1_axis";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
 				boundary = "wheel_1_1_bound";
+				width = "0.23";
 				mass = 20;
-				MOI = 3.3;
+				MOI = 78.625;
 				dampingRate = 0.5;
-				maxBrakeTorque = 2000;
+				maxBrakeTorque = 4000;
 				maxHandBrakeTorque = 0;
-				suspTravelDirection[] = {0, -1, 0};
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				tireForceAppPointOffset = "wheel_1_1_axis";
 				maxCompression = 0.1;
-				mMaxDroop = 0.15;
-				sprungMass = 350.0;
-				springStrength = 22600;
-				springDamperRate = 8680;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
 				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 25;
-				latStiffY = 18000;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1,1}};
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
 			};
 			class LR: LF
 			{
 				boneName = "wheel_1_2_damper";
-				steering = false;
-				center   = "wheel_1_2_axis";
+				steering = 0;
+				center = "wheel_1_2_axis";
 				boundary = "wheel_1_2_bound";
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;	
+				maxHandBrakeTorque = 12000;
 			};
 			class RF: LF
 			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
 				boneName = "wheel_2_1_damper";
-				center   = "wheel_2_1_axis";
+				center = "wheel_2_1_axis";
 				boundary = "wheel_2_1_bound";
 				suspForceAppPointOffset = "wheel_2_1_axis";
 				tireForceAppPointOffset = "wheel_2_1_axis";
-				steering = true;
-				side = "right";
 			};
 			class RR: RF
 			{
 				boneName = "wheel_2_2_damper";
-				steering = false;
-				center   = "wheel_2_2_axis";
+				steering = 0;
+				center = "wheel_2_2_axis";
 				boundary = "wheel_2_2_bound";
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;				
+				maxHandBrakeTorque = 12000;
 			};
-		};		
+		};
 		class PlayerSteeringCoefficients
 		{
-			 turnIncreaseConst 	= 0.3;
-			 turnIncreaseLinear = 1.0;
-			 turnIncreaseTime 	= 1.0;
-             turnDecreaseConst 	= 5.0;
-			 turnDecreaseLinear = 3.0;
-			 turnDecreaseTime 	= 0.0;
-             maxTurnHundred 	= 0.7;
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
 		};
         memoryPointTrackFLL = "TrackFLL";
 		memoryPointTrackFLR = "TrackFLR";
@@ -10835,7 +9556,6 @@ class CfgVehicles
 				effect 		= "ExhaustsEffect";
 			};
 		};
-
 		class Reflectors
 		{
 			class LightCarHeadL01
@@ -10874,7 +9594,10 @@ class CfgVehicles
 			};
         };
         aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
-        class EventHandlers: EventHandlers {};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
 		class RenderTargets
 		{
 			class LeftMirror
@@ -10887,7 +9610,7 @@ class CfgVehicles
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
 					fov 				= 0.7;
-				}; 			
+				};
 			};
 			class RearCam
 			{
@@ -10896,1620 +9619,10 @@ class CfgVehicles
 				{
 					pointPosition		= "PIP1_pos";
 					pointDirection		= "PIP1_dir";
-					renderQuality 		= 2;
-					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};
-			class FrontCam
-			{
-				renderTarget = "rendertarget2";
-				class CameraView1
-				{
-					pointPosition		= "PIP2_pos";
-					pointDirection		= "PIP2_dir";
-					renderQuality 		= 2;
-					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};			
-		};		
-		attenuationEffectType="SemiOpenCarAttenuation";
-		soundGetIn[]=
-		{
-			"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_door",
-			0.56234133,
-			1
-		};
-		soundGetOut[]=
-		{
-			"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_door",
-			0.56234133,
-			1,
-			40
-		};
-		soundDammage[]=
-		{
-			"",
-			0.56234133,
-			1
-		};
-		soundEngineOnInt[]=
-		{
-			"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_start",
-			0.39810717,
-			1
-		};
-		soundEngineOnExt[]=
-		{
-			"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_start",
-			0.44668359,
-			1,
-			200
-		};
-		soundEngineOffInt[]=
-		{
-			"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_stop",
-			0.39810717,
-			1
-		};
-		soundEngineOffExt[]=
-		{
-			"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_stop",
-			0.44668359,
-			1,
-			200
-		};
-		buildCrash0[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",
-			1,
-			1,
-			200
-		};
-		buildCrash1[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",
-			1,
-			1,
-			200
-		};
-		buildCrash2[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",
-			1,
-			1,
-			200
-		};
-		buildCrash3[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",
-			1,
-			1,
-			200
-		};
-		soundBuildingCrash[]=
-		{
-			"buildCrash0",
-			0.25,
-			"buildCrash1",
-			0.25,
-			"buildCrash2",
-			0.25,
-			"buildCrash3",
-			0.25
-		};
-		WoodCrash0[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",
-			1,
-			1,
-			200
-		};
-		WoodCrash1[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",
-			1,
-			1,
-			200
-		};
-		WoodCrash2[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",
-			1,
-			1,
-			200
-		};
-		WoodCrash3[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",
-			1,
-			1,
-			200
-		};
-		soundWoodCrash[]=
-		{
-			"woodCrash0",
-			0.25,
-			"woodCrash1",
-			0.25,
-			"woodCrash2",
-			0.25,
-			"woodCrash3",
-			0.25
-		};
-		armorCrash0[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",
-			1,
-			1,
-			200
-		};
-		armorCrash1[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",
-			1,
-			1,
-			200
-		};
-		armorCrash2[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",
-			1,
-			1,
-			200
-		};
-		armorCrash3[]=
-		{
-			"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",
-			1,
-			1,
-			200
-		};
-		soundArmorCrash[]=
-		{
-			"ArmorCrash0",
-			0.25,
-			"ArmorCrash1",
-			0.25,
-			"ArmorCrash2",
-			0.25,
-			"ArmorCrash3",
-			0.25
-		};
-		class Sounds
-		{
-			class Idle_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_idle",
-					0.22387211,
-					1,
-					150
-				};
-				frequency="0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume="engineOn*camPos*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class Engine
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_1400rpm",
-					0.2818383,
-					1,
-					200
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume="engineOn*camPos*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2000rpm",
-					0.3548134,
-					1,
-					240
-				};
-				frequency="0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume="engineOn*camPos*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2600rpm",
-					0.39810717,
-					1,
-					280
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume="engineOn*camPos*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3200rpm",
-					0.44668359,
-					1,
-					320
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume="engineOn*camPos*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3600rpm",
-					0.50118721,
-					1,
-					360
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.2";
-				volume="engineOn*camPos*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_4000rpm",
-					0.56234133,
-					1,
-					420
-				};
-				frequency="0.95	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.15";
-				volume="engineOn*camPos*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class IdleThrust
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_idle_exhaust",
-					0.50118721,
-					1,
-					200
-				};
-				frequency="0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class EngineThrust
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_1400rpm_exhaust",
-					0.56234133,
-					1,
-					250
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_Thrust_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2000rpm_exhaust",
-					0.63095737,
-					1,
-					280
-				};
-				frequency="0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_Thrust_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_2600rpm_exhaust",
-					0.70794576,
-					1,
-					320
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_Thrust_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3200rpm_exhaust",
-					0.79432821,
-					1,
-					360
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_Thrust_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_3600rpm_exhaust",
-					1,
-					1,
-					400
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.3";
-				volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_Thrust_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_ext_4000rpm_exhaust",
-					1.2589254,
-					1,
-					450
-				};
-				frequency="0.9	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.2";
-				volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class Idle_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_idle",
-					0.17782794,
-					1
-				};
-				frequency="0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class Engine_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_1000rpm",
-					0.19952622,
-					1
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2000rpm",
-					0.25118864,
-					1
-				};
-				frequency="0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2600rpm",
-					0.2818383,
-					1
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_3200rpm",
-					0.31622776,
-					1
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_4000rpm",
-					0.3548134,
-					1
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_5000rpm",
-					0.50118721,
-					1
-				};
-				frequency="0.95	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.15";
-				volume="engineOn*(1-camPos)*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class IdleThrust_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_idle_exhaust",
-					0.31622776,
-					1
-				};
-				frequency="0.9	+	((rpm/	6900) factor[(400/	6900),(1150/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(400/	6900),(700/	6900)])	*	((rpm/	6900) factor[(1100/	6900),(900/	6900)]))";
-			};
-			class EngineThrust_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_1000rpm_exhaust",
-					0.3548134,
-					1
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(900/	6900),(2100/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(870/	6900),(1100/	6900)])	*	((rpm/	6900) factor[(2100/	6900),(1300/	6900)]))";
-			};
-			class Engine1_Thrust_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2000rpm_exhaust",
-					0.39810717,
-					1
-				};
-				frequency="0.8	+		((rpm/	6900) factor[(1300/	6900),(3100/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(1250/	6900),(2050/	6900)])	*	((rpm/	6900) factor[(3100/	6900),(2300/	6900)]))";
-			};
-			class Engine2_Thrust_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_2600rpm_exhaust",
-					0.44668359,
-					1
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(2200/	6900),(4100/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(2250/	6900),(3050/	6900)])	*	((rpm/	6900) factor[(4100/	6900),(3300/	6900)]))";
-			};
-			class Engine3_Thrust_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_3200rpm_exhaust",
-					0.50118721,
-					1
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(3300/	6900),(4900/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(3250/	6900),(4050/	6900)])	*	((rpm/	6900) factor[(4870/	6900),(4200/	6900)]))";
-			};
-			class Engine4_Thrust_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_4000rpm_exhaust",
-					0.56234133,
-					1
-				};
-				frequency="0.8	+	((rpm/	6900) factor[(4200/	6900),(6200/	6900)])*0.3";
-				volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6900) factor[(4150/	6900),(4800/	6900)])	*	((rpm/	6900) factor[(6150/	6900),(5150/	6900)]))";
-			};
-			class Engine5_Thrust_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_int_5000rpm_exhaust",
-					0.63095737,
-					1
-				};
-				frequency="0.9	+	((rpm/	6900) factor[(5100/	6900),(6900/	6900)])*0.2";
-				volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	6900) factor[(5100/	6900),(6100/	6900)])";
-			};
-			class Movement
-			{
-				sound="soundEnviron";
-				frequency="1";
-				volume="0";
-			};
-			class TiresRockOut
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",
-					0.50118721,
-					1,
-					60
-				};
-				frequency="1";
-				volume="camPos*rock*(speed factor[2, 20])";
-			};
-			class TiresSandOut
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",
-					0.50118721,
-					1,
-					60
-				};
-				frequency="1";
-				volume="camPos*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassOut
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",
-					0.50118721,
-					1,
-					60
-				};
-				frequency="1";
-				volume="camPos*grass*(speed factor[2, 20])";
-			};
-			class TiresMudOut
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",
-					0.50118721,
-					1,
-					60
-				};
-				frequency="1";
-				volume="camPos*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelOut
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",
-					0.50118721,
-					1,
-					60
-				};
-				frequency="1";
-				volume="camPos*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltOut
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",
-					0.50118721,
-					1,
-					60
-				};
-				frequency="1";
-				volume="camPos*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseOut
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\noise_ext_car_3",
-					0.39810717,
-					1,
-					90
-				};
-				frequency="1";
-				volume="camPos*(damper0 max 0.02)*(speed factor[0, 8])";
-			};
-			class TiresRockIn
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_1",
-					0.50118721,
-					1
-				};
-				frequency="1";
-				volume="(1-camPos)*rock*(speed factor[2, 20])";
-			};
-			class TiresSandIn
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\int-tires-sand2",
-					0.50118721,
-					1
-				};
-				frequency="1";
-				volume="(1-camPos)*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassIn
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_2",
-					0.50118721,
-					1
-				};
-				frequency="1";
-				volume="(1-camPos)*grass*(speed factor[2, 20])";
-			};
-			class TiresMudIn
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\int-tires-mud2",
-					0.50118721,
-					1
-				};
-				frequency="1";
-				volume="(1-camPos)*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelIn
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\int_tires_gravel_1",
-					0.50118721,
-					1
-				};
-				frequency="1";
-				volume="(1-camPos)*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltIn
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\tires\int_tires_asfalt_2",
-					0.50118721,
-					1
-				};
-				frequency="1";
-				volume="(1-camPos)*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseIn
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",
-					0.25118864,
-					1
-				};
-				frequency="1";
-				volume="(damper0 max 0.1)*(speed factor[0, 8])*(1-camPos)";
-			};
-			class breaking_ext_road
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",
-					0.70794576,
-					1,
-					80
-				};
-				frequency=1;
-				volume="engineOn*camPos*asphalt*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class acceleration_ext_road
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",
-					0.70794576,
-					1,
-					80
-				};
-				frequency=1;
-				volume="engineOn*camPos*asphalt*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 2])";
-			};
-			class turn_left_ext_road
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",
-					0.70794576,
-					1,
-					80
-				};
-				frequency=1;
-				volume="engineOn*camPos*asphalt*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[2, 15])";
-			};
-			class turn_right_ext_road
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",
-					0.70794576,
-					1,
-					80
-				};
-				frequency=1;
-				volume="engineOn*camPos*asphalt*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class breaking_ext_dirt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking",
-					0.70794576,
-					1,
-					60
-				};
-				frequency=1;
-				volume="engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class acceleration_ext_dirt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration",
-					0.70794576,
-					1,
-					60
-				};
-				frequency=1;
-				volume="engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 1])";
-			};
-			class turn_left_ext_dirt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",
-					0.70794576,
-					1,
-					60
-				};
-				frequency=1;
-				volume="engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[1, 15])";
-			};
-			class turn_right_ext_dirt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",
-					0.70794576,
-					1,
-					60
-				};
-				frequency=1;
-				volume="engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[1, 15])";
-			};
-			class breaking_int_road
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",
-					0.31622776,
-					1
-				};
-				frequency=1;
-				volume="engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class acceleration_int_road
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",
-					0.31622776,
-					1
-				};
-				frequency=1;
-				volume="engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 2])";
-			};
-			class turn_left_int_road
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",
-					0.31622776,
-					1
-				};
-				frequency=1;
-				volume="engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[2, 15])";
-			};
-			class turn_right_int_road
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",
-					0.31622776,
-					1
-				};
-				frequency=1;
-				volume="engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class breaking_int_dirt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking_int",
-					0.31622776,
-					1
-				};
-				frequency=1;
-				volume="engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[-01, -0.4])*(Speed Factor[2, 15])";
-			};
-			class acceleration_int_dirt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_16_dirt_acceleration_int",
-					0.31622776,
-					1
-				};
-				frequency=1;
-				volume="engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[0.1, 0.4])*(Speed Factor[15, 2])";
-			};
-			class turn_left_int_dirt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",
-					0.31622776,
-					1
-				};
-				frequency=1;
-				volume="engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[0.1, 0.4])*(Speed Factor[2, 15])";
-			};
-			class turn_right_int_dirt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",
-					0.31622776,
-					1
-				};
-				frequency=1;
-				volume="engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.1, -0.4])*(Speed Factor[2, 15])";
-			};
-			class Waternoise_ext
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\noises\soft_driving_in_water",
-					0.50118721,
-					1,
-					300
-				};
-				frequency="1";
-				volume="(speed factor[0, 10]) * water * camPos + (speed factor[-0.1, -10]) * water * camPos";
-			};
-			class Waternoise_int
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\noises\soft_driving_in_water_int",
-					0.3548134,
-					1,
-					100
-				};
-				frequency="1";
-				volume="(speed factor[0, 10]) * water * (1-camPos)* 0.8 + (speed factor[-0.1, -10]) * water * (1-camPos) *0.8";
-			};
-			class RainExt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\noises\rain1_ext",
-					1,
-					1,
-					100
-				};
-				frequency=1;
-				volume="camPos * (rain - rotorSpeed/2) * 2";
-			};
-			class RainInt
-			{
-				sound[]=
-				{
-					"A3\Sounds_F\vehicles\noises\rain1_int",
-					1,
-					1,
-					100
-				};
-				frequency=1;
-				volume="(1-camPos)*(rain - rotorSpeed/2)*2";
-			};
-		};
-		
-	};
-    class a2_Volha_Epoch_Grey: a2_Volha_base
-	{
-		displayName="Classic Volha Grey";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\volha_grey_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\volha_grey_ca.paa";
-		scope=2; 		
-		scopeCurator=2;	
-		crew="C_man_1"; 
-		side=3; 		
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\Volha\Data\volha_gray_eciv_co.paa"
-		};
-	};
-    class a2_Volha_Epoch_Blue: a2_Volha_base
-	{
-		displayName="Classic Volha Blue";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\volha_blue_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\volha_blue_ca.paa";
-		scope=2; 		
-		scopeCurator=2;	
-		crew="C_man_1"; 
-		side=3; 		
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\Volha\Data\volha_eciv_co.paa"
-		};
-	};	
-	class a2_suv_EPOCH_base: car_F
-	{
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv";
-		displayName="SUV 1";
-		scope=0;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-        terrainCoef 	= 6.5;
-		turnCoef 		= 2.5;
-		precision 		= 10;
-		brakeDistance 	= 3.0;
-		acceleration 	= 15;
-        fireResistance 	= 5;
-		armor 			= 32;
-		cost			= 50000;
-        transportMaxBackpacks 	= 3;
-		transportSoldier 		= 3;
-		wheelDamageRadiusCoef 	= 0.9;
-		wheelDestroyRadiusCoef 	= 0.4;
-		maxFordingDepth 		= 0.5;
-		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
-		driverLeftHandAnimName 	= "drivewheel";
-		driverRightHandAnimName = "drivewheel";
-		class TransportItems {};
-        driverAction 		= driver_offroad01;
-		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
-		getInAction 		= GetInLow;
-		getOutAction 		= GetOutLow;
-		cargoGetInAction[] 	= {"GetInLow"};
-		cargoGetOutAction[] = {"GetOutLow"};		
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_co.paa"
-		};
-        class Turrets{};
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel: HitLFWheel	{armor=0.125; passThrough=0;};
-			class HitLF2Wheel: HitLF2Wheel	{armor=0.125; passThrough=0;};
-
-			class HitRFWheel: HitRFWheel	{armor=0.125; passThrough=0;};
-			class HitRF2Wheel: HitRF2Wheel 	{armor=0.125; passThrough=0;};
-
-			class HitFuel 			{armor=0.50; material=-1; name="fueltank"; visual=""; passThrough=0.2;};
-			class HitEngine 		{armor=0.50; material=-1; name="engine"; visual=""; passThrough=0.2;};
-			class HitBody: HitBody 	{name = "body"; visual="camo1"; passThrough=1;};
-
-			class HitGlass1: HitGlass1 {armor=0.25;};
-			class HitGlass2: HitGlass2 {armor=0.25;};
-			class HitGlass3: HitGlass3 {armor=0.25;};
-			class HitGlass4: HitGlass4 {armor=0.25;};
-		};		
-		attenuationEffectType = "SemiOpenCarAttenuation2";
-		soundGetIn[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_door",0.31622776,1};
-		soundGetOut[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_door",0.31622776,1,60};
-		soundDammage[] = {"",0.56234133,1};
-		soundEngineOnInt[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_start_int",0.4466836,1.0};
-		soundEngineOnExt[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_start",0.5011872,1.0,200};
-		soundEngineOffInt[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_stop_int",0.4466836,1.0};
-		soundEngineOffExt[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_stop",0.5011872,1.0,100};
-		insideSoundCoef = 1.0;
-		buildCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,200};
-		buildCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,200};
-		buildCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,200};
-		buildCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,200};
-		soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-		WoodCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		WoodCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		WoodCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		WoodCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_wood_ext_1",1.0,1,200};
-		soundWoodCrash[] = {"woodCrash0",0.25,"woodCrash1",0.25,"woodCrash2",0.25,"woodCrash3",0.25};
-		armorCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,200};
-		armorCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,200};
-		armorCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,200};
-		armorCrash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,200};
-		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
-		Crash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1.0,1,200};
-		Crash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1.0,1,200};
-		Crash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1.0,1,200};
-		Crash3[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4",1.0,1,200};
-		soundCrashes[] = {"Crash0",0.25,"Crash1",0.25,"Crash2",0.25,"Crash3",0.25};
-		class Sounds
-		{
-			class Idle_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_idle",0.2818383,1,200};
-				frequency = "0.9	+	((rpm/	6000) factor[(400/	6000),(1100/	6000)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6000) factor[(200/	6000),(600/	6000)])	*	((rpm/	6000) factor[(1100/	6000),(800/	6000)]))";
-			};
-			class Engine
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_03",0.31622776,1,200};
-				frequency = "0.8	+	((rpm/	6000) factor[(810/	6000),(2000/	6000)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6000) factor[(820/	6000),(1100/	6000)])	*	((rpm/	6000) factor[(2000/	6000),(1350/	6000)]))";
-			};
-			class Engine1_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_05",0.3548134,1,210};
-				frequency = "0.8	+	((rpm/	6000) factor[(1300/	6000),(2700/	6000)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6000) factor[(1300/	6000),(2000/	6000)])	*	((rpm/	6000) factor[(2700/	6000),(2150/	6000)]))";
-			};
-			class Engine2_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_07",0.39810717,1,220};
-				frequency = "0.8	+	((rpm/	6000) factor[(2100/	6000),(3500/	6000)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6000) factor[(2150/	6000),(2650/	6000)])	*	((rpm/	6000) factor[(3550/	6000),(2900/	6000)]))";
-			};
-			class Engine3_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_09",0.4466836,1,230};
-				frequency = "0.8	+	((rpm/	6000) factor[(2900/	6000),(4150/	6000)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6000) factor[(2900/	6000),(3500/	6000)])	*	((rpm/	6000) factor[(4180/	6000),(3700/	6000)]))";
-			};
-			class Engine4_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_11",0.39810717,1,240};
-				frequency = "0.8	+	((rpm/	6000) factor[(3700/	6000),(5200/	6000)])*0.2";
-				volume = "engineOn*camPos*(((rpm/	6000) factor[(3700/	6000),(4100/	6000)])	*	((rpm/	6000) factor[(5200/	6000),(4500/	6000)]))";
-			};
-			class Engine5_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_13",0.3548134,1,250};
-				frequency = "0.95	+	((rpm/	6000) factor[(4500/	6000),(6000/	6000)])*0.2";
-				volume = "engineOn*camPos*((rpm/	6000) factor[(4500/	6000),(5600/	6000)])";
-			};
-			class IdleThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_idle",0.39810717,1,280};
-				frequency = "0.9	+	((rpm/	6000) factor[(400/	6000),(1100/	6000)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(200/	6000),(600/	6000)])	*	((rpm/	6000) factor[(1100/	6000),(800/	6000)]))";
-			};
-			class EngineThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_03",0.4466836,1,300};
-				frequency = "0.8	+	((rpm/	6000) factor[(810/	6000),(2000/	6000)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(820/	6000),(1100/	6000)])	*	((rpm/	6000) factor[(2000/	6000),(1350/	6000)]))";
-			};
-			class Engine1_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_05",0.5011872,1,310};
-				frequency = "0.8	+	((rpm/	6000) factor[(1300/	6000),(2700/	6000)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(1300/	6000),(2000/	6000)])	*	((rpm/	6000) factor[(2700/	6000),(2150/	6000)]))";
-			};
-			class Engine2_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_07",0.56234133,1,320};
-				frequency = "0.8	+	((rpm/	6000) factor[(2100/	6000),(3500/	6000)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(2150/	6000),(2650/	6000)])	*	((rpm/	6000) factor[(3550/	6000),(2900/	6000)]))";
-			};
-			class Engine3_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_09",0.63095737,1,330};
-				frequency = "0.8	+	((rpm/	6000) factor[(2900/	6000),(4150/	6000)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(2900/	6000),(3500/	6000)])	*	((rpm/	6000) factor[(4180/	6000),(3700/	6000)]))";
-			};
-			class Engine4_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_11",0.56234133,1,340};
-				frequency = "0.8	+	((rpm/	6000) factor[(3700/	6000),(5200/	6000)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(3700/	6000),(4100/	6000)])	*	((rpm/	6000) factor[(5200/	6000),(4500/	6000)]))";
-			};
-			class Engine5_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_13",0.5011872,1,350};
-				frequency = "0.9	+	((rpm/	6000) factor[(4500/	6000),(6000/	6000)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	6000) factor[(4500/	6000),(5600/	6000)])";
-			};
-			class Idle_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_idle_int",0.25118864,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(400/	6000),(1100/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6000) factor[(200/	6000),(600/	6000)])	*	((rpm/	6000) factor[(1100/	6000),(800/	6000)]))";
-			};
-			class Engine_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_03_int",0.2818383,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(810/	6000),(2000/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6000) factor[(820/	6000),(1100/	6000)])	*	((rpm/	6000) factor[(2000/	6000),(1350/	6000)]))";
-			};
-			class Engine1_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_05_int",0.31622776,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(1300/	6000),(2700/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6000) factor[(1300/	6000),(2000/	6000)])	*	((rpm/	6000) factor[(2700/	6000),(2150/	6000)]))";
-			};
-			class Engine2_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_07_int",0.3548134,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(2100/	6000),(3500/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6000) factor[(2150/	6000),(2650/	6000)])	*	((rpm/	6000) factor[(3550/	6000),(2900/	6000)]))";
-			};
-			class Engine3_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_09_int",0.39810717,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(2900/	6000),(4150/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6000) factor[(2900/	6000),(3500/	6000)])	*	((rpm/	6000) factor[(4180/	6000),(3700/	6000)]))";
-			};
-			class Engine4_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_11_int",0.4466836,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(3700/	6000),(5200/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/	6000) factor[(3700/	6000),(4100/	6000)])	*	((rpm/	6000) factor[(5200/	6000),(4500/	6000)]))";
-			};
-			class Engine5_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_engine_13_int",0.5011872,1};
-				frequency = "0.95	+	((rpm/	6000) factor[(4500/	6000),(6000/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*((rpm/	6000) factor[(4500/	6000),(5600/	6000)])";
-			};
-			class IdleThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_idle_int",0.3548134,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(400/	6000),(1100/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(200/	6000),(600/	6000)])	*	((rpm/	6000) factor[(1100/	6000),(800/	6000)]))";
-			};
-			class EngineThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_03_int",0.39810717,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(810/	6000),(2000/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(820/	6000),(1100/	6000)])	*	((rpm/	6000) factor[(2000/	6000),(1350/	6000)]))";
-			};
-			class Engine1_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_05_int",0.4466836,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(1300/	6000),(2700/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(1300/	6000),(2000/	6000)])	*	((rpm/	6000) factor[(2700/	6000),(2150/	6000)]))";
-			};
-			class Engine2_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_07_int",0.5011872,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(2100/	6000),(3500/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(2150/	6000),(2650/	6000)])	*	((rpm/	6000) factor[(3550/	6000),(2900/	6000)]))";
-			};
-			class Engine3_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_09_int",0.5011872,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(2900/	6000),(4150/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(2900/	6000),(3500/	6000)])	*	((rpm/	6000) factor[(4180/	6000),(3700/	6000)]))";
-			};
-			class Engine4_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_11_int",0.56234133,1};
-				frequency = "0.8	+	((rpm/	6000) factor[(3700/	6000),(5200/	6000)])*0.3";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	6000) factor[(3700/	6000),(4100/	6000)])	*	((rpm/	6000) factor[(5200/	6000),(4500/	6000)]))";
-			};
-			class Engine5_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\SUV_01\SUV_01_exhaust_13_int",0.63095737,1};
-				frequency = "0.9	+	((rpm/	6000) factor[(4500/	6000),(6000/	6000)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	6000) factor[(4500/	6000),(5600/	6000)])";
-			};
-			class TiresRockOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",0.56234133,1.0,60};
-				frequency = "1";
-				volume = "camPos*rock*(speed factor[2, 20])";
-			};
-			class TiresSandOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",0.56234133,1.0,60};
-				frequency = "1";
-				volume = "camPos*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",0.56234133,1.0,60};
-				frequency = "1";
-				volume = "camPos*grass*(speed factor[2, 20])";
-			};
-			class TiresMudOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",0.56234133,1.0,60};
-				frequency = "1";
-				volume = "camPos*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",0.56234133,1.0,60};
-				frequency = "1";
-				volume = "camPos*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",0.8912509,1.0,60};
-				frequency = "1";
-				volume = "camPos*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_ext_car_3",0.31622776,1.0,90};
-				frequency = "1";
-				volume = "camPos*(damper0 max 0.02)*(speed factor[0, 8])";
-			};
-			class TiresRockIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_1",0.4466836,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*rock*(speed factor[2, 20])";
-			};
-			class TiresSandIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-sand2",0.4466836,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_2",0.4466836,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*grass*(speed factor[2, 20])";
-			};
-			class TiresMudIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-mud2",0.4466836,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_gravel_1",0.4466836,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_asfalt_2",0.4466836,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",0.19952622,1.0};
-				frequency = "1";
-				volume = "(damper0 max 0.1)*(speed factor[0, 8])*(1-camPos)";
-			};
-			class breaking_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[-0.15, -0.3])*(Speed Factor[2, 10])";
-			};
-			class acceleration_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(LongSlipDrive Factor[0.15, 0.3])*(Speed Factor[10, 0])";
-			};
-			class turn_left_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",0.70794576,1,80};
-				frequency = 1;
-				volume = "engineOn*camPos*asphalt*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[-0.15, -0.3])*(Speed Factor[2, 10])";
-			};
-			class acceleration_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\acceleration_dirt_ext_1",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(LongSlipDrive Factor[0.15, 0.3])*(Speed Factor[10, 0])";
-			};
-			class turn_left_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt",0.70794576,1,60};
-				frequency = 1;
-				volume = "engineOn*camPos*(1-asphalt)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",0.39810717,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[-0.1, -0.3])*(Speed Factor[1,15])";
-			};
-			class acceleration_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.39810717,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(LongSlipDrive Factor[0.1, 0.3])*(Speed Factor[15, 1])";
-			};
-			class turn_left_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.39810717,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[0.1, 0.3])*(Speed Factor[1, 15])";
-			};
-			class turn_right_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",0.39810717,1};
-				frequency = 1;
-				volume = "engineOn*asphalt*(1-camPos)*(latSlipDrive Factor[-0.1, -0.3])*(Speed Factor[1, 15])";
-			};
-			class breaking_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_14_dirt_breaking_int",0.39810717,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[-0.1, -0.3])*(Speed Factor[2, 15])";
-			};
-			class acceleration_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\acceleration_dirt_int_1",0.39810717,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(LongSlipDrive Factor[0.1, 0.3])*(Speed Factor[15, 2])";
-			};
-			class turn_left_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.39810717,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[0.1, 0.3])*(Speed Factor[2, 15])";
-			};
-			class turn_right_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_18_dirt_int",0.39810717,1};
-				frequency = 1;
-				volume = "engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.1, -0.3])*(Speed Factor[2, 15])";
-			};
-			class Waternoise_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\soft_driving_in_water",0.5011872,1,300};
-				frequency = "1";
-				volume = "(speed factor[0, 10]) * water * camPos + (speed factor[-0.1, -10]) * water * camPos";
-			};
-			class Waternoise_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\soft_driving_in_water_int",0.39810717,1,100};
-				frequency = "1";
-				volume = "(speed factor[0, 10]) * water * (1-camPos) + (speed factor[-0.1, -10]) * water * (1-camPos)";
-			};
-			class RainExt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_ext",1.0,1.0,100};
-				frequency = 1;
-				volume = "camPos * (rain - rotorSpeed/2) * 2";
-			};
-			class RainInt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_int",1.0,1.0,100};
-				frequency = 1;
-				volume = "(1-camPos)*(rain - rotorSpeed/2)*2";
-			};
-		};
-		class Damage
-		{
-			tex[]={};
-			mat[]=
-			{
-				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body.rvmat",
-				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_damage.rvmat",
-				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_destruct.rvmat",
-
-				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_chrom.rvmat",
-				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_chrom_damage.rvmat",
-				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_chrom_destruct.rvmat",
-
-				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_glass.rvmat",
-				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_glass_damage.rvmat",
-				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_glass_destruct.rvmat"			
-			};
-		};	
-		thrustDelay            	= 0.2;
-		brakeIdleSpeed         	= 1.78;
-		maxSpeed               	= 150;
-		fuelCapacity           	= 45;
-		wheelCircumference     	= 2.277;
-		antiRollbarForceCoef	= 0.5;
-		antiRollbarForceLimit	= 0.5;
-		antiRollbarSpeedMin 	= 20;
-		antiRollbarSpeedMax		= 80;
-		idleRpm = 900;
-		redRpm = 6900;
-		class complexGearbox
-		{	
-			GearboxRatios[]    = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.870,"D3",1.241,"D4",0.970,"D5",0.711};
-			TransmissionRatios[] = {"High",4.111};
-			gearBoxMode        = "auto";
-			moveOffGear        = 1;
-			driveString        = "D";
-			neutralString      = "N";
-			reverseString      = "R";
-		};		
-		simulation = "carx";
-		dampersBumpCoef = 0.05;
-		differentialType = "front_limited";
-		frontRearSplit = 0.5;
-		frontBias = 1.5;
-		rearBias = 1.3;
-		centreBias = 1.3;
-		clutchStrength = 15.0;
-		enginePower = 100; 
-		maxOmega = 720;
-		peakTorque = 350;
-		dampingRateFullThrottle = 0.08;
-		dampingRateZeroThrottleClutchEngaged = 0.35;
-		torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
-		changeGearMinEffectivity[]   = {0.95, 0.15, 0.95, 0.95, 0.95, 0.95, 0.95};
-		switchTime = 0.31;
-		latency = 1.0;
-		class Wheels
-		{
-			class LF
-			{
-				boneName = "wheel_1_1_damper";
-				steering = true;
-				side = "left";
-				center   = "wheel_1_1_axis";
-				boundary = "wheel_1_1_bound";
-				mass = 20;
-				MOI = 3.3;
-				dampingRate = 0.5;
-				maxBrakeTorque = 2000;
-				maxHandBrakeTorque = 0;
-				suspTravelDirection[] = {0, -1, 0};
-				suspForceAppPointOffset = "wheel_1_1_axis";
-				tireForceAppPointOffset = "wheel_1_1_axis";
-				maxCompression = 0.1;
-				mMaxDroop = 0.15;
-				sprungMass = 350.0;
-				springStrength = 22600;
-				springDamperRate = 8680;
-				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 25;
-				latStiffY = 18000;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1,1}};
-			};
-			class LR: LF
-			{
-				boneName = "wheel_1_2_damper";
-				steering = false;
-				center   = "wheel_1_2_axis";
-				boundary = "wheel_1_2_bound";
-				suspForceAppPointOffset = "wheel_1_2_axis";
-				tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;	
-			};
-			class RF: LF
-			{
-				boneName = "wheel_2_1_damper";
-				center   = "wheel_2_1_axis";
-				boundary = "wheel_2_1_bound";
-				suspForceAppPointOffset = "wheel_2_1_axis";
-				tireForceAppPointOffset = "wheel_2_1_axis";
-				steering = true;
-				side = "right";
-			};
-			class RR: RF
-			{
-				boneName = "wheel_2_2_damper";
-				steering = false;
-				center   = "wheel_2_2_axis";
-				boundary = "wheel_2_2_bound";
-				suspForceAppPointOffset = "wheel_2_2_axis";
-				tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;				
-			};
-		};		
-		class PlayerSteeringCoefficients
-		{
-			 turnIncreaseConst 	= 0.3;
-			 turnIncreaseLinear = 1.0;
-			 turnIncreaseTime 	= 1.0;
-             turnDecreaseConst 	= 5.0;
-			 turnDecreaseLinear = 3.0;
-			 turnDecreaseTime 	= 0.0;
-             maxTurnHundred 	= 0.7;
-		};
-        memoryPointTrackFLL = "TrackFLL";
-		memoryPointTrackFLR = "TrackFLR";
-		memoryPointTrackBLL = "TrackBLL";
-		memoryPointTrackBLR = "TrackBLR";
-		memoryPointTrackFRL = "TrackFRL";
-		memoryPointTrackFRR = "TrackFRR";
-		memoryPointTrackBRL = "TrackBRL";
-		memoryPointTrackBRR = "TrackBRR";
-        class Exhausts
-		{
-			class Exhaust1
-			{
-				position 	= "exhaust";
-				direction 	= "exhaust_dir";
-				effect 		= "ExhaustsEffect";
-			};
-
-			class Exhaust2
-			{
-				position 	= "exhaust2_pos";
-				direction 	= "exhaust2_dir";
-				effect 		= "ExhaustsEffect";
-			};
-		};
-
-		class Reflectors
-		{
-			class LightCarHeadL01
-			{
-				color[] 		= {1900, 1800, 1700};
-				ambient[]		= {5, 5, 5};
-				position 		= "LightCarHeadL01";
-				direction 		= "LightCarHeadL01_end";
-				hitpoint 		= "Light_L";
-				selection 		= "Light_L";
-				size 			= 1;
-				innerAngle 		= 100;
-				outerAngle 		= 179;
-				coneFadeCoef 	= 10;
-				intensity 		= 1;
-				useFlare 		= true;
-				dayLight 		= false;
-				flareSize 		= 1.0;
-
-				class Attenuation
-				{
-					start 			= 1.0;
-					constant 		= 0;
-					linear 			= 0;
-					quadratic 		= 0.25;
-					hardLimitStart 	= 30;
-					hardLimitEnd 	= 60;
-				};
-			};
-            class LightCarHeadR01: LightCarHeadL01
-			{
-				position 	= "LightCarHeadR01";
-				direction 	= "LightCarHeadR01_end";
-				hitpoint 	= "Light_R";
-				selection 	= "Light_R";
-			};
-        };
-        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
-        class EventHandlers: EventHandlers {};
-		class RenderTargets
-		{
-			class LeftMirror
-			{
-				renderTarget = "rendertarget0";
-				class CameraView1
-				{
-					pointPosition		= "PIP0_pos";
-					pointDirection		= "PIP0_dir";
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
 					fov 				= 0.7;
-				}; 			
-			};
-			class RearCam
-			{
-				renderTarget = "rendertarget1";
-				class CameraView1
-				{
-					pointPosition		= "PIP1_pos";
-					pointDirection		= "PIP1_dir";
-					renderQuality 		= 2;
-					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
+				};
 			};
 			class FrontCam
 			{
@@ -12518,857 +9631,73 @@ class CfgVehicles
 				{
 					pointPosition		= "PIP2_pos";
 					pointDirection		= "PIP2_dir";
-					renderQuality 		= 2;
-					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};			
-		};	
-	
-	};
-    class a2_suv_EPOCH: a2_suv_EPOCH_base
-	{
-		displayName="Classic SUV(modded)";
-		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\suv_ca.paa";		
-		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\suv_ca.paa";
-		scope=2;
-		scopeCurator=2;	
-		crew="C_man_1"; 
-		side=3; 		
-		faction	= CIV_F;
-		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[]=
-		{
-             "x\addons\a2_epoch_vehicles\wheeled\Volha\Data\volha_eciv_co.paa"
-		};
-	};
-	class Epoch_Ural: Car_F
-	{
-		class Exhausts
-		{
-			class Exhaust1
-			{
-				position = "exhaust";
-				direction = "exhaust_dir";
-				effect = "ExhaustEffectHEMTT";
-			};
-		};
-		class HitPoints: HitPoints
-		{
-			class HitRGlass;
-			class HitLGlass;
-			class HitGlass1;
-			class HitGlass2;
-			class HitGlass3;
-			class HitGlass4;
-			class HitGlass5;
-			class HitBody;
-			class HitFuel;
-			class HitLFWheel;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-			class HitRF2Wheel;
-			class HitEngine;
-		};
-		class EventHandlers;
-		class AnimationSources;
-
-	};
-	class Epoch_Ural_base: Epoch_Ural
-	{
-		author = "Bohemia_Interactive/Helion4";
-		mapSize = 12.02;
-		vehicleClass = "Car";
-		displayName="Ural_Base";
-		scope=0;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-        terrainCoef 	= 6.5;
-		turnCoef 		= 2.5;
-		precision 		= 10;
-		brakeDistance 	= 3.0;
-		acceleration 	= 15;
-        fireResistance 	= 5;
-		armor 			= 32;
-		cost			= 50000;
-        transportMaxBackpacks 	= 3;
-		transportSoldier 		= 3;
-		wheelDamageRadiusCoef 	= 0.9;
-		wheelDestroyRadiusCoef 	= 0.4;
-		maxFordingDepth 		= 0.5;
-		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
-		driverLeftHandAnimName 	= "drivewheel";
-		driverRightHandAnimName = "drivewheel";
-		class TransportItems {};
-        driverAction 		= driver_offroad01;
-		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
-		getInAction 		= GetInLow;
-		getOutAction 		= GetOutLow;
-		cargoGetInAction[] 	= {"GetInLow"};
-		cargoGetOutAction[] = {"GetOutLow"}; 
-        class Turrets{};		
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel: HitLFWheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-			};
-			class HitLF2Wheel: HitLF2Wheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-			};
-			class HitRFWheel: HitRFWheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-			};
-			class HitRF2Wheel: HitRF2Wheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-			};
-			class HitFuel
-			{
-				armor = 0.5;
-				material = -1;
-				armorComponent = "hit_fuel";
-				name = "palivo";
-				visual = "-";
-				passThrough = 0.5;
-				minimalHit = 0.2;
-				explosionShielding = 0.2;
-				radius = 0.25;
-			};
-			class HitEngine
-			{
-				armor = 0.5;
-				material = -1;
-				armorComponent = "hit_engine";
-				name = "motor";
-				visual = "-";
-				passThrough = 0.3;
-				minimalHit = 0.2;
-				explosionShielding = 0.2;
-				radius = 0.45;
-			};			
-			class HitBody
-			{
-				armor = 6.0;
-				material = -1;
-				name = "karoserie";
-				visual = "zbytek";
-				passThrough = 1.0;
-				minimalHit = 0.01;
-				explosionShielding = 1.5;
-				radius = 0.45;
-			};
-            class HitGlass1: HitGlass1
-			{
-				armor = 1.5;
-				explosionShielding = 3;
-				radius = 0.25;
-			};
-			class HitGlass2: HitGlass2
-			{
-				armor = 1.5;
-				explosionShielding = 3;
-				radius = 0.25;
-			};
-			class HitGlass3: HitGlass3
-			{
-				armor = 1.5;
-				explosionShielding = 3;
-				radius = 0.25;
-			};
-			class HitGlass4: HitGlass4
-			{
-				armor = 1.5;
-				explosionShielding = 3;
-				radius = 0.25;
-			};
-		};		
-		class Damage
-		{
-			tex[] = {};
-			mat[] = {
-            "x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_interier.rvmat",
-			"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_interier_damage.rvmat",
-			"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_interier_destruct.rvmat",
-            "x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_plachta.rvmat",
-			"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_plachta_damage.rvmat",
-			"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_plachta_destruct.rvmat"
-			
-			};
-		};
-	
-		thrustDelay            	= 0.2;
-		brakeIdleSpeed         	= 1.78;
-		maxSpeed               	= 90;
-		fuelCapacity           	= 50;
-		wheelCircumference     	= 2.277;
-		antiRollbarForceCoef	= 0.5;
-		antiRollbarForceLimit	= 0.5;
-		antiRollbarSpeedMin 	= 20;
-		antiRollbarSpeedMax		= 80;
-		idleRpm = 900;
-		redRpm = 6900;
-		class complexGearbox
-		{	
-			GearboxRatios[]    = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.870,"D3",1.241,"D4",0.970,"D5",0.711};
-			TransmissionRatios[] = {"High",4.111};
-			gearBoxMode        = "auto";
-			moveOffGear        = 1;
-			driveString        = "D";
-			neutralString      = "N";
-			reverseString      = "R";
-		};		
-		simulation = "carx";
-		dampersBumpCoef = 0.05;
-		differentialType = "front_limited";
-		frontRearSplit = 0.5;
-		frontBias = 1.5;
-		rearBias = 1.3;
-		centreBias = 1.3;
-		clutchStrength = 15.0;
-		enginePower = 100; 
-		maxOmega = 720;
-		peakTorque = 350;
-		dampingRateFullThrottle = 0.08;
-		dampingRateZeroThrottleClutchEngaged = 0.35;
-		torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
-		changeGearMinEffectivity[]   = {0.95, 0.15, 0.95, 0.95, 0.95, 0.95, 0.95};
-		switchTime = 0.31;
-		latency = 1.0;
-		class Wheels
-		{
-			class LF
-			{
-				boneName = "wheel_1_1_damper";
-				steering = true;
-				side = "left";
-				center   = "wheel_1_1_axis";
-				boundary = "wheel_1_1_bound";
-				mass = 20;
-				MOI = 3.3;
-				dampingRate = 0.5;
-				maxBrakeTorque = 2000;
-				maxHandBrakeTorque = 0;
-				suspTravelDirection[] = {0, -1, 0};
-				suspForceAppPointOffset = "wheel_1_1_axis";
-				tireForceAppPointOffset = "wheel_1_1_axis";
-				maxCompression = 0.1;
-				mMaxDroop = 0.15;
-				sprungMass = 350.0;
-				springStrength = 22600;
-				springDamperRate = 8680;
-				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 25;
-				latStiffY = 18000;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1,1}};
-			};
-			class LR: LF
-			{
-				boneName = "wheel_1_2_damper";
-				steering = false;
-				center   = "wheel_1_2_axis";
-				boundary = "wheel_1_2_bound";
-				suspForceAppPointOffset = "wheel_1_2_axis";
-				tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;	
-			};
-			class LM: LF
-			{
-				boneName = "wheel_1_3_damper";
-				steering = false;
-				mass = 30;
-				center = "wheel_1_3_axis";
-				boundary = "wheel_1_3_bound";
-				suspForceAppPointOffset = "wheel_1_3_axis";
-				tireForceAppPointOffset = "wheel_1_3_axis";
-				maxCompression = 0.1;
-				mMaxDroop = 0.15;
-				sprungMass = 150.0; //350
-				springStrength = 22600;
-				springDamperRate = 8680;
-				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 25;
-				latStiffY = 18000;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1,1}};				
-			};			
-			class RF: LF
-			{
-				boneName = "wheel_2_1_damper";
-				center   = "wheel_2_1_axis";
-				boundary = "wheel_2_1_bound";
-				suspForceAppPointOffset = "wheel_2_1_axis";
-				tireForceAppPointOffset = "wheel_2_1_axis";
-				steering = true;
-				side = "right";
-			};
-			class RR: RF
-			{
-				boneName = "wheel_2_2_damper";
-				steering = false;
-				center   = "wheel_2_2_axis";
-				boundary = "wheel_2_2_bound";
-				suspForceAppPointOffset = "wheel_2_2_axis";
-				tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque = 3000;
-				latStiffY = 180;				
-			};
-			class RM: RF
-			{
-				boneName = "wheel_2_3_damper";
-				steering = false;
-				mass = 30;
-				center = "wheel_2_3_axis";
-				boundary = "wheel_2_3_bound";
-				suspForceAppPointOffset = "wheel_2_3_axis";
-				tireForceAppPointOffset = "wheel_2_3_axis";
-				maxCompression = 0.1;
-				mMaxDroop = 0.15;
-				sprungMass = 150.0;
-				springStrength = 22600;
-				springDamperRate = 8680;
-				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 25;
-				latStiffY = 18000;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1,1}};				
-			};			
-		};		
-		class PlayerSteeringCoefficients
-		{
-			 turnIncreaseConst 	= 0.3;
-			 turnIncreaseLinear = 1.0;
-			 turnIncreaseTime 	= 1.0;
-             turnDecreaseConst 	= 5.0;
-			 turnDecreaseLinear = 3.0;
-			 turnDecreaseTime 	= 0.0;
-             maxTurnHundred 	= 0.7;
-		};
-        memoryPointTrackFLL = "TrackFLL";
-		memoryPointTrackFLR = "TrackFLR";
-		memoryPointTrackBLL = "TrackBLL";
-		memoryPointTrackBLR = "TrackBLR";
-		memoryPointTrackFRL = "TrackFRL";
-		memoryPointTrackFRR = "TrackFRR";
-		memoryPointTrackBRL = "TrackBRL";
-		memoryPointTrackBRR = "TrackBRR";
-        class Exhausts
-		{
-			class Exhaust1
-			{
-				position 	= "exhaust";
-				direction 	= "exhaust_dir";
-				effect 		= "ExhaustsEffect";
-			};
-
-			class Exhaust2
-			{
-				position 	= "exhaust2_pos";
-				direction 	= "exhaust2_dir";
-				effect 		= "ExhaustsEffect";
-			};
-		};
-
-		class Reflectors
-		{
-			class LightCarHeadL01
-			{
-				color[] 		= {1900, 1800, 1700};
-				ambient[]		= {5, 5, 5};
-				position 		= "LightCarHeadL01";
-				direction 		= "LightCarHeadL01_end";
-				hitpoint 		= "Light_L";
-				selection 		= "Light_L";
-				size 			= 1;
-				innerAngle 		= 100;
-				outerAngle 		= 179;
-				coneFadeCoef 	= 10;
-				intensity 		= 1;
-				useFlare 		= true;
-				dayLight 		= false;
-				flareSize 		= 1.0;
-
-				class Attenuation
-				{
-					start 			= 1.0;
-					constant 		= 0;
-					linear 			= 0;
-					quadratic 		= 0.25;
-					hardLimitStart 	= 30;
-					hardLimitEnd 	= 60;
-				};
-			};
-            class LightCarHeadR01: LightCarHeadL01
-			{
-				position 	= "LightCarHeadR01";
-				direction 	= "LightCarHeadR01_end";
-				hitpoint 	= "Light_R";
-				selection 	= "Light_R";
-			};
-        };
-        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
-        class EventHandlers: EventHandlers {};
-		class RenderTargets
-		{
-			class LeftMirror
-			{
-				renderTarget = "rendertarget0";
-				class CameraView1
-				{
-					pointPosition		= "PIP0_pos";
-					pointDirection		= "PIP0_dir";
 					renderQuality 		= 2;
 					renderVisionMode 	= 0;
 					fov 				= 0.7;
-				}; 			
+				};
 			};
-			class RearCam
-			{
-				renderTarget = "rendertarget1";
-				class CameraView1
-				{
-					pointPosition		= "PIP1_pos";
-					pointDirection		= "PIP1_dir";
-					renderQuality 		= 2;
-					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};
-			class FrontCam
-			{
-				renderTarget = "rendertarget2";
-				class CameraView1
-				{
-					pointPosition		= "PIP2_pos";
-					pointDirection		= "PIP2_dir";
-					renderQuality 		= 2;
-					renderVisionMode 	= 0;
-					fov 				= 0.7;					
-				}; 			
-			};			
 		};
 		attenuationEffectType = "CarAttenuation";
-		occludeSoundsWhenIn = 1;
-		obstructSoundsWhenIn = 1;
-		soundGetIn[] = {"A3\sounds_f\vehicles\armor\noises\get_in_out",0.56234133,1};
-		soundGetOut[] = {"A3\sounds_f\vehicles\armor\noises\get_in_out",0.56234133,1,20};
-		soundDammage[] = {"",0.56234133,1};
-		soundEngineOnInt[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_start",0.39810717,1.0};
-		soundEngineOnExt[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_start",0.56234133,1.0,200};
-		soundEngineOffInt[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_stop",0.39810717,1.0};
-		soundEngineOffExt[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_stop",0.56234133,1.0,200};
-		buildCrash0[] = {"A3\sounds_f\Vehicles\crashes\crash_08",1.0,1,200};
-		buildCrash1[] = {"A3\sounds_f\Vehicles\crashes\crash_09",1.0,1,200};
-		buildCrash2[] = {"A3\sounds_f\Vehicles\crashes\crash_10",1.0,1,200};
-		buildCrash3[] = {"A3\sounds_f\Vehicles\crashes\crash_11",1.0,1,200};
-		soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-		WoodCrash0[] = {"A3\sounds_f\Vehicles\crashes\crash_08",1.0,1,200};
-		WoodCrash1[] = {"A3\sounds_f\Vehicles\crashes\crash_09",1.0,1,200};
-		WoodCrash2[] = {"A3\sounds_f\Vehicles\crashes\crash_10",1.0,1,200};
-		WoodCrash3[] = {"A3\sounds_f\Vehicles\crashes\crash_11",1.0,1,200};
-		WoodCrash4[] = {"A3\sounds_f\Vehicles\crashes\crash_01",1.0,1,200};
-		WoodCrash5[] = {"A3\sounds_f\Vehicles\crashes\crash_08",1.0,1,200};
-		soundWoodCrash[] = {"woodCrash0",0.166,"woodCrash1",0.166,"woodCrash2",0.166,"woodCrash3",0.166,"woodCrash4",0.166,"woodCrash5",0.166};
-		ArmorCrash0[] = {"A3\sounds_f\Vehicles\crashes\crash_08",1.0,1,200};
-		ArmorCrash1[] = {"A3\sounds_f\Vehicles\crashes\crash_09",1.0,1,200};
-		ArmorCrash2[] = {"A3\sounds_f\Vehicles\crashes\crash_10",1.0,1,200};
-		ArmorCrash3[] = {"A3\sounds_f\Vehicles\crashes\crash_11",1.0,1,200};
-		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Start", 0.707946, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Stop", 0.707946, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Start", 1.99526, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Stop", 1.99526, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
 		class Sounds
 		{
-			class Idle_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_01",0.35481337,1,200};
-				frequency = "0.95 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
-			};
-			class Engine
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_02",0.39810717,1,200};
-				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
-			};
-			class Engine1_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_03",0.4466836,1,200};
-				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
-			};
-			class Engine2_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_06",0.5011872,1,250};
-				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
-			};
-			class Engine3_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_07",0.56234133,1,300};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
-			};
-			class Engine4_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_08",0.63095737,1,300};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
-				volume = "engineOn*camPos*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
-			};
-			class Engine5_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_engine_10",0.70794576,1,300};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
-				volume = "engineOn*camPos*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
-			};
-			class IdleThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_01",0.56234133,1,200};
-				frequency = "0.8 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
-			};
-			class EngineThrust
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_02",0.63095737,1,200};
-				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
-			};
-			class Engine1_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_03",0.63095737,1,230};
-				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
-			};
-			class Engine2_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_06",0.70794576,1,250};
-				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
-			};
-			class Engine3_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_07",0.70794576,1,350};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
-			};
-			class Engine4_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_08",1.0,1,350};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
-			};
-			class Engine5_Thrust_ext
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\ext_exhaust_10",1.1220185,1,400};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
-				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
-			};
-			class Idle_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_01",0.31622776,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
-			};
-			class Engine_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_02",0.35481337,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
-			};
-			class Engine1_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_03",0.39810717,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
-			};
-			class Engine2_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_06",0.4466836,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
-			};
-			class Engine3_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_07",0.5011872,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
-			};
-			class Engine4_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_08",0.56234133,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
-			};
-			class Engine5_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_engine_10",0.63095737,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
-			};
-			class IdleThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_01",0.35481337,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
-			};
-			class EngineThrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_02",0.39810717,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
-			};
-			class Engine1_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_03",0.4466836,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
-			};
-			class Engine2_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_06",0.4466836,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
-			};
-			class Engine3_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_07",0.5011872,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
-			};
-			class Engine4_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_08",0.56234133,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
-			};
-			class Engine5_Thrust_int
-			{
-				sound[] = {"A3\Sounds_F\vehicles\armor\APC\APC2\int_exhaust_10",0.63095737,1};
-				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
-				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
-			};
-			class NoiseInt
-			{
-				sound[] = {"A3\sounds_f\vehicles\armor\noises\noise_tank_int_1",0.5011872,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*(angVelocity max 0.04)*(speed factor[4, 15])";
-			};
-			class NoiseExt
-			{
-				sound[] = {"A3\sounds_f\vehicles\armor\noises\noise_tank_ext_1",0.63095737,1.0,150};
-				frequency = "1";
-				volume = "camPos*(angVelocity max 0.04)*(speed factor[4, 15])";
-			};
-			class TiresRockOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*rock*(speed factor[2, 20])";
-			};
-			class TiresSandOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*grass*(speed factor[2, 20])";
-			};
-			class TiresMudOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",1.0,1.0,60};
-				frequency = "1";
-				volume = "camPos*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseOut
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",1.5848932,1.0,90};
-				frequency = "1";
-				volume = "camPos*(damper0 max 0.02)*(speed factor[0, 8])";
-			};
-			class TiresRockIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_1",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*rock*(speed factor[2, 20])";
-			};
-			class TiresSandIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-sand2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*sand*(speed factor[2, 20])";
-			};
-			class TiresGrassIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*grass*(speed factor[2, 20])";
-			};
-			class TiresMudIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-mud2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*mud*(speed factor[2, 20])";
-			};
-			class TiresGravelIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_gravel_1",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*gravel*(speed factor[2, 20])";
-			};
-			class TiresAsphaltIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_asfalt_2",0.70794576,1.0};
-				frequency = "1";
-				volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
-			};
-			class NoiseIn
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",0.5011872,1.0};
-				frequency = "1";
-				volume = "(damper0 max 0.1)*(speed factor[0, 8])*(1-camPos)";
-			};
-			class breaking_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(LongSlipDrive Factor[-0.2, -0.3])*(Speed Factor[2, 10])";
-			};
-			class acceleration_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(LongSlipDrive Factor[0.2, 0.3])*(Speed Factor[10, 1])";
-			};
-			class turn_left_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_ext_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(LongSlipDrive Factor[-0.2, -0.3])*(Speed Factor[2, 10])";
-			};
-			class acceleration_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(LongSlipDrive Factor[0.2, 0.3])*(Speed Factor[10, 1])";
-			};
-			class turn_left_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_ext_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1.0,1,100};
-				frequency = 1;
-				volume = "engineOn*camPos*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(LongSlipDrive Factor[-0.2, -0.3])*(Speed Factor[2, 6])";
-			};
-			class acceleration_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(LongSlipDrive Factor[0.2, 0.3])*(Speed Factor[10, 1])";
-			};
-			class turn_left_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_int_road
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
-			class breaking_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(LongSlipDrive Factor[-0.2, -0.3])*(Speed Factor[2, 6])";
-			};
-			class acceleration_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(LongSlipDrive Factor[0.2, 0.3])*(Speed Factor[10, 1])";
-			};
-			class turn_left_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(latSlipDrive Factor[0.15, 0.3])*(Speed Factor[0, 10])";
-			};
-			class turn_right_int_dirt
-			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1.0,1};
-				frequency = 1;
-				volume = "engineOn*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
-			};
+				soundSetsInt[] = {"Hatchback_01_Engine_RPM0_INT_SoundSet", "Hatchback_01_Engine_RPM1_INT_SoundSet", "Hatchback_01_Engine_RPM2_INT_SoundSet", "Hatchback_01_Engine_RPM3_INT_SoundSet", "Hatchback_01_Engine_RPM4_INT_SoundSet", "Hatchback_01_Rattling_INT_SoundSet", "Hatchback_01_Stress_INT_SoundSet", "Hatchback_01_Rain_INT_SoundSet", "Hatchback_01_Tires_Rock_Fast_INT_SoundSet", "Hatchback_01_Tires_Grass_Fast_INT_SoundSet", "Hatchback_01_Tires_Sand_Fast_INT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_INT_SoundSet", "Hatchback_01_Tires_Mud_Fast_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_INT_SoundSet", "Hatchback_01_Tires_Water_Fast_INT_SoundSet", "Hatchback_01_Tires_Rock_Slow_INT_SoundSet", "Hatchback_01_Tires_Grass_Slow_INT_SoundSet", "Hatchback_01_Tires_Sand_Slow_INT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_INT_SoundSet", "Hatchback_01_Tires_Mud_Slow_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_INT_SoundSet", "Hatchback_01_Tires_Water_Slow_INT_SoundSet", "Hatchback_01_Tires_Turn_Hard_INT_SoundSet", "Hatchback_01_Tires_Turn_Soft_INT_SoundSet", "Hatchback_01_Tires_Brake_Hard_INT_SoundSet", "Hatchback_01_Tires_Brake_Soft_INT_SoundSet"};
+				soundSetsExt[] = {"Hatchback_01_Engine_RPM0_EXT_SoundSet", "Hatchback_01_Engine_RPM1_EXT_SoundSet", "Hatchback_01_Engine_RPM2_EXT_SoundSet", "Hatchback_01_Engine_RPM3_EXT_SoundSet", "Hatchback_01_Engine_RPM4_EXT_SoundSet", "Hatchback_01_Rain_EXT_SoundSet", "Hatchback_01_Tires_Rock_Fast_EXT_SoundSet", "Hatchback_01_Tires_Grass_Fast_EXT_SoundSet", "Hatchback_01_Tires_Sand_Fast_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_EXT_SoundSet", "Hatchback_01_Tires_Mud_Fast_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_EXT_SoundSet", "Hatchback_01_Tires_Water_Fast_EXT_SoundSet", "Hatchback_01_Tires_Rock_Slow_EXT_SoundSet", "Hatchback_01_Tires_Grass_Slow_EXT_SoundSet", "Hatchback_01_Tires_Sand_Slow_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_EXT_SoundSet", "Hatchback_01_Tires_Mud_Slow_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_EXT_SoundSet", "Hatchback_01_Tires_Water_Slow_EXT_SoundSet", "Hatchback_01_Tires_Turn_Hard_EXT_SoundSet", "Hatchback_01_Tires_Turn_Soft_EXT_SoundSet", "Hatchback_01_Tires_Brake_Hard_EXT_SoundSet", "Hatchback_01_Tires_Brake_Soft_EXT_SoundSet"};
 		};
 	};
-	class Epoch_Ural_1: Epoch_Ural_base
+    class A2_Volha_EPOCH: a2_Volha_base
 	{
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\ural\a2_ural_base";		
-		picture	= "\A3\Weapons_F\Data\placeholder_co.paa";
-		Icon	= "\A3\Weapons_F\Data\placeholder_co.paa";			
-		displayName="Classic URAL 1";
 		scope=2;
-		scopeCurator=2;
-		crew="C_man_1";
-		side=3;
-		faction	= CIV_F;
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[]={"x\addons\a2_epoch_vehicles\wheeled\ural\data\ural_kabina_epoch_co.paa","x\addons\a2_epoch_vehicles\wheeled\ural\data\ural_plachta_co.paa"};
+		textureList[] = {"Blue", 1, "Grey", 1};
 	};
-	///////////////a2 wheeled end	
+///////////////a2 wheeled end	
     class Ship;
     class Ship_F : Ship
     {
