@@ -14514,7 +14514,7 @@ class CfgVehicles
 					gunnerInAction             = "pilot_Heli_Transport_01";
 					gunnerOpticsModel          = "\A3\Weapons_F\empty.p3d";
 					weapons[]                  = {"E_uh1h_mg_01"};
-					magazines[]                = {"100Rnd_127x99_mag","100Rnd_127x99_mag","100Rnd_127x99_mag","100Rnd_127x99_mag"};
+					magazines[]                = {"E_vmg_762x51_Belt","E_vmg_762x51_Belt","E_vmg_762x51_Belt"};
 					commanding                 = -3;
 					primaryGunner              = 0;
 					class ViewOptics 
@@ -15070,7 +15070,7 @@ class CfgVehicles
 					gunnerInAction             = "pilot_Heli_Transport_01";
 					gunnerOpticsModel          = "\A3\Weapons_F\empty.p3d";
 					weapons[]                  = {"E_uh1h_mg_01"};
-					magazines[]                = {"100Rnd_127x99_mag","100Rnd_127x99_mag","100Rnd_127x99_mag","100Rnd_127x99_mag"};
+					magazines[]                = {"E_vmg_762x51_Belt","E_vmg_762x51_Belt","E_vmg_762x51_Belt"};
 					commanding                 = -3;
 					primaryGunner              = 1;
 					gunnerCompartments         = "Compartment2";
