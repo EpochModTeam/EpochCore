@@ -2399,11 +2399,19 @@ class CfgWeapons
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
     };
 	class HMG_M2;
-	class E_uh1h_mg_762_01: HMG_M2
+	class E_uh1h_mg_base: HMG_M2
+	{
+		class manual;		
+	};
+	class E_uh1h_mg_762_01: E_uh1h_mg_base
 	{
 		magazines[] = {"200Rnd_762x51_Belt","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Green","200Rnd_762x51_Belt_Yellow"};
 		displayName = "Minigun 7.62 mm";
 		magazineReloadTime = 7;
+		class manual: manual
+		{
+			reloadTime = 0.04;
+		};
 	    class GunParticles
 		{
 			class effect1
