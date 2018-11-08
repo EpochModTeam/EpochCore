@@ -2399,9 +2399,9 @@ class CfgWeapons
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
     };
 	class HMG_M2;
-	class E_uh1h_mg_01: HMG_M2
+	class E_uh1h_mg_762_01: HMG_M2
 	{
-		magazines[] = {"E_vmg_762x51_Belt", "E_vmg_762x51_Belt", "E_vmg_762x51_Belt"};
+		magazines[] = {"200Rnd_762x51_Belt","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Green","200Rnd_762x51_Belt_Yellow"};
 		displayName = "Minigun 7.62 mm";
 		magazineReloadTime = 7;
 	    class GunParticles
@@ -2424,7 +2424,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class E_uh1h_mg_02: E_uh1h_mg_01
+	class E_uh1h_mg_762_02: E_uh1h_mg_762_01
 	{
 		class GunParticles: GunParticles
 		{
@@ -2444,6 +2444,16 @@ class CfgWeapons
 			};
 		};
 		
+	};
+	class E_uh1h_mg_665_01: E_uh1h_mg_762_01
+	{
+		magazines[] = {"200Rnd_65x39_Belt","200Rnd_65x39_Belt_Tracer_Red","200Rnd_65x39_Belt_Tracer_Green","200Rnd_65x39_Belt_Tracer_Yellow"};
+		displayName = "Minigun 6.65 mm";
+	};
+	class E_uh1h_mg_665_02: E_uh1h_mg_762_02
+	{
+		magazines[] = {"200Rnd_65x39_Belt","200Rnd_65x39_Belt_Tracer_Red","200Rnd_65x39_Belt_Tracer_Green","200Rnd_65x39_Belt_Tracer_Yellow"};
+		displayName = "Minigun 6.65 mm";
 	};
     class Rifle;
     class Rifle_Base_F : Rifle

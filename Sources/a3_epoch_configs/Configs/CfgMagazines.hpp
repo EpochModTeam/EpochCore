@@ -3152,17 +3152,6 @@ class CfgMagazines
 		initSpeed = 860;
 		weight = 128;
 	};
-	class E_vmg_762x51_Belt: 5000Rnd_762x51_Belt
-	{
-		author = "Bohemia Interactive";
-		ammo = "B_762x51_Minigun_Tracer_Red_splash";
-		displayName = "7.62 mm Epoch Vehicle MG Belt";
-		descriptionShort = "Caliber: 7.62x51 mm<br />Rounds: 200<br />Used in: Epoch Vehicles";
-		tracersEvery = 1;
-		count = 200;
-		initSpeed = 860;
-		weight = 128;
-	};	
 	class 5000Rnd_762x51_Yellow_Belt: 2000Rnd_762x51_Belt
 	{
 		displayName = "$STR_EPOCH_5000Rnd762x51YellowBeltname";

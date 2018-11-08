@@ -10787,7 +10787,7 @@ class CfgVehicles
 		magazines[] = {};
 		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1d_co.paa","x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1d_in_co.paa"};
 	};
-	class uh1h_Epoch_armed: uh1h_Epoch
+	class uh1h_armed_EPOCH: uh1h_Epoch
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -10802,116 +10802,116 @@ class CfgVehicles
 		magazines[] = {};
 		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1d_co.paa","x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1d_in_co.paa"};
 		class Turrets: Turrets
+		{
+			class CopilotTurret: CopilotTurret
 			{
-				class CopilotTurret: CopilotTurret
+				CanEject = 1;
+				gunnerAction               = "pilot_Heli_Transport_01";
+				gunnerInAction             = "pilot_Heli_Transport_01";
+				memoryPointsGetInGunner    = "pos copilot";
+				memoryPointsGetInGunnerDir = "pos copilot dir";
+				gunnerGetInAction          = "GetInHeli_Transport_01Cargo";
+				gunnerGetOutAction         = "GetOutLow";
+				preciseGetInOut            = 0;
+				GunnerDoor                 = "";
+				gunnerLeftHandAnimName     = "lever_copilot";
+				gunnerRightHandAnimName    = "stick_copilot";
+				gunnerLeftLegAnimName      = "PedalL";
+				gunnerRightLegAnimName     = "PedalR";
+				proxyIndex = 1;
+				LODTurnedIn = 1100;
+				LODTurnedOut = 1100;
+				gunnerCompartments = "Compartment1";
+				commanding = -3;
+				class ViewGunner: ViewPilot
 				{
-					CanEject = 1;
-					gunnerAction               = "pilot_Heli_Transport_01";
-					gunnerInAction             = "pilot_Heli_Transport_01";
-					memoryPointsGetInGunner    = "pos copilot";
-					memoryPointsGetInGunnerDir = "pos copilot dir";
-					gunnerGetInAction          = "GetInHeli_Transport_01Cargo";
-					gunnerGetOutAction         = "GetOutLow";
-					preciseGetInOut            = 0;
-					GunnerDoor                 = "";
-					gunnerLeftHandAnimName     = "lever_copilot";
-					gunnerRightHandAnimName    = "stick_copilot";
-					gunnerLeftLegAnimName      = "PedalL";
-					gunnerRightLegAnimName     = "PedalR";
-					proxyIndex = 1;
-					LODTurnedIn = 1100;
-					LODTurnedOut = 1100;
-					gunnerCompartments = "Compartment1";
-					commanding = -3;
-					class ViewGunner: ViewPilot
-					{
-					};
 				};
-				class MainTurret: MainTurret  //right side gunner
+			};
+			class MainTurret: MainTurret  //right side gunner
+			{
+				body                       = "mg1_main_turret";
+				gun                        = "mg1_main_Gun";
+				memoryPointGun             ="mg1_main_gun";
+				initElev                   = -10; //- is down
+				initTurn                   = -90;  //turning (view) circle of turret
+				maxElev                    = 25;  //turning (view) circle of turret
+				minElev                    = -62;  //turning (view) circle of turret
+				maxTurn                    = -10;  //turning (view) circle of turret
+				minTurn                    = -165;  //turning (view) circle of turret
+				animationSourceBody        = "mg1_main_turret";
+				animationSourceGun         = "mg1_main_gun";
+				stabilizedInAxes           = 0;
+				gunBeg                     = "mg1_usti_hlavne";
+				gunEnd                     = "mg1_konec_hlavne";
+				gunnerName                 = "Right door gunner";
+				gunnerOutOpticsShowCursor  = 0;
+				gunnerOpticsShowCursor     = 0;
+				memoryPointGunnerOptics    = "mg1_gunnerview";
+				gunnerAction               = "pilot_Heli_Transport_01";
+				gunnerInAction             = "pilot_Heli_Transport_01";
+				gunnerOpticsModel          = "\A3\Weapons_F\empty.p3d";
+				weapons[]                  = {"E_uh1h_mg_665_01"};
+				magazines[]                = {"200Rnd_65x39_Belt","200Rnd_65x39_Belt","200Rnd_65x39_Belt"};
+				commanding                 = -3;
+				primaryGunner              = 0;
+				class ViewOptics 
 				{
-					body                       = "mg1_main_turret";
-					gun                        = "mg1_main_Gun";
-					memoryPointGun             ="mg1_main_gun";
-					initElev                   = -10; //- is down
-					initTurn                   = -90;  //turning (view) circle of turret
-					maxElev                    = 25;  //turning (view) circle of turret
-					minElev                    = -62;  //turning (view) circle of turret
-					maxTurn                    = -10;  //turning (view) circle of turret
-					minTurn                    = -165;  //turning (view) circle of turret
-					animationSourceBody        = "mg1_main_turret";
-					animationSourceGun         = "mg1_main_gun";
-					stabilizedInAxes           = 0;
-					gunBeg                     = "mg1_usti_hlavne";
-					gunEnd                     = "mg1_konec_hlavne";
-					gunnerName                 = "Right door gunner";
-					gunnerOutOpticsShowCursor  = 0;
-					gunnerOpticsShowCursor     = 0;
-					memoryPointGunnerOptics    = "mg1_gunnerview";
-					gunnerAction               = "pilot_Heli_Transport_01";
-					gunnerInAction             = "pilot_Heli_Transport_01";
-					gunnerOpticsModel          = "\A3\Weapons_F\empty.p3d";
-					weapons[]                  = {"E_uh1h_mg_01"};
-					magazines[]                = {"E_vmg_762x51_Belt","E_vmg_762x51_Belt","E_vmg_762x51_Belt"};
-					commanding                 = -3;
-					primaryGunner              = 0;
-					class ViewOptics 
-					{
-						initAngleX= 90; 
-						minAngleX= -30;
-						maxAngleX=  30;
-						initAngleY= 90; 
-						minAngleY= -100; 
-						maxAngleY= 100;
-						initFov=   0.7; 
-						minFov=    0.25; 
-						maxFov=    1.1;
-					};
-					gunnerCompartments         = "Compartment2";
-					memoryPointsGetInGunner    = "mg1_pos_gunner";
-					memoryPointsGetInGunnerDir = "mg1_pos_gunner_dir";
-					proxyIndex                 = 2;
-					LODTurnedIn                = VIEW_GUNNER;
-					LODTurnedOut               = VIEW_GUNNER;
-					gunnerLeftHandAnimName     = "";
-					gunnerRightHandAnimName    = "";
-					selectionFireAnim = "mg1_zasleh";
-					canUseScanners             = 0;
+					initAngleX= 90; 
+					minAngleX= -30;
+					maxAngleX=  30;
+					initAngleY= 90; 
+					minAngleY= -100; 
+					maxAngleY= 100;
+					initFov=   0.7; 
+					minFov=    0.25; 
+					maxFov=    1.1;
 				};
-				class new_MainTurret: MainTurret
-				{
-				    minElev = -50;
-				    maxElev = 30;
-				    initElev = -30;
-				    minTurn = 3;
-				    maxTurn = 173;
-				    initTurn = 80;
-					body                       = "mg2_main_turret";
-					gun                        = "mg2_main_gun";
-					animationSourceBody        = "mg2_main_turret";
-					animationSourceGun         = "mg2_main_gun";
-					selectionFireAnim          = "mg2_zasleh";
-					proxyIndex                 = 3;
-					gunnerName                 = "Left door gunner";
-					weapons[]                  = {"E_uh1h_mg_02"};
-					commanding                 = -3;
-					gunBeg                     = "mg2_usti_hlavne";
-					gunEnd                     = "mg2_konec_hlavne";
-					primaryGunner              = 1;
-					memoryPointGun             = "mg2_main_gun";
-					memoryPointGunnerOptics    = "mg2_gunnerview";
-					gunnerCompartments         = "Compartment2";
-					memoryPointsGetInGunner    = "mg2_pos_gunner";
-					memoryPointsGetInGunnerDir = "mg2_pos_gunner_dir";
-					turretCanSee = "1 + 2 + 4 + 8 + 16";
-					canUseScanners = 0;
-				};
-			};	
+				gunnerCompartments         = "Compartment2";
+				memoryPointsGetInGunner    = "mg1_pos_gunner";
+				memoryPointsGetInGunnerDir = "mg1_pos_gunner_dir";
+				proxyIndex                 = 2;
+				LODTurnedIn                = VIEW_GUNNER;
+				LODTurnedOut               = VIEW_GUNNER;
+				gunnerLeftHandAnimName     = "";
+				gunnerRightHandAnimName    = "";
+				selectionFireAnim = "mg1_zasleh";
+				canUseScanners             = 0;
+			};
+			class new_MainTurret: MainTurret
+			{
+				minElev = -50;
+				maxElev = 30;
+				initElev = -30;
+				minTurn = 3;
+				maxTurn = 173;
+				initTurn = 80;
+				body                       = "mg2_main_turret";
+				gun                        = "mg2_main_gun";
+				animationSourceBody        = "mg2_main_turret";
+				animationSourceGun         = "mg2_main_gun";
+				selectionFireAnim          = "mg2_zasleh";
+				proxyIndex                 = 3;
+				gunnerName                 = "Left door gunner";
+				weapons[]                  = {"E_uh1h_mg_665_02"};
+				commanding                 = -3;
+				gunBeg                     = "mg2_usti_hlavne";
+				gunEnd                     = "mg2_konec_hlavne";
+				primaryGunner              = 1;
+				memoryPointGun             = "mg2_main_gun";
+				memoryPointGunnerOptics    = "mg2_gunnerview";
+				gunnerCompartments         = "Compartment2";
+				memoryPointsGetInGunner    = "mg2_pos_gunner";
+				memoryPointsGetInGunnerDir = "mg2_pos_gunner_dir";
+				turretCanSee = "1 + 2 + 4 + 8 + 16";
+				canUseScanners = 0;
+			};
+		};	
 	    class animationsources: animationsources
 	    {
 	    	class mg1_ReloadAnim
 	    	{
 	    		source = "reload";
-	    		weapon = "E_uh1h_mg_01";
+	    		weapon = "E_uh1h_mg_665_01";
 	    	};
 	    	class mg1_ReloadMagazine: mg1_ReloadAnim
 	    	{
@@ -10932,7 +10932,7 @@ class CfgVehicles
 	    	class mg2_ReloadAnim
 	    	{
 	    		source = "reload";
-	    		weapon = "E_uh1h_mg_02";
+	    		weapon = "E_uh1h_mg_665_02";
 	    	};
 	    	class mg2_ReloadMagazine: mg2_ReloadAnim
 	    	{
@@ -10951,7 +10951,38 @@ class CfgVehicles
 	    		source = "reload";
 	    	};
 	    };	
-	};	
+	};
+	class uh1h_armed_plus_EPOCH: uh1h_armed_EPOCH
+	{
+		displayName = "UH1H Armed+";
+		class Turrets: Turrets
+		{
+			class CopilotTurret;
+			class MainTurret: MainTurret
+			{
+				weapons[]                  = {"E_uh1h_mg_762_01"};
+				magazines[]                = {"200Rnd_762x51_Belt","200Rnd_762x51_Belt","200Rnd_762x51_Belt"};
+			};
+			class new_MainTurret: new_MainTurret
+			{
+				weapons[]                  = {"E_uh1h_mg_762_02"};
+				magazines[]                = {"200Rnd_762x51_Belt","200Rnd_762x51_Belt","200Rnd_762x51_Belt"};
+			};
+		};
+	    class animationsources: animationsources
+	    {
+	    	class mg1_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_762_01";
+	    	};
+	    	class mg2_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_762_02";
+	    	};
+	    };	
+	};
 	class a2_ch47f_epoch_base_F: Helicopter_Base_H
 	{
 		scope = 0;
@@ -11331,7 +11362,7 @@ class CfgVehicles
 		};
 		aggregateReflectors[] = {{"Left"}};
 	};
-	class a2_ch47f_epoch: a2_ch47f_epoch_base_F
+	class a2_ch47f_EPOCH: a2_ch47f_epoch_base_F
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -11345,7 +11376,7 @@ class CfgVehicles
 		magazines[] = {};
 		hiddenSelectionsTextures[] = {"x\addons\a2_epoch_vehicles\air\ch47\data\ch47_ext_1_co.paa","x\addons\a2_epoch_vehicles\air\ch47\data\ch47_ext_2_co.paa"};
 	};
-	class a2_ch47f_armed_epoch: a2_ch47f_epoch
+	class a2_ch47f_armed_EPOCH: a2_ch47f_EPOCH
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -11360,104 +11391,104 @@ class CfgVehicles
 		magazines[] = {};
 		hiddenSelectionsTextures[] = {"x\addons\a2_epoch_vehicles\air\ch47\data\ch47_ext_1_co.paa","x\addons\a2_epoch_vehicles\air\ch47\data\ch47_ext_2_co.paa"};
 		class Turrets: Turrets
+		{
+			class CopilotTurret: CopilotTurret
 			{
-				class CopilotTurret: CopilotTurret
+				CanEject = 1;
+				gunnerAction               = "pilot_Heli_Transport_01";
+				gunnerInAction             = "pilot_Heli_Transport_01";
+				memoryPointsGetInGunner    = "pos copilot";
+				memoryPointsGetInGunnerDir = "pos copilot dir";
+				gunnerGetInAction          = "GetInHeli_Transport_01Cargo";
+				gunnerGetOutAction         = "GetOutLow";
+				preciseGetInOut            = 0;
+				GunnerDoor                 = "";
+				gunnerLeftHandAnimName     = "lever_copilot";
+				gunnerRightHandAnimName    = "stick_copilot";
+				gunnerLeftLegAnimName      = "PedalL";
+				gunnerRightLegAnimName     = "PedalR";
+				proxyIndex = 1;
+				LODTurnedIn = 1100;  //1100=view pilot ; 1200=cargo view; 1000=viewgunner
+				LODTurnedOut = 1100;
+				gunnerCompartments = "Compartment1";
+				commanding = -3;
+				class ViewGunner: ViewPilot{};
+			};
+			class MainTurret: MainTurret
+			{
+				body                       = "mg1_main_turret";
+				gun                        = "mg1_main_gun";
+				memoryPointGun             = "mg1_main_gun";
+				initElev                   = -10; //- is down
+				initTurn                   = -90;  //turning (view) circle of turret
+				maxElev                    = 25;  //turning (view) circle of turret
+				minElev                    = -62;  //turning (view) circle of turret
+				maxTurn                    = -10;  //turning (view) circle of turret
+				minTurn                    = -165;  //turning (view) circle of turret
+				animationSourceBody        = "mg1_main_turret";
+				animationSourceGun         = "mg1_main_gun";
+				stabilizedInAxes           = 0;
+				gunBeg                     = "mg1_usti_hlavne";
+				gunEnd                     = "mg1_konec_hlavne";
+				gunnerName                 = "Right door gunner";
+				gunnerOutOpticsShowCursor  = 0;
+				gunnerOpticsShowCursor     = 0;
+				memoryPointGunnerOptics    = "mg1_gunnerview";
+				gunnerAction               = "pilot_Heli_Transport_01";
+				gunnerInAction             = "pilot_Heli_Transport_01";
+				gunnerOpticsModel          = "\A3\Weapons_F\empty.p3d";
+				weapons[]                  = {"E_uh1h_mg_665_01"};
+				magazines[]                = {"200Rnd_65x39_Belt","200Rnd_65x39_Belt","200Rnd_65x39_Belt"};
+				commanding                 = -3;
+				primaryGunner              = 1;
+				gunnerCompartments         = "Compartment2";
+				memoryPointsGetInGunner    = "mg1_pos_gunner";
+				memoryPointsGetInGunnerDir = "mg1_pos_gunner_dir";
+				selectionFireAnim = "mg1_zasleh";
+				proxyIndex                 = 2;
+				LODTurnedIn                = 1000;
+				LODTurnedOut               = 1000;
+				gunnerLeftHandAnimName     = "handle_L";
+				gunnerRightHandAnimName    = "handle_R";
+				canUseScanners             = 0;
+				class ViewOptics 
 				{
-					CanEject = 1;
-					gunnerAction               = "pilot_Heli_Transport_01";
-					gunnerInAction             = "pilot_Heli_Transport_01";
-					memoryPointsGetInGunner    = "pos copilot";
-					memoryPointsGetInGunnerDir = "pos copilot dir";
-					gunnerGetInAction          = "GetInHeli_Transport_01Cargo";
-					gunnerGetOutAction         = "GetOutLow";
-					preciseGetInOut            = 0;
-					GunnerDoor                 = "";
-					gunnerLeftHandAnimName     = "lever_copilot";
-					gunnerRightHandAnimName    = "stick_copilot";
-					gunnerLeftLegAnimName      = "PedalL";
-					gunnerRightLegAnimName     = "PedalR";
-					proxyIndex = 1;
-					LODTurnedIn = 1100;  //1100=view pilot ; 1200=cargo view; 1000=viewgunner
-					LODTurnedOut = 1100;
-					gunnerCompartments = "Compartment1";
-					commanding = -3;
-					class ViewGunner: ViewPilot{};
+					initAngleX= 90;minAngleX= -30;maxAngleX= 0;initAngleY= 90; 
+					minAngleY= -100;maxAngleY= 100;initFov= 0.7; minFov= 0.25;maxFov= 1.1;
 				};
-				class MainTurret: MainTurret
-				{
-					body                       = "mg1_main_turret";
-					gun                        = "mg1_main_gun";
-					memoryPointGun             = "mg1_main_gun";
-					initElev                   = -10; //- is down
-					initTurn                   = -90;  //turning (view) circle of turret
-					maxElev                    = 25;  //turning (view) circle of turret
-					minElev                    = -62;  //turning (view) circle of turret
-					maxTurn                    = -10;  //turning (view) circle of turret
-					minTurn                    = -165;  //turning (view) circle of turret
-					animationSourceBody        = "mg1_main_turret";
-					animationSourceGun         = "mg1_main_gun";
-					stabilizedInAxes           = 0;
-					gunBeg                     = "mg1_usti_hlavne";
-					gunEnd                     = "mg1_konec_hlavne";
-					gunnerName                 = "Right door gunner";
-					gunnerOutOpticsShowCursor  = 0;
-					gunnerOpticsShowCursor     = 0;
-					memoryPointGunnerOptics    = "mg1_gunnerview";
-					gunnerAction               = "pilot_Heli_Transport_01";
-					gunnerInAction             = "pilot_Heli_Transport_01";
-					gunnerOpticsModel          = "\A3\Weapons_F\empty.p3d";
-					weapons[]                  = {"E_uh1h_mg_01"};
-					magazines[]                = {"E_vmg_762x51_Belt","E_vmg_762x51_Belt","E_vmg_762x51_Belt"};
-					commanding                 = -3;
-					primaryGunner              = 1;
-					gunnerCompartments         = "Compartment2";
-					memoryPointsGetInGunner    = "mg1_pos_gunner";
-					memoryPointsGetInGunnerDir = "mg1_pos_gunner_dir";
-					selectionFireAnim = "mg1_zasleh";
-					proxyIndex                 = 2;
-					LODTurnedIn                = 1000;
-					LODTurnedOut               = 1000;
-					gunnerLeftHandAnimName     = "handle_L";
-					gunnerRightHandAnimName    = "handle_R";
-					canUseScanners             = 0;
-					class ViewOptics 
-					{
-						initAngleX= 90;minAngleX= -30;maxAngleX= 0;initAngleY= 90; 
-						minAngleY= -100;maxAngleY= 100;initFov= 0.7; minFov= 0.25;maxFov= 1.1;
-					};
-				};
-				class new_MainTurret: MainTurret
-				{
-					minTurn = 30;
-					maxTurn = 140;
-					initTurn = 90;
-					body                       = "mg2_main_turret";
-					gun                        = "mg2_main_gun";
-					animationSourceBody        = "mg2_main_turret";
-					animationSourceGun         = "mg2_main_gun";
-					selectionFireAnim          = "mg2_zasleh";
-					proxyIndex                 = 3;
-					gunnerName                 = "Left door gunner";
-					weapons[]                  = {"E_uh1h_mg_02"};
-					commanding                 = -3;
-					gunBeg                     = "mg2_usti_hlavne";
-					gunEnd                     = "mg2_konec_hlavne";
-					primaryGunner              = 0;
-					memoryPointGun             = "mg2_main_gun";
-					memoryPointGunnerOptics    = "mg2_gunnerview";
-					gunnerCompartments         = "Compartment2";
-					memoryPointsGetInGunner    = "mg2_pos_gunner";
-					memoryPointsGetInGunnerDir = "mg2_pos_gunner_dir";
-					canUseScanners = 0;
-					turretCanSee = "1 + 2 + 4 + 8 + 16";
-				};
-			};	
+			};
+			class new_MainTurret: MainTurret
+			{
+				minTurn = 30;
+				maxTurn = 140;
+				initTurn = 90;
+				body                       = "mg2_main_turret";
+				gun                        = "mg2_main_gun";
+				animationSourceBody        = "mg2_main_turret";
+				animationSourceGun         = "mg2_main_gun";
+				selectionFireAnim          = "mg2_zasleh";
+				proxyIndex                 = 3;
+				gunnerName                 = "Left door gunner";
+				weapons[]                  = {"E_uh1h_mg_665_02"};
+				commanding                 = -3;
+				gunBeg                     = "mg2_usti_hlavne";
+				gunEnd                     = "mg2_konec_hlavne";
+				primaryGunner              = 0;
+				memoryPointGun             = "mg2_main_gun";
+				memoryPointGunnerOptics    = "mg2_gunnerview";
+				gunnerCompartments         = "Compartment2";
+				memoryPointsGetInGunner    = "mg2_pos_gunner";
+				memoryPointsGetInGunnerDir = "mg2_pos_gunner_dir";
+				canUseScanners = 0;
+				turretCanSee = "1 + 2 + 4 + 8 + 16";
+			};
+		};	
 	    class animationsources: animationsources
 	    {
 	    	class mg1_ReloadAnim
 	    	{
 	    		source = "reload";
-	    		weapon = "E_uh1h_mg_01";
+	    		weapon = "E_uh1h_mg_665_01";
 	    	};
 	    	class mg1_ReloadMagazine: mg1_ReloadAnim
 	    	{
@@ -11482,7 +11513,7 @@ class CfgVehicles
 	    	class mg2_ReloadAnim
 	    	{
 	    		source = "reload";
-	    		weapon = "E_uh1h_mg_02";
+	    		weapon = "E_uh1h_mg_665_02";
 	    	};
 	    	class mg2_ReloadMagazine: mg2_ReloadAnim
 	    	{
@@ -11505,9 +11536,46 @@ class CfgVehicles
 	    		source = "reload";
 	    	};
 	    };	
-
 	};	
-	
+	class a2_ch47f_armed_plus_EPOCH: a2_ch47f_armed_EPOCH
+	{
+		displayName = "CH47-F Armed+";
+		class Turrets: Turrets
+		{
+			class CopilotTurret;
+			class MainTurret: MainTurret
+			{
+				weapons[]                  = {"E_uh1h_mg_762_01"};
+				magazines[]                = {"200Rnd_762x51_Belt","200Rnd_762x51_Belt","200Rnd_762x51_Belt"};
+			};
+			class new_MainTurret: new_MainTurret
+			{
+				weapons[]                  = {"E_uh1h_mg_762_02"};
+				magazines[]                = {"200Rnd_762x51_Belt","200Rnd_762x51_Belt","200Rnd_762x51_Belt"};
+			};
+		};
+	    class animationsources: animationsources
+	    {
+	    	class mg1_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_762_01";
+	    	};
+	    	class mg2_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_762_02";
+	    	};
+	    };	
+	};
+	class B_Heli_Light_01_armed_F;
+	class B_Heli_Light_01_armed_EPOCH : B_Heli_Light_01_armed_F
+	{
+		scope = 2;
+		side = 3;
+		weapons[] = {"E_uh1h_mg_665_01"};
+		magazines[] = {"200Rnd_65x39_Belt", "200Rnd_65x39_Belt"};
+	};
     class C_Rubberboat;
     class C_Rubberboat_EPOCH : C_Rubberboat
     {
