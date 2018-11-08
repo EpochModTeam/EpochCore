@@ -2986,6 +2986,14 @@ class CfgVehicles
     class Car_F : Car
     {
         scope = 0;
+		class PlateInfos
+		{
+			name = "spz";
+			color[] = {0, 0, 0, 0.75};
+			plateFont        = "RobotoCondensedLight";
+			plateFormat        = "EPOCH";
+			plateLetters    = "ABCDEFHIKLMOPRSTVXYZ";
+		};
         class HitPoints
         {
             class HitLFWheel;
@@ -6906,7 +6914,7 @@ class CfgVehicles
 	class a2_golf_base: car_F
 	{
 		displayName="Classic Golf";
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\golf\a2_golf_base";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\golf\a2_golf_base2";
 		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";
 		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";
 		crew 	= "C_man_1";
@@ -7268,12 +7276,12 @@ class CfgVehicles
     class A2_Golf_load_EPOCH: A2_Golf_EPOCH
 	{
 		displayName="Classic Golf Load";
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\golf\a2_golf_base2";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\golf\a2_golf_base";
 	};
      class a2_hmmwv_base: car_F
 	{
 		displayName="Classic Hummvee";
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\hmmwv";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\hmmwv_2";
 		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\humvee_ca.paa";
 		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\humvee_ca.paa";
 		crew 	= "C_man_1";
@@ -7600,7 +7608,7 @@ class CfgVehicles
 	class A2_HMMWV_load_EPOCH: A2_HMMWV_EPOCH 
 	{
 		displayName="Classic Hummvee Load";
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\hmmwv_2";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\hmmwv";
 	};
 	class a2_lada_base: car_F
 	{
@@ -7961,7 +7969,7 @@ class CfgVehicles
 	class a2_suv_base: car_F
 	{
 		displayName="Classic SUV";
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv2";
 		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\suv_ca.paa";
 		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\suv_ca.paa";
 		crew 	= "C_man_1";
@@ -8292,7 +8300,7 @@ class CfgVehicles
     class A2_SUV_load_EPOCH: A2_SUV_EPOCH
 	{
 		displayName="Classic SUV Load";
-		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv2";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv";
 	};
     class a2_UAZ_base: car_F
 	{
