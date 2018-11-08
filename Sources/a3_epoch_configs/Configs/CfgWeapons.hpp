@@ -2402,7 +2402,7 @@ class CfgWeapons
 	class E_uh1h_mg_01: HMG_M2
 	{
 		magazines[] = {"E_vmg_762x51_Belt", "E_vmg_762x51_Belt", "E_vmg_762x51_Belt"};
-		displayName = "Vehicle MG";
+		displayName = "Minigun 7.62 mm";
 		magazineReloadTime = 7;
 	    class GunParticles
 		{
