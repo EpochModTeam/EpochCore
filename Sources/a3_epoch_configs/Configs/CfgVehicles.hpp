@@ -8031,7 +8031,7 @@ class CfgVehicles
 			neutralString = "N";
 			reverseString = "R";
 		};
-        class Turrets{};
+        //class Turrets{};
 		class HitPoints: HitPoints {};
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[]=
