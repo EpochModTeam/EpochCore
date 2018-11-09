@@ -8308,6 +8308,7 @@ class CfgVehicles
 	model = "x\addons\a2_epoch_vehicles\wheeled\suv\a2_a_suv";
 	class Turrets: Turrets
 			{
+				class MainTurret;
 				class TopTurret: MainTurret
 				{
 					disableSoundAttenuation = 1;
