@@ -2981,10 +2981,19 @@ class CfgVehicles
     class Car : LandVehicle
     {
         scope = 0;
-        class HitPoints;
+		class HitPoints;
+		class Turrets;
+		class AnimationSources;
+	    class Eventhandlers;
+		class Viewoptics;
+		class ViewPilot;
     };
     class Car_F : Car
     {
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};			
         scope = 0;
 		class PlateInfos
 		{
@@ -8308,8 +8317,7 @@ class CfgVehicles
 	model = "x\addons\a2_epoch_vehicles\wheeled\suv\a2_a_suv";
 	class Turrets: Turrets
 			{
-				class MainTurret;
-				class TopTurret: MainTurret
+				class MainTurret: MainTurret
 				{
 					disableSoundAttenuation = 1;
 					gunnerLeftHandAnimName = "handle_L";
@@ -8318,8 +8326,8 @@ class CfgVehicles
 					gun = "mg1_main_gun";
 					animationSourceBody = "mg1_main_turret";
 					animationSourceGun = "mg1_main_gun";
-					weapons[] = {"E_uh1h_mg_01"};
-					magazines[] = {"E_vmg_762x51_Belt", "E_vmg_762x51_Belt", "E_vmg_762x51_Belt"};
+					weapons[] = {"E_uh1h_mg_762_01"};
+					magazines[] = {"200Rnd_762x51_Belt", "200Rnd_762x51_Belt", "200Rnd_762x51_Belt"};
 					minElev = -10;
 					maxElev = 40;
 					soundServo[] = {"A3\sounds_f\dummysound", 1e-006, 1};
@@ -8354,9 +8362,6 @@ class CfgVehicles
 						maxFov = 1.25;
 						visionMode[] = {"Normal", "NVG"};
 					};
-					//class ViewGunner: ViewGunner
-					//{
-					//};
 				};
 			};
 		class animationsources: AnimationSources
