@@ -8302,6 +8302,131 @@ class CfgVehicles
 		displayName="Classic SUV Load";
 		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv";
 	};
+	class a2_suv_armed_EPOCH: a2_suv_EPOCH
+	{
+	displayName = "Classic Armed SUV";
+	model = "x\addons\a2_epoch_vehicles\wheeled\suv\a2_a_suv";
+	class Turrets: Turrets
+			{
+				class TopTurret: MainTurret
+				{
+					disableSoundAttenuation = 1;
+					gunnerLeftHandAnimName = "handle_L";
+					gunnerRightHandAnimName = "handle_R";
+					body = "mg1_main_turret";
+					gun = "mg1_main_gun";
+					animationSourceBody = "mg1_main_turret";
+					animationSourceGun = "mg1_main_gun";
+					weapons[] = {"E_uh1h_mg_01"};
+					magazines[] = {"E_vmg_762x51_Belt", "E_vmg_762x51_Belt", "E_vmg_762x51_Belt"};
+					minElev = -10;
+					maxElev = 40;
+					soundServo[] = {"A3\sounds_f\dummysound", 1e-006, 1};
+					gunnerAction = "gunner_lsv_01";
+					gunnerCompartments = "Compartment1";
+					ejectDeadGunner = 0;
+					castGunnerShadow = 1;
+					stabilizedInAxes = 0;
+					gunBeg = "mg1_usti_hlavne";
+					gunEnd = "mg1_konec_hlavne";
+					memoryPointGunnerOptics = "mg1_gunnerview";
+					memoryPointsGetInGunner = "mg1_pos_gunner";
+					memoryPointsGetInGunnerDir = "mg1_pos_gunner_dir";
+					commanding = -2;
+					primaryGunner = 1;
+					optics = 1;
+					discreteDistance[] = {100, 200, 300, 400, 600, 800, 1000, 1200, 1500};
+					discreteDistanceInitIndex = 2;
+					//turretInfoType = "RscOptics_crows";
+					gunnerOpticsModel = "\A3\Weapons_F\empty.p3d";
+					selectionFireAnim = "mg1_zasleh";
+					class ViewOptics: ViewOptics
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = 0.75;
+						minFov = 0.25;
+						maxFov = 1.25;
+						visionMode[] = {"Normal", "NVG"};
+					};
+					//class ViewGunner: ViewGunner
+					//{
+					//};
+				};
+			};
+		class animationsources: AnimationSources
+		{
+			class mg1_ReloadAnim
+			{
+				source = "reload";
+				weapon = "E_uh1h_mg_01";
+			};
+			class mg1_ReloadMagazine: mg1_ReloadAnim
+			{
+				source = "reloadmagazine";
+			};
+			class mg1_flash_source: mg1_ReloadAnim
+			{
+				source = "reload";
+			};
+			class mg1_Revolving: mg1_ReloadAnim
+			{
+				source = "revolving";
+			};
+			class mg1_muzzle_rot: mg1_ReloadAnim
+			{
+				source = "ammorandom";
+			};
+			class mg1_muzzle_hide
+			{
+				source = "reload";
+			};
+			class HideGun_01 
+			{
+				source="user"; 
+				initPhase=0; 
+				animPeriod=1.2;
+			};
+			class HideGun_02: HideGun_01{};
+			class HideGun_03: HideGun_01{};
+			class HideGun_04: HideGun_01{};
+			class CloseCover1 
+			{
+				source="user"; 
+				initPhase=0; 
+				animPeriod=0.7;
+			};
+			class CloseCover2: CloseCover1 {};
+		};
+		class UserActions
+		{
+			class Raise_gun
+			{
+				displayName = "Raise Gun";
+				position = "door_L";
+				radius = 1;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""HideGun_01"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+				statement = "this animate [""HideGun_01"", 1];this animate [""CloseCover1"", 1,1.2];";
+			};
+			class HideGun_01: Raise_gun
+			{
+				displayName = "Close Left Door";
+				condition = "this animationPhase ""HideGun_01"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+				statement = "this animate [""HideGun_01"", 1];this animate [""CloseCover1"", 1,1.2];";
+			};
+			class HideGun_a: Raise_gun
+			{
+				displayName = "Close Right Door";
+				condition = "this animationPhase ""HideGun_01"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+				statement = "this animate [""HideGun_01"", 1];this animate [""CloseCover1"", 1,1.2];";
+			};
+        };
+    };	
     class a2_UAZ_base: car_F
 	{
 		displayName="Classic UAZ";
@@ -10993,8 +11118,8 @@ class CfgVehicles
 		maxFordingDepth = 1;
 		mainBladeRadius = 7;
 		liftForceCoef = 1.1;
-		bodyFrictionCoef = 0.4;
-		cyclicAsideForceCoef = 0.4;
+		bodyFrictionCoef = 0.3;
+		cyclicAsideForceCoef = 0.3;
 		cyclicForwardForceCoef = 0.4;
 		backRotorForceCoef = 1;
 		accuracy = 0.5;
