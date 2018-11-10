@@ -8313,57 +8313,57 @@ class CfgVehicles
 	};
 	class a2_suv_armed_EPOCH: a2_suv_EPOCH
 	{
-	displayName = "Classic Armed SUV";
-	model = "x\addons\a2_epoch_vehicles\wheeled\suv\a2_a_suv";
-	class Turrets: Turrets
+		displayName = "Classic Armed SUV";
+		model = "x\addons\a2_epoch_vehicles\wheeled\suv\a2_a_suv";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
 			{
-				class MainTurret: MainTurret
+				disableSoundAttenuation = 1;
+				gunnerLeftHandAnimName = "handle_L";
+				gunnerRightHandAnimName = "handle_R";
+				body = "mg1_main_turret";
+				gun = "mg1_main_gun";
+				animationSourceBody = "mg1_main_turret";
+				animationSourceGun = "mg1_main_gun";
+				weapons[] = {"E_uh1h_mg_762_01"};
+				magazines[] = {"200Rnd_762x51_Belt", "200Rnd_762x51_Belt", "200Rnd_762x51_Belt"};
+				minElev = -10;
+				maxElev = 40;
+				soundServo[] = {"A3\sounds_f\dummysound", 1e-006, 1};
+				gunnerAction = "gunner_lsv_01";
+				gunnerCompartments = "Compartment1";
+				ejectDeadGunner = 0;
+				castGunnerShadow = 1;
+				stabilizedInAxes = 0;
+				gunBeg = "mg1_usti_hlavne";
+				gunEnd = "mg1_konec_hlavne";
+				memoryPointGunnerOptics = "mg1_gunnerview";
+				memoryPointsGetInGunner = "mg1_pos_gunner";
+				memoryPointsGetInGunnerDir = "mg1_pos_gunner_dir";
+				commanding = -2;
+				primaryGunner = 1;
+				optics = 1;
+				discreteDistance[] = {100, 200, 300, 400, 600, 800, 1000, 1200, 1500};
+				discreteDistanceInitIndex = 2;
+				//turretInfoType = "RscOptics_crows";
+				gunnerOpticsModel = "\A3\Weapons_F\empty.p3d";
+				selectionFireAnim = "mg1_zasleh";
+				class ViewOptics: ViewOptics
 				{
-					disableSoundAttenuation = 1;
-					gunnerLeftHandAnimName = "handle_L";
-					gunnerRightHandAnimName = "handle_R";
-					body = "mg1_main_turret";
-					gun = "mg1_main_gun";
-					animationSourceBody = "mg1_main_turret";
-					animationSourceGun = "mg1_main_gun";
-					weapons[] = {"E_uh1h_mg_762_01"};
-					magazines[] = {"200Rnd_762x51_Belt", "200Rnd_762x51_Belt", "200Rnd_762x51_Belt"};
-					minElev = -10;
-					maxElev = 40;
-					soundServo[] = {"A3\sounds_f\dummysound", 1e-006, 1};
-					gunnerAction = "gunner_lsv_01";
-					gunnerCompartments = "Compartment1";
-					ejectDeadGunner = 0;
-					castGunnerShadow = 1;
-					stabilizedInAxes = 0;
-					gunBeg = "mg1_usti_hlavne";
-					gunEnd = "mg1_konec_hlavne";
-					memoryPointGunnerOptics = "mg1_gunnerview";
-					memoryPointsGetInGunner = "mg1_pos_gunner";
-					memoryPointsGetInGunnerDir = "mg1_pos_gunner_dir";
-					commanding = -2;
-					primaryGunner = 1;
-					optics = 1;
-					discreteDistance[] = {100, 200, 300, 400, 600, 800, 1000, 1200, 1500};
-					discreteDistanceInitIndex = 2;
-					//turretInfoType = "RscOptics_crows";
-					gunnerOpticsModel = "\A3\Weapons_F\empty.p3d";
-					selectionFireAnim = "mg1_zasleh";
-					class ViewOptics: ViewOptics
-					{
-						initAngleX = 0;
-						minAngleX = -30;
-						maxAngleX = 30;
-						initAngleY = 0;
-						minAngleY = -100;
-						maxAngleY = 100;
-						initFov = 0.75;
-						minFov = 0.25;
-						maxFov = 1.25;
-						visionMode[] = {"Normal", "NVG"};
-					};
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.75;
+					minFov = 0.25;
+					maxFov = 1.25;
+					visionMode[] = {"Normal", "NVG"};
 				};
 			};
+		};
 		class animationsources: AnimationSources
 		{
 			class mg1_ReloadAnim
@@ -11702,10 +11702,157 @@ class CfgVehicles
 	class B_Heli_Light_01_armed_F;
 	class B_Heli_Light_01_armed_EPOCH : B_Heli_Light_01_armed_F
 	{
+		displayName = "AH-9 Pawnee";
 		scope = 2;
 		side = 3;
-		weapons[] = {"E_uh1h_mg_665_01"};
+		weapons[] = {"M134_minigun_EPOCH"};
+		magazines[] = {"1000Rnd_762x51_Belt"};
+	};
+	class C_Heli_Light_01_armed_base_EPOCH : B_Heli_Light_01_armed_F
+	{
+		scope = 0;
+		class eventhandlers;
+	};	
+	class C_Heli_Light_01_armed_EPOCH : C_Heli_Light_01_armed_base_EPOCH
+	{
+		displayName = "M-900 armed";
+		scope = 2;
+		side = 3;
+		weapons[] = {"HMG_M2_65_EPOCH"};
 		magazines[] = {"200Rnd_65x39_Belt", "200Rnd_65x39_Belt"};
+		class TextureSources
+		{
+			class Blue
+			{
+				displayName = "Blue";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Red
+			{
+				displayName = "Red";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Ion
+			{
+				displayName = "Ion";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class BlueLine
+			{
+				displayName = "BlueLine";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blueLine_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Digital
+			{
+				displayName = "Digital";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Elliptical
+			{
+				displayName = "Elliptical";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_elliptical_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Furious
+			{
+				displayName = "Furious";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_furious_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Graywatcher
+			{
+				displayName = "Graywatcher";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_graywatcher_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Jeans
+			{
+				displayName = "Jeans";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_jeans_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Light
+			{
+				displayName = "Light";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_light_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Shadow
+			{
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_shadow_co.paa"};
+				factions[] = {"CIV_F", "IND_C_F"};
+				displayName = "Shadow";
+				author = "Bohemia Interactive";
+			};
+			class Sheriff
+			{
+				displayName = "Sheriff";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Speedy
+			{
+				displayName = "Speedy";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_speedy_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Sunset
+			{
+				displayName = "Sunset";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sunset_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Vrana
+			{
+				displayName = "Vrana";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Wasp
+			{
+				displayName = "Wasp";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wasp_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Wave
+			{
+				displayName = "Wave";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+		};
+		textureList[] = {"Red", 1, "Blue", 1, "Ion", 1, "BlueLine", 1, "Digital", 1, "Elliptical", 1, "Furious", 1, "Graywatcher", 1, "Jeans", 1, "Light", 1, "Shadow", 1, "Sheriff", 1, "Speedy", 1, "Sunset", 1, "Vrana", 1, "Wasp", 1, "Wave", 1};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
+	};
+	class C_Heli_Light_01_armed_plus_EPOCH : C_Heli_Light_01_armed_EPOCH
+	{
+		displayName = "M-900 armed+";
+		weapons[] = {"HMG_M2_762_EPOCH"};
+		magazines[] = {"200Rnd_762x51_Belt", "200Rnd_762x51_Belt"};
 	};
     class C_Rubberboat;
     class C_Rubberboat_EPOCH : C_Rubberboat
