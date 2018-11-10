@@ -8311,7 +8311,7 @@ class CfgVehicles
 		displayName="Classic SUV Load";
 		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv";
 	};
-	class a2_suv_armed_EPOCH: a2_suv_EPOCH
+	class A2_SUV_armed_EPOCH: a2_suv_EPOCH
 	{
 		displayName = "Classic Armed SUV";
 		model = "x\addons\a2_epoch_vehicles\wheeled\suv\a2_a_suv";
@@ -8802,7 +8802,7 @@ class CfgVehicles
 			soundSetsExt[] = {"Mrap_01_Engine_RPM0_EXT_SoundSet", "Mrap_01_Engine_RPM1_EXT_SoundSet", "Mrap_01_Engine_RPM2_EXT_SoundSet", "Mrap_01_Engine_RPM3_EXT_SoundSet", "Mrap_01_Engine_RPM4_EXT_SoundSet", "Mrap_01_Engine_EXT_Burst_SoundSet", "Mrap_01_Rattling_EXT_SoundSet", "Mrap_01_Stress_EXT_SoundSet", "Mrap_01_Rain_EXT_SoundSet", "Mrap_01_Tires_Rock_Fast_EXT_SoundSet", "Mrap_01_Tires_Grass_Fast_EXT_SoundSet", "Mrap_01_Tires_Sand_Fast_EXT_SoundSet", "Mrap_01_Tires_Gravel_Fast_EXT_SoundSet", "Mrap_01_Tires_Mud_Fast_EXT_SoundSet", "Mrap_01_Tires_Asphalt_Fast_EXT_SoundSet", "Mrap_01_Tires_Water_Fast_EXT_SoundSet", "Mrap_01_Tires_Rock_Slow_EXT_SoundSet", "Mrap_01_Tires_Grass_Slow_EXT_SoundSet", "Mrap_01_Tires_Sand_Slow_EXT_SoundSet", "Mrap_01_Tires_Gravel_Slow_EXT_SoundSet", "Mrap_01_Tires_Mud_Slow_EXT_SoundSet", "Mrap_01_Tires_Asphalt_Slow_EXT_SoundSet", "Mrap_01_Tires_Water_Slow_EXT_SoundSet", "Mrap_01_Tires_Turn_Hard_EXT_SoundSet", "Mrap_01_Tires_Turn_Soft_EXT_SoundSet", "Mrap_01_Tires_Brake_Hard_EXT_SoundSet", "Mrap_01_Tires_Brake_Soft_EXT_SoundSet", "", "Tires_Movement_Dirt_Ext_01_SoundSet"};
 		};
 	};
-    class A2_UA_EPOCHZ: a2_UAZ_base
+    class A2_UAZ_EPOCH: a2_UAZ_base
 	{
 		scope=2;
 		textureList[] = {"Random1", 1, "Random2", 1, "Random3", 1, "Random4", 1, "Random5", 1, "Random6", 1};
