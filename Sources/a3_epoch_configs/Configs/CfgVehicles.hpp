@@ -11720,6 +11720,9 @@ class CfgVehicles
 		side = 3;
 		weapons[] = {"HMG_M2_65_EPOCH"};
 		magazines[] = {"200Rnd_65x39_Belt", "200Rnd_65x39_Belt"};
+		bodyFrictionCoef = 0.3;				// 0.3
+		cyclicAsideForceCoef = 0.6;			// 1.3
+		cyclicForwardForceCoef = 0.7;		// 1
 		class TextureSources
 		{
 			class Blue
