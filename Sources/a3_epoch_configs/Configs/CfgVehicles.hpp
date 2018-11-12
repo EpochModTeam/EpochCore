@@ -6942,14 +6942,14 @@ class CfgVehicles
 		acceleration 	= 15;
         fireResistance 	= 5;
 //		armor = 30;
-		armor = 60;
+		armor = 180;
 		maximumLoad		= 1250;
 //		enginePower = 408;
 		enginePower = 350;
 //		maxOmega = 600;
 		maxOmega = 680;
 //		peakTorque = 680;
-		peakTorque = 600;
+		peakTorque = 650;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
@@ -6973,7 +6973,7 @@ class CfgVehicles
 		class complexGearbox
 		{
 //			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
-			GearboxRatios[] = {"R1", -4.0, "N", 0, "D1", 4.8, "D2", 2.8, "D3", 1.9, "D4", 1.2, "D5", 0.7};
+			GearboxRatios[] = {"R1", -5.0, "N", 0, "D1", 4.8, "D2", 2.8, "D3", 1.9, "D4", 1.2, "D5", 0.7};
 			TransmissionRatios[] = {"High", 5.69};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
@@ -7299,7 +7299,7 @@ class CfgVehicles
 		scope=0;
 		scopeCurator=2;
 //		maxSpeed = 249;
-		maxSpeed = 120;
+		maxSpeed = 125;
 		fuelCapacity	= 40;
         terrainCoef 	= 2.5;
 		turnCoef = 4;
@@ -7308,13 +7308,13 @@ class CfgVehicles
 		acceleration 	= 15;
         fireResistance 	= 5;
 //		armor = 30;
-		armor = 180;
+		armor = 110;
 		maximumLoad		= 1250;
 //		enginePower = 408;
 		enginePower = 200;
 		maxOmega = 600;
 //		peakTorque = 680;
-		peakTorque = 400;
+		peakTorque = 500;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
@@ -7394,23 +7394,26 @@ class CfgVehicles
 				steering = 1;
 				center = "wheel_1_1_axis";
 				boundary = "wheel_1_1_bound";
-				width = "0.23";
-				mass = 20;
-				MOI = 78.625;
-				dampingRate = 0.5;
+				width = "0.32";
+				mass = 30;
+				MOI = 6;
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateInAir = 0.8;
+				dampingRateDestroyed = 5000;
 				maxBrakeTorque = 4000;
 				maxHandBrakeTorque = 0;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				tireForceAppPointOffset = "wheel_1_1_axis";
-				maxCompression = 0.1;
-				maxDroop = 0.15;
-				sprungMass = 400;
-				springStrength = 40000;
-				springDamperRate = 5240;
-				longitudinalStiffnessPerUnitGravity = 100000;
+				maxCompression = 0.05;
+				maxDroop = 0.1;
+				sprungMass = -1;
+				springStrength = 41650;
+				springDamperRate = 4760;
+				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 2.5;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+				latStiffY = 18;
+				frictionVsSlipGraph[] = {{0, 1.75}, {0.5, 1.35}, {1, 1.2}};
 			};
 			class LR: LF
 			{
@@ -7420,7 +7423,8 @@ class CfgVehicles
 				boundary = "wheel_1_2_bound";
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque = 12000;
+				maxHandBrakeTorque = 8000;
+				frictionVsSlipGraph[] = {{0, 2}, {0.5, 1.53}, {1, 1.36}};
 			};
 			class RF: LF
 			{
@@ -7440,7 +7444,8 @@ class CfgVehicles
 				boundary = "wheel_2_2_bound";
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque = 12000;
+				maxHandBrakeTorque = 8000;
+				frictionVsSlipGraph[] = {{0, 2.3}, {0.5, 2.1}, {1, 2}};
 			};
 		};
 		class PlayerSteeringCoefficients
@@ -7641,7 +7646,7 @@ class CfgVehicles
 		acceleration 	= 15;
         fireResistance 	= 5;
 //		armor = 30;
-		armor = 15;
+		armor = 80;
 		maximumLoad		= 1250;
 //		enginePower = 408;
 		enginePower = 340;
@@ -7672,7 +7677,7 @@ class CfgVehicles
 		class complexGearbox
 		{
 //			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
-			GearboxRatios[] = {"R1", -4.0, "N", 0, "D1", 3.2, "D2", 1.9, "D3", 1.1, "D4", 0.8};
+			GearboxRatios[] = {"R1", -4.5, "N", 0, "D1", 3.2, "D2", 1.9, "D3", 1.1, "D4", 0.8};
 			TransmissionRatios[] = {"High", 5.69};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
@@ -8000,7 +8005,8 @@ class CfgVehicles
 		maximumLoad		= 1250;
 		enginePower = 408;
 		maxOmega = 600;
-		peakTorque = 680;
+//		peakTorque = 680;
+		peakTorque = 695;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
@@ -8445,7 +8451,7 @@ class CfgVehicles
 		scope=0;
 		scopeCurator=2;
 //		maxSpeed = 249;
-		maxSpeed = 120;
+		maxSpeed = 145;
 		fuelCapacity	= 40;
 //        terrainCoef 	= 2.5;
         terrainCoef 	= 1.8;
@@ -8455,13 +8461,13 @@ class CfgVehicles
 		acceleration 	= 15;
         fireResistance 	= 5;
 //		armor = 30;
-		armor = 40;
+		armor = 45;
 		maximumLoad		= 1250;
 		enginePower = 408;
 //		maxOmega = 600;
 		maxOmega = 471;
 //		peakTorque = 680;
-		peakTorque = 400;
+		peakTorque = 480;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
@@ -8486,7 +8492,7 @@ class CfgVehicles
 		class complexGearbox
 		{
 //			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
-			GearboxRatios[] = {"R1", -5.0, "N", 0, "D1", 4.0, "D2", 2.6, "D3", 1.6, "D4", 1.1, "D5", 0.9};
+			GearboxRatios[] = {"R1", -5.0, "N", 0, "D1", 3.7, "D2", 2.3, "D3", 1.4, "D4", 0.9, "D5", 0.7};
 			TransmissionRatios[] = {"High", 5.69};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
@@ -8499,7 +8505,7 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[]=
 		{
-             "\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_red_co.paa"
+             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_002_co.paa"
 		};
 		class TextureSources
 		{
@@ -10594,13 +10600,14 @@ class CfgVehicles
 		{
 			class HitHull
 			{
-				armor = 5;
+				armor = 999;
 				name = "body2";
 				visual = "trup";
 				passThrough = 1;
 				minimalHit = 0.05;
 				explosionShielding = 2;
 				radius = 0.45;
+				depends = "Total";
 			};
 			class HitEngine
 			{
@@ -10614,7 +10621,7 @@ class CfgVehicles
 			};
 			class HitAvionics
 			{
-				armor = 2;
+				armor = 1;
 				name = "elektronika";
 				visual = "elektronika";
 				passThrough = 1;
@@ -10624,7 +10631,7 @@ class CfgVehicles
 			};
 			class HitVRotor
 			{
-				armor = ".5";
+				armor = 1.5;
 				name = "tail rotor";
 				visual = "tail rotor static";
 				passThrough = 0.3;
@@ -10634,7 +10641,7 @@ class CfgVehicles
 			};
 			class HitHRotor
 			{
-				armor = 2;
+				armor = 3;
 				name = "main rotor";
 				visual = "main rotor static";
 				passThrough = 0.1;
@@ -10693,7 +10700,7 @@ class CfgVehicles
 			};
 			class HitGlass1
 			{
-				armor = 2;
+				armor = 1.5;
 				name = "glass1";
 				convexComponent = "glass1";
 				visual = "glass1";
@@ -11117,7 +11124,7 @@ class CfgVehicles
 	class a2_ch47f_epoch_base_F: Helicopter_Base_H
 	{
 		scope = 0;
-		armor = 90;
+		armor = 12;
 		altFullForce = 4000;
 		altNoForce = 6000;
 		maxSpeed = 300;
@@ -11232,13 +11239,14 @@ class CfgVehicles
 		{
 			class HitHull
 			{
-				armor = 5;
+				armor = 999;
 				name = "body2";
 				visual = "trup";
 				passThrough = 1;
 				minimalHit = 0.05;
 				explosionShielding = 2;
 				radius = 0.45;
+				depends = "Total";
 			};
 			class HitEngine
 			{
@@ -11262,13 +11270,13 @@ class CfgVehicles
 			};
 			class HitVRotor
 			{
-				armor = ".5";
+				armor = 2;
 				name = "tail rotor";
 				visual = "tail rotor static";
 				passThrough = 0.3;
 				minimalHit = 0.05;
 				explosionShielding = 2;
-				radius = 0.35;
+				radius = 0.9;
 			};
 			class HitHRotor
 			{
@@ -11278,7 +11286,7 @@ class CfgVehicles
 				passThrough = 0.1;
 				minimalHit = 0.05;
 				explosionShielding = 2;
-				radius = 0.35;
+				radius = 0.9;
 			};
 			class HitMissiles
 			{
@@ -11331,7 +11339,7 @@ class CfgVehicles
 			};
 			class HitGlass1
 			{
-				armor = 2;
+				armor = 1;
 				name = "glass1";
 				convexComponent = "glass1";
 				visual = "glass1";
