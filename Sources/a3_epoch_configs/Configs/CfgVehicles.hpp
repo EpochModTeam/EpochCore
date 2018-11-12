@@ -8311,14 +8311,16 @@ class CfgVehicles
     class A2_SUV_EPOCH: a2_suv_base
 	{
 		scope=2;
+		class Turrets {};
 	};
     class A2_SUV_load_EPOCH: A2_SUV_EPOCH
 	{
 		displayName="Classic SUV Load";
 		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv";
 	};
-	class A2_SUV_armed_EPOCH: a2_suv_EPOCH
+	class A2_SUV_armed_EPOCH: a2_suv_base
 	{
+		scope=2;
 		displayName = "Classic Armed SUV";
 		model = "x\addons\a2_epoch_vehicles\wheeled\suv\a2_a_suv";
 		class Turrets: Turrets
