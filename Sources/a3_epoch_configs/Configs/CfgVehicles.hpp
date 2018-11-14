@@ -11709,6 +11709,419 @@ class CfgVehicles
 	    	};
 	    };	
 	};
+	class a2_mi8_epoch_base_F: Helicopter_Base_H
+	{
+		scope = 0;
+		armor = 12;
+		altFullForce = 4000;
+		altNoForce = 6000;
+		maxSpeed = 300;
+		maxFordingDepth = 1;
+		mainBladeRadius = 7;
+		liftForceCoef = 1.1;
+		bodyFrictionCoef = 0.5;
+		cyclicAsideForceCoef = 0.6;
+		cyclicForwardForceCoef = 0.6;
+		backRotorForceCoef = 1;
+		accuracy = 0.5;
+		model = "x\addons\a2_epoch_vehicles\air\mi17\a2_mi8_epoch.p3d";
+		icon = "\A3\Air_F_Beta\Heli_Attack_01\Data\UI\Map_Heli_Attack_01_CA.paa";
+		picture = "\A3\Air_F_Beta\Heli_Attack_01\Data\UI\Heli_Attack_01_CA.paa";
+		driverAction = "pilot_Heli_Light_02";
+		driverInAction = "pilot_Heli_Light_02";
+		precisegetinout = 1;
+		GetInAction = "pilot_Heli_Light_02_Enter";
+		GetOutAction = "pilot_Heli_Light_02_Exit";
+		cargoGetInAction[] = {"GetInHelicopterCargo"};
+		cargoGetOutAction[] = {"GetOutHelicopterCargo"};
+		transportSoldier = 14;
+		cargoAction[] = {"passenger_apc_generic04","passenger_apc_generic02","passenger_apc_generic03","passenger_apc_generic04","passenger_apc_narrow_generic01","passenger_apc_narrow_generic02","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_generic01_foldhands","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_apc_generic01","passenger_apc_generic01","passenger_generic01_leanleft","passenger_generic01_leanright","passenger_low01"};
+		getInProxyOrder[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+		cargoProxyIndexes[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+		getInRadius = 2;
+		weapons[] = {"CMFlareLauncher"};
+		magazines[] = {"120Rnd_CMFlare_Chaff_Magazine"};
+		memoryPointCM[] = {"Flare_launcher_1_pos","Flare_launcher_2_pos"};
+		memoryPointCMDir[] = {"Flare_launcher_1_dir","Flare_launcher_2_dir"};
+		enableManualFire = 0;
+		radarTargetSize = 1.2;
+		visualTargetSize = 1.2;
+		irTargetSize = 1.2;
+		lockDetectionSystem = "8 + 4";
+		incomingMissileDetectionSystem = "8 + 16";
+		maximumLoad = 6000;
+		supplyRadius = -0.5;
+		gearRetracting = 0;
+		driveOnComponent[] = {"Wheels"};
+		fuelCapacity = 1360;
+		fuelConsumptionRate = 0.126;
+		slingLoadMaxCargoMass = 12000;
+		radarType = 8;
+		memoryPointDriverOptics = "slingCamera";
+		slingLoadMemoryPoint = "slingLoad0";
+		cargoIsCoDriver[] = {0,0};
+		memoryPointsGetInCargo = "pos cargo";
+		memoryPointsGetInCargoDir = "pos cargo dir";
+		hideWeaponsCargo = 0;
+		cargoCanEject = 1;
+		driverCanEject = 1;
+		driverCompartments = "Compartment1";
+		cargoCompartments[] = {"Compartment2"};
+		hiddenSelections[] = {"camo1"};
+		class TransportBackpacks{};
+		class TransportItems{};
+		soundGetIn[] =        {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-Mi17-getin-01",0.31622776,1};
+		soundGetOut[] =       {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-Mi17-getout-01",0.31622776,1,40};
+		soundEngineOnInt[] =  {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\int\int-Mi17-start-1",0.4466836,1};
+		soundEngineOnExt[] =  {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-Mi17-start-01",0.4466836,1,700};
+		soundEngineOffInt[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\int\int-Mi17-stop-1",0.4466836,1};
+		soundEngineOffExt[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-Mi17-stop-01",0.4466836,1,700};
+		soundEnviron[] = {"","db-30",1};
+		soundDammage[] = {"A3\Sounds_F\air\Heli_Light_02\crash","db-5",1};
+		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1","db-20",1};
+		soundIncommingMissile[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_2","db-20",1};
+		class Sounds
+		{
+			class Engine
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-sovietheli-engine-1","db5",1,900};
+				frequency = "rotorSpeed";
+				volume = "camPos*((rotorSpeed-0.72)*4)";
+			};
+			class RotorLowOut
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-sovietheli-rotor-1","db3",1,1200};
+				frequency = "rotorSpeed";
+				volume = "camPos*(0 max (rotorSpeed-0.1))";
+				cone[] = {1.6,3.14,1.6,0.95};
+			};
+			class RotorHighOut
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-sovietheli-rotor-5","db5",1,1500};
+				frequency = "rotorSpeed";
+				volume = "camPos*10*(0 max (rotorThrust-0.9))";
+				cone[] = {1.6,3.14,1.6,0.95};
+			};
+			class EngineIn
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\int\int-sovietheli-engine-1","db0",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
+			};
+			class RotorLowIn
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\int\int-Mi17-rotor-low-2","db2",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*(0 max (rotorSpeed-0.1))";
+			};
+			class RotorHighIn
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\int\int-Mi17-rotor-high-2","db3",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*3*(rotorThrust-0.9)";
+			};
+		};
+		class HitPoints
+		{
+			class HitHull
+			{
+				armor = 999;
+				name = "body2";
+				visual = "trup";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.45;
+				depends = "Total";
+			};
+			class HitEngine
+			{
+				armor = 2;
+				name = "motor";
+				visual = "motor";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
+			};
+			class HitAvionics
+			{
+				armor = 2;
+				name = "elektronika";
+				visual = "elektronika";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
+			};
+			class HitVRotor
+			{
+				armor = 2;
+				name = "tail rotor";
+				visual = "tail rotor static";
+				passThrough = 0.3;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.9;
+			};
+			class HitHRotor
+			{
+				armor = 2;
+				name = "main rotor";
+				visual = "main rotor static";
+				passThrough = 0.1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.9;
+			};
+			class HitMissiles
+			{
+				armor = 0.1;
+				name = "munice";
+				visual = "munice";
+				passThrough = 0.5;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitRGlass
+			{
+				armor = 0.1;
+				name = "sklo predni P";
+				visual = "sklo predni P";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitLGlass
+			{
+				armor = 0.1;
+				name = "sklo predni L";
+				visual = "sklo predni L";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitWinch
+			{
+				armor = 0.1;
+				name = "slingLoad0";
+				visual = "";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitTransmission
+			{
+				armor = 0.8;
+				name = "transmission";
+				passThrough = 0.8;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitGlass1
+			{
+				armor = 1;
+				name = "glass1";
+				convexComponent = "glass1";
+				visual = "glass1";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
+			};
+			class HitGlass2: HitGlass1
+			{
+				name = "glass2";
+				convexComponent = "glass2";
+				visual = "glass2";
+			};
+			class HitGlass3: HitGlass1
+			{
+				name = "glass3";
+				convexComponent = "glass3";
+				visual = "glass3";
+			};
+			class HitGlass4: HitGlass1
+			{
+				name = "glass4";
+				convexComponent = "glass4";
+				visual = "glass4";
+			};
+			class HitGlass5: HitGlass1
+			{
+				name = "glass5";
+				convexComponent = "glass5";
+				visual = "glass5";
+			};
+			class HitGlass6: HitGlass1
+			{
+				name = "glass6";
+				convexComponent = "glass6";
+				visual = "glass6";
+			};
+		};
+		class Exhausts
+		{
+			class Exhaust1
+			{
+				position = "exhaust1";
+				direction = "exhaust1_dir";
+				effect = "ExhaustEffectHeli";
+			};
+			class Exhaust2
+			{
+				position = "exhaust2";
+				direction = "exhaust2_dir";
+				effect = "ExhaustEffectHeli";
+			};
+		};
+		class ViewPilot: ViewPilot
+		{
+			initFov = 0.75;
+			minFov = 0.375;
+			maxFov = 1.1;
+		};
+		class Viewoptics: Viewoptics
+		{
+			initAngleX = 0;
+			minAngleX = 0;
+			maxAngleX = 0;
+			initAngleY = 0;
+			minAngleY = 0;
+			maxAngleY = 0;
+			initFov = 0.1;
+			minFov = 0.1;
+			maxFov = 1.2;
+		};
+		class Turrets: Turrets
+		{
+			class CopilotTurret: CopilotTurret
+			{
+				gunnerAction = "copilot_Heli_Light_02";
+				gunnerInAction = "copilot_Heli_Light_02";
+				precisegetinout = 1;
+				gunnerGetInAction = "copilot_Heli_Light_02_Enter";
+				gunnerGetOutAction = "copilot_Heli_Light_02_Exit";
+				memoryPointsGetInCargo = "pos copilot";
+				memoryPointsGetInCargoDir = "pos copilot dir";
+				canEject = 0;
+				minElev = -50;
+				maxElev = 30;
+				initElev = 11;
+				minTurn = -170;
+				maxTurn = 170;
+				initTurn = 0;
+				gunnerLeftHandAnimName = "lever_copilot";
+				gunnerRightHandAnimName = "stick_copilot";
+				maxHorizontalRotSpeed = 3;
+				maxVerticalRotSpeed = 3;
+				isCopilot = 1;
+				LODTurnedIn = 1;
+				gunnerUsesPilotView = 1;
+				primaryGunner = 0;
+				proxyIndex = 1;
+				enableManualFire = 0;
+			};
+			class CargoTurret_01: CargoTurret
+			{
+				gunnerAction = "passenger_bench_1";
+				gunnerCompartments = "Compartment2";
+				memoryPointsGetInGunner = "pos cargo";
+				memoryPointsGetInGunnerDir = "pos cargo dir";
+				gunnerName = "FFV";
+				proxyIndex = 15;
+				maxElev = 15;
+				minElev = -62;
+				maxTurn = 50;
+				minTurn = -55; //;-75
+				isPersonTurret = 1;
+				ejectDeadGunner = 0;
+				enabledByAnimationSource = "";
+				usepip = 0;
+				gunnerInAction = "passenger_apc_narrow_generic02";
+				startEngine = 0;
+				commanding = -1;
+				outGunnerMayFire = 1;
+				inGunnerMayFire = 1;
+				animationSourceHatch = "";
+			};			
+		};
+		selectionDamage = "zbytek";
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {"x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_amt.rvmat",
+			         "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_amt_damage.rvmat",
+					 "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_amt_destruct.rvmat",
+                     "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_mtv.rvmat",
+			         "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_mtv_damage.rvmat",
+					 "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_mtv_destruct.rvmat",
+                     "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_det_g.rvmat",
+			         "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_det_g_damage.rvmat",
+					 "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_det_g_destruct.rvmat",
+                     "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_glass.rvmat",
+			         "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_glass_damage.rvmat",
+					 "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_glass_destruct.rvmat",
+                     "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_inter.rvmat",
+			         "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_inter_damage.rvmat",
+					 "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_inter_destruct.rvmat"
+					 					 
+					 };
+		};
+		class AnimationSources{};
+		class UserActions{};
+		class Reflectors: Reflectors
+		{
+			class Right
+			{
+				color[] = {7000,7500,10000};
+				ambient[] = {70,75,100};
+				intensity = 50;
+				size = 1;
+				innerAngle = 15;
+				outerAngle = 65;
+				coneFadeCoef = 10;
+				position = "L svetlo";
+				direction = "konec L svetla";
+				hitpoint = "L svetlo";
+				selection = "L svetlo";
+				useFlare = 1;
+				flareSize = 10;
+				flareMaxDistance = 250;
+				dayLight = 0;
+				class Attenuation
+				{
+					start = 0;
+					constant = 0;
+					linear = 1;
+					quadratic = 1;
+					hardLimitStart = 100;
+					hardLimitEnd = 200;
+				};
+			};
+		};
+		aggregateReflectors[] = {{"Left"}};
+	};
+	class a2_mi8_EPOCH: a2_mi8_epoch_base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Mi17 Unarmed";
+		author = "BIS/Helion4";
+		side = 3;
+		faction = "CIV_F";
+		crew = "";
+		accuracy = 1.5;
+		weapons[] = {};
+		magazines[] = {};
+		hiddenSelectionsTextures[] = {"x\addons\a2_epoch_vehicles\air\mi17\data\mi8civil_body_g_co.paa"};
+	};
+
 	class B_Heli_Light_01_armed_F;
 	class B_Heli_Light_01_armed_EPOCH : B_Heli_Light_01_armed_F
 	{
