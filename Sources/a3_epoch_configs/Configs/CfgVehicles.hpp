@@ -8920,45 +8920,33 @@ class CfgVehicles
 				explosionShielding = 3;
 				radius = 0.25;
 			};
-			class HitFuel
+			class HitFuel : HitFuel
 			{
 				armor = 2;
-				material = -1;
-				name = "palivo";
-				visual = "";
 				passThrough = 0.2;
 				minimalHit = 0.01;
 				explosionShielding = 0.2;
 				radius = 0.45;
 			};
-			class HitHull
+			class HitHull : HitHull
 			{
 				armor = 3.5;
-				material = -1;
-				name = "palivo";
-				visual = "";
 				passThrough = 0.2;
 				minimalHit = 0.01;
 				explosionShielding = 0.4;
 				radius = 0.6;
 			};
-			class HitEngine
+			class HitEngine : HitEngine
 			{
 				armor = 2;
-				material = -1;
-				name = "motor";
-				visual = "";
 				passThrough = 0.4;
 				minimalHit = 0.01;
 				explosionShielding = 0.2;
 				radius = 0.6;
 			};
-			class HitBody
+			class HitBody : HitBody
 			{
 				armor = 20;
-				material = -1;
-				name = "karoserie";
-				visual = "zbytek";
 				passThrough = 1;
 				minimalHit = 0.01;
 				explosionShielding = 2;
@@ -8966,7 +8954,6 @@ class CfgVehicles
 			};
 			class HitLFWheel: HitLFWheel
 			{
-				visual = "wheel_1_1_hide";
 				armor = 2;
 				minimalHit = 0.02;
 				explosionShielding = 4;
@@ -8974,7 +8961,6 @@ class CfgVehicles
 			};
 			class HitLMWheel: HitLMWheel
 			{
-				visual = "wheel_1_3_steering";
 				armor = 2;
 				minimalHit = 0.02;
 				explosionShielding = 4;
@@ -8982,7 +8968,6 @@ class CfgVehicles
 			};
 			class HitLF2Wheel: HitLF2Wheel
 			{
-				visual = "wheel_1_2_hide";
 				armor = 2;
 				minimalHit = 0.02;
 				explosionShielding = 4;
@@ -8990,7 +8975,6 @@ class CfgVehicles
 			};
 			class HitRFWheel: HitRFWheel
 			{
-				visual = "wheel_2_1_hide";
 				armor = 2;
 				minimalHit = 0.02;
 				explosionShielding = 4;
@@ -8998,7 +8982,6 @@ class CfgVehicles
 			};
 			class HitRMWheel: HitRMWheel
 			{
-				visual = "wheel_2_3_steering";
 				armor = 2;
 				minimalHit = 0.02;
 				explosionShielding = 4;
@@ -9006,7 +8989,6 @@ class CfgVehicles
 			};
 			class HitRF2Wheel: HitRF2Wheel
 			{
-				visual = "wheel_2_2_hide";
 				armor = 2;
 				minimalHit = 0.02;
 				explosionShielding = 4;
@@ -9386,45 +9368,33 @@ class CfgVehicles
 				explosionShielding = 3;
 				radius = 0.25;
 			};
-			class HitFuel
+			class HitFuel : HitFuel
 			{
 				armor = 2.5;
-				material = -1;
-				name = "palivo";
-				visual = "";
 				passThrough = 0.2;
 				minimalHit = 0.01;
 				explosionShielding = 0.2;
 				radius = 0.45;
 			};
-			class HitHull
+			class HitHull : HitHull
 			{
 				armor = 2.5;
-				material = -1;
-				name = "palivo";
-				visual = "";
 				passThrough = 0.2;
 				minimalHit = 0.01;
 				explosionShielding = 0.4;
 				radius = 0.45;
 			};
-			class HitEngine
+			class HitEngine : HitEngine
 			{
 				armor = 0.1;
-				material = -1;
-				name = "motor";
-				visual = "";
 				passThrough = 0.4;
 				minimalHit = 0.01;
 				explosionShielding = 0.2;
 				radius = 0.45;
 			};
-			class HitBody
+			class HitBody : HitBody
 			{
 				armor = 20;
-				material = -1;
-				name = "karoserie";
-				visual = "zbytek";
 				passThrough = 1;
 				minimalHit = 0.01;
 				explosionShielding = 2;
@@ -9432,7 +9402,6 @@ class CfgVehicles
 			};
 			class HitLFWheel: HitLFWheel
 			{
-				visual = "wheel_1_1_hide";
 				armor = 2;
 				minimalHit = 0.02;
 				explosionShielding = 4;
@@ -9440,7 +9409,6 @@ class CfgVehicles
 			};
 			class HitLF2Wheel: HitLF2Wheel
 			{
-				visual = "wheel_1_2_hide";
 				armor = 2;
 				minimalHit = 0.02;
 				explosionShielding = 4;
@@ -9448,7 +9416,6 @@ class CfgVehicles
 			};
 			class HitRFWheel: HitRFWheel
 			{
-				visual = "wheel_2_1_hide";
 				armor = 2;
 				minimalHit = 0.02;
 				explosionShielding = 4;
@@ -9456,7 +9423,6 @@ class CfgVehicles
 			};
 			class HitRF2Wheel: HitRF2Wheel
 			{
-				visual = "wheel_2_2_hide";
 				armor = 2;
 				minimalHit = 0.02;
 				explosionShielding = 4;
@@ -9735,19 +9701,19 @@ class CfgVehicles
 		maxSpeed = 150;
 		fuelCapacity	= 40;
 //        terrainCoef 	= 2.5;
-        terrainCoef 	= 4.0;
+        terrainCoef 	= 2.8;
 		turnCoef = 4;
 		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
         fireResistance 	= 5;
 //		armor = 30;
-		armor = 50;
+		armor = 70;
 		maximumLoad		= 1250;
 		enginePower = 408;
 		maxOmega = 600;
 //		peakTorque = 680;
-		peakTorque = 425;
+		peakTorque = 500;
 		cost			= 50000;
         transportMaxBackpacks 	= 3;
 		transportSoldier 		= 3;
@@ -9779,7 +9745,85 @@ class CfgVehicles
 			reverseString = "R";
 		};
         class Turrets{};
-		class HitPoints: HitPoints {};
+		class HitPoints: HitPoints {
+			class HitGlass1 : HitGlass1
+			{
+				armor = 0.2;
+				passThrough = 0;
+				explosionShielding = 2;
+			};
+			class HitGlass2 : HitGlass2
+			{
+				armor = 0.2;
+				passThrough = 0;
+				explosionShielding = 2;
+			};
+			class HitGlass3 : HitGlass3
+			{
+				armor = 0.2;
+				passThrough = 0;
+				explosionShielding = 2;
+			};
+			class HitGlass4 : HitGlass4
+			{
+				armor = 0.2;
+				passThrough = 0;
+				explosionShielding = 2;
+			};
+			class HitBody : HitBody
+			{
+				armor = 1;
+				passThrough = 1;
+				explosionShielding = 1.5;
+			};
+			class HitFuel : HitFuel
+			{
+				armor = 0.5;
+				passThrough = 0.1;
+				explosionShielding = 1.5;
+			};
+			class HitLFWheel : HitLFWheel
+			{
+				armor = 0.75;
+				passThrough = 0.3;
+				explosionShielding = 4;
+				radius = 0.2;
+			};
+			class HitLF2Wheel : HitLF2Wheel
+			{
+				armor = 0.75;
+				passThrough = 0.3;
+				explosionShielding = 4;
+				radius = 0.2;
+			};
+			class HitRFWheel : HitRFWheel
+			{
+				armor = 0.75;
+				passThrough = 0.3;
+				explosionShielding = 4;
+				radius = 0.2;
+			};
+			class HitRF2Wheel : HitRF2Wheel
+			{
+				armor = 0.75;
+				passThrough = 0.3;
+				explosionShielding = 4;
+				radius = 0.2;
+			};
+			class HitEngine : HitEngine
+			{
+				armor = 0.5;
+				passThrough = 0.5;
+				explosionShielding = 0.5;
+			};
+			class HitHull : HitHull
+			{
+				armor = 1.5;
+				passThrough = 0.5;
+				explosionShielding = 8;
+				minimalHit = 0.1;
+			};
+		};
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[]=
 		{
