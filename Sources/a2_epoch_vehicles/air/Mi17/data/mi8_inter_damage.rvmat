@@ -85,5 +85,5 @@ class Stage7
 };
 class StageTI
 {
-	texture="x\addons\a2_epoch_vehicles\air\Mi17\data\data\mi8_inter_ti_ca.paa";
+	texture="x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_inter_ti_ca.paa";
 };
