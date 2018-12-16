@@ -3005,15 +3005,26 @@ class CfgVehicles
 		};
         class HitPoints
         {
-            class HitLFWheel;
-            class HitLF2Wheel;
-            class HitRFWheel;
-            class HitRF2Wheel;
-            class HitBody;
-            class HitGlass1;
-            class HitGlass2;
-            class HitGlass3;
-            class HitGlass4;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitBody;
+			class HitFuel;
+			class HitLFWheel;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitRF2Wheel;
+			class HitEngine;
+			class HitHull;
         };
         class EventHandlers;
     };
@@ -9186,14 +9197,14 @@ class CfgVehicles
 		maxSpeed = 110;
 		fuelCapacity	= 40;
 //        terrainCoef 	= 2.5;
-        terrainCoef 	= 1.8;
+        terrainCoef 	= 1.25;
 		turnCoef = 4;
 		precision 		= 15;
-		brakeDistance 	= 3.0;
+		brakeDistance 	= 10;
 		acceleration 	= 15;
         fireResistance 	= 5;
 //		armor = 30;
-		armor = 75;
+		armor 			= 120;
 		maximumLoad		= 1250;
 		enginePower = 408;
 //		maxOmega = 600;
@@ -9233,7 +9244,108 @@ class CfgVehicles
 			reverseString = "R";
 		};
         class Turrets{};
-		class HitPoints: HitPoints {};
+		class HitPoints: HitPoints {
+			class HitGlass1: HitGlass1
+			{
+				armor = 1.5;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass2: HitGlass2
+			{
+				armor = 1.5;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass3: HitGlass3
+			{
+				armor = 1.5;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass4: HitGlass4
+			{
+				armor = 1.5;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitFuel
+			{
+				armor = 2.5;
+				material = -1;
+				name = "palivo";
+				visual = "";
+				passThrough = 0.2;
+				minimalHit = 0.01;
+				explosionShielding = 0.2;
+				radius = 0.45;
+			};
+			class HitHull
+			{
+				armor = 2.5;
+				material = -1;
+				name = "palivo";
+				visual = "";
+				passThrough = 0.2;
+				minimalHit = 0.01;
+				explosionShielding = 0.4;
+				radius = 0.45;
+			};
+			class HitEngine
+			{
+				armor = 0.1;
+				material = -1;
+				name = "motor";
+				visual = "";
+				passThrough = 0.4;
+				minimalHit = 0.01;
+				explosionShielding = 0.2;
+				radius = 0.45;
+			};
+			class HitBody
+			{
+				armor = 20;
+				material = -1;
+				name = "karoserie";
+				visual = "zbytek";
+				passThrough = 1;
+				minimalHit = 0.01;
+				explosionShielding = 2;
+				radius = 0.2;
+			};
+			class HitLFWheel: HitLFWheel
+			{
+				visual = "wheel_1_1_hide";
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitLF2Wheel: HitLF2Wheel
+			{
+				visual = "wheel_1_2_hide";
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				visual = "wheel_2_1_hide";
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitRF2Wheel: HitRF2Wheel
+			{
+				visual = "wheel_2_2_hide";
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+		};
         hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[]=
 		{
@@ -9287,21 +9399,21 @@ class CfgVehicles
 				steering = 1;
 				center = "wheel_1_1_axis";
 				boundary = "wheel_1_1_bound";
-				width = "0.23";
-				mass = 20;
-				MOI = 78.625;
-				dampingRate = 0.5;
-				maxBrakeTorque = 4000;
+				width = 0.35;
+				mass = 187.5;
+				MOI = 60;
+				dampingRate = 0.1;
+				maxBrakeTorque = 10000;
 				maxHandBrakeTorque = 0;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				tireForceAppPointOffset = "wheel_1_1_axis";
-				maxCompression = 0.1;
+				maxCompression = 0.1125;
 				maxDroop = 0.15;
-				sprungMass = 400;
-				springStrength = 40000;
-				springDamperRate = 5240;
-				longitudinalStiffnessPerUnitGravity = 100000;
-				latStiffX = 2.5;
+				sprungMass = 3090;
+				springStrength = 110000;
+				springDamperRate = 27900;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
 				latStiffY = 180;
 				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
 			};
@@ -9313,7 +9425,7 @@ class CfgVehicles
 				boundary = "wheel_1_2_bound";
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque = 12000;
+				maxHandBrakeTorque = 100000;
 			};
 			class RF: LF
 			{
@@ -9333,7 +9445,7 @@ class CfgVehicles
 				boundary = "wheel_2_2_bound";
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque = 12000;
+				maxHandBrakeTorque = 100000;
 			};
 		};
 		class PlayerSteeringCoefficients
