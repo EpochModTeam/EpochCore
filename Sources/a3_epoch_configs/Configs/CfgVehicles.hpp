@@ -8855,7 +8855,7 @@ class CfgVehicles
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
         fireResistance 	= 5;
-		armor = 30;
+		armor = 65;
 		maximumLoad		= 1250;
 		enginePower = 408;
 //		maxOmega = 600;
@@ -8895,7 +8895,124 @@ class CfgVehicles
 			reverseString = "R";
 		};
         class Turrets{};
-		class HitPoints: HitPoints {};
+		class HitPoints: HitPoints {
+			class HitGlass1: HitGlass1
+			{
+				armor = 0.8;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass2: HitGlass2
+			{
+				armor = 0.8;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass3: HitGlass3
+			{
+				armor = 0.8;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass4: HitGlass4
+			{
+				armor = 0.8;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitFuel
+			{
+				armor = 2;
+				material = -1;
+				name = "palivo";
+				visual = "";
+				passThrough = 0.2;
+				minimalHit = 0.01;
+				explosionShielding = 0.2;
+				radius = 0.45;
+			};
+			class HitHull
+			{
+				armor = 3.5;
+				material = -1;
+				name = "palivo";
+				visual = "";
+				passThrough = 0.2;
+				minimalHit = 0.01;
+				explosionShielding = 0.4;
+				radius = 0.6;
+			};
+			class HitEngine
+			{
+				armor = 2;
+				material = -1;
+				name = "motor";
+				visual = "";
+				passThrough = 0.4;
+				minimalHit = 0.01;
+				explosionShielding = 0.2;
+				radius = 0.6;
+			};
+			class HitBody
+			{
+				armor = 20;
+				material = -1;
+				name = "karoserie";
+				visual = "zbytek";
+				passThrough = 1;
+				minimalHit = 0.01;
+				explosionShielding = 2;
+				radius = 0.2;
+			};
+			class HitLFWheel: HitLFWheel
+			{
+				visual = "wheel_1_1_hide";
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitLMWheel: HitLMWheel
+			{
+				visual = "wheel_1_3_steering";
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitLF2Wheel: HitLF2Wheel
+			{
+				visual = "wheel_1_2_hide";
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				visual = "wheel_2_1_hide";
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitRMWheel: HitRMWheel
+			{
+				visual = "wheel_2_3_steering";
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitRF2Wheel: HitRF2Wheel
+			{
+				visual = "wheel_2_2_hide";
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+		};
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[]={"x\addons\a2_epoch_vehicles\wheeled\ural\data\ural_kabina_epoch_co.paa","x\addons\a2_epoch_vehicles\wheeled\ural\data\ural_plachta_co.paa"};
 		class Damage
