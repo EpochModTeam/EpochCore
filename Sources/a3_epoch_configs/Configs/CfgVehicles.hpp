@@ -11525,7 +11525,7 @@ class CfgVehicles
 			};
 			class HitEngine
 			{
-				armor = 2;
+				armor = 6;
 				name = "motor";
 				visual = "motor";
 				passThrough = 1;
@@ -11545,7 +11545,7 @@ class CfgVehicles
 			};
 			class HitVRotor
 			{
-				armor = 2;
+				armor = 6;
 				name = "tail rotor";
 				visual = "tail rotor static";
 				passThrough = 0.3;
@@ -11555,7 +11555,7 @@ class CfgVehicles
 			};
 			class HitHRotor
 			{
-				armor = 2;
+				armor = 6;
 				name = "main rotor";
 				visual = "main rotor static";
 				passThrough = 0.1;
