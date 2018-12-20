@@ -8878,6 +8878,8 @@ class CfgVehicles
 		getOutAction 		= GetOutLow;
 		cargoGetInAction[] 	= {"GetInLow"};
 		cargoGetOutAction[] = {"GetOutLow"};
+		memoryPointsGetInCargo[] = {"pos codriver","pos cargo"};
+		memoryPointsGetInCargoDir[] = {"pos codriver dir","pos cargo dir"};
 //		idleRpm = 800;
 		idleRpm = 600;
 //		redRpm = 6000;
