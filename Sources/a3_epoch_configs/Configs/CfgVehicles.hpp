@@ -8388,7 +8388,7 @@ class CfgVehicles
 			class mg1_ReloadAnim
 			{
 				source = "reload";
-				weapon = "E_uh1h_mg_01";
+				weapon = "E_uh1h_mg_762_01";
 			};
 			class mg1_ReloadMagazine: mg1_ReloadAnim
 			{
