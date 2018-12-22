@@ -8766,14 +8766,14 @@ class CfgVehicles
 				};
 			};
 		};
-		attenuationEffectType = "MrapAttenuation";
-		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Enter", 0.446684, 1};
-		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Exit", 0.446684, 1, 40};
+		attenuationEffectType = "OpenCarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Enter", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Exit", 0.446684, 1, 40};
 		soundDammage[] = {"", 0.562341, 1};
-		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_Start", 0.501187, 1};
-		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_stop", 0.398107, 1};
-		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_Start", 0.501187, 1, 50};
-		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_stop", 0.398107, 1, 50};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Engine_Int_Start", 0.501187, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Engine_Int_stop", 0.398107, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Engine_Ext_Start", 0.501187, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Engine_Ext_stop", 0.398107, 1, 50};
 		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
 		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
 		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
@@ -8817,8 +8817,8 @@ class CfgVehicles
 		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
 		class Sounds
 		{
-			soundSetsInt[] = {"Mrap_01_Engine_RPM0_INT_SoundSet", "Mrap_01_Engine_RPM1_INT_SoundSet", "Mrap_01_Engine_RPM2_INT_SoundSet", "Mrap_01_Engine_RPM3_INT_SoundSet", "Mrap_01_Engine_RPM4_INT_SoundSet", "Mrap_01_Engine_INT_Burst_SoundSet", "Mrap_01_Rattling_INT_SoundSet", "Mrap_01_Stress_INT_SoundSet", "Mrap_01_Rain_INT_SoundSet", "Mrap_01_Tires_Rock_Fast_INT_SoundSet", "Mrap_01_Tires_Grass_Fast_INT_SoundSet", "Mrap_01_Tires_Sand_Fast_INT_SoundSet", "Mrap_01_Tires_Gravel_Fast_INT_SoundSet", "Mrap_01_Tires_Mud_Fast_INT_SoundSet", "Mrap_01_Tires_Asphalt_Fast_INT_SoundSet", "Mrap_01_Tires_Water_Fast_INT_SoundSet", "Mrap_01_Tires_Rock_Slow_INT_SoundSet", "Mrap_01_Tires_Grass_Slow_INT_SoundSet", "Mrap_01_Tires_Sand_Slow_INT_SoundSet", "Mrap_01_Tires_Gravel_Slow_INT_SoundSet", "Mrap_01_Tires_Mud_Slow_INT_SoundSet", "Mrap_01_Tires_Asphalt_Slow_INT_SoundSet", "Mrap_01_Tires_Water_Slow_INT_SoundSet", "Mrap_01_Tires_Turn_Hard_INT_SoundSet", "Mrap_01_Tires_Turn_Soft_INT_SoundSet", "Mrap_01_Tires_Brake_Hard_INT_SoundSet", "Mrap_01_Tires_Brake_Soft_INT_SoundSet", "", "Tires_Movement_Dirt_Int_01_SoundSet"};
-			soundSetsExt[] = {"Mrap_01_Engine_RPM0_EXT_SoundSet", "Mrap_01_Engine_RPM1_EXT_SoundSet", "Mrap_01_Engine_RPM2_EXT_SoundSet", "Mrap_01_Engine_RPM3_EXT_SoundSet", "Mrap_01_Engine_RPM4_EXT_SoundSet", "Mrap_01_Engine_EXT_Burst_SoundSet", "Mrap_01_Rattling_EXT_SoundSet", "Mrap_01_Stress_EXT_SoundSet", "Mrap_01_Rain_EXT_SoundSet", "Mrap_01_Tires_Rock_Fast_EXT_SoundSet", "Mrap_01_Tires_Grass_Fast_EXT_SoundSet", "Mrap_01_Tires_Sand_Fast_EXT_SoundSet", "Mrap_01_Tires_Gravel_Fast_EXT_SoundSet", "Mrap_01_Tires_Mud_Fast_EXT_SoundSet", "Mrap_01_Tires_Asphalt_Fast_EXT_SoundSet", "Mrap_01_Tires_Water_Fast_EXT_SoundSet", "Mrap_01_Tires_Rock_Slow_EXT_SoundSet", "Mrap_01_Tires_Grass_Slow_EXT_SoundSet", "Mrap_01_Tires_Sand_Slow_EXT_SoundSet", "Mrap_01_Tires_Gravel_Slow_EXT_SoundSet", "Mrap_01_Tires_Mud_Slow_EXT_SoundSet", "Mrap_01_Tires_Asphalt_Slow_EXT_SoundSet", "Mrap_01_Tires_Water_Slow_EXT_SoundSet", "Mrap_01_Tires_Turn_Hard_EXT_SoundSet", "Mrap_01_Tires_Turn_Soft_EXT_SoundSet", "Mrap_01_Tires_Brake_Hard_EXT_SoundSet", "Mrap_01_Tires_Brake_Soft_EXT_SoundSet", "", "Tires_Movement_Dirt_Ext_01_SoundSet"};
+			soundSetsInt[] = {"Offroad_02_Engine_RPM0_INT_SoundSet", "Offroad_02_Engine_RPM1_INT_SoundSet", "Offroad_02_Engine_RPM2_INT_SoundSet", "Offroad_02_Engine_RPM3_INT_SoundSet", "Offroad_02_Engine_RPM4_INT_SoundSet", "Offroad_02_Rattling_INT_SoundSet", "Offroad_02_Stress_INT_SoundSet", "Offroad_02_Rain_INT_SoundSet", "Offroad_02_Tires_Rock_Fast_OPEN_SoundSet", "Offroad_02_Tires_Grass_Fast_OPEN_SoundSet", "Offroad_02_Tires_Sand_Fast_OPEN_SoundSet", "Offroad_02_Tires_Gravel_Fast_OPEN_SoundSet", "Offroad_02_Tires_Mud_Fast_OPEN_SoundSet", "Offroad_02_Tires_Asphalt_Fast_OPEN_SoundSet", "Offroad_02_Tires_Water_Fast_OPEN_SoundSet", "Offroad_02_Tires_Rock_Slow_OPEN_SoundSet", "Offroad_02_Tires_Grass_Slow_OPEN_SoundSet", "Offroad_02_Tires_Sand_Slow_OPEN_SoundSet", "Offroad_02_Tires_Gravel_Slow_OPEN_SoundSet", "Offroad_02_Tires_Mud_Slow_OPEN_SoundSet", "Offroad_02_Tires_Asphalt_Slow_OPEN_SoundSet", "Offroad_02_Tires_Water_Slow_OPEN_SoundSet", "Offroad_02_Tires_Turn_Hard_OPEN_SoundSet", "Offroad_02_Tires_Turn_Soft_OPEN_SoundSet", "Offroad_02_Tires_Brake_Hard_OPEN_SoundSet", "Offroad_02_Tires_Brake_Soft_OPEN_SoundSet", "", "Tires_Movement_Dirt_Int_01_SoundSet"};
+			soundSetsExt[] = {"Offroad_02_Engine_RPM0_EXT_SoundSet", "Offroad_02_Engine_RPM1_EXT_SoundSet", "Offroad_02_Engine_RPM2_EXT_SoundSet", "Offroad_02_Engine_RPM3_EXT_SoundSet", "Offroad_02_Engine_RPM4_EXT_SoundSet", "Offroad_02_Rattling_EXT_SoundSet", "Offroad_02_Stress_EXT_SoundSet", "Offroad_02_Rain_EXT_SoundSet", "Offroad_02_Tires_Rock_Fast_EXT_SoundSet", "Offroad_02_Tires_Grass_Fast_EXT_SoundSet", "Offroad_02_Tires_Sand_Fast_EXT_SoundSet", "Offroad_02_Tires_Gravel_Fast_EXT_SoundSet", "Offroad_02_Tires_Mud_Fast_EXT_SoundSet", "Offroad_02_Tires_Asphalt_Fast_EXT_SoundSet", "Offroad_02_Tires_Water_Fast_EXT_SoundSet", "Offroad_02_Tires_Rock_Slow_EXT_SoundSet", "Offroad_02_Tires_Grass_Slow_EXT_SoundSet", "Offroad_02_Tires_Sand_Slow_EXT_SoundSet", "Offroad_02_Tires_Gravel_Slow_EXT_SoundSet", "Offroad_02_Tires_Mud_Slow_EXT_SoundSet", "Offroad_02_Tires_Asphalt_Slow_EXT_SoundSet", "Offroad_02_Tires_Water_Slow_EXT_SoundSet", "Offroad_02_Tires_Turn_Hard_EXT_SoundSet", "Offroad_02_Tires_Turn_Soft_EXT_SoundSet", "Offroad_02_Tires_Brake_Hard_EXT_SoundSet", "Offroad_02_Tires_Brake_Soft_EXT_SoundSet", "", "Tires_Movement_Dirt_Ext_01_SoundSet"};
 		};
 	};
     class A2_UAZ_EPOCH: a2_UAZ_base
