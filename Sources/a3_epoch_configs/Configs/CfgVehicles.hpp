@@ -11410,8 +11410,8 @@ class CfgVehicles
 		liftForceCoef = 1.1;
 		bodyFrictionCoef = 0.3;
 		cyclicAsideForceCoef = 0.3;
-		cyclicForwardForceCoef = 0.4;
-		backRotorForceCoef = 1;
+		cyclicForwardForceCoef = 0.3;
+		backRotorForceCoef = 0.3;
 		accuracy = 0.5;
 		model = "x\addons\a2_epoch_vehicles\air\CH47\a2_ch_47f_epoch.p3d";
 		icon = "\A3\Air_F_Beta\Heli_Attack_01\Data\UI\Map_Heli_Attack_01_CA.paa";
