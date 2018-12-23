@@ -3953,7 +3953,7 @@ class UnderBarrelSlot;
 		author = "Helion4/BI";
 		displayName = "Bizon Classic";
 		model = "\x\addons\a2_epoch_weapons_2\bizon\bizon_epoch.p3d";
-		magazines[] = {"Bizon_64Rnd_9x19"};
+		magazines[] = {"Bizon_64Rnd_9x18"};
 		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\Bizon.rtm"};
 		dexterity = 2.75;
 		reloadAction = "GestureReloadMX";
