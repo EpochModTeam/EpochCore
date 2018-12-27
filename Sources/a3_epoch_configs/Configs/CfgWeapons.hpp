@@ -3785,7 +3785,7 @@ class UnderBarrelSlot;
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass = 140;
+			mass = 150;
 		};
 	};
 	class a2_AK107_EPOCH_Base: AKM_EPOCH_Base
@@ -3831,6 +3831,10 @@ class UnderBarrelSlot;
 		scope = 2;
 		picture = "\x\addons\a2_epoch_weapons_2\UI\w_ak107pso_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 200;
+		};
     };	
 	class a2_aks74un_EPOCH_Base: a2_ak47s_gold_EPOCH_Base
 	{
@@ -3946,6 +3950,10 @@ class UnderBarrelSlot;
 		scope = 2;
 		picture = "\x\addons\a2_epoch_weapons_2\UI\w_aks74un_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
     };	
 	class a2_bizon_epoch_base: Rifle_Base_F
 	{
@@ -4073,6 +4081,10 @@ class UnderBarrelSlot;
 	class a2_bizon_epoch: a2_bizon_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 100;
+		};
 	};
 	class a2_dmr_epoch_base: Rifle_Base_F
 	{
@@ -4163,6 +4175,10 @@ class UnderBarrelSlot;
 	class a2_dmr_epoch: a2_dmr_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 250;
+		};
 	};
 	class a2_dmr_epoch_scoped: a2_dmr_epoch_base
 	{
@@ -4180,6 +4196,7 @@ class UnderBarrelSlot;
 		discreteInitIndex = 0;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass = 250;
 			class UnderBarrelSlot{};
             class MuzzleSlot{};
             class CowsSlot{};
@@ -4275,6 +4292,10 @@ class UnderBarrelSlot;
 	class a2_fnfal_epoch: a2_fnfal_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 200;
+		};
 	};
 	class a2_G36_C_epoch_base: Rifle_Base_F
 	{
@@ -4414,6 +4435,10 @@ class UnderBarrelSlot;
 	class a2_G36_C_epoch: a2_G36_C_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
 	};
 	class a2_Mg36_epoch_base: Rifle_Base_F
 	{
@@ -4554,6 +4579,10 @@ class UnderBarrelSlot;
 	class a2_Mg36_epoch: a2_Mg36_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
 	};
 	class a2_leeenfield_epoch_base: Rifle_Base_F
 	{
@@ -4644,6 +4673,10 @@ class UnderBarrelSlot;
 	class a2_leeenfield_epoch: a2_leeenfield_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
 	};
 	class a2_m110_epoch_base: Rifle_Base_F
 	{
@@ -4743,6 +4776,10 @@ class UnderBarrelSlot;
 	class a2_m110_epoch: a2_m110_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
 	};
 	class a2_mk16_epoch_base: Rifle_Base_F
 	{
@@ -4887,6 +4924,10 @@ class UnderBarrelSlot;
 	class a2_mk16_epoch: a2_mk16_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
 	};
 	class a2_mk17_epoch_base: Rifle_Base_F
 	{
@@ -5022,6 +5063,10 @@ class UnderBarrelSlot;
 	class a2_mk17_epoch: a2_mk17_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 180;
+		};
 	};
 	class a2_svd_epoch_base: Rifle_Base_F
 	{
@@ -5132,6 +5177,10 @@ class UnderBarrelSlot;
 	class a2_svd_epoch: a2_svd_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 200;
+		};
 	};
 	class a2_VSS_vintorez_epoch_base: Rifle_Base_F
 	{
@@ -5266,6 +5315,10 @@ class UnderBarrelSlot;
 	class a2_VSS_vintorez_epoch: a2_VSS_vintorez_epoch_base
 	{
 		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
 	};
 
 ////////////////a2 h4 weps end	

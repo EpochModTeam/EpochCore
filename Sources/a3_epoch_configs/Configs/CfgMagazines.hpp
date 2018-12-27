@@ -155,6 +155,7 @@ class CfgMagazines
         model = "\x\addons\a2_epoch_weapons\m249\m249_mag.p3d";
         lastRoundsTracer = 4;
         descriptionShort = "$STR_EPOCH_Caliber556x45mmUsedinM249Saw";
+		mass = 30;
     };
 /////////////////A2 Mags start
 	class Bizon_64Rnd_9x18: CA_Magazine 
@@ -168,7 +169,7 @@ class CfgMagazines
 		initSpeed = 350;
 		tracersEvery = 0;
 		lastRoundsTracer = 1;
-		descriptionShort = "Mag for the Bizon";
+		descriptionShort = "Caliber: 9x18<br />Rounds: 64<br />Used in: Bizon Classic";
 	};
 	class 20Rnd_762x51_DMR: CA_Magazine
 	{
@@ -181,8 +182,8 @@ class CfgMagazines
 		initSpeed = 950;
 		tracersEvery = 0;
 		lastRoundsTracer = 1;
-		descriptionShort = "Mag for the DMR Classic";
-	};	
+		descriptionShort = "Caliber: 7.56x51<br />Rounds: 20<br />Used in: mk17 Classic";
+	};
 	class 20Rnd_762x51_FNFAL: CA_Magazine 
 	{
 		scope = 2;
@@ -194,9 +195,12 @@ class CfgMagazines
 		initSpeed = 950;
 		tracersEvery = 0;
 		lastRoundsTracer = 1;
-		descriptionShort = "Mag for FnFal Classic";
+		descriptionShort = "Caliber: 7.56x51<br />Rounds: 20<br />Used in: FnFal Classic";
 	};
-	class 30Rnd_556x45_G36: 30rnd_556_magazine {};
+	class 30Rnd_556x45_G36: 30rnd_556_magazine {
+		descriptionShort = "Caliber: 5.56x45<br />Rounds: 30<br />Used in: G36_C Classic";
+	};
+/*
 	class a2_akyellow_mag_EPOCH: 30Rnd_762x39_Mag 
 	{
 		scope = 2;
@@ -206,13 +210,14 @@ class CfgMagazines
 		ammo = B_556x45_Ball;
 		initSpeed = 650;		
 		descriptionShort = "Mag for the AK Classic";
-	};	
+	};
+*/
 	class 10Rnd_303: CA_Magazine //TODO create asset for mag
 	{
 		scope = 2;
 		displayName = "LeeEnfield Classic Ammo";
 		//model = "x\addons\a2_epoch_weapons_2\leeenfield\fnFal_mag_epoch.p3d";		
-		descriptionShort = "10x_303";
+		descriptionShort = "Caliber: .303<br />Rounds: 10<br />Used in: LeeEnfield Classic";
 		picture="\x\addons\a2_epoch_weapons_2\ui\m_m24_ca.paa";
 		count=10;
 		ammo = B_303_Ball;
@@ -232,7 +237,8 @@ class CfgMagazines
 		type = "2 * 256";
 		tracersEvery = 4;
 		lastRoundsTracer = 4;
-		descriptionShort = "100Rnd BetaCMag MG36";
+		descriptionShort = "Caliber: 5.56x45<br />Rounds: 100<br />Used in: MG36 Classic";
+		mass = 15;
 	};	
 	class 10Rnd_762x54_SVD: CA_Magazine  //TODO create asset for mag
 	{
@@ -244,7 +250,7 @@ class CfgMagazines
 		initSpeed = 870;
 		tracersEvery = 10;
 		lastRoundsTracer = 3;		
-		descriptionShort = "SVD Classic Mag";
+		descriptionShort = "Caliber: 7.62x54<br />Rounds: 10<br />Used in: svd Classic";
 	};
 	class 10Rnd_9x39_SP5_VSS: CA_Magazine
 	{
@@ -256,7 +262,7 @@ class CfgMagazines
 		tracersEvery = 0;
 		lastRoundsTracer = 1;		
 		picture = "\x\addons\a2_epoch_weapons_2\ui\m_vssx10_ca.paa";
-		descriptionShort = "10Rnd 9x39 VSS Mag";
+		descriptionShort = "Caliber: 9x39<br />Rounds: 10<br />Used in: vintorez Classic";
 	};
 /////////////////A2 Mags ends	
     class ItemHotwire : CA_Magazine
