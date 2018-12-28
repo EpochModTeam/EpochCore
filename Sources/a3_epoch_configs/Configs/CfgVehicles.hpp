@@ -10796,7 +10796,7 @@ class CfgVehicles
 		armor = 30;
 		altFullForce = 4000;
 		altNoForce = 6000;
-		maxSpeed = 300;
+		maxSpeed = 280;
 		maxFordingDepth = 0.55;
 		mainBladeRadius = 7;
 		liftForceCoef = 1.1;
@@ -11404,7 +11404,7 @@ class CfgVehicles
 		armor = 12;
 		altFullForce = 4000;
 		altNoForce = 6000;
-		maxSpeed = 300;
+		maxSpeed = 265;
 		maxFordingDepth = 1;
 		mainBladeRadius = 7;
 		liftForceCoef = 1.1;
@@ -11990,13 +11990,13 @@ class CfgVehicles
 		armor = 12;
 		altFullForce = 4000;
 		altNoForce = 6000;
-		maxSpeed = 300;
+		maxSpeed = 275;
 		maxFordingDepth = 1;
 		mainBladeRadius = 7;
-		liftForceCoef = 1.1;
-		bodyFrictionCoef = 0.5;
-		cyclicAsideForceCoef = 0.6;
-		cyclicForwardForceCoef = 0.6;
+		liftForceCoef = 1;
+		bodyFrictionCoef = 0.3;
+		cyclicAsideForceCoef = 2;
+		cyclicForwardForceCoef = 1.2;
 		backRotorForceCoef = 1;
 		accuracy = 0.5;
 		model = "x\addons\a2_epoch_vehicles\air\mi17\a2_mi8_epoch.p3d";
@@ -12121,7 +12121,7 @@ class CfgVehicles
 			};
 			class HitAvionics
 			{
-				armor = 2;
+				armor = 4;
 				name = "elektronika";
 				visual = "elektronika";
 				passThrough = 1;
@@ -12131,7 +12131,7 @@ class CfgVehicles
 			};
 			class HitVRotor
 			{
-				armor = 2;
+				armor = 3;
 				name = "tail rotor";
 				visual = "tail rotor static";
 				passThrough = 0.3;
@@ -12141,7 +12141,7 @@ class CfgVehicles
 			};
 			class HitHRotor
 			{
-				armor = 2;
+				armor = 8;
 				name = "main rotor";
 				visual = "main rotor static";
 				passThrough = 0.1;
@@ -12151,7 +12151,7 @@ class CfgVehicles
 			};
 			class HitMissiles
 			{
-				armor = 0.1;
+				armor = 1;
 				name = "munice";
 				visual = "munice";
 				passThrough = 0.5;
@@ -12161,7 +12161,7 @@ class CfgVehicles
 			};
 			class HitRGlass
 			{
-				armor = 0.1;
+				armor = 1;
 				name = "sklo predni P";
 				visual = "sklo predni P";
 				passThrough = 0;
@@ -12171,7 +12171,7 @@ class CfgVehicles
 			};
 			class HitLGlass
 			{
-				armor = 0.1;
+				armor = 1;
 				name = "sklo predni L";
 				visual = "sklo predni L";
 				passThrough = 0;
@@ -12181,7 +12181,7 @@ class CfgVehicles
 			};
 			class HitWinch
 			{
-				armor = 0.1;
+				armor = 1;
 				name = "slingLoad0";
 				visual = "";
 				passThrough = 0;
