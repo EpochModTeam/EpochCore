@@ -6954,7 +6954,7 @@ class CfgVehicles
         fireResistance 	= 5;
 //		armor = 30;
 		armor = 180;
-		maximumLoad		= 1250;
+		maximumLoad		= 1350;
 //		enginePower = 408;
 		enginePower = 350;
 //		maxOmega = 600;
@@ -6967,7 +6967,7 @@ class CfgVehicles
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
 		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
+		crewCrashProtection		= 2.5;
 		driverLeftHandAnimName 	= "drivewheel";
 		driverRightHandAnimName = "drivewheel";
 		class TransportItems {};
@@ -7320,7 +7320,7 @@ class CfgVehicles
         fireResistance 	= 5;
 //		armor = 30;
 		armor = 110;
-		maximumLoad		= 1250;
+		maximumLoad		= 1650;
 //		enginePower = 408;
 		enginePower = 200;
 		maxOmega = 600;
@@ -7332,7 +7332,7 @@ class CfgVehicles
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
 		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
+		crewCrashProtection		= 1.5;
 		driverLeftHandAnimName 	= "drivewheel";
 		driverRightHandAnimName = "drivewheel";
 		class TransportItems {};
@@ -7658,7 +7658,7 @@ class CfgVehicles
         fireResistance 	= 5;
 //		armor = 30;
 		armor = 80;
-		maximumLoad		= 1250;
+		maximumLoad		= 1100;
 //		enginePower = 408;
 		enginePower = 340;
 //		maxOmega = 600;
@@ -7671,7 +7671,7 @@ class CfgVehicles
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
 		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
+		crewCrashProtection		= 2.5;
 		driverLeftHandAnimName 	= "drivewheel";
 		driverRightHandAnimName = "drivewheel";
 		class TransportItems {};
@@ -8013,7 +8013,7 @@ class CfgVehicles
         fireResistance 	= 5;
 //		armor = 30;
 		armor = 90;
-		maximumLoad		= 1250;
+		maximumLoad		= 1650;
 		enginePower = 408;
 		maxOmega = 600;
 //		peakTorque = 680;
@@ -8024,7 +8024,7 @@ class CfgVehicles
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
 		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
+		crewCrashProtection		= 2.5;
 		driverLeftHandAnimName 	= "drivewheel";
 		driverRightHandAnimName = "drivewheel";
 		class TransportItems {};
@@ -8475,7 +8475,7 @@ class CfgVehicles
         fireResistance 	= 5;
 //		armor = 30;
 		armor = 45;
-		maximumLoad		= 1250;
+		maximumLoad		= 1750;
 		enginePower = 408;
 //		maxOmega = 600;
 		maxOmega = 471;
@@ -8487,7 +8487,7 @@ class CfgVehicles
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
 		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
+		crewCrashProtection		= 2.5;
 		driverLeftHandAnimName 	= "drivewheel";
 		driverRightHandAnimName = "drivewheel";
 		class TransportItems {};
@@ -8856,7 +8856,7 @@ class CfgVehicles
 		acceleration 	= 15;
         fireResistance 	= 5;
 		armor = 65;
-		maximumLoad		= 1250;
+		maximumLoad		= 2250;
 		enginePower = 408;
 //		maxOmega = 600;
 		maxOmega = 471;
@@ -8868,7 +8868,7 @@ class CfgVehicles
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
 		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
+		crewCrashProtection		= 2.5;
 		driverLeftHandAnimName 	= "drivewheel";
 		driverRightHandAnimName = "drivewheel";
 		class TransportItems {};
@@ -9306,7 +9306,7 @@ class CfgVehicles
         fireResistance 	= 5;
 //		armor = 30;
 		armor 			= 120;
-		maximumLoad		= 1250;
+		maximumLoad		= 1600;
 		enginePower = 408;
 //		maxOmega = 600;
 		maxOmega = 241;
@@ -9318,7 +9318,7 @@ class CfgVehicles
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
 		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
+		crewCrashProtection		= 1.3;
 		driverLeftHandAnimName 	= "drivewheel";
 		driverRightHandAnimName = "drivewheel";
 		class TransportItems {};
@@ -9711,7 +9711,7 @@ class CfgVehicles
         fireResistance 	= 5;
 //		armor = 30;
 		armor = 70;
-		maximumLoad		= 1250;
+		maximumLoad		= 1500;
 		enginePower = 408;
 		maxOmega = 600;
 //		peakTorque = 680;
@@ -9722,7 +9722,7 @@ class CfgVehicles
 		wheelDamageRadiusCoef 	= 0.9;
 		wheelDestroyRadiusCoef 	= 0.4;
 		waterResistance 		= 1;
-		crewCrashProtection		= 0.25;
+		crewCrashProtection		= 2.5;
 		driverLeftHandAnimName 	= "drivewheel";
 		driverRightHandAnimName = "drivewheel";
 		class TransportItems {};
