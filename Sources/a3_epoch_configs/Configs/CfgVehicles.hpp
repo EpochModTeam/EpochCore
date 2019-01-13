@@ -10421,7 +10421,7 @@ class CfgVehicles
         mainBladeRadius = 2.5;
         liftForceCoef = 1;
 		bodyFrictionCoef = 0.3;
-		cyclicAsideForceCoef = 0.4;
+		cyclicAsideForceCoef = 0.6;
 		cyclicForwardForceCoef = 0.5;
         backRotorForceCoef = 1;
         accuracy = 0.5;
