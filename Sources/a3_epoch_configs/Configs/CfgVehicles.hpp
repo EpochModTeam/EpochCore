@@ -2893,7 +2893,7 @@ class CfgVehicles
         displayName = "Assault Pack";
         picture= "\x\addons\a2_epoch_backpacks\UI\backpack_US_ASSAULT_CA.paa";
 		model = "x\addons\a2_epoch_backpacks\backpack_us_assault.p3d";
-        maximumLoad = 460;
+        maximumLoad = 300;
         mass = 25;
     };
     class Patrol_Pack_Epoch : Bag_Base
@@ -2903,7 +2903,7 @@ class CfgVehicles
         displayName = "Patrol Pack";
         picture = "\x\addons\a2_epoch_backpacks\UI\backpack_US_ASSAULT_COYOTE_CA.paa";
 		model = "x\addons\a2_epoch_backpacks\backpack_us_assault_Coyote.p3d";
-        maximumLoad = 460;
+        maximumLoad = 300;
         mass = 25;
     };  
     class US_Backpack_Epoch : Bag_Base
@@ -2913,7 +2913,7 @@ class CfgVehicles
         displayName = "Coyote BackPack";
         picture = "\x\addons\a2_epoch_backpacks\UI\backpack_US_CA.paa";
 		model = "x\addons\a2_epoch_backpacks\backpack_us.p3d";
-        maximumLoad = 460;
+        maximumLoad = 500;
         mass = 25;
     };  
      class CZ_Backpack_Epoch : Bag_Base
@@ -2923,7 +2923,7 @@ class CfgVehicles
         displayName = "Camo CZ BackPack";
         picture = "\x\addons\a2_epoch_backpacks\UI\backpack_ACR_CA.paa";
 		model = "x\addons\a2_epoch_backpacks\backpack_acr.p3d";
-        maximumLoad = 460;
+        maximumLoad = 520;
         mass = 25;
     };  
      class CZ_VestPouch_Epoch : Bag_Base
@@ -2933,7 +2933,7 @@ class CfgVehicles
         displayName = "Vest Pouch";
         picture = "\x\addons\a2_epoch_backpacks\UI\backpack_ACR_small_CA.paa";
 		model = "x\addons\a2_epoch_backpacks\backpack_acr_small.p3d";
-        maximumLoad = 460;
+        maximumLoad = 340;
         mass = 25;
     };  
      class TK_RPG_Backpack_Epoch : Bag_Base
@@ -2943,7 +2943,7 @@ class CfgVehicles
         displayName = "RPG Pack";
         picture = "\x\addons\a2_epoch_backpacks\UI\backpack_RPG_CA.paa";
 		model = "x\addons\a2_epoch_backpacks\backpack_rpg.p3d";
-        maximumLoad = 460;
+        maximumLoad = 300;
         mass = 25;
     };  
      class ALICE_Pack_Epoch : Bag_Base
@@ -2953,7 +2953,7 @@ class CfgVehicles
         displayName = "Alice Pack";
         picture = "\x\addons\a2_epoch_backpacks\UI\backpack_TK_ALICE_CA.paa";
 		model = "x\addons\a2_epoch_backpacks\backpack_tk_alice.p3d";
-        maximumLoad = 460;
+        maximumLoad = 480;
         mass = 25;
     };  
      class civil_assault_pack_Epoch : Bag_Base
@@ -2963,7 +2963,7 @@ class CfgVehicles
         displayName = "CIV Assault Pack";
         picture = "\x\addons\a2_epoch_backpacks\UI\backpack_CIVIL_ASSAULT_CA.paa";
 		model = "x\addons\a2_epoch_backpacks\backpack_civil_assault.p3d";
-        maximumLoad = 460;
+        maximumLoad = 400;
         mass = 25;
     };  
      class L_Gunbag_Epoch : Bag_Base
@@ -2973,7 +2973,7 @@ class CfgVehicles
         displayName = "Large Gunbag";
         picture = "\x\addons\a2_epoch_backpacks\ui\staticx_ca.paa";
 		model = "x\addons\a2_epoch_backpacks\LG_Gunbag_Epoch.p3d";
-        maximumLoad = 860;
+        maximumLoad = 580;
         mass = 25;
     };  
      class S_Gunbag_Epoch : Bag_Base
@@ -2983,7 +2983,7 @@ class CfgVehicles
         displayName = "Gunbag";
         picture = "\x\addons\a2_epoch_backpacks\ui\staticy_ca.paa";
 		model = "x\addons\a2_epoch_backpacks\Gunbag_Epoch.p3d";
-        maximumLoad = 460;
+        maximumLoad = 420;
         mass = 25;
     };	
 //////a2 Bags end	
