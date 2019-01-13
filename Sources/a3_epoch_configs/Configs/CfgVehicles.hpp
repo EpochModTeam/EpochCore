@@ -1469,6 +1469,16 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Male";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Dan.paa";
     };
+	class a2_Epoch_Chav : Epoch_Male_F
+	{
+		displayName = "Epoch Chav";
+		model = "\x\addons\a3_epoch_community\a2_epoch_clothing\a2_epoch_chav.p3d";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\a2_epoch_clothing\data\chav\chav_co.paa"};
+		uniformClass="U_EPOCH_Chav";
+		modelsides[] = {3,2,0};
+		hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_community\a2_epoch_clothing\data\chav\chav_metal.rvmat"};
+	};
 	class Epoch_RadiationSuit_M: Epoch_Male_F
 	{
 		scope = 2;

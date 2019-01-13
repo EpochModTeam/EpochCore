@@ -9001,6 +9001,22 @@ class UnderBarrelSlot;
 			libTextDesc = "This mask is intended to reduce the possiblity of radiation exposure. This mask can work in certain situation where toxic gases are present";
 		};
 	};
+	class U_Chav_EPOCH: ItemCore
+	{
+		author="Helion4";
+		scope=2;
+		allowedSlots[]={901};
+		displayName = "Chav Uniform";
+		picture = "\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="\x\addons\a3_epoch_community\a2_epoch_clothing\a2_epoch_chav.p3d";
+			uniformClass="a2_Epoch_Chav";
+			containerClass="Supply20";
+			mass=60;
+		};
+	};
     class U_RadiationSuit_M_uniform: Itemcore
     {
 		author = "Helion4";

@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="x\addons\a3_epoch_community\a2_epoch_clothing\data\chav_smdi.paa";
+	texture="x\addons\a3_epoch_community\a2_epoch_clothing\data\chav\chav_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
