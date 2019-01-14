@@ -495,44 +495,54 @@ class epoch_tablet_gui
 ////////////////////////////////////////
 /////////Picture Backgrounds start//////
 ////////////////////////////////////////
-		class PDA_HTML : RscHTML
-		{
-			idc = 1901;
-			type = 9;
-			style = 0x00;
-			x = 0.414086 * safezoneW + safezoneX;                                  
-			y = 0.301946 * safezoneH + safezoneY;                                  
-			w = 0.1646451 * safezoneW;
-			h = 0.3520961 * safezoneH;
-			filename = "";
-			text="";
-			colorBackground[] = {0.02,0,0.03,0.6};
-			colorBold[] = {1,0,0,1};
-			colorLink[] = {1,1,0,1};
-			colorLinkActive[] = {1,1,0,1};
-			colorPicture[] = {1,1,1,1};
-			colorPictureBorder[] = {1,0,0,1};
-			colorPictureLink[] = {1,1,1,1};
-			colorPictureSelected[] = {1,1,1,1};
-			colorText[] = {1,1,1,1};
-			class H1 {
-				font = "puristaMedium";
-				fontBold = "PuristaBold";
-				SizeEx = 0.035;
-			};
-			class H2 {
-				font = "puristaLight";
-				fontBold = "PuristaBold";
-				SizeEx = 0.035;
-			};
-			class H3:H2{};
-			class H4:H2{};
-			class H5:H2{};
-			class H6:H2{};
-			class P {
-				font = "puristaMedium";
-				fontBold = "PuristaBold";
-				SizeEx = 0.032;
+		class PDA_Controlsgroup: RscControlsgroup {
+			idc = 1900;
+			x = 0.405 * safezoneW + safezoneX;                                  
+			y = 0.29 * safezoneH + safezoneY;                                  
+			w = 0.19 * safezoneW;
+			h = 0.37 * safezoneH;
+			class Controls
+			{
+				class PDA_HTML : RscHTML
+				{
+					idc = 1901;
+					type = 9;
+					style = 0x00;
+					x = 0;                                  
+					y = 0;                                  
+					w = 0.19 * safezoneW;
+					h = 0.37 * safezoneH * 3;
+					filename = "";
+					text="";
+					colorBackground[] = {0.02,0,0.03,0.6};
+					colorBold[] = {1,0,0,1};
+					colorLink[] = {1,1,0,1};
+					colorLinkActive[] = {1,1,0,1};
+					colorPicture[] = {1,1,1,1};
+					colorPictureBorder[] = {1,0,0,1};
+					colorPictureLink[] = {1,1,1,1};
+					colorPictureSelected[] = {1,1,1,1};
+					colorText[] = {1,1,1,1};
+					class H1 {
+						font = "puristaMedium";
+						fontBold = "PuristaBold";
+						SizeEx = 0.035;
+					};
+					class H2 {
+						font = "puristaLight";
+						fontBold = "PuristaBold";
+						SizeEx = 0.035;
+					};
+					class H3:H2{};
+					class H4:H2{};
+					class H5:H2{};
+					class H6:H2{};
+					class P {
+						font = "puristaMedium";
+						fontBold = "PuristaBold";
+						SizeEx = 0.032;
+					};
+				};
 			};
 		};
 		class PDASMSText_Box : RscStructuredText
