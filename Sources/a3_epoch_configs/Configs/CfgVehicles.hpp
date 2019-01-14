@@ -6957,7 +6957,7 @@ class CfgVehicles
 		fuelCapacity	= 40;
 //        terrainCoef 	= 2.5;
         terrainCoef 	= 4.0;
-		turnCoef = 4;
+		turnCoef = 2;
 		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
@@ -7323,7 +7323,7 @@ class CfgVehicles
 		maxSpeed = 125;
 		fuelCapacity	= 40;
         terrainCoef 	= 2.5;
-		turnCoef = 4;
+		turnCoef = 2.6;
 		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
@@ -7661,7 +7661,7 @@ class CfgVehicles
 		fuelCapacity	= 40;
 //        terrainCoef 	= 2.5;
         terrainCoef 	= 4.5;
-		turnCoef = 4;
+		turnCoef = 2;
 		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
@@ -8016,7 +8016,7 @@ class CfgVehicles
 		maxSpeed = 200;
 		fuelCapacity	= 40;
         terrainCoef 	= 2.5;
-		turnCoef = 4;
+		turnCoef = 2.6;
 		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
@@ -8478,7 +8478,7 @@ class CfgVehicles
 		fuelCapacity	= 40;
 //        terrainCoef 	= 2.5;
         terrainCoef 	= 1.8;
-		turnCoef = 4;
+		turnCoef = 2.6;
 		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
@@ -8860,7 +8860,7 @@ class CfgVehicles
 		maxSpeed = 120;
 		fuelCapacity	= 40;
         terrainCoef 	= 2.5;
-		turnCoef = 4;
+		turnCoef = 2.2;
 		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
@@ -9309,7 +9309,7 @@ class CfgVehicles
 		fuelCapacity	= 40;
 //        terrainCoef 	= 2.5;
         terrainCoef 	= 1.25;
-		turnCoef = 4;
+		turnCoef = 2.8;
 		precision 		= 15;
 		brakeDistance 	= 10;
 		acceleration 	= 15;
@@ -9714,7 +9714,7 @@ class CfgVehicles
 		fuelCapacity	= 40;
 //        terrainCoef 	= 2.5;
         terrainCoef 	= 2.8;
-		turnCoef = 4;
+		turnCoef = 2.6;
 		precision 		= 15;
 		brakeDistance 	= 3.0;
 		acceleration 	= 15;
