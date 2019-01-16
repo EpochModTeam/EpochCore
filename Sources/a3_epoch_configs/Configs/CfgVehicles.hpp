@@ -15448,6 +15448,20 @@ class CfgVehicles
         placement = "vertical";
         model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
     };
+    class PlotPole_S_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_S";
+        model = "\x\addons\a3_epoch_assets\models\jammer.p3d"; // To be changed
+    };
+    class PlotPole_M_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_M";
+        model = "\x\addons\a3_epoch_assets\models\jammer.p3d"; // To be changed
+    };
+    class PlotPole_L_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_L";
+    };
     class Const_floors_static_F : Constructions_static_F
     {
         selectionDamage = "zbytek";

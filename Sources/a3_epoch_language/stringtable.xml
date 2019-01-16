@@ -1207,6 +1207,15 @@
         <Key ID="STR_EPOCH_FrequencyJammer">
             <Original>Frequency Jammer</Original>
         </Key>
+        <Key ID="STR_EPOCH_FrequencyJammer_S">
+            <Original>Small Frequency Jammer</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FrequencyJammer_M">
+            <Original>Mid Frequency Jammer</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FrequencyJammer_L">
+            <Original>Large Frequency Jammer</Original>
+        </Key>
         <Key ID="STR_EPOCH_CinderWall">
             <Original>Cinder Wall</Original>
         </Key>
