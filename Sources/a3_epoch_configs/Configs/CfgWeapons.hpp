@@ -3792,7 +3792,6 @@ class UnderBarrelSlot;
 	{
 		scope = 0;
 		author = "Helion4/BI";
-		displayName = "AK107 Classic";
 		model = "x\addons\a2_epoch_weapons_2\ak\a2_AK107__EPOCH.p3d";
 		dexterity = 2.75;
 		maxRecoilSway = 0.0025;
@@ -3818,6 +3817,7 @@ class UnderBarrelSlot;
 		opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
 		opticsFlare = 1;
 		opticsDisablePeripherialVision = 1;
+		selectionFireAnim = "muzzleFlash";  //added
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
             class MuzzleSlot: MuzzleSlot{};
@@ -3829,6 +3829,7 @@ class UnderBarrelSlot;
 	class a2_AK107_EPOCH: a2_AK107_EPOCH_Base
 	{
 		scope = 2;
+		displayName = "AK107 Classic";
 		picture = "\x\addons\a2_epoch_weapons_2\UI\w_ak107pso_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -3841,7 +3842,6 @@ class UnderBarrelSlot;
 		scope = 0;
 		author = "Helion4/BI";
 		displayName = "ak74un Classic";
-		model = "\x\addons\a2_epoch_weapons_2\ak\a2_aks74un_EPOCH.p3d";
 		dexterity = 2.75;
 		maxRecoilSway = 0.0025;
 		swayDecaySpeed = 1.25;
@@ -3948,6 +3948,8 @@ class UnderBarrelSlot;
 	class a2_aks74un_EPOCH: a2_AK107_EPOCH_Base
 	{
 		scope = 2;
+		displayName = "ak74un Classic";
+		model = "\x\addons\a2_epoch_weapons_2\ak\a2_aks74un_EPOCH.p3d";
 		picture = "\x\addons\a2_epoch_weapons_2\UI\w_aks74un_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -4465,7 +4467,7 @@ class UnderBarrelSlot;
 		descriptionShort = "MG36 Classic";
 		caseless[] = {"",1,1,1};
 		soundBullet[] = {"caseless",1};
-		selectionFireAnim = "muzzleFlash";
+		//selectionFireAnim = "muzzleFlash";  //added
 		class GunParticles: GunParticles
 		{
 			class SecondEffect
@@ -4578,6 +4580,7 @@ class UnderBarrelSlot;
 	};
 	class a2_Mg36_epoch: a2_Mg36_epoch_base
 	{
+		selectionFireAnim = "muzzleFlash";  //added
 		scope = 2;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
