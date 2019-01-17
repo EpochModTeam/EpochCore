@@ -3647,7 +3647,7 @@ class MuzzleSlot;
 class CowsSlot;
 class PointerSlot;
 class UnderBarrelSlot;
-	class a2_ak47s_gold_EPOCH_Base: Rifle_Base_F
+	class a2_ak47s_gold_EPOCH_Base: AKM_EPOCH_Base //Rifle_Base_F
 	{
 		scope = 0;
 		author = "Helion4/BI";
@@ -3664,7 +3664,7 @@ class UnderBarrelSlot;
 		initSpeed = -1;
 		weaponInfoType = "RscWeaponZeroing";
 		caseless[] = {"",1,1,1};
-		selectionFireAnim = "muzzleFlash";
+		//selectionFireAnim = "muzzleFlash";
 		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\dry",0.56234133,1,10};
 		reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK47\AK47_reload",1,1,10};
 		maxZeroing = 800;
@@ -3817,7 +3817,7 @@ class UnderBarrelSlot;
 		opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
 		opticsFlare = 1;
 		opticsDisablePeripherialVision = 1;
-		selectionFireAnim = "muzzleFlash";  //added
+		//selectionFireAnim = "muzzleFlash";  //added
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
             class MuzzleSlot: MuzzleSlot{};
@@ -3851,7 +3851,7 @@ class UnderBarrelSlot;
 		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_regular_CA.paa";
 		caseless[] = {"",1,1,1};
 		soundBullet[] = {"caseless",1};
-		selectionFireAnim = "muzzleFlash";
+		//selectionFireAnim = "muzzleFlash";
 		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\dry",0.56234133,1,10};
 		reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",0.39810717,1,30};
 		maxZeroing = 500;
@@ -3945,7 +3945,7 @@ class UnderBarrelSlot;
             class UnderBarrelSlot{};
 		};
 	};
-	class a2_aks74un_EPOCH: a2_AK107_EPOCH_Base
+	class a2_aks74un_EPOCH: a2_aks74un_EPOCH_Base
 	{
 		scope = 2;
 		displayName = "ak74un Classic";
