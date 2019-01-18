@@ -198,6 +198,7 @@ class CfgMagazines
 		descriptionShort = "Caliber: 7.56x51<br />Rounds: 20<br />Used in: FnFal Classic";
 	};
 	class 30Rnd_556x45_G36: 30rnd_556_magazine {
+		displayName = "MG36 Classic Mag";
 		descriptionShort = "Caliber: 5.56x45<br />Rounds: 30<br />Used in: G36_C Classic";
 	};
 /*
