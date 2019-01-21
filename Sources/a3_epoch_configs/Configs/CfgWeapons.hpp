@@ -5194,7 +5194,7 @@ class UnderBarrelSlot;
 		picture = "\x\addons\a2_epoch_weapons_2\UI\w_vss_vintorez_ca.paa";
 		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
-		magazines[] = {"10Rnd_9x39_SP5_VSS","20Rnd_9x39_SP5_VSS"};
+		magazines[] = {"10Rnd_9x39_SP5_VSS"};
 		dexterity = 1.7;
 		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\LeeEnfield.rtm"};
 		reloadAction = "GestureReloadMX";
