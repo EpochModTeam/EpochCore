@@ -15280,7 +15280,8 @@ class CfgVehicles
     {
         author = "Sequisha";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
+//        model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm.p3d";
         displayName = "$STR_EPOCH_FrequencyJammerSIM";
     };
     class SolarGen_SIM_EPOCH : Constructions_modular_F
