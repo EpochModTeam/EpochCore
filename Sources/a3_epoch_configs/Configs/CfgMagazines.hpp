@@ -2504,12 +2504,28 @@ class CfgMagazines
     {
         author = "Sequisha";
         model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
-        picture = "\x\addons\a3_epoch_assets\textures\jammer\equip_jammer_ca.paa";
+		picture = "\x\addons\a3_epoch_community\icons\jammer_s_ca.paa";
         displayName = "$STR_EPOCH_FrequencyJammer";
         scope = 2;
         descriptionShort = "$STR_EPOCH_FrequencyJammer";
         count = 1;
         mass = 20;
+    };
+    class KitPlotPole_L : KitPlotPole
+    {
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_community\icons\jammer_m_ca.paa";
+        displayName = "$STR_EPOCH_FrequencyJammer_L";
+        descriptionShort = "$STR_EPOCH_FrequencyJammer_L";
+        mass = 25;
+    };
+    class KitPlotPole_XL : KitPlotPole
+    {
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+        picture = "\x\addons\a3_epoch_assets\textures\jammer\equip_jammer_ca.paa";
+        displayName = "$STR_EPOCH_FrequencyJammer_XL";
+        descriptionShort = "$STR_EPOCH_FrequencyJammer_XL";
+        mass = 30;
     };
 	class KitMetalFloor: CA_Magazine
 	{
