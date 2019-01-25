@@ -49,9 +49,9 @@ class epoch_tablet_gui
 			idc = 1200;
 			text = "x\addons\a3_epoch_code\Data\UI\epad\epoch_tablet_back.paa";
 			x = 0.185 * safezoneW + safezoneX;
-			y = 0.115 * safezoneH + safezoneY;
+			y = 0.110 * safezoneH + safezoneY;
 			w = 0.636 * safezoneW;
-			h = 0.84 * safezoneH;
+			h = 0.847 * safezoneH;
 		};
 		class Spacer: RscButtonPDATrans
 		{
@@ -185,55 +185,55 @@ class epoch_tablet_gui
 		{
 			idc = 1607;
 			x = 0.416 * safezoneW + safezoneX;
-			y = 0.495 * safezoneH + safezoneY;
+			y = 0.459 * safezoneH + safezoneY;
 		};
 		class app7_background: EPad_Button_Backgr
 		{
 			idc = 1707;
 			x = 0.416 * safezoneW + safezoneX;
-			y = 0.495 * safezoneH + safezoneY;
+			y = 0.459 * safezoneH + safezoneY;
 		};
 		class app7txt: EPad_Button_Txt
 		{
 			idc = 1807;
 			x = 0.416 * safezoneW + safezoneX;
-			y = (0.495+0.06) * safezoneH + safezoneY;
+			y = (0.459+0.06) * safezoneH + safezoneY;
 		};
 		class app8: RscButton_EPad
 		{
 			idc = 1608;
 			x = 0.473 * safezoneW + safezoneX;
-			y = 0.495 * safezoneH + safezoneY;
+			y = 0.459 * safezoneH + safezoneY;
 		};
 		class app8_background: EPad_Button_Backgr
 		{
 			idc = 1708;
 			x = 0.473 * safezoneW + safezoneX;
-			y = 0.495 * safezoneH + safezoneY;
+			y = 0.459 * safezoneH + safezoneY;
 		};
 		class app8txt: EPad_Button_Txt
 		{
 			idc = 1808;
 			x = 0.473 * safezoneW + safezoneX;
-			y = (0.495+0.06) * safezoneH + safezoneY;
+			y = (0.459+0.06) * safezoneH + safezoneY;
 		};
 		class app9: RscButton_EPad
 		{
 			idc = 1609;
 			x = 0.53 * safezoneW + safezoneX;
-			y = 0.495 * safezoneH + safezoneY;
+			y = 0.459 * safezoneH + safezoneY;
 		};
 		class app9_background: EPad_Button_Backgr
 		{
 			idc = 1709;
 			x = 0.53 * safezoneW + safezoneX;
-			y = 0.495 * safezoneH + safezoneY;
+			y = 0.459 * safezoneH + safezoneY;
 		};
 		class app9txt: EPad_Button_Txt
 		{
 			idc = 1809;
 			x = 0.53 * safezoneW + safezoneX;
-			y = (0.495+0.06) * safezoneH + safezoneY;
+			y = (0.459+0.06) * safezoneH + safezoneY;
 		};
 		class app10: RscButton_EPad
 		{
@@ -381,9 +381,9 @@ class epoch_tablet_gui
 		class PDA_Controlsgroup: RscControlsgroup {
 			idc = 1900;
 			x = 0.405 * safezoneW + safezoneX;                                  
-			y = 0.29 * safezoneH + safezoneY;                                  
+			y = 0.295 * safezoneH + safezoneY;                                  
 			w = 0.19 * safezoneW;
-			h = 0.37 * safezoneH;
+			h = 0.39 * safezoneH;
 			class Controls
 			{
 				class PDA_HTML : RscHTML
@@ -394,7 +394,7 @@ class epoch_tablet_gui
 					x = 0;                                  
 					y = 0;                                  
 					w = 0.19 * safezoneW;
-					h = 0.37 * safezoneH * 3;
+					h = 0.39 * safezoneH * 3;
 					filename = "";
 					text="";
 					colorBackground[] = {0.02,0,0.03,0.6};
