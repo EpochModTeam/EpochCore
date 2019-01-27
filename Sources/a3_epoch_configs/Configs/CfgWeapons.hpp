@@ -4691,8 +4691,8 @@ class UnderBarrelSlot;
 		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\LeeEnfield.rtm"};
 		dexterity = 1.55;
 		maxZeroing = 1200;
-		distanceZoomMin = 400;
-		distanceZoomMax = 120;
+		//distanceZoomMin = 400;
+		//distanceZoomMax = 120;
 		initSpeed = -1;
 		picture = "\x\addons\a2_epoch_weapons_2\UI\m110_ca.paa";
 		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
@@ -4705,11 +4705,11 @@ class UnderBarrelSlot;
 		maxRecoilSway = 0.0125;
 		swayDecaySpeed = 1.25;
 		inertia = 0.5;
-		discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100};
-		discreteDistanceInitIndex = 1;
-		opticsZoomMin = 0.375;
-		opticsZoomMax = 1.1;
-		opticsZoomInit = 0.75;
+		//discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100};
+		//discreteDistanceInitIndex = 1;
+		//opticsZoomMin = 0.375;
+		//opticsZoomMax = 1.1;
+		//opticsZoomInit = 0.75;
 		discretefov[] = {0.2, 0.1};
 		discreteInitIndex = 0;
 		descriptionShort = "Testing weapon with grenade launcher";
@@ -4717,9 +4717,43 @@ class UnderBarrelSlot;
 		soundBullet[] = {"caseless",1};
 		selectionFireAnim = "muzzleFlash";
 		modelOptics = "\x\addons\a2_epoch_weapons_2\DMR\2Dscope_MilDot_10";
-		opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
-		opticsFlare = 1;
+		//opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
+		//opticsFlare = 1;
 		opticsDisablePeripherialVision = 1;
+                class OpticsModes
+                {
+                    class NCTALKEP
+                    {
+                        opticsID = 1;
+                        useModelOptics = 1;
+                        opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
+                        opticsZoomMin = 0.03;
+                        opticsZoomMax = 0.15;
+                        opticsZoomInit = 0.15;
+                        discreteDistance[] = {100,300,400,500,600,700,800,900,1000};
+                        discreteDistanceInitIndex = 1;
+                        distanceZoomMin = 100;
+                        distanceZoomMax = 1000;
+                        memoryPointCamera = "opticView";
+                        visionMode[] = {"Normal","NVG"};
+                        thermalMode[] = {5,6};
+                        opticsFlare = 1;
+                        opticsDisablePeripherialVision = 1;
+                        cameraDir = "";
+                    };
+                    class Iron : NCTALKEP
+                    {
+                        opticsID = 2;
+                        useModelOptics = 0;
+                        opticsFlare = 0;
+                        opticsDisablePeripherialVision = 0;
+                        opticsZoomMin = 0.375;
+                        opticsZoomMax = 1.1;
+                        opticsZoomInit = 0.75;
+                        memoryPointCamera = "eye";
+                        visionMode[] = {};
+                    };
+                };
 		class GunParticles: GunParticles
 		{
 			class SecondEffect
