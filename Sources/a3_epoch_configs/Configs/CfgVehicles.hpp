@@ -11796,7 +11796,7 @@ class CfgVehicles
 		cargoGetInAction[] = {"GetInHelicopterCargo"};
 		cargoGetOutAction[] = {"GetOutHelicopterCargo"};
 		transportSoldier = 25;
-        cargoAction[] = {"passenger_apc_generic04","passenger_apc_generic02","passenger_apc_generic03","passenger_apc_generic04","passenger_apc_narrow_generic01","passenger_apc_narrow_generic02","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_generic01_foldhands","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_apc_generic01","passenger_apc_generic01","passenger_generic01_leanleft","passenger_generic01_leanright","passenger_low01"};
+                cargoAction[] = {"passenger_apc_generic04","passenger_apc_generic02","passenger_apc_generic03","passenger_apc_generic04","passenger_apc_narrow_generic01","passenger_apc_narrow_generic02","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_generic01_foldhands","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_apc_generic01","passenger_apc_generic01","passenger_generic01_leanleft","passenger_generic01_leanright","passenger_low01"};
 		getInProxyOrder[] = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25};
  		cargoProxyIndexes[] = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25};
 		getInRadius = 2;
@@ -11813,7 +11813,7 @@ class CfgVehicles
 		maximumLoad = 6000;
 		supplyRadius = -0.5;
 		gearRetracting = 0;
-		driveOnComponent[] = {"gear_1_1_wheels", "gear_2_1_wheels", "gear_1_2_wheel", "gear_2_2_wheel"}; //Wheels
+		driveOnComponent[] = {"gear_1_1_wheel", "gear_2_1_wheel", "gear_1_2_wheel", "gear_2_2_wheel"}; //Wheels
 		fuelCapacity = 1360;
 		fuelConsumptionRate = 0.126;
 		slingLoadMaxCargoMass = 12000;
@@ -12077,7 +12077,6 @@ class CfgVehicles
 	        		BBoxes[] = {"PIP_0_TL", "PIP_0_TR", "PIP_0_BL", "PIP_0_BR"};
 	        	};
 	        };
-
 		class Turrets: Turrets
 		{
 			class CopilotTurret: CopilotTurret
@@ -12106,6 +12105,7 @@ class CfgVehicles
 				primaryGunner = 1;
 				proxyIndex = 1;
 				enableManualFire = 0;
+				class HitPoints{};
 			};
 
 		};
@@ -12218,6 +12218,7 @@ class CfgVehicles
 				gunnerCompartments = "Compartment1";
 				commanding = -3;
 				class ViewGunner: ViewPilot{};
+				class HitPoints{};
 			};
 			class MainTurret: MainTurret
 			{
@@ -12261,6 +12262,7 @@ class CfgVehicles
 					initAngleX= 90;minAngleX= -30;maxAngleX= 0;initAngleY= 90; 
 					minAngleY= -100;maxAngleY= 100;initFov= 0.7; minFov= 0.25;maxFov= 1.1;
 				};
+				class HitPoints{};
 			};
 			class new_MainTurret: MainTurret
 			{
@@ -12286,6 +12288,7 @@ class CfgVehicles
 				memoryPointsGetInGunnerDir = "mg2_pos_gunner_dir";
 				canUseScanners = 0;
 				turretCanSee = "1 + 2 + 4 + 8 + 16";
+				class HitPoints{};
 			};
 		};	
 	    class animationsources: animationsources
