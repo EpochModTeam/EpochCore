@@ -18659,6 +18659,774 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
 		displayName = "Barrel Bomb(Horizontal)";
 	};
+///props begin
+        class Weapon_Base_F;
+	class Weapon_AKM_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_AKM";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class AKM_EPOCH
+			{
+				weapon = "AKM_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m4a3_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M4a3";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m4a3_EPOCH
+			{
+				weapon = "m4a3_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_M14_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M14";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class M14_EPOCH
+			{
+				weapon = "M14_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_M14Grn_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M14Green";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class M14Grn_EPOCH
+			{
+				weapon = "M14Grn_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m16_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M16";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m16_EPOCH
+			{
+				weapon = "m16_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m16Red_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M16Red";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m16Red_EPOCH
+			{
+				weapon = "m16Red_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m107_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M107";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m107_EPOCH
+			{
+				weapon = "m107_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m107Tan_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M107Tan";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m107Tan_EPOCH
+			{
+				weapon = "m107Tan_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m249_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M249";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_MachineGuns";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m249_EPOCH
+			{
+				weapon = "m249_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m249Tan_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M249Tan";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_MachineGuns";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m249Tan_EPOCH
+			{
+				weapon = "m249Tan_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_ak47s_gold_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "AK47s Gold Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_ak47s_gold_EPOCH
+			{
+				weapon = "a2_ak47s_gold_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_AK107_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "AK107 Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_AK107_EPOCH
+			{
+				weapon = "a2_AK107_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_aks74un_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "ak74un Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_aks74un_EPOCH
+			{
+				weapon = "a2_aks74un_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_bizon_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Bizon Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_bizon_epoch
+			{
+				weapon = "a2_bizon_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_dmr_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "DMR Classic no scope";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_dmr_epoch
+			{
+				weapon = "a2_dmr_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_dmr_epoch_scoped: Weapon_a2_dmr_epoch
+	{
+		displayName = "DMR Classic";
+		class TransportWeapons
+		{};
+	};
+	class Weapon_a2_fnfal_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "FnFal Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_fnfal_epoch
+			{
+				weapon = "a2_fnfal_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_G36_C_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "G36_C Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_G36_C_epoch
+			{
+				weapon = "a2_G36_C_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_Mg36_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "MG36 Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_MachineGuns";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_Mg36_epoch
+			{
+				weapon = "a2_Mg36_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_leeenfield_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "LeeEnfield Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_leeenfield_epoch
+			{
+				weapon = "a2_leeenfield_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_m110_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "m110 Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_m110_epoch
+			{
+				weapon = "a2_m110_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_mk16_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "mk16 Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_mk16_epoch
+			{
+				weapon = "a2_mk16_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_mk17_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "mk17 Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_mk17_epoch
+			{
+				weapon = "a2_mk17_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_svd_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "svd Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_svd_epoch
+			{
+				weapon = "a2_svd_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_VSS_vintorez_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "vintorez Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_VSS_vintorez_epoch
+			{
+				weapon = "a2_VSS_vintorez_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_Rollins_F: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_RollinsRifle";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class Rollins_F
+			{
+				weapon = "Rollins_F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_ChainSaw: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Chainsaw";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class ChainSaw
+			{
+				weapon = "ChainSaw";
+				count = 1;
+			};
+		};
+		class TransportMagazines{};
+	};
+	class Weapon_ruger_pistol_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Ruger";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_Pistols";
+		vehicleClass = "WeaponsHandguns";
+		class TransportWeapons
+		{
+			class ruger_pistol_epoch
+			{
+				weapon = "ruger_pistol_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_1911_pistol_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_1911";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_Pistols";
+		vehicleClass = "WeaponsHandguns";
+		class TransportWeapons
+		{
+			class 1911_pistol_epoch
+			{
+				weapon = "1911_pistol_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_Hatchet_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Hatchet";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_Pistols";
+		vehicleClass = "WeaponsHandguns";
+		class TransportWeapons
+		{
+			class Hatchet
+			{
+				weapon = "Hatchet";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_CrudeHatchet_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_CrudeHatchet";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_Pistols";
+		vehicleClass = "WeaponsHandguns";
+		class TransportWeapons
+		{
+			class CrudeHatchet
+			{
+				weapon = "CrudeHatchet";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_MultiGun_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_MultiGun";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_Pistols";
+		vehicleClass = "WeaponsHandguns";
+		class TransportWeapons
+		{
+			class MultiGun
+			{
+				weapon = "MultiGun";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_MeleeSledge: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Sledge";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class MeleeSledge
+			{
+				weapon = "MeleeSledge";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_MeleeSword: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Kruhm";
+		author = "Helion4 & Axle";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class MeleeSword
+			{
+				weapon = "MeleeSword";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_MeleeMaul: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Maul";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class MeleeMaul
+			{
+				weapon = "MeleeMaul";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_WoodClub: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_WoodClub";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class WoodClub
+			{
+				weapon = "WoodClub";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_MeleeRod: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_FishingRod";
+		author = "Helion4 & Axle";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class MeleeRod
+			{
+				weapon = "MeleeRod";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_Plunger: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Plunger";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class Plunger
+			{
+				weapon = "Plunger";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_Power_Sword: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Power Sword";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class Power_Sword
+			{
+				weapon = "Power_Sword";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+///props end
 	class CinderFloor_SIM_EPOCH: Constructions_modular_F
 	{
 		author = "Helion4/DirtySanchez";
