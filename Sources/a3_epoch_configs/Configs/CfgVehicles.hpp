@@ -15855,12 +15855,12 @@ class CfgVehicles
     };
     class PlotPole_M_EPOCH : PlotPole_EPOCH
     {
-        displayName = "$STR_EPOCH_FrequencyJammer_M";
+        displayName = "$STR_EPOCH_FrequencyJammer_L";
         model = "\x\addons\a3_epoch_assets\models\jammer.p3d"; // To be changed
     };
     class PlotPole_L_EPOCH : PlotPole_EPOCH
     {
-        displayName = "$STR_EPOCH_FrequencyJammer_L";
+        displayName = "$STR_EPOCH_FrequencyJammer_XL";
     };
     class Const_floors_static_F : Constructions_static_F
     {
