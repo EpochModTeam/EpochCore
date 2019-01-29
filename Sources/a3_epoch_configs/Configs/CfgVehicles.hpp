@@ -11818,7 +11818,7 @@ class CfgVehicles
 		fuelConsumptionRate = 0.126;
 		slingLoadMaxCargoMass = 12000;
 		radarType = 8;
-        memoryPointDriverOptics = "slingCamera";
+                memoryPointDriverOptics = "slingCamera";
 		slingLoadMemoryPoint = "slingLoad0";
 		cargoIsCoDriver[] = {0,0};
 		memoryPointsGetInCargo = "pos cargo";
@@ -12061,6 +12061,23 @@ class CfgVehicles
 			minFov = 0.1;
 			maxFov = 1.2;
 		};
+	        class RenderTargets
+	        {
+	        	class SlingLoadCam
+	        	{
+	        		renderTarget = "rendertarget0";
+	        		class CameraView1
+	        		{
+	        			pointPosition = "slingCamera";
+	        			pointDirection = "slingLoad_cam_dir";
+	        			renderQuality = 2;
+	        			renderVisionMode = 0;
+	        			fov = 0.7;
+	        		};
+	        		BBoxes[] = {"PIP_0_TL", "PIP_0_TR", "PIP_0_BL", "PIP_0_BR"};
+	        	};
+	        };
+
 		class Turrets: Turrets
 		{
 			class CopilotTurret: CopilotTurret
@@ -12405,7 +12422,7 @@ class CfgVehicles
 		slingLoadMaxCargoMass = 12000;
 		radarType = 8;
 		memoryPointDriverOptics = "slingCamera";
-		slingLoadMemoryPoint = "slingLoad0";
+		slingLoadMemoryPoint = "SlingLoad0";
 		cargoIsCoDriver[] = {0,0};
 		memoryPointsGetInCargo = "pos cargo";
 		memoryPointsGetInCargoDir = "pos cargo dir";
@@ -12414,6 +12431,7 @@ class CfgVehicles
 		driverCanEject = 1;
 		driverCompartments = "Compartment1";
 		cargoCompartments[] = {"Compartment2"};
+		availableForSupportTypes[] = {"Drop", "Transport"};
 		hiddenSelections[] = {"camo1"};
 		class TransportBackpacks{};
 		class TransportItems{};
@@ -12720,6 +12738,23 @@ class CfgVehicles
 					 					 
 					 };
 		};
+	        class RenderTargets
+	        {
+	        	class SlingLoadCam
+	        	{
+	        		renderTarget = "rendertarget0";
+	        		class CameraView1
+	        		{
+	        			pointPosition = "slingCamera";
+	        			pointDirection = "slingLoad_cam_dir";
+	        			renderQuality = 2;
+	        			renderVisionMode = 0;
+	        			fov = 0.7;
+	        		};
+	        		BBoxes[] = {"PIP_0_TL", "PIP_0_TR", "PIP_0_BL", "PIP_0_BR"};
+	        	};
+	        };
+	        class MFD{};		
 		class AnimationSources{};
 		class UserActions{};
 		class Reflectors: Reflectors
@@ -15280,8 +15315,7 @@ class CfgVehicles
     {
         author = "Sequisha";
         scope = 2;
-//        model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
-        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm.p3d";
+        model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
         displayName = "$STR_EPOCH_FrequencyJammerSIM";
     };
     class SolarGen_SIM_EPOCH : Constructions_modular_F
@@ -15809,18 +15843,21 @@ class CfgVehicles
         scope = 2;
         displayName = "$STR_EPOCH_FrequencyJammer";
         placement = "vertical";
-//        model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
-        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm.p3d";
+        model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
+    };
+    class PlotPole_S_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_S";
+        model = "\x\addons\a3_epoch_assets\models\jammer.p3d"; // To be changed
+    };
+    class PlotPole_M_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_M";
+        model = "\x\addons\a3_epoch_assets\models\jammer.p3d"; // To be changed
     };
     class PlotPole_L_EPOCH : PlotPole_EPOCH
     {
         displayName = "$STR_EPOCH_FrequencyJammer_L";
-        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Mid.p3d";
-    };
-    class PlotPole_XL_EPOCH : PlotPole_EPOCH
-    {
-        displayName = "$STR_EPOCH_FrequencyJammer_XL";
-        model = "\x\addons\a3_epoch_community\models\jammers\jammer_lg.p3d";
     };
     class Const_floors_static_F : Constructions_static_F
     {
