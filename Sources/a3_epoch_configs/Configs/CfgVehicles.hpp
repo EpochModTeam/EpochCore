@@ -11786,8 +11786,8 @@ class CfgVehicles
 		backRotorForceCoef = 0.3;
 		accuracy = 0.5;
 		model = "x\addons\a2_epoch_vehicles\air\CH47\a2_ch_47f_epoch.p3d";
-		icon = "\A3\Air_F_Beta\Heli_Attack_01\Data\UI\Map_Heli_Attack_01_CA.paa";
-		picture = "\A3\Air_F_Beta\Heli_Attack_01\Data\UI\Heli_Attack_01_CA.paa";
+		picture = "x\addons\a2_epoch_vehicles\air\CH47\data\ch47_ca.paa";
+		icon = "x\addons\a2_epoch_vehicles\air\CH47\data\ch47_ca.paa";
 		driverAction = "pilot_Heli_Light_02";
 		driverInAction = "pilot_Heli_Light_02";
 		precisegetinout = 1;
@@ -12392,8 +12392,8 @@ class CfgVehicles
 		backRotorForceCoef = 1;
 		accuracy = 0.5;
 		model = "x\addons\a2_epoch_vehicles\air\mi17\a2_mi8_epoch.p3d";
-		icon = "\A3\Air_F_Beta\Heli_Attack_01\Data\UI\Map_Heli_Attack_01_CA.paa";
-		picture = "\A3\Air_F_Beta\Heli_Attack_01\Data\UI\Heli_Attack_01_CA.paa";
+		picture = "x\addons\a2_epoch_vehicles\air\mi17\data\mi17_ca.paa";
+		icon = "x\addons\a2_epoch_vehicles\air\mi17\data\mi17_ca.paa";
 		driverAction = "pilot_Heli_Light_02";
 		driverInAction = "pilot_Heli_Light_02";
 		precisegetinout = 1;
