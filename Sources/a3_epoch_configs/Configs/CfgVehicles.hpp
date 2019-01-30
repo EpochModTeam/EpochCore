@@ -9213,8 +9213,8 @@ class CfgVehicles
 	{
 		displayName="Classic URAL";
 		model 	= "x\addons\a2_epoch_vehicles\wheeled\ural\a2_ural_base";
-		picture	= "\A3\Weapons_F\Data\placeholder_co.paa";
-		Icon	= "\A3\Weapons_F\Data\placeholder_co.paa";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\ural_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\ural_ca.paa";
 		crew 	= "C_man_1";
 		side	= 3;
 		faction	= CIV_F;
