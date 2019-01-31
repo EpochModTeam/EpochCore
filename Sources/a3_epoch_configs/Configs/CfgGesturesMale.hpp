@@ -252,6 +252,19 @@ class CfgGesturesMale
             leftHandIKBeg = 0;
             leftHandIKEnd = 0;
         };
+        class Gesturesuicide : Default
+        {
+            file = "\x\addons\a3_epoch_community\anim\suicide_gesture.rtm";
+            looped = 0;
+            speed = -3;
+            mask = "handsWeapon_pst";
+            headBobStrength = 0.2;
+            headBobMode = 2;
+            rightHandIKBeg = 1;
+            rightHandIKEnd = 1;
+            leftHandIKBeg = 1;
+            leftHandIKEnd = 1;
+        };
     };
     class BlendAnims
     {

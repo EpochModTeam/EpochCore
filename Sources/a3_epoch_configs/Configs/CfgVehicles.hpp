@@ -17,6 +17,7 @@ class CfgVehicles
 {
     class Static;
     class Const_Ghost_EPOCH : Static {};
+	class Buildable_Storage_Ghost : Static {};
     class Animated_Loot : Static {};
     class NonStrategic;
     class WeaponHolder;
@@ -1468,6 +1469,16 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Male";
         picture = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\Dan.paa";
     };
+	class a2_Epoch_Chav : Epoch_Male_F
+	{
+		displayName = "Epoch Chav";
+		model = "\x\addons\a3_epoch_community\a2_epoch_clothing\a2_epoch_chav.p3d";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\a2_epoch_clothing\data\chav\chav_co.paa"};
+		uniformClass="U_EPOCH_Chav";
+		modelsides[] = {3,2,0};
+		hiddenSelectionsMaterials[] = {"\x\addons\a3_epoch_community\a2_epoch_clothing\data\chav\chav_metal.rvmat"};
+	};
 	class Epoch_RadiationSuit_M: Epoch_Male_F
 	{
 		scope = 2;
@@ -2874,26 +2885,156 @@ class CfgVehicles
         maximumLoad = 550;
         mass = 60;
     };
+//A2 Bags start
+	class Assault_Pack_Epoch: Bag_Base
+    {
+        author = "Helion4/BI";
+        scope = 2;
+        displayName = "Assault Pack";
+        picture= "\x\addons\a2_epoch_backpacks\UI\backpack_US_ASSAULT_CA.paa";
+		model = "x\addons\a2_epoch_backpacks\backpack_us_assault.p3d";
+        maximumLoad = 300;
+        mass = 25;
+    };
+    class Patrol_Pack_Epoch : Bag_Base
+    {
+        author = "Helion4/BI";
+        scope = 2;
+        displayName = "Patrol Pack";
+        picture = "\x\addons\a2_epoch_backpacks\UI\backpack_US_ASSAULT_COYOTE_CA.paa";
+		model = "x\addons\a2_epoch_backpacks\backpack_us_assault_Coyote.p3d";
+        maximumLoad = 300;
+        mass = 25;
+    };  
+    class US_Backpack_Epoch : Bag_Base
+    {
+        author = "Helion4/BI";
+        scope = 2;
+        displayName = "Coyote BackPack";
+        picture = "\x\addons\a2_epoch_backpacks\UI\backpack_US_CA.paa";
+		model = "x\addons\a2_epoch_backpacks\backpack_us.p3d";
+        maximumLoad = 500;
+        mass = 25;
+    };  
+     class CZ_Backpack_Epoch : Bag_Base
+    {
+        author = "Helion4/BI";
+        scope = 2;
+        displayName = "Camo CZ BackPack";
+        picture = "\x\addons\a2_epoch_backpacks\UI\backpack_ACR_CA.paa";
+		model = "x\addons\a2_epoch_backpacks\backpack_acr.p3d";
+        maximumLoad = 520;
+        mass = 25;
+    };  
+     class CZ_VestPouch_Epoch : Bag_Base
+    {
+        author = "Helion4/BI";
+        scope = 2;
+        displayName = "Vest Pouch";
+        picture = "\x\addons\a2_epoch_backpacks\UI\backpack_ACR_small_CA.paa";
+		model = "x\addons\a2_epoch_backpacks\backpack_acr_small.p3d";
+        maximumLoad = 340;
+        mass = 25;
+    };  
+     class TK_RPG_Backpack_Epoch : Bag_Base
+    {
+        author = "Helion4/BI";
+        scope = 2;
+        displayName = "RPG Pack";
+        picture = "\x\addons\a2_epoch_backpacks\UI\backpack_RPG_CA.paa";
+		model = "x\addons\a2_epoch_backpacks\backpack_rpg.p3d";
+        maximumLoad = 300;
+        mass = 25;
+    };  
+     class ALICE_Pack_Epoch : Bag_Base
+    {
+        author = "Helion4/BI";
+        scope = 2;
+        displayName = "Alice Pack";
+        picture = "\x\addons\a2_epoch_backpacks\UI\backpack_TK_ALICE_CA.paa";
+		model = "x\addons\a2_epoch_backpacks\backpack_tk_alice.p3d";
+        maximumLoad = 480;
+        mass = 25;
+    };  
+     class civil_assault_pack_Epoch : Bag_Base
+    {
+        author = "Helion4/BI";
+        scope = 2;
+        displayName = "CIV Assault Pack";
+        picture = "\x\addons\a2_epoch_backpacks\UI\backpack_CIVIL_ASSAULT_CA.paa";
+		model = "x\addons\a2_epoch_backpacks\backpack_civil_assault.p3d";
+        maximumLoad = 400;
+        mass = 25;
+    };  
+     class L_Gunbag_Epoch : Bag_Base
+    {
+        author = "Helion4/BI";
+        scope = 2;
+        displayName = "Large Gunbag";
+        picture = "\x\addons\a2_epoch_backpacks\ui\staticx_ca.paa";
+		model = "x\addons\a2_epoch_backpacks\LG_Gunbag_Epoch.p3d";
+        maximumLoad = 580;
+        mass = 25;
+    };  
+     class S_Gunbag_Epoch : Bag_Base
+    {
+        author = "Helion4/BI";
+        scope = 2;
+        displayName = "Gunbag";
+        picture = "\x\addons\a2_epoch_backpacks\ui\staticy_ca.paa";
+		model = "x\addons\a2_epoch_backpacks\Gunbag_Epoch.p3d";
+        maximumLoad = 420;
+        mass = 25;
+    };	
+//////a2 Bags end	
     class LandVehicle;
     class Car : LandVehicle
     {
         scope = 0;
-        class HitPoints;
+		class HitPoints;
+		class Turrets;
+		class AnimationSources;
+	    class Eventhandlers;
+		class Viewoptics;
+		class ViewPilot;
     };
     class Car_F : Car
     {
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};			
         scope = 0;
+		class PlateInfos
+		{
+			name = "spz";
+			color[] = {0, 0, 0, 0.75};
+			plateFont        = "RobotoCondensedLight";
+			plateFormat        = "EPOCH";
+			plateLetters    = "ABCDEFHIKLMOPRSTVXYZ";
+		};
         class HitPoints
         {
-            class HitLFWheel;
-            class HitLF2Wheel;
-            class HitRFWheel;
-            class HitRF2Wheel;
-            class HitBody;
-            class HitGlass1;
-            class HitGlass2;
-            class HitGlass3;
-            class HitGlass4;
+			class HitRGlass;
+			class HitLGlass;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitBody;
+			class HitFuel;
+			class HitLFWheel;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitRF2Wheel;
+			class HitEngine;
+			class HitHull;
         };
         class EventHandlers;
     };
@@ -6799,6 +6940,3558 @@ class CfgVehicles
         armor = 180;
 		crewCrashProtection	= 1.75;
     };
+///////////////a2 wheeled start
+	class a2_golf_base: car_F
+	{
+		displayName="Classic Golf";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\golf\a2_golf_base2";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_blue_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 190;
+		fuelCapacity	= 40;
+//        terrainCoef 	= 2.5;
+        terrainCoef 	= 4.0;
+		turnCoef = 2;
+		precision 		= 15;
+		brakeDistance 	= 3.0;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+//		armor = 30;
+		armor = 180;
+		maximumLoad		= 1350;
+//		enginePower = 408;
+		enginePower = 350;
+//		maxOmega = 600;
+		maxOmega = 680;
+//		peakTorque = 680;
+		peakTorque = 650;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 2.5;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+		idleRpm = 800;
+//		redRpm = 6000;
+		redRpm = 6500;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -5.0, "N", 0, "D1", 4.8, "D2", 2.8, "D3", 1.9, "D4", 1.2, "D5", 0.7};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+			class HitPoints: HitPoints
+			{
+				class HitBody
+				{
+					armor = 6;
+					material = -1;
+					name = "karoserie";
+					visual = "zbytek";
+					passThrough = 1;
+					minimalHit = 0.01;
+					explosionShielding = 1.5;
+					radius = 0.45;
+				};
+				class HitLFWheel: HitLFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitLF2Wheel: HitLF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRFWheel: HitRFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRF2Wheel: HitRF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitFuel: HitFuel
+				{
+					name = "palivo";
+					armor = 2;
+					radius = 0.45;
+				};
+				class HitEngine: HitEngine
+				{
+					name = "engine";
+					armor = 4;
+					radius = 0.25;
+				};
+				class HitGlass1: HitGlass1
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass2: HitGlass2
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass3: HitGlass3
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass4: HitGlass4
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass5: HitGlass5
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass6: HitGlass6
+				{
+					armor = 1;
+					radius = 0.5;
+				};
+			};
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[]=
+		{
+             "\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_body_co.paa"
+		};
+		class TextureSources
+		{
+			class Blue
+			{
+				displayName = "Blue";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_bodyblu_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Grey
+			{
+				displayName = "Grey";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_bodygrey_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Pink
+			{
+				displayName = "Pink";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_bodypink_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Red
+			{
+				displayName = "Red";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\golf\Data\vwgolf_body_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+		};
+		textureList[] = {"Blue", 1, "Grey", 1, "Pink", 1, "Red", 1};
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"x\addons\a2_epoch_vehicles\wheeled\golf\data\VWgolf_body2.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\golf\data\VWgolf_body_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\golf\data\VWgolf_body_destruct.rvmat"
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.23";
+				mass = 20;
+				MOI = 78.625;
+				dampingRate = 0.5;
+				maxBrakeTorque = 4000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.1;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
+				longitudinalStiffnessPerUnitGravity = 100000;
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
+
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
+
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "CarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Start", 0.707946, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Stop", 0.707946, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Start", 1.99526, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Stop", 1.99526, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+				soundSetsInt[] = {"Hatchback_01_Engine_RPM0_INT_SoundSet", "Hatchback_01_Engine_RPM1_INT_SoundSet", "Hatchback_01_Engine_RPM2_INT_SoundSet", "Hatchback_01_Engine_RPM3_INT_SoundSet", "Hatchback_01_Engine_RPM4_INT_SoundSet", "Hatchback_01_Rattling_INT_SoundSet", "Hatchback_01_Stress_INT_SoundSet", "Hatchback_01_Rain_INT_SoundSet", "Hatchback_01_Tires_Rock_Fast_INT_SoundSet", "Hatchback_01_Tires_Grass_Fast_INT_SoundSet", "Hatchback_01_Tires_Sand_Fast_INT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_INT_SoundSet", "Hatchback_01_Tires_Mud_Fast_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_INT_SoundSet", "Hatchback_01_Tires_Water_Fast_INT_SoundSet", "Hatchback_01_Tires_Rock_Slow_INT_SoundSet", "Hatchback_01_Tires_Grass_Slow_INT_SoundSet", "Hatchback_01_Tires_Sand_Slow_INT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_INT_SoundSet", "Hatchback_01_Tires_Mud_Slow_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_INT_SoundSet", "Hatchback_01_Tires_Water_Slow_INT_SoundSet", "Hatchback_01_Tires_Turn_Hard_INT_SoundSet", "Hatchback_01_Tires_Turn_Soft_INT_SoundSet", "Hatchback_01_Tires_Brake_Hard_INT_SoundSet", "Hatchback_01_Tires_Brake_Soft_INT_SoundSet"};
+				soundSetsExt[] = {"Hatchback_01_Engine_RPM0_EXT_SoundSet", "Hatchback_01_Engine_RPM1_EXT_SoundSet", "Hatchback_01_Engine_RPM2_EXT_SoundSet", "Hatchback_01_Engine_RPM3_EXT_SoundSet", "Hatchback_01_Engine_RPM4_EXT_SoundSet", "Hatchback_01_Rain_EXT_SoundSet", "Hatchback_01_Tires_Rock_Fast_EXT_SoundSet", "Hatchback_01_Tires_Grass_Fast_EXT_SoundSet", "Hatchback_01_Tires_Sand_Fast_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_EXT_SoundSet", "Hatchback_01_Tires_Mud_Fast_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_EXT_SoundSet", "Hatchback_01_Tires_Water_Fast_EXT_SoundSet", "Hatchback_01_Tires_Rock_Slow_EXT_SoundSet", "Hatchback_01_Tires_Grass_Slow_EXT_SoundSet", "Hatchback_01_Tires_Sand_Slow_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_EXT_SoundSet", "Hatchback_01_Tires_Mud_Slow_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_EXT_SoundSet", "Hatchback_01_Tires_Water_Slow_EXT_SoundSet", "Hatchback_01_Tires_Turn_Hard_EXT_SoundSet", "Hatchback_01_Tires_Turn_Soft_EXT_SoundSet", "Hatchback_01_Tires_Brake_Hard_EXT_SoundSet", "Hatchback_01_Tires_Brake_Soft_EXT_SoundSet"};
+		};
+	};
+    class A2_Golf_EPOCH: a2_golf_base
+	{
+		scope=2;
+		textureList[] = {"Blue", 1, "Grey", 1, "Pink", 1, "Red", 1};
+	};
+    class A2_Golf_load_EPOCH: A2_Golf_EPOCH
+	{
+		displayName="Classic Golf Load";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\golf\a2_golf_base";
+	};
+     class a2_hmmwv_base: car_F
+	{
+		displayName="Classic Hummvee";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\hmmwv_2";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\humvee_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\humvee_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 125;
+		fuelCapacity	= 40;
+        terrainCoef 	= 2.5;
+		turnCoef = 2.6;
+		precision 		= 15;
+		brakeDistance 	= 3.0;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+//		armor = 30;
+		armor = 110;
+		maximumLoad		= 1650;
+//		enginePower = 408;
+		enginePower = 200;
+		maxOmega = 600;
+//		peakTorque = 680;
+		peakTorque = 500;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 1.5;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+//		idleRpm = 800;
+		idleRpm = 500;
+		redRpm = 6000;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 6, "D2", 3.5, "D3", 2, "D4", 1};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+			class HitPoints: HitPoints
+			{
+				class HitBody
+				{
+					armor = 6;
+					material = -1;
+					name = "karoserie";
+					visual = "zbytek";
+					passThrough = 1;
+					minimalHit = 0.01;
+					explosionShielding = 1.5;
+					radius = 0.45;
+				};
+				class HitLFWheel: HitLFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitLF2Wheel: HitLF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRFWheel: HitRFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRF2Wheel: HitRF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitFuel: HitFuel
+				{
+					name = "palivo";
+					armor = 2;
+					radius = 0.45;
+				};
+				class HitEngine: HitEngine
+				{
+					name = "engine";
+					armor = 4;
+					radius = 0.25;
+				};
+				class HitGlass1: HitGlass1
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass2: HitGlass2
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass3: HitGlass3
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass4: HitGlass4
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass5: HitGlass5
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass6: HitGlass6
+				{
+					armor = 1;
+					radius = 0.5;
+				};
+			};
+/*
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]={""};
+*/
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2_destruct.rvmat"
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.32";
+				mass = 30;
+				MOI = 6;
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateInAir = 0.8;
+				dampingRateDestroyed = 5000;
+				maxBrakeTorque = 4000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.05;
+				maxDroop = 0.1;
+				sprungMass = -1;
+				springStrength = 41650;
+				springDamperRate = 4760;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 2.5;
+				latStiffY = 18;
+				frictionVsSlipGraph[] = {{0, 1.75}, {0.5, 1.35}, {1, 1.2}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 8000;
+				frictionVsSlipGraph[] = {{0, 2}, {0.5, 1.53}, {1, 1.36}};
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 8000;
+				frictionVsSlipGraph[] = {{0, 2.3}, {0.5, 2.1}, {1, 2}};
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
+
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
+
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+        class EventHandlers: EventHandlers {};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "CarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Exit", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Int_Start", 0.707946, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Int_Stop", 0.707946, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Ext_Start", 1.99526, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Ext_Stop", 1.99526, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+			soundSetsInt[] = {"Suv_01_Engine_RPM0_INT_SoundSet", "Suv_01_Engine_RPM1_INT_SoundSet", "Suv_01_Engine_RPM2_INT_SoundSet", "Suv_01_Engine_RPM3_INT_SoundSet", "Suv_01_Engine_RPM4_INT_SoundSet", "Suv_01_Rattling_INT_SoundSet", "Suv_01_Stress_INT_SoundSet", "Suv_01_Rain_INT_SoundSet", "Suv_01_Tires_Rock_Fast_INT_SoundSet", "Suv_01_Tires_Grass_Fast_INT_SoundSet", "Suv_01_Tires_Sand_Fast_INT_SoundSet", "Suv_01_Tires_Gravel_Fast_INT_SoundSet", "Suv_01_Tires_Mud_Fast_INT_SoundSet", "Suv_01_Tires_Asphalt_Fast_INT_SoundSet", "Suv_01_Tires_Water_Fast_INT_SoundSet", "Suv_01_Tires_Rock_Slow_INT_SoundSet", "Suv_01_Tires_Grass_Slow_INT_SoundSet", "Suv_01_Tires_Sand_Slow_INT_SoundSet", "Suv_01_Tires_Gravel_Slow_INT_SoundSet", "Suv_01_Tires_Mud_Slow_INT_SoundSet", "Suv_01_Tires_Asphalt_Slow_INT_SoundSet", "Suv_01_Tires_Water_Slow_INT_SoundSet", "Suv_01_Tires_Turn_Hard_INT_SoundSet", "Suv_01_Tires_Turn_Soft_INT_SoundSet", "Suv_01_Tires_Brake_Hard_INT_SoundSet", "Suv_01_Tires_Brake_Soft_INT_SoundSet"};
+			soundSetsExt[] = {"Suv_01_Engine_RPM0_EXT_SoundSet", "Suv_01_Engine_RPM1_EXT_SoundSet", "Suv_01_Engine_RPM2_EXT_SoundSet", "Suv_01_Engine_RPM3_EXT_SoundSet", "Suv_01_Engine_RPM4_EXT_SoundSet", "Suv_01_Rain_EXT_SoundSet", "Suv_01_Tires_Rock_Fast_EXT_SoundSet", "Suv_01_Tires_Grass_Fast_EXT_SoundSet", "Suv_01_Tires_Sand_Fast_EXT_SoundSet", "Suv_01_Tires_Gravel_Fast_EXT_SoundSet", "Suv_01_Tires_Mud_Fast_EXT_SoundSet", "Suv_01_Tires_Asphalt_Fast_EXT_SoundSet", "Suv_01_Tires_Water_Fast_EXT_SoundSet", "Suv_01_Tires_Rock_Slow_EXT_SoundSet", "Suv_01_Tires_Grass_Slow_EXT_SoundSet", "Suv_01_Tires_Sand_Slow_EXT_SoundSet", "Suv_01_Tires_Gravel_Slow_EXT_SoundSet", "Suv_01_Tires_Mud_Slow_EXT_SoundSet", "Suv_01_Tires_Asphalt_Slow_EXT_SoundSet", "Suv_01_Tires_Water_Slow_EXT_SoundSet", "Suv_01_Tires_Turn_Hard_EXT_SoundSet", "Suv_01_Tires_Turn_Soft_EXT_SoundSet", "Suv_01_Tires_Brake_Hard_EXT_SoundSet", "Suv_01_Tires_Brake_Soft_EXT_SoundSet"};
+		};
+	};
+	class A2_HMMWV_EPOCH: a2_hmmwv_base 
+	{
+		scope	= 2;
+	};
+	class A2_HMMWV_load_EPOCH: A2_HMMWV_EPOCH 
+	{
+		displayName="Classic Hummvee Load";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\hmmwv";
+	};
+	class a2_lada_base: car_F
+	{
+		displayName="Classic Lada";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\lada\a2_lada_base";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\lada_red_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\golf_red_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 140;
+		fuelCapacity	= 40;
+//        terrainCoef 	= 2.5;
+        terrainCoef 	= 4.5;
+		turnCoef = 2;
+		precision 		= 15;
+		brakeDistance 	= 3.0;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+//		armor = 30;
+		armor = 80;
+		maximumLoad		= 1100;
+//		enginePower = 408;
+		enginePower = 340;
+//		maxOmega = 600;
+		maxOmega = 680;
+//		peakTorque = 680;
+		peakTorque = 490;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 2.5;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+		idleRpm = 800;
+//		redRpm = 6000;
+		redRpm = 6500;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -4.5, "N", 0, "D1", 3.2, "D2", 1.9, "D3", 1.1, "D4", 0.8};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+			class HitPoints: HitPoints
+			{
+				class HitLFWheel: HitLFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitLF2Wheel: HitLF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRFWheel: HitRFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRF2Wheel: HitRF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitFuel: HitFuel
+				{
+					name = "palivo";
+					armor = 2;
+					radius = 0.45;
+				};
+				class HitEngine: HitEngine
+				{
+					name = "engine";
+					armor = 4;
+					radius = 0.25;
+				};
+				class HitGlass1: HitGlass1
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass2: HitGlass2
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass3: HitGlass3
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass4: HitGlass4
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass5: HitGlass5
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass6: HitGlass6
+				{
+					armor = 1;
+					radius = 0.5;
+				};
+			};
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[]=
+		{
+             "\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_red_co.paa"
+		};
+		class TextureSources
+		{
+			class Red
+			{
+				displayName = "Red";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_red_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class White
+			{
+				displayName = "White";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_white_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Orange
+			{
+				displayName = "Orange";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\Lada\Data\lada_lm_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+		};
+		textureList[] = {"Red", 1, "White", 1, "Orange", 1};
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"x\addons\a2_epoch_vehicles\wheeled\lada\data\lada_mat.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\lada\data\lada_mat_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\lada\data\lada_mat_destruct.rvmat"
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.23";
+				mass = 20;
+				MOI = 78.625;
+				dampingRate = 0.5;
+				maxBrakeTorque = 4000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.1;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
+				longitudinalStiffnessPerUnitGravity = 100000;
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
+
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
+
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "CarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Start", 0.707946, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Stop", 0.707946, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Start", 1.99526, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Stop", 1.99526, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+				soundSetsInt[] = {"Hatchback_01_Engine_RPM0_INT_SoundSet", "Hatchback_01_Engine_RPM1_INT_SoundSet", "Hatchback_01_Engine_RPM2_INT_SoundSet", "Hatchback_01_Engine_RPM3_INT_SoundSet", "Hatchback_01_Engine_RPM4_INT_SoundSet", "Hatchback_01_Rattling_INT_SoundSet", "Hatchback_01_Stress_INT_SoundSet", "Hatchback_01_Rain_INT_SoundSet", "Hatchback_01_Tires_Rock_Fast_INT_SoundSet", "Hatchback_01_Tires_Grass_Fast_INT_SoundSet", "Hatchback_01_Tires_Sand_Fast_INT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_INT_SoundSet", "Hatchback_01_Tires_Mud_Fast_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_INT_SoundSet", "Hatchback_01_Tires_Water_Fast_INT_SoundSet", "Hatchback_01_Tires_Rock_Slow_INT_SoundSet", "Hatchback_01_Tires_Grass_Slow_INT_SoundSet", "Hatchback_01_Tires_Sand_Slow_INT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_INT_SoundSet", "Hatchback_01_Tires_Mud_Slow_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_INT_SoundSet", "Hatchback_01_Tires_Water_Slow_INT_SoundSet", "Hatchback_01_Tires_Turn_Hard_INT_SoundSet", "Hatchback_01_Tires_Turn_Soft_INT_SoundSet", "Hatchback_01_Tires_Brake_Hard_INT_SoundSet", "Hatchback_01_Tires_Brake_Soft_INT_SoundSet"};
+				soundSetsExt[] = {"Hatchback_01_Engine_RPM0_EXT_SoundSet", "Hatchback_01_Engine_RPM1_EXT_SoundSet", "Hatchback_01_Engine_RPM2_EXT_SoundSet", "Hatchback_01_Engine_RPM3_EXT_SoundSet", "Hatchback_01_Engine_RPM4_EXT_SoundSet", "Hatchback_01_Rain_EXT_SoundSet", "Hatchback_01_Tires_Rock_Fast_EXT_SoundSet", "Hatchback_01_Tires_Grass_Fast_EXT_SoundSet", "Hatchback_01_Tires_Sand_Fast_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_EXT_SoundSet", "Hatchback_01_Tires_Mud_Fast_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_EXT_SoundSet", "Hatchback_01_Tires_Water_Fast_EXT_SoundSet", "Hatchback_01_Tires_Rock_Slow_EXT_SoundSet", "Hatchback_01_Tires_Grass_Slow_EXT_SoundSet", "Hatchback_01_Tires_Sand_Slow_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_EXT_SoundSet", "Hatchback_01_Tires_Mud_Slow_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_EXT_SoundSet", "Hatchback_01_Tires_Water_Slow_EXT_SoundSet", "Hatchback_01_Tires_Turn_Hard_EXT_SoundSet", "Hatchback_01_Tires_Turn_Soft_EXT_SoundSet", "Hatchback_01_Tires_Brake_Hard_EXT_SoundSet", "Hatchback_01_Tires_Brake_Soft_EXT_SoundSet"};
+		};
+	};
+    class A2_Lada_EPOCH: a2_lada_base
+	{
+		scope=2;
+		textureList[] = {"Red", 1, "White", 1, "Orange", 1};
+	};
+	class a2_suv_base: car_F
+	{
+		displayName="Classic SUV";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv2";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\suv_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\suv_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 200;
+		fuelCapacity	= 40;
+        terrainCoef 	= 2.5;
+		turnCoef = 2.6;
+		precision 		= 15;
+		brakeDistance 	= 3.0;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+//		armor = 30;
+		armor = 90;
+		maximumLoad		= 1650;
+		enginePower = 408;
+		maxOmega = 600;
+//		peakTorque = 680;
+		peakTorque = 695;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 2.5;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+		idleRpm = 800;
+		redRpm = 6000;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -6.5, "N", 0, "D1", 4.9, "D2", 2.9, "D3", 1.8, "D4", 1.2, "D5", 0.7};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        //class Turrets{};
+			class HitPoints: HitPoints
+			{
+				class HitBody
+				{
+					armor = 6;
+					material = -1;
+					name = "karoserie";
+					visual = "zbytek";
+					passThrough = 1;
+					minimalHit = 0.01;
+					explosionShielding = 1.5;
+					radius = 0.45;
+				};
+				class HitLFWheel: HitLFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitLF2Wheel: HitLF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRFWheel: HitRFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRF2Wheel: HitRF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitFuel: HitFuel
+				{
+					name = "palivo";
+					armor = 2;
+					radius = 0.45;
+				};
+				class HitEngine: HitEngine
+				{
+					name = "engine";
+					armor = 4;
+					radius = 0.25;
+				};
+				class HitGlass1: HitGlass1
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass2: HitGlass2
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass3: HitGlass3
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass4: HitGlass4
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass5: HitGlass5
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass6: HitGlass6
+				{
+					armor = 1;
+					radius = 0.5;
+				};
+			};
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[]=
+		{
+             "x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_co.paa"
+		};
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_destruct.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_chrom.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_chrom_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_chrom_destruct.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_glass.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_glass_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_glass_destruct.rvmat"			
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.23";
+				mass = 20;
+				MOI = 78.625;
+				dampingRate = 0.5;
+				maxBrakeTorque = 4000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.1;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
+				longitudinalStiffnessPerUnitGravity = 100000;
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
+
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
+
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+        class EventHandlers: EventHandlers {};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "CarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Exit", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Int_Start", 0.707946, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Int_Stop", 0.707946, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Ext_Start", 1.99526, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Suv_01\Suv_01_Engine_Ext_Stop", 1.99526, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+			soundSetsInt[] = {"Suv_01_Engine_RPM0_INT_SoundSet", "Suv_01_Engine_RPM1_INT_SoundSet", "Suv_01_Engine_RPM2_INT_SoundSet", "Suv_01_Engine_RPM3_INT_SoundSet", "Suv_01_Engine_RPM4_INT_SoundSet", "Suv_01_Rattling_INT_SoundSet", "Suv_01_Stress_INT_SoundSet", "Suv_01_Rain_INT_SoundSet", "Suv_01_Tires_Rock_Fast_INT_SoundSet", "Suv_01_Tires_Grass_Fast_INT_SoundSet", "Suv_01_Tires_Sand_Fast_INT_SoundSet", "Suv_01_Tires_Gravel_Fast_INT_SoundSet", "Suv_01_Tires_Mud_Fast_INT_SoundSet", "Suv_01_Tires_Asphalt_Fast_INT_SoundSet", "Suv_01_Tires_Water_Fast_INT_SoundSet", "Suv_01_Tires_Rock_Slow_INT_SoundSet", "Suv_01_Tires_Grass_Slow_INT_SoundSet", "Suv_01_Tires_Sand_Slow_INT_SoundSet", "Suv_01_Tires_Gravel_Slow_INT_SoundSet", "Suv_01_Tires_Mud_Slow_INT_SoundSet", "Suv_01_Tires_Asphalt_Slow_INT_SoundSet", "Suv_01_Tires_Water_Slow_INT_SoundSet", "Suv_01_Tires_Turn_Hard_INT_SoundSet", "Suv_01_Tires_Turn_Soft_INT_SoundSet", "Suv_01_Tires_Brake_Hard_INT_SoundSet", "Suv_01_Tires_Brake_Soft_INT_SoundSet"};
+			soundSetsExt[] = {"Suv_01_Engine_RPM0_EXT_SoundSet", "Suv_01_Engine_RPM1_EXT_SoundSet", "Suv_01_Engine_RPM2_EXT_SoundSet", "Suv_01_Engine_RPM3_EXT_SoundSet", "Suv_01_Engine_RPM4_EXT_SoundSet", "Suv_01_Rain_EXT_SoundSet", "Suv_01_Tires_Rock_Fast_EXT_SoundSet", "Suv_01_Tires_Grass_Fast_EXT_SoundSet", "Suv_01_Tires_Sand_Fast_EXT_SoundSet", "Suv_01_Tires_Gravel_Fast_EXT_SoundSet", "Suv_01_Tires_Mud_Fast_EXT_SoundSet", "Suv_01_Tires_Asphalt_Fast_EXT_SoundSet", "Suv_01_Tires_Water_Fast_EXT_SoundSet", "Suv_01_Tires_Rock_Slow_EXT_SoundSet", "Suv_01_Tires_Grass_Slow_EXT_SoundSet", "Suv_01_Tires_Sand_Slow_EXT_SoundSet", "Suv_01_Tires_Gravel_Slow_EXT_SoundSet", "Suv_01_Tires_Mud_Slow_EXT_SoundSet", "Suv_01_Tires_Asphalt_Slow_EXT_SoundSet", "Suv_01_Tires_Water_Slow_EXT_SoundSet", "Suv_01_Tires_Turn_Hard_EXT_SoundSet", "Suv_01_Tires_Turn_Soft_EXT_SoundSet", "Suv_01_Tires_Brake_Hard_EXT_SoundSet", "Suv_01_Tires_Brake_Soft_EXT_SoundSet"};
+		};
+	};
+    class A2_SUV_EPOCH: a2_suv_base
+	{
+		scope=2;
+		class Turrets {};
+	};
+    class A2_SUV_load_EPOCH: A2_SUV_EPOCH
+	{
+		displayName="Classic SUV Load";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\suv\a2_suv";
+	};
+	class A2_SUV_armed_EPOCH: a2_suv_base
+	{
+		scope=2;
+		displayName = "Classic Armed SUV";
+		model = "x\addons\a2_epoch_vehicles\wheeled\suv\a2_a_suv";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				disableSoundAttenuation = 1;
+				gunnerLeftHandAnimName = "handle_L";
+				gunnerRightHandAnimName = "handle_R";
+				body = "mg1_main_turret";
+				gun = "mg1_main_gun";
+				animationSourceBody = "mg1_main_turret";
+				animationSourceGun = "mg1_main_gun";
+				weapons[] = {"E_uh1h_mg_762_01"};
+				magazines[] = {"200Rnd_762x51_Belt", "200Rnd_762x51_Belt", "200Rnd_762x51_Belt"};
+				minElev = -10;
+				maxElev = 40;
+				soundServo[] = {"A3\sounds_f\dummysound", 1e-006, 1};
+				gunnerAction = "gunner_lsv_01";
+				gunnerCompartments = "Compartment1";
+				ejectDeadGunner = 0;
+				castGunnerShadow = 1;
+				stabilizedInAxes = 0;
+				gunBeg = "mg1_usti_hlavne";
+				gunEnd = "mg1_konec_hlavne";
+				memoryPointGunnerOptics = "mg1_gunnerview";
+				memoryPointsGetInGunner = "mg1_pos_gunner";
+				memoryPointsGetInGunnerDir = "mg1_pos_gunner_dir";
+				commanding = -2;
+				primaryGunner = 1;
+				optics = 1;
+				discreteDistance[] = {100, 200, 300, 400, 600, 800, 1000, 1200, 1500};
+				discreteDistanceInitIndex = 2;
+				//turretInfoType = "RscOptics_crows";
+				gunnerOpticsModel = "\A3\Weapons_F\empty.p3d";
+				selectionFireAnim = "mg1_zasleh";
+				class ViewOptics: ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.75;
+					minFov = 0.25;
+					maxFov = 1.25;
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+		class animationsources: AnimationSources
+		{
+			class mg1_ReloadAnim
+			{
+				source = "reload";
+				weapon = "E_uh1h_mg_762_01";
+			};
+			class mg1_ReloadMagazine: mg1_ReloadAnim
+			{
+				source = "reloadmagazine";
+			};
+			class mg1_flash_source: mg1_ReloadAnim
+			{
+				source = "reload";
+			};
+			class mg1_Revolving: mg1_ReloadAnim
+			{
+				source = "revolving";
+			};
+			class mg1_muzzle_rot: mg1_ReloadAnim
+			{
+				source = "ammorandom";
+			};
+			class mg1_muzzle_hide
+			{
+				source = "reload";
+			};
+			class HideGun_01 
+			{
+				source="user"; 
+				initPhase=0; 
+				animPeriod=1.2;
+			};
+			class HideGun_02: HideGun_01{};
+			class HideGun_03: HideGun_01{};
+			class HideGun_04: HideGun_01{};
+			class CloseCover1 
+			{
+				source="user"; 
+				initPhase=0; 
+				animPeriod=0.7;
+			};
+			class CloseCover2: CloseCover1 {};
+		};
+		class UserActions
+		{
+			class Raise_gun
+			{
+				displayName = "Raise Gun";
+				position = "door_L";
+				radius = 1;
+				onlyForPlayer = 0;
+				condition = "this animationPhase ""HideGun_01"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+				statement = "this animate [""HideGun_01"", 1];this animate [""CloseCover1"", 1,1.2];";
+			};
+			class HideGun_01: Raise_gun
+			{
+				displayName = "Close Left Door";
+				condition = "this animationPhase ""HideGun_01"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+				statement = "this animate [""HideGun_01"", 1];this animate [""CloseCover1"", 1,1.2];";
+			};
+			class HideGun_a: Raise_gun
+			{
+				displayName = "Close Right Door";
+				condition = "this animationPhase ""HideGun_01"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+				statement = "this animate [""HideGun_01"", 1];this animate [""CloseCover1"", 1,1.2];";
+			};
+        };
+    };	
+    class a2_UAZ_base: car_F
+	{
+		displayName="Classic UAZ";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\uaz\a2_uaz_base";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 145;
+		fuelCapacity	= 40;
+//        terrainCoef 	= 2.5;
+        terrainCoef 	= 1.8;
+		turnCoef = 2.6;
+		precision 		= 15;
+		brakeDistance 	= 3.0;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+//		armor = 30;
+		armor = 45;
+		maximumLoad		= 1750;
+		enginePower = 408;
+//		maxOmega = 600;
+		maxOmega = 471;
+//		peakTorque = 680;
+		peakTorque = 480;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 2.5;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+//		idleRpm = 800;
+		idleRpm = 600;
+//		redRpm = 6000;
+		redRpm = 4500;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -5.0, "N", 0, "D1", 3.7, "D2", 2.3, "D3", 1.4, "D4", 0.9, "D5", 0.7};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+			class HitPoints: HitPoints
+			{
+				class HitBody
+				{
+					armor = 6;
+					material = -1;
+					name = "karoserie";
+					visual = "zbytek";
+					passThrough = 1;
+					minimalHit = 0.01;
+					explosionShielding = 1.5;
+					radius = 0.45;
+				};
+				class HitLFWheel: HitLFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitLF2Wheel: HitLF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRFWheel: HitRFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRF2Wheel: HitRF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitFuel: HitFuel
+				{
+					name = "palivo";
+					armor = 2;
+					radius = 0.45;
+				};
+				class HitEngine: HitEngine
+				{
+					name = "engine";
+					armor = 4;
+					radius = 0.25;
+				};
+				class HitGlass1: HitGlass1
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass2: HitGlass2
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass3: HitGlass3
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass4: HitGlass4
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass5: HitGlass5
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass6: HitGlass6
+				{
+					armor = 1;
+					radius = 0.5;
+				};
+			};
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[]=
+		{
+             "x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_002_co.paa"
+		};
+		class TextureSources
+		{
+			class Random1
+			{
+				displayName = "Random1";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_002_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Random2
+			{
+				displayName = "Random2";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_civil_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Random3
+			{
+				displayName = "Random3";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Random4
+			{
+				displayName = "Random4";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_ind_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Random5
+			{
+				displayName = "Random5";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_un_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Random6
+			{
+				displayName = "Random6";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\UAZ\Data\uaz_main_001_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+		};
+		textureList[] = {"Random1", 1, "Random2", 1, "Random3", 1, "Random4", 1, "Random5", 1, "Random6", 1};
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"x\addons\a2_epoch_vehicles\wheeled\uaz\data\uaz_main_metal.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\uaz\data\uaz_main_metal_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\uaz\data\uaz_main_metal_destruct.rvmat"
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.23";
+				mass = 20;
+				MOI = 78.625;
+				dampingRate = 0.5;
+				maxBrakeTorque = 4000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.1;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
+				longitudinalStiffnessPerUnitGravity = 100000;
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
+
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
+
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "OpenCarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Enter", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Engine_Int_Start", 0.501187, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Engine_Int_stop", 0.398107, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Engine_Ext_Start", 0.501187, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Offroad_02\Offroad_02_Engine_Ext_stop", 0.398107, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+			soundSetsInt[] = {"Offroad_02_Engine_RPM0_INT_SoundSet", "Offroad_02_Engine_RPM1_INT_SoundSet", "Offroad_02_Engine_RPM2_INT_SoundSet", "Offroad_02_Engine_RPM3_INT_SoundSet", "Offroad_02_Engine_RPM4_INT_SoundSet", "Offroad_02_Rattling_INT_SoundSet", "Offroad_02_Stress_INT_SoundSet", "Offroad_02_Rain_INT_SoundSet", "Offroad_02_Tires_Rock_Fast_OPEN_SoundSet", "Offroad_02_Tires_Grass_Fast_OPEN_SoundSet", "Offroad_02_Tires_Sand_Fast_OPEN_SoundSet", "Offroad_02_Tires_Gravel_Fast_OPEN_SoundSet", "Offroad_02_Tires_Mud_Fast_OPEN_SoundSet", "Offroad_02_Tires_Asphalt_Fast_OPEN_SoundSet", "Offroad_02_Tires_Water_Fast_OPEN_SoundSet", "Offroad_02_Tires_Rock_Slow_OPEN_SoundSet", "Offroad_02_Tires_Grass_Slow_OPEN_SoundSet", "Offroad_02_Tires_Sand_Slow_OPEN_SoundSet", "Offroad_02_Tires_Gravel_Slow_OPEN_SoundSet", "Offroad_02_Tires_Mud_Slow_OPEN_SoundSet", "Offroad_02_Tires_Asphalt_Slow_OPEN_SoundSet", "Offroad_02_Tires_Water_Slow_OPEN_SoundSet", "Offroad_02_Tires_Turn_Hard_OPEN_SoundSet", "Offroad_02_Tires_Turn_Soft_OPEN_SoundSet", "Offroad_02_Tires_Brake_Hard_OPEN_SoundSet", "Offroad_02_Tires_Brake_Soft_OPEN_SoundSet", "", "Tires_Movement_Dirt_Int_01_SoundSet"};
+			soundSetsExt[] = {"Offroad_02_Engine_RPM0_EXT_SoundSet", "Offroad_02_Engine_RPM1_EXT_SoundSet", "Offroad_02_Engine_RPM2_EXT_SoundSet", "Offroad_02_Engine_RPM3_EXT_SoundSet", "Offroad_02_Engine_RPM4_EXT_SoundSet", "Offroad_02_Rattling_EXT_SoundSet", "Offroad_02_Stress_EXT_SoundSet", "Offroad_02_Rain_EXT_SoundSet", "Offroad_02_Tires_Rock_Fast_EXT_SoundSet", "Offroad_02_Tires_Grass_Fast_EXT_SoundSet", "Offroad_02_Tires_Sand_Fast_EXT_SoundSet", "Offroad_02_Tires_Gravel_Fast_EXT_SoundSet", "Offroad_02_Tires_Mud_Fast_EXT_SoundSet", "Offroad_02_Tires_Asphalt_Fast_EXT_SoundSet", "Offroad_02_Tires_Water_Fast_EXT_SoundSet", "Offroad_02_Tires_Rock_Slow_EXT_SoundSet", "Offroad_02_Tires_Grass_Slow_EXT_SoundSet", "Offroad_02_Tires_Sand_Slow_EXT_SoundSet", "Offroad_02_Tires_Gravel_Slow_EXT_SoundSet", "Offroad_02_Tires_Mud_Slow_EXT_SoundSet", "Offroad_02_Tires_Asphalt_Slow_EXT_SoundSet", "Offroad_02_Tires_Water_Slow_EXT_SoundSet", "Offroad_02_Tires_Turn_Hard_EXT_SoundSet", "Offroad_02_Tires_Turn_Soft_EXT_SoundSet", "Offroad_02_Tires_Brake_Hard_EXT_SoundSet", "Offroad_02_Tires_Brake_Soft_EXT_SoundSet", "", "Tires_Movement_Dirt_Ext_01_SoundSet"};
+		};
+	};
+    class A2_UAZ_EPOCH: a2_UAZ_base
+	{
+		scope=2;
+		textureList[] = {"Random1", 1, "Random2", 1, "Random3", 1, "Random4", 1, "Random5", 1, "Random6", 1};
+	};
+    class A2_UAZ_Open_EPOCH: a2_UAZ_base
+	{
+		scope=2;
+		displayName="Classic UAZ Open";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\uaz\a2_uaz_open";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\uaz_1_ca.paa";
+		textureList[] = {"Random1", 1, "Random2", 1, "Random3", 1, "Random4", 1, "Random5", 1, "Random6", 1};
+    };
+	class a2_ural_base: car_F
+	{
+		displayName="Classic URAL";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\ural\a2_ural_base";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\ural_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\ural_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 120;
+		fuelCapacity	= 40;
+        terrainCoef 	= 2.5;
+		turnCoef = 2.2;
+		precision 		= 15;
+		brakeDistance 	= 3.0;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+		armor = 65;
+		maximumLoad		= 2250;
+		enginePower = 408;
+//		maxOmega = 600;
+		maxOmega = 471;
+//		peakTorque = 680;
+		peakTorque = 320;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 2.5;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+		memoryPointsGetInCargo[] = {"pos codriver","pos cargo"};
+		memoryPointsGetInCargoDir[] = {"pos codriver dir","pos cargo dir"};
+//		idleRpm = 800;
+		idleRpm = 600;
+//		redRpm = 6000;
+		redRpm = 4500;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -6.5, "N", 0, "D1", 5.5, "D2", 3.6, "D3", 2.1, "D4", 1.6, "D5", 1.3};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+		class HitPoints: HitPoints {
+			class HitGlass1: HitGlass1
+			{
+				armor = 0.8;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass2: HitGlass2
+			{
+				armor = 0.8;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass3: HitGlass3
+			{
+				armor = 0.8;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass4: HitGlass4
+			{
+				armor = 0.8;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitFuel : HitFuel
+			{
+				armor = 2;
+				passThrough = 0.2;
+				minimalHit = 0.01;
+				explosionShielding = 0.2;
+				radius = 0.45;
+			};
+			class HitHull : HitHull
+			{
+				armor = 3.5;
+				passThrough = 0.2;
+				minimalHit = 0.01;
+				explosionShielding = 0.4;
+				radius = 0.6;
+			};
+			class HitEngine : HitEngine
+			{
+				armor = 2;
+				passThrough = 0.4;
+				minimalHit = 0.01;
+				explosionShielding = 0.2;
+				radius = 0.6;
+			};
+			class HitBody : HitBody
+			{
+				armor = 20;
+				passThrough = 1;
+				minimalHit = 0.01;
+				explosionShielding = 2;
+				radius = 0.2;
+			};
+			class HitLFWheel: HitLFWheel
+			{
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitLMWheel: HitLMWheel
+			{
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitLF2Wheel: HitLF2Wheel
+			{
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitRMWheel: HitRMWheel
+			{
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitRF2Wheel: HitRF2Wheel
+			{
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+		};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[]={"x\addons\a2_epoch_vehicles\wheeled\ural\data\ural_kabina_epoch_co.paa","x\addons\a2_epoch_vehicles\wheeled\ural\data\ural_plachta_co.paa"};
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_interier.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_interier_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_interier_destruct.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_plachta.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_plachta_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\Ural\Data\ural_plachta_destruct.rvmat"
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.23";
+				mass = 20;
+				MOI = 78.625;
+				dampingRate = 0.5;
+				maxBrakeTorque = 4000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.1;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
+				longitudinalStiffnessPerUnitGravity = 100000;
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class LM: LF
+			{
+				boneName = "wheel_1_3_damper";
+				steering = 0;
+				center = "wheel_1_3_axis";
+				boundary = "wheel_1_3_bound";
+				suspForceAppPointOffset = "wheel_1_3_axis";
+				tireForceAppPointOffset = "wheel_1_3_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RM: RF
+			{
+				boneName = "wheel_2_3_damper";
+				steering = 0;
+				center = "wheel_2_3_axis";
+				boundary = "wheel_2_3_bound";
+				suspForceAppPointOffset = "wheel_2_3_axis";
+				tireForceAppPointOffset = "wheel_2_3_axis";
+				maxHandBrakeTorque = 12000;
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
+
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
+
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+        class EventHandlers: EventHandlers {};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "MrapAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Enter", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_Start", 0.501187, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_stop", 0.398107, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_Start", 0.501187, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Mrap_01\Mrap_01_Engine_Ext_stop", 0.398107, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+			soundSetsInt[] = {"Mrap_01_Engine_RPM0_INT_SoundSet", "Mrap_01_Engine_RPM1_INT_SoundSet", "Mrap_01_Engine_RPM2_INT_SoundSet", "Mrap_01_Engine_RPM3_INT_SoundSet", "Mrap_01_Engine_RPM4_INT_SoundSet", "Mrap_01_Engine_INT_Burst_SoundSet", "Mrap_01_Rattling_INT_SoundSet", "Mrap_01_Stress_INT_SoundSet", "Mrap_01_Rain_INT_SoundSet", "Mrap_01_Tires_Rock_Fast_INT_SoundSet", "Mrap_01_Tires_Grass_Fast_INT_SoundSet", "Mrap_01_Tires_Sand_Fast_INT_SoundSet", "Mrap_01_Tires_Gravel_Fast_INT_SoundSet", "Mrap_01_Tires_Mud_Fast_INT_SoundSet", "Mrap_01_Tires_Asphalt_Fast_INT_SoundSet", "Mrap_01_Tires_Water_Fast_INT_SoundSet", "Mrap_01_Tires_Rock_Slow_INT_SoundSet", "Mrap_01_Tires_Grass_Slow_INT_SoundSet", "Mrap_01_Tires_Sand_Slow_INT_SoundSet", "Mrap_01_Tires_Gravel_Slow_INT_SoundSet", "Mrap_01_Tires_Mud_Slow_INT_SoundSet", "Mrap_01_Tires_Asphalt_Slow_INT_SoundSet", "Mrap_01_Tires_Water_Slow_INT_SoundSet", "Mrap_01_Tires_Turn_Hard_INT_SoundSet", "Mrap_01_Tires_Turn_Soft_INT_SoundSet", "Mrap_01_Tires_Brake_Hard_INT_SoundSet", "Mrap_01_Tires_Brake_Soft_INT_SoundSet", "", "Tires_Movement_Dirt_Int_01_SoundSet"};
+			soundSetsExt[] = {"Mrap_01_Engine_RPM0_EXT_SoundSet", "Mrap_01_Engine_RPM1_EXT_SoundSet", "Mrap_01_Engine_RPM2_EXT_SoundSet", "Mrap_01_Engine_RPM3_EXT_SoundSet", "Mrap_01_Engine_RPM4_EXT_SoundSet", "Mrap_01_Engine_EXT_Burst_SoundSet", "Mrap_01_Rattling_EXT_SoundSet", "Mrap_01_Stress_EXT_SoundSet", "Mrap_01_Rain_EXT_SoundSet", "Mrap_01_Tires_Rock_Fast_EXT_SoundSet", "Mrap_01_Tires_Grass_Fast_EXT_SoundSet", "Mrap_01_Tires_Sand_Fast_EXT_SoundSet", "Mrap_01_Tires_Gravel_Fast_EXT_SoundSet", "Mrap_01_Tires_Mud_Fast_EXT_SoundSet", "Mrap_01_Tires_Asphalt_Fast_EXT_SoundSet", "Mrap_01_Tires_Water_Fast_EXT_SoundSet", "Mrap_01_Tires_Rock_Slow_EXT_SoundSet", "Mrap_01_Tires_Grass_Slow_EXT_SoundSet", "Mrap_01_Tires_Sand_Slow_EXT_SoundSet", "Mrap_01_Tires_Gravel_Slow_EXT_SoundSet", "Mrap_01_Tires_Mud_Slow_EXT_SoundSet", "Mrap_01_Tires_Asphalt_Slow_EXT_SoundSet", "Mrap_01_Tires_Water_Slow_EXT_SoundSet", "Mrap_01_Tires_Turn_Hard_EXT_SoundSet", "Mrap_01_Tires_Turn_Soft_EXT_SoundSet", "Mrap_01_Tires_Brake_Hard_EXT_SoundSet", "Mrap_01_Tires_Brake_Soft_EXT_SoundSet", "", "Tires_Movement_Dirt_Ext_01_SoundSet"};
+		};
+	};
+	class A2_Ural_EPOCH: a2_ural_base
+	{
+		scope=2;
+	};
+    class a2_Vodnik_base: car_F
+	{
+        displayName = "Classic Vodnik";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\vodnik\a2_Vodnik_base";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\vodnik_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\vodnik_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 110;
+		fuelCapacity	= 40;
+//        terrainCoef 	= 2.5;
+        terrainCoef 	= 1.25;
+		turnCoef = 2.8;
+		precision 		= 15;
+		brakeDistance 	= 10;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+//		armor = 30;
+		armor 			= 120;
+		maximumLoad		= 1600;
+		enginePower = 408;
+//		maxOmega = 600;
+		maxOmega = 241;
+//		peakTorque = 680;
+		peakTorque = 650;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 1.3;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+//		idleRpm = 800;
+		idleRpm = 400;
+//		redRpm = 6000;
+		redRpm = 2300;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -4.5, "N", 0, "D1", 3.43, "D2", 2.01, "D3", 1.42, "D4", 1, "D5", 0.83, "D6", 0.59};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+		class HitPoints: HitPoints {
+			class HitGlass1: HitGlass1
+			{
+				armor = 1.5;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass2: HitGlass2
+			{
+				armor = 1.5;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass3: HitGlass3
+			{
+				armor = 1.5;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitGlass4: HitGlass4
+			{
+				armor = 1.5;
+				explosionShielding = 3;
+				radius = 0.25;
+			};
+			class HitFuel : HitFuel
+			{
+				armor = 2.5;
+				passThrough = 0.2;
+				minimalHit = 0.01;
+				explosionShielding = 0.2;
+				radius = 0.45;
+			};
+			class HitHull : HitHull
+			{
+				armor = 2.5;
+				passThrough = 0.2;
+				minimalHit = 0.01;
+				explosionShielding = 0.4;
+				radius = 0.45;
+			};
+			class HitEngine : HitEngine
+			{
+				armor = 0.1;
+				passThrough = 0.4;
+				minimalHit = 0.01;
+				explosionShielding = 0.2;
+				radius = 0.45;
+			};
+			class HitBody : HitBody
+			{
+				armor = 20;
+				passThrough = 1;
+				minimalHit = 0.01;
+				explosionShielding = 2;
+				radius = 0.2;
+			};
+			class HitLFWheel: HitLFWheel
+			{
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitLF2Wheel: HitLF2Wheel
+			{
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+			class HitRF2Wheel: HitRF2Wheel
+			{
+				armor = 2;
+				minimalHit = 0.02;
+				explosionShielding = 4;
+				radius = 0.33;
+			};
+		};
+        hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]=
+		{
+            "x\addons\a2_epoch_vehicles\wheeled\vodnik\Data\gaz39371_vodnik_basis_01_co.paa"
+		};
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Basis_01.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Basis_01_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Basis_01_destruct.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\gaz39371_vodnik_int.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\gaz39371_vodnik_int.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\gaz39371_vodnik_int_destruct.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Module.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Module_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\vodnik\data\GAZ39371_Vodnik_Module_destruct.rvmat"
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = 0.35;
+				mass = 187.5;
+				MOI = 60;
+				dampingRate = 0.1;
+				maxBrakeTorque = 10000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.1125;
+				maxDroop = 0.15;
+				sprungMass = 3090;
+				springStrength = 110000;
+				springDamperRate = 27900;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 100000;
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 100000;
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
+
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
+
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+        class EventHandlers: EventHandlers {};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "TankAttenuation";
+		soundGetIn[] = {"A3\Sounds_F_EPB\Tracked\noises\get_in_out", 0.562341, 1};
+		soundGetOut[] = {"A3\Sounds_F_EPB\Tracked\noises\get_in_out", 0.562341, 1, 20};
+		soundTurnIn[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.77828, 1, 20};
+		soundTurnOut[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.77828, 1, 20};
+		soundTurnInInternal[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.77828, 1, 20};
+		soundTurnOutInternal[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.77828, 1, 20};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\armor\APC_Wheeled_01\APC_Wheeled_01_Engine_Int_Start", 0.794328, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\armor\APC_Wheeled_01\APC_Wheeled_01_Engine_Int_Stop", 0.794328, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\armor\APC_Wheeled_01\APC_Wheeled_01_Engine_Ext_Start", 1, 1, 100};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\armor\APC_Wheeled_01\APC_Wheeled_01_Engine_Ext_Stop", 1, 1, 100};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Building_01", 1, 1, 200};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Building_02", 1, 1, 200};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Building_03", 1, 1, 200};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Building_04", 1, 1, 200};
+		soundBuildingCrash[] = {"buildCrash0", 0.25, "buildCrash1", 0.25, "buildCrash2", 0.25, "buildCrash3", 0.25};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_01", 1, 1, 200};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_02", 1, 1, 200};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_03", 1, 1, 200};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_04", 1, 1, 200};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_05", 1, 1, 200};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Wood_06", 1, 1, 200};
+		soundWoodCrash[] = {"woodCrash0", 0.166, "woodCrash1", 0.166, "woodCrash2", 0.166, "woodCrash3", 0.166, "woodCrash4", 0.166, "woodCrash5", 0.166};
+		ArmorCrash0[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Armor_01", 1, 1, 200};
+		ArmorCrash1[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Armor_02", 1, 1, 200};
+		ArmorCrash2[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Armor_03", 1, 1, 200};
+		ArmorCrash3[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Armor_04", 1, 1, 200};
+		soundArmorCrash[] = {"ArmorCrash0", 0.25, "ArmorCrash1", 0.25, "ArmorCrash2", 0.25, "ArmorCrash3", 0.25};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Bush_01", 0.630957, 1, 100};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Bush_02", 0.630957, 1, 100};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\armor\shared\collisions\Vehicle_Armor_Collision_Light_Bush_03", 0.630957, 1, 100};
+		soundBushCrash[] = {"BushCrash1", 0.33, "BushCrash2", 0.33, "BushCrash3", 0.33};
+		class Sounds
+		{
+			soundSetsInt[] = {"APC_Wheeled_01_Engine_RPM0_INT_SoundSet", "APC_Wheeled_01_Engine_RPM1_INT_SoundSet", "APC_Wheeled_01_Engine_RPM2_INT_SoundSet", "APC_Wheeled_01_Engine_RPM3_INT_SoundSet", "APC_Wheeled_01_Engine_RPM4_INT_SoundSet", "APC_Wheeled_01_Engine_RPM5_INT_SoundSet", "APC_Wheeled_01_Interior_Tone_Engine_Off_SoundSet", "APC_Wheeled_01_Interior_Tone_Engine_On_SoundSet", "APC_Wheeled_01_Rattling_INT_SoundSet", "APC_Wheeled_01_Stress_INT_SoundSet", "APC_Wheeled_01_Rain_INT_SoundSet", "APC_Wheeled_01_Tires_Rock_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Grass_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Sand_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Mud_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Water_Fast_INT_SoundSet", "APC_Wheeled_01_Tires_Rock_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Grass_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Sand_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Mud_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Water_Slow_INT_SoundSet", "APC_Wheeled_01_Tires_Turn_Hard_INT_SoundSet", "APC_Wheeled_01_Tires_Turn_Soft_INT_SoundSet", "APC_Wheeled_01_Tires_Brake_Hard_INT_SoundSet", "APC_Wheeled_01_Tires_Brake_Soft_INT_SoundSet"};
+			soundSetsExt[] = {"APC_Wheeled_01_Engine_RPM0_EXT_SoundSet", "APC_Wheeled_01_Engine_RPM1_EXT_SoundSet", "APC_Wheeled_01_Engine_RPM2_EXT_SoundSet", "APC_Wheeled_01_Engine_RPM3_EXT_SoundSet", "APC_Wheeled_01_Engine_RPM4_EXT_SoundSet", "APC_Wheeled_01_Engine_RPM5_EXT_SoundSet", "APC_Wheeled_01_Stress_EXT_SoundSet", "APC_Wheeled_01_Rain_EXT_SoundSet", "APC_Wheeled_01_Tires_Rock_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Grass_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Sand_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Mud_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Water_Fast_EXT_SoundSet", "APC_Wheeled_01_Tires_Rock_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Grass_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Sand_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Gravel_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Mud_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Asphalt_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Water_Slow_EXT_SoundSet", "APC_Wheeled_01_Tires_Turn_Hard_EXT_SoundSet", "APC_Wheeled_01_Tires_Turn_Soft_EXT_SoundSet", "APC_Wheeled_01_Tires_Brake_Hard_EXT_SoundSet", "APC_Wheeled_01_Tires_Brake_Soft_EXT_SoundSet"};
+		};
+	};
+    class A2_Vodnik_EPOCH: a2_Vodnik_base
+	{
+		scope=2;
+	};
+    class a2_Volha_base: car_F
+	{
+		displayName="Classic Volha";
+		model 	= "x\addons\a2_epoch_vehicles\wheeled\volha\a2_Volha_base";
+		picture	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\volha_blue_ca.paa";
+		icon	= "x\addons\a2_epoch_vehicles\wheeled\data\UI\volha_blue_ca.paa";
+		crew 	= "C_man_1";
+		side	= 3;
+		faction	= CIV_F;
+		scope=0;
+		scopeCurator=2;
+//		maxSpeed = 249;
+		maxSpeed = 150;
+		fuelCapacity	= 40;
+//        terrainCoef 	= 2.5;
+        terrainCoef 	= 2.8;
+		turnCoef = 2.6;
+		precision 		= 15;
+		brakeDistance 	= 3.0;
+		acceleration 	= 15;
+        fireResistance 	= 5;
+//		armor = 30;
+		armor = 70;
+		maximumLoad		= 1500;
+		enginePower = 408;
+		maxOmega = 600;
+//		peakTorque = 680;
+		peakTorque = 500;
+		cost			= 50000;
+        transportMaxBackpacks 	= 3;
+		transportSoldier 		= 3;
+		wheelDamageRadiusCoef 	= 0.9;
+		wheelDestroyRadiusCoef 	= 0.4;
+		waterResistance 		= 1;
+		crewCrashProtection		= 2.5;
+		driverLeftHandAnimName 	= "drivewheel";
+		driverRightHandAnimName = "drivewheel";
+		class TransportItems {};
+        driverAction 		= driver_offroad01;
+		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
+		getInAction 		= GetInLow;
+		getOutAction 		= GetOutLow;
+		cargoGetInAction[] 	= {"GetInLow"};
+		cargoGetOutAction[] = {"GetOutLow"};
+		idleRpm = 800;
+		redRpm = 6000;
+		wheelCircumference = 2.805;
+		class complexGearbox
+		{
+//			GearboxRatios[] = {"R1", -6.575, "N", 0, "D1", 4.827, "D2", 2.855, "D3", 1.716, "D4", 1.073, "D5", 0.755, "D6", 0.575};
+			GearboxRatios[] = {"R1", -6.5, "N", 0, "D1", 4.5, "D2", 2.5, "D3", 1.0, "D4", 0.7};
+			TransmissionRatios[] = {"High", 5.69};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+        class Turrets{};
+			class HitPoints: HitPoints
+			{
+				class HitBody
+				{
+					armor = 6;
+					material = -1;
+					name = "karoserie";
+					visual = "zbytek";
+					passThrough = 1;
+					minimalHit = 0.01;
+					explosionShielding = 1.5;
+					radius = 0.45;
+				};
+				class HitLFWheel: HitLFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitLF2Wheel: HitLF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRFWheel: HitRFWheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitRF2Wheel: HitRF2Wheel
+				{
+					armor = 0.75;
+					radius = 0.2;
+				};
+				class HitFuel: HitFuel
+				{
+					name = "palivo";
+					armor = 2;
+					radius = 0.45;
+				};
+				class HitEngine: HitEngine
+				{
+					name = "engine";
+					armor = 4;
+					radius = 0.25;
+				};
+				class HitGlass1: HitGlass1
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass2: HitGlass2
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass3: HitGlass3
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass4: HitGlass4
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass5: HitGlass5
+				{
+					armor = 2;
+					radius = 0.5;
+				};
+				class HitGlass6: HitGlass6
+				{
+					armor = 1;
+					radius = 0.5;
+				};
+			};
+
+		hiddenSelections[] = {"Camo1"};
+		hiddenSelectionsTextures[]=
+		{
+             "\x\addons\a2_epoch_vehicles\wheeled\Volha\Data\volha_eciv_co.paa"
+		};
+		class TextureSources
+		{
+			class Blue
+			{
+				displayName = "Blue";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\Volha\Data\volha_eciv_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Grey
+			{
+				displayName = "Grey";
+				textures[] = {"\x\addons\a2_epoch_vehicles\wheeled\Volha\Data\volha_gray_eciv_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+		};
+		textureList[] = {"Blue", 1, "Grey", 1};
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_Chrome_ECIV.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_Chrome_ECIV_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_Chrome_ECIV_destruct.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_ECIV.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_ECIV_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_ECIV_destruct.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_glass_ECIV.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_glass_ECIV_damage.rvmat",
+				"x\addons\a2_epoch_vehicles\wheeled\volha\data\Volha_glass_ECIV_destruct.rvmat"				
+			};
+		};
+		thrustDelay            	= 0.2;
+		brakeIdleSpeed         	= 1.78;
+		antiRollbarForceCoef = 3;
+		antiRollbarForceLimit = 12;
+		antiRollbarSpeedMin = 10;
+		antiRollbarSpeedMax = 200;
+		maxFordingDepth = -0.2;
+		simulation = "carx";
+		dampersBumpCoef = 0.3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.9;
+		rearBias = 1.9;
+		centreBias = 1.9;
+		clutchStrength = 50;
+		dampingRateFullThrottle = 0.1;
+		dampingRateZeroThrottleClutchEngaged = 1;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
+		torqueCurve[] = {{0, 0}, {0.185, 0.713}, {0.35, 1}, {0.5, 0.975}, {0.75, 0.755}, {0.85, 0.627}, {1, 0.415}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.65, 0.65, 0.65, 0.55, 0.55, 0.55};
+		switchTime = 0.21;
+		latency = 0.25;
+		class Wheels
+		{
+			class LF
+			{
+				side = "left";
+				suspTravelDirection[] = {-0.125, -1, 0};
+				boneName = "wheel_1_1_damper";
+				steering = 1;
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.23";
+				mass = 20;
+				MOI = 78.625;
+				dampingRate = 0.5;
+				maxBrakeTorque = 4000;
+				maxHandBrakeTorque = 0;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.1;
+				maxDroop = 0.15;
+				sprungMass = 400;
+				springStrength = 40000;
+				springDamperRate = 5240;
+				longitudinalStiffnessPerUnitGravity = 100000;
+				latStiffX = 2.5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 1}, {1, 1}};
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				steering = 0;
+				center = "wheel_1_2_axis";
+				boundary = "wheel_1_2_bound";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+			class RF: LF
+			{
+				side = "right";
+				suspTravelDirection[] = {0.125, -1, 0};
+				boneName = "wheel_2_1_damper";
+				center = "wheel_2_1_axis";
+				boundary = "wheel_2_1_bound";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				steering = 0;
+				center = "wheel_2_2_axis";
+				boundary = "wheel_2_2_bound";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 12000;
+			};
+		};
+		class PlayerSteeringCoefficients
+		{
+			turnIncreaseConst = 0.7;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 0;
+			turnDecreaseConst = 8;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			maxTurnHundred = 1;
+		};
+        memoryPointTrackFLL = "TrackFLL";
+		memoryPointTrackFLR = "TrackFLR";
+		memoryPointTrackBLL = "TrackBLL";
+		memoryPointTrackBLR = "TrackBLR";
+		memoryPointTrackFRL = "TrackFRL";
+		memoryPointTrackFRR = "TrackFRR";
+		memoryPointTrackBRL = "TrackBRL";
+		memoryPointTrackBRR = "TrackBRR";
+        class Exhausts
+		{
+			class Exhaust1
+			{
+				position 	= "exhaust";
+				direction 	= "exhaust_dir";
+				effect 		= "ExhaustsEffect";
+			};
+
+			class Exhaust2
+			{
+				position 	= "exhaust2_pos";
+				direction 	= "exhaust2_dir";
+				effect 		= "ExhaustsEffect";
+			};
+		};
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[] 		= {1900, 1800, 1700};
+				ambient[]		= {5, 5, 5};
+				position 		= "LightCarHeadL01";
+				direction 		= "LightCarHeadL01_end";
+				hitpoint 		= "Light_L";
+				selection 		= "Light_L";
+				size 			= 1;
+				innerAngle 		= 100;
+				outerAngle 		= 179;
+				coneFadeCoef 	= 10;
+				intensity 		= 1;
+				useFlare 		= true;
+				dayLight 		= false;
+				flareSize 		= 1.0;
+
+				class Attenuation
+				{
+					start 			= 1.0;
+					constant 		= 0;
+					linear 			= 0;
+					quadratic 		= 0.25;
+					hardLimitStart 	= 30;
+					hardLimitEnd 	= 60;
+				};
+			};
+            class LightCarHeadR01: LightCarHeadL01
+			{
+				position 	= "LightCarHeadR01";
+				direction 	= "LightCarHeadR01_end";
+				hitpoint 	= "Light_R";
+				selection 	= "Light_R";
+			};
+        };
+        aggregateReflectors[] = {{"LightCarHeadL01", "LightCarHeadR01"}};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
+		class RenderTargets
+		{
+			class LeftMirror
+			{
+				renderTarget = "rendertarget0";
+				class CameraView1
+				{
+					pointPosition		= "PIP0_pos";
+					pointDirection		= "PIP0_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class RearCam
+			{
+				renderTarget = "rendertarget1";
+				class CameraView1
+				{
+					pointPosition		= "PIP1_pos";
+					pointDirection		= "PIP1_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+			class FrontCam
+			{
+				renderTarget = "rendertarget2";
+				class CameraView1
+				{
+					pointPosition		= "PIP2_pos";
+					pointDirection		= "PIP2_dir";
+					renderQuality 		= 2;
+					renderVisionMode 	= 0;
+					fov 				= 0.7;
+				};
+			};
+		};
+		attenuationEffectType = "CarAttenuation";
+		soundGetIn[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1};
+		soundGetOut[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Exit", 0.446684, 1, 40};
+		soundDammage[] = {"", 0.562341, 1};
+		soundEngineOnInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Start", 0.707946, 1};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Int_Stop", 0.707946, 1};
+		soundEngineOnExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Start", 1.99526, 1, 50};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\soft\Hatchback_01\Hatchback_01_Engine_Ext_Stop", 1.99526, 1, 50};
+		buildCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		buildCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		buildCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		buildCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		buildCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		buildCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		buildCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		buildCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundBuildingCrash[] = {"buildCrash0", 0.125, "buildCrash1", 0.125, "buildCrash2", 0.125, "buildCrash3", 0.125, "buildCrash4", 0.125, "buildCrash5", 0.125, "buildCrash6", 0.125, "buildCrash7", 0.125};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_01", 1.99526, 1, 75};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_02", 1.99526, 1, 75};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_03", 1.99526, 1, 75};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_04", 1.99526, 1, 75};
+		WoodCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_05", 1.99526, 1, 75};
+		WoodCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_06", 1.99526, 1, 75};
+		WoodCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_07", 1.99526, 1, 75};
+		WoodCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_Wood_08", 1.99526, 1, 75};
+		soundWoodCrash[] = {"woodCrash0", 0.125, "woodCrash1", 0.125, "woodCrash2", 0.125, "woodCrash3", 0.125, "woodCrash4", 0.125, "woodCrash5", 0.125, "woodCrash6", 0.125, "woodCrash7", 0.125};
+		armorCrash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		armorCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		armorCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		armorCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		armorCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		armorCrash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		armorCrash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		armorCrash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundArmorCrash[] = {"ArmorCrash0", 0.125, "ArmorCrash1", 0.125, "ArmorCrash2", 0.125, "ArmorCrash3", 0.125, "ArmorCrash4", 0.125, "ArmorCrash5", 0.125, "ArmorCrash6", 0.125, "ArmorCrash7", 0.125};
+		Crash0[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_01", 1.99526, 1, 75};
+		Crash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_02", 1.99526, 1, 75};
+		Crash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_03", 1.99526, 1, 75};
+		Crash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_04", 1.99526, 1, 75};
+		Crash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_05", 1.99526, 1, 75};
+		Crash5[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_06", 1.99526, 1, 75};
+		Crash6[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_07", 1.99526, 1, 75};
+		Crash7[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Medium_08", 1.99526, 1, 75};
+		soundCrashes[] = {"Crash0", 0.125, "Crash1", 0.125, "Crash2", 0.125, "Crash3", 0.125, "Crash4", 0.125, "Crash5", 0.125, "Crash6", 0.125, "Crash7", 0.125};
+		BushCrash1[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_01", 0.630957, 1, 50};
+		BushCrash2[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_02", 0.630957, 1, 50};
+		BushCrash3[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 1, 50};
+		BushCrash4[] = {"A3\Sounds_F\vehicles2\soft\shared\collisions\Vehicle_Soft_Collision_Light_Bush_03", 0.630957, 0.8, 50};
+		soundBushCrash[] = {"BushCrash1", 0.25, "BushCrash2", 0.25, "BushCrash3", 0.25, "BushCrash4", 0.25};
+		class Sounds
+		{
+				soundSetsInt[] = {"Hatchback_01_Engine_RPM0_INT_SoundSet", "Hatchback_01_Engine_RPM1_INT_SoundSet", "Hatchback_01_Engine_RPM2_INT_SoundSet", "Hatchback_01_Engine_RPM3_INT_SoundSet", "Hatchback_01_Engine_RPM4_INT_SoundSet", "Hatchback_01_Rattling_INT_SoundSet", "Hatchback_01_Stress_INT_SoundSet", "Hatchback_01_Rain_INT_SoundSet", "Hatchback_01_Tires_Rock_Fast_INT_SoundSet", "Hatchback_01_Tires_Grass_Fast_INT_SoundSet", "Hatchback_01_Tires_Sand_Fast_INT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_INT_SoundSet", "Hatchback_01_Tires_Mud_Fast_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_INT_SoundSet", "Hatchback_01_Tires_Water_Fast_INT_SoundSet", "Hatchback_01_Tires_Rock_Slow_INT_SoundSet", "Hatchback_01_Tires_Grass_Slow_INT_SoundSet", "Hatchback_01_Tires_Sand_Slow_INT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_INT_SoundSet", "Hatchback_01_Tires_Mud_Slow_INT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_INT_SoundSet", "Hatchback_01_Tires_Water_Slow_INT_SoundSet", "Hatchback_01_Tires_Turn_Hard_INT_SoundSet", "Hatchback_01_Tires_Turn_Soft_INT_SoundSet", "Hatchback_01_Tires_Brake_Hard_INT_SoundSet", "Hatchback_01_Tires_Brake_Soft_INT_SoundSet"};
+				soundSetsExt[] = {"Hatchback_01_Engine_RPM0_EXT_SoundSet", "Hatchback_01_Engine_RPM1_EXT_SoundSet", "Hatchback_01_Engine_RPM2_EXT_SoundSet", "Hatchback_01_Engine_RPM3_EXT_SoundSet", "Hatchback_01_Engine_RPM4_EXT_SoundSet", "Hatchback_01_Rain_EXT_SoundSet", "Hatchback_01_Tires_Rock_Fast_EXT_SoundSet", "Hatchback_01_Tires_Grass_Fast_EXT_SoundSet", "Hatchback_01_Tires_Sand_Fast_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Fast_EXT_SoundSet", "Hatchback_01_Tires_Mud_Fast_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Fast_EXT_SoundSet", "Hatchback_01_Tires_Water_Fast_EXT_SoundSet", "Hatchback_01_Tires_Rock_Slow_EXT_SoundSet", "Hatchback_01_Tires_Grass_Slow_EXT_SoundSet", "Hatchback_01_Tires_Sand_Slow_EXT_SoundSet", "Hatchback_01_Tires_Gravel_Slow_EXT_SoundSet", "Hatchback_01_Tires_Mud_Slow_EXT_SoundSet", "Hatchback_01_Tires_Asphalt_Slow_EXT_SoundSet", "Hatchback_01_Tires_Water_Slow_EXT_SoundSet", "Hatchback_01_Tires_Turn_Hard_EXT_SoundSet", "Hatchback_01_Tires_Turn_Soft_EXT_SoundSet", "Hatchback_01_Tires_Brake_Hard_EXT_SoundSet", "Hatchback_01_Tires_Brake_Soft_EXT_SoundSet"};
+		};
+	};
+    class A2_Volha_EPOCH: a2_Volha_base
+	{
+		scope=2;
+		textureList[] = {"Blue", 1, "Grey", 1};
+	};
+///////////////a2 wheeled end	
     class Ship;
     class Ship_F : Ship
     {
@@ -7064,6 +10757,8 @@ class CfgVehicles
         class Turrets : Turrets
         {
             class CopilotTurret;
+			class MainTurret;
+			class M2_Turret;			
         };
         class AnimationSources;
         class Eventhandlers;
@@ -7087,9 +10782,9 @@ class CfgVehicles
         maxFordingDepth = 0.55;
         mainBladeRadius = 2.5;
         liftForceCoef = 1;
-        bodyFrictionCoef = 0.7;
-        cyclicAsideForceCoef = 0.8;
-        cyclicForwardForceCoef = 0.8;
+		bodyFrictionCoef = 0.3;
+		cyclicAsideForceCoef = 0.6;
+		cyclicForwardForceCoef = 0.5;
         backRotorForceCoef = 1;
         accuracy = 0.5;
         displayName = "$STR_EPOCH_Mosquito";
@@ -7118,6 +10813,7 @@ class CfgVehicles
         maximumLoad = 1000;
         cargoCanEject = 1;
         driverCanEject = 1;
+		extCameraPosition[] = {0,1.3,-6.2};		
         class HitPoints
         {
             class HitHull
@@ -7287,7 +10983,7 @@ class CfgVehicles
             tex[] = {};
             mat[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext.rvmat","A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_damage.rvmat","A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_destruct.rvmat","A3\Air_F\Heli_Light_02\Data\Heli_Light_02_glass.rvmat","A3\Air_F\Heli_Light_02\Data\Heli_Light_02_glass_damage.rvmat","A3\Air_F\Heli_Light_02\Data\Heli_Light_02_glass_destruct.rvmat","A3\data_F\default.rvmat","A3\data_F\default.rvmat","A3\data_F\default_destruct.rvmat"};
         };
-        attenuationEffectType = "CarAttenuation";
+        attenuationEffectType = "HeliAttenuation";
         soundGetIn[] = {"A3\Sounds_F\air\Heli_Light_02\open","db-5",1};
         soundGetOut[] = {"A3\Sounds_F\air\Heli_Light_02\close","db0",1,50};
         soundEnviron[] = {"","db-30",1};
@@ -7469,572 +11165,1805 @@ class CfgVehicles
 
 	class uh1h_Epoch_base_F: Helicopter_Base_H
 	{
-		armor=30;
-		altFullForce=4000;
-		altNoForce=6000;
-		maxSpeed=300;
-		maxFordingDepth=0.55000001;
-		mainBladeRadius=7;
-		liftForceCoef=1.1;
-		bodyFrictionCoef=0.69999999;
-		cyclicAsideForceCoef=1;
-		cyclicForwardForceCoef=1;
-		backRotorForceCoef=1;
-		accuracy=0.5;
-		model="x\addons\a3_epoch_community\uh1h_Epoch\uh1h_Epoch.p3d";
-		driveOnComponent[]=
-		{
-			"skids"
-		};
-		displayName="uh1h_base";
-		//destrType="DestructWreck";
-		icon="\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
-		picture="\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";
-		driverAction="pilot_Heli_Light_02";
-		driverInAction="pilot_Heli_Light_02";
-		precisegetinout=1;
-		GetInAction="pilot_Heli_Light_02_Enter";
-		GetOutAction="pilot_Heli_Light_02_Exit";
-		cargoGetInAction[]=
-		{
-			"GetInHelicopterCargo"
-		};
-		cargoGetOutAction[]=
-		{
-			"GetOutHelicopterCargo"
-		};
-		transportSoldier=4;
-		cargoAction[]=
-		{
-			"passenger_apc_narrow_generic03",
-			"passenger_apc_generic02",
-			"passenger_apc_narrow_generic01",
-			"passenger_apc_generic04",
-			"passenger_apc_narrow_generic02",
-			"passenger_generic01_leanright",
-			"passenger_generic01_leanleft",
-			"passenger_generic01_foldhands"
-		};
-		class TransportBackpacks
-		{
-		};
-		class TransportItems
-		{
-		};
-		maximumLoad=1700;
-		soundGetIn[]=
-		{
-			"x\addons\a3_epoch_community\uh1h_Epoch\sounds\open_close",
-			0.31622776,
-			1
-		};
-		soundGetOut[]=
-		{
-			"x\addons\a3_epoch_community\uh1h_Epoch\sounds\open_close",
-			0.31622776,
-			1,
-			40
-		};
-		soundEngineOnInt[]=
-		{
-			"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_start_int",
-			0.44668359,
-			1
-		};
-		soundEngineOnExt[]=
-		{
-			"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_start_ext",
-			0.44668359,
-			1,
-			700
-		};
-		soundEngineOffInt[]=
-		{
-			"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_stop_int",
-			0.44668359,
-			1
-		};
-		soundEngineOffExt[]=
-		{
-			"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_stop_ext",
-			0.44668359,
-			1,
-			700
-		};
-		soundEnviron[]=
-		{
-			"",
-			"db-30",
-			1
-		};
-		soundDammage[]=
-		{
-			"A3\Sounds_F\air\Heli_Light_02\crash",
-			"db-5",
-			1
-		};
-		soundLocked[]=
-		{
-			"\A3\Sounds_F\weapons\Rockets\opfor_lock_1",
-			"db-20",
-			1
-		};
-		soundIncommingMissile[]=
-		{
-			"\A3\Sounds_F\weapons\Rockets\opfor_lock_2",
-			"db-20",
-			1
-		};
+		armor = 30;
+		altFullForce = 4000;
+		altNoForce = 6000;
+		maxSpeed = 280;
+		maxFordingDepth = 0.55;
+		mainBladeRadius = 7;
+		liftForceCoef = 1.1;
+		bodyFrictionCoef = 0.6;
+		cyclicAsideForceCoef = 0.6;
+		cyclicForwardForceCoef = 0.6;
+		backRotorForceCoef = 1;
+		accuracy = 0.5;
+		model = "x\addons\a3_epoch_community\uh1h_Epoch\uh1h_Epoch.p3d";
+		driveOnComponent[] = {"skids"};
+		displayName = "uh1h_base";
+		icon = "\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";
+		picture = "\x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1h_Epoch_Base_ca.paa";
+		driverAction = "pilot_Heli_Light_02";
+		driverInAction = "pilot_Heli_Light_02";
+		precisegetinout = 1;
+		GetInAction = "pilot_Heli_Light_02_Enter";
+		GetOutAction = "pilot_Heli_Light_02_Exit";
+		cargoGetInAction[] = {"GetInHelicopterCargo"};
+		cargoGetOutAction[] = {"GetOutHelicopterCargo"};
+		transportSoldier = 7;
+        cargoAction[] = {"passenger_apc_generic04","passenger_apc_generic02","passenger_apc_generic03","passenger_apc_generic04","passenger_apc_narrow_generic01","passenger_apc_narrow_generic02","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_generic01_foldhands","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_apc_generic01","passenger_apc_generic01","passenger_generic01_leanleft","passenger_generic01_leanright","passenger_low01"};
+		class TransportBackpacks{};
+		class TransportItems{};
+		maximumLoad = 1700;
+		soundGetIn[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\open_close",0.31622776,1};
+		soundGetOut[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\open_close",0.31622776,1,40};
+		soundEngineOnInt[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_start_int",0.4466836,1};
+		soundEngineOnExt[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_start_ext",0.4466836,1,700};
+		soundEngineOffInt[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_stop_int",0.4466836,1};
+		soundEngineOffExt[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_stop_ext",0.4466836,1,700};
+		soundEnviron[] = {"","db-30",1};
+		soundDammage[] = {"A3\Sounds_F\air\Heli_Light_02\crash","db-5",1};
+		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1","db-20",1};
+		soundIncommingMissile[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_2","db-20",1};
 		class Sounds
 		{
 			class Engine
 			{
-				sound[]=
-				{
-					"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_engine_ext_2",
-					"db5",
-					1,
-					900
-				};
-				frequency="rotorSpeed";
-				volume="camPos*((rotorSpeed-0.72)*4)";
+				sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_engine_ext_2","db5",1,900};
+				frequency = "rotorSpeed";
+				volume = "camPos*((rotorSpeed-0.72)*4)";
 			};
 			class RotorLowOut
 			{
-				sound[]=
-				{
-					"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_ext_1",
-					"db3",
-					1,
-					1200
-				};
-				frequency="rotorSpeed";
-				volume="camPos*(0 max (rotorSpeed-0.1))";
-				cone[]={1.6,3.1400001,1.6,0.94999999};
+				sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_ext_1","db3",1,1200};
+				frequency = "rotorSpeed";
+				volume = "camPos*(0 max (rotorSpeed-0.1))";
+				cone[] = {1.6,3.14,1.6,0.95};
 			};
 			class RotorHighOut
 			{
-				sound[]=
-				{
-					"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_high_ext_1",
-					"db5",
-					1,
-					1500
-				};
-				frequency="rotorSpeed";
-				volume="camPos*10*(0 max (rotorThrust-0.9))";
-				cone[]={1.6,3.1400001,1.6,0.94999999};
+				sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_high_ext_1","db5",1,1500};
+				frequency = "rotorSpeed";
+				volume = "camPos*10*(0 max (rotorThrust-0.9))";
+				cone[] = {1.6,3.14,1.6,0.95};
 			};
 			class EngineIn
 			{
-				sound[]=
-				{
-					"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_engine_int_1",
-					"db0",
-					1
-				};
-				frequency="rotorSpeed";
-				volume="(1-camPos)*((rotorSpeed-0.75)*4)";
+				sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_engine_int_1","db0",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
 			};
 			class RotorLowIn
 			{
-				sound[]=
-				{
-					"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_int_1",
-					"db2",
-					1
-				};
-				frequency="rotorSpeed";
-				volume="(1-camPos)*(0 max (rotorSpeed-0.1))";
+				sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_int_1","db2",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*(0 max (rotorSpeed-0.1))";
 			};
 			class RotorHighIn
 			{
-				sound[]=
-				{
-					"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_high_int_1",
-					"db3",
-					1
-				};
-				frequency="rotorSpeed";
-				volume="(1-camPos)*3*(rotorThrust-0.9)";
+				sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_high_int_1","db3",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*3*(rotorThrust-0.9)";
 			};
 		};
 		class HitPoints
 		{
 			class HitHull
 			{
-				armor=5;
-				name="body2";
-				visual="trup";
-				passThrough=1;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.44999999;
+				armor = 999;
+				name = "body2";
+				visual = "trup";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.45;
+				depends = "Total";
 			};
 			class HitEngine
 			{
-				armor=2;
-				name="motor";
-				visual="motor";
-				passThrough=1;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.34999999;
+				armor = 2;
+				name = "motor";
+				visual = "motor";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
 			};
 			class HitAvionics
 			{
-				armor=2;
-				name="elektronika";
-				visual="elektronika";
-				passThrough=1;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.34999999;
+				armor = 1;
+				name = "elektronika";
+				visual = "elektronika";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
 			};
 			class HitVRotor
 			{
-				armor=".5";
-				name="tail rotor";
-				visual="tail rotor static";
-				passThrough=0.30000001;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.34999999;
+				armor = 1.5;
+				name = "tail rotor";
+				visual = "tail rotor static";
+				passThrough = 0.3;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
 			};
 			class HitHRotor
 			{
-				armor=2;
-				name="main rotor";
-				visual="main rotor static";
-				passThrough=0.1;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.34999999;
+				armor = 3;
+				name = "main rotor";
+				visual = "main rotor static";
+				passThrough = 0.1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
 			};
 			class HitMissiles
 			{
-				armor=0.1;
-				name="munice";
-				visual="munice";
-				passThrough=0.5;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.25;
+				armor = 0.1;
+				name = "munice";
+				visual = "munice";
+				passThrough = 0.5;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
 			};
 			class HitRGlass
 			{
-				armor=0.1;
-				name="sklo predni P";
-				visual="sklo predni P";
-				passThrough=0;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.25;
+				armor = 0.1;
+				name = "sklo predni P";
+				visual = "sklo predni P";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
 			};
 			class HitLGlass
 			{
-				armor=0.1;
-				name="sklo predni L";
-				visual="sklo predni L";
-				passThrough=0;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.25;
+				armor = 0.1;
+				name = "sklo predni L";
+				visual = "sklo predni L";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
 			};
 			class HitWinch
 			{
-				armor=0.1;
-				name="slingLoad0";
-				visual="";
-				passThrough=0;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.25;
+				armor = 0.1;
+				name = "slingLoad0";
+				visual = "";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
 			};
 			class HitTransmission
 			{
-				armor=0.80000001;
-				name="transmission";
-				passThrough=0.80000001;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.25;
+				armor = 0.8;
+				name = "transmission";
+				passThrough = 0.8;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
 			};
 			class HitGlass1
 			{
-				armor=2;
-				name="glass1";
-				convexComponent="glass1";
-				visual="glass1";
-				passThrough=0;
-				minimalHit=0.050000001;
-				explosionShielding=2;
-				radius=0.34999999;
+				armor = 1.5;
+				name = "glass1";
+				convexComponent = "glass1";
+				visual = "glass1";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
 			};
 			class HitGlass2: HitGlass1
 			{
-				name="glass2";
-				convexComponent="glass2";
-				visual="glass2";
+				name = "glass2";
+				convexComponent = "glass2";
+				visual = "glass2";
 			};
 			class HitGlass3: HitGlass1
 			{
-				name="glass3";
-				convexComponent="glass3";
-				visual="glass3";
+				name = "glass3";
+				convexComponent = "glass3";
+				visual = "glass3";
 			};
 			class HitGlass4: HitGlass1
 			{
-				name="glass4";
-				convexComponent="glass4";
-				visual="glass4";
+				name = "glass4";
+				convexComponent = "glass4";
+				visual = "glass4";
 			};
 			class HitGlass5: HitGlass1
 			{
-				name="glass5";
-				convexComponent="glass5";
-				visual="glass5";
+				name = "glass5";
+				convexComponent = "glass5";
+				visual = "glass5";
 			};
 			class HitGlass6: HitGlass1
 			{
-				name="glass6";
-				convexComponent="glass6";
-				visual="glass6";
+				name = "glass6";
+				convexComponent = "glass6";
+				visual = "glass6";
 			};
 		};
 		class Exhausts
 		{
 			class Exhaust1
 			{
-				position="exhaust1";
-				direction="exhaust1_dir";
-				effect="ExhaustsEffectHeliMed";
+				position = "exhaust1";
+				direction = "exhaust1_dir";
+				effect = "ExhaustsEffectHeliMed";
 			};
 		};
 		class ViewPilot: ViewPilot
 		{
-			initFov=0.75;
-			minFov=0.375;
-			maxFov=1.1;
+			initFov = 0.75;
+			minFov = 0.375;
+			maxFov = 1.1;
 		};
 		class Viewoptics: Viewoptics
 		{
-			initAngleX=0;
-			minAngleX=0;
-			maxAngleX=0;
-			initAngleY=0;
-			minAngleY=0;
-			maxAngleY=0;
-			initFov=0.1;
-			minFov=0.1;
-			maxFov=1.2;
+			initAngleX = 0;
+			minAngleX = 0;
+			maxAngleX = 0;
+			initAngleY = 0;
+			minAngleY = 0;
+			maxAngleY = 0;
+			initFov = 0.1;
+			minFov = 0.1;
+			maxFov = 1.2;
 		};
-		memoryPointDriverOptics="slingCamera";
-		slingLoadMaxCargoMass=1500;
-		slingLoadMemoryPoint="slingLoad0";
-		cargoIsCoDriver[]={0,0};
-		memoryPointsGetInCargo="pos cargo";
-		memoryPointsGetInCargoDir="pos cargo dir";
-		hideWeaponsCargo=1;
-		cargoProxyIndexes[]={2,3,4};
-		cargoCanEject=1;
-		driverCanEject=1;
-		enableManualFire=0;
-		
-		driverCompartments= "Compartment1";
-		cargoCompartments[]= {"Compartment2"};
-		//gunnerCompartments= "Compartment3";
-		
+		memoryPointDriverOptics = "slingCamera";
+		slingLoadMaxCargoMass = 1500;
+		slingLoadMemoryPoint = "slingLoad0";
+		cargoIsCoDriver[] = {0,0};
+		memoryPointsGetInCargo = "pos cargo";
+		memoryPointsGetInCargoDir = "pos cargo dir";
+		hideWeaponsCargo = 1;
+		cargoProxyIndexes[] = {1,2,3,4};
+		cargoCanEject = 1;
+		driverCanEject = 1;
+		enableManualFire = 0;
+		driverCompartments = "Compartment1";
+		cargoCompartments[] = {"Compartment3"};
 		class Turrets: Turrets
 		{
-			class CopilotTurret: CopilotTurret						/// taking controls is already defined in parent class
+			class CopilotTurret: CopilotTurret
 			{
-				gunnerAction = copilot_Heli_Light_02;				/// what action does copilot switch to
-				gunnerInAction = copilot_Heli_Light_02;				/// what action does copilot switch to
-				precisegetinout = 1;								/// describes what style of get in is used (0 - non-precise; 1 - precise on proxy; 2 - precise on model center)
-				gunnerGetInAction = copilot_Heli_Light_02_Enter;	/// what action uses the copilot to get in the heli, it uses "switchAction" script command on the proxy
-				gunnerGetOutAction = copilot_Heli_Light_02_Exit;	/// what action uses the copilot to get out the heli				
-				memoryPointsGetInCargo = "pos copilot";				/// what is the position of get in action
-				memoryPointsGetInCargoDir = "pos copilot dir";		/// what is the direction of get in action
-				canEject = 0;										/// copilot shouldn't be able to do so as he doesn't have eject seat
-				minElev = -50; 										/// what is the lowest possible elevation of the turret
-				maxElev = +30;  									/// what is the highest possible elevation of the turret
-				initElev = 11; 										/// what is the starting elevation of the turret
-				minTurn = -170;  									/// what is the right-most possible turn of the turret
-				maxTurn = 170;  									/// what is the left-most possible turn of the turret
-				initTurn = 0; 										/// what is the default horizontal turn of the turret
-				gunnerLeftHandAnimName = "lever_copilot";			/// what bone in model is the left hand connected to via IK (pilot has it set by default in parent class)
-				gunnerRightHandAnimName = "stick_copilot";			/// what bone in model is the right hand connected to via IK (pilot has it set by default in parent class)
-				maxHorizontalRotSpeed = 3;							/// how fast is the copilot able to look around (higher means faster)
-				maxVerticalRotSpeed = 3;							/// how fast is the copilot able to look around (higher means faster)
-			    isCopilot = 1
-				LODTurnedIn= 1
-				gunnerUsesPilotView = true;
+				gunnerAction = "copilot_Heli_Light_02";
+				gunnerInAction = "copilot_Heli_Light_02";
+				precisegetinout = 1;
+				gunnerGetInAction = "copilot_Heli_Light_02_Enter";
+				gunnerGetOutAction = "copilot_Heli_Light_02_Exit";
+				memoryPointsGetInCargo = "pos copilot";
+				memoryPointsGetInCargoDir = "pos copilot dir";
+				canEject = 0;
+				minElev = -50;
+				maxElev = 30;
+				initElev = 11;
+				minTurn = -170;
+				maxTurn = 170;
+				initTurn = 0;
+				gunnerLeftHandAnimName = "lever_copilot";
+				gunnerRightHandAnimName = "stick_copilot";
+				maxHorizontalRotSpeed = 3;
+				maxVerticalRotSpeed = 3;
+				isCopilot = 1;
+				LODTurnedIn = 1;
+				gunnerUsesPilotView = 1;
 				primaryGunner = 1;
-				proxyIndex=1;
-				enableManualFire=0;
-			};			
+				proxyIndex = 1;
+				enableManualFire = 0;
+			};
 			class CargoTurret_01: CargoTurret
 			{
-				gunnerAction="passenger_bench_1";
-				gunnerCompartments="Compartment2";
-				memoryPointsGetInGunner="pos gunner L";
-				memoryPointsGetInGunnerDir="pos gunner L dir";
-				gunnerName="Gunner (left Side)";
-				proxyIndex=6;
-				maxElev=15;
-				minElev=-62;
-				maxTurn=50;
-				minTurn=-75;
-				isPersonTurret=1;
-				ejectDeadGunner=0;
-				enabledByAnimationSource="";
-				usepip=0;
-				gunnerInAction="passenger_apc_narrow_generic02";
-				startEngine=0;
-				commanding=-1;
-				outGunnerMayFire=1;
-				inGunnerMayFire=1;
-				animationSourceHatch="";
+				gunnerAction = "passenger_bench_1";
+				gunnerCompartments = "Compartment2";
+				memoryPointsGetInGunner = "pos gunner L";
+				memoryPointsGetInGunnerDir = "pos gunner L dir";
+				gunnerName = "Gunner (left Side)";
+				proxyIndex = 6;
+				maxElev = 15;
+				minElev = -62;
+				maxTurn = 50;
+				minTurn = -75;
+				isPersonTurret = 1;
+				ejectDeadGunner = 0;
+				enabledByAnimationSource = "";
+				usepip = 0;
+				gunnerInAction = "passenger_apc_narrow_generic02";
+				startEngine = 0;
+				commanding = -1;
+				outGunnerMayFire = 1;
+				inGunnerMayFire = 1;
+				animationSourceHatch = "";
 			};
 			class CargoTurret_02: CargoTurret
 			{
-				gunnerAction="passenger_bench_1";
-				gunnerCompartments="Compartment2";
-				memoryPointsGetInGunner="pos gunner";
-				memoryPointsGetInGunnerDir="pos gunner dir";
-				gunnerName="Gunner (right Side)";
-				proxyIndex=7;
-				maxElev=15;
-				minElev=-62;
-				maxTurn=57;
-				minTurn=-70;
-				isPersonTurret=1;
-				ejectDeadGunner=0;
-				enabledByAnimationSource="";
-				usepip=0;
-				gunnerInAction="passenger_apc_narrow_generic02";
-				startEngine=0;
-				commanding=-1;
-				outGunnerMayFire=1;
-				inGunnerMayFire=1;
-				animationSourceHatch="";
+				gunnerAction = "passenger_bench_1";
+				gunnerCompartments = "Compartment2";
+				memoryPointsGetInGunner = "pos gunner";
+				memoryPointsGetInGunnerDir = "pos gunner dir";
+				gunnerName = "Gunner (right Side)";
+				proxyIndex = 7;
+				maxElev = 15;
+				minElev = -62;
+				maxTurn = 57;
+				minTurn = -70;
+				isPersonTurret = 1;
+				ejectDeadGunner = 0;
+				enabledByAnimationSource = "";
+				usepip = 0;
+				gunnerInAction = "passenger_apc_narrow_generic02";
+				startEngine = 0;
+				commanding = -1;
+				outGunnerMayFire = 1;
+				inGunnerMayFire = 1;
+				animationSourceHatch = "";
 			};
 		};
-		selectionDamage="zbytek";
+		selectionDamage = "zbytek";
 		class Damage
 		{
-			tex[]={};
-			mat[]=
-			{
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_damage.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_destruct.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit1.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit1.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit1_destruct.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit2.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit2.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit2_destruct.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit3.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit3.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit3_destruct.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_glass.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_glass_damage.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_glass_damage.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_in.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_in.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_in_destruct.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_instruments.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_instruments.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_instruments_destruct.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_rotor.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_rotor.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_rotor_destruct.rvmat",
-				"x\addons\a3_epoch_community\textures\uh1h_Epoch\default_destruct.rvmat",
-				"a3\data_f\default.rvmat",
-				"a3\data_f\default.rvmat"
-			};
+			tex[] = {};
+			mat[] = {"x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_damage.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_destruct.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit1.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit1.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit1_destruct.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit2.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit2.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit2_destruct.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit3.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit3.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_cockpit3_destruct.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_glass.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_glass_damage.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_glass_damage.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_in.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_in.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_in_destruct.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_instruments.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_instruments.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_instruments_destruct.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_rotor.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_rotor.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\UH1D_rotor_destruct.rvmat","x\addons\a3_epoch_community\textures\uh1h_Epoch\default_destruct.rvmat","a3\data_f\default.rvmat","a3\data_f\default.rvmat"};
 		};
 		class AnimationSources: AnimationSources
 		{
 			class HideWeapon
 			{
-				source="user";
-				animPeriod=9.9999997e-006;
-				initPhase=0;
+				source = "user";
+				animPeriod = 1e-005;
+				initPhase = 0;
 			};
 			class Proxy
 			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
 			};
 		};
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2"
-		};
-		class UserActions
-		{
-		};
+		hiddenSelections[] = {"camo1","camo2"};
+		class UserActions{};
 		class Reflectors: Reflectors
 		{
 			class Right
 			{
-				color[]={7000,7500,10000};
-				ambient[]={70,75,100};
-				intensity=50;
-				size=1;
-				innerAngle=15;
-				outerAngle=65;
-				coneFadeCoef=10;
-				position="L svetlo";
-				direction="konec L svetla";
-				hitpoint="L svetlo";
-				selection="L svetlo";
-				useFlare=1;
-				flareSize=10;
-				flareMaxDistance=250;
-				dayLight=0;
+				color[] = {7000,7500,10000};
+				ambient[] = {70,75,100};
+				intensity = 50;
+				size = 1;
+				innerAngle = 15;
+				outerAngle = 65;
+				coneFadeCoef = 10;
+				position = "L svetlo";
+				direction = "konec L svetla";
+				hitpoint = "L svetlo";
+				selection = "L svetlo";
+				useFlare = 1;
+				flareSize = 10;
+				flareMaxDistance = 250;
+				dayLight = 0;
 				class Attenuation
 				{
-					start=0;
-					constant=0;
-					linear=1;
-					quadratic=1;
-					hardLimitStart=100;
-					hardLimitEnd=200;
+					start = 0;
+					constant = 0;
+					linear = 1;
+					quadratic = 1;
+					hardLimitStart = 100;
+					hardLimitEnd = 200;
 				};
 			};
 		};
-		aggregateReflectors[]=
-		{
-			
-			{
-				"Left"
-			}
-		};
+		aggregateReflectors[] = {{"Left"}};
 	};
 	class uh1h_Epoch: uh1h_Epoch_base_F
 	{
-		scope=2;
-		scopeCurator=2;
-		displayName="UH1H";
-		picture="\x\addons\a3_epoch_vehicles_1\mosquito\data\mosquito.paa";
-		author="BIS/Helion4";
-		side=3;
-		faction="CIV_F";
-		crew="";
-		accuracy=1.5;
-		weapons[]={};
-		magazines[]={};
-		hiddenSelectionsTextures[]=
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "UH1H";
+		author = "BIS/Helion4";
+		side = 3;
+		faction = "CIV_F";
+		crew = "";
+		accuracy = 1.5;
+		weapons[] = {};
+		magazines[] = {};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1d_co.paa","x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1d_in_co.paa"};
+	};
+	class uh1h_armed_EPOCH: uh1h_Epoch
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "UH1H Armed";
+		model = "x\addons\a3_epoch_community\uh1h_Epoch\uh1h_armed_Epoch.p3d";
+		author = "BIS/Helion4";
+		side = 3;
+		faction = "CIV_F";
+		crew = "";
+		accuracy = 1.5;
+		weapons[] = {};
+		magazines[] = {};
+		hiddenSelectionsTextures[] = {"x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1d_co.paa","x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1d_in_co.paa"};
+		class Turrets: Turrets
 		{
-			"x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1d_co.paa",
-			"x\addons\a3_epoch_community\textures\uh1h_Epoch\uh1d_in_co.paa"
+			class CopilotTurret: CopilotTurret
+			{
+				CanEject = 1;
+				gunnerAction               = "pilot_Heli_Transport_01";
+				gunnerInAction             = "pilot_Heli_Transport_01";
+				memoryPointsGetInGunner    = "pos copilot";
+				memoryPointsGetInGunnerDir = "pos copilot dir";
+				gunnerGetInAction          = "GetInHeli_Transport_01Cargo";
+				gunnerGetOutAction         = "GetOutLow";
+				preciseGetInOut            = 0;
+				GunnerDoor                 = "";
+				gunnerLeftHandAnimName     = "lever_copilot";
+				gunnerRightHandAnimName    = "stick_copilot";
+				gunnerLeftLegAnimName      = "PedalL";
+				gunnerRightLegAnimName     = "PedalR";
+				proxyIndex = 1;
+				LODTurnedIn = 1100;
+				LODTurnedOut = 1100;
+				gunnerCompartments = "Compartment1";
+				commanding = -3;
+				class ViewGunner: ViewPilot
+				{
+				};
+			};
+			class MainTurret: MainTurret  //right side gunner
+			{
+				body                       = "mg1_main_turret";
+				gun                        = "mg1_main_Gun";
+				memoryPointGun             ="mg1_main_gun";
+				initElev                   = -10; //- is down
+				initTurn                   = -90;  //turning (view) circle of turret
+				maxElev                    = 25;  //turning (view) circle of turret
+				minElev                    = -62;  //turning (view) circle of turret
+				maxTurn                    = -10;  //turning (view) circle of turret
+				minTurn                    = -165;  //turning (view) circle of turret
+				animationSourceBody        = "mg1_main_turret";
+				animationSourceGun         = "mg1_main_gun";
+				stabilizedInAxes           = 0;
+				gunBeg                     = "mg1_usti_hlavne";
+				gunEnd                     = "mg1_konec_hlavne";
+				gunnerName                 = "Right door gunner";
+				gunnerOutOpticsShowCursor  = 0;
+				gunnerOpticsShowCursor     = 0;
+				memoryPointGunnerOptics    = "mg1_gunnerview";
+				gunnerAction               = "pilot_Heli_Transport_01";
+				gunnerInAction             = "pilot_Heli_Transport_01";
+				gunnerOpticsModel          = "\A3\Weapons_F\empty.p3d";
+				weapons[]                  = {"E_uh1h_mg_665_01"};
+				magazines[]                = {"200Rnd_65x39_Belt","200Rnd_65x39_Belt","200Rnd_65x39_Belt"};
+				commanding                 = -3;
+				primaryGunner              = 0;
+				class ViewOptics 
+				{
+					initAngleX= 90; 
+					minAngleX= -30;
+					maxAngleX=  30;
+					initAngleY= 90; 
+					minAngleY= -100; 
+					maxAngleY= 100;
+					initFov=   0.7; 
+					minFov=    0.25; 
+					maxFov=    1.1;
+				};
+				gunnerCompartments         = "Compartment2";
+				memoryPointsGetInGunner    = "mg1_pos_gunner";
+				memoryPointsGetInGunnerDir = "mg1_pos_gunner_dir";
+				proxyIndex                 = 2;
+				LODTurnedIn                = VIEW_GUNNER;
+				LODTurnedOut               = VIEW_GUNNER;
+				gunnerLeftHandAnimName     = "";
+				gunnerRightHandAnimName    = "";
+				selectionFireAnim = "mg1_zasleh";
+				canUseScanners             = 0;
+			};
+			class new_MainTurret: MainTurret
+			{
+				minElev = -50;
+				maxElev = 30;
+				initElev = -30;
+				minTurn = 3;
+				maxTurn = 173;
+				initTurn = 80;
+				body                       = "mg2_main_turret";
+				gun                        = "mg2_main_gun";
+				animationSourceBody        = "mg2_main_turret";
+				animationSourceGun         = "mg2_main_gun";
+				selectionFireAnim          = "mg2_zasleh";
+				proxyIndex                 = 3;
+				gunnerName                 = "Left door gunner";
+				weapons[]                  = {"E_uh1h_mg_665_02"};
+				commanding                 = -3;
+				gunBeg                     = "mg2_usti_hlavne";
+				gunEnd                     = "mg2_konec_hlavne";
+				primaryGunner              = 1;
+				memoryPointGun             = "mg2_main_gun";
+				memoryPointGunnerOptics    = "mg2_gunnerview";
+				gunnerCompartments         = "Compartment2";
+				memoryPointsGetInGunner    = "mg2_pos_gunner";
+				memoryPointsGetInGunnerDir = "mg2_pos_gunner_dir";
+				turretCanSee = "1 + 2 + 4 + 8 + 16";
+				canUseScanners = 0;
+			};
+		};	
+	    class animationsources: animationsources
+	    {
+	    	class mg1_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_665_01";
+	    	};
+	    	class mg1_ReloadMagazine: mg1_ReloadAnim
+	    	{
+	    		source = "reloadmagazine";
+	    	};
+	    	class mg1_Revolving: mg1_ReloadAnim
+	    	{
+	    		source = "revolving";
+	    	};
+	    	class mg1_muzzle_rot: mg1_ReloadAnim
+	    	{
+	    		source = "ammorandom";
+	    	};
+	    	class mg1_muzzle_hide
+	    	{
+	    		source = "reload";
+	    	};
+	    	class mg2_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_665_02";
+	    	};
+	    	class mg2_ReloadMagazine: mg2_ReloadAnim
+	    	{
+	    		source = "reloadmagazine";
+	    	};
+	    	class mg2_Revolving: mg2_ReloadAnim
+	    	{
+	    		source = "revolving";
+	    	};
+	    	class mg2_muzzle_rot: mg2_ReloadAnim
+	    	{
+	    		source = "ammorandom";
+	    	};
+	    	class mg2_muzzle_hide
+	    	{
+	    		source = "reload";
+	    	};
+	    };	
+	};
+	class uh1h_armed_plus_EPOCH: uh1h_armed_EPOCH
+	{
+		displayName = "UH1H Armed+";
+		class Turrets: Turrets
+		{
+			class CopilotTurret;
+			class MainTurret: MainTurret
+			{
+				weapons[]                  = {"E_uh1h_mg_762_01"};
+				magazines[]                = {"200Rnd_762x51_Belt","200Rnd_762x51_Belt","200Rnd_762x51_Belt"};
+			};
+			class new_MainTurret: new_MainTurret
+			{
+				weapons[]                  = {"E_uh1h_mg_762_02"};
+				magazines[]                = {"200Rnd_762x51_Belt","200Rnd_762x51_Belt","200Rnd_762x51_Belt"};
+			};
 		};
+	    class animationsources: animationsources
+	    {
+	    	class mg1_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_762_01";
+	    	};
+	    	class mg2_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_762_02";
+	    	};
+	    };	
+	};
+	class a2_ch47f_epoch_base_F: Helicopter_Base_H
+	{
+		scope = 0;
+		armor = 12;
+		altFullForce = 4000;
+		altNoForce = 6000;
+		maxSpeed = 265;
+		maxFordingDepth = 1;
+		mainBladeRadius = 7;
+		liftForceCoef = 2.55;
+		bodyFrictionCoef = 0.3;
+		cyclicAsideForceCoef = 0.3;
+		cyclicForwardForceCoef = 0.3;
+		backRotorForceCoef = 0.3;
+		accuracy = 0.5;
+		model = "x\addons\a2_epoch_vehicles\air\CH47\a2_ch_47f_epoch.p3d";
+		picture = "x\addons\a2_epoch_vehicles\air\CH47\data\ch47_ca.paa";
+		icon = "x\addons\a2_epoch_vehicles\air\CH47\data\ch47_ca.paa";
+		driverAction = "pilot_Heli_Light_02";
+		driverInAction = "pilot_Heli_Light_02";
+		precisegetinout = 1;
+		GetInAction = "pilot_Heli_Light_02_Enter";
+		GetOutAction = "pilot_Heli_Light_02_Exit";
+		cargoGetInAction[] = {"GetInHelicopterCargo"};
+		cargoGetOutAction[] = {"GetOutHelicopterCargo"};
+		transportSoldier = 25;
+                cargoAction[] = {"passenger_apc_generic04","passenger_apc_generic02","passenger_apc_generic03","passenger_apc_generic04","passenger_apc_narrow_generic01","passenger_apc_narrow_generic02","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_generic01_foldhands","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_apc_generic01","passenger_apc_generic01","passenger_generic01_leanleft","passenger_generic01_leanright","passenger_low01"};
+		getInProxyOrder[] = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25};
+ 		cargoProxyIndexes[] = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25};
+		getInRadius = 2;
+		weapons[] = {"CMFlareLauncher"};
+		magazines[] = {"120Rnd_CMFlare_Chaff_Magazine"};
+		memoryPointCM[] = {"Flare_launcher_1_pos", "Flare_launcher_2_pos"};
+		memoryPointCMDir[] = {"Flare_launcher_1_dir", "Flare_launcher_2_dir"};
+		enableManualFire = 0;
+		radarTargetSize = 1.2;
+		visualTargetSize = 1.2;
+		irTargetSize = 1.2;
+		lockDetectionSystem = "8 + 4";
+		incomingMissileDetectionSystem = "8 + 16";
+		maximumLoad = 6000;
+		supplyRadius = -0.5;
+		gearRetracting = 0;
+		driveOnComponent[] = {"gear_1_1_wheel", "gear_2_1_wheel", "gear_1_2_wheel", "gear_2_2_wheel"}; //Wheels
+		fuelCapacity = 1360;
+		fuelConsumptionRate = 0.126;
+		slingLoadMaxCargoMass = 12000;
+		radarType = 8;
+                memoryPointDriverOptics = "slingCamera";
+		slingLoadMemoryPoint = "slingLoad0";
+		cargoIsCoDriver[] = {0,0};
+		memoryPointsGetInCargo = "pos cargo";
+		memoryPointsGetInCargoDir = "pos cargo dir";
+		hideWeaponsCargo = 1;
+		cargoCanEject = 1;
+		driverCanEject = 1;
+		driverCompartments =   "Compartment1";
+		cargoCompartments[] = {"Compartment3"};
+		hiddenSelections[] = {"camo1","camo2"};
+		class TransportBackpacks{};
+		class TransportItems{};
+		soundGetIn[] = {"x\addons\a2_epoch_vehicles\air\CH47\sounds\open",0.31622776,1};
+		soundGetOut[] = {"x\addons\a2_epoch_vehicles\air\CH47\sounds\close",0.31622776,1,40};
+		soundEngineOnInt[] = {"x\addons\a2_epoch_vehicles\air\CH47\sounds\ch47_start_int",0.4466836,1};
+		soundEngineOnExt[] = {"x\addons\a2_epoch_vehicles\air\CH47\sounds\ch47_start_ext",0.4466836,1,700};
+		soundEngineOffInt[] = {"x\addons\a2_epoch_vehicles\air\CH47\sounds\ch47_stop_int",0.4466836,1};
+		soundEngineOffExt[] = {"x\addons\a2_epoch_vehicles\air\CH47\sounds\ch47_stop_ext",0.4466836,1,700};
+		soundEnviron[] = {"","db-30",1};
+		soundDammage[] = {"A3\Sounds_F\air\Heli_Light_02\crash","db-5",1};
+		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1","db-20",1};
+		soundIncommingMissile[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_2","db-20",1};
+		class Sounds
+		{
+			class Engine
+			{
+				//sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_engine_ext_2","db5",1,900};
+				sound[] = {"x\addons\a2_epoch_vehicles\air\CH47\sounds\ch47_engine_high_ext","db5",1,900};
+				frequency = "rotorSpeed";
+				volume = "camPos*((rotorSpeed-0.72)*4)";
+			};
+			class RotorLowOut
+			{
+				sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_ext_1","db3",1,1200};
+				frequency = "rotorSpeed";
+				volume = "camPos*(0 max (rotorSpeed-0.1))";
+				cone[] = {1.6,3.14,1.6,0.95};
+			};
+			class RotorHighOut
+			{
+				sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_high_ext_1","db5",1,1500};
+				frequency = "rotorSpeed";
+				volume = "camPos*10*(0 max (rotorThrust-0.9))";
+				cone[] = {1.6,3.14,1.6,0.95};
+			};
+			class EngineIn
+			{
+				//sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_engine_int_1","db0",1};
+				sound[] = {"x\addons\a2_epoch_vehicles\air\CH47\sounds\ch47_engine_high_int","db0",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
+			};
+			class RotorLowIn
+			{
+				sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_int_1","db2",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*(0 max (rotorSpeed-0.1))";
+			};
+			class RotorHighIn
+			{
+				sound[] = {"x\addons\a3_epoch_community\uh1h_Epoch\sounds\UH1H_rotor_high_int_1","db3",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*3*(rotorThrust-0.9)";
+			};
+		};
+		class HitPoints
+		{
+			class HitHull
+			{
+				armor = 999;
+				name = "body2";
+				visual = "trup";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.45;
+				depends = "Total";
+			};
+			class HitEngine
+			{
+				armor = 6;
+				name = "motor";
+				visual = "motor";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
+			};
+			class HitAvionics
+			{
+				armor = 2;
+				name = "elektronika";
+				visual = "elektronika";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
+			};
+			class HitVRotor
+			{
+				armor = 6;
+				name = "tail rotor";
+				visual = "tail rotor static";
+				passThrough = 0.3;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.9;
+			};
+			class HitHRotor
+			{
+				armor = 6;
+				name = "main rotor";
+				visual = "main rotor static";
+				passThrough = 0.1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.9;
+			};
+			class HitMissiles
+			{
+				armor = 0.1;
+				name = "munice";
+				visual = "munice";
+				passThrough = 0.5;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitRGlass
+			{
+				armor = 0.1;
+				name = "sklo predni P";
+				visual = "sklo predni P";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitLGlass
+			{
+				armor = 0.1;
+				name = "sklo predni L";
+				visual = "sklo predni L";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitWinch
+			{
+				armor = 0.1;
+				name = "slingLoad0";
+				visual = "";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitTransmission
+			{
+				armor = 0.8;
+				name = "transmission";
+				passThrough = 0.8;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitGlass1
+			{
+				armor = 1;
+				name = "glass1";
+				convexComponent = "glass1";
+				visual = "glass1";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
+			};
+			class HitGlass2: HitGlass1
+			{
+				name = "glass2";
+				convexComponent = "glass2";
+				visual = "glass2";
+			};
+			class HitGlass3: HitGlass1
+			{
+				name = "glass3";
+				convexComponent = "glass3";
+				visual = "glass3";
+			};
+			class HitGlass4: HitGlass1
+			{
+				name = "glass4";
+				convexComponent = "glass4";
+				visual = "glass4";
+			};
+			class HitGlass5: HitGlass1
+			{
+				name = "glass5";
+				convexComponent = "glass5";
+				visual = "glass5";
+			};
+			class HitGlass6: HitGlass1
+			{
+				name = "glass6";
+				convexComponent = "glass6";
+				visual = "glass6";
+			};
+		};
+		class Exhausts
+		{
+				class Exhaust1
+				{
+					position = "exhaust1";
+					direction = "exhaust1_dir";
+					effect = "ExhaustEffectHeli";
+				};
+				class Exhaust2
+				{
+					position = "exhaust2";
+					direction = "exhaust2_dir";
+					effect = "ExhaustEffectHeli";
+				};
+			};
+		class ViewPilot: ViewPilot
+		{
+			initFov = 0.75;
+			minFov = 0.375;
+			maxFov = 1.1;
+		};
+		class Viewoptics: Viewoptics
+		{
+			initAngleX = 0;
+			minAngleX = 0;
+			maxAngleX = 0;
+			initAngleY = 0;
+			minAngleY = 0;
+			maxAngleY = 0;
+			initFov = 0.1;
+			minFov = 0.1;
+			maxFov = 1.2;
+		};
+	        class RenderTargets
+	        {
+	        	class SlingLoadCam
+	        	{
+	        		renderTarget = "rendertarget0";
+	        		class CameraView1
+	        		{
+	        			pointPosition = "slingCamera";
+	        			pointDirection = "slingLoad_cam_dir";
+	        			renderQuality = 2;
+	        			renderVisionMode = 0;
+	        			fov = 0.7;
+	        		};
+	        		BBoxes[] = {"PIP_0_TL", "PIP_0_TR", "PIP_0_BL", "PIP_0_BR"};
+	        	};
+	        };
+		class Turrets: Turrets
+		{
+			class CopilotTurret: CopilotTurret
+			{
+				gunnerAction = "copilot_Heli_Light_02";
+				gunnerInAction = "copilot_Heli_Light_02";
+				precisegetinout = 1;
+				gunnerGetInAction = "copilot_Heli_Light_02_Enter";
+				gunnerGetOutAction = "copilot_Heli_Light_02_Exit";
+				memoryPointsGetInCargo = "pos copilot";
+				memoryPointsGetInCargoDir = "pos copilot dir";
+				canEject = 0;
+				minElev = -50;
+				maxElev = 30;
+				initElev = 11;
+				minTurn = -170;
+				maxTurn = 170;
+				initTurn = 0;
+				gunnerLeftHandAnimName = "lever_copilot";
+				gunnerRightHandAnimName = "stick_copilot";
+				maxHorizontalRotSpeed = 3;
+				maxVerticalRotSpeed = 3;
+				isCopilot = 1;
+				LODTurnedIn = 1;
+				gunnerUsesPilotView = 1;
+				primaryGunner = 1;
+				proxyIndex = 1;
+				enableManualFire = 0;
+				class HitPoints{};
+			};
+
+		};
+		selectionDamage = "zbytek";
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {
+				      "x\addons\a2_epoch_vehicles\air\CH47\data\ch47_1.rvmat",
+					  "x\addons\a2_epoch_vehicles\air\CH47\data\ch47_1_damage.rvmat",
+					  "x\addons\a2_epoch_vehicles\air\CH47\data\ch47_1_destruct.rvmat"
+					};
+		};
+		class AnimationSources: AnimationSources
+		{
+			class HideWeapon
+			{
+				source = "user";
+				animPeriod = 1e-005;
+				initPhase = 0;
+			};
+			class Proxy
+			{
+				source = "user";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+	    };
+		class UserActions{};	
+		class Reflectors: Reflectors
+		{
+			class Right
+			{
+				color[] = {7000,7500,10000};
+				ambient[] = {70,75,100};
+				intensity = 50;
+				size = 1;
+				innerAngle = 15;
+				outerAngle = 65;
+				coneFadeCoef = 10;
+				position = "L svetlo";
+				direction = "konec L svetla";
+				hitpoint = "L svetlo";
+				selection = "L svetlo";
+				useFlare = 1;
+				flareSize = 10;
+				flareMaxDistance = 250;
+				dayLight = 0;
+				class Attenuation
+				{
+					start = 0;
+					constant = 0;
+					linear = 1;
+					quadratic = 1;
+					hardLimitStart = 100;
+					hardLimitEnd = 200;
+				};
+			};
+		};
+		aggregateReflectors[] = {{"Left"}};
+	};
+	class a2_ch47f_EPOCH: a2_ch47f_epoch_base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "CH47-F Unarmed";
+		author = "BIS/Helion4";
+		side = 3;
+		faction = "CIV_F";
+		crew = "";
+		accuracy = 1.5;
+		weapons[] = {};
+		magazines[] = {};
+		hiddenSelectionsTextures[] = {"x\addons\a2_epoch_vehicles\air\ch47\data\ch47_ext_1_co.paa","x\addons\a2_epoch_vehicles\air\ch47\data\ch47_ext_2_co.paa"};
+	};
+	class a2_ch47f_armed_EPOCH: a2_ch47f_EPOCH
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "CH47-F Armed";
+		model = "x\addons\a2_epoch_vehicles\air\CH47\a2_ch_47fa_epoch.p3d";
+        author = "BIS/Helion4";
+		side = 3;
+		faction = "CIV_F";
+		crew = "";
+		accuracy = 1.5;
+		weapons[] = {};
+		magazines[] = {};
+		hiddenSelectionsTextures[] = {"x\addons\a2_epoch_vehicles\air\ch47\data\ch47_ext_1_co.paa","x\addons\a2_epoch_vehicles\air\ch47\data\ch47_ext_2_co.paa"};
+		class Turrets: Turrets
+		{
+			class CopilotTurret: CopilotTurret
+			{
+				CanEject = 1;
+				gunnerAction               = "pilot_Heli_Transport_01";
+				gunnerInAction             = "pilot_Heli_Transport_01";
+				memoryPointsGetInGunner    = "pos copilot";
+				memoryPointsGetInGunnerDir = "pos copilot dir";
+				gunnerGetInAction          = "GetInHeli_Transport_01Cargo";
+				gunnerGetOutAction         = "GetOutLow";
+				preciseGetInOut            = 0;
+				GunnerDoor                 = "";
+				gunnerLeftHandAnimName     = "lever_copilot";
+				gunnerRightHandAnimName    = "stick_copilot";
+				gunnerLeftLegAnimName      = "PedalL";
+				gunnerRightLegAnimName     = "PedalR";
+				proxyIndex = 1;
+				LODTurnedIn = 1100;  //1100=view pilot ; 1200=cargo view; 1000=viewgunner
+				LODTurnedOut = 1100;
+				gunnerCompartments = "Compartment1";
+				commanding = -3;
+				class ViewGunner: ViewPilot{};
+				class HitPoints{};
+			};
+			class MainTurret: MainTurret
+			{
+				body                       = "mg1_main_turret";
+				gun                        = "mg1_main_gun";
+				memoryPointGun             = "mg1_main_gun";
+				initElev                   = -10; //- is down
+				initTurn                   = -90;  //turning (view) circle of turret
+				maxElev                    = 25;  //turning (view) circle of turret
+				minElev                    = -62;  //turning (view) circle of turret
+				maxTurn                    = -10;  //turning (view) circle of turret
+				minTurn                    = -165;  //turning (view) circle of turret
+				animationSourceBody        = "mg1_main_turret";
+				animationSourceGun         = "mg1_main_gun";
+				stabilizedInAxes           = 0;
+				gunBeg                     = "mg1_usti_hlavne";
+				gunEnd                     = "mg1_konec_hlavne";
+				gunnerName                 = "Right door gunner";
+				gunnerOutOpticsShowCursor  = 0;
+				gunnerOpticsShowCursor     = 0;
+				memoryPointGunnerOptics    = "mg1_gunnerview";
+				gunnerAction               = "pilot_Heli_Transport_01";
+				gunnerInAction             = "pilot_Heli_Transport_01";
+				gunnerOpticsModel          = "\A3\Weapons_F\empty.p3d";
+				weapons[]                  = {"E_uh1h_mg_665_01"};
+				magazines[]                = {"200Rnd_65x39_Belt","200Rnd_65x39_Belt","200Rnd_65x39_Belt"};
+				commanding                 = -3;
+				primaryGunner              = 1;
+				gunnerCompartments         = "Compartment2";
+				memoryPointsGetInGunner    = "mg1_pos_gunner";
+				memoryPointsGetInGunnerDir = "mg1_pos_gunner_dir";
+				selectionFireAnim = "mg1_zasleh";
+				proxyIndex                 = 2;
+				LODTurnedIn                = 1000;
+				LODTurnedOut               = 1000;
+				gunnerLeftHandAnimName     = "handle_L";
+				gunnerRightHandAnimName    = "handle_R";
+				canUseScanners             = 0;
+				class ViewOptics 
+				{
+					initAngleX= 90;minAngleX= -30;maxAngleX= 0;initAngleY= 90; 
+					minAngleY= -100;maxAngleY= 100;initFov= 0.7; minFov= 0.25;maxFov= 1.1;
+				};
+				class HitPoints{};
+			};
+			class new_MainTurret: MainTurret
+			{
+				minTurn = 30;
+				maxTurn = 140;
+				initTurn = 90;
+				body                       = "mg2_main_turret";
+				gun                        = "mg2_main_gun";
+				animationSourceBody        = "mg2_main_turret";
+				animationSourceGun         = "mg2_main_gun";
+				selectionFireAnim          = "mg2_zasleh";
+				proxyIndex                 = 3;
+				gunnerName                 = "Left door gunner";
+				weapons[]                  = {"E_uh1h_mg_665_02"};
+				commanding                 = -3;
+				gunBeg                     = "mg2_usti_hlavne";
+				gunEnd                     = "mg2_konec_hlavne";
+				primaryGunner              = 0;
+				memoryPointGun             = "mg2_main_gun";
+				memoryPointGunnerOptics    = "mg2_gunnerview";
+				gunnerCompartments         = "Compartment2";
+				memoryPointsGetInGunner    = "mg2_pos_gunner";
+				memoryPointsGetInGunnerDir = "mg2_pos_gunner_dir";
+				canUseScanners = 0;
+				turretCanSee = "1 + 2 + 4 + 8 + 16";
+				class HitPoints{};
+			};
+		};	
+	    class animationsources: animationsources
+	    {
+	    	class mg1_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_665_01";
+	    	};
+	    	class mg1_ReloadMagazine: mg1_ReloadAnim
+	    	{
+	    		source = "reloadmagazine";
+	    	};
+	    	class mg1_flash_source: mg1_ReloadAnim
+	    	{
+	    		source = "reload";
+	    	};
+			class mg1_Revolving: mg1_ReloadAnim
+	    	{
+	    		source = "revolving";
+	    	};
+	    	class mg1_muzzle_rot: mg1_ReloadAnim
+	    	{
+	    		source = "ammorandom";
+	    	};
+	    	class mg1_muzzle_hide
+	    	{
+	    		source = "reload";
+	    	};
+	    	class mg2_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_665_02";
+	    	};
+	    	class mg2_ReloadMagazine: mg2_ReloadAnim
+	    	{
+	    		source = "reloadmagazine";
+	    	};
+	    	class mg2_flash_source: mg1_ReloadAnim
+	    	{
+	    		source = "reload";
+	    	};
+	    	class mg2_Revolving: mg2_ReloadAnim
+	    	{
+	    		source = "revolving";
+	    	};
+	    	class mg2_muzzle_rot: mg2_ReloadAnim
+	    	{
+	    		source = "ammorandom";
+	    	};
+	    	class mg2_muzzle_hide
+	    	{
+	    		source = "reload";
+	    	};
+	    };	
+	};	
+	class a2_ch47f_armed_plus_EPOCH: a2_ch47f_armed_EPOCH
+	{
+		displayName = "CH47-F Armed+";
+		class Turrets: Turrets
+		{
+			class CopilotTurret;
+			class MainTurret: MainTurret
+			{
+				weapons[]                  = {"E_uh1h_mg_762_01"};
+				magazines[]                = {"200Rnd_762x51_Belt","200Rnd_762x51_Belt","200Rnd_762x51_Belt"};
+			};
+			class new_MainTurret: new_MainTurret
+			{
+				weapons[]                  = {"E_uh1h_mg_762_02"};
+				magazines[]                = {"200Rnd_762x51_Belt","200Rnd_762x51_Belt","200Rnd_762x51_Belt"};
+			};
+		};
+	    class animationsources: animationsources
+	    {
+	    	class mg1_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_762_01";
+	    	};
+	    	class mg2_ReloadAnim
+	    	{
+	    		source = "reload";
+	    		weapon = "E_uh1h_mg_762_02";
+	    	};
+	    };	
+	};
+	class a2_mi8_epoch_base_F: Helicopter_Base_H
+	{
+		scope = 0;
+		armor = 12;
+		altFullForce = 4000;
+		altNoForce = 6000;
+		maxSpeed = 275;
+		maxFordingDepth = 1;
+		mainBladeRadius = 7;
+		liftForceCoef = 1.5;
+		bodyFrictionCoef = 0.3;
+		cyclicAsideForceCoef = 2;
+		cyclicForwardForceCoef = 1.2;
+		backRotorForceCoef = 1;
+		accuracy = 0.5;
+		model = "x\addons\a2_epoch_vehicles\air\mi17\a2_mi8_epoch.p3d";
+		picture = "x\addons\a2_epoch_vehicles\air\mi17\data\mi17_ca.paa";
+		icon = "x\addons\a2_epoch_vehicles\air\mi17\data\mi17_ca.paa";
+		driverAction = "pilot_Heli_Light_02";
+		driverInAction = "pilot_Heli_Light_02";
+		precisegetinout = 1;
+		GetInAction = "pilot_Heli_Light_02_Enter";
+		GetOutAction = "pilot_Heli_Light_02_Exit";
+		cargoGetInAction[] = {"GetInHelicopterCargo"};
+		cargoGetOutAction[] = {"GetOutHelicopterCargo"};
+		transportSoldier = 14;
+		cargoAction[] = {"passenger_apc_generic04","passenger_apc_generic02","passenger_apc_generic03","passenger_apc_generic04","passenger_apc_narrow_generic01","passenger_apc_narrow_generic02","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_generic01_foldhands","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_apc_generic01","passenger_apc_generic01","passenger_generic01_leanleft","passenger_generic01_leanright","passenger_low01"};
+		getInProxyOrder[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+		cargoProxyIndexes[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+		getInRadius = 2;
+		weapons[] = {"CMFlareLauncher"};
+		magazines[] = {"120Rnd_CMFlare_Chaff_Magazine"};
+		memoryPointCM[] = {"Flare_launcher_1_pos","Flare_launcher_2_pos"};
+		memoryPointCMDir[] = {"Flare_launcher_1_dir","Flare_launcher_2_dir"};
+		enableManualFire = 0;
+		radarTargetSize = 1.2;
+		visualTargetSize = 1.2;
+		irTargetSize = 1.2;
+		lockDetectionSystem = "8 + 4";
+		incomingMissileDetectionSystem = "8 + 16";
+		maximumLoad = 6000;
+		supplyRadius = -0.5;
+		gearRetracting = 0;
+		driveOnComponent[] = {"Wheels"};
+		fuelCapacity = 1360;
+		fuelConsumptionRate = 0.126;
+		slingLoadMaxCargoMass = 12000;
+		radarType = 8;
+		memoryPointDriverOptics = "slingCamera";
+		slingLoadMemoryPoint = "SlingLoad0";
+		cargoIsCoDriver[] = {0,0};
+		memoryPointsGetInCargo = "pos cargo";
+		memoryPointsGetInCargoDir = "pos cargo dir";
+		hideWeaponsCargo = 0;
+		cargoCanEject = 1;
+		driverCanEject = 1;
+		driverCompartments = "Compartment1";
+		cargoCompartments[] = {"Compartment2"};
+		availableForSupportTypes[] = {"Drop", "Transport"};
+		hiddenSelections[] = {"camo1"};
+		class TransportBackpacks{};
+		class TransportItems{};
+		soundGetIn[] =        {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-Mi17-getin-01",0.31622776,1};
+		soundGetOut[] =       {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-Mi17-getout-01",0.31622776,1,40};
+		soundEngineOnInt[] =  {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\int\int-Mi17-start-1",0.4466836,1};
+		soundEngineOnExt[] =  {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-Mi17-start-01",0.4466836,1,700};
+		soundEngineOffInt[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\int\int-Mi17-stop-1",0.4466836,1};
+		soundEngineOffExt[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-Mi17-stop-01",0.4466836,1,700};
+		soundEnviron[] = {"","db-30",1};
+		soundDammage[] = {"A3\Sounds_F\air\Heli_Light_02\crash","db-5",1};
+		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1","db-20",1};
+		soundIncommingMissile[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_2","db-20",1};
+		class Sounds
+		{
+			class Engine
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-sovietheli-engine-1","db5",1,900};
+				frequency = "rotorSpeed";
+				volume = "camPos*((rotorSpeed-0.72)*4)";
+			};
+			class RotorLowOut
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-sovietheli-rotor-1","db3",1,1200};
+				frequency = "rotorSpeed";
+				volume = "camPos*(0 max (rotorSpeed-0.1))";
+				cone[] = {1.6,3.14,1.6,0.95};
+			};
+			class RotorHighOut
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\ext\ext-sovietheli-rotor-5","db5",1,1500};
+				frequency = "rotorSpeed";
+				volume = "camPos*10*(0 max (rotorThrust-0.9))";
+				cone[] = {1.6,3.14,1.6,0.95};
+			};
+			class EngineIn
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\int\int-sovietheli-engine-1","db0",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
+			};
+			class RotorLowIn
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\int\int-Mi17-rotor-low-2","db2",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*(0 max (rotorSpeed-0.1))";
+			};
+			class RotorHighIn
+			{
+				sound[] = {"x\addons\a2_epoch_vehicles\air\Mi17\Mi17\int\int-Mi17-rotor-high-2","db3",1};
+				frequency = "rotorSpeed";
+				volume = "(1-camPos)*3*(rotorThrust-0.9)";
+			};
+		};
+		class HitPoints
+		{
+			class HitHull
+			{
+				armor = 999;
+				name = "body2";
+				visual = "trup";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.45;
+				depends = "Total";
+			};
+			class HitEngine
+			{
+				armor = 2;
+				name = "motor";
+				visual = "motor";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
+			};
+			class HitAvionics
+			{
+				armor = 4;
+				name = "elektronika";
+				visual = "elektronika";
+				passThrough = 1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
+			};
+			class HitVRotor
+			{
+				armor = 3;
+				name = "tail rotor";
+				visual = "tail rotor static";
+				passThrough = 0.3;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.9;
+			};
+			class HitHRotor
+			{
+				armor = 8;
+				name = "main rotor";
+				visual = "main rotor static";
+				passThrough = 0.1;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.9;
+			};
+			class HitMissiles
+			{
+				armor = 1;
+				name = "munice";
+				visual = "munice";
+				passThrough = 0.5;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitRGlass
+			{
+				armor = 1;
+				name = "sklo predni P";
+				visual = "sklo predni P";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitLGlass
+			{
+				armor = 1;
+				name = "sklo predni L";
+				visual = "sklo predni L";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitWinch
+			{
+				armor = 1;
+				name = "slingLoad0";
+				visual = "";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitTransmission
+			{
+				armor = 0.8;
+				name = "transmission";
+				passThrough = 0.8;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.25;
+			};
+			class HitGlass1
+			{
+				armor = 1;
+				name = "glass1";
+				convexComponent = "glass1";
+				visual = "glass1";
+				passThrough = 0;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+				radius = 0.35;
+			};
+			class HitGlass2: HitGlass1
+			{
+				name = "glass2";
+				convexComponent = "glass2";
+				visual = "glass2";
+			};
+			class HitGlass3: HitGlass1
+			{
+				name = "glass3";
+				convexComponent = "glass3";
+				visual = "glass3";
+			};
+			class HitGlass4: HitGlass1
+			{
+				name = "glass4";
+				convexComponent = "glass4";
+				visual = "glass4";
+			};
+			class HitGlass5: HitGlass1
+			{
+				name = "glass5";
+				convexComponent = "glass5";
+				visual = "glass5";
+			};
+			class HitGlass6: HitGlass1
+			{
+				name = "glass6";
+				convexComponent = "glass6";
+				visual = "glass6";
+			};
+		};
+		class Exhausts
+		{
+			class Exhaust1
+			{
+				position = "exhaust1";
+				direction = "exhaust1_dir";
+				effect = "ExhaustEffectHeli";
+			};
+			class Exhaust2
+			{
+				position = "exhaust2";
+				direction = "exhaust2_dir";
+				effect = "ExhaustEffectHeli";
+			};
+		};
+		class ViewPilot: ViewPilot
+		{
+			initFov = 0.75;
+			minFov = 0.375;
+			maxFov = 1.1;
+		};
+		class Viewoptics: Viewoptics
+		{
+			initAngleX = 0;
+			minAngleX = 0;
+			maxAngleX = 0;
+			initAngleY = 0;
+			minAngleY = 0;
+			maxAngleY = 0;
+			initFov = 0.1;
+			minFov = 0.1;
+			maxFov = 1.2;
+		};
+		class Turrets: Turrets
+		{
+			class CopilotTurret: CopilotTurret
+			{
+				gunnerAction = "copilot_Heli_Light_02";
+				gunnerInAction = "copilot_Heli_Light_02";
+				precisegetinout = 1;
+				gunnerGetInAction = "copilot_Heli_Light_02_Enter";
+				gunnerGetOutAction = "copilot_Heli_Light_02_Exit";
+				memoryPointsGetInCargo = "pos copilot";
+				memoryPointsGetInCargoDir = "pos copilot dir";
+				canEject = 0;
+				minElev = -50;
+				maxElev = 30;
+				initElev = 11;
+				minTurn = -170;
+				maxTurn = 170;
+				initTurn = 0;
+				gunnerLeftHandAnimName = "lever_copilot";
+				gunnerRightHandAnimName = "stick_copilot";
+				maxHorizontalRotSpeed = 3;
+				maxVerticalRotSpeed = 3;
+				isCopilot = 1;
+				LODTurnedIn = 1;
+				gunnerUsesPilotView = 1;
+				primaryGunner = 0;
+				proxyIndex = 1;
+				enableManualFire = 0;
+			};
+			class CargoTurret_01: CargoTurret
+			{
+				gunnerAction = "passenger_bench_1";
+				gunnerCompartments = "Compartment2";
+				memoryPointsGetInGunner = "pos cargo";
+				memoryPointsGetInGunnerDir = "pos cargo dir";
+				gunnerName = "FFV";
+				proxyIndex = 15;
+				maxElev = 15;
+				minElev = -62;
+				maxTurn = 50;
+				minTurn = -55; //;-75
+				isPersonTurret = 1;
+				ejectDeadGunner = 0;
+				enabledByAnimationSource = "";
+				usepip = 0;
+				gunnerInAction = "passenger_apc_narrow_generic02";
+				startEngine = 0;
+				commanding = -1;
+				outGunnerMayFire = 1;
+				inGunnerMayFire = 1;
+				animationSourceHatch = "";
+			};			
+		};
+		selectionDamage = "zbytek";
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {"x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_amt.rvmat",
+			         "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_amt_damage.rvmat",
+					 "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_amt_destruct.rvmat",
+                     "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_mtv.rvmat",
+			         "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_mtv_damage.rvmat",
+					 "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_body_mtv_destruct.rvmat",
+                     "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_det_g.rvmat",
+			         "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_det_g_damage.rvmat",
+					 "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_det_g_destruct.rvmat",
+                     "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_glass.rvmat",
+			         "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_glass_damage.rvmat",
+					 "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_glass_destruct.rvmat",
+                     "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_inter.rvmat",
+			         "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_inter_damage.rvmat",
+					 "x\addons\a2_epoch_vehicles\air\Mi17\data\mi8_inter_destruct.rvmat"
+					 					 
+					 };
+		};
+	        class RenderTargets
+	        {
+	        	class SlingLoadCam
+	        	{
+	        		renderTarget = "rendertarget0";
+	        		class CameraView1
+	        		{
+	        			pointPosition = "slingCamera";
+	        			pointDirection = "slingLoad_cam_dir";
+	        			renderQuality = 2;
+	        			renderVisionMode = 0;
+	        			fov = 0.7;
+	        		};
+	        		BBoxes[] = {"PIP_0_TL", "PIP_0_TR", "PIP_0_BL", "PIP_0_BR"};
+	        	};
+	        };
+	        class MFD{};		
+		class AnimationSources{};
+		class UserActions{};
+		class Reflectors: Reflectors
+		{
+			class Right
+			{
+				color[] = {7000,7500,10000};
+				ambient[] = {70,75,100};
+				intensity = 50;
+				size = 1;
+				innerAngle = 15;
+				outerAngle = 65;
+				coneFadeCoef = 10;
+				position = "L svetlo";
+				direction = "konec L svetla";
+				hitpoint = "L svetlo";
+				selection = "L svetlo";
+				useFlare = 1;
+				flareSize = 10;
+				flareMaxDistance = 250;
+				dayLight = 0;
+				class Attenuation
+				{
+					start = 0;
+					constant = 0;
+					linear = 1;
+					quadratic = 1;
+					hardLimitStart = 100;
+					hardLimitEnd = 200;
+				};
+			};
+		};
+		aggregateReflectors[] = {{"Left"}};
+	};
+	class a2_mi8_EPOCH: a2_mi8_epoch_base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Mi17 Unarmed";
+		author = "BIS/Helion4";
+		side = 3;
+		faction = "CIV_F";
+		crew = "";
+		accuracy = 1.5;
+		weapons[] = {};
+		magazines[] = {};
+		hiddenSelectionsTextures[] = {"x\addons\a2_epoch_vehicles\air\mi17\data\mi8civil_body_g_co.paa"};
+	};
+
+	class B_Heli_Light_01_armed_F;
+	class B_Heli_Light_01_armed_EPOCH : B_Heli_Light_01_armed_F
+	{
+		displayName = "AH-9 Pawnee";
+		scope = 2;
+		side = 3;
+		weapons[] = {"M134_minigun_EPOCH"};
+		magazines[] = {"1000Rnd_762x51_Belt"};
+	};
+	class C_Heli_Light_01_armed_base_EPOCH : B_Heli_Light_01_armed_F
+	{
+		scope = 0;
+		class eventhandlers;
+	};	
+	class C_Heli_Light_01_armed_EPOCH : C_Heli_Light_01_armed_base_EPOCH
+	{
+		displayName = "M-900 armed";
+		scope = 2;
+		side = 3;
+		weapons[] = {"HMG_M2_65_EPOCH"};
+		magazines[] = {"200Rnd_65x39_Belt", "200Rnd_65x39_Belt"};
+		bodyFrictionCoef = 0.3;				// 0.3
+		cyclicAsideForceCoef = 0.6;			// 1.3
+		cyclicForwardForceCoef = 0.7;		// 1
+		class TextureSources
+		{
+			class Blue
+			{
+				displayName = "Blue";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Red
+			{
+				displayName = "Red";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Ion
+			{
+				displayName = "Ion";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class BlueLine
+			{
+				displayName = "BlueLine";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blueLine_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Digital
+			{
+				displayName = "Digital";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Elliptical
+			{
+				displayName = "Elliptical";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_elliptical_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Furious
+			{
+				displayName = "Furious";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_furious_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Graywatcher
+			{
+				displayName = "Graywatcher";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_graywatcher_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Jeans
+			{
+				displayName = "Jeans";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_jeans_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Light
+			{
+				displayName = "Light";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_light_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Shadow
+			{
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_shadow_co.paa"};
+				factions[] = {"CIV_F", "IND_C_F"};
+				displayName = "Shadow";
+				author = "Bohemia Interactive";
+			};
+			class Sheriff
+			{
+				displayName = "Sheriff";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Speedy
+			{
+				displayName = "Speedy";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_speedy_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Sunset
+			{
+				displayName = "Sunset";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sunset_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Vrana
+			{
+				displayName = "Vrana";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Wasp
+			{
+				displayName = "Wasp";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wasp_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+			class Wave
+			{
+				displayName = "Wave";
+				author = "Bohemia Interactive";
+				textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa"};
+				factions[] = {"CIV_F"};
+			};
+		};
+		textureList[] = {"Red", 1, "Blue", 1, "Ion", 1, "BlueLine", 1, "Digital", 1, "Elliptical", 1, "Furious", 1, "Graywatcher", 1, "Jeans", 1, "Light", 1, "Shadow", 1, "Sheriff", 1, "Speedy", 1, "Sunset", 1, "Vrana", 1, "Wasp", 1, "Wave", 1};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
+	};
+	class C_Heli_Light_01_armed_plus_EPOCH : C_Heli_Light_01_armed_EPOCH
+	{
+		displayName = "M-900 armed+";
+		weapons[] = {"HMG_M2_762_EPOCH"};
+		magazines[] = {"200Rnd_762x51_Belt", "200Rnd_762x51_Belt"};
 	};
     class C_Rubberboat;
     class C_Rubberboat_EPOCH : C_Rubberboat
@@ -9597,6 +14526,7 @@ class CfgVehicles
         cost = 1000;
         interactMode = 1;
     };
+	class Buildable_Storage_SIM : Constructions_modular_F {};
     class Spike_TRAP_SIM_EPOCH : Constructions_modular_F
     {
         author = "AWOL";
@@ -9999,6 +14929,22 @@ class CfgVehicles
         displayName = "$STR_EPOCH_LargeWall";
         slingLoadCargoMemoryPoints[] = {"N","S","E","W"};
     };
+    class JailWall_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_wall_01.p3d";
+        displayName = "$STR_EPOCH_JailWall";
+    };
+/*
+    class JailWallDoor_SIM_EPOCH : Constructions_modular_F
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_walls_door.p3d";
+        displayName = "$STR_EPOCH_JailWallDoor";
+    };
+*/
     class WoodWall1_SIM_EPOCH : Constructions_modular_F
     {
         author = "SteamPunkGears";
@@ -10050,6 +14996,7 @@ class CfgVehicles
                 source = "user";
                 animPeriod = 2;
                 initPhase = 0;
+				sound = "GenericDoorsSound";
             };
         };
         class UserActions
@@ -10303,21 +15250,21 @@ class CfgVehicles
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_assets\textures\plyplank_eco.paa"};
     };
-    class Tipi_SIM_EPOCH : Constructions_modular_F
+    class Tipi_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\tp.p3d";
         displayName = "$STR_EPOCH_TipiSim";
     };
-	class TentA_SIM_EPOCH : Constructions_modular_F
+	class TentA_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Sequisha";
         scope = 2;
         model = "\A3\Structures_f\Civ\Camping\TentA_F.p3d";
         displayName = "$STR_EPOCH_TentA";
     };
-	class TentDome_SIM_EPOCH : Constructions_modular_F
+	class TentDome_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Sequisha";
         scope = 2;
@@ -10333,14 +15280,14 @@ class CfgVehicles
         simulClass = "Shelf_SIM_EPOCH";
         staticClass = "Shelf_EPOCH";
     };
-    class StorageShelf_SIM_EPOCH : Constructions_modular_F
+    class StorageShelf_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets\models\shelf.p3d";
         displayName = "$STR_EPOCH_MetalShelfSim";
     };
-    class WorkBench_SIM_EPOCH : Constructions_modular_F
+    class WorkBench_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Sequisha";
         scope = 2;
@@ -10899,7 +15846,17 @@ class CfgVehicles
         scope = 2;
         displayName = "$STR_EPOCH_FrequencyJammer";
         placement = "vertical";
-        model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm.p3d";
+    };
+    class PlotPole_L_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_L";
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Mid.p3d";
+    };
+    class PlotPole_XL_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_XL";
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_lg.p3d";
     };
     class Const_floors_static_F : Constructions_static_F
     {
@@ -10972,7 +15929,7 @@ class CfgVehicles
         author = "Sequisha";
         scope = 2;
         model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
-        displayName = "$STR_EPOCH_Lockbox";
+        displayName = "$STR_EPOCH_Safe";
         armor = 15000;
         maximumLoad = 3600;
     };
@@ -11514,6 +16471,73 @@ class CfgVehicles
             mat[] = {"x\addons\a3_epoch_assets\textures\plyplank.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
         };
     };
+    class JailWall_EPOCH : Const_WoodWalls_static_F
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_wall_01.p3d";
+        displayName = "$STR_EPOCH_JailWall";
+    };
+    class JailWallDoor_EPOCH : Const_WoodWalls_static_F
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_walls_door.p3d";
+        displayName = "$STR_EPOCH_JailWallDoor";
+		armor=10000;
+		class AnimationSources
+		{
+			class open_door
+			{
+				source = "user";
+				animPeriod = 2;
+				initPhase = 0;
+				sound = "MetalDoorsSound";
+			};
+			class lock
+			{
+				source = "user";
+				animPeriod = 2;
+				initPhase = 1;
+				sound="ServoDoorsSound";
+			};			
+        };
+        class UserActions
+		{
+			class Open
+			{
+				displayName = "$STR_EPOCH_Open";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				position="door";
+				radius=3;
+				OnlyForPlayer=1;
+				condition="this animationPhase ""open_door"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+				statement="this animate [""open_door"", 1];";
+			};
+			class Close: Open
+			{
+				displayName = "$STR_EPOCH_Close";
+				condition="this animationPhase ""open_door"" >= 0.5";
+				statement="this animate [""open_door"", 0];";
+			};
+			class Unlock
+			{
+				displayName = "$STR_EPOCH_Unlock";
+				displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
+				position="door";
+				radius=3;
+				OnlyForPlayer=1;
+				condition="!(call EPOCH_lockCheck) && this animationPhase ""open_door"" < 0.5 && this animationPhase ""lock"" >= 0.5";
+				statement="this animate [""lock"", 0];";
+			};
+			class Lock: Unlock
+			{
+				displayName = "$STR_EPOCH_Lock";
+				condition="!(call EPOCH_lockCheck) && this animationPhase ""open_door"" < 0.5 && this animationPhase ""lock"" < 0.5";
+				statement="this animate [""lock"", 1];";
+			};
+		};
+    };
     class WoodWallWindow_EPOCH : Const_WoodWalls_static_F
     {
         author = "Helion4\Sequisha";
@@ -11529,7 +16553,7 @@ class CfgVehicles
             mat[] = {"x\addons\a3_epoch_assets\textures\plyplank.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat","x\addons\a3_epoch_assets\textures\PlyPlank_destruct50.rvmat"};
         };
     };
-    class Tipi_Ghost_EPOCH : Const_Ghost_EPOCH
+    class Tipi_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Sequisha";
         scope = 2;
@@ -11537,7 +16561,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_TiPiGhost";
         ladders[] = {};
     };
-	class TentA_Ghost_EPOCH : Const_Ghost_EPOCH
+	class TentA_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "BI";
         scope = 2;
@@ -11545,7 +16569,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_TentA";
         ladders[] = {};
     };
-	class TentDome_Ghost_EPOCH : Const_Ghost_EPOCH
+	class TentDome_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "BI";
         scope = 2;
@@ -11553,7 +16577,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_TentDome";
         ladders[] = {};
     };
-    class StorageShelf_Ghost_EPOCH : Const_Ghost_EPOCH
+    class StorageShelf_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Sequisha";
         scope = 2;
@@ -11561,7 +16585,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_ShelfGhost";
         ladders[] = {};
     };
-    class WorkBench_Ghost_EPOCH : Const_Ghost_EPOCH
+    class WorkBench_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Sequisha";
         scope = 2;
@@ -11579,6 +16603,24 @@ class CfgVehicles
         displayName = "$STR_EPOCH_WoodWallGhost";
         ladders[] = {};
     };
+    class JailWall_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_wall_01.p3d";
+        displayName = "$STR_EPOCH_JailWall";
+        ladders[] = {};
+    };
+/*
+    class JailWallDoor_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "Helion";
+        scope = 2;
+        model = "\x\addons\a3_epoch_community\models\jail_walls\jail_walls_door.p3d";
+        displayName = "$STR_EPOCH_JailWallDoor";
+        ladders[] = {};
+    };
+*/
     class WoodFloor_Ghost_EPOCH : Const_Ghost_EPOCH
     {
         author = "Sequisha";
@@ -11745,6 +16787,7 @@ class CfgVehicles
                 source = "user";
                 animPeriod = 2;
                 initPhase = 0;
+				sound = "GenericDoorsSound";
             };
         };
         class UserActions
@@ -11784,6 +16827,7 @@ class CfgVehicles
                 source = "user";
                 animPeriod = 2;
                 initPhase = 0;
+				sound = "GenericDoorsSound";
             };
         };
         class UserActions
@@ -11820,6 +16864,7 @@ class CfgVehicles
                 source = "user";
                 animPeriod = 2;
                 initPhase = 0;
+				sound = "GenericDoorsSound";
             };
             class lock_Door
             {
@@ -11883,6 +16928,7 @@ class CfgVehicles
                 source = "user";
                 animPeriod = 2;
                 initPhase = 0;
+				sound = "GenericDoorsSound";
             };
             class lock_Door
             {
@@ -13236,6 +18282,51 @@ class CfgVehicles
     {
         model = "\x\addons\a3_epoch_assets\models\tele_central.p3d";
     };
+    class TP_Booth_EPOCH : Transport_EPOCH
+    {
+        author = "Helion";
+        model = "\x\addons\a3_epoch_community\models\tp_booth\tp_booth.p3d";
+        hiddenSelections[] = {"camo1"};
+        mapSize = 2;
+        accuracy = 1000;
+        destrType = "DestructNo";
+        class UserActions
+        {
+            class EnterBuilding
+            {
+                displayNameDefault = "";
+                displayName = "";
+                position = "";
+                priority = 1;
+                radius = 1;
+                onlyForPlayer = 0;
+                condition = "if ((missionnamespace getvariable ['EPOCH_Teleportlock',0]) < diag_ticktime) then {EPOCH_Teleportlock = diag_ticktime+10; this call EPOCH_EnterBuilding}; false";
+                statement = "";
+            };
+        };
+    };
+    class TP_Booth_c_EPOCH: TP_Booth_EPOCH
+    {
+        author = "Helion";
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\tp_booth\tp_booth_c_co.paa"};
+    };
+    class TP_Booth_n_EPOCH: TP_Booth_EPOCH
+    {
+        author = "Helion";
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\tp_booth\tp_booth_n_co.paa"};
+    };
+    class TP_Booth_s_EPOCH: TP_Booth_EPOCH
+    {
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\tp_booth\tp_booth_s_co.paa"};
+    };    
+    class TP_Booth_e_EPOCH: TP_Booth_EPOCH
+    {
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\tp_booth\tp_booth_e_co.paa"};
+    };
+    class TP_Booth_w_EPOCH: TP_Booth_EPOCH
+    {
+        hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\tp_booth\tp_booth_w_co.paa"};
+    }; 
     class BloodSplat : NonStrategic
     {
         author = "$STR_A3_Bohemia_Interactive";
@@ -13564,6 +18655,774 @@ class CfgVehicles
 		model = "\x\addons\a3_epoch_assets_1\models\oil_drum_model.p3d";
 		displayName = "Barrel Bomb(Horizontal)";
 	};
+///props begin
+        class Weapon_Base_F;
+	class Weapon_AKM_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_AKM";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class AKM_EPOCH
+			{
+				weapon = "AKM_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m4a3_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M4a3";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m4a3_EPOCH
+			{
+				weapon = "m4a3_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_M14_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M14";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class M14_EPOCH
+			{
+				weapon = "M14_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_M14Grn_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M14Green";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class M14Grn_EPOCH
+			{
+				weapon = "M14Grn_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m16_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M16";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m16_EPOCH
+			{
+				weapon = "m16_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m16Red_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M16Red";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m16Red_EPOCH
+			{
+				weapon = "m16Red_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m107_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M107";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m107_EPOCH
+			{
+				weapon = "m107_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m107Tan_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M107Tan";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m107Tan_EPOCH
+			{
+				weapon = "m107Tan_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m249_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M249";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_MachineGuns";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m249_EPOCH
+			{
+				weapon = "m249_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_m249Tan_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_M249Tan";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_MachineGuns";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class m249Tan_EPOCH
+			{
+				weapon = "m249Tan_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_ak47s_gold_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "AK47s Gold Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_ak47s_gold_EPOCH
+			{
+				weapon = "a2_ak47s_gold_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_AK107_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "AK107 Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_AK107_EPOCH
+			{
+				weapon = "a2_AK107_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_aks74un_EPOCH: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "ak74un Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_aks74un_EPOCH
+			{
+				weapon = "a2_aks74un_EPOCH";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_bizon_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Bizon Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_bizon_epoch
+			{
+				weapon = "a2_bizon_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_dmr_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "DMR Classic no scope";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_dmr_epoch
+			{
+				weapon = "a2_dmr_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_dmr_epoch_scoped: Weapon_a2_dmr_epoch
+	{
+		displayName = "DMR Classic";
+		class TransportWeapons
+		{};
+	};
+	class Weapon_a2_fnfal_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "FnFal Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_fnfal_epoch
+			{
+				weapon = "a2_fnfal_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_G36_C_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "G36_C Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_G36_C_epoch
+			{
+				weapon = "a2_G36_C_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_Mg36_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "MG36 Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_MachineGuns";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_Mg36_epoch
+			{
+				weapon = "a2_Mg36_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_leeenfield_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "LeeEnfield Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_leeenfield_epoch
+			{
+				weapon = "a2_leeenfield_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_m110_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "m110 Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_m110_epoch
+			{
+				weapon = "a2_m110_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_mk16_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "mk16 Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_mk16_epoch
+			{
+				weapon = "a2_mk16_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_mk17_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "mk17 Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_mk17_epoch
+			{
+				weapon = "a2_mk17_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_svd_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "svd Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_svd_epoch
+			{
+				weapon = "a2_svd_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_a2_VSS_vintorez_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "vintorez Classic";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_SniperRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class a2_VSS_vintorez_epoch
+			{
+				weapon = "a2_VSS_vintorez_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_Rollins_F: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_RollinsRifle";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class Rollins_F
+			{
+				weapon = "Rollins_F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_ChainSaw: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Chainsaw";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class ChainSaw
+			{
+				weapon = "ChainSaw";
+				count = 1;
+			};
+		};
+		class TransportMagazines{};
+	};
+	class Weapon_ruger_pistol_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Ruger";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_Pistols";
+		vehicleClass = "WeaponsHandguns";
+		class TransportWeapons
+		{
+			class ruger_pistol_epoch
+			{
+				weapon = "ruger_pistol_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_1911_pistol_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_1911";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_Pistols";
+		vehicleClass = "WeaponsHandguns";
+		class TransportWeapons
+		{
+			class 1911_pistol_epoch
+			{
+				weapon = "1911_pistol_epoch";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_Hatchet_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Hatchet";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_Pistols";
+		vehicleClass = "WeaponsHandguns";
+		class TransportWeapons
+		{
+			class Hatchet
+			{
+				weapon = "Hatchet";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_CrudeHatchet_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_CrudeHatchet";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_Pistols";
+		vehicleClass = "WeaponsHandguns";
+		class TransportWeapons
+		{
+			class CrudeHatchet
+			{
+				weapon = "CrudeHatchet";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_MultiGun_epoch: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_MultiGun";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_Pistols";
+		vehicleClass = "WeaponsHandguns";
+		class TransportWeapons
+		{
+			class MultiGun
+			{
+				weapon = "MultiGun";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_MeleeSledge: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Sledge";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class MeleeSledge
+			{
+				weapon = "MeleeSledge";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_MeleeSword: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Kruhm";
+		author = "Helion4 & Axle";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class MeleeSword
+			{
+				weapon = "MeleeSword";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_MeleeMaul: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Maul";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class MeleeMaul
+			{
+				weapon = "MeleeMaul";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_WoodClub: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_WoodClub";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class WoodClub
+			{
+				weapon = "WoodClub";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_MeleeRod: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_FishingRod";
+		author = "Helion4 & Axle";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class MeleeRod
+			{
+				weapon = "MeleeRod";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_Plunger: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_EPOCH_Plunger";
+		author = "Helion4 & Sequisha";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class Plunger
+			{
+				weapon = "Plunger";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+	class Weapon_Power_Sword: Weapon_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Power Sword";
+		author = "Helion4";
+		editorCategory = "EdCat_Weapons";
+		editorSubcategory = "EdSubcat_AssaultRifles";
+		vehicleClass = "WeaponsPrimary";
+		class TransportWeapons
+		{
+			class Power_Sword
+			{
+				weapon = "Power_Sword";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{};
+	};
+///props end
 	class CinderFloor_SIM_EPOCH: Constructions_modular_F
 	{
 		author = "Helion4/DirtySanchez";
@@ -13975,7 +19834,7 @@ class CfgVehicles
 				onlyforplayer = 1;
 				position = "NWall_trigger";
 				radius = 2.5;
-				condition = "true"; //"(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" < 0.5)";
+				condition = "(EPOCH_buildMode > 0) && !(call EPOCH_lockCheck) && (this animationPhase ""NWall"" < 0.5)";
 				statement = "[this,""NWall"",1] call EPOCH_changeWallState";
 			};
 			class remove_nwall: add_nwall
@@ -14091,7 +19950,7 @@ class CfgVehicles
 		destrType="IG Logo small";
 		armor=20;
 	};
-	class IG_Box_s_SIM: Constructions_modular_F
+	class IG_Box_s_SIM: Buildable_Storage_SIM
 	{
 		author="Helion / Timst";
 		scope=2;
@@ -14106,7 +19965,7 @@ class CfgVehicles
 		displayName="IG Box small";
 		maximumLoad=900;
 	};
-	class IG_Box_l_SIM: Constructions_modular_F
+	class IG_Box_l_SIM: Buildable_Storage_SIM
 	{
 		author="Helion / Timst";
 		scope=2;
@@ -14730,14 +20589,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\x\addons\a3_epoch_community\textures\keesha\tops\Torso_BlackSkulls.paa","\x\addons\a3_epoch_community\textures\keesha\pants\Pants_AridBrown.paa","\x\addons\a3_epoch_assets\textures\kBust_ECO.paa"};
 		uniformClass = "U_JeansBlack21_uniform";
     };
-	class Garden_SIM_EPOCH : Constructions_modular_F
+	class Garden_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Helion4/DirtySanchez";
         scope = 2;
         model = "\x\addons\a3_epoch_community\models\Farming\epoch_Garden.p3d";
         displayName = "$STR_EPOCH_Garden";
     };
-    class Garden_Ghost_EPOCH : Const_Ghost_EPOCH
+    class Garden_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Helion4/DirtySanchez";
         scope = 2;
@@ -14753,7 +20612,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Garden";
         maximumLoad = 400;
     };
-    class SolarCharger_SIM_EPOCH : Constructions_modular_F
+    class SolarCharger_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "SteamPunkGears/Helion4";
         scope = 2;
@@ -14761,7 +20620,7 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_community\models\Solar_generator_charger.p3d";
         displayName = "$STR_EPOCH_SolarCharger";
     };
-    class SolarCharger_Ghost_EPOCH : Const_Ghost_EPOCH
+    class SolarCharger_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "SteamPunkGears/Helion4";
         scope = 2;
@@ -14778,7 +20637,7 @@ class CfgVehicles
         displayName = "$STR_EPOCH_SolarCharger";
         maximumLoad = 12;
     };
-    class SolarChargerXL_SIM_EPOCH : Constructions_modular_F
+    class SolarChargerXL_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "SteamPunkGears/Helion4";
         scope = 2;
@@ -14786,7 +20645,7 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_community\models\Solar_generator_charger.p3d";
         displayName = "$STR_EPOCH_SolarChargerXL";
     };
-    class SolarChargerXL_Ghost_EPOCH : Const_Ghost_EPOCH
+    class SolarChargerXL_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "SteamPunkGears/Helion4";
         scope = 2;
@@ -15200,14 +21059,14 @@ class CfgVehicles
 			};
 		};
 	};
-    class FieldToilet_SIM_EPOCH : Constructions_modular_F
+    class FieldToilet_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Grahame";
         scope = 2;
 		model = "\A3\Structures_F\Civ\Camping\FieldToilet_F.p3d";
         displayName = "$STR_EPOCH_FieldToilet";
     };
-    class FieldToilet_Ghost_EPOCH : Const_Ghost_EPOCH
+    class FieldToilet_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Grahame";
         scope = 2;
@@ -15980,14 +21839,14 @@ class CfgVehicles
 		vehicleClass = "Epoch_objects";
 		destrType = "DestructNo";
     };	
-    class WorkbenchLarge_SIM_EPOCH : Constructions_modular_F
+    class WorkbenchLarge_SIM_EPOCH : Buildable_Storage_SIM
     {
         author = "Grahame";
         scope = 2;
 		model = "\A3\Structures_F_Heli\Furniture\Workbench_01_F.p3d";
         displayName = "Large Workbench";
     };
-    class WorkbenchLarge_Ghost_EPOCH : Const_Ghost_EPOCH
+    class WorkbenchLarge_Ghost_EPOCH : Buildable_Storage_Ghost
     {
         author = "Grahame";
         scope = 2;
@@ -16088,7 +21947,7 @@ class CfgVehicles
 	{
 		author="Helion";
 		scope=2;
-		model="\x\addons\a3_epoch_community\models\base_cam_terminal_ghost.p3d";		// To be changed to Ghost Model!!!
+		model="\x\addons\a3_epoch_community\models\base_cam_terminal_ghost.p3d";
 		displayName="Base Cam Terminal";
 	};
 	class WoodStairs3_EPOCH: Const_floors_static_F
@@ -16100,41 +21959,60 @@ class CfgVehicles
 		armor=10000;
 		class AnimationSources
 		{
-			class unlock
+			class open_bars1
 			{
 				source = "user";
 				animPeriod = 3;
 				initPhase = 0;
+				sound = "RoadGateDoors";
 			};
-			class unlock2
+			class open_bars2
 			{
 				source = "user";
 				animPeriod = 3;
 				initPhase = 0;
 			};			
-			class bar_hide
+			class lock
 			{
 				source = "user";
-				animPeriod = 6;
+				animPeriod = 2;
 				initPhase = 1;
+				sound="ServoDoorsSound";
 			};			
         };
         class UserActions
 		{
+			class Open
+			{
+				displayName = "$STR_EPOCH_Open";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				position="bars";
+				radius=4;
+				OnlyForPlayer=1;
+				condition="this animationPhase ""open_bars1"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+				statement="this animate [""open_bars1"", 1];this animate [""open_bars2"", 1,1.2];";
+			};
+			class Close: Open
+			{
+				displayName = "$STR_EPOCH_Close";
+				condition="this animationPhase ""open_bars1"" >= 0.5";
+				statement="this animate [""open_bars1"", 0];this animate [""open_bars2"", 0,0.8];";
+			};
 			class Unlock
 			{
-				displayName = "Unlock";
-				position = "bars";
-				radius = 4;
-				OnlyForPlayer = 1;
-				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" < 0.5";
-				statement = "this animate [""Unlock"", 1];this animate [""unlock2"", 1,1.2];this animate [""bar_hide"", 1,0.2];";
+				displayName = "$STR_EPOCH_Unlock";
+				displayNameDefault = "<img image='\A3\modules_f\data\iconlock_ca.paa' size='2.5' />";
+				position="bars";
+				radius=4;
+				OnlyForPlayer=1;
+				condition="!(call EPOCH_lockCheck) && this animationPhase ""open_bars1"" < 0.5 && this animationPhase ""lock"" >= 0.5";
+				statement="this animate [""lock"", 0];";
 			};
 			class Lock: Unlock
 			{
-				displayName = "Lock";
-				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" >= 0.5";
-				statement = "this animate [""Unlock"", 0];this animate [""unlock2"", 0,0.8];this animate [""bar_hide"", 0,0.8];";
+				displayName = "$STR_EPOCH_Lock";
+				condition="!(call EPOCH_lockCheck) && this animationPhase ""open_bars1"" < 0.5 && this animationPhase ""lock"" < 0.5";
+				statement="this animate [""lock"", 1];";
 			};
 		};
 	};
@@ -16146,43 +22024,27 @@ class CfgVehicles
 		displayName="Wood Stairs lvl 3";
 		class AnimationSources
 		{
-			class unlock
+			class open_bars1
 			{
 				source = "user";
 				animPeriod = 3;
 				initPhase = 0;
+				sound = "RoadGateDoors";
 			};
-			class unlock2
+			class open_bars2
 			{
 				source = "user";
 				animPeriod = 3;
 				initPhase = 0;
 			};			
-			class bar_hide
+			class lock
 			{
 				source = "user";
-				animPeriod = 6;
+				animPeriod = 2;
 				initPhase = 1;
+				sound="ServoDoorsSound";
 			};			
         };
-        class UserActions
-		{
-			class Unlock
-			{
-				displayName = "Unlock";
-				position = "bars";
-				radius = 4;
-				OnlyForPlayer = 1;
-				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" < 0.5";
-				statement = "this animate [""Unlock"", 1];this animate [""unlock2"", 1,1.2];this animate [""bar_hide"", 1,0.2];";
-			};
-			class Lock: Unlock
-			{
-				displayName = "Lock";
-				condition = "!(call EPOCH_lockCheck) && this animationPhase ""Unlock"" >= 0.5";
-				statement = "this animate [""Unlock"", 0];this animate [""unlock2"", 0,0.8];this animate [""bar_hide"", 0,0.8];";
-			};
-		};
 	};	
 };
 

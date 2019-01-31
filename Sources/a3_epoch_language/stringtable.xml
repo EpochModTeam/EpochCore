@@ -1207,6 +1207,12 @@
         <Key ID="STR_EPOCH_FrequencyJammer">
             <Original>Frequency Jammer</Original>
         </Key>
+        <Key ID="STR_EPOCH_FrequencyJammer_L">
+            <Original>Large Frequency Jammer</Original>
+        </Key>
+        <Key ID="STR_EPOCH_FrequencyJammer_XL">
+            <Original>Extra Large Frequency Jammer</Original>
+        </Key>
         <Key ID="STR_EPOCH_CinderWall">
             <Original>Cinder Wall</Original>
         </Key>
@@ -1563,6 +1569,12 @@
         </Key>
         <Key ID="STR_EPOCH_LargeWall">
             <Original>Large Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_JailWall">
+            <Original>Jail Wall</Original>
+        </Key>
+        <Key ID="STR_EPOCH_JailWallDoor">
+            <Original>Jail Wall with Door</Original>
         </Key>
         <Key ID="STR_EPOCH_PlywoodWallSIM">
             <Original>Plywood Wall (SIM)</Original>

@@ -32,3 +32,4 @@ class RscTitles
 #include "Epoch_GroupInvite.hpp"
 #include "SKN_AdminMenu.hpp"
 #include "Epoch_Camera.hpp"
+#include "EPOCH_EPad.hpp"

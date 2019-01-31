@@ -22,6 +22,7 @@ class CfgMovesBasic
         GestureSwing1 = "";
         GestureSwing2 = "";
         GestureFinger = "";
+        Gesturesuicide = "";		
         SledgeSwing = "";
         Driver_Jetski = "Driver_Jetski";
         Driver_Ebike = "Driver_Ebike";
@@ -50,6 +51,7 @@ class CfgMovesBasic
             GestureReloadL85A2[] = {"GestureReloadL85A2","Gesture"};
             GestureReloadL85A2UGL[] = {"GestureReloadL85A2UGL","Gesture"};
             GestureReloadL85A2RIS[] = {"GestureReloadL85A2RIS","Gesture"};
+			Gesturesuicide[] = {"Gesturesuicide","Gesture"};
         };
         class RifleBaseStandActions;
         class RifleProneActions : RifleBaseStandActions

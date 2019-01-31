@@ -2398,6 +2398,115 @@ class CfgWeapons
     {
         model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
     };
+	class HMG_M2;
+	class HMG_M2_EPOCH_base: HMG_M2
+	{
+		class manual;		
+	};
+	class E_uh1h_mg_762_01: HMG_M2_EPOCH_base
+	{
+		magazines[] = {
+			"200Rnd_762x51_Belt", "200Rnd_762x51_Belt_T_Red", "200Rnd_762x51_Belt_T_Green", "200Rnd_762x51_Belt_T_Yellow",
+			"1000Rnd_762x51_Belt", "1000Rnd_762x51_Belt_T_Red", "1000Rnd_762x51_Belt_T_Green", "1000Rnd_762x51_Belt_T_Yellow",
+			"2000Rnd_762x51_Belt", "2000Rnd_762x51_Belt_T_Red", "2000Rnd_762x51_Belt_T_Green", "2000Rnd_762x51_Belt_T_Yellow"
+		};
+		displayName = "Minigun 7.62 mm";
+		magazineReloadTime = 7;
+		class manual: manual
+		{
+			reloadTime = 0.08;
+		};
+	    class GunParticles
+		{
+			class effect1
+			{
+				positionName = "mg1_usti_hlavne";
+				directionName = "mg1_konec_hlavne";
+				effectName = "MachineGunCloud";
+			};
+			class effect2
+			{
+				positionName = "mg1_nabojnicestart";
+				directionName = "mg1_nabojniceend";
+				effectName = "MachineGunEject";
+			};
+			class effect3: effect2
+			{
+				effectName = "MachineGunCartridge";
+			};
+		};
+	};
+	class E_uh1h_mg_762_02: E_uh1h_mg_762_01
+	{
+		class GunParticles: GunParticles
+		{
+			class effect1: effect1
+			{
+				positionName = "mg2_usti_hlavne";
+				directionName = "mg2_konec_hlavne";
+			};
+			class effect2: effect2
+			{
+				positionName = "mg2_nabojnicestart";
+				directionName = "mg2_nabojniceend";
+			};
+			class effect3: effect2
+			{
+				effectName = "MachineGunCartridge1";
+			};
+		};
+		
+	};
+	class E_uh1h_mg_665_01: E_uh1h_mg_762_01
+	{
+		magazines[] = {
+			"200Rnd_65x39_Belt", 	"200Rnd_65x39_Belt_Tracer_Red", 		"200Rnd_65x39_Belt_Tracer_Green", 			"200Rnd_65x39_Belt_Tracer_Yellow",
+			"1000Rnd_65x39_Belt", 	"1000Rnd_65x39_Belt_Tracer_Red",		"1000Rnd_65x39_Belt_Tracer_Green", 			"1000Rnd_65x39_Belt_Tracer_Yellow",  		
+			"2000Rnd_65x39_Belt", 	"2000Rnd_65x39_Belt_Tracer_Red", 		"2000Rnd_65x39_Belt_Tracer_Green", 			"2000Rnd_65x39_Belt_Tracer_Yellow"
+		};
+		displayName = "Minigun 6.5 mm";
+	};
+	class E_uh1h_mg_665_02: E_uh1h_mg_762_02
+	{
+		magazines[] = {
+			"200Rnd_65x39_Belt", 	"200Rnd_65x39_Belt_Tracer_Red", 		"200Rnd_65x39_Belt_Tracer_Green", 			"200Rnd_65x39_Belt_Tracer_Yellow",
+			"1000Rnd_65x39_Belt", 	"1000Rnd_65x39_Belt_Tracer_Red",		"1000Rnd_65x39_Belt_Tracer_Green", 			"1000Rnd_65x39_Belt_Tracer_Yellow",  		
+			"2000Rnd_65x39_Belt", 	"2000Rnd_65x39_Belt_Tracer_Red", 		"2000Rnd_65x39_Belt_Tracer_Green", 			"2000Rnd_65x39_Belt_Tracer_Yellow"
+		};
+		displayName = "Minigun 6.5 mm";
+	};
+	class HMG_M2_762_EPOCH : HMG_M2_EPOCH_base
+	{
+		displayName = "Minigun 7.62 mm";
+		magazines[] = {
+			"200Rnd_762x51_Belt", "200Rnd_762x51_Belt_T_Red", "200Rnd_762x51_Belt_T_Green", "200Rnd_762x51_Belt_T_Yellow",
+			"1000Rnd_762x51_Belt", "1000Rnd_762x51_Belt_T_Red", "1000Rnd_762x51_Belt_T_Green", "1000Rnd_762x51_Belt_T_Yellow",
+			"2000Rnd_762x51_Belt", "2000Rnd_762x51_Belt_T_Red", "2000Rnd_762x51_Belt_T_Green", "2000Rnd_762x51_Belt_T_Yellow"
+		};
+		class manual: manual
+		{
+			reloadTime = 0.04;
+		};
+	};
+	class HMG_M2_65_EPOCH : HMG_M2_762_EPOCH
+	{
+		displayName = "Minigun 6.5 mm";
+		magazines[] = {
+			"200Rnd_65x39_Belt", 	"200Rnd_65x39_Belt_Tracer_Red", 		"200Rnd_65x39_Belt_Tracer_Green", 			"200Rnd_65x39_Belt_Tracer_Yellow",
+			"1000Rnd_65x39_Belt", 	"1000Rnd_65x39_Belt_Tracer_Red",		"1000Rnd_65x39_Belt_Tracer_Green", 			"1000Rnd_65x39_Belt_Tracer_Yellow",  		
+			"2000Rnd_65x39_Belt", 	"2000Rnd_65x39_Belt_Tracer_Red", 		"2000Rnd_65x39_Belt_Tracer_Green", 			"2000Rnd_65x39_Belt_Tracer_Yellow"
+		};
+	};
+	class M134_minigun;
+	class M134_minigun_EPOCH : M134_minigun
+	{
+		magazines[] = {
+			"200Rnd_762x51_Belt", "200Rnd_762x51_Belt_T_Red", "200Rnd_762x51_Belt_T_Green", "200Rnd_762x51_Belt_T_Yellow",
+			"1000Rnd_762x51_Belt", "1000Rnd_762x51_Belt_T_Red", "1000Rnd_762x51_Belt_T_Green", "1000Rnd_762x51_Belt_T_Yellow",
+			"2000Rnd_762x51_Belt", "2000Rnd_762x51_Belt_T_Red", "2000Rnd_762x51_Belt_T_Green", "2000Rnd_762x51_Belt_T_Yellow",
+			"5000Rnd_762x51_Belt", "5000Rnd_762x51_Yellow_Belt"
+		};
+	};
     class Rifle;
     class Rifle_Base_F : Rifle
     {
@@ -3532,6 +3641,1724 @@ class CfgWeapons
             mass = 140;
         };
     };
+////////////////a2 h4 weps start
+class SlotInfo;
+class MuzzleSlot;
+class CowsSlot;
+class PointerSlot;
+class UnderBarrelSlot;
+	class a2_ak47s_gold_EPOCH_Base: AKM_EPOCH_Base //Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "AK47s Gold Classic";
+		magazines[] = {"30Rnd_762x39_Mag_F"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\ak.rtm"};
+		dexterity = 1.6;
+		aimTransitionSpeed = 1.2;
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0025;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		initSpeed = -1;
+		weaponInfoType = "RscWeaponZeroing";
+		caseless[] = {"",1,1,1};
+		//selectionFireAnim = "muzzleFlash";
+		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\dry",0.56234133,1,10};
+		reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK47\AK47_reload",1,1,10};
+		maxZeroing = 800;
+		discreteDistance[] = {100,200,300,400,500,600,700,800};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 50;
+		distanceZoomMax = 50;
+		descriptionShort = "AK47s Gold Classic";
+		bullet1[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt1",1,1,15};
+		bullet2[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt2",1,1,15};
+		bullet3[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt3",1,1,15};
+		bullet4[] = {"A3\Sounds_F\weapons\bullets\7_62-dirt4",1,1,15};
+		bullet5[] = {"A3\Sounds_F\weapons\bullets\7_62-hard1",1,1,15};
+		bullet6[] = {"A3\Sounds_F\weapons\bullets\7_62-hard2",1,1,15};
+		bullet7[] = {"A3\Sounds_F\weapons\bullets\7_62-hard3",1,1,15};
+		bullet8[] = {"A3\Sounds_F\weapons\bullets\7_62-hard4",1,1,15};
+		soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083};
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		modes[] = {"Single","FullAuto"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\ak2_start1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\ak2_single1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\ak2_single2","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_single_AKM_Epoch";
+			recoilProne = "recoil_single_prone_AKM_Epoch";
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\ak2_start1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\ak2_single1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\ak2_single2","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_auto_AKM_Epoch";
+			recoilProne = "recoil_auto_prone_AKM_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.9;
+			midRange = 15;
+			midRangeProbab = 0.7;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 1e-006;
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+            class MuzzleSlot{};
+            class CowsSlot{};
+            class PointerSlot{};
+            class UnderBarrelSlot{};
+		};
+	};
+	class a2_ak47s_gold_EPOCH: a2_ak47s_gold_EPOCH_Base
+	{
+		scope = 2;
+		displayName = "AK47s Gold Classic";
+		model = "\x\addons\a2_epoch_weapons_2\AK\a2_ak47s_gold_EPOCH.p3d";
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_ak47s_gold_ca.paa";
+		UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
+	};
+	class a2_AK107_EPOCH_Base: AKM_EPOCH_Base
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		model = "x\addons\a2_epoch_weapons_2\ak\a2_AK107__EPOCH.p3d";
+		dexterity = 2.75;
+		maxRecoilSway = 0.0025;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_ak107pso_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_regular_CA.paa";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		maxZeroing = 800;
+		discreteDistance[] = {100,200,300,400,500,600,700,800};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 50;
+		distanceZoomMax = 50;
+		discretefov[] = {0.2, 0.1};
+		discreteInitIndex = 0;
+		descriptionShort = "AK107 Classic";
+		modelOptics = "x\addons\a2_epoch_weapons_2\ak\pso_optics_EPOCH";
+		opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
+		opticsFlare = 1;
+		opticsDisablePeripherialVision = 1;
+		//selectionFireAnim = "muzzleFlash";  //added
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+            class MuzzleSlot: MuzzleSlot{};
+            class CowsSlot{};
+            class PointerSlot{};
+            class UnderBarrelSlot{};
+		};
+	};
+	class a2_AK107_EPOCH: a2_AK107_EPOCH_Base
+	{
+		scope = 2;
+		displayName = "AK107 Classic";
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_ak107pso_ca.paa";
+		UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 200;
+		};
+    };	
+	class a2_aks74un_EPOCH_Base: a2_ak47s_gold_EPOCH_Base
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "ak74un Classic";
+		dexterity = 2.75;
+		maxRecoilSway = 0.0025;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_aks74un_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_regular_CA.paa";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		//selectionFireAnim = "muzzleFlash";
+		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\dry",0.56234133,1,10};
+		reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",0.39810717,1,30};
+		maxZeroing = 500;
+		discreteDistance[] = {100,200,300,400,500};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 50;
+		distanceZoomMax = 50;
+		descriptionShort = "ak74un Classic";
+		modes[] = {"Single","FullAuto"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\rifle2-silence-single1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\rifle2-silence-single2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\rifle2-silence-single3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\rifle2-silence-single1","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\rifle2-silence-single2","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\rifle2-silence-single1","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_single_AKM_Epoch";
+			recoilProne = "recoil_single_prone_AKM_Epoch";
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\rifle2-silence-single1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\rifle2-silence-single2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\rifle2-silence-single1","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single1","db2",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\rifle2-silence-single1","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\rifle2-silence-single2","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\rifle2-silence-single1","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_auto_Test_rifle_01";
+			recoilProne = "recoil_auto_prone_Test_rifle_01";
+			minRange = 0;
+			minRangeProbab = 0.9;
+			midRange = 15;
+			midRangeProbab = 0.7;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 1e-006;
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+            class MuzzleSlot{};
+            class CowsSlot{};
+            class PointerSlot{};
+            class UnderBarrelSlot{};
+		};
+	};
+	class a2_aks74un_EPOCH: a2_aks74un_EPOCH_Base
+	{
+		scope = 2;
+		displayName = "ak74un Classic";
+		model = "\x\addons\a2_epoch_weapons_2\ak\a2_aks74un_EPOCH.p3d";
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_aks74un_ca.paa";
+		UiPicture = "\A3\Weapons_F\Data\UI\icon_mg_ca.paa";
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
+    };	
+	class a2_bizon_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "Bizon Classic";
+		model = "\x\addons\a2_epoch_weapons_2\bizon\bizon_epoch.p3d";
+		magazines[] = {"Bizon_64Rnd_9x18"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\Bizon.rtm"};
+		dexterity = 2.75;
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0025;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\W_bizon_CA.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_regular_CA.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		selectionFireAnim = "muzzleFlash";
+		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\dry",0.56234133,1,10};
+		reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",0.39810717,1,30};
+		maxZeroing = 300;
+		discreteDistance[] = {100,200,300};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 50;
+		distanceZoomMax = 50;
+		descriptionShort = "Bizon Classic";
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		modes[] = {"Single","FullAuto"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\Bizon_start1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\Bizon_start1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\Bizon_start1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_single_AKM_Epoch";
+			recoilProne = "recoil_single_prone_AKM_Epoch";
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\Bizon_start1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\Bizon_start1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\Bizon_start1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.07;
+			dispersion = 0.00087;
+			recoil = "recoil_auto_AKM_Epoch";
+			recoilProne = "recoil_auto_prone_AKM_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.9;
+			midRange = 15;
+			midRangeProbab = 0.7;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 1e-006;
+		};
+		class WeaponSlotsInfo
+		{
+            class MuzzleSlot{};
+            class CowsSlot{};
+            class PointerSlot{};
+            class UnderBarrelSlot{};
+		};
+	};
+	class a2_bizon_epoch: a2_bizon_epoch_base
+	{
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 100;
+		};
+	};
+	class a2_dmr_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "DMR Classic no scope";
+		model = "\x\addons\a2_epoch_weapons_2\dmr\dmr_epoch.p3d";
+		magazines[] = {"20Rnd_762x51_DMR"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\M24.rtm"};
+		dexterity = 1.55;
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\dmr_ca";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0125;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		maxZeroing = 1300;
+		discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 300;
+		distanceZoomMax = 1000;
+		descriptionShort = "DMR Classic";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		selectionFireAnim = "muzzleFlash";
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class UnderBarrelSlot: UnderBarrelSlot{};
+            class MuzzleSlot{};
+            class CowsSlot: CowsSlot{};
+            class PointerSlot{};
+		};
+		modes[] = {"Single"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\sniper_single_05","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\sniper_single_05","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\sniper_single_05","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00045;
+			recoil = "recoil_single_M14_Epoch";
+			recoilProne = "recoil_single_prone_M14_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.3;
+			midRange = 400;
+			midRangeProbab = 0.7;
+			maxRange = 800;
+			maxRangeProbab = 0.05;
+			aiRateOfFire = 10;
+			aiRateOfFireDistance = 800;
+		};
+	};
+	class a2_dmr_epoch: a2_dmr_epoch_base
+	{
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 250;
+		};
+	};
+	class a2_dmr_epoch_scoped: a2_dmr_epoch_base
+	{
+		scope = 2;
+		author = "Helion4/BI";
+		displayName = "DMR Classic";
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_dmrscope_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
+		model = "\x\addons\a2_epoch_weapons_2\dmr\dmr_epoch_scoped.p3d";
+		modelOptics = "\x\addons\a2_epoch_weapons_2\DMR\2Dscope_MilDot_10";
+		opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
+		opticsFlare = 1;
+		opticsDisablePeripherialVision = 1;
+		discretefov[] = {0.2, 0.1};
+		discreteInitIndex = 0;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 250;
+			class UnderBarrelSlot{};
+            class MuzzleSlot{};
+            class CowsSlot{};
+            class PointerSlot{};
+		};		
+	};
+	class a2_fnfal_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "FnFal Classic";
+		model = "\x\addons\a2_epoch_weapons_2\FnFal\FnFal_epoch.p3d";
+		magazines[] = {"20Rnd_762x51_FNFAL"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\M24.rtm"};
+		dexterity = 1.55;
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_fnfal_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0125;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		maxZeroing = 800;
+		discreteDistance[] = {100,200,300,400,500,600,700,800};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 300;
+		distanceZoomMax = 300;
+		descriptionShort = "Testing weapon with grenade launcher";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		selectionFireAnim = "muzzleFlash";
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot{};
+			class CowsSlot{};
+			class PointerSlot{};
+			class UnderBarrelSlot{};
+		};
+		modes[] = {"Single"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\FNFAL_single_2","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\FNFAL_single_2","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\FNFAL_single_2","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.066;
+			dispersion = 0.00045;
+			recoil = "recoil_single_M14_Epoch";
+			recoilProne = "recoil_single_prone_M14_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.3;
+			midRange = 400;
+			midRangeProbab = 0.7;
+			maxRange = 800;
+			maxRangeProbab = 0.05;
+			aiRateOfFire = 10;
+			aiRateOfFireDistance = 800;
+		};
+	};
+	class a2_fnfal_epoch: a2_fnfal_epoch_base
+	{
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 200;
+		};
+	};
+	class a2_G36_C_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "G36_C Classic";
+		model = "\x\addons\a2_epoch_weapons_2\g36\G36_C_epoch.p3d";
+		magazines[] = {"30Rnd_556x45_G36","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow","20Rnd_556x45_UW_mag"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\M24.rtm"};
+		dexterity = 1.55;
+		maxZeroing = 600;
+		distanceZoomMin = 400;
+		distanceZoomMax = 120;
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_g36_CA.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0025;
+		swayDecaySpeed = 1.05;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		descriptionShort = "G36 Classic";
+		discreteDistance[] = {100,200,300,400,500,600,700,800};
+		discreteDistanceInitIndex = 1;
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		selectionFireAnim = "muzzleFlash";
+		aiDispersionCoefY = 6;
+		aiDispersionCoefX = 4;
+		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\G36_dry_v1",0.56234133,1,10};
+		reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",0.39810717,1,30};
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				iconPosition[] = {0,0.45};
+				iconScale = 0.2;
+				iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+				iconPinpoint = "Center";
+			};
+			class CowsSlot: CowsSlot
+			{
+				iconPosition[] = {0.5,0.35};
+				iconScale = 0.2;
+			};
+			class PointerSlot: PointerSlot{};
+			class UnderBarrelSlot: UnderBarrelSlot{};
+		};
+		modes[] = {"Single","FullAuto"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_single_m16_Epoch";
+			recoilProne = "recoil_single_prone_m16_Epoch";
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_auto_m16_Epoch";
+			recoilProne = "recoil_auto_prone_m16_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.9;
+			midRange = 15;
+			midRangeProbab = 0.7;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 1e-006;
+		};
+	};
+	class a2_G36_C_epoch: a2_G36_C_epoch_base
+	{
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
+	};
+	class a2_Mg36_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "MG36 Classic";
+		model = "\x\addons\a2_epoch_weapons_2\g36\mG36_epoch.p3d";
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_mg36_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\w_mg36_ca.paa";
+		magazines[] = {"100Rnd_556x45_BetaCMag"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\SAW.rtm"};
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0125;
+		swayDecaySpeed = 1.25;
+		maxZeroing = 800;
+		discreteDistance[] = {100,200,300,400,500,600,700,800};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 300;
+		distanceZoomMax = 300;
+		descriptionShort = "MG36 Classic";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		//selectionFireAnim = "muzzleFlash";  //added
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				iconPosition[] = {0,0.45};
+				iconScale = 0.2;
+				iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+				iconPinpoint = "Center";
+			};
+			class CowsSlot: CowsSlot
+			{
+				iconPosition[] = {0.5,0.35};
+				iconScale = 0.2;
+			};
+			class PointerSlot: PointerSlot
+			{
+				iconPosition[] = {0.2,0.45};
+				iconScale = 0.25;
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				iconPosition[] = {0.2,0.7};
+				iconScale = 0.2;
+			};
+		};
+		modes[] = {"Single","FullAuto"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_single_m16_Epoch";
+			recoilProne = "recoil_single_prone_m16_Epoch";
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\g36_single1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_auto_m16_Epoch";
+			recoilProne = "recoil_auto_prone_m16_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.9;
+			midRange = 15;
+			midRangeProbab = 0.7;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 1e-006;
+		};
+	};
+	class a2_Mg36_epoch: a2_Mg36_epoch_base
+	{
+		selectionFireAnim = "muzzleFlash";  //added
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
+	};
+	class a2_leeenfield_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "LeeEnfield Classic";
+		model = "\x\addons\a2_epoch_weapons_2\leeenfield\leeenfield_epoch.p3d";
+		magazines[] = {"10Rnd_303"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\LeeEnfield.rtm"};
+		dexterity = 1.55;
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_leeenfield_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0125;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		maxZeroing = 900;
+		discreteDistance[] = {100,200,300,400,500,600,700,800,900};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 300;
+		distanceZoomMax = 300;
+		descriptionShort = "LeeEnfield Classic";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		selectionFireAnim = "muzzleFlash";
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+            class MuzzleSlot{};
+            class CowsSlot {};
+            class PointerSlot {};
+            class UnderBarrelSlot {};
+        };
+		modes[] = {"Single"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\Enfield_4","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\Enfield_4","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\Enfield_4","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 1;
+			dispersion = 0.0005;
+			recoil = "recoil_single_M14_Epoch";
+			recoilProne = "recoil_single_prone_M14_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.3;
+			midRange = 400;
+			midRangeProbab = 0.7;
+			maxRange = 800;
+			maxRangeProbab = 0.05;
+			aiRateOfFire = 8;
+			aiRateOfFireDistance = 600;
+		};
+	};
+	class a2_leeenfield_epoch: a2_leeenfield_epoch_base
+	{
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
+	};
+	class a2_m110_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "m110 Classic";
+		model = "\x\addons\a2_epoch_weapons_2\m110\m110_epoch.p3d";
+		magazines[] = {"20Rnd_762x51_DMR"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\LeeEnfield.rtm"};
+		dexterity = 1.55;
+		maxZeroing = 1200;
+		//distanceZoomMin = 400;
+		//distanceZoomMax = 120;
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\m110_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		begin1[] = {"\x\addons\a2_epoch_weapons_2\Sounds\M110_1",1.7782794,1,2000};
+		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\M110_dry",1,1,20};
+		reloadMagazineSound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\M110_reload",1,1,100};
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0125;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		//discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100};
+		//discreteDistanceInitIndex = 1;
+		//opticsZoomMin = 0.375;
+		//opticsZoomMax = 1.1;
+		//opticsZoomInit = 0.75;
+		discretefov[] = {0.2, 0.1};
+		discreteInitIndex = 0;
+		descriptionShort = "Testing weapon with grenade launcher";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		selectionFireAnim = "muzzleFlash";
+		modelOptics = "\x\addons\a2_epoch_weapons_2\DMR\2Dscope_MilDot_10";
+		//opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
+		//opticsFlare = 1;
+		opticsDisablePeripherialVision = 1;
+                class OpticsModes
+                {
+                    class NCTALKEP
+                    {
+                        opticsID = 1;
+                        useModelOptics = 1;
+                        opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
+                        opticsZoomMin = 0.03;
+                        opticsZoomMax = 0.15;
+                        opticsZoomInit = 0.15;
+                        discreteDistance[] = {100,300,400,500,600,700,800,900,1000};
+                        discreteDistanceInitIndex = 1;
+                        distanceZoomMin = 100;
+                        distanceZoomMax = 1000;
+                        memoryPointCamera = "opticView";
+                        visionMode[] = {"Normal","NVG"};
+                        thermalMode[] = {5,6};
+                        opticsFlare = 1;
+                        opticsDisablePeripherialVision = 1;
+                        cameraDir = "";
+                    };
+                    class Iron : NCTALKEP
+                    {
+                        opticsID = 2;
+                        useModelOptics = 0;
+                        opticsFlare = 0;
+                        opticsDisablePeripherialVision = 0;
+                        opticsZoomMin = 0.375;
+                        opticsZoomMax = 1.1;
+                        opticsZoomInit = 0.75;
+                        memoryPointCamera = "eye";
+                        visionMode[] = {};
+                    };
+                };
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot{};
+            class CowsSlot {};
+            class PointerSlot {};
+            class UnderBarrelSlot {};
+        };
+		modes[] = {"Single"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\M110_1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\M110_1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\M110_1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.2;
+			dispersion = 0.00045;
+			recoil = "recoil_single_M14_Epoch";
+			recoilProne = "recoil_single_prone_M14_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.3;
+			midRange = 500;
+			midRangeProbab = 0.7;
+			maxRange = 1000;
+			maxRangeProbab = 0.05;
+			aiRateOfFire = 10;
+			aiRateOfFireDistance = 800;
+		};
+	};
+	class a2_m110_epoch: a2_m110_epoch_base
+	{
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
+	};
+	class a2_mk16_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "mk16 Classic";
+		model = "\x\addons\a2_epoch_weapons_2\scar\mk16_epoch.p3d";
+		magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow","20Rnd_556x45_UW_mag"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\SCAR.rtm"};
+		dexterity = 1.55;
+		maxZeroing = 800;
+		discreteDistance[] = {100,200,300,400,500,600,700,800};
+		discreteDistanceInitIndex = 1;
+		distanceZoomMin = 400;
+		distanceZoomMax = 120;
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_mk16_17_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0125;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		aiDispersionCoefY = 6;
+		aiDispersionCoefX = 4;
+		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\dry",0.56234133,1,10};
+		reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",0.39810717,1,30};
+		selectionFireAnim = "muzzleFlash";
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		descriptionShort = "Testing weapon with grenade launcher";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				iconPosition[] = {0,0.45};
+				iconScale = 0.2;
+				iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+				iconPinpoint = "Center";
+			};
+			class CowsSlot: CowsSlot
+			{
+				iconPosition[] = {0.5,0.35};
+				iconScale = 0.2;
+			};
+			class PointerSlot: PointerSlot
+			{
+				iconPosition[] = {0.2,0.45};
+				iconScale = 0.25;
+			};
+			class UnderBarrelSlot: UnderBarrelSlot{};
+		};
+		modes[] = {"Single","FullAuto"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_start1","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_single1","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_single2","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_single_m16_Epoch";
+			recoilProne = "recoil_single_prone_m16_Epoch";
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_start1","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_single1","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_single2","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_auto_m16_Epoch";
+			recoilProne = "recoil_auto_prone_m16_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.9;
+			midRange = 15;
+			midRangeProbab = 0.7;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 1e-006;
+		};
+	};
+	class a2_mk16_epoch: a2_mk16_epoch_base
+	{
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
+	};
+	class a2_mk17_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "mk17 Classic";
+		model = "\x\addons\a2_epoch_weapons_2\scar\mk17_epoch.p3d";
+		magazines[] = {"20Rnd_762x51_DMR"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\LeeEnfield.rtm"};
+		dexterity = 1.55;
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\mk17_long_leupold_bipod_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0125;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		aiDispersionCoefY = 6;
+		aiDispersionCoefX = 4;
+		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\dry",0.56234133,1,10};
+		reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",0.39810717,1,30};
+		selectionFireAnim = "muzzleFlash";
+		maxZeroing = 900;
+		discreteDistance[] = {100,200,300,400,500,600,700,800,900};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 400;
+		distanceZoomMax = 120;
+		discretefov[] = {0.2, 0.1};
+		discreteInitIndex = 0;
+		descriptionShort = "Scar MK17";
+		modelOptics = "\x\addons\a2_epoch_weapons_2\DMR\2Dscope_MilDot_10";
+		opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
+		opticsFlare = 1;
+		opticsDisablePeripherialVision = 1;
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot{};
+			class CowsSlot{};
+			class PointerSlot{};
+			class UnderBarrelSlot{};
+		};
+		modes[] = {"Single","FullAuto"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_start1","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_single1","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_single2","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_single_m16_Epoch";
+			recoilProne = "recoil_single_prone_m16_Epoch";
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_single_shot_v2","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_start1","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_single1","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\SCAR_SD_single2","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_auto_m16_Epoch";
+			recoilProne = "recoil_auto_prone_m16_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.9;
+			midRange = 15;
+			midRangeProbab = 0.7;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 1e-006;
+		};
+	};
+	class a2_mk17_epoch: a2_mk17_epoch_base
+	{
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 180;
+		};
+	};
+	class a2_svd_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "svd Classic";
+		model = "\x\addons\a2_epoch_weapons_2\svd\svd_epoch.p3d";
+		modelOptics = "a3\weapons_f\acc\reticle_sniper_F";
+		magazines[] = {"10Rnd_762x54_SVD"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\LeeEnfield.rtm"};
+		dexterity = 1.55;
+		opticsDisablePeripherialVision = 1;
+		begin1[] = {"ca\sounds\weapons\rifles\sniper_single_05",1.7782794,1,1200};
+		soundBegin[] = {"begin1",1};
+		initSpeed = -1;
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_svdclas_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		minRange = 0;
+		minRangeProbab = 0.1;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 800;
+		maxRangeProbab = 0.05;
+		autoFire = 0;
+		value = 1000;
+		aiRateOfFire = 9;
+		aiRateOfFireDistance = 1300;
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0125;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		aiDispersionCoefY = 6;
+		aiDispersionCoefX = 4;
+		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\svd_dry_v1",0.56234133,1,10};
+		reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",0.39810717,1,30};
+		selectionFireAnim = "muzzleFlash";
+		maxZeroing = 1500;
+		discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 300;
+		distanceZoomMax = 300;
+		discretefov[] = {0.2, 0.1};
+		discreteInitIndex = 0;
+		descriptionShort = "Testing weapon with grenade launcher";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot{};
+            class CowsSlot {};
+            class PointerSlot {};
+            class UnderBarrelSlot {};
+        };		
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		modes[] = {"Single"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\SVD_1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\SVD_1","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\SVD_1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\silent-05","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\silent-09","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\silent-10","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00045;
+			recoil = "recoil_single_M14_Epoch";
+			recoilProne = "recoil_single_prone_M14_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.3;
+			midRange = 400;
+			midRangeProbab = 0.7;
+			maxRange = 800;
+			maxRangeProbab = 0.05;
+			aiRateOfFire = 10;
+			aiRateOfFireDistance = 800;
+		};
+	};
+	class a2_svd_epoch: a2_svd_epoch_base
+	{
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 200;
+		};
+	};
+	class a2_VSS_vintorez_epoch_base: Rifle_Base_F
+	{
+		scope = 0;
+		author = "Helion4/BI";
+		displayName = "vintorez Classic";
+		model = "\x\addons\a2_epoch_weapons_2\VSS_vintorez\VSS_vintorez_epoch.p3d";
+		picture = "\x\addons\a2_epoch_weapons_2\UI\w_vss_vintorez_ca.paa";
+		UiPicture = "\x\addons\a2_epoch_weapons_2\UI\i_sniper_CA.paa";
+		weaponInfoType = "RscWeaponZeroing";
+		magazines[] = {"10Rnd_9x39_SP5_VSS"};
+		dexterity = 1.7;
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\LeeEnfield.rtm"};
+		reloadAction = "GestureReloadMX";
+		magazineReloadSwitchPhase = 0.4;
+		maxRecoilSway = 0.0125;
+		swayDecaySpeed = 1.25;
+		inertia = 0.5;
+		aiDispersionCoefY = 6;
+		aiDispersionCoefX = 4;
+		drySound[] = {"\x\addons\a2_epoch_weapons_2\Sounds\dry",0.56234133,1,10};
+		reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_MX",0.39810717,1,30};
+		maxZeroing = 800;
+		discreteDistance[] = {100,200,300,400,500,600,700,800};
+		discreteDistanceInitIndex = 1;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		distanceZoomMin = 300;
+		distanceZoomMax = 300;
+		discretefov[] = {0.2, 0.1};
+		discreteInitIndex = 0;
+		descriptionShort = "Testing weapon with grenade launcher";
+		selectionFireAnim = "muzzleFlash";
+		caseless[] = {"",1,1,1};
+		soundBullet[] = {"caseless",1};
+		modelOptics = "\x\addons\a2_epoch_weapons_2\VSS_vintorez\VSS_optics";
+		opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
+		opticsFlare = 1;
+		opticsDisablePeripherialVision = 1;
+		class GunParticles: GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		modes[] = {"Single","FullAuto"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single2","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"A3\sounds_f\weapons\silenced\rifle2-silence-single1","db-2",1,200};
+				begin2[] = {"A3\sounds_f\weapons\silenced\rifle2-silence-single2","db-2",1,200};
+				begin3[] = {"A3\sounds_f\weapons\silenced\rifle2-silence-single1","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_single_M14_Epoch";
+			recoilProne = "recoil_single_prone_M14_Epoch";
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "a2_ak47s_gold_EPOCH";
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-1","db-4",1,10};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-2","db-4",1,10};
+				closure3[] = {"A3\sounds_f\weapons\closure\ebr-3","db-4",1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5,"closure3",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single1","db5",1,1000};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single2","db5",1,1000};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\rifle2-silence-single1","db5",1,1000};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5,"begin3",0.5};
+			};
+			class SilencedSound
+			{
+				begin1[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_SD_start1","db-2",1,200};
+				begin2[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_SD_single1","db-2",1,200};
+				begin3[] = {"\x\addons\a2_epoch_weapons_2\sounds\SCAR_SD_single2","db-2",1,200};
+				soundBegin[] = {"begin1",0.333,"begin2",0.333,"begin3",0.333};
+			};
+			reloadTime = 0.096;
+			dispersion = 0.00087;
+			recoil = "recoil_auto_M14_Epoch";
+			recoilProne = "recoil_auto_prone_M14_Epoch";
+			minRange = 0;
+			minRangeProbab = 0.9;
+			midRange = 15;
+			midRangeProbab = 0.7;
+			maxRange = 30;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 1e-006;
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot{};
+			class CowsSlot{};
+			class PointerSlot{};
+			class UnderBarrelSlot{};
+		};
+	};
+	class a2_VSS_vintorez_epoch: a2_VSS_vintorez_epoch_base
+	{
+		scope = 2;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+		};
+	};
+
+////////////////a2 h4 weps end	
     class UGL_F;
     class Epoch_weapon_01_Base_F : Rifle_Base_F
     {
@@ -7209,6 +9036,22 @@ class CfgWeapons
 		class Library
 		{
 			libTextDesc = "This mask is intended to reduce the possiblity of radiation exposure. This mask can work in certain situation where toxic gases are present";
+		};
+	};
+	class U_Chav_EPOCH: ItemCore
+	{
+		author="Helion4";
+		scope=2;
+		allowedSlots[]={901};
+		displayName = "Chav Uniform";
+		picture = "\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model = "\x\addons\a3_epoch_assets\models\parcel.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="\x\addons\a3_epoch_community\a2_epoch_clothing\a2_epoch_chav.p3d";
+			uniformClass="a2_Epoch_Chav";
+			containerClass="Supply20";
+			mass=60;
 		};
 	};
     class U_RadiationSuit_M_uniform: Itemcore
