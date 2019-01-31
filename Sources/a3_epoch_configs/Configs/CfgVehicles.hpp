@@ -11779,7 +11779,7 @@ class CfgVehicles
 		maxSpeed = 265;
 		maxFordingDepth = 1;
 		mainBladeRadius = 7;
-		liftForceCoef = 1.1;
+		liftForceCoef = 2.55;
 		bodyFrictionCoef = 0.3;
 		cyclicAsideForceCoef = 0.3;
 		cyclicForwardForceCoef = 0.3;
@@ -12385,7 +12385,7 @@ class CfgVehicles
 		maxSpeed = 275;
 		maxFordingDepth = 1;
 		mainBladeRadius = 7;
-		liftForceCoef = 1;
+		liftForceCoef = 1.5;
 		bodyFrictionCoef = 0.3;
 		cyclicAsideForceCoef = 2;
 		cyclicForwardForceCoef = 1.2;
