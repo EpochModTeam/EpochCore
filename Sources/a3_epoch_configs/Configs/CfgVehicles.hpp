@@ -14588,6 +14588,34 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
         displayName = "$STR_EPOCH_Safe";
     };
+	class GunSafe_SIM_EPOCH: Secure_Storage_Temp
+	{
+		author="Helion4";
+		scope=2;
+		model="\x\addons\a3_epoch_community\gunsafe\gun_safe.p3d";
+		displayName="$STR_EPOCH_Safe";
+		class AnimationSources
+		{
+			class door1
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class door2 : door1
+			{
+			};
+			class handle1
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class handle2 : handle1
+			{
+			};
+		};
+	};
     class Fireplace_SIM_EPOCH : Constructions_modular_F
     {
         author = "Kiory";
@@ -15933,6 +15961,36 @@ class CfgVehicles
         armor = 15000;
         maximumLoad = 3600;
     };
+	class GunSafe_EPOCH: Constructions_lockedstatic_F
+	{
+		author="Helion4";
+		scope=2;
+		model="\x\addons\a3_epoch_community\gunsafe\gun_safe.p3d";
+		displayName="$STR_EPOCH_Safe";
+		armor=15000;
+		maximumLoad=3600;
+		class AnimationSources
+		{
+			class door1
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class door2 : door1
+			{
+			};
+			class handle1
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class handle2 : handle1
+			{
+			};
+		};
+	};
     class TankTrap_EPOCH : Constructions_static_F
     {
         author = "Axle";

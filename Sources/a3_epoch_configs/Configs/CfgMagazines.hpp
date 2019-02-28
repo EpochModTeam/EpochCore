@@ -1041,6 +1041,18 @@ class CfgMagazines
         descriptionShort = "$STR_EPOCH_SecureSafe";
         mass = 50;
     };
+    class ItemGunSafe : CA_Magazine
+    {
+        author = "Helion4";
+        scope = 2;
+        count = 1;
+        type = 256;
+        displayName = "$STR_EPOCH_Safe";
+        model = "\x\addons\a3_epoch_assets_1\models\supply_crate.p3d";
+		picture = "\x\addons\a3_epoch_community\gunsafe\data\gunsafe_01_ca.paa";
+        descriptionShort = "$STR_EPOCH_SecureSafe";
+        mass = 50;
+    };
     class ItemBioHazardBag : CA_Magazine
     {
         author = "vbgreen,vbawol";
