@@ -15349,6 +15349,26 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm.p3d";
         displayName = "$STR_EPOCH_FrequencyJammerSIM";
     };
+    class PlotPole_M_SIM_EPOCH : PlotPole_SIM_EPOCH
+    {
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm_2.p3d";
+        displayName = "$STR_EPOCH_FrequencyJammer_M";
+    };
+    class PlotPole_L_SIM_EPOCH : PlotPole_SIM_EPOCH
+    {
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Mid.p3d";
+        displayName = "$STR_EPOCH_FrequencyJammer_L";
+    };
+    class PlotPole_XL_SIM_EPOCH : PlotPole_SIM_EPOCH
+    {
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Mid_2.p3d";
+        displayName = "$STR_EPOCH_FrequencyJammer_XL";
+    };
+    class PlotPole_XXL_SIM_EPOCH : PlotPole_SIM_EPOCH
+    {
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_lg.p3d";
+        displayName = "$STR_EPOCH_FrequencyJammer_XXL";
+    };
     class SolarGen_SIM_EPOCH : Constructions_modular_F
     {
         author = "SteamPunkGears";
