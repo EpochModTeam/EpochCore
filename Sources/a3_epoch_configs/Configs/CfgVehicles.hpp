@@ -15876,6 +15876,11 @@ class CfgVehicles
         placement = "vertical";
         model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm.p3d";
     };
+    class PlotPole_M_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_M";
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm_2.p3d";
+    };
     class PlotPole_L_EPOCH : PlotPole_EPOCH
     {
         displayName = "$STR_EPOCH_FrequencyJammer_L";
@@ -15884,6 +15889,11 @@ class CfgVehicles
     class PlotPole_XL_EPOCH : PlotPole_EPOCH
     {
         displayName = "$STR_EPOCH_FrequencyJammer_XL";
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Mid_2.p3d";
+    };
+    class PlotPole_XXL_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_XXL";
         model = "\x\addons\a3_epoch_community\models\jammers\jammer_lg.p3d";
     };
     class Const_floors_static_F : Constructions_static_F
