@@ -14588,6 +14588,13 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
         displayName = "$STR_EPOCH_Safe";
     };
+    class Safe_s_SIM_EPOCH : Secure_Storage_Temp
+    {
+        author = "Sequisha";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
+        displayName = "$STR_EPOCH_Safe";
+    };
 	class GunSafe_SIM_EPOCH: Secure_Storage_Temp
 	{
 		author="Helion4";
@@ -15990,6 +15997,15 @@ class CfgVehicles
         displayName = "$STR_EPOCH_Safe";
         armor = 15000;
         maximumLoad = 3600;
+    };
+    class Safe_s_EPOCH : Constructions_lockedstatic_F
+    {
+        author = "Sequisha";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
+        displayName = "$STR_EPOCH_Safe";
+        armor = 15000;
+        maximumLoad = 3000;
     };
 	class GunSafe_EPOCH: Constructions_lockedstatic_F
 	{
