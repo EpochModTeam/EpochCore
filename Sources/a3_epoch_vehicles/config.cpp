@@ -6,6 +6,6 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		epochVersion = "1.3.0";
+		epochVersion = "1.3.1";
 	};
 };
