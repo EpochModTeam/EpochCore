@@ -5546,6 +5546,8 @@ class CfgVehicles
 	class O_G_Van_02_vehicle_EPOCH : O_G_Van_02_vehicle_F {maximumLoad = 2000;};
 	class B_G_Van_02_vehicle_F;
 	class B_G_Van_02_vehicle_EPOCH : B_G_Van_02_vehicle_F {maximumLoad = 2000;};
+	class B_GEN_Van_02_transport_F;
+	class B_GEN_Van_02_transport_EPOCH : B_GEN_Van_02_transport_F {maximumLoad = 2000;};
 
     class B_MRAP_01_F;
 /*
