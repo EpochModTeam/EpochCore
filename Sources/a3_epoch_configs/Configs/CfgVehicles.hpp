@@ -5546,6 +5546,8 @@ class CfgVehicles
 	class O_G_Van_02_vehicle_EPOCH : O_G_Van_02_vehicle_F {maximumLoad = 2000;};
 	class B_G_Van_02_vehicle_F;
 	class B_G_Van_02_vehicle_EPOCH : B_G_Van_02_vehicle_F {maximumLoad = 2000;};
+	class B_GEN_Van_02_transport_F;
+	class B_GEN_Van_02_transport_EPOCH : B_GEN_Van_02_transport_F {maximumLoad = 2000;displayName = "Van Transport (Police)";};
 
     class B_MRAP_01_F;
 /*
@@ -14588,6 +14590,41 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
         displayName = "$STR_EPOCH_Safe";
     };
+    class Safe_s_SIM_EPOCH : Secure_Storage_Temp
+    {
+        author = "Sequisha";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
+        displayName = "$STR_EPOCH_Safe";
+    };
+	class GunSafe_SIM_EPOCH: Secure_Storage_Temp
+	{
+		author="Helion4";
+		scope=2;
+		model="\x\addons\a3_epoch_community\gunsafe\gun_safe.p3d";
+		displayName="$STR_EPOCH_Safe";
+		class AnimationSources
+		{
+			class door1
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class door2 : door1
+			{
+			};
+			class handle1
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class handle2 : handle1
+			{
+			};
+		};
+	};
     class Fireplace_SIM_EPOCH : Constructions_modular_F
     {
         author = "Kiory";
@@ -15318,8 +15355,28 @@ class CfgVehicles
     {
         author = "Sequisha";
         scope = 2;
-        model = "\x\addons\a3_epoch_assets\models\jammer.p3d";
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm.p3d";
         displayName = "$STR_EPOCH_FrequencyJammerSIM";
+    };
+    class PlotPole_M_SIM_EPOCH : PlotPole_SIM_EPOCH
+    {
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm_2.p3d";
+        displayName = "$STR_EPOCH_FrequencyJammer_M";
+    };
+    class PlotPole_L_SIM_EPOCH : PlotPole_SIM_EPOCH
+    {
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Mid.p3d";
+        displayName = "$STR_EPOCH_FrequencyJammer_L";
+    };
+    class PlotPole_XL_SIM_EPOCH : PlotPole_SIM_EPOCH
+    {
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Mid_2.p3d";
+        displayName = "$STR_EPOCH_FrequencyJammer_XL";
+    };
+    class PlotPole_XXL_SIM_EPOCH : PlotPole_SIM_EPOCH
+    {
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_lg.p3d";
+        displayName = "$STR_EPOCH_FrequencyJammer_XXL";
     };
     class SolarGen_SIM_EPOCH : Constructions_modular_F
     {
@@ -15848,6 +15905,11 @@ class CfgVehicles
         placement = "vertical";
         model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm.p3d";
     };
+    class PlotPole_M_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_M";
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Sm_2.p3d";
+    };
     class PlotPole_L_EPOCH : PlotPole_EPOCH
     {
         displayName = "$STR_EPOCH_FrequencyJammer_L";
@@ -15856,6 +15918,11 @@ class CfgVehicles
     class PlotPole_XL_EPOCH : PlotPole_EPOCH
     {
         displayName = "$STR_EPOCH_FrequencyJammer_XL";
+        model = "\x\addons\a3_epoch_community\models\jammers\jammer_Mid_2.p3d";
+    };
+    class PlotPole_XXL_EPOCH : PlotPole_EPOCH
+    {
+        displayName = "$STR_EPOCH_FrequencyJammer_XXL";
         model = "\x\addons\a3_epoch_community\models\jammers\jammer_lg.p3d";
     };
     class Const_floors_static_F : Constructions_static_F
@@ -15933,6 +16000,45 @@ class CfgVehicles
         armor = 15000;
         maximumLoad = 3600;
     };
+    class Safe_s_EPOCH : Constructions_lockedstatic_F
+    {
+        author = "Sequisha";
+        scope = 2;
+        model = "\x\addons\a3_epoch_assets_1\models\safe.p3d";
+        displayName = "$STR_EPOCH_Safe";
+        armor = 15000;
+        maximumLoad = 3000;
+    };
+	class GunSafe_EPOCH: Constructions_lockedstatic_F
+	{
+		author="Helion4";
+		scope=2;
+		model="\x\addons\a3_epoch_community\gunsafe\gun_safe.p3d";
+		displayName="$STR_EPOCH_Safe";
+		armor=15000;
+		maximumLoad=3600;
+		class AnimationSources
+		{
+			class door1
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class door2 : door1
+			{
+			};
+			class handle1
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class handle2 : handle1
+			{
+			};
+		};
+	};
     class TankTrap_EPOCH : Constructions_static_F
     {
         author = "Axle";
@@ -16144,7 +16250,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "(this animationPhase ""open_left"" < 0.5) && (this animationPhase ""lock_cGarage"" < 0.5)";
-                statement = "this animate [""open_left"", 1]; this animate [""open_right"", 1];call ICHECKRUN";
+                statement = "this animate [""open_left"", 1]; this animate [""open_right"", 1]";
             };
             class Close_left : Open_left
             {
@@ -16212,7 +16318,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "(this animationPhase ""open_left"" < 0.5) && (this animationPhase ""Lock_cGarage"" < 0.5)";
-                statement = "this animate [""open_left"", 1]; this animate [""open_right"", 1];call ICHECKRUN";
+                statement = "this animate [""open_left"", 1]; this animate [""open_right"", 1]";
             };
             class Close_left : Open_left
             {
@@ -16280,7 +16386,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "(this animationPhase ""open_left"" < 0.5) && (this animationPhase ""Lock_cGarage"" < 0.5)";
-                statement = "this animate [""open_left"", 1]; this animate [""open_right"", 1];call ICHECKRUN";
+                statement = "this animate [""open_left"", 1]; this animate [""open_right"", 1]";
             };
             class Close_left : Open_left
             {
@@ -16948,7 +17054,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "(this animationPhase ""Open_Door"" < 0.5) && (this animationPhase ""lock_Door"" == 0)";
-                statement = "this animate [""Open_Door"", 1];call ICHECKRUN";
+                statement = "this animate [""Open_Door"", 1]";
             };
             class Close_door : Open_door
             {
@@ -17320,7 +17426,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this call EPOCH_LootIT;";
             };
         };
     };
@@ -17352,7 +17458,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this call EPOCH_LootIT;";
             };
         };
     };
@@ -17399,7 +17505,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_door_l"" < 0.5";
-                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT; [this] call EPOCH_fnc_mirrorSetup;call ICHECKRUN;";
+                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT; [this] call EPOCH_fnc_mirrorSetup;";
             };
         };
     };
@@ -17451,7 +17557,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_door_l"" < 0.5";
-                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_m"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_m"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;";
             };
         };
     };
@@ -17558,7 +17664,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_top_door"" < 0.5";
-                statement = "this animate [""open_top_door"", 1]; this animate [""open_bottom_door"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this animate [""open_top_door"", 1]; this animate [""open_bottom_door"", 1]; this call EPOCH_LootIT;";
             };
         };
     };
@@ -17591,7 +17697,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "this animationPhase ""Open_top"" < 0.5";
-                statement = "this animate [""Open_top"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this animate [""Open_top"", 1]; this call EPOCH_LootIT;";
             };
         };
     };
@@ -17624,7 +17730,7 @@ class CfgVehicles
                 position = "actionPoint";
                 radius = 3;
                 condition = "this animationPhase ""Open_bot"" < 0.5";
-                statement = "this animate [""Open_bot"", 1]; this animate [""Open_top"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this animate [""Open_bot"", 1]; this animate [""Open_top"", 1]; this call EPOCH_LootIT;";
             };
         };
     };
@@ -17666,7 +17772,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "this animationPhase ""Open_bot"" < 0.5";
-                statement = "this animate [""Open_bot"", 1]; this animate [""Open_top"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this animate [""Open_bot"", 1]; this animate [""Open_top"", 1]; this call EPOCH_LootIT;";
             };
         };
     };
@@ -17699,7 +17805,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "this animationPhase ""Open_top"" < 0.5";
-                statement = "this animate [""Open_top"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this animate [""Open_top"", 1]; this call EPOCH_LootIT;";
             };
         };
     };
@@ -17736,7 +17842,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""lift_lid"" < 0.5";
-                statement = "this animate [""lift_lid"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this animate [""lift_lid"", 1]; this call EPOCH_LootIT;";
             };
         };
     };
@@ -17779,7 +17885,7 @@ class CfgVehicles
                 radius = 3;
                 onlyForPlayer = 0;
                 condition = "this animationPhase ""open_door_l"" < 0.5";
-                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this animate [""open_door_l"", 1]; this animate [""open_door_r"", 1]; this call EPOCH_LootIT;";
             };
         };
     };
@@ -17816,7 +17922,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this call EPOCH_LootIT;";
             };
         };
     };
@@ -17845,7 +17951,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this call EPOCH_LootIT;";
             };
         };
     };
@@ -17884,7 +17990,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this call EPOCH_LootIT;";
             };
         };
     };
@@ -17913,7 +18019,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this call EPOCH_LootIT;";
             };
         };
     };
@@ -17962,7 +18068,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this call EPOCH_LootIT;";
             };
         };
     };
@@ -17999,7 +18105,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this call EPOCH_LootIT;";
             };
         };
     };
@@ -18048,7 +18154,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this call EPOCH_LootIT;";
             };
         };
     };
@@ -18088,7 +18194,7 @@ class CfgVehicles
                 position = "Door_knopf";
                 radius = 3;
                 condition = "damage this < 1";
-                statement = "this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "this call EPOCH_LootIT;";
             };
         };
     };
@@ -18161,7 +18267,7 @@ class CfgVehicles
                 radius = 1.5;
                 onlyForPlayer = 0;
                 condition = "(this animationPhase 'Door_1_rot') < 0.5";
-                statement = "[this, 'Door_1_rot', 'Door_Handle_1_rot_1', 'Door_Handle_1_rot_2'] call BIS_fnc_DoorOpen; this call EPOCH_LootIT;call ICHECKRUN;";
+                statement = "[this, 'Door_1_rot', 'Door_Handle_1_rot_1', 'Door_Handle_1_rot_2'] call BIS_fnc_DoorOpen; this call EPOCH_LootIT;";
             };
         };
         actionBegin1 = "OpenDoor_1";
@@ -20625,7 +20731,7 @@ class CfgVehicles
         author = "SteamPunkGears/Helion4";
         scope = 2;
         placement = "vertical";
-        model = "\x\addons\a3_epoch_community\models\Solar_generator_charger.p3d";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\solar_generator_ghost.p3d";
         displayName = "$STR_EPOCH_SolarCharger";
     };
     class SolarCharger_EPOCH : Buildable_Storage
@@ -20650,7 +20756,7 @@ class CfgVehicles
         author = "SteamPunkGears/Helion4";
         scope = 2;
         placement = "vertical";
-        model = "\x\addons\a3_epoch_community\models\Solar_generator_charger.p3d";
+        model = "\x\addons\a3_epoch_community\models\solar_generator_ghost.p3d";
         displayName = "$STR_EPOCH_SolarChargerXL";
     };
     class SolarChargerXL_EPOCH : Buildable_Storage

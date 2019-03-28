@@ -33,3 +33,4 @@ class RscTitles
 #include "SKN_AdminMenu.hpp"
 #include "Epoch_Camera.hpp"
 #include "EPOCH_EPad.hpp"
+#include "EPOCH_SimpleInput.hpp"
