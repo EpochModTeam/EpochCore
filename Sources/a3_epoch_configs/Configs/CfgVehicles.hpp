@@ -6954,6 +6954,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 190;
 		fuelCapacity	= 40;
@@ -7396,6 +7397,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 125;
 		fuelCapacity	= 40;
@@ -7808,6 +7810,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};		
 //		maxSpeed = 249;
 		maxSpeed = 140;
 		fuelCapacity	= 40;
@@ -8228,6 +8231,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 200;
 		fuelCapacity	= 40;
@@ -8764,6 +8768,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 145;
 		fuelCapacity	= 40;
@@ -9222,6 +9227,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 120;
 		fuelCapacity	= 40;
@@ -9670,6 +9676,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 110;
 		fuelCapacity	= 40;
@@ -10075,6 +10082,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 150;
 		fuelCapacity	= 40;
