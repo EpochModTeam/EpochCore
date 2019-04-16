@@ -3641,6 +3641,98 @@ class CfgWeapons
             mass = 140;
         };
     };
+    class pvcrifle_base_f: Rifle_Base_F
+	{
+		scope = 0;
+		magazines[] = {"EnergyPack","EnergyPackLg"};  ///change this!!!!!!!!!!!!!!!!
+		reloadAction = "GestureReloadKatiba";
+		handAnim[] = {"OFP2_ManSkeleton", "\x\addons\a3_epoch_weapons\pvc\Data\pvc_rifle_handanim.rtm"};
+		magazineReloadSwitchPhase = 0.4;
+		discreteDistanceInitIndex = 0;
+		maxRecoilSway=0.0025;
+                swayDecaySpeed=1.25;
+		inertia = 0.5;
+		initSpeed = -1;
+		class GunParticles : GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot{};
+			class CowsSlot//: CowsSlot /// default accessories for this slot
+			{
+				iconPosition[] = {0.5, 0.35};
+				iconScale = 0.2;
+			};
+			class PointerSlot//: PointerSlot /// default accessories for this slot
+			{
+				iconPosition[] = {0.20, 0.45};
+				iconScale = 0.25;
+			};
+			class UnderBarrelSlot{};//: UnderBarrelSlot {};
+		};
+		opticsZoomMin=0.375;
+		opticsZoomMax=1.1;
+		opticsZoomInit=0.75;
+		distanceZoomMin = 300;
+		distanceZoomMax = 300;
+		descriptionShort = "PVC Gas Powered Rifle";
+		dexterity = 1.8;
+		caseless[] = {"",1,1,1};  /// no sound of ejected brass
+		soundBullet[] = {caseless,1};
+		selectionFireAnim = "muzzleFlash"; /// are we able to get rid of all the zaslehs?
+		modes[] = {Single};
+		class Single: Mode_SemiAuto
+		{
+		 reloadTime = 1;
+		 sounds[] ={StandardSound};
+                   class BaseSoundModeType
+                   {
+                       weaponSoundEffect = "DefaultRifle";
+                       closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_6",0.40794576,1,10};
+                       closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_7",0.40794576,1,10};
+                       soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                   };
+                   class StandardSound : BaseSoundModeType
+                   {
+                       begin1[] = {"x\addons\a3_epoch_weapons\pvc\Data\sound\pvc_shot_single",10,1,4800};
+                       begin2[] = {"x\addons\a3_epoch_weapons\pvc\Data\sound\pvc_shot_single",10,1,4800};
+                       soundBegin[] = {"begin1",0,"begin2",0};
+                   };
+			dispersion = 0.00087;
+			recoil = "recoil_single_m107_Epoch";
+			recoilProne = "recoil_prone_m107_Epoch";
+			minRange = 2; minRangeProbab = 0.5;
+			midRange = 200; midRangeProbab = 0.7;
+			maxRange = 400; maxRangeProbab = 0.3;
+		};
+		aiDispersionCoefY=6.0;
+		aiDispersionCoefX=4.0;
+		drySound[]={"A3\sounds_f\weapons\Other\dry_1", db-5, 1, 10};
+		reloadMagazineSound[]={"A3\sounds_f\weapons\reloads\new_MX",db-8,1, 30};
+	};
+    class pvcrifle_01_epoch: pvcrifle_base_f
+    {
+    	scope = 2;
+    	displayName = "PVC Rifle";
+    	model = "\x\addons\a3_epoch_weapons\pvc\pvc_rifle.p3d";
+    	picture = "\x\addons\a3_epoch_weapons\pvc\Data\UI\pvc_rifle_ca.paa";
+    	UiPicture = "\x\addons\a3_epoch_weapons\pvc\Data\UI\pvc_rifle_ca.paa";
+    	weaponInfoType = "RscWeaponZeroing";
+    
+    	//muzzles[] = {this}; /// to be able to switch between bullet muzzle and TGL
+    
+    	class WeaponSlotsInfo: WeaponSlotsInfo
+    	{
+    		mass = 100;
+    	};
+    };	
 ////////////////a2 h4 weps start
 class SlotInfo;
 class MuzzleSlot;
