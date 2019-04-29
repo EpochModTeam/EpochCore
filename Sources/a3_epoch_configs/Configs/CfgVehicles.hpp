@@ -2784,7 +2784,59 @@ class CfgVehicles
 		author = "AWOL/Helion4";
 		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_15.p3d";
 	};
-
+	class paintshop: House
+        {
+	 scope = 2;
+	 model = "\x\addons\a3_epoch_community\paintshop\paintshop.p3d";
+	 placement = vertical;
+	 mapSize = 3;
+	 displayName = "Paintshop";
+	 cost = 0;
+	 armor = 8000;
+	   class AnimationSources
+	   {
+	     class Lroll_door
+	     {
+	     	source = "user";
+	     	animPeriod = 3;
+	     	initPhase = 1;
+	     	sound = "ServoRampSound";
+	     };
+	     class Uroll_door
+	     {
+	     	source = "user";
+	     	animPeriod = 3;
+	     	initPhase = 1;
+	     	sound = "ServoRampSound";
+	     };			
+	     class door_2
+	     {
+	     	source = "user";
+	     	animPeriod = 2;
+	     	initPhase = 0;
+	     	sound="ServoRampSound";
+	     };			
+           };
+          class UserActions
+	   {
+	   	class Open_rollers
+	   	{
+	   		displayName = "Open Rollers";
+	   		displayNameDefault = "";
+	   		position="action1";
+	   		radius=4;
+	   		OnlyForPlayer=1;
+	   		condition="this animationPhase ""Lroll_door"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+	   		statement="this animate [""Lroll_door"", 1];this animate [""Uroll_door"", 1,1.2];this animate [""door_2"", 0,1.2];";
+	   	};
+	   	class Close_rollers: Open_rollers
+	   	{
+	   		displayName = "Close Rollers";
+	   		condition="this animationPhase ""Lroll_door"" >= 0.5";
+	   		statement="this animate [""Lroll_door"", 0];this animate [""Uroll_door"", 0,1.2];this animate [""door_2"", 1,1.2];";
+	   	};
+	   };
+    };
     class Bag_Base;
     class smallbackpack_red_epoch : Bag_Base
     {
