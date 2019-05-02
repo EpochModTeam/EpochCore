@@ -2822,19 +2822,21 @@ class CfgVehicles
 	   	class Open_rollers
 	   	{
 	   		displayName = "Open Rollers";
-	   		displayNameDefault = "";
+			displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
 	   		position="action1";
-	   		radius=4;
+	   		radius=2.75;
 	   		OnlyForPlayer=1;
 	   		condition="this animationPhase ""Lroll_door"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
 	   		statement="this animate [""Lroll_door"", 1];this animate [""Uroll_door"", 1,1.2];this animate [""door_2"", 0,1.2];";
 	   	};
+/*		// Handled via Painting Script
 	   	class Close_rollers: Open_rollers
 	   	{
 	   		displayName = "Close Rollers";
 	   		condition="this animationPhase ""Lroll_door"" >= 0.5";
 	   		statement="this animate [""Lroll_door"", 0];this animate [""Uroll_door"", 0,1.2];this animate [""door_2"", 1,1.2];";
 	   	};
+*/
 	   };
     };
     class Bag_Base;
