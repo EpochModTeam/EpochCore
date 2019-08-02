@@ -136,7 +136,7 @@ class Stage7
 };
 class Stage8
 {
-	texture="a3\structures_f\data\Roof\Metal_roof_smdi.paa";
+	texture="x\addons\a3_epoch_community\paintshop\data\Metal_roof_smdi.paa";
 	texGen="3";
 };
 class Stage9
