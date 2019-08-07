@@ -3876,6 +3876,9 @@
 		<Key ID="STR_EPOCH_MarkerService">
 			<Original>Service</Original>
 		</Key>
+		<Key ID="STR_EPOCH_MarkerPaint">
+			<Original>Service</Original>
+		</Key>
 		<Key ID="STR_EPOCH_MarkerShipwreck">
 			<Original>Shipwreck</Original>
 		</Key>
