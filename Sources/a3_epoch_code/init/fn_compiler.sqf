@@ -47,7 +47,7 @@ _header = "";
 			_header = _header + format["_player%1Key = 'EPOCH_%2';",_x, _rng];
 		};
 	};
-} forEach _customVarNames;
+} forEach (_customVarNames + ["RandomVar"]);
 
 _version = getNumber(_config >> "version");
 if (_version >= 1) then {
