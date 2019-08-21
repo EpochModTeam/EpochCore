@@ -18790,9 +18790,52 @@ class CfgVehicles
         };
     };
     class UAV_01_base_F;
-    class I_UAV_01_F : UAV_01_base_F
+    class I_UAV_01_Epoch_base : UAV_01_base_F
+	{
+		class Sounds;
+	};
+    class I_UAV_01_F : I_UAV_01_Epoch_base
     {
         fuelCapacity = 50000;
+		class Sounds : Sounds
+		{
+			class Engine_Idle_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Eng_01_Ext", 1.41254, 1, 150};
+				frequency = "1  * (1 + 0.3  * ((abs(speed) factor [0,	24]) - 0))+  ((1-engineon) * 0.01*(rpm factor [0,1]))";
+				volume = "campos * 6 * ((abs(speed) factor [0,	24]) factor[ (13 - 0)/(24 - 0) - (((13 - 0)/(24 - 0) - 0) - (0.7 * (((13 - 0)/(24 - 0) - 0)))) / 2, 0 + (((13 - 0)/(24 - 0) - 0) - (0.7 * (((13 - 0)/(24 - 0) - 0)))) / 2]) * (rotorSpeed factor[ 0.2, 1])";
+			};
+			class Engine_01_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Eng_01_Ext", 1.77828, 1, 150};
+				frequency = "1  * (1.2 + 0.3  * ((abs(speed) factor [0,	24]) - (13 - 0)/(24 - 0)))+  ((1-engineon) * 0.01*(rpm factor [0,1]))";
+				volume = "campos * 6 * (((abs(speed) factor [0,	24]) factor[ 0 + (((13 - 0)/(24 - 0) - 0) - (0.7 * (((13 - 0)/(24 - 0) - 0)))) / 2, (13 - 0)/(24 - 0) - (((13 - 0)/(24 - 0) - 0) - (0.7 * (((13 - 0)/(24 - 0) - 0)))) / 2]) * ((abs(speed) factor [0,	24]) factor[ (19 - 0)/(24 - 0) - (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0)) - (0.7 * (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0))))) / 2, (13 - 0)/(24 - 0) + (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0)) - (0.7 * (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0))))) / 2]))";
+			};
+			class Engine_02_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Eng_02_Ext", 1.77828, 1, 150};
+				frequency = "1  * (1.2 + 0.3  * ((abs(speed) factor [0,	24]) - (19 - 0)/(24 - 0)))+  ((1-engineon) * 0.01*(rpm factor [0,1]))";
+				volume = "campos * 6 * (((abs(speed) factor [0,	24]) factor[ (13 - 0)/(24 - 0) + (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0)) - (0.7 * (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0))))) / 2, (19 - 0)/(24 - 0) - (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0)) - (0.7 * (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0))))) / 2]) * ((abs(speed) factor [0,	24]) factor[ (23 - 0)/(24 - 0) - (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0)) - (0.7 * (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0))))) / 2, (19 - 0)/(24 - 0) + (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0)) - (0.7 * (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0))))) / 2]))";
+			};
+			class Engine_03_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Eng_03_Ext", 1.99526, 1, 150};
+				frequency = "1  * (1.2 + 0.3  * ((abs(speed) factor [0,	24]) - (23 - 0)/(24 - 0)))+  ((1-engineon) * 0.01*(rpm factor [0,1]))";
+				volume = "campos * 6 * ((abs(speed) factor [0,	24]) factor[ (19 - 0)/(24 - 0) + (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0)) - (0.7 * (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0))))) / 2, (23 - 0)/(24 - 0) - (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0)) - (0.7 * (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0))))) / 2])";
+			};
+			class Engine_Lateral_Movement_01_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Engine_Lateral_Movement_Ext", 1, 1, 150};
+				frequency = "1 + angVelocity envelope [0.5,2,2.5,3]";
+				volume = "6 * camPos * (abs(speed) factor[10, 25]) * (angVelocity factor [0.5,2.5])";
+			};
+			class Rotors_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Rotors_01", 0.316228, 3.2, 150};
+				frequency = "1 * rotorThrust*rpm";
+				volume = "6 * camPos * rpm * (rotorSpeed factor [0.01, 0.1]) + (abs(speed) factor[0, 25])";
+			};
+		};
     };
 	class MineBase;
 	class BarrelBomb_EPOCH: MineBase
