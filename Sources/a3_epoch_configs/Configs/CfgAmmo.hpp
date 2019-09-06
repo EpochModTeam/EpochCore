@@ -501,8 +501,8 @@ class CfgAmmo
     class PipeBombBase;
     class Sapper_Charge_Ammo : PipeBombBase
     {
-        hit = 50;
-        indirectHit = 10;
+        hit = 6;
+        indirectHit = 6;
         indirectHitRange = 5;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\swing_box.p3d";
         mineModelDisabled = "";
@@ -519,8 +519,8 @@ class CfgAmmo
     };
     class SapperB_Charge_Ammo : PipeBombBase
     {
-        hit = 1500;
-        indirectHit = 1500;
+        hit = 12;
+        indirectHit = 12;
         indirectHitRange = 5;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\swing_box.p3d";
         mineModelDisabled = "";
