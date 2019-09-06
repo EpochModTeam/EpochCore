@@ -309,6 +309,48 @@ class CfgMagazines
 		descriptionShort = "Injector Darts x3 for Tranq Pistol";
 		//magazineGroup[]	= {"shot_nl_group"};
 	};	
+	class xbow_mag_bolt: CA_Magazine 
+	{
+		scope = 2;
+		displayName = "Crossbow Bolts";
+		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\xbow_mag.p3d";
+		picture = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\Data\ui\tranq_dart_icon_ca.paa";
+		ammo = xbow_bolt;
+		count = 3;
+		initSpeed = 795;
+		tracersEvery = 1;
+		lastRoundsTracer = 2; /// tracers to track low ammo
+		descriptionShort = "Crossbow Bolts - Steel: high speed";
+		//magazineGroup[]	= {"shot_nl_group"};
+	};	
+	class xbow_mag_tranq: CA_Magazine 
+	{
+		scope = 2;
+		displayName = "Crossbow Tranq Bolts";
+		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\xbow_mag.p3d";
+		picture = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\Data\ui\xtranq_icon_ca.paa";
+		ammo = xbow_tranq;
+		count = 3;
+		initSpeed = 795;
+		tracersEvery = 1;
+		lastRoundsTracer = 2; /// tracers to track low ammo
+		descriptionShort = "Crossbow Bolts - Tranquilizer tips";
+		//magazineGroup[]	= {"shot_nl_group"};
+	};	
+	class xbow_mag_exp: CA_Magazine 
+	{
+		scope = 2;
+		displayName = "Crossbow EXP Bolts";
+		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\xbow_mag.p3d";
+		picture = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\Data\ui\xexp_icon_ca.paa";
+		ammo = xbow_exp;
+		count = 3;
+		initSpeed = 795;
+		tracersEvery = 1;
+		lastRoundsTracer = 2; /// tracers to track low ammo
+		descriptionShort = "Crossbow Bolts - Explosive tips";
+		magazineGroup[]	= {"xbow_group"};
+	};	
 
 /////////////////non lethal mags end
     class ItemHotwire : CA_Magazine

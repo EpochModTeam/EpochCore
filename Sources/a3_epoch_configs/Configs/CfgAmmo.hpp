@@ -464,6 +464,80 @@ class CfgAmmo
 	{
 		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
 	};
+	class xbow_exp: BulletBase
+		{
+			//soundFly[] = {"", 1, 1, 50};
+			//soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.77828, 1, 1600};
+			//soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.77828, 1, 1600};
+			//soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.77828, 1, 1600};
+			//soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.77828, 1, 1600};
+			//multiSoundHit[] = {"soundHit1", 0.25, "soundHit2", 0.25, "soundHit3", 0.25, "soundHit4", 0.25};
+			explosionSoundEffect = "DefaultExplosion";
+			hit = 8;
+			indirectHit = 2;
+			indirectHitRange = 1;
+			warheadName = "HE";
+			explosive = 0.3;
+			explosionEffects = "ExploAmmoExplosion";
+			craterEffects = "ExploAmmoCrater";
+			visibleFire = 0.1;
+			audibleFire = 0.1;
+			visibleFireTime = 0.01;
+			dangerRadiusBulletClose = 1;
+			dangerRadiusHit = 1;
+			suppressionRadiusBulletClose = 1;
+			suppressionRadiusHit = 1;
+			cost = 20;
+			deflecting = 5;
+			airFriction = -0.0006;
+			fuseDistance = 3;
+			typicalSpeed = 400;
+			caliber = 2;
+			model = "\A3\Weapons_f\Data\bullettracer\tracer_white";
+			tracerScale = 1;
+			tracerStartTime = 0.05;
+			tracerEndTime = 1;
+			class CamShakeExplode
+			{
+				power = 3.8;
+				duration = 0.8;
+				frequency = 20;
+				distance = 50.8712;
+			};
+			class CamShakeHit
+			{
+				power = 19;
+				duration = 0.4;
+				frequency = 20;
+				distance = 1;
+			};
+			class CamShakeFire
+			{
+				power = 2.0878;
+				duration = 0.8;
+				frequency = 20;
+				distance = 34.8712;
+			};
+			class CamShakePlayerFire
+			{
+				power = 0.01;
+				duration = 0.1;
+				frequency = 20;
+				distance = 1;
+			};
+			SoundSetExplosion[] = {"Shell19mm25mm_Exp_SoundSet"};
+		};
+    class xbow_tranq: shell_12g_bb
+	{
+		hit = 7;
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
+	};
+    class xbow_bolt: shell_12g_bb
+	{
+		hit = 7;
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
+	};
+
 
 //non lethal end
     class DirectionalBombBase;

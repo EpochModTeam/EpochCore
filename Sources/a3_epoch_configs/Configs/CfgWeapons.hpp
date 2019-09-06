@@ -5475,7 +5475,7 @@ class UnderBarrelSlot;
 		picture          = "\x\addons\a2_epoch_weapons_2\non_l\ui\xbow_ca.paa";
 		UiPicture        = "\x\addons\a2_epoch_weapons_2\non_l\ui\xbow_ca.paa";
 		descriptionShort = "Gas Powered repeating Crossbow";
-		magazines[]      = {"NL_shot_bb_mag", "shot_nl_group"};
+		magazines[]      = {"xbow_mag_bolt", "xbow_mag_tranq", "xbow_mag_exp"};
         selectionFireAnim = "muzzleFlash";
 		//handAnim[] = {"OFP2_ManSkeleton", "\a3\Anims_F_Enoch\Data\Anim\handanims\HunterShotgun_01.rtm"};
 		//reloadAction = "GestureReloadHunterShotgun01";
