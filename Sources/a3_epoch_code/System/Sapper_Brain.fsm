@@ -319,7 +319,7 @@ class FSM
                          "_firedNear = 0;" \n
                          "" \n
                          "_randomGroan = {" \n
-                         "_sounds = [""sapper_groan0"",""sapper_groan1"",""sapper_groan2""];" \n
+                         "_sounds = [""sapper_groan0"",""sapper_groan1"",""sapper_groan2"",""sapper_alert0""];" \n
                          "_sound = selectRandom _sounds;" \n
                          "" \n
                          "_sapper say3D [_sound,1500,1];" \n
