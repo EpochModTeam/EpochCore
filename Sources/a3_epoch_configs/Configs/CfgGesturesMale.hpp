@@ -187,36 +187,7 @@ class CfgGesturesMale
             leftHandIKEnd = 1;
             leftHandIKCurve[] = {0,1,0.016667,1,0.02459,0,0.983333,0,0.991667,1};
         };
-        class GestureReloadpvcrifle : Default
-        {
-            file = "\x\addons\a3_epoch_weapons\pvc\data\pvc_rifle_handanim.rtm";//pvc_rifle_reload
-            looped = 0;
-            speed = 0.3;
-            mask = "handsWeapon";
-            canPullTrigger = 0;
-            rightHandIKBeg = 0;
-            rightHandIKEnd = 0;
-            rightHandIKCurve[] = {1};
-            leftHandIKBeg = 1;
-            leftHandIKEnd = 1;
-            leftHandIKCurve[] = {0,1,0.016667,1,0.02459,0,0.983333,0,0.991667,1};
-        };
-        class GestureReloadpvcrifleProne : Default
-        {
-            file = "\x\addons\a3_epoch_weapons\pvc\data\pvc_rifle_handanim.rtm";//pvc_rifle_reload
-            looped = 0;
-            speed = 0.3;
-            mask = "handsWeapon";
-            canPullTrigger = 0;
-            rightHandIKBeg = 0;
-            rightHandIKEnd = 0;
-            rightHandIKCurve[] = {1};
-            leftHandIKBeg = 1;
-            leftHandIKEnd = 1;
-            leftHandIKCurve[] = {0,1,0.016667,1,0.02459,0,0.983333,0,0.991667,1};
-        };
- 
- class GestureSwing0 : Default
+        class GestureSwing0 : Default
         {
             file = "\x\addons\a3_epoch_assets_3\CfgVehicles\Characters\hatch_swing1.rtm";
             looped = 0;
@@ -294,6 +265,13 @@ class CfgGesturesMale
             leftHandIKBeg = 1;
             leftHandIKEnd = 1;
         };
+        class GestureReloadpvcrifle : Default
+        {
+            file = "\x\addons\a2_epoch_weapons_2\non_l\anim\pvc_rifle_reload.rtm";
+            speed = 0.3;
+           leftHandIKCurve[] = {0,1,0.008333,0,0.991667,0,1.0,1};
+        };
+
     };
     class BlendAnims
     {

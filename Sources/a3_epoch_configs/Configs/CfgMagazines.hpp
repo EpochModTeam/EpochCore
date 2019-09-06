@@ -265,7 +265,52 @@ class CfgMagazines
 		picture = "\x\addons\a2_epoch_weapons_2\ui\m_vssx10_ca.paa";
 		descriptionShort = "Caliber: 9x39<br />Rounds: 10<br />Used in: vintorez Classic";
 	};
-/////////////////A2 Mags ends	
+/////////////////A2 Mags ends
+/////////////////non lethal mags
+	class NL_shot_bb_mag: CA_Magazine 
+	{
+		scope = 2;
+		displayName = "BeanBag Shells";
+		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\boxoshells_mag_ca.paa";
+		model = "\x\addons\a2_epoch_weapons_2\non_l\arms\magazines\boxoshells.p3d";
+		ammo = shell_12g_bb;
+		count = 6;
+		initSpeed = 795;
+		tracersEvery = 0;
+		lastRoundsTracer = 2; /// tracers to track low ammo
+		descriptionShort = "12g Shell containing a BeanBag";
+		magazineGroup[]	= {"shot_nl_group"};
+	};
+	class NL_pvc_bb_mag: CA_Magazine 
+	{
+		scope = 2;
+		displayName = "Bean Bag Mag";
+		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\beanbag_mag_ca.paa";
+		model = "\x\addons\a2_epoch_weapons_2\non_l\arms\magazines\bbag_pipe_ammo.p3d";
+		ammo = bbag_pvc;
+		count = 4;
+		initSpeed = 795;
+		tracersEvery = 0;
+		lastRoundsTracer = 2; /// tracers to track low ammo
+		descriptionShort = "Beanbag filled with lead shot";
+		magazineGroup[]	= {"shot_nl_group"};
+	};	
+	class tranq_dart_mag: CA_Magazine 
+	{
+		scope = 2;
+		displayName = "Tranq Dart Mag";
+		model = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\tranq_dart_mag.p3d";
+		picture = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\Data\ui\tranq_dart_icon_ca.paa";
+		ammo = tranq_dart;
+		count = 3;
+		initSpeed = 795;
+		tracersEvery = 1;
+		lastRoundsTracer = 2; /// tracers to track low ammo
+		descriptionShort = "Injector Darts x3 for Tranq Pistol";
+		//magazineGroup[]	= {"shot_nl_group"};
+	};	
+
+/////////////////non lethal mags end
     class ItemHotwire : CA_Magazine
     {
         author = "Sequisha";

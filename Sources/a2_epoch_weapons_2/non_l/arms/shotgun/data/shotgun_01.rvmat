@@ -12,7 +12,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "h4_non_lethal_arms\arms\shotgun\data\shotgun_01_nohq.paa";
+	texture = "x\addons\a2_epoch_weapons_2\non_l\arms\shotgun\data\shotgun_01_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "h4_non_lethal_arms\arms\shotgun\data\shotgun_01_as.paa";
+	texture = "x\addons\a2_epoch_weapons_2\non_l\arms\shotgun\data\shotgun_01_as.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "h4_non_lethal_arms\arms\shotgun\data\shotgun_01_smdi.paa";
+	texture = "x\addons\a2_epoch_weapons_2\non_l\arms\shotgun\data\shotgun_01_smdi.paa";
 	//texture = "#(argb,8,8,3)color(0,0,0,0,smdi)";
 	uvSource = "tex";
 	class uvTransform

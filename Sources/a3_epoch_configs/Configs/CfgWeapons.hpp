@@ -3641,98 +3641,6 @@ class CfgWeapons
             mass = 140;
         };
     };
-    class pvcrifle_base_f: Rifle_Base_F
-	{
-		scope = 0;
-		magazines[] = {"EnergyPack","EnergyPackLg"};  ///change this!!!!!!!!!!!!!!!!
-		reloadAction = "GestureReloadKatiba";
-		handAnim[] = {"OFP2_ManSkeleton", "\x\addons\a3_epoch_weapons\pvc\Data\pvc_rifle_handanim.rtm"};
-		magazineReloadSwitchPhase = 0.4;
-		discreteDistanceInitIndex = 0;
-		maxRecoilSway=0.0025;
-                swayDecaySpeed=1.25;
-		inertia = 0.5;
-		initSpeed = -1;
-		class GunParticles : GunParticles
-		{
-			class SecondEffect
-			{
-				positionName = "Nabojnicestart";
-				directionName = "Nabojniceend";
-				effectName = "CaselessAmmoCloud";
-			};
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class MuzzleSlot{};
-			class CowsSlot//: CowsSlot /// default accessories for this slot
-			{
-				iconPosition[] = {0.5, 0.35};
-				iconScale = 0.2;
-			};
-			class PointerSlot//: PointerSlot /// default accessories for this slot
-			{
-				iconPosition[] = {0.20, 0.45};
-				iconScale = 0.25;
-			};
-			class UnderBarrelSlot{};//: UnderBarrelSlot {};
-		};
-		opticsZoomMin=0.375;
-		opticsZoomMax=1.1;
-		opticsZoomInit=0.75;
-		distanceZoomMin = 300;
-		distanceZoomMax = 300;
-		descriptionShort = "PVC Gas Powered Rifle";
-		dexterity = 1.8;
-		caseless[] = {"",1,1,1};  /// no sound of ejected brass
-		soundBullet[] = {caseless,1};
-		selectionFireAnim = "muzzleFlash"; /// are we able to get rid of all the zaslehs?
-		modes[] = {Single};
-		class Single: Mode_SemiAuto
-		{
-		 reloadTime = 1;
-		 sounds[] ={StandardSound};
-                   class BaseSoundModeType
-                   {
-                       weaponSoundEffect = "DefaultRifle";
-                       closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_6",0.40794576,1,10};
-                       closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_7",0.40794576,1,10};
-                       soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                   };
-                   class StandardSound : BaseSoundModeType
-                   {
-                       begin1[] = {"x\addons\a3_epoch_weapons\pvc\Data\sound\pvc_shot_single",10,1,4800};
-                       begin2[] = {"x\addons\a3_epoch_weapons\pvc\Data\sound\pvc_shot_single",10,1,4800};
-                       soundBegin[] = {"begin1",0,"begin2",0};
-                   };
-			dispersion = 0.00087;
-			recoil = "recoil_single_m107_Epoch";
-			recoilProne = "recoil_prone_m107_Epoch";
-			minRange = 2; minRangeProbab = 0.5;
-			midRange = 200; midRangeProbab = 0.7;
-			maxRange = 400; maxRangeProbab = 0.3;
-		};
-		aiDispersionCoefY=6.0;
-		aiDispersionCoefX=4.0;
-		drySound[]={"A3\sounds_f\weapons\Other\dry_1", db-5, 1, 10};
-		reloadMagazineSound[]={"A3\sounds_f\weapons\reloads\new_MX",db-8,1, 30};
-	};
-    class pvcrifle_01_epoch: pvcrifle_base_f
-    {
-    	scope = 2;
-    	displayName = "PVC Rifle";
-    	model = "\x\addons\a3_epoch_weapons\pvc\pvc_rifle.p3d";
-    	picture = "\x\addons\a3_epoch_weapons\pvc\Data\UI\pvc_rifle_ca.paa";
-    	UiPicture = "\x\addons\a3_epoch_weapons\pvc\Data\UI\pvc_rifle_ca.paa";
-    	weaponInfoType = "RscWeaponZeroing";
-    
-    	//muzzles[] = {this}; /// to be able to switch between bullet muzzle and TGL
-    
-    	class WeaponSlotsInfo: WeaponSlotsInfo
-    	{
-    		mass = 100;
-    	};
-    };	
 ////////////////a2 h4 weps start
 class SlotInfo;
 class MuzzleSlot;
@@ -5450,7 +5358,396 @@ class UnderBarrelSlot;
 		};
 	};
 
-////////////////a2 h4 weps end	
+////////////////a2 h4 weps end
+////////////////h4 non lethal weapons
+	class pvcrifle_base_f: Rifle_Base_F
+	{
+        scope 		              = 1;
+		reloadAction              = "GestureReloadpvcrifle"; //GestureReloadpvcrifle
+		handAnim[]                = {"OFP2_ManSkeleton", "\x\addons\a2_epoch_weapons_2\non_l\anim\pvcrifle_handanim.rtm"};
+		magazineReloadSwitchPhase = 0.4;         /// part of reload animation when new magazine ammo count should affect "revolving" animation source
+		discreteDistanceInitIndex = 0;           /// Ironsight zeroing is the lowest value by default
+		maxRecoilSway             =0.0025;
+        swayDecaySpeed            =1.25;
+		inertia                   = 0.5;
+		initSpeed                 = -1;
+		class GunParticles : GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot{};
+			class CowsSlot: CowsSlot
+			{
+				iconPosition[] = {0.5, 0.35};
+				iconScale = 0.2;
+			};
+			class PointerSlot: PointerSlot
+			{
+				iconPosition[] = {0.20, 0.45};
+				iconScale = 0.25;
+			};
+			class UnderBarrelSlot: UnderBarrelSlot {};
+		};
+		opticsZoomMin     =0.375;
+		opticsZoomMax     =1.1;
+		opticsZoomInit    =0.75;
+		distanceZoomMin   = 300;
+		distanceZoomMax   = 300;
+		descriptionShort  = "PVC Gas Powered Rifle";
+		dexterity         = 1.8;
+		caseless[]        = {"",1,1,1};
+		soundBullet[]     = {caseless,1};
+		selectionFireAnim = "muzzleFlash";
+		modes[] = {Single};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] ={StandardSound};
+           class BaseSoundModeType
+            {
+                weaponSoundEffect = "DefaultRifle";
+                closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_6",0.40794576,1,10};
+                closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_7",0.40794576,1,10};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+            };
+            class StandardSound : BaseSoundModeType
+            {
+                begin1[] = {"\addons\a2_epoch_weapons_2\non_l\sound\pvc_shot_single",10,1,4800};
+                begin2[] = {"x\addons\a2_epoch_weapons_2\non_l\sound\pvc_shot_single",10,1,4800};
+                soundBegin[] = {"begin1",0,"begin2",0};
+            };
+
+			reloadTime = 0.096; /// means some 625 rounds per minute
+			dispersion = 0.00087; /// A bit less than 3 MOA
+
+			recoil = "recoil_single_dmr"; /// defined in cfgRecoils
+			recoilProne = "recoil_single_prone_dmr"; /// defined in cfgRecoils
+
+			minRange = 2; minRangeProbab = 0.5; 	/// Task Force Balance black magic - this is the probability which AI thinks it would hit target at set range with
+			midRange = 200; midRangeProbab = 0.7; 	/// it is no real probability of hit, just used for AI to compute if the shot is worth to take - AI chooses highest
+			maxRange = 400; maxRangeProbab = 0.3; 	/// probability of the weapon, does some calculation and compares it with calculated probability of other weapons
+		};
+		aiDispersionCoefY    =6.0;
+		aiDispersionCoefX    =4.0;
+		drySound[]           ={"A3\sounds_f\weapons\Other\dry_1", db-5, 1, 10};
+		reloadMagazineSound[]={"A3\sounds_f\weapons\reloads\new_MX",db-8,1, 30};
+	};
+	class pvcrifle_01_F: pvcrifle_base_f
+	{
+		scope            = 2;
+		displayName      = "PVC Pipe Rifle";
+		descriptionShort = "Pipe Rifle made from PVC tubing - fires bean bags";
+		model            = "\x\addons\a2_epoch_weapons_2\non_l\arms\pvc\pvc_rifle.p3d";
+		picture          = "\x\addons\a2_epoch_weapons_2\non_l\ui\pvc_ca.paa";
+		UiPicture        = "\x\addons\a2_epoch_weapons_2\non_l\ui\pvc_ca.paa";
+		weaponInfoType   = "RscWeaponZeroing";
+		magazines[]      = {"NL_pvc_bb_mag"};
+		muzzles[]        = {this};
+	};
+    class sgun_HunterShotgun_01_base_F;
+	class nl_Shotgun: sgun_HunterShotgun_01_base_F
+	{
+		scope            =2;
+		displayName      = "NL Shotgun";
+		model            = "\x\addons\a2_epoch_weapons_2\non_l\arms\shotgun\shotgun";
+		picture          = "\x\addons\a2_epoch_weapons_2\non_l\ui\shotty_ca.paa";
+		UiPicture        = "\x\addons\a2_epoch_weapons_2\non_l\ui\shotty_ca.paa";
+		descriptionShort = "Shotgun capable of firing lethal or non lethal ammo";
+		magazines[]      = {"NL_shot_bb_mag", "shot_nl_group"};
+        selectionFireAnim = "muzzleFlash";
+		//handAnim[] = {"OFP2_ManSkeleton", "\a3\Anims_F_Enoch\Data\Anim\handanims\HunterShotgun_01.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\LeeEnfield.rtm"};
+		//reloadAction = "GestureReloadHunterShotgun01";
+		reloadAction = "GestureReloadMX";
+		
+	};		
+	class nl_auto_xbow: sgun_HunterShotgun_01_base_F
+	{
+		scope            =2;
+		displayName      = "Auto Crossbow";
+		model            = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\auto_xbow";
+		picture          = "\x\addons\a2_epoch_weapons_2\non_l\ui\xbow_ca.paa";
+		UiPicture        = "\x\addons\a2_epoch_weapons_2\non_l\ui\xbow_ca.paa";
+		descriptionShort = "Gas Powered repeating Crossbow";
+		magazines[]      = {"NL_shot_bb_mag", "shot_nl_group"};
+        selectionFireAnim = "muzzleFlash";
+		//handAnim[] = {"OFP2_ManSkeleton", "\a3\Anims_F_Enoch\Data\Anim\handanims\HunterShotgun_01.rtm"};
+		//reloadAction = "GestureReloadHunterShotgun01";
+		handAnim[] = {"OFP2_ManSkeleton","\x\addons\a2_epoch_weapons_2\Anim\LeeEnfield.rtm"};
+		reloadAction = "GestureReloadMX";
+		recoil = "recoil_default"; //"recoil_huntershotgun_01";
+			class GunParticles //: GunParticles
+			{
+				class Effect1
+				{
+					effectName = "PistolCloud";
+					positionName = "usti hlavne";
+					directionName = "konec hlavne";
+				};
+				//class Effect2
+				//{
+				//	effectName = "StarterPistolCloud2";
+				//	positionName = "konec hlavne";
+				//	directionName = "usti hlavne";
+				//};
+			};			
+	};	
+
+    class Pistol;
+    class Pistol_Base_F : Pistol
+    {
+        scope = 0;
+        class WeaponSlotsInfo;
+        class GunParticles;
+    };
+	class PistolNL_Base: Pistol_Base_F
+	{
+		hiddenSelections[] = {"camo1"};
+		nameSound          = "Pistol";
+		textureType        = "semi";
+		reloadAction       = "GestureReloadPistol";
+		recoil             = "recoil_default";
+		recoilProne        = "recoil_default";
+		cursor             = "hgun";
+		cursoraim = "cursorAim";
+		bullet1[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_01",0.56234133,1,15};
+		bullet2[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_02",0.56234133,1,15};
+		bullet3[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_03",0.56234133,1,15};
+		bullet4[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_04",0.56234133,1,15};
+		bullet5[] = {"A3\sounds_f\weapons\shells\9mm\dirt_9mm_01",0.56234133,1,15};
+		bullet6[] = {"A3\sounds_f\weapons\shells\9mm\dirt_9mm_02",0.56234133,1,15};
+		bullet7[] = {"A3\sounds_f\weapons\shells\9mm\dirt_9mm_03",0.56234133,1,15};
+		bullet8[] = {"A3\sounds_f\weapons\shells\9mm\dirt_9mm_04",0.56234133,1,15};
+		bullet9[] = {"A3\sounds_f\weapons\shells\9mm\grass_9mm_01",0.56234133,1,15};
+		bullet10[] = {"A3\sounds_f\weapons\shells\9mm\grass_9mm_02",0.56234133,1,15};
+		bullet11[] = {"A3\sounds_f\weapons\shells\9mm\grass_9mm_03",0.56234133,1,15};
+		bullet12[] = {"A3\sounds_f\weapons\shells\9mm\grass_9mm_04",0.56234133,1,15};
+		soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083,"bullet9",0.083,"bullet10",0.083,"bullet11",0.083,"bullet12",0.083};
+		optics         = 1;
+		modelOptics    = "-";
+		opticsZoomMin  = 0.25;
+		opticsZoomMax  = 1.25;
+		opticsZoomInit = 0.75;
+		minRange       = 0;
+		minRangeProbab = 0.1;
+		midRange       = 30;
+		midRangeProbab = 0.3;
+		maxRange       = 50;
+		maxRangeProbab = 0.04;
+		weaponPoolAvailable = 1;
+		inertia        = 0.2;
+		dexterity      = 1.8;
+		initSpeed      = 280;
+		dispersion     = 0.02;
+		ffCount        = 1;
+		aiRateOfFire   = 0.5;
+		aiRateOfFireDistance = 50;
+		reloadTime     = 0.1;
+		autoReload     = 0;
+		magazineReloadTime = 2;
+		opticsFlare    = 0;
+		cursorSize     = 1;
+		class Animationsources{};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 20;
+			holsterOffset = "holster";
+			/// name of a memory point in weapon to serve as zero of the model
+			holsterScale = 1.0;
+			/// scale of gun in holster relative to standard size (0.5 means the gun is 50 % of original size)
+			class CowsSlot{};
+			class MuzzleSlot: SlotInfo
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+				compatibleItems[] = {"muzzle_snds_L"};
+				iconPicture = "";
+				iconPinpoint = "Center";
+				iconPosition[] = {0.25,0.4};
+				iconScale = 0.2;
+			};
+		};
+		class GunParticles
+		{
+			class FirstEffect
+			{
+				effectName = "PistolCloud";
+				positionName = "Usti hlavne";
+				directionName = "Konec hlavne";
+			};
+		};
+		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\firemode_Vermin",0.25118864,1,5};
+		modes[] = {"Single"};
+		class Single: Mode_SemiAuto
+		{
+			recoil = "recoil_pistol_heavy";
+			recoilProne = "recoil_prone_pistol_heavy";
+			reloadTime = 0.13;
+			dispersion = 0.00203;
+			minRange = 5;
+			minRangeProbab = 0.3;
+			midRange = 25;
+			midRangeProbab = 0.6;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				closure1[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\Closure_ACPC2_01",0.12589253,1,30};
+				closure2[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\Closure_ACPC2_02",0.12589253,1.1,30};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\acpc2_short_01",2.5118864,1,1400};
+				begin2[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\acpc2_short_02",2.5118864,1,1400};
+				begin3[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\acpc2_short_03",2.5118864,1,1400};
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\acpc2_tail_interior",1.4125376,1,1400};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\acpc2_tail_trees",1.0,1,1400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\acpc2_tail_forest",1.0,1,1400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\acpc2_tail_meadows",1.0,1,1400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\acpc2_tail_houses",1.0,1,1400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				begin1[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\Silencer_Acpc2_short_01",0.56234133,1,600};
+				begin2[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\Silencer_Acpc2_short_02",0.56234133,1,600};
+				begin3[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\Silencer_Acpc2_short_03",0.56234133,1,600};
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\Silencer_Acpc2_tail_interior",1.0,1,600};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\Silencer_Acpc2_tail_trees",1.0,1,600};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\Silencer_Acpc2_tail_forest",1.0,1,600};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\Silencer_Acpc2_tail_meadows",1.0,1,600};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\Silencer_Acpc2_tail_houses",1.0,1,600};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+	};
+	class hgun_Pistol_tranq_01: PistolNL_Base
+	{
+		scope            = 2; 
+		picture          = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\data\ui\tranq_p_icon_ca.paa";
+		magazines[]      = {"tranq_dart_mag", "shot_nl_group"};
+		displayname      = "HTP4 Tranq Pistol";
+		descriptionShort = "Tranq Pistol<br />Caliber: Dart";
+		model = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\tranq_pistol.p3d";
+		hiddenSelectionsTextures[] = {"\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\data\tranq_p_01_co"};
+		reloadAction = "GestureReloadPistol";
+		magazineReloadTime = 3.225;
+		magazineReloadSwitchPhase = 0.5;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 23;
+			class CowsSlot{};
+			class PointerSlot{};
+			class MuzzleSlot: SlotInfo
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[] = {}; //add
+			};
+		};
+		minRange = 0;
+		minRangeProbab = 0.1;
+		midRange = 20;
+		midRangeProbab = 0.3;
+		maxRange = 40;
+		maxRangeProbab = 0.04;
+		recoil = "recoil_pistol_4five";
+		recoilProne = "recoil_pistol_4five";
+		inertia = 0.2;
+		dexterity = 1.8;
+		initSpeed = 280;
+		distanceZoomMin = 50;
+		distanceZoomMax = 50;
+		dispersion = 0.02;
+		ffCount = 1;
+		aiRateOfFire = 0.5;
+		aiRateOfFireDistance = 50;
+		modes[] = {"Single"};
+		class Single: Single
+		{
+			recoil = "recoil_pistol_heavy";
+			recoilProne = "recoil_prone_pistol_heavy";
+			sounds[] = {"StandardSound","SilencedSound"};
+			class StandardSound: StandardSound
+			{
+                begin1[] = {"x\addons\a2_epoch_weapons_2\non_l\sound\pvc_shot_single",10,1,4800};
+                begin2[] = {"x\addons\a2_epoch_weapons_2\non_l\sound\pvc_shot_single",10,1,4800};
+                soundBegin[] = {"begin1",0,"begin2",0};
+			};
+			class SilencedSound: SilencedSound
+			{
+                begin1[] = {"x\addons\a2_epoch_weapons_2\non_l\sound\pvc_shot_single",10,1,4800};
+                begin2[] = {"x\addons\a2_epoch_weapons_2\non_l\sound\pvc_shot_single",10,1,4800};
+                soundBegin[] = {"begin1",0,"begin2",0};
+			};
+		};
+	};
+////////////////h4 non lethal weapons end
     class UGL_F;
     class Epoch_weapon_01_Base_F : Rifle_Base_F
     {
@@ -5716,13 +6013,6 @@ class UnderBarrelSlot;
         model = "\x\addons\a3_epoch_assets_1\models\chainsaw_R.p3d";
         picture = "\x\addons\a3_epoch_assets_1\pictures\equip_chainsawR_CA.paa";
         descriptionShort = "$STR_EPOCH_HermliteChainsawRed";
-    };
-    class Pistol;
-    class Pistol_Base_F : Pistol
-    {
-        scope = 0;
-        class WeaponSlotsInfo;
-        class GunParticles;
     };
     class ruger_pistol_epoch : Pistol_Base_F
     {

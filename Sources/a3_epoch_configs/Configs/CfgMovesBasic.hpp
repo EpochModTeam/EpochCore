@@ -54,8 +54,8 @@ class CfgMovesBasic
             GestureReloadL85A2[] = {"GestureReloadL85A2","Gesture"};
             GestureReloadL85A2UGL[] = {"GestureReloadL85A2UGL","Gesture"};
             GestureReloadL85A2RIS[] = {"GestureReloadL85A2RIS","Gesture"};
-	    Gesturesuicide[] = {"Gesturesuicide","Gesture"};
-	    GestureReloadpvcrifle[] = {"GestureReloadpvcrifle","Gesture"};
+	        Gesturesuicide[] = {"Gesturesuicide","Gesture"};
+	        GestureReloadpvcrifle[] = {"GestureReloadpvcrifle","Gesture"};
         };
         class RifleBaseStandActions;
         class RifleProneActions : RifleBaseStandActions

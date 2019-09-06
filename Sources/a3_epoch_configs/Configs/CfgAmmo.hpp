@@ -345,6 +345,127 @@ class CfgAmmo
 	};	
 
 //a2 ammo end
+//non lethal
+	class shell_12g_bb: BulletBase
+	{
+		hit = 10;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_65_caseless";
+		visibleFire = 5;
+		audibleFire = 8;
+		cost = 1.2;
+		aiAmmoUsageFlags = AIAmmoUsageOffensiveInf + AIAmmoUsageOffensiveVeh + AIAmmoUsageOffensiveAir; 
+		typicalSpeed = 820;
+		caliber = 1.0;                                      /// caliber 1 equals 6.5mm round
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red; /// just for tracer
+		tracerScale = 1.0;                                  /// how big is the flying tracer
+		tracerStartTime = 0.05;                             // seconds
+		tracerEndTime = 1;                                  // seconds
+		airFriction = -0.00096;
+		dangerRadiusBulletClose 		= 8;	            /// defines how far the AI gets alerted by the projectile's impact or explosion. Default value -1 makes this distance be automatically derived from the hit and indirectHit properties.
+		dangerRadiusHit 				= 12;	            /// defines how far the AI gets alerted by the bullet's pass. Default value -1 disables the detection. (works only for bullets, no other projectiles)
+		suppressionRadiusBulletClose 	= 6;	            /// defines the max. distance at which the AI becomes suppressed by the projectile's impact or explosion. Default value -1 disables the suppressive effect
+		suppressionRadiusHit 			= 8;	            /// defines the max. distance at which the AI becomes suppressed by the bullet's pass. Default value -1 disables the suppressive effect (works only for bullets, no other projectiles)
+		shootDistraction 				= 10;	            /// -1 by default to be computed from visibleFire and audibleFire, describes how much does the shoot distract the shooter
+		class CamShakeFire                                  /// doesn't cause any camera shake
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		class CamShakePlayerFire /// doesn't cause any camera shake
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		
+	};
+	class bbag_pvc: BulletBase
+	{
+		hit = 10;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_65_caseless";
+		visibleFire = 5;
+		audibleFire = 8;
+		cost = 1.2;
+		aiAmmoUsageFlags = AIAmmoUsageOffensiveInf + AIAmmoUsageOffensiveVeh + AIAmmoUsageOffensiveAir; 
+		typicalSpeed = 820;
+		caliber = 1.0;                                      /// caliber 1 equals 6.5mm round
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red; /// just for tracer
+		tracerScale = 1.0;                                  /// how big is the flying tracer
+		tracerStartTime = 0.05;                             // seconds
+		tracerEndTime = 1;                                  // seconds
+		airFriction = -0.00096;
+		dangerRadiusBulletClose 		= 8;	            /// defines how far the AI gets alerted by the projectile's impact or explosion. Default value -1 makes this distance be automatically derived from the hit and indirectHit properties.
+		dangerRadiusHit 				= 12;	            /// defines how far the AI gets alerted by the bullet's pass. Default value -1 disables the detection. (works only for bullets, no other projectiles)
+		suppressionRadiusBulletClose 	= 6;	            /// defines the max. distance at which the AI becomes suppressed by the projectile's impact or explosion. Default value -1 disables the suppressive effect
+		suppressionRadiusHit 			= 8;	            /// defines the max. distance at which the AI becomes suppressed by the bullet's pass. Default value -1 disables the suppressive effect (works only for bullets, no other projectiles)
+		shootDistraction 				= 10;	            /// -1 by default to be computed from visibleFire and audibleFire, describes how much does the shoot distract the shooter
+		class CamShakeFire                                  /// doesn't cause any camera shake
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		class CamShakePlayerFire /// doesn't cause any camera shake
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		
+	};
+	class elec_shock: BulletBase
+	{
+		hit = 10;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "";
+		visibleFire = 5;
+		audibleFire = 8;
+		cost = 1.2;
+		aiAmmoUsageFlags = AIAmmoUsageOffensiveInf + AIAmmoUsageOffensiveVeh + AIAmmoUsageOffensiveAir; 
+		typicalSpeed = 820;
+		caliber = 1.0;
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red;
+		tracerScale = 1.0;
+		tracerStartTime = 0.01;
+		tracerEndTime = 4;
+		airFriction = -0.00096;
+		dangerRadiusBulletClose 		= 8;
+		dangerRadiusHit 				= 12;
+		suppressionRadiusBulletClose 	= 6;
+		suppressionRadiusHit 			= 8;
+		shootDistraction 				= 10;
+		class CamShakeFire
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		class CamShakePlayerFire
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		
+	};
+    class tranq_dart: shell_12g_bb
+	{
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
+	};
+
+//non lethal end
     class DirectionalBombBase;
     class Spike_TRAP_AMMO_EPOCH : DirectionalBombBase
     {
