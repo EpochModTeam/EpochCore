@@ -5418,7 +5418,7 @@ class UnderBarrelSlot;
             };
             class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"\addons\a2_epoch_weapons_2\non_l\sound\pvc_shot_single",10,1,4800};
+                begin1[] = {"x\addons\a2_epoch_weapons_2\non_l\sound\pvc_shot_single",10,1,4800};
                 begin2[] = {"x\addons\a2_epoch_weapons_2\non_l\sound\pvc_shot_single",10,1,4800};
                 soundBegin[] = {"begin1",0,"begin2",0};
             };
