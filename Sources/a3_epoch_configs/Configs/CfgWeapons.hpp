@@ -5364,7 +5364,7 @@ class UnderBarrelSlot;
 	{
         scope 		              = 1;
 		reloadAction              = "GestureReloadpvcrifle"; //GestureReloadpvcrifle
-		handAnim[]                = {"OFP2_ManSkeleton", "\x\addons\a2_epoch_weapons_2\non_l\anim\pvcrifle_handanim.rtm"};
+		handAnim[]                = {"OFP2_ManSkeleton", "\x\addons\a2_epoch_weapons_2\non_l\anim\pvc_rifle_reload.rtm"};
 		magazineReloadSwitchPhase = 0.4;         /// part of reload animation when new magazine ammo count should affect "revolving" animation source
 		discreteDistanceInitIndex = 0;           /// Ironsight zeroing is the lowest value by default
 		maxRecoilSway             =0.0025;
