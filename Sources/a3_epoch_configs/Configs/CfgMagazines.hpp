@@ -295,26 +295,12 @@ class CfgMagazines
 		descriptionShort = "Beanbag filled with lead shot";
 		magazineGroup[]	= {"shot_nl_group"};
 	};	
-	class tranq_dart_mag: CA_Magazine 
-	{
-		scope = 2;
-		displayName = "Tranq Dart Mag";
-		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\tranq_dart_mag.p3d";
-		picture = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\Data\ui\tranq_dart_icon_ca.paa";
-		ammo = tranq_dart;
-		count = 3;
-		initSpeed = 795;
-		tracersEvery = 1;
-		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Injector Darts x3 for Tranq Pistol";
-		//magazineGroup[]	= {"shot_nl_group"};
-	};	
 	class xbow_mag_bolt: CA_Magazine 
 	{
 		scope = 2;
 		displayName = "Crossbow Bolts";
 		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\xbow_mag.p3d";
-		picture = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\Data\ui\tranq_dart_icon_ca.paa";
+		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xbolt_ca.paa";
 		ammo = xbow_bolt;
 		count = 3;
 		initSpeed = 795;
@@ -328,7 +314,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "Crossbow Tranq Bolts";
 		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\xbow_mag.p3d";
-		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xtranq_icon_ca.paa";
+		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xtranq_ca.paa";
 		ammo = xbow_tranq;
 		count = 3;
 		initSpeed = 795;
@@ -342,7 +328,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "Crossbow EXP Bolts";
 		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\xbow_mag.p3d";
-		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xexp_icon_ca.paa";
+		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xexp_ca.paa";
 		ammo = xbow_exp;
 		count = 3;
 		initSpeed = 795;
