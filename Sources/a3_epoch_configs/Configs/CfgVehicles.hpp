@@ -13633,6 +13633,26 @@ class CfgVehicles
 		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
+		class AnimationSources
+		{
+			class Door_1_source
+			{
+				source = "door";
+				initPhase = 0;
+				animPeriod = 1;
+//				sound = "ServoRampSound";
+				sound = "Van_02_Door_Rear";
+				soundPosition = "Door_1_axis";
+			};
+			class Door_2_source: Door_1_source
+			{
+				soundPosition = "Door_2_axis";
+			};
+			class Door_3_source: Door_1_source
+			{
+				soundPosition = "Door_3_axis";
+			};
+		};
 		class UserActions {
 			class OpenDoor_1 {
 				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
@@ -13698,6 +13718,36 @@ class CfgVehicles
 		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
+		class AnimationSources
+		{
+			class Door_1_source
+			{
+				source = "door";
+				initPhase = 0;
+				animPeriod = 1;
+//				sound = "ServoRampSound";
+				sound = "Van_02_Door_Rear";
+				soundPosition = "Door_1_axis";
+			};
+			class Door_2_source: Door_1_source
+			{
+				soundPosition = "Door_2_axis";
+			};
+			class Door_3_source: Door_1_source
+			{
+				soundPosition = "Door_3_axis";
+			};
+			class Bench_default_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.001;
+			};
+			class Bench_black_source: Bench_default_source
+			{
+				initPhase = 1;
+			};
+		};
 		class UserActions {
 			class OpenDoor_1 {
 				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
@@ -13763,6 +13813,26 @@ class CfgVehicles
 		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
+		class AnimationSources
+		{
+			class Door_1_source
+			{
+				source = "door";
+				initPhase = 0;
+				animPeriod = 1;
+//				sound = "ServoRampSound";
+				sound = "Van_02_Door_Rear";
+				soundPosition = "Door_1_axis";
+			};
+			class Door_2_source: Door_1_source
+			{
+				soundPosition = "Door_2_axis";
+			};
+			class Door_3_source: Door_1_source
+			{
+				soundPosition = "Door_3_axis";
+			};
+		};
 		class UserActions {
 			class OpenDoor_1 {
 				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
@@ -13830,6 +13900,41 @@ class CfgVehicles
 		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
+		class AnimationSources
+		{
+			class Door_1_source
+			{
+				source = "door";
+				initPhase = 0;
+				animPeriod = 1;
+//				sound = "ServoRampSound";
+				sound = "Van_02_Door_Rear";
+				soundPosition = "Door_1_axis";
+			};
+			class Door_2_source: Door_1_source
+			{
+				soundPosition = "Door_2_axis";
+			};
+			class Door_3_source: Door_1_source
+			{
+				soundPosition = "Door_3_axis";
+			};
+			class Door_4_source: Door_1_source
+			{
+				animPeriod = 2;
+				soundPosition = "Door_4_trigger";
+			};
+			class Door_5_source: Door_1_source
+			{
+				animPeriod = 2;
+				soundPosition = "Door_5_trigger";
+			};
+			class Door_6_source: Door_1_source
+			{
+				animPeriod = 2;
+				soundPosition = "Door_6_trigger";
+			};
+		};
 		class UserActions {
 			class OpenDoor_1 {
 				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
