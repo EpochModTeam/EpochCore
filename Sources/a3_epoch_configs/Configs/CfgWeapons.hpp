@@ -5442,6 +5442,7 @@ class UnderBarrelSlot;
 	{
 		scope            = 2;
 		displayName      = "PVC Pipe Rifle";
+		description = "Pipe Rifle made from PVC tubing - fires bean bags";
 		descriptionShort = "Pipe Rifle made from PVC tubing - fires bean bags";
 		model            = "\x\addons\a2_epoch_weapons_2\non_l\arms\pvc\pvc_rifle.p3d";
 		picture          = "\x\addons\a2_epoch_weapons_2\non_l\ui\pvc_ca.paa";
@@ -5458,7 +5459,8 @@ class UnderBarrelSlot;
 		model            = "\x\addons\a2_epoch_weapons_2\non_l\arms\shotgun\shotgun";
 		picture          = "\x\addons\a2_epoch_weapons_2\non_l\ui\shotty_ca.paa";
 		UiPicture        = "\x\addons\a2_epoch_weapons_2\non_l\ui\shotty_ca.paa";
-		descriptionShort = "Shotgun capable of firing lethal or non lethal ammo";
+		description = "Shotgun capable of firing lethal or non lethal ammo";
+		descriptionShort = "Shotgun capable of firing lethal or non lethal ammo";		
 		magazines[]      = {"NL_shot_bb_mag", "shot_nl_group"};
         selectionFireAnim = "muzzleFlash";
 		//handAnim[] = {"OFP2_ManSkeleton", "\a3\Anims_F_Enoch\Data\Anim\handanims\HunterShotgun_01.rtm"};
