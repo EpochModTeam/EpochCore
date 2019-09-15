@@ -299,7 +299,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "Crossbow Bolts";
-		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\xbow_mag.p3d";
+		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\auto_xbow_mag.p3d";
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xbolt_ca.paa";
 		ammo = xbow_bolt;
 		count = 3;
@@ -313,7 +313,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "Crossbow Tranq Bolts";
-		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\xbow_mag.p3d";
+		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\auto_xbow_mag.p3d";
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xtranq_ca.paa";
 		ammo = xbow_tranq;
 		count = 3;
@@ -327,7 +327,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "Crossbow EXP Bolts";
-		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\xbow_mag.p3d";
+		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\auto_xbow_mag.p3d";
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xexp_ca.paa";
 		ammo = xbow_exp;
 		count = 3;
