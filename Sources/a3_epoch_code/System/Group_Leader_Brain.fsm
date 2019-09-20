@@ -145,7 +145,7 @@ class FSM
           priority = 50.000000;
           to="nearest_house";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(_2dDistPlyr > 250) || (axeDebug && axeAIGarrison);"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_2dDistPlyr > 350) || (axeDebug && axeAIGarrison);"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
