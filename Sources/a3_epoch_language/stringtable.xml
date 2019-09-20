@@ -2065,11 +2065,20 @@
         <Key ID="STR_EPOCH_RevivePlayer">
             <Original>Revive Player</Original>
         </Key>
+        <Key ID="STR_EPOCH_RevivePlayerDesc">
+            <Original>Attachment for the MultiGun</Original>
+        </Key>
         <Key ID="STR_EPOCH_HealPlayer">
             <Original>Heal Player</Original>
         </Key>
+        <Key ID="STR_EPOCH_HealPlayerDesc">
+            <Original>Attachment for the MultiGun</Original>
+        </Key>
         <Key ID="STR_EPOCH_VehicleRepair">
             <Original>Vehicle Repair</Original>
+        </Key>
+        <Key ID="STR_EPOCH_VehicleRepairDesc">
+            <Original>Attachment for the MultiGun</Original>
         </Key>
         <Key ID="STR_EPOCH_TWSdefect">
             <Original>TWS (defect)</Original>

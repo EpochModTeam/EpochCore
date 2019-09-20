@@ -6630,6 +6630,7 @@ class UnderBarrelSlot;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairDefib.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_defib_ca.paa";
         displayName = "$STR_EPOCH_RevivePlayer";
+        descriptionShort = "$STR_EPOCH_RevivePlayerDesc";
     };
     class Heal_EPOCH : test_suppressor
     {
@@ -6638,6 +6639,7 @@ class UnderBarrelSlot;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairHeal.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_heal_ca.paa";
         displayName = "$STR_EPOCH_HealPlayer";
+        descriptionShort = "$STR_EPOCH_HealPlayerDesc";
     };
     class Repair_EPOCH : test_suppressor
     {
@@ -6646,6 +6648,7 @@ class UnderBarrelSlot;
         model = "\x\addons\a3_epoch_assets_3\CfgWeapons\repairVehicle.p3d";
         picture = "\x\addons\a3_epoch_assets\textures\repairGun\gear_repair_ca.paa";
         displayName = "$STR_EPOCH_VehicleRepair";
+        descriptionShort = "$STR_EPOCH_VehicleRepairDesc";
     };
     class NVGoggles;
     class NVG_EPOCH : NVGoggles
