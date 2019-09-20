@@ -13495,7 +13495,12 @@ class CfgVehicles
         class EventHandlers;
     };
     class I_Heli_Transport_02_F;
-    class I_Heli_Transport_02_EPOCH : I_Heli_Transport_02_F
+	class I_Heli_Transport_02_EPOCH_base : I_Heli_Transport_02_F
+	{
+		scope = 0;
+		class AnimationSources;		
+	};
+    class I_Heli_Transport_02_EPOCH : I_Heli_Transport_02_EPOCH_base
     {
         scope = 2;
 		scopeCurator = 2;
@@ -13520,6 +13525,28 @@ class CfgVehicles
 		class TransportWeapons {};
 		class TransportBackpacks {};
         class EventHandlers;
+		class AnimationSources : AnimationSources
+		{
+			class CargoRamp_Open
+			{
+				source = "door";
+				animPeriod = 5;
+				initPhase = 0;
+				sound = "Van_02_Door_Rear";
+			};
+			class Door_Back_L
+			{
+				source = "door";
+				animPeriod = 0.6;
+				sound = "Van_02_Door_Rear";
+			};
+			class Door_Back_R
+			{
+				source = "door";
+				animPeriod = 0.6;
+				sound = "Van_02_Door_Rear";
+			};
+		};
 		class UserActions {
 			class DoorL1_Open {
 				userActionID = 50;
@@ -14028,7 +14055,12 @@ class CfgVehicles
 		};
     };
     class B_Heli_Transport_03_unarmed_F;
-    class B_Heli_Transport_03_unarmed_EPOCH : B_Heli_Transport_03_unarmed_F
+    class B_Heli_Transport_03_unarmed_Epoch_base : B_Heli_Transport_03_unarmed_F
+	{
+		scope = 0;
+		class AnimationSources;		
+	};
+    class B_Heli_Transport_03_unarmed_EPOCH : B_Heli_Transport_03_unarmed_Epoch_base
     {
         scope = 2;
 		scopeCurator = 2;
@@ -14051,6 +14083,22 @@ class CfgVehicles
 		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
+		class AnimationSources : AnimationSources
+		{
+			class Door_R_source
+			{
+				source = "door";
+				initPhase = 0;
+				animPeriod = 1;
+				sound = "Van_02_Door_Rear";
+			};
+			class Door_L_source: Door_R_source
+			{
+			};
+			class Door_rear_source: Door_R_source
+			{
+			};
+		};
 		class UserActions {
 			class Ramp_Open {
 				userActionID = 60;
