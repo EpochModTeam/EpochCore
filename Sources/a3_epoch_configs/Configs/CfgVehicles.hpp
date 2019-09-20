@@ -15600,6 +15600,14 @@ class CfgVehicles
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
         displayName = "$STR_EPOCH_SolarPowerGeneratorSIM";
     };
+    class SolarGen_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "SteamPunkGears/Helion4";
+        scope = 2;
+        placement = "vertical";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\solar_generator_ghost.p3d";
+        displayName = "$STR_EPOCH_SolarPowerGenerator";
+    };
     class ToolRack_SIM_EPOCH : Constructions_modular_F
     {
         author = "Sequisha";
@@ -21014,7 +21022,7 @@ class CfgVehicles
         author = "SteamPunkGears/Helion4";
         scope = 2;
         placement = "vertical";
-        model = "\x\addons\a3_epoch_community\models\solar_generator_ghost.p3d";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\solar_generator_ghost.p3d";
         displayName = "$STR_EPOCH_SolarChargerXL";
     };
     class SolarChargerXL_EPOCH : Buildable_Storage
