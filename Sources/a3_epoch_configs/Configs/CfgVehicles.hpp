@@ -18112,6 +18112,12 @@ class CfgVehicles
             };
         };
     };
+	class Epoch_LootHolder : WeaponHolder
+	{
+		author = "Bohemia Interactive";
+		mapSize = 5.18;
+		scope = 1;
+	};
 	class BedProxy_EPOCH : WeaponHolder
     {
         author = "Sequisha";
