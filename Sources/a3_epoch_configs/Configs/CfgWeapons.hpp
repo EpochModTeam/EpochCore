@@ -5693,7 +5693,7 @@ class UnderBarrelSlot;
 	{
 		scope            = 2; 
 		picture          = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\data\ui\tranq_p_icon_ca.paa";
-		magazines[]      = {"tranq_dart_mag", "shot_nl_group"};
+		magazines[]      = {"tranq_dart_mag"};
 		displayname      = "HTP4 Tranq Pistol";
 		descriptionShort = "Tranq Pistol<br />Caliber: Dart";
 		model = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\tranq_pistol.p3d";

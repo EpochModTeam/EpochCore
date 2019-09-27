@@ -278,7 +278,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 0;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "12g Shell containing a BeanBag";
+		descriptionShort = "12g Shell containing a BeanBag<br />Rounds: 6<br />Used in: NL Shotgun";
 		magazineGroup[]	= {"shot_nl_group"};
 	};
 	class NL_pvc_bb_mag: CA_Magazine 
@@ -292,7 +292,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 0;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Beanbag filled with lead shot";
+		descriptionShort = "Beanbag filled with lead shot<br />Rounds: 4<br />Used in: PVC Pipe Rifle";
 		magazineGroup[]	= {"shot_nl_group"};
 	};	
 	class xbow_mag_bolt: CA_Magazine 
@@ -306,7 +306,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 1;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Crossbow Bolts - Steel: high speed";
+		descriptionShort = "Crossbow Bolts - Steel: high speed<br />Rounds: 3<br />Used in: Auto Crossbow";
 		//magazineGroup[]	= {"shot_nl_group"};
 	};	
 	class xbow_mag_tranq: CA_Magazine 
@@ -320,7 +320,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 1;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Crossbow Bolts - Tranquilizer tips";
+		descriptionShort = "Crossbow Bolts - Tranquilizer tips<br />Rounds: 3<br />Used in: Auto Crossbow";
 		//magazineGroup[]	= {"shot_nl_group"};
 	};	
 	class xbow_mag_exp: CA_Magazine 
@@ -334,7 +334,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 1;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Crossbow Bolts - Explosive tips";
+		descriptionShort = "Crossbow Bolts - Explosive tips<br />Rounds: 3<br />Used in: Auto Crossbow";
 		magazineGroup[]	= {"xbow_group"};
 	};	
 
