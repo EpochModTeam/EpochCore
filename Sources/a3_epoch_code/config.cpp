@@ -43,18 +43,18 @@ class Epoch
 	class Version
 	{
 		//Version System, Check if PBO Version is compatible with Code
-		A3_epoch_assets = "1.3.1";
-		A3_epoch_assets_1 = "1.3.1";
-		epoch_objects = "1.3.1";
-		A3_epoch_assets_3 = "1.3.1";
-		A3_epoch_config = "1.3.1";
-		A3_epoch_language = "1.3.1";
-		A3_epoch_vehicles = "1.3.1";
-		a3_epoch_weapons = "1.3.1";
-		a2_epoch_weapons = "1.3.1";
-		a3_epoch_structures = "1.3.1";
-		A3_epoch_functions = "1.3.1";
-		A3_epoch_vehicles_1 = "1.3.1";
-		a3_epoch_community = "1.3.1";
+		A3_epoch_assets = "1.3.2";
+		A3_epoch_assets_1 = "1.3.2";
+		epoch_objects = "1.3.2";
+		A3_epoch_assets_3 = "1.3.2";
+		A3_epoch_config = "1.3.2";
+		A3_epoch_language = "1.3.2";
+		A3_epoch_vehicles = "1.3.2";
+		a3_epoch_weapons = "1.3.2";
+		a2_epoch_weapons = "1.3.2";
+		a3_epoch_structures = "1.3.2";
+		A3_epoch_functions = "1.3.2";
+		A3_epoch_vehicles_1 = "1.3.2";
+		a3_epoch_community = "1.3.2";
 	};
 };
