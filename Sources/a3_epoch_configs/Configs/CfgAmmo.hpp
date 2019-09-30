@@ -475,7 +475,7 @@ class CfgAmmo
 			explosionSoundEffect = "DefaultExplosion";
 			hit = 8;
 			indirectHit = 2;
-			indirectHitRange = 1;
+			indirectHitRange = 3;
 			warheadName = "HE";
 			explosive = 0.3;
 			explosionEffects = "ExploAmmoExplosion";

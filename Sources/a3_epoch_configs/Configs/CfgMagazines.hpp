@@ -274,7 +274,7 @@ class CfgMagazines
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\boxoshells_mag_ca.paa";
 		model = "\x\addons\a2_epoch_weapons_2\non_l\arms\magazines\boxoshells.p3d";
 		ammo = shell_12g_bb;
-		count = 6;
+		count = 8;
 		initSpeed = 795;
 		tracersEvery = 0;
 		lastRoundsTracer = 2; /// tracers to track low ammo
@@ -288,7 +288,7 @@ class CfgMagazines
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\beanbag_mag_ca.paa";
 		model = "\x\addons\a2_epoch_weapons_2\non_l\arms\magazines\bbag_pipe_ammo.p3d";
 		ammo = bbag_pvc;
-		count = 4;
+		count = 8;
 		initSpeed = 795;
 		tracersEvery = 0;
 		lastRoundsTracer = 2; /// tracers to track low ammo
@@ -302,7 +302,7 @@ class CfgMagazines
 		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\auto_xbow_mag.p3d";
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xbolt_ca.paa";
 		ammo = xbow_bolt;
-		count = 3;
+		count = 8;
 		initSpeed = 795;
 		tracersEvery = 1;
 		lastRoundsTracer = 2; /// tracers to track low ammo
@@ -316,7 +316,7 @@ class CfgMagazines
 		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\auto_xbow_mag.p3d";
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xtranq_ca.paa";
 		ammo = xbow_tranq;
-		count = 3;
+		count = 8;
 		initSpeed = 795;
 		tracersEvery = 1;
 		lastRoundsTracer = 2; /// tracers to track low ammo
@@ -330,7 +330,7 @@ class CfgMagazines
 		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\auto_xbow_mag.p3d";
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xexp_ca.paa";
 		ammo = xbow_exp;
-		count = 3;
+		count = 6;
 		initSpeed = 795;
 		tracersEvery = 1;
 		lastRoundsTracer = 2; /// tracers to track low ammo
