@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.epochmod.com";
-		version = "1.3.1";
+		version = "1.3.2";
 		majorVersion = 1.3; //MUST BE A NUMBER!; Change this if we release a new major version, don't change if we push just push a hotfix
 		overview = "Open world survival mod set just two years after the mass extinction of billions of people. Those that remain are left with remnants of a once technological society. Try to survive, build, or explore your way through the harsh dynamic environment.";
 	};
