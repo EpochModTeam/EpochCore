@@ -348,7 +348,7 @@ class CfgAmmo
 //non lethal
 	class shell_12g_bb: BulletBase
 	{
-		hit = 10;
+		hit = 4;
 		indirectHit = 0;
 		indirectHitRange = 0;
 		cartridge = "FxCartridge_65_caseless";
@@ -386,7 +386,7 @@ class CfgAmmo
 	};
 	class bbag_pvc: BulletBase
 	{
-		hit = 10;
+		hit = 4;
 		indirectHit = 0;
 		indirectHitRange = 0;
 		cartridge = "FxCartridge_65_caseless";
@@ -529,12 +529,12 @@ class CfgAmmo
 		};
     class xbow_tranq: shell_12g_bb
 	{
-		hit = 7;
+		hit = 4;
 		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
 	};
     class xbow_bolt: shell_12g_bb
 	{
-		hit = 7;
+		hit = 8;
 		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
 	};
 

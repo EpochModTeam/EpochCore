@@ -337,6 +337,21 @@ class CfgMagazines
 		descriptionShort = "Crossbow Bolts - Explosive tips<br />Rounds: 3<br />Used in: Auto Crossbow";
 		magazineGroup[]	= {"xbow_group"};
 	};	
+	class tranq_dart_mag: CA_Magazine 
+	{
+		scope = 2;
+		displayName = "Tranquiliser Pistol Ammo";
+		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\tranq_dart_mag.p3d";
+		picture = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\data\UI\tranq_dart_icon_ca.paa";
+		ammo = xbow_tranq;
+		count =8;
+		initSpeed = 795;
+		tracersEvery = 1;
+		lastRoundsTracer = 2; /// tracers to track low ammo
+		descriptionShort = "Tranquilizer Pistol Ammo<br />Rounds: 8<br />Used in: HTP4 Tranq Pistol";
+		//magazineGroup[]    = {};
+	};  
+	
 
 /////////////////non lethal mags end
     class ItemHotwire : CA_Magazine
