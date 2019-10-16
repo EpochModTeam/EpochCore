@@ -270,7 +270,7 @@ class CfgMagazines
 	class NL_shot_bb_mag: CA_Magazine 
 	{
 		scope = 2;
-		displayName = "BeanBag Shells";
+		displayName = "BeanBag ShotGun Mag";
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\boxoshells_mag_ca.paa";
 		model = "\x\addons\a2_epoch_weapons_2\non_l\arms\magazines\boxoshells.p3d";
 		ammo = shell_12g_bb;
@@ -278,13 +278,13 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 0;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "12g Shell containing a BeanBag<br />Rounds: 6<br />Used in: NL Shotgun";
+		descriptionShort = "Beanbag filled with lead shot<br />Rounds: 6<br />Used in: Shotgun";
 		magazineGroup[]	= {"shot_nl_group"};
 	};
 	class NL_pvc_bb_mag: CA_Magazine 
 	{
 		scope = 2;
-		displayName = "Bean Bag Mag";
+		displayName = "BeanBag PVC Mag";
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\beanbag_mag_ca.paa";
 		model = "\x\addons\a2_epoch_weapons_2\non_l\arms\magazines\bbag_pipe_ammo.p3d";
 		ammo = bbag_pvc;
@@ -320,7 +320,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 1;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Crossbow Bolts - Tranquilizer tips<br />Rounds: 3<br />Used in: Auto Crossbow";
+		descriptionShort = "Crossbow Bolts - Tranquiliser tips<br />Rounds: 3<br />Used in: Auto Crossbow";
 		//magazineGroup[]	= {"shot_nl_group"};
 	};	
 	class xbow_mag_exp: CA_Magazine 
@@ -340,7 +340,7 @@ class CfgMagazines
 	class tranq_dart_mag: CA_Magazine 
 	{
 		scope = 2;
-		displayName = "Tranquiliser Pistol Ammo";
+		displayName = "Tranquiliser Pistol Magazine";
 		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\tranq_dart_mag.p3d";
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\data\UI\tranq_dart_icon_ca.paa";
 		ammo = xbow_tranq;
@@ -348,7 +348,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 1;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Tranquilizer Pistol Ammo<br />Rounds: 8<br />Used in: HTP4 Tranq Pistol";
+		descriptionShort = "Tranquilizer Pistol Ammo<br />Rounds: 8<br />Used in: Tranq Pistol";
 		//magazineGroup[]    = {};
 	};  
 	

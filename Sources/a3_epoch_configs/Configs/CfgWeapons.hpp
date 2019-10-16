@@ -5441,7 +5441,7 @@ class UnderBarrelSlot;
 	class pvcrifle_01_F: pvcrifle_base_f
 	{
 		scope            = 2;
-		displayName      = "PVC Pipe Rifle";
+		displayName      = "Plastic Pipe Rifle (Non Lethal)";
 		description = "Pipe Rifle made from PVC tubing - fires bean bags";
 		descriptionShort = "Pipe Rifle made from PVC tubing - fires bean bags";
 		model            = "\x\addons\a2_epoch_weapons_2\non_l\arms\pvc\pvc_rifle.p3d";
@@ -5455,12 +5455,12 @@ class UnderBarrelSlot;
 	class nl_Shotgun: sgun_HunterShotgun_01_base_F
 	{
 		scope            =2;
-		displayName      = "NL Shotgun";
+		displayName      = "Shotgun (Non Lethal)";
 		model            = "\x\addons\a2_epoch_weapons_2\non_l\arms\shotgun\shotgun";
 		picture          = "\x\addons\a2_epoch_weapons_2\non_l\ui\shotty_ca.paa";
 		UiPicture        = "\x\addons\a2_epoch_weapons_2\non_l\ui\shotty_ca.paa";
-		description = "Shotgun capable of firing lethal or non lethal ammo";
-		descriptionShort = "Shotgun capable of firing lethal or non lethal ammo";		
+		description      = "Shotgun capable of firing non lethal Bean Bags";
+		descriptionShort = "Shotgun capable of firing non lethal Bean Bags";		
 		magazines[]      = {"NL_shot_bb_mag", "shot_nl_group"};
         selectionFireAnim = "muzzleFlash";
 		//handAnim[] = {"OFP2_ManSkeleton", "\a3\Anims_F_Enoch\Data\Anim\handanims\HunterShotgun_01.rtm"};
@@ -5476,7 +5476,7 @@ class UnderBarrelSlot;
 		model            = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\auto_xbow";
 		picture          = "\x\addons\a2_epoch_weapons_2\non_l\ui\xbow_ca.paa";
 		UiPicture        = "\x\addons\a2_epoch_weapons_2\non_l\ui\xbow_ca.paa";
-		descriptionShort = "Gas Powered repeating Crossbow";
+		descriptionShort = "Gas Powered repeating Crossbow (firing lethal and non lethal ammo)";
 		magazines[]      = {"xbow_mag_bolt", "xbow_mag_tranq", "xbow_mag_exp"};
         selectionFireAnim = "muzzleFlash";
 		//handAnim[] = {"OFP2_ManSkeleton", "\a3\Anims_F_Enoch\Data\Anim\handanims\HunterShotgun_01.rtm"};
@@ -5694,8 +5694,8 @@ class UnderBarrelSlot;
 		scope            = 2; 
 		picture          = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\data\ui\tranq_p_icon_ca.paa";
 		magazines[]      = {"tranq_dart_mag"};
-		displayname      = "HTP4 Tranq Pistol";
-		descriptionShort = "Tranq Pistol<br />Caliber: Dart";
+		displayname      = "Tranq Pistol (non lethal)";
+		descriptionShort = "Tranq Pistol<br />Magazine: Tranquiliser Pistol Magazine";
 		model = "\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\tranq_pistol.p3d";
 		hiddenSelectionsTextures[] = {"\x\addons\a2_epoch_weapons_2\non_l\arms\tranq_pistol\data\tranq_p_01_co"};
 		reloadAction = "GestureReloadPistol";
