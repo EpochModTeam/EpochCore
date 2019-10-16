@@ -278,7 +278,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 0;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Beanbag filled with lead shot<br />Rounds: 6<br />Used in: Shotgun";
+		descriptionShort = "Beanbag filled with lead shot<br />Rounds: 6<br />Used in: Shotgun (Non Lethal)";
 		magazineGroup[]	= {"shot_nl_group"};
 	};
 	class NL_pvc_bb_mag: CA_Magazine 
@@ -292,7 +292,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 0;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Beanbag filled with lead shot<br />Rounds: 4<br />Used in: PVC Pipe Rifle";
+		descriptionShort = "Beanbag filled with lead shot<br />Rounds: 4<br />Used in: Plastic Pipe Rifle (Non Lethal)";
 		magazineGroup[]	= {"shot_nl_group"};
 	};	
 	class xbow_mag_bolt: CA_Magazine 
