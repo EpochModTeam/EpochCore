@@ -348,7 +348,7 @@ class CfgAmmo
 //non lethal
 	class shell_12g_bb: BulletBase
 	{
-		hit = 4;
+		hit = 1;
 		indirectHit = 0;
 		indirectHitRange = 0;
 		cartridge = "FxCartridge_65_caseless";
@@ -386,7 +386,7 @@ class CfgAmmo
 	};
 	class bbag_pvc: BulletBase
 	{
-		hit = 4;
+		hit = 1;
 		indirectHit = 0;
 		indirectHitRange = 0;
 		cartridge = "FxCartridge_65_caseless";
@@ -424,7 +424,7 @@ class CfgAmmo
 	};
 	class elec_shock: BulletBase
 	{
-		hit = 10;
+		hit = 4;
 		indirectHit = 0;
 		indirectHitRange = 0;
 		cartridge = "";
@@ -473,7 +473,7 @@ class CfgAmmo
 			//soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.77828, 1, 1600};
 			//multiSoundHit[] = {"soundHit1", 0.25, "soundHit2", 0.25, "soundHit3", 0.25, "soundHit4", 0.25};
 			explosionSoundEffect = "DefaultExplosion";
-			hit = 8;
+			hit = 4;
 			indirectHit = 2;
 			indirectHitRange = 3;
 			warheadName = "HE";
@@ -529,12 +529,12 @@ class CfgAmmo
 		};
     class xbow_tranq: shell_12g_bb
 	{
-		hit = 4;
+		hit = 1;
 		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
 	};
     class xbow_bolt: shell_12g_bb
 	{
-		hit = 8;
+		hit = 4;
 		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
 	};
 
