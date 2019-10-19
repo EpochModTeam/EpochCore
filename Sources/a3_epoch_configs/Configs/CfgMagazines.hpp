@@ -278,7 +278,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 0;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Beanbag filled with lead shot<br />Rounds: 8<br />Used in: Shotgun (Non Lethal)";
+		descriptionShort = "Beanbag filled with non-lethal lead shot<br />Rounds: 8<br />Used in: Shotgun (Non Lethal)";
 		magazineGroup[]	= {"shot_nl_group"};
 	};
 	class NL_pvc_bb_mag: CA_Magazine 
@@ -292,7 +292,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 0;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Beanbag filled with lead shot<br />Rounds: 8<br />Used in: Plastic Pipe Rifle (Non Lethal)";
+		descriptionShort = "Beanbag filled with non-lethal lead shot<br />Rounds: 8<br />Used in: Plastic Pipe Rifle (Non Lethal)";
 		magazineGroup[]	= {"shot_nl_group"};
 	};	
 	class xbow_mag_bolt: CA_Magazine 
@@ -312,7 +312,7 @@ class CfgMagazines
 	class xbow_mag_tranq: CA_Magazine 
 	{
 		scope = 2;
-		displayName = "Crossbow Tranq Bolts";
+		displayName = "Crossbow Non-Lethal Tranq Bolts";
 		model   = "\x\addons\a2_epoch_weapons_2\non_l\arms\crossbow\auto_xbow_mag.p3d";
 		picture = "\x\addons\a2_epoch_weapons_2\non_l\ui\xtranq_ca.paa";
 		ammo = xbow_tranq;
@@ -320,7 +320,7 @@ class CfgMagazines
 		initSpeed = 795;
 		tracersEvery = 1;
 		lastRoundsTracer = 2; /// tracers to track low ammo
-		descriptionShort = "Crossbow Bolts - Tranquiliser tips<br />Rounds: 8<br />Used in: Auto Crossbow";
+		descriptionShort = "Crossbow Bolts - Non-Lethal Tranquiliser tips<br />Rounds: 8<br />Used in: Auto Crossbow";
 		//magazineGroup[]	= {"shot_nl_group"};
 	};	
 	class xbow_mag_exp: CA_Magazine 
