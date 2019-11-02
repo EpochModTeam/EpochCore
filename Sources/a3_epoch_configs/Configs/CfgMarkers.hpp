@@ -649,6 +649,17 @@ class cfgMarkers
 		shadow = 1;
 		markerClass = "epochmod_assets";
 	};
+	class EpochPaint
+	{
+		name = "$STR_EPOCH_MarkerPaint";
+		icon = "\x\addons\a3_epoch_community\markers\marker_icon_paint.paa";
+		color[] = {1,1,1,1};
+		size = 32;
+		scope = 2;
+		scopeCurator = 2;
+		shadow = 1;
+		markerClass = "epochmod_assets";
+	};
 	class EpochShipwreck
 	{
 		name = "$STR_EPOCH_MarkerShipwreck";

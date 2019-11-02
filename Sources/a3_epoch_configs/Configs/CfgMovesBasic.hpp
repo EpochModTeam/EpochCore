@@ -37,6 +37,9 @@ class CfgMovesBasic
         GestureReloadL85A2Prone[] = {"GestureReloadL85A2Prone","Gesture"};
         GestureReloadL85A2UGLProne[] = {"GestureReloadL85A2UGLProne","Gesture"};
         GestureReloadL85A2RISProne[] = {"GestureReloadL85A2RISProne","Gesture"};
+        GestureReloadpvcrifle[] = {"GestureReloadpvcrifle","Gesture"};
+        GestureReloadpvcrifleProne[] = {"GestureReloadpvcrifleProne","Gesture"};
+
     };
     class Actions
     {
@@ -51,7 +54,8 @@ class CfgMovesBasic
             GestureReloadL85A2[] = {"GestureReloadL85A2","Gesture"};
             GestureReloadL85A2UGL[] = {"GestureReloadL85A2UGL","Gesture"};
             GestureReloadL85A2RIS[] = {"GestureReloadL85A2RIS","Gesture"};
-			Gesturesuicide[] = {"Gesturesuicide","Gesture"};
+	        Gesturesuicide[] = {"Gesturesuicide","Gesture"};
+	        GestureReloadpvcrifle[] = {"GestureReloadpvcrifle","Gesture"};
         };
         class RifleBaseStandActions;
         class RifleProneActions : RifleBaseStandActions
@@ -60,6 +64,7 @@ class CfgMovesBasic
             GestureReloadL85A2[] = {"GestureReloadL85A2Prone","Gesture"};
             GestureReloadL85A2UGL[] = {"GestureReloadL85A2UGLProne","Gesture"};
             GestureReloadL85A2RIS[] = {"GestureReloadL85A2RISProne","Gesture"};
+	    GestureReloadpvcrifle[] = {"GestureReloadpvcrifleProne","Gesture"};
         };
     };
 };

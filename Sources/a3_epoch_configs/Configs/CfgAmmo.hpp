@@ -345,6 +345,201 @@ class CfgAmmo
 	};	
 
 //a2 ammo end
+//non lethal
+	class shell_12g_bb: BulletBase
+	{
+		hit = 1;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_65_caseless";
+		visibleFire = 5;
+		audibleFire = 8;
+		cost = 1.2;
+		aiAmmoUsageFlags = AIAmmoUsageOffensiveInf + AIAmmoUsageOffensiveVeh + AIAmmoUsageOffensiveAir; 
+		typicalSpeed = 820;
+		caliber = 1.0;                                      /// caliber 1 equals 6.5mm round
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red; /// just for tracer
+		tracerScale = 1.0;                                  /// how big is the flying tracer
+		tracerStartTime = 0.05;                             // seconds
+		tracerEndTime = 1;                                  // seconds
+		airFriction = -0.00096;
+		dangerRadiusBulletClose 		= 8;	            /// defines how far the AI gets alerted by the projectile's impact or explosion. Default value -1 makes this distance be automatically derived from the hit and indirectHit properties.
+		dangerRadiusHit 				= 12;	            /// defines how far the AI gets alerted by the bullet's pass. Default value -1 disables the detection. (works only for bullets, no other projectiles)
+		suppressionRadiusBulletClose 	= 6;	            /// defines the max. distance at which the AI becomes suppressed by the projectile's impact or explosion. Default value -1 disables the suppressive effect
+		suppressionRadiusHit 			= 8;	            /// defines the max. distance at which the AI becomes suppressed by the bullet's pass. Default value -1 disables the suppressive effect (works only for bullets, no other projectiles)
+		shootDistraction 				= 10;	            /// -1 by default to be computed from visibleFire and audibleFire, describes how much does the shoot distract the shooter
+		class CamShakeFire                                  /// doesn't cause any camera shake
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		class CamShakePlayerFire /// doesn't cause any camera shake
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		
+	};
+	class bbag_pvc: BulletBase
+	{
+		hit = 1;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_65_caseless";
+		visibleFire = 5;
+		audibleFire = 8;
+		cost = 1.2;
+		aiAmmoUsageFlags = AIAmmoUsageOffensiveInf + AIAmmoUsageOffensiveVeh + AIAmmoUsageOffensiveAir; 
+		typicalSpeed = 820;
+		caliber = 1.0;                                      /// caliber 1 equals 6.5mm round
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red; /// just for tracer
+		tracerScale = 1.0;                                  /// how big is the flying tracer
+		tracerStartTime = 0.05;                             // seconds
+		tracerEndTime = 1;                                  // seconds
+		airFriction = -0.00096;
+		dangerRadiusBulletClose 		= 8;	            /// defines how far the AI gets alerted by the projectile's impact or explosion. Default value -1 makes this distance be automatically derived from the hit and indirectHit properties.
+		dangerRadiusHit 				= 12;	            /// defines how far the AI gets alerted by the bullet's pass. Default value -1 disables the detection. (works only for bullets, no other projectiles)
+		suppressionRadiusBulletClose 	= 6;	            /// defines the max. distance at which the AI becomes suppressed by the projectile's impact or explosion. Default value -1 disables the suppressive effect
+		suppressionRadiusHit 			= 8;	            /// defines the max. distance at which the AI becomes suppressed by the bullet's pass. Default value -1 disables the suppressive effect (works only for bullets, no other projectiles)
+		shootDistraction 				= 10;	            /// -1 by default to be computed from visibleFire and audibleFire, describes how much does the shoot distract the shooter
+		class CamShakeFire                                  /// doesn't cause any camera shake
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		class CamShakePlayerFire /// doesn't cause any camera shake
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		
+	};
+	class elec_shock: BulletBase
+	{
+		hit = 4;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "";
+		visibleFire = 5;
+		audibleFire = 8;
+		cost = 1.2;
+		aiAmmoUsageFlags = AIAmmoUsageOffensiveInf + AIAmmoUsageOffensiveVeh + AIAmmoUsageOffensiveAir; 
+		typicalSpeed = 820;
+		caliber = 1.0;
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red;
+		tracerScale = 1.0;
+		tracerStartTime = 0.01;
+		tracerEndTime = 4;
+		airFriction = -0.00096;
+		dangerRadiusBulletClose 		= 8;
+		dangerRadiusHit 				= 12;
+		suppressionRadiusBulletClose 	= 6;
+		suppressionRadiusHit 			= 8;
+		shootDistraction 				= 10;
+		class CamShakeFire
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		class CamShakePlayerFire
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+		
+	};
+    class tranq_dart: shell_12g_bb
+	{
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
+	};
+	class xbow_exp: BulletBase
+		{
+			//soundFly[] = {"", 1, 1, 50};
+			//soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_01", 1.77828, 1, 1600};
+			//soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_02", 1.77828, 1, 1600};
+			//soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_03", 1.77828, 1, 1600};
+			//soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\30mm40mm_shell_explosion_04", 1.77828, 1, 1600};
+			//multiSoundHit[] = {"soundHit1", 0.25, "soundHit2", 0.25, "soundHit3", 0.25, "soundHit4", 0.25};
+			explosionSoundEffect = "DefaultExplosion";
+			hit = 4;
+			indirectHit = 2;
+			indirectHitRange = 3;
+			warheadName = "HE";
+			explosive = 0.3;
+			explosionEffects = "ExploAmmoExplosion";
+			craterEffects = "ExploAmmoCrater";
+			visibleFire = 0.1;
+			audibleFire = 0.1;
+			visibleFireTime = 0.01;
+			dangerRadiusBulletClose = 1;
+			dangerRadiusHit = 1;
+			suppressionRadiusBulletClose = 1;
+			suppressionRadiusHit = 1;
+			cost = 20;
+			deflecting = 5;
+			airFriction = -0.0006;
+			fuseDistance = 3;
+			typicalSpeed = 400;
+			caliber = 2;
+			model = "\A3\Weapons_f\Data\bullettracer\tracer_white";
+			tracerScale = 1;
+			tracerStartTime = 0.05;
+			tracerEndTime = 1;
+			class CamShakeExplode
+			{
+				power = 3.8;
+				duration = 0.8;
+				frequency = 20;
+				distance = 50.8712;
+			};
+			class CamShakeHit
+			{
+				power = 19;
+				duration = 0.4;
+				frequency = 20;
+				distance = 1;
+			};
+			class CamShakeFire
+			{
+				power = 2.0878;
+				duration = 0.8;
+				frequency = 20;
+				distance = 34.8712;
+			};
+			class CamShakePlayerFire
+			{
+				power = 0.01;
+				duration = 0.1;
+				frequency = 20;
+				distance = 1;
+			};
+			SoundSetExplosion[] = {"Shell19mm25mm_Exp_SoundSet"};
+		};
+    class xbow_tranq: shell_12g_bb
+	{
+		hit = 1;
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
+	};
+    class xbow_bolt: shell_12g_bb
+	{
+		hit = 4;
+		model = \A3\Weapons_f\Data\bullettracer\tracer_red;		
+	};
+
+
+//non lethal end
     class DirectionalBombBase;
     class Spike_TRAP_AMMO_EPOCH : DirectionalBombBase
     {
@@ -501,8 +696,8 @@ class CfgAmmo
     class PipeBombBase;
     class Sapper_Charge_Ammo : PipeBombBase
     {
-        hit = 50;
-        indirectHit = 10;
+        hit = 6;
+        indirectHit = 6;
         indirectHitRange = 5;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\swing_box.p3d";
         mineModelDisabled = "";
@@ -519,8 +714,8 @@ class CfgAmmo
     };
     class SapperB_Charge_Ammo : PipeBombBase
     {
-        hit = 1500;
-        indirectHit = 1500;
+        hit = 12;
+        indirectHit = 12;
         indirectHitRange = 5;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\swing_box.p3d";
         mineModelDisabled = "";

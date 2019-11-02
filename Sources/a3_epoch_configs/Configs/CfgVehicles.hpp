@@ -2784,7 +2784,61 @@ class CfgVehicles
 		author = "AWOL/Helion4";
 		model = "\x\addons\a3_epoch_community\models\Bunkers\epoch_bunker_15.p3d";
 	};
-
+	class paintshop: House
+        {
+	 scope = 2;
+	 model = "\x\addons\a3_epoch_community\paintshop\paintshop.p3d";
+	 placement = vertical;
+	 mapSize = 3;
+	 displayName = "Paintshop";
+	 cost = 0;
+	 armor = 8000;
+	   class AnimationSources
+	   {
+	     class Lroll_door
+	     {
+	     	source = "user";
+	     	animPeriod = 3;
+	     	initPhase = 1;
+	     	sound = "ServoRampSound";
+	     };
+	     class Uroll_door
+	     {
+	     	source = "user";
+	     	animPeriod = 3;
+	     	initPhase = 1;
+	     	sound = "ServoRampSound";
+	     };			
+	     class door_2
+	     {
+	     	source = "user";
+	     	animPeriod = 2;
+	     	initPhase = 0;
+	     	sound="ServoRampSound";
+	     };			
+           };
+          class UserActions
+	   {
+	   	class Open_rollers
+	   	{
+	   		displayName = "Open Rollers";
+			displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+	   		position="action1";
+	   		radius=2.75;
+	   		OnlyForPlayer=1;
+	   		condition="this animationPhase ""Lroll_door"" < 0.5 && this animationPhase ""lock"" < 0.5 ";
+	   		statement="this animate [""Lroll_door"", 1];this animate [""Uroll_door"", 1,1.2];this animate [""door_2"", 0,1.2];";
+	   	};
+/*		// Handled via Painting Script
+	   	class Close_rollers: Open_rollers
+	   	{
+	   		displayName = "Close Rollers";
+	   		condition="this animationPhase ""Lroll_door"" >= 0.5";
+	   		statement="this animate [""Lroll_door"", 0];this animate [""Uroll_door"", 0,1.2];this animate [""door_2"", 1,1.2];";
+	   	};
+*/
+	   };
+    };
     class Bag_Base;
     class smallbackpack_red_epoch : Bag_Base
     {
@@ -6954,6 +7008,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 190;
 		fuelCapacity	= 40;
@@ -7396,6 +7451,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 125;
 		fuelCapacity	= 40;
@@ -7808,6 +7864,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};		
 //		maxSpeed = 249;
 		maxSpeed = 140;
 		fuelCapacity	= 40;
@@ -8228,6 +8285,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 200;
 		fuelCapacity	= 40;
@@ -8764,6 +8822,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 145;
 		fuelCapacity	= 40;
@@ -9222,6 +9281,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 120;
 		fuelCapacity	= 40;
@@ -9670,6 +9730,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 110;
 		fuelCapacity	= 40;
@@ -10075,6 +10136,7 @@ class CfgVehicles
 		faction	= CIV_F;
 		scope=0;
 		scopeCurator=2;
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
 //		maxSpeed = 249;
 		maxSpeed = 150;
 		fuelCapacity	= 40;
@@ -13433,7 +13495,12 @@ class CfgVehicles
         class EventHandlers;
     };
     class I_Heli_Transport_02_F;
-    class I_Heli_Transport_02_EPOCH : I_Heli_Transport_02_F
+	class I_Heli_Transport_02_EPOCH_base : I_Heli_Transport_02_F
+	{
+		scope = 0;
+		class AnimationSources;		
+	};
+    class I_Heli_Transport_02_EPOCH : I_Heli_Transport_02_EPOCH_base
     {
         scope = 2;
 		scopeCurator = 2;
@@ -13458,6 +13525,28 @@ class CfgVehicles
 		class TransportWeapons {};
 		class TransportBackpacks {};
         class EventHandlers;
+		class AnimationSources : AnimationSources
+		{
+			class CargoRamp_Open
+			{
+				source = "door";
+				animPeriod = 5;
+				initPhase = 0;
+				sound = "Van_02_Door_Rear";
+			};
+			class Door_Back_L
+			{
+				source = "door";
+				animPeriod = 0.6;
+				sound = "Van_02_Door_Rear";
+			};
+			class Door_Back_R
+			{
+				source = "door";
+				animPeriod = 0.6;
+				sound = "Van_02_Door_Rear";
+			};
+		};
 		class UserActions {
 			class DoorL1_Open {
 				userActionID = 50;
@@ -13571,6 +13660,26 @@ class CfgVehicles
 		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
+		class AnimationSources
+		{
+			class Door_1_source
+			{
+				source = "door";
+				initPhase = 0;
+				animPeriod = 1;
+//				sound = "ServoRampSound";
+				sound = "Van_02_Door_Rear";
+				soundPosition = "Door_1_axis";
+			};
+			class Door_2_source: Door_1_source
+			{
+				soundPosition = "Door_2_axis";
+			};
+			class Door_3_source: Door_1_source
+			{
+				soundPosition = "Door_3_axis";
+			};
+		};
 		class UserActions {
 			class OpenDoor_1 {
 				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
@@ -13636,6 +13745,36 @@ class CfgVehicles
 		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
+		class AnimationSources
+		{
+			class Door_1_source
+			{
+				source = "door";
+				initPhase = 0;
+				animPeriod = 1;
+//				sound = "ServoRampSound";
+				sound = "Van_02_Door_Rear";
+				soundPosition = "Door_1_axis";
+			};
+			class Door_2_source: Door_1_source
+			{
+				soundPosition = "Door_2_axis";
+			};
+			class Door_3_source: Door_1_source
+			{
+				soundPosition = "Door_3_axis";
+			};
+			class Bench_default_source
+			{
+				source = "user";
+				initPhase = 0;
+				animPeriod = 0.001;
+			};
+			class Bench_black_source: Bench_default_source
+			{
+				initPhase = 1;
+			};
+		};
 		class UserActions {
 			class OpenDoor_1 {
 				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
@@ -13701,6 +13840,26 @@ class CfgVehicles
 		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
+		class AnimationSources
+		{
+			class Door_1_source
+			{
+				source = "door";
+				initPhase = 0;
+				animPeriod = 1;
+//				sound = "ServoRampSound";
+				sound = "Van_02_Door_Rear";
+				soundPosition = "Door_1_axis";
+			};
+			class Door_2_source: Door_1_source
+			{
+				soundPosition = "Door_2_axis";
+			};
+			class Door_3_source: Door_1_source
+			{
+				soundPosition = "Door_3_axis";
+			};
+		};
 		class UserActions {
 			class OpenDoor_1 {
 				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
@@ -13768,6 +13927,41 @@ class CfgVehicles
 		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
+		class AnimationSources
+		{
+			class Door_1_source
+			{
+				source = "door";
+				initPhase = 0;
+				animPeriod = 1;
+//				sound = "ServoRampSound";
+				sound = "Van_02_Door_Rear";
+				soundPosition = "Door_1_axis";
+			};
+			class Door_2_source: Door_1_source
+			{
+				soundPosition = "Door_2_axis";
+			};
+			class Door_3_source: Door_1_source
+			{
+				soundPosition = "Door_3_axis";
+			};
+			class Door_4_source: Door_1_source
+			{
+				animPeriod = 2;
+				soundPosition = "Door_4_trigger";
+			};
+			class Door_5_source: Door_1_source
+			{
+				animPeriod = 2;
+				soundPosition = "Door_5_trigger";
+			};
+			class Door_6_source: Door_1_source
+			{
+				animPeriod = 2;
+				soundPosition = "Door_6_trigger";
+			};
+		};
 		class UserActions {
 			class OpenDoor_1 {
 				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
@@ -13861,7 +14055,12 @@ class CfgVehicles
 		};
     };
     class B_Heli_Transport_03_unarmed_F;
-    class B_Heli_Transport_03_unarmed_EPOCH : B_Heli_Transport_03_unarmed_F
+    class B_Heli_Transport_03_unarmed_Epoch_base : B_Heli_Transport_03_unarmed_F
+	{
+		scope = 0;
+		class AnimationSources;		
+	};
+    class B_Heli_Transport_03_unarmed_EPOCH : B_Heli_Transport_03_unarmed_Epoch_base
     {
         scope = 2;
 		scopeCurator = 2;
@@ -13884,6 +14083,22 @@ class CfgVehicles
 		class TransportBackpacks {};
         class EventHandlers;
         class RenderTargets {};
+		class AnimationSources : AnimationSources
+		{
+			class Door_R_source
+			{
+				source = "door";
+				initPhase = 0;
+				animPeriod = 1;
+				sound = "Van_02_Door_Rear";
+			};
+			class Door_L_source: Door_R_source
+			{
+			};
+			class Door_rear_source: Door_R_source
+			{
+			};
+		};
 		class UserActions {
 			class Ramp_Open {
 				userActionID = 60;
@@ -15384,6 +15599,14 @@ class CfgVehicles
         scope = 2;
         model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\Solar_generator.p3d";
         displayName = "$STR_EPOCH_SolarPowerGeneratorSIM";
+    };
+    class SolarGen_Ghost_EPOCH : Const_Ghost_EPOCH
+    {
+        author = "SteamPunkGears/Helion4";
+        scope = 2;
+        placement = "vertical";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\solar_generator_ghost.p3d";
+        displayName = "$STR_EPOCH_SolarPowerGenerator";
     };
     class ToolRack_SIM_EPOCH : Constructions_modular_F
     {
@@ -17889,6 +18112,17 @@ class CfgVehicles
             };
         };
     };
+	class Epoch_LootHolder : WeaponHolder
+	{
+		author = "Bohemia Interactive";
+		mapSize = 5.18;
+		scope = 1;
+        isGround = 0;
+	};
+	class Epoch_LootHolder_sphere : Epoch_LootHolder
+	{
+        model = "\x\addons\a3_epoch_community\models\dummy_sphere.p3d";
+	};
 	class BedProxy_EPOCH : WeaponHolder
     {
         author = "Sequisha";
@@ -18728,9 +18962,52 @@ class CfgVehicles
         };
     };
     class UAV_01_base_F;
-    class I_UAV_01_F : UAV_01_base_F
+    class I_UAV_01_Epoch_base : UAV_01_base_F
+	{
+		class Sounds;
+	};
+    class I_UAV_01_F : I_UAV_01_Epoch_base
     {
         fuelCapacity = 50000;
+		class Sounds : Sounds
+		{
+			class Engine_Idle_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Eng_01_Ext", 1.41254, 1, 150};
+				frequency = "1  * (1 + 0.3  * ((abs(speed) factor [0,	24]) - 0))+  ((1-engineon) * 0.01*(rpm factor [0,1]))";
+				volume = "campos * 6 * ((abs(speed) factor [0,	24]) factor[ (13 - 0)/(24 - 0) - (((13 - 0)/(24 - 0) - 0) - (0.7 * (((13 - 0)/(24 - 0) - 0)))) / 2, 0 + (((13 - 0)/(24 - 0) - 0) - (0.7 * (((13 - 0)/(24 - 0) - 0)))) / 2]) * (rotorSpeed factor[ 0.2, 1])";
+			};
+			class Engine_01_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Eng_01_Ext", 1.77828, 1, 150};
+				frequency = "1  * (1.2 + 0.3  * ((abs(speed) factor [0,	24]) - (13 - 0)/(24 - 0)))+  ((1-engineon) * 0.01*(rpm factor [0,1]))";
+				volume = "campos * 6 * (((abs(speed) factor [0,	24]) factor[ 0 + (((13 - 0)/(24 - 0) - 0) - (0.7 * (((13 - 0)/(24 - 0) - 0)))) / 2, (13 - 0)/(24 - 0) - (((13 - 0)/(24 - 0) - 0) - (0.7 * (((13 - 0)/(24 - 0) - 0)))) / 2]) * ((abs(speed) factor [0,	24]) factor[ (19 - 0)/(24 - 0) - (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0)) - (0.7 * (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0))))) / 2, (13 - 0)/(24 - 0) + (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0)) - (0.7 * (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0))))) / 2]))";
+			};
+			class Engine_02_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Eng_02_Ext", 1.77828, 1, 150};
+				frequency = "1  * (1.2 + 0.3  * ((abs(speed) factor [0,	24]) - (19 - 0)/(24 - 0)))+  ((1-engineon) * 0.01*(rpm factor [0,1]))";
+				volume = "campos * 6 * (((abs(speed) factor [0,	24]) factor[ (13 - 0)/(24 - 0) + (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0)) - (0.7 * (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0))))) / 2, (19 - 0)/(24 - 0) - (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0)) - (0.7 * (((19 - 0)/(24 - 0) - (13 - 0)/(24 - 0))))) / 2]) * ((abs(speed) factor [0,	24]) factor[ (23 - 0)/(24 - 0) - (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0)) - (0.7 * (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0))))) / 2, (19 - 0)/(24 - 0) + (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0)) - (0.7 * (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0))))) / 2]))";
+			};
+			class Engine_03_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Eng_03_Ext", 1.99526, 1, 150};
+				frequency = "1  * (1.2 + 0.3  * ((abs(speed) factor [0,	24]) - (23 - 0)/(24 - 0)))+  ((1-engineon) * 0.01*(rpm factor [0,1]))";
+				volume = "campos * 6 * ((abs(speed) factor [0,	24]) factor[ (19 - 0)/(24 - 0) + (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0)) - (0.7 * (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0))))) / 2, (23 - 0)/(24 - 0) - (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0)) - (0.7 * (((23 - 0)/(24 - 0) - (19 - 0)/(24 - 0))))) / 2])";
+			};
+			class Engine_Lateral_Movement_01_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Engine_Lateral_Movement_Ext", 1, 1, 150};
+				frequency = "1 + angVelocity envelope [0.5,2,2.5,3]";
+				volume = "6 * camPos * (abs(speed) factor[10, 25]) * (angVelocity factor [0.5,2.5])";
+			};
+			class Rotors_Ext
+			{
+				sound[] = {"A3\Sounds_F_Orange\Vehicles\Air\Uav_01\Uav_01_Rotors_01", 0.316228, 3.2, 150};
+				frequency = "1 * rotorThrust*rpm";
+				volume = "6 * camPos * rpm * (rotorSpeed factor [0.01, 0.1]) + (abs(speed) factor[0, 25])";
+			};
+		};
     };
 	class MineBase;
 	class BarrelBomb_EPOCH: MineBase
@@ -20756,7 +21033,7 @@ class CfgVehicles
         author = "SteamPunkGears/Helion4";
         scope = 2;
         placement = "vertical";
-        model = "\x\addons\a3_epoch_community\models\solar_generator_ghost.p3d";
+        model = "\x\addons\a3_epoch_assets_3\CfgVehicles\Solar_Generator_Complete\solar_generator_ghost.p3d";
         displayName = "$STR_EPOCH_SolarChargerXL";
     };
     class SolarChargerXL_EPOCH : Buildable_Storage

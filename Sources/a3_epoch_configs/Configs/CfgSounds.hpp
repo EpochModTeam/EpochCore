@@ -10,17 +10,17 @@ class CfgSounds
 {
     class sapper_groan0
     {
-        sound[] = {"\x\addons\a3_epoch_assets\sounds\sapper\sapper_groan2",1.0,1.0};
+        sound[] = {"\x\addons\a3_epoch_assets\sounds\sapper\sapper_groan2",1.1,1.0};
         titles[] = {};
     };
     class sapper_groan1
     {
-        sound[] = {"\x\addons\a3_epoch_assets\sounds\sapper\sapper_groan3",1.0,1.0};
+        sound[] = {"\x\addons\a3_epoch_assets\sounds\sapper\sapper_groan3",1.1,1.0};
         titles[] = {};
     };
     class sapper_groan2
     {
-        sound[] = {"\x\addons\a3_epoch_assets\sounds\sapper\sapper_groan4",1.0,1.0};
+        sound[] = {"\x\addons\a3_epoch_assets\sounds\sapper\sapper_groan4",1.1,1.0};
         titles[] = {};
     };
     class sapper_explode
@@ -30,7 +30,7 @@ class CfgSounds
     };
     class sapper_alert0
     {
-        sound[] = {"\x\addons\a3_epoch_assets\sounds\sapper\sapper_alert1",1.0,1.0};
+        sound[] = {"\x\addons\a3_epoch_assets\sounds\sapper\sapper_alert1",1.1,1.0};
         titles[] = {};
     };
     class drone_alert0

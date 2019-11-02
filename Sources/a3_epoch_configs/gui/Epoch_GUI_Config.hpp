@@ -34,3 +34,5 @@ class RscTitles
 #include "Epoch_Camera.hpp"
 #include "EPOCH_EPad.hpp"
 #include "EPOCH_SimpleInput.hpp"
+#include "Epoch_Playerstats.hpp"
+#include "Epoch_Serverstats.hpp"

@@ -265,6 +265,27 @@ class CfgGesturesMale
             leftHandIKBeg = 1;
             leftHandIKEnd = 1;
         };
+        class GestureReloadpvcrifle : Default
+        {
+            file = "\x\addons\a2_epoch_weapons_2\non_l\anim\pvc_rifle_reload.rtm";
+            looped = 0;
+            speed = -3;
+            mask = "handsWeapon_pst";
+            headBobStrength = 0.2;
+            headBobMode = 2;
+            rightHandIKBeg = 1;
+            rightHandIKEnd = 1;
+            leftHandIKBeg = 1;
+            leftHandIKEnd = 1;
+			leftHandIKCurve[] = {0,1,
+			                     0.088235,0,
+								 0.200000,0,
+								 0.500000,0,
+								 0.611765,0,
+								 0.900000,0,
+								 0.958824,0,
+								 1.0,1};
+	        };///163 total
     };
     class BlendAnims
     {
