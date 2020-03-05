@@ -19,6 +19,6 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {};
-		epochVersion = "1.3.2";
+		epochVersion = "1.3.3";
 	};
 };

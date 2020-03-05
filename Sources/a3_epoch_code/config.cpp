@@ -33,7 +33,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.epochmod.com";
-		version = "1.3.2";
+		version = "1.3.3";
 		majorVersion = 1.3; //MUST BE A NUMBER!; Change this if we release a new major version, don't change if we push just push a hotfix
 		overview = "Open world survival mod set just two years after the mass extinction of billions of people. Those that remain are left with remnants of a once technological society. Try to survive, build, or explore your way through the harsh dynamic environment.";
 	};
@@ -43,18 +43,18 @@ class Epoch
 	class Version
 	{
 		//Version System, Check if PBO Version is compatible with Code
-		A3_epoch_assets = "1.3.2";
-		A3_epoch_assets_1 = "1.3.2";
-		epoch_objects = "1.3.2";
-		A3_epoch_assets_3 = "1.3.2";
-		A3_epoch_config = "1.3.2";
-		A3_epoch_language = "1.3.2";
-		A3_epoch_vehicles = "1.3.2";
-		a3_epoch_weapons = "1.3.2";
-		a2_epoch_weapons = "1.3.2";
-		a3_epoch_structures = "1.3.2";
-		A3_epoch_functions = "1.3.2";
-		A3_epoch_vehicles_1 = "1.3.2";
-		a3_epoch_community = "1.3.2";
+		A3_epoch_assets = "1.3.3";
+		A3_epoch_assets_1 = "1.3.3";
+		epoch_objects = "1.3.3";
+		A3_epoch_assets_3 = "1.3.3";
+		A3_epoch_config = "1.3.3";
+		A3_epoch_language = "1.3.3";
+		A3_epoch_vehicles = "1.3.3";
+		a3_epoch_weapons = "1.3.3";
+		a2_epoch_weapons = "1.3.3";
+		a3_epoch_structures = "1.3.3";
+		A3_epoch_functions = "1.3.3";
+		A3_epoch_vehicles_1 = "1.3.3";
+		a3_epoch_community = "1.3.3";
 	};
 };

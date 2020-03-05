@@ -6,6 +6,6 @@
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]={};
-		epochVersion = "1.3.2";
+		epochVersion = "1.3.3";
 	};
 };
