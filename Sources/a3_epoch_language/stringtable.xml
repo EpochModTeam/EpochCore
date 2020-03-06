@@ -626,7 +626,8 @@
         </Key>
         <Key ID="STR_EPOCH_CopperBar1oz">
             <Original>Copper Bar (1oz)</Original>
-			<Chinesesimp>铜条(1盎司)
+			<Chinesesimp>铜条(1盎司)</Chinesesimp>
+        </Key>
 		<Key ID="STR_EPOCH_CopperBar10oz">
             <Original>Copper Bar (10oz)</Original>
 			<Chinesesimp>铜条(10盎司)</Chinesesimp>
@@ -789,7 +790,7 @@
         </Key>
         <Key ID="STR_EPOCH_BucketofMortar">
             <Original>Bucket of Mortar</Original>
-			<Chinesesimp>砂浆桶Chinesesimp>
+			<Chinesesimp>砂浆桶Chinesesimp></Chinesesimp>
         </Key>
         <Key ID="STR_EPOCH_Premixedmasticadhesivethatwillbondtoconcreteblock">
             <Original>Premixed mastic adhesive that will bond to concrete block.</Original>
@@ -1141,7 +1142,8 @@
         </Key>
 		<Key ID="STR_EPOCH_7ozGold">
             <Original>7oz Gold</Original>
-			<Chinesesimp>7盎司金
+			<Chinesesimp>7盎司金</Chinesesimp>
+        </Key>
 		<Key ID="STR_EPOCH_8ozGold">
             <Original>8oz Gold</Original>
 			<Chinesesimp>8盎司金</Chinesesimp>
@@ -1168,7 +1170,8 @@
         </Key>
 		<Key ID="STR_EPOCH_5x1ozGold">
             <Original>5 x 1oz Gold</Original>
-			<Chinesesimp>5x 1盎司金
+			<Chinesesimp>5x 1盎司金</Chinesesimp>
+        </Key>
 		<Key ID="STR_EPOCH_6x1ozGold">
             <Original>6 x 1oz Gold</Original>
 			<Chinesesimp>6x 1盎司金</Chinesesimp>
