@@ -7478,6 +7478,14 @@ class CfgVehicles
 		crewCrashProtection		= 1.5;
 		driverLeftHandAnimName 	= "drivewheel";
 		driverRightHandAnimName = "drivewheel";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2_co.paa"
+		};
 		class TransportItems {};
         driverAction 		= driver_offroad01;
 		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
@@ -8412,7 +8420,7 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[]=
 		{
-             "x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_co.paa"
+             "x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_rust_co.paa"
 		};
 		class Damage
 		{
