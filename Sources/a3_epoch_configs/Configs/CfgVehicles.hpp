@@ -488,6 +488,16 @@ class CfgVehicles
 	{
 		modelsides[] = {3,2,0};
 	};
+	class C_IDAP_Man_Base_F;
+	class C_IDAP_Man_AidWorker_01_F: C_IDAP_Man_Base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class C_IDAP_Man_AidWorker_02_F : C_IDAP_Man_AidWorker_01_F {};
+	class C_IDAP_Man_AidWorker_03_F : C_IDAP_Man_AidWorker_01_F {};
+	class C_IDAP_Man_AidWorker_04_F : C_IDAP_Man_AidWorker_01_F {};
+	class C_IDAP_Man_AidWorker_05_F : C_IDAP_Man_AidWorker_01_F {};
+	class C_IDAP_Man_AidWorker_06_F : C_IDAP_Man_AidWorker_01_F {};
 
     class VirtualMan_F;
     class VirtualMan_EPOCH : VirtualMan_F
