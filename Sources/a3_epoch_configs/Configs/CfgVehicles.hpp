@@ -488,6 +488,31 @@ class CfgVehicles
 	{
 		modelsides[] = {3,2,0};
 	};
+	class C_IDAP_Man_Base_F;
+	class C_IDAP_Man_AidWorker_01_F: C_IDAP_Man_Base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class C_IDAP_Man_AidWorker_02_F: C_IDAP_Man_Base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class C_IDAP_Man_AidWorker_03_F: C_IDAP_Man_Base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class C_IDAP_Man_AidWorker_04_F: C_IDAP_Man_Base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class C_IDAP_Man_AidWorker_05_F: C_IDAP_Man_Base_F
+	{
+		modelsides[] = {3,2,0};
+	};
+	class C_IDAP_Man_AidWorker_06_F: C_IDAP_Man_Base_F
+	{
+		modelsides[] = {3,2,0};
+	};
 
     class VirtualMan_F;
     class VirtualMan_EPOCH : VirtualMan_F
@@ -7478,6 +7503,14 @@ class CfgVehicles
 		crewCrashProtection		= 1.5;
 		driverLeftHandAnimName 	= "drivewheel";
 		driverRightHandAnimName = "drivewheel";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\addons\a2_epoch_vehicles\wheeled\a2_hmmwv\data\hmmwv_body_2_co.paa"
+		};
 		class TransportItems {};
         driverAction 		= driver_offroad01;
 		cargoAction[] 		= {passenger_low01, passenger_generic01_leanleft, passenger_generic01_foldhands};
@@ -8412,7 +8445,7 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[]=
 		{
-             "x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_co.paa"
+             "x\addons\a2_epoch_vehicles\wheeled\suv\data\suv_body_rust_co.paa"
 		};
 		class Damage
 		{
@@ -18117,7 +18150,7 @@ class CfgVehicles
 		author = "Bohemia Interactive";
 		mapSize = 5.18;
 		scope = 1;
-        isGround = 0;
+        isGround = 1;
 	};
 	class Epoch_LootHolder_sphere : Epoch_LootHolder
 	{

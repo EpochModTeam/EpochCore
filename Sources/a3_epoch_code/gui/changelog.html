@@ -11,55 +11,20 @@ content="text/html; charset=windows-1250">
 <p>
 For the full Changelog click: <a href="https://github.com/EpochModTeam/Epoch/blob/release/changelog.md">Github</a><br>
 <br>
-<b>## [1.3.2.0]</b><br>
+<b>## [1.3.3.0]</b><br>
 <b>### Added</b><br>
-- Non Lethal Weapons<br>
-&nbsp;&nbsp;&nbsp;- Make opponents unconscious with special weapons<br>
-&nbsp;&nbsp;&nbsp;- Unconscious players can be woken up<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- by a MultiGun with Heal Player attachment<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- after a random timer (60-180 seconds)<br>
-- Paint Garages (with optional map markers) around the map for painting Vehicles<br>
-&nbsp;&nbsp;&nbsp;- Park your Vehicle in / on the Garage and hold Space (DynaMenu) on the Terminal<br>
-&nbsp;&nbsp;&nbsp;- Costs: 500 Krypto (Configurable by Admins)<br>
-&nbsp;&nbsp;&nbsp;- <a href=https://plays.tv/video/5d5d721191c8f06d14" target="_blank">Video</a><br>
-- Player / Server Statistics (within the E-Pad)<br>
-&nbsp;&nbsp;&nbsp;- Times connected / Playtime (hours) / Max Alivetime (hours) / Distance Walked (Km)<br>
-&nbsp;&nbsp;&nbsp;- Objects Looted / Trades at Trader / Placed Buildings / Crafted Items<br>
-&nbsp;&nbsp;&nbsp;- Karma / Player Revived / Tradermissions<br>
-&nbsp;&nbsp;&nbsp;- Player Kills / AI Kills / Antagonist Kills / Zombie Kills<br>
-&nbsp;&nbsp;&nbsp;- Deaths by Player / Deaths by AI / Suicides<br>
-&nbsp;&nbsp;&nbsp;- K/D PvP / K/D PvE<br>
-&nbsp;&nbsp;&nbsp;- <a href=https://plays.tv/video/5d5d716b0b171855fe" target="_blank">Video</a><br>
-- Hint in Inventory for Heal / Revive / Repair to be used as MultiGun Attachment <br>
-- Item description to Trader items<br>
-&nbsp;&nbsp;&nbsp;- <a href=https://cdn.discordapp.com/attachments/474595539107971072/622554669830373399/unknown.png" target="_blank">Picture</a><br>
-- UAV Backpacks - Assemble and then use via DynaMenu (SpaceMenu)<br>
-- Animated Heli Crash (with scattered loot)<br>
-&nbsp;&nbsp;&nbsp;- <a href=https://plays.tv/video/5d8a717407926fbfc2" target="_blank">Video</a><br>
-- Some Chinese translations (thx to @CHL198011)<br>
+- Some Dupe fixes<br>
 <b>### Fixed</b><br>
-- Players could instant get killed on contact with new placed BaseBuilding Parts<br>
-- Players Glasses (Goggles) were not correctly added on login / revive<br>
-- Some Building Parts where falling down on build (also when snapped correctly)<br>
-- Texture for Solar Generator / Charger was broken<br>
+- In some Cases, Players were not able to use Binocular in cargo of Vehicles by using R3F or AdvSlingLoad<br>
+- Player Krypto was not updated in Debug Monitor<br>
+- Ground Loot now shows as "ground" instead of "crate" in inventory<br>
+- Snappoint for half cinder walls on top was not 100% correct<br>
 <b>### Changed</b><br>
-- Weapon attachments are no longer dismounted within containers on restarts<br>
-- Clothings (BackPacks / Vests / Uniforms) in storages will no longer get unpacked on restarts<br>
-- Vehicle / Storage Lock<br>
-&nbsp;&nbsp;&nbsp;- Colorized Vehicle / Storage Lock messages<br>
-&nbsp;&nbsp;&nbsp;- Hint how long your Vehicle will stay locked on lock<br>
-&nbsp;&nbsp;&nbsp;- Vehicles locked inside your own PlotPole-Range have now a longer Locktime<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Inside your PlotPole-Range: 3 days<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Outside your PlotPole-Range: 30 minutes<br>
-&nbsp;&nbsp;&nbsp;- <a href=https://plays.tv/video/5d5d71d2137413ba08" target="_blank">Video</a><br>
-- Increased UAV sounds<br>
-- Changed Taru / Huron / Mohawk Door Sounds (more decent sound)<br>
-- changed unarmed jump animation<br>
-- UAV-Support (AI's) will now spawn a bit more away from your Position<br>
-- Changed / Fixed some Epoch asset models<br>
-- Reduced Rain by default<br>
-- Hunger / Thirst / Alcohol loss no longer depends on time multiplier by default<br>
-- Reworked Looting function (Epoch furnitures + additional ground Loot)<br>
+- Some cleanups for no longer needed scripts<br>
+- Reduced Server calls for Loot Spawn (but not reduced Loot in general!)<br>
+- Replaced Karma by AntagonistKills in Topstats (because Karma is currently broken a bit)<br>
+- Better randomize left Vehicles in Traders (Do not only store Vehicles in Trader Slots order)<br>
+- Removed Thermal from assembled UAVs (by default)<br>
 </p>
 </body>
 </html>
