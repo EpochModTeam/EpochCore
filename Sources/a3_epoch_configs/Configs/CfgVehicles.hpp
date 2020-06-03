@@ -18150,7 +18150,7 @@ class CfgVehicles
 		author = "Bohemia Interactive";
 		mapSize = 5.18;
 		scope = 1;
-        isGround = 1;
+        isGround = 0;
 	};
 	class Epoch_LootHolder_sphere : Epoch_LootHolder
 	{
