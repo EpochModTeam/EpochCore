@@ -1,0 +1,17 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: air\Data\ah1z_monitors_n.rvmat
+//Produced from mikero's Dos Tools Dll version 6.44
+//'now' is Thu Oct 25 12:00:28 2018 : 'file' last modified on Mon Dec 14 11:52:24 2009
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {0.032,0.032,0.032,1.0};
+diffuse[] = {0.032,0.032,0.032,1.0};
+forcedDiffuse[] = {0.032,0.032,0.032,0.0};
+emmisive[] = {0.048,0.048,0.048,0.0};
+specular[] = {0.0,0.0,0.0,0.0};
+specularPower = 50.0;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
