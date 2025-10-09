@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: weapons\Data\kolimator.rvmat
+//Produced from mikero's Dos Tools Dll version 6.44
+//'now' is Wed Jun 20 16:07:04 2018 : 'file' last modified on Wed Sep 09 15:05:47 2009
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {100.0,0.5,0.5,1.0};
+diffuse[] = {1.0,0.5,0.5,1.0};
+forcedDiffuse[] = {10.0,2.0,2.0,0.0};
+emmisive[] = {10.0,10.0,10.0,1.0};
+specular[] = {0.0,0.0,0.0,1.0};
+specularPower = 1.0;
+renderFlags[] = {"AddBlend"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

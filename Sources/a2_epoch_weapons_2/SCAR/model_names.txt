@@ -1,0 +1,38 @@
+class SCAR_H_cqc_aimpoint
+class SCAR_H_cqc_mk4_sd
+class SCAR_H_rifle_spectre_EGLM
+class SCAR_H_sniper
+class SCAR_H_sniper_sd
+class SCAR_H_STD_ACOG
+class SCAR_H_STD_EOTech
+
+
+
+
+class SCAR_L_CQC
+class SCAR_L_CQC_aimpoint_sd
+class SCAR_L_CQC_EOTech
+class SCAR_L_CQC_EOTech_EGLM
+class SCAR_L_STD_ACOG_EGLM
+class SCAR_L_STD_EOTech
+class SCAR_L_STD_MK4
+
+Ca\weapons_E\SCAR\
+
+SCAR_H_cqc_aimpoint
+SCAR_H_cqc_mk4_sd
+SCAR_H_rifle_spectre_EGLM
+SCAR_H_sniper
+SCAR_H_sniper_sd
+SCAR_H_STD_ACOG
+SCAR_H_STD_EOTech
+
+SCAR_L_CQC
+SCAR_L_CQC_aimpoint_sd
+SCAR_L_CQC_EOTech
+SCAR_L_CQC_EOTech_EGLM
+SCAR_L_STD_ACOG_EGLM
+SCAR_L_STD_EOTech
+SCAR_L_STD_MK4
+
+		model = "\Ca\weapons_E\SCAR\SCAR_L_CQC";
